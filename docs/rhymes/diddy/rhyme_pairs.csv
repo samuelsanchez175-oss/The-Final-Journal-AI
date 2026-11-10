@@ -1,0 +1,397 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Another One Of Me,1,Don't waste your tears on me,tears,2,I'ma tell you it ain't worth the fight,tell,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,1,Don't waste your tears on me,waste,2,I'ma tell you it ain't worth the fight,ain't,INNER,SLANT,cmu,MED,Y
+Another One Of Me,1,Don't waste your tears on me,tears,3,I'ma hurt you if you let me,let,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,2,I'ma tell you it ain't worth the fight,I'ma,3,I'ma hurt you if you let me,I'ma,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,2,I'ma tell you it ain't worth the fight,tell,3,I'ma hurt you if you let me,let,INNER,SLANT,cmu,MED,Y
+Another One Of Me,2,I'ma tell you it ain't worth the fight,worth,3,I'ma hurt you if you let me,hurt,INNER,SLANT,cmu,MED,Y
+Another One Of Me,2,I'ma tell you it ain't worth the fight,fight,4,I can love you only for the night,night,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,4,I can love you only for the night,can,5,"I can love you for the night, baby",can,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,4,I can love you only for the night,love,5,"I can love you for the night, baby",love,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,4,I can love you only for the night,night,5,"I can love you for the night, baby",night,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,4,I can love you only for the night,only,6,"Baby, I could play your role-play",role,INNER,SLANT,cmu,MED,Y
+Another One Of Me,5,"I can love you for the night, baby",baby,6,"Baby, I could play your role-play",play,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,5,"I can love you for the night, baby",baby,6,"Baby, I could play your role-play",Baby,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,5,"I can love you for the night, baby",baby,6,"Baby, I could play your role-play",play,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,5,"I can love you for the night, baby",can,7,I can tell that you're the only one,can,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,5,"I can love you for the night, baby",love,7,I can tell that you're the only one,one,INNER,SLANT,cmu,MED,Y
+Another One Of Me,5,"I can love you for the night, baby",baby,8,And I'ma promise that you feel pain,pain,END,SLANT,cmu,MED,Y
+Another One Of Me,6,"Baby, I could play your role-play",Baby,6,"Baby, I could play your role-play",play,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,6,"Baby, I could play your role-play",play,6,"Baby, I could play your role-play",play,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,6,"Baby, I could play your role-play",role,7,I can tell that you're the only one,only,INNER,SLANT,cmu,MED,Y
+Another One Of Me,6,"Baby, I could play your role-play",play,8,And I'ma promise that you feel pain,pain,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,6,"Baby, I could play your role-play",Baby,8,And I'ma promise that you feel pain,pain,INNER,SLANT,cmu,MED,Y
+Another One Of Me,6,"Baby, I could play your role-play",play,8,And I'ma promise that you feel pain,pain,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,7,I can tell that you're the only one,one,9,"You ain't gon' get pain from no one else, yeah",one,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,7,I can tell that you're the only one,only,9,"You ain't gon' get pain from no one else, yeah",gon,INNER,SLANT,spelling,LOW,Y
+Another One Of Me,7,I can tell that you're the only one,only,9,"You ain't gon' get pain from no one else, yeah",no,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,7,I can tell that you're the only one,tell,9,"You ain't gon' get pain from no one else, yeah",else,INNER,SLANT,cmu,MED,Y
+Another One Of Me,7,I can tell that you're the only one,tell,9,"You ain't gon' get pain from no one else, yeah",get,INNER,SLANT,cmu,MED,Y
+Another One Of Me,8,And I'ma promise that you feel pain,pain,9,"You ain't gon' get pain from no one else, yeah",ain't,INNER,SLANT,cmu,MED,Y
+Another One Of Me,8,And I'ma promise that you feel pain,pain,9,"You ain't gon' get pain from no one else, yeah",pain,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,8,And I'ma promise that you feel pain,pain,12,Another one of me won't come around again,again,END,SLANT,spelling,LOW,Y
+Another One Of Me,9,"You ain't gon' get pain from no one else, yeah",ain't,9,"You ain't gon' get pain from no one else, yeah",pain,INNER,SLANT,cmu,MED,Y
+Another One Of Me,9,"You ain't gon' get pain from no one else, yeah",get,9,"You ain't gon' get pain from no one else, yeah",else,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,9,"You ain't gon' get pain from no one else, yeah",else,10,Get it from no one else,else,END,REPEAT,spelling,HIGH,N
+Another One Of Me,9,"You ain't gon' get pain from no one else, yeah",else,10,Get it from no one else,Get,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,9,"You ain't gon' get pain from no one else, yeah",get,10,Get it from no one else,else,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,9,"You ain't gon' get pain from no one else, yeah",get,10,Get it from no one else,Get,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,9,"You ain't gon' get pain from no one else, yeah",no,10,Get it from no one else,no,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,9,"You ain't gon' get pain from no one else, yeah",one,10,Get it from no one else,one,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,9,"You ain't gon' get pain from no one else, yeah",else,12,Another one of me won't come around again,again,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,10,Get it from no one else,Get,10,Get it from no one else,else,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,10,Get it from no one else,else,12,Another one of me won't come around again,again,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,10,Get it from no one else,Get,12,Another one of me won't come around again,again,INNER,SLANT,cmu,MED,Y
+Another One Of Me,10,Get it from no one else,no,12,Another one of me won't come around again,won't,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,10,Get it from no one else,one,12,Another one of me won't come around again,Another,INNER,SLANT,cmu,MED,Y
+Another One Of Me,10,Get it from no one else,one,12,Another one of me won't come around again,come,INNER,SLANT,cmu,MED,Y
+Another One Of Me,10,Get it from no one else,one,12,Another one of me won't come around again,one,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,12,Another one of me won't come around again,Another,12,Another one of me won't come around again,come,INNER,SLANT,cmu,MED,Y
+Another One Of Me,12,Another one of me won't come around again,Another,12,Another one of me won't come around again,one,INNER,SLANT,cmu,MED,Y
+Another One Of Me,12,Another one of me won't come around again,one,12,Another one of me won't come around again,come,INNER,SLANT,cmu,MED,Y
+Another One Of Me,12,Another one of me won't come around again,Another,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",floodin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,12,Another one of me won't come around again,come,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",floodin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,12,Another one of me won't come around again,one,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",floodin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,12,Another one of me won't come around again,won't,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",Coke,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",streets,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",feedin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",fam,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Lamb,INNER,PERFECT,spelling,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",feedin,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",east,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",feedin,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",feet,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",feedin,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Speedin,INNER,MULTI,multi,HIGH,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",streets,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",east,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",streets,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",feet,INNER,SLANT,cmu,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",streets,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Speedin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",feedin,15,Make your mouth piece obese like Della Reese,obese,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",feedin,15,Make your mouth piece obese like Della Reese,piece,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",feedin,15,Make your mouth piece obese like Della Reese,Reese,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",streets,15,Make your mouth piece obese like Della Reese,obese,INNER,SLANT,cmu,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",streets,15,Make your mouth piece obese like Della Reese,piece,INNER,SLANT,cmu,MED,Y
+Another One Of Me,13,"Coke boy floodin' the streets, feedin' the fam' (Woo)",streets,15,Make your mouth piece obese like Della Reese,Reese,INNER,SLANT,cmu,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",east,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",feet,INNER,SLANT,cmu,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Lamb,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",sand,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Speedin,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",east,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Speedin,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",feet,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",east,15,Make your mouth piece obese like Della Reese,obese,INNER,SLANT,cmu,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",east,15,Make your mouth piece obese like Della Reese,piece,INNER,SLANT,cmu,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",east,15,Make your mouth piece obese like Della Reese,Reese,INNER,SLANT,cmu,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",feet,15,Make your mouth piece obese like Della Reese,obese,INNER,SLANT,cmu,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",feet,15,Make your mouth piece obese like Della Reese,piece,INNER,SLANT,cmu,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",feet,15,Make your mouth piece obese like Della Reese,Reese,INNER,SLANT,cmu,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",pray,15,Make your mouth piece obese like Della Reese,Make,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Speedin,15,Make your mouth piece obese like Della Reese,obese,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Speedin,15,Make your mouth piece obese like Della Reese,piece,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Speedin,15,Make your mouth piece obese like Della Reese,Reese,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",east,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",streets,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",feet,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",streets,INNER,SLANT,cmu,MED,Y
+Another One Of Me,14,"Speedin' the Lamb', pray to the east, feet in the sand (Ayy)",Speedin,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",streets,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,obese,15,Make your mouth piece obese like Della Reese,Reese,INNER,PERFECT,cmu,HIGH,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,piece,15,Make your mouth piece obese like Della Reese,obese,INNER,PERFECT,cmu,HIGH,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,piece,15,Make your mouth piece obese like Della Reese,Reese,INNER,PERFECT,cmu,HIGH,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,Reese,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",streets,END,SLANT,cmu,MED,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,Della,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",squares,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,obese,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",streets,INNER,SLANT,cmu,MED,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,piece,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",streets,INNER,SLANT,cmu,MED,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,Della,17,"I gotta go to heaven, I had a hell of a life",heaven,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,Della,17,"I gotta go to heaven, I had a hell of a life",hell,INNER,SLANT,cmu,MED,Y
+Another One Of Me,15,Make your mouth piece obese like Della Reese,like,17,"I gotta go to heaven, I had a hell of a life",life,INNER,SLANT,cmu,MED,Y
+Another One Of Me,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",garden,17,"I gotta go to heaven, I had a hell of a life",gotta,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",holdin,17,"I gotta go to heaven, I had a hell of a life",go,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",squares,17,"I gotta go to heaven, I had a hell of a life",heaven,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",squares,17,"I gotta go to heaven, I had a hell of a life",hell,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,16,"Puttin' squares in the garden, holdin' court in the streets (Ah)",squares,18,"Fightin' my bitch, married the game, made it my wife (Haan)",married,INNER,SLANT,cmu,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",heaven,17,"I gotta go to heaven, I had a hell of a life",hell,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",life,18,"Fightin' my bitch, married the game, made it my wife (Haan)",wife,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",heaven,18,"Fightin' my bitch, married the game, made it my wife (Haan)",married,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",hell,18,"Fightin' my bitch, married the game, made it my wife (Haan)",married,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",life,18,"Fightin' my bitch, married the game, made it my wife (Haan)",Fightin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",gotta,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",Chopper,INNER,SLANT,cmu,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",had,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",dasher,INNER,SLANT,cmu,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",heaven,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",blend,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",heaven,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",Emirates,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",hell,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",blend,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,17,"I gotta go to heaven, I had a hell of a life",hell,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",Emirates,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,18,"Fightin' my bitch, married the game, made it my wife (Haan)",Fightin,18,"Fightin' my bitch, married the game, made it my wife (Haan)",wife,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,18,"Fightin' my bitch, married the game, made it my wife (Haan)",game,18,"Fightin' my bitch, married the game, made it my wife (Haan)",made,INNER,SLANT,cmu,MED,Y
+Another One Of Me,18,"Fightin' my bitch, married the game, made it my wife (Haan)",married,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",blend,INNER,SLANT,cmu,MED,Y
+Another One Of Me,18,"Fightin' my bitch, married the game, made it my wife (Haan)",married,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",Emirates,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,18,"Fightin' my bitch, married the game, made it my wife (Haan)",married,20,"Coi Leray in L.A., no more parties (No more parties)",L,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,18,"Fightin' my bitch, married the game, made it my wife (Haan)",married,20,"Coi Leray in L.A., no more parties (No more parties)",Leray,INNER,SLANT,spelling,LOW,Y
+Another One Of Me,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",blend,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",Emirates,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",blend,20,"Coi Leray in L.A., no more parties (No more parties)",L,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",Chopper,20,"Coi Leray in L.A., no more parties (No more parties)",parties,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",Emirates,20,"Coi Leray in L.A., no more parties (No more parties)",L,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,19,"Chopper under the dasher, blend with the Emirates (Baow, baow-baow-baow)",Chopper,21,"Too $hort from the Bay, got the E and the .40 (Baow-baow-baow)",got,INNER,SLANT,cmu,MED,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",Leray,20,"Coi Leray in L.A., no more parties (No more parties)",L,INNER,SLANT,spelling,LOW,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",Leray,21,"Too $hort from the Bay, got the E and the .40 (Baow-baow-baow)",Bay,INNER,PERFECT,spelling,MED,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",more,21,"Too $hort from the Bay, got the E and the .40 (Baow-baow-baow)",hort,INNER,SLANT,spelling,LOW,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",parties,21,"Too $hort from the Bay, got the E and the .40 (Baow-baow-baow)",got,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",L,22,There's a cause and effect to every action,effect,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",L,22,There's a cause and effect to every action,every,INNER,SLANT,cmu,MED,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",L,22,There's a cause and effect to every action,There's,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",Leray,22,There's a cause and effect to every action,every,INNER,SLANT,spelling,LOW,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",Leray,22,There's a cause and effect to every action,There's,INNER,SLANT,spelling,LOW,Y
+Another One Of Me,20,"Coi Leray in L.A., no more parties (No more parties)",parties,22,There's a cause and effect to every action,cause,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,21,"Too $hort from the Bay, got the E and the .40 (Baow-baow-baow)",got,22,There's a cause and effect to every action,cause,INNER,SLANT,cmu,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,effect,22,There's a cause and effect to every action,every,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,There's,22,There's a cause and effect to every action,effect,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,There's,22,There's a cause and effect to every action,every,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,action,23,"Hold you down, never slip up, like Derif Jackson (Woo)",Jackson,END,SLANT,cmu,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,effect,23,"Hold you down, never slip up, like Derif Jackson (Woo)",never,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,every,23,"Hold you down, never slip up, like Derif Jackson (Woo)",never,INNER,SLANT,cmu,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,There's,23,"Hold you down, never slip up, like Derif Jackson (Woo)",Derif,INNER,SLANT,spelling,LOW,Y
+Another One Of Me,22,There's a cause and effect to every action,There's,23,"Hold you down, never slip up, like Derif Jackson (Woo)",never,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,action,24,"If you can stand the rain, I'll get you that new addition",addition,END,SLANT,spelling,LOW,Y
+Another One Of Me,22,There's a cause and effect to every action,action,24,"If you can stand the rain, I'll get you that new addition",can,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,action,24,"If you can stand the rain, I'll get you that new addition",stand,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,effect,24,"If you can stand the rain, I'll get you that new addition",get,INNER,SLANT,cmu,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,every,24,"If you can stand the rain, I'll get you that new addition",get,INNER,SLANT,cmu,MED,Y
+Another One Of Me,22,There's a cause and effect to every action,There's,24,"If you can stand the rain, I'll get you that new addition",get,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,23,"Hold you down, never slip up, like Derif Jackson (Woo)",Jackson,24,"If you can stand the rain, I'll get you that new addition",can,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,23,"Hold you down, never slip up, like Derif Jackson (Woo)",Jackson,24,"If you can stand the rain, I'll get you that new addition",stand,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,23,"Hold you down, never slip up, like Derif Jackson (Woo)",like,24,"If you can stand the rain, I'll get you that new addition",I'll,INNER,SLANT,cmu,MED,Y
+Another One Of Me,23,"Hold you down, never slip up, like Derif Jackson (Woo)",never,24,"If you can stand the rain, I'll get you that new addition",get,INNER,SLANT,cmu,MED,Y
+Another One Of Me,23,"Hold you down, never slip up, like Derif Jackson (Woo)",slip,24,"If you can stand the rain, I'll get you that new addition",addition,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,23,"Hold you down, never slip up, like Derif Jackson (Woo)",slip,25,"Shawty wanna eat, but wasn't with me in the kitchen (Wasn't with me in the kitchen)",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,24,"If you can stand the rain, I'll get you that new addition",can,24,"If you can stand the rain, I'll get you that new addition",stand,INNER,SLANT,cmu,MED,Y
+Another One Of Me,24,"If you can stand the rain, I'll get you that new addition",addition,25,"Shawty wanna eat, but wasn't with me in the kitchen (Wasn't with me in the kitchen)",kitchen,END,SLANT,cmu,MED,Y
+Another One Of Me,24,"If you can stand the rain, I'll get you that new addition",get,26,Gotta sign a NDA to get next to me (Uh),get,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,24,"If you can stand the rain, I'll get you that new addition",get,26,Gotta sign a NDA to get next to me (Uh),next,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,24,"If you can stand the rain, I'll get you that new addition",I'll,26,Gotta sign a NDA to get next to me (Uh),sign,INNER,SLANT,cmu,MED,Y
+Another One Of Me,25,"Shawty wanna eat, but wasn't with me in the kitchen (Wasn't with me in the kitchen)",wanna,25,"Shawty wanna eat, but wasn't with me in the kitchen (Wasn't with me in the kitchen)",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,25,"Shawty wanna eat, but wasn't with me in the kitchen (Wasn't with me in the kitchen)",wanna,26,Gotta sign a NDA to get next to me (Uh),Gotta,INNER,SLANT,cmu,MED,Y
+Another One Of Me,25,"Shawty wanna eat, but wasn't with me in the kitchen (Wasn't with me in the kitchen)",wasn't,26,Gotta sign a NDA to get next to me (Uh),Gotta,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,25,"Shawty wanna eat, but wasn't with me in the kitchen (Wasn't with me in the kitchen)",kitchen,27,I can turn a whole brick to a NFT (Woo),brick,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,26,Gotta sign a NDA to get next to me (Uh),get,26,Gotta sign a NDA to get next to me (Uh),next,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,26,Gotta sign a NDA to get next to me (Uh),Gotta,28,One-night stand 'cause I'm toxic (21),toxic,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,26,Gotta sign a NDA to get next to me (Uh),sign,28,One-night stand 'cause I'm toxic (21),night,INNER,SLANT,cmu,MED,Y
+Another One Of Me,27,I can turn a whole brick to a NFT (Woo),can,28,One-night stand 'cause I'm toxic (21),stand,INNER,SLANT,cmu,MED,Y
+Another One Of Me,27,I can turn a whole brick to a NFT (Woo),turn,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",tryna,INNER,SLANT,spelling,LOW,Y
+Another One Of Me,27,I can turn a whole brick to a NFT (Woo),whole,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",don't,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,27,I can turn a whole brick to a NFT (Woo),whole,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",go,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,28,One-night stand 'cause I'm toxic (21),One,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",duck,INNER,SLANT,cmu,MED,Y
+Another One Of Me,28,One-night stand 'cause I'm toxic (21),toxic,30,Pull it out and put it in her face like it's hibachi (Ah),hibachi,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,28,One-night stand 'cause I'm toxic (21),night,30,Pull it out and put it in her face like it's hibachi (Ah),like,INNER,SLANT,cmu,MED,Y
+Another One Of Me,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",don't,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",go,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",dates,30,Pull it out and put it in her face like it's hibachi (Ah),face,INNER,SLANT,cmu,MED,Y
+Another One Of Me,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",don't,31,"You know I'm a dog, you probably better off without me (Come on)",know,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",go,31,"You know I'm a dog, you probably better off without me (Come on)",know,INNER,PERFECT,cmu,HIGH,Y
+Another One Of Me,29,"We don't go on dates, I'm tryna duck the paparazzi (Facts)",paparazzi,31,"You know I'm a dog, you probably better off without me (Come on)",probably,INNER,PERFECT,cmu,HIGH,Y
+Another One Of Me,30,Pull it out and put it in her face like it's hibachi (Ah),Pull,30,Pull it out and put it in her face like it's hibachi (Ah),put,INNER,SLANT,cmu,MED,Y
+Another One Of Me,30,Pull it out and put it in her face like it's hibachi (Ah),hibachi,32,"Diamonds on my body, I'm a hockey puck (On God)",body,INNER,SLANT,cmu,MED,Y
+Another One Of Me,30,Pull it out and put it in her face like it's hibachi (Ah),hibachi,32,"Diamonds on my body, I'm a hockey puck (On God)",hockey,INNER,SLANT,cmu,MED,Y
+Another One Of Me,30,Pull it out and put it in her face like it's hibachi (Ah),like,32,"Diamonds on my body, I'm a hockey puck (On God)",Diamonds,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,31,"You know I'm a dog, you probably better off without me (Come on)",probably,33,Lil' mama been around the hood like the ice cream truck (On God),cream,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,31,"You know I'm a dog, you probably better off without me (Come on)",without,33,Lil' mama been around the hood like the ice cream truck (On God),around,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,32,"Diamonds on my body, I'm a hockey puck (On God)",body,32,"Diamonds on my body, I'm a hockey puck (On God)",hockey,INNER,SLANT,cmu,MED,Y
+Another One Of Me,32,"Diamonds on my body, I'm a hockey puck (On God)",puck,33,Lil' mama been around the hood like the ice cream truck (On God),truck,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,32,"Diamonds on my body, I'm a hockey puck (On God)",body,33,Lil' mama been around the hood like the ice cream truck (On God),mama,INNER,SLANT,cmu,MED,Y
+Another One Of Me,32,"Diamonds on my body, I'm a hockey puck (On God)",Diamonds,33,Lil' mama been around the hood like the ice cream truck (On God),ice,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,32,"Diamonds on my body, I'm a hockey puck (On God)",Diamonds,33,Lil' mama been around the hood like the ice cream truck (On God),like,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,32,"Diamonds on my body, I'm a hockey puck (On God)",hockey,33,Lil' mama been around the hood like the ice cream truck (On God),mama,INNER,SLANT,cmu,MED,Y
+Another One Of Me,32,"Diamonds on my body, I'm a hockey puck (On God)",Diamonds,34,"I ain't leavin' you for dead, come get your life cleaned up",life,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,32,"Diamonds on my body, I'm a hockey puck (On God)",puck,34,"I ain't leavin' you for dead, come get your life cleaned up",come,INNER,SLANT,cmu,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),like,33,Lil' mama been around the hood like the ice cream truck (On God),ice,INNER,SLANT,cmu,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),cream,34,"I ain't leavin' you for dead, come get your life cleaned up",cleaned,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),cream,34,"I ain't leavin' you for dead, come get your life cleaned up",leavin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),ice,34,"I ain't leavin' you for dead, come get your life cleaned up",life,INNER,SLANT,cmu,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),like,34,"I ain't leavin' you for dead, come get your life cleaned up",life,INNER,SLANT,cmu,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),truck,34,"I ain't leavin' you for dead, come get your life cleaned up",come,INNER,SLANT,cmu,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),hood,35,"Still can't put a ring on her, she a nice ting but— (Come on)",put,INNER,SLANT,cmu,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),ice,35,"Still can't put a ring on her, she a nice ting but— (Come on)",nice,INNER,PERFECT,cmu,HIGH,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),like,35,"Still can't put a ring on her, she a nice ting but— (Come on)",nice,INNER,SLANT,cmu,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),Lil,35,"Still can't put a ring on her, she a nice ting but— (Come on)",ring,INNER,SLANT,cmu,MED,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),Lil,35,"Still can't put a ring on her, she a nice ting but— (Come on)",Still,INNER,PERFECT,cmu,HIGH,Y
+Another One Of Me,33,Lil' mama been around the hood like the ice cream truck (On God),Lil,35,"Still can't put a ring on her, she a nice ting but— (Come on)",ting,INNER,SLANT,cmu,MED,Y
+Another One Of Me,34,"I ain't leavin' you for dead, come get your life cleaned up",dead,34,"I ain't leavin' you for dead, come get your life cleaned up",get,INNER,SLANT,cmu,MED,Y
+Another One Of Me,34,"I ain't leavin' you for dead, come get your life cleaned up",leavin,34,"I ain't leavin' you for dead, come get your life cleaned up",cleaned,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,34,"I ain't leavin' you for dead, come get your life cleaned up",life,35,"Still can't put a ring on her, she a nice ting but— (Come on)",nice,INNER,SLANT,cmu,MED,Y
+Another One Of Me,34,"I ain't leavin' you for dead, come get your life cleaned up",ain't,36,"You can come and join the team, I got cap space (21)",space,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,34,"I ain't leavin' you for dead, come get your life cleaned up",cleaned,36,"You can come and join the team, I got cap space (21)",team,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,34,"I ain't leavin' you for dead, come get your life cleaned up",come,36,"You can come and join the team, I got cap space (21)",come,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,34,"I ain't leavin' you for dead, come get your life cleaned up",leavin,36,"You can come and join the team, I got cap space (21)",team,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,35,"Still can't put a ring on her, she a nice ting but— (Come on)",ring,35,"Still can't put a ring on her, she a nice ting but— (Come on)",ting,INNER,PERFECT,cmu,HIGH,Y
+Another One Of Me,35,"Still can't put a ring on her, she a nice ting but— (Come on)",Still,35,"Still can't put a ring on her, she a nice ting but— (Come on)",ring,INNER,SLANT,cmu,MED,Y
+Another One Of Me,35,"Still can't put a ring on her, she a nice ting but— (Come on)",Still,35,"Still can't put a ring on her, she a nice ting but— (Come on)",ting,INNER,SLANT,cmu,MED,Y
+Another One Of Me,35,"Still can't put a ring on her, she a nice ting but— (Come on)",can't,36,"You can come and join the team, I got cap space (21)",can,INNER,SLANT,cmu,MED,Y
+Another One Of Me,35,"Still can't put a ring on her, she a nice ting but— (Come on)",can't,36,"You can come and join the team, I got cap space (21)",cap,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,35,"Still can't put a ring on her, she a nice ting but— (Come on)",can't,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",Fat,INNER,SLANT,cmu,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",can,36,"You can come and join the team, I got cap space (21)",cap,INNER,SLANT,cmu,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",space,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",face,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",can,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",Fat,INNER,SLANT,cmu,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",cap,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",Fat,INNER,SLANT,cmu,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",join,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",pointers,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",space,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",base,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",can,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",ballin,INNER,SLANT,cmu,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",cap,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",ballin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",got,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",Rod,INNER,SLANT,cmu,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",join,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",loyal,INNER,SLANT,cmu,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",team,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",leave,INNER,SLANT,cmu,MED,Y
+Another One Of Me,36,"You can come and join the team, I got cap space (21)",space,40,Put her to the test and she was here to stay (21),stay,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",face,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",base,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",bezel,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",never,INNER,ASSONANCE,vowel,LOW,N
+Another One Of Me,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",Fat,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",ballin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",pointers,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",loyal,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",call,39,"You can call me anythin' you want but just don't call me, ""Bae"" (On God)",call,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",Fat,39,"You can call me anythin' you want but just don't call me, ""Bae"" (On God)",can,INNER,SLANT,cmu,MED,Y
+Another One Of Me,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",Whole,39,"You can call me anythin' you want but just don't call me, ""Bae"" (On God)",don't,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",face,40,Put her to the test and she was here to stay (21),stay,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,37,"Whole pointers on the bezel, call it, ""Fat face"" (21)",face,41,Fall asleep on FaceTime when I'm away (21),away,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",ballin,39,"You can call me anythin' you want but just don't call me, ""Bae"" (On God)",can,INNER,SLANT,cmu,MED,Y
+Another One Of Me,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",Rod,39,"You can call me anythin' you want but just don't call me, ""Bae"" (On God)",want,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",base,40,Put her to the test and she was here to stay (21),stay,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",leave,40,Put her to the test and she was here to stay (21),here,INNER,SLANT,cmu,MED,Y
+Another One Of Me,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",never,40,Put her to the test and she was here to stay (21),test,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",base,41,Fall asleep on FaceTime when I'm away (21),away,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,38,"A-Rod, I'm ballin', but I'm loyal, never leave the base (Never)",base,42,"She addicted to the game, and she know I play",play,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,39,"You can call me anythin' you want but just don't call me, ""Bae"" (On God)",call,39,"You can call me anythin' you want but just don't call me, ""Bae"" (On God)",call,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,39,"You can call me anythin' you want but just don't call me, ""Bae"" (On God)",call,41,Fall asleep on FaceTime when I'm away (21),Fall,INNER,PERFECT,cmu,HIGH,Y
+Another One Of Me,40,Put her to the test and she was here to stay (21),stay,41,Fall asleep on FaceTime when I'm away (21),away,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,40,Put her to the test and she was here to stay (21),here,41,Fall asleep on FaceTime when I'm away (21),asleep,INNER,SLANT,cmu,MED,Y
+Another One Of Me,40,Put her to the test and she was here to stay (21),test,41,Fall asleep on FaceTime when I'm away (21),when,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,40,Put her to the test and she was here to stay (21),stay,42,"She addicted to the game, and she know I play",play,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,40,Put her to the test and she was here to stay (21),stay,42,"She addicted to the game, and she know I play",game,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,40,Put her to the test and she was here to stay (21),stay,43,"If you tryna find another me, then you gon' have to pray",pray,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,40,Put her to the test and she was here to stay (21),stay,44,"Oh, oh, oh, oh, oh-oh, baby",baby,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,41,Fall asleep on FaceTime when I'm away (21),away,42,"She addicted to the game, and she know I play",play,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,41,Fall asleep on FaceTime when I'm away (21),away,42,"She addicted to the game, and she know I play",game,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,41,Fall asleep on FaceTime when I'm away (21),away,43,"If you tryna find another me, then you gon' have to pray",pray,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,41,Fall asleep on FaceTime when I'm away (21),asleep,43,"If you tryna find another me, then you gon' have to pray",tryna,INNER,SLANT,spelling,LOW,Y
+Another One Of Me,41,Fall asleep on FaceTime when I'm away (21),FaceTime,43,"If you tryna find another me, then you gon' have to pray",have,INNER,ASSONANCE,vowel,LOW,N
+Another One Of Me,41,Fall asleep on FaceTime when I'm away (21),away,44,"Oh, oh, oh, oh, oh-oh, baby",baby,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,42,"She addicted to the game, and she know I play",game,42,"She addicted to the game, and she know I play",play,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,42,"She addicted to the game, and she know I play",play,43,"If you tryna find another me, then you gon' have to pray",pray,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,42,"She addicted to the game, and she know I play",game,43,"If you tryna find another me, then you gon' have to pray",pray,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,42,"She addicted to the game, and she know I play",play,44,"Oh, oh, oh, oh, oh-oh, baby",baby,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,42,"She addicted to the game, and she know I play",game,44,"Oh, oh, oh, oh, oh-oh, baby",baby,INNER,SLANT,cmu,MED,Y
+Another One Of Me,43,"If you tryna find another me, then you gon' have to pray",pray,44,"Oh, oh, oh, oh, oh-oh, baby",baby,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,43,"If you tryna find another me, then you gon' have to pray",have,45,All I am is a man with ambition to be the best (Ooh-ooh),man,INNER,SLANT,cmu,MED,Y
+Another One Of Me,44,"Oh, oh, oh, oh, oh-oh, baby",baby,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",failed,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,44,"Oh, oh, oh, oh, oh-oh, baby",baby,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",gave,INNER,SLANT,cmu,MED,Y
+Another One Of Me,45,All I am is a man with ambition to be the best (Ooh-ooh),best,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",rest,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,45,All I am is a man with ambition to be the best (Ooh-ooh),ambition,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",vision,INNER,PERFECT,spelling,MED,Y
+Another One Of Me,45,All I am is a man with ambition to be the best (Ooh-ooh),best,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",When,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,45,All I am is a man with ambition to be the best (Ooh-ooh),best,47,Wasn't even ready when God gave me the test,test,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,45,All I am is a man with ambition to be the best (Ooh-ooh),best,47,Wasn't even ready when God gave me the test,ready,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,45,All I am is a man with ambition to be the best (Ooh-ooh),best,47,Wasn't even ready when God gave me the test,when,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,45,All I am is a man with ambition to be the best (Ooh-ooh),best,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,END,SLANT,cmu,MED,Y
+Another One Of Me,45,All I am is a man with ambition to be the best (Ooh-ooh),best,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,END,SLANT,cmu,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",failed,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",gave,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",When,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",rest,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",rest,47,Wasn't even ready when God gave me the test,test,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",failed,47,Wasn't even ready when God gave me the test,gave,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",gave,47,Wasn't even ready when God gave me the test,gave,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",rest,47,Wasn't even ready when God gave me the test,ready,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",rest,47,Wasn't even ready when God gave me the test,when,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",see,47,Wasn't even ready when God gave me the test,even,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",When,47,Wasn't even ready when God gave me the test,ready,INNER,SLANT,cmu,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",When,47,Wasn't even ready when God gave me the test,test,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",When,47,Wasn't even ready when God gave me the test,when,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",rest,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,END,SLANT,cmu,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",failed,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",pray,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",gave,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",pray,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",see,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",pieces,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",When,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",rest,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,END,SLANT,cmu,MED,Y
+Another One Of Me,46,"When I failed, it just gave me the vision to see the rest (Ooh-ooh, ooh-ooh)",rest,50,"Feel it in your soul, it separates from your flesh (Ooh)",flesh,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,ready,47,Wasn't even ready when God gave me the test,test,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,ready,47,Wasn't even ready when God gave me the test,when,INNER,SLANT,cmu,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,Wasn't,47,Wasn't even ready when God gave me the test,God,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,when,47,Wasn't even ready when God gave me the test,test,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,test,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,END,SLANT,cmu,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,even,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",pieces,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,gave,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",pray,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,ready,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,when,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,test,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,END,SLANT,cmu,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,even,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",pieces,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,gave,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",pray,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,ready,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,when,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,test,50,"Feel it in your soul, it separates from your flesh (Ooh)",flesh,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,47,Wasn't even ready when God gave me the test,test,51,"The nights that I cried alone, they taught me best (Ooh)",best,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,END,REPEAT,spelling,HIGH,N
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",find,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",find,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",love,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",love,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",pieces,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",pieces,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",pray,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",pray,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,50,"Feel it in your soul, it separates from your flesh (Ooh)",flesh,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",pieces,50,"Feel it in your soul, it separates from your flesh (Ooh)",Feel,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",pray,50,"Feel it in your soul, it separates from your flesh (Ooh)",separates,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,51,"The nights that I cried alone, they taught me best (Ooh)",best,END,SLANT,cmu,MED,Y
+Another One Of Me,48,"So I pray you find love in the pieces of me that's left (Ooh-ooh, ooh-ooh)",left,52,"Anybody shine like this, they mighty blessed",blessed,END,SLANT,cmu,MED,Y
+Another One Of Me,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,50,"Feel it in your soul, it separates from your flesh (Ooh)",flesh,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",pieces,50,"Feel it in your soul, it separates from your flesh (Ooh)",Feel,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",pray,50,"Feel it in your soul, it separates from your flesh (Ooh)",separates,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,51,"The nights that I cried alone, they taught me best (Ooh)",best,END,SLANT,cmu,MED,Y
+Another One Of Me,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",find,51,"The nights that I cried alone, they taught me best (Ooh)",cried,INNER,SLANT,cmu,MED,Y
+Another One Of Me,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",find,51,"The nights that I cried alone, they taught me best (Ooh)",nights,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,52,"Anybody shine like this, they mighty blessed",blessed,END,SLANT,cmu,MED,Y
+Another One Of Me,49,"Yeah, I pray you find love in the pieces of me that's left (Ooh-ooh)",left,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",manifest,END,SLANT,cmu,MED,Y
+Another One Of Me,50,"Feel it in your soul, it separates from your flesh (Ooh)",flesh,51,"The nights that I cried alone, they taught me best (Ooh)",best,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,50,"Feel it in your soul, it separates from your flesh (Ooh)",soul,51,"The nights that I cried alone, they taught me best (Ooh)",alone,INNER,SLANT,cmu,MED,Y
+Another One Of Me,50,"Feel it in your soul, it separates from your flesh (Ooh)",flesh,52,"Anybody shine like this, they mighty blessed",blessed,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,50,"Feel it in your soul, it separates from your flesh (Ooh)",flesh,52,"Anybody shine like this, they mighty blessed",Anybody,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,50,"Feel it in your soul, it separates from your flesh (Ooh)",flesh,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",manifest,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",nights,51,"The nights that I cried alone, they taught me best (Ooh)",cried,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",best,52,"Anybody shine like this, they mighty blessed",blessed,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",best,52,"Anybody shine like this, they mighty blessed",Anybody,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",cried,52,"Anybody shine like this, they mighty blessed",like,INNER,SLANT,cmu,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",cried,52,"Anybody shine like this, they mighty blessed",mighty,INNER,SLANT,cmu,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",cried,52,"Anybody shine like this, they mighty blessed",shine,INNER,SLANT,cmu,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",nights,52,"Anybody shine like this, they mighty blessed",like,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",nights,52,"Anybody shine like this, they mighty blessed",mighty,INNER,SLANT,cmu,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",nights,52,"Anybody shine like this, they mighty blessed",shine,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",best,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",manifest,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",alone,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",go,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",cried,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",sometimes,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",nights,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",sometimes,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,51,"The nights that I cried alone, they taught me best (Ooh)",best,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",manifest,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",Anybody,52,"Anybody shine like this, they mighty blessed",blessed,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",like,52,"Anybody shine like this, they mighty blessed",mighty,INNER,SLANT,cmu,MED,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",shine,52,"Anybody shine like this, they mighty blessed",like,INNER,SLANT,cmu,MED,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",shine,52,"Anybody shine like this, they mighty blessed",mighty,INNER,SLANT,cmu,MED,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",blessed,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",manifest,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",Anybody,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",manifest,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",like,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",sometimes,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",mighty,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",sometimes,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",shine,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",sometimes,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",blessed,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",manifest,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,52,"Anybody shine like this, they mighty blessed",blessed,56,"Sometimes, you gotta smile through the agony and the stress",stress,END,SLANT,cmu,MED,Y
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",gotta,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",dark,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",manifest,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",manifest,END,REPEAT,spelling,HIGH,N
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",dark,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",dark,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",dark,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",gotta,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",gotta,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",dark,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",gotta,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",gotta,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",sometimes,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",sometimes,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",through,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",through,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",manifest,56,"Sometimes, you gotta smile through the agony and the stress",stress,END,SLANT,cmu,MED,Y
+Another One Of Me,53,"But sometimes, you gotta go through the dark to manifest (Ooh)",manifest,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",jets,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",gotta,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",dark,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",manifest,56,"Sometimes, you gotta smile through the agony and the stress",stress,END,SLANT,cmu,MED,Y
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",dark,56,"Sometimes, you gotta smile through the agony and the stress",gotta,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",gotta,56,"Sometimes, you gotta smile through the agony and the stress",gotta,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",sometimes,56,"Sometimes, you gotta smile through the agony and the stress",smile,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",sometimes,56,"Sometimes, you gotta smile through the agony and the stress",Sometimes,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",through,56,"Sometimes, you gotta smile through the agony and the stress",through,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",manifest,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",jets,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",sometimes,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",flyin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,55,"Yo, sometimes, you gotta through the dark to manifest (Ooh)",manifest,59,But I ain't did shit if God ain't impressed,impressed,END,PERFECT,cmu,HIGH,Y
+Another One Of Me,56,"Sometimes, you gotta smile through the agony and the stress",Sometimes,56,"Sometimes, you gotta smile through the agony and the stress",smile,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,56,"Sometimes, you gotta smile through the agony and the stress",stress,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",jets,END,SLANT,cmu,MED,Y
+Another One Of Me,56,"Sometimes, you gotta smile through the agony and the stress",agony,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",landin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,56,"Sometimes, you gotta smile through the agony and the stress",smile,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",flyin,INNER,SLANT,cmu,MED,Y
+Another One Of Me,56,"Sometimes, you gotta smile through the agony and the stress",Sometimes,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",flyin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,56,"Sometimes, you gotta smile through the agony and the stress",stress,58,The world'll never get another me,get,INNER,SLANT,cmu,MED,Y
+Another One Of Me,56,"Sometimes, you gotta smile through the agony and the stress",stress,58,The world'll never get another me,never,INNER,SLANT,cmu,MED,Y
+Another One Of Me,56,"Sometimes, you gotta smile through the agony and the stress",stress,59,But I ain't did shit if God ain't impressed,impressed,END,SLANT,cmu,MED,Y
+Another One Of Me,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",jets,58,The world'll never get another me,get,INNER,SLANT,cmu,MED,Y
+Another One Of Me,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",jets,58,The world'll never get another me,never,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",jets,59,But I ain't did shit if God ain't impressed,impressed,END,ASSONANCE,vowel,MED,Y
+Another One Of Me,57,"My feet ain't been on the ground, I'm flyin' and landin' jets (Yeah, yeah, yeah)",ain't,59,But I ain't did shit if God ain't impressed,ain't,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,58,The world'll never get another me,never,58,The world'll never get another me,get,INNER,SLANT,cmu,MED,Y
+Another One Of Me,58,The world'll never get another me,get,59,But I ain't did shit if God ain't impressed,impressed,INNER,SLANT,cmu,MED,Y
+Another One Of Me,58,The world'll never get another me,never,59,But I ain't did shit if God ain't impressed,impressed,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,59,But I ain't did shit if God ain't impressed,ain't,59,But I ain't did shit if God ain't impressed,ain't,INNER,REPEAT,spelling,HIGH,N
+Another One Of Me,59,But I ain't did shit if God ain't impressed,God,60,I keep talkin' to Him,talkin,INNER,ASSONANCE,vowel,MED,Y
+Another One Of Me,59,But I ain't did shit if God ain't impressed,shit,60,I keep talkin' to Him,Him,INNER,SLANT,cmu,MED,Y

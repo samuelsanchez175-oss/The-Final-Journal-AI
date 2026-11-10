@@ -1,0 +1,890 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",chase,1,"Huh, ayy, chase the money, chase the money",chase,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",money,1,"Huh, ayy, chase the money, chase the money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",money,2,"Get the pen for counterfeit, they tryna fake the money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",chase,2,"Get the pen for counterfeit, they tryna fake the money",fake,INNER,SLANT,cmu,MED,Y
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",money,2,"Get the pen for counterfeit, they tryna fake the money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",money,3,"They be all the way around it, they must hate the money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",chase,3,"They be all the way around it, they must hate the money",hate,INNER,SLANT,cmu,MED,Y
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",chase,3,"They be all the way around it, they must hate the money",way,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",money,3,"They be all the way around it, they must hate the money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",money,3,"They be all the way around it, they must hate the money",must,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",money,4,"I just touched down by Inglewood, bitch, I got Laker money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,1,"Huh, ayy, chase the money, chase the money",money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",Get,2,"Get the pen for counterfeit, they tryna fake the money",pen,INNER,SLANT,cmu,MED,Y
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",money,3,"They be all the way around it, they must hate the money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",fake,3,"They be all the way around it, they must hate the money",hate,INNER,SLANT,cmu,MED,Y
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",fake,3,"They be all the way around it, they must hate the money",way,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",money,3,"They be all the way around it, they must hate the money",must,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",money,4,"I just touched down by Inglewood, bitch, I got Laker money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",counterfeit,4,"I just touched down by Inglewood, bitch, I got Laker money",bitch,INNER,SLANT,cmu,MED,Y
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",fake,4,"I just touched down by Inglewood, bitch, I got Laker money",Laker,INNER,SLANT,cmu,MED,Y
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",money,4,"I just touched down by Inglewood, bitch, I got Laker money",touched,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,2,"Get the pen for counterfeit, they tryna fake the money",money,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,3,"They be all the way around it, they must hate the money",must,3,"They be all the way around it, they must hate the money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",way,3,"They be all the way around it, they must hate the money",hate,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",money,4,"I just touched down by Inglewood, bitch, I got Laker money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,3,"They be all the way around it, they must hate the money",around,4,"I just touched down by Inglewood, bitch, I got Laker money",down,INNER,SLANT,cmu,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",hate,4,"I just touched down by Inglewood, bitch, I got Laker money",Laker,INNER,SLANT,cmu,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",money,4,"I just touched down by Inglewood, bitch, I got Laker money",touched,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",must,4,"I just touched down by Inglewood, bitch, I got Laker money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",must,4,"I just touched down by Inglewood, bitch, I got Laker money",touched,INNER,SLANT,cmu,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",way,4,"I just touched down by Inglewood, bitch, I got Laker money",Laker,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,3,"They be all the way around it, they must hate the money",hate,5,"I see that ice cube on your wrist, bitch, I got Glacier money",Glacier,INNER,SLANT,cmu,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",must,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",way,5,"I see that ice cube on your wrist, bitch, I got Glacier money",Glacier,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,3,"They be all the way around it, they must hate the money",money,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,3,"They be all the way around it, they must hate the money",money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",touched,4,"I just touched down by Inglewood, bitch, I got Laker money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",bitch,5,"I see that ice cube on your wrist, bitch, I got Glacier money",bitch,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",bitch,5,"I see that ice cube on your wrist, bitch, I got Glacier money",wrist,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",by,5,"I see that ice cube on your wrist, bitch, I got Glacier money",ice,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",got,5,"I see that ice cube on your wrist, bitch, I got Glacier money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",Laker,5,"I see that ice cube on your wrist, bitch, I got Glacier money",Glacier,INNER,SLANT,cmu,MED,Y
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",touched,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",money,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",bitch,6,"Shotta knock the hair up off his head, bitch, I got taper money",bitch,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",got,6,"Shotta knock the hair up off his head, bitch, I got taper money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",got,6,"Shotta knock the hair up off his head, bitch, I got taper money",knock,INNER,SLANT,cmu,MED,Y
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",Laker,6,"Shotta knock the hair up off his head, bitch, I got taper money",taper,INNER,SLANT,cmu,MED,Y
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",touched,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,4,"I just touched down by Inglewood, bitch, I got Laker money",money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",wrist,5,"I see that ice cube on your wrist, bitch, I got Glacier money",bitch,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",bitch,6,"Shotta knock the hair up off his head, bitch, I got taper money",bitch,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",Glacier,6,"Shotta knock the hair up off his head, bitch, I got taper money",taper,INNER,SLANT,cmu,MED,Y
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",got,6,"Shotta knock the hair up off his head, bitch, I got taper money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",got,6,"Shotta knock the hair up off his head, bitch, I got taper money",knock,INNER,SLANT,cmu,MED,Y
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",wrist,6,"Shotta knock the hair up off his head, bitch, I got taper money",bitch,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",bitch,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",bitch,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",Glacier,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",Glacier,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",favor,INNER,SLANT,cmu,MED,Y
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",Glacier,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",h,INNER,SLANT,cmu,MED,Y
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",got,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",see,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",lp,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",wrist,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",bitch,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,5,"I see that ice cube on your wrist, bitch, I got Glacier money",money,9,"I paid 'em Gravediggers, I got Undertaker money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",hair,6,"Shotta knock the hair up off his head, bitch, I got taper money",head,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",knock,6,"Shotta knock the hair up off his head, bitch, I got taper money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",bitch,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",bitch,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",got,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",hair,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",hair,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",When,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",head,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",head,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",When,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",knock,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",taper,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",taper,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",favor,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",taper,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",h,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",bitch,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",got,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",comm,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",got,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",knock,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",comm,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",knock,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",Fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",taper,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",hater,INNER,SLANT,cmu,MED,Y
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,9,"I paid 'em Gravediggers, I got Undertaker money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,6,"Shotta knock the hair up off his head, bitch, I got taper money",money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",favor,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",h,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",h,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",h,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",favor,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",When,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",hater,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",bitch,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",favor,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",hater,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",got,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",comm,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",got,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",h,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",hater,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",lp,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",see,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",Fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",money,9,"I paid 'em Gravediggers, I got Undertaker money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,9,"I paid 'em Gravediggers, I got Undertaker money",paid,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",ain't,9,"I paid 'em Gravediggers, I got Undertaker money",Undertaker,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",favor,9,"I paid 'em Gravediggers, I got Undertaker money",paid,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",favor,9,"I paid 'em Gravediggers, I got Undertaker money",Undertaker,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",got,9,"I paid 'em Gravediggers, I got Undertaker money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",h,9,"I paid 'em Gravediggers, I got Undertaker money",paid,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",h,9,"I paid 'em Gravediggers, I got Undertaker money",Undertaker,INNER,SLANT,cmu,MED,Y
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,7,"When I was down, I ain't get hеlp, so bitch, I ain't got favor money",money,11,"If he looked under, he'da probably jumped the table money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",comm,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",Fuck,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,9,"I paid 'em Gravediggers, I got Undertaker money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",comm,9,"I paid 'em Gravediggers, I got Undertaker money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",Fuck,9,"I paid 'em Gravediggers, I got Undertaker money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",got,9,"I paid 'em Gravediggers, I got Undertaker money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",hater,9,"I paid 'em Gravediggers, I got Undertaker money",paid,INNER,SLANT,cmu,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",hater,9,"I paid 'em Gravediggers, I got Undertaker money",Undertaker,INNER,SLANT,cmu,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",comm,10,"Independent than a fuck, I got ""Fuck a label"" money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",Fuck,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",Fuck,10,"Independent than a fuck, I got ""Fuck a label"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",got,10,"Independent than a fuck, I got ""Fuck a label"" money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",hater,10,"Independent than a fuck, I got ""Fuck a label"" money",label,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,11,"If he looked under, he'da probably jumped the table money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,8,"Yeah, I see the lil' commеnts, I got ""Fuck a hater"" money",money,12,"I get the plug knocked off, I gotta cut the cable money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",paid,9,"I paid 'em Gravediggers, I got Undertaker money",Undertaker,INNER,SLANT,cmu,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",got,10,"Independent than a fuck, I got ""Fuck a label"" money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",paid,10,"Independent than a fuck, I got ""Fuck a label"" money",label,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",Undertaker,10,"Independent than a fuck, I got ""Fuck a label"" money",label,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",money,11,"If he looked under, he'da probably jumped the table money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",money,11,"If he looked under, he'da probably jumped the table money",jumped,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",money,11,"If he looked under, he'da probably jumped the table money",under,INNER,SLANT,cmu,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",paid,11,"If he looked under, he'da probably jumped the table money",he'da,INNER,SLANT,cmu,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",paid,11,"If he looked under, he'da probably jumped the table money",table,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",Undertaker,11,"If he looked under, he'da probably jumped the table money",he'da,INNER,SLANT,cmu,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",Undertaker,11,"If he looked under, he'da probably jumped the table money",table,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",money,12,"I get the plug knocked off, I gotta cut the cable money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,9,"I paid 'em Gravediggers, I got Undertaker money",money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,10,"Independent than a fuck, I got ""Fuck a label"" money",Fuck,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,10,"Independent than a fuck, I got ""Fuck a label"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,11,"If he looked under, he'da probably jumped the table money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,11,"If he looked under, he'da probably jumped the table money",jumped,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,11,"If he looked under, he'da probably jumped the table money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,11,"If he looked under, he'da probably jumped the table money",under,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",Fuck label,11,"If he looked under, he'da probably jumped the table money",jumped table,INNER,MULTI,multi,HIGH,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",label,11,"If he looked under, he'da probably jumped the table money",he'da,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",label,11,"If he looked under, he'da probably jumped the table money",table,INNER,MULTI,multi,HIGH,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,11,"If he looked under, he'da probably jumped the table money",jumped,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,11,"If he looked under, he'da probably jumped the table money",under,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,12,"I get the plug knocked off, I gotta cut the cable money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,12,"I get the plug knocked off, I gotta cut the cable money",cut,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,12,"I get the plug knocked off, I gotta cut the cable money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",fuck,12,"I get the plug knocked off, I gotta cut the cable money",plug,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",Fuck label,12,"I get the plug knocked off, I gotta cut the cable money",cut cable,INNER,MULTI,multi,HIGH,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",got,12,"I get the plug knocked off, I gotta cut the cable money",gotta,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",got,12,"I get the plug knocked off, I gotta cut the cable money",knocked,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",Independent,12,"I get the plug knocked off, I gotta cut the cable money",get,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",label,12,"I get the plug knocked off, I gotta cut the cable money",cable,INNER,MULTI,multi,HIGH,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,12,"I get the plug knocked off, I gotta cut the cable money",cut,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,12,"I get the plug knocked off, I gotta cut the cable money",plug,INNER,SLANT,cmu,MED,Y
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,10,"Independent than a fuck, I got ""Fuck a label"" money",money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",he'da,11,"If he looked under, he'da probably jumped the table money",table,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",jumped,11,"If he looked under, he'da probably jumped the table money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",under,11,"If he looked under, he'da probably jumped the table money",jumped,INNER,SLANT,cmu,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",under,11,"If he looked under, he'da probably jumped the table money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",money,12,"I get the plug knocked off, I gotta cut the cable money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",he'da,12,"I get the plug knocked off, I gotta cut the cable money",cable,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",jumped,12,"I get the plug knocked off, I gotta cut the cable money",cut,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",jumped,12,"I get the plug knocked off, I gotta cut the cable money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",jumped,12,"I get the plug knocked off, I gotta cut the cable money",plug,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",jumped table,12,"I get the plug knocked off, I gotta cut the cable money",cut cable,INNER,MULTI,multi,HIGH,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",money,12,"I get the plug knocked off, I gotta cut the cable money",cut,INNER,SLANT,cmu,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",money,12,"I get the plug knocked off, I gotta cut the cable money",plug,INNER,SLANT,cmu,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",table,12,"I get the plug knocked off, I gotta cut the cable money",cable,INNER,MULTI,multi,HIGH,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",under,12,"I get the plug knocked off, I gotta cut the cable money",cut,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",under,12,"I get the plug knocked off, I gotta cut the cable money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",under,12,"I get the plug knocked off, I gotta cut the cable money",plug,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",he'da,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Bagel,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",jumped,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",jumped,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",jumped,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,INNER,SLANT,cmu,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",table,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Bagel,INNER,SLANT,cmu,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",under,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",under,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",under,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,11,"If he looked under, he'da probably jumped the table money",money,15,"Royal blue hundreds, I got paper stuck on paper money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",cut,12,"I get the plug knocked off, I gotta cut the cable money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",knocked,12,"I get the plug knocked off, I gotta cut the cable money",gotta,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",plug,12,"I get the plug knocked off, I gotta cut the cable money",cut,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",plug,12,"I get the plug knocked off, I gotta cut the cable money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",cable,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Bagel,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",cut,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",cut,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",cut,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",get,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",bread,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",plug,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",plug,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",plug,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",cable,14,"Bol plug us some Ms, that's a hunnid flavors money",flavors,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",cut,14,"Bol plug us some Ms, that's a hunnid flavors money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",cut,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",cut,14,"Bol plug us some Ms, that's a hunnid flavors money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",gotta,14,"Bol plug us some Ms, that's a hunnid flavors money",Bol,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",knocked,14,"Bol plug us some Ms, that's a hunnid flavors money",Bol,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",money,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",money,14,"Bol plug us some Ms, that's a hunnid flavors money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",plug,14,"Bol plug us some Ms, that's a hunnid flavors money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",plug,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",plug,14,"Bol plug us some Ms, that's a hunnid flavors money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",money,15,"Royal blue hundreds, I got paper stuck on paper money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,12,"I get the plug knocked off, I gotta cut the cable money",money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Bagel,14,"Bol plug us some Ms, that's a hunnid flavors money",flavors,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,14,"Bol plug us some Ms, that's a hunnid flavors money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,14,"Bol plug us some Ms, that's a hunnid flavors money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,14,"Bol plug us some Ms, that's a hunnid flavors money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,14,"Bol plug us some Ms, that's a hunnid flavors money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,14,"Bol plug us some Ms, that's a hunnid flavors money",some,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",splittin,14,"Bol plug us some Ms, that's a hunnid flavors money",Ms,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,15,"Royal blue hundreds, I got paper stuck on paper money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Bagel,15,"Royal blue hundreds, I got paper stuck on paper money",paper,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,15,"Royal blue hundreds, I got paper stuck on paper money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",Cut,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,15,"Royal blue hundreds, I got paper stuck on paper money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",some,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,13,"Early morning splittin' bread, this some ""Cut the Bagel"" money",money,17,Obsessed with it to the point I might just rape the money,money,END,REPEAT,spelling,HIGH,N
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,14,"Bol plug us some Ms, that's a hunnid flavors money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,14,"Bol plug us some Ms, that's a hunnid flavors money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",some,14,"Bol plug us some Ms, that's a hunnid flavors money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,15,"Royal blue hundreds, I got paper stuck on paper money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",Bol,15,"Royal blue hundreds, I got paper stuck on paper money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",flavors,15,"Royal blue hundreds, I got paper stuck on paper money",paper,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,15,"Royal blue hundreds, I got paper stuck on paper money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",some,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",some,15,"Royal blue hundreds, I got paper stuck on paper money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",some,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",Bol,16,"My hitman, yeah, I got some ""Up his Ranking"" money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",plug,16,"My hitman, yeah, I got some ""Up his Ranking"" money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",some,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",some,16,"My hitman, yeah, I got some ""Up his Ranking"" money",some,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,17,Obsessed with it to the point I might just rape the money,money,END,REPEAT,spelling,HIGH,N
+Chase The Money,14,"Bol plug us some Ms, that's a hunnid flavors money",money,18,"At this point every offer that I get, you take the money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,15,"Royal blue hundreds, I got paper stuck on paper money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",paper,15,"Royal blue hundreds, I got paper stuck on paper money",paper,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,15,"Royal blue hundreds, I got paper stuck on paper money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",got,16,"My hitman, yeah, I got some ""Up his Ranking"" money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,16,"My hitman, yeah, I got some ""Up his Ranking"" money",some,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,16,"My hitman, yeah, I got some ""Up his Ranking"" money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",money,17,Obsessed with it to the point I might just rape the money,money,END,REPEAT,spelling,HIGH,N
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",hundreds,17,Obsessed with it to the point I might just rape the money,money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",paper,17,Obsessed with it to the point I might just rape the money,rape,INNER,SLANT,cmu,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",Royal,17,Obsessed with it to the point I might just rape the money,point,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",stuck,17,Obsessed with it to the point I might just rape the money,money,INNER,SLANT,cmu,MED,Y
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",money,18,"At this point every offer that I get, you take the money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,15,"Royal blue hundreds, I got paper stuck on paper money",money,19,You gotta know to not let it make you make the money,money,END,REPEAT,spelling,HIGH,N
+Chase The Money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",hitman,16,"My hitman, yeah, I got some ""Up his Ranking"" money",Ranking,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",some,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,17,Obsessed with it to the point I might just rape the money,money,END,REPEAT,spelling,HIGH,N
+Chase The Money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",some,17,Obsessed with it to the point I might just rape the money,money,INNER,SLANT,cmu,MED,Y
+Chase The Money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,18,"At this point every offer that I get, you take the money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",some,18,"At this point every offer that I get, you take the money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,19,You gotta know to not let it make you make the money,money,END,REPEAT,spelling,HIGH,N
+Chase The Money,16,"My hitman, yeah, I got some ""Up his Ranking"" money",money,20,"You sittin' on the bench, I got star player money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,17,Obsessed with it to the point I might just rape the money,money,18,"At this point every offer that I get, you take the money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,17,Obsessed with it to the point I might just rape the money,Obsessed,18,"At this point every offer that I get, you take the money",every,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,17,Obsessed with it to the point I might just rape the money,Obsessed,18,"At this point every offer that I get, you take the money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,17,Obsessed with it to the point I might just rape the money,point,18,"At this point every offer that I get, you take the money",point,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,17,Obsessed with it to the point I might just rape the money,rape,18,"At this point every offer that I get, you take the money",take,INNER,SLANT,cmu,MED,Y
+Chase The Money,17,Obsessed with it to the point I might just rape the money,money,19,You gotta know to not let it make you make the money,money,END,REPEAT,spelling,HIGH,N
+Chase The Money,17,Obsessed with it to the point I might just rape the money,Obsessed,19,You gotta know to not let it make you make the money,let,INNER,SLANT,cmu,MED,Y
+Chase The Money,17,Obsessed with it to the point I might just rape the money,rape,19,You gotta know to not let it make you make the money,make,INNER,SLANT,cmu,MED,Y
+Chase The Money,17,Obsessed with it to the point I might just rape the money,money,20,"You sittin' on the bench, I got star player money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,17,Obsessed with it to the point I might just rape the money,money,21,"House built like the Death Star, this Darth Vader money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,18,"At this point every offer that I get, you take the money",every,18,"At this point every offer that I get, you take the money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,18,"At this point every offer that I get, you take the money",money,19,You gotta know to not let it make you make the money,money,END,REPEAT,spelling,HIGH,N
+Chase The Money,18,"At this point every offer that I get, you take the money",every,19,You gotta know to not let it make you make the money,let,INNER,SLANT,cmu,MED,Y
+Chase The Money,18,"At this point every offer that I get, you take the money",get,19,You gotta know to not let it make you make the money,let,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,18,"At this point every offer that I get, you take the money",take,19,You gotta know to not let it make you make the money,make,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,18,"At this point every offer that I get, you take the money",money,20,"You sittin' on the bench, I got star player money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,18,"At this point every offer that I get, you take the money",every,20,"You sittin' on the bench, I got star player money",bench,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,18,"At this point every offer that I get, you take the money",get,20,"You sittin' on the bench, I got star player money",bench,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,18,"At this point every offer that I get, you take the money",take,20,"You sittin' on the bench, I got star player money",player,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,18,"At this point every offer that I get, you take the money",money,21,"House built like the Death Star, this Darth Vader money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,18,"At this point every offer that I get, you take the money",money,22,"This head tap, this ain't Heartgrazer money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,19,You gotta know to not let it make you make the money,gotta,19,You gotta know to not let it make you make the money,not,INNER,SLANT,cmu,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,make,19,You gotta know to not let it make you make the money,make,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,19,You gotta know to not let it make you make the money,money,20,"You sittin' on the bench, I got star player money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,19,You gotta know to not let it make you make the money,gotta,20,"You sittin' on the bench, I got star player money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,gotta,20,"You sittin' on the bench, I got star player money",star,INNER,SLANT,cmu,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,let,20,"You sittin' on the bench, I got star player money",bench,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,make,20,"You sittin' on the bench, I got star player money",player,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,not,20,"You sittin' on the bench, I got star player money",got,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,19,You gotta know to not let it make you make the money,not,20,"You sittin' on the bench, I got star player money",star,INNER,SLANT,cmu,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,money,21,"House built like the Death Star, this Darth Vader money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,19,You gotta know to not let it make you make the money,gotta,21,"House built like the Death Star, this Darth Vader money",Darth,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,gotta,21,"House built like the Death Star, this Darth Vader money",Star,INNER,SLANT,cmu,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,let,21,"House built like the Death Star, this Darth Vader money",Death,INNER,SLANT,cmu,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,make,21,"House built like the Death Star, this Darth Vader money",Vader,INNER,SLANT,cmu,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,not,21,"House built like the Death Star, this Darth Vader money",Darth,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,not,21,"House built like the Death Star, this Darth Vader money",Star,INNER,SLANT,cmu,MED,Y
+Chase The Money,19,You gotta know to not let it make you make the money,money,22,"This head tap, this ain't Heartgrazer money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,19,You gotta know to not let it make you make the money,money,23,"When you got all this money, you can start playin' dummy",dummy,END,SLANT,cmu,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",got,20,"You sittin' on the bench, I got star player money",star,INNER,SLANT,cmu,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",money,21,"House built like the Death Star, this Darth Vader money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,20,"You sittin' on the bench, I got star player money",bench,21,"House built like the Death Star, this Darth Vader money",Death,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",got,21,"House built like the Death Star, this Darth Vader money",Darth,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",got,21,"House built like the Death Star, this Darth Vader money",Star,INNER,SLANT,cmu,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",player,21,"House built like the Death Star, this Darth Vader money",Vader,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",sittin,21,"House built like the Death Star, this Darth Vader money",built,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",star,21,"House built like the Death Star, this Darth Vader money",Darth,INNER,SLANT,cmu,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",star,21,"House built like the Death Star, this Darth Vader money",Star,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,20,"You sittin' on the bench, I got star player money",money,22,"This head tap, this ain't Heartgrazer money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,20,"You sittin' on the bench, I got star player money",bench,22,"This head tap, this ain't Heartgrazer money",head,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",player,22,"This head tap, this ain't Heartgrazer money",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",money,23,"When you got all this money, you can start playin' dummy",dummy,END,SLANT,cmu,MED,Y
+Chase The Money,20,"You sittin' on the bench, I got star player money",money,24,"I'll put his bitch wherever, I got ""Park later"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",Star,21,"House built like the Death Star, this Darth Vader money",Darth,INNER,SLANT,cmu,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",money,22,"This head tap, this ain't Heartgrazer money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",Death,22,"This head tap, this ain't Heartgrazer money",head,INNER,SLANT,cmu,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",Vader,22,"This head tap, this ain't Heartgrazer money",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",money,23,"When you got all this money, you can start playin' dummy",dummy,END,SLANT,cmu,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",Darth,23,"When you got all this money, you can start playin' dummy",got,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",Darth,23,"When you got all this money, you can start playin' dummy",start,INNER,SLANT,cmu,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",Death,23,"When you got all this money, you can start playin' dummy",When,INNER,SLANT,cmu,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",money,23,"When you got all this money, you can start playin' dummy",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",Star,23,"When you got all this money, you can start playin' dummy",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",Star,23,"When you got all this money, you can start playin' dummy",start,INNER,SLANT,cmu,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",Vader,23,"When you got all this money, you can start playin' dummy",playin,INNER,SLANT,cmu,MED,Y
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",money,24,"I'll put his bitch wherever, I got ""Park later"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,21,"House built like the Death Star, this Darth Vader money",money,25,"We open up and we close, it's ""Park Ranger"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",money,23,"When you got all this money, you can start playin' dummy",dummy,END,SLANT,cmu,MED,Y
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",ain't,23,"When you got all this money, you can start playin' dummy",playin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",head,23,"When you got all this money, you can start playin' dummy",When,INNER,SLANT,cmu,MED,Y
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",money,23,"When you got all this money, you can start playin' dummy",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",tap,23,"When you got all this money, you can start playin' dummy",can,INNER,SLANT,cmu,MED,Y
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",money,24,"I'll put his bitch wherever, I got ""Park later"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",ain't,24,"I'll put his bitch wherever, I got ""Park later"" money",later,INNER,SLANT,cmu,MED,Y
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",head,24,"I'll put his bitch wherever, I got ""Park later"" money",wherever,INNER,SLANT,cmu,MED,Y
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",money,25,"We open up and we close, it's ""Park Ranger"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,22,"This head tap, this ain't Heartgrazer money",money,26,"Once upon a time, I used to pray it'd start rainin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,23,"When you got all this money, you can start playin' dummy",got,23,"When you got all this money, you can start playin' dummy",start,INNER,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",money,23,"When you got all this money, you can start playin' dummy",dummy,INNER,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",dummy,24,"I'll put his bitch wherever, I got ""Park later"" money",money,END,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",got,24,"I'll put his bitch wherever, I got ""Park later"" money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,23,"When you got all this money, you can start playin' dummy",got,24,"I'll put his bitch wherever, I got ""Park later"" money",Park,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",money,24,"I'll put his bitch wherever, I got ""Park later"" money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,23,"When you got all this money, you can start playin' dummy",playin,24,"I'll put his bitch wherever, I got ""Park later"" money",later,INNER,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",start,24,"I'll put his bitch wherever, I got ""Park later"" money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",start,24,"I'll put his bitch wherever, I got ""Park later"" money",Park,INNER,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",When,24,"I'll put his bitch wherever, I got ""Park later"" money",wherever,INNER,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",dummy,25,"We open up and we close, it's ""Park Ranger"" money",money,END,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",got,25,"We open up and we close, it's ""Park Ranger"" money",Park,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",money,25,"We open up and we close, it's ""Park Ranger"" money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,23,"When you got all this money, you can start playin' dummy",playin,25,"We open up and we close, it's ""Park Ranger"" money",Ranger,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",start,25,"We open up and we close, it's ""Park Ranger"" money",Park,INNER,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",dummy,26,"Once upon a time, I used to pray it'd start rainin' money",money,END,SLANT,cmu,MED,Y
+Chase The Money,23,"When you got all this money, you can start playin' dummy",dummy,27,"Supreme on the side, pull the trigger, spray some money",money,END,SLANT,cmu,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",got,24,"I'll put his bitch wherever, I got ""Park later"" money",Park,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",money,25,"We open up and we close, it's ""Park Ranger"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",got,25,"We open up and we close, it's ""Park Ranger"" money",Park,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",later,25,"We open up and we close, it's ""Park Ranger"" money",Ranger,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",Park,25,"We open up and we close, it's ""Park Ranger"" money",Park,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",money,26,"Once upon a time, I used to pray it'd start rainin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",bitch,26,"Once upon a time, I used to pray it'd start rainin' money",it'd,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",got,26,"Once upon a time, I used to pray it'd start rainin' money",start,INNER,SLANT,cmu,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",got,26,"Once upon a time, I used to pray it'd start rainin' money",upon,INNER,SLANT,cmu,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",I'll,26,"Once upon a time, I used to pray it'd start rainin' money",time,INNER,SLANT,cmu,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",later,26,"Once upon a time, I used to pray it'd start rainin' money",pray,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",later,26,"Once upon a time, I used to pray it'd start rainin' money",rainin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",money,26,"Once upon a time, I used to pray it'd start rainin' money",Once,INNER,SLANT,cmu,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",Park,26,"Once upon a time, I used to pray it'd start rainin' money",start,INNER,SLANT,cmu,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",Park,26,"Once upon a time, I used to pray it'd start rainin' money",upon,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",money,27,"Supreme on the side, pull the trigger, spray some money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,24,"I'll put his bitch wherever, I got ""Park later"" money",money,28,"You would think autumn started, got the strippers rakin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",open,25,"We open up and we close, it's ""Park Ranger"" money",close,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",money,26,"Once upon a time, I used to pray it'd start rainin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",money,26,"Once upon a time, I used to pray it'd start rainin' money",Once,INNER,SLANT,cmu,MED,Y
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",Park,26,"Once upon a time, I used to pray it'd start rainin' money",start,INNER,SLANT,cmu,MED,Y
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",Park,26,"Once upon a time, I used to pray it'd start rainin' money",upon,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",Ranger,26,"Once upon a time, I used to pray it'd start rainin' money",pray,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",Ranger,26,"Once upon a time, I used to pray it'd start rainin' money",rainin,INNER,SLANT,cmu,MED,Y
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",money,27,"Supreme on the side, pull the trigger, spray some money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",money,27,"Supreme on the side, pull the trigger, spray some money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",Ranger,27,"Supreme on the side, pull the trigger, spray some money",spray,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",money,28,"You would think autumn started, got the strippers rakin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,25,"We open up and we close, it's ""Park Ranger"" money",money,29,"Jugg Messiah, I up a M off mobile bankin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",Once,26,"Once upon a time, I used to pray it'd start rainin' money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",pray,26,"Once upon a time, I used to pray it'd start rainin' money",rainin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",upon,26,"Once upon a time, I used to pray it'd start rainin' money",start,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",money,27,"Supreme on the side, pull the trigger, spray some money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",it'd,27,"Supreme on the side, pull the trigger, spray some money",trigger,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",money,27,"Supreme on the side, pull the trigger, spray some money",some,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",Once,27,"Supreme on the side, pull the trigger, spray some money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",Once,27,"Supreme on the side, pull the trigger, spray some money",some,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",pray,27,"Supreme on the side, pull the trigger, spray some money",spray,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",rainin,27,"Supreme on the side, pull the trigger, spray some money",spray,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",time,27,"Supreme on the side, pull the trigger, spray some money",side,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",money,28,"You would think autumn started, got the strippers rakin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",it'd,28,"You would think autumn started, got the strippers rakin' money",strippers,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",it'd,28,"You would think autumn started, got the strippers rakin' money",think,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",Once,28,"You would think autumn started, got the strippers rakin' money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",pray,28,"You would think autumn started, got the strippers rakin' money",rakin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",rainin,28,"You would think autumn started, got the strippers rakin' money",rakin,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",start,28,"You would think autumn started, got the strippers rakin' money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",start,28,"You would think autumn started, got the strippers rakin' money",started,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",upon,28,"You would think autumn started, got the strippers rakin' money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",upon,28,"You would think autumn started, got the strippers rakin' money",started,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",money,29,"Jugg Messiah, I up a M off mobile bankin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,26,"Once upon a time, I used to pray it'd start rainin' money",money,30,"We done turned the knob up, now the spot crankin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",some,27,"Supreme on the side, pull the trigger, spray some money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",money,28,"You would think autumn started, got the strippers rakin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",pull,28,"You would think autumn started, got the strippers rakin' money",would,INNER,SLANT,cmu,MED,Y
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",some,28,"You would think autumn started, got the strippers rakin' money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",spray,28,"You would think autumn started, got the strippers rakin' money",rakin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",trigger,28,"You would think autumn started, got the strippers rakin' money",strippers,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",trigger,28,"You would think autumn started, got the strippers rakin' money",think,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",money,29,"Jugg Messiah, I up a M off mobile bankin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",side,29,"Jugg Messiah, I up a M off mobile bankin' money",Messiah,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",some,29,"Jugg Messiah, I up a M off mobile bankin' money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",money,30,"We done turned the knob up, now the spot crankin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,27,"Supreme on the side, pull the trigger, spray some money",money,31,"Back door season, lil' cousin flanked for money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",started,28,"You would think autumn started, got the strippers rakin' money",got,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",think,28,"You would think autumn started, got the strippers rakin' money",strippers,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",money,29,"Jugg Messiah, I up a M off mobile bankin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",money,30,"We done turned the knob up, now the spot crankin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",got,30,"We done turned the knob up, now the spot crankin' money",knob,INNER,SLANT,cmu,MED,Y
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",got,30,"We done turned the knob up, now the spot crankin' money",spot,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",money,30,"We done turned the knob up, now the spot crankin' money",done,INNER,SLANT,cmu,MED,Y
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",started,30,"We done turned the knob up, now the spot crankin' money",knob,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",started,30,"We done turned the knob up, now the spot crankin' money",spot,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",money,31,"Back door season, lil' cousin flanked for money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,28,"You would think autumn started, got the strippers rakin' money",money,32,"Heard your man's locked up, Unky, he'll shank for money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,29,"Jugg Messiah, I up a M off mobile bankin' money",money,30,"We done turned the knob up, now the spot crankin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,29,"Jugg Messiah, I up a M off mobile bankin' money",bankin,30,"We done turned the knob up, now the spot crankin' money",crankin,INNER,MULTI,multi,HIGH,Y
+Chase The Money,29,"Jugg Messiah, I up a M off mobile bankin' money",mobile bankin,30,"We done turned the knob up, now the spot crankin' money",spot crankin,INNER,MULTI,multi,HIGH,Y
+Chase The Money,29,"Jugg Messiah, I up a M off mobile bankin' money",money,30,"We done turned the knob up, now the spot crankin' money",done,INNER,SLANT,cmu,MED,Y
+Chase The Money,29,"Jugg Messiah, I up a M off mobile bankin' money",money,31,"Back door season, lil' cousin flanked for money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,29,"Jugg Messiah, I up a M off mobile bankin' money",bankin,31,"Back door season, lil' cousin flanked for money",Back,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,29,"Jugg Messiah, I up a M off mobile bankin' money",bankin,31,"Back door season, lil' cousin flanked for money",flanked,INNER,SLANT,cmu,MED,Y
+Chase The Money,29,"Jugg Messiah, I up a M off mobile bankin' money",money,31,"Back door season, lil' cousin flanked for money",cousin,INNER,SLANT,cmu,MED,Y
+Chase The Money,29,"Jugg Messiah, I up a M off mobile bankin' money",money,32,"Heard your man's locked up, Unky, he'll shank for money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",done,30,"We done turned the knob up, now the spot crankin' money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",knob,30,"We done turned the knob up, now the spot crankin' money",spot,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",money,31,"Back door season, lil' cousin flanked for money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",crankin,31,"Back door season, lil' cousin flanked for money",Back,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",crankin,31,"Back door season, lil' cousin flanked for money",flanked,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",done,31,"Back door season, lil' cousin flanked for money",cousin,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",done,31,"Back door season, lil' cousin flanked for money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",money,31,"Back door season, lil' cousin flanked for money",cousin,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",money,32,"Heard your man's locked up, Unky, he'll shank for money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",crankin,32,"Heard your man's locked up, Unky, he'll shank for money",man's,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",crankin,32,"Heard your man's locked up, Unky, he'll shank for money",shank,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",done,32,"Heard your man's locked up, Unky, he'll shank for money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",done,32,"Heard your man's locked up, Unky, he'll shank for money",Unky,INNER,SLANT,spelling,LOW,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",knob,32,"Heard your man's locked up, Unky, he'll shank for money",locked,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",money,32,"Heard your man's locked up, Unky, he'll shank for money",Unky,INNER,SLANT,spelling,LOW,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",spot,32,"Heard your man's locked up, Unky, he'll shank for money",locked,INNER,SLANT,cmu,MED,Y
+Chase The Money,30,"We done turned the knob up, now the spot crankin' money",turned,32,"Heard your man's locked up, Unky, he'll shank for money",Heard,INNER,SLANT,cmu,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",Back,31,"Back door season, lil' cousin flanked for money",flanked,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",cousin,31,"Back door season, lil' cousin flanked for money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",money,32,"Heard your man's locked up, Unky, he'll shank for money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,31,"Back door season, lil' cousin flanked for money",Back,32,"Heard your man's locked up, Unky, he'll shank for money",man's,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",Back,32,"Heard your man's locked up, Unky, he'll shank for money",shank,INNER,SLANT,cmu,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",cousin,32,"Heard your man's locked up, Unky, he'll shank for money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",flanked,32,"Heard your man's locked up, Unky, he'll shank for money",man's,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",flanked,32,"Heard your man's locked up, Unky, he'll shank for money",shank,INNER,SLANT,cmu,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",money,32,"Heard your man's locked up, Unky, he'll shank for money",Unky,INNER,SLANT,spelling,LOW,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",season,32,"Heard your man's locked up, Unky, he'll shank for money",he'll,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",Back,33,"Everything 'bout money, everything 'bout cash",cash,INNER,SLANT,cmu,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",cousin,33,"Everything 'bout money, everything 'bout cash",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",flanked,33,"Everything 'bout money, everything 'bout cash",cash,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",lil,33,"Everything 'bout money, everything 'bout cash",Everything,INNER,SLANT,cmu,MED,Y
+Chase The Money,31,"Back door season, lil' cousin flanked for money",money,33,"Everything 'bout money, everything 'bout cash",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,32,"Heard your man's locked up, Unky, he'll shank for money",man's,32,"Heard your man's locked up, Unky, he'll shank for money",shank,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,32,"Heard your man's locked up, Unky, he'll shank for money",Unky,32,"Heard your man's locked up, Unky, he'll shank for money",money,INNER,SLANT,spelling,LOW,Y
+Chase The Money,32,"Heard your man's locked up, Unky, he'll shank for money",man's,33,"Everything 'bout money, everything 'bout cash",cash,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,32,"Heard your man's locked up, Unky, he'll shank for money",money,33,"Everything 'bout money, everything 'bout cash",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,32,"Heard your man's locked up, Unky, he'll shank for money",shank,33,"Everything 'bout money, everything 'bout cash",cash,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,32,"Heard your man's locked up, Unky, he'll shank for money",Unky,33,"Everything 'bout money, everything 'bout cash",money,INNER,SLANT,spelling,LOW,Y
+Chase The Money,32,"Heard your man's locked up, Unky, he'll shank for money",man's,34,"I'd switch this shit to credit, everything 'bout scams",scams,INNER,SLANT,cmu,MED,Y
+Chase The Money,32,"Heard your man's locked up, Unky, he'll shank for money",shank,34,"I'd switch this shit to credit, everything 'bout scams",scams,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",'bout,33,"Everything 'bout money, everything 'bout cash",'bout,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",Everything,33,"Everything 'bout money, everything 'bout cash",everything,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",cash,34,"I'd switch this shit to credit, everything 'bout scams",scams,END,ASSONANCE,vowel,MED,Y
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",'bout,34,"I'd switch this shit to credit, everything 'bout scams",'bout,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",Everything,34,"I'd switch this shit to credit, everything 'bout scams",everything,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",Everything,34,"I'd switch this shit to credit, everything 'bout scams",shit,INNER,SLANT,cmu,MED,Y
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",Everything,34,"I'd switch this shit to credit, everything 'bout scams",switch,INNER,SLANT,cmu,MED,Y
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",cash,35,"Lil' fuzz in the trap, everything 'bout grams",grams,END,ASSONANCE,vowel,MED,Y
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",'bout,35,"Lil' fuzz in the trap, everything 'bout grams",'bout,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",cash,35,"Lil' fuzz in the trap, everything 'bout grams",trap,INNER,SLANT,cmu,MED,Y
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",Everything,35,"Lil' fuzz in the trap, everything 'bout grams",everything,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",Everything,35,"Lil' fuzz in the trap, everything 'bout grams",Lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",money,35,"Lil' fuzz in the trap, everything 'bout grams",fuzz,INNER,SLANT,cmu,MED,Y
+Chase The Money,33,"Everything 'bout money, everything 'bout cash",cash,36,"At the end of the day, everything 'bout bands",bands,END,ASSONANCE,vowel,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",shit,34,"I'd switch this shit to credit, everything 'bout scams",everything,INNER,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",switch,34,"I'd switch this shit to credit, everything 'bout scams",everything,INNER,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",switch,34,"I'd switch this shit to credit, everything 'bout scams",shit,INNER,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",scams,35,"Lil' fuzz in the trap, everything 'bout grams",grams,END,PERFECT,cmu,HIGH,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",'bout,35,"Lil' fuzz in the trap, everything 'bout grams",'bout,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",everything,35,"Lil' fuzz in the trap, everything 'bout grams",everything,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",everything,35,"Lil' fuzz in the trap, everything 'bout grams",Lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",scams,35,"Lil' fuzz in the trap, everything 'bout grams",trap,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",shit,35,"Lil' fuzz in the trap, everything 'bout grams",everything,INNER,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",shit,35,"Lil' fuzz in the trap, everything 'bout grams",Lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",switch,35,"Lil' fuzz in the trap, everything 'bout grams",everything,INNER,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",switch,35,"Lil' fuzz in the trap, everything 'bout grams",Lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",scams,36,"At the end of the day, everything 'bout bands",bands,END,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",'bout,36,"At the end of the day, everything 'bout bands",'bout,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",credit,36,"At the end of the day, everything 'bout bands",end,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",everything,36,"At the end of the day, everything 'bout bands",everything,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",shit,36,"At the end of the day, everything 'bout bands",everything,INNER,SLANT,cmu,MED,Y
+Chase The Money,34,"I'd switch this shit to credit, everything 'bout scams",switch,36,"At the end of the day, everything 'bout bands",everything,INNER,SLANT,cmu,MED,Y
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",Lil,35,"Lil' fuzz in the trap, everything 'bout grams",everything,INNER,SLANT,cmu,MED,Y
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",trap,35,"Lil' fuzz in the trap, everything 'bout grams",grams,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",grams,36,"At the end of the day, everything 'bout bands",bands,END,SLANT,cmu,MED,Y
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",'bout,36,"At the end of the day, everything 'bout bands",'bout,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",everything,36,"At the end of the day, everything 'bout bands",everything,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",Lil,36,"At the end of the day, everything 'bout bands",everything,INNER,SLANT,cmu,MED,Y
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",trap,36,"At the end of the day, everything 'bout bands",bands,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",everything,37,"Teachers stealin' stupid hundreds, rich flunky money",rich,INNER,SLANT,cmu,MED,Y
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",fuzz,37,"Teachers stealin' stupid hundreds, rich flunky money",hundreds,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",fuzz,37,"Teachers stealin' stupid hundreds, rich flunky money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,35,"Lil' fuzz in the trap, everything 'bout grams",Lil,37,"Teachers stealin' stupid hundreds, rich flunky money",rich,INNER,SLANT,cmu,MED,Y
+Chase The Money,36,"At the end of the day, everything 'bout bands",everything,37,"Teachers stealin' stupid hundreds, rich flunky money",rich,INNER,SLANT,cmu,MED,Y
+Chase The Money,36,"At the end of the day, everything 'bout bands",everything,38,"I'm still a YN, but I got big Unky money",big,INNER,SLANT,cmu,MED,Y
+Chase The Money,36,"At the end of the day, everything 'bout bands",everything,38,"I'm still a YN, but I got big Unky money",still,INNER,SLANT,cmu,MED,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",flunky,37,"Teachers stealin' stupid hundreds, rich flunky money",money,INNER,SLANT,spelling,LOW,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",hundreds,37,"Teachers stealin' stupid hundreds, rich flunky money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",Teachers,37,"Teachers stealin' stupid hundreds, rich flunky money",stealin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",money,38,"I'm still a YN, but I got big Unky money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",flunky,38,"I'm still a YN, but I got big Unky money",money,INNER,SLANT,spelling,LOW,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",flunky,38,"I'm still a YN, but I got big Unky money",Unky,INNER,MULTI,multi,MED,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",hundreds,38,"I'm still a YN, but I got big Unky money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",money,38,"I'm still a YN, but I got big Unky money",Unky,INNER,SLANT,spelling,LOW,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",rich,38,"I'm still a YN, but I got big Unky money",big,INNER,SLANT,cmu,MED,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",rich,38,"I'm still a YN, but I got big Unky money",still,INNER,SLANT,cmu,MED,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",rich flunky,38,"I'm still a YN, but I got big Unky money",big Unky,INNER,MULTI,multi,MED,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",money,39,"You might get money, but I gets money money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",flunky,39,"You might get money, but I gets money money",money,INNER,SLANT,spelling,LOW,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",hundreds,39,"You might get money, but I gets money money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",money,39,"You might get money, but I gets money money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,37,"Teachers stealin' stupid hundreds, rich flunky money",money,40,"Basically, I'm just a gettin' money motherfucker",motherfucker,END,SLANT,cmu,MED,Y
+Chase The Money,38,"I'm still a YN, but I got big Unky money",still,38,"I'm still a YN, but I got big Unky money",big,INNER,SLANT,cmu,MED,Y
+Chase The Money,38,"I'm still a YN, but I got big Unky money",Unky,38,"I'm still a YN, but I got big Unky money",money,INNER,SLANT,spelling,LOW,Y
+Chase The Money,38,"I'm still a YN, but I got big Unky money",money,39,"You might get money, but I gets money money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,38,"I'm still a YN, but I got big Unky money",money,39,"You might get money, but I gets money money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,38,"I'm still a YN, but I got big Unky money",Unky,39,"You might get money, but I gets money money",money,INNER,SLANT,spelling,LOW,Y
+Chase The Money,38,"I'm still a YN, but I got big Unky money",money,40,"Basically, I'm just a gettin' money motherfucker",motherfucker,END,SLANT,cmu,MED,Y
+Chase The Money,38,"I'm still a YN, but I got big Unky money",money,40,"Basically, I'm just a gettin' money motherfucker",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,38,"I'm still a YN, but I got big Unky money",Unky,40,"Basically, I'm just a gettin' money motherfucker",Basically,INNER,ASSONANCE,vowel,LOW,N
+Chase The Money,38,"I'm still a YN, but I got big Unky money",Unky,40,"Basically, I'm just a gettin' money motherfucker",money,INNER,SLANT,spelling,LOW,Y
+Chase The Money,38,"I'm still a YN, but I got big Unky money",Unky,40,"Basically, I'm just a gettin' money motherfucker",motherfucker,INNER,SLANT,spelling,LOW,Y
+Chase The Money,39,"You might get money, but I gets money money",get,39,"You might get money, but I gets money money",gets,INNER,SLANT,cmu,MED,Y
+Chase The Money,39,"You might get money, but I gets money money",money,39,"You might get money, but I gets money money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,39,"You might get money, but I gets money money",money,40,"Basically, I'm just a gettin' money motherfucker",motherfucker,END,SLANT,cmu,MED,Y
+Chase The Money,39,"You might get money, but I gets money money",get,40,"Basically, I'm just a gettin' money motherfucker",gettin,INNER,SLANT,cmu,MED,Y
+Chase The Money,39,"You might get money, but I gets money money",gets,40,"Basically, I'm just a gettin' money motherfucker",gettin,INNER,SLANT,cmu,MED,Y
+Chase The Money,39,"You might get money, but I gets money money",money,40,"Basically, I'm just a gettin' money motherfucker",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,39,"You might get money, but I gets money money",money,40,"Basically, I'm just a gettin' money motherfucker",motherfucker,INNER,SLANT,cmu,MED,Y
+Chase The Money,39,"You might get money, but I gets money money",might,41,"Long live $cammer, RIP",live,INNER,SLANT,cmu,MED,Y
+Chase The Money,39,"You might get money, but I gets money money",money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,40,"Basically, I'm just a gettin' money motherfucker",money,40,"Basically, I'm just a gettin' money motherfucker",motherfucker,INNER,SLANT,cmu,MED,Y
+Chase The Money,40,"Basically, I'm just a gettin' money motherfucker",Basically,42,"T-double-H-L shit, you hip skip, huh",H,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,40,"Basically, I'm just a gettin' money motherfucker",gettin,42,"T-double-H-L shit, you hip skip, huh",L,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,40,"Basically, I'm just a gettin' money motherfucker",money,42,"T-double-H-L shit, you hip skip, huh",double,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,40,"Basically, I'm just a gettin' money motherfucker",motherfucker,42,"T-double-H-L shit, you hip skip, huh",double,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,40,"Basically, I'm just a gettin' money motherfucker",motherfucker,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",money,END,SLANT,cmu,MED,Y
+Chase The Money,40,"Basically, I'm just a gettin' money motherfucker",motherfucker,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",money,END,SLANT,cmu,MED,Y
+Chase The Money,41,"Long live $cammer, RIP",RIP,42,"T-double-H-L shit, you hip skip, huh",skip,END,PERFECT,cmu,HIGH,Y
+Chase The Money,41,"Long live $cammer, RIP",RIP,42,"T-double-H-L shit, you hip skip, huh",hip,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,41,"Long live $cammer, RIP",RIP,42,"T-double-H-L shit, you hip skip, huh",shit,INNER,SLANT,cmu,MED,Y
+Chase The Money,41,"Long live $cammer, RIP",RIP,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",bitch,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",hip,42,"T-double-H-L shit, you hip skip, huh",skip,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",shit,42,"T-double-H-L shit, you hip skip, huh",hip,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",shit,42,"T-double-H-L shit, you hip skip, huh",skip,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",double,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",H,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",H,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",favor,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",hip,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",bitch,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",L,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",L,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",help,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",L,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",When,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",shit,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",bitch,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",skip,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",bitch,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",double,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",Fuck,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",double,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",money,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",H,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",hater,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",hip,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",shit,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",skip,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,42,"T-double-H-L shit, you hip skip, huh",T,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",see,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",ain't,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",ain't,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",ain't,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",favor,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",get,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",help,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",When,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",When,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",help,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",ain't,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",hater,INNER,SLANT,cmu,MED,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",bitch,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",lil,INNER,SLANT,cmu,MED,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",favor,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",hater,INNER,SLANT,cmu,MED,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",got,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",comments,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",got,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",Fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",money,45,"I'm in 2025, I got 2010 money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",got,45,"I'm in 2025, I got 2010 money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",money,46,"Got a Gen5 Glock, I got F&N money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,43,"When I was down, I ain't get help, so bitch, I ain't got favor money",money,47,"Real killers that get bored, I got jets to spend money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",comments,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",got,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",Fuck,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",money,45,"I'm in 2025, I got 2010 money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",comments,45,"I'm in 2025, I got 2010 money",got,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",Fuck,45,"I'm in 2025, I got 2010 money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",got,45,"I'm in 2025, I got 2010 money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",money,46,"Got a Gen5 Glock, I got F&N money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",comments,46,"Got a Gen5 Glock, I got F&N money",Glock,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",comments,46,"Got a Gen5 Glock, I got F&N money",Got,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",Fuck,46,"Got a Gen5 Glock, I got F&N money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",got,46,"Got a Gen5 Glock, I got F&N money",Glock,INNER,SLANT,cmu,MED,Y
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",got,46,"Got a Gen5 Glock, I got F&N money",Got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",money,47,"Real killers that get bored, I got jets to spend money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,44,"Yeah, I see the lil' comments, I got ""Fuck a hater"" money",money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,45,"I'm in 2025, I got 2010 money",money,46,"Got a Gen5 Glock, I got F&N money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,45,"I'm in 2025, I got 2010 money",got,46,"Got a Gen5 Glock, I got F&N money",Glock,INNER,SLANT,cmu,MED,Y
+Chase The Money,45,"I'm in 2025, I got 2010 money",got,46,"Got a Gen5 Glock, I got F&N money",Got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,45,"I'm in 2025, I got 2010 money",money,47,"Real killers that get bored, I got jets to spend money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,45,"I'm in 2025, I got 2010 money",got,47,"Real killers that get bored, I got jets to spend money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,45,"I'm in 2025, I got 2010 money",money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,45,"I'm in 2025, I got 2010 money",money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",F,46,"Got a Gen5 Glock, I got F&N money",N,INNER,SLANT,cmu,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Gen5,46,"Got a Gen5 Glock, I got F&N money",F,INNER,SLANT,spelling,LOW,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Gen5,46,"Got a Gen5 Glock, I got F&N money",N,INNER,PERFECT,spelling,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Glock,46,"Got a Gen5 Glock, I got F&N money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Got,46,"Got a Gen5 Glock, I got F&N money",Glock,INNER,SLANT,cmu,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Got,46,"Got a Gen5 Glock, I got F&N money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",money,47,"Real killers that get bored, I got jets to spend money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",F,47,"Real killers that get bored, I got jets to spend money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",F,47,"Real killers that get bored, I got jets to spend money",jets,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",F,47,"Real killers that get bored, I got jets to spend money",spend,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Gen5,47,"Real killers that get bored, I got jets to spend money",get,INNER,SLANT,spelling,LOW,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Gen5,47,"Real killers that get bored, I got jets to spend money",jets,INNER,ASSONANCE,vowel,LOW,N
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Gen5,47,"Real killers that get bored, I got jets to spend money",spend,INNER,SLANT,spelling,LOW,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Glock,47,"Real killers that get bored, I got jets to spend money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Got,47,"Real killers that get bored, I got jets to spend money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",N,47,"Real killers that get bored, I got jets to spend money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",N,47,"Real killers that get bored, I got jets to spend money",jets,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",N,47,"Real killers that get bored, I got jets to spend money",spend,INNER,SLANT,cmu,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",F,48,"I don't give a fuck 'bout makin' money, I just spend money",spend,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",Gen5,48,"I don't give a fuck 'bout makin' money, I just spend money",spend,INNER,SLANT,spelling,LOW,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",money,48,"I don't give a fuck 'bout makin' money, I just spend money",fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",N,48,"I don't give a fuck 'bout makin' money, I just spend money",spend,INNER,SLANT,cmu,MED,Y
+Chase The Money,46,"Got a Gen5 Glock, I got F&N money",money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",get,47,"Real killers that get bored, I got jets to spend money",jets,INNER,SLANT,cmu,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",get,47,"Real killers that get bored, I got jets to spend money",spend,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",jets,47,"Real killers that get bored, I got jets to spend money",spend,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",get,48,"I don't give a fuck 'bout makin' money, I just spend money",spend,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",jets,48,"I don't give a fuck 'bout makin' money, I just spend money",spend,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",killers,48,"I don't give a fuck 'bout makin' money, I just spend money",give,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",money,48,"I don't give a fuck 'bout makin' money, I just spend money",fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",spend,48,"I don't give a fuck 'bout makin' money, I just spend money",spend,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",get,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",gettin,INNER,SLANT,cmu,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",get,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",when,INNER,SLANT,cmu,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",jets,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",gettin,INNER,SLANT,cmu,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",jets,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",when,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",killers,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",still,INNER,SLANT,cmu,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",Real,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",asleep,INNER,SLANT,cmu,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",Real,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",even,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",spend,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",gettin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",spend,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",when,INNER,SLANT,cmu,MED,Y
+Chase The Money,47,"Real killers that get bored, I got jets to spend money",money,51,"I ain't even gotta spend my money, this my man's money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",fuck,48,"I don't give a fuck 'bout makin' money, I just spend money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",fuck,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",give,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",still,INNER,SLANT,cmu,MED,Y
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",spend,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",gettin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",spend,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",when,INNER,SLANT,cmu,MED,Y
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",give,50,"I wake up, look at the cash, hit the stash, light twenty",hit,INNER,SLANT,cmu,MED,Y
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",makin,50,"I wake up, look at the cash, hit the stash, light twenty",cash,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",makin,50,"I wake up, look at the cash, hit the stash, light twenty",stash,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",spend,50,"I wake up, look at the cash, hit the stash, light twenty",twenty,INNER,SLANT,cmu,MED,Y
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,51,"I ain't even gotta spend my money, this my man's money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,48,"I don't give a fuck 'bout makin' money, I just spend money",money,52,"I'm up thirty Ms, 'nother twenty off advance money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",even,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",asleep,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",when,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",gettin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",gettin,50,"I wake up, look at the cash, hit the stash, light twenty",twenty,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",nigga,50,"I wake up, look at the cash, hit the stash, light twenty",hit,INNER,SLANT,spelling,LOW,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",Psych,50,"I wake up, look at the cash, hit the stash, light twenty",light,INNER,SLANT,cmu,MED,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",still,50,"I wake up, look at the cash, hit the stash, light twenty",hit,INNER,SLANT,cmu,MED,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",when,50,"I wake up, look at the cash, hit the stash, light twenty",twenty,INNER,SLANT,cmu,MED,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,51,"I ain't even gotta spend my money, this my man's money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",asleep,51,"I ain't even gotta spend my money, this my man's money",even,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",even,51,"I ain't even gotta spend my money, this my man's money",even,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",gettin,51,"I ain't even gotta spend my money, this my man's money",spend,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,51,"I ain't even gotta spend my money, this my man's money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",when,51,"I ain't even gotta spend my money, this my man's money",spend,INNER,SLANT,cmu,MED,Y
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,52,"I'm up thirty Ms, 'nother twenty off advance money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,49,"Psych, even when I'm asleep, nigga, I'm still gettin' money",money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",Money,END,REPEAT,spelling,HIGH,N
+Chase The Money,50,"I wake up, look at the cash, hit the stash, light twenty",cash,50,"I wake up, look at the cash, hit the stash, light twenty",stash,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,50,"I wake up, look at the cash, hit the stash, light twenty",cash,51,"I ain't even gotta spend my money, this my man's money",man's,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,50,"I wake up, look at the cash, hit the stash, light twenty",stash,51,"I ain't even gotta spend my money, this my man's money",man's,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,50,"I wake up, look at the cash, hit the stash, light twenty",twenty,51,"I ain't even gotta spend my money, this my man's money",spend,INNER,SLANT,cmu,MED,Y
+Chase The Money,50,"I wake up, look at the cash, hit the stash, light twenty",wake,51,"I ain't even gotta spend my money, this my man's money",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,50,"I wake up, look at the cash, hit the stash, light twenty",cash,52,"I'm up thirty Ms, 'nother twenty off advance money",advance,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,50,"I wake up, look at the cash, hit the stash, light twenty",hit,52,"I'm up thirty Ms, 'nother twenty off advance money",Ms,INNER,SLANT,cmu,MED,Y
+Chase The Money,50,"I wake up, look at the cash, hit the stash, light twenty",stash,52,"I'm up thirty Ms, 'nother twenty off advance money",advance,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,50,"I wake up, look at the cash, hit the stash, light twenty",twenty,52,"I'm up thirty Ms, 'nother twenty off advance money",twenty,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",money,51,"I ain't even gotta spend my money, this my man's money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",money,52,"I'm up thirty Ms, 'nother twenty off advance money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",even,52,"I'm up thirty Ms, 'nother twenty off advance money",thirty,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",man's,52,"I'm up thirty Ms, 'nother twenty off advance money",advance,INNER,SLANT,cmu,MED,Y
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",money,52,"I'm up thirty Ms, 'nother twenty off advance money",'nother,INNER,SLANT,cmu,MED,Y
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",money,52,"I'm up thirty Ms, 'nother twenty off advance money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",spend,52,"I'm up thirty Ms, 'nother twenty off advance money",twenty,INNER,SLANT,cmu,MED,Y
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",Money,END,REPEAT,spelling,HIGH,N
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",ain't,53,"Only talk money, I don't listen 'less you sayin', ""Money""",sayin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",spend,53,"Only talk money, I don't listen 'less you sayin', ""Money""",'less,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,51,"I ain't even gotta spend my money, this my man's money",money,55,"I got hop out Sprint, four deep out the van money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",'nother,52,"I'm up thirty Ms, 'nother twenty off advance money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",Money,END,REPEAT,spelling,HIGH,N
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",'nother,53,"Only talk money, I don't listen 'less you sayin', ""Money""",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",Ms,53,"Only talk money, I don't listen 'less you sayin', ""Money""",listen,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",twenty,53,"Only talk money, I don't listen 'less you sayin', ""Money""",'less,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",advance,54,"Real gangster, ain't no nigga never took a band from me",band,INNER,SLANT,cmu,MED,Y
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",advance,54,"Real gangster, ain't no nigga never took a band from me",gangster,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",thirty,54,"Real gangster, ain't no nigga never took a band from me",Real,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",twenty,54,"Real gangster, ain't no nigga never took a band from me",never,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",money,55,"I got hop out Sprint, four deep out the van money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,52,"I'm up thirty Ms, 'nother twenty off advance money",money,56,"Fuck the law, I got on the run, get a ten money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",Money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",Only,53,"Only talk money, I don't listen 'less you sayin', ""Money""",don't,INNER,SLANT,cmu,MED,Y
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",'less,54,"Real gangster, ain't no nigga never took a band from me",never,INNER,SLANT,cmu,MED,Y
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",don't,54,"Real gangster, ain't no nigga never took a band from me",no,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",Only,54,"Real gangster, ain't no nigga never took a band from me",no,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",sayin,54,"Real gangster, ain't no nigga never took a band from me",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",Money,55,"I got hop out Sprint, four deep out the van money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",listen,55,"I got hop out Sprint, four deep out the van money",Sprint,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",money,55,"I got hop out Sprint, four deep out the van money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",talk,55,"I got hop out Sprint, four deep out the van money",four,INNER,SLANT,cmu,MED,Y
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",Money,56,"Fuck the law, I got on the run, get a ten money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,53,"Only talk money, I don't listen 'less you sayin', ""Money""",Money,57,"I got get my mama, get my bitch, get my kids money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,54,"Real gangster, ain't no nigga never took a band from me",gangster,54,"Real gangster, ain't no nigga never took a band from me",band,INNER,SLANT,cmu,MED,Y
+Chase The Money,54,"Real gangster, ain't no nigga never took a band from me",band,55,"I got hop out Sprint, four deep out the van money",van,INNER,SLANT,cmu,MED,Y
+Chase The Money,54,"Real gangster, ain't no nigga never took a band from me",gangster,55,"I got hop out Sprint, four deep out the van money",van,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,54,"Real gangster, ain't no nigga never took a band from me",Real,55,"I got hop out Sprint, four deep out the van money",deep,INNER,SLANT,cmu,MED,Y
+Chase The Money,54,"Real gangster, ain't no nigga never took a band from me",never,56,"Fuck the law, I got on the run, get a ten money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,54,"Real gangster, ain't no nigga never took a band from me",never,56,"Fuck the law, I got on the run, get a ten money",ten,INNER,SLANT,cmu,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",got,55,"I got hop out Sprint, four deep out the van money",hop,INNER,SLANT,cmu,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",money,56,"Fuck the law, I got on the run, get a ten money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",four,56,"Fuck the law, I got on the run, get a ten money",law,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",got,56,"Fuck the law, I got on the run, get a ten money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",hop,56,"Fuck the law, I got on the run, get a ten money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",money,56,"Fuck the law, I got on the run, get a ten money",Fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",money,56,"Fuck the law, I got on the run, get a ten money",run,INNER,SLANT,cmu,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",money,57,"I got get my mama, get my bitch, get my kids money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",got,57,"I got get my mama, get my bitch, get my kids money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",got,57,"I got get my mama, get my bitch, get my kids money",mama,INNER,SLANT,cmu,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",hop,57,"I got get my mama, get my bitch, get my kids money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",hop,57,"I got get my mama, get my bitch, get my kids money",mama,INNER,SLANT,cmu,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",Sprint,57,"I got get my mama, get my bitch, get my kids money",bitch,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",Sprint,57,"I got get my mama, get my bitch, get my kids money",kids,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",money,58,"I don't gotta flex on Instagram, I got real money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,55,"I got hop out Sprint, four deep out the van money",money,59,"I got snow, rain, hail, sleet, I got sunny money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",Fuck,56,"Fuck the law, I got on the run, get a ten money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",Fuck,56,"Fuck the law, I got on the run, get a ten money",run,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",get,56,"Fuck the law, I got on the run, get a ten money",ten,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",run,56,"Fuck the law, I got on the run, get a ten money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",money,57,"I got get my mama, get my bitch, get my kids money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",Fuck,57,"I got get my mama, get my bitch, get my kids money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",get,57,"I got get my mama, get my bitch, get my kids money",get,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",got,57,"I got get my mama, get my bitch, get my kids money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",got,57,"I got get my mama, get my bitch, get my kids money",mama,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",run,57,"I got get my mama, get my bitch, get my kids money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",ten,57,"I got get my mama, get my bitch, get my kids money",get,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",money,58,"I don't gotta flex on Instagram, I got real money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",Fuck,58,"I don't gotta flex on Instagram, I got real money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",get,58,"I don't gotta flex on Instagram, I got real money",flex,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",got,58,"I don't gotta flex on Instagram, I got real money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",got,58,"I don't gotta flex on Instagram, I got real money",gotta,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",run,58,"I don't gotta flex on Instagram, I got real money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",ten,58,"I don't gotta flex on Instagram, I got real money",flex,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",money,59,"I got snow, rain, hail, sleet, I got sunny money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,56,"Fuck the law, I got on the run, get a ten money",money,60,"Every time I fuck it off hoes like you got money, money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",bitch,57,"I got get my mama, get my bitch, get my kids money",kids,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",get,57,"I got get my mama, get my bitch, get my kids money",get,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",got,57,"I got get my mama, get my bitch, get my kids money",mama,INNER,SLANT,cmu,MED,Y
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",money,58,"I don't gotta flex on Instagram, I got real money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",get,58,"I don't gotta flex on Instagram, I got real money",flex,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",got,58,"I don't gotta flex on Instagram, I got real money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",got,58,"I don't gotta flex on Instagram, I got real money",gotta,INNER,SLANT,cmu,MED,Y
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",mama,58,"I don't gotta flex on Instagram, I got real money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",mama,58,"I don't gotta flex on Instagram, I got real money",gotta,INNER,SLANT,cmu,MED,Y
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",money,59,"I got snow, rain, hail, sleet, I got sunny money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",got,59,"I got snow, rain, hail, sleet, I got sunny money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",kids money,59,"I got snow, rain, hail, sleet, I got sunny money",got sunny,INNER,MULTI,multi,HIGH,Y
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",mama,59,"I got snow, rain, hail, sleet, I got sunny money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",money,59,"I got snow, rain, hail, sleet, I got sunny money",sunny,INNER,MULTI,multi,HIGH,Y
+Chase The Money,57,"I got get my mama, get my bitch, get my kids money",money,60,"Every time I fuck it off hoes like you got money, money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",gotta,58,"I don't gotta flex on Instagram, I got real money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",money,59,"I got snow, rain, hail, sleet, I got sunny money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",don't,59,"I got snow, rain, hail, sleet, I got sunny money",snow,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",got,59,"I got snow, rain, hail, sleet, I got sunny money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",gotta,59,"I got snow, rain, hail, sleet, I got sunny money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",money,59,"I got snow, rain, hail, sleet, I got sunny money",sunny,INNER,MULTI,multi,HIGH,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",real,59,"I got snow, rain, hail, sleet, I got sunny money",sleet,INNER,SLANT,cmu,MED,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",real money,59,"I got snow, rain, hail, sleet, I got sunny money",got sunny,INNER,MULTI,multi,HIGH,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",money,60,"Every time I fuck it off hoes like you got money, money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",don't,60,"Every time I fuck it off hoes like you got money, money",hoes,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",flex,60,"Every time I fuck it off hoes like you got money, money",Every,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",got,60,"Every time I fuck it off hoes like you got money, money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",gotta,60,"Every time I fuck it off hoes like you got money, money",got,INNER,SLANT,cmu,MED,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",money,60,"Every time I fuck it off hoes like you got money, money",fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,58,"I don't gotta flex on Instagram, I got real money",money,60,"Every time I fuck it off hoes like you got money, money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",got,59,"I got snow, rain, hail, sleet, I got sunny money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",got sunny,59,"I got snow, rain, hail, sleet, I got sunny money",sunny money,INNER,MULTI,multi,HIGH,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",rain,59,"I got snow, rain, hail, sleet, I got sunny money",hail,INNER,SLANT,cmu,MED,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",sunny,59,"I got snow, rain, hail, sleet, I got sunny money",money,INNER,MULTI,multi,HIGH,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",money,60,"Every time I fuck it off hoes like you got money, money",money,END,REPEAT,spelling,HIGH,N
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",got,60,"Every time I fuck it off hoes like you got money, money",got,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",got sunny,60,"Every time I fuck it off hoes like you got money, money",got money,INNER,MULTI,multi,HIGH,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",got sunny,60,"Every time I fuck it off hoes like you got money, money",money money,INNER,MULTI,multi,HIGH,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",money,60,"Every time I fuck it off hoes like you got money, money",fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",money,60,"Every time I fuck it off hoes like you got money, money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",snow,60,"Every time I fuck it off hoes like you got money, money",hoes,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",sunny,60,"Every time I fuck it off hoes like you got money, money",fuck,INNER,SLANT,cmu,MED,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",sunny,60,"Every time I fuck it off hoes like you got money, money",money,INNER,MULTI,multi,HIGH,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",got,61,And I don't owe nothin',nothin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",snow,61,And I don't owe nothin',don't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,59,"I got snow, rain, hail, sleet, I got sunny money",snow,61,And I don't owe nothin',owe,INNER,PERFECT,cmu,HIGH,Y
+Chase The Money,60,"Every time I fuck it off hoes like you got money, money",fuck,60,"Every time I fuck it off hoes like you got money, money",money,INNER,SLANT,cmu,MED,Y
+Chase The Money,60,"Every time I fuck it off hoes like you got money, money",money,60,"Every time I fuck it off hoes like you got money, money",money,INNER,REPEAT,spelling,HIGH,N
+Chase The Money,60,"Every time I fuck it off hoes like you got money, money",time,60,"Every time I fuck it off hoes like you got money, money",like,INNER,SLANT,cmu,MED,Y
+Chase The Money,60,"Every time I fuck it off hoes like you got money, money",got,61,And I don't owe nothin',nothin,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,60,"Every time I fuck it off hoes like you got money, money",hoes,61,And I don't owe nothin',don't,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,60,"Every time I fuck it off hoes like you got money, money",hoes,61,And I don't owe nothin',owe,INNER,ASSONANCE,vowel,MED,Y
+Chase The Money,61,And I don't owe nothin',don't,61,And I don't owe nothin',owe,INNER,ASSONANCE,vowel,MED,Y

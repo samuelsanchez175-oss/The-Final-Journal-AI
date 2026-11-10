@@ -1,0 +1,247 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+GIMME GIMME,1,"Big dawg Savage, I'm the man of your dreams (21)",Savage,1,"Big dawg Savage, I'm the man of your dreams (21)",man,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,1,"Big dawg Savage, I'm the man of your dreams (21)",dreams,2,I heard you gotta jump just to put on your jeans,jeans,END,SLANT,cmu,MED,Y
+GIMME GIMME,1,"Big dawg Savage, I'm the man of your dreams (21)",dreams,3,I'm like Amazon 'cause I got what you need (21),need,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,1,"Big dawg Savage, I'm the man of your dreams (21)",dreams,4,"She gave me her heart, so I gave her my keys (21)",keys,END,SLANT,cmu,MED,Y
+GIMME GIMME,2,I heard you gotta jump just to put on your jeans,jeans,3,I'm like Amazon 'cause I got what you need (21),need,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,2,I heard you gotta jump just to put on your jeans,gotta,3,I'm like Amazon 'cause I got what you need (21),Amazon,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,2,I heard you gotta jump just to put on your jeans,gotta,3,I'm like Amazon 'cause I got what you need (21),got,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,2,I heard you gotta jump just to put on your jeans,jump,3,I'm like Amazon 'cause I got what you need (21),what,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,2,I heard you gotta jump just to put on your jeans,jeans,4,"She gave me her heart, so I gave her my keys (21)",keys,END,SLANT,cmu,MED,Y
+GIMME GIMME,2,I heard you gotta jump just to put on your jeans,gotta,4,"She gave me her heart, so I gave her my keys (21)",heart,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,2,I heard you gotta jump just to put on your jeans,heard,4,"She gave me her heart, so I gave her my keys (21)",heart,INNER,SLANT,spelling,LOW,Y
+GIMME GIMME,3,I'm like Amazon 'cause I got what you need (21),Amazon,3,I'm like Amazon 'cause I got what you need (21),got,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,3,I'm like Amazon 'cause I got what you need (21),need,4,"She gave me her heart, so I gave her my keys (21)",keys,END,SLANT,cmu,MED,Y
+GIMME GIMME,3,I'm like Amazon 'cause I got what you need (21),Amazon,4,"She gave me her heart, so I gave her my keys (21)",heart,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,3,I'm like Amazon 'cause I got what you need (21),got,4,"She gave me her heart, so I gave her my keys (21)",heart,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,3,I'm like Amazon 'cause I got what you need (21),Amazon,5,"Gimme, gimme, baby, stop wastin' my time",stop,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,3,I'm like Amazon 'cause I got what you need (21),got,5,"Gimme, gimme, baby, stop wastin' my time",stop,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,3,I'm like Amazon 'cause I got what you need (21),like,5,"Gimme, gimme, baby, stop wastin' my time",time,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,4,"She gave me her heart, so I gave her my keys (21)",gave,4,"She gave me her heart, so I gave her my keys (21)",gave,INNER,REPEAT,spelling,HIGH,N
+GIMME GIMME,4,"She gave me her heart, so I gave her my keys (21)",gave,5,"Gimme, gimme, baby, stop wastin' my time",baby,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,4,"She gave me her heart, so I gave her my keys (21)",gave,5,"Gimme, gimme, baby, stop wastin' my time",wastin,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,4,"She gave me her heart, so I gave her my keys (21)",heart,5,"Gimme, gimme, baby, stop wastin' my time",stop,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,4,"She gave me her heart, so I gave her my keys (21)",heart,6,"Kitty, kitty, wanna come party tonight",party,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,4,"She gave me her heart, so I gave her my keys (21)",heart,6,"Kitty, kitty, wanna come party tonight",wanna,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",baby,5,"Gimme, gimme, baby, stop wastin' my time",wastin,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",Gimme,5,"Gimme, gimme, baby, stop wastin' my time",gimme,INNER,REPEAT,spelling,HIGH,N
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",time,6,"Kitty, kitty, wanna come party tonight",tonight,END,SLANT,cmu,MED,Y
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",Gimme,6,"Kitty, kitty, wanna come party tonight",Kitty,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",stop,6,"Kitty, kitty, wanna come party tonight",party,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",stop,6,"Kitty, kitty, wanna come party tonight",wanna,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",time,7,"Trippy, trippy, daddy, take me on a ride",ride,END,SLANT,cmu,MED,Y
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",baby,7,"Trippy, trippy, daddy, take me on a ride",take,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",wastin,7,"Trippy, trippy, daddy, take me on a ride",take,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,5,"Gimme, gimme, baby, stop wastin' my time",time,8,"If you want my body, gotta blow my mind (Blow my mind)",mind,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",Kitty,6,"Kitty, kitty, wanna come party tonight",kitty,INNER,REPEAT,spelling,HIGH,N
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",wanna,6,"Kitty, kitty, wanna come party tonight",party,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",tonight,7,"Trippy, trippy, daddy, take me on a ride",ride,END,SLANT,cmu,MED,Y
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",tonight,8,"If you want my body, gotta blow my mind (Blow my mind)",mind,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",party,8,"If you want my body, gotta blow my mind (Blow my mind)",body,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",party,8,"If you want my body, gotta blow my mind (Blow my mind)",gotta,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",party,8,"If you want my body, gotta blow my mind (Blow my mind)",want,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",wanna,8,"If you want my body, gotta blow my mind (Blow my mind)",body,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",wanna,8,"If you want my body, gotta blow my mind (Blow my mind)",gotta,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,6,"Kitty, kitty, wanna come party tonight",wanna,8,"If you want my body, gotta blow my mind (Blow my mind)",want,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,7,"Trippy, trippy, daddy, take me on a ride",Trippy,7,"Trippy, trippy, daddy, take me on a ride",trippy,INNER,REPEAT,spelling,HIGH,N
+GIMME GIMME,7,"Trippy, trippy, daddy, take me on a ride",ride,8,"If you want my body, gotta blow my mind (Blow my mind)",mind,END,SLANT,cmu,MED,Y
+GIMME GIMME,7,"Trippy, trippy, daddy, take me on a ride",take,9,"Tell me, baby, 'cause I'm listening",baby,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,8,"If you want my body, gotta blow my mind (Blow my mind)",body,8,"If you want my body, gotta blow my mind (Blow my mind)",gotta,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,8,"If you want my body, gotta blow my mind (Blow my mind)",want,8,"If you want my body, gotta blow my mind (Blow my mind)",body,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,8,"If you want my body, gotta blow my mind (Blow my mind)",want,8,"If you want my body, gotta blow my mind (Blow my mind)",gotta,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,9,"Tell me, baby, 'cause I'm listening",baby,10,Stimulate me with your fantasies,Stimulate,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,9,"Tell me, baby, 'cause I'm listening",baby,11,"Say the right thing, maybe you can be",maybe,INNER,MULTI,multi,HIGH,Y
+GIMME GIMME,9,"Tell me, baby, 'cause I'm listening",baby,11,"Say the right thing, maybe you can be",Say,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,9,"Tell me, baby, 'cause I'm listening",listening,11,"Say the right thing, maybe you can be",thing,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,9,"Tell me, baby, 'cause I'm listening",Tell baby,11,"Say the right thing, maybe you can be",thing maybe,INNER,MULTI,multi,HIGH,Y
+GIMME GIMME,10,Stimulate me with your fantasies,fantasies,11,"Say the right thing, maybe you can be",can,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,10,Stimulate me with your fantasies,Stimulate,11,"Say the right thing, maybe you can be",maybe,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,10,Stimulate me with your fantasies,Stimulate,11,"Say the right thing, maybe you can be",Say,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,11,"Say the right thing, maybe you can be",Say,11,"Say the right thing, maybe you can be",maybe,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,11,"Say the right thing, maybe you can be",right,12,Crawlin' on mе like a centipedе,like,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,11,"Say the right thing, maybe you can be",right,13,Freaks only come out at night,night,INNER,PERFECT,cmu,HIGH,Y
+GIMME GIMME,12,Crawlin' on mе like a centipedе,like,13,Freaks only come out at night,night,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,12,Crawlin' on mе like a centipedе,centiped,14,Tryna flex in the texts,texts,END,ASSONANCE,vowel,LOW,N
+GIMME GIMME,12,Crawlin' on mе like a centipedе,centiped,14,Tryna flex in the texts,flex,INNER,ASSONANCE,vowel,LOW,N
+GIMME GIMME,12,Crawlin' on mе like a centipedе,m,14,Tryna flex in the texts,flex,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,12,Crawlin' on mе like a centipedе,m,14,Tryna flex in the texts,texts,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,13,Freaks only come out at night,night,15,They all bark with no bite (With no bite),bite,END,PERFECT,cmu,HIGH,Y
+GIMME GIMME,13,Freaks only come out at night,only,15,They all bark with no bite (With no bite),no,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,13,Freaks only come out at night,night,16,"Please, gotta know what I like",like,END,SLANT,cmu,MED,Y
+GIMME GIMME,14,Tryna flex in the texts,flex,14,Tryna flex in the texts,texts,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,14,Tryna flex in the texts,Tryna,16,"Please, gotta know what I like",Please,INNER,SLANT,spelling,LOW,Y
+GIMME GIMME,15,They all bark with no bite (With no bite),bite,16,"Please, gotta know what I like",like,END,SLANT,cmu,MED,Y
+GIMME GIMME,15,They all bark with no bite (With no bite),bark,16,"Please, gotta know what I like",gotta,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,15,They all bark with no bite (With no bite),no,16,"Please, gotta know what I like",know,INNER,PERFECT,cmu,HIGH,Y
+GIMME GIMME,15,They all bark with no bite (With no bite),all,17,Turn me on all night long,all,INNER,REPEAT,spelling,HIGH,N
+GIMME GIMME,15,They all bark with no bite (With no bite),all,17,Turn me on all night long,long,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,15,They all bark with no bite (With no bite),bite,17,Turn me on all night long,night,INNER,PERFECT,cmu,HIGH,Y
+GIMME GIMME,15,They all bark with no bite (With no bite),bite,18,And you know that I might (That I might),might,END,PERFECT,cmu,HIGH,Y
+GIMME GIMME,15,They all bark with no bite (With no bite),bite,19,"Get on my knees, she fine (Fine)",fine,END,SLANT,cmu,MED,Y
+GIMME GIMME,16,"Please, gotta know what I like",like,17,Turn me on all night long,night,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,16,"Please, gotta know what I like",like,18,And you know that I might (That I might),might,END,SLANT,cmu,MED,Y
+GIMME GIMME,16,"Please, gotta know what I like",know,18,And you know that I might (That I might),know,INNER,REPEAT,spelling,HIGH,N
+GIMME GIMME,16,"Please, gotta know what I like",like,19,"Get on my knees, she fine (Fine)",fine,END,SLANT,cmu,MED,Y
+GIMME GIMME,16,"Please, gotta know what I like",like,20,"Quarters, I don't do dimes (No dimes)",dimes,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,17,Turn me on all night long,all,17,Turn me on all night long,long,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,17,Turn me on all night long,night,18,And you know that I might (That I might),might,INNER,PERFECT,cmu,HIGH,Y
+GIMME GIMME,17,Turn me on all night long,night,19,"Get on my knees, she fine (Fine)",fine,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,18,And you know that I might (That I might),might,19,"Get on my knees, she fine (Fine)",fine,END,SLANT,cmu,MED,Y
+GIMME GIMME,18,And you know that I might (That I might),might,20,"Quarters, I don't do dimes (No dimes)",dimes,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,18,And you know that I might (That I might),know,20,"Quarters, I don't do dimes (No dimes)",don't,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,18,And you know that I might (That I might),might,21,"Stones on her neck, they shine (Bling)",shine,END,SLANT,cmu,MED,Y
+GIMME GIMME,19,"Get on my knees, she fine (Fine)",fine,20,"Quarters, I don't do dimes (No dimes)",dimes,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,19,"Get on my knees, she fine (Fine)",fine,21,"Stones on her neck, they shine (Bling)",shine,END,PERFECT,cmu,HIGH,Y
+GIMME GIMME,19,"Get on my knees, she fine (Fine)",Get,21,"Stones on her neck, they shine (Bling)",neck,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,19,"Get on my knees, she fine (Fine)",fine,23,You want me to chase? Be mine (Yeah),mine,END,PERFECT,cmu,HIGH,Y
+GIMME GIMME,20,"Quarters, I don't do dimes (No dimes)",dimes,21,"Stones on her neck, they shine (Bling)",shine,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,20,"Quarters, I don't do dimes (No dimes)",don't,21,"Stones on her neck, they shine (Bling)",Stones,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,20,"Quarters, I don't do dimes (No dimes)",dimes,23,You want me to chase? Be mine (Yeah),mine,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,20,"Quarters, I don't do dimes (No dimes)",dimes,24,"I ran outta breath, I'm tryin' (On God)",tryin,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,21,"Stones on her neck, they shine (Bling)",shine,23,You want me to chase? Be mine (Yeah),mine,END,PERFECT,cmu,HIGH,Y
+GIMME GIMME,21,"Stones on her neck, they shine (Bling)",shine,24,"I ran outta breath, I'm tryin' (On God)",tryin,END,SLANT,cmu,MED,Y
+GIMME GIMME,21,"Stones on her neck, they shine (Bling)",shine,25,"You don't see what I see, you blind (21)",blind,END,SLANT,cmu,MED,Y
+GIMME GIMME,22,"He say he the one, he lyin' (21)",say,23,You want me to chase? Be mine (Yeah),chase,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,22,"He say he the one, he lyin' (21)",lyin,24,"I ran outta breath, I'm tryin' (On God)",tryin,END,PERFECT,spelling,HIGH,Y
+GIMME GIMME,22,"He say he the one, he lyin' (21)",lyin,26,Five stars whenever we eat (Yeah),eat,END,SLANT,spelling,LOW,Y
+GIMME GIMME,23,You want me to chase? Be mine (Yeah),mine,24,"I ran outta breath, I'm tryin' (On God)",tryin,END,SLANT,cmu,MED,Y
+GIMME GIMME,23,You want me to chase? Be mine (Yeah),mine,25,"You don't see what I see, you blind (21)",blind,END,SLANT,cmu,MED,Y
+GIMME GIMME,24,"I ran outta breath, I'm tryin' (On God)",tryin,25,"You don't see what I see, you blind (21)",blind,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,24,"I ran outta breath, I'm tryin' (On God)",breath,26,Five stars whenever we eat (Yeah),whenever,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,24,"I ran outta breath, I'm tryin' (On God)",tryin,26,Five stars whenever we eat (Yeah),Five,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,25,"You don't see what I see, you blind (21)",see,25,"You don't see what I see, you blind (21)",see,INNER,REPEAT,spelling,HIGH,N
+GIMME GIMME,25,"You don't see what I see, you blind (21)",blind,26,Five stars whenever we eat (Yeah),Five,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,25,"You don't see what I see, you blind (21)",see,26,Five stars whenever we eat (Yeah),eat,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,25,"You don't see what I see, you blind (21)",don't,27,All I know is this feelin' is deep (Deep),know,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,25,"You don't see what I see, you blind (21)",see,27,All I know is this feelin' is deep (Deep),deep,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,25,"You don't see what I see, you blind (21)",see,27,All I know is this feelin' is deep (Deep),feelin,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,26,Five stars whenever we eat (Yeah),eat,27,All I know is this feelin' is deep (Deep),deep,END,SLANT,cmu,MED,Y
+GIMME GIMME,26,Five stars whenever we eat (Yeah),eat,27,All I know is this feelin' is deep (Deep),feelin,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,26,Five stars whenever we eat (Yeah),eat,28,"If you give me your heart, it's for keeps (21)",keeps,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,26,Five stars whenever we eat (Yeah),stars,28,"If you give me your heart, it's for keeps (21)",heart,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,26,Five stars whenever we eat (Yeah),eat,29,"When you with me, I know you at peace (21)",peace,END,SLANT,cmu,MED,Y
+GIMME GIMME,26,Five stars whenever we eat (Yeah),eat,30,Take my card and go shopping for weeks (On God),weeks,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,27,All I know is this feelin' is deep (Deep),feelin,27,All I know is this feelin' is deep (Deep),deep,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,27,All I know is this feelin' is deep (Deep),deep,28,"If you give me your heart, it's for keeps (21)",keeps,END,SLANT,cmu,MED,Y
+GIMME GIMME,27,All I know is this feelin' is deep (Deep),feelin,28,"If you give me your heart, it's for keeps (21)",keeps,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,27,All I know is this feelin' is deep (Deep),deep,29,"When you with me, I know you at peace (21)",peace,END,SLANT,cmu,MED,Y
+GIMME GIMME,27,All I know is this feelin' is deep (Deep),feelin,29,"When you with me, I know you at peace (21)",peace,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,27,All I know is this feelin' is deep (Deep),know,29,"When you with me, I know you at peace (21)",know,INNER,REPEAT,spelling,HIGH,N
+GIMME GIMME,27,All I know is this feelin' is deep (Deep),deep,30,Take my card and go shopping for weeks (On God),weeks,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,27,All I know is this feelin' is deep (Deep),deep,31,"No limit, you shoppin' for free (On God)",free,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,28,"If you give me your heart, it's for keeps (21)",keeps,29,"When you with me, I know you at peace (21)",peace,END,SLANT,cmu,MED,Y
+GIMME GIMME,28,"If you give me your heart, it's for keeps (21)",keeps,30,Take my card and go shopping for weeks (On God),weeks,END,SLANT,cmu,MED,Y
+GIMME GIMME,28,"If you give me your heart, it's for keeps (21)",heart,30,Take my card and go shopping for weeks (On God),card,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,28,"If you give me your heart, it's for keeps (21)",heart,30,Take my card and go shopping for weeks (On God),shopping,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,28,"If you give me your heart, it's for keeps (21)",keeps,31,"No limit, you shoppin' for free (On God)",free,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,29,"When you with me, I know you at peace (21)",peace,30,Take my card and go shopping for weeks (On God),weeks,END,SLANT,cmu,MED,Y
+GIMME GIMME,29,"When you with me, I know you at peace (21)",know,30,Take my card and go shopping for weeks (On God),go,INNER,PERFECT,cmu,HIGH,Y
+GIMME GIMME,29,"When you with me, I know you at peace (21)",peace,31,"No limit, you shoppin' for free (On God)",free,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,29,"When you with me, I know you at peace (21)",know,31,"No limit, you shoppin' for free (On God)",No,INNER,PERFECT,cmu,HIGH,Y
+GIMME GIMME,30,Take my card and go shopping for weeks (On God),card,30,Take my card and go shopping for weeks (On God),shopping,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,30,Take my card and go shopping for weeks (On God),weeks,31,"No limit, you shoppin' for free (On God)",free,END,ASSONANCE,vowel,MED,Y
+GIMME GIMME,30,Take my card and go shopping for weeks (On God),card,31,"No limit, you shoppin' for free (On God)",shoppin,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,30,Take my card and go shopping for weeks (On God),go,31,"No limit, you shoppin' for free (On God)",No,INNER,PERFECT,cmu,HIGH,Y
+GIMME GIMME,30,Take my card and go shopping for weeks (On God),go shopping,31,"No limit, you shoppin' for free (On God)",limit shoppin,INNER,MULTI,multi,HIGH,Y
+GIMME GIMME,30,Take my card and go shopping for weeks (On God),shopping,31,"No limit, you shoppin' for free (On God)",shoppin,INNER,MULTI,multi,HIGH,Y
+GIMME GIMME,30,Take my card and go shopping for weeks (On God),card,32,"I'm in Paris, I'm shopping for we (21)",shopping,INNER,ASSONANCE,vowel,MED,Y
+GIMME GIMME,30,Take my card and go shopping for weeks (On God),shopping,32,"I'm in Paris, I'm shopping for we (21)",shopping,INNER,REPEAT,spelling,HIGH,N
+GIMME GIMME,31,"No limit, you shoppin' for free (On God)",limit shoppin,32,"I'm in Paris, I'm shopping for we (21)",Paris shopping,INNER,MULTI,multi,HIGH,Y
+GIMME GIMME,31,"No limit, you shoppin' for free (On God)",shoppin,32,"I'm in Paris, I'm shopping for we (21)",shopping,INNER,MULTI,multi,HIGH,Y
+GIMME GIMME,31,"No limit, you shoppin' for free (On God)",shoppin,33,"Girl, stop all that playin' with me (21, 21)",stop,INNER,SLANT,cmu,MED,Y
+GIMME GIMME,32,"I'm in Paris, I'm shopping for we (21)",shopping,33,"Girl, stop all that playin' with me (21, 21)",stop,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),1,"Under a silver moon, tropical temperature",moon,2,"I feel my lotus bloom, come closer",bloom,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),1,"Under a silver moon, tropical temperature",Under,2,"I feel my lotus bloom, come closer",come,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),1,"Under a silver moon, tropical temperature",temperature,3,"I want your energy, I want your aura",energy,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),1,"Under a silver moon, tropical temperature",tropical,3,"I want your energy, I want your aura",want,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),2,"I feel my lotus bloom, come closer",lotus,2,"I feel my lotus bloom, come closer",closer,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),3,"I want your energy, I want your aura",want,3,"I want your energy, I want your aura",want,INNER,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),3,"I want your energy, I want your aura",energy,4,"You are my destiny, my mantra",destiny,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),3,"I want your energy, I want your aura",energy,5,I never knew I could see something so clearly looking through my third eye,never,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),4,"You are my destiny, my mantra",destiny,5,I never knew I could see something so clearly looking through my third eye,never,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),4,"You are my destiny, my mantra",destiny,6,Never knew karma could be so rewarding and bring me to your light,Never,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,could,5,I never knew I could see something so clearly looking through my third eye,looking,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,knew,5,I never knew I could see something so clearly looking through my third eye,through,INNER,PERFECT,cmu,HIGH,Y
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,eye,6,Never knew karma could be so rewarding and bring me to your light,light,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,clearly,6,Never knew karma could be so rewarding and bring me to your light,bring,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,could,6,Never knew karma could be so rewarding and bring me to your light,could,INNER,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,knew,6,Never knew karma could be so rewarding and bring me to your light,knew,INNER,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,looking,6,Never knew karma could be so rewarding and bring me to your light,could,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,never,6,Never knew karma could be so rewarding and bring me to your light,Never,INNER,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,through,6,Never knew karma could be so rewarding and bring me to your light,knew,INNER,PERFECT,cmu,HIGH,Y
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,eye,7,Maybe this is the beginning of something so magical tonight,tonight,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,clearly,7,Maybe this is the beginning of something so magical tonight,beginning,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),5,I never knew I could see something so clearly looking through my third eye,something,7,Maybe this is the beginning of something so magical tonight,something,INNER,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),6,Never knew karma could be so rewarding and bring me to your light,light,7,Maybe this is the beginning of something so magical tonight,tonight,END,PERFECT,cmu,HIGH,Y
+Legendary Lovers (Save Me),6,Never knew karma could be so rewarding and bring me to your light,bring,7,Maybe this is the beginning of something so magical tonight,beginning,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),7,Maybe this is the beginning of something so magical tonight,beginning,9,Take me down to the river,river,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),7,Maybe this is the beginning of something so magical tonight,Maybe,9,Take me down to the river,Take,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),9,Take me down to the river,river,11,Say my name like a scripture,scripture,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),9,Take me down to the river,Take,11,Say my name like a scripture,name,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),9,Take me down to the river,Take,11,Say my name like a scripture,Say,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),10,Underneath the blood orange sun,blood,10,Underneath the blood orange sun,sun,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),10,Underneath the blood orange sun,sun,12,Keep my heart beating like a drum,drum,END,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),10,Underneath the blood orange sun,blood,12,Keep my heart beating like a drum,drum,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),10,Underneath the blood orange sun,Underneath,12,Keep my heart beating like a drum,beating,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),10,Underneath the blood orange sun,Underneath,12,Keep my heart beating like a drum,Keep,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),10,Underneath the blood orange sun,sun,13,"Legendary lovers (Woo, ayy)",lovers,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),11,Say my name like a scripture,Say,11,Say my name like a scripture,name,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),11,Say my name like a scripture,like,12,Keep my heart beating like a drum,like,INNER,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),12,Keep my heart beating like a drum,Keep,12,Keep my heart beating like a drum,beating,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),12,Keep my heart beating like a drum,drum,13,"Legendary lovers (Woo, ayy)",lovers,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),13,"Legendary lovers (Woo, ayy)",Legendary,14,"We could be legendary (Ayy, la-la-la-la-la)",legendary,INNER,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),13,"Legendary lovers (Woo, ayy)",Legendary,15,"We should be legendary (Ayy, ayy, ayy, ayy; la-la-la-la-la)",legendary,INNER,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),13,"Legendary lovers (Woo, ayy)",lovers,17,I'm just tryna figure out what you do (Figure out what you do),what,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),14,"We could be legendary (Ayy, la-la-la-la-la)",legendary,15,"We should be legendary (Ayy, ayy, ayy, ayy; la-la-la-la-la)",legendary,END,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),14,"We could be legendary (Ayy, la-la-la-la-la)",could,15,"We should be legendary (Ayy, ayy, ayy, ayy; la-la-la-la-la)",should,INNER,PERFECT,cmu,HIGH,Y
+Legendary Lovers (Save Me),16,You so motherfuckin' beautiful (Fuckin’ beautiful),motherfuckin,17,I'm just tryna figure out what you do (Figure out what you do),what,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),18,I just wanna be so close to you (Be so close to you),close,19,So close like Aladdin with Abu (Yeah),close,INNER,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),18,I just wanna be so close to you (Be so close to you),close,20,Come back home and tell me how you do (Do),home,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),19,So close like Aladdin with Abu (Yeah),Aladdin,19,So close like Aladdin with Abu (Yeah),Abu,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),19,So close like Aladdin with Abu (Yeah),Abu,20,Come back home and tell me how you do (Do),back,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),19,So close like Aladdin with Abu (Yeah),Aladdin,20,Come back home and tell me how you do (Do),back,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),19,So close like Aladdin with Abu (Yeah),close,20,Come back home and tell me how you do (Do),home,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),20,Come back home and tell me how you do (Do),how,21,"Get some money, baby, I'm so proud of you (I’m proud of you)",proud,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),20,Come back home and tell me how you do (Do),Come,21,"Get some money, baby, I'm so proud of you (I’m proud of you)",money,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),20,Come back home and tell me how you do (Do),Come,21,"Get some money, baby, I'm so proud of you (I’m proud of you)",some,INNER,PERFECT,cmu,HIGH,Y
+Legendary Lovers (Save Me),20,Come back home and tell me how you do (Do),tell,21,"Get some money, baby, I'm so proud of you (I’m proud of you)",Get,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),20,Come back home and tell me how you do (Do),Come,22,"Fuck what they say, you better not think it's true (Better not think it's true)",Fuck,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),20,Come back home and tell me how you do (Do),Come,22,"Fuck what they say, you better not think it's true (Better not think it's true)",what,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),20,Come back home and tell me how you do (Do),tell,22,"Fuck what they say, you better not think it's true (Better not think it's true)",better,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),20,Come back home and tell me how you do (Do),how,24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",proud,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),21,"Get some money, baby, I'm so proud of you (I’m proud of you)",some,21,"Get some money, baby, I'm so proud of you (I’m proud of you)",money,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),21,"Get some money, baby, I'm so proud of you (I’m proud of you)",baby,22,"Fuck what they say, you better not think it's true (Better not think it's true)",say,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),21,"Get some money, baby, I'm so proud of you (I’m proud of you)",Get,22,"Fuck what they say, you better not think it's true (Better not think it's true)",better,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),21,"Get some money, baby, I'm so proud of you (I’m proud of you)",money,22,"Fuck what they say, you better not think it's true (Better not think it's true)",Fuck,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),21,"Get some money, baby, I'm so proud of you (I’m proud of you)",money,22,"Fuck what they say, you better not think it's true (Better not think it's true)",what,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),21,"Get some money, baby, I'm so proud of you (I’m proud of you)",some,22,"Fuck what they say, you better not think it's true (Better not think it's true)",Fuck,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),21,"Get some money, baby, I'm so proud of you (I’m proud of you)",some,22,"Fuck what they say, you better not think it's true (Better not think it's true)",what,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),21,"Get some money, baby, I'm so proud of you (I’m proud of you)",proud,24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",proud,END,REPEAT,spelling,HIGH,N
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",Fuck,22,"Fuck what they say, you better not think it's true (Better not think it's true)",what,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",true,23,"You got a job interview, hope it goes smooth (We could be legendary)",smooth,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",not,23,"You got a job interview, hope it goes smooth (We could be legendary)",got,INNER,PERFECT,cmu,HIGH,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",not,23,"You got a job interview, hope it goes smooth (We could be legendary)",job,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",true,23,"You got a job interview, hope it goes smooth (We could be legendary)",interview,INNER,PERFECT,cmu,HIGH,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",Fuck,24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",money,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",Fuck,24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",some,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",say,24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",baby,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",think,24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",Here's,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",what,24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",money,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",what,24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",some,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),22,"Fuck what they say, you better not think it's true (Better not think it's true)",true,26,She make me turn up for her like Yabba Dabba Doo,Doo,END,PERFECT,cmu,HIGH,Y
+Legendary Lovers (Save Me),23,"You got a job interview, hope it goes smooth (We could be legendary)",got,23,"You got a job interview, hope it goes smooth (We could be legendary)",job,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),23,"You got a job interview, hope it goes smooth (We could be legendary)",hope,23,"You got a job interview, hope it goes smooth (We could be legendary)",goes,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),23,"You got a job interview, hope it goes smooth (We could be legendary)",interview,23,"You got a job interview, hope it goes smooth (We could be legendary)",smooth,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),23,"You got a job interview, hope it goes smooth (We could be legendary)",goes,25,"She gon' go and get it, that's my type of bitch (We could be legendary)",go,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),23,"You got a job interview, hope it goes smooth (We could be legendary)",goes,25,"She gon' go and get it, that's my type of bitch (We could be legendary)",gon,INNER,SLANT,spelling,LOW,Y
+Legendary Lovers (Save Me),23,"You got a job interview, hope it goes smooth (We could be legendary)",hope,25,"She gon' go and get it, that's my type of bitch (We could be legendary)",go,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),23,"You got a job interview, hope it goes smooth (We could be legendary)",hope,25,"She gon' go and get it, that's my type of bitch (We could be legendary)",gon,INNER,SLANT,spelling,LOW,Y
+Legendary Lovers (Save Me),23,"You got a job interview, hope it goes smooth (We could be legendary)",smooth,26,She make me turn up for her like Yabba Dabba Doo,Doo,END,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",some,24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",money,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",Here's,25,"She gon' go and get it, that's my type of bitch (We could be legendary)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Legendary Lovers (Save Me),24,"Here's some money, baby, I'm so proud of you (Legendary lovers)",baby,26,She make me turn up for her like Yabba Dabba Doo,make,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),25,"She gon' go and get it, that's my type of bitch (We could be legendary)",type,26,She make me turn up for her like Yabba Dabba Doo,like,INNER,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),25,"She gon' go and get it, that's my type of bitch (We could be legendary)",bitch,27,"Oh, take me down to the river (Yabba Dabba Doo)",river,END,SLANT,cmu,MED,Y
+Legendary Lovers (Save Me),26,She make me turn up for her like Yabba Dabba Doo,Yabba,26,She make me turn up for her like Yabba Dabba Doo,Dabba,INNER,SLANT,spelling,LOW,Y
+Legendary Lovers (Save Me),26,She make me turn up for her like Yabba Dabba Doo,make,27,"Oh, take me down to the river (Yabba Dabba Doo)",take,INNER,PERFECT,cmu,HIGH,Y
+Legendary Lovers (Save Me),28,Legendary (But will you love me at my lows? Legendary lovers),Legendary,29,"We could be legendary, oh-oh (Ayy, ayy, ayy; la-la-la-la-la)",legendary,END,REPEAT,spelling,HIGH,N

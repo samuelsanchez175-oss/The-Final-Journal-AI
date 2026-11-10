@@ -1,0 +1,286 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+If I Wanted To,1,I take a trip if I wanted to,wanted,2,Smoke out that zip if I wanted to,wanted,END,REPEAT,spelling,HIGH,N
+If I Wanted To,1,I take a trip if I wanted to,trip,2,Smoke out that zip if I wanted to,zip,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,1,I take a trip if I wanted to,wanted,3,I fuck your bitch if I wanted to,wanted,END,REPEAT,spelling,HIGH,N
+If I Wanted To,1,I take a trip if I wanted to,trip,3,I fuck your bitch if I wanted to,bitch,INNER,SLANT,cmu,MED,Y
+If I Wanted To,1,I take a trip if I wanted to,wanted,4,Buy a new whip if I wanted to,wanted,END,REPEAT,spelling,HIGH,N
+If I Wanted To,2,Smoke out that zip if I wanted to,wanted,3,I fuck your bitch if I wanted to,wanted,END,REPEAT,spelling,HIGH,N
+If I Wanted To,2,Smoke out that zip if I wanted to,zip,3,I fuck your bitch if I wanted to,bitch,INNER,SLANT,cmu,MED,Y
+If I Wanted To,2,Smoke out that zip if I wanted to,wanted,4,Buy a new whip if I wanted to,wanted,END,REPEAT,spelling,HIGH,N
+If I Wanted To,2,Smoke out that zip if I wanted to,zip,4,Buy a new whip if I wanted to,whip,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,3,I fuck your bitch if I wanted to,wanted,4,Buy a new whip if I wanted to,wanted,END,REPEAT,spelling,HIGH,N
+If I Wanted To,3,I fuck your bitch if I wanted to,bitch,4,Buy a new whip if I wanted to,whip,INNER,SLANT,cmu,MED,Y
+If I Wanted To,3,I fuck your bitch if I wanted to,fuck,5,Boy you can't do what you want to do,what,INNER,SLANT,cmu,MED,Y
+If I Wanted To,4,Buy a new whip if I wanted to,whip,6,I bought my mama some Jimmy Choo's,Jimmy,INNER,SLANT,cmu,MED,Y
+If I Wanted To,5,Boy you can't do what you want to do,can't,5,Boy you can't do what you want to do,want,INNER,SLANT,spelling,LOW,Y
+If I Wanted To,5,Boy you can't do what you want to do,want,6,I bought my mama some Jimmy Choo's,bought,INNER,SLANT,cmu,MED,Y
+If I Wanted To,5,Boy you can't do what you want to do,want,6,I bought my mama some Jimmy Choo's,mama,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,5,Boy you can't do what you want to do,what,6,I bought my mama some Jimmy Choo's,some,INNER,SLANT,cmu,MED,Y
+If I Wanted To,5,Boy you can't do what you want to do,can't,7,"Trappin' out the buggy, missing roof",Trappin,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,5,Boy you can't do what you want to do,what,7,"Trappin' out the buggy, missing roof",buggy,INNER,SLANT,cmu,MED,Y
+If I Wanted To,6,I bought my mama some Jimmy Choo's,bought,6,I bought my mama some Jimmy Choo's,mama,INNER,SLANT,cmu,MED,Y
+If I Wanted To,6,I bought my mama some Jimmy Choo's,Choo's,7,"Trappin' out the buggy, missing roof",roof,END,SLANT,spelling,LOW,Y
+If I Wanted To,6,I bought my mama some Jimmy Choo's,Jimmy,7,"Trappin' out the buggy, missing roof",missing,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,6,I bought my mama some Jimmy Choo's,some,7,"Trappin' out the buggy, missing roof",buggy,INNER,SLANT,cmu,MED,Y
+If I Wanted To,6,I bought my mama some Jimmy Choo's,Choo's,8,"I'm getting money, don't need no proof",proof,END,SLANT,spelling,LOW,Y
+If I Wanted To,6,I bought my mama some Jimmy Choo's,some,8,"I'm getting money, don't need no proof",money,INNER,SLANT,cmu,MED,Y
+If I Wanted To,7,"Trappin' out the buggy, missing roof",roof,8,"I'm getting money, don't need no proof",proof,END,PERFECT,cmu,HIGH,Y
+If I Wanted To,7,"Trappin' out the buggy, missing roof",buggy,8,"I'm getting money, don't need no proof",money,INNER,SLANT,cmu,MED,Y
+If I Wanted To,8,"I'm getting money, don't need no proof",don't,8,"I'm getting money, don't need no proof",no,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,9,Caviar frames on my face,frames,9,Caviar frames on my face,face,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,9,Caviar frames on my face,face,10,Calamari on my plate,plate,END,SLANT,cmu,MED,Y
+If I Wanted To,9,Caviar frames on my face,Caviar,10,Calamari on my plate,Calamari,INNER,SLANT,cmu,MED,Y
+If I Wanted To,9,Caviar frames on my face,frames,10,Calamari on my plate,plate,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,9,Caviar frames on my face,face,11,19 and got my own place,place,END,PERFECT,cmu,HIGH,Y
+If I Wanted To,9,Caviar frames on my face,Caviar,11,19 and got my own place,got,INNER,SLANT,cmu,MED,Y
+If I Wanted To,9,Caviar frames on my face,frames,11,19 and got my own place,place,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,9,Caviar frames on my face,face,12,"Broke niggas, they a disgrace",disgrace,END,PERFECT,cmu,HIGH,Y
+If I Wanted To,10,Calamari on my plate,plate,11,19 and got my own place,place,END,SLANT,cmu,MED,Y
+If I Wanted To,10,Calamari on my plate,Calamari,11,19 and got my own place,got,INNER,SLANT,cmu,MED,Y
+If I Wanted To,10,Calamari on my plate,plate,12,"Broke niggas, they a disgrace",disgrace,END,SLANT,cmu,MED,Y
+If I Wanted To,11,19 and got my own place,place,12,"Broke niggas, they a disgrace",disgrace,END,PERFECT,cmu,HIGH,Y
+If I Wanted To,11,19 and got my own place,own,12,"Broke niggas, they a disgrace",Broke,INNER,SLANT,cmu,MED,Y
+If I Wanted To,11,19 and got my own place,got,13,"Smoking heat, I got a fever",got,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,11,19 and got my own place,own,13,"Smoking heat, I got a fever",Smoking,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,12,"Broke niggas, they a disgrace",Broke,13,"Smoking heat, I got a fever",Smoking,INNER,SLANT,cmu,MED,Y
+If I Wanted To,13,"Smoking heat, I got a fever",heat,13,"Smoking heat, I got a fever",fever,INNER,SLANT,cmu,MED,Y
+If I Wanted To,13,"Smoking heat, I got a fever",fever,14,"Catching balls, I'm a receiver",receiver,END,MULTI,multi,HIGH,Y
+If I Wanted To,13,"Smoking heat, I got a fever",heat,14,"Catching balls, I'm a receiver",receiver,INNER,SLANT,cmu,MED,Y
+If I Wanted To,13,"Smoking heat, I got a fever",fever,15,Denny got the case of Act in the freezer,freezer,END,SLANT,cmu,MED,Y
+If I Wanted To,13,"Smoking heat, I got a fever",got,15,Denny got the case of Act in the freezer,got,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,13,"Smoking heat, I got a fever",heat,15,Denny got the case of Act in the freezer,freezer,INNER,SLANT,cmu,MED,Y
+If I Wanted To,13,"Smoking heat, I got a fever",fever,16,"Mix it with the Xans, we might have a seizure",seizure,END,SLANT,cmu,MED,Y
+If I Wanted To,13,"Smoking heat, I got a fever",fever,17,If you a bad bitch it was nice to meet ya,meet,END,SLANT,cmu,MED,Y
+If I Wanted To,14,"Catching balls, I'm a receiver",receiver,15,Denny got the case of Act in the freezer,freezer,END,SLANT,cmu,MED,Y
+If I Wanted To,14,"Catching balls, I'm a receiver",Catching,15,Denny got the case of Act in the freezer,Act,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,14,"Catching balls, I'm a receiver",receiver,16,"Mix it with the Xans, we might have a seizure",seizure,END,SLANT,cmu,MED,Y
+If I Wanted To,14,"Catching balls, I'm a receiver",Catching,16,"Mix it with the Xans, we might have a seizure",have,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,14,"Catching balls, I'm a receiver",receiver,17,If you a bad bitch it was nice to meet ya,meet,END,SLANT,cmu,MED,Y
+If I Wanted To,14,"Catching balls, I'm a receiver",receiver,18,"Fuck the football game, I was hitting dope by the bleachers",bleachers,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,15,Denny got the case of Act in the freezer,freezer,16,"Mix it with the Xans, we might have a seizure",seizure,END,SLANT,cmu,MED,Y
+If I Wanted To,15,Denny got the case of Act in the freezer,Act,16,"Mix it with the Xans, we might have a seizure",have,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,15,Denny got the case of Act in the freezer,freezer,17,If you a bad bitch it was nice to meet ya,meet,END,SLANT,cmu,MED,Y
+If I Wanted To,15,Denny got the case of Act in the freezer,Act,17,If you a bad bitch it was nice to meet ya,bad,INNER,SLANT,cmu,MED,Y
+If I Wanted To,15,Denny got the case of Act in the freezer,freezer,18,"Fuck the football game, I was hitting dope by the bleachers",bleachers,END,SLANT,cmu,MED,Y
+If I Wanted To,15,Denny got the case of Act in the freezer,freezer,19,"I was in Buckhead, going to the cleaners",cleaners,END,SLANT,cmu,MED,Y
+If I Wanted To,16,"Mix it with the Xans, we might have a seizure",seizure,17,If you a bad bitch it was nice to meet ya,meet,END,SLANT,cmu,MED,Y
+If I Wanted To,16,"Mix it with the Xans, we might have a seizure",have,17,If you a bad bitch it was nice to meet ya,bad,INNER,SLANT,cmu,MED,Y
+If I Wanted To,16,"Mix it with the Xans, we might have a seizure",might,17,If you a bad bitch it was nice to meet ya,nice,INNER,SLANT,cmu,MED,Y
+If I Wanted To,16,"Mix it with the Xans, we might have a seizure",Mix,17,If you a bad bitch it was nice to meet ya,bitch,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,16,"Mix it with the Xans, we might have a seizure",seizure,18,"Fuck the football game, I was hitting dope by the bleachers",bleachers,END,SLANT,cmu,MED,Y
+If I Wanted To,16,"Mix it with the Xans, we might have a seizure",might,18,"Fuck the football game, I was hitting dope by the bleachers",by,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,16,"Mix it with the Xans, we might have a seizure",Mix,18,"Fuck the football game, I was hitting dope by the bleachers",hitting,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,16,"Mix it with the Xans, we might have a seizure",seizure,19,"I was in Buckhead, going to the cleaners",cleaners,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,16,"Mix it with the Xans, we might have a seizure",seizure,20,But I was never doing any cleaning,cleaning,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,17,If you a bad bitch it was nice to meet ya,meet,18,"Fuck the football game, I was hitting dope by the bleachers",bleachers,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,17,If you a bad bitch it was nice to meet ya,bitch,18,"Fuck the football game, I was hitting dope by the bleachers",hitting,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,17,If you a bad bitch it was nice to meet ya,nice,18,"Fuck the football game, I was hitting dope by the bleachers",by,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,17,If you a bad bitch it was nice to meet ya,meet,19,"I was in Buckhead, going to the cleaners",cleaners,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,17,If you a bad bitch it was nice to meet ya,meet,20,But I was never doing any cleaning,cleaning,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,17,If you a bad bitch it was nice to meet ya,meet,21,"Every thing I did, it was a reason",reason,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,18,"Fuck the football game, I was hitting dope by the bleachers",bleachers,19,"I was in Buckhead, going to the cleaners",cleaners,END,SLANT,cmu,MED,Y
+If I Wanted To,18,"Fuck the football game, I was hitting dope by the bleachers",dope,19,"I was in Buckhead, going to the cleaners",going,INNER,SLANT,cmu,MED,Y
+If I Wanted To,18,"Fuck the football game, I was hitting dope by the bleachers",bleachers,20,But I was never doing any cleaning,cleaning,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,18,"Fuck the football game, I was hitting dope by the bleachers",bleachers,21,"Every thing I did, it was a reason",reason,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,18,"Fuck the football game, I was hitting dope by the bleachers",bleachers,22,I was number one like I was Ariza,Ariza,END,SLANT,cmu,MED,Y
+If I Wanted To,19,"I was in Buckhead, going to the cleaners",cleaners,20,But I was never doing any cleaning,cleaning,END,SLANT,cmu,MED,Y
+If I Wanted To,19,"I was in Buckhead, going to the cleaners",going,20,But I was never doing any cleaning,doing,INNER,SLANT,spelling,LOW,Y
+If I Wanted To,19,"I was in Buckhead, going to the cleaners",cleaners,21,"Every thing I did, it was a reason",reason,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,19,"I was in Buckhead, going to the cleaners",cleaners,22,I was number one like I was Ariza,Ariza,END,SLANT,cmu,MED,Y
+If I Wanted To,19,"I was in Buckhead, going to the cleaners",cleaners,23,"Hawks' stadium, pour another four during the season",season,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,20,But I was never doing any cleaning,never,20,But I was never doing any cleaning,any,INNER,SLANT,cmu,MED,Y
+If I Wanted To,20,But I was never doing any cleaning,cleaning,21,"Every thing I did, it was a reason",reason,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,20,But I was never doing any cleaning,any,21,"Every thing I did, it was a reason",Every,INNER,SLANT,cmu,MED,Y
+If I Wanted To,20,But I was never doing any cleaning,never,21,"Every thing I did, it was a reason",Every,INNER,SLANT,cmu,MED,Y
+If I Wanted To,20,But I was never doing any cleaning,cleaning,22,I was number one like I was Ariza,Ariza,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,20,But I was never doing any cleaning,cleaning,23,"Hawks' stadium, pour another four during the season",season,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,20,But I was never doing any cleaning,cleaning,24,"I get the cheese, no pizza",pizza,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,21,"Every thing I did, it was a reason",reason,22,I was number one like I was Ariza,Ariza,END,SLANT,cmu,MED,Y
+If I Wanted To,21,"Every thing I did, it was a reason",reason,23,"Hawks' stadium, pour another four during the season",season,END,MULTI,multi,HIGH,Y
+If I Wanted To,21,"Every thing I did, it was a reason",reason,24,"I get the cheese, no pizza",pizza,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,22,I was number one like I was Ariza,number,22,I was number one like I was Ariza,one,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,22,I was number one like I was Ariza,Ariza,23,"Hawks' stadium, pour another four during the season",season,END,SLANT,cmu,MED,Y
+If I Wanted To,22,I was number one like I was Ariza,number,23,"Hawks' stadium, pour another four during the season",another,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,22,I was number one like I was Ariza,one,23,"Hawks' stadium, pour another four during the season",another,INNER,SLANT,cmu,MED,Y
+If I Wanted To,22,I was number one like I was Ariza,Ariza,24,"I get the cheese, no pizza",pizza,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,22,I was number one like I was Ariza,Ariza,24,"I get the cheese, no pizza",cheese,INNER,SLANT,cmu,MED,Y
+If I Wanted To,22,I was number one like I was Ariza,Ariza,26,Black and white just like a zebra,zebra,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,23,"Hawks' stadium, pour another four during the season",Hawks,23,"Hawks' stadium, pour another four during the season",four,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,23,"Hawks' stadium, pour another four during the season",Hawks,23,"Hawks' stadium, pour another four during the season",pour,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,23,"Hawks' stadium, pour another four during the season",pour,23,"Hawks' stadium, pour another four during the season",four,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,23,"Hawks' stadium, pour another four during the season",season,24,"I get the cheese, no pizza",pizza,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,23,"Hawks' stadium, pour another four during the season",season,24,"I get the cheese, no pizza",cheese,INNER,SLANT,cmu,MED,Y
+If I Wanted To,23,"Hawks' stadium, pour another four during the season",another,25,Love the addicts cause I need 'em,Love,INNER,SLANT,cmu,MED,Y
+If I Wanted To,23,"Hawks' stadium, pour another four during the season",season,25,Love the addicts cause I need 'em,need,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,23,"Hawks' stadium, pour another four during the season",season,26,Black and white just like a zebra,zebra,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,23,"Hawks' stadium, pour another four during the season",season,27,"Feds pull up on me, I got amnesia",amnesia,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,24,"I get the cheese, no pizza",cheese,24,"I get the cheese, no pizza",pizza,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,24,"I get the cheese, no pizza",cheese,25,Love the addicts cause I need 'em,need,INNER,SLANT,cmu,MED,Y
+If I Wanted To,24,"I get the cheese, no pizza",pizza,25,Love the addicts cause I need 'em,need,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,24,"I get the cheese, no pizza",pizza,26,Black and white just like a zebra,zebra,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,24,"I get the cheese, no pizza",cheese,26,Black and white just like a zebra,zebra,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,24,"I get the cheese, no pizza",pizza,27,"Feds pull up on me, I got amnesia",amnesia,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,24,"I get the cheese, no pizza",pizza,28,Got my dope from my man in Indonesia,Indonesia,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,25,Love the addicts cause I need 'em,need,26,Black and white just like a zebra,zebra,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,25,Love the addicts cause I need 'em,cause,27,"Feds pull up on me, I got amnesia",got,INNER,SLANT,cmu,MED,Y
+If I Wanted To,25,Love the addicts cause I need 'em,need,27,"Feds pull up on me, I got amnesia",amnesia,INNER,SLANT,cmu,MED,Y
+If I Wanted To,26,Black and white just like a zebra,white,26,Black and white just like a zebra,like,INNER,SLANT,cmu,MED,Y
+If I Wanted To,26,Black and white just like a zebra,zebra,27,"Feds pull up on me, I got amnesia",amnesia,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,26,Black and white just like a zebra,zebra,28,Got my dope from my man in Indonesia,Indonesia,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,26,Black and white just like a zebra,Black,28,Got my dope from my man in Indonesia,man,INNER,SLANT,cmu,MED,Y
+If I Wanted To,26,Black and white just like a zebra,zebra,29,I ain't with the games like my name was Lisa,Lisa,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,26,Black and white just like a zebra,zebra,30,"And my bitch bad, she a diva",diva,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,27,"Feds pull up on me, I got amnesia",amnesia,28,Got my dope from my man in Indonesia,Indonesia,END,MULTI,multi,HIGH,Y
+If I Wanted To,27,"Feds pull up on me, I got amnesia",got,28,Got my dope from my man in Indonesia,Got,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,27,"Feds pull up on me, I got amnesia",amnesia,29,I ain't with the games like my name was Lisa,Lisa,END,SLANT,cmu,MED,Y
+If I Wanted To,27,"Feds pull up on me, I got amnesia",amnesia,30,"And my bitch bad, she a diva",diva,END,SLANT,cmu,MED,Y
+If I Wanted To,27,"Feds pull up on me, I got amnesia",amnesia,31,And I know just how to treat her,treat,END,SLANT,cmu,MED,Y
+If I Wanted To,28,Got my dope from my man in Indonesia,Indonesia,29,I ain't with the games like my name was Lisa,Lisa,END,SLANT,cmu,MED,Y
+If I Wanted To,28,Got my dope from my man in Indonesia,Indonesia,30,"And my bitch bad, she a diva",diva,END,SLANT,cmu,MED,Y
+If I Wanted To,28,Got my dope from my man in Indonesia,man,30,"And my bitch bad, she a diva",bad,INNER,SLANT,cmu,MED,Y
+If I Wanted To,28,Got my dope from my man in Indonesia,Indonesia,31,And I know just how to treat her,treat,END,SLANT,cmu,MED,Y
+If I Wanted To,29,I ain't with the games like my name was Lisa,ain't,29,I ain't with the games like my name was Lisa,games,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,29,I ain't with the games like my name was Lisa,ain't,29,I ain't with the games like my name was Lisa,name,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,29,I ain't with the games like my name was Lisa,games,29,I ain't with the games like my name was Lisa,name,INNER,SLANT,cmu,MED,Y
+If I Wanted To,29,I ain't with the games like my name was Lisa,Lisa,30,"And my bitch bad, she a diva",diva,END,SLANT,cmu,MED,Y
+If I Wanted To,29,I ain't with the games like my name was Lisa,Lisa,31,And I know just how to treat her,treat,END,SLANT,cmu,MED,Y
+If I Wanted To,30,"And my bitch bad, she a diva",diva,31,And I know just how to treat her,treat,END,SLANT,cmu,MED,Y
+If I Wanted To,30,"And my bitch bad, she a diva",bitch,32,I was really fucking getting it,really,INNER,SLANT,cmu,MED,Y
+If I Wanted To,32,I was really fucking getting it,getting,33,Just take a look at my percentages,percentages,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,32,I was really fucking getting it,getting,34,My OG is my representative,representative,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,32,I was really fucking getting it,getting,35,Don't fuck with niggas cause they sensitive,sensitive,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,32,I was really fucking getting it,getting,36,I get that money and spend it,spend,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,33,Just take a look at my percentages,percentages,34,My OG is my representative,representative,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,33,Just take a look at my percentages,percentages,35,Don't fuck with niggas cause they sensitive,sensitive,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,33,Just take a look at my percentages,percentages,36,I get that money and spend it,spend,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,34,My OG is my representative,representative,35,Don't fuck with niggas cause they sensitive,sensitive,END,MULTI,multi,HIGH,Y
+If I Wanted To,34,My OG is my representative,OG,35,Don't fuck with niggas cause they sensitive,cause,INNER,SLANT,cmu,MED,Y
+If I Wanted To,34,My OG is my representative,representative,36,I get that money and spend it,spend,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,34,My OG is my representative,representative,36,I get that money and spend it,get,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,35,Don't fuck with niggas cause they sensitive,sensitive,36,I get that money and spend it,spend,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,35,Don't fuck with niggas cause they sensitive,fuck,36,I get that money and spend it,money,INNER,SLANT,cmu,MED,Y
+If I Wanted To,35,Don't fuck with niggas cause they sensitive,sensitive,36,I get that money and spend it,get,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,36,I get that money and spend it,get,36,I get that money and spend it,spend,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,36,I get that money and spend it,money,38,I fucked his bitch now he trippin',fucked,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,37,"I'm in a Rari, it's tinted",tinted,38,I fucked his bitch now he trippin',trippin,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,37,"I'm in a Rari, it's tinted",tinted,38,I fucked his bitch now he trippin',bitch,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,37,"I'm in a Rari, it's tinted",Rari,39,"Bitch man ain't in it, I'm in it",man,INNER,SLANT,spelling,LOW,Y
+If I Wanted To,37,"I'm in a Rari, it's tinted",tinted,39,"Bitch man ain't in it, I'm in it",Bitch,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,37,"I'm in a Rari, it's tinted",tinted,40,I got a way with the women,women,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,38,I fucked his bitch now he trippin',bitch,38,I fucked his bitch now he trippin',trippin,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,38,I fucked his bitch now he trippin',bitch,39,"Bitch man ain't in it, I'm in it",Bitch,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,38,I fucked his bitch now he trippin',trippin,39,"Bitch man ain't in it, I'm in it",Bitch,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,38,I fucked his bitch now he trippin',trippin,40,I got a way with the women,women,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,38,I fucked his bitch now he trippin',bitch,40,I got a way with the women,women,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,39,"Bitch man ain't in it, I'm in it",ain't,40,I got a way with the women,way,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,39,"Bitch man ain't in it, I'm in it",Bitch,40,I got a way with the women,women,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,39,"Bitch man ain't in it, I'm in it",ain't,41,I got a way with the hoes,way,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,40,I got a way with the women,got,41,I got a way with the hoes,got,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,40,I got a way with the women,way,41,I got a way with the hoes,way,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,41,I got a way with the hoes,hoes,43,You spend you money on clothes,clothes,END,SLANT,cmu,MED,Y
+If I Wanted To,41,I got a way with the hoes,hoes,44,I broke my arm in the bowl,bowl,END,SLANT,cmu,MED,Y
+If I Wanted To,41,I got a way with the hoes,hoes,45,And I get 20 a show,show,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,42,I spend my money on money,money,42,I spend my money on money,money,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,42,I spend my money on money,money,43,You spend you money on clothes,money,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,42,I spend my money on money,spend,43,You spend you money on clothes,spend,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,43,You spend you money on clothes,clothes,44,I broke my arm in the bowl,bowl,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,43,You spend you money on clothes,clothes,44,I broke my arm in the bowl,broke,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,43,You spend you money on clothes,clothes,45,And I get 20 a show,show,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,43,You spend you money on clothes,spend,45,And I get 20 a show,get,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,43,You spend you money on clothes,clothes,47,I spent a check on that Rolls,Rolls,END,SLANT,cmu,MED,Y
+If I Wanted To,44,I broke my arm in the bowl,broke,44,I broke my arm in the bowl,bowl,INNER,SLANT,cmu,MED,Y
+If I Wanted To,44,I broke my arm in the bowl,bowl,45,And I get 20 a show,show,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,44,I broke my arm in the bowl,broke,45,And I get 20 a show,show,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,44,I broke my arm in the bowl,bowl,47,I spent a check on that Rolls,Rolls,END,SLANT,cmu,MED,Y
+If I Wanted To,45,And I get 20 a show,get,46,I get my diamonds from Italy,get,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,45,And I get 20 a show,show,47,I spent a check on that Rolls,Rolls,END,ASSONANCE,vowel,MED,Y
+If I Wanted To,45,And I get 20 a show,get,47,I spent a check on that Rolls,check,INNER,SLANT,cmu,MED,Y
+If I Wanted To,45,And I get 20 a show,get,47,I spent a check on that Rolls,spent,INNER,SLANT,cmu,MED,Y
+If I Wanted To,46,I get my diamonds from Italy,get,47,I spent a check on that Rolls,check,INNER,SLANT,cmu,MED,Y
+If I Wanted To,46,I get my diamonds from Italy,get,47,I spent a check on that Rolls,spent,INNER,SLANT,cmu,MED,Y
+If I Wanted To,46,I get my diamonds from Italy,get,48,I spent the check on her purse,check,INNER,SLANT,cmu,MED,Y
+If I Wanted To,46,I get my diamonds from Italy,get,48,I spent the check on her purse,spent,INNER,SLANT,cmu,MED,Y
+If I Wanted To,47,I spent a check on that Rolls,spent,47,I spent a check on that Rolls,check,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,47,I spent a check on that Rolls,check,48,I spent the check on her purse,check,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,47,I spent a check on that Rolls,check,48,I spent the check on her purse,spent,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,47,I spent a check on that Rolls,spent,48,I spent the check on her purse,check,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,47,I spent a check on that Rolls,spent,48,I spent the check on her purse,spent,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,47,I spent a check on that Rolls,check,49,Then I went bought me a vert,went,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,47,I spent a check on that Rolls,spent,49,Then I went bought me a vert,went,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,48,I spent the check on her purse,spent,48,I spent the check on her purse,check,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,48,I spent the check on her purse,purse,49,Then I went bought me a vert,vert,END,SLANT,cmu,MED,Y
+If I Wanted To,48,I spent the check on her purse,check,49,Then I went bought me a vert,went,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,48,I spent the check on her purse,spent,49,Then I went bought me a vert,went,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,50,I'm scrapin' the bowl then I skurt,scrapin,52,Make this muthfucka fishtail,Make,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,50,I'm scrapin' the bowl then I skurt,skurt,53,I get surgical with the pump,pump,END,ASSONANCE,vowel,LOW,N
+If I Wanted To,52,Make this muthfucka fishtail,Make,54,"Nigga call me Denzel, Training Day",Day,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,52,Make this muthfucka fishtail,Make,54,"Nigga call me Denzel, Training Day",Training,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,53,I get surgical with the pump,get,54,"Nigga call me Denzel, Training Day",Denzel,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Training,54,"Nigga call me Denzel, Training Day",Day,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Day,55,I just might hop on the plane today,today,END,PERFECT,cmu,HIGH,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Day,55,I just might hop on the plane today,plane,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Training,55,I just might hop on the plane today,plane,INNER,SLANT,cmu,MED,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Training,55,I just might hop on the plane today,today,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Day,56,"My jewelry on me, but I'm plain today",today,END,PERFECT,cmu,HIGH,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Day,56,"My jewelry on me, but I'm plain today",plain,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Training,56,"My jewelry on me, but I'm plain today",plain,INNER,SLANT,cmu,MED,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Training,56,"My jewelry on me, but I'm plain today",today,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,54,"Nigga call me Denzel, Training Day",Day,57,"Money on me, it might rain today",today,END,PERFECT,cmu,HIGH,Y
+If I Wanted To,55,I just might hop on the plane today,plane,55,I just might hop on the plane today,today,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,55,I just might hop on the plane today,today,56,"My jewelry on me, but I'm plain today",today,END,REPEAT,spelling,HIGH,N
+If I Wanted To,55,I just might hop on the plane today,plane,56,"My jewelry on me, but I'm plain today",plain,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,55,I just might hop on the plane today,plane,56,"My jewelry on me, but I'm plain today",today,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,55,I just might hop on the plane today,today,56,"My jewelry on me, but I'm plain today",plain,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,55,I just might hop on the plane today,today,57,"Money on me, it might rain today",today,END,REPEAT,spelling,HIGH,N
+If I Wanted To,55,I just might hop on the plane today,might,57,"Money on me, it might rain today",might,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,55,I just might hop on the plane today,plane,57,"Money on me, it might rain today",rain,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,55,I just might hop on the plane today,plane,57,"Money on me, it might rain today",today,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,55,I just might hop on the plane today,today,57,"Money on me, it might rain today",rain,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,56,"My jewelry on me, but I'm plain today",plain,56,"My jewelry on me, but I'm plain today",today,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,56,"My jewelry on me, but I'm plain today",today,57,"Money on me, it might rain today",today,END,REPEAT,spelling,HIGH,N
+If I Wanted To,56,"My jewelry on me, but I'm plain today",plain,57,"Money on me, it might rain today",rain,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,56,"My jewelry on me, but I'm plain today",plain,57,"Money on me, it might rain today",today,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,56,"My jewelry on me, but I'm plain today",today,57,"Money on me, it might rain today",rain,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,56,"My jewelry on me, but I'm plain today",plain,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",haters,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,56,"My jewelry on me, but I'm plain today",plain,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",say,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,56,"My jewelry on me, but I'm plain today",today,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",haters,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,56,"My jewelry on me, but I'm plain today",today,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",say,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,57,"Money on me, it might rain today",rain,57,"Money on me, it might rain today",today,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,57,"Money on me, it might rain today",Money,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",fuck,INNER,SLANT,cmu,MED,Y
+If I Wanted To,57,"Money on me, it might rain today",Money,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",what,INNER,SLANT,cmu,MED,Y
+If I Wanted To,57,"Money on me, it might rain today",rain,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",haters,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,57,"Money on me, it might rain today",rain,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",say,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,57,"Money on me, it might rain today",today,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",haters,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,57,"Money on me, it might rain today",today,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",say,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,57,"Money on me, it might rain today",Money,59,"Got a friend with a friend, bitches come wit it",come,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",fuck,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",what,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",Give,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",bitch,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",haters,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",say,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",bitch,59,"Got a friend with a friend, bitches come wit it",bitches,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",bitch,59,"Got a friend with a friend, bitches come wit it",wit,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",fuck,59,"Got a friend with a friend, bitches come wit it",come,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",get,59,"Got a friend with a friend, bitches come wit it",friend,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",Give,59,"Got a friend with a friend, bitches come wit it",bitches,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",Give,59,"Got a friend with a friend, bitches come wit it",wit,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",what,59,"Got a friend with a friend, bitches come wit it",come,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",bitch,60,"Nut all on her titties, bitches gettin' freaky",bitches,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",fuck,60,"Nut all on her titties, bitches gettin' freaky",Nut,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",get,60,"Nut all on her titties, bitches gettin' freaky",gettin,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",Give,60,"Nut all on her titties, bitches gettin' freaky",bitches,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",these,60,"Nut all on her titties, bitches gettin' freaky",freaky,INNER,SLANT,cmu,MED,Y
+If I Wanted To,58,"Give a fuck 'bout what these haters say, bitch I'm gon' get it",what,60,"Nut all on her titties, bitches gettin' freaky",Nut,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,59,"Got a friend with a friend, bitches come wit it",bitches,59,"Got a friend with a friend, bitches come wit it",wit,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,59,"Got a friend with a friend, bitches come wit it",friend,59,"Got a friend with a friend, bitches come wit it",friend,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,59,"Got a friend with a friend, bitches come wit it",bitches,60,"Nut all on her titties, bitches gettin' freaky",bitches,INNER,REPEAT,spelling,HIGH,N
+If I Wanted To,59,"Got a friend with a friend, bitches come wit it",come,60,"Nut all on her titties, bitches gettin' freaky",Nut,INNER,SLANT,cmu,MED,Y
+If I Wanted To,59,"Got a friend with a friend, bitches come wit it",friend,60,"Nut all on her titties, bitches gettin' freaky",gettin,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,59,"Got a friend with a friend, bitches come wit it",wit,60,"Nut all on her titties, bitches gettin' freaky",bitches,INNER,ASSONANCE,vowel,MED,Y
+If I Wanted To,59,"Got a friend with a friend, bitches come wit it",bitches,61,"These niggas wanna be me, bitch I ball like bebe",bitch,INNER,SLANT,cmu,MED,Y
+If I Wanted To,59,"Got a friend with a friend, bitches come wit it",Got,61,"These niggas wanna be me, bitch I ball like bebe",wanna,INNER,SLANT,cmu,MED,Y
+If I Wanted To,59,"Got a friend with a friend, bitches come wit it",wit,61,"These niggas wanna be me, bitch I ball like bebe",bitch,INNER,SLANT,cmu,MED,Y
+If I Wanted To,60,"Nut all on her titties, bitches gettin' freaky",freaky,61,"These niggas wanna be me, bitch I ball like bebe",bebe,END,SLANT,cmu,MED,Y
+If I Wanted To,60,"Nut all on her titties, bitches gettin' freaky",all,61,"These niggas wanna be me, bitch I ball like bebe",ball,INNER,PERFECT,cmu,HIGH,Y
+If I Wanted To,60,"Nut all on her titties, bitches gettin' freaky",bitches,61,"These niggas wanna be me, bitch I ball like bebe",bitch,INNER,SLANT,cmu,MED,Y
+If I Wanted To,60,"Nut all on her titties, bitches gettin' freaky",freaky,61,"These niggas wanna be me, bitch I ball like bebe",These,INNER,SLANT,cmu,MED,Y
+If I Wanted To,60,"Nut all on her titties, bitches gettin' freaky",titties,61,"These niggas wanna be me, bitch I ball like bebe",niggas,INNER,SLANT,spelling,LOW,Y
+If I Wanted To,61,"These niggas wanna be me, bitch I ball like bebe",These,61,"These niggas wanna be me, bitch I ball like bebe",bebe,INNER,SLANT,cmu,MED,Y

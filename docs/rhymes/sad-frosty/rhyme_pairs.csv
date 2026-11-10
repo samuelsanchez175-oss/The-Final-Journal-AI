@@ -1,0 +1,525 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+GENGAR,3,"Phew, phew, phew (Brrt), phew, phew (Uh)",Phew,3,"Phew, phew, phew (Brrt), phew, phew (Uh)",phew,INNER,REPEAT,spelling,HIGH,N
+GENGAR,4,"Bang (Brrt), bang (What?), bang, bang, bang",Bang,4,"Bang (Brrt), bang (What?), bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+GENGAR,5,Heard that pussy talkin' loud (Huh?),talkin,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",bought,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,6,"Well, fuck it, I'ma let him hate (Dududuh)",I'ma,6,"Well, fuck it, I'ma let him hate (Dududuh)",him,INNER,SLANT,spelling,LOW,Y
+GENGAR,6,"Well, fuck it, I'ma let him hate (Dududuh)",Well,6,"Well, fuck it, I'ma let him hate (Dududuh)",let,INNER,SLANT,cmu,MED,Y
+GENGAR,6,"Well, fuck it, I'ma let him hate (Dududuh)",hate,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",Ape,END,SLANT,cmu,MED,Y
+GENGAR,6,"Well, fuck it, I'ma let him hate (Dududuh)",fuck,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",some,INNER,SLANT,cmu,MED,Y
+GENGAR,6,"Well, fuck it, I'ma let him hate (Dududuh)",hate,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",Bathing,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,6,"Well, fuck it, I'ma let him hate (Dududuh)",him,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,6,"Well, fuck it, I'ma let him hate (Dududuh)",I'ma,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",bitch,INNER,SLANT,spelling,LOW,Y
+GENGAR,6,"Well, fuck it, I'ma let him hate (Dududuh)",hate,9,He don't ever fuckin' hesitate (Huh? What?),hesitate,END,PERFECT,cmu,HIGH,Y
+GENGAR,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",Bathing,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",Ape,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",Ape,9,He don't ever fuckin' hesitate (Huh? What?),hesitate,END,SLANT,cmu,MED,Y
+GENGAR,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",Bathing,9,He don't ever fuckin' hesitate (Huh? What?),hesitate,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",some,9,He don't ever fuckin' hesitate (Huh? What?),fuckin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,7,"I feel like Soulja Boy 'cause bitch, I just bought me some Bathing Ape (Brr, skuduskuh)",Ape,11,"We drop thirty at the heaven gates (Brrat, brrat)",gates,END,ASSONANCE,vowel,MED,Y
+GENGAR,8,"And KT, he gon' shoot (Huh?)",gon,9,He don't ever fuckin' hesitate (Huh? What?),don't,INNER,SLANT,spelling,LOW,Y
+GENGAR,8,"And KT, he gon' shoot (Huh?)",gon,10,I'm ballin' like I'm Kobe,Kobe,INNER,SLANT,spelling,LOW,Y
+GENGAR,9,He don't ever fuckin' hesitate (Huh? What?),don't,10,I'm ballin' like I'm Kobe,Kobe,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,9,He don't ever fuckin' hesitate (Huh? What?),hesitate,11,"We drop thirty at the heaven gates (Brrat, brrat)",gates,END,SLANT,cmu,MED,Y
+GENGAR,9,He don't ever fuckin' hesitate (Huh? What?),ever,11,"We drop thirty at the heaven gates (Brrat, brrat)",heaven,INNER,SLANT,cmu,MED,Y
+GENGAR,9,He don't ever fuckin' hesitate (Huh? What?),hesitate,12,"Uh, I'm gon' make that pussy meditate (What?)",meditate,END,MULTI,multi,HIGH,Y
+GENGAR,9,He don't ever fuckin' hesitate (Huh? What?),hesitate,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",levitate,END,PERFECT,cmu,HIGH,Y
+GENGAR,10,I'm ballin' like I'm Kobe,Kobe,12,"Uh, I'm gon' make that pussy meditate (What?)",gon,INNER,SLANT,spelling,LOW,Y
+GENGAR,11,"We drop thirty at the heaven gates (Brrat, brrat)",gates,12,"Uh, I'm gon' make that pussy meditate (What?)",meditate,END,SLANT,cmu,MED,Y
+GENGAR,11,"We drop thirty at the heaven gates (Brrat, brrat)",gates,12,"Uh, I'm gon' make that pussy meditate (What?)",make,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,11,"We drop thirty at the heaven gates (Brrat, brrat)",gates,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",levitate,END,SLANT,cmu,MED,Y
+GENGAR,11,"We drop thirty at the heaven gates (Brrat, brrat)",drop,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",hollows,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,11,"We drop thirty at the heaven gates (Brrat, brrat)",gates,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",angel,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,11,"We drop thirty at the heaven gates (Brrat, brrat)",gates,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",accelerate,END,SLANT,cmu,MED,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",make,12,"Uh, I'm gon' make that pussy meditate (What?)",meditate,INNER,SLANT,cmu,MED,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",meditate,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",levitate,END,PERFECT,cmu,HIGH,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",gon,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",gon,INNER,REPEAT,spelling,HIGH,N
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",make,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",angel,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",make,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",levitate,INNER,SLANT,cmu,MED,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",meditate,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",angel,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",make,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",make,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",baby,INNER,SLANT,cmu,MED,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",meditate,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,INNER,SLANT,cmu,MED,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",meditate,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",baby,INNER,SLANT,cmu,MED,Y
+GENGAR,12,"Uh, I'm gon' make that pussy meditate (What?)",meditate,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",accelerate,END,PERFECT,cmu,HIGH,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",angel,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",levitate,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",fill,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",him,INNER,SLANT,cmu,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",angel,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",angel,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",baby,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",hollows,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",lat,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",levitate,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,INNER,SLANT,cmu,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",levitate,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",baby,INNER,SLANT,cmu,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",levitate,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",accelerate,END,PERFECT,cmu,HIGH,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",angel,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",accelerate,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",angel,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",th,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",gon,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",button,INNER,PERFECT,spelling,MED,Y
+GENGAR,13,"I fill him up with hollows (Ayy), he an angel, he gon' levitate (What?)",levitate,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",th,INNER,SLANT,cmu,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,INNER,REPEAT,spelling,HIGH,N
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",baby,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",baby,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",yes,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",never,INNER,SLANT,cmu,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",accelerate,INNER,SLANT,cmu,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",ain't,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",th,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",baby,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",accelerate,INNER,SLANT,cmu,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",baby,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",th,INNER,SLANT,cmu,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",never,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",Tesla,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",yes,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",Tesla,INNER,SLANT,cmu,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",never,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",best,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",never,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",neck,INNER,SLANT,cmu,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",yes,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",best,INNER,SLANT,cmu,MED,Y
+GENGAR,14,"And yes, I wrapped it up, it ain't my baby, she ain't never latе",yes,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",neck,INNER,SLANT,cmu,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",pulled,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",pushed,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",th,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",accelerate,INNER,SLANT,cmu,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",pulled,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",'Wood,INNER,SLANT,cmu,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",pulled,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",good,INNER,SLANT,cmu,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",pushed,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",'Wood,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",pushed,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",good,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",Tesla,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",best,INNER,SLANT,cmu,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",Tesla,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",neck,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",pulled,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",could,INNER,SLANT,cmu,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",pushed,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",could,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",Tesla,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",best,INNER,SLANT,cmu,MED,Y
+GENGAR,15,"I pulled up in a Tesla, pushed thе button to accelerate (Skrrt, skrrt, skrrt)",Tesla,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",hella,INNER,SLANT,spelling,LOW,Y
+GENGAR,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",'Wood,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",good,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",best,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",neck,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",good,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",could,END,PERFECT,cmu,HIGH,Y
+GENGAR,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",'Wood,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",could,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",best,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",best,INNER,REPEAT,spelling,HIGH,N
+GENGAR,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",give,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",think,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",neck,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",best,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,16,"Smokin' on the best 'Wood, shorty give that neck good (Ayy, thottie)",Smokin,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",don't,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",BAPE,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",had,INNER,SLANT,spelling,LOW,Y
+GENGAR,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",BAPE,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Lag,INNER,SLANT,spelling,LOW,Y
+GENGAR,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",best,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Jet,INNER,SLANT,cmu,MED,Y
+GENGAR,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",don't,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",show,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",don't,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Sosa,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",think,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",missed,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,17,"I've been rockin' hella BAPE that I don't think the best could, ayy (Huh? What?)",think,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Think,INNER,REPEAT,spelling,HIGH,N
+GENGAR,18,B.B. Simon on my pants (Huh?),B,18,B.B. Simon on my pants (Huh?),B,INNER,REPEAT,spelling,HIGH,N
+GENGAR,18,B.B. Simon on my pants (Huh?),pants,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Lag,END,ASSONANCE,vowel,MED,Y
+GENGAR,18,B.B. Simon on my pants (Huh?),B,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",DC,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,18,B.B. Simon on my pants (Huh?),pants,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",had,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",had,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Lag,INNER,SLANT,cmu,MED,Y
+GENGAR,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",show,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Sosa,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Think,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",missed,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",missed,20,"Yuh, no more fake chains, my shit bust down (Yeah)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",show,20,"Yuh, no more fake chains, my shit bust down (Yeah)",no,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Sosa,20,"Yuh, no more fake chains, my shit bust down (Yeah)",no,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Think,20,"Yuh, no more fake chains, my shit bust down (Yeah)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",missed,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",hit,INNER,SLANT,cmu,MED,Y
+GENGAR,19,"Think I missed my show with DC (What?), me and Sosa had a Jet Lag (Brrat, brrat, brrat, brrat)",Think,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",hit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,20,"Yuh, no more fake chains, my shit bust down (Yeah)",fake,20,"Yuh, no more fake chains, my shit bust down (Yeah)",chains,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,20,"Yuh, no more fake chains, my shit bust down (Yeah)",down,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",touchdown,END,PERFECT,cmu,HIGH,Y
+GENGAR,20,"Yuh, no more fake chains, my shit bust down (Yeah)",shit,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",hit,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,20,"Yuh, no more fake chains, my shit bust down (Yeah)",down,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",round,END,SLANT,cmu,MED,Y
+GENGAR,20,"Yuh, no more fake chains, my shit bust down (Yeah)",bust,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",hundred,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,20,"Yuh, no more fake chains, my shit bust down (Yeah)",down,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",down,INNER,REPEAT,spelling,HIGH,N
+GENGAR,20,"Yuh, no more fake chains, my shit bust down (Yeah)",down,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",down,END,REPEAT,spelling,HIGH,N
+GENGAR,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",touchdown,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",round,END,SLANT,cmu,MED,Y
+GENGAR,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",LA,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",Talkin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",touchdown,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",down,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",touchdown,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",down,END,PERFECT,cmu,HIGH,Y
+GENGAR,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",hit,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,21,"Astroboy just hit me, he in LA, it's a touchdown (Ayy)",LA,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",got,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",down,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",round,INNER,SLANT,cmu,MED,Y
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",gang,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",Man,INNER,SLANT,cmu,MED,Y
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",round,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",down,END,SLANT,cmu,MED,Y
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",down,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",down,INNER,REPEAT,spelling,HIGH,N
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",hundred,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",shut,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",Talkin,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",got,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",down,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",down,INNER,REPEAT,spelling,HIGH,N
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",like,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",ride,INNER,SLANT,cmu,MED,Y
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",like,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",Slide,INNER,SLANT,cmu,MED,Y
+GENGAR,22,"Talkin' down on gang like Burger Man, I send a hundred round (Pussy)",round,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",down,INNER,SLANT,cmu,MED,Y
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",sold,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",show,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",bitch,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",bitch,INNER,REPEAT,spelling,HIGH,N
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",bitch,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",bitch,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",stick'll,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",down,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",down,INNER,REPEAT,spelling,HIGH,N
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",sold,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",Slide,INNER,SLANT,spelling,LOW,Y
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",bitch,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",bitch,INNER,REPEAT,spelling,HIGH,N
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",down,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",How,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",down,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",Now,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,23,"Just sold out my show in Houston, yeah, that bitch got shut down (Brr-brr-brr)",got,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",talkin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",down,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",down,INNER,REPEAT,spelling,HIGH,N
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",shit,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",shit,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",stick'll,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",Slide,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",ride,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",stick'll,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",bitch,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",bitch,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",down,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",How,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",down,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",Now,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",ride,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",hidin,INNER,SLANT,cmu,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",shit,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",Slide,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",hidin,INNER,SLANT,cmu,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",stick'll,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",bitch,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",bitch,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",down,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",around,INNER,SLANT,cmu,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",down,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",now,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",ride,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",fried,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",shit,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",Slide,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",fried,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",stick'll,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",bitch,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",bitch,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,24,"Slide down that shit (Ayy), stick'll ride down that bitch (Huh?)",bitch,28,I feel like Soulja Boy 'cause bitch,bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",How,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",Now,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",bitch,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",hidin,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",fried,INNER,SLANT,cmu,MED,Y
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",How,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",around,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",How,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",now,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",Now,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",around,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",Now,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",now,INNER,REPEAT,spelling,HIGH,N
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",talkin,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",pop,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",bitch,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",hidin,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",life,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",How,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",around,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",Now,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",around,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,25,"How he talkin' hella reckless? Now he hidin' from that bitch (Grr, bow)",bitch,28,I feel like Soulja Boy 'cause bitch,bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",now,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",around,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",bitch,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",around,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",around,INNER,REPEAT,spelling,HIGH,N
+GENGAR,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",fried,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",life,INNER,SLANT,cmu,MED,Y
+GENGAR,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",gon,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",don't,INNER,SLANT,spelling,LOW,Y
+GENGAR,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",now,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",around,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",bitch,28,I feel like Soulja Boy 'cause bitch,bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,26,"We gon' pull up and pop out, now he fried around his bitch (Bitch)",fried,28,I feel like Soulja Boy 'cause bitch,like,INNER,SLANT,cmu,MED,Y
+GENGAR,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",GLO,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",don't,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",bitch,28,I feel like Soulja Boy 'cause bitch,bitch,END,REPEAT,spelling,HIGH,N
+GENGAR,27,"GLO, TWG, don't lose your life around this bitch (Yuh, ayy)",life,28,I feel like Soulja Boy 'cause bitch,like,INNER,SLANT,cmu,MED,Y
+GENGAR,28,I feel like Soulja Boy 'cause bitch,'cause,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",'cause,INNER,REPEAT,spelling,HIGH,N
+GENGAR,28,I feel like Soulja Boy 'cause bitch,feel,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",feel,INNER,REPEAT,spelling,HIGH,N
+GENGAR,28,I feel like Soulja Boy 'cause bitch,like,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",like,INNER,REPEAT,spelling,HIGH,N
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),Bathing,29,I just bought me some Bathing Ape (Skuduskuh),Ape,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),Ape,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",always,INNER,SLANT,cmu,MED,Y
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),Ape,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",Mane,INNER,SLANT,cmu,MED,Y
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),Bathing,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",always,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),Bathing,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",Mane,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),Ape,31,"And I got something to make you move like some music can (Go, go, go)",make,INNER,SLANT,cmu,MED,Y
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),Bathing,31,"And I got something to make you move like some music can (Go, go, go)",make,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),Bathing,31,"And I got something to make you move like some music can (Go, go, go)",something,INNER,PERFECT,spelling,MED,Y
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),bought,31,"And I got something to make you move like some music can (Go, go, go)",got,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),some,31,"And I got something to make you move like some music can (Go, go, go)",some,INNER,REPEAT,spelling,HIGH,N
+GENGAR,29,I just bought me some Bathing Ape (Skuduskuh),some,31,"And I got something to make you move like some music can (Go, go, go)",something,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",Gucci,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",Gucci,INNER,REPEAT,spelling,HIGH,N
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",Mane,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",always,INNER,SLANT,cmu,MED,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",man,31,"And I got something to make you move like some music can (Go, go, go)",can,END,PERFECT,cmu,HIGH,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",always,31,"And I got something to make you move like some music can (Go, go, go)",make,INNER,SLANT,cmu,MED,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",Gucci,31,"And I got something to make you move like some music can (Go, go, go)",move,INNER,SLANT,cmu,MED,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",Gucci,31,"And I got something to make you move like some music can (Go, go, go)",music,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",like,31,"And I got something to make you move like some music can (Go, go, go)",like,INNER,REPEAT,spelling,HIGH,N
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",Mane,31,"And I got something to make you move like some music can (Go, go, go)",make,INNER,SLANT,cmu,MED,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",man,32,I just left gang gang and pulled up to coochie land (Ayy),land,END,SLANT,cmu,MED,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",always Gucci,32,I just left gang gang and pulled up to coochie land (Ayy),pulled coochie,INNER,MULTI,multi,HIGH,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",Gucci,32,I just left gang gang and pulled up to coochie land (Ayy),coochie,INNER,MULTI,multi,HIGH,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",like Gucci,32,I just left gang gang and pulled up to coochie land (Ayy),pulled coochie,INNER,MULTI,multi,HIGH,Y
+GENGAR,30,"I feel like Gucci Mane 'cause you know I'm always Gucci, man (Gucci, Gucci, Gucci)",man,32,I just left gang gang and pulled up to coochie land (Ayy),gang,INNER,SLANT,cmu,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",move,31,"And I got something to make you move like some music can (Go, go, go)",music,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",something,31,"And I got something to make you move like some music can (Go, go, go)",some,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",can,32,I just left gang gang and pulled up to coochie land (Ayy),land,END,SLANT,cmu,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",can,32,I just left gang gang and pulled up to coochie land (Ayy),gang,INNER,SLANT,cmu,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",move,32,I just left gang gang and pulled up to coochie land (Ayy),coochie,INNER,SLANT,cmu,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",music,32,I just left gang gang and pulled up to coochie land (Ayy),coochie,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",can,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",cash,INNER,SLANT,cmu,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",got,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",wanna,INNER,SLANT,cmu,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",make,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",make,INNER,REPEAT,spelling,HIGH,N
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",move,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",school,INNER,SLANT,cmu,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",music,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",school,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",some,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",fuckin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,31,"And I got something to make you move like some music can (Go, go, go)",something,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",fuckin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),gang,32,I just left gang gang and pulled up to coochie land (Ayy),gang,INNER,REPEAT,spelling,HIGH,N
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),gang,32,I just left gang gang and pulled up to coochie land (Ayy),land,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),coochie,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",school,INNER,SLANT,cmu,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),gang,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",cash,INNER,SLANT,cmu,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),land,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",cash,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),left,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",again,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),gang,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",can't,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),land,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",can't,INNER,SLANT,cmu,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),left,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",again,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),left,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",Flex,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,32,I just left gang gang and pulled up to coochie land (Ayy),left,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",tell,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",again,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",again,END,REPEAT,spelling,HIGH,N
+GENGAR,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",again,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",Flex,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",again,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",tell,INNER,SLANT,cmu,MED,Y
+GENGAR,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",cash,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",can't,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",again,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",again,END,REPEAT,spelling,HIGH,N
+GENGAR,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",fuckin,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",done,INNER,SLANT,cmu,MED,Y
+GENGAR,33,"All this fuckin' cash make me wanna go to school again (Ayy, ayy, bang, bang, bang)",make,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",jail,INNER,SLANT,cmu,MED,Y
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",Flex,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",again,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",Flex,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",tell,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",tell,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",again,INNER,SLANT,cmu,MED,Y
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",tell,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",Tell,INNER,REPEAT,spelling,HIGH,N
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",again,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",again,END,REPEAT,spelling,HIGH,N
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",Flex,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",again,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",tell,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",again,INNER,SLANT,cmu,MED,Y
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",again,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",commissary,INNER,SLANT,cmu,MED,Y
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",Flex,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",commissary,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,34,"Flex on the teachers, tell 'em, ""Tell me I can't do it again"" (Bang)",tell,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",commissary,INNER,SLANT,cmu,MED,Y
+GENGAR,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",times,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",I'll,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",again,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",commissary,INNER,SLANT,cmu,MED,Y
+GENGAR,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",I'll,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",Fill,INNER,SLANT,spelling,LOW,Y
+GENGAR,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",again,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",heads,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,35,"I done been to jail a thousand times and I'll do it again (Bang, bang, bang, bang)",done,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",some,INNER,SLANT,cmu,MED,Y
+GENGAR,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",commissary,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",heads,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",Fill,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",chicken,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",thuggin,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",Ludacris,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",commissary,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",said,INNER,SLANT,cmu,MED,Y
+GENGAR,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",commissary,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",tell,INNER,SLANT,cmu,MED,Y
+GENGAR,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",Fill,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,36,"Fill my commissary up, I'm thuggin' with the hooligans (Dududuh)",hooligans,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",who,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",chicken,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",heads,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",said,INNER,SLANT,cmu,MED,Y
+GENGAR,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",heads,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",tell,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",know,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",hoes,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",some,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",'em,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,37,"And I know some chicken heads, somebody call Ludacris (Skuduskuh)",some,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",come,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",said,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",tell,INNER,SLANT,cmu,MED,Y
+GENGAR,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",'em,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",come,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",people,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",streets,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",who,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",losin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",shit,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",people,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",keep,INNER,SLANT,cmu,MED,Y
+GENGAR,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",shit,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",nigga,INNER,SLANT,spelling,LOW,Y
+GENGAR,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",shit,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",bitch,END,SLANT,cmu,MED,Y
+GENGAR,38,"Same people who said I couldn't tell 'em hoes, I do that shit (Do the shit)",shit,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",come,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",money,INNER,SLANT,cmu,MED,Y
+GENGAR,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",come,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",run,INNER,SLANT,cmu,MED,Y
+GENGAR,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",niggas,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",nigga,INNER,SLANT,spelling,LOW,Y
+GENGAR,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",niggas,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",Niggas,INNER,REPEAT,spelling,HIGH,N
+GENGAR,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",streets,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",keep,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",come,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",coming,INNER,SLANT,cmu,MED,Y
+GENGAR,39,"And we shower the streets, we losin' niggas 'cause it come with it (Ayy, ayy)",streets,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",keep,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",money,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",run,INNER,SLANT,cmu,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",nigga,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",shit,INNER,SLANT,spelling,LOW,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",Niggas,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",nigga,INNER,SLANT,spelling,LOW,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",shit,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",bitch,END,SLANT,cmu,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",got,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",mama,INNER,SLANT,cmu,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",hunnid,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",coming,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",hunnid,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",haunt,INNER,SLANT,spelling,LOW,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",keep,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",keep,INNER,REPEAT,spelling,HIGH,N
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",money,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",coming,INNER,SLANT,cmu,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",run,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",coming,INNER,SLANT,cmu,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",shit,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",wishin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",shit,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",can,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",Bang,INNER,SLANT,cmu,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",got,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",common,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",money,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",funnel,INNER,SLANT,cmu,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",nigga,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,INNER,SLANT,spelling,LOW,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",run,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",funnel,INNER,SLANT,cmu,MED,Y
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",shit,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,40,"Niggas, I got money, you can keep my hunnid, nigga, run that shit (Ayy, Sos' baby)",shit,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",die,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",die,INNER,REPEAT,spelling,HIGH,N
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",I'll,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",die,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",wishin,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",bitch,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",bitch,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,END,SLANT,cmu,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",Baby,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",lase,INNER,SLANT,cmu,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",bitch,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",coming,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",funnel,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",mama,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",common,INNER,SLANT,cmu,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",wishin,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",bitch,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,END,SLANT,cmu,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",bitch,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",coming,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",crumble,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",coming,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",tumble,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",when,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",bread,INNER,SLANT,cmu,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",wishin,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,41,"Baby mama keep wishin' I'll die (Ayy), when I die, I'm coming to haunt that bitch",bitch,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",shit,END,SLANT,cmu,MED,Y
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",Bang,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",bang,INNER,REPEAT,spelling,HIGH,N
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",no,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",no,INNER,REPEAT,spelling,HIGH,N
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",funnel,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",crumble,INNER,SLANT,cmu,MED,Y
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",funnel,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",tumble,INNER,SLANT,cmu,MED,Y
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",Bang,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",Wakanda,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",funnel,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",some,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",no,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",Lambo,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,42,"Bang-bang, no common shit (Ayy), lase you up, no funnel shit (No)",shit,46,"What time we gearing up? Pop out, we appearing up (Ayy)",appearing,END,ASSONANCE,vowel,MED,Y
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",Backflips tumble,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",bread crumble,INNER,MULTI,multi,MED,Y
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",tumble,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",crumble,INNER,MULTI,multi,HIGH,Y
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",bread,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",yellow,INNER,SLANT,cmu,MED,Y
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",crumble,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",some,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",tumble,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",some,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",lid,INNER,SLANT,cmu,MED,Y
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,43,"Backflips, we tumble shit (Burr), for the bread, we crumble shit (Buh, buh)",shit,46,"What time we gearing up? Pop out, we appearing up (Ayy)",appearing,END,ASSONANCE,vowel,MED,Y
+GENGAR,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",yellow,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",Lambo,INNER,ASSONANCE,vowel,LOW,N
+GENGAR,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",Pull,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",pussy,INNER,SLANT,cmu,MED,Y
+GENGAR,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",shit,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",lid,INNER,SLANT,cmu,MED,Y
+GENGAR,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",shit,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",shit,46,"What time we gearing up? Pop out, we appearing up (Ayy)",appearing,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",shit,46,"What time we gearing up? Pop out, we appearing up (Ayy)",gearing,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,44,"Pull up in some Wakanda shit (Skrrt), yellow Lambo', omelette (Skrrt, woo, woo)",some,46,"What time we gearing up? Pop out, we appearing up (Ayy)",What,INNER,SLANT,cmu,MED,Y
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",lid,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",Pop,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",talkin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",take,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",ain't,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",shit,46,"What time we gearing up? Pop out, we appearing up (Ayy)",appearing,END,ASSONANCE,vowel,MED,Y
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",lid,46,"What time we gearing up? Pop out, we appearing up (Ayy)",appearing,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",lid,46,"What time we gearing up? Pop out, we appearing up (Ayy)",gearing,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",Pop,46,"What time we gearing up? Pop out, we appearing up (Ayy)",Pop,INNER,REPEAT,spelling,HIGH,N
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",shit,46,"What time we gearing up? Pop out, we appearing up (Ayy)",gearing,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",talkin,46,"What time we gearing up? Pop out, we appearing up (Ayy)",Pop,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,45,"Pop your ass, take off your lid (Skrrt, woo, woo), pussy, I ain't just talkin' shit (Woo, ayy)",shit,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,46,"What time we gearing up? Pop out, we appearing up (Ayy)",gearing,46,"What time we gearing up? Pop out, we appearing up (Ayy)",appearing,INNER,MULTI,multi,HIGH,Y
+GENGAR,46,"What time we gearing up? Pop out, we appearing up (Ayy)",time gearing,46,"What time we gearing up? Pop out, we appearing up (Ayy)",Pop appearing,INNER,MULTI,multi,HIGH,Y
+GENGAR,46,"What time we gearing up? Pop out, we appearing up (Ayy)",What,47,"Ayy, chef, don't stir it up (Ayy), we come from here and up (Ayy)",come,INNER,SLANT,cmu,MED,Y
+GENGAR,46,"What time we gearing up? Pop out, we appearing up (Ayy)",Pop,48,"Shoot the party up, air it up (Gang)",party,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,46,"What time we gearing up? Pop out, we appearing up (Ayy)",appearing,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,END,ASSONANCE,vowel,MED,Y
+GENGAR,46,"What time we gearing up? Pop out, we appearing up (Ayy)",appearing,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,END,ASSONANCE,vowel,MED,Y
+GENGAR,47,"Ayy, chef, don't stir it up (Ayy), we come from here and up (Ayy)",chef,48,"Shoot the party up, air it up (Gang)",air,INNER,SLANT,cmu,MED,Y
+GENGAR,47,"Ayy, chef, don't stir it up (Ayy), we come from here and up (Ayy)",here,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",hear,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,48,"Shoot the party up, air it up (Gang)",party,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",Glock,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,48,"Shoot the party up, air it up (Gang)",Shoot,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",woop,INNER,SLANT,spelling,LOW,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",nigga,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,INNER,SLANT,spelling,LOW,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",spin,INNER,SLANT,cmu,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",spin,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",'round,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",How,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",nigga,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",nigga,INNER,REPEAT,spelling,HIGH,N
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",nigga,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,INNER,SLANT,spelling,LOW,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",kill,INNER,SLANT,cmu,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",nigga,INNER,SLANT,spelling,LOW,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",spin,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",kill,INNER,SLANT,cmu,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",spin,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,END,SLANT,cmu,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",nigga,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,INNER,SLANT,spelling,LOW,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",spin,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",spin,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,INNER,SLANT,cmu,MED,Y
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,49,"Woo-woop, nigga, hear that shit (Woo), that's a Glock, spin 'round that shit (Woo, woo-woo)",shit,53,"Stop playing, come in your shit (Ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",kill,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",like,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",nevermind,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",nigga,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,INNER,SLANT,spelling,LOW,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",kill,INNER,SLANT,cmu,MED,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",nigga,INNER,SLANT,spelling,LOW,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,END,SLANT,cmu,MED,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",kill,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",kill,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,INNER,SLANT,cmu,MED,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",like,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",like,INNER,REPEAT,spelling,HIGH,N
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",nevermind,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",like,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",nigga,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,INNER,SLANT,spelling,LOW,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",kill,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",nigga,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,INNER,SLANT,spelling,LOW,Y
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,53,"Stop playing, come in your shit (Ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,50,"I'm like, ""How you did that shit?"", nevermind, nigga, kill that shit (Woo, woo)",shit,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,INNER,SLANT,cmu,MED,Y
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,INNER,REPEAT,spelling,HIGH,N
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",like,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",like,INNER,REPEAT,spelling,HIGH,N
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,END,SLANT,cmu,MED,Y
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",where,52,"Forever is endless, fuck you, come in your shit (Ayy)",endless,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",where,52,"Forever is endless, fuck you, come in your shit (Ayy)",Forever,INNER,SLANT,cmu,MED,Y
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,53,"Stop playing, come in your shit (Ayy)",shit,END,SLANT,cmu,MED,Y
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Hit,53,"Stop playing, come in your shit (Ayy)",shit,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",Yale,53,"Stop playing, come in your shit (Ayy)",playing,INNER,SLANT,cmu,MED,Y
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,END,SLANT,cmu,MED,Y
+GENGAR,51,"Hit the Yale, like, where that is? Hit the dope like we in that bitch (Woo, woo)",bitch,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",shit,END,SLANT,cmu,MED,Y
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",Forever,52,"Forever is endless, fuck you, come in your shit (Ayy)",endless,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",fuck,52,"Forever is endless, fuck you, come in your shit (Ayy)",come,INNER,SLANT,cmu,MED,Y
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,53,"Stop playing, come in your shit (Ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",come,53,"Stop playing, come in your shit (Ayy)",come,INNER,REPEAT,spelling,HIGH,N
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",fuck,53,"Stop playing, come in your shit (Ayy)",come,INNER,SLANT,cmu,MED,Y
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",endless,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",forgiveness,INNER,SLANT,spelling,LOW,Y
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",forgiveness,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,52,"Forever is endless, fuck you, come in your shit (Ayy)",shit,56,"She was out here stealin' shit (Ayy, ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,53,"Stop playing, come in your shit (Ayy)",shit,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,53,"Stop playing, come in your shit (Ayy)",shit,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",forgiveness,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,53,"Stop playing, come in your shit (Ayy)",Stop,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",God,INNER,SLANT,cmu,MED,Y
+GENGAR,53,"Stop playing, come in your shit (Ayy)",shit,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,53,"Stop playing, come in your shit (Ayy)",shit,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",hittin,INNER,SLANT,cmu,MED,Y
+GENGAR,53,"Stop playing, come in your shit (Ayy)",shit,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",licks,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,53,"Stop playing, come in your shit (Ayy)",shit,56,"She was out here stealin' shit (Ayy, ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,53,"Stop playing, come in your shit (Ayy)",shit,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",sizzlin,END,ASSONANCE,vowel,MED,Y
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",forgiveness,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",forgiveness,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",hittin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",forgiveness,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",licks,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",forgiveness,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",hittin,INNER,SLANT,cmu,MED,Y
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",licks,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,56,"She was out here stealin' shit (Ayy, ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",forgiveness,56,"She was out here stealin' shit (Ayy, ayy)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,54,"Asked God for forgiveness, he like, ""You did that shit"" (Ayy)",shit,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",sizzlin,END,ASSONANCE,vowel,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",here,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",here,INNER,REPEAT,spelling,HIGH,N
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",hittin,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",licks,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",hittin,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",licks,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",shit,56,"She was out here stealin' shit (Ayy, ayy)",shit,END,REPEAT,spelling,HIGH,N
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",here,56,"She was out here stealin' shit (Ayy, ayy)",here,INNER,REPEAT,spelling,HIGH,N
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",here,56,"She was out here stealin' shit (Ayy, ayy)",stealin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",hittin,56,"She was out here stealin' shit (Ayy, ayy)",shit,INNER,SLANT,cmu,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",licks,56,"She was out here stealin' shit (Ayy, ayy)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",shit,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",sizzlin,END,ASSONANCE,vowel,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",here,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",trees,INNER,SLANT,cmu,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",hittin,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",sizzlin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,55,"You was out here hittin' licks (Ayy), you was out here shootin' shit (Ayy, ayy)",licks,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",sizzlin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,56,"She was out here stealin' shit (Ayy, ayy)",here,56,"She was out here stealin' shit (Ayy, ayy)",stealin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,56,"She was out here stealin' shit (Ayy, ayy)",shit,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",sizzlin,END,ASSONANCE,vowel,MED,Y
+GENGAR,56,"She was out here stealin' shit (Ayy, ayy)",here,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",trees,INNER,SLANT,cmu,MED,Y
+GENGAR,56,"She was out here stealin' shit (Ayy, ayy)",stealin,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",trees,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,56,"She was out here stealin' shit (Ayy, ayy)",here,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",streams,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,56,"She was out here stealin' shit (Ayy, ayy)",here,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",tryna,INNER,SLANT,spelling,LOW,Y
+GENGAR,56,"She was out here stealin' shit (Ayy, ayy)",stealin,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",streams,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",ball,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",all,INNER,PERFECT,cmu,HIGH,Y
+GENGAR,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",Timberland,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",add,INNER,SLANT,cmu,MED,Y
+GENGAR,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",trees,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",streams,INNER,SLANT,cmu,MED,Y
+GENGAR,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",trees,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",tryna,INNER,SLANT,spelling,LOW,Y
+GENGAR,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",like,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",like,INNER,REPEAT,spelling,HIGH,N
+GENGAR,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",sizzlin,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",shit,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",Timberland,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",accurate,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,57,"Smoking trees like Timberland, ball on me, it's sizzlin' (Ayy, ayy, Gang)",trees,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",team,INNER,SLANT,cmu,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",pocket,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",watching,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",streams,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",team,END,SLANT,cmu,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",add,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",accurate,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",pocket,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Talkin,INNER,SLANT,cmu,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",pocket,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Wanna,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",tryna,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",team,INNER,SLANT,spelling,LOW,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",watching,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Talkin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",watching,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Wanna,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",streams,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",scene,END,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",add,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",damn,INNER,SLANT,cmu,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",all,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",Frosty,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",pocket,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",cause,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",pocket,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",poppin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",tryna,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",scene,INNER,SLANT,spelling,LOW,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",watching,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",cause,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",watching,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",poppin,INNER,SLANT,cmu,MED,Y
+GENGAR,58,"Pussy pocket watching, tryna add up all my streams (Huh?)",streams,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",screen,END,ASSONANCE,vowel,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Wanna,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Talkin,INNER,SLANT,cmu,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",team,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",scene,END,SLANT,cmu,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",accurate,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",damn,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",like,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",might,INNER,SLANT,cmu,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",shit,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",near,INNER,SLANT,cmu,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Talkin,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",cause,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Talkin,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",poppin,INNER,SLANT,cmu,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Wanna,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",cause,INNER,SLANT,cmu,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Wanna,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",poppin,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",team,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",screen,END,SLANT,cmu,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",accurate,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",Had,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",accurate,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",mad,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",shit,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",fixed,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Talkin,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",got,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,59,"Wanna make that accurate? Talkin' shit but you like my team (Ayy, what? Bitch)",Wanna,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",got,INNER,SLANT,cmu,MED,Y
+GENGAR,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",poppin,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",cause,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",scene,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",screen,END,PERFECT,cmu,HIGH,Y
+GENGAR,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",cause,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",got,INNER,SLANT,cmu,MED,Y
+GENGAR,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",damn,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",Had,INNER,SLANT,cmu,MED,Y
+GENGAR,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",damn,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",mad,INNER,SLANT,cmu,MED,Y
+GENGAR,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",Frosty,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",because,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",near,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",fixed,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,60,"If Frosty poppin' out, it might damn near cause a scene (Ayy)",poppin,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",got,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",get,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",tesla,INNER,ASSONANCE,vowel,MED,Y
+GENGAR,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",Had,61,"Had to get my tesla fixed because, I got mad and broke the screen (Ayy, blee, what?)",mad,INNER,PERFECT,cmu,HIGH,Y

@@ -1,0 +1,712 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",Young,1,"Young nigga eatin', uh, bon appetit, uh",appetit,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",appetit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",what,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",eatin,2,"Messed up Halloween, what, pull up, trick or treat, yuh",Halloween,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",eatin,2,"Messed up Halloween, what, pull up, trick or treat, yuh",treat,INNER,SLANT,cmu,MED,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",nigga,2,"Messed up Halloween, what, pull up, trick or treat, yuh",trick,INNER,SLANT,spelling,LOW,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",Young,2,"Messed up Halloween, what, pull up, trick or treat, yuh",what,INNER,SLANT,cmu,MED,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",appetit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",fuck,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",eatin,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweet,INNER,SLANT,cmu,MED,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",nigga,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",Nigga,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",nigga,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",shit,INNER,SLANT,spelling,LOW,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",Young,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",fuck,INNER,SLANT,cmu,MED,Y
+Bon Appétit,1,"Young nigga eatin', uh, bon appetit, uh",appetit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",duh,END,PERFECT,cmu,HIGH,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",Halloween,2,"Messed up Halloween, what, pull up, trick or treat, yuh",treat,INNER,SLANT,cmu,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",treat,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweeped,END,SLANT,spelling,LOW,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",Halloween,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweet,INNER,SLANT,cmu,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",Messed,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",get,INNER,SLANT,cmu,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",treat,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweet,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",trick,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",Nigga,INNER,SLANT,spelling,LOW,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",trick,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",shit,INNER,SLANT,cmu,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",what,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",fuck,INNER,SLANT,cmu,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",Halloween,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",freaks,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",Halloween,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",keeps,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",treat,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",freaks,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",treat,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",keeps,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",trick,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",bitch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,2,"Messed up Halloween, what, pull up, trick or treat, yuh",what,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",duh,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",Nigga,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",shit,INNER,SLANT,spelling,LOW,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweet,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweeped,INNER,SLANT,spelling,LOW,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",ain't,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",play,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",fuck,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",duh,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",shit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",bitch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweeped,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",keeps,INNER,SLANT,spelling,LOW,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweet,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",freaks,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweet,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",keeps,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",shit,5,"Real dope dealer, uh, foreign car drifter, yeah",drifter,INNER,SLANT,cmu,MED,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweeped,5,"Real dope dealer, uh, foreign car drifter, yeah",dealer,INNER,ASSONANCE,vowel,LOW,N
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweet,5,"Real dope dealer, uh, foreign car drifter, yeah",dealer,INNER,SLANT,cmu,MED,Y
+Bon Appétit,3,"Nigga, ain't shit sweet, uh, fuck 'round and get sweeped, yuh",sweet,5,"Real dope dealer, uh, foreign car drifter, yeah",Real,INNER,SLANT,cmu,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",freaks,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",keeps,INNER,SLANT,cmu,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",play,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",play,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",bitch,5,"Real dope dealer, uh, foreign car drifter, yeah",drifter,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",don't,5,"Real dope dealer, uh, foreign car drifter, yeah",dope,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",freaks,5,"Real dope dealer, uh, foreign car drifter, yeah",dealer,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",freaks,5,"Real dope dealer, uh, foreign car drifter, yeah",Real,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",keeps,5,"Real dope dealer, uh, foreign car drifter, yeah",dealer,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",keeps,5,"Real dope dealer, uh, foreign car drifter, yeah",Real,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",bitch,6,"Real go getter, uh, and a cop killer, yeah",killer,INNER,SLANT,cmu,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",don't,6,"Real go getter, uh, and a cop killer, yeah",go,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",freaks,6,"Real go getter, uh, and a cop killer, yeah",Real,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,4,"I don't play with freaks, uh, bitch, I play for keeps, duh",keeps,6,"Real go getter, uh, and a cop killer, yeah",Real,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",Real,5,"Real dope dealer, uh, foreign car drifter, yeah",dealer,INNER,SLANT,cmu,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",drifter,6,"Real go getter, uh, and a cop killer, yeah",killer,END,ASSONANCE,vowel,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",car,6,"Real go getter, uh, and a cop killer, yeah",cop,INNER,SLANT,cmu,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",dealer,6,"Real go getter, uh, and a cop killer, yeah",Real,INNER,SLANT,cmu,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",dope,6,"Real go getter, uh, and a cop killer, yeah",go,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",Real,6,"Real go getter, uh, and a cop killer, yeah",Real,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",drifter,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",sinner,END,ASSONANCE,vowel,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",dope,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",knows,INNER,SLANT,cmu,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",dope,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",Posted,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",foreign,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",Lord,INNER,SLANT,cmu,MED,Y
+Bon Appétit,5,"Real dope dealer, uh, foreign car drifter, yeah",drifter,9,"A money hungry nigga, Benjamins for dinner",dinner,END,ASSONANCE,vowel,MED,Y
+Bon Appétit,6,"Real go getter, uh, and a cop killer, yeah",killer,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",sinner,END,SLANT,cmu,MED,Y
+Bon Appétit,6,"Real go getter, uh, and a cop killer, yeah",getter,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",center,INNER,SLANT,cmu,MED,Y
+Bon Appétit,6,"Real go getter, uh, and a cop killer, yeah",go,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",knows,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,6,"Real go getter, uh, and a cop killer, yeah",go,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",Posted,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,6,"Real go getter, uh, and a cop killer, yeah",killer,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",dinner,INNER,SLANT,cmu,MED,Y
+Bon Appétit,6,"Real go getter, uh, and a cop killer, yeah",killer,9,"A money hungry nigga, Benjamins for dinner",dinner,END,SLANT,cmu,MED,Y
+Bon Appétit,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",Posted,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",knows,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",knows sinner,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",Benjamins dinner,INNER,MULTI,multi,MED,Y
+Bon Appétit,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",sinner,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",dinner,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,7,"Posted like a center, uh, Lord knows I'm a sinner, yeah",sinner,9,"A money hungry nigga, Benjamins for dinner",dinner,END,MULTI,multi,HIGH,Y
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",money,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",hungry,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",Benjamins,9,"A money hungry nigga, Benjamins for dinner",Benjamins,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",dinner,9,"A money hungry nigga, Benjamins for dinner",dinner,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",hungry,9,"A money hungry nigga, Benjamins for dinner",hungry,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",hungry,9,"A money hungry nigga, Benjamins for dinner",money,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",money,9,"A money hungry nigga, Benjamins for dinner",hungry,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",money,9,"A money hungry nigga, Benjamins for dinner",money,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",nigga,9,"A money hungry nigga, Benjamins for dinner",nigga,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",hungry,10,"Got money on my mental, when you cook it, cook it gentle",money,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,8,"Benjamins for dinner, yuh, money hungry nigga, yeah",money,10,"Got money on my mental, when you cook it, cook it gentle",money,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,9,"A money hungry nigga, Benjamins for dinner",money,9,"A money hungry nigga, Benjamins for dinner",hungry,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,9,"A money hungry nigga, Benjamins for dinner",hungry,10,"Got money on my mental, when you cook it, cook it gentle",money,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,9,"A money hungry nigga, Benjamins for dinner",money,10,"Got money on my mental, when you cook it, cook it gentle",money,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,9,"A money hungry nigga, Benjamins for dinner",dinner,13,"Re-rockin' fundamental, it's simple, just stay consistent",consistent,END,ASSONANCE,vowel,MED,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",cook,10,"Got money on my mental, when you cook it, cook it gentle",cook,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",mental,10,"Got money on my mental, when you cook it, cook it gentle",gentle,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",mental,10,"Got money on my mental, when you cook it, cook it gentle",when,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",money mental,10,"Got money on my mental, when you cook it, cook it gentle",cook gentle,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",when,10,"Got money on my mental, when you cook it, cook it gentle",gentle,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",gentle,11,"No, this is not no rental, Mercedes, the car got sensors",sensors,END,ASSONANCE,vowel,MED,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",cook gentle,11,"No, this is not no rental, Mercedes, the car got sensors",no rental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",gentle,11,"No, this is not no rental, Mercedes, the car got sensors",rental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",Got,11,"No, this is not no rental, Mercedes, the car got sensors",car,INNER,SLANT,cmu,MED,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",Got,11,"No, this is not no rental, Mercedes, the car got sensors",got,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",Got,11,"No, this is not no rental, Mercedes, the car got sensors",not,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",mental,11,"No, this is not no rental, Mercedes, the car got sensors",rental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",mental,11,"No, this is not no rental, Mercedes, the car got sensors",sensors,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",money mental,11,"No, this is not no rental, Mercedes, the car got sensors",no rental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",when,11,"No, this is not no rental, Mercedes, the car got sensors",rental,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",when,11,"No, this is not no rental, Mercedes, the car got sensors",sensors,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",gentle,12,"Your bitch say that she missin', just stuck my dick in her dental",dental,END,MULTI,multi,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",mental,12,"Your bitch say that she missin', just stuck my dick in her dental",dental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",money,12,"Your bitch say that she missin', just stuck my dick in her dental",stuck,INNER,SLANT,cmu,MED,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",money mental,12,"Your bitch say that she missin', just stuck my dick in her dental",dick dental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,10,"Got money on my mental, when you cook it, cook it gentle",when,12,"Your bitch say that she missin', just stuck my dick in her dental",dental,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",car,11,"No, this is not no rental, Mercedes, the car got sensors",got,INNER,SLANT,cmu,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",No,11,"No, this is not no rental, Mercedes, the car got sensors",no,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",not,11,"No, this is not no rental, Mercedes, the car got sensors",car,INNER,SLANT,cmu,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",not,11,"No, this is not no rental, Mercedes, the car got sensors",got,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",rental,11,"No, this is not no rental, Mercedes, the car got sensors",sensors,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",sensors,12,"Your bitch say that she missin', just stuck my dick in her dental",dental,END,ASSONANCE,vowel,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",Mercedes,12,"Your bitch say that she missin', just stuck my dick in her dental",say,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",no rental,12,"Your bitch say that she missin', just stuck my dick in her dental",dick dental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",rental,12,"Your bitch say that she missin', just stuck my dick in her dental",dental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",car,13,"Re-rockin' fundamental, it's simple, just stay consistent",rockin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",got,13,"Re-rockin' fundamental, it's simple, just stay consistent",rockin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",Mercedes,13,"Re-rockin' fundamental, it's simple, just stay consistent",Re,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",Mercedes,13,"Re-rockin' fundamental, it's simple, just stay consistent",stay,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",no rental,13,"Re-rockin' fundamental, it's simple, just stay consistent",rockin fundamental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",not,13,"Re-rockin' fundamental, it's simple, just stay consistent",rockin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",rental,13,"Re-rockin' fundamental, it's simple, just stay consistent",fundamental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,11,"No, this is not no rental, Mercedes, the car got sensors",sensors,13,"Re-rockin' fundamental, it's simple, just stay consistent",fundamental,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",bitch,12,"Your bitch say that she missin', just stuck my dick in her dental",dick,INNER,SLANT,cmu,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",bitch,12,"Your bitch say that she missin', just stuck my dick in her dental",missin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",missin,12,"Your bitch say that she missin', just stuck my dick in her dental",dick,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",bitch,13,"Re-rockin' fundamental, it's simple, just stay consistent",consistent,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",bitch,13,"Re-rockin' fundamental, it's simple, just stay consistent",simple,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",dental,13,"Re-rockin' fundamental, it's simple, just stay consistent",fundamental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",dick,13,"Re-rockin' fundamental, it's simple, just stay consistent",consistent,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",dick,13,"Re-rockin' fundamental, it's simple, just stay consistent",simple,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",dick dental,13,"Re-rockin' fundamental, it's simple, just stay consistent",rockin fundamental,INNER,MULTI,multi,HIGH,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",missin,13,"Re-rockin' fundamental, it's simple, just stay consistent",consistent,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",missin,13,"Re-rockin' fundamental, it's simple, just stay consistent",simple,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",say,13,"Re-rockin' fundamental, it's simple, just stay consistent",Re,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",say,13,"Re-rockin' fundamental, it's simple, just stay consistent",stay,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",bitch,14,"I was born a hitter, whippin' got my arm",hitter,INNER,SLANT,cmu,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",bitch,14,"I was born a hitter, whippin' got my arm",whippin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",dick,14,"I was born a hitter, whippin' got my arm",hitter,INNER,SLANT,cmu,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",dick,14,"I was born a hitter, whippin' got my arm",whippin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",missin,14,"I was born a hitter, whippin' got my arm",hitter,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,12,"Your bitch say that she missin', just stuck my dick in her dental",missin,14,"I was born a hitter, whippin' got my arm",whippin,INNER,SLANT,cmu,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",Re,13,"Re-rockin' fundamental, it's simple, just stay consistent",stay,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",simple,13,"Re-rockin' fundamental, it's simple, just stay consistent",consistent,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",consistent,14,"I was born a hitter, whippin' got my arm",hitter,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",consistent,14,"I was born a hitter, whippin' got my arm",whippin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",rockin,14,"I was born a hitter, whippin' got my arm",arm,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",rockin,14,"I was born a hitter, whippin' got my arm",got,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",simple,14,"I was born a hitter, whippin' got my arm",hitter,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",simple,14,"I was born a hitter, whippin' got my arm",whippin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",consistent,15,Fuckin' foreign bitches and it's got some diamonds in it,bitches,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",rockin,15,Fuckin' foreign bitches and it's got some diamonds in it,got,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,13,"Re-rockin' fundamental, it's simple, just stay consistent",simple,15,Fuckin' foreign bitches and it's got some diamonds in it,bitches,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,14,"I was born a hitter, whippin' got my arm",got,14,"I was born a hitter, whippin' got my arm",arm,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,14,"I was born a hitter, whippin' got my arm",hitter,14,"I was born a hitter, whippin' got my arm",whippin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,14,"I was born a hitter, whippin' got my arm",arm,15,Fuckin' foreign bitches and it's got some diamonds in it,got,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,14,"I was born a hitter, whippin' got my arm",born,15,Fuckin' foreign bitches and it's got some diamonds in it,foreign,INNER,SLANT,cmu,MED,Y
+Bon Appétit,14,"I was born a hitter, whippin' got my arm",got,15,Fuckin' foreign bitches and it's got some diamonds in it,got,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,14,"I was born a hitter, whippin' got my arm",hitter,15,Fuckin' foreign bitches and it's got some diamonds in it,bitches,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,14,"I was born a hitter, whippin' got my arm",whippin,15,Fuckin' foreign bitches and it's got some diamonds in it,bitches,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,14,"I was born a hitter, whippin' got my arm",arm,16,"Finest of the blickys, got a whole 50 in it",got,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,14,"I was born a hitter, whippin' got my arm",got,16,"Finest of the blickys, got a whole 50 in it",got,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,15,Fuckin' foreign bitches and it's got some diamonds in it,Fuckin,15,Fuckin' foreign bitches and it's got some diamonds in it,some,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,15,Fuckin' foreign bitches and it's got some diamonds in it,diamonds,16,"Finest of the blickys, got a whole 50 in it",Finest,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,15,Fuckin' foreign bitches and it's got some diamonds in it,got,16,"Finest of the blickys, got a whole 50 in it",got,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,15,Fuckin' foreign bitches and it's got some diamonds in it,bitches,17,"Hit me, trap house spendin', got a whole semi in it",Hit,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,15,Fuckin' foreign bitches and it's got some diamonds in it,got,17,"Hit me, trap house spendin', got a whole semi in it",got,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,16,"Finest of the blickys, got a whole 50 in it",got,17,"Hit me, trap house spendin', got a whole semi in it",got,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,16,"Finest of the blickys, got a whole 50 in it",whole,17,"Hit me, trap house spendin', got a whole semi in it",whole,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,16,"Finest of the blickys, got a whole 50 in it",blickys,18,"Droppin' off the bales and pickin' up, got money in it",pickin,INNER,SLANT,spelling,LOW,Y
+Bon Appétit,16,"Finest of the blickys, got a whole 50 in it",got,18,"Droppin' off the bales and pickin' up, got money in it",Droppin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,16,"Finest of the blickys, got a whole 50 in it",got,18,"Droppin' off the bales and pickin' up, got money in it",got,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",spendin,17,"Hit me, trap house spendin', got a whole semi in it",semi,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",got,18,"Droppin' off the bales and pickin' up, got money in it",Droppin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",got,18,"Droppin' off the bales and pickin' up, got money in it",got,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",Hit,18,"Droppin' off the bales and pickin' up, got money in it",pickin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",Hit,19,Flashy with my pendant like a chandelier in mansion,chandelier,INNER,SLANT,cmu,MED,Y
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",semi,19,Flashy with my pendant like a chandelier in mansion,pendant,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",spendin,19,Flashy with my pendant like a chandelier in mansion,pendant,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",trap,19,Flashy with my pendant like a chandelier in mansion,Flashy,INNER,SLANT,cmu,MED,Y
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",trap,19,Flashy with my pendant like a chandelier in mansion,mansion,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,17,"Hit me, trap house spendin', got a whole semi in it",semi,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",friendly,END,ASSONANCE,vowel,MED,Y
+Bon Appétit,18,"Droppin' off the bales and pickin' up, got money in it",Droppin,18,"Droppin' off the bales and pickin' up, got money in it",got,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,18,"Droppin' off the bales and pickin' up, got money in it",pickin,19,Flashy with my pendant like a chandelier in mansion,chandelier,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,18,"Droppin' off the bales and pickin' up, got money in it",bales,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",shake,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,18,"Droppin' off the bales and pickin' up, got money in it",Droppin,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",not,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,18,"Droppin' off the bales and pickin' up, got money in it",Droppin,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",shot,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,18,"Droppin' off the bales and pickin' up, got money in it",got,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",not,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,18,"Droppin' off the bales and pickin' up, got money in it",got,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",shot,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,18,"Droppin' off the bales and pickin' up, got money in it",money,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",Come,INNER,SLANT,cmu,MED,Y
+Bon Appétit,18,"Droppin' off the bales and pickin' up, got money in it",money,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",one,INNER,SLANT,cmu,MED,Y
+Bon Appétit,19,Flashy with my pendant like a chandelier in mansion,Flashy,19,Flashy with my pendant like a chandelier in mansion,mansion,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,19,Flashy with my pendant like a chandelier in mansion,Flashy,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",hand,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,19,Flashy with my pendant like a chandelier in mansion,mansion,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",hand,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,19,Flashy with my pendant like a chandelier in mansion,pendant,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",friendly,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,19,Flashy with my pendant like a chandelier in mansion,pendant,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",get,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,19,Flashy with my pendant like a chandelier in mansion,chandelier,21,"Too rich, a young nigga, this 1920, they tryna lynch me",lynch,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,19,Flashy with my pendant like a chandelier in mansion,chandelier,21,"Too rich, a young nigga, this 1920, they tryna lynch me",rich,INNER,SLANT,cmu,MED,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",Come,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",one,INNER,SLANT,cmu,MED,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",get,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",friendly,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",shot,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",not,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",Come,21,"Too rich, a young nigga, this 1920, they tryna lynch me",young,INNER,SLANT,cmu,MED,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",one,21,"Too rich, a young nigga, this 1920, they tryna lynch me",young,INNER,SLANT,cmu,MED,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",tryna,21,"Too rich, a young nigga, this 1920, they tryna lynch me",tryna,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",Come,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",fuck,INNER,SLANT,cmu,MED,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",hand,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",brand,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",one,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",fuck,INNER,SLANT,cmu,MED,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",shake,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",Take,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,20,"Come get your one shot, tryna shake your hand 'cause I'm not friendly",friendly,23,"I make that much in 10 years, you spent that on Balenciaga denim",denim,END,ASSONANCE,vowel,MED,Y
+Bon Appétit,21,"Too rich, a young nigga, this 1920, they tryna lynch me",rich,21,"Too rich, a young nigga, this 1920, they tryna lynch me",lynch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,21,"Too rich, a young nigga, this 1920, they tryna lynch me",lynch,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",think,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,21,"Too rich, a young nigga, this 1920, they tryna lynch me",rich,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",think,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,21,"Too rich, a young nigga, this 1920, they tryna lynch me",young,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",fuck,INNER,SLANT,cmu,MED,Y
+Bon Appétit,21,"Too rich, a young nigga, this 1920, they tryna lynch me",lynch,23,"I make that much in 10 years, you spent that on Balenciaga denim",years,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,21,"Too rich, a young nigga, this 1920, they tryna lynch me",rich,23,"I make that much in 10 years, you spent that on Balenciaga denim",years,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,21,"Too rich, a young nigga, this 1920, they tryna lynch me",young,23,"I make that much in 10 years, you spent that on Balenciaga denim",much,INNER,SLANT,cmu,MED,Y
+Bon Appétit,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",Who,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",new,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",brand,23,"I make that much in 10 years, you spent that on Balenciaga denim",Balenciaga,INNER,ASSONANCE,vowel,LOW,N
+Bon Appétit,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",fuck,23,"I make that much in 10 years, you spent that on Balenciaga denim",much,INNER,SLANT,cmu,MED,Y
+Bon Appétit,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",Take,23,"I make that much in 10 years, you spent that on Balenciaga denim",make,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",think,23,"I make that much in 10 years, you spent that on Balenciaga denim",years,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",brand,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",Brand,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",new,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",new,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,22,"Who the fuck he think he is? Take a brand new Rollie, put diamonds in it",Who,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",new,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,23,"I make that much in 10 years, you spent that on Balenciaga denim",spent,23,"I make that much in 10 years, you spent that on Balenciaga denim",denim,INNER,SLANT,cmu,MED,Y
+Bon Appétit,23,"I make that much in 10 years, you spent that on Balenciaga denim",Balenciaga,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",Brand,INNER,ASSONANCE,vowel,LOW,N
+Bon Appétit,23,"I make that much in 10 years, you spent that on Balenciaga denim",make,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",made,INNER,SLANT,cmu,MED,Y
+Bon Appétit,23,"I make that much in 10 years, you spent that on Balenciaga denim",much,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",bunch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,23,"I make that much in 10 years, you spent that on Balenciaga denim",years,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",hid,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",'em,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",'em,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",'em,END,REPEAT,spelling,HIGH,N
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",'em,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",10k,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",10k,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",jogger,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",closet,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",jogger,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",joggers,INNER,SLANT,cmu,MED,Y
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",jogger,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",Robbins,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",'em,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",'em,END,REPEAT,spelling,HIGH,N
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",'em,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,24,"Brand new Bentaygas in 'em, 10k with my jogger in 'em",jogger,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",robbin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",closet,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",Robbins,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",joggers,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",closet,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",joggers,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",Robbins,INNER,SLANT,cmu,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",'em,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",'em,END,REPEAT,spelling,HIGH,N
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",bunch,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",none,INNER,SLANT,cmu,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",closet,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",robbin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",joggers,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",robbin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",made,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",ain't,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",Robbins,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",robbin,INNER,SLANT,cmu,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",bunch,27,"My brother pop out late night like Batman, used to be Robin with him",brother,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",closet,27,"My brother pop out late night like Batman, used to be Robin with him",pop,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",closet,27,"My brother pop out late night like Batman, used to be Robin with him",Robin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",hid,27,"My brother pop out late night like Batman, used to be Robin with him",him,INNER,SLANT,cmu,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",joggers,27,"My brother pop out late night like Batman, used to be Robin with him",pop,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",joggers,27,"My brother pop out late night like Batman, used to be Robin with him",Robin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",made,27,"My brother pop out late night like Batman, used to be Robin with him",late,INNER,SLANT,cmu,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",Robbins,27,"My brother pop out late night like Batman, used to be Robin with him",pop,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,25,"I made 10k in my joggers, closet hid a whole bunch of Robbins in 'em",Robbins,27,"My brother pop out late night like Batman, used to be Robin with him",Robin,INNER,SLANT,cmu,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",flodgin,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",robbin,INNER,PERFECT,spelling,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",ain't,27,"My brother pop out late night like Batman, used to be Robin with him",late,INNER,SLANT,cmu,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",none,27,"My brother pop out late night like Batman, used to be Robin with him",brother,INNER,SLANT,cmu,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",robbin,27,"My brother pop out late night like Batman, used to be Robin with him",pop,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",robbin,27,"My brother pop out late night like Batman, used to be Robin with him",Robin,INNER,SLANT,cmu,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",ain't,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",brain,INNER,SLANT,cmu,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",flex,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",left,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",here,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",need,INNER,SLANT,cmu,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",here,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Skydweller,INNER,ASSONANCE,vowel,LOW,N
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",robbin,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Glock,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,26,"And we ain't with none of that flodgin', flex 'round here, we robbin' in 'em",robbin,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",got,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",night,27,"My brother pop out late night like Batman, used to be Robin with him",like,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",pop,27,"My brother pop out late night like Batman, used to be Robin with him",Robin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",Batman,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",CAT,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",Batman,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",hand,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",Batman,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Scan,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",him,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Still,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",late,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",brain,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",pop,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Glock,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",pop,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",got,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",Robin,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Glock,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",Robin,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",got,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",used,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",cuckoo,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",Batman,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",brand,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",him,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",clip,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",him,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Lil,INNER,SLANT,cmu,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",used,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",coupe,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",used,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Ku,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",used,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",new,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,27,"My brother pop out late night like Batman, used to be Robin with him",him,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bitch,END,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",CAT,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Scan,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",got,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Glock,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",hand,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",CAT,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",hand,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Scan,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",CAT,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",brand,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",cuckoo,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",coupe,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",cuckoo,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Ku,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",cuckoo,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",new,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",hand,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",brand,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Scan,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",brand,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Still,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",clip,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Still,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Lil,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",CAT,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",brand,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",cuckoo,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",coupe,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",cuckoo,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",new,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Glock,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bought,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",got,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bought,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",hand,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",brand,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",left,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",spent,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",left,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",went,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",need,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",sleep,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Scan,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",brand,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Still,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bitch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,28,"Still got the Skydweller, .40 Glock in my left hand, brain cuckoo, need a CAT Scan",Still,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",crib,INNER,SLANT,cmu,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",clip,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Lil,INNER,SLANT,cmu,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Ku,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",coupe,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Ku,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",new,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",new,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",coupe,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",brand,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",brand,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",clip,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bitch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",clip,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",crib,INNER,SLANT,cmu,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",coupe,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",coupe,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",coupe,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",new,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Ku,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",coupe,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Ku,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",new,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Lil,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bitch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Lil,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",crib,INNER,SLANT,cmu,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",new,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",coupe,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",new,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",new,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",clip,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",bitch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",clip,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",picture,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",coupe,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",blue,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Ku,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",blue,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Lil,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",bitch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",Lil,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",picture,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,29,"24 in the clip, me and Lil Ku in the brand new coupe with the SN",new,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",blue,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",coupe,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",new,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",crib,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bitch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",spent,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",went,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bitch,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",bitch,INNER,REPEAT,spelling,HIGH,N
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bitch,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",picture,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",coupe,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",blue,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",crib,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",bitch,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",crib,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",picture,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",new,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",blue,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",sleep,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",here,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",spent,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",pressin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",went,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",pressin,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",bitch,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",bitches,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",coupe,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",move,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",crib,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",bitches,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",new,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",move,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",spent,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",Best,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",spent,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",chest,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",spent,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",finesse,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",spent,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",invest,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",spent,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",vest,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",went,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",Best,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",went,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",chest,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",went,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",finesse,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",went,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",invest,INNER,SLANT,cmu,MED,Y
+Bon Appétit,30,"And spent the coupe on a brand new crib, went to sleep, bought that bitch a",went,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",vest,INNER,SLANT,cmu,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",bitch,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",picture,INNER,SLANT,cmu,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",took,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",sure,INNER,SLANT,cmu,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",pressin,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",finesse,END,SLANT,cmu,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",bitch,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",bitches,INNER,SLANT,cmu,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",blue,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",move,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",picture,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",bitches,INNER,ASSONANCE,vowel,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",pressin,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",Best,INNER,SLANT,cmu,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",pressin,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",chest,INNER,SLANT,cmu,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",pressin,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",invest,INNER,SLANT,cmu,MED,Y
+Bon Appétit,31,"Yeah, you blue 'cause your bitch took a picture here, so for sure she was showin' up pressin'",pressin,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",vest,INNER,SLANT,cmu,MED,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",Best,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",chest,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",Best,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",finesse,INNER,SLANT,cmu,MED,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",Best,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",invest,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",Best,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",vest,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",chest,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",finesse,INNER,SLANT,cmu,MED,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",invest,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",chest,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",invest,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",finesse,INNER,SLANT,cmu,MED,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",invest,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",vest,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",vest,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",chest,INNER,PERFECT,cmu,HIGH,Y
+Bon Appétit,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",vest,32,"Best invest in a vest on them bitches, fly around his chest them, I just move 'em, finesse with",finesse,INNER,SLANT,cmu,MED,Y
+No Floggin,1,"Lil Mexico, yeah, ayo, Mexico, uh huh",Mexico,1,"Lil Mexico, yeah, ayo, Mexico, uh huh",Mexico,INNER,REPEAT,spelling,HIGH,N
+No Floggin,1,"Lil Mexico, yeah, ayo, Mexico, uh huh",Mexico,2,"There's no flodgin', 80 thousand, damn, I need to stop it",no,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,1,"Lil Mexico, yeah, ayo, Mexico, uh huh",ayo,3,"200 grams inside my closet, I ain't even lock it",ain't,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,2,"There's no flodgin', 80 thousand, damn, I need to stop it",stop,3,"200 grams inside my closet, I ain't even lock it",lock,END,SLANT,cmu,MED,Y
+No Floggin,2,"There's no flodgin', 80 thousand, damn, I need to stop it",damn,3,"200 grams inside my closet, I ain't even lock it",grams,INNER,SLANT,cmu,MED,Y
+No Floggin,2,"There's no flodgin', 80 thousand, damn, I need to stop it",flodgin,3,"200 grams inside my closet, I ain't even lock it",even,INNER,PERFECT,spelling,MED,Y
+No Floggin,2,"There's no flodgin', 80 thousand, damn, I need to stop it",need,3,"200 grams inside my closet, I ain't even lock it",even,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,2,"There's no flodgin', 80 thousand, damn, I need to stop it",stop,3,"200 grams inside my closet, I ain't even lock it",closet,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,2,"There's no flodgin', 80 thousand, damn, I need to stop it",stop,4,"You can't keep up, lil homie, don't try to stop it",stop,END,REPEAT,spelling,HIGH,N
+No Floggin,2,"There's no flodgin', 80 thousand, damn, I need to stop it",damn,4,"You can't keep up, lil homie, don't try to stop it",can't,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,2,"There's no flodgin', 80 thousand, damn, I need to stop it",need,4,"You can't keep up, lil homie, don't try to stop it",keep,INNER,SLANT,cmu,MED,Y
+No Floggin,2,"There's no flodgin', 80 thousand, damn, I need to stop it",no,4,"You can't keep up, lil homie, don't try to stop it",don't,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",closet,3,"200 grams inside my closet, I ain't even lock it",lock,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",lock,4,"You can't keep up, lil homie, don't try to stop it",stop,END,SLANT,cmu,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",closet,4,"You can't keep up, lil homie, don't try to stop it",stop,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",even,4,"You can't keep up, lil homie, don't try to stop it",keep,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",grams,4,"You can't keep up, lil homie, don't try to stop it",can't,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",inside,4,"You can't keep up, lil homie, don't try to stop it",try,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",ain't,5,"My diamonds playin' hockey, F&N sit right beside me",playin,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",closet,5,"My diamonds playin' hockey, F&N sit right beside me",hockey,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",inside,5,"My diamonds playin' hockey, F&N sit right beside me",beside,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",inside,5,"My diamonds playin' hockey, F&N sit right beside me",diamonds,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",inside,5,"My diamonds playin' hockey, F&N sit right beside me",right,INNER,SLANT,cmu,MED,Y
+No Floggin,3,"200 grams inside my closet, I ain't even lock it",lock,5,"My diamonds playin' hockey, F&N sit right beside me",hockey,INNER,SLANT,cmu,MED,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",lil,5,"My diamonds playin' hockey, F&N sit right beside me",sit,INNER,SLANT,cmu,MED,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",stop,5,"My diamonds playin' hockey, F&N sit right beside me",hockey,INNER,SLANT,cmu,MED,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",try,5,"My diamonds playin' hockey, F&N sit right beside me",beside,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",try,5,"My diamonds playin' hockey, F&N sit right beside me",diamonds,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",try,5,"My diamonds playin' hockey, F&N sit right beside me",right,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",can't,6,"Yeah, hop out the vans and you know foenem slidin'",vans,INNER,SLANT,cmu,MED,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",don't,6,"Yeah, hop out the vans and you know foenem slidin'",foenem,INNER,SLANT,spelling,LOW,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",don't,6,"Yeah, hop out the vans and you know foenem slidin'",know,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",homie,6,"Yeah, hop out the vans and you know foenem slidin'",foenem,INNER,SLANT,spelling,LOW,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",stop,6,"Yeah, hop out the vans and you know foenem slidin'",hop,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,4,"You can't keep up, lil homie, don't try to stop it",try,6,"Yeah, hop out the vans and you know foenem slidin'",slidin,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",diamonds,5,"My diamonds playin' hockey, F&N sit right beside me",beside,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",diamonds,5,"My diamonds playin' hockey, F&N sit right beside me",right,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",F,5,"My diamonds playin' hockey, F&N sit right beside me",N,INNER,SLANT,cmu,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",right,5,"My diamonds playin' hockey, F&N sit right beside me",beside,INNER,SLANT,cmu,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",beside,6,"Yeah, hop out the vans and you know foenem slidin'",slidin,END,SLANT,cmu,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",diamonds,6,"Yeah, hop out the vans and you know foenem slidin'",slidin,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",hockey,6,"Yeah, hop out the vans and you know foenem slidin'",hop,INNER,SLANT,cmu,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",right,6,"Yeah, hop out the vans and you know foenem slidin'",slidin,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",beside,7,"They say Z Money cook the dope, I do it every time",time,END,SLANT,cmu,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",diamonds,7,"They say Z Money cook the dope, I do it every time",time,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",F,7,"They say Z Money cook the dope, I do it every time",every,INNER,SLANT,cmu,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",N,7,"They say Z Money cook the dope, I do it every time",every,INNER,SLANT,cmu,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",playin,7,"They say Z Money cook the dope, I do it every time",say,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",right,7,"They say Z Money cook the dope, I do it every time",time,INNER,SLANT,cmu,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",beside,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,END,SLANT,cmu,MED,Y
+No Floggin,5,"My diamonds playin' hockey, F&N sit right beside me",beside,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,END,ASSONANCE,vowel,MED,Y
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",slidin,7,"They say Z Money cook the dope, I do it every time",time,END,ASSONANCE,vowel,MED,Y
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",foenem,7,"They say Z Money cook the dope, I do it every time",dope,INNER,ASSONANCE,vowel,LOW,N
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",know,7,"They say Z Money cook the dope, I do it every time",dope,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",slidin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,END,ASSONANCE,vowel,MED,Y
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",foenem,8,"My wrist froze, it shine, bust it down, now I can't tell the time",froze,INNER,ASSONANCE,vowel,LOW,N
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",know,8,"My wrist froze, it shine, bust it down, now I can't tell the time",froze,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",slidin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",shine,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",vans,8,"My wrist froze, it shine, bust it down, now I can't tell the time",can't,INNER,SLANT,cmu,MED,Y
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",slidin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,END,ASSONANCE,vowel,MED,Y
+No Floggin,6,"Yeah, hop out the vans and you know foenem slidin'",slidin,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,END,ASSONANCE,vowel,MED,Y
+No Floggin,7,"They say Z Money cook the dope, I do it every time",time,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,END,REPEAT,spelling,HIGH,N
+No Floggin,7,"They say Z Money cook the dope, I do it every time",dope,8,"My wrist froze, it shine, bust it down, now I can't tell the time",froze,INNER,SLANT,cmu,MED,Y
+No Floggin,7,"They say Z Money cook the dope, I do it every time",every,8,"My wrist froze, it shine, bust it down, now I can't tell the time",tell,INNER,SLANT,cmu,MED,Y
+No Floggin,7,"They say Z Money cook the dope, I do it every time",Money,8,"My wrist froze, it shine, bust it down, now I can't tell the time",bust,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,7,"They say Z Money cook the dope, I do it every time",time,8,"My wrist froze, it shine, bust it down, now I can't tell the time",shine,INNER,SLANT,cmu,MED,Y
+No Floggin,7,"They say Z Money cook the dope, I do it every time",time,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,END,ASSONANCE,vowel,MED,Y
+No Floggin,7,"They say Z Money cook the dope, I do it every time",time,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,7,"They say Z Money cook the dope, I do it every time",time,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,END,ASSONANCE,vowel,MED,Y
+No Floggin,7,"They say Z Money cook the dope, I do it every time",time,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,END,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",down,8,"My wrist froze, it shine, bust it down, now I can't tell the time",now,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",shine,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,INNER,SLANT,cmu,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,END,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",shine,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,INNER,SLANT,cmu,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",shine,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",wrist,9,"Heard you dropped a dime, little dots, it shot at your eye",little,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,END,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",bust,10,"Let them bullets fly, no disguise, I'm one of a kind",one,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",can't,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,INNER,SLANT,spelling,LOW,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",froze,10,"Let them bullets fly, no disguise, I'm one of a kind",no,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",shine,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,INNER,SLANT,cmu,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",shine,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",shine,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,INNER,SLANT,cmu,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",tell,10,"Let them bullets fly, no disguise, I'm one of a kind",Let,INNER,SLANT,cmu,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,INNER,SLANT,cmu,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,END,ASSONANCE,vowel,MED,Y
+No Floggin,8,"My wrist froze, it shine, bust it down, now I can't tell the time",time,12,"80 for my time, I ain't lyin', look how this shit shine",shine,END,SLANT,cmu,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dots,9,"Heard you dropped a dime, little dots, it shot at your eye",shot,INNER,SLANT,cmu,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dropped,9,"Heard you dropped a dime, little dots, it shot at your eye",dots,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dropped,9,"Heard you dropped a dime, little dots, it shot at your eye",shot,INNER,SLANT,cmu,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,END,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,INNER,SLANT,cmu,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,END,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,INNER,SLANT,cmu,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dime,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dots,11,"All my diamonds cryin', hypnotized, you look hard to blind",hard,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",dropped,11,"All my diamonds cryin', hypnotized, you look hard to blind",hard,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",Heard,11,"All my diamonds cryin', hypnotized, you look hard to blind",hard,INNER,SLANT,spelling,LOW,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",shot,11,"All my diamonds cryin', hypnotized, you look hard to blind",hard,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,12,"80 for my time, I ain't lyin', look how this shit shine",shine,END,ASSONANCE,vowel,MED,Y
+No Floggin,9,"Heard you dropped a dime, little dots, it shot at your eye",eye,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,END,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,END,PERFECT,cmu,HIGH,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",bullets,11,"All my diamonds cryin', hypnotized, you look hard to blind",look,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,INNER,SLANT,cmu,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,INNER,SLANT,cmu,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,INNER,SLANT,cmu,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,12,"80 for my time, I ain't lyin', look how this shit shine",shine,END,SLANT,cmu,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",bullets,12,"80 for my time, I ain't lyin', look how this shit shine",look,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,12,"80 for my time, I ain't lyin', look how this shit shine",shine,INNER,SLANT,cmu,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",disguise,12,"80 for my time, I ain't lyin', look how this shit shine",time,INNER,SLANT,cmu,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,12,"80 for my time, I ain't lyin', look how this shit shine",shine,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",fly,12,"80 for my time, I ain't lyin', look how this shit shine",time,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,12,"80 for my time, I ain't lyin', look how this shit shine",time,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,END,SLANT,cmu,MED,Y
+No Floggin,10,"Let them bullets fly, no disguise, I'm one of a kind",kind,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,END,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,INNER,SLANT,cmu,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,12,"80 for my time, I ain't lyin', look how this shit shine",shine,END,SLANT,cmu,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,12,"80 for my time, I ain't lyin', look how this shit shine",time,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,12,"80 for my time, I ain't lyin', look how this shit shine",lyin,INNER,PERFECT,spelling,HIGH,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,12,"80 for my time, I ain't lyin', look how this shit shine",shine,INNER,SLANT,cmu,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,12,"80 for my time, I ain't lyin', look how this shit shine",time,INNER,SLANT,cmu,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,12,"80 for my time, I ain't lyin', look how this shit shine",shine,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,12,"80 for my time, I ain't lyin', look how this shit shine",time,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,12,"80 for my time, I ain't lyin', look how this shit shine",shine,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,12,"80 for my time, I ain't lyin', look how this shit shine",time,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",look,12,"80 for my time, I ain't lyin', look how this shit shine",look,INNER,REPEAT,spelling,HIGH,N
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,END,SLANT,cmu,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,13,"30 for my smile, I ain't lyin', look how this shit shine",lyin,INNER,PERFECT,spelling,HIGH,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,INNER,SLANT,cmu,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",cryin,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,INNER,SLANT,cmu,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",diamonds,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",hypnotized,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",look,13,"30 for my smile, I ain't lyin', look how this shit shine",look,INNER,REPEAT,spelling,HIGH,N
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,END,ASSONANCE,vowel,MED,Y
+No Floggin,11,"All my diamonds cryin', hypnotized, you look hard to blind",blind,15,"Thick ho so fine, had to break her spine",spine,END,SLANT,cmu,MED,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",time,12,"80 for my time, I ain't lyin', look how this shit shine",shine,INNER,SLANT,cmu,MED,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",shine,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,END,REPEAT,spelling,HIGH,N
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",ain't,13,"30 for my smile, I ain't lyin', look how this shit shine",ain't,INNER,REPEAT,spelling,HIGH,N
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",how,13,"30 for my smile, I ain't lyin', look how this shit shine",how,INNER,REPEAT,spelling,HIGH,N
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",look,13,"30 for my smile, I ain't lyin', look how this shit shine",look,INNER,REPEAT,spelling,HIGH,N
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",lyin,13,"30 for my smile, I ain't lyin', look how this shit shine",lyin,INNER,REPEAT,spelling,HIGH,N
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",shine,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,INNER,SLANT,cmu,MED,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",shit,13,"30 for my smile, I ain't lyin', look how this shit shine",shit,INNER,REPEAT,spelling,HIGH,N
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",time,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,INNER,SLANT,cmu,MED,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",time,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,INNER,SLANT,cmu,MED,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",shine,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,END,SLANT,cmu,MED,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",shine,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",grind,INNER,SLANT,cmu,MED,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",shit,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",Bitch,INNER,SLANT,cmu,MED,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",time,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",grind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",time,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,INNER,REPEAT,spelling,HIGH,N
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",shine,15,"Thick ho so fine, had to break her spine",spine,END,PERFECT,cmu,HIGH,Y
+No Floggin,12,"80 for my time, I ain't lyin', look how this shit shine",shine,16,"Chopsticks and 45s, better go hide",hide,END,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,INNER,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,END,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",grind,INNER,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",shit,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",Bitch,INNER,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",grind,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,INNER,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,15,"Thick ho so fine, had to break her spine",spine,END,PERFECT,cmu,HIGH,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",ain't,15,"Thick ho so fine, had to break her spine",break,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,15,"Thick ho so fine, had to break her spine",fine,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",shit,15,"Thick ho so fine, had to break her spine",Thick,INNER,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,15,"Thick ho so fine, had to break her spine",fine,INNER,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",smile,15,"Thick ho so fine, had to break her spine",spine,INNER,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,16,"Chopsticks and 45s, better go hide",hide,END,SLANT,cmu,MED,Y
+No Floggin,13,"30 for my smile, I ain't lyin', look how this shit shine",shine,17,"Young nigga been rich, never had to sign",sign,END,PERFECT,cmu,HIGH,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",grind,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,15,"Thick ho so fine, had to break her spine",spine,END,SLANT,cmu,MED,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",Bitch,15,"Thick ho so fine, had to break her spine",Thick,INNER,SLANT,cmu,MED,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",grind,15,"Thick ho so fine, had to break her spine",fine,INNER,SLANT,cmu,MED,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",grind,15,"Thick ho so fine, had to break her spine",spine,INNER,SLANT,cmu,MED,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,15,"Thick ho so fine, had to break her spine",fine,INNER,SLANT,cmu,MED,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,16,"Chopsticks and 45s, better go hide",hide,END,SLANT,cmu,MED,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",Bitch,16,"Chopsticks and 45s, better go hide",Chopsticks,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",grind,16,"Chopsticks and 45s, better go hide",hide,INNER,SLANT,cmu,MED,Y
+No Floggin,14,"Bitch, yeah, I'm on my grind, yeah, that's all the time",time,17,"Young nigga been rich, never had to sign",sign,END,SLANT,cmu,MED,Y
+No Floggin,15,"Thick ho so fine, had to break her spine",fine,15,"Thick ho so fine, had to break her spine",spine,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,15,"Thick ho so fine, had to break her spine",spine,16,"Chopsticks and 45s, better go hide",hide,END,SLANT,cmu,MED,Y
+No Floggin,15,"Thick ho so fine, had to break her spine",fine,16,"Chopsticks and 45s, better go hide",hide,INNER,SLANT,cmu,MED,Y
+No Floggin,15,"Thick ho so fine, had to break her spine",ho,16,"Chopsticks and 45s, better go hide",go,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,15,"Thick ho so fine, had to break her spine",Thick,16,"Chopsticks and 45s, better go hide",Chopsticks,INNER,SLANT,cmu,MED,Y
+No Floggin,15,"Thick ho so fine, had to break her spine",spine,17,"Young nigga been rich, never had to sign",sign,END,PERFECT,cmu,HIGH,Y
+No Floggin,15,"Thick ho so fine, had to break her spine",fine,17,"Young nigga been rich, never had to sign",sign,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,15,"Thick ho so fine, had to break her spine",had,17,"Young nigga been rich, never had to sign",had,INNER,REPEAT,spelling,HIGH,N
+No Floggin,15,"Thick ho so fine, had to break her spine",Thick,17,"Young nigga been rich, never had to sign",nigga,INNER,SLANT,spelling,LOW,Y
+No Floggin,15,"Thick ho so fine, had to break her spine",Thick,17,"Young nigga been rich, never had to sign",rich,INNER,SLANT,cmu,MED,Y
+No Floggin,16,"Chopsticks and 45s, better go hide",hide,17,"Young nigga been rich, never had to sign",sign,END,SLANT,cmu,MED,Y
+No Floggin,16,"Chopsticks and 45s, better go hide",better,17,"Young nigga been rich, never had to sign",never,INNER,SLANT,cmu,MED,Y
+No Floggin,16,"Chopsticks and 45s, better go hide",Chopsticks,17,"Young nigga been rich, never had to sign",rich,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,16,"Chopsticks and 45s, better go hide",go,18,"Uh, uh, see my uncle cookin' dope up, I was just a toddler",dope,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,17,"Young nigga been rich, never had to sign",Young,18,"Uh, uh, see my uncle cookin' dope up, I was just a toddler",uncle,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,17,"Young nigga been rich, never had to sign",had,19,"Cut the heat off, I had school, we both was boilin' water",had,INNER,REPEAT,spelling,HIGH,N
+No Floggin,17,"Young nigga been rich, never had to sign",Young,19,"Cut the heat off, I had school, we both was boilin' water",Cut,INNER,SLANT,cmu,MED,Y
+No Floggin,18,"Uh, uh, see my uncle cookin' dope up, I was just a toddler",dope,19,"Cut the heat off, I had school, we both was boilin' water",both,INNER,SLANT,cmu,MED,Y
+No Floggin,18,"Uh, uh, see my uncle cookin' dope up, I was just a toddler",see,19,"Cut the heat off, I had school, we both was boilin' water",heat,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,18,"Uh, uh, see my uncle cookin' dope up, I was just a toddler",uncle,19,"Cut the heat off, I had school, we both was boilin' water",Cut,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,18,"Uh, uh, see my uncle cookin' dope up, I was just a toddler",toddler,20,"Uh, uh, and dropped out of school, but I was still a scholar",scholar,END,SLANT,cmu,MED,Y
+No Floggin,18,"Uh, uh, see my uncle cookin' dope up, I was just a toddler",toddler,20,"Uh, uh, and dropped out of school, but I was still a scholar",dropped,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,18,"Uh, uh, see my uncle cookin' dope up, I was just a toddler",toddler,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",collar,END,SLANT,cmu,MED,Y
+No Floggin,18,"Uh, uh, see my uncle cookin' dope up, I was just a toddler",toddler,22,"Well respected, might just slide through your hood just to give a holler",holler,END,SLANT,cmu,MED,Y
+No Floggin,19,"Cut the heat off, I had school, we both was boilin' water",school,20,"Uh, uh, and dropped out of school, but I was still a scholar",school,INNER,REPEAT,spelling,HIGH,N
+No Floggin,19,"Cut the heat off, I had school, we both was boilin' water",boilin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",boy,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,19,"Cut the heat off, I had school, we both was boilin' water",had,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",6am,INNER,SLANT,spelling,LOW,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",dropped,20,"Uh, uh, and dropped out of school, but I was still a scholar",scholar,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",scholar,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",collar,END,MULTI,multi,HIGH,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",dropped,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",collar,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",dropped,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",hopped,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",dropped,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",shot,INNER,SLANT,cmu,MED,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",scholar,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",hopped,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",scholar,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",shot,INNER,SLANT,cmu,MED,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",scholar,22,"Well respected, might just slide through your hood just to give a holler",holler,END,MULTI,multi,HIGH,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",dropped,22,"Well respected, might just slide through your hood just to give a holler",holler,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",school,22,"Well respected, might just slide through your hood just to give a holler",through,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",still,22,"Well respected, might just slide through your hood just to give a holler",give,INNER,SLANT,cmu,MED,Y
+No Floggin,20,"Uh, uh, and dropped out of school, but I was still a scholar",scholar,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",dollar,END,MULTI,multi,HIGH,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",hopped,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",collar,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",hopped,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",shot,INNER,SLANT,cmu,MED,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",shot,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",collar,INNER,SLANT,cmu,MED,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",collar,22,"Well respected, might just slide through your hood just to give a holler",holler,END,MULTI,multi,HIGH,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",hopped,22,"Well respected, might just slide through your hood just to give a holler",holler,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",shot,22,"Well respected, might just slide through your hood just to give a holler",holler,INNER,SLANT,cmu,MED,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",collar,23,"And connected, shit'll make your jaw lock, shout out to the guala",lock,INNER,SLANT,cmu,MED,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",hopped,23,"And connected, shit'll make your jaw lock, shout out to the guala",lock,INNER,SLANT,cmu,MED,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",shot,23,"And connected, shit'll make your jaw lock, shout out to the guala",lock,INNER,SLANT,cmu,MED,Y
+No Floggin,21,"Uh, 6am, hopped out Impalas, shot a boy in collar",collar,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",dollar,END,MULTI,multi,HIGH,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",might,22,"Well respected, might just slide through your hood just to give a holler",slide,INNER,SLANT,cmu,MED,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",Well,22,"Well respected, might just slide through your hood just to give a holler",respected,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",holler,23,"And connected, shit'll make your jaw lock, shout out to the guala",lock,INNER,SLANT,cmu,MED,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",respected,23,"And connected, shit'll make your jaw lock, shout out to the guala",connected,INNER,MULTI,multi,HIGH,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",Well,23,"And connected, shit'll make your jaw lock, shout out to the guala",connected,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",holler,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",dollar,END,MULTI,multi,HIGH,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",give,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",Give,INNER,REPEAT,spelling,HIGH,N
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",might,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",like,INNER,SLANT,cmu,MED,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",slide,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",like,INNER,SLANT,cmu,MED,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",through,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",Used,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,22,"Well respected, might just slide through your hood just to give a holler",holler,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",nada,END,SLANT,cmu,MED,Y
+No Floggin,23,"And connected, shit'll make your jaw lock, shout out to the guala",jaw,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",walk,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,23,"And connected, shit'll make your jaw lock, shout out to the guala",lock,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",dollar,INNER,SLANT,cmu,MED,Y
+No Floggin,23,"And connected, shit'll make your jaw lock, shout out to the guala",guala,25,"Now I got them blocks, my homies distribute, I'm Iguodala",Iguodala,END,MULTI,multi,MED,Y
+No Floggin,23,"And connected, shit'll make your jaw lock, shout out to the guala",lock,25,"Now I got them blocks, my homies distribute, I'm Iguodala",blocks,INNER,SLANT,cmu,MED,Y
+No Floggin,23,"And connected, shit'll make your jaw lock, shout out to the guala",lock,25,"Now I got them blocks, my homies distribute, I'm Iguodala",got,INNER,SLANT,cmu,MED,Y
+No Floggin,23,"And connected, shit'll make your jaw lock, shout out to the guala",shit'll,25,"Now I got them blocks, my homies distribute, I'm Iguodala",Iguodala,INNER,SLANT,spelling,LOW,Y
+No Floggin,23,"And connected, shit'll make your jaw lock, shout out to the guala",shout,25,"Now I got them blocks, my homies distribute, I'm Iguodala",Now,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",dollar,25,"Now I got them blocks, my homies distribute, I'm Iguodala",blocks,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",dollar,25,"Now I got them blocks, my homies distribute, I'm Iguodala",got,INNER,SLANT,cmu,MED,Y
+No Floggin,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",Give,25,"Now I got them blocks, my homies distribute, I'm Iguodala",distribute,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",nigga,25,"Now I got them blocks, my homies distribute, I'm Iguodala",distribute,INNER,SLANT,spelling,LOW,Y
+No Floggin,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",nigga,25,"Now I got them blocks, my homies distribute, I'm Iguodala",Iguodala,INNER,ASSONANCE,vowel,LOW,N
+No Floggin,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",dollar,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",nada,END,SLANT,cmu,MED,Y
+No Floggin,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",Give,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",Limit,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",Give,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",really,INNER,SLANT,cmu,MED,Y
+No Floggin,24,"Used to be that nigga, walk up to you like, ""Give me a dollar""",dollar,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",partner,END,ASSONANCE,vowel,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",got,25,"Now I got them blocks, my homies distribute, I'm Iguodala",blocks,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",blocks,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",nada,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",distribute,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",Limit,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",distribute,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",really,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",got,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",nada,INNER,SLANT,cmu,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",blocks,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chalk,INNER,SLANT,cmu,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",blocks,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chopper,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",blocks,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",partner,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",distribute,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",Finger,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",got,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chalk,INNER,SLANT,cmu,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",got,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chopper,INNER,SLANT,cmu,MED,Y
+No Floggin,25,"Now I got them blocks, my homies distribute, I'm Iguodala",got,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",partner,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",ain't,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",ain't,INNER,REPEAT,spelling,HIGH,N
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",ain't,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",rapin,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",really,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",Limit,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",nada,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",partner,END,ASSONANCE,vowel,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",ain't,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",rape,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",ain't,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",tape,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",Limit,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",Finger,INNER,SLANT,cmu,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",nada,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chalk,INNER,SLANT,cmu,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",nada,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chopper,INNER,SLANT,cmu,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",rapin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",rape,INNER,SLANT,cmu,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",rapin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",tape,INNER,SLANT,cmu,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",really,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",Finger,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",Limit,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",really,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,26,"And I'm really No Limit, but I ain't Mystikal, I ain't rapin', nada",really,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",really,INNER,REPEAT,spelling,HIGH,N
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chalk,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",partner,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chopper,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chalk,INNER,SLANT,cmu,MED,Y
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chopper,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",partner,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",rape,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",tape,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",chalk,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",talk,INNER,SLANT,spelling,LOW,Y
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",Finger,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",really,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",fuck,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",what,INNER,SLANT,cmu,MED,Y
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",yellow,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",best,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",yellow,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",get,INNER,SLANT,cmu,MED,Y
+No Floggin,27,"Finger fuck, I rape the chopper, yellow tape, chalk up your partner",yellow,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",never,INNER,SLANT,cmu,MED,Y
+No Floggin,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",all,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",talk,INNER,SLANT,cmu,MED,Y
+No Floggin,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",doin,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",doin,INNER,REPEAT,spelling,HIGH,N
+No Floggin,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",all,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",fall,INNER,PERFECT,cmu,HIGH,Y
+No Floggin,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",all,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",floor,INNER,SLANT,cmu,MED,Y
+No Floggin,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",talk,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",fall,INNER,SLANT,cmu,MED,Y
+No Floggin,28,"Huh, we was really doin' walkups, huh, so what you doin' all that talk for?",talk,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",floor,INNER,SLANT,cmu,MED,Y
+No Floggin,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",best,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",get,INNER,SLANT,cmu,MED,Y
+No Floggin,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",best,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",never,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",bro,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",don't,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",bro,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",hope,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",fall,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",floor,INNER,SLANT,cmu,MED,Y
+No Floggin,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",hope,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",don't,INNER,ASSONANCE,vowel,MED,Y
+No Floggin,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",never,29,"And, bro, you best hope you don't fall on the floor, guarantee you'll never get off of it",get,INNER,SLANT,cmu,MED,Y
