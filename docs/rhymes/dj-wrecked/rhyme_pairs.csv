@@ -1,0 +1,136 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Zeus,1,"Niggas sayin' they outside (Woo, come outside)",outside,2,"Send the addy, we gon' slide (Slide, slide)",slide,END,PERFECT,cmu,HIGH,Y
+Zeus,1,"Niggas sayin' they outside (Woo, come outside)",outside,3,Air it out when we arrive (Doo-doo-doo-doo),arrive,END,SLANT,cmu,MED,Y
+Zeus,2,"Send the addy, we gon' slide (Slide, slide)",slide,3,Air it out when we arrive (Doo-doo-doo-doo),arrive,END,SLANT,cmu,MED,Y
+Zeus,2,"Send the addy, we gon' slide (Slide, slide)",Send,3,Air it out when we arrive (Doo-doo-doo-doo),Air,INNER,ASSONANCE,vowel,MED,Y
+Zeus,2,"Send the addy, we gon' slide (Slide, slide)",Send,3,Air it out when we arrive (Doo-doo-doo-doo),when,INNER,SLANT,cmu,MED,Y
+Zeus,2,"Send the addy, we gon' slide (Slide, slide)",Send,4,"Heard he was talkin', but he never jumped out the stu' (He never jumped out the stu')",never,INNER,ASSONANCE,vowel,MED,Y
+Zeus,3,Air it out when we arrive (Doo-doo-doo-doo),Air,3,Air it out when we arrive (Doo-doo-doo-doo),when,INNER,SLANT,cmu,MED,Y
+Zeus,3,Air it out when we arrive (Doo-doo-doo-doo),Air,4,"Heard he was talkin', but he never jumped out the stu' (He never jumped out the stu')",never,INNER,SLANT,cmu,MED,Y
+Zeus,3,Air it out when we arrive (Doo-doo-doo-doo),when,4,"Heard he was talkin', but he never jumped out the stu' (He never jumped out the stu')",never,INNER,SLANT,cmu,MED,Y
+Zeus,4,"Heard he was talkin', but he never jumped out the stu' (He never jumped out the stu')",stu,5,Think that it's sweet 'til I pull up and pop out and shoot (Pop out and shoot),shoot,END,ASSONANCE,vowel,MED,Y
+Zeus,4,"Heard he was talkin', but he never jumped out the stu' (He never jumped out the stu')",talkin,5,Think that it's sweet 'til I pull up and pop out and shoot (Pop out and shoot),pop,INNER,ASSONANCE,vowel,MED,Y
+Zeus,4,"Heard he was talkin', but he never jumped out the stu' (He never jumped out the stu')",stu,6,"And they say I got the juice (Yeah, yeah)",juice,END,ASSONANCE,vowel,MED,Y
+Zeus,4,"Heard he was talkin', but he never jumped out the stu' (He never jumped out the stu')",talkin,6,"And they say I got the juice (Yeah, yeah)",got,INNER,ASSONANCE,vowel,MED,Y
+Zeus,4,"Heard he was talkin', but he never jumped out the stu' (He never jumped out the stu')",stu,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",shoes,END,ASSONANCE,vowel,MED,Y
+Zeus,5,Think that it's sweet 'til I pull up and pop out and shoot (Pop out and shoot),Think,5,Think that it's sweet 'til I pull up and pop out and shoot (Pop out and shoot),'til,INNER,ASSONANCE,vowel,MED,Y
+Zeus,5,Think that it's sweet 'til I pull up and pop out and shoot (Pop out and shoot),shoot,6,"And they say I got the juice (Yeah, yeah)",juice,END,SLANT,cmu,MED,Y
+Zeus,5,Think that it's sweet 'til I pull up and pop out and shoot (Pop out and shoot),pop,6,"And they say I got the juice (Yeah, yeah)",got,INNER,SLANT,cmu,MED,Y
+Zeus,5,Think that it's sweet 'til I pull up and pop out and shoot (Pop out and shoot),shoot,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",shoes,END,SLANT,cmu,MED,Y
+Zeus,5,Think that it's sweet 'til I pull up and pop out and shoot (Pop out and shoot),pop,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",bought,INNER,SLANT,cmu,MED,Y
+Zeus,5,Think that it's sweet 'til I pull up and pop out and shoot (Pop out and shoot),pop,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",rock,INNER,SLANT,cmu,MED,Y
+Zeus,6,"And they say I got the juice (Yeah, yeah)",juice,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",shoes,END,SLANT,cmu,MED,Y
+Zeus,6,"And they say I got the juice (Yeah, yeah)",got,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",bought,INNER,PERFECT,cmu,HIGH,Y
+Zeus,6,"And they say I got the juice (Yeah, yeah)",got,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",rock,INNER,SLANT,cmu,MED,Y
+Zeus,6,"And they say I got the juice (Yeah, yeah)",got,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",hot,INNER,PERFECT,cmu,HIGH,Y
+Zeus,6,"And they say I got the juice (Yeah, yeah)",got,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",top,INNER,SLANT,cmu,MED,Y
+Zeus,6,"And they say I got the juice (Yeah, yeah)",say,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",ain't,INNER,ASSONANCE,vowel,MED,Y
+Zeus,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",bought,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",rock,INNER,SLANT,cmu,MED,Y
+Zeus,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",Dior,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",all,INNER,SLANT,cmu,MED,Y
+Zeus,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",Dior,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",Dior,INNER,REPEAT,spelling,HIGH,N
+Zeus,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",all,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",Porsche,INNER,ASSONANCE,vowel,MED,Y
+Zeus,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",bought,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",hot,INNER,PERFECT,cmu,HIGH,Y
+Zeus,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",bought,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",top,INNER,SLANT,cmu,MED,Y
+Zeus,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",Dior,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",Porsche,INNER,SLANT,cmu,MED,Y
+Zeus,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",rock,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",hot,INNER,SLANT,cmu,MED,Y
+Zeus,7,"I bought the Dior, Dior, now that's all I rock for the shoes, ayy",rock,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",top,INNER,SLANT,cmu,MED,Y
+Zeus,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",boy,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",boy,INNER,REPEAT,spelling,HIGH,N
+Zeus,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",hot,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",top,INNER,SLANT,cmu,MED,Y
+Zeus,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",boy,9,We gon' tie that boy up like a cowboy,cowboy,END,PERFECT,cmu,HIGH,Y
+Zeus,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",boy,9,We gon' tie that boy up like a cowboy,boy,INNER,REPEAT,spelling,HIGH,N
+Zeus,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",boy,9,We gon' tie that boy up like a cowboy,cowboy,INNER,PERFECT,cmu,HIGH,Y
+Zeus,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",boy,10,I'm the one that they envy like Calboy (Huh?),Calboy,END,PERFECT,spelling,MED,Y
+Zeus,8,"Porsche niggas, hot boy, you ain't in the field, you a top boy",boy,10,I'm the one that they envy like Calboy (Huh?),Calboy,INNER,PERFECT,spelling,MED,Y
+Zeus,9,We gon' tie that boy up like a cowboy,boy,9,We gon' tie that boy up like a cowboy,cowboy,INNER,PERFECT,cmu,HIGH,Y
+Zeus,9,We gon' tie that boy up like a cowboy,tie,9,We gon' tie that boy up like a cowboy,like,INNER,ASSONANCE,vowel,MED,Y
+Zeus,9,We gon' tie that boy up like a cowboy,cowboy,10,I'm the one that they envy like Calboy (Huh?),Calboy,END,PERFECT,spelling,MED,Y
+Zeus,9,We gon' tie that boy up like a cowboy,boy,10,I'm the one that they envy like Calboy (Huh?),Calboy,INNER,PERFECT,spelling,MED,Y
+Zeus,9,We gon' tie that boy up like a cowboy,like,10,I'm the one that they envy like Calboy (Huh?),like,INNER,REPEAT,spelling,HIGH,N
+Zeus,9,We gon' tie that boy up like a cowboy,tie,10,I'm the one that they envy like Calboy (Huh?),like,INNER,ASSONANCE,vowel,MED,Y
+Zeus,9,We gon' tie that boy up like a cowboy,gon,11,Broke bitches ain't allowed (They not allowed),Broke,INNER,SLANT,spelling,LOW,Y
+Zeus,10,I'm the one that they envy like Calboy (Huh?),envy,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",when,INNER,SLANT,cmu,MED,Y
+Zeus,10,I'm the one that they envy like Calboy (Huh?),like,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",style,INNER,SLANT,cmu,MED,Y
+Zeus,10,I'm the one that they envy like Calboy (Huh?),one,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",fuck,INNER,SLANT,cmu,MED,Y
+Zeus,10,I'm the one that they envy like Calboy (Huh?),one,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",one,INNER,REPEAT,spelling,HIGH,N
+Zeus,11,Broke bitches ain't allowed (They not allowed),ain't,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",make,INNER,ASSONANCE,vowel,MED,Y
+Zeus,11,Broke bitches ain't allowed (They not allowed),bitches,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",stick,INNER,ASSONANCE,vowel,MED,Y
+Zeus,11,Broke bitches ain't allowed (They not allowed),bitches,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",think,INNER,ASSONANCE,vowel,MED,Y
+Zeus,11,Broke bitches ain't allowed (They not allowed),Broke,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",don't,INNER,ASSONANCE,vowel,MED,Y
+Zeus,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",fuck,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",one,INNER,SLANT,cmu,MED,Y
+Zeus,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",real,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",real,INNER,REPEAT,spelling,HIGH,N
+Zeus,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",back,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",dance,INNER,ASSONANCE,vowel,MED,Y
+Zeus,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",back,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",bag,INNER,SLANT,cmu,MED,Y
+Zeus,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",back,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",match,INNER,SLANT,cmu,MED,Y
+Zeus,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",real,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",V,INNER,ASSONANCE,vowel,MED,Y
+Zeus,12,"She wanna fuck with a real one when real niggas back in style (Yeah, yeah)",wanna,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",got,INNER,SLANT,cmu,MED,Y
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",don't,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",don't,INNER,REPEAT,spelling,HIGH,N
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",pussy,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",pull,INNER,SLANT,cmu,MED,Y
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",think,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",stick,INNER,SLANT,cmu,MED,Y
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",stick,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",'fit,END,SLANT,cmu,MED,Y
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",dance,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",bag,INNER,ASSONANCE,vowel,MED,Y
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",dance,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",match,INNER,ASSONANCE,vowel,MED,Y
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",think,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",'fit,INNER,ASSONANCE,vowel,MED,Y
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",stick,15,"VVS-1's on my wrist (Ice, ice, ice)",wrist,END,ASSONANCE,vowel,MED,Y
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",think,15,"VVS-1's on my wrist (Ice, ice, ice)",wrist,INNER,ASSONANCE,vowel,MED,Y
+Zeus,13,"Just 'cause I dance, don't think I'm pussy, don't make me pull up with the stick (Woo, stick, stick)",stick,16,"All this water on me, I got water for me and my bitch (Huh, me and my bitch)",bitch,END,SLANT,cmu,MED,Y
+Zeus,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",bag,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",match,INNER,SLANT,cmu,MED,Y
+Zeus,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",'fit,15,"VVS-1's on my wrist (Ice, ice, ice)",wrist,END,SLANT,cmu,MED,Y
+Zeus,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",'fit,16,"All this water on me, I got water for me and my bitch (Huh, me and my bitch)",bitch,END,SLANT,cmu,MED,Y
+Zeus,14,"I got a Louis V bag to match with the 'fit (Louis V, Louis V, Louis)",got,16,"All this water on me, I got water for me and my bitch (Huh, me and my bitch)",got,INNER,REPEAT,spelling,HIGH,N
+Zeus,15,"VVS-1's on my wrist (Ice, ice, ice)",wrist,16,"All this water on me, I got water for me and my bitch (Huh, me and my bitch)",bitch,END,ASSONANCE,vowel,MED,Y
+Zeus,16,"All this water on me, I got water for me and my bitch (Huh, me and my bitch)",All,16,"All this water on me, I got water for me and my bitch (Huh, me and my bitch)",water,INNER,SLANT,cmu,MED,Y
+Zeus,16,"All this water on me, I got water for me and my bitch (Huh, me and my bitch)",water,16,"All this water on me, I got water for me and my bitch (Huh, me and my bitch)",water,INNER,REPEAT,spelling,HIGH,N
+Zeus,17,"Drownin' (Drownin'), flooded (Flooded)",flooded,18,"They told me the price, I said, ""Fuck it"" (Fuck it)",Fuck,END,SLANT,cmu,MED,Y
+Zeus,17,"Drownin' (Drownin'), flooded (Flooded)",flooded,19,I spent it all with no budget (Budget),budget,END,ASSONANCE,vowel,MED,Y
+Zeus,17,"Drownin' (Drownin'), flooded (Flooded)",flooded,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",budgin,END,ASSONANCE,vowel,MED,Y
+Zeus,17,"Drownin' (Drownin'), flooded (Flooded)",flooded,21,I made like two hundred in London (Baow),London,END,ASSONANCE,vowel,MED,Y
+Zeus,18,"They told me the price, I said, ""Fuck it"" (Fuck it)",Fuck,19,I spent it all with no budget (Budget),budget,END,ASSONANCE,vowel,MED,Y
+Zeus,18,"They told me the price, I said, ""Fuck it"" (Fuck it)",said,19,I spent it all with no budget (Budget),spent,INNER,ASSONANCE,vowel,MED,Y
+Zeus,18,"They told me the price, I said, ""Fuck it"" (Fuck it)",told,19,I spent it all with no budget (Budget),no,INNER,ASSONANCE,vowel,MED,Y
+Zeus,18,"They told me the price, I said, ""Fuck it"" (Fuck it)",Fuck,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",budgin,END,ASSONANCE,vowel,MED,Y
+Zeus,18,"They told me the price, I said, ""Fuck it"" (Fuck it)",Fuck,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Zeus,18,"They told me the price, I said, ""Fuck it"" (Fuck it)",Fuck,21,I made like two hundred in London (Baow),London,END,ASSONANCE,vowel,MED,Y
+Zeus,18,"They told me the price, I said, ""Fuck it"" (Fuck it)",Fuck,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",Budden,END,ASSONANCE,vowel,MED,Y
+Zeus,19,I spent it all with no budget (Budget),budget,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",budgin,END,SLANT,cmu,MED,Y
+Zeus,19,I spent it all with no budget (Budget),budget,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Zeus,19,I spent it all with no budget (Budget),budget,21,I made like two hundred in London (Baow),London,END,ASSONANCE,vowel,MED,Y
+Zeus,19,I spent it all with no budget (Budget),budget,21,I made like two hundred in London (Baow),hundred,INNER,ASSONANCE,vowel,MED,Y
+Zeus,19,I spent it all with no budget (Budget),budget,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",Budden,END,ASSONANCE,vowel,MED,Y
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",ain't,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",ain't,INNER,REPEAT,spelling,HIGH,N
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",hundred,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",budgin,INNER,ASSONANCE,vowel,MED,Y
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",budgin,21,I made like two hundred in London (Baow),London,END,ASSONANCE,vowel,MED,Y
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",ain't,21,I made like two hundred in London (Baow),made,INNER,ASSONANCE,vowel,MED,Y
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",budgin,21,I made like two hundred in London (Baow),hundred,INNER,ASSONANCE,vowel,MED,Y
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",hundred,21,I made like two hundred in London (Baow),hundred,INNER,REPEAT,spelling,HIGH,N
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",hundred,21,I made like two hundred in London (Baow),London,INNER,ASSONANCE,vowel,MED,Y
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",budgin,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",Budden,END,ASSONANCE,vowel,MED,Y
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",budgin,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",pumpin,INNER,ASSONANCE,vowel,MED,Y
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",hundred,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",Budden,INNER,ASSONANCE,vowel,MED,Y
+Zeus,20,"If it ain't a hundred, I ain't budgin' (Uh? Are you dumb?)",hundred,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",pumpin,INNER,ASSONANCE,vowel,MED,Y
+Zeus,21,I made like two hundred in London (Baow),hundred,21,I made like two hundred in London (Baow),London,INNER,ASSONANCE,vowel,MED,Y
+Zeus,21,I made like two hundred in London (Baow),London,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",Budden,END,SLANT,cmu,MED,Y
+Zeus,21,I made like two hundred in London (Baow),hundred,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",Budden,INNER,ASSONANCE,vowel,MED,Y
+Zeus,21,I made like two hundred in London (Baow),hundred,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",pumpin,INNER,ASSONANCE,vowel,MED,Y
+Zeus,21,I made like two hundred in London (Baow),like,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",like,INNER,REPEAT,spelling,HIGH,N
+Zeus,21,I made like two hundred in London (Baow),London,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",pumpin,INNER,SLANT,cmu,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",bitches,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",shit,INNER,ASSONANCE,vowel,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",here,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",these,INNER,SLANT,cmu,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",pumpin,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",Budden,INNER,ASSONANCE,vowel,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",bitches,23,"Poppin' that shit, but they don't want the smoke (Nah, niggas don't want no smoke)",shit,INNER,ASSONANCE,vowel,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",shit,23,"Poppin' that shit, but they don't want the smoke (Nah, niggas don't want no smoke)",shit,INNER,REPEAT,spelling,HIGH,N
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",bitches,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",bitch,INNER,SLANT,cmu,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",Budden,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",fuck,INNER,ASSONANCE,vowel,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",Budden,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",rough,INNER,ASSONANCE,vowel,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",gassin,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",grabbin,INNER,SLANT,cmu,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",like,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",by,INNER,ASSONANCE,vowel,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",like,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",like,INNER,REPEAT,spelling,HIGH,N
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",pumpin,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",fuck,INNER,ASSONANCE,vowel,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",pumpin,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",rough,INNER,ASSONANCE,vowel,MED,Y
+Zeus,22,"You out here gassin' these bitches, you pumpin' shit up like you Budden (Baow, baow, baow)",shit,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",bitch,INNER,SLANT,cmu,MED,Y
+Zeus,23,"Poppin' that shit, but they don't want the smoke (Nah, niggas don't want no smoke)",don't,23,"Poppin' that shit, but they don't want the smoke (Nah, niggas don't want no smoke)",smoke,INNER,ASSONANCE,vowel,MED,Y
+Zeus,23,"Poppin' that shit, but they don't want the smoke (Nah, niggas don't want no smoke)",Poppin,23,"Poppin' that shit, but they don't want the smoke (Nah, niggas don't want no smoke)",want,INNER,ASSONANCE,vowel,MED,Y
+Zeus,23,"Poppin' that shit, but they don't want the smoke (Nah, niggas don't want no smoke)",smoke,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",throat,END,SLANT,cmu,MED,Y
+Zeus,23,"Poppin' that shit, but they don't want the smoke (Nah, niggas don't want no smoke)",don't,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",throat,INNER,SLANT,cmu,MED,Y
+Zeus,23,"Poppin' that shit, but they don't want the smoke (Nah, niggas don't want no smoke)",shit,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",bitch,INNER,SLANT,cmu,MED,Y
+Zeus,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",like,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",by,INNER,ASSONANCE,vowel,MED,Y
+Zeus,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",rough,24,"She like it rough when we fuck, so I'm grabbin' that bitch by the throat (Grr)",fuck,INNER,SLANT,cmu,MED,Y

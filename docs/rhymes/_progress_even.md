@@ -366,6 +366,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 354 | fred-again | Fred again.. | 1 | 25 | 74 | 8 | 66 | 74 | 2026-11-10 13:27 ET |
 | 355 | pinkpantheress | PinkPantheress | 1 | 25 | 142 | 26 | 116 | 142 | 2026-11-10 13:27 ET |
 | 356 | ripp-flamez | Ripp Flamez | 1 | 25 | 100 | 29 | 71 | 97 | 2026-11-10 13:27 ET |
+| 357 | dj-wrecked | DJ Wrecked | 1 | 24 | 121 | 33 | 88 | 121 | 2026-11-10 13:27 ET |
+| 358 | pop-smoke-ai | Pop Smoke AI | 1 | 24 | 76 | 15 | 61 | 74 | 2026-11-10 13:27 ET |
+| 359 | waka-flocka-flame | Waka Flocka Flame | 1 | 24 | 242 | 11 | 231 | 231 | 2026-11-10 13:27 ET |
+| 360 | tyb | TYB | 1 | 23 | 95 | 17 | 78 | 93 | 2026-11-10 13:27 ET |
+| 361 | dionis-limcer | DIONIS LIMCER | 1 | 22 | 102 | 16 | 86 | 100 | 2026-11-10 13:27 ET |
+| 362 | genius | Genius | 2 | 22 | 41 | 3 | 38 | 41 | 2026-11-10 13:27 ET |
+| 363 | key | KEY! | 1 | 22 | 207 | 20 | 187 | 207 | 2026-11-10 13:27 ET |
+| 364 | cash-out | Ca$h Out | 1 | 21 | 50 | 6 | 44 | 49 | 2026-11-10 13:27 ET |
+| 365 | jeremie | Jeremie | 1 | 21 | 93 | 2 | 91 | 91 | 2026-11-10 13:27 ET |
+| 366 | nervo | NERVO | 1 | 20 | 146 | 9 | 137 | 146 | 2026-11-10 13:27 ET |
 
 ## Failures
 
@@ -373,7 +383,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 356/386: Ripp Flamez.
+Finished 366/386: NERVO.
 
 ## Final
 

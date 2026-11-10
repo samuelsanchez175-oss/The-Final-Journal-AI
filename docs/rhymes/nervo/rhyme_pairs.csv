@@ -1,0 +1,164 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Champagne,1,Take me to the time where there was only champagne (champagne),Take,1,Take me to the time where there was only champagne (champagne),champagne,INNER,SLANT,cmu,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),where,1,Take me to the time where there was only champagne (champagne),there,INNER,PERFECT,cmu,HIGH,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),champagne,2,"Take me to the place where we both had it all (champagne, champagne)",place,INNER,SLANT,cmu,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),champagne,2,"Take me to the place where we both had it all (champagne, champagne)",Take,INNER,SLANT,cmu,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),only,2,"Take me to the place where we both had it all (champagne, champagne)",both,INNER,ASSONANCE,vowel,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),Take,2,"Take me to the place where we both had it all (champagne, champagne)",place,INNER,SLANT,cmu,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),Take,2,"Take me to the place where we both had it all (champagne, champagne)",Take,INNER,REPEAT,spelling,HIGH,N
+Champagne,1,Take me to the time where there was only champagne (champagne),there,2,"Take me to the place where we both had it all (champagne, champagne)",where,INNER,PERFECT,cmu,HIGH,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),where,2,"Take me to the place where we both had it all (champagne, champagne)",where,INNER,REPEAT,spelling,HIGH,N
+Champagne,1,Take me to the time where there was only champagne (champagne),there,3,"Rest your head, let's pretend",head,INNER,SLANT,cmu,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),there,3,"Rest your head, let's pretend",let's,INNER,ASSONANCE,vowel,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),there,3,"Rest your head, let's pretend",pretend,INNER,ASSONANCE,vowel,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),there,3,"Rest your head, let's pretend",Rest,INNER,ASSONANCE,vowel,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),where,3,"Rest your head, let's pretend",head,INNER,SLANT,cmu,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),where,3,"Rest your head, let's pretend",let's,INNER,ASSONANCE,vowel,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),where,3,"Rest your head, let's pretend",pretend,INNER,ASSONANCE,vowel,MED,Y
+Champagne,1,Take me to the time where there was only champagne (champagne),where,3,"Rest your head, let's pretend",Rest,INNER,ASSONANCE,vowel,MED,Y
+Champagne,2,"Take me to the place where we both had it all (champagne, champagne)",Take,2,"Take me to the place where we both had it all (champagne, champagne)",place,INNER,SLANT,cmu,MED,Y
+Champagne,2,"Take me to the place where we both had it all (champagne, champagne)",where,3,"Rest your head, let's pretend",head,INNER,SLANT,cmu,MED,Y
+Champagne,2,"Take me to the place where we both had it all (champagne, champagne)",where,3,"Rest your head, let's pretend",let's,INNER,ASSONANCE,vowel,MED,Y
+Champagne,2,"Take me to the place where we both had it all (champagne, champagne)",where,3,"Rest your head, let's pretend",pretend,INNER,ASSONANCE,vowel,MED,Y
+Champagne,2,"Take me to the place where we both had it all (champagne, champagne)",where,3,"Rest your head, let's pretend",Rest,INNER,ASSONANCE,vowel,MED,Y
+Champagne,2,"Take me to the place where we both had it all (champagne, champagne)",both,4,And I promise I won't try and fight it (oh),won't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",head,3,"Rest your head, let's pretend",let's,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",head,3,"Rest your head, let's pretend",pretend,INNER,SLANT,cmu,MED,Y
+Champagne,3,"Rest your head, let's pretend",let's,3,"Rest your head, let's pretend",pretend,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",Rest,3,"Rest your head, let's pretend",head,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",Rest,3,"Rest your head, let's pretend",let's,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",Rest,3,"Rest your head, let's pretend",pretend,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",pretend,5,"This is it, where it ends",ends,END,SLANT,cmu,MED,Y
+Champagne,3,"Rest your head, let's pretend",head,5,"This is it, where it ends",ends,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",head,5,"This is it, where it ends",where,INNER,SLANT,cmu,MED,Y
+Champagne,3,"Rest your head, let's pretend",let's,5,"This is it, where it ends",ends,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",let's,5,"This is it, where it ends",where,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",pretend,5,"This is it, where it ends",where,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",Rest,5,"This is it, where it ends",ends,INNER,ASSONANCE,vowel,MED,Y
+Champagne,3,"Rest your head, let's pretend",Rest,5,"This is it, where it ends",where,INNER,ASSONANCE,vowel,MED,Y
+Champagne,4,And I promise I won't try and fight it (oh),try,4,And I promise I won't try and fight it (oh),fight,INNER,ASSONANCE,vowel,MED,Y
+Champagne,4,And I promise I won't try and fight it (oh),fight,6,"I know it's comin', I won't deny it",deny,END,ASSONANCE,vowel,MED,Y
+Champagne,4,And I promise I won't try and fight it (oh),try,6,"I know it's comin', I won't deny it",deny,INNER,PERFECT,cmu,HIGH,Y
+Champagne,4,And I promise I won't try and fight it (oh),won't,6,"I know it's comin', I won't deny it",know,INNER,ASSONANCE,vowel,MED,Y
+Champagne,4,And I promise I won't try and fight it (oh),won't,6,"I know it's comin', I won't deny it",won't,INNER,REPEAT,spelling,HIGH,N
+Champagne,5,"This is it, where it ends",where,5,"This is it, where it ends",ends,INNER,ASSONANCE,vowel,MED,Y
+Champagne,6,"I know it's comin', I won't deny it",know,6,"I know it's comin', I won't deny it",won't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,6,"I know it's comin', I won't deny it",know,7,"You don't owe me anything, anything no more",don't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,6,"I know it's comin', I won't deny it",know,7,"You don't owe me anything, anything no more",no,INNER,PERFECT,cmu,HIGH,Y
+Champagne,6,"I know it's comin', I won't deny it",know,7,"You don't owe me anything, anything no more",owe,INNER,PERFECT,cmu,HIGH,Y
+Champagne,6,"I know it's comin', I won't deny it",won't,7,"You don't owe me anything, anything no more",don't,INNER,PERFECT,cmu,HIGH,Y
+Champagne,6,"I know it's comin', I won't deny it",won't,7,"You don't owe me anything, anything no more",no,INNER,ASSONANCE,vowel,MED,Y
+Champagne,6,"I know it's comin', I won't deny it",won't,7,"You don't owe me anything, anything no more",owe,INNER,ASSONANCE,vowel,MED,Y
+Champagne,6,"I know it's comin', I won't deny it",know,8,"No more, no you don't",don't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,6,"I know it's comin', I won't deny it",know,8,"No more, no you don't",No,INNER,PERFECT,cmu,HIGH,Y
+Champagne,6,"I know it's comin', I won't deny it",won't,8,"No more, no you don't",don't,INNER,PERFECT,cmu,HIGH,Y
+Champagne,6,"I know it's comin', I won't deny it",won't,8,"No more, no you don't",No,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",anything,7,"You don't owe me anything, anything no more",anything,INNER,REPEAT,spelling,HIGH,N
+Champagne,7,"You don't owe me anything, anything no more",don't,7,"You don't owe me anything, anything no more",no,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",don't,7,"You don't owe me anything, anything no more",owe,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",owe,7,"You don't owe me anything, anything no more",no,INNER,PERFECT,cmu,HIGH,Y
+Champagne,7,"You don't owe me anything, anything no more",don't,8,"No more, no you don't",don't,INNER,REPEAT,spelling,HIGH,N
+Champagne,7,"You don't owe me anything, anything no more",don't,8,"No more, no you don't",No,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",more,8,"No more, no you don't",more,INNER,REPEAT,spelling,HIGH,N
+Champagne,7,"You don't owe me anything, anything no more",no,8,"No more, no you don't",don't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",no,8,"No more, no you don't",No,INNER,REPEAT,spelling,HIGH,N
+Champagne,7,"You don't owe me anything, anything no more",owe,8,"No more, no you don't",don't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",owe,8,"No more, no you don't",No,INNER,PERFECT,cmu,HIGH,Y
+Champagne,7,"You don't owe me anything, anything no more",anything,9,"You don't owe me anything, thought you should know that",anything,INNER,REPEAT,spelling,HIGH,N
+Champagne,7,"You don't owe me anything, anything no more",don't,9,"You don't owe me anything, thought you should know that",don't,INNER,REPEAT,spelling,HIGH,N
+Champagne,7,"You don't owe me anything, anything no more",don't,9,"You don't owe me anything, thought you should know that",know,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",don't,9,"You don't owe me anything, thought you should know that",owe,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",more,9,"You don't owe me anything, thought you should know that",thought,INNER,SLANT,cmu,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",no,9,"You don't owe me anything, thought you should know that",don't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",no,9,"You don't owe me anything, thought you should know that",know,INNER,PERFECT,cmu,HIGH,Y
+Champagne,7,"You don't owe me anything, anything no more",no,9,"You don't owe me anything, thought you should know that",owe,INNER,PERFECT,cmu,HIGH,Y
+Champagne,7,"You don't owe me anything, anything no more",owe,9,"You don't owe me anything, thought you should know that",don't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,7,"You don't owe me anything, anything no more",owe,9,"You don't owe me anything, thought you should know that",know,INNER,PERFECT,cmu,HIGH,Y
+Champagne,7,"You don't owe me anything, anything no more",owe,9,"You don't owe me anything, thought you should know that",owe,INNER,REPEAT,spelling,HIGH,N
+Champagne,8,"No more, no you don't",No,8,"No more, no you don't",don't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,8,"No more, no you don't",No,8,"No more, no you don't",no,INNER,REPEAT,spelling,HIGH,N
+Champagne,8,"No more, no you don't",don't,9,"You don't owe me anything, thought you should know that",know,END,ASSONANCE,vowel,MED,Y
+Champagne,8,"No more, no you don't",don't,9,"You don't owe me anything, thought you should know that",don't,INNER,REPEAT,spelling,HIGH,N
+Champagne,8,"No more, no you don't",don't,9,"You don't owe me anything, thought you should know that",owe,INNER,ASSONANCE,vowel,MED,Y
+Champagne,8,"No more, no you don't",more,9,"You don't owe me anything, thought you should know that",thought,INNER,SLANT,cmu,MED,Y
+Champagne,8,"No more, no you don't",No,9,"You don't owe me anything, thought you should know that",don't,INNER,ASSONANCE,vowel,MED,Y
+Champagne,8,"No more, no you don't",No,9,"You don't owe me anything, thought you should know that",know,INNER,PERFECT,cmu,HIGH,Y
+Champagne,8,"No more, no you don't",No,9,"You don't owe me anything, thought you should know that",owe,INNER,PERFECT,cmu,HIGH,Y
+Champagne,8,"No more, no you don't",don't,10,"All the shit you've put up with, girl, I deserve a toe tag",toe,INNER,ASSONANCE,vowel,MED,Y
+Champagne,8,"No more, no you don't",more,10,"All the shit you've put up with, girl, I deserve a toe tag",All,INNER,SLANT,cmu,MED,Y
+Champagne,8,"No more, no you don't",No,10,"All the shit you've put up with, girl, I deserve a toe tag",toe,INNER,PERFECT,cmu,HIGH,Y
+Champagne,9,"You don't owe me anything, thought you should know that",don't,9,"You don't owe me anything, thought you should know that",know,INNER,ASSONANCE,vowel,MED,Y
+Champagne,9,"You don't owe me anything, thought you should know that",don't,9,"You don't owe me anything, thought you should know that",owe,INNER,ASSONANCE,vowel,MED,Y
+Champagne,9,"You don't owe me anything, thought you should know that",owe,9,"You don't owe me anything, thought you should know that",know,INNER,PERFECT,cmu,HIGH,Y
+Champagne,9,"You don't owe me anything, thought you should know that",anything,10,"All the shit you've put up with, girl, I deserve a toe tag",shit,INNER,SLANT,cmu,MED,Y
+Champagne,9,"You don't owe me anything, thought you should know that",don't,10,"All the shit you've put up with, girl, I deserve a toe tag",toe,INNER,ASSONANCE,vowel,MED,Y
+Champagne,9,"You don't owe me anything, thought you should know that",know,10,"All the shit you've put up with, girl, I deserve a toe tag",toe,INNER,PERFECT,cmu,HIGH,Y
+Champagne,9,"You don't owe me anything, thought you should know that",owe,10,"All the shit you've put up with, girl, I deserve a toe tag",toe,INNER,PERFECT,cmu,HIGH,Y
+Champagne,9,"You don't owe me anything, thought you should know that",should,10,"All the shit you've put up with, girl, I deserve a toe tag",put,INNER,SLANT,cmu,MED,Y
+Champagne,9,"You don't owe me anything, thought you should know that",thought,10,"All the shit you've put up with, girl, I deserve a toe tag",All,INNER,SLANT,cmu,MED,Y
+Champagne,9,"You don't owe me anything, thought you should know that",anything,11,"Sunny days, clear skies, rainy days, cold nights",clear,INNER,SLANT,cmu,MED,Y
+Champagne,9,"You don't owe me anything, thought you should know that",don't,11,"Sunny days, clear skies, rainy days, cold nights",cold,INNER,ASSONANCE,vowel,MED,Y
+Champagne,9,"You don't owe me anything, thought you should know that",know,11,"Sunny days, clear skies, rainy days, cold nights",cold,INNER,ASSONANCE,vowel,MED,Y
+Champagne,9,"You don't owe me anything, thought you should know that",owe,11,"Sunny days, clear skies, rainy days, cold nights",cold,INNER,ASSONANCE,vowel,MED,Y
+Champagne,10,"All the shit you've put up with, girl, I deserve a toe tag",girl,10,"All the shit you've put up with, girl, I deserve a toe tag",deserve,INNER,SLANT,cmu,MED,Y
+Champagne,10,"All the shit you've put up with, girl, I deserve a toe tag",shit,11,"Sunny days, clear skies, rainy days, cold nights",clear,INNER,SLANT,cmu,MED,Y
+Champagne,10,"All the shit you've put up with, girl, I deserve a toe tag",toe,11,"Sunny days, clear skies, rainy days, cold nights",cold,INNER,ASSONANCE,vowel,MED,Y
+Champagne,10,"All the shit you've put up with, girl, I deserve a toe tag",toe,12,"You was there for me when I was snowed in, you know that I know right",know,INNER,PERFECT,cmu,HIGH,Y
+Champagne,10,"All the shit you've put up with, girl, I deserve a toe tag",toe,12,"You was there for me when I was snowed in, you know that I know right",snowed,INNER,ASSONANCE,vowel,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",days,11,"Sunny days, clear skies, rainy days, cold nights",days,INNER,REPEAT,spelling,HIGH,N
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",days,11,"Sunny days, clear skies, rainy days, cold nights",rainy,INNER,SLANT,cmu,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",rainy,11,"Sunny days, clear skies, rainy days, cold nights",days,INNER,SLANT,cmu,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",skies,11,"Sunny days, clear skies, rainy days, cold nights",nights,INNER,ASSONANCE,vowel,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",nights,12,"You was there for me when I was snowed in, you know that I know right",right,END,SLANT,cmu,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",cold,12,"You was there for me when I was snowed in, you know that I know right",know,INNER,ASSONANCE,vowel,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",cold,12,"You was there for me when I was snowed in, you know that I know right",snowed,INNER,SLANT,cmu,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",skies,12,"You was there for me when I was snowed in, you know that I know right",right,INNER,SLANT,cmu,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",nights,13,"But tonight's your night (bang, bang)",night,END,SLANT,cmu,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",nights,13,"But tonight's your night (bang, bang)",tonight's,INNER,PERFECT,cmu,HIGH,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",skies,13,"But tonight's your night (bang, bang)",night,INNER,SLANT,cmu,MED,Y
+Champagne,11,"Sunny days, clear skies, rainy days, cold nights",skies,13,"But tonight's your night (bang, bang)",tonight's,INNER,ASSONANCE,vowel,MED,Y
+Champagne,12,"You was there for me when I was snowed in, you know that I know right",know,12,"You was there for me when I was snowed in, you know that I know right",know,INNER,REPEAT,spelling,HIGH,N
+Champagne,12,"You was there for me when I was snowed in, you know that I know right",snowed,12,"You was there for me when I was snowed in, you know that I know right",know,INNER,ASSONANCE,vowel,MED,Y
+Champagne,12,"You was there for me when I was snowed in, you know that I know right",there,12,"You was there for me when I was snowed in, you know that I know right",when,INNER,SLANT,cmu,MED,Y
+Champagne,12,"You was there for me when I was snowed in, you know that I know right",right,13,"But tonight's your night (bang, bang)",night,END,PERFECT,cmu,HIGH,Y
+Champagne,12,"You was there for me when I was snowed in, you know that I know right",right,13,"But tonight's your night (bang, bang)",tonight's,INNER,SLANT,cmu,MED,Y
+Champagne,12,"You was there for me when I was snowed in, you know that I know right",know,14,You was with me when the po put you and me in the coupe,po,INNER,PERFECT,cmu,HIGH,Y
+Champagne,12,"You was there for me when I was snowed in, you know that I know right",snowed,14,You was with me when the po put you and me in the coupe,po,INNER,ASSONANCE,vowel,MED,Y
+Champagne,12,"You was there for me when I was snowed in, you know that I know right",there,14,You was with me when the po put you and me in the coupe,when,INNER,SLANT,cmu,MED,Y
+Champagne,12,"You was there for me when I was snowed in, you know that I know right",when,14,You was with me when the po put you and me in the coupe,when,INNER,REPEAT,spelling,HIGH,N
+Champagne,13,"But tonight's your night (bang, bang)",tonight's,13,"But tonight's your night (bang, bang)",night,INNER,SLANT,cmu,MED,Y
+Champagne,13,"But tonight's your night (bang, bang)",night,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),diamond,END,ASSONANCE,vowel,MED,Y
+Champagne,14,You was with me when the po put you and me in the coupe,coupe,15,You the only girl that can get a nigga in a suit,suit,END,SLANT,cmu,MED,Y
+Champagne,14,You was with me when the po put you and me in the coupe,po,15,You the only girl that can get a nigga in a suit,only,INNER,ASSONANCE,vowel,MED,Y
+Champagne,14,You was with me when the po put you and me in the coupe,when,15,You the only girl that can get a nigga in a suit,get,INNER,SLANT,cmu,MED,Y
+Champagne,15,You the only girl that can get a nigga in a suit,only,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),gold,INNER,ASSONANCE,vowel,MED,Y
+Champagne,15,You the only girl that can get a nigga in a suit,only,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),won't,INNER,SLANT,cmu,MED,Y
+Champagne,16,Drop top riding 'cause you're so exotic,Drop,16,Drop top riding 'cause you're so exotic,exotic,INNER,SLANT,cmu,MED,Y
+Champagne,16,Drop top riding 'cause you're so exotic,Drop,16,Drop top riding 'cause you're so exotic,top,INNER,PERFECT,cmu,HIGH,Y
+Champagne,16,Drop top riding 'cause you're so exotic,top,16,Drop top riding 'cause you're so exotic,exotic,INNER,SLANT,cmu,MED,Y
+Champagne,16,Drop top riding 'cause you're so exotic,'cause,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),'cause,INNER,REPEAT,spelling,HIGH,N
+Champagne,16,Drop top riding 'cause you're so exotic,riding,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),diamond,INNER,ASSONANCE,vowel,MED,Y
+Champagne,16,Drop top riding 'cause you're so exotic,riding,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),like,INNER,ASSONANCE,vowel,MED,Y
+Champagne,16,Drop top riding 'cause you're so exotic,riding,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),reply,INNER,ASSONANCE,vowel,MED,Y
+Champagne,16,Drop top riding 'cause you're so exotic,Drop,18,"We can go out shoppin', pop tags",pop,INNER,PERFECT,cmu,HIGH,Y
+Champagne,16,Drop top riding 'cause you're so exotic,Drop,18,"We can go out shoppin', pop tags",shoppin,INNER,SLANT,cmu,MED,Y
+Champagne,16,Drop top riding 'cause you're so exotic,exotic,18,"We can go out shoppin', pop tags",pop,INNER,SLANT,cmu,MED,Y
+Champagne,16,Drop top riding 'cause you're so exotic,exotic,18,"We can go out shoppin', pop tags",shoppin,INNER,ASSONANCE,vowel,MED,Y
+Champagne,16,Drop top riding 'cause you're so exotic,top,18,"We can go out shoppin', pop tags",pop,INNER,PERFECT,cmu,HIGH,Y
+Champagne,16,Drop top riding 'cause you're so exotic,top,18,"We can go out shoppin', pop tags",shoppin,INNER,SLANT,cmu,MED,Y
+Champagne,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),like,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),diamond,INNER,ASSONANCE,vowel,MED,Y
+Champagne,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),reply,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),diamond,INNER,ASSONANCE,vowel,MED,Y
+Champagne,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),reply,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),like,INNER,ASSONANCE,vowel,MED,Y
+Champagne,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),won't,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),gold,INNER,ASSONANCE,vowel,MED,Y
+Champagne,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),gold,18,"We can go out shoppin', pop tags",go,INNER,ASSONANCE,vowel,MED,Y
+Champagne,17,You won't reply to gold 'cause you're like a diamond (skrrt skrrt),won't,18,"We can go out shoppin', pop tags",go,INNER,ASSONANCE,vowel,MED,Y
+Champagne,18,"We can go out shoppin', pop tags",can,18,"We can go out shoppin', pop tags",tags,INNER,ASSONANCE,vowel,MED,Y
+Champagne,18,"We can go out shoppin', pop tags",shoppin,18,"We can go out shoppin', pop tags",pop,INNER,SLANT,cmu,MED,Y
+Champagne,18,"We can go out shoppin', pop tags",tags,19,Since we got assistants we can leave the mall without bags,bags,END,PERFECT,cmu,HIGH,Y
+Champagne,18,"We can go out shoppin', pop tags",can,19,Since we got assistants we can leave the mall without bags,bags,INNER,ASSONANCE,vowel,MED,Y
+Champagne,18,"We can go out shoppin', pop tags",can,19,Since we got assistants we can leave the mall without bags,can,INNER,REPEAT,spelling,HIGH,N
+Champagne,18,"We can go out shoppin', pop tags",pop,19,Since we got assistants we can leave the mall without bags,got,INNER,SLANT,cmu,MED,Y
+Champagne,18,"We can go out shoppin', pop tags",shoppin,19,Since we got assistants we can leave the mall without bags,got,INNER,ASSONANCE,vowel,MED,Y
+Champagne,18,"We can go out shoppin', pop tags",tags,19,Since we got assistants we can leave the mall without bags,can,INNER,ASSONANCE,vowel,MED,Y
+Champagne,19,Since we got assistants we can leave the mall without bags,can,19,Since we got assistants we can leave the mall without bags,bags,INNER,ASSONANCE,vowel,MED,Y
+Champagne,19,Since we got assistants we can leave the mall without bags,Since,19,Since we got assistants we can leave the mall without bags,assistants,INNER,ASSONANCE,vowel,MED,Y

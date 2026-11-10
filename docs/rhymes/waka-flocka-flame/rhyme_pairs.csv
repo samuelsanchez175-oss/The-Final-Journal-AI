@@ -1,0 +1,276 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",got,1,"I got life in the trunk, 30 stacks in my pocket",pocket,INNER,SLANT,cmu,MED,Y
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",pocket,2,"Chopper in the back seat, my young nigga gone pop it",pop,END,SLANT,cmu,MED,Y
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",got,2,"Chopper in the back seat, my young nigga gone pop it",Chopper,INNER,SLANT,cmu,MED,Y
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",got,2,"Chopper in the back seat, my young nigga gone pop it",pop,INNER,SLANT,cmu,MED,Y
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",pocket,2,"Chopper in the back seat, my young nigga gone pop it",Chopper,INNER,SLANT,cmu,MED,Y
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",stacks,2,"Chopper in the back seat, my young nigga gone pop it",back,INNER,SLANT,cmu,MED,Y
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",trunk,2,"Chopper in the back seat, my young nigga gone pop it",young,INNER,SLANT,cmu,MED,Y
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",got,3,"15 he gonna murder some, 16 he gonna murder some",gonna,INNER,SLANT,cmu,MED,Y
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",pocket,3,"15 he gonna murder some, 16 he gonna murder some",gonna,INNER,ASSONANCE,vowel,MED,Y
+Murder,1,"I got life in the trunk, 30 stacks in my pocket",trunk,3,"15 he gonna murder some, 16 he gonna murder some",some,INNER,ASSONANCE,vowel,MED,Y
+Murder,2,"Chopper in the back seat, my young nigga gone pop it",Chopper,2,"Chopper in the back seat, my young nigga gone pop it",pop,INNER,SLANT,cmu,MED,Y
+Murder,2,"Chopper in the back seat, my young nigga gone pop it",Chopper,3,"15 he gonna murder some, 16 he gonna murder some",gonna,INNER,SLANT,cmu,MED,Y
+Murder,2,"Chopper in the back seat, my young nigga gone pop it",pop,3,"15 he gonna murder some, 16 he gonna murder some",gonna,INNER,SLANT,cmu,MED,Y
+Murder,2,"Chopper in the back seat, my young nigga gone pop it",young,3,"15 he gonna murder some, 16 he gonna murder some",some,INNER,SLANT,cmu,MED,Y
+Murder,2,"Chopper in the back seat, my young nigga gone pop it",Chopper,4,"17 he gonna murder some, 18 he gonna murder some",gonna,INNER,SLANT,cmu,MED,Y
+Murder,2,"Chopper in the back seat, my young nigga gone pop it",pop,4,"17 he gonna murder some, 18 he gonna murder some",gonna,INNER,SLANT,cmu,MED,Y
+Murder,2,"Chopper in the back seat, my young nigga gone pop it",young,4,"17 he gonna murder some, 18 he gonna murder some",some,INNER,SLANT,cmu,MED,Y
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",gonna,3,"15 he gonna murder some, 16 he gonna murder some",gonna,INNER,REPEAT,spelling,HIGH,N
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",murder,3,"15 he gonna murder some, 16 he gonna murder some",murder,INNER,REPEAT,spelling,HIGH,N
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",some,3,"15 he gonna murder some, 16 he gonna murder some",some,INNER,REPEAT,spelling,HIGH,N
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",some,4,"17 he gonna murder some, 18 he gonna murder some",some,END,REPEAT,spelling,HIGH,N
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",gonna,4,"17 he gonna murder some, 18 he gonna murder some",gonna,INNER,REPEAT,spelling,HIGH,N
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",murder,4,"17 he gonna murder some, 18 he gonna murder some",murder,INNER,REPEAT,spelling,HIGH,N
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",some,4,"17 he gonna murder some, 18 he gonna murder some",some,INNER,REPEAT,spelling,HIGH,N
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",some,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,blunts,INNER,ASSONANCE,vowel,MED,Y
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",some,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,butts,INNER,ASSONANCE,vowel,MED,Y
+Murder,3,"15 he gonna murder some, 16 he gonna murder some",some,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,fuckin,INNER,ASSONANCE,vowel,MED,Y
+Murder,4,"17 he gonna murder some, 18 he gonna murder some",gonna,4,"17 he gonna murder some, 18 he gonna murder some",gonna,INNER,REPEAT,spelling,HIGH,N
+Murder,4,"17 he gonna murder some, 18 he gonna murder some",murder,4,"17 he gonna murder some, 18 he gonna murder some",murder,INNER,REPEAT,spelling,HIGH,N
+Murder,4,"17 he gonna murder some, 18 he gonna murder some",some,4,"17 he gonna murder some, 18 he gonna murder some",some,INNER,REPEAT,spelling,HIGH,N
+Murder,4,"17 he gonna murder some, 18 he gonna murder some",some,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,blunts,INNER,ASSONANCE,vowel,MED,Y
+Murder,4,"17 he gonna murder some, 18 he gonna murder some",some,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,butts,INNER,ASSONANCE,vowel,MED,Y
+Murder,4,"17 he gonna murder some, 18 he gonna murder some",some,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,fuckin,INNER,ASSONANCE,vowel,MED,Y
+Murder,4,"17 he gonna murder some, 18 he gonna murder some",gonna,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,charlie,INNER,ASSONANCE,vowel,MED,Y
+Murder,4,"17 he gonna murder some, 18 he gonna murder some",some,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,fuck,INNER,SLANT,cmu,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,Blowin,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,flocka,INNER,SLANT,spelling,LOW,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,blunts,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,butts,INNER,SLANT,cmu,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,blunts,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,fuckin,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,butts,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,rubbies,INNER,SLANT,spelling,LOW,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,chief,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,keef,INNER,PERFECT,cmu,HIGH,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,fuckin,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,butts,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,like,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,diamond,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,like,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,like,INNER,REPEAT,spelling,HIGH,N
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,blunts,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,fuck,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,butts,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,fuck,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,captain,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,fallin,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,chief,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,weed,INNER,SLANT,cmu,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,diamond,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,buyin,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,diamond,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,high,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,fuckin,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,fuck,INNER,SLANT,cmu,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,keef,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,weed,INNER,SLANT,cmu,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,like,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,buyin,INNER,SLANT,cmu,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,like,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,high,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,morgan,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,brought,INNER,ASSONANCE,vowel,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,chief,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,seen,INNER,SLANT,cmu,MED,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,flocka,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,froggy,INNER,SLANT,spelling,LOW,Y
+Murder,5,Blowin blunts and fuckin butts chief keef like captain morgan waka flocka like diamond rubbies,keef,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,seen,INNER,SLANT,cmu,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,brown,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,brown,INNER,REPEAT,spelling,HIGH,N
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,buyin,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,high,INNER,ASSONANCE,vowel,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,brown,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,how,INNER,ASSONANCE,vowel,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,brown,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,shout,INNER,SLANT,cmu,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,charlie,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,froggy,INNER,ASSONANCE,vowel,LOW,N
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,nigga,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,nigga,INNER,REPEAT,spelling,HIGH,N
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,weed,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,seen,INNER,SLANT,cmu,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,brought,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,pause,INNER,SLANT,cmu,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,buyin,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,mike,INNER,SLANT,cmu,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,charlie,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,bottles,INNER,ASSONANCE,vowel,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,charlie,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,lot,INNER,ASSONANCE,vowel,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,charlie,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,weezy,INNER,ASSONANCE,vowel,LOW,N
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,high,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,mike,INNER,ASSONANCE,vowel,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,nigga,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,INNER,REPEAT,spelling,HIGH,N
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,weed,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,INNER,ASSONANCE,vowel,MED,Y
+Murder,6,Yeah nigga we buyin weed charlie brown he brought the brown high as fuck we fallin,weed,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,weezy,INNER,SLANT,spelling,LOW,Y
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,froggy,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,pussy,INNER,ASSONANCE,vowel,LOW,N
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,gettin,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,gettin,INNER,REPEAT,spelling,HIGH,N
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,shout,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,how,INNER,ASSONANCE,vowel,MED,Y
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,would've,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,pussy,INNER,ASSONANCE,vowel,MED,Y
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,froggy,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,INNER,ASSONANCE,vowel,LOW,N
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,froggy,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,weezy,INNER,ASSONANCE,vowel,LOW,N
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,nigga,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,INNER,REPEAT,spelling,HIGH,N
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,pussy,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,weezy,INNER,ASSONANCE,vowel,LOW,N
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,seen,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,INNER,ASSONANCE,vowel,MED,Y
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,seen,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,weezy,INNER,SLANT,spelling,LOW,Y
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,gettin,9,"He threw his set up in the air, I put my pistol in the air",air,INNER,ASSONANCE,vowel,MED,Y
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,gettin,9,"He threw his set up in the air, I put my pistol in the air",set,INNER,SLANT,cmu,MED,Y
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,pussy,9,"He threw his set up in the air, I put my pistol in the air",put,INNER,SLANT,cmu,MED,Y
+Murder,7,Out shout out to my nigga froggy he would've seen how im gettin flimed gettin pussy and,would've,9,"He threw his set up in the air, I put my pistol in the air",put,INNER,ASSONANCE,vowel,MED,Y
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,bottles,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,lot,INNER,ASSONANCE,vowel,MED,Y
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,INNER,REPEAT,spelling,HIGH,N
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,weezy,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,INNER,ASSONANCE,vowel,LOW,N
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,lil,9,"He threw his set up in the air, I put my pistol in the air",pistol,INNER,ASSONANCE,vowel,MED,Y
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,10,"Let him know I'm strapped in here, he can lose his life in here",here,END,ASSONANCE,vowel,MED,Y
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,lil,10,"Let him know I'm strapped in here, he can lose his life in here",him,INNER,SLANT,cmu,MED,Y
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,mike,10,"Let him know I'm strapped in here, he can lose his life in here",life,INNER,SLANT,cmu,MED,Y
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,10,"Let him know I'm strapped in here, he can lose his life in here",here,INNER,ASSONANCE,vowel,MED,Y
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,Throwin,10,"Let him know I'm strapped in here, he can lose his life in here",know,INNER,ASSONANCE,vowel,MED,Y
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,weezy,10,"Let him know I'm strapped in here, he can lose his life in here",here,INNER,SLANT,spelling,LOW,Y
+Murder,8,Throwin bottles with my nigga weezy and lil mike pause nigga he out the lot yea nigga we,nigga,12,"My young niggas got no fear, I got the check over here",here,END,ASSONANCE,vowel,MED,Y
+Murder,9,"He threw his set up in the air, I put my pistol in the air",air,9,"He threw his set up in the air, I put my pistol in the air",air,INNER,REPEAT,spelling,HIGH,N
+Murder,9,"He threw his set up in the air, I put my pistol in the air",set,9,"He threw his set up in the air, I put my pistol in the air",air,INNER,SLANT,cmu,MED,Y
+Murder,9,"He threw his set up in the air, I put my pistol in the air",air,10,"Let him know I'm strapped in here, he can lose his life in here",Let,INNER,SLANT,cmu,MED,Y
+Murder,9,"He threw his set up in the air, I put my pistol in the air",pistol,10,"Let him know I'm strapped in here, he can lose his life in here",him,INNER,ASSONANCE,vowel,MED,Y
+Murder,9,"He threw his set up in the air, I put my pistol in the air",set,10,"Let him know I'm strapped in here, he can lose his life in here",Let,INNER,PERFECT,cmu,HIGH,Y
+Murder,9,"He threw his set up in the air, I put my pistol in the air",threw,10,"Let him know I'm strapped in here, he can lose his life in here",lose,INNER,ASSONANCE,vowel,MED,Y
+Murder,9,"He threw his set up in the air, I put my pistol in the air",pistol,11,"He can die tonight in here, hit him with a fucking beer",beer,INNER,ASSONANCE,vowel,MED,Y
+Murder,9,"He threw his set up in the air, I put my pistol in the air",pistol,11,"He can die tonight in here, hit him with a fucking beer",him,INNER,ASSONANCE,vowel,MED,Y
+Murder,9,"He threw his set up in the air, I put my pistol in the air",pistol,11,"He can die tonight in here, hit him with a fucking beer",hit,INNER,ASSONANCE,vowel,MED,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",here,10,"Let him know I'm strapped in here, he can lose his life in here",here,INNER,REPEAT,spelling,HIGH,N
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",strapped,10,"Let him know I'm strapped in here, he can lose his life in here",can,INNER,ASSONANCE,vowel,MED,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",can,11,"He can die tonight in here, hit him with a fucking beer",can,INNER,REPEAT,spelling,HIGH,N
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",here,11,"He can die tonight in here, hit him with a fucking beer",here,INNER,REPEAT,spelling,HIGH,N
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",him,11,"He can die tonight in here, hit him with a fucking beer",beer,INNER,SLANT,cmu,MED,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",him,11,"He can die tonight in here, hit him with a fucking beer",him,INNER,REPEAT,spelling,HIGH,N
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",him,11,"He can die tonight in here, hit him with a fucking beer",hit,INNER,SLANT,cmu,MED,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",life,11,"He can die tonight in here, hit him with a fucking beer",die,INNER,ASSONANCE,vowel,MED,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",life,11,"He can die tonight in here, hit him with a fucking beer",tonight,INNER,SLANT,cmu,MED,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",strapped,11,"He can die tonight in here, hit him with a fucking beer",can,INNER,ASSONANCE,vowel,MED,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",here,12,"My young niggas got no fear, I got the check over here",here,END,REPEAT,spelling,HIGH,N
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",here,12,"My young niggas got no fear, I got the check over here",here,INNER,REPEAT,spelling,HIGH,N
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",him,12,"My young niggas got no fear, I got the check over here",fear,INNER,SLANT,cmu,MED,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",know,12,"My young niggas got no fear, I got the check over here",no,INNER,PERFECT,cmu,HIGH,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",know,12,"My young niggas got no fear, I got the check over here",over,INNER,ASSONANCE,vowel,MED,Y
+Murder,10,"Let him know I'm strapped in here, he can lose his life in here",Let,12,"My young niggas got no fear, I got the check over here",check,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",die,11,"He can die tonight in here, hit him with a fucking beer",tonight,INNER,ASSONANCE,vowel,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",him,11,"He can die tonight in here, hit him with a fucking beer",beer,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",hit,11,"He can die tonight in here, hit him with a fucking beer",beer,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",hit,11,"He can die tonight in here, hit him with a fucking beer",him,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",beer,12,"My young niggas got no fear, I got the check over here",fear,INNER,PERFECT,cmu,HIGH,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",fucking,12,"My young niggas got no fear, I got the check over here",young,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",here,12,"My young niggas got no fear, I got the check over here",here,INNER,REPEAT,spelling,HIGH,N
+Murder,11,"He can die tonight in here, hit him with a fucking beer",him,12,"My young niggas got no fear, I got the check over here",fear,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",hit,12,"My young niggas got no fear, I got the check over here",fear,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",beer,13,"Put that kush off in the air, I don't really give a fuck",give,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",beer,13,"Put that kush off in the air, I don't really give a fuck",really,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",fucking,13,"Put that kush off in the air, I don't really give a fuck",fuck,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",him,13,"Put that kush off in the air, I don't really give a fuck",give,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",him,13,"Put that kush off in the air, I don't really give a fuck",really,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",hit,13,"Put that kush off in the air, I don't really give a fuck",give,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",hit,13,"Put that kush off in the air, I don't really give a fuck",really,INNER,SLANT,cmu,MED,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",tonight,13,"Put that kush off in the air, I don't really give a fuck",don't,INNER,SLANT,spelling,LOW,Y
+Murder,11,"He can die tonight in here, hit him with a fucking beer",beer,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,END,REPEAT,spelling,HIGH,N
+Murder,12,"My young niggas got no fear, I got the check over here",got,12,"My young niggas got no fear, I got the check over here",got,INNER,REPEAT,spelling,HIGH,N
+Murder,12,"My young niggas got no fear, I got the check over here",no,12,"My young niggas got no fear, I got the check over here",over,INNER,ASSONANCE,vowel,MED,Y
+Murder,12,"My young niggas got no fear, I got the check over here",check,13,"Put that kush off in the air, I don't really give a fuck",air,INNER,SLANT,cmu,MED,Y
+Murder,12,"My young niggas got no fear, I got the check over here",fear,13,"Put that kush off in the air, I don't really give a fuck",give,INNER,SLANT,cmu,MED,Y
+Murder,12,"My young niggas got no fear, I got the check over here",fear,13,"Put that kush off in the air, I don't really give a fuck",really,INNER,SLANT,cmu,MED,Y
+Murder,12,"My young niggas got no fear, I got the check over here",no,13,"Put that kush off in the air, I don't really give a fuck",don't,INNER,ASSONANCE,vowel,MED,Y
+Murder,12,"My young niggas got no fear, I got the check over here",over,13,"Put that kush off in the air, I don't really give a fuck",don't,INNER,ASSONANCE,vowel,MED,Y
+Murder,12,"My young niggas got no fear, I got the check over here",young,13,"Put that kush off in the air, I don't really give a fuck",fuck,INNER,SLANT,cmu,MED,Y
+Murder,12,"My young niggas got no fear, I got the check over here",fear,14,How you really from Wichita? Man I wish a nigga buck,really,INNER,SLANT,cmu,MED,Y
+Murder,12,"My young niggas got no fear, I got the check over here",fear,14,How you really from Wichita? Man I wish a nigga buck,wish,INNER,SLANT,cmu,MED,Y
+Murder,12,"My young niggas got no fear, I got the check over here",niggas,14,How you really from Wichita? Man I wish a nigga buck,nigga,INNER,SLANT,spelling,LOW,Y
+Murder,12,"My young niggas got no fear, I got the check over here",young,14,How you really from Wichita? Man I wish a nigga buck,buck,INNER,SLANT,cmu,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",Put,13,"Put that kush off in the air, I don't really give a fuck",kush,INNER,SLANT,cmu,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",really,13,"Put that kush off in the air, I don't really give a fuck",give,INNER,SLANT,cmu,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",fuck,14,How you really from Wichita? Man I wish a nigga buck,buck,END,PERFECT,cmu,HIGH,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",give,14,How you really from Wichita? Man I wish a nigga buck,really,INNER,SLANT,cmu,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",give,14,How you really from Wichita? Man I wish a nigga buck,wish,INNER,SLANT,cmu,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",really,14,How you really from Wichita? Man I wish a nigga buck,really,INNER,REPEAT,spelling,HIGH,N
+Murder,13,"Put that kush off in the air, I don't really give a fuck",really,14,How you really from Wichita? Man I wish a nigga buck,wish,INNER,SLANT,cmu,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",fuck,15,"I got four sips in my cup, 3 bad bitches in my beer",cup,INNER,SLANT,cmu,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",give,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,INNER,SLANT,cmu,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",give,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,INNER,ASSONANCE,vowel,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",give,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,INNER,ASSONANCE,vowel,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",really,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,INNER,SLANT,cmu,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",really,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,INNER,ASSONANCE,vowel,MED,Y
+Murder,13,"Put that kush off in the air, I don't really give a fuck",really,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,INNER,ASSONANCE,vowel,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,really,14,How you really from Wichita? Man I wish a nigga buck,wish,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,buck,15,"I got four sips in my cup, 3 bad bitches in my beer",cup,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,Man,15,"I got four sips in my cup, 3 bad bitches in my beer",bad,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,really,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,really,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,INNER,ASSONANCE,vowel,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,really,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,INNER,ASSONANCE,vowel,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,Wichita,15,"I got four sips in my cup, 3 bad bitches in my beer",four,INNER,ASSONANCE,vowel,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,wish,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,wish,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,wish,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,INNER,ASSONANCE,vowel,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,Man,16,"Red tips off in my clip, on my L phant shit",phant,INNER,SLANT,spelling,LOW,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,nigga,16,"Red tips off in my clip, on my L phant shit",clip,INNER,SLANT,spelling,LOW,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,nigga,16,"Red tips off in my clip, on my L phant shit",shit,INNER,SLANT,spelling,LOW,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,really,16,"Red tips off in my clip, on my L phant shit",clip,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,really,16,"Red tips off in my clip, on my L phant shit",shit,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,really,16,"Red tips off in my clip, on my L phant shit",tips,INNER,ASSONANCE,vowel,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,wish,16,"Red tips off in my clip, on my L phant shit",clip,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,wish,16,"Red tips off in my clip, on my L phant shit",shit,INNER,SLANT,cmu,MED,Y
+Murder,14,How you really from Wichita? Man I wish a nigga buck,wish,16,"Red tips off in my clip, on my L phant shit",tips,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,16,"Red tips off in my clip, on my L phant shit",shit,END,SLANT,cmu,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,16,"Red tips off in my clip, on my L phant shit",clip,INNER,SLANT,cmu,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,16,"Red tips off in my clip, on my L phant shit",tips,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,16,"Red tips off in my clip, on my L phant shit",clip,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,16,"Red tips off in my clip, on my L phant shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,16,"Red tips off in my clip, on my L phant shit",tips,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,16,"Red tips off in my clip, on my L phant shit",clip,INNER,SLANT,cmu,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,16,"Red tips off in my clip, on my L phant shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,16,"Red tips off in my clip, on my L phant shit",tips,INNER,PERFECT,cmu,HIGH,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",beer,17,"I got pistol in my pocket, pull it out and pop it",pistol,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",bitches,17,"I got pistol in my pocket, pull it out and pop it",pistol,INNER,ASSONANCE,vowel,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",got,17,"I got pistol in my pocket, pull it out and pop it",got,INNER,REPEAT,spelling,HIGH,N
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",got,17,"I got pistol in my pocket, pull it out and pop it",pocket,INNER,SLANT,cmu,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",got,17,"I got pistol in my pocket, pull it out and pop it",pop,INNER,SLANT,cmu,MED,Y
+Murder,15,"I got four sips in my cup, 3 bad bitches in my beer",sips,17,"I got pistol in my pocket, pull it out and pop it",pistol,INNER,ASSONANCE,vowel,MED,Y
+Murder,16,"Red tips off in my clip, on my L phant shit",clip,16,"Red tips off in my clip, on my L phant shit",shit,INNER,SLANT,cmu,MED,Y
+Murder,16,"Red tips off in my clip, on my L phant shit",Red,16,"Red tips off in my clip, on my L phant shit",L,INNER,SLANT,cmu,MED,Y
+Murder,16,"Red tips off in my clip, on my L phant shit",tips,16,"Red tips off in my clip, on my L phant shit",clip,INNER,SLANT,cmu,MED,Y
+Murder,16,"Red tips off in my clip, on my L phant shit",tips,16,"Red tips off in my clip, on my L phant shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Murder,16,"Red tips off in my clip, on my L phant shit",clip,17,"I got pistol in my pocket, pull it out and pop it",pistol,INNER,ASSONANCE,vowel,MED,Y
+Murder,16,"Red tips off in my clip, on my L phant shit",shit,17,"I got pistol in my pocket, pull it out and pop it",pistol,INNER,ASSONANCE,vowel,MED,Y
+Murder,16,"Red tips off in my clip, on my L phant shit",tips,17,"I got pistol in my pocket, pull it out and pop it",pistol,INNER,ASSONANCE,vowel,MED,Y
+Murder,16,"Red tips off in my clip, on my L phant shit",tips,18,My young niggas wilding in Chiraq catching bodies,niggas,INNER,SLANT,spelling,LOW,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",got,17,"I got pistol in my pocket, pull it out and pop it",pocket,INNER,SLANT,cmu,MED,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",got,17,"I got pistol in my pocket, pull it out and pop it",pop,INNER,SLANT,cmu,MED,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",pocket,17,"I got pistol in my pocket, pull it out and pop it",pop,INNER,SLANT,cmu,MED,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",pop,18,My young niggas wilding in Chiraq catching bodies,bodies,END,ASSONANCE,vowel,MED,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",got,18,My young niggas wilding in Chiraq catching bodies,bodies,INNER,ASSONANCE,vowel,MED,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",pocket,18,My young niggas wilding in Chiraq catching bodies,bodies,INNER,ASSONANCE,vowel,MED,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",pop,19,"GBE, we mobbing, Chief Sosa co-starring",starring,END,ASSONANCE,vowel,MED,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",got,19,"GBE, we mobbing, Chief Sosa co-starring",starring,INNER,ASSONANCE,vowel,MED,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",pocket,19,"GBE, we mobbing, Chief Sosa co-starring",starring,INNER,ASSONANCE,vowel,MED,Y
+Murder,17,"I got pistol in my pocket, pull it out and pop it",pop,21,"Them pistols get to popping, bodies get to dropping",dropping,END,SLANT,cmu,MED,Y
+Murder,18,My young niggas wilding in Chiraq catching bodies,niggas,18,My young niggas wilding in Chiraq catching bodies,Chiraq,INNER,ASSONANCE,vowel,LOW,N
+Murder,18,My young niggas wilding in Chiraq catching bodies,bodies,19,"GBE, we mobbing, Chief Sosa co-starring",starring,END,ASSONANCE,vowel,MED,Y
+Murder,18,My young niggas wilding in Chiraq catching bodies,catching,19,"GBE, we mobbing, Chief Sosa co-starring",mobbing,INNER,PERFECT,spelling,MED,Y
+Murder,18,My young niggas wilding in Chiraq catching bodies,wilding,19,"GBE, we mobbing, Chief Sosa co-starring",mobbing,INNER,PERFECT,spelling,MED,Y
+Murder,18,My young niggas wilding in Chiraq catching bodies,bodies,20,"My niggas tote pistols, it's a issue, please don't start 'em",start,INNER,ASSONANCE,vowel,MED,Y
+Murder,18,My young niggas wilding in Chiraq catching bodies,Chiraq,20,"My niggas tote pistols, it's a issue, please don't start 'em",niggas,INNER,ASSONANCE,vowel,LOW,N
+Murder,18,My young niggas wilding in Chiraq catching bodies,niggas,20,"My niggas tote pistols, it's a issue, please don't start 'em",niggas,INNER,REPEAT,spelling,HIGH,N
+Murder,18,My young niggas wilding in Chiraq catching bodies,bodies,21,"Them pistols get to popping, bodies get to dropping",dropping,END,ASSONANCE,vowel,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",mobbing,19,"GBE, we mobbing, Chief Sosa co-starring",starring,INNER,PERFECT,spelling,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",Sosa,19,"GBE, we mobbing, Chief Sosa co-starring",co,INNER,ASSONANCE,vowel,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",Chief,20,"My niggas tote pistols, it's a issue, please don't start 'em",please,INNER,SLANT,cmu,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",co,20,"My niggas tote pistols, it's a issue, please don't start 'em",don't,INNER,ASSONANCE,vowel,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",co,20,"My niggas tote pistols, it's a issue, please don't start 'em",tote,INNER,ASSONANCE,vowel,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",Sosa,20,"My niggas tote pistols, it's a issue, please don't start 'em",don't,INNER,ASSONANCE,vowel,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",Sosa,20,"My niggas tote pistols, it's a issue, please don't start 'em",tote,INNER,SLANT,cmu,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",starring,20,"My niggas tote pistols, it's a issue, please don't start 'em",start,INNER,SLANT,cmu,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",starring,21,"Them pistols get to popping, bodies get to dropping",dropping,END,SLANT,cmu,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",mobbing,21,"Them pistols get to popping, bodies get to dropping",dropping,INNER,PERFECT,spelling,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",mobbing,21,"Them pistols get to popping, bodies get to dropping",popping,INNER,PERFECT,spelling,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",starring,21,"Them pistols get to popping, bodies get to dropping",bodies,INNER,ASSONANCE,vowel,MED,Y
+Murder,19,"GBE, we mobbing, Chief Sosa co-starring",starring,21,"Them pistols get to popping, bodies get to dropping",popping,INNER,SLANT,cmu,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",pistols,20,"My niggas tote pistols, it's a issue, please don't start 'em",issue,INNER,ASSONANCE,vowel,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",tote,20,"My niggas tote pistols, it's a issue, please don't start 'em",don't,INNER,SLANT,cmu,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",issue,21,"Them pistols get to popping, bodies get to dropping",pistols,INNER,ASSONANCE,vowel,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",pistols,21,"Them pistols get to popping, bodies get to dropping",pistols,INNER,REPEAT,spelling,HIGH,N
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",start,21,"Them pistols get to popping, bodies get to dropping",bodies,INNER,ASSONANCE,vowel,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",start,21,"Them pistols get to popping, bodies get to dropping",dropping,INNER,ASSONANCE,vowel,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",start,21,"Them pistols get to popping, bodies get to dropping",popping,INNER,ASSONANCE,vowel,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",don't,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",Smoking,INNER,ASSONANCE,vowel,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",please,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",feeling,INNER,ASSONANCE,vowel,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",please,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",wheezy,INNER,SLANT,spelling,LOW,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",tote,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",Smoking,INNER,ASSONANCE,vowel,MED,Y
+Murder,20,"My niggas tote pistols, it's a issue, please don't start 'em",'em,24,"A lot of hundred shots, and a bunch of niggas can shoot 'em",'em,END,REPEAT,spelling,HIGH,N
+Murder,21,"Them pistols get to popping, bodies get to dropping",bodies,21,"Them pistols get to popping, bodies get to dropping",dropping,INNER,ASSONANCE,vowel,MED,Y
+Murder,21,"Them pistols get to popping, bodies get to dropping",get,21,"Them pistols get to popping, bodies get to dropping",get,INNER,REPEAT,spelling,HIGH,N
+Murder,21,"Them pistols get to popping, bodies get to dropping",get popping,21,"Them pistols get to popping, bodies get to dropping",get dropping,INNER,MULTI,multi,HIGH,Y
+Murder,21,"Them pistols get to popping, bodies get to dropping",popping,21,"Them pistols get to popping, bodies get to dropping",bodies,INNER,ASSONANCE,vowel,MED,Y
+Murder,21,"Them pistols get to popping, bodies get to dropping",popping,21,"Them pistols get to popping, bodies get to dropping",dropping,INNER,MULTI,multi,HIGH,Y
+Murder,21,"Them pistols get to popping, bodies get to dropping",get,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",Steady,INNER,SLANT,cmu,MED,Y
+Murder,21,"Them pistols get to popping, bodies get to dropping",get,23,"Like Flocka, Oh Let's Do It, click clack, who you with?",Let's,INNER,SLANT,cmu,MED,Y
+Murder,21,"Them pistols get to popping, bodies get to dropping",pistols,23,"Like Flocka, Oh Let's Do It, click clack, who you with?",click,INNER,ASSONANCE,vowel,MED,Y
+Murder,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",Smoking,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",Mobbin,INNER,SLANT,spelling,LOW,Y
+Murder,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",wheezy,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",gucci,INNER,ASSONANCE,vowel,LOW,N
+Murder,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",wheezy,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",Steady,INNER,ASSONANCE,vowel,LOW,N
+Murder,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",gucci,23,"Like Flocka, Oh Let's Do It, click clack, who you with?",who,INNER,ASSONANCE,vowel,MED,Y
+Murder,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",Smoking,23,"Like Flocka, Oh Let's Do It, click clack, who you with?",Flocka,INNER,SLANT,spelling,LOW,Y
+Murder,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",Steady,23,"Like Flocka, Oh Let's Do It, click clack, who you with?",Let's,INNER,ASSONANCE,vowel,MED,Y
+Murder,22,"Smoking wheezy, feeling gucci, on that We Be Steady Mobbin'",gucci,24,"A lot of hundred shots, and a bunch of niggas can shoot 'em",shoot,INNER,SLANT,cmu,MED,Y
+Murder,23,"Like Flocka, Oh Let's Do It, click clack, who you with?",click,23,"Like Flocka, Oh Let's Do It, click clack, who you with?",clack,INNER,SLANT,spelling,LOW,Y
+Murder,23,"Like Flocka, Oh Let's Do It, click clack, who you with?",clack,24,"A lot of hundred shots, and a bunch of niggas can shoot 'em",can,INNER,SLANT,cmu,MED,Y
+Murder,23,"Like Flocka, Oh Let's Do It, click clack, who you with?",who,24,"A lot of hundred shots, and a bunch of niggas can shoot 'em",shoot,INNER,ASSONANCE,vowel,MED,Y
+Murder,24,"A lot of hundred shots, and a bunch of niggas can shoot 'em",hundred,24,"A lot of hundred shots, and a bunch of niggas can shoot 'em",bunch,INNER,ASSONANCE,vowel,MED,Y
+Murder,24,"A lot of hundred shots, and a bunch of niggas can shoot 'em",lot,24,"A lot of hundred shots, and a bunch of niggas can shoot 'em",shots,INNER,SLANT,cmu,MED,Y

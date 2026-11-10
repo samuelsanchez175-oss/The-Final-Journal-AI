@@ -1,0 +1,112 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Get Merced,1,When you see me pulling up o,When,2,You better run yo,better,INNER,SLANT,cmu,MED,Y
+Get Merced,1,When you see me pulling up o,o,3,Yo see dem f*n popo,popo,END,ASSONANCE,vowel,LOW,N
+Get Merced,1,When you see me pulling up o,see,3,Yo see dem f*n popo,see,INNER,REPEAT,spelling,HIGH,N
+Get Merced,1,When you see me pulling up o,When,3,Yo see dem f*n popo,dem,INNER,SLANT,spelling,LOW,Y
+Get Merced,1,When you see me pulling up o,When,3,Yo see dem f*n popo,f,INNER,SLANT,cmu,MED,Y
+Get Merced,1,When you see me pulling up o,When,3,Yo see dem f*n popo,n,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,2,You better run yo,better,3,Yo see dem f*n popo,dem,INNER,SLANT,spelling,LOW,Y
+Get Merced,2,You better run yo,better,3,Yo see dem f*n popo,f,INNER,SLANT,cmu,MED,Y
+Get Merced,2,You better run yo,better,3,Yo see dem f*n popo,n,INNER,SLANT,cmu,MED,Y
+Get Merced,3,Yo see dem f*n popo,dem,3,Yo see dem f*n popo,f,INNER,SLANT,spelling,LOW,Y
+Get Merced,3,Yo see dem f*n popo,dem,3,Yo see dem f*n popo,n,INNER,SLANT,spelling,LOW,Y
+Get Merced,3,Yo see dem f*n popo,f,3,Yo see dem f*n popo,n,INNER,SLANT,cmu,MED,Y
+Get Merced,3,Yo see dem f*n popo,dem,5,Black D you get shot,get,INNER,SLANT,spelling,LOW,Y
+Get Merced,3,Yo see dem f*n popo,f,5,Black D you get shot,get,INNER,SLANT,cmu,MED,Y
+Get Merced,3,Yo see dem f*n popo,n,5,Black D you get shot,get,INNER,SLANT,cmu,MED,Y
+Get Merced,3,Yo see dem f*n popo,see,5,Black D you get shot,D,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,4,Chasin after me do,Chasin,4,Chasin after me do,after,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,4,Chasin after me do,after,5,Black D you get shot,Black,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,4,Chasin after me do,Chasin,5,Black D you get shot,Black,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,5,Black D you get shot,shot,6,No bullet den we use a rock,rock,END,SLANT,cmu,MED,Y
+Get Merced,5,Black D you get shot,get,6,No bullet den we use a rock,den,INNER,SLANT,cmu,MED,Y
+Get Merced,5,Black D you get shot,shot,7,No matter what we do cops,cops,END,ASSONANCE,vowel,MED,Y
+Get Merced,5,Black D you get shot,Black,7,No matter what we do cops,matter,INNER,SLANT,cmu,MED,Y
+Get Merced,5,Black D you get shot,shot,8,Cops around they know you got shot,shot,END,REPEAT,spelling,HIGH,N
+Get Merced,6,No bullet den we use a rock,rock,7,No matter what we do cops,cops,END,ASSONANCE,vowel,MED,Y
+Get Merced,6,No bullet den we use a rock,No,7,No matter what we do cops,No,INNER,REPEAT,spelling,HIGH,N
+Get Merced,6,No bullet den we use a rock,rock,8,Cops around they know you got shot,shot,END,SLANT,cmu,MED,Y
+Get Merced,6,No bullet den we use a rock,No,8,Cops around they know you got shot,know,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,6,No bullet den we use a rock,rock,8,Cops around they know you got shot,Cops,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,6,No bullet den we use a rock,rock,8,Cops around they know you got shot,got,INNER,SLANT,cmu,MED,Y
+Get Merced,7,No matter what we do cops,cops,8,Cops around they know you got shot,shot,END,ASSONANCE,vowel,MED,Y
+Get Merced,7,No matter what we do cops,cops,8,Cops around they know you got shot,Cops,INNER,REPEAT,spelling,HIGH,N
+Get Merced,7,No matter what we do cops,cops,8,Cops around they know you got shot,got,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,7,No matter what we do cops,No,8,Cops around they know you got shot,know,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,8,Cops around they know you got shot,Cops,8,Cops around they know you got shot,got,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,8,Cops around they know you got shot,Cops,8,Cops around they know you got shot,shot,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,8,Cops around they know you got shot,got,8,Cops around they know you got shot,shot,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,8,Cops around they know you got shot,know,10,9 milimeter no time,no,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,10,9 milimeter no time,time,11,Deez gunz mean you bout' to die,die,END,ASSONANCE,vowel,MED,Y
+Get Merced,10,9 milimeter no time,time,12,Before you die we say goodbye,goodbye,END,ASSONANCE,vowel,MED,Y
+Get Merced,10,9 milimeter no time,time,12,Before you die we say goodbye,die,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,11,Deez gunz mean you bout' to die,Deez,11,Deez gunz mean you bout' to die,mean,INNER,SLANT,spelling,LOW,Y
+Get Merced,11,Deez gunz mean you bout' to die,die,12,Before you die we say goodbye,goodbye,END,PERFECT,cmu,HIGH,Y
+Get Merced,11,Deez gunz mean you bout' to die,die,12,Before you die we say goodbye,die,INNER,REPEAT,spelling,HIGH,N
+Get Merced,11,Deez gunz mean you bout' to die,mean,13,If we see you you gonna get clerked,see,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,12,Before you die we say goodbye,die,12,Before you die we say goodbye,goodbye,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,12,Before you die we say goodbye,Before,14,All n**** you gonaa get merced (ayy),All,INNER,SLANT,cmu,MED,Y
+Get Merced,13,If we see you you gonna get clerked,clerked,14,All n**** you gonaa get merced (ayy),merced,END,ASSONANCE,vowel,LOW,N
+Get Merced,13,If we see you you gonna get clerked,get,14,All n**** you gonaa get merced (ayy),get,INNER,REPEAT,spelling,HIGH,N
+Get Merced,13,If we see you you gonna get clerked,get,14,All n**** you gonaa get merced (ayy),n,INNER,SLANT,cmu,MED,Y
+Get Merced,13,If we see you you gonna get clerked,get,15,You know me you get shot,get,INNER,REPEAT,spelling,HIGH,N
+Get Merced,13,If we see you you gonna get clerked,gonna,15,You know me you get shot,shot,INNER,SLANT,cmu,MED,Y
+Get Merced,14,All n**** you gonaa get merced (ayy),n,14,All n**** you gonaa get merced (ayy),get,INNER,SLANT,cmu,MED,Y
+Get Merced,14,All n**** you gonaa get merced (ayy),get,15,You know me you get shot,get,INNER,REPEAT,spelling,HIGH,N
+Get Merced,14,All n**** you gonaa get merced (ayy),n,15,You know me you get shot,get,INNER,SLANT,cmu,MED,Y
+Get Merced,14,All n**** you gonaa get merced (ayy),get,16,Or n** you get dropped,get,INNER,REPEAT,spelling,HIGH,N
+Get Merced,14,All n**** you gonaa get merced (ayy),get,16,Or n** you get dropped,n,INNER,SLANT,cmu,MED,Y
+Get Merced,14,All n**** you gonaa get merced (ayy),n,16,Or n** you get dropped,get,INNER,SLANT,cmu,MED,Y
+Get Merced,14,All n**** you gonaa get merced (ayy),n,16,Or n** you get dropped,n,INNER,REPEAT,spelling,HIGH,N
+Get Merced,15,You know me you get shot,shot,16,Or n** you get dropped,dropped,END,SLANT,cmu,MED,Y
+Get Merced,15,You know me you get shot,get,16,Or n** you get dropped,get,INNER,REPEAT,spelling,HIGH,N
+Get Merced,15,You know me you get shot,get,16,Or n** you get dropped,n,INNER,SLANT,cmu,MED,Y
+Get Merced,15,You know me you get shot,know,17,24 got codes some more,codes,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,15,You know me you get shot,shot,17,24 got codes some more,got,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,15,You know me you get shot,shot,18,When la capone got shot we were,shot,END,REPEAT,spelling,HIGH,N
+Get Merced,15,You know me you get shot,shot,19,Mad because he got clocked,clocked,END,SLANT,cmu,MED,Y
+Get Merced,16,Or n** you get dropped,n,16,Or n** you get dropped,get,INNER,SLANT,cmu,MED,Y
+Get Merced,16,Or n** you get dropped,dropped,17,24 got codes some more,got,INNER,SLANT,cmu,MED,Y
+Get Merced,16,Or n** you get dropped,dropped,18,When la capone got shot we were,shot,END,SLANT,cmu,MED,Y
+Get Merced,16,Or n** you get dropped,dropped,18,When la capone got shot we were,got,INNER,SLANT,cmu,MED,Y
+Get Merced,16,Or n** you get dropped,dropped,18,When la capone got shot we were,la,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,16,Or n** you get dropped,get,18,When la capone got shot we were,When,INNER,SLANT,cmu,MED,Y
+Get Merced,16,Or n** you get dropped,n,18,When la capone got shot we were,When,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,16,Or n** you get dropped,dropped,19,Mad because he got clocked,clocked,END,SLANT,cmu,MED,Y
+Get Merced,17,24 got codes some more,codes,18,When la capone got shot we were,capone,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,17,24 got codes some more,got,18,When la capone got shot we were,got,INNER,REPEAT,spelling,HIGH,N
+Get Merced,17,24 got codes some more,got,18,When la capone got shot we were,la,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,17,24 got codes some more,got,18,When la capone got shot we were,shot,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,17,24 got codes some more,got,19,Mad because he got clocked,clocked,INNER,SLANT,cmu,MED,Y
+Get Merced,17,24 got codes some more,got,19,Mad because he got clocked,got,INNER,REPEAT,spelling,HIGH,N
+Get Merced,17,24 got codes some more,more,19,Mad because he got clocked,because,INNER,SLANT,cmu,MED,Y
+Get Merced,18,When la capone got shot we were,got,18,When la capone got shot we were,shot,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,18,When la capone got shot we were,la,18,When la capone got shot we were,got,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,18,When la capone got shot we were,la,18,When la capone got shot we were,shot,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,18,When la capone got shot we were,shot,19,Mad because he got clocked,clocked,END,SLANT,cmu,MED,Y
+Get Merced,18,When la capone got shot we were,got,19,Mad because he got clocked,clocked,INNER,SLANT,cmu,MED,Y
+Get Merced,18,When la capone got shot we were,got,19,Mad because he got clocked,got,INNER,REPEAT,spelling,HIGH,N
+Get Merced,18,When la capone got shot we were,la,19,Mad because he got clocked,clocked,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,18,When la capone got shot we were,la,19,Mad because he got clocked,got,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,18,When la capone got shot we were,shot,19,Mad because he got clocked,got,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,19,Mad because he got clocked,got,19,Mad because he got clocked,clocked,INNER,SLANT,cmu,MED,Y
+Get Merced,19,Mad because he got clocked,because,21,Before he got shot that night,Before,INNER,SLANT,cmu,MED,Y
+Get Merced,19,Mad because he got clocked,clocked,21,Before he got shot that night,got,INNER,SLANT,cmu,MED,Y
+Get Merced,19,Mad because he got clocked,clocked,21,Before he got shot that night,shot,INNER,SLANT,cmu,MED,Y
+Get Merced,19,Mad because he got clocked,got,21,Before he got shot that night,got,INNER,REPEAT,spelling,HIGH,N
+Get Merced,19,Mad because he got clocked,got,21,Before he got shot that night,shot,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,20,Should've lived his life,life,21,Before he got shot that night,night,END,SLANT,cmu,MED,Y
+Get Merced,20,Should've lived his life,life,22,Ty-B 24 KNOW WHAT WE MEAN,Ty,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,21,Before he got shot that night,got,21,Before he got shot that night,shot,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,21,Before he got shot that night,night,22,Ty-B 24 KNOW WHAT WE MEAN,Ty,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,21,Before he got shot that night,got,23,JDP ON DA T-R-A-C-UH,DA,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,21,Before he got shot that night,got,23,JDP ON DA T-R-A-C-UH,R,INNER,SLANT,cmu,MED,Y
+Get Merced,21,Before he got shot that night,shot,23,JDP ON DA T-R-A-C-UH,DA,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,21,Before he got shot that night,shot,23,JDP ON DA T-R-A-C-UH,R,INNER,SLANT,cmu,MED,Y
+Get Merced,22,Ty-B 24 KNOW WHAT WE MEAN,B,22,Ty-B 24 KNOW WHAT WE MEAN,MEAN,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,22,Ty-B 24 KNOW WHAT WE MEAN,MEAN,23,JDP ON DA T-R-A-C-UH,C,END,ASSONANCE,vowel,MED,Y
+Get Merced,22,Ty-B 24 KNOW WHAT WE MEAN,B,23,JDP ON DA T-R-A-C-UH,C,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,22,Ty-B 24 KNOW WHAT WE MEAN,B,23,JDP ON DA T-R-A-C-UH,T,INNER,PERFECT,cmu,HIGH,Y
+Get Merced,22,Ty-B 24 KNOW WHAT WE MEAN,MEAN,23,JDP ON DA T-R-A-C-UH,T,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,23,JDP ON DA T-R-A-C-UH,DA,23,JDP ON DA T-R-A-C-UH,R,INNER,ASSONANCE,vowel,MED,Y
+Get Merced,23,JDP ON DA T-R-A-C-UH,T,23,JDP ON DA T-R-A-C-UH,C,INNER,PERFECT,cmu,HIGH,Y
