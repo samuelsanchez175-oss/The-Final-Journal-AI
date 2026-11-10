@@ -1,0 +1,334 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Anthem,1,"Man, you know the fuck goin' on, man",Man,1,"Man, you know the fuck goin' on, man",man,INNER,REPEAT,spelling,HIGH,N
+Anthem,1,"Man, you know the fuck goin' on, man",man,2,"Free Pussna and Baby D, man",man,END,REPEAT,spelling,HIGH,N
+Anthem,1,"Man, you know the fuck goin' on, man",Man,2,"Free Pussna and Baby D, man",man,INNER,REPEAT,spelling,HIGH,N
+Anthem,1,"Man, you know the fuck goin' on, man",fuck,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",love,INNER,SLANT,cmu,MED,Y
+Anthem,1,"Man, you know the fuck goin' on, man",know,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",sho,INNER,ASSONANCE,vowel,LOW,N
+Anthem,1,"Man, you know the fuck goin' on, man",Man,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",Kodak,INNER,SLANT,cmu,MED,Y
+Anthem,1,"Man, you know the fuck goin' on, man",Man,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",Man,INNER,REPEAT,spelling,HIGH,N
+Anthem,2,"Free Pussna and Baby D, man",Free,2,"Free Pussna and Baby D, man",D,INNER,PERFECT,cmu,HIGH,Y
+Anthem,2,"Free Pussna and Baby D, man",man,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",Kodak,INNER,SLANT,cmu,MED,Y
+Anthem,2,"Free Pussna and Baby D, man",man,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",Man,INNER,REPEAT,spelling,HIGH,N
+Anthem,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",Man,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",Kodak,INNER,SLANT,cmu,MED,Y
+Anthem,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",nigga,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Anthem,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",love,4,Fuck whoever don't like that,Fuck,INNER,SLANT,cmu,MED,Y
+Anthem,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",love,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",buzzin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",love,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",cutter,INNER,SLANT,cmu,MED,Y
+Anthem,3,"Man, shout out to Kodak my nigga, I love you, nigga, fo' sho, nigga",shout,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",down,INNER,SLANT,cmu,MED,Y
+Anthem,4,Fuck whoever don't like that,Fuck,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",buzzin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,4,Fuck whoever don't like that,Fuck,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",cutter,INNER,SLANT,cmu,MED,Y
+Anthem,4,Fuck whoever don't like that,whoever,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",get,INNER,SLANT,cmu,MED,Y
+Anthem,4,Fuck whoever don't like that,don't,6,"I could kill his whole gang, and I could put that on my cousin",whole,INNER,ASSONANCE,vowel,MED,Y
+Anthem,4,Fuck whoever don't like that,Fuck,6,"I could kill his whole gang, and I could put that on my cousin",cousin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",buzzin,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",thuggin,INNER,ASSONANCE,vowel,LOW,N
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",cutter,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",buzzin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",thuggin,6,"I could kill his whole gang, and I could put that on my cousin",cousin,END,ASSONANCE,vowel,LOW,N
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",buzzin,6,"I could kill his whole gang, and I could put that on my cousin",cousin,INNER,SLANT,cmu,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",cutter,6,"I could kill his whole gang, and I could put that on my cousin",cousin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",thuggin,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,END,ASSONANCE,vowel,LOW,N
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",buzzin,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,INNER,SLANT,cmu,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",buzzin,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",cutters,INNER,ASSONANCE,vowel,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",buzzin,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",cutter,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",cutter,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",cutters,INNER,SLANT,cmu,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",cutter,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",down,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",round,INNER,SLANT,cmu,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",thuggin,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,INNER,PERFECT,spelling,MED,Y
+Anthem,5,"Walk 'em down with this cutter, get to buzzin', he ain't thuggin'",thuggin,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,END,ASSONANCE,vowel,LOW,N
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",could,6,"I could kill his whole gang, and I could put that on my cousin",could,INNER,REPEAT,spelling,HIGH,N
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",could,6,"I could kill his whole gang, and I could put that on my cousin",put,INNER,SLANT,cmu,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",cousin,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,END,ASSONANCE,vowel,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",cousin,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",cutters,INNER,ASSONANCE,vowel,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",cousin,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,INNER,SLANT,cmu,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",whole,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",don't,INNER,ASSONANCE,vowel,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",whole,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",no,INNER,ASSONANCE,vowel,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",cousin,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",fuckin,INNER,SLANT,cmu,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",cousin,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",touch,INNER,ASSONANCE,vowel,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",gang,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",bad,INNER,SLANT,cmu,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",gang,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",catch,INNER,SLANT,cmu,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",gang,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",have,INNER,SLANT,cmu,MED,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",whole,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",gon,INNER,SLANT,spelling,LOW,Y
+Anthem,6,"I could kill his whole gang, and I could put that on my cousin",cousin,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,END,SLANT,cmu,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",cutters,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",cutters,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",don't,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",no,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",touch,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",cutters,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",cutters,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",touch,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",don't,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",gon,INNER,SLANT,spelling,LOW,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",fuckin,INNER,REPEAT,spelling,HIGH,N
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",touch,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",round,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",down,INNER,SLANT,cmu,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,END,SLANT,cmu,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",bluffin,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",runnin,INNER,SLANT,cmu,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",cutters,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",cutters,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",runnin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",don't,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",no,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",fuckin,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",runnin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,7,"Ridin' round with them cutters, we don't do no fuckin' bluffin'",no,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",no,INNER,REPEAT,spelling,HIGH,N
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",'em,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",bad,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",have,INNER,SLANT,cmu,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",catch,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",bad,INNER,SLANT,cmu,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",catch,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",have,INNER,SLANT,cmu,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",fuckin,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",touch,INNER,ASSONANCE,vowel,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",bad,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",catch,INNER,SLANT,cmu,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",catch,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",catch,INNER,REPEAT,spelling,HIGH,N
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",fuckin,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",fuckin,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",runnin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",have,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",catch,INNER,SLANT,cmu,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",touch,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",touch,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",runnin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",bad,10,"Get out your body, we catch bodies from Monday to Sunday",catch,INNER,SLANT,cmu,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",catch,10,"Get out your body, we catch bodies from Monday to Sunday",catch,INNER,REPEAT,spelling,HIGH,N
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",fuckin,10,"Get out your body, we catch bodies from Monday to Sunday",Monday,INNER,ASSONANCE,vowel,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",have,10,"Get out your body, we catch bodies from Monday to Sunday",catch,INNER,SLANT,cmu,MED,Y
+Anthem,8,"If we catch 'em down bad, then we gon' have to fuckin' touch 'em",touch,10,"Get out your body, we catch bodies from Monday to Sunday",Monday,INNER,ASSONANCE,vowel,MED,Y
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",runnin,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,INNER,SLANT,cmu,MED,Y
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",ain't,10,"Get out your body, we catch bodies from Monday to Sunday",Sunday,INNER,ASSONANCE,vowel,MED,Y
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,10,"Get out your body, we catch bodies from Monday to Sunday",Monday,INNER,ASSONANCE,vowel,MED,Y
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",catch,10,"Get out your body, we catch bodies from Monday to Sunday",catch,INNER,REPEAT,spelling,HIGH,N
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",get,10,"Get out your body, we catch bodies from Monday to Sunday",Get,INNER,REPEAT,spelling,HIGH,N
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",runnin,10,"Get out your body, we catch bodies from Monday to Sunday",Monday,INNER,SLANT,cmu,MED,Y
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",ain't,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",ain't,INNER,REPEAT,spelling,HIGH,N
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",get,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",dead,INNER,SLANT,cmu,MED,Y
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",get,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",scared,INNER,ASSONANCE,vowel,MED,Y
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,12,"And if I slide, niggas dyin', yeah, that's how I'm comin'",comin,END,SLANT,cmu,MED,Y
+Anthem,9,"Yeah, we catch you slippin', ain't no runnin', we get to bussin'",bussin,13,"She took my soul, now she gone, song soul huntin'",huntin,END,ASSONANCE,vowel,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",body,10,"Get out your body, we catch bodies from Monday to Sunday",bodies,INNER,SLANT,cmu,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",bodies,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",nothin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",bodies,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",talkin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",bodies,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",want,INNER,ASSONANCE,vowel,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",body,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",nothin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",body,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",talkin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",body,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",want,INNER,ASSONANCE,vowel,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",Get,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",dead,INNER,SLANT,cmu,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",Get,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",scared,INNER,ASSONANCE,vowel,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",Sunday,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+Anthem,10,"Get out your body, we catch bodies from Monday to Sunday",Monday,12,"And if I slide, niggas dyin', yeah, that's how I'm comin'",comin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",ain't,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",ain't,INNER,REPEAT,spelling,HIGH,N
+Anthem,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",dead,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",scared,INNER,SLANT,cmu,MED,Y
+Anthem,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",talkin,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",nothin,INNER,SLANT,cmu,MED,Y
+Anthem,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",want,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",nothin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",want,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",talkin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",'bout,12,"And if I slide, niggas dyin', yeah, that's how I'm comin'",how,INNER,ASSONANCE,vowel,MED,Y
+Anthem,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",nothin,12,"And if I slide, niggas dyin', yeah, that's how I'm comin'",dyin,INNER,PERFECT,spelling,MED,Y
+Anthem,11,"He want me dead, but I ain't scared, he ain't talkin' 'bout nothin'",'bout,13,"She took my soul, now she gone, song soul huntin'",now,INNER,ASSONANCE,vowel,MED,Y
+Anthem,12,"And if I slide, niggas dyin', yeah, that's how I'm comin'",comin,13,"She took my soul, now she gone, song soul huntin'",huntin,END,SLANT,cmu,MED,Y
+Anthem,12,"And if I slide, niggas dyin', yeah, that's how I'm comin'",how,13,"She took my soul, now she gone, song soul huntin'",now,INNER,PERFECT,cmu,HIGH,Y
+Anthem,12,"And if I slide, niggas dyin', yeah, that's how I'm comin'",comin,14,"We step on him, Tiane knows that that's a whole hundred",hundred,END,ASSONANCE,vowel,MED,Y
+Anthem,12,"And if I slide, niggas dyin', yeah, that's how I'm comin'",comin,15,I pop a Perc' and get in my zone and want a snow bunny,bunny,END,SLANT,cmu,MED,Y
+Anthem,12,"And if I slide, niggas dyin', yeah, that's how I'm comin'",comin,16,Come through this bitch and give switches and be a crash dummy,dummy,END,SLANT,cmu,MED,Y
+Anthem,13,"She took my soul, now she gone, song soul huntin'",gone,13,"She took my soul, now she gone, song soul huntin'",song,INNER,SLANT,cmu,MED,Y
+Anthem,13,"She took my soul, now she gone, song soul huntin'",soul,13,"She took my soul, now she gone, song soul huntin'",soul,INNER,REPEAT,spelling,HIGH,N
+Anthem,13,"She took my soul, now she gone, song soul huntin'",huntin,14,"We step on him, Tiane knows that that's a whole hundred",hundred,END,ASSONANCE,vowel,MED,Y
+Anthem,13,"She took my soul, now she gone, song soul huntin'",soul,14,"We step on him, Tiane knows that that's a whole hundred",knows,INNER,SLANT,cmu,MED,Y
+Anthem,13,"She took my soul, now she gone, song soul huntin'",soul,14,"We step on him, Tiane knows that that's a whole hundred",whole,INNER,PERFECT,cmu,HIGH,Y
+Anthem,13,"She took my soul, now she gone, song soul huntin'",huntin,15,I pop a Perc' and get in my zone and want a snow bunny,bunny,END,ASSONANCE,vowel,MED,Y
+Anthem,13,"She took my soul, now she gone, song soul huntin'",soul,15,I pop a Perc' and get in my zone and want a snow bunny,snow,INNER,ASSONANCE,vowel,MED,Y
+Anthem,13,"She took my soul, now she gone, song soul huntin'",soul,15,I pop a Perc' and get in my zone and want a snow bunny,zone,INNER,SLANT,cmu,MED,Y
+Anthem,13,"She took my soul, now she gone, song soul huntin'",huntin,16,Come through this bitch and give switches and be a crash dummy,dummy,END,ASSONANCE,vowel,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",him,14,"We step on him, Tiane knows that that's a whole hundred",Tiane,INNER,SLANT,spelling,LOW,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",knows,14,"We step on him, Tiane knows that that's a whole hundred",whole,INNER,SLANT,cmu,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",hundred,15,I pop a Perc' and get in my zone and want a snow bunny,bunny,END,ASSONANCE,vowel,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",knows,15,I pop a Perc' and get in my zone and want a snow bunny,snow,INNER,ASSONANCE,vowel,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",knows,15,I pop a Perc' and get in my zone and want a snow bunny,zone,INNER,SLANT,cmu,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",step,15,I pop a Perc' and get in my zone and want a snow bunny,get,INNER,SLANT,cmu,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",whole,15,I pop a Perc' and get in my zone and want a snow bunny,snow,INNER,ASSONANCE,vowel,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",whole,15,I pop a Perc' and get in my zone and want a snow bunny,zone,INNER,SLANT,cmu,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",hundred,16,Come through this bitch and give switches and be a crash dummy,dummy,END,ASSONANCE,vowel,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",him,16,Come through this bitch and give switches and be a crash dummy,bitch,INNER,SLANT,cmu,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",him,16,Come through this bitch and give switches and be a crash dummy,give,INNER,SLANT,cmu,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",him,16,Come through this bitch and give switches and be a crash dummy,switches,INNER,ASSONANCE,vowel,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",hundred,16,Come through this bitch and give switches and be a crash dummy,Come,INNER,ASSONANCE,vowel,MED,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",Tiane,16,Come through this bitch and give switches and be a crash dummy,bitch,INNER,SLANT,spelling,LOW,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",Tiane,16,Come through this bitch and give switches and be a crash dummy,give,INNER,SLANT,spelling,LOW,Y
+Anthem,14,"We step on him, Tiane knows that that's a whole hundred",Tiane,16,Come through this bitch and give switches and be a crash dummy,switches,INNER,ASSONANCE,vowel,LOW,N
+Anthem,15,I pop a Perc' and get in my zone and want a snow bunny,pop,15,I pop a Perc' and get in my zone and want a snow bunny,want,INNER,ASSONANCE,vowel,MED,Y
+Anthem,15,I pop a Perc' and get in my zone and want a snow bunny,zone,15,I pop a Perc' and get in my zone and want a snow bunny,snow,INNER,ASSONANCE,vowel,MED,Y
+Anthem,15,I pop a Perc' and get in my zone and want a snow bunny,bunny,16,Come through this bitch and give switches and be a crash dummy,dummy,END,SLANT,cmu,MED,Y
+Anthem,15,I pop a Perc' and get in my zone and want a snow bunny,bunny,16,Come through this bitch and give switches and be a crash dummy,Come,INNER,SLANT,cmu,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,bitch,16,Come through this bitch and give switches and be a crash dummy,give,INNER,SLANT,cmu,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,bitch,16,Come through this bitch and give switches and be a crash dummy,switches,INNER,SLANT,cmu,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,Come,16,Come through this bitch and give switches and be a crash dummy,dummy,INNER,SLANT,cmu,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,give,16,Come through this bitch and give switches and be a crash dummy,switches,INNER,ASSONANCE,vowel,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,crash,17,"I knew they thought that I was gone, now I'm back on it",back,INNER,SLANT,cmu,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,through,17,"I knew they thought that I was gone, now I'm back on it",knew,INNER,PERFECT,cmu,HIGH,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,bitch,18,"Pistols totin' with a .30, fuck the judge, homie",Pistols,INNER,ASSONANCE,vowel,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,Come,18,"Pistols totin' with a .30, fuck the judge, homie",fuck,INNER,SLANT,cmu,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,Come,18,"Pistols totin' with a .30, fuck the judge, homie",judge,INNER,SLANT,cmu,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,dummy,18,"Pistols totin' with a .30, fuck the judge, homie",fuck,INNER,SLANT,cmu,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,dummy,18,"Pistols totin' with a .30, fuck the judge, homie",judge,INNER,SLANT,cmu,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,give,18,"Pistols totin' with a .30, fuck the judge, homie",Pistols,INNER,ASSONANCE,vowel,MED,Y
+Anthem,16,Come through this bitch and give switches and be a crash dummy,switches,18,"Pistols totin' with a .30, fuck the judge, homie",Pistols,INNER,ASSONANCE,vowel,MED,Y
+Anthem,17,"I knew they thought that I was gone, now I'm back on it",thought,17,"I knew they thought that I was gone, now I'm back on it",gone,INNER,SLANT,cmu,MED,Y
+Anthem,17,"I knew they thought that I was gone, now I'm back on it",back,19,"Sniper gang beat the game, fuck your set, homie",gang,INNER,SLANT,cmu,MED,Y
+Anthem,18,"Pistols totin' with a .30, fuck the judge, homie",fuck,18,"Pistols totin' with a .30, fuck the judge, homie",judge,INNER,SLANT,cmu,MED,Y
+Anthem,18,"Pistols totin' with a .30, fuck the judge, homie",homie,19,"Sniper gang beat the game, fuck your set, homie",homie,END,REPEAT,spelling,HIGH,N
+Anthem,18,"Pistols totin' with a .30, fuck the judge, homie",fuck,19,"Sniper gang beat the game, fuck your set, homie",fuck,INNER,REPEAT,spelling,HIGH,N
+Anthem,18,"Pistols totin' with a .30, fuck the judge, homie",judge,19,"Sniper gang beat the game, fuck your set, homie",fuck,INNER,SLANT,cmu,MED,Y
+Anthem,18,"Pistols totin' with a .30, fuck the judge, homie",fuck,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",brother,INNER,SLANT,cmu,MED,Y
+Anthem,18,"Pistols totin' with a .30, fuck the judge, homie",judge,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",brother,INNER,SLANT,cmu,MED,Y
+Anthem,19,"Sniper gang beat the game, fuck your set, homie",fuck,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",brother,INNER,SLANT,cmu,MED,Y
+Anthem,19,"Sniper gang beat the game, fuck your set, homie",game,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Anthem,19,"Sniper gang beat the game, fuck your set, homie",set,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",lettin,INNER,SLANT,cmu,MED,Y
+Anthem,19,"Sniper gang beat the game, fuck your set, homie",fuck,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",love,INNER,SLANT,cmu,MED,Y
+Anthem,19,"Sniper gang beat the game, fuck your set, homie",fuck,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",what,INNER,SLANT,cmu,MED,Y
+Anthem,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",brother,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",love,INNER,SLANT,cmu,MED,Y
+Anthem,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",brother,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",what,INNER,SLANT,cmu,MED,Y
+Anthem,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",nigga,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",niggas,INNER,SLANT,spelling,LOW,Y
+Anthem,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",nigga,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",Riko,INNER,SLANT,spelling,LOW,Y
+Anthem,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",brother,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",come,INNER,SLANT,cmu,MED,Y
+Anthem,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",cross,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",Y'all,INNER,SLANT,cmu,MED,Y
+Anthem,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",lettin,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",tell,INNER,ASSONANCE,vowel,MED,Y
+Anthem,20,"You cross my brother and I ain't lettin' up and that's on my momma, nigga (Fo' sho)",nigga,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",nigga,INNER,REPEAT,spelling,HIGH,N
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",love,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",what,INNER,SLANT,cmu,MED,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",Riko,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",know,INNER,ASSONANCE,vowel,LOW,N
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",Riko,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",spin,INNER,SLANT,spelling,LOW,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",Riko,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",twin,INNER,SLANT,spelling,LOW,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",twin,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",spin,INNER,PERFECT,cmu,HIGH,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",know,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",smoke,INNER,ASSONANCE,vowel,MED,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",love,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",come,INNER,SLANT,cmu,MED,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",niggas,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",nigga,INNER,SLANT,spelling,LOW,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",Riko,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",nigga,INNER,SLANT,spelling,LOW,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",what,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",come,INNER,SLANT,cmu,MED,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",niggas,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",nigga,INNER,SLANT,spelling,LOW,Y
+Anthem,21,"Ayy, Riko my twin, we love to spin, niggas know what we do",Riko,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",nigga,INNER,SLANT,spelling,LOW,Y
+Anthem,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",nigga,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",nigga,INNER,REPEAT,spelling,HIGH,N
+Anthem,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",tryna,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",tryna,INNER,REPEAT,spelling,HIGH,N
+Anthem,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",come,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,22,"Y'all tell that nigga to come outside, I'm tryna smoke his boof",tell,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",when,INNER,SLANT,cmu,MED,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",top,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",pop,INNER,PERFECT,cmu,HIGH,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",claim,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",oppin,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",fuckin,INNER,PERFECT,spelling,MED,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",pop,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",droppin,INNER,SLANT,cmu,MED,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",pop,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",stoppin,INNER,SLANT,cmu,MED,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",top,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",droppin,INNER,SLANT,cmu,MED,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",top,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",stoppin,INNER,SLANT,cmu,MED,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",claim,25,"We slide me for Haiti, millie with a skyrocket",Haiti,INNER,SLANT,cmu,MED,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",pop,25,"We slide me for Haiti, millie with a skyrocket",skyrocket,INNER,SLANT,cmu,MED,Y
+Anthem,23,"I'm on my top, I'm tryna pop, and this nigga claim he oppin'",top,25,"We slide me for Haiti, millie with a skyrocket",skyrocket,INNER,SLANT,cmu,MED,Y
+Anthem,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",ain't,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",ain't,INNER,REPEAT,spelling,HIGH,N
+Anthem,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",droppin,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",stoppin,INNER,MULTI,multi,HIGH,Y
+Anthem,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",first droppin,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",fuckin stoppin,INNER,MULTI,multi,HIGH,Y
+Anthem,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",stoppin,25,"We slide me for Haiti, millie with a skyrocket",skyrocket,END,ASSONANCE,vowel,MED,Y
+Anthem,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",ain't,25,"We slide me for Haiti, millie with a skyrocket",Haiti,INNER,SLANT,cmu,MED,Y
+Anthem,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",droppin,25,"We slide me for Haiti, millie with a skyrocket",skyrocket,INNER,ASSONANCE,vowel,MED,Y
+Anthem,24,"That boy ain't down when I'm first droppin', we ain't fuckin' stoppin'",down,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",'bout,INNER,SLANT,cmu,MED,Y
+Anthem,25,"We slide me for Haiti, millie with a skyrocket",Haiti,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",Reekee,INNER,ASSONANCE,vowel,LOW,N
+Anthem,25,"We slide me for Haiti, millie with a skyrocket",millie,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",Reekee,INNER,ASSONANCE,vowel,LOW,N
+Anthem,25,"We slide me for Haiti, millie with a skyrocket",slide,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",ride,INNER,PERFECT,cmu,HIGH,Y
+Anthem,25,"We slide me for Haiti, millie with a skyrocket",millie,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",bitch,INNER,SLANT,cmu,MED,Y
+Anthem,25,"We slide me for Haiti, millie with a skyrocket",millie,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",I'ma,INNER,SLANT,spelling,LOW,Y
+Anthem,25,"We slide me for Haiti, millie with a skyrocket",millie,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",kill,INNER,SLANT,cmu,MED,Y
+Anthem,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",speakin,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",Reekee,INNER,SLANT,spelling,LOW,Y
+Anthem,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",Zoe,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",Reekee,INNER,ASSONANCE,vowel,LOW,N
+Anthem,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",gon,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",phone,INNER,PERFECT,spelling,MED,Y
+Anthem,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",Zoe,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",phone,INNER,ASSONANCE,vowel,MED,Y
+Anthem,26,"And niggas speakin' on Zoe Reekee, we gon' ride 'bout it",gon,28,And tell this bitch stay out the way or she gon' be a victim,gon,INNER,REPEAT,spelling,HIGH,N
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",bitch,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",kill,INNER,SLANT,cmu,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",burner,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",burn,INNER,SLANT,cmu,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",I'ma,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",bitch,INNER,SLANT,spelling,LOW,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",I'ma,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",kill,INNER,SLANT,spelling,LOW,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",bitch,28,And tell this bitch stay out the way or she gon' be a victim,bitch,INNER,REPEAT,spelling,HIGH,N
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",bitch,28,And tell this bitch stay out the way or she gon' be a victim,victim,INNER,ASSONANCE,vowel,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",I'ma,28,And tell this bitch stay out the way or she gon' be a victim,bitch,INNER,SLANT,spelling,LOW,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",kill,28,And tell this bitch stay out the way or she gon' be a victim,bitch,INNER,SLANT,cmu,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",kill,28,And tell this bitch stay out the way or she gon' be a victim,victim,INNER,ASSONANCE,vowel,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",phone,28,And tell this bitch stay out the way or she gon' be a victim,gon,INNER,PERFECT,spelling,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",bitch,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,INNER,SLANT,cmu,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",bitch,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,INNER,SLANT,cmu,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",bitch,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,INNER,SLANT,cmu,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",I'ma,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,INNER,SLANT,spelling,LOW,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",I'ma,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,INNER,SLANT,spelling,LOW,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",I'ma,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,INNER,SLANT,spelling,LOW,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",kill,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,INNER,SLANT,cmu,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",kill,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,INNER,SLANT,cmu,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",kill,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,INNER,SLANT,cmu,MED,Y
+Anthem,27,"I'm on my burner phone, I'ma burn this bitch and soon we kill 'em",soon,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",cuter,INNER,SLANT,cmu,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,bitch,28,And tell this bitch stay out the way or she gon' be a victim,victim,INNER,ASSONANCE,vowel,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,stay,28,And tell this bitch stay out the way or she gon' be a victim,way,INNER,PERFECT,cmu,HIGH,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,victim,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,END,ASSONANCE,vowel,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,bitch,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,INNER,SLANT,cmu,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,bitch,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,INNER,SLANT,cmu,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,bitch,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,INNER,SLANT,cmu,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,victim,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,INNER,ASSONANCE,vowel,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,victim,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,INNER,ASSONANCE,vowel,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,victim,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,END,ASSONANCE,vowel,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,bitch,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,INNER,SLANT,cmu,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,gon,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",smoke,INNER,SLANT,spelling,LOW,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,stay,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",ain't,INNER,ASSONANCE,vowel,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,way,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",ain't,INNER,ASSONANCE,vowel,MED,Y
+Anthem,28,And tell this bitch stay out the way or she gon' be a victim,victim,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",liver,END,ASSONANCE,vowel,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",nigga,INNER,SLANT,spelling,LOW,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",nigga,INNER,SLANT,spelling,LOW,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,END,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",clutchin,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",bussin,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",tryna,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",backseat,INNER,SLANT,spelling,LOW,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",tryna,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",sweet,INNER,SLANT,spelling,LOW,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",hit,31,"I flipped a whip on self parole, don't act like you don't remember",whip,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",nigga,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,INNER,SLANT,spelling,LOW,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",nigga,31,"I flipped a whip on self parole, don't act like you don't remember",whip,INNER,SLANT,spelling,LOW,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,INNER,ASSONANCE,vowel,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,31,"I flipped a whip on self parole, don't act like you don't remember",whip,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",stick,31,"I flipped a whip on self parole, don't act like you don't remember",whip,INNER,SLANT,cmu,MED,Y
+Anthem,29,"I'm clutchin' a cuter stick, tryna hit a nigga with a scissor",scissor,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",liver,END,SLANT,cmu,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",sweet,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",backseat,INNER,PERFECT,cmu,HIGH,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",smoke,31,"I flipped a whip on self parole, don't act like you don't remember",don't,INNER,ASSONANCE,vowel,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",smoke,31,"I flipped a whip on self parole, don't act like you don't remember",parole,INNER,SLANT,cmu,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,INNER,ASSONANCE,vowel,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,31,"I flipped a whip on self parole, don't act like you don't remember",whip,INNER,SLANT,cmu,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",liver,END,SLANT,cmu,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",backseat,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",these,INNER,SLANT,cmu,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",nothin,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",hollow,INNER,ASSONANCE,vowel,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",sweet,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",these,INNER,SLANT,cmu,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",bitch,INNER,SLANT,cmu,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",lil,INNER,SLANT,cmu,MED,Y
+Anthem,30,"This smoke ain't nothin' sweet, in the backseat bussin' down a swisher",swisher,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tips,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",don't,31,"I flipped a whip on self parole, don't act like you don't remember",don't,INNER,REPEAT,spelling,HIGH,N
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,31,"I flipped a whip on self parole, don't act like you don't remember",whip,INNER,SLANT,cmu,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",parole,31,"I flipped a whip on self parole, don't act like you don't remember",don't,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",self,31,"I flipped a whip on self parole, don't act like you don't remember",remember,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",act,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",catch,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",bitch,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",lil,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",liver,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tips,INNER,SLANT,cmu,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",remember,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tearin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",remember,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",When,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",self,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tearin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",self,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",When,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",whip,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",bitch,INNER,SLANT,cmu,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",whip,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",lil,INNER,SLANT,cmu,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",whip,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",liver,INNER,SLANT,cmu,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",whip,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tips,INNER,SLANT,cmu,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",act,33,"I could kill his whole 'ang, and I could put that on my cousin",'ang,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",don't,33,"I could kill his whole 'ang, and I could put that on my cousin",whole,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",flipped,33,"I could kill his whole 'ang, and I could put that on my cousin",kill,INNER,ASSONANCE,vowel,MED,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",parole,33,"I could kill his whole 'ang, and I could put that on my cousin",whole,INNER,PERFECT,cmu,HIGH,Y
+Anthem,31,"I flipped a whip on self parole, don't act like you don't remember",whip,33,"I could kill his whole 'ang, and I could put that on my cousin",kill,INNER,SLANT,cmu,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",bitch,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",liver,INNER,SLANT,cmu,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",bitch,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tips,INNER,ASSONANCE,vowel,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",lil,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",bitch,INNER,SLANT,cmu,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",lil,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",liver,INNER,SLANT,cmu,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",lil,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tips,INNER,ASSONANCE,vowel,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tips,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",liver,INNER,ASSONANCE,vowel,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",When,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tearin,INNER,ASSONANCE,vowel,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",bitch,33,"I could kill his whole 'ang, and I could put that on my cousin",kill,INNER,SLANT,cmu,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",catch,33,"I could kill his whole 'ang, and I could put that on my cousin",'ang,INNER,SLANT,cmu,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",lil,33,"I could kill his whole 'ang, and I could put that on my cousin",kill,INNER,PERFECT,cmu,HIGH,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",liver,33,"I could kill his whole 'ang, and I could put that on my cousin",kill,INNER,SLANT,cmu,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",pussy,33,"I could kill his whole 'ang, and I could put that on my cousin",could,INNER,SLANT,cmu,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",pussy,33,"I could kill his whole 'ang, and I could put that on my cousin",put,INNER,SLANT,cmu,MED,Y
+Anthem,32,"When I catch a lil' pussy bitch, these hollow tips tearin' up his liver",tips,33,"I could kill his whole 'ang, and I could put that on my cousin",kill,INNER,ASSONANCE,vowel,MED,Y
+Anthem,33,"I could kill his whole 'ang, and I could put that on my cousin",could,33,"I could kill his whole 'ang, and I could put that on my cousin",could,INNER,REPEAT,spelling,HIGH,N
+Anthem,33,"I could kill his whole 'ang, and I could put that on my cousin",could,33,"I could kill his whole 'ang, and I could put that on my cousin",put,INNER,SLANT,cmu,MED,Y

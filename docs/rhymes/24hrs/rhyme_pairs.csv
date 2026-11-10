@@ -1,0 +1,239 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Huh,1,I love the Private Club,love,1,I love the Private Club,Club,INNER,SLANT,cmu,MED,Y
+Huh,2,"DJ on the beat, so it's a banger",banger,4,"Bad bitch, wanna hit the movies, huh?",Bad,INNER,SLANT,cmu,MED,Y
+Huh,3,"Louboutin, she want Christian Louboutins",Louboutin,3,"Louboutin, she want Christian Louboutins",Louboutins,INNER,SLANT,spelling,LOW,Y
+Huh,3,"Louboutin, she want Christian Louboutins",Christian,4,"Bad bitch, wanna hit the movies, huh?",bitch,INNER,ASSONANCE,vowel,MED,Y
+Huh,3,"Louboutin, she want Christian Louboutins",Christian,4,"Bad bitch, wanna hit the movies, huh?",hit,INNER,ASSONANCE,vowel,MED,Y
+Huh,3,"Louboutin, she want Christian Louboutins",want,4,"Bad bitch, wanna hit the movies, huh?",wanna,INNER,SLANT,cmu,MED,Y
+Huh,3,"Louboutin, she want Christian Louboutins",Christian,5,"X pill got her feelin' groovy, huh",pill,INNER,ASSONANCE,vowel,MED,Y
+Huh,3,"Louboutin, she want Christian Louboutins",want,5,"X pill got her feelin' groovy, huh",got,INNER,SLANT,cmu,MED,Y
+Huh,4,"Bad bitch, wanna hit the movies, huh?",bitch,4,"Bad bitch, wanna hit the movies, huh?",hit,INNER,SLANT,cmu,MED,Y
+Huh,4,"Bad bitch, wanna hit the movies, huh?",movies,5,"X pill got her feelin' groovy, huh",groovy,END,SLANT,cmu,MED,Y
+Huh,4,"Bad bitch, wanna hit the movies, huh?",bitch,5,"X pill got her feelin' groovy, huh",pill,INNER,SLANT,cmu,MED,Y
+Huh,4,"Bad bitch, wanna hit the movies, huh?",hit,5,"X pill got her feelin' groovy, huh",pill,INNER,SLANT,cmu,MED,Y
+Huh,4,"Bad bitch, wanna hit the movies, huh?",wanna,5,"X pill got her feelin' groovy, huh",got,INNER,SLANT,cmu,MED,Y
+Huh,4,"Bad bitch, wanna hit the movies, huh?",movies,6,"All my diamonds on in jacuzzi, huh (Huh)",jacuzzi,END,SLANT,cmu,MED,Y
+Huh,4,"Bad bitch, wanna hit the movies, huh?",movies,7,"All my diamonds on in a jacuzzi, huh (Huh)",jacuzzi,END,SLANT,cmu,MED,Y
+Huh,5,"X pill got her feelin' groovy, huh",groovy,6,"All my diamonds on in jacuzzi, huh (Huh)",jacuzzi,END,SLANT,cmu,MED,Y
+Huh,5,"X pill got her feelin' groovy, huh",groovy,7,"All my diamonds on in a jacuzzi, huh (Huh)",jacuzzi,END,SLANT,cmu,MED,Y
+Huh,6,"All my diamonds on in jacuzzi, huh (Huh)",jacuzzi,7,"All my diamonds on in a jacuzzi, huh (Huh)",jacuzzi,END,REPEAT,spelling,HIGH,N
+Huh,6,"All my diamonds on in jacuzzi, huh (Huh)",All,7,"All my diamonds on in a jacuzzi, huh (Huh)",All,INNER,REPEAT,spelling,HIGH,N
+Huh,6,"All my diamonds on in jacuzzi, huh (Huh)",diamonds,7,"All my diamonds on in a jacuzzi, huh (Huh)",diamonds,INNER,REPEAT,spelling,HIGH,N
+Huh,8,"You didn't think that I would press you, huh?",didn't,8,"You didn't think that I would press you, huh?",think,INNER,ASSONANCE,vowel,MED,Y
+Huh,8,"You didn't think that I would press you, huh?",press,9,"You ain't think that you would feel the pressure, huh?",pressure,END,SLANT,cmu,MED,Y
+Huh,8,"You didn't think that I would press you, huh?",didn't,9,"You ain't think that you would feel the pressure, huh?",think,INNER,ASSONANCE,vowel,MED,Y
+Huh,8,"You didn't think that I would press you, huh?",think,9,"You ain't think that you would feel the pressure, huh?",think,INNER,REPEAT,spelling,HIGH,N
+Huh,8,"You didn't think that I would press you, huh?",would,9,"You ain't think that you would feel the pressure, huh?",would,INNER,REPEAT,spelling,HIGH,N
+Huh,8,"You didn't think that I would press you, huh?",press,10,"You ain't think that I'd teach a lesson, huh?",lesson,END,SLANT,cmu,MED,Y
+Huh,8,"You didn't think that I would press you, huh?",didn't,10,"You ain't think that I'd teach a lesson, huh?",think,INNER,ASSONANCE,vowel,MED,Y
+Huh,8,"You didn't think that I would press you, huh?",think,10,"You ain't think that I'd teach a lesson, huh?",think,INNER,REPEAT,spelling,HIGH,N
+Huh,8,"You didn't think that I would press you, huh?",press,11,"You ain't think that Twenty really dressin', huh?",dressin,END,SLANT,cmu,MED,Y
+Huh,8,"You didn't think that I would press you, huh?",press,12,"Told Count just add compression, huh",compression,END,ASSONANCE,vowel,MED,Y
+Huh,9,"You ain't think that you would feel the pressure, huh?",pressure,10,"You ain't think that I'd teach a lesson, huh?",lesson,END,ASSONANCE,vowel,MED,Y
+Huh,9,"You ain't think that you would feel the pressure, huh?",ain't,10,"You ain't think that I'd teach a lesson, huh?",ain't,INNER,REPEAT,spelling,HIGH,N
+Huh,9,"You ain't think that you would feel the pressure, huh?",feel,10,"You ain't think that I'd teach a lesson, huh?",teach,INNER,SLANT,cmu,MED,Y
+Huh,9,"You ain't think that you would feel the pressure, huh?",think,10,"You ain't think that I'd teach a lesson, huh?",think,INNER,REPEAT,spelling,HIGH,N
+Huh,9,"You ain't think that you would feel the pressure, huh?",pressure,11,"You ain't think that Twenty really dressin', huh?",dressin,END,ASSONANCE,vowel,MED,Y
+Huh,9,"You ain't think that you would feel the pressure, huh?",ain't,11,"You ain't think that Twenty really dressin', huh?",ain't,INNER,REPEAT,spelling,HIGH,N
+Huh,9,"You ain't think that you would feel the pressure, huh?",pressure,11,"You ain't think that Twenty really dressin', huh?",Twenty,INNER,ASSONANCE,vowel,MED,Y
+Huh,9,"You ain't think that you would feel the pressure, huh?",think,11,"You ain't think that Twenty really dressin', huh?",really,INNER,ASSONANCE,vowel,MED,Y
+Huh,9,"You ain't think that you would feel the pressure, huh?",think,11,"You ain't think that Twenty really dressin', huh?",think,INNER,REPEAT,spelling,HIGH,N
+Huh,9,"You ain't think that you would feel the pressure, huh?",pressure,12,"Told Count just add compression, huh",compression,END,SLANT,cmu,MED,Y
+Huh,10,"You ain't think that I'd teach a lesson, huh?",lesson,11,"You ain't think that Twenty really dressin', huh?",dressin,END,SLANT,cmu,MED,Y
+Huh,10,"You ain't think that I'd teach a lesson, huh?",ain't,11,"You ain't think that Twenty really dressin', huh?",ain't,INNER,REPEAT,spelling,HIGH,N
+Huh,10,"You ain't think that I'd teach a lesson, huh?",lesson,11,"You ain't think that Twenty really dressin', huh?",Twenty,INNER,ASSONANCE,vowel,MED,Y
+Huh,10,"You ain't think that I'd teach a lesson, huh?",think,11,"You ain't think that Twenty really dressin', huh?",really,INNER,ASSONANCE,vowel,MED,Y
+Huh,10,"You ain't think that I'd teach a lesson, huh?",think,11,"You ain't think that Twenty really dressin', huh?",think,INNER,REPEAT,spelling,HIGH,N
+Huh,10,"You ain't think that I'd teach a lesson, huh?",lesson,12,"Told Count just add compression, huh",compression,END,SLANT,cmu,MED,Y
+Huh,11,"You ain't think that Twenty really dressin', huh?",think,11,"You ain't think that Twenty really dressin', huh?",really,INNER,ASSONANCE,vowel,MED,Y
+Huh,11,"You ain't think that Twenty really dressin', huh?",Twenty,11,"You ain't think that Twenty really dressin', huh?",dressin,INNER,ASSONANCE,vowel,MED,Y
+Huh,11,"You ain't think that Twenty really dressin', huh?",dressin,12,"Told Count just add compression, huh",compression,END,SLANT,cmu,MED,Y
+Huh,11,"You ain't think that Twenty really dressin', huh?",Twenty,12,"Told Count just add compression, huh",compression,INNER,ASSONANCE,vowel,MED,Y
+Huh,11,"You ain't think that Twenty really dressin', huh?",ain't,13,"You ain't think that I know you fake, huh?",ain't,INNER,REPEAT,spelling,HIGH,N
+Huh,11,"You ain't think that Twenty really dressin', huh?",ain't,13,"You ain't think that I know you fake, huh?",fake,INNER,ASSONANCE,vowel,MED,Y
+Huh,11,"You ain't think that Twenty really dressin', huh?",really,13,"You ain't think that I know you fake, huh?",think,INNER,ASSONANCE,vowel,MED,Y
+Huh,11,"You ain't think that Twenty really dressin', huh?",think,13,"You ain't think that I know you fake, huh?",think,INNER,REPEAT,spelling,HIGH,N
+Huh,12,"Told Count just add compression, huh",Told,13,"You ain't think that I know you fake, huh?",know,INNER,ASSONANCE,vowel,MED,Y
+Huh,12,"Told Count just add compression, huh",Told,14,"You ain't think I know what this would take, huh?",know,INNER,ASSONANCE,vowel,MED,Y
+Huh,13,"You ain't think that I know you fake, huh?",ain't,13,"You ain't think that I know you fake, huh?",fake,INNER,ASSONANCE,vowel,MED,Y
+Huh,13,"You ain't think that I know you fake, huh?",fake,14,"You ain't think I know what this would take, huh?",take,END,PERFECT,cmu,HIGH,Y
+Huh,13,"You ain't think that I know you fake, huh?",ain't,14,"You ain't think I know what this would take, huh?",ain't,INNER,REPEAT,spelling,HIGH,N
+Huh,13,"You ain't think that I know you fake, huh?",ain't,14,"You ain't think I know what this would take, huh?",take,INNER,ASSONANCE,vowel,MED,Y
+Huh,13,"You ain't think that I know you fake, huh?",fake,14,"You ain't think I know what this would take, huh?",ain't,INNER,ASSONANCE,vowel,MED,Y
+Huh,13,"You ain't think that I know you fake, huh?",know,14,"You ain't think I know what this would take, huh?",know,INNER,REPEAT,spelling,HIGH,N
+Huh,13,"You ain't think that I know you fake, huh?",think,14,"You ain't think I know what this would take, huh?",think,INNER,REPEAT,spelling,HIGH,N
+Huh,13,"You ain't think that I know you fake, huh?",ain't,15,"You don't call me Rizzy, not my day one",day,INNER,ASSONANCE,vowel,MED,Y
+Huh,13,"You ain't think that I know you fake, huh?",fake,15,"You don't call me Rizzy, not my day one",day,INNER,ASSONANCE,vowel,MED,Y
+Huh,13,"You ain't think that I know you fake, huh?",know,15,"You don't call me Rizzy, not my day one",don't,INNER,ASSONANCE,vowel,MED,Y
+Huh,13,"You ain't think that I know you fake, huh?",fake,17,"Talk, baby, it's me, baby",baby,END,SLANT,cmu,MED,Y
+Huh,14,"You ain't think I know what this would take, huh?",ain't,14,"You ain't think I know what this would take, huh?",take,INNER,ASSONANCE,vowel,MED,Y
+Huh,14,"You ain't think I know what this would take, huh?",ain't,15,"You don't call me Rizzy, not my day one",day,INNER,ASSONANCE,vowel,MED,Y
+Huh,14,"You ain't think I know what this would take, huh?",know,15,"You don't call me Rizzy, not my day one",don't,INNER,ASSONANCE,vowel,MED,Y
+Huh,14,"You ain't think I know what this would take, huh?",take,15,"You don't call me Rizzy, not my day one",day,INNER,ASSONANCE,vowel,MED,Y
+Huh,14,"You ain't think I know what this would take, huh?",what,15,"You don't call me Rizzy, not my day one",one,INNER,SLANT,cmu,MED,Y
+Huh,14,"You ain't think I know what this would take, huh?",ain't,16,You thought you knew me but I'm not the same one,same,INNER,ASSONANCE,vowel,MED,Y
+Huh,14,"You ain't think I know what this would take, huh?",take,16,You thought you knew me but I'm not the same one,same,INNER,SLANT,cmu,MED,Y
+Huh,14,"You ain't think I know what this would take, huh?",what,16,You thought you knew me but I'm not the same one,one,INNER,SLANT,cmu,MED,Y
+Huh,14,"You ain't think I know what this would take, huh?",take,17,"Talk, baby, it's me, baby",baby,END,SLANT,cmu,MED,Y
+Huh,15,"You don't call me Rizzy, not my day one",one,16,You thought you knew me but I'm not the same one,one,END,REPEAT,spelling,HIGH,N
+Huh,15,"You don't call me Rizzy, not my day one",call,16,You thought you knew me but I'm not the same one,thought,INNER,SLANT,cmu,MED,Y
+Huh,15,"You don't call me Rizzy, not my day one",day,16,You thought you knew me but I'm not the same one,same,INNER,ASSONANCE,vowel,MED,Y
+Huh,15,"You don't call me Rizzy, not my day one",not,16,You thought you knew me but I'm not the same one,not,INNER,REPEAT,spelling,HIGH,N
+Huh,15,"You don't call me Rizzy, not my day one",call,17,"Talk, baby, it's me, baby",Talk,INNER,SLANT,cmu,MED,Y
+Huh,15,"You don't call me Rizzy, not my day one",day,17,"Talk, baby, it's me, baby",baby,INNER,ASSONANCE,vowel,MED,Y
+Huh,15,"You don't call me Rizzy, not my day one",Rizzy,17,"Talk, baby, it's me, baby",baby,INNER,ASSONANCE,vowel,LOW,N
+Huh,16,You thought you knew me but I'm not the same one,same,17,"Talk, baby, it's me, baby",baby,INNER,SLANT,cmu,MED,Y
+Huh,16,You thought you knew me but I'm not the same one,thought,17,"Talk, baby, it's me, baby",Talk,INNER,SLANT,cmu,MED,Y
+Huh,17,"Talk, baby, it's me, baby",baby,17,"Talk, baby, it's me, baby",baby,INNER,REPEAT,spelling,HIGH,N
+Huh,17,"Talk, baby, it's me, baby",baby,19,"Day shift, she hit work on the day shift (Goddamn)",Day,INNER,ASSONANCE,vowel,MED,Y
+Huh,18,"Spaceship, you see me in a spaceship (Spaceship)",Spaceship,18,"Spaceship, you see me in a spaceship (Spaceship)",spaceship,INNER,REPEAT,spelling,HIGH,N
+Huh,18,"Spaceship, you see me in a spaceship (Spaceship)",spaceship,19,"Day shift, she hit work on the day shift (Goddamn)",shift,END,ASSONANCE,vowel,MED,Y
+Huh,18,"Spaceship, you see me in a spaceship (Spaceship)",Spaceship,19,"Day shift, she hit work on the day shift (Goddamn)",hit,INNER,SLANT,cmu,MED,Y
+Huh,18,"Spaceship, you see me in a spaceship (Spaceship)",Spaceship,19,"Day shift, she hit work on the day shift (Goddamn)",shift,INNER,ASSONANCE,vowel,MED,Y
+Huh,18,"Spaceship, you see me in a spaceship (Spaceship)",spaceship,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",strips,END,SLANT,cmu,MED,Y
+Huh,18,"Spaceship, you see me in a spaceship (Spaceship)",see,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",real,INNER,ASSONANCE,vowel,MED,Y
+Huh,18,"Spaceship, you see me in a spaceship (Spaceship)",Spaceship,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",strips,INNER,SLANT,cmu,MED,Y
+Huh,18,"Spaceship, you see me in a spaceship (Spaceship)",spaceship,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",lips,END,SLANT,cmu,MED,Y
+Huh,18,"Spaceship, you see me in a spaceship (Spaceship)",spaceship,22,"You want a evening, I can feed you, carry clips",clips,END,SLANT,cmu,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",Day,19,"Day shift, she hit work on the day shift (Goddamn)",day,INNER,REPEAT,spelling,HIGH,N
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",hit,19,"Day shift, she hit work on the day shift (Goddamn)",shift,INNER,SLANT,cmu,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",shift,19,"Day shift, she hit work on the day shift (Goddamn)",hit,INNER,SLANT,cmu,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",shift,19,"Day shift, she hit work on the day shift (Goddamn)",shift,INNER,REPEAT,spelling,HIGH,N
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",shift,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",strips,END,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",Day,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",Day,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",baby,INNER,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",Day,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",fake,INNER,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",hit,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",strips,INNER,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",shift,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",strips,INNER,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",shift,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",lips,END,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",Day,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",fake,INNER,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",hit,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",bitch,INNER,SLANT,cmu,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",hit,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",lips,INNER,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",shift,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",shift,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",lips,INNER,ASSONANCE,vowel,MED,Y
+Huh,19,"Day shift, she hit work on the day shift (Goddamn)",shift,22,"You want a evening, I can feed you, carry clips",clips,END,ASSONANCE,vowel,MED,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",ain't,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",baby,INNER,ASSONANCE,vowel,MED,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",ain't,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",fake,INNER,ASSONANCE,vowel,MED,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",baby,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",fake,INNER,SLANT,cmu,MED,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",strips,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",lips,END,PERFECT,cmu,HIGH,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",ain't,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",fake,INNER,ASSONANCE,vowel,MED,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",baby,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",fake,INNER,SLANT,cmu,MED,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",fake,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",fake,INNER,REPEAT,spelling,HIGH,N
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",strips,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",strips,22,"You want a evening, I can feed you, carry clips",clips,END,PERFECT,cmu,HIGH,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",real,22,"You want a evening, I can feed you, carry clips",evening,INNER,ASSONANCE,vowel,MED,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",real,22,"You want a evening, I can feed you, carry clips",feed,INNER,SLANT,cmu,MED,Y
+Huh,20,"Them ain't real hundreds, baby, them fake strips (They fugazi)",strips,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),weird,END,ASSONANCE,vowel,MED,Y
+Huh,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",bitch,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",lips,INNER,ASSONANCE,vowel,MED,Y
+Huh,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",lips,22,"You want a evening, I can feed you, carry clips",clips,END,PERFECT,cmu,HIGH,Y
+Huh,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",bitch,22,"You want a evening, I can feed you, carry clips",clips,INNER,ASSONANCE,vowel,MED,Y
+Huh,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",fake,23,And the car pull off like I'm pulled by eight deers,eight,INNER,SLANT,cmu,MED,Y
+Huh,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",lips,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),weird,END,ASSONANCE,vowel,MED,Y
+Huh,21,"Gettin' dome from a bitch with fake lips (Uh, uh)",lips,25,And I ain't really takin' these fuck niggas serious (On God),serious,END,SLANT,cmu,MED,Y
+Huh,22,"You want a evening, I can feed you, carry clips",can,22,"You want a evening, I can feed you, carry clips",carry,INNER,SLANT,cmu,MED,Y
+Huh,22,"You want a evening, I can feed you, carry clips",evening,22,"You want a evening, I can feed you, carry clips",feed,INNER,ASSONANCE,vowel,MED,Y
+Huh,22,"You want a evening, I can feed you, carry clips",want,23,And the car pull off like I'm pulled by eight deers,car,INNER,ASSONANCE,vowel,MED,Y
+Huh,22,"You want a evening, I can feed you, carry clips",clips,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),weird,END,ASSONANCE,vowel,MED,Y
+Huh,22,"You want a evening, I can feed you, carry clips",clips,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),niggas,INNER,SLANT,spelling,LOW,Y
+Huh,22,"You want a evening, I can feed you, carry clips",evening,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),these,INNER,ASSONANCE,vowel,MED,Y
+Huh,22,"You want a evening, I can feed you, carry clips",feed,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),these,INNER,SLANT,cmu,MED,Y
+Huh,22,"You want a evening, I can feed you, carry clips",clips,25,And I ain't really takin' these fuck niggas serious (On God),serious,END,SLANT,cmu,MED,Y
+Huh,22,"You want a evening, I can feed you, carry clips",clips,26,I see a real nigga every time I look in the mirror,mirror,END,ASSONANCE,vowel,MED,Y
+Huh,23,And the car pull off like I'm pulled by eight deers,like,23,And the car pull off like I'm pulled by eight deers,by,INNER,ASSONANCE,vowel,MED,Y
+Huh,23,And the car pull off like I'm pulled by eight deers,pull,23,And the car pull off like I'm pulled by eight deers,pulled,INNER,SLANT,cmu,MED,Y
+Huh,23,And the car pull off like I'm pulled by eight deers,eight,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),ain't,INNER,SLANT,cmu,MED,Y
+Huh,23,And the car pull off like I'm pulled by eight deers,eight,25,And I ain't really takin' these fuck niggas serious (On God),ain't,INNER,SLANT,cmu,MED,Y
+Huh,23,And the car pull off like I'm pulled by eight deers,eight,25,And I ain't really takin' these fuck niggas serious (On God),takin,INNER,ASSONANCE,vowel,MED,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),weird,25,And I ain't really takin' these fuck niggas serious (On God),serious,END,SLANT,cmu,MED,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),ain't,25,And I ain't really takin' these fuck niggas serious (On God),ain't,INNER,REPEAT,spelling,HIGH,N
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),ain't,25,And I ain't really takin' these fuck niggas serious (On God),takin,INNER,ASSONANCE,vowel,MED,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),fuckin,25,And I ain't really takin' these fuck niggas serious (On God),fuck,INNER,SLANT,cmu,MED,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),niggas,25,And I ain't really takin' these fuck niggas serious (On God),niggas,INNER,REPEAT,spelling,HIGH,N
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),these,25,And I ain't really takin' these fuck niggas serious (On God),these,INNER,REPEAT,spelling,HIGH,N
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),weird,25,And I ain't really takin' these fuck niggas serious (On God),really,INNER,ASSONANCE,vowel,MED,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),weird,26,I see a real nigga every time I look in the mirror,mirror,END,SLANT,cmu,MED,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),niggas,26,I see a real nigga every time I look in the mirror,nigga,INNER,SLANT,spelling,LOW,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),these,26,I see a real nigga every time I look in the mirror,real,INNER,SLANT,cmu,MED,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),these,26,I see a real nigga every time I look in the mirror,see,INNER,ASSONANCE,vowel,MED,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),weird,27,"I flame that loud and I said, ""Baby, cover your ears""",ears,END,SLANT,cmu,MED,Y
+Huh,24,And I ain't fuckin' with these niggas 'cause they weird (Hell yeah),weird,28,"Now this ain't soul food, but I can get all up in your ribs",ribs,END,ASSONANCE,vowel,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),ain't,25,And I ain't really takin' these fuck niggas serious (On God),takin,INNER,ASSONANCE,vowel,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),really,25,And I ain't really takin' these fuck niggas serious (On God),serious,INNER,ASSONANCE,vowel,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),serious,26,I see a real nigga every time I look in the mirror,mirror,END,SLANT,cmu,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),niggas,26,I see a real nigga every time I look in the mirror,nigga,INNER,SLANT,spelling,LOW,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),really,26,I see a real nigga every time I look in the mirror,mirror,INNER,SLANT,cmu,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),these,26,I see a real nigga every time I look in the mirror,real,INNER,SLANT,cmu,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),these,26,I see a real nigga every time I look in the mirror,see,INNER,ASSONANCE,vowel,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),serious,27,"I flame that loud and I said, ""Baby, cover your ears""",ears,END,SLANT,cmu,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),ain't,27,"I flame that loud and I said, ""Baby, cover your ears""",Baby,INNER,ASSONANCE,vowel,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),ain't,27,"I flame that loud and I said, ""Baby, cover your ears""",flame,INNER,ASSONANCE,vowel,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),fuck,27,"I flame that loud and I said, ""Baby, cover your ears""",cover,INNER,SLANT,cmu,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),really,27,"I flame that loud and I said, ""Baby, cover your ears""",ears,INNER,ASSONANCE,vowel,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),takin,27,"I flame that loud and I said, ""Baby, cover your ears""",Baby,INNER,ASSONANCE,vowel,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),takin,27,"I flame that loud and I said, ""Baby, cover your ears""",flame,INNER,ASSONANCE,vowel,MED,Y
+Huh,25,And I ain't really takin' these fuck niggas serious (On God),serious,28,"Now this ain't soul food, but I can get all up in your ribs",ribs,END,ASSONANCE,vowel,MED,Y
+Huh,26,I see a real nigga every time I look in the mirror,see,26,I see a real nigga every time I look in the mirror,real,INNER,ASSONANCE,vowel,MED,Y
+Huh,26,I see a real nigga every time I look in the mirror,mirror,27,"I flame that loud and I said, ""Baby, cover your ears""",ears,END,SLANT,cmu,MED,Y
+Huh,26,I see a real nigga every time I look in the mirror,every,27,"I flame that loud and I said, ""Baby, cover your ears""",said,INNER,SLANT,cmu,MED,Y
+Huh,26,I see a real nigga every time I look in the mirror,mirror,28,"Now this ain't soul food, but I can get all up in your ribs",ribs,END,ASSONANCE,vowel,MED,Y
+Huh,26,I see a real nigga every time I look in the mirror,every,28,"Now this ain't soul food, but I can get all up in your ribs",get,INNER,SLANT,cmu,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",flame,27,"I flame that loud and I said, ""Baby, cover your ears""",Baby,INNER,SLANT,cmu,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",ears,28,"Now this ain't soul food, but I can get all up in your ribs",ribs,END,SLANT,cmu,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",Baby,28,"Now this ain't soul food, but I can get all up in your ribs",ain't,INNER,ASSONANCE,vowel,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",flame,28,"Now this ain't soul food, but I can get all up in your ribs",ain't,INNER,ASSONANCE,vowel,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",loud,28,"Now this ain't soul food, but I can get all up in your ribs",Now,INNER,ASSONANCE,vowel,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",said,28,"Now this ain't soul food, but I can get all up in your ribs",get,INNER,SLANT,cmu,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",Baby,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",baby,INNER,REPEAT,spelling,HIGH,N
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",Baby,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",libs,INNER,MULTI,multi,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",Baby,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",sayin,INNER,SLANT,cmu,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",cover,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",love,INNER,SLANT,cmu,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",flame,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",baby,INNER,SLANT,cmu,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",flame,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",libs,INNER,SLANT,cmu,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",flame,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",sayin,INNER,SLANT,cmu,MED,Y
+Huh,27,"I flame that loud and I said, ""Baby, cover your ears""",said,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",when,INNER,SLANT,cmu,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",ribs,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",libs,END,SLANT,spelling,LOW,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",ain't,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",baby,INNER,ASSONANCE,vowel,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",ain't,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",libs,INNER,ASSONANCE,vowel,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",ain't,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",sayin,INNER,ASSONANCE,vowel,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",can,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",ad,INNER,SLANT,cmu,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",get,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",when,INNER,SLANT,cmu,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",soul,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",Sosa,INNER,SLANT,cmu,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",all,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",talk,INNER,SLANT,cmu,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",get,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",wear,INNER,SLANT,cmu,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",soul,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",told,INNER,SLANT,cmu,MED,Y
+Huh,28,"Now this ain't soul food, but I can get all up in your ribs",ribs,32,"You want me to make you scream, huh? R&B, make you sing, huh?",sing,END,ASSONANCE,vowel,MED,Y
+Huh,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",baby,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",libs,INNER,MULTI,multi,MED,Y
+Huh,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",baby,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",sayin,INNER,SLANT,cmu,MED,Y
+Huh,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",sayin,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",libs,INNER,SLANT,cmu,MED,Y
+Huh,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",like,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",ice,INNER,SLANT,cmu,MED,Y
+Huh,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",like,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",like,INNER,REPEAT,spelling,HIGH,N
+Huh,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",Sosa,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",told,INNER,ASSONANCE,vowel,MED,Y
+Huh,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",when,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",wear,INNER,SLANT,cmu,MED,Y
+Huh,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",love,31,"You want that new LV, yeah? You want that new bling bling, uh?",bling,INNER,ASSONANCE,vowel,MED,Y
+Huh,29,"She like, ""Sosa, baby, love when you sayin' your ad-libs"" (Sosa, baby, GBE, baby)",sayin,31,"You want that new LV, yeah? You want that new bling bling, uh?",bling,INNER,PERFECT,spelling,MED,Y
+Huh,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",like,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",ice,INNER,SLANT,cmu,MED,Y
+Huh,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",wanna,31,"You want that new LV, yeah? You want that new bling bling, uh?",want,INNER,SLANT,cmu,MED,Y
+Huh,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",wanna,32,"You want me to make you scream, huh? R&B, make you sing, huh?",R,INNER,SLANT,cmu,MED,Y
+Huh,30,"I told her, ""You like to talk, huh? You wanna wear my ice, huh?",wanna,32,"You want me to make you scream, huh? R&B, make you sing, huh?",want,INNER,SLANT,cmu,MED,Y
+Huh,31,"You want that new LV, yeah? You want that new bling bling, uh?",bling,31,"You want that new LV, yeah? You want that new bling bling, uh?",bling,INNER,REPEAT,spelling,HIGH,N
+Huh,31,"You want that new LV, yeah? You want that new bling bling, uh?",new,31,"You want that new LV, yeah? You want that new bling bling, uh?",new,INNER,REPEAT,spelling,HIGH,N
+Huh,31,"You want that new LV, yeah? You want that new bling bling, uh?",want,31,"You want that new LV, yeah? You want that new bling bling, uh?",want,INNER,REPEAT,spelling,HIGH,N
+Huh,31,"You want that new LV, yeah? You want that new bling bling, uh?",bling,32,"You want me to make you scream, huh? R&B, make you sing, huh?",sing,INNER,PERFECT,spelling,HIGH,Y
+Huh,31,"You want that new LV, yeah? You want that new bling bling, uh?",want,32,"You want me to make you scream, huh? R&B, make you sing, huh?",R,INNER,ASSONANCE,vowel,MED,Y
+Huh,31,"You want that new LV, yeah? You want that new bling bling, uh?",want,32,"You want me to make you scream, huh? R&B, make you sing, huh?",want,INNER,REPEAT,spelling,HIGH,N
+Huh,31,"You want that new LV, yeah? You want that new bling bling, uh?",want,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",Wanna,INNER,SLANT,cmu,MED,Y
+Huh,31,"You want that new LV, yeah? You want that new bling bling, uh?",want,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",want,INNER,REPEAT,spelling,HIGH,N
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",make,32,"You want me to make you scream, huh? R&B, make you sing, huh?",make,INNER,REPEAT,spelling,HIGH,N
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",scream,32,"You want me to make you scream, huh? R&B, make you sing, huh?",B,INNER,ASSONANCE,vowel,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",want,32,"You want me to make you scream, huh? R&B, make you sing, huh?",R,INNER,ASSONANCE,vowel,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",B,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",bean,INNER,ASSONANCE,vowel,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",B,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",lean,INNER,ASSONANCE,vowel,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",make,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",stay,INNER,ASSONANCE,vowel,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",R,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",Wanna,INNER,SLANT,cmu,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",R,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",want,INNER,ASSONANCE,vowel,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",scream,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",bean,INNER,SLANT,cmu,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",scream,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",lean,INNER,SLANT,cmu,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",want,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",Wanna,INNER,SLANT,cmu,MED,Y
+Huh,32,"You want me to make you scream, huh? R&B, make you sing, huh?",want,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",want,INNER,REPEAT,spelling,HIGH,N
+Huh,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",lean,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",bean,INNER,PERFECT,cmu,HIGH,Y
+Huh,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",want,33,"You want me to stay off the lean, huh? Wanna get off a bean, huh?""",Wanna,INNER,SLANT,cmu,MED,Y
