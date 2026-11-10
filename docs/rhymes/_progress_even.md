@@ -4,6 +4,8 @@ Step 1 Young Thug rerun: songs 53, bars 2659, pairs 14013, end 2193, inner 11820
 
 Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
+Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G Herbo (440 songs / 21896 bars, no files written); the ~490GB virtual size is the normal Xcode Python guard region, not a leak.
+
 ## Queue
 
 | # | Slug | Artist | Songs | Bars | Pairs | End | Inner | Core | Finished (ET) |
@@ -20,6 +22,20 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 | 10 | young-dolph | Young Dolph | 632 | 25431 | 154359 | 26238 | 128121 | 152111 | 2026-11-10 01:26 ET |
 | 11 | young-stoner-life | Young Stoner Life | 544 | 23989 | 139607 | 27920 | 111687 | 137607 | 2026-11-10 01:27 ET |
 | 12 | travis-scott | Travis Scott | 588 | 23407 | 123803 | 22437 | 101366 | 121764 | 2026-11-10 01:28 ET |
+| 13 | g-herbo | G Herbo | 440 | 21896 | 176500 | 27771 | 148729 | 173951 | 2026-11-10 13:08 ET |
+| 14 | fetty-wap | Fetty Wap | 563 | 20282 | 106259 | 18090 | 88169 | 104237 | 2026-11-10 13:01 ET |
+| 15 | chance-the-rapper | Chance the Rapper | 465 | 19942 | 113932 | 17153 | 96779 | 111855 | 2026-11-10 13:03 ET |
+| 16 | lil-keed | Lil Keed | 478 | 19122 | 105035 | 19263 | 85772 | 103128 | 2026-11-10 13:04 ET |
+| 17 | vic-mensa | Vic Mensa | 365 | 17211 | 106169 | 14014 | 92155 | 104704 | 2026-11-10 13:04 ET |
+| 18 | justin-bieber | Justin Bieber | 636 | 16393 | 72613 | 10259 | 62354 | 70781 | 2026-11-10 13:09 ET |
+| 19 | young-nudy | Young Nudy | 320 | 14323 | 86109 | 14773 | 71336 | 84771 | 2026-11-10 13:10 ET |
+| 20 | ken-carson | Ken Carson | 433 | 13488 | 88445 | 16571 | 71874 | 87013 | 2026-11-10 13:10 ET |
+| 21 | earl-sweatshirt | Earl Sweatshirt | 351 | 12921 | 98786 | 13736 | 85050 | 97586 | 2026-11-10 13:11 ET |
+| 22 | cash-cobain | Cash Cobain | 364 | 12821 | 73941 | 14488 | 59453 | 72041 | 2026-11-10 13:11 ET |
+| 23 | blac-youngsta | Blac Youngsta | 275 | 12095 | 77354 | 12583 | 64771 | 76447 | 2026-11-10 13:12 ET |
+| 24 | partynextdoor | PARTYNEXTDOOR | 312 | 10357 | 41946 | 6635 | 35311 | 41393 | 2026-11-10 13:12 ET |
+| 25 | frank-ocean | Frank Ocean | 324 | 10043 | 44377 | 6230 | 38147 | 43422 | 2026-11-10 13:13 ET |
+| 26 | latto | Latto | 254 | 9691 | 59220 | 9765 | 49455 | 57977 | 2026-11-10 13:13 ET |
 
 ## Failures
 
@@ -27,7 +43,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
 ## Status
 
-Finished 12/386: Travis Scott.
+Finished 26/386: Latto.
 
 ## Final
 
