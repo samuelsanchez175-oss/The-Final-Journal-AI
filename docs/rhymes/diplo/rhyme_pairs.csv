@@ -1,0 +1,300 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",throwin,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",Zoe,INNER,ASSONANCE,vowel,MED,Y
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",Zoe,2,"Every day, I'm geeked up, I be ridin' with that pole, nah",pole,END,ASSONANCE,vowel,MED,Y
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",throwin,2,"Every day, I'm geeked up, I be ridin' with that pole, nah",pole,INNER,SLANT,cmu,MED,Y
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",niggas,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",niggas,INNER,REPEAT,spelling,HIGH,N
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",throwin,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",don't,INNER,ASSONANCE,vowel,MED,Y
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",throwin,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",hoes,INNER,SLANT,cmu,MED,Y
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",Z's,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",weak,INNER,SLANT,cmu,MED,Y
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",Zoe,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",don't,INNER,ASSONANCE,vowel,MED,Y
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",Zoe,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",hoes,INNER,ASSONANCE,vowel,MED,Y
+Loitering,1,"Ayy, my niggas throwin' Z's up, if he 'round me, then he Zoe, yeah",Zoe,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",poetry,END,ASSONANCE,vowel,MED,Y
+Loitering,2,"Every day, I'm geeked up, I be ridin' with that pole, nah",geeked,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",weak,INNER,SLANT,spelling,LOW,Y
+Loitering,2,"Every day, I'm geeked up, I be ridin' with that pole, nah",pole,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",don't,INNER,ASSONANCE,vowel,MED,Y
+Loitering,2,"Every day, I'm geeked up, I be ridin' with that pole, nah",pole,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",hoes,INNER,SLANT,cmu,MED,Y
+Loitering,2,"Every day, I'm geeked up, I be ridin' with that pole, nah",ridin,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",like,INNER,ASSONANCE,vowel,MED,Y
+Loitering,2,"Every day, I'm geeked up, I be ridin' with that pole, nah",pole,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",poetry,END,ASSONANCE,vowel,MED,Y
+Loitering,2,"Every day, I'm geeked up, I be ridin' with that pole, nah",ridin,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",like,INNER,ASSONANCE,vowel,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",don't,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",hoes,INNER,ASSONANCE,vowel,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",man,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",actin,INNER,ASSONANCE,vowel,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",actin,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",Langston,INNER,ASSONANCE,vowel,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",don't,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",poetry,INNER,ASSONANCE,vowel,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",hoes,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",poetry,INNER,ASSONANCE,vowel,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",like,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",like,INNER,REPEAT,spelling,HIGH,N
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",man,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",Langston,INNER,ASSONANCE,vowel,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",shit,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",hit,INNER,PERFECT,cmu,HIGH,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",shit,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",spit,INNER,PERFECT,cmu,HIGH,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",weak,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",Feel,INNER,SLANT,cmu,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",shit,5,"I be loiterin', prowlin' on your home and shit",shit,END,REPEAT,spelling,HIGH,N
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",don't,5,"I be loiterin', prowlin' on your home and shit",home,INNER,ASSONANCE,vowel,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",hoes,5,"I be loiterin', prowlin' on your home and shit",home,INNER,SLANT,cmu,MED,Y
+Loitering,3,"I don't be on that weak stuff, man, you niggas be actin' like hoes and shit",shit,6,"Then I'm rollin' in, crawlin' with some goons and shit",shit,END,REPEAT,spelling,HIGH,N
+Loitering,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",hit,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",spit,INNER,PERFECT,cmu,HIGH,Y
+Loitering,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",Hughes,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",booth,INNER,SLANT,cmu,MED,Y
+Loitering,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",hit,5,"I be loiterin', prowlin' on your home and shit",shit,INNER,PERFECT,cmu,HIGH,Y
+Loitering,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",poetry,5,"I be loiterin', prowlin' on your home and shit",home,INNER,ASSONANCE,vowel,MED,Y
+Loitering,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",spit,5,"I be loiterin', prowlin' on your home and shit",shit,INNER,PERFECT,cmu,HIGH,Y
+Loitering,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",booth,6,"Then I'm rollin' in, crawlin' with some goons and shit",goons,INNER,ASSONANCE,vowel,MED,Y
+Loitering,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",hit,6,"Then I'm rollin' in, crawlin' with some goons and shit",shit,INNER,PERFECT,cmu,HIGH,Y
+Loitering,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",Hughes,6,"Then I'm rollin' in, crawlin' with some goons and shit",goons,INNER,SLANT,cmu,MED,Y
+Loitering,4,"Feel like Langston Hughes, I hit the booth and spit that poetry",spit,6,"Then I'm rollin' in, crawlin' with some goons and shit",shit,INNER,PERFECT,cmu,HIGH,Y
+Loitering,5,"I be loiterin', prowlin' on your home and shit",shit,6,"Then I'm rollin' in, crawlin' with some goons and shit",shit,END,REPEAT,spelling,HIGH,N
+Loitering,6,"Then I'm rollin' in, crawlin' with some goons and shit",crawlin,7,"I been up all week, tryna get me a Patek Philippe",all,INNER,SLANT,cmu,MED,Y
+Loitering,6,"Then I'm rollin' in, crawlin' with some goons and shit",rollin,7,"I been up all week, tryna get me a Patek Philippe",Patek,INNER,ASSONANCE,vowel,MED,Y
+Loitering,6,"Then I'm rollin' in, crawlin' with some goons and shit",shit,8,"The streets don't love me back, but I'm still in love with the streets",still,INNER,SLANT,cmu,MED,Y
+Loitering,6,"Then I'm rollin' in, crawlin' with some goons and shit",some,8,"The streets don't love me back, but I'm still in love with the streets",love,INNER,SLANT,cmu,MED,Y
+Loitering,7,"I been up all week, tryna get me a Patek Philippe",tryna,7,"I been up all week, tryna get me a Patek Philippe",Philippe,INNER,SLANT,spelling,LOW,Y
+Loitering,7,"I been up all week, tryna get me a Patek Philippe",week,7,"I been up all week, tryna get me a Patek Philippe",Philippe,INNER,SLANT,cmu,MED,Y
+Loitering,7,"I been up all week, tryna get me a Patek Philippe",week,7,"I been up all week, tryna get me a Patek Philippe",tryna,INNER,SLANT,spelling,LOW,Y
+Loitering,7,"I been up all week, tryna get me a Patek Philippe",Philippe,8,"The streets don't love me back, but I'm still in love with the streets",streets,END,ASSONANCE,vowel,MED,Y
+Loitering,7,"I been up all week, tryna get me a Patek Philippe",Philippe,8,"The streets don't love me back, but I'm still in love with the streets",streets,INNER,ASSONANCE,vowel,MED,Y
+Loitering,7,"I been up all week, tryna get me a Patek Philippe",week,8,"The streets don't love me back, but I'm still in love with the streets",streets,INNER,ASSONANCE,vowel,MED,Y
+Loitering,7,"I been up all week, tryna get me a Patek Philippe",get,9,"Military-minded, my heart is in the projects",Military,INNER,SLANT,cmu,MED,Y
+Loitering,7,"I been up all week, tryna get me a Patek Philippe",Patek,9,"Military-minded, my heart is in the projects",heart,INNER,ASSONANCE,vowel,MED,Y
+Loitering,7,"I been up all week, tryna get me a Patek Philippe",Patek,9,"Military-minded, my heart is in the projects",projects,INNER,ASSONANCE,vowel,MED,Y
+Loitering,8,"The streets don't love me back, but I'm still in love with the streets",love,8,"The streets don't love me back, but I'm still in love with the streets",love,INNER,REPEAT,spelling,HIGH,N
+Loitering,8,"The streets don't love me back, but I'm still in love with the streets",streets,8,"The streets don't love me back, but I'm still in love with the streets",streets,INNER,REPEAT,spelling,HIGH,N
+Loitering,8,"The streets don't love me back, but I'm still in love with the streets",don't,10,"They tried to put me in a dress, I almost killed the stylist",almost,INNER,SLANT,cmu,MED,Y
+Loitering,8,"The streets don't love me back, but I'm still in love with the streets",still,10,"They tried to put me in a dress, I almost killed the stylist",killed,INNER,SLANT,cmu,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",heart,9,"Military-minded, my heart is in the projects",projects,INNER,ASSONANCE,vowel,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",Military,10,"They tried to put me in a dress, I almost killed the stylist",dress,INNER,SLANT,cmu,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",minded,10,"They tried to put me in a dress, I almost killed the stylist",stylist,INNER,ASSONANCE,vowel,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",minded,10,"They tried to put me in a dress, I almost killed the stylist",tried,INNER,ASSONANCE,vowel,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",projects,11,"They tried to put me to the test, but me, I keep it solid",solid,END,ASSONANCE,vowel,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",heart,11,"They tried to put me to the test, but me, I keep it solid",solid,INNER,SLANT,cmu,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",Military,11,"They tried to put me to the test, but me, I keep it solid",test,INNER,ASSONANCE,vowel,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",minded,11,"They tried to put me to the test, but me, I keep it solid",tried,INNER,ASSONANCE,vowel,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",projects,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",rocket,END,ASSONANCE,vowel,MED,Y
+Loitering,9,"Military-minded, my heart is in the projects",projects,13,"I don't wanna be bothered, when you see me, don't even holler",holler,END,ASSONANCE,vowel,MED,Y
+Loitering,10,"They tried to put me in a dress, I almost killed the stylist",tried,10,"They tried to put me in a dress, I almost killed the stylist",stylist,INNER,ASSONANCE,vowel,MED,Y
+Loitering,10,"They tried to put me in a dress, I almost killed the stylist",dress,11,"They tried to put me to the test, but me, I keep it solid",test,INNER,SLANT,cmu,MED,Y
+Loitering,10,"They tried to put me in a dress, I almost killed the stylist",put,11,"They tried to put me to the test, but me, I keep it solid",put,INNER,REPEAT,spelling,HIGH,N
+Loitering,10,"They tried to put me in a dress, I almost killed the stylist",stylist,11,"They tried to put me to the test, but me, I keep it solid",tried,INNER,ASSONANCE,vowel,MED,Y
+Loitering,10,"They tried to put me in a dress, I almost killed the stylist",tried,11,"They tried to put me to the test, but me, I keep it solid",tried,INNER,REPEAT,spelling,HIGH,N
+Loitering,10,"They tried to put me in a dress, I almost killed the stylist",stylist,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",like,INNER,ASSONANCE,vowel,MED,Y
+Loitering,10,"They tried to put me in a dress, I almost killed the stylist",tried,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",like,INNER,SLANT,cmu,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",solid,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",rocket,END,ASSONANCE,vowel,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",solid,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",bought,INNER,ASSONANCE,vowel,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",solid,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",Harden,INNER,ASSONANCE,vowel,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",tried,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",like,INNER,SLANT,cmu,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",solid,13,"I don't wanna be bothered, when you see me, don't even holler",holler,END,SLANT,cmu,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",keep,13,"I don't wanna be bothered, when you see me, don't even holler",even,INNER,ASSONANCE,vowel,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",keep,13,"I don't wanna be bothered, when you see me, don't even holler",see,INNER,ASSONANCE,vowel,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",solid,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,INNER,SLANT,cmu,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",solid,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,INNER,ASSONANCE,vowel,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",test,13,"I don't wanna be bothered, when you see me, don't even holler",when,INNER,ASSONANCE,vowel,MED,Y
+Loitering,11,"They tried to put me to the test, but me, I keep it solid",solid,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,END,SLANT,cmu,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",ballin,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",brand,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",bought,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",rocket,INNER,SLANT,cmu,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",Harden,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",bought,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",Harden,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",rocket,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",rocket,13,"I don't wanna be bothered, when you see me, don't even holler",holler,END,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",bought,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",bought,13,"I don't wanna be bothered, when you see me, don't even holler",holler,INNER,SLANT,cmu,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",bought,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,INNER,SLANT,cmu,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",Harden,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",Harden,13,"I don't wanna be bothered, when you see me, don't even holler",holler,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",Harden,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",rocket,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",rocket,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",rocket,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,END,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",bought,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,INNER,SLANT,cmu,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",bought,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,INNER,SLANT,cmu,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",Harden,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",Harden,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,INNER,ASSONANCE,vowel,MED,Y
+Loitering,12,"I'm ballin' like I'm James Harden, I bought a brand-new rocket",rocket,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,13,"I don't wanna be bothered, when you see me, don't even holler",holler,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",don't,13,"I don't wanna be bothered, when you see me, don't even holler",don't,INNER,REPEAT,spelling,HIGH,N
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",see,13,"I don't wanna be bothered, when you see me, don't even holler",even,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,13,"I don't wanna be bothered, when you see me, don't even holler",holler,INNER,SLANT,cmu,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",holler,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,END,REPEAT,spelling,HIGH,N
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,INNER,SLANT,cmu,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",don't,14,"My nigga, don't even much bother, when you see me, please don't holler",don't,INNER,REPEAT,spelling,HIGH,N
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",even,14,"My nigga, don't even much bother, when you see me, please don't holler",even,INNER,REPEAT,spelling,HIGH,N
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",even,14,"My nigga, don't even much bother, when you see me, please don't holler",please,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",even,14,"My nigga, don't even much bother, when you see me, please don't holler",see,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",holler,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,INNER,SLANT,cmu,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",see,14,"My nigga, don't even much bother, when you see me, please don't holler",even,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",see,14,"My nigga, don't even much bother, when you see me, please don't holler",please,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",see,14,"My nigga, don't even much bother, when you see me, please don't holler",see,INNER,REPEAT,spelling,HIGH,N
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,INNER,SLANT,cmu,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,INNER,SLANT,cmu,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",when,14,"My nigga, don't even much bother, when you see me, please don't holler",when,INNER,REPEAT,spelling,HIGH,N
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,15,"That girl got a skeetin' problem, that pussy like piña colada",got,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",bothered,15,"That girl got a skeetin' problem, that pussy like piña colada",problem,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",even,15,"That girl got a skeetin' problem, that pussy like piña colada",skeetin,INNER,PERFECT,spelling,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",holler,15,"That girl got a skeetin' problem, that pussy like piña colada",got,INNER,SLANT,cmu,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",holler,15,"That girl got a skeetin' problem, that pussy like piña colada",problem,INNER,ASSONANCE,vowel,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,15,"That girl got a skeetin' problem, that pussy like piña colada",got,INNER,SLANT,cmu,MED,Y
+Loitering,13,"I don't wanna be bothered, when you see me, don't even holler",wanna,15,"That girl got a skeetin' problem, that pussy like piña colada",problem,INNER,ASSONANCE,vowel,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,INNER,SLANT,cmu,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",don't,14,"My nigga, don't even much bother, when you see me, please don't holler",don't,INNER,REPEAT,spelling,HIGH,N
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",even,14,"My nigga, don't even much bother, when you see me, please don't holler",please,INNER,ASSONANCE,vowel,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",even,14,"My nigga, don't even much bother, when you see me, please don't holler",see,INNER,ASSONANCE,vowel,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",see,14,"My nigga, don't even much bother, when you see me, please don't holler",please,INNER,ASSONANCE,vowel,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,15,"That girl got a skeetin' problem, that pussy like piña colada",got,INNER,SLANT,cmu,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,15,"That girl got a skeetin' problem, that pussy like piña colada",problem,INNER,ASSONANCE,vowel,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",even,15,"That girl got a skeetin' problem, that pussy like piña colada",skeetin,INNER,PERFECT,spelling,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,15,"That girl got a skeetin' problem, that pussy like piña colada",got,INNER,SLANT,cmu,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,15,"That girl got a skeetin' problem, that pussy like piña colada",problem,INNER,ASSONANCE,vowel,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",bother,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",knock,INNER,SLANT,cmu,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",don't,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",Don't,INNER,REPEAT,spelling,HIGH,N
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",even,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,INNER,ASSONANCE,vowel,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",even,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,INNER,ASSONANCE,vowel,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",even,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,INNER,SLANT,spelling,LOW,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",holler,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",knock,INNER,SLANT,cmu,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",nigga,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",nigga,INNER,REPEAT,spelling,HIGH,N
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",please,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,INNER,SLANT,cmu,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",please,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,INNER,SLANT,cmu,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",please,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,INNER,SLANT,spelling,LOW,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",see,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,INNER,ASSONANCE,vowel,MED,Y
+Loitering,14,"My nigga, don't even much bother, when you see me, please don't holler",see,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,INNER,ASSONANCE,vowel,MED,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",got,15,"That girl got a skeetin' problem, that pussy like piña colada",problem,INNER,ASSONANCE,vowel,MED,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",like,15,"That girl got a skeetin' problem, that pussy like piña colada",pi,INNER,ASSONANCE,vowel,MED,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",got,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",knock,INNER,SLANT,cmu,MED,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",problem,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",knock,INNER,ASSONANCE,vowel,MED,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",skeetin,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,INNER,SLANT,spelling,LOW,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",skeetin,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,INNER,SLANT,spelling,LOW,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",got,17,"She look like she wanna freak, ain't no more meet and greet",wanna,INNER,SLANT,cmu,MED,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",like,17,"She look like she wanna freak, ain't no more meet and greet",like,INNER,REPEAT,spelling,HIGH,N
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",pi,17,"She look like she wanna freak, ain't no more meet and greet",like,INNER,ASSONANCE,vowel,MED,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",problem,17,"She look like she wanna freak, ain't no more meet and greet",wanna,INNER,ASSONANCE,vowel,MED,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",pussy,17,"She look like she wanna freak, ain't no more meet and greet",look,INNER,SLANT,cmu,MED,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",skeetin,17,"She look like she wanna freak, ain't no more meet and greet",greet,INNER,SLANT,spelling,LOW,Y
+Loitering,15,"That girl got a skeetin' problem, that pussy like piña colada",skeetin,17,"She look like she wanna freak, ain't no more meet and greet",meet,INNER,SLANT,spelling,LOW,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,INNER,SLANT,spelling,LOW,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,INNER,SLANT,spelling,LOW,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,17,"She look like she wanna freak, ain't no more meet and greet",greet,END,PERFECT,cmu,HIGH,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,17,"She look like she wanna freak, ain't no more meet and greet",freak,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,17,"She look like she wanna freak, ain't no more meet and greet",greet,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,17,"She look like she wanna freak, ain't no more meet and greet",meet,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",Don't,17,"She look like she wanna freak, ain't no more meet and greet",no,INNER,ASSONANCE,vowel,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,17,"She look like she wanna freak, ain't no more meet and greet",freak,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,17,"She look like she wanna freak, ain't no more meet and greet",meet,INNER,PERFECT,cmu,HIGH,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",knock,17,"She look like she wanna freak, ain't no more meet and greet",wanna,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,17,"She look like she wanna freak, ain't no more meet and greet",freak,INNER,SLANT,spelling,LOW,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,17,"She look like she wanna freak, ain't no more meet and greet",greet,INNER,SLANT,spelling,LOW,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,17,"She look like she wanna freak, ain't no more meet and greet",meet,INNER,SLANT,spelling,LOW,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,18,"Fully, keep a broomstick, sweep a nigga up off his feet",feet,END,REPEAT,spelling,HIGH,N
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,18,"Fully, keep a broomstick, sweep a nigga up off his feet",feet,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,18,"Fully, keep a broomstick, sweep a nigga up off his feet",keep,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",beef,18,"Fully, keep a broomstick, sweep a nigga up off his feet",sweep,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",bring,18,"Fully, keep a broomstick, sweep a nigga up off his feet",broomstick,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,18,"Fully, keep a broomstick, sweep a nigga up off his feet",keep,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",feet,18,"Fully, keep a broomstick, sweep a nigga up off his feet",sweep,INNER,SLANT,cmu,MED,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",nigga,18,"Fully, keep a broomstick, sweep a nigga up off his feet",broomstick,INNER,SLANT,spelling,LOW,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",nigga,18,"Fully, keep a broomstick, sweep a nigga up off his feet",nigga,INNER,REPEAT,spelling,HIGH,N
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,18,"Fully, keep a broomstick, sweep a nigga up off his feet",feet,INNER,SLANT,spelling,LOW,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,18,"Fully, keep a broomstick, sweep a nigga up off his feet",keep,INNER,SLANT,spelling,LOW,Y
+Loitering,16,"Don't bring the beef up out you, nigga, they tryna knock you off your feet",tryna,18,"Fully, keep a broomstick, sweep a nigga up off his feet",sweep,INNER,SLANT,spelling,LOW,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",freak,17,"She look like she wanna freak, ain't no more meet and greet",greet,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",freak,17,"She look like she wanna freak, ain't no more meet and greet",meet,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",meet,17,"She look like she wanna freak, ain't no more meet and greet",greet,INNER,PERFECT,cmu,HIGH,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",greet,18,"Fully, keep a broomstick, sweep a nigga up off his feet",feet,END,PERFECT,cmu,HIGH,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",freak,18,"Fully, keep a broomstick, sweep a nigga up off his feet",feet,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",freak,18,"Fully, keep a broomstick, sweep a nigga up off his feet",keep,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",freak,18,"Fully, keep a broomstick, sweep a nigga up off his feet",sweep,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",greet,18,"Fully, keep a broomstick, sweep a nigga up off his feet",keep,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",greet,18,"Fully, keep a broomstick, sweep a nigga up off his feet",sweep,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",look,18,"Fully, keep a broomstick, sweep a nigga up off his feet",Fully,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",meet,18,"Fully, keep a broomstick, sweep a nigga up off his feet",feet,INNER,PERFECT,cmu,HIGH,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",meet,18,"Fully, keep a broomstick, sweep a nigga up off his feet",keep,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",meet,18,"Fully, keep a broomstick, sweep a nigga up off his feet",sweep,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",like,19,"Rocks all in my glue stick, rock a nigga like acoustic",like,INNER,REPEAT,spelling,HIGH,N
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",more,19,"Rocks all in my glue stick, rock a nigga like acoustic",all,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",wanna,19,"Rocks all in my glue stick, rock a nigga like acoustic",rock,INNER,SLANT,cmu,MED,Y
+Loitering,17,"She look like she wanna freak, ain't no more meet and greet",wanna,19,"Rocks all in my glue stick, rock a nigga like acoustic",Rocks,INNER,ASSONANCE,vowel,MED,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",broomstick,18,"Fully, keep a broomstick, sweep a nigga up off his feet",nigga,INNER,SLANT,spelling,LOW,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",keep,18,"Fully, keep a broomstick, sweep a nigga up off his feet",feet,INNER,SLANT,cmu,MED,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",keep,18,"Fully, keep a broomstick, sweep a nigga up off his feet",sweep,INNER,PERFECT,cmu,HIGH,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",sweep,18,"Fully, keep a broomstick, sweep a nigga up off his feet",feet,INNER,SLANT,cmu,MED,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",broomstick,19,"Rocks all in my glue stick, rock a nigga like acoustic",nigga,INNER,SLANT,spelling,LOW,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",broomstick,19,"Rocks all in my glue stick, rock a nigga like acoustic",stick,INNER,PERFECT,cmu,HIGH,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",nigga,19,"Rocks all in my glue stick, rock a nigga like acoustic",nigga,INNER,REPEAT,spelling,HIGH,N
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",nigga,19,"Rocks all in my glue stick, rock a nigga like acoustic",stick,INNER,SLANT,spelling,LOW,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",broomstick,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",I'ma,INNER,SLANT,spelling,LOW,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",broomstick,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",lil,INNER,SLANT,cmu,MED,Y
+Loitering,18,"Fully, keep a broomstick, sweep a nigga up off his feet",broomstick,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",listen,INNER,ASSONANCE,vowel,MED,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",glue,19,"Rocks all in my glue stick, rock a nigga like acoustic",acoustic,INNER,ASSONANCE,vowel,MED,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",glue stick,19,"Rocks all in my glue stick, rock a nigga like acoustic",like acoustic,INNER,MULTI,multi,HIGH,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",Rocks,19,"Rocks all in my glue stick, rock a nigga like acoustic",rock,INNER,SLANT,cmu,MED,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",stick,19,"Rocks all in my glue stick, rock a nigga like acoustic",nigga,INNER,SLANT,spelling,LOW,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",acoustic,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",Cupid,END,ASSONANCE,vowel,MED,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",glue,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",Cupid,INNER,ASSONANCE,vowel,MED,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",rock,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",heart,INNER,ASSONANCE,vowel,MED,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",Rocks,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",heart,INNER,ASSONANCE,vowel,MED,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",stick,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",I'ma,INNER,SLANT,spelling,LOW,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",stick,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",lil,INNER,SLANT,cmu,MED,Y
+Loitering,19,"Rocks all in my glue stick, rock a nigga like acoustic",stick,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",listen,INNER,ASSONANCE,vowel,MED,Y
+Loitering,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",baby,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",way,INNER,ASSONANCE,vowel,MED,Y
+Loitering,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",break,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",baby,INNER,SLANT,cmu,MED,Y
+Loitering,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",break,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",way,INNER,ASSONANCE,vowel,MED,Y
+Loitering,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",don't,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",don't,INNER,REPEAT,spelling,HIGH,N
+Loitering,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",I'ma,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",lil,INNER,SLANT,spelling,LOW,Y
+Loitering,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",lil,20,"I'ma break your heart, lil' baby, don't come this way, don't listen to Cupid",listen,INNER,ASSONANCE,vowel,MED,Y
+Wasted,1,"Ridin' uptown, tryna overdo things",overdo,2,Eatin' up tabs got me dreamin' lucid,lucid,INNER,ASSONANCE,vowel,MED,Y
+Wasted,1,"Ridin' uptown, tryna overdo things",tryna,2,Eatin' up tabs got me dreamin' lucid,dreamin,INNER,SLANT,spelling,LOW,Y
+Wasted,1,"Ridin' uptown, tryna overdo things",Ridin,3,Just bring me back to life when I'm wasted,life,INNER,ASSONANCE,vowel,MED,Y
+Wasted,1,"Ridin' uptown, tryna overdo things",things,3,Just bring me back to life when I'm wasted,bring,INNER,SLANT,cmu,MED,Y
+Wasted,2,Eatin' up tabs got me dreamin' lucid,Eatin,2,Eatin' up tabs got me dreamin' lucid,dreamin,INNER,SLANT,cmu,MED,Y
+Wasted,2,Eatin' up tabs got me dreamin' lucid,tabs,3,Just bring me back to life when I'm wasted,back,INNER,ASSONANCE,vowel,MED,Y
+Wasted,2,Eatin' up tabs got me dreamin' lucid,got,4,Rollin' up sherm like it's Backwood,Rollin,INNER,ASSONANCE,vowel,MED,Y
+Wasted,3,Just bring me back to life when I'm wasted,life,4,Rollin' up sherm like it's Backwood,like,INNER,SLANT,cmu,MED,Y
+Wasted,4,Rollin' up sherm like it's Backwood,Backwood,5,"Need another one to burn, then I'm all good",good,END,PERFECT,spelling,HIGH,Y
+Wasted,4,Rollin' up sherm like it's Backwood,sherm,5,"Need another one to burn, then I'm all good",burn,INNER,SLANT,spelling,LOW,Y
+Wasted,4,Rollin' up sherm like it's Backwood,like,6,Noticin' everybody's problem but mine,mine,INNER,SLANT,cmu,MED,Y
+Wasted,4,Rollin' up sherm like it's Backwood,Rollin,6,Noticin' everybody's problem but mine,everybody's,INNER,ASSONANCE,vowel,MED,Y
+Wasted,4,Rollin' up sherm like it's Backwood,Rollin,6,Noticin' everybody's problem but mine,problem,INNER,ASSONANCE,vowel,MED,Y
+Wasted,5,"Need another one to burn, then I'm all good",another,5,"Need another one to burn, then I'm all good",one,INNER,SLANT,cmu,MED,Y
+Wasted,6,Noticin' everybody's problem but mine,everybody's,6,Noticin' everybody's problem but mine,problem,INNER,ASSONANCE,vowel,MED,Y
+Wasted,6,Noticin' everybody's problem but mine,mine,7,Maskin' the pain with ketamine and wine,wine,END,PERFECT,cmu,HIGH,Y
+Wasted,6,Noticin' everybody's problem but mine,mine,8,I'm sad and happy at the same damn time,time,END,SLANT,cmu,MED,Y
+Wasted,7,Maskin' the pain with ketamine and wine,wine,8,I'm sad and happy at the same damn time,time,END,SLANT,cmu,MED,Y
+Wasted,7,Maskin' the pain with ketamine and wine,Maskin,8,I'm sad and happy at the same damn time,damn,INNER,ASSONANCE,vowel,MED,Y
+Wasted,7,Maskin' the pain with ketamine and wine,Maskin,8,I'm sad and happy at the same damn time,happy,INNER,ASSONANCE,vowel,MED,Y
+Wasted,7,Maskin' the pain with ketamine and wine,Maskin,8,I'm sad and happy at the same damn time,sad,INNER,ASSONANCE,vowel,MED,Y
+Wasted,7,Maskin' the pain with ketamine and wine,pain,8,I'm sad and happy at the same damn time,same,INNER,SLANT,cmu,MED,Y
+Wasted,7,Maskin' the pain with ketamine and wine,ketamine,9,I think I found my new best friend,best,INNER,ASSONANCE,vowel,LOW,N
+Wasted,8,I'm sad and happy at the same damn time,happy,8,I'm sad and happy at the same damn time,damn,INNER,SLANT,cmu,MED,Y
+Wasted,8,I'm sad and happy at the same damn time,sad,8,I'm sad and happy at the same damn time,damn,INNER,SLANT,cmu,MED,Y
+Wasted,8,I'm sad and happy at the same damn time,sad,8,I'm sad and happy at the same damn time,happy,INNER,SLANT,cmu,MED,Y
+Wasted,8,I'm sad and happy at the same damn time,damn,10,The pistol on the counter keeps starin' at me,starin,INNER,ASSONANCE,vowel,MED,Y
+Wasted,8,I'm sad and happy at the same damn time,happy,10,The pistol on the counter keeps starin' at me,starin,INNER,ASSONANCE,vowel,MED,Y
+Wasted,8,I'm sad and happy at the same damn time,sad,10,The pistol on the counter keeps starin' at me,starin,INNER,ASSONANCE,vowel,MED,Y
+Wasted,9,I think I found my new best friend,best,9,I think I found my new best friend,friend,INNER,ASSONANCE,vowel,MED,Y
+Wasted,9,I think I found my new best friend,found,10,The pistol on the counter keeps starin' at me,counter,INNER,SLANT,cmu,MED,Y
+Wasted,9,I think I found my new best friend,think,10,The pistol on the counter keeps starin' at me,pistol,INNER,ASSONANCE,vowel,MED,Y
+Wasted,9,I think I found my new best friend,new,11,I threw away the bullets and I gave it a wink,threw,INNER,PERFECT,cmu,HIGH,Y
+Wasted,9,I think I found my new best friend,think,11,I threw away the bullets and I gave it a wink,wink,INNER,PERFECT,cmu,HIGH,Y
+Wasted,10,The pistol on the counter keeps starin' at me,pistol,11,I threw away the bullets and I gave it a wink,wink,INNER,ASSONANCE,vowel,MED,Y
+Wasted,10,The pistol on the counter keeps starin' at me,keeps,12,'Cause life is so much sweeter when you taste it,sweeter,INNER,ASSONANCE,vowel,MED,Y
+Wasted,11,I threw away the bullets and I gave it a wink,away,11,I threw away the bullets and I gave it a wink,gave,INNER,ASSONANCE,vowel,MED,Y
+Wasted,11,I threw away the bullets and I gave it a wink,away,12,'Cause life is so much sweeter when you taste it,taste,INNER,ASSONANCE,vowel,MED,Y
+Wasted,11,I threw away the bullets and I gave it a wink,gave,12,'Cause life is so much sweeter when you taste it,taste,INNER,ASSONANCE,vowel,MED,Y
+Wasted,11,I threw away the bullets and I gave it a wink,away,13,Bring me back to life when I'm wasted,wasted,INNER,ASSONANCE,vowel,MED,Y
+Wasted,11,I threw away the bullets and I gave it a wink,gave,13,Bring me back to life when I'm wasted,wasted,INNER,ASSONANCE,vowel,MED,Y
+Wasted,11,I threw away the bullets and I gave it a wink,wink,13,Bring me back to life when I'm wasted,Bring,INNER,SLANT,cmu,MED,Y
+Wasted,12,'Cause life is so much sweeter when you taste it,taste,13,Bring me back to life when I'm wasted,wasted,END,SLANT,cmu,MED,Y
+Wasted,12,'Cause life is so much sweeter when you taste it,life,13,Bring me back to life when I'm wasted,life,INNER,REPEAT,spelling,HIGH,N
+Wasted,12,'Cause life is so much sweeter when you taste it,when,13,Bring me back to life when I'm wasted,when,INNER,REPEAT,spelling,HIGH,N
+Wasted,12,'Cause life is so much sweeter when you taste it,sweeter,14,Eatin' up taps got me dreamin' lucid,dreamin,INNER,ASSONANCE,vowel,MED,Y
+Wasted,12,'Cause life is so much sweeter when you taste it,sweeter,14,Eatin' up taps got me dreamin' lucid,Eatin,INNER,SLANT,cmu,MED,Y
+Wasted,13,Bring me back to life when I'm wasted,back,14,Eatin' up taps got me dreamin' lucid,taps,INNER,ASSONANCE,vowel,MED,Y
+Wasted,14,Eatin' up taps got me dreamin' lucid,Eatin,14,Eatin' up taps got me dreamin' lucid,dreamin,INNER,SLANT,cmu,MED,Y
+Wasted,14,Eatin' up taps got me dreamin' lucid,taps,16,"Half alive, half dead and gone",Half,INNER,ASSONANCE,vowel,MED,Y
+Wasted,15,I'm broke down and alone,broke,15,I'm broke down and alone,alone,INNER,SLANT,cmu,MED,Y
+Wasted,15,I'm broke down and alone,alone,17,"I'm seein' things, up late on the phone",phone,END,PERFECT,cmu,HIGH,Y
+Wasted,15,I'm broke down and alone,broke,17,"I'm seein' things, up late on the phone",phone,INNER,SLANT,cmu,MED,Y
+Wasted,16,"Half alive, half dead and gone",Half,16,"Half alive, half dead and gone",half,INNER,REPEAT,spelling,HIGH,N
+Wasted,16,"Half alive, half dead and gone",dead,18,Talkin' to people that ain't even there,there,INNER,SLANT,cmu,MED,Y
+Wasted,17,"I'm seein' things, up late on the phone",late,18,Talkin' to people that ain't even there,ain't,INNER,SLANT,cmu,MED,Y
+Wasted,17,"I'm seein' things, up late on the phone",seein,18,Talkin' to people that ain't even there,even,INNER,ASSONANCE,vowel,MED,Y
+Wasted,17,"I'm seein' things, up late on the phone",seein,18,Talkin' to people that ain't even there,people,INNER,ASSONANCE,vowel,MED,Y
+Wasted,17,"I'm seein' things, up late on the phone",late,19,Blurry sight and I'm faded,faded,INNER,SLANT,cmu,MED,Y
+Wasted,18,Talkin' to people that ain't even there,people,18,Talkin' to people that ain't even there,even,INNER,ASSONANCE,vowel,MED,Y
+Wasted,18,Talkin' to people that ain't even there,ain't,19,Blurry sight and I'm faded,faded,INNER,ASSONANCE,vowel,MED,Y
+Wasted,19,Blurry sight and I'm faded,sight,20,Can't find the cure that I've been chasin',find,INNER,ASSONANCE,vowel,MED,Y
+Wasted,20,Can't find the cure that I've been chasin',Can't,20,Can't find the cure that I've been chasin',chasin,INNER,ASSONANCE,vowel,MED,Y

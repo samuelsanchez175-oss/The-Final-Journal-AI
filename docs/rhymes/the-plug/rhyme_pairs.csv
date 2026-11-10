@@ -1,0 +1,430 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",back,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",can't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",back,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",back,INNER,REPEAT,spelling,HIGH,N
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",back,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",trap,INNER,SLANT,cmu,MED,Y
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",can't,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",back,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",can't,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",trap,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",cell,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",Fresh,INNER,SLANT,cmu,MED,Y
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",cell,3,"Telling me, ""Don't make the same mistakes that your father did""",Telling,INNER,SLANT,cmu,MED,Y
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",say,3,"Telling me, ""Don't make the same mistakes that your father did""",make,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",say,3,"Telling me, ""Don't make the same mistakes that your father did""",mistakes,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,1,"I used to sit back in my cell and say, ""Nah, this can't be it""",say,3,"Telling me, ""Don't make the same mistakes that your father did""",same,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",back,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",trap,INNER,SLANT,cmu,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",home,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",moaning,INNER,SLANT,cmu,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",arguing,3,"Telling me, ""Don't make the same mistakes that your father did""",father,END,ASSONANCE,vowel,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",Fresh,3,"Telling me, ""Don't make the same mistakes that your father did""",Telling,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",home,3,"Telling me, ""Don't make the same mistakes that your father did""",Don't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",moaning,3,"Telling me, ""Don't make the same mistakes that your father did""",Don't,INNER,SLANT,cmu,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",arguing,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",arguing,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",back,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",fam,INNER,SLANT,spelling,LOW,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",Fresh,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",care,INNER,SLANT,cmu,MED,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",trap,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",fam,INNER,SLANT,spelling,LOW,Y
+Father Figure,2,"Fresh home, back to the trap, my girl moaning and arguing (Trap)",arguing,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,END,SLANT,cmu,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",make,3,"Telling me, ""Don't make the same mistakes that your father did""",mistakes,INNER,SLANT,cmu,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",make,3,"Telling me, ""Don't make the same mistakes that your father did""",same,INNER,SLANT,cmu,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",same,3,"Telling me, ""Don't make the same mistakes that your father did""",mistakes,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",father,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",father,INNER,REPEAT,spelling,HIGH,N
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",father,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",make,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",make,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",take,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",mistakes,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",mistakes,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",take,INNER,SLANT,cmu,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",same,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",same,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",take,INNER,SLANT,cmu,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",Telling,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",care,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",Don't,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",goes,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",father,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",dogs,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",Telling,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",legit,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",Telling,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",where,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",father,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,END,ASSONANCE,vowel,MED,Y
+Father Figure,3,"Telling me, ""Don't make the same mistakes that your father did""",father,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",bicarbonate,END,ASSONANCE,vowel,MED,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",I'ma,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",bitch,INNER,SLANT,spelling,LOW,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",nothin,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",take,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",care,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",legit,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",care,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",where,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",father,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",dogs,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",nothin,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",dogs,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",bitch,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",still,INNER,SLANT,cmu,MED,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",fam,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",man,INNER,SLANT,spelling,LOW,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",father,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",I'ma,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",still,INNER,SLANT,spelling,LOW,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",like,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",buy,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,4,"I'ma take care of my fam, I ain't nothin' like my father, bitch (Bitch)",nothin,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",where,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",legit,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",dogs,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",goes,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",low,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",goes,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",poles,INNER,SLANT,cmu,MED,Y
+Father Figure,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",dogs,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",bicarbonate,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,5,"But where I'm from, it's how it goes and none of my dogs legit (Huh)",dogs,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",pharmacist,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",poles,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",low,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",tryna,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",these,INNER,SLANT,spelling,LOW,Y
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",bicarbonate,END,ASSONANCE,vowel,MED,Y
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",pharmacist,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",still,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",mix,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",these,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",freebase,INNER,ASSONANCE,vowel,LOW,N
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",parcels,END,ASSONANCE,vowel,MED,Y
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",gardening,INNER,PERFECT,spelling,MED,Y
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",still,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",bring,INNER,SLANT,cmu,MED,Y
+Father Figure,6,"I'm still tryna buy these poles for the low, man, I'm bargaining",bargaining,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",starvin,END,SLANT,cmu,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",pharmacist,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",bicarbonate,INNER,SLANT,cmu,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",bicarbonate,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",parcels,END,ASSONANCE,vowel,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",ain't,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",make,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",bicarbonate,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",gardening,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",mix,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",bring,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",pharmacist,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",gardening,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",pharmacist,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",parcels,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",bicarbonate,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",starvin,END,ASSONANCE,vowel,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",mix,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",lick,INNER,SLANT,cmu,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",mix,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",quick,INNER,SLANT,cmu,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",mix,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",trigger,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",pharmacist,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",starvin,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,7,"I ain't a pharmacist, I mix freebase with bicarbonate (Whip, whip)",bicarbonate,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,END,ASSONANCE,vowel,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",gardening,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",parcels,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",parcels,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",starvin,END,ASSONANCE,vowel,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",bring,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",lick,INNER,SLANT,cmu,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",bring,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",quick,INNER,SLANT,cmu,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",bring,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",trigger,INNER,SLANT,cmu,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",gardening,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",starvin,INNER,SLANT,cmu,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",all,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",walked,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",bring,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",hit,INNER,SLANT,cmu,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",parcels,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,END,ASSONANCE,vowel,MED,Y
+Father Figure,8,"And now I'm gardening, make DHL bring all my parcels in (Ha)",parcels,12,"Next thing, he put on hoodies with Slick and went robbin'",robbin,END,ASSONANCE,vowel,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",quick,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",lick,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",trigger,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",lick,INNER,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",trigger,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",quick,INNER,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",lick,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",hit,INNER,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",quick,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",hit,INNER,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",trigger,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",hit,INNER,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",Youngin,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",mobbin,INNER,PERFECT,spelling,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",starvin,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,END,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",lick,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",bitch,INNER,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",pulled,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",pullin,INNER,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",quick,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",bitch,INNER,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",starvin,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",block,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",trigger,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",bitch,INNER,SLANT,cmu,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",Youngin,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,INNER,PERFECT,spelling,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",Youngin,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",pullin,INNER,PERFECT,spelling,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",starvin,12,"Next thing, he put on hoodies with Slick and went robbin'",robbin,END,ASSONANCE,vowel,MED,Y
+Father Figure,9,"Youngin' pulled the trigger quick on a lick, he was starvin' (Thirsty)",starvin,13,"Saw my first thousand 'bows, I thought I was gardenin'",gardenin,END,SLANT,cmu,MED,Y
+Father Figure,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",mobbin,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,END,PERFECT,spelling,MED,Y
+Father Figure,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",hit,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",bitch,INNER,SLANT,cmu,MED,Y
+Father Figure,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",mobbin,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",pullin,INNER,PERFECT,spelling,MED,Y
+Father Figure,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",Twenty,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",s,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",mobbin,12,"Next thing, he put on hoodies with Slick and went robbin'",robbin,END,PERFECT,spelling,MED,Y
+Father Figure,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",hit,12,"Next thing, he put on hoodies with Slick and went robbin'",Slick,INNER,SLANT,cmu,MED,Y
+Father Figure,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",hit,12,"Next thing, he put on hoodies with Slick and went robbin'",thing,INNER,SLANT,cmu,MED,Y
+Father Figure,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",Twenty,12,"Next thing, he put on hoodies with Slick and went robbin'",Next,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,10,"Twenty deep, walked on the opps for a hit, we was mobbin' (Burn 'еm)",Twenty,12,"Next thing, he put on hoodies with Slick and went robbin'",went,INNER,SLANT,cmu,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",block,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,12,"Next thing, he put on hoodies with Slick and went robbin'",robbin,END,ASSONANCE,vowel,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",bitch,12,"Next thing, he put on hoodies with Slick and went robbin'",Slick,INNER,SLANT,cmu,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",bitch,12,"Next thing, he put on hoodies with Slick and went robbin'",thing,INNER,SLANT,cmu,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",block,12,"Next thing, he put on hoodies with Slick and went robbin'",robbin,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",pullin,12,"Next thing, he put on hoodies with Slick and went robbin'",put,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",s,12,"Next thing, he put on hoodies with Slick and went robbin'",Next,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",s,12,"Next thing, he put on hoodies with Slick and went robbin'",went,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,13,"Saw my first thousand 'bows, I thought I was gardenin'",gardenin,END,SLANT,cmu,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",block,13,"Saw my first thousand 'bows, I thought I was gardenin'",gardenin,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",part,END,ASSONANCE,vowel,MED,Y
+Father Figure,11,"Summertime, was on the block pullin' bitchеs with Marvin (Cap)",Marvin,15,Forty glizzy keep my blood warm like a cardigan,cardigan,END,SLANT,cmu,MED,Y
+Father Figure,12,"Next thing, he put on hoodies with Slick and went robbin'",Next,12,"Next thing, he put on hoodies with Slick and went robbin'",went,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,12,"Next thing, he put on hoodies with Slick and went robbin'",thing,12,"Next thing, he put on hoodies with Slick and went robbin'",Slick,INNER,SLANT,cmu,MED,Y
+Father Figure,12,"Next thing, he put on hoodies with Slick and went robbin'",robbin,13,"Saw my first thousand 'bows, I thought I was gardenin'",gardenin,END,ASSONANCE,vowel,MED,Y
+Father Figure,12,"Next thing, he put on hoodies with Slick and went robbin'",robbin,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",part,END,ASSONANCE,vowel,MED,Y
+Father Figure,12,"Next thing, he put on hoodies with Slick and went robbin'",Slick,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",clear,INNER,SLANT,cmu,MED,Y
+Father Figure,12,"Next thing, he put on hoodies with Slick and went robbin'",thing,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",clear,INNER,SLANT,cmu,MED,Y
+Father Figure,12,"Next thing, he put on hoodies with Slick and went robbin'",robbin,15,Forty glizzy keep my blood warm like a cardigan,cardigan,END,ASSONANCE,vowel,MED,Y
+Father Figure,12,"Next thing, he put on hoodies with Slick and went robbin'",robbin,16,"Transform with my left hand, James Harden (Brr)",Harden,END,ASSONANCE,vowel,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",Saw,13,"Saw my first thousand 'bows, I thought I was gardenin'",thought,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",thousand,13,"Saw my first thousand 'bows, I thought I was gardenin'",'bows,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",gardenin,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",part,END,ASSONANCE,vowel,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",'bows,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",how,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",thousand,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",how,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",gardenin,15,Forty glizzy keep my blood warm like a cardigan,cardigan,END,SLANT,cmu,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",Saw,15,Forty glizzy keep my blood warm like a cardigan,Forty,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",Saw,15,Forty glizzy keep my blood warm like a cardigan,warm,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",thought,15,Forty glizzy keep my blood warm like a cardigan,Forty,INNER,SLANT,cmu,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",thought,15,Forty glizzy keep my blood warm like a cardigan,warm,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",gardenin,16,"Transform with my left hand, James Harden (Brr)",Harden,END,SLANT,cmu,MED,Y
+Father Figure,13,"Saw my first thousand 'bows, I thought I was gardenin'",gardenin,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,END,ASSONANCE,vowel,MED,Y
+Father Figure,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",know,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",lo,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",part,15,Forty glizzy keep my blood warm like a cardigan,cardigan,END,ASSONANCE,vowel,MED,Y
+Father Figure,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",part,16,"Transform with my left hand, James Harden (Brr)",Harden,END,ASSONANCE,vowel,MED,Y
+Father Figure,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",part,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,END,PERFECT,cmu,HIGH,Y
+Father Figure,14,"I know how to clear the lo', but that's just a part of it (Get 'em, ayy)",part,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,END,ASSONANCE,vowel,MED,Y
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,Forty,15,Forty glizzy keep my blood warm like a cardigan,glizzy,INNER,ASSONANCE,vowel,LOW,N
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,Forty,15,Forty glizzy keep my blood warm like a cardigan,warm,INNER,SLANT,cmu,MED,Y
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,cardigan,16,"Transform with my left hand, James Harden (Brr)",Harden,END,SLANT,cmu,MED,Y
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,Forty,16,"Transform with my left hand, James Harden (Brr)",Transform,INNER,SLANT,cmu,MED,Y
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,warm,16,"Transform with my left hand, James Harden (Brr)",Transform,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,cardigan,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,END,ASSONANCE,vowel,MED,Y
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,cardigan,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",sparked,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,keep,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",keep,INNER,REPEAT,spelling,HIGH,N
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,cardigan,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,END,ASSONANCE,vowel,MED,Y
+Father Figure,15,Forty glizzy keep my blood warm like a cardigan,cardigan,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,END,ASSONANCE,vowel,MED,Y
+Father Figure,16,"Transform with my left hand, James Harden (Brr)",Harden,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,END,ASSONANCE,vowel,MED,Y
+Father Figure,16,"Transform with my left hand, James Harden (Brr)",Harden,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",sparked,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,16,"Transform with my left hand, James Harden (Brr)",James,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",flame,INNER,SLANT,cmu,MED,Y
+Father Figure,16,"Transform with my left hand, James Harden (Brr)",Harden,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,END,ASSONANCE,vowel,MED,Y
+Father Figure,16,"Transform with my left hand, James Harden (Brr)",Harden,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",Pardon,INNER,MULTI,multi,HIGH,Y
+Father Figure,16,"Transform with my left hand, James Harden (Brr)",Harden,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",postures,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,16,"Transform with my left hand, James Harden (Brr)",James,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",say,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,16,"Transform with my left hand, James Harden (Brr)",Transform,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",all,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,16,"Transform with my left hand, James Harden (Brr)",Harden,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,END,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",Don't,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",don't,INNER,REPEAT,spelling,HIGH,N
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",Don't,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",know,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",know,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",don't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",sparked,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,INNER,SLANT,cmu,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,END,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",flame,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",say,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",sparked,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",sparked,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",Pardon,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",sparked,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",postures,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",Pardon,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",postures,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,END,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",how,19,"Like my father, 'bout my family, I'm 'bout my dollars",'bout,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",sparked,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",sparked,19,"Like my father, 'bout my family, I'm 'bout my dollars",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,17,"Don't know how to keep that flame sparked, don't start it (Pussy)",start,19,"Like my father, 'bout my family, I'm 'bout my dollars",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",Pardon,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",Pardon,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",postures,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",postures,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,END,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,19,"Like my father, 'bout my family, I'm 'bout my dollars",father,INNER,REPEAT,spelling,HIGH,N
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",like,19,"Like my father, 'bout my family, I'm 'bout my dollars",Like,INNER,REPEAT,spelling,HIGH,N
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",Pardon,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",Pardon,19,"Like my father, 'bout my family, I'm 'bout my dollars",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",postures,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",postures,19,"Like my father, 'bout my family, I'm 'bout my dollars",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",father,INNER,REPEAT,spelling,HIGH,N
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",father,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",got,INNER,SLANT,cmu,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",like,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",Like,INNER,REPEAT,spelling,HIGH,N
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",Pardon,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",Pardon,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",got,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",postures,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,18,"Pardon me and all my postures, say I'm like my father (Don't say that)",postures,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",got,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",'bout,19,"Like my father, 'bout my family, I'm 'bout my dollars",'bout,INNER,REPEAT,spelling,HIGH,N
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",father,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",father,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",dollars,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",got,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",family,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",thang,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",father,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",father,INNER,REPEAT,spelling,HIGH,N
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",father,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",got,INNER,SLANT,cmu,MED,Y
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",Like,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",Like,INNER,REPEAT,spelling,HIGH,N
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",Like,21,"Like some diamonds, we came out the mud",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,19,"Like my father, 'bout my family, I'm 'bout my dollars",Like,21,"Like some diamonds, we came out the mud",Like,INNER,REPEAT,spelling,HIGH,N
+Father Figure,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",blocka,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",blocka,INNER,REPEAT,spelling,HIGH,N
+Father Figure,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",father,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",got,INNER,SLANT,cmu,MED,Y
+Father Figure,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",Like,21,"Like some diamonds, we came out the mud",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",Like,21,"Like some diamonds, we came out the mud",Like,INNER,REPEAT,spelling,HIGH,N
+Father Figure,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",father,22,"Got our names off of gangs, off of drugs (No Limit)",Got,INNER,SLANT,cmu,MED,Y
+Father Figure,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",got,22,"Got our names off of gangs, off of drugs (No Limit)",Got,INNER,REPEAT,spelling,HIGH,N
+Father Figure,20,"Like my father, got that thang on me, blocka-blocka (Ayy)",thang,22,"Got our names off of gangs, off of drugs (No Limit)",gangs,INNER,SLANT,cmu,MED,Y
+Father Figure,21,"Like some diamonds, we came out the mud",Like,21,"Like some diamonds, we came out the mud",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,21,"Like some diamonds, we came out the mud",some,21,"Like some diamonds, we came out the mud",mud,INNER,SLANT,cmu,MED,Y
+Father Figure,21,"Like some diamonds, we came out the mud",mud,22,"Got our names off of gangs, off of drugs (No Limit)",drugs,END,ASSONANCE,vowel,MED,Y
+Father Figure,21,"Like some diamonds, we came out the mud",came,22,"Got our names off of gangs, off of drugs (No Limit)",names,INNER,SLANT,cmu,MED,Y
+Father Figure,21,"Like some diamonds, we came out the mud",some,22,"Got our names off of gangs, off of drugs (No Limit)",drugs,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,21,"Like some diamonds, we came out the mud",came,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",came,INNER,REPEAT,spelling,HIGH,N
+Father Figure,21,"Like some diamonds, we came out the mud",came,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",chains,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,21,"Like some diamonds, we came out the mud",mud,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",club,INNER,SLANT,cmu,MED,Y
+Father Figure,21,"Like some diamonds, we came out the mud",some,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",club,INNER,SLANT,cmu,MED,Y
+Father Figure,22,"Got our names off of gangs, off of drugs (No Limit)",drugs,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",club,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,22,"Got our names off of gangs, off of drugs (No Limit)",gangs,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",hang,INNER,SLANT,cmu,MED,Y
+Father Figure,22,"Got our names off of gangs, off of drugs (No Limit)",Got,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",got,INNER,REPEAT,spelling,HIGH,N
+Father Figure,22,"Got our names off of gangs, off of drugs (No Limit)",names,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",came,INNER,SLANT,cmu,MED,Y
+Father Figure,22,"Got our names off of gangs, off of drugs (No Limit)",names,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",chains,INNER,SLANT,cmu,MED,Y
+Father Figure,22,"Got our names off of gangs, off of drugs (No Limit)",names,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,22,"Got our names off of gangs, off of drugs (No Limit)",names,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",came,INNER,SLANT,cmu,MED,Y
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",chains,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",came,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",'bout,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",'bout,INNER,REPEAT,spelling,HIGH,N
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",came,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",came,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",came,INNER,REPEAT,spelling,HIGH,N
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",chains,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",ain't,INNER,SLANT,cmu,MED,Y
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",chains,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",came,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",check,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",neck,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",check,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",respect,INNER,SLANT,cmu,MED,Y
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",'bout,25,I'm just a yute from the trench 'bout to put all my niggas on,'bout,INNER,REPEAT,spelling,HIGH,N
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",check,25,I'm just a yute from the trench 'bout to put all my niggas on,trench,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,23,"We got chains, but don't hang in the club 'cause we came 'bout a check (Yeah)",got,25,I'm just a yute from the trench 'bout to put all my niggas on,niggas,INNER,SLANT,cmu,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",ain't,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",came,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",respect,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",neck,INNER,SLANT,cmu,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",'bout,25,I'm just a yute from the trench 'bout to put all my niggas on,'bout,INNER,REPEAT,spelling,HIGH,N
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",neck,25,I'm just a yute from the trench 'bout to put all my niggas on,trench,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",respect,25,I'm just a yute from the trench 'bout to put all my niggas on,trench,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",nigga,26,"And when we never had no drill for the place, we stick it on",stick,END,SLANT,spelling,LOW,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",ain't,26,"And when we never had no drill for the place, we stick it on",place,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",came,26,"And when we never had no drill for the place, we stick it on",place,INNER,SLANT,cmu,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",killin,26,"And when we never had no drill for the place, we stick it on",drill,INNER,SLANT,cmu,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",killin,26,"And when we never had no drill for the place, we stick it on",stick,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",neck,26,"And when we never had no drill for the place, we stick it on",never,INNER,SLANT,cmu,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",neck,26,"And when we never had no drill for the place, we stick it on",when,INNER,SLANT,cmu,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",respect,26,"And when we never had no drill for the place, we stick it on",never,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,24,"And I'm killin' 'bout respect, why they ain't came off my neck, nigga? (G Herbo)",respect,26,"And when we never had no drill for the place, we stick it on",when,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,25,I'm just a yute from the trench 'bout to put all my niggas on,trench,26,"And when we never had no drill for the place, we stick it on",never,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,25,I'm just a yute from the trench 'bout to put all my niggas on,trench,26,"And when we never had no drill for the place, we stick it on",when,INNER,SLANT,cmu,MED,Y
+Father Figure,25,I'm just a yute from the trench 'bout to put all my niggas on,all,27,"I make some real shit that you feel in your heart, but still sing along",along,INNER,SLANT,cmu,MED,Y
+Father Figure,25,I'm just a yute from the trench 'bout to put all my niggas on,niggas,27,"I make some real shit that you feel in your heart, but still sing along",heart,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,25,I'm just a yute from the trench 'bout to put all my niggas on,yute,27,"I make some real shit that you feel in your heart, but still sing along",feel,INNER,SLANT,spelling,LOW,Y
+Father Figure,25,I'm just a yute from the trench 'bout to put all my niggas on,yute,27,"I make some real shit that you feel in your heart, but still sing along",real,INNER,SLANT,spelling,LOW,Y
+Father Figure,25,I'm just a yute from the trench 'bout to put all my niggas on,niggas,29,"And I know we said prevention's better than kill, so I got it",got,END,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",drill,26,"And when we never had no drill for the place, we stick it on",stick,INNER,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",when,26,"And when we never had no drill for the place, we stick it on",never,INNER,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",drill,27,"I make some real shit that you feel in your heart, but still sing along",shit,INNER,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",drill,27,"I make some real shit that you feel in your heart, but still sing along",sing,INNER,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",drill,27,"I make some real shit that you feel in your heart, but still sing along",still,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",place,27,"I make some real shit that you feel in your heart, but still sing along",make,INNER,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",stick,27,"I make some real shit that you feel in your heart, but still sing along",shit,INNER,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",stick,27,"I make some real shit that you feel in your heart, but still sing along",sing,INNER,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",stick,27,"I make some real shit that you feel in your heart, but still sing along",still,INNER,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",drill,28,"Tryna shoot niggas though, black on black crime, I think is wrong",think,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",had,28,"Tryna shoot niggas though, black on black crime, I think is wrong",black,INNER,SLANT,cmu,MED,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",no,28,"Tryna shoot niggas though, black on black crime, I think is wrong",though,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,26,"And when we never had no drill for the place, we stick it on",stick,28,"Tryna shoot niggas though, black on black crime, I think is wrong",think,INNER,SLANT,cmu,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",real,27,"I make some real shit that you feel in your heart, but still sing along",feel,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",shit,27,"I make some real shit that you feel in your heart, but still sing along",sing,INNER,SLANT,cmu,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",shit,27,"I make some real shit that you feel in your heart, but still sing along",still,INNER,SLANT,cmu,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",still,27,"I make some real shit that you feel in your heart, but still sing along",sing,INNER,SLANT,cmu,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",along,28,"Tryna shoot niggas though, black on black crime, I think is wrong",wrong,END,PERFECT,cmu,HIGH,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",feel,28,"Tryna shoot niggas though, black on black crime, I think is wrong",Tryna,INNER,SLANT,spelling,LOW,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",real,28,"Tryna shoot niggas though, black on black crime, I think is wrong",Tryna,INNER,SLANT,spelling,LOW,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",shit,28,"Tryna shoot niggas though, black on black crime, I think is wrong",think,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",sing,28,"Tryna shoot niggas though, black on black crime, I think is wrong",think,INNER,SLANT,cmu,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",still,28,"Tryna shoot niggas though, black on black crime, I think is wrong",think,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",heart,29,"And I know we said prevention's better than kill, so I got it",got,INNER,SLANT,cmu,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",shit,29,"And I know we said prevention's better than kill, so I got it",kill,INNER,SLANT,cmu,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",sing,29,"And I know we said prevention's better than kill, so I got it",kill,INNER,SLANT,cmu,MED,Y
+Father Figure,27,"I make some real shit that you feel in your heart, but still sing along",still,29,"And I know we said prevention's better than kill, so I got it",kill,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,28,"Tryna shoot niggas though, black on black crime, I think is wrong",black,28,"Tryna shoot niggas though, black on black crime, I think is wrong",black,INNER,REPEAT,spelling,HIGH,N
+Father Figure,28,"Tryna shoot niggas though, black on black crime, I think is wrong",think,29,"And I know we said prevention's better than kill, so I got it",kill,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,28,"Tryna shoot niggas though, black on black crime, I think is wrong",though,29,"And I know we said prevention's better than kill, so I got it",know,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,28,"Tryna shoot niggas though, black on black crime, I think is wrong",crime,30,I'll do this whole UK tour with these fours in my pocket (Baow),I'll,INNER,SLANT,cmu,MED,Y
+Father Figure,28,"Tryna shoot niggas though, black on black crime, I think is wrong",though,30,I'll do this whole UK tour with these fours in my pocket (Baow),whole,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,28,"Tryna shoot niggas though, black on black crime, I think is wrong",Tryna,30,I'll do this whole UK tour with these fours in my pocket (Baow),these,INNER,SLANT,spelling,LOW,Y
+Father Figure,28,"Tryna shoot niggas though, black on black crime, I think is wrong",wrong,30,I'll do this whole UK tour with these fours in my pocket (Baow),fours,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",said,29,"And I know we said prevention's better than kill, so I got it",better,INNER,SLANT,cmu,MED,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",got,30,I'll do this whole UK tour with these fours in my pocket (Baow),pocket,END,SLANT,cmu,MED,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",kill,30,I'll do this whole UK tour with these fours in my pocket (Baow),I'll,INNER,SLANT,spelling,LOW,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",know,30,I'll do this whole UK tour with these fours in my pocket (Baow),whole,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",got,31,Niggas who ain't outside on the 'net be spreading gossip,gossip,END,ASSONANCE,vowel,MED,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",better,31,Niggas who ain't outside on the 'net be spreading gossip,'net,INNER,SLANT,cmu,MED,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",better,31,Niggas who ain't outside on the 'net be spreading gossip,spreading,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",said,31,Niggas who ain't outside on the 'net be spreading gossip,'net,INNER,SLANT,cmu,MED,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",said,31,Niggas who ain't outside on the 'net be spreading gossip,spreading,INNER,SLANT,cmu,MED,Y
+Father Figure,29,"And I know we said prevention's better than kill, so I got it",got,32,"And this is facts, before you mention my name, leave a deposit (Uh)",deposit,END,SLANT,cmu,MED,Y
+Father Figure,30,I'll do this whole UK tour with these fours in my pocket (Baow),pocket,31,Niggas who ain't outside on the 'net be spreading gossip,gossip,END,ASSONANCE,vowel,MED,Y
+Father Figure,30,I'll do this whole UK tour with these fours in my pocket (Baow),I'll,31,Niggas who ain't outside on the 'net be spreading gossip,outside,INNER,SLANT,cmu,MED,Y
+Father Figure,30,I'll do this whole UK tour with these fours in my pocket (Baow),UK,31,Niggas who ain't outside on the 'net be spreading gossip,ain't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,30,I'll do this whole UK tour with these fours in my pocket (Baow),pocket,32,"And this is facts, before you mention my name, leave a deposit (Uh)",deposit,END,SLANT,cmu,MED,Y
+Father Figure,30,I'll do this whole UK tour with these fours in my pocket (Baow),fours,32,"And this is facts, before you mention my name, leave a deposit (Uh)",before,INNER,SLANT,cmu,MED,Y
+Father Figure,30,I'll do this whole UK tour with these fours in my pocket (Baow),these,32,"And this is facts, before you mention my name, leave a deposit (Uh)",leave,INNER,SLANT,cmu,MED,Y
+Father Figure,30,I'll do this whole UK tour with these fours in my pocket (Baow),UK,32,"And this is facts, before you mention my name, leave a deposit (Uh)",name,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,'net,31,Niggas who ain't outside on the 'net be spreading gossip,spreading,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,gossip,32,"And this is facts, before you mention my name, leave a deposit (Uh)",deposit,END,SLANT,cmu,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,'net,32,"And this is facts, before you mention my name, leave a deposit (Uh)",mention,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,ain't,32,"And this is facts, before you mention my name, leave a deposit (Uh)",name,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,spreading,32,"And this is facts, before you mention my name, leave a deposit (Uh)",mention,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,'net,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",dead,INNER,SLANT,cmu,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,'net,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",ever,INNER,SLANT,cmu,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,'net,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",flesh,INNER,SLANT,cmu,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,Niggas,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",nigga,INNER,SLANT,spelling,LOW,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,spreading,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",dead,INNER,SLANT,cmu,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,spreading,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",ever,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,31,Niggas who ain't outside on the 'net be spreading gossip,spreading,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",flesh,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",before,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",saw,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",before,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",thought,INNER,SLANT,cmu,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",leave,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",he's,INNER,SLANT,cmu,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",mention,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",dead,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",mention,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",ever,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",mention,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",flesh,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",facts,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",Had,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",leave,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",dreaming,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",mention,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",again,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,32,"And this is facts, before you mention my name, leave a deposit (Uh)",name,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",playing,INNER,SLANT,cmu,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",ever,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",dead,INNER,SLANT,cmu,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",ever,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",flesh,INNER,SLANT,cmu,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",flesh,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",dead,INNER,SLANT,cmu,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",thought,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",saw,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",dead,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",again,END,SLANT,cmu,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",ever,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",again,INNER,SLANT,cmu,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",flesh,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",again,INNER,SLANT,cmu,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",he's,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",dreaming,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",dead,35,"Observation on my block, don't close shop, we just think ahead",ahead,END,PERFECT,cmu,HIGH,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",ever,35,"Observation on my block, don't close shop, we just think ahead",ahead,INNER,SLANT,cmu,MED,Y
+Father Figure,33,"You ever thought you saw your nigga in the flesh, but he's dead? (Stressed)",flesh,35,"Observation on my block, don't close shop, we just think ahead",ahead,INNER,SLANT,cmu,MED,Y
+Father Figure,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",him,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",tricks,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",again,35,"Observation on my block, don't close shop, we just think ahead",ahead,END,SLANT,cmu,MED,Y
+Father Figure,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",him,35,"Observation on my block, don't close shop, we just think ahead",think,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",playing,35,"Observation on my block, don't close shop, we just think ahead",Observation,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",tricks,35,"Observation on my block, don't close shop, we just think ahead",think,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",again,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",when,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",dreaming,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",Even,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",him,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",gripping,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,34,"Had I been dreaming 'bout him too, just my mind playing tricks again (Uh)",tricks,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",gripping,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",block,35,"Observation on my block, don't close shop, we just think ahead",shop,INNER,SLANT,cmu,MED,Y
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",don't,35,"Observation on my block, don't close shop, we just think ahead",close,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",ahead,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",when,INNER,SLANT,cmu,MED,Y
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",block,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",top,INNER,SLANT,cmu,MED,Y
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",shop,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",top,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",think,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",gripping,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",close,37,And I don't say this shit for clout or try to glorify the life,don't,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",don't,37,And I don't say this shit for clout or try to glorify the life,don't,INNER,REPEAT,spelling,HIGH,N
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",Observation,37,And I don't say this shit for clout or try to glorify the life,say,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,35,"Observation on my block, don't close shop, we just think ahead",think,37,And I don't say this shit for clout or try to glorify the life,shit,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",when,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",skengs,INNER,ASSONANCE,vowel,LOW,N
+Father Figure,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",gripping,37,And I don't say this shit for clout or try to glorify the life,shit,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",skengs,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",remix,INNER,SLANT,spelling,LOW,Y
+Father Figure,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",top,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",got,INNER,SLANT,cmu,MED,Y
+Father Figure,36,"Even when it's on top in the hood, we gripping skengs (Yeah, baow)",top,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",hot,INNER,SLANT,cmu,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,glorify,37,And I don't say this shit for clout or try to glorify the life,life,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,try,37,And I don't say this shit for clout or try to glorify the life,glorify,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,try,37,And I don't say this shit for clout or try to glorify the life,life,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,life,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",white,END,SLANT,cmu,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,clout,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",'bout,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,glorify,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",purify,INNER,MULTI,multi,HIGH,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,glorify,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",white,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,life,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",purify,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,try,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",purify,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,try,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",white,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,try glorify,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",'bout purify,INNER,MULTI,multi,HIGH,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,life,39,"Like home invasions, I just walked in and I caught him by surprise",surprise,END,SLANT,cmu,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,don't,39,"Like home invasions, I just walked in and I caught him by surprise",home,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,glorify,39,"Like home invasions, I just walked in and I caught him by surprise",by,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,glorify,39,"Like home invasions, I just walked in and I caught him by surprise",Like,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,glorify,39,"Like home invasions, I just walked in and I caught him by surprise",surprise,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,life,39,"Like home invasions, I just walked in and I caught him by surprise",by,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,life,39,"Like home invasions, I just walked in and I caught him by surprise",Like,INNER,SLANT,cmu,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,say,39,"Like home invasions, I just walked in and I caught him by surprise",invasions,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,shit,39,"Like home invasions, I just walked in and I caught him by surprise",him,INNER,SLANT,cmu,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,try,39,"Like home invasions, I just walked in and I caught him by surprise",by,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,try,39,"Like home invasions, I just walked in and I caught him by surprise",Like,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,try,39,"Like home invasions, I just walked in and I caught him by surprise",surprise,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,37,And I don't say this shit for clout or try to glorify the life,life,40,"It's always better when it's random, niggas pussy without their pipes",pipes,END,ASSONANCE,vowel,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",got,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",hot,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",pour,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",water,INNER,SLANT,cmu,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",purify,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",white,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",some,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",some,INNER,REPEAT,spelling,HIGH,N
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",white,39,"Like home invasions, I just walked in and I caught him by surprise",surprise,END,SLANT,cmu,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",got,39,"Like home invasions, I just walked in and I caught him by surprise",caught,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",hot,39,"Like home invasions, I just walked in and I caught him by surprise",caught,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",pour,39,"Like home invasions, I just walked in and I caught him by surprise",walked,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",purify,39,"Like home invasions, I just walked in and I caught him by surprise",by,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",purify,39,"Like home invasions, I just walked in and I caught him by surprise",Like,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",purify,39,"Like home invasions, I just walked in and I caught him by surprise",surprise,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",water,39,"Like home invasions, I just walked in and I caught him by surprise",walked,INNER,SLANT,cmu,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",white,39,"Like home invasions, I just walked in and I caught him by surprise",by,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",white,39,"Like home invasions, I just walked in and I caught him by surprise",Like,INNER,SLANT,cmu,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",white,40,"It's always better when it's random, niggas pussy without their pipes",pipes,END,ASSONANCE,vowel,MED,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",'bout,40,"It's always better when it's random, niggas pussy without their pipes",without,INNER,PERFECT,cmu,HIGH,Y
+Father Figure,38,"I got some remix, I pour some hot water, I'm 'bout to purify the white",purify,40,"It's always better when it's random, niggas pussy without their pipes",pipes,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,39,"Like home invasions, I just walked in and I caught him by surprise",by,39,"Like home invasions, I just walked in and I caught him by surprise",surprise,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,39,"Like home invasions, I just walked in and I caught him by surprise",Like,39,"Like home invasions, I just walked in and I caught him by surprise",by,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,39,"Like home invasions, I just walked in and I caught him by surprise",Like,39,"Like home invasions, I just walked in and I caught him by surprise",surprise,INNER,SLANT,cmu,MED,Y
+Father Figure,39,"Like home invasions, I just walked in and I caught him by surprise",surprise,40,"It's always better when it's random, niggas pussy without their pipes",pipes,END,ASSONANCE,vowel,MED,Y
+Father Figure,39,"Like home invasions, I just walked in and I caught him by surprise",by,40,"It's always better when it's random, niggas pussy without their pipes",pipes,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,39,"Like home invasions, I just walked in and I caught him by surprise",invasions,40,"It's always better when it's random, niggas pussy without their pipes",always,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,39,"Like home invasions, I just walked in and I caught him by surprise",Like,40,"It's always better when it's random, niggas pussy without their pipes",pipes,INNER,ASSONANCE,vowel,MED,Y
+Father Figure,40,"It's always better when it's random, niggas pussy without their pipes",better,40,"It's always better when it's random, niggas pussy without their pipes",when,INNER,SLANT,cmu,MED,Y

@@ -1,0 +1,254 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+No Love,1,Ain't no love man,man,2,They ain't been where we been man,man,END,REPEAT,spelling,HIGH,N
+No Love,1,Ain't no love man,Ain't,2,They ain't been where we been man,ain't,INNER,REPEAT,spelling,HIGH,N
+No Love,1,Ain't no love man,Ain't,3,They ain't seen what we seen,ain't,INNER,REPEAT,spelling,HIGH,N
+No Love,1,Ain't no love man,love,3,They ain't seen what we seen,what,INNER,SLANT,cmu,MED,Y
+No Love,1,Ain't no love man,man,4,If it ain't 'bout no money man,man,END,REPEAT,spelling,HIGH,N
+No Love,1,Ain't no love man,man,5,Ain't no love in these streets man,man,END,REPEAT,spelling,HIGH,N
+No Love,2,They ain't been where we been man,ain't,3,They ain't seen what we seen,ain't,INNER,REPEAT,spelling,HIGH,N
+No Love,2,They ain't been where we been man,man,4,If it ain't 'bout no money man,man,END,REPEAT,spelling,HIGH,N
+No Love,2,They ain't been where we been man,ain't,4,If it ain't 'bout no money man,ain't,INNER,REPEAT,spelling,HIGH,N
+No Love,2,They ain't been where we been man,man,5,Ain't no love in these streets man,man,END,REPEAT,spelling,HIGH,N
+No Love,3,They ain't seen what we seen,seen,3,They ain't seen what we seen,seen,INNER,REPEAT,spelling,HIGH,N
+No Love,3,They ain't seen what we seen,ain't,4,If it ain't 'bout no money man,ain't,INNER,REPEAT,spelling,HIGH,N
+No Love,3,They ain't seen what we seen,what,4,If it ain't 'bout no money man,money,INNER,SLANT,cmu,MED,Y
+No Love,3,They ain't seen what we seen,ain't,5,Ain't no love in these streets man,Ain't,INNER,REPEAT,spelling,HIGH,N
+No Love,3,They ain't seen what we seen,seen,5,Ain't no love in these streets man,streets,INNER,ASSONANCE,vowel,MED,Y
+No Love,3,They ain't seen what we seen,seen,5,Ain't no love in these streets man,these,INNER,SLANT,cmu,MED,Y
+No Love,3,They ain't seen what we seen,what,5,Ain't no love in these streets man,love,INNER,SLANT,cmu,MED,Y
+No Love,4,If it ain't 'bout no money man,man,5,Ain't no love in these streets man,man,END,REPEAT,spelling,HIGH,N
+No Love,4,If it ain't 'bout no money man,ain't,5,Ain't no love in these streets man,Ain't,INNER,REPEAT,spelling,HIGH,N
+No Love,4,If it ain't 'bout no money man,money,5,Ain't no love in these streets man,love,INNER,SLANT,cmu,MED,Y
+No Love,4,If it ain't 'bout no money man,no,5,Ain't no love in these streets man,no,INNER,REPEAT,spelling,HIGH,N
+No Love,4,If it ain't 'bout no money man,no,6,"These streets got my heart cold, yeah, hey, uh",cold,INNER,ASSONANCE,vowel,MED,Y
+No Love,5,Ain't no love in these streets man,these,5,Ain't no love in these streets man,streets,INNER,ASSONANCE,vowel,MED,Y
+No Love,5,Ain't no love in these streets man,no,6,"These streets got my heart cold, yeah, hey, uh",cold,INNER,ASSONANCE,vowel,MED,Y
+No Love,5,Ain't no love in these streets man,streets,6,"These streets got my heart cold, yeah, hey, uh",streets,INNER,REPEAT,spelling,HIGH,N
+No Love,5,Ain't no love in these streets man,streets,6,"These streets got my heart cold, yeah, hey, uh",These,INNER,ASSONANCE,vowel,MED,Y
+No Love,5,Ain't no love in these streets man,these,6,"These streets got my heart cold, yeah, hey, uh",streets,INNER,ASSONANCE,vowel,MED,Y
+No Love,5,Ain't no love in these streets man,these,6,"These streets got my heart cold, yeah, hey, uh",These,INNER,REPEAT,spelling,HIGH,N
+No Love,5,Ain't no love in these streets man,no,7,"So cold, so cold, so cold, yeah hey",cold,INNER,ASSONANCE,vowel,MED,Y
+No Love,6,"These streets got my heart cold, yeah, hey, uh",got,6,"These streets got my heart cold, yeah, hey, uh",heart,INNER,SLANT,cmu,MED,Y
+No Love,6,"These streets got my heart cold, yeah, hey, uh",These,6,"These streets got my heart cold, yeah, hey, uh",streets,INNER,ASSONANCE,vowel,MED,Y
+No Love,6,"These streets got my heart cold, yeah, hey, uh",cold,7,"So cold, so cold, so cold, yeah hey",cold,END,REPEAT,spelling,HIGH,N
+No Love,6,"These streets got my heart cold, yeah, hey, uh",cold,7,"So cold, so cold, so cold, yeah hey",cold,INNER,REPEAT,spelling,HIGH,N
+No Love,6,"These streets got my heart cold, yeah, hey, uh",cold,8,A bitch can't get no love from a nigga,no,INNER,ASSONANCE,vowel,MED,Y
+No Love,7,"So cold, so cold, so cold, yeah hey",cold,7,"So cold, so cold, so cold, yeah hey",cold,INNER,REPEAT,spelling,HIGH,N
+No Love,7,"So cold, so cold, so cold, yeah hey",cold,8,A bitch can't get no love from a nigga,no,INNER,ASSONANCE,vowel,MED,Y
+No Love,7,"So cold, so cold, so cold, yeah hey",cold,9,"A bitch can't get no love from a nigga, yeah hey",no,INNER,ASSONANCE,vowel,MED,Y
+No Love,8,A bitch can't get no love from a nigga,nigga,9,"A bitch can't get no love from a nigga, yeah hey",nigga,END,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,bitch,9,"A bitch can't get no love from a nigga, yeah hey",bitch,INNER,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,can't,9,"A bitch can't get no love from a nigga, yeah hey",can't,INNER,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,get,9,"A bitch can't get no love from a nigga, yeah hey",get,INNER,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,love,9,"A bitch can't get no love from a nigga, yeah hey",love,INNER,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,no,9,"A bitch can't get no love from a nigga, yeah hey",no,INNER,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,nigga,10,You know he can't get no love from a nigga,nigga,END,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,can't,10,You know he can't get no love from a nigga,can't,INNER,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,get,10,You know he can't get no love from a nigga,get,INNER,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,love,10,You know he can't get no love from a nigga,love,INNER,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,no,10,You know he can't get no love from a nigga,know,INNER,PERFECT,cmu,HIGH,Y
+No Love,8,A bitch can't get no love from a nigga,no,10,You know he can't get no love from a nigga,no,INNER,REPEAT,spelling,HIGH,N
+No Love,8,A bitch can't get no love from a nigga,nigga,11,"No, he can't get no love from a nigga, ayy",nigga,END,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",nigga,10,You know he can't get no love from a nigga,nigga,END,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",can't,10,You know he can't get no love from a nigga,can't,INNER,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",get,10,You know he can't get no love from a nigga,get,INNER,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",love,10,You know he can't get no love from a nigga,love,INNER,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",no,10,You know he can't get no love from a nigga,know,INNER,PERFECT,cmu,HIGH,Y
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",no,10,You know he can't get no love from a nigga,no,INNER,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",nigga,11,"No, he can't get no love from a nigga, ayy",nigga,END,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",can't,11,"No, he can't get no love from a nigga, ayy",can't,INNER,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",get,11,"No, he can't get no love from a nigga, ayy",get,INNER,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",love,11,"No, he can't get no love from a nigga, ayy",love,INNER,REPEAT,spelling,HIGH,N
+No Love,9,"A bitch can't get no love from a nigga, yeah hey",no,11,"No, he can't get no love from a nigga, ayy",No,INNER,REPEAT,spelling,HIGH,N
+No Love,10,You know he can't get no love from a nigga,know,10,You know he can't get no love from a nigga,no,INNER,PERFECT,cmu,HIGH,Y
+No Love,10,You know he can't get no love from a nigga,nigga,11,"No, he can't get no love from a nigga, ayy",nigga,END,REPEAT,spelling,HIGH,N
+No Love,10,You know he can't get no love from a nigga,can't,11,"No, he can't get no love from a nigga, ayy",can't,INNER,REPEAT,spelling,HIGH,N
+No Love,10,You know he can't get no love from a nigga,get,11,"No, he can't get no love from a nigga, ayy",get,INNER,REPEAT,spelling,HIGH,N
+No Love,10,You know he can't get no love from a nigga,know,11,"No, he can't get no love from a nigga, ayy",No,INNER,PERFECT,cmu,HIGH,Y
+No Love,10,You know he can't get no love from a nigga,love,11,"No, he can't get no love from a nigga, ayy",love,INNER,REPEAT,spelling,HIGH,N
+No Love,10,You know he can't get no love from a nigga,no,11,"No, he can't get no love from a nigga, ayy",No,INNER,REPEAT,spelling,HIGH,N
+No Love,10,You know he can't get no love from a nigga,know,12,"On my mama, that's on my soul",soul,INNER,ASSONANCE,vowel,MED,Y
+No Love,10,You know he can't get no love from a nigga,no,12,"On my mama, that's on my soul",soul,INNER,ASSONANCE,vowel,MED,Y
+No Love,11,"No, he can't get no love from a nigga, ayy",No,11,"No, he can't get no love from a nigga, ayy",no,INNER,REPEAT,spelling,HIGH,N
+No Love,11,"No, he can't get no love from a nigga, ayy",No,12,"On my mama, that's on my soul",soul,INNER,ASSONANCE,vowel,MED,Y
+No Love,11,"No, he can't get no love from a nigga, ayy",can't,13,"Stand tall, no bin to fold",Stand,INNER,SLANT,cmu,MED,Y
+No Love,11,"No, he can't get no love from a nigga, ayy",No,13,"Stand tall, no bin to fold",fold,INNER,ASSONANCE,vowel,MED,Y
+No Love,11,"No, he can't get no love from a nigga, ayy",No,13,"Stand tall, no bin to fold",no,INNER,REPEAT,spelling,HIGH,N
+No Love,12,"On my mama, that's on my soul",soul,13,"Stand tall, no bin to fold",fold,END,SLANT,cmu,MED,Y
+No Love,12,"On my mama, that's on my soul",soul,13,"Stand tall, no bin to fold",no,INNER,ASSONANCE,vowel,MED,Y
+No Love,12,"On my mama, that's on my soul",soul,14,"If I'm ridin', my niggas roll",roll,END,PERFECT,cmu,HIGH,Y
+No Love,12,"On my mama, that's on my soul",soul,15,Ain't none of mines ever told,told,END,SLANT,cmu,MED,Y
+No Love,12,"On my mama, that's on my soul",soul,16,"If you need it, I got it sold",sold,END,SLANT,cmu,MED,Y
+No Love,13,"Stand tall, no bin to fold",no,13,"Stand tall, no bin to fold",fold,INNER,ASSONANCE,vowel,MED,Y
+No Love,13,"Stand tall, no bin to fold",fold,14,"If I'm ridin', my niggas roll",roll,END,SLANT,cmu,MED,Y
+No Love,13,"Stand tall, no bin to fold",no,14,"If I'm ridin', my niggas roll",roll,INNER,ASSONANCE,vowel,MED,Y
+No Love,13,"Stand tall, no bin to fold",fold,15,Ain't none of mines ever told,told,END,PERFECT,cmu,HIGH,Y
+No Love,13,"Stand tall, no bin to fold",no,15,Ain't none of mines ever told,told,INNER,ASSONANCE,vowel,MED,Y
+No Love,13,"Stand tall, no bin to fold",fold,16,"If you need it, I got it sold",sold,END,PERFECT,cmu,HIGH,Y
+No Love,13,"Stand tall, no bin to fold",fold,17,"Heartless, my heart is cold",cold,END,PERFECT,cmu,HIGH,Y
+No Love,14,"If I'm ridin', my niggas roll",roll,15,Ain't none of mines ever told,told,END,SLANT,cmu,MED,Y
+No Love,14,"If I'm ridin', my niggas roll",ridin,15,Ain't none of mines ever told,mines,INNER,ASSONANCE,vowel,MED,Y
+No Love,14,"If I'm ridin', my niggas roll",roll,16,"If you need it, I got it sold",sold,END,SLANT,cmu,MED,Y
+No Love,14,"If I'm ridin', my niggas roll",roll,17,"Heartless, my heart is cold",cold,END,SLANT,cmu,MED,Y
+No Love,14,"If I'm ridin', my niggas roll",roll,18,"Don't try us, we lock and load",load,END,SLANT,cmu,MED,Y
+No Love,15,Ain't none of mines ever told,told,16,"If you need it, I got it sold",sold,END,PERFECT,cmu,HIGH,Y
+No Love,15,Ain't none of mines ever told,told,17,"Heartless, my heart is cold",cold,END,PERFECT,cmu,HIGH,Y
+No Love,15,Ain't none of mines ever told,told,18,"Don't try us, we lock and load",load,END,SLANT,cmu,MED,Y
+No Love,15,Ain't none of mines ever told,told,19,Rather rob and just get this dough,dough,END,ASSONANCE,vowel,MED,Y
+No Love,16,"If you need it, I got it sold",sold,17,"Heartless, my heart is cold",cold,END,PERFECT,cmu,HIGH,Y
+No Love,16,"If you need it, I got it sold",got,17,"Heartless, my heart is cold",heart,INNER,SLANT,cmu,MED,Y
+No Love,16,"If you need it, I got it sold",got,17,"Heartless, my heart is cold",Heartless,INNER,ASSONANCE,vowel,MED,Y
+No Love,16,"If you need it, I got it sold",sold,18,"Don't try us, we lock and load",load,END,SLANT,cmu,MED,Y
+No Love,16,"If you need it, I got it sold",got,18,"Don't try us, we lock and load",lock,INNER,SLANT,cmu,MED,Y
+No Love,16,"If you need it, I got it sold",sold,18,"Don't try us, we lock and load",Don't,INNER,ASSONANCE,vowel,MED,Y
+No Love,16,"If you need it, I got it sold",sold,19,Rather rob and just get this dough,dough,END,ASSONANCE,vowel,MED,Y
+No Love,17,"Heartless, my heart is cold",Heartless,17,"Heartless, my heart is cold",heart,INNER,ASSONANCE,vowel,MED,Y
+No Love,17,"Heartless, my heart is cold",cold,18,"Don't try us, we lock and load",load,END,SLANT,cmu,MED,Y
+No Love,17,"Heartless, my heart is cold",cold,18,"Don't try us, we lock and load",Don't,INNER,ASSONANCE,vowel,MED,Y
+No Love,17,"Heartless, my heart is cold",heart,18,"Don't try us, we lock and load",lock,INNER,ASSONANCE,vowel,MED,Y
+No Love,17,"Heartless, my heart is cold",Heartless,18,"Don't try us, we lock and load",lock,INNER,ASSONANCE,vowel,MED,Y
+No Love,17,"Heartless, my heart is cold",cold,19,Rather rob and just get this dough,dough,END,ASSONANCE,vowel,MED,Y
+No Love,17,"Heartless, my heart is cold",heart,19,Rather rob and just get this dough,rob,INNER,ASSONANCE,vowel,MED,Y
+No Love,17,"Heartless, my heart is cold",Heartless,19,Rather rob and just get this dough,rob,INNER,ASSONANCE,vowel,MED,Y
+No Love,18,"Don't try us, we lock and load",Don't,18,"Don't try us, we lock and load",load,INNER,ASSONANCE,vowel,MED,Y
+No Love,18,"Don't try us, we lock and load",load,19,Rather rob and just get this dough,dough,END,ASSONANCE,vowel,MED,Y
+No Love,18,"Don't try us, we lock and load",Don't,19,Rather rob and just get this dough,dough,INNER,ASSONANCE,vowel,MED,Y
+No Love,18,"Don't try us, we lock and load",lock,19,Rather rob and just get this dough,rob,INNER,SLANT,cmu,MED,Y
+No Love,18,"Don't try us, we lock and load",try,20,I been in these streets for a long time,time,INNER,ASSONANCE,vowel,MED,Y
+No Love,20,I been in these streets for a long time,these,20,I been in these streets for a long time,streets,INNER,ASSONANCE,vowel,MED,Y
+No Love,20,I been in these streets for a long time,time,21,"Ride 'til the wheels fall, that's a long ride",ride,END,SLANT,cmu,MED,Y
+No Love,20,I been in these streets for a long time,long,21,"Ride 'til the wheels fall, that's a long ride",fall,INNER,SLANT,cmu,MED,Y
+No Love,20,I been in these streets for a long time,long,21,"Ride 'til the wheels fall, that's a long ride",long,INNER,REPEAT,spelling,HIGH,N
+No Love,20,I been in these streets for a long time,streets,21,"Ride 'til the wheels fall, that's a long ride",wheels,INNER,ASSONANCE,vowel,MED,Y
+No Love,20,I been in these streets for a long time,these,21,"Ride 'til the wheels fall, that's a long ride",wheels,INNER,SLANT,cmu,MED,Y
+No Love,20,I been in these streets for a long time,time,21,"Ride 'til the wheels fall, that's a long ride",Ride,INNER,SLANT,cmu,MED,Y
+No Love,20,I been in these streets for a long time,time,22,"I'm good in every city, state, that's on all sides",sides,END,ASSONANCE,vowel,MED,Y
+No Love,20,I been in these streets for a long time,long,22,"I'm good in every city, state, that's on all sides",all,INNER,SLANT,cmu,MED,Y
+No Love,20,I been in these streets for a long time,time,23,"Hard times, I could depend on all mines, yeah",mines,END,ASSONANCE,vowel,MED,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",fall,21,"Ride 'til the wheels fall, that's a long ride",long,INNER,SLANT,cmu,MED,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",Ride,21,"Ride 'til the wheels fall, that's a long ride",ride,INNER,REPEAT,spelling,HIGH,N
+No Love,21,"Ride 'til the wheels fall, that's a long ride",ride,22,"I'm good in every city, state, that's on all sides",sides,END,SLANT,cmu,MED,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",'til,22,"I'm good in every city, state, that's on all sides",city,INNER,SLANT,cmu,MED,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",fall,22,"I'm good in every city, state, that's on all sides",all,INNER,PERFECT,cmu,HIGH,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",long,22,"I'm good in every city, state, that's on all sides",all,INNER,SLANT,cmu,MED,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",Ride,22,"I'm good in every city, state, that's on all sides",sides,INNER,SLANT,cmu,MED,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",ride,23,"Hard times, I could depend on all mines, yeah",mines,END,ASSONANCE,vowel,MED,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",fall,23,"Hard times, I could depend on all mines, yeah",all,INNER,PERFECT,cmu,HIGH,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",long,23,"Hard times, I could depend on all mines, yeah",all,INNER,SLANT,cmu,MED,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",Ride,23,"Hard times, I could depend on all mines, yeah",mines,INNER,ASSONANCE,vowel,MED,Y
+No Love,21,"Ride 'til the wheels fall, that's a long ride",Ride,23,"Hard times, I could depend on all mines, yeah",times,INNER,ASSONANCE,vowel,MED,Y
+No Love,22,"I'm good in every city, state, that's on all sides",sides,23,"Hard times, I could depend on all mines, yeah",mines,END,SLANT,cmu,MED,Y
+No Love,22,"I'm good in every city, state, that's on all sides",all,23,"Hard times, I could depend on all mines, yeah",all,INNER,REPEAT,spelling,HIGH,N
+No Love,22,"I'm good in every city, state, that's on all sides",every,23,"Hard times, I could depend on all mines, yeah",depend,INNER,ASSONANCE,vowel,MED,Y
+No Love,22,"I'm good in every city, state, that's on all sides",good,23,"Hard times, I could depend on all mines, yeah",could,INNER,PERFECT,cmu,HIGH,Y
+No Love,22,"I'm good in every city, state, that's on all sides",sides,23,"Hard times, I could depend on all mines, yeah",times,INNER,SLANT,cmu,MED,Y
+No Love,22,"I'm good in every city, state, that's on all sides",city,24,Headshot but I'm still breathing,still,INNER,SLANT,cmu,MED,Y
+No Love,23,"Hard times, I could depend on all mines, yeah",times,23,"Hard times, I could depend on all mines, yeah",mines,INNER,SLANT,cmu,MED,Y
+No Love,23,"Hard times, I could depend on all mines, yeah",Hard,24,Headshot but I'm still breathing,Headshot,INNER,ASSONANCE,vowel,MED,Y
+No Love,23,"Hard times, I could depend on all mines, yeah",Hard,25,"God's plan, so I'm here for a real reason",God's,INNER,ASSONANCE,vowel,MED,Y
+No Love,24,Headshot but I'm still breathing,breathing,25,"God's plan, so I'm here for a real reason",reason,END,SLANT,cmu,MED,Y
+No Love,24,Headshot but I'm still breathing,breathing,25,"God's plan, so I'm here for a real reason",here,INNER,ASSONANCE,vowel,MED,Y
+No Love,24,Headshot but I'm still breathing,breathing,25,"God's plan, so I'm here for a real reason",real,INNER,ASSONANCE,vowel,MED,Y
+No Love,24,Headshot but I'm still breathing,Headshot,25,"God's plan, so I'm here for a real reason",God's,INNER,ASSONANCE,vowel,MED,Y
+No Love,24,Headshot but I'm still breathing,breathing,26,"Every dollar, I'ma chase it, because I need it",need,END,ASSONANCE,vowel,MED,Y
+No Love,24,Headshot but I'm still breathing,Headshot,26,"Every dollar, I'ma chase it, because I need it",dollar,INNER,SLANT,cmu,MED,Y
+No Love,24,Headshot but I'm still breathing,still,26,"Every dollar, I'ma chase it, because I need it",I'ma,INNER,SLANT,spelling,LOW,Y
+No Love,24,Headshot but I'm still breathing,breathing,27,"I eat, we all eatin'",eatin,END,SLANT,cmu,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",here,25,"God's plan, so I'm here for a real reason",real,INNER,SLANT,cmu,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",here,25,"God's plan, so I'm here for a real reason",reason,INNER,ASSONANCE,vowel,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",real,25,"God's plan, so I'm here for a real reason",reason,INNER,ASSONANCE,vowel,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",reason,26,"Every dollar, I'ma chase it, because I need it",need,END,ASSONANCE,vowel,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",God's,26,"Every dollar, I'ma chase it, because I need it",dollar,INNER,ASSONANCE,vowel,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",here,26,"Every dollar, I'ma chase it, because I need it",need,INNER,SLANT,cmu,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",real,26,"Every dollar, I'ma chase it, because I need it",need,INNER,SLANT,cmu,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",reason,27,"I eat, we all eatin'",eatin,END,ASSONANCE,vowel,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",here,27,"I eat, we all eatin'",eat,INNER,SLANT,cmu,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",here,27,"I eat, we all eatin'",eatin,INNER,ASSONANCE,vowel,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",real,27,"I eat, we all eatin'",eat,INNER,SLANT,cmu,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",real,27,"I eat, we all eatin'",eatin,INNER,ASSONANCE,vowel,MED,Y
+No Love,25,"God's plan, so I'm here for a real reason",reason,27,"I eat, we all eatin'",eat,INNER,ASSONANCE,vowel,MED,Y
+No Love,26,"Every dollar, I'ma chase it, because I need it",need,27,"I eat, we all eatin'",eatin,END,ASSONANCE,vowel,MED,Y
+No Love,26,"Every dollar, I'ma chase it, because I need it",because,27,"I eat, we all eatin'",all,INNER,SLANT,cmu,MED,Y
+No Love,26,"Every dollar, I'ma chase it, because I need it",need,27,"I eat, we all eatin'",eat,INNER,SLANT,cmu,MED,Y
+No Love,26,"Every dollar, I'ma chase it, because I need it",dollar,28,"These niggas soundin' like me, but they bars not addin' up",bars,INNER,ASSONANCE,vowel,MED,Y
+No Love,26,"Every dollar, I'ma chase it, because I need it",dollar,28,"These niggas soundin' like me, but they bars not addin' up",not,INNER,SLANT,cmu,MED,Y
+No Love,26,"Every dollar, I'ma chase it, because I need it",need,28,"These niggas soundin' like me, but they bars not addin' up",These,INNER,SLANT,cmu,MED,Y
+No Love,27,"I eat, we all eatin'",eat,27,"I eat, we all eatin'",eatin,INNER,SLANT,cmu,MED,Y
+No Love,27,"I eat, we all eatin'",eat,28,"These niggas soundin' like me, but they bars not addin' up",These,INNER,SLANT,cmu,MED,Y
+No Love,27,"I eat, we all eatin'",eatin,28,"These niggas soundin' like me, but they bars not addin' up",These,INNER,ASSONANCE,vowel,MED,Y
+No Love,27,"I eat, we all eatin'",all,29,Yeah they stories sound good but they scars not matchin' up,stories,INNER,ASSONANCE,vowel,MED,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",bars,28,"These niggas soundin' like me, but they bars not addin' up",not,INNER,ASSONANCE,vowel,MED,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",addin,29,Yeah they stories sound good but they scars not matchin' up,matchin,END,SLANT,cmu,MED,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",bars,29,Yeah they stories sound good but they scars not matchin' up,not,INNER,ASSONANCE,vowel,MED,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",bars,29,Yeah they stories sound good but they scars not matchin' up,scars,INNER,PERFECT,cmu,HIGH,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",not,29,Yeah they stories sound good but they scars not matchin' up,not,INNER,REPEAT,spelling,HIGH,N
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",not,29,Yeah they stories sound good but they scars not matchin' up,scars,INNER,ASSONANCE,vowel,MED,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",soundin,29,Yeah they stories sound good but they scars not matchin' up,sound,INNER,SLANT,cmu,MED,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",addin,30,"See them boys be actin' tough, Valentine Massacre",Massacre,END,ASSONANCE,vowel,MED,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",addin,30,"See them boys be actin' tough, Valentine Massacre",actin,INNER,SLANT,cmu,MED,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",like,30,"See them boys be actin' tough, Valentine Massacre",Valentine,INNER,SLANT,cmu,MED,Y
+No Love,28,"These niggas soundin' like me, but they bars not addin' up",These,30,"See them boys be actin' tough, Valentine Massacre",See,INNER,ASSONANCE,vowel,MED,Y
+No Love,29,Yeah they stories sound good but they scars not matchin' up,scars,29,Yeah they stories sound good but they scars not matchin' up,not,INNER,ASSONANCE,vowel,MED,Y
+No Love,29,Yeah they stories sound good but they scars not matchin' up,matchin,30,"See them boys be actin' tough, Valentine Massacre",Massacre,END,ASSONANCE,vowel,MED,Y
+No Love,29,Yeah they stories sound good but they scars not matchin' up,matchin,30,"See them boys be actin' tough, Valentine Massacre",actin,INNER,ASSONANCE,vowel,MED,Y
+No Love,29,Yeah they stories sound good but they scars not matchin' up,matchin,31,"My boys'll come after you, they got the boss out his character, yeah",after,INNER,ASSONANCE,vowel,MED,Y
+No Love,29,Yeah they stories sound good but they scars not matchin' up,not,31,"My boys'll come after you, they got the boss out his character, yeah",boss,INNER,SLANT,cmu,MED,Y
+No Love,29,Yeah they stories sound good but they scars not matchin' up,not,31,"My boys'll come after you, they got the boss out his character, yeah",got,INNER,PERFECT,cmu,HIGH,Y
+No Love,29,Yeah they stories sound good but they scars not matchin' up,scars,31,"My boys'll come after you, they got the boss out his character, yeah",boss,INNER,ASSONANCE,vowel,MED,Y
+No Love,29,Yeah they stories sound good but they scars not matchin' up,scars,31,"My boys'll come after you, they got the boss out his character, yeah",got,INNER,ASSONANCE,vowel,MED,Y
+No Love,30,"See them boys be actin' tough, Valentine Massacre",actin,30,"See them boys be actin' tough, Valentine Massacre",Massacre,INNER,ASSONANCE,vowel,MED,Y
+No Love,30,"See them boys be actin' tough, Valentine Massacre",actin,31,"My boys'll come after you, they got the boss out his character, yeah",after,INNER,ASSONANCE,vowel,MED,Y
+No Love,30,"See them boys be actin' tough, Valentine Massacre",boys,31,"My boys'll come after you, they got the boss out his character, yeah",boys'll,INNER,ASSONANCE,vowel,LOW,N
+No Love,30,"See them boys be actin' tough, Valentine Massacre",Massacre,31,"My boys'll come after you, they got the boss out his character, yeah",after,INNER,ASSONANCE,vowel,MED,Y
+No Love,30,"See them boys be actin' tough, Valentine Massacre",tough,31,"My boys'll come after you, they got the boss out his character, yeah",come,INNER,SLANT,cmu,MED,Y
+No Love,31,"My boys'll come after you, they got the boss out his character, yeah",got,31,"My boys'll come after you, they got the boss out his character, yeah",boss,INNER,SLANT,cmu,MED,Y
+No Love,31,"My boys'll come after you, they got the boss out his character, yeah",character,32,"True story, a nigga play, we get him gone, that's a true story",get,INNER,ASSONANCE,vowel,MED,Y
+No Love,31,"My boys'll come after you, they got the boss out his character, yeah",come,33,See I know what we done done and what they gon' do for me,done,INNER,SLANT,cmu,MED,Y
+No Love,31,"My boys'll come after you, they got the boss out his character, yeah",come,33,See I know what we done done and what they gon' do for me,what,INNER,SLANT,cmu,MED,Y
+No Love,32,"True story, a nigga play, we get him gone, that's a true story",gone,32,"True story, a nigga play, we get him gone, that's a true story",story,INNER,SLANT,cmu,MED,Y
+No Love,32,"True story, a nigga play, we get him gone, that's a true story",story,32,"True story, a nigga play, we get him gone, that's a true story",gone,INNER,SLANT,cmu,MED,Y
+No Love,32,"True story, a nigga play, we get him gone, that's a true story",story,32,"True story, a nigga play, we get him gone, that's a true story",story,INNER,REPEAT,spelling,HIGH,N
+No Love,32,"True story, a nigga play, we get him gone, that's a true story",True,32,"True story, a nigga play, we get him gone, that's a true story",true,INNER,REPEAT,spelling,HIGH,N
+No Love,32,"True story, a nigga play, we get him gone, that's a true story",story,34,"A whole lot of guns and that's a true story, yeah, uh",story,END,REPEAT,spelling,HIGH,N
+No Love,32,"True story, a nigga play, we get him gone, that's a true story",gone,34,"A whole lot of guns and that's a true story, yeah, uh",story,INNER,SLANT,cmu,MED,Y
+No Love,32,"True story, a nigga play, we get him gone, that's a true story",story,34,"A whole lot of guns and that's a true story, yeah, uh",story,INNER,REPEAT,spelling,HIGH,N
+No Love,32,"True story, a nigga play, we get him gone, that's a true story",True,34,"A whole lot of guns and that's a true story, yeah, uh",true,INNER,REPEAT,spelling,HIGH,N
+No Love,32,"True story, a nigga play, we get him gone, that's a true story",story,35,So we ain't cut from the same cloth,cloth,END,SLANT,cmu,MED,Y
+No Love,33,See I know what we done done and what they gon' do for me,done,33,See I know what we done done and what they gon' do for me,done,INNER,REPEAT,spelling,HIGH,N
+No Love,33,See I know what we done done and what they gon' do for me,done,33,See I know what we done done and what they gon' do for me,what,INNER,SLANT,cmu,MED,Y
+No Love,33,See I know what we done done and what they gon' do for me,See,33,See I know what we done done and what they gon' do for me,gon,INNER,PERFECT,cmu,HIGH,Y
+No Love,33,See I know what we done done and what they gon' do for me,what,33,See I know what we done done and what they gon' do for me,done,INNER,SLANT,cmu,MED,Y
+No Love,33,See I know what we done done and what they gon' do for me,what,33,See I know what we done done and what they gon' do for me,what,INNER,REPEAT,spelling,HIGH,N
+No Love,33,See I know what we done done and what they gon' do for me,done,34,"A whole lot of guns and that's a true story, yeah, uh",guns,INNER,SLANT,cmu,MED,Y
+No Love,33,See I know what we done done and what they gon' do for me,know,34,"A whole lot of guns and that's a true story, yeah, uh",whole,INNER,ASSONANCE,vowel,MED,Y
+No Love,33,See I know what we done done and what they gon' do for me,what,34,"A whole lot of guns and that's a true story, yeah, uh",guns,INNER,ASSONANCE,vowel,MED,Y
+No Love,33,See I know what we done done and what they gon' do for me,done,35,So we ain't cut from the same cloth,cut,INNER,SLANT,cmu,MED,Y
+No Love,33,See I know what we done done and what they gon' do for me,what,35,So we ain't cut from the same cloth,cut,INNER,PERFECT,cmu,HIGH,Y
+No Love,34,"A whole lot of guns and that's a true story, yeah, uh",story,35,So we ain't cut from the same cloth,cloth,END,SLANT,cmu,MED,Y
+No Love,34,"A whole lot of guns and that's a true story, yeah, uh",guns,35,So we ain't cut from the same cloth,cut,INNER,ASSONANCE,vowel,MED,Y
+No Love,34,"A whole lot of guns and that's a true story, yeah, uh",guns,36,You better duck when I aim boy,duck,INNER,ASSONANCE,vowel,MED,Y
+No Love,35,So we ain't cut from the same cloth,ain't,35,So we ain't cut from the same cloth,same,INNER,ASSONANCE,vowel,MED,Y
+No Love,35,So we ain't cut from the same cloth,ain't,36,You better duck when I aim boy,aim,INNER,ASSONANCE,vowel,MED,Y
+No Love,35,So we ain't cut from the same cloth,cut,36,You better duck when I aim boy,duck,INNER,SLANT,cmu,MED,Y
+No Love,35,So we ain't cut from the same cloth,same,36,You better duck when I aim boy,aim,INNER,PERFECT,cmu,HIGH,Y
+No Love,35,So we ain't cut from the same cloth,ain't,37,I put some bucks on your main boy,main,INNER,SLANT,cmu,MED,Y
+No Love,35,So we ain't cut from the same cloth,cut,37,I put some bucks on your main boy,bucks,INNER,ASSONANCE,vowel,MED,Y
+No Love,35,So we ain't cut from the same cloth,cut,37,I put some bucks on your main boy,some,INNER,SLANT,cmu,MED,Y
+No Love,35,So we ain't cut from the same cloth,same,37,I put some bucks on your main boy,main,INNER,SLANT,cmu,MED,Y
+No Love,36,You better duck when I aim boy,better,36,You better duck when I aim boy,when,INNER,SLANT,cmu,MED,Y
+No Love,36,You better duck when I aim boy,boy,37,I put some bucks on your main boy,boy,END,REPEAT,spelling,HIGH,N
+No Love,36,You better duck when I aim boy,aim,37,I put some bucks on your main boy,main,INNER,SLANT,cmu,MED,Y
+No Love,36,You better duck when I aim boy,duck,37,I put some bucks on your main boy,bucks,INNER,SLANT,cmu,MED,Y
+No Love,36,You better duck when I aim boy,duck,37,I put some bucks on your main boy,some,INNER,SLANT,cmu,MED,Y
+No Love,37,I put some bucks on your main boy,some,37,I put some bucks on your main boy,bucks,INNER,ASSONANCE,vowel,MED,Y
+No Love,37,I put some bucks on your main boy,bucks,39,So I know we ain't sparin' no one,one,INNER,ASSONANCE,vowel,MED,Y
+No Love,37,I put some bucks on your main boy,main,39,So I know we ain't sparin' no one,ain't,INNER,SLANT,cmu,MED,Y
+No Love,37,I put some bucks on your main boy,some,39,So I know we ain't sparin' no one,one,INNER,SLANT,cmu,MED,Y
+No Love,38,I got a whole lot of anger,got,38,I got a whole lot of anger,lot,INNER,PERFECT,cmu,HIGH,Y
+No Love,38,I got a whole lot of anger,whole,39,So I know we ain't sparin' no one,know,INNER,ASSONANCE,vowel,MED,Y
+No Love,38,I got a whole lot of anger,whole,39,So I know we ain't sparin' no one,no,INNER,ASSONANCE,vowel,MED,Y
+No Love,38,I got a whole lot of anger,whole,40,"And I mean no one, yeah, uh",no,INNER,ASSONANCE,vowel,MED,Y
+No Love,39,So I know we ain't sparin' no one,know,39,So I know we ain't sparin' no one,no,INNER,PERFECT,cmu,HIGH,Y
+No Love,39,So I know we ain't sparin' no one,one,40,"And I mean no one, yeah, uh",one,END,REPEAT,spelling,HIGH,N
+No Love,39,So I know we ain't sparin' no one,know,40,"And I mean no one, yeah, uh",no,INNER,PERFECT,cmu,HIGH,Y
+No Love,39,So I know we ain't sparin' no one,no,40,"And I mean no one, yeah, uh",no,INNER,REPEAT,spelling,HIGH,N

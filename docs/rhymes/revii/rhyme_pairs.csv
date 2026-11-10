@@ -1,0 +1,357 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",landed,1,"Bitch, I just landed, I just came back from Cali",back,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",back,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",bad,INNER,SLANT,cmu,MED,Y
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",back,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",Valley,INNER,SLANT,cmu,MED,Y
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",Bitch,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",bitch,INNER,REPEAT,spelling,HIGH,N
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",Cali,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",Cali,INNER,REPEAT,spelling,HIGH,N
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",landed,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",bad,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",landed,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",Valley,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",back,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",ass,INNER,SLANT,cmu,MED,Y
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",Cali,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",got,INNER,SLANT,cmu,MED,Y
+Greenroom,1,"Bitch, I just landed, I just came back from Cali",landed,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",ass,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",bad,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",Valley,INNER,SLANT,cmu,MED,Y
+Greenroom,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",bad,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",ass,INNER,SLANT,cmu,MED,Y
+Greenroom,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",Cali,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",got,INNER,SLANT,cmu,MED,Y
+Greenroom,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",Valley,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",ass,INNER,SLANT,cmu,MED,Y
+Greenroom,2,"Smokin' on that Cali, a bad bitch from the Valley, ayy",bitch,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",liquor,INNER,SLANT,cmu,MED,Y
+Greenroom,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",Maui,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",bouncy,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",bouncy,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",downin,END,SLANT,cmu,MED,Y
+Greenroom,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",bouncy,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",counts,INNER,SLANT,cmu,MED,Y
+Greenroom,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",Maui,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",counts,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",Maui,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",downin,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",got,5,And I got a problem and she got a problem but I'm not tryna fix it,got,INNER,REPEAT,spelling,HIGH,N
+Greenroom,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",got,5,And I got a problem and she got a problem but I'm not tryna fix it,not,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,3,"And she got a friend from Maui, ooh, yeah, that ass is bouncy, ooh",got,5,And I got a problem and she got a problem but I'm not tryna fix it,problem,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",counts,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",downin,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",liquor,5,And I got a problem and she got a problem but I'm not tryna fix it,fix,INNER,SLANT,cmu,MED,Y
+Greenroom,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",counts,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",bouncin,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",counts,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",count,INNER,SLANT,cmu,MED,Y
+Greenroom,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",downin,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",bouncin,INNER,SLANT,cmu,MED,Y
+Greenroom,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",downin,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",count,INNER,SLANT,cmu,MED,Y
+Greenroom,4,"Yeah, that money counts, yeah (Uh), all this liquor I'm downin', uh",liquor,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",hit,INNER,SLANT,cmu,MED,Y
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,got,5,And I got a problem and she got a problem but I'm not tryna fix it,got,INNER,REPEAT,spelling,HIGH,N
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,got,5,And I got a problem and she got a problem but I'm not tryna fix it,not,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,got,5,And I got a problem and she got a problem but I'm not tryna fix it,problem,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,problem,5,And I got a problem and she got a problem but I'm not tryna fix it,got,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,problem,5,And I got a problem and she got a problem but I'm not tryna fix it,not,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,problem,5,And I got a problem and she got a problem but I'm not tryna fix it,problem,INNER,REPEAT,spelling,HIGH,N
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,fix,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",hit,END,ASSONANCE,vowel,MED,Y
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,fix,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,END,ASSONANCE,vowel,MED,Y
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,fix,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",give,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,fix,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,END,ASSONANCE,vowel,MED,Y
+Greenroom,5,And I got a problem and she got a problem but I'm not tryna fix it,fix,9,"Hair got longer, I'ma swing that shit",shit,END,ASSONANCE,vowel,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",count,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",bouncin,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",like,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",right,INNER,SLANT,cmu,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",hit,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,END,SLANT,cmu,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",hit,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",give,INNER,SLANT,cmu,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",know,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",Rollie,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",like,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",ice,INNER,SLANT,cmu,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",right,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",ice,INNER,SLANT,cmu,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",hit,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,END,ASSONANCE,vowel,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",bouncin,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",'bout,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",count,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",'bout,INNER,SLANT,cmu,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",hit,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",triple,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",hit,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",twins,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",know,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",hit,9,"Hair got longer, I'ma swing that shit",shit,END,PERFECT,cmu,HIGH,Y
+Greenroom,6,"But I like to count it, she know that I'm bouncin' right after I hit it (Ooh)",hit,10,"Yeah, when you say you love me, do you mean that shit?",shit,END,PERFECT,cmu,HIGH,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",give,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,END,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",expensive,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",Unless,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",give,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",give,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",triple,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",give,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",twins,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",triple,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",twins,INNER,SLANT,cmu,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",Rollie,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,9,"Hair got longer, I'ma swing that shit",shit,END,SLANT,cmu,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",expensive,9,"Hair got longer, I'ma swing that shit",Hair,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",give,9,"Hair got longer, I'ma swing that shit",I'ma,INNER,SLANT,spelling,LOW,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",give,9,"Hair got longer, I'ma swing that shit",shit,INNER,SLANT,cmu,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",give,9,"Hair got longer, I'ma swing that shit",swing,INNER,SLANT,cmu,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,9,"Hair got longer, I'ma swing that shit",swing,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,10,"Yeah, when you say you love me, do you mean that shit?",shit,END,SLANT,cmu,MED,Y
+Greenroom,7,"And my ice so expensive, I look at my Rollie, I give her a minute (Ayy)",minute,11,Pour a cup off that dirty just to drink that shit,shit,END,SLANT,cmu,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",talkin,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",want,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",triple,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",twins,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",twins,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",triple,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,9,"Hair got longer, I'ma swing that shit",shit,END,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,9,"Hair got longer, I'ma swing that shit",swing,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",talkin,9,"Hair got longer, I'ma swing that shit",got,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",triple,9,"Hair got longer, I'ma swing that shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",triple,9,"Hair got longer, I'ma swing that shit",swing,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",twins,9,"Hair got longer, I'ma swing that shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",twins,9,"Hair got longer, I'ma swing that shit",swing,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",Unless,9,"Hair got longer, I'ma swing that shit",Hair,INNER,SLANT,cmu,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",want,9,"Hair got longer, I'ma swing that shit",got,INNER,SLANT,cmu,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,10,"Yeah, when you say you love me, do you mean that shit?",shit,END,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",double,10,"Yeah, when you say you love me, do you mean that shit?",love,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",triple,10,"Yeah, when you say you love me, do you mean that shit?",shit,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",twins,10,"Yeah, when you say you love me, do you mean that shit?",shit,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",Unless,10,"Yeah, when you say you love me, do you mean that shit?",when,INNER,SLANT,cmu,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,11,Pour a cup off that dirty just to drink that shit,shit,END,ASSONANCE,vowel,MED,Y
+Greenroom,8,"Unless you talkin' 'bout twins, I don't do the double, I want triple digits (Yeah)",digits,12,"I would never change on ya, how could you think that shit?",shit,END,ASSONANCE,vowel,MED,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",I'ma,9,"Hair got longer, I'ma swing that shit",shit,INNER,SLANT,spelling,LOW,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",I'ma,9,"Hair got longer, I'ma swing that shit",swing,INNER,SLANT,spelling,LOW,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",swing,9,"Hair got longer, I'ma swing that shit",shit,INNER,SLANT,cmu,MED,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",shit,10,"Yeah, when you say you love me, do you mean that shit?",shit,END,REPEAT,spelling,HIGH,N
+Greenroom,9,"Hair got longer, I'ma swing that shit",Hair,10,"Yeah, when you say you love me, do you mean that shit?",when,INNER,SLANT,cmu,MED,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",I'ma,10,"Yeah, when you say you love me, do you mean that shit?",shit,INNER,SLANT,spelling,LOW,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",swing,10,"Yeah, when you say you love me, do you mean that shit?",shit,INNER,SLANT,cmu,MED,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",shit,11,Pour a cup off that dirty just to drink that shit,shit,END,REPEAT,spelling,HIGH,N
+Greenroom,9,"Hair got longer, I'ma swing that shit",I'ma,11,Pour a cup off that dirty just to drink that shit,shit,INNER,SLANT,spelling,LOW,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",longer,11,Pour a cup off that dirty just to drink that shit,Pour,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",shit,11,Pour a cup off that dirty just to drink that shit,drink,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",swing,11,Pour a cup off that dirty just to drink that shit,drink,INNER,SLANT,cmu,MED,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",swing,11,Pour a cup off that dirty just to drink that shit,shit,INNER,SLANT,cmu,MED,Y
+Greenroom,9,"Hair got longer, I'ma swing that shit",shit,12,"I would never change on ya, how could you think that shit?",shit,END,REPEAT,spelling,HIGH,N
+Greenroom,10,"Yeah, when you say you love me, do you mean that shit?",shit,11,Pour a cup off that dirty just to drink that shit,shit,END,REPEAT,spelling,HIGH,N
+Greenroom,10,"Yeah, when you say you love me, do you mean that shit?",love,11,Pour a cup off that dirty just to drink that shit,cup,INNER,SLANT,cmu,MED,Y
+Greenroom,10,"Yeah, when you say you love me, do you mean that shit?",shit,11,Pour a cup off that dirty just to drink that shit,drink,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,10,"Yeah, when you say you love me, do you mean that shit?",shit,12,"I would never change on ya, how could you think that shit?",shit,END,REPEAT,spelling,HIGH,N
+Greenroom,10,"Yeah, when you say you love me, do you mean that shit?",say,12,"I would never change on ya, how could you think that shit?",change,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,10,"Yeah, when you say you love me, do you mean that shit?",shit,12,"I would never change on ya, how could you think that shit?",think,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,10,"Yeah, when you say you love me, do you mean that shit?",when,12,"I would never change on ya, how could you think that shit?",never,INNER,SLANT,cmu,MED,Y
+Greenroom,11,Pour a cup off that dirty just to drink that shit,drink,11,Pour a cup off that dirty just to drink that shit,shit,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,11,Pour a cup off that dirty just to drink that shit,shit,12,"I would never change on ya, how could you think that shit?",shit,END,REPEAT,spelling,HIGH,N
+Greenroom,11,Pour a cup off that dirty just to drink that shit,drink,12,"I would never change on ya, how could you think that shit?",shit,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,11,Pour a cup off that dirty just to drink that shit,drink,12,"I would never change on ya, how could you think that shit?",think,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,11,Pour a cup off that dirty just to drink that shit,shit,12,"I would never change on ya, how could you think that shit?",think,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,11,Pour a cup off that dirty just to drink that shit,cup,13,"But they gon' hate no matter what, no matter what I do",what,INNER,SLANT,cmu,MED,Y
+Greenroom,12,"I would never change on ya, how could you think that shit?",think,12,"I would never change on ya, how could you think that shit?",shit,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,12,"I would never change on ya, how could you think that shit?",would,12,"I would never change on ya, how could you think that shit?",could,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,12,"I would never change on ya, how could you think that shit?",change,13,"But they gon' hate no matter what, no matter what I do",hate,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,12,"I would never change on ya, how could you think that shit?",change,14,"They gon' hate no matter what, no matter what I do",hate,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",matter,13,"But they gon' hate no matter what, no matter what I do",matter,INNER,REPEAT,spelling,HIGH,N
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",no,13,"But they gon' hate no matter what, no matter what I do",no,INNER,REPEAT,spelling,HIGH,N
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",what,13,"But they gon' hate no matter what, no matter what I do",what,INNER,REPEAT,spelling,HIGH,N
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",what,14,"They gon' hate no matter what, no matter what I do",what,END,REPEAT,spelling,HIGH,N
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",gon,14,"They gon' hate no matter what, no matter what I do",gon,INNER,REPEAT,spelling,HIGH,N
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",hate,14,"They gon' hate no matter what, no matter what I do",hate,INNER,REPEAT,spelling,HIGH,N
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",matter,14,"They gon' hate no matter what, no matter what I do",matter,INNER,REPEAT,spelling,HIGH,N
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",no,14,"They gon' hate no matter what, no matter what I do",no,INNER,REPEAT,spelling,HIGH,N
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",what,14,"They gon' hate no matter what, no matter what I do",what,INNER,REPEAT,spelling,HIGH,N
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",gon,15,"Late nights I just smoke some blunts, get higher than the roof",smoke,INNER,SLANT,spelling,LOW,Y
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",hate,15,"Late nights I just smoke some blunts, get higher than the roof",Late,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",no,15,"Late nights I just smoke some blunts, get higher than the roof",smoke,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",what,15,"Late nights I just smoke some blunts, get higher than the roof",blunts,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,13,"But they gon' hate no matter what, no matter what I do",what,15,"Late nights I just smoke some blunts, get higher than the roof",some,INNER,SLANT,cmu,MED,Y
+Greenroom,14,"They gon' hate no matter what, no matter what I do",matter,14,"They gon' hate no matter what, no matter what I do",matter,INNER,REPEAT,spelling,HIGH,N
+Greenroom,14,"They gon' hate no matter what, no matter what I do",no,14,"They gon' hate no matter what, no matter what I do",no,INNER,REPEAT,spelling,HIGH,N
+Greenroom,14,"They gon' hate no matter what, no matter what I do",what,14,"They gon' hate no matter what, no matter what I do",what,INNER,REPEAT,spelling,HIGH,N
+Greenroom,14,"They gon' hate no matter what, no matter what I do",gon,15,"Late nights I just smoke some blunts, get higher than the roof",smoke,INNER,SLANT,spelling,LOW,Y
+Greenroom,14,"They gon' hate no matter what, no matter what I do",hate,15,"Late nights I just smoke some blunts, get higher than the roof",Late,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,14,"They gon' hate no matter what, no matter what I do",no,15,"Late nights I just smoke some blunts, get higher than the roof",smoke,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,14,"They gon' hate no matter what, no matter what I do",what,15,"Late nights I just smoke some blunts, get higher than the roof",blunts,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,14,"They gon' hate no matter what, no matter what I do",what,15,"Late nights I just smoke some blunts, get higher than the roof",some,INNER,SLANT,cmu,MED,Y
+Greenroom,14,"They gon' hate no matter what, no matter what I do",gon,16,Don't pull up and think I'm snoozin' (Nuh-uh),Don't,INNER,SLANT,spelling,LOW,Y
+Greenroom,14,"They gon' hate no matter what, no matter what I do",no,16,Don't pull up and think I'm snoozin' (Nuh-uh),Don't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,15,"Late nights I just smoke some blunts, get higher than the roof",nights,15,"Late nights I just smoke some blunts, get higher than the roof",higher,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,15,"Late nights I just smoke some blunts, get higher than the roof",some,15,"Late nights I just smoke some blunts, get higher than the roof",blunts,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,15,"Late nights I just smoke some blunts, get higher than the roof",roof,16,Don't pull up and think I'm snoozin' (Nuh-uh),snoozin,END,ASSONANCE,vowel,MED,Y
+Greenroom,15,"Late nights I just smoke some blunts, get higher than the roof",smoke,16,Don't pull up and think I'm snoozin' (Nuh-uh),Don't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,15,"Late nights I just smoke some blunts, get higher than the roof",get,17,She said she like how I be boolin' (Uh-huh),said,INNER,SLANT,cmu,MED,Y
+Greenroom,15,"Late nights I just smoke some blunts, get higher than the roof",higher,17,She said she like how I be boolin' (Uh-huh),like,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,15,"Late nights I just smoke some blunts, get higher than the roof",nights,17,She said she like how I be boolin' (Uh-huh),like,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,15,"Late nights I just smoke some blunts, get higher than the roof",roof,18,"Like a gangsta, how I'm movin' (Yeah)",movin,END,ASSONANCE,vowel,MED,Y
+Greenroom,15,"Late nights I just smoke some blunts, get higher than the roof",roof,19,"Girl, it's gang and we the movement",movement,END,ASSONANCE,vowel,MED,Y
+Greenroom,16,Don't pull up and think I'm snoozin' (Nuh-uh),snoozin,17,She said she like how I be boolin' (Uh-huh),boolin,END,ASSONANCE,vowel,LOW,N
+Greenroom,16,Don't pull up and think I'm snoozin' (Nuh-uh),snoozin,18,"Like a gangsta, how I'm movin' (Yeah)",movin,END,SLANT,cmu,MED,Y
+Greenroom,16,Don't pull up and think I'm snoozin' (Nuh-uh),snoozin,19,"Girl, it's gang and we the movement",movement,END,ASSONANCE,vowel,MED,Y
+Greenroom,17,She said she like how I be boolin' (Uh-huh),boolin,18,"Like a gangsta, how I'm movin' (Yeah)",movin,END,ASSONANCE,vowel,LOW,N
+Greenroom,17,She said she like how I be boolin' (Uh-huh),how,18,"Like a gangsta, how I'm movin' (Yeah)",how,INNER,REPEAT,spelling,HIGH,N
+Greenroom,17,She said she like how I be boolin' (Uh-huh),like,18,"Like a gangsta, how I'm movin' (Yeah)",Like,INNER,REPEAT,spelling,HIGH,N
+Greenroom,18,"Like a gangsta, how I'm movin' (Yeah)",movin,19,"Girl, it's gang and we the movement",movement,END,ASSONANCE,vowel,MED,Y
+Greenroom,18,"Like a gangsta, how I'm movin' (Yeah)",gangsta,19,"Girl, it's gang and we the movement",gang,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,19,"Girl, it's gang and we the movement",Girl,20,"Girl, we started from the bottom, hit the top (Hit the top)",Girl,INNER,REPEAT,spelling,HIGH,N
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",bottom,20,"Girl, we started from the bottom, hit the top (Hit the top)",top,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",started,20,"Girl, we started from the bottom, hit the top (Hit the top)",bottom,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",started,20,"Girl, we started from the bottom, hit the top (Hit the top)",top,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",top,21,She want me to pull up and fuck her in my flip-flops (Skrrt),flops,END,SLANT,cmu,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",bottom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),flops,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",bottom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),want,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",hit,21,She want me to pull up and fuck her in my flip-flops (Skrrt),flip,INNER,SLANT,cmu,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",started,21,She want me to pull up and fuck her in my flip-flops (Skrrt),flops,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",started,21,She want me to pull up and fuck her in my flip-flops (Skrrt),want,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",top,21,She want me to pull up and fuck her in my flip-flops (Skrrt),want,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",top,22,"They got my name in they mouth, eat a cock (Eat a dick)",cock,END,SLANT,cmu,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",bottom,22,"They got my name in they mouth, eat a cock (Eat a dick)",cock,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",bottom,22,"They got my name in they mouth, eat a cock (Eat a dick)",got,INNER,SLANT,cmu,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",started,22,"They got my name in they mouth, eat a cock (Eat a dick)",cock,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",started,22,"They got my name in they mouth, eat a cock (Eat a dick)",got,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",top,22,"They got my name in they mouth, eat a cock (Eat a dick)",got,INNER,SLANT,cmu,MED,Y
+Greenroom,20,"Girl, we started from the bottom, hit the top (Hit the top)",top,23,I'm a real nigga and you not,not,END,SLANT,cmu,MED,Y
+Greenroom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),want,21,She want me to pull up and fuck her in my flip-flops (Skrrt),flops,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),flops,22,"They got my name in they mouth, eat a cock (Eat a dick)",cock,END,ASSONANCE,vowel,MED,Y
+Greenroom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),flops,22,"They got my name in they mouth, eat a cock (Eat a dick)",got,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),want,22,"They got my name in they mouth, eat a cock (Eat a dick)",cock,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),want,22,"They got my name in they mouth, eat a cock (Eat a dick)",got,INNER,SLANT,cmu,MED,Y
+Greenroom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),flops,23,I'm a real nigga and you not,not,END,ASSONANCE,vowel,MED,Y
+Greenroom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),flip,23,I'm a real nigga and you not,nigga,INNER,SLANT,spelling,LOW,Y
+Greenroom,21,She want me to pull up and fuck her in my flip-flops (Skrrt),want,23,I'm a real nigga and you not,not,INNER,SLANT,cmu,MED,Y
+Greenroom,22,"They got my name in they mouth, eat a cock (Eat a dick)",got,22,"They got my name in they mouth, eat a cock (Eat a dick)",cock,INNER,SLANT,cmu,MED,Y
+Greenroom,22,"They got my name in they mouth, eat a cock (Eat a dick)",cock,23,I'm a real nigga and you not,not,END,SLANT,cmu,MED,Y
+Greenroom,22,"They got my name in they mouth, eat a cock (Eat a dick)",eat,23,I'm a real nigga and you not,real,INNER,SLANT,cmu,MED,Y
+Greenroom,22,"They got my name in they mouth, eat a cock (Eat a dick)",got,23,I'm a real nigga and you not,not,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,22,"They got my name in they mouth, eat a cock (Eat a dick)",eat,24,"Speedin' in that foreign, rub it in' Neosporin",Speedin,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,23,I'm a real nigga and you not,real,24,"Speedin' in that foreign, rub it in' Neosporin",Speedin,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,24,"Speedin' in that foreign, rub it in' Neosporin",foreign,25,"They curious just like George, I been a player since they cut my cords",cords,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,24,"Speedin' in that foreign, rub it in' Neosporin",foreign,25,"They curious just like George, I been a player since they cut my cords",George,INNER,SLANT,cmu,MED,Y
+Greenroom,24,"Speedin' in that foreign, rub it in' Neosporin",rub,25,"They curious just like George, I been a player since they cut my cords",cut,INNER,SLANT,cmu,MED,Y
+Greenroom,24,"Speedin' in that foreign, rub it in' Neosporin",foreign,26,"Buy out a whole store, knowin' I couldn't afford",afford,INNER,SLANT,cmu,MED,Y
+Greenroom,24,"Speedin' in that foreign, rub it in' Neosporin",foreign,26,"Buy out a whole store, knowin' I couldn't afford",store,INNER,SLANT,cmu,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",George,25,"They curious just like George, I been a player since they cut my cords",cords,INNER,SLANT,cmu,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",cords,26,"Buy out a whole store, knowin' I couldn't afford",afford,END,SLANT,cmu,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",cords,26,"Buy out a whole store, knowin' I couldn't afford",store,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",curious,26,"Buy out a whole store, knowin' I couldn't afford",couldn't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",George,26,"Buy out a whole store, knowin' I couldn't afford",afford,INNER,SLANT,cmu,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",George,26,"Buy out a whole store, knowin' I couldn't afford",store,INNER,SLANT,cmu,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",like,26,"Buy out a whole store, knowin' I couldn't afford",Buy,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",cords,27,I got four but I need one more (Skrrt),more,END,ASSONANCE,vowel,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",cords,27,I got four but I need one more (Skrrt),four,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",cut,27,I got four but I need one more (Skrrt),one,INNER,SLANT,cmu,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",George,27,I got four but I need one more (Skrrt),four,INNER,SLANT,cmu,MED,Y
+Greenroom,25,"They curious just like George, I been a player since they cut my cords",George,27,I got four but I need one more (Skrrt),more,INNER,SLANT,cmu,MED,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",store,26,"Buy out a whole store, knowin' I couldn't afford",afford,INNER,SLANT,cmu,MED,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",whole,26,"Buy out a whole store, knowin' I couldn't afford",knowin,INNER,SLANT,cmu,MED,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",afford,27,I got four but I need one more (Skrrt),more,END,SLANT,cmu,MED,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",afford,27,I got four but I need one more (Skrrt),four,INNER,SLANT,cmu,MED,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",store,27,I got four but I need one more (Skrrt),four,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",store,27,I got four but I need one more (Skrrt),more,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",knowin,28,"They gon' hate no matter what, I just sit and puff my blunt",gon,INNER,SLANT,spelling,LOW,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",knowin,28,"They gon' hate no matter what, I just sit and puff my blunt",no,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",whole,28,"They gon' hate no matter what, I just sit and puff my blunt",gon,INNER,SLANT,spelling,LOW,Y
+Greenroom,26,"Buy out a whole store, knowin' I couldn't afford",whole,28,"They gon' hate no matter what, I just sit and puff my blunt",no,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,27,I got four but I need one more (Skrrt),four,27,I got four but I need one more (Skrrt),more,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,27,I got four but I need one more (Skrrt),one,28,"They gon' hate no matter what, I just sit and puff my blunt",blunt,INNER,SLANT,cmu,MED,Y
+Greenroom,27,I got four but I need one more (Skrrt),one,28,"They gon' hate no matter what, I just sit and puff my blunt",puff,INNER,SLANT,cmu,MED,Y
+Greenroom,27,I got four but I need one more (Skrrt),one,28,"They gon' hate no matter what, I just sit and puff my blunt",what,INNER,SLANT,cmu,MED,Y
+Greenroom,27,I got four but I need one more (Skrrt),one,29,"That lil' nigga press his luck, my niggas don't give no fucks",fucks,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,27,I got four but I need one more (Skrrt),one,29,"That lil' nigga press his luck, my niggas don't give no fucks",luck,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",puff,28,"They gon' hate no matter what, I just sit and puff my blunt",blunt,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",what,28,"They gon' hate no matter what, I just sit and puff my blunt",blunt,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",what,28,"They gon' hate no matter what, I just sit and puff my blunt",puff,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",blunt,29,"That lil' nigga press his luck, my niggas don't give no fucks",fucks,END,ASSONANCE,vowel,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",blunt,29,"That lil' nigga press his luck, my niggas don't give no fucks",luck,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",gon,29,"That lil' nigga press his luck, my niggas don't give no fucks",don't,INNER,SLANT,spelling,LOW,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",no,29,"That lil' nigga press his luck, my niggas don't give no fucks",don't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",no,29,"That lil' nigga press his luck, my niggas don't give no fucks",no,INNER,REPEAT,spelling,HIGH,N
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",puff,29,"That lil' nigga press his luck, my niggas don't give no fucks",fucks,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",puff,29,"That lil' nigga press his luck, my niggas don't give no fucks",luck,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",sit,29,"That lil' nigga press his luck, my niggas don't give no fucks",give,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",sit,29,"That lil' nigga press his luck, my niggas don't give no fucks",lil,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",sit,29,"That lil' nigga press his luck, my niggas don't give no fucks",nigga,INNER,SLANT,spelling,LOW,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",what,29,"That lil' nigga press his luck, my niggas don't give no fucks",fucks,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",what,29,"That lil' nigga press his luck, my niggas don't give no fucks",luck,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",blunt,30,"Hold on, who's asking? 'Cause we ain't seen what happened",what,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",hate,30,"Hold on, who's asking? 'Cause we ain't seen what happened",ain't,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",matter,30,"Hold on, who's asking? 'Cause we ain't seen what happened",asking,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",matter,30,"Hold on, who's asking? 'Cause we ain't seen what happened",happened,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",no,30,"Hold on, who's asking? 'Cause we ain't seen what happened",Hold,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",puff,30,"Hold on, who's asking? 'Cause we ain't seen what happened",what,INNER,SLANT,cmu,MED,Y
+Greenroom,28,"They gon' hate no matter what, I just sit and puff my blunt",what,30,"Hold on, who's asking? 'Cause we ain't seen what happened",what,INNER,REPEAT,spelling,HIGH,N
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",don't,29,"That lil' nigga press his luck, my niggas don't give no fucks",no,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",lil,29,"That lil' nigga press his luck, my niggas don't give no fucks",give,INNER,SLANT,cmu,MED,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",luck,29,"That lil' nigga press his luck, my niggas don't give no fucks",fucks,INNER,SLANT,cmu,MED,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",nigga,29,"That lil' nigga press his luck, my niggas don't give no fucks",niggas,INNER,SLANT,spelling,LOW,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",don't,30,"Hold on, who's asking? 'Cause we ain't seen what happened",Hold,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",fucks,30,"Hold on, who's asking? 'Cause we ain't seen what happened",what,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",luck,30,"Hold on, who's asking? 'Cause we ain't seen what happened",what,INNER,SLANT,cmu,MED,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",no,30,"Hold on, who's asking? 'Cause we ain't seen what happened",Hold,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",don't,31,I'm ready for action but I can't get no reaction,no,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",no,31,I'm ready for action but I can't get no reaction,no,INNER,REPEAT,spelling,HIGH,N
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",press,31,I'm ready for action but I can't get no reaction,get,INNER,SLANT,cmu,MED,Y
+Greenroom,29,"That lil' nigga press his luck, my niggas don't give no fucks",press,31,I'm ready for action but I can't get no reaction,ready,INNER,SLANT,cmu,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",asking,30,"Hold on, who's asking? 'Cause we ain't seen what happened",happened,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",happened,31,I'm ready for action but I can't get no reaction,reaction,END,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",asking,31,I'm ready for action but I can't get no reaction,action,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",asking,31,I'm ready for action but I can't get no reaction,can't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",asking,31,I'm ready for action but I can't get no reaction,reaction,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",happened,31,I'm ready for action but I can't get no reaction,action,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",happened,31,I'm ready for action but I can't get no reaction,can't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",Hold,31,I'm ready for action but I can't get no reaction,no,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",asking,32,"And she throw in the car, act like you know where I'm from",act,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",happened,32,"And she throw in the car, act like you know where I'm from",act,INNER,SLANT,cmu,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",Hold,32,"And she throw in the car, act like you know where I'm from",know,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,30,"Hold on, who's asking? 'Cause we ain't seen what happened",Hold,32,"And she throw in the car, act like you know where I'm from",throw,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,action,31,I'm ready for action but I can't get no reaction,can't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,action,31,I'm ready for action but I can't get no reaction,reaction,INNER,MULTI,multi,HIGH,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,can't,31,I'm ready for action but I can't get no reaction,reaction,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,ready,31,I'm ready for action but I can't get no reaction,get,INNER,SLANT,cmu,MED,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,ready action,31,I'm ready for action but I can't get no reaction,no reaction,INNER,MULTI,multi,HIGH,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,action,32,"And she throw in the car, act like you know where I'm from",act,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,can't,32,"And she throw in the car, act like you know where I'm from",act,INNER,SLANT,cmu,MED,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,get,32,"And she throw in the car, act like you know where I'm from",where,INNER,SLANT,cmu,MED,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,no,32,"And she throw in the car, act like you know where I'm from",know,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,no,32,"And she throw in the car, act like you know where I'm from",throw,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,reaction,32,"And she throw in the car, act like you know where I'm from",act,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,ready,32,"And she throw in the car, act like you know where I'm from",where,INNER,SLANT,cmu,MED,Y
+Greenroom,31,I'm ready for action but I can't get no reaction,no,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,32,"And she throw in the car, act like you know where I'm from",throw,32,"And she throw in the car, act like you know where I'm from",know,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,32,"And she throw in the car, act like you know where I'm from",car,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",job,INNER,SLANT,cmu,MED,Y
+Greenroom,32,"And she throw in the car, act like you know where I'm from",know,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,32,"And she throw in the car, act like you know where I'm from",throw,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,32,"And she throw in the car, act like you know where I'm from",car,34,"Ayy, throw it to them hard, thought you knew that",hard,INNER,SLANT,cmu,MED,Y
+Greenroom,32,"And she throw in the car, act like you know where I'm from",know,34,"Ayy, throw it to them hard, thought you knew that",throw,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,32,"And she throw in the car, act like you know where I'm from",throw,34,"Ayy, throw it to them hard, thought you knew that",throw,INNER,REPEAT,spelling,HIGH,N
+Greenroom,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",Bitch,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",really,INNER,SLANT,cmu,MED,Y
+Greenroom,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",don't,34,"Ayy, throw it to them hard, thought you knew that",throw,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",job,34,"Ayy, throw it to them hard, thought you knew that",hard,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",Bitch,35,"Bitch coulda had my heart, why'd she do that?",Bitch,INNER,REPEAT,spelling,HIGH,N
+Greenroom,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",job,35,"Bitch coulda had my heart, why'd she do that?",heart,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,33,"Bitch nigga, you a bum, ayy, he don't really do the job, huh (Ayy, yeah)",really,35,"Bitch coulda had my heart, why'd she do that?",Bitch,INNER,SLANT,cmu,MED,Y
+Greenroom,34,"Ayy, throw it to them hard, thought you knew that",hard,35,"Bitch coulda had my heart, why'd she do that?",heart,INNER,SLANT,cmu,MED,Y
+Greenroom,34,"Ayy, throw it to them hard, thought you knew that",throw,36,"But a nigga , don't feel too bad",don't,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,35,"Bitch coulda had my heart, why'd she do that?",had,36,"But a nigga , don't feel too bad",bad,INNER,PERFECT,cmu,HIGH,Y
+Greenroom,35,"Bitch coulda had my heart, why'd she do that?",had,37,I said I'd send up in my doo-rag,rag,INNER,SLANT,cmu,MED,Y
+Greenroom,35,"Bitch coulda had my heart, why'd she do that?",why'd,38,"Make sure my Shih Tzu, my bitch big like",like,END,SLANT,cmu,MED,Y
+Greenroom,36,"But a nigga , don't feel too bad",bad,37,I said I'd send up in my doo-rag,rag,END,SLANT,cmu,MED,Y
+Greenroom,36,"But a nigga , don't feel too bad",feel,38,"Make sure my Shih Tzu, my bitch big like",Shih,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,36,"But a nigga , don't feel too bad",nigga,38,"Make sure my Shih Tzu, my bitch big like",big,INNER,SLANT,spelling,LOW,Y
+Greenroom,37,I said I'd send up in my doo-rag,said,37,I said I'd send up in my doo-rag,send,INNER,SLANT,cmu,MED,Y
+Greenroom,37,I said I'd send up in my doo-rag,said,39,"Real nigga sittin' on big bills, set him up, Big Bill",set,INNER,SLANT,cmu,MED,Y
+Greenroom,37,I said I'd send up in my doo-rag,send,39,"Real nigga sittin' on big bills, set him up, Big Bill",set,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",bitch,38,"Make sure my Shih Tzu, my bitch big like",big,INNER,SLANT,cmu,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,INNER,REPEAT,spelling,HIGH,N
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",Bill,INNER,SLANT,cmu,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",bills,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",him,INNER,SLANT,cmu,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",nigga,INNER,SLANT,spelling,LOW,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",sittin,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",bitch,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,INNER,SLANT,cmu,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",bitch,39,"Real nigga sittin' on big bills, set him up, Big Bill",Bill,INNER,SLANT,cmu,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",bitch,39,"Real nigga sittin' on big bills, set him up, Big Bill",bills,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",bitch,39,"Real nigga sittin' on big bills, set him up, Big Bill",him,INNER,SLANT,cmu,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",bitch,39,"Real nigga sittin' on big bills, set him up, Big Bill",sittin,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",Shih,39,"Real nigga sittin' on big bills, set him up, Big Bill",Real,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",big,40,Four a cup off that dirty just to drink that shit,drink,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",big,40,Four a cup off that dirty just to drink that shit,shit,INNER,SLANT,cmu,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",bitch,40,Four a cup off that dirty just to drink that shit,drink,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,38,"Make sure my Shih Tzu, my bitch big like",bitch,40,Four a cup off that dirty just to drink that shit,shit,INNER,SLANT,cmu,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",Big,INNER,REPEAT,spelling,HIGH,N
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",Bill,INNER,SLANT,cmu,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",bills,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,39,"Real nigga sittin' on big bills, set him up, Big Bill",him,INNER,SLANT,cmu,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",bills,39,"Real nigga sittin' on big bills, set him up, Big Bill",Big,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",bills,39,"Real nigga sittin' on big bills, set him up, Big Bill",Bill,INNER,SLANT,cmu,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",bills,39,"Real nigga sittin' on big bills, set him up, Big Bill",him,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",him,39,"Real nigga sittin' on big bills, set him up, Big Bill",Big,INNER,SLANT,cmu,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",him,39,"Real nigga sittin' on big bills, set him up, Big Bill",Bill,INNER,SLANT,cmu,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",nigga,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,INNER,SLANT,spelling,LOW,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",sittin,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",sittin,39,"Real nigga sittin' on big bills, set him up, Big Bill",Bill,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",sittin,39,"Real nigga sittin' on big bills, set him up, Big Bill",bills,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",sittin,39,"Real nigga sittin' on big bills, set him up, Big Bill",him,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",Bill,40,Four a cup off that dirty just to drink that shit,shit,END,SLANT,cmu,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,40,Four a cup off that dirty just to drink that shit,drink,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",big,40,Four a cup off that dirty just to drink that shit,shit,INNER,SLANT,cmu,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",Bill,40,Four a cup off that dirty just to drink that shit,drink,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",bills,40,Four a cup off that dirty just to drink that shit,drink,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",bills,40,Four a cup off that dirty just to drink that shit,shit,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",him,40,Four a cup off that dirty just to drink that shit,drink,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",him,40,Four a cup off that dirty just to drink that shit,shit,INNER,SLANT,cmu,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",nigga,40,Four a cup off that dirty just to drink that shit,shit,INNER,SLANT,spelling,LOW,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",sittin,40,Four a cup off that dirty just to drink that shit,drink,INNER,ASSONANCE,vowel,MED,Y
+Greenroom,39,"Real nigga sittin' on big bills, set him up, Big Bill",sittin,40,Four a cup off that dirty just to drink that shit,shit,INNER,SLANT,cmu,MED,Y
+Greenroom,40,Four a cup off that dirty just to drink that shit,drink,40,Four a cup off that dirty just to drink that shit,shit,INNER,ASSONANCE,vowel,MED,Y

@@ -1,0 +1,193 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Slow Down,1,I can't follow you into the darkness,follow,1,I can't follow you into the darkness,darkness,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,1,I can't follow you into the darkness,can't,2,And I can't follow you into the grave,can't,INNER,REPEAT,spelling,HIGH,N
+Slow Down,1,I can't follow you into the darkness,darkness,2,And I can't follow you into the grave,follow,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,1,I can't follow you into the darkness,follow,2,And I can't follow you into the grave,follow,INNER,REPEAT,spelling,HIGH,N
+Slow Down,1,I can't follow you into the darkness,can't,3,If you want to go that way,want,INNER,SLANT,spelling,LOW,Y
+Slow Down,1,I can't follow you into the darkness,darkness,3,If you want to go that way,want,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,1,I can't follow you into the darkness,follow,3,If you want to go that way,want,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,2,And I can't follow you into the grave,grave,3,If you want to go that way,way,END,ASSONANCE,vowel,MED,Y
+Slow Down,2,And I can't follow you into the grave,can't,3,If you want to go that way,want,INNER,SLANT,spelling,LOW,Y
+Slow Down,2,And I can't follow you into the grave,follow,3,If you want to go that way,want,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,2,And I can't follow you into the grave,can't,4,You can go alone,can,INNER,SLANT,cmu,MED,Y
+Slow Down,2,And I can't follow you into the grave,grave,5,"Oh, if you want to roll that way",way,END,ASSONANCE,vowel,MED,Y
+Slow Down,3,If you want to go that way,go,4,You can go alone,alone,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,3,If you want to go that way,go,4,You can go alone,go,INNER,REPEAT,spelling,HIGH,N
+Slow Down,3,If you want to go that way,way,5,"Oh, if you want to roll that way",way,END,REPEAT,spelling,HIGH,N
+Slow Down,3,If you want to go that way,go,5,"Oh, if you want to roll that way",roll,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,3,If you want to go that way,want,5,"Oh, if you want to roll that way",want,INNER,REPEAT,spelling,HIGH,N
+Slow Down,4,You can go alone,go,4,You can go alone,alone,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,4,You can go alone,alone,5,"Oh, if you want to roll that way",roll,INNER,SLANT,cmu,MED,Y
+Slow Down,4,You can go alone,go,5,"Oh, if you want to roll that way",roll,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,4,You can go alone,alone,6,Just know that I won't come,know,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,4,You can go alone,alone,6,Just know that I won't come,won't,INNER,SLANT,cmu,MED,Y
+Slow Down,4,You can go alone,go,6,Just know that I won't come,know,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,4,You can go alone,go,6,Just know that I won't come,won't,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,5,"Oh, if you want to roll that way",roll,6,Just know that I won't come,know,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,5,"Oh, if you want to roll that way",roll,6,Just know that I won't come,won't,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,5,"Oh, if you want to roll that way",want,6,Just know that I won't come,won't,INNER,SLANT,spelling,LOW,Y
+Slow Down,5,"Oh, if you want to roll that way",roll,7,I know that I am different,know,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,6,Just know that I won't come,know,6,Just know that I won't come,won't,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,6,Just know that I won't come,know,7,I know that I am different,know,INNER,REPEAT,spelling,HIGH,N
+Slow Down,6,Just know that I won't come,won't,7,I know that I am different,know,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,6,Just know that I won't come,know,8,And you don't understand,don't,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,6,Just know that I won't come,won't,8,And you don't understand,don't,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,7,I know that I am different,know,8,And you don't understand,don't,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,7,I know that I am different,different,9,But it's because I'm different,different,END,REPEAT,spelling,HIGH,N
+Slow Down,8,And you don't understand,understand,10,I'll rise and rule the land,land,END,PERFECT,cmu,HIGH,Y
+Slow Down,9,But it's because I'm different,different,11,They think I need to slow down,think,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,10,I'll rise and rule the land,I'll,10,I'll rise and rule the land,rise,INNER,SLANT,cmu,MED,Y
+Slow Down,11,They think I need to slow down,down,12,Think I need to slow down,down,END,REPEAT,spelling,HIGH,N
+Slow Down,11,They think I need to slow down,need,12,Think I need to slow down,need,INNER,REPEAT,spelling,HIGH,N
+Slow Down,11,They think I need to slow down,slow,12,Think I need to slow down,slow,INNER,REPEAT,spelling,HIGH,N
+Slow Down,11,They think I need to slow down,think,12,Think I need to slow down,Think,INNER,REPEAT,spelling,HIGH,N
+Slow Down,11,They think I need to slow down,down,13,"Oh, I think I know now",now,END,ASSONANCE,vowel,MED,Y
+Slow Down,11,They think I need to slow down,slow,13,"Oh, I think I know now",know,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,11,They think I need to slow down,think,13,"Oh, I think I know now",think,INNER,REPEAT,spelling,HIGH,N
+Slow Down,11,They think I need to slow down,down,14,Words will keep your soul bound,bound,END,SLANT,cmu,MED,Y
+Slow Down,12,Think I need to slow down,down,13,"Oh, I think I know now",now,END,ASSONANCE,vowel,MED,Y
+Slow Down,12,Think I need to slow down,slow,13,"Oh, I think I know now",know,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,12,Think I need to slow down,Think,13,"Oh, I think I know now",think,INNER,REPEAT,spelling,HIGH,N
+Slow Down,12,Think I need to slow down,down,14,Words will keep your soul bound,bound,END,SLANT,cmu,MED,Y
+Slow Down,12,Think I need to slow down,need,14,Words will keep your soul bound,keep,INNER,SLANT,cmu,MED,Y
+Slow Down,12,Think I need to slow down,slow,14,Words will keep your soul bound,soul,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,12,Think I need to slow down,Think,14,Words will keep your soul bound,will,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,13,"Oh, I think I know now",now,14,Words will keep your soul bound,bound,END,ASSONANCE,vowel,MED,Y
+Slow Down,13,"Oh, I think I know now",know,14,Words will keep your soul bound,soul,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,13,"Oh, I think I know now",think,14,Words will keep your soul bound,will,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,13,"Oh, I think I know now",know,15,"Oh, if you want to go that way, you can go alone",alone,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,13,"Oh, I think I know now",know,15,"Oh, if you want to go that way, you can go alone",go,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,14,Words will keep your soul bound,soul,15,"Oh, if you want to go that way, you can go alone",alone,INNER,SLANT,cmu,MED,Y
+Slow Down,14,Words will keep your soul bound,soul,15,"Oh, if you want to go that way, you can go alone",go,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,15,"Oh, if you want to go that way, you can go alone",go,15,"Oh, if you want to go that way, you can go alone",alone,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,15,"Oh, if you want to go that way, you can go alone",go,15,"Oh, if you want to go that way, you can go alone",go,INNER,REPEAT,spelling,HIGH,N
+Slow Down,15,"Oh, if you want to go that way, you can go alone",want,16,"Look, you got an attitude (Yeah)",got,INNER,SLANT,cmu,MED,Y
+Slow Down,15,"Oh, if you want to go that way, you can go alone",can,17,I hate when you get mad when I'm mad at you,mad,INNER,SLANT,cmu,MED,Y
+Slow Down,15,"Oh, if you want to go that way, you can go alone",way,17,I hate when you get mad when I'm mad at you,hate,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,16,"Look, you got an attitude (Yeah)",attitude,18,I think you should relax with the latitude,latitude,END,MULTI,multi,HIGH,Y
+Slow Down,16,"Look, you got an attitude (Yeah)",Look,18,I think you should relax with the latitude,should,INNER,SLANT,cmu,MED,Y
+Slow Down,16,"Look, you got an attitude (Yeah)",attitude,19,And we done did a lot of things for the gratitude,gratitude,END,MULTI,multi,HIGH,Y
+Slow Down,17,I hate when you get mad when I'm mad at you,get,17,I hate when you get mad when I'm mad at you,when,INNER,SLANT,cmu,MED,Y
+Slow Down,17,I hate when you get mad when I'm mad at you,mad,17,I hate when you get mad when I'm mad at you,mad,INNER,REPEAT,spelling,HIGH,N
+Slow Down,17,I hate when you get mad when I'm mad at you,when,17,I hate when you get mad when I'm mad at you,get,INNER,SLANT,cmu,MED,Y
+Slow Down,17,I hate when you get mad when I'm mad at you,when,17,I hate when you get mad when I'm mad at you,when,INNER,REPEAT,spelling,HIGH,N
+Slow Down,17,I hate when you get mad when I'm mad at you,mad,18,I think you should relax with the latitude,relax,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,18,I think you should relax with the latitude,latitude,19,And we done did a lot of things for the gratitude,gratitude,END,MULTI,multi,HIGH,Y
+Slow Down,18,I think you should relax with the latitude,think,19,And we done did a lot of things for the gratitude,things,INNER,SLANT,cmu,MED,Y
+Slow Down,18,I think you should relax with the latitude,think,20,Cheers to the days I was in a stressful place,Cheers,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,19,And we done did a lot of things for the gratitude,things,20,Cheers to the days I was in a stressful place,Cheers,INNER,SLANT,cmu,MED,Y
+Slow Down,19,And we done did a lot of things for the gratitude,done,21,"Running up the bank, moving next to Chase (Yeah)",Running,INNER,SLANT,cmu,MED,Y
+Slow Down,19,And we done did a lot of things for the gratitude,gratitude,21,"Running up the bank, moving next to Chase (Yeah)",moving,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,20,Cheers to the days I was in a stressful place,days,20,Cheers to the days I was in a stressful place,place,INNER,SLANT,cmu,MED,Y
+Slow Down,20,Cheers to the days I was in a stressful place,place,21,"Running up the bank, moving next to Chase (Yeah)",Chase,END,PERFECT,cmu,HIGH,Y
+Slow Down,20,Cheers to the days I was in a stressful place,days,21,"Running up the bank, moving next to Chase (Yeah)",Chase,INNER,SLANT,cmu,MED,Y
+Slow Down,20,Cheers to the days I was in a stressful place,stressful,21,"Running up the bank, moving next to Chase (Yeah)",next,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,20,Cheers to the days I was in a stressful place,place,22,And broke bitches always got expensive taste,taste,END,SLANT,cmu,MED,Y
+Slow Down,20,Cheers to the days I was in a stressful place,Cheers,22,And broke bitches always got expensive taste,bitches,INNER,SLANT,cmu,MED,Y
+Slow Down,20,Cheers to the days I was in a stressful place,days,22,And broke bitches always got expensive taste,always,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,20,Cheers to the days I was in a stressful place,days,22,And broke bitches always got expensive taste,taste,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,20,Cheers to the days I was in a stressful place,place,22,And broke bitches always got expensive taste,always,INNER,SLANT,cmu,MED,Y
+Slow Down,20,Cheers to the days I was in a stressful place,stressful,22,And broke bitches always got expensive taste,expensive,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,20,Cheers to the days I was in a stressful place,place,23,She gon' suck me off and see how expensive taste,taste,END,SLANT,cmu,MED,Y
+Slow Down,21,"Running up the bank, moving next to Chase (Yeah)",Chase,22,And broke bitches always got expensive taste,taste,END,SLANT,cmu,MED,Y
+Slow Down,21,"Running up the bank, moving next to Chase (Yeah)",Chase,22,And broke bitches always got expensive taste,always,INNER,SLANT,cmu,MED,Y
+Slow Down,21,"Running up the bank, moving next to Chase (Yeah)",next,22,And broke bitches always got expensive taste,expensive,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,21,"Running up the bank, moving next to Chase (Yeah)",Chase,23,She gon' suck me off and see how expensive taste,taste,END,SLANT,cmu,MED,Y
+Slow Down,21,"Running up the bank, moving next to Chase (Yeah)",next,23,She gon' suck me off and see how expensive taste,expensive,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,21,"Running up the bank, moving next to Chase (Yeah)",Running,23,She gon' suck me off and see how expensive taste,suck,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,22,And broke bitches always got expensive taste,always,22,And broke bitches always got expensive taste,taste,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,22,And broke bitches always got expensive taste,taste,23,She gon' suck me off and see how expensive taste,taste,END,REPEAT,spelling,HIGH,N
+Slow Down,22,And broke bitches always got expensive taste,always,23,She gon' suck me off and see how expensive taste,taste,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,22,And broke bitches always got expensive taste,broke,23,She gon' suck me off and see how expensive taste,gon,INNER,SLANT,spelling,LOW,Y
+Slow Down,22,And broke bitches always got expensive taste,expensive,23,She gon' suck me off and see how expensive taste,expensive,INNER,REPEAT,spelling,HIGH,N
+Slow Down,22,And broke bitches always got expensive taste,got,24,You'll be my bae and my confidant (Yeah),confidant,INNER,SLANT,cmu,MED,Y
+Slow Down,23,She gon' suck me off and see how expensive taste,gon,25,Struggle through the pain and the ramidon,ramidon,INNER,PERFECT,spelling,MED,Y
+Slow Down,23,She gon' suck me off and see how expensive taste,suck,25,Struggle through the pain and the ramidon,Struggle,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,23,She gon' suck me off and see how expensive taste,taste,25,Struggle through the pain and the ramidon,pain,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,25,Struggle through the pain and the ramidon,pain,26,I could be your slave and your Amistad,slave,INNER,SLANT,cmu,MED,Y
+Slow Down,25,Struggle through the pain and the ramidon,pain,27,Love the way you move your waste when my song is on (Uh-huh),waste,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,25,Struggle through the pain and the ramidon,pain,27,Love the way you move your waste when my song is on (Uh-huh),way,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,25,Struggle through the pain and the ramidon,Struggle,27,Love the way you move your waste when my song is on (Uh-huh),Love,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,25,Struggle through the pain and the ramidon,through,27,Love the way you move your waste when my song is on (Uh-huh),move,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,26,I could be your slave and your Amistad,slave,27,Love the way you move your waste when my song is on (Uh-huh),waste,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,26,I could be your slave and your Amistad,slave,27,Love the way you move your waste when my song is on (Uh-huh),way,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,27,Love the way you move your waste when my song is on (Uh-huh),way,27,Love the way you move your waste when my song is on (Uh-huh),waste,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,27,Love the way you move your waste when my song is on (Uh-huh),Love,29,And I'ma hype you up like some ad-libs (Hol' up),libs,INNER,SLANT,cmu,MED,Y
+Slow Down,27,Love the way you move your waste when my song is on (Uh-huh),Love,29,And I'ma hype you up like some ad-libs (Hol' up),some,INNER,SLANT,cmu,MED,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),hype,29,And I'ma hype you up like some ad-libs (Hol' up),like,INNER,SLANT,cmu,MED,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),some,29,And I'ma hype you up like some ad-libs (Hol' up),libs,INNER,SLANT,cmu,MED,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),ad,30,And I can't get enough of your assets,can't,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),libs,30,And I can't get enough of your assets,enough,INNER,SLANT,cmu,MED,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),some,30,And I can't get enough of your assets,enough,INNER,SLANT,cmu,MED,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),ad,31,I hope to God you ain't nothing like my last bitch,last,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),hype,31,I hope to God you ain't nothing like my last bitch,like,INNER,SLANT,cmu,MED,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),I'ma,31,I hope to God you ain't nothing like my last bitch,bitch,INNER,SLANT,spelling,LOW,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),libs,31,I hope to God you ain't nothing like my last bitch,nothing,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),like,31,I hope to God you ain't nothing like my last bitch,like,INNER,REPEAT,spelling,HIGH,N
+Slow Down,29,And I'ma hype you up like some ad-libs (Hol' up),some,31,I hope to God you ain't nothing like my last bitch,nothing,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,30,And I can't get enough of your assets,get,30,And I can't get enough of your assets,assets,INNER,SLANT,cmu,MED,Y
+Slow Down,30,And I can't get enough of your assets,can't,31,I hope to God you ain't nothing like my last bitch,last,INNER,SLANT,cmu,MED,Y
+Slow Down,30,And I can't get enough of your assets,enough,31,I hope to God you ain't nothing like my last bitch,nothing,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,30,And I can't get enough of your assets,assets,32,"Can't gas me, I'm a Tesla (Tesla)",Tesla,END,ASSONANCE,vowel,MED,Y
+Slow Down,30,And I can't get enough of your assets,can't,32,"Can't gas me, I'm a Tesla (Tesla)",Can't,INNER,REPEAT,spelling,HIGH,N
+Slow Down,30,And I can't get enough of your assets,can't,32,"Can't gas me, I'm a Tesla (Tesla)",gas,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,30,And I can't get enough of your assets,get,32,"Can't gas me, I'm a Tesla (Tesla)",Tesla,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,30,And I can't get enough of your assets,assets,33,She just wants rules and affection (Affection),affection,END,ASSONANCE,vowel,MED,Y
+Slow Down,30,And I can't get enough of your assets,assets,34,Then tell me what you do like Alexa (No),Alexa,END,SLANT,cmu,MED,Y
+Slow Down,31,I hope to God you ain't nothing like my last bitch,last,32,"Can't gas me, I'm a Tesla (Tesla)",Can't,INNER,SLANT,cmu,MED,Y
+Slow Down,31,I hope to God you ain't nothing like my last bitch,last,32,"Can't gas me, I'm a Tesla (Tesla)",gas,INNER,SLANT,cmu,MED,Y
+Slow Down,31,I hope to God you ain't nothing like my last bitch,God,33,She just wants rules and affection (Affection),wants,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,32,"Can't gas me, I'm a Tesla (Tesla)",Can't,32,"Can't gas me, I'm a Tesla (Tesla)",gas,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,32,"Can't gas me, I'm a Tesla (Tesla)",Tesla,33,She just wants rules and affection (Affection),affection,END,ASSONANCE,vowel,MED,Y
+Slow Down,32,"Can't gas me, I'm a Tesla (Tesla)",Tesla,34,Then tell me what you do like Alexa (No),Alexa,END,ASSONANCE,vowel,MED,Y
+Slow Down,32,"Can't gas me, I'm a Tesla (Tesla)",Tesla,34,Then tell me what you do like Alexa (No),tell,INNER,SLANT,cmu,MED,Y
+Slow Down,32,"Can't gas me, I'm a Tesla (Tesla)",Tesla,35,But I ain't really cool with the extras,extras,END,ASSONANCE,vowel,MED,Y
+Slow Down,33,She just wants rules and affection (Affection),affection,34,Then tell me what you do like Alexa (No),Alexa,END,ASSONANCE,vowel,MED,Y
+Slow Down,33,She just wants rules and affection (Affection),affection,34,Then tell me what you do like Alexa (No),tell,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,33,She just wants rules and affection (Affection),affection,35,But I ain't really cool with the extras,extras,END,ASSONANCE,vowel,MED,Y
+Slow Down,33,She just wants rules and affection (Affection),rules,35,But I ain't really cool with the extras,cool,INNER,SLANT,cmu,MED,Y
+Slow Down,33,She just wants rules and affection (Affection),affection,37,Tryna chase you but ain't no time to spare (Well),spare,END,ASSONANCE,vowel,MED,Y
+Slow Down,34,Then tell me what you do like Alexa (No),tell,34,Then tell me what you do like Alexa (No),Alexa,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,34,Then tell me what you do like Alexa (No),Alexa,35,But I ain't really cool with the extras,extras,END,ASSONANCE,vowel,MED,Y
+Slow Down,34,Then tell me what you do like Alexa (No),tell,35,But I ain't really cool with the extras,extras,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,34,Then tell me what you do like Alexa (No),Alexa,36,Blessed to be living and my mind is clear (Yeah),Blessed,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,34,Then tell me what you do like Alexa (No),like,36,Blessed to be living and my mind is clear (Yeah),mind,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,34,Then tell me what you do like Alexa (No),tell,36,Blessed to be living and my mind is clear (Yeah),Blessed,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,34,Then tell me what you do like Alexa (No),Alexa,37,Tryna chase you but ain't no time to spare (Well),spare,END,ASSONANCE,vowel,MED,Y
+Slow Down,34,Then tell me what you do like Alexa (No),Alexa,38,I don't know where I'm going but I'll find you there (Yeah),there,END,ASSONANCE,vowel,MED,Y
+Slow Down,35,But I ain't really cool with the extras,extras,36,Blessed to be living and my mind is clear (Yeah),Blessed,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,35,But I ain't really cool with the extras,really,36,Blessed to be living and my mind is clear (Yeah),clear,INNER,SLANT,cmu,MED,Y
+Slow Down,35,But I ain't really cool with the extras,really,36,Blessed to be living and my mind is clear (Yeah),living,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,35,But I ain't really cool with the extras,extras,37,Tryna chase you but ain't no time to spare (Well),spare,END,ASSONANCE,vowel,MED,Y
+Slow Down,35,But I ain't really cool with the extras,ain't,37,Tryna chase you but ain't no time to spare (Well),ain't,INNER,REPEAT,spelling,HIGH,N
+Slow Down,35,But I ain't really cool with the extras,ain't,37,Tryna chase you but ain't no time to spare (Well),chase,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,35,But I ain't really cool with the extras,extras,38,I don't know where I'm going but I'll find you there (Yeah),there,END,ASSONANCE,vowel,MED,Y
+Slow Down,36,Blessed to be living and my mind is clear (Yeah),living,36,Blessed to be living and my mind is clear (Yeah),clear,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,36,Blessed to be living and my mind is clear (Yeah),Blessed,37,Tryna chase you but ain't no time to spare (Well),spare,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,36,Blessed to be living and my mind is clear (Yeah),mind,37,Tryna chase you but ain't no time to spare (Well),time,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,36,Blessed to be living and my mind is clear (Yeah),Blessed,38,I don't know where I'm going but I'll find you there (Yeah),there,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,36,Blessed to be living and my mind is clear (Yeah),Blessed,38,I don't know where I'm going but I'll find you there (Yeah),where,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,36,Blessed to be living and my mind is clear (Yeah),mind,38,I don't know where I'm going but I'll find you there (Yeah),find,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,36,Blessed to be living and my mind is clear (Yeah),mind,38,I don't know where I'm going but I'll find you there (Yeah),I'll,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),chase,37,Tryna chase you but ain't no time to spare (Well),ain't,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),spare,38,I don't know where I'm going but I'll find you there (Yeah),there,END,PERFECT,cmu,HIGH,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),no,38,I don't know where I'm going but I'll find you there (Yeah),don't,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),no,38,I don't know where I'm going but I'll find you there (Yeah),going,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),no,38,I don't know where I'm going but I'll find you there (Yeah),know,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),spare,38,I don't know where I'm going but I'll find you there (Yeah),where,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),time,38,I don't know where I'm going but I'll find you there (Yeah),find,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),time,38,I don't know where I'm going but I'll find you there (Yeah),I'll,INNER,SLANT,cmu,MED,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),ain't,39,And we can make love every time you're here (Yeah),make,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),chase,39,And we can make love every time you're here (Yeah),make,INNER,SLANT,cmu,MED,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),spare,39,And we can make love every time you're here (Yeah),every,INNER,SLANT,cmu,MED,Y
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),time,39,And we can make love every time you're here (Yeah),time,INNER,REPEAT,spelling,HIGH,N
+Slow Down,37,Tryna chase you but ain't no time to spare (Well),Tryna,39,And we can make love every time you're here (Yeah),here,INNER,SLANT,spelling,LOW,Y
+Slow Down,38,I don't know where I'm going but I'll find you there (Yeah),don't,38,I don't know where I'm going but I'll find you there (Yeah),going,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,38,I don't know where I'm going but I'll find you there (Yeah),don't,38,I don't know where I'm going but I'll find you there (Yeah),know,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,38,I don't know where I'm going but I'll find you there (Yeah),I'll,38,I don't know where I'm going but I'll find you there (Yeah),find,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,38,I don't know where I'm going but I'll find you there (Yeah),know,38,I don't know where I'm going but I'll find you there (Yeah),going,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,38,I don't know where I'm going but I'll find you there (Yeah),where,38,I don't know where I'm going but I'll find you there (Yeah),there,INNER,PERFECT,cmu,HIGH,Y
+Slow Down,38,I don't know where I'm going but I'll find you there (Yeah),find,39,And we can make love every time you're here (Yeah),time,INNER,ASSONANCE,vowel,MED,Y
+Slow Down,38,I don't know where I'm going but I'll find you there (Yeah),I'll,39,And we can make love every time you're here (Yeah),time,INNER,SLANT,cmu,MED,Y
+Slow Down,38,I don't know where I'm going but I'll find you there (Yeah),there,39,And we can make love every time you're here (Yeah),every,INNER,SLANT,cmu,MED,Y
+Slow Down,38,I don't know where I'm going but I'll find you there (Yeah),where,39,And we can make love every time you're here (Yeah),every,INNER,SLANT,cmu,MED,Y

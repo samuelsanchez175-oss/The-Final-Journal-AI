@@ -1,0 +1,231 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+That Nigga,1,"One time, we ain't going for that nigga",nigga,2,we going for that nigga,nigga,END,REPEAT,spelling,HIGH,N
+That Nigga,1,"One time, we ain't going for that nigga",going,2,we going for that nigga,going,INNER,REPEAT,spelling,HIGH,N
+That Nigga,1,"One time, we ain't going for that nigga",nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",nigga,END,REPEAT,spelling,HIGH,N
+That Nigga,1,"One time, we ain't going for that nigga",going,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",know,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,1,"One time, we ain't going for that nigga",nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,2,we going for that nigga,nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",nigga,END,REPEAT,spelling,HIGH,N
+That Nigga,2,we going for that nigga,going,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",know,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,2,we going for that nigga,nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,2,we going for that nigga,going,4,"Them boys better go and , my niggas be at niggas' necks",go,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,2,we going for that nigga,nigga,4,"Them boys better go and , my niggas be at niggas' necks",niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,2,we going for that nigga,nigga,6,"I got my city on lock, cause I'm that nigga",nigga,END,REPEAT,spelling,HIGH,N
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",niggas,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",niggas,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",know,4,"Them boys better go and , my niggas be at niggas' necks",go,INNER,PERFECT,cmu,HIGH,Y
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",nigga,4,"Them boys better go and , my niggas be at niggas' necks",niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",niggas,4,"Them boys better go and , my niggas be at niggas' necks",necks,INNER,SLANT,spelling,LOW,Y
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",niggas,4,"Them boys better go and , my niggas be at niggas' necks",niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",nigga,5,"In my city, niggas gon , so niggas better check",city,INNER,SLANT,spelling,LOW,Y
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",nigga,5,"In my city, niggas gon , so niggas better check",niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",niggas,5,"In my city, niggas gon , so niggas better check",niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,3,"Extorting starters, these niggas pussy, them niggas know I'm that nigga",nigga,6,"I got my city on lock, cause I'm that nigga",nigga,END,REPEAT,spelling,HIGH,N
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",better,4,"Them boys better go and , my niggas be at niggas' necks",necks,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",niggas,4,"Them boys better go and , my niggas be at niggas' necks",necks,INNER,SLANT,spelling,LOW,Y
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",niggas,4,"Them boys better go and , my niggas be at niggas' necks",niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",necks,5,"In my city, niggas gon , so niggas better check",check,END,SLANT,cmu,MED,Y
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",better,5,"In my city, niggas gon , so niggas better check",better,INNER,REPEAT,spelling,HIGH,N
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",better,5,"In my city, niggas gon , so niggas better check",check,INNER,SLANT,cmu,MED,Y
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",necks,5,"In my city, niggas gon , so niggas better check",better,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",necks,5,"In my city, niggas gon , so niggas better check",niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",niggas,5,"In my city, niggas gon , so niggas better check",niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,4,"Them boys better go and , my niggas be at niggas' necks",niggas,6,"I got my city on lock, cause I'm that nigga",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,5,"In my city, niggas gon , so niggas better check",better,5,"In my city, niggas gon , so niggas better check",check,INNER,SLANT,cmu,MED,Y
+That Nigga,5,"In my city, niggas gon , so niggas better check",niggas,5,"In my city, niggas gon , so niggas better check",niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,5,"In my city, niggas gon , so niggas better check",city,6,"I got my city on lock, cause I'm that nigga",city,INNER,REPEAT,spelling,HIGH,N
+That Nigga,5,"In my city, niggas gon , so niggas better check",city,6,"I got my city on lock, cause I'm that nigga",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,5,"In my city, niggas gon , so niggas better check",niggas,6,"I got my city on lock, cause I'm that nigga",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,5,"In my city, niggas gon , so niggas better check",better,7,"No Twitter, you mention my name,",mention,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,5,"In my city, niggas gon , so niggas better check",check,7,"No Twitter, you mention my name,",mention,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,5,"In my city, niggas gon , so niggas better check",city,7,"No Twitter, you mention my name,",Twitter,INNER,SLANT,cmu,MED,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",city,6,"I got my city on lock, cause I'm that nigga",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",got,6,"I got my city on lock, cause I'm that nigga",cause,INNER,SLANT,cmu,MED,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",got,6,"I got my city on lock, cause I'm that nigga",lock,INNER,SLANT,cmu,MED,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",lock,6,"I got my city on lock, cause I'm that nigga",cause,INNER,SLANT,cmu,MED,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",city,7,"No Twitter, you mention my name,",Twitter,INNER,SLANT,cmu,MED,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",nigga,7,"No Twitter, you mention my name,",Twitter,INNER,SLANT,spelling,LOW,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",cause,8,"These niggas be screaming out war, cause we don't fuck with 'em",cause,INNER,REPEAT,spelling,HIGH,N
+That Nigga,6,"I got my city on lock, cause I'm that nigga",got,8,"These niggas be screaming out war, cause we don't fuck with 'em",cause,INNER,SLANT,cmu,MED,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",lock,8,"These niggas be screaming out war, cause we don't fuck with 'em",cause,INNER,SLANT,cmu,MED,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",nigga,8,"These niggas be screaming out war, cause we don't fuck with 'em",niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,6,"I got my city on lock, cause I'm that nigga",nigga,9,"I know these niggas mad, cause I'm that nigga",nigga,END,REPEAT,spelling,HIGH,N
+That Nigga,7,"No Twitter, you mention my name,",No,8,"These niggas be screaming out war, cause we don't fuck with 'em",don't,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,7,"No Twitter, you mention my name,",No,9,"I know these niggas mad, cause I'm that nigga",know,INNER,PERFECT,cmu,HIGH,Y
+That Nigga,7,"No Twitter, you mention my name,",Twitter,9,"I know these niggas mad, cause I'm that nigga",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,8,"These niggas be screaming out war, cause we don't fuck with 'em",These,8,"These niggas be screaming out war, cause we don't fuck with 'em",screaming,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,8,"These niggas be screaming out war, cause we don't fuck with 'em",cause,9,"I know these niggas mad, cause I'm that nigga",cause,INNER,REPEAT,spelling,HIGH,N
+That Nigga,8,"These niggas be screaming out war, cause we don't fuck with 'em",don't,9,"I know these niggas mad, cause I'm that nigga",know,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,8,"These niggas be screaming out war, cause we don't fuck with 'em",niggas,9,"I know these niggas mad, cause I'm that nigga",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,8,"These niggas be screaming out war, cause we don't fuck with 'em",niggas,9,"I know these niggas mad, cause I'm that nigga",niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,8,"These niggas be screaming out war, cause we don't fuck with 'em",screaming,9,"I know these niggas mad, cause I'm that nigga",these,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,8,"These niggas be screaming out war, cause we don't fuck with 'em",These,9,"I know these niggas mad, cause I'm that nigga",these,INNER,REPEAT,spelling,HIGH,N
+That Nigga,9,"I know these niggas mad, cause I'm that nigga",niggas,9,"I know these niggas mad, cause I'm that nigga",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,9,"I know these niggas mad, cause I'm that nigga",mad,10,HIt him with a Mac 90,Mac,INNER,SLANT,cmu,MED,Y
+That Nigga,9,"I know these niggas mad, cause I'm that nigga",nigga,10,HIt him with a Mac 90,HIt,INNER,SLANT,spelling,LOW,Y
+That Nigga,9,"I know these niggas mad, cause I'm that nigga",know,11,"Show up blowin at your funeral, yeah my niggas that grimey",blowin,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,9,"I know these niggas mad, cause I'm that nigga",know,11,"Show up blowin at your funeral, yeah my niggas that grimey",Show,INNER,PERFECT,cmu,HIGH,Y
+That Nigga,9,"I know these niggas mad, cause I'm that nigga",nigga,11,"Show up blowin at your funeral, yeah my niggas that grimey",niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,9,"I know these niggas mad, cause I'm that nigga",niggas,11,"Show up blowin at your funeral, yeah my niggas that grimey",niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,10,HIt him with a Mac 90,HIt,10,HIt him with a Mac 90,him,INNER,SLANT,cmu,MED,Y
+That Nigga,10,HIt him with a Mac 90,him,11,"Show up blowin at your funeral, yeah my niggas that grimey",grimey,INNER,SLANT,spelling,LOW,Y
+That Nigga,10,HIt him with a Mac 90,HIt,11,"Show up blowin at your funeral, yeah my niggas that grimey",grimey,INNER,SLANT,spelling,LOW,Y
+That Nigga,11,"Show up blowin at your funeral, yeah my niggas that grimey",Show,11,"Show up blowin at your funeral, yeah my niggas that grimey",blowin,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,11,"Show up blowin at your funeral, yeah my niggas that grimey",funeral,12,"knew I was a rider, calling me a shooter and a driver",knew,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,11,"Show up blowin at your funeral, yeah my niggas that grimey",funeral,12,"knew I was a rider, calling me a shooter and a driver",shooter,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,11,"Show up blowin at your funeral, yeah my niggas that grimey",blowin,13,It don't matter if you we just start shooting that side up,don't,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,11,"Show up blowin at your funeral, yeah my niggas that grimey",funeral,13,It don't matter if you we just start shooting that side up,shooting,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,11,"Show up blowin at your funeral, yeah my niggas that grimey",Show,13,It don't matter if you we just start shooting that side up,don't,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,12,"knew I was a rider, calling me a shooter and a driver",knew,12,"knew I was a rider, calling me a shooter and a driver",shooter,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,12,"knew I was a rider, calling me a shooter and a driver",rider,12,"knew I was a rider, calling me a shooter and a driver",driver,INNER,SLANT,cmu,MED,Y
+That Nigga,12,"knew I was a rider, calling me a shooter and a driver",driver,13,It don't matter if you we just start shooting that side up,side,END,SLANT,cmu,MED,Y
+That Nigga,12,"knew I was a rider, calling me a shooter and a driver",knew,13,It don't matter if you we just start shooting that side up,shooting,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,12,"knew I was a rider, calling me a shooter and a driver",rider,13,It don't matter if you we just start shooting that side up,side,INNER,SLANT,cmu,MED,Y
+That Nigga,12,"knew I was a rider, calling me a shooter and a driver",shooter,13,It don't matter if you we just start shooting that side up,shooting,INNER,SLANT,cmu,MED,Y
+That Nigga,14,"Lil niggas, yeah here they come",come,15,"They off the shits, and they carey guns",guns,END,ASSONANCE,vowel,MED,Y
+That Nigga,14,"Lil niggas, yeah here they come",Lil,15,"They off the shits, and they carey guns",shits,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,14,"Lil niggas, yeah here they come",niggas,15,"They off the shits, and they carey guns",shits,INNER,SLANT,spelling,LOW,Y
+That Nigga,14,"Lil niggas, yeah here they come",come,16,"They say it's fun, they don't give a fuck",fuck,END,SLANT,cmu,MED,Y
+That Nigga,14,"Lil niggas, yeah here they come",come,16,"They say it's fun, they don't give a fuck",fun,INNER,SLANT,cmu,MED,Y
+That Nigga,14,"Lil niggas, yeah here they come",Lil,16,"They say it's fun, they don't give a fuck",give,INNER,SLANT,cmu,MED,Y
+That Nigga,14,"Lil niggas, yeah here they come",come,18,"My niggas dawgs, motherfuckers to",motherfuckers,END,ASSONANCE,vowel,MED,Y
+That Nigga,15,"They off the shits, and they carey guns",guns,16,"They say it's fun, they don't give a fuck",fuck,END,ASSONANCE,vowel,MED,Y
+That Nigga,15,"They off the shits, and they carey guns",guns,16,"They say it's fun, they don't give a fuck",fun,INNER,SLANT,cmu,MED,Y
+That Nigga,15,"They off the shits, and they carey guns",shits,16,"They say it's fun, they don't give a fuck",give,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,15,"They off the shits, and they carey guns",carey,17,"They stick you up, no matter where you from",where,INNER,SLANT,cmu,MED,Y
+That Nigga,15,"They off the shits, and they carey guns",shits,17,"They stick you up, no matter where you from",stick,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,15,"They off the shits, and they carey guns",guns,18,"My niggas dawgs, motherfuckers to",motherfuckers,END,SLANT,cmu,MED,Y
+That Nigga,16,"They say it's fun, they don't give a fuck",fun,16,"They say it's fun, they don't give a fuck",fuck,INNER,SLANT,cmu,MED,Y
+That Nigga,16,"They say it's fun, they don't give a fuck",don't,17,"They stick you up, no matter where you from",no,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,16,"They say it's fun, they don't give a fuck",give,17,"They stick you up, no matter where you from",stick,INNER,SLANT,cmu,MED,Y
+That Nigga,16,"They say it's fun, they don't give a fuck",fuck,18,"My niggas dawgs, motherfuckers to",motherfuckers,END,SLANT,cmu,MED,Y
+That Nigga,16,"They say it's fun, they don't give a fuck",fun,18,"My niggas dawgs, motherfuckers to",motherfuckers,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,17,"They stick you up, no matter where you from",where,19,"And they young, they done lost count of how many bodies they done caught",many,INNER,SLANT,cmu,MED,Y
+That Nigga,18,"My niggas dawgs, motherfuckers to",motherfuckers,19,"And they young, they done lost count of how many bodies they done caught",done,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,18,"My niggas dawgs, motherfuckers to",motherfuckers,19,"And they young, they done lost count of how many bodies they done caught",young,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,18,"My niggas dawgs, motherfuckers to",motherfuckers,20,Fuck them lil 30 shot clips,Fuck,INNER,SLANT,cmu,MED,Y
+That Nigga,18,"My niggas dawgs, motherfuckers to",niggas,20,Fuck them lil 30 shot clips,clips,INNER,SLANT,spelling,LOW,Y
+That Nigga,19,"And they young, they done lost count of how many bodies they done caught",bodies,19,"And they young, they done lost count of how many bodies they done caught",caught,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,19,"And they young, they done lost count of how many bodies they done caught",count,19,"And they young, they done lost count of how many bodies they done caught",how,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,19,"And they young, they done lost count of how many bodies they done caught",done,19,"And they young, they done lost count of how many bodies they done caught",done,INNER,REPEAT,spelling,HIGH,N
+That Nigga,19,"And they young, they done lost count of how many bodies they done caught",young,19,"And they young, they done lost count of how many bodies they done caught",done,INNER,SLANT,cmu,MED,Y
+That Nigga,19,"And they young, they done lost count of how many bodies they done caught",bodies,20,Fuck them lil 30 shot clips,shot,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,19,"And they young, they done lost count of how many bodies they done caught",caught,20,Fuck them lil 30 shot clips,shot,INNER,PERFECT,cmu,HIGH,Y
+That Nigga,19,"And they young, they done lost count of how many bodies they done caught",done,20,Fuck them lil 30 shot clips,Fuck,INNER,SLANT,cmu,MED,Y
+That Nigga,19,"And they young, they done lost count of how many bodies they done caught",young,20,Fuck them lil 30 shot clips,Fuck,INNER,SLANT,cmu,MED,Y
+That Nigga,19,"And they young, they done lost count of how many bodies they done caught",lost,21,"I ain't playing, nigga all I'm saying",all,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,20,Fuck them lil 30 shot clips,lil,20,Fuck them lil 30 shot clips,clips,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,20,Fuck them lil 30 shot clips,clips,22,"If you shoot at me, you better not miss",miss,END,SLANT,cmu,MED,Y
+That Nigga,20,Fuck them lil 30 shot clips,lil,22,"If you shoot at me, you better not miss",miss,INNER,SLANT,cmu,MED,Y
+That Nigga,20,Fuck them lil 30 shot clips,shot,22,"If you shoot at me, you better not miss",not,INNER,PERFECT,cmu,HIGH,Y
+That Nigga,21,"I ain't playing, nigga all I'm saying",ain't,21,"I ain't playing, nigga all I'm saying",playing,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,21,"I ain't playing, nigga all I'm saying",ain't,21,"I ain't playing, nigga all I'm saying",saying,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,21,"I ain't playing, nigga all I'm saying",ain't playing,21,"I ain't playing, nigga all I'm saying",all saying,INNER,MULTI,multi,HIGH,Y
+That Nigga,21,"I ain't playing, nigga all I'm saying",playing,21,"I ain't playing, nigga all I'm saying",saying,INNER,MULTI,multi,HIGH,Y
+That Nigga,21,"I ain't playing, nigga all I'm saying",saying,24,That they had to make a,make,END,SLANT,cmu,MED,Y
+That Nigga,22,"If you shoot at me, you better not miss",miss,23,"Killer season, we the reason",Killer,INNER,SLANT,cmu,MED,Y
+That Nigga,22,"If you shoot at me, you better not miss",miss,25,"I got money, goons, guns, bitches",bitches,END,SLANT,cmu,MED,Y
+That Nigga,23,"Killer season, we the reason",Killer season,23,"Killer season, we the reason",season reason,INNER,MULTI,multi,HIGH,Y
+That Nigga,23,"Killer season, we the reason",season,23,"Killer season, we the reason",reason,INNER,MULTI,multi,HIGH,Y
+That Nigga,23,"Killer season, we the reason",Killer,25,"I got money, goons, guns, bitches",bitches,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,24,That they had to make a,had,26,"Fuck this rap beef, I have my shooters",have,INNER,SLANT,cmu,MED,Y
+That Nigga,24,That they had to make a,had,26,"Fuck this rap beef, I have my shooters",rap,INNER,SLANT,cmu,MED,Y
+That Nigga,25,"I got money, goons, guns, bitches",goons,25,"I got money, goons, guns, bitches",guns,INNER,SLANT,spelling,LOW,Y
+That Nigga,25,"I got money, goons, guns, bitches",money,25,"I got money, goons, guns, bitches",guns,INNER,SLANT,cmu,MED,Y
+That Nigga,25,"I got money, goons, guns, bitches",goons,26,"Fuck this rap beef, I have my shooters",shooters,INNER,SLANT,cmu,MED,Y
+That Nigga,25,"I got money, goons, guns, bitches",guns,26,"Fuck this rap beef, I have my shooters",Fuck,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,25,"I got money, goons, guns, bitches",money,26,"Fuck this rap beef, I have my shooters",Fuck,INNER,SLANT,cmu,MED,Y
+That Nigga,25,"I got money, goons, guns, bitches",bitches,27,Killers looking for you like a bitch in a dress,bitch,INNER,SLANT,cmu,MED,Y
+That Nigga,25,"I got money, goons, guns, bitches",bitches,27,Killers looking for you like a bitch in a dress,Killers,INNER,SLANT,cmu,MED,Y
+That Nigga,26,"Fuck this rap beef, I have my shooters",rap,26,"Fuck this rap beef, I have my shooters",have,INNER,SLANT,cmu,MED,Y
+That Nigga,26,"Fuck this rap beef, I have my shooters",shooters,28,Riding through but I know where you at nigga,through,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,27,Killers looking for you like a bitch in a dress,Killers,27,Killers looking for you like a bitch in a dress,bitch,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,27,Killers looking for you like a bitch in a dress,dress,28,Riding through but I know where you at nigga,where,INNER,SLANT,cmu,MED,Y
+That Nigga,27,Killers looking for you like a bitch in a dress,like,28,Riding through but I know where you at nigga,Riding,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,27,Killers looking for you like a bitch in a dress,dress,29,Be the next nigga ending up like the last nigga,ending,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,27,Killers looking for you like a bitch in a dress,dress,29,Be the next nigga ending up like the last nigga,next,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,27,Killers looking for you like a bitch in a dress,like,29,Be the next nigga ending up like the last nigga,like,INNER,REPEAT,spelling,HIGH,N
+That Nigga,28,Riding through but I know where you at nigga,nigga,29,Be the next nigga ending up like the last nigga,nigga,END,REPEAT,spelling,HIGH,N
+That Nigga,28,Riding through but I know where you at nigga,nigga,29,Be the next nigga ending up like the last nigga,nigga,INNER,REPEAT,spelling,HIGH,N
+That Nigga,28,Riding through but I know where you at nigga,Riding,29,Be the next nigga ending up like the last nigga,ending,INNER,PERFECT,spelling,MED,Y
+That Nigga,28,Riding through but I know where you at nigga,Riding,29,Be the next nigga ending up like the last nigga,like,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,28,Riding through but I know where you at nigga,where,29,Be the next nigga ending up like the last nigga,ending,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,28,Riding through but I know where you at nigga,where,29,Be the next nigga ending up like the last nigga,next,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,28,Riding through but I know where you at nigga,nigga,30,"Handguns on us, but the macs in the stash nigga",nigga,END,REPEAT,spelling,HIGH,N
+That Nigga,29,Be the next nigga ending up like the last nigga,next,29,Be the next nigga ending up like the last nigga,ending,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,29,Be the next nigga ending up like the last nigga,nigga,29,Be the next nigga ending up like the last nigga,nigga,INNER,REPEAT,spelling,HIGH,N
+That Nigga,29,Be the next nigga ending up like the last nigga,nigga,30,"Handguns on us, but the macs in the stash nigga",nigga,END,REPEAT,spelling,HIGH,N
+That Nigga,29,Be the next nigga ending up like the last nigga,last,30,"Handguns on us, but the macs in the stash nigga",macs,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,29,Be the next nigga ending up like the last nigga,last,30,"Handguns on us, but the macs in the stash nigga",stash,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,29,Be the next nigga ending up like the last nigga,nigga,30,"Handguns on us, but the macs in the stash nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+That Nigga,29,Be the next nigga ending up like the last nigga,last,31,Catch you out in traffic and you know,Catch,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,29,Be the next nigga ending up like the last nigga,last,31,Catch you out in traffic and you know,traffic,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,29,Be the next nigga ending up like the last nigga,nigga,33,niggas start switching up quick,quick,END,SLANT,spelling,LOW,Y
+That Nigga,30,"Handguns on us, but the macs in the stash nigga",macs,30,"Handguns on us, but the macs in the stash nigga",stash,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,30,"Handguns on us, but the macs in the stash nigga",macs,31,Catch you out in traffic and you know,Catch,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,30,"Handguns on us, but the macs in the stash nigga",macs,31,Catch you out in traffic and you know,traffic,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,30,"Handguns on us, but the macs in the stash nigga",stash,31,Catch you out in traffic and you know,Catch,INNER,SLANT,cmu,MED,Y
+That Nigga,30,"Handguns on us, but the macs in the stash nigga",stash,31,Catch you out in traffic and you know,traffic,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,30,"Handguns on us, but the macs in the stash nigga",Handguns,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",fuck,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,30,"Handguns on us, but the macs in the stash nigga",nigga,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",city,INNER,SLANT,spelling,LOW,Y
+That Nigga,30,"Handguns on us, but the macs in the stash nigga",nigga,33,niggas start switching up quick,quick,END,SLANT,spelling,LOW,Y
+That Nigga,31,Catch you out in traffic and you know,Catch,31,Catch you out in traffic and you know,traffic,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",city,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",thing,INNER,SLANT,cmu,MED,Y
+That Nigga,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",block,33,niggas start switching up quick,start,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",city,33,niggas start switching up quick,quick,INNER,SLANT,cmu,MED,Y
+That Nigga,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",city,33,niggas start switching up quick,switching,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",thing,33,niggas start switching up quick,quick,INNER,SLANT,cmu,MED,Y
+That Nigga,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",thing,33,niggas start switching up quick,switching,INNER,PERFECT,spelling,MED,Y
+That Nigga,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",block,34,"Just ask me, I don't know who got shot",shot,END,SLANT,cmu,MED,Y
+That Nigga,32,"fuck about your city, but it ain't a thing I wouldn't do for my block",block,34,"Just ask me, I don't know who got shot",got,INNER,SLANT,cmu,MED,Y
+That Nigga,33,niggas start switching up quick,switching,33,niggas start switching up quick,quick,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,33,niggas start switching up quick,start,34,"Just ask me, I don't know who got shot",got,INNER,SLANT,cmu,MED,Y
+That Nigga,33,niggas start switching up quick,start,34,"Just ask me, I don't know who got shot",shot,INNER,SLANT,cmu,MED,Y
+That Nigga,33,niggas start switching up quick,niggas,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,33,niggas start switching up quick,quick,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",nigga,INNER,SLANT,spelling,LOW,Y
+That Nigga,34,"Just ask me, I don't know who got shot",don't,34,"Just ask me, I don't know who got shot",know,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,34,"Just ask me, I don't know who got shot",got,34,"Just ask me, I don't know who got shot",shot,INNER,PERFECT,cmu,HIGH,Y
+That Nigga,34,"Just ask me, I don't know who got shot",don't,36,"Niggas looking for me, cause they know where I'm at",know,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,34,"Just ask me, I don't know who got shot",got,36,"Niggas looking for me, cause they know where I'm at",cause,INNER,SLANT,cmu,MED,Y
+That Nigga,34,"Just ask me, I don't know who got shot",know,36,"Niggas looking for me, cause they know where I'm at",know,INNER,REPEAT,spelling,HIGH,N
+That Nigga,34,"Just ask me, I don't know who got shot",shot,36,"Niggas looking for me, cause they know where I'm at",cause,INNER,SLANT,cmu,MED,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",tell,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",internet,INNER,SLANT,cmu,MED,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",tell,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",where,INNER,SLANT,cmu,MED,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",where,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",internet,INNER,SLANT,cmu,MED,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",internet,36,"Niggas looking for me, cause they know where I'm at",where,END,SLANT,cmu,MED,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",nigga,36,"Niggas looking for me, cause they know where I'm at",Niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",tell,36,"Niggas looking for me, cause they know where I'm at",where,INNER,SLANT,cmu,MED,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",where,36,"Niggas looking for me, cause they know where I'm at",where,INNER,REPEAT,spelling,HIGH,N
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",nigga,37,All these niggas don't know who they ride for,niggas,INNER,SLANT,spelling,LOW,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",streets,37,All these niggas don't know who they ride for,these,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",internet,38,Niggas' bitches getting with us,getting,END,SLANT,cmu,MED,Y
+That Nigga,35,"tell me where you at, I'm in the streets nigga, I ain't with the internet",internet,39,"No Twitter ho, we don't do the mentions",mentions,END,ASSONANCE,vowel,MED,Y
+That Nigga,36,"Niggas looking for me, cause they know where I'm at",know,37,All these niggas don't know who they ride for,don't,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,36,"Niggas looking for me, cause they know where I'm at",know,37,All these niggas don't know who they ride for,know,INNER,REPEAT,spelling,HIGH,N
+That Nigga,36,"Niggas looking for me, cause they know where I'm at",Niggas,37,All these niggas don't know who they ride for,niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,36,"Niggas looking for me, cause they know where I'm at",where,38,Niggas' bitches getting with us,getting,END,ASSONANCE,vowel,MED,Y
+That Nigga,36,"Niggas looking for me, cause they know where I'm at",Niggas,38,Niggas' bitches getting with us,Niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,36,"Niggas looking for me, cause they know where I'm at",where,39,"No Twitter ho, we don't do the mentions",mentions,END,ASSONANCE,vowel,MED,Y
+That Nigga,36,"Niggas looking for me, cause they know where I'm at",where,40,"pull up, smoke niggas, we don't do pretending",pretending,END,ASSONANCE,vowel,MED,Y
+That Nigga,37,All these niggas don't know who they ride for,don't,37,All these niggas don't know who they ride for,know,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,37,All these niggas don't know who they ride for,niggas,38,Niggas' bitches getting with us,Niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,37,All these niggas don't know who they ride for,don't,39,"No Twitter ho, we don't do the mentions",don't,INNER,REPEAT,spelling,HIGH,N
+That Nigga,37,All these niggas don't know who they ride for,don't,39,"No Twitter ho, we don't do the mentions",ho,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,37,All these niggas don't know who they ride for,don't,39,"No Twitter ho, we don't do the mentions",No,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,37,All these niggas don't know who they ride for,know,39,"No Twitter ho, we don't do the mentions",don't,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,37,All these niggas don't know who they ride for,know,39,"No Twitter ho, we don't do the mentions",ho,INNER,PERFECT,cmu,HIGH,Y
+That Nigga,37,All these niggas don't know who they ride for,know,39,"No Twitter ho, we don't do the mentions",No,INNER,PERFECT,cmu,HIGH,Y
+That Nigga,38,Niggas' bitches getting with us,getting,39,"No Twitter ho, we don't do the mentions",mentions,END,ASSONANCE,vowel,MED,Y
+That Nigga,38,Niggas' bitches getting with us,bitches,39,"No Twitter ho, we don't do the mentions",Twitter,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,38,Niggas' bitches getting with us,getting,40,"pull up, smoke niggas, we don't do pretending",pretending,END,ASSONANCE,vowel,MED,Y
+That Nigga,38,Niggas' bitches getting with us,Niggas,40,"pull up, smoke niggas, we don't do pretending",niggas,INNER,REPEAT,spelling,HIGH,N
+That Nigga,39,"No Twitter ho, we don't do the mentions",ho,39,"No Twitter ho, we don't do the mentions",don't,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,39,"No Twitter ho, we don't do the mentions",No,39,"No Twitter ho, we don't do the mentions",don't,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,39,"No Twitter ho, we don't do the mentions",No,39,"No Twitter ho, we don't do the mentions",ho,INNER,PERFECT,cmu,HIGH,Y
+That Nigga,39,"No Twitter ho, we don't do the mentions",mentions,40,"pull up, smoke niggas, we don't do pretending",pretending,END,ASSONANCE,vowel,MED,Y
+That Nigga,39,"No Twitter ho, we don't do the mentions",don't,40,"pull up, smoke niggas, we don't do pretending",don't,INNER,REPEAT,spelling,HIGH,N
+That Nigga,39,"No Twitter ho, we don't do the mentions",don't,40,"pull up, smoke niggas, we don't do pretending",smoke,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,39,"No Twitter ho, we don't do the mentions",ho,40,"pull up, smoke niggas, we don't do pretending",don't,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,39,"No Twitter ho, we don't do the mentions",ho,40,"pull up, smoke niggas, we don't do pretending",smoke,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,39,"No Twitter ho, we don't do the mentions",No,40,"pull up, smoke niggas, we don't do pretending",don't,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,39,"No Twitter ho, we don't do the mentions",No,40,"pull up, smoke niggas, we don't do pretending",smoke,INNER,ASSONANCE,vowel,MED,Y
+That Nigga,40,"pull up, smoke niggas, we don't do pretending",smoke,40,"pull up, smoke niggas, we don't do pretending",don't,INNER,ASSONANCE,vowel,MED,Y

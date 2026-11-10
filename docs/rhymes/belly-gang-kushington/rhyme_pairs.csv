@@ -1,0 +1,343 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+WTF GOIN,1,"Nigga, let's get it",let's,1,"Nigga, let's get it",get,INNER,SLANT,cmu,MED,Y
+WTF GOIN,1,"Nigga, let's get it",get,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",get,END,REPEAT,spelling,HIGH,N
+WTF GOIN,1,"Nigga, let's get it",get,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",let,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,1,"Nigga, let's get it",get,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",tellin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,1,"Nigga, let's get it",let's,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",get,INNER,SLANT,cmu,MED,Y
+WTF GOIN,1,"Nigga, let's get it",let's,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",let,INNER,SLANT,cmu,MED,Y
+WTF GOIN,1,"Nigga, let's get it",let's,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",tellin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,1,"Nigga, let's get it",Nigga,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",city,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,1,"Nigga, let's get it",Nigga,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",niggas,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,1,"Nigga, let's get it",get,3,"I'm in the bulletproof, black truck, I president it",president,END,SLANT,cmu,MED,Y
+WTF GOIN,1,"Nigga, let's get it",let's,3,"I'm in the bulletproof, black truck, I president it",president,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",let,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",get,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",tellin,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",get,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",tellin,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",let,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",get,3,"I'm in the bulletproof, black truck, I president it",president,END,SLANT,cmu,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",let,3,"I'm in the bulletproof, black truck, I president it",president,INNER,SLANT,cmu,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",man,3,"I'm in the bulletproof, black truck, I president it",black,INNER,SLANT,cmu,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",tellin,3,"I'm in the bulletproof, black truck, I president it",president,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",city,4,This for them bitches shakin' ass and doin' hair in kitchens,bitches,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",city,4,This for them bitches shakin' ass and doin' hair in kitchens,kitchens,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",get,4,This for them bitches shakin' ass and doin' hair in kitchens,hair,INNER,SLANT,cmu,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",let,4,This for them bitches shakin' ass and doin' hair in kitchens,hair,INNER,SLANT,cmu,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",man,4,This for them bitches shakin' ass and doin' hair in kitchens,ass,INNER,SLANT,cmu,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",niggas,4,This for them bitches shakin' ass and doin' hair in kitchens,ass,INNER,PERFECT,spelling,MED,Y
+WTF GOIN,2,"All them niggas tellin', man, don't put that on my city, hol' on, let me get it",tellin,4,This for them bitches shakin' ass and doin' hair in kitchens,hair,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,3,"I'm in the bulletproof, black truck, I president it",black,4,This for them bitches shakin' ass and doin' hair in kitchens,ass,INNER,SLANT,cmu,MED,Y
+WTF GOIN,3,"I'm in the bulletproof, black truck, I president it",president,4,This for them bitches shakin' ass and doin' hair in kitchens,hair,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,3,"I'm in the bulletproof, black truck, I president it",black,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",Magic,INNER,SLANT,cmu,MED,Y
+WTF GOIN,3,"I'm in the bulletproof, black truck, I president it",president,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",lemon,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,3,"I'm in the bulletproof, black truck, I president it",president,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",pepper,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,3,"I'm in the bulletproof, black truck, I president it",president,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",ten,INNER,SLANT,cmu,MED,Y
+WTF GOIN,3,"I'm in the bulletproof, black truck, I president it",truck,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",fuck,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,3,"I'm in the bulletproof, black truck, I president it",truck,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",what,INNER,SLANT,cmu,MED,Y
+WTF GOIN,3,"I'm in the bulletproof, black truck, I president it",president,7,"I got a phone full of shooters, who gettin' stepped on?",stepped,END,SLANT,cmu,MED,Y
+WTF GOIN,4,This for them bitches shakin' ass and doin' hair in kitchens,bitches,4,This for them bitches shakin' ass and doin' hair in kitchens,kitchens,INNER,SLANT,cmu,MED,Y
+WTF GOIN,4,This for them bitches shakin' ass and doin' hair in kitchens,ass,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",Magic,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,4,This for them bitches shakin' ass and doin' hair in kitchens,bitches,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",City,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,4,This for them bitches shakin' ass and doin' hair in kitchens,doin,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",goin,INNER,PERFECT,spelling,HIGH,Y
+WTF GOIN,4,This for them bitches shakin' ass and doin' hair in kitchens,hair,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",lemon,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,4,This for them bitches shakin' ass and doin' hair in kitchens,hair,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",pepper,INNER,SLANT,cmu,MED,Y
+WTF GOIN,4,This for them bitches shakin' ass and doin' hair in kitchens,hair,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",ten,INNER,SLANT,cmu,MED,Y
+WTF GOIN,4,This for them bitches shakin' ass and doin' hair in kitchens,kitchens,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",City,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,4,This for them bitches shakin' ass and doin' hair in kitchens,doin,6,"I got a pocket full of money, who the fuck ho'in'?",ho'in,INNER,PERFECT,spelling,HIGH,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",lemon,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",pepper,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",need,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",piece,INNER,SLANT,cmu,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",ten,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",lemon,INNER,SLANT,cmu,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",ten,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",pepper,INNER,SLANT,cmu,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",what,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",goin,6,"I got a pocket full of money, who the fuck ho'in'?",ho'in,END,PERFECT,spelling,HIGH,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",fuck,6,"I got a pocket full of money, who the fuck ho'in'?",fuck,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",fuck,6,"I got a pocket full of money, who the fuck ho'in'?",money,INNER,SLANT,cmu,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",what,6,"I got a pocket full of money, who the fuck ho'in'?",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",what,6,"I got a pocket full of money, who the fuck ho'in'?",money,INNER,SLANT,cmu,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",lemon,7,"I got a phone full of shooters, who gettin' stepped on?",gettin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",lemon,7,"I got a phone full of shooters, who gettin' stepped on?",stepped,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",pepper,7,"I got a phone full of shooters, who gettin' stepped on?",gettin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",pepper,7,"I got a phone full of shooters, who gettin' stepped on?",stepped,INNER,SLANT,cmu,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",ten,7,"I got a phone full of shooters, who gettin' stepped on?",gettin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,5,"I need a ten-piece lemon pepper, Magic City, what the fuck goin'?",ten,7,"I got a phone full of shooters, who gettin' stepped on?",stepped,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,6,"I got a pocket full of money, who the fuck ho'in'?",got,6,"I got a pocket full of money, who the fuck ho'in'?",pocket,INNER,SLANT,cmu,MED,Y
+WTF GOIN,6,"I got a pocket full of money, who the fuck ho'in'?",money,6,"I got a pocket full of money, who the fuck ho'in'?",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,6,"I got a pocket full of money, who the fuck ho'in'?",full,7,"I got a phone full of shooters, who gettin' stepped on?",full,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,6,"I got a pocket full of money, who the fuck ho'in'?",got,7,"I got a phone full of shooters, who gettin' stepped on?",got,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,6,"I got a pocket full of money, who the fuck ho'in'?",pocket,7,"I got a phone full of shooters, who gettin' stepped on?",got,INNER,SLANT,cmu,MED,Y
+WTF GOIN,6,"I got a pocket full of money, who the fuck ho'in'?",who,7,"I got a phone full of shooters, who gettin' stepped on?",shooters,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,6,"I got a pocket full of money, who the fuck ho'in'?",who,7,"I got a phone full of shooters, who gettin' stepped on?",who,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,6,"I got a pocket full of money, who the fuck ho'in'?",who,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",Who,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",gettin,7,"I got a phone full of shooters, who gettin' stepped on?",stepped,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",shooters,7,"I got a phone full of shooters, who gettin' stepped on?",who,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",stepped,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",slept,END,PERFECT,cmu,HIGH,Y
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",gettin,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",gettin,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",gettin,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",slept,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",shooters,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",Who,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",stepped,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",gettin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",who,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",Who,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",full,9,"Nigga, I put my belt on, nigga",put,INNER,SLANT,cmu,MED,Y
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",gettin,9,"Nigga, I put my belt on, nigga",belt,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,7,"I got a phone full of shooters, who gettin' stepped on?",stepped,9,"Nigga, I put my belt on, nigga",belt,INNER,SLANT,cmu,MED,Y
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",finna,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",niggas,INNER,ASSONANCE,vowel,LOW,N
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",gettin,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",slept,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",Nigga,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",finna,INNER,ASSONANCE,vowel,LOW,N
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",Nigga,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",niggas,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",finna,9,"Nigga, I put my belt on, nigga",Nigga,INNER,ASSONANCE,vowel,LOW,N
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",gettin,9,"Nigga, I put my belt on, nigga",belt,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",Nigga,9,"Nigga, I put my belt on, nigga",Nigga,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",niggas,9,"Nigga, I put my belt on, nigga",Nigga,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",slept,9,"Nigga, I put my belt on, nigga",belt,INNER,SLANT,cmu,MED,Y
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",gettin,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",weekend,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",like,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",like,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,8,"Nigga, I'm finna wake these niggas up like, ""Who gettin' slept on?""",slept,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",weekend,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,9,"Nigga, I put my belt on, nigga",Nigga,9,"Nigga, I put my belt on, nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,9,"Nigga, I put my belt on, nigga",belt,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",weekend,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,9,"Nigga, I put my belt on, nigga",put,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",hood,INNER,SLANT,cmu,MED,Y
+WTF GOIN,9,"Nigga, I put my belt on, nigga",belt,11,Ghetto fine shit say shе grew up where the bluff at,Ghetto,INNER,SLANT,cmu,MED,Y
+WTF GOIN,9,"Nigga, I put my belt on, nigga",belt,11,Ghetto fine shit say shе grew up where the bluff at,where,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,9,"Nigga, I put my belt on, nigga",Nigga,11,Ghetto fine shit say shе grew up where the bluff at,shit,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",w,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",Fuck,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",Fuck,11,Ghetto fine shit say shе grew up where the bluff at,bluff,END,SLANT,cmu,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",like,11,Ghetto fine shit say shе grew up where the bluff at,fine,INNER,SLANT,cmu,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",still,11,Ghetto fine shit say shе grew up where the bluff at,shit,INNER,SLANT,cmu,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",w,11,Ghetto fine shit say shе grew up where the bluff at,bluff,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",weekend,11,Ghetto fine shit say shе grew up where the bluff at,Ghetto,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",weekend,11,Ghetto fine shit say shе grew up where the bluff at,where,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",Fuck,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",stuff,END,SLANT,cmu,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",still,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",brick,INNER,SLANT,cmu,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",still,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",still'll,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",w,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",stuff,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",weekend,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",sell,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,10,"I still be in the hood, on the weekend, wеnt like, ""Fuck that""",weekend,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",where,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,Ghetto,11,Ghetto fine shit say shе grew up where the bluff at,where,INNER,SLANT,cmu,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,bluff,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",stuff,END,PERFECT,cmu,HIGH,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,Ghetto,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",sell,INNER,SLANT,cmu,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,Ghetto,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",where,INNER,SLANT,cmu,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,say,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",play,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,shit,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",brick,INNER,SLANT,cmu,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,shit,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",still'll,INNER,SLANT,cmu,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,where,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",sell,INNER,SLANT,cmu,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,where,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",where,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,fine,13,"I rent right up the street, I'm finna buy it back",buy,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,fine,13,"I rent right up the street, I'm finna buy it back",right,INNER,SLANT,cmu,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,Ghetto,13,"I rent right up the street, I'm finna buy it back",rent,INNER,SLANT,cmu,MED,Y
+WTF GOIN,11,Ghetto fine shit say shе grew up where the bluff at,where,13,"I rent right up the street, I'm finna buy it back",rent,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",sell,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",where,INNER,SLANT,cmu,MED,Y
+WTF GOIN,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",still'll,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",brick,INNER,SLANT,cmu,MED,Y
+WTF GOIN,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",sell,13,"I rent right up the street, I'm finna buy it back",rent,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",where,13,"I rent right up the street, I'm finna buy it back",rent,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",stuff,14,What the fuck goin'?,fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",stuff,14,What the fuck goin'?,What,INNER,SLANT,cmu,MED,Y
+WTF GOIN,12,"I still'll sell a brick, play caller, where that stuff at? (Brr)",stuff,16,"I got a closet full of drip, I put that stuff on",stuff,END,REPEAT,spelling,HIGH,N
+WTF GOIN,13,"I rent right up the street, I'm finna buy it back",right,13,"I rent right up the street, I'm finna buy it back",buy,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,13,"I rent right up the street, I'm finna buy it back",buy,15,"I might buy a bitch some lips, now who the fuck ho'in'?",buy,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,13,"I rent right up the street, I'm finna buy it back",buy,15,"I might buy a bitch some lips, now who the fuck ho'in'?",might,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,13,"I rent right up the street, I'm finna buy it back",right,15,"I might buy a bitch some lips, now who the fuck ho'in'?",buy,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,13,"I rent right up the street, I'm finna buy it back",right,15,"I might buy a bitch some lips, now who the fuck ho'in'?",might,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,14,What the fuck goin'?,What,14,What the fuck goin'?,fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,14,What the fuck goin'?,goin,15,"I might buy a bitch some lips, now who the fuck ho'in'?",ho'in,END,PERFECT,spelling,HIGH,Y
+WTF GOIN,14,What the fuck goin'?,fuck,15,"I might buy a bitch some lips, now who the fuck ho'in'?",fuck,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,14,What the fuck goin'?,fuck,15,"I might buy a bitch some lips, now who the fuck ho'in'?",some,INNER,SLANT,cmu,MED,Y
+WTF GOIN,14,What the fuck goin'?,What,15,"I might buy a bitch some lips, now who the fuck ho'in'?",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,14,What the fuck goin'?,What,15,"I might buy a bitch some lips, now who the fuck ho'in'?",some,INNER,SLANT,cmu,MED,Y
+WTF GOIN,14,What the fuck goin'?,fuck,16,"I got a closet full of drip, I put that stuff on",stuff,INNER,SLANT,cmu,MED,Y
+WTF GOIN,14,What the fuck goin'?,What,16,"I got a closet full of drip, I put that stuff on",stuff,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",bitch,15,"I might buy a bitch some lips, now who the fuck ho'in'?",lips,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",might,15,"I might buy a bitch some lips, now who the fuck ho'in'?",buy,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",some,15,"I might buy a bitch some lips, now who the fuck ho'in'?",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",bitch,16,"I got a closet full of drip, I put that stuff on",drip,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",fuck,16,"I got a closet full of drip, I put that stuff on",stuff,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",lips,16,"I got a closet full of drip, I put that stuff on",drip,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",some,16,"I got a closet full of drip, I put that stuff on",stuff,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",buy,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",like,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",fuck,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",club,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",fuck,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",fuck,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",might,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",like,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",some,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",club,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",some,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,15,"I might buy a bitch some lips, now who the fuck ho'in'?",who,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",Who,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,16,"I got a closet full of drip, I put that stuff on",full,16,"I got a closet full of drip, I put that stuff on",put,INNER,SLANT,cmu,MED,Y
+WTF GOIN,16,"I got a closet full of drip, I put that stuff on",got,16,"I got a closet full of drip, I put that stuff on",closet,INNER,SLANT,cmu,MED,Y
+WTF GOIN,16,"I got a closet full of drip, I put that stuff on",drip,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",Nigga,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,16,"I got a closet full of drip, I put that stuff on",stuff,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",club,INNER,SLANT,cmu,MED,Y
+WTF GOIN,16,"I got a closet full of drip, I put that stuff on",stuff,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,16,"I got a closet full of drip, I put that stuff on",drip,18,"Nigga, I put my belt on (Woah)",Nigga,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,16,"I got a closet full of drip, I put that stuff on",full,18,"Nigga, I put my belt on (Woah)",put,INNER,SLANT,cmu,MED,Y
+WTF GOIN,16,"I got a closet full of drip, I put that stuff on",put,18,"Nigga, I put my belt on (Woah)",put,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",club,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",walk,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",all,INNER,SLANT,cmu,MED,Y
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",Nigga,18,"Nigga, I put my belt on (Woah)",Nigga,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",all,19,"It was a typical morning, she suckin' while I'm yawnin'",morning,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",all,19,"It was a typical morning, she suckin' while I'm yawnin'",yawnin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",club,19,"It was a typical morning, she suckin' while I'm yawnin'",suckin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",fuck,19,"It was a typical morning, she suckin' while I'm yawnin'",suckin,INNER,SLANT,cmu,MED,Y
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",like,19,"It was a typical morning, she suckin' while I'm yawnin'",while,INNER,SLANT,cmu,MED,Y
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",Nigga,19,"It was a typical morning, she suckin' while I'm yawnin'",typical,INNER,ASSONANCE,vowel,LOW,N
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",walk,19,"It was a typical morning, she suckin' while I'm yawnin'",morning,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,17,"Nigga, I walk in the club with all these chains like, ""Who the fuck glowin'?""",walk,19,"It was a typical morning, she suckin' while I'm yawnin'",yawnin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,18,"Nigga, I put my belt on (Woah)",Nigga,19,"It was a typical morning, she suckin' while I'm yawnin'",typical,INNER,ASSONANCE,vowel,LOW,N
+WTF GOIN,18,"Nigga, I put my belt on (Woah)",Nigga,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",dick,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,19,"It was a typical morning, she suckin' while I'm yawnin'",morning,19,"It was a typical morning, she suckin' while I'm yawnin'",yawnin,INNER,SLANT,cmu,MED,Y
+WTF GOIN,19,"It was a typical morning, she suckin' while I'm yawnin'",suckin,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",love,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,19,"It was a typical morning, she suckin' while I'm yawnin'",suckin,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",young,INNER,SLANT,cmu,MED,Y
+WTF GOIN,19,"It was a typical morning, she suckin' while I'm yawnin'",typical,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",dick,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,19,"It was a typical morning, she suckin' while I'm yawnin'",typical,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",lil,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,19,"It was a typical morning, she suckin' while I'm yawnin'",suckin,21,"I ain't just no rapper, fuck nigga, I'll shoot you",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,19,"It was a typical morning, she suckin' while I'm yawnin'",typical,21,"I ain't just no rapper, fuck nigga, I'll shoot you",nigga,INNER,ASSONANCE,vowel,LOW,N
+WTF GOIN,19,"It was a typical morning, she suckin' while I'm yawnin'",while,21,"I ain't just no rapper, fuck nigga, I'll shoot you",I'll,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,19,"It was a typical morning, she suckin' while I'm yawnin'",yawnin,23,Ain't no pussy in the world that I can't afford,afford,END,ASSONANCE,vowel,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",lil,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",dick,INNER,SLANT,cmu,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",young,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",love,INNER,SLANT,cmu,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",dick,21,"I ain't just no rapper, fuck nigga, I'll shoot you",nigga,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",ho,21,"I ain't just no rapper, fuck nigga, I'll shoot you",no,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",love,21,"I ain't just no rapper, fuck nigga, I'll shoot you",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",young,21,"I ain't just no rapper, fuck nigga, I'll shoot you",fuck,INNER,SLANT,cmu,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",dick,22,"My bitch richer than these rappers, but she still spoiled",bitch,INNER,SLANT,cmu,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",dick,22,"My bitch richer than these rappers, but she still spoiled",richer,INNER,SLANT,cmu,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",dick,22,"My bitch richer than these rappers, but she still spoiled",still,INNER,SLANT,cmu,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",lil,22,"My bitch richer than these rappers, but she still spoiled",bitch,INNER,SLANT,cmu,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",lil,22,"My bitch richer than these rappers, but she still spoiled",richer,INNER,SLANT,cmu,MED,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",lil,22,"My bitch richer than these rappers, but she still spoiled",still,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,20,"My lil' young ho love tequila, dick, and hookahs (21, 21)",tequila,22,"My bitch richer than these rappers, but she still spoiled",these,INNER,SLANT,cmu,MED,Y
+WTF GOIN,21,"I ain't just no rapper, fuck nigga, I'll shoot you",I'll,22,"My bitch richer than these rappers, but she still spoiled",still,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,21,"I ain't just no rapper, fuck nigga, I'll shoot you",rapper,22,"My bitch richer than these rappers, but she still spoiled",rappers,INNER,SLANT,cmu,MED,Y
+WTF GOIN,21,"I ain't just no rapper, fuck nigga, I'll shoot you",ain't,23,Ain't no pussy in the world that I can't afford,Ain't,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,21,"I ain't just no rapper, fuck nigga, I'll shoot you",no,23,Ain't no pussy in the world that I can't afford,no,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,21,"I ain't just no rapper, fuck nigga, I'll shoot you",rapper,23,Ain't no pussy in the world that I can't afford,can't,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",bitch,22,"My bitch richer than these rappers, but she still spoiled",richer,INNER,SLANT,cmu,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",bitch,22,"My bitch richer than these rappers, but she still spoiled",still,INNER,SLANT,cmu,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",richer,22,"My bitch richer than these rappers, but she still spoiled",still,INNER,SLANT,cmu,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",rappers,23,Ain't no pussy in the world that I can't afford,can't,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",bitch,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",bitch,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",bitch,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",Lil,INNER,SLANT,cmu,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",rappers,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",ass,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",richer,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",bitch,INNER,SLANT,cmu,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",richer,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",Lil,INNER,SLANT,cmu,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",still,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",bitch,INNER,SLANT,cmu,MED,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",still,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",Lil,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,22,"My bitch richer than these rappers, but she still spoiled",these,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",screamin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,23,Ain't no pussy in the world that I can't afford,afford,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",four,END,SLANT,cmu,MED,Y
+WTF GOIN,23,Ain't no pussy in the world that I can't afford,can't,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",ass,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,23,Ain't no pussy in the world that I can't afford,afford,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",floor,END,SLANT,cmu,MED,Y
+WTF GOIN,23,Ain't no pussy in the world that I can't afford,Ain't,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",make,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,23,Ain't no pussy in the world that I can't afford,can't,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",pallet,INNER,SLANT,cmu,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",Lil,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",bitch,INNER,SLANT,cmu,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",steady,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",when,INNER,SLANT,cmu,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",four,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",floor,END,PERFECT,cmu,HIGH,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",ass,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",pallet,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",bitch,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",build,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",bitch,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",Hit,INNER,SLANT,cmu,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",Lil,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",build,INNER,SLANT,cmu,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",Lil,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",Hit,INNER,SLANT,cmu,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",bitch,26,She fuckin' me because it's beneficial (Mm-hmm),beneficial,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",four,26,She fuckin' me because it's beneficial (Mm-hmm),because,INNER,SLANT,cmu,MED,Y
+WTF GOIN,24,"Lil' bitch steady screamin', ""Five,"" when her ass a four",Lil,26,She fuckin' me because it's beneficial (Mm-hmm),beneficial,INNER,SLANT,cmu,MED,Y
+WTF GOIN,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",Hit,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",build,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",build,26,She fuckin' me because it's beneficial (Mm-hmm),beneficial,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",floor,26,She fuckin' me because it's beneficial (Mm-hmm),because,INNER,SLANT,cmu,MED,Y
+WTF GOIN,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",Hit,26,She fuckin' me because it's beneficial (Mm-hmm),beneficial,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",build,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",nipples,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",build,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",Piercing,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",Hit,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",nipples,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,25,"Hit her in her spot, make her build a pallet on the floor (Bitch)",Hit,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",Piercing,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,26,She fuckin' me because it's beneficial (Mm-hmm),beneficial,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",nipples,END,ASSONANCE,vowel,MED,Y
+WTF GOIN,26,She fuckin' me because it's beneficial (Mm-hmm),beneficial,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",Piercing,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,26,She fuckin' me because it's beneficial (Mm-hmm),fuckin,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",tongue,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,26,She fuckin' me because it's beneficial (Mm-hmm),beneficial,28,Savage keep a strap like GloRilla's sister (Mm-hmm),sister,END,ASSONANCE,vowel,MED,Y
+WTF GOIN,26,She fuckin' me because it's beneficial (Mm-hmm),beneficial,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),pistol,END,SLANT,cmu,MED,Y
+WTF GOIN,26,She fuckin' me because it's beneficial (Mm-hmm),beneficial,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,END,SLANT,cmu,MED,Y
+WTF GOIN,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",Piercing,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",nipples,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",Piercing,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",piercing,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",nipples,28,Savage keep a strap like GloRilla's sister (Mm-hmm),sister,END,ASSONANCE,vowel,MED,Y
+WTF GOIN,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",Piercing,28,Savage keep a strap like GloRilla's sister (Mm-hmm),sister,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",nipples,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),pistol,END,ASSONANCE,vowel,MED,Y
+WTF GOIN,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",nipples,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),bitch,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",Piercing,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),bitch,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",Piercing,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),pistol,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,27,"Piercing in her tongue, piercing in her nipples (Mm-hmm)",nipples,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,END,ASSONANCE,vowel,MED,Y
+WTF GOIN,28,Savage keep a strap like GloRilla's sister (Mm-hmm),Savage,28,Savage keep a strap like GloRilla's sister (Mm-hmm),strap,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,28,Savage keep a strap like GloRilla's sister (Mm-hmm),sister,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),pistol,END,SLANT,cmu,MED,Y
+WTF GOIN,28,Savage keep a strap like GloRilla's sister (Mm-hmm),keep,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),leave,INNER,SLANT,cmu,MED,Y
+WTF GOIN,28,Savage keep a strap like GloRilla's sister (Mm-hmm),like,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),I'll,INNER,SLANT,cmu,MED,Y
+WTF GOIN,28,Savage keep a strap like GloRilla's sister (Mm-hmm),sister,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),bitch,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,28,Savage keep a strap like GloRilla's sister (Mm-hmm),sister,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,END,SLANT,cmu,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),bitch,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),pistol,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),leave,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),leave,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),pistol,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,END,SLANT,cmu,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),'fore,30,Shawty suck the bone off and the gristle (Mm-hmm),Shawty,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),bitch,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),bitch,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",shit,INNER,SLANT,cmu,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),bitch,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",Thick,INNER,SLANT,cmu,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),leave,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",eat,INNER,SLANT,cmu,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),leave,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",oatmeal,INNER,SLANT,cmu,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),pistol,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",shit,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),pistol,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",Thick,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,29,I'll leave a bitch 'fore I leave a pistol (Mm-hmm),pistol,33,"If your period on, you can use your throat still (Mm-hmm)",still,END,ASSONANCE,vowel,MED,Y
+WTF GOIN,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",shit,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",Thick,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,30,Shawty suck the bone off and the gristle (Mm-hmm),Shawty,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",baby,INNER,ASSONANCE,vowel,LOW,N
+WTF GOIN,30,Shawty suck the bone off and the gristle (Mm-hmm),bone,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",soap,INNER,SLANT,cmu,MED,Y
+WTF GOIN,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",bitch,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",Skin,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,30,Shawty suck the bone off and the gristle (Mm-hmm),gristle,33,"If your period on, you can use your throat still (Mm-hmm)",still,END,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",eat,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",oatmeal,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",Thick,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",shit,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",oatmeal,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",deal,END,PERFECT,cmu,HIGH,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",eat,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",clean,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",eat,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",deal,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",oatmeal,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",clean,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",shit,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",bitch,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",shit,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",Skin,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",Thick,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",bitch,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",Thick,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",Skin,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",shit,33,"If your period on, you can use your throat still (Mm-hmm)",period,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",shit,33,"If your period on, you can use your throat still (Mm-hmm)",still,INNER,SLANT,cmu,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",Thick,33,"If your period on, you can use your throat still (Mm-hmm)",period,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,31,"Thick shit, baby eat her oatmeal (Mm-hmm)",Thick,33,"If your period on, you can use your throat still (Mm-hmm)",still,INNER,SLANT,cmu,MED,Y
+WTF GOIN,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",clean,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",deal,INNER,SLANT,cmu,MED,Y
+WTF GOIN,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",Skin,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",bitch,INNER,SLANT,cmu,MED,Y
+WTF GOIN,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",Skin,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",finna,INNER,SLANT,spelling,LOW,Y
+WTF GOIN,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",bitch,33,"If your period on, you can use your throat still (Mm-hmm)",period,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",bitch,33,"If your period on, you can use your throat still (Mm-hmm)",still,INNER,SLANT,cmu,MED,Y
+WTF GOIN,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",Skin,33,"If your period on, you can use your throat still (Mm-hmm)",period,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",Skin,33,"If your period on, you can use your throat still (Mm-hmm)",still,INNER,SLANT,cmu,MED,Y
+WTF GOIN,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",soap,33,"If your period on, you can use your throat still (Mm-hmm)",throat,INNER,SLANT,cmu,MED,Y
+WTF GOIN,32,"Skin clean, I'm finna get this bitch a soap deal (Mm-hmm)",get,34,"Ass magic, I done threw a hundred ten times (On God)",ten,INNER,SLANT,cmu,MED,Y
+WTF GOIN,33,"If your period on, you can use your throat still (Mm-hmm)",period,33,"If your period on, you can use your throat still (Mm-hmm)",still,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,33,"If your period on, you can use your throat still (Mm-hmm)",can,34,"Ass magic, I done threw a hundred ten times (On God)",Ass,INNER,SLANT,cmu,MED,Y
+WTF GOIN,33,"If your period on, you can use your throat still (Mm-hmm)",can,34,"Ass magic, I done threw a hundred ten times (On God)",magic,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,33,"If your period on, you can use your throat still (Mm-hmm)",use,34,"Ass magic, I done threw a hundred ten times (On God)",threw,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,33,"If your period on, you can use your throat still (Mm-hmm)",can,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",ass,INNER,SLANT,cmu,MED,Y
+WTF GOIN,33,"If your period on, you can use your throat still (Mm-hmm)",can,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",cap,INNER,SLANT,cmu,MED,Y
+WTF GOIN,33,"If your period on, you can use your throat still (Mm-hmm)",can,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",smack,INNER,SLANT,cmu,MED,Y
+WTF GOIN,33,"If your period on, you can use your throat still (Mm-hmm)",period,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",him,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,33,"If your period on, you can use your throat still (Mm-hmm)",still,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",him,INNER,SLANT,cmu,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",Ass,34,"Ass magic, I done threw a hundred ten times (On God)",magic,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",done,34,"Ass magic, I done threw a hundred ten times (On God)",hundred,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",times,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",times,END,REPEAT,spelling,HIGH,N
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",Ass,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",ass,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",Ass,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",cap,INNER,SLANT,cmu,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",Ass,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",smack,INNER,SLANT,cmu,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",done,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",Buddy,INNER,SLANT,cmu,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",hundred,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",Buddy,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",magic,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",ass,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",magic,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",cap,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",magic,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",smack,INNER,SLANT,cmu,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",ten,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",ten,INNER,REPEAT,spelling,HIGH,N
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",times,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",tried,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,34,"Ass magic, I done threw a hundred ten times (On God)",threw,36,"Kush phone full of shooters, I know all of 'em (Pussy)",shooters,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",ass,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",cap,INNER,SLANT,cmu,MED,Y
+WTF GOIN,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",ass,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",smack,INNER,SLANT,cmu,MED,Y
+WTF GOIN,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",cap,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",smack,INNER,SLANT,cmu,MED,Y
+WTF GOIN,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",tried,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",times,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",ass,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),crash,INNER,SLANT,cmu,MED,Y
+WTF GOIN,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",cap,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),crash,INNER,SLANT,cmu,MED,Y
+WTF GOIN,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",smack,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),crash,INNER,SLANT,cmu,MED,Y
+WTF GOIN,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",times,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),like,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,35,"Buddy ass a cap, we tried to smack him ten times (Straight up)",tried,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),like,INNER,SLANT,cmu,MED,Y
+WTF GOIN,36,"Kush phone full of shooters, I know all of 'em (Pussy)",Kush,36,"Kush phone full of shooters, I know all of 'em (Pussy)",full,INNER,SLANT,cmu,MED,Y
+WTF GOIN,36,"Kush phone full of shooters, I know all of 'em (Pussy)",phone,36,"Kush phone full of shooters, I know all of 'em (Pussy)",know,INNER,ASSONANCE,vowel,MED,Y
+WTF GOIN,36,"Kush phone full of shooters, I know all of 'em (Pussy)",'em,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),'em,END,REPEAT,spelling,HIGH,N
+WTF GOIN,36,"Kush phone full of shooters, I know all of 'em (Pussy)",all,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),Ball,INNER,PERFECT,cmu,HIGH,Y
+WTF GOIN,36,"Kush phone full of shooters, I know all of 'em (Pussy)",know,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),LaMelo,INNER,ASSONANCE,vowel,LOW,N
+WTF GOIN,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),leave,37,We crash and leave the scene like LaMelo Ball and 'em (Pussy),scene,INNER,SLANT,cmu,MED,Y
+WTF GOIN,38,"Bitch (Nigga, let's get it)",Bitch,39,Pussy bitch (Who the fuck ho'in'?),bitch,END,REPEAT,spelling,HIGH,N

@@ -1,0 +1,147 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Oceans,1,I just wanna ball and chill,chill,3,"Move out the city, buy my mama a crib",crib,END,SLANT,cmu,MED,Y
+Oceans,1,I just wanna ball and chill,chill,3,"Move out the city, buy my mama a crib",city,INNER,SLANT,cmu,MED,Y
+Oceans,1,I just wanna ball and chill,wanna,3,"Move out the city, buy my mama a crib",mama,INNER,SLANT,cmu,MED,Y
+Oceans,2,Run up these M's,these,4,got your lady in here,here,INNER,SLANT,cmu,MED,Y
+Oceans,3,"Move out the city, buy my mama a crib",city,3,"Move out the city, buy my mama a crib",crib,INNER,SLANT,cmu,MED,Y
+Oceans,3,"Move out the city, buy my mama a crib",mama,4,got your lady in here,got,INNER,SLANT,cmu,MED,Y
+Oceans,3,"Move out the city, buy my mama a crib",city,5,"I know that she shysty, I know that she",shysty,INNER,ASSONANCE,vowel,LOW,N
+Oceans,3,"Move out the city, buy my mama a crib",crib,7,"I want me a scat, on a whip",whip,END,SLANT,cmu,MED,Y
+Oceans,4,got your lady in here,lady,5,"I know that she shysty, I know that she",shysty,INNER,ASSONANCE,vowel,LOW,N
+Oceans,5,"I know that she shysty, I know that she",know,5,"I know that she shysty, I know that she",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,5,"I know that she shysty, I know that she",know,6,Rolled to Miami to get me some,Rolled,INNER,ASSONANCE,vowel,MED,Y
+Oceans,5,"I know that she shysty, I know that she",shysty,6,Rolled to Miami to get me some,Miami,INNER,ASSONANCE,vowel,LOW,N
+Oceans,6,Rolled to Miami to get me some,Miami,7,"I want me a scat, on a whip",scat,INNER,SLANT,cmu,MED,Y
+Oceans,6,Rolled to Miami to get me some,Rolled,8,"I'm dropping that dick, and I know that she whip",know,INNER,ASSONANCE,vowel,MED,Y
+Oceans,7,"I want me a scat, on a whip",whip,8,"I'm dropping that dick, and I know that she whip",whip,END,REPEAT,spelling,HIGH,N
+Oceans,7,"I want me a scat, on a whip",want,8,"I'm dropping that dick, and I know that she whip",dropping,INNER,ASSONANCE,vowel,MED,Y
+Oceans,7,"I want me a scat, on a whip",whip,8,"I'm dropping that dick, and I know that she whip",dick,INNER,SLANT,cmu,MED,Y
+Oceans,8,"I'm dropping that dick, and I know that she whip",dick,8,"I'm dropping that dick, and I know that she whip",whip,INNER,SLANT,cmu,MED,Y
+Oceans,8,"I'm dropping that dick, and I know that she whip",know,9,I'm going through perky in here,going,INNER,ASSONANCE,vowel,MED,Y
+Oceans,9,I'm going through perky in here,here,10,"Niggas police, I'm getting nervous, I hear",hear,END,PERFECT,cmu,HIGH,Y
+Oceans,9,I'm going through perky in here,here,10,"Niggas police, I'm getting nervous, I hear",police,INNER,SLANT,cmu,MED,Y
+Oceans,9,I'm going through perky in here,perky,10,"Niggas police, I'm getting nervous, I hear",nervous,INNER,ASSONANCE,vowel,MED,Y
+Oceans,9,I'm going through perky in here,going,11,"Dunk on a case, you know that it's",know,INNER,ASSONANCE,vowel,MED,Y
+Oceans,10,"Niggas police, I'm getting nervous, I hear",police,10,"Niggas police, I'm getting nervous, I hear",hear,INNER,SLANT,cmu,MED,Y
+Oceans,10,"Niggas police, I'm getting nervous, I hear",nervous,12,"Front door servis, you know how we live",servis,INNER,SLANT,cmu,MED,Y
+Oceans,11,"Dunk on a case, you know that it's",Dunk,12,"Front door servis, you know how we live",Front,INNER,SLANT,cmu,MED,Y
+Oceans,11,"Dunk on a case, you know that it's",know,12,"Front door servis, you know how we live",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,11,"Dunk on a case, you know that it's",know,13,"Glock 31, you know that I grip",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,12,"Front door servis, you know how we live",know,13,"Glock 31, you know that I grip",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,12,"Front door servis, you know how we live",Front,14,"Shoes too tight, you know I don't slip",don't,INNER,SLANT,spelling,LOW,Y
+Oceans,12,"Front door servis, you know how we live",know,14,"Shoes too tight, you know I don't slip",don't,INNER,ASSONANCE,vowel,MED,Y
+Oceans,12,"Front door servis, you know how we live",know,14,"Shoes too tight, you know I don't slip",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,12,"Front door servis, you know how we live",live,14,"Shoes too tight, you know I don't slip",tight,INNER,SLANT,cmu,MED,Y
+Oceans,13,"Glock 31, you know that I grip",grip,14,"Shoes too tight, you know I don't slip",slip,END,PERFECT,cmu,HIGH,Y
+Oceans,13,"Glock 31, you know that I grip",know,14,"Shoes too tight, you know I don't slip",don't,INNER,ASSONANCE,vowel,MED,Y
+Oceans,13,"Glock 31, you know that I grip",know,14,"Shoes too tight, you know I don't slip",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,13,"Glock 31, you know that I grip",grip,15,"You biting my swag, you all on my drip",drip,END,PERFECT,cmu,HIGH,Y
+Oceans,14,"Shoes too tight, you know I don't slip",know,14,"Shoes too tight, you know I don't slip",don't,INNER,ASSONANCE,vowel,MED,Y
+Oceans,14,"Shoes too tight, you know I don't slip",slip,15,"You biting my swag, you all on my drip",drip,END,PERFECT,cmu,HIGH,Y
+Oceans,14,"Shoes too tight, you know I don't slip",tight,15,"You biting my swag, you all on my drip",biting,INNER,SLANT,cmu,MED,Y
+Oceans,14,"Shoes too tight, you know I don't slip",don't,16,I'm smoking that potion in here,potion,INNER,ASSONANCE,vowel,MED,Y
+Oceans,14,"Shoes too tight, you know I don't slip",don't,16,I'm smoking that potion in here,smoking,INNER,ASSONANCE,vowel,MED,Y
+Oceans,14,"Shoes too tight, you know I don't slip",know,16,I'm smoking that potion in here,potion,INNER,ASSONANCE,vowel,MED,Y
+Oceans,14,"Shoes too tight, you know I don't slip",know,16,I'm smoking that potion in here,smoking,INNER,ASSONANCE,vowel,MED,Y
+Oceans,15,"You biting my swag, you all on my drip",biting,17,"Niggas too broke, I expose them right here",right,INNER,SLANT,cmu,MED,Y
+Oceans,15,"You biting my swag, you all on my drip",drip,19,"That bitch that you love, been poking her ribs",ribs,END,ASSONANCE,vowel,MED,Y
+Oceans,16,I'm smoking that potion in here,smoking,16,I'm smoking that potion in here,potion,INNER,ASSONANCE,vowel,MED,Y
+Oceans,16,I'm smoking that potion in here,here,17,"Niggas too broke, I expose them right here",here,END,REPEAT,spelling,HIGH,N
+Oceans,16,I'm smoking that potion in here,potion,17,"Niggas too broke, I expose them right here",broke,INNER,ASSONANCE,vowel,MED,Y
+Oceans,16,I'm smoking that potion in here,potion,17,"Niggas too broke, I expose them right here",expose,INNER,ASSONANCE,vowel,MED,Y
+Oceans,16,I'm smoking that potion in here,smoking,17,"Niggas too broke, I expose them right here",broke,INNER,SLANT,cmu,MED,Y
+Oceans,16,I'm smoking that potion in here,smoking,17,"Niggas too broke, I expose them right here",expose,INNER,ASSONANCE,vowel,MED,Y
+Oceans,17,"Niggas too broke, I expose them right here",broke,17,"Niggas too broke, I expose them right here",expose,INNER,SLANT,cmu,MED,Y
+Oceans,17,"Niggas too broke, I expose them right here",broke,19,"That bitch that you love, been poking her ribs",poking,INNER,SLANT,cmu,MED,Y
+Oceans,17,"Niggas too broke, I expose them right here",expose,19,"That bitch that you love, been poking her ribs",poking,INNER,ASSONANCE,vowel,MED,Y
+Oceans,17,"Niggas too broke, I expose them right here",Niggas,19,"That bitch that you love, been poking her ribs",ribs,INNER,SLANT,spelling,LOW,Y
+Oceans,18,"Ran through they bag,",Ran,18,"Ran through they bag,",bag,INNER,SLANT,cmu,MED,Y
+Oceans,18,"Ran through they bag,",bag,20,"Beef on the rack, you know that it's grilled",rack,INNER,SLANT,cmu,MED,Y
+Oceans,18,"Ran through they bag,",Ran,20,"Beef on the rack, you know that it's grilled",rack,INNER,SLANT,cmu,MED,Y
+Oceans,19,"That bitch that you love, been poking her ribs",bitch,19,"That bitch that you love, been poking her ribs",ribs,INNER,ASSONANCE,vowel,MED,Y
+Oceans,19,"That bitch that you love, been poking her ribs",ribs,20,"Beef on the rack, you know that it's grilled",grilled,END,ASSONANCE,vowel,MED,Y
+Oceans,19,"That bitch that you love, been poking her ribs",bitch,20,"Beef on the rack, you know that it's grilled",grilled,INNER,ASSONANCE,vowel,MED,Y
+Oceans,19,"That bitch that you love, been poking her ribs",poking,20,"Beef on the rack, you know that it's grilled",know,INNER,ASSONANCE,vowel,MED,Y
+Oceans,19,"That bitch that you love, been poking her ribs",poking,21,"Testing my gangsta, you know how I live",know,INNER,ASSONANCE,vowel,MED,Y
+Oceans,19,"That bitch that you love, been poking her ribs",ribs,23,"Signed me a deal, but I still gon' drill",drill,END,ASSONANCE,vowel,MED,Y
+Oceans,20,"Beef on the rack, you know that it's grilled",know,21,"Testing my gangsta, you know how I live",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,20,"Beef on the rack, you know that it's grilled",rack,21,"Testing my gangsta, you know how I live",gangsta,INNER,ASSONANCE,vowel,MED,Y
+Oceans,20,"Beef on the rack, you know that it's grilled",grilled,22,"I'm still in the city, you know",city,INNER,ASSONANCE,vowel,MED,Y
+Oceans,20,"Beef on the rack, you know that it's grilled",grilled,22,"I'm still in the city, you know",still,INNER,SLANT,cmu,MED,Y
+Oceans,20,"Beef on the rack, you know that it's grilled",know,22,"I'm still in the city, you know",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,20,"Beef on the rack, you know that it's grilled",grilled,23,"Signed me a deal, but I still gon' drill",drill,END,SLANT,cmu,MED,Y
+Oceans,21,"Testing my gangsta, you know how I live",know,22,"I'm still in the city, you know",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,21,"Testing my gangsta, you know how I live",live,23,"Signed me a deal, but I still gon' drill",Signed,INNER,ASSONANCE,vowel,MED,Y
+Oceans,22,"I'm still in the city, you know",still,22,"I'm still in the city, you know",city,INNER,SLANT,cmu,MED,Y
+Oceans,22,"I'm still in the city, you know",city,23,"Signed me a deal, but I still gon' drill",drill,INNER,SLANT,cmu,MED,Y
+Oceans,22,"I'm still in the city, you know",city,23,"Signed me a deal, but I still gon' drill",still,INNER,SLANT,cmu,MED,Y
+Oceans,22,"I'm still in the city, you know",still,23,"Signed me a deal, but I still gon' drill",drill,INNER,PERFECT,cmu,HIGH,Y
+Oceans,22,"I'm still in the city, you know",still,23,"Signed me a deal, but I still gon' drill",still,INNER,REPEAT,spelling,HIGH,N
+Oceans,23,"Signed me a deal, but I still gon' drill",still,23,"Signed me a deal, but I still gon' drill",drill,INNER,PERFECT,cmu,HIGH,Y
+Oceans,23,"Signed me a deal, but I still gon' drill",deal,24,"That's my favorite line, 'cause I do that for real",real,INNER,PERFECT,cmu,HIGH,Y
+Oceans,23,"Signed me a deal, but I still gon' drill",Signed,24,"That's my favorite line, 'cause I do that for real",line,INNER,SLANT,cmu,MED,Y
+Oceans,23,"Signed me a deal, but I still gon' drill",deal,25,"got killed, I ain't know how to feel",feel,INNER,PERFECT,cmu,HIGH,Y
+Oceans,23,"Signed me a deal, but I still gon' drill",drill,25,"got killed, I ain't know how to feel",killed,INNER,SLANT,cmu,MED,Y
+Oceans,23,"Signed me a deal, but I still gon' drill",still,25,"got killed, I ain't know how to feel",killed,INNER,SLANT,cmu,MED,Y
+Oceans,24,"That's my favorite line, 'cause I do that for real",real,25,"got killed, I ain't know how to feel",feel,END,PERFECT,cmu,HIGH,Y
+Oceans,24,"That's my favorite line, 'cause I do that for real",favorite,25,"got killed, I ain't know how to feel",ain't,INNER,SLANT,cmu,MED,Y
+Oceans,24,"That's my favorite line, 'cause I do that for real",line,26,"23 forever, bitch, you know how we live",live,INNER,SLANT,cmu,MED,Y
+Oceans,24,"That's my favorite line, 'cause I do that for real",real,28,I was in the trentches for real,real,END,REPEAT,spelling,HIGH,N
+Oceans,25,"got killed, I ain't know how to feel",how,26,"23 forever, bitch, you know how we live",how,INNER,REPEAT,spelling,HIGH,N
+Oceans,25,"got killed, I ain't know how to feel",killed,26,"23 forever, bitch, you know how we live",bitch,INNER,ASSONANCE,vowel,MED,Y
+Oceans,25,"got killed, I ain't know how to feel",know,26,"23 forever, bitch, you know how we live",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,25,"got killed, I ain't know how to feel",know,27,"gang, you know what it is",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,25,"got killed, I ain't know how to feel",feel,28,I was in the trentches for real,real,END,PERFECT,cmu,HIGH,Y
+Oceans,26,"23 forever, bitch, you know how we live",know,27,"gang, you know what it is",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,26,"23 forever, bitch, you know how we live",forever,28,I was in the trentches for real,trentches,INNER,ASSONANCE,vowel,LOW,N
+Oceans,27,"gang, you know what it is",what,29,Run up them M's,Run,INNER,SLANT,cmu,MED,Y
+Oceans,28,I was in the trentches for real,trentches,29,Run up them M's,M's,INNER,SLANT,spelling,LOW,Y
+Oceans,30,"Turned 19, bought my mama a crib",bought,30,"Turned 19, bought my mama a crib",mama,INNER,SLANT,cmu,MED,Y
+Oceans,30,"Turned 19, bought my mama a crib",crib,31,"drills, you know how it is",drills,INNER,ASSONANCE,vowel,MED,Y
+Oceans,30,"Turned 19, bought my mama a crib",crib,32,"killers, you know how I did",killers,INNER,ASSONANCE,vowel,MED,Y
+Oceans,30,"Turned 19, bought my mama a crib",crib,34,"Stressed the kid, don't put me next to no rats or pigs",pigs,END,ASSONANCE,vowel,MED,Y
+Oceans,31,"drills, you know how it is",how,32,"killers, you know how I did",how,END,REPEAT,spelling,HIGH,N
+Oceans,31,"drills, you know how it is",drills,32,"killers, you know how I did",killers,INNER,SLANT,cmu,MED,Y
+Oceans,31,"drills, you know how it is",know,32,"killers, you know how I did",know,INNER,REPEAT,spelling,HIGH,N
+Oceans,32,"killers, you know how I did",killers,34,"Stressed the kid, don't put me next to no rats or pigs",kid,INNER,ASSONANCE,vowel,MED,Y
+Oceans,32,"killers, you know how I did",killers,34,"Stressed the kid, don't put me next to no rats or pigs",pigs,INNER,SLANT,cmu,MED,Y
+Oceans,32,"killers, you know how I did",know,34,"Stressed the kid, don't put me next to no rats or pigs",don't,INNER,ASSONANCE,vowel,MED,Y
+Oceans,32,"killers, you know how I did",know,34,"Stressed the kid, don't put me next to no rats or pigs",no,INNER,PERFECT,cmu,HIGH,Y
+Oceans,33,"We went to war, we had 146",had,34,"Stressed the kid, don't put me next to no rats or pigs",rats,INNER,ASSONANCE,vowel,MED,Y
+Oceans,33,"We went to war, we had 146",went,34,"Stressed the kid, don't put me next to no rats or pigs",next,INNER,ASSONANCE,vowel,MED,Y
+Oceans,33,"We went to war, we had 146",went,34,"Stressed the kid, don't put me next to no rats or pigs",Stressed,INNER,SLANT,cmu,MED,Y
+Oceans,33,"We went to war, we had 146",went,35,"my hood, shout out to the Mexicans",Mexicans,INNER,ASSONANCE,vowel,MED,Y
+Oceans,33,"We went to war, we had 146",had,37,"drip, land in the A,",land,END,SLANT,cmu,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",don't,34,"Stressed the kid, don't put me next to no rats or pigs",no,INNER,ASSONANCE,vowel,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",kid,34,"Stressed the kid, don't put me next to no rats or pigs",pigs,INNER,ASSONANCE,vowel,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",Stressed,34,"Stressed the kid, don't put me next to no rats or pigs",next,INNER,SLANT,cmu,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",next,35,"my hood, shout out to the Mexicans",Mexicans,INNER,ASSONANCE,vowel,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",put,35,"my hood, shout out to the Mexicans",hood,INNER,SLANT,cmu,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",Stressed,35,"my hood, shout out to the Mexicans",Mexicans,INNER,ASSONANCE,vowel,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",don't,36,"Fuck around, buy a Rolex again",Rolex,INNER,ASSONANCE,vowel,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",next,36,"Fuck around, buy a Rolex again",again,INNER,ASSONANCE,vowel,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",no,36,"Fuck around, buy a Rolex again",Rolex,INNER,ASSONANCE,vowel,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",Stressed,36,"Fuck around, buy a Rolex again",again,INNER,ASSONANCE,vowel,MED,Y
+Oceans,34,"Stressed the kid, don't put me next to no rats or pigs",pigs,38,"Roll up that high, no sip",sip,END,ASSONANCE,vowel,MED,Y
+Oceans,35,"my hood, shout out to the Mexicans",Mexicans,36,"Fuck around, buy a Rolex again",again,END,ASSONANCE,vowel,MED,Y
+Oceans,35,"my hood, shout out to the Mexicans",shout,36,"Fuck around, buy a Rolex again",around,INNER,ASSONANCE,vowel,MED,Y
+Oceans,36,"Fuck around, buy a Rolex again",buy,38,"Roll up that high, no sip",high,INNER,PERFECT,cmu,HIGH,Y
+Oceans,36,"Fuck around, buy a Rolex again",Rolex,38,"Roll up that high, no sip",no,INNER,ASSONANCE,vowel,MED,Y
+Oceans,36,"Fuck around, buy a Rolex again",Rolex,38,"Roll up that high, no sip",Roll,INNER,ASSONANCE,vowel,MED,Y
+Oceans,37,"drip, land in the A,",drip,38,"Roll up that high, no sip",sip,INNER,PERFECT,cmu,HIGH,Y
+Oceans,37,"drip, land in the A,",drip,39,"no more, growing up got me gripping my",gripping,INNER,SLANT,cmu,MED,Y
+Oceans,38,"Roll up that high, no sip",Roll,38,"Roll up that high, no sip",no,INNER,ASSONANCE,vowel,MED,Y
+Oceans,38,"Roll up that high, no sip",sip,39,"no more, growing up got me gripping my",gripping,END,SLANT,cmu,MED,Y
+Oceans,38,"Roll up that high, no sip",no,39,"no more, growing up got me gripping my",growing,INNER,ASSONANCE,vowel,MED,Y
+Oceans,38,"Roll up that high, no sip",no,39,"no more, growing up got me gripping my",no,INNER,REPEAT,spelling,HIGH,N
+Oceans,38,"Roll up that high, no sip",Roll,39,"no more, growing up got me gripping my",growing,INNER,SLANT,cmu,MED,Y
+Oceans,38,"Roll up that high, no sip",Roll,39,"no more, growing up got me gripping my",no,INNER,ASSONANCE,vowel,MED,Y
+Oceans,38,"Roll up that high, no sip",no,40,Double R wrist no more,no,INNER,REPEAT,spelling,HIGH,N
+Oceans,38,"Roll up that high, no sip",Roll,40,Double R wrist no more,no,INNER,ASSONANCE,vowel,MED,Y
+Oceans,38,"Roll up that high, no sip",sip,40,Double R wrist no more,wrist,INNER,ASSONANCE,vowel,MED,Y
+Oceans,39,"no more, growing up got me gripping my",no,39,"no more, growing up got me gripping my",growing,INNER,ASSONANCE,vowel,MED,Y
+Oceans,39,"no more, growing up got me gripping my",got,40,Double R wrist no more,R,INNER,SLANT,cmu,MED,Y
+Oceans,39,"no more, growing up got me gripping my",gripping,40,Double R wrist no more,wrist,INNER,ASSONANCE,vowel,MED,Y
+Oceans,39,"no more, growing up got me gripping my",growing,40,Double R wrist no more,no,INNER,ASSONANCE,vowel,MED,Y
+Oceans,39,"no more, growing up got me gripping my",more,40,Double R wrist no more,more,INNER,REPEAT,spelling,HIGH,N
+Oceans,39,"no more, growing up got me gripping my",no,40,Double R wrist no more,no,INNER,REPEAT,spelling,HIGH,N

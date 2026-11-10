@@ -286,6 +286,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 274 | ygg-tay | YGG Tay | 1 | 41 | 363 | 23 | 340 | 363 | 2026-11-10 13:24 ET |
 | 275 | alley-boy | Alley Boy | 1 | 40 | 217 | 28 | 189 | 217 | 2026-11-10 13:24 ET |
 | 276 | banzg | BanzG | 1 | 40 | 351 | 56 | 295 | 336 | 2026-11-10 13:24 ET |
+| 277 | datboiskeet | DatBoiSkeet | 1 | 40 | 190 | 39 | 151 | 189 | 2026-11-10 13:24 ET |
+| 278 | diplo | Diplo | 2 | 40 | 272 | 21 | 251 | 271 | 2026-11-10 13:24 ET |
+| 279 | eearz | Eearz | 1 | 40 | 372 | 42 | 330 | 372 | 2026-11-10 13:24 ET |
+| 280 | g-count | G Count | 1 | 40 | 193 | 23 | 170 | 193 | 2026-11-10 13:25 ET |
+| 281 | omn-twee | OMN Twee | 1 | 40 | 123 | 17 | 106 | 119 | 2026-11-10 13:25 ET |
+| 282 | revii | Revii | 1 | 40 | 323 | 39 | 284 | 321 | 2026-11-10 13:25 ET |
+| 283 | the-plug | The Plug | 1 | 40 | 405 | 63 | 342 | 402 | 2026-11-10 13:25 ET |
+| 284 | yung-jaroc | Yung Jaroc | 1 | 40 | 191 | 21 | 170 | 186 | 2026-11-10 13:25 ET |
+| 285 | belly-gang-kushington | Belly Gang Kushington | 1 | 39 | 312 | 26 | 286 | 304 | 2026-11-10 13:25 ET |
+| 286 | elijah-james | Elijah James | 1 | 39 | 170 | 31 | 139 | 170 | 2026-11-10 13:25 ET |
 
 ## Failures
 
@@ -293,7 +303,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 276/386: BanzG.
+Finished 286/386: Elijah James.
 
 ## Final
 
