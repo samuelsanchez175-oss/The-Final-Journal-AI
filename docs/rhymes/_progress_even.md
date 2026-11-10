@@ -10,6 +10,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | quality-control | Quality Control | 1573 | 70597 | 436074 | 79494 | 356580 | 429149 | 2026-11-10 01:08 ET |
 | 2 | rick-ross | Rick Ross | 1266 | 62985 | 371408 | 50796 | 320612 | 364836 | 2026-11-10 01:12 ET |
+| 3 | lil-yachty | Lil Yachty | 1352 | 51844 | 302351 | 54743 | 247608 | 296941 | 2026-11-10 01:16 ET |
 
 ## Failures
 
@@ -17,7 +18,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
 ## Status
 
-Finished 2/386: Rick Ross.
+Finished 3/386: Lil Yachty.
 
 ## Final
 
