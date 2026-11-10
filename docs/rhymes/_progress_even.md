@@ -46,6 +46,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 34 | bslime | BSlime | 69 | 2847 | 17065 | 3007 | 14058 | 16816 | 2026-11-10 13:16 ET |
 | 35 | montana-700 | Montana 700 | 55 | 2016 | 16508 | 2360 | 14148 | 16402 | 2026-11-10 13:16 ET |
 | 36 | unfoonk | Unfoonk | 36 | 1302 | 8200 | 1126 | 7074 | 8105 | 2026-11-10 13:16 ET |
+| 37 | takeoff | Takeoff | 34 | 1220 | 7138 | 1556 | 5582 | 6930 | 2026-11-10 13:16 ET |
+| 38 | gucci-mane | Gucci Mane | 27 | 1190 | 7243 | 1237 | 6006 | 7146 | 2026-11-10 13:16 ET |
+| 39 | ballout | Ballout | 28 | 1034 | 6272 | 1211 | 5061 | 6189 | 2026-11-10 13:16 ET |
+| 40 | lil-bibby | Lil Bibby | 15 | 872 | 5657 | 985 | 4672 | 5547 | 2026-11-10 13:16 ET |
+| 41 | lil-durk | Lil Durk | 14 | 766 | 4746 | 734 | 4012 | 4654 | 2026-11-10 13:16 ET |
+| 42 | peewee-longway | Peewee Longway | 12 | 583 | 3762 | 989 | 2773 | 3690 | 2026-11-10 13:16 ET |
+| 43 | rich-the-kid | Rich The Kid | 11 | 545 | 2970 | 755 | 2215 | 2926 | 2026-11-10 13:16 ET |
+| 44 | fredo-santana | Fredo Santana | 14 | 520 | 3456 | 679 | 2777 | 3408 | 2026-11-10 13:16 ET |
+| 45 | zaytoven | Zaytoven | 11 | 444 | 3341 | 512 | 2829 | 3276 | 2026-11-10 13:16 ET |
+| 46 | dj-khaled | DJ Khaled | 9 | 437 | 2780 | 471 | 2309 | 2757 | 2026-11-10 13:16 ET |
 
 ## Failures
 
@@ -53,7 +63,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 36/386: Unfoonk.
+Finished 46/386: DJ Khaled.
 
 ## Final
 
