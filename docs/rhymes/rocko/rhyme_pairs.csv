@@ -1,0 +1,191 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Fanga Banga,1,Real niggas are in danger,danger,2,Cause that money never changed us,changed,END,SLANT,cmu,MED,Y
+Fanga Banga,1,Real niggas are in danger,danger,3,"Stacking by the milly, fuck all the remainder",remainder,END,SLANT,cmu,MED,Y
+Fanga Banga,2,Cause that money never changed us,changed,3,"Stacking by the milly, fuck all the remainder",remainder,END,SLANT,cmu,MED,Y
+Fanga Banga,2,Cause that money never changed us,money,3,"Stacking by the milly, fuck all the remainder",fuck,INNER,SLANT,cmu,MED,Y
+Fanga Banga,2,Cause that money never changed us,changed,4,Keep the lawyer on retainer if you a gangster,retainer,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,3,"Stacking by the milly, fuck all the remainder",all,4,Keep the lawyer on retainer if you a gangster,lawyer,INNER,SLANT,cmu,MED,Y
+Fanga Banga,3,"Stacking by the milly, fuck all the remainder",remainder,4,Keep the lawyer on retainer if you a gangster,retainer,INNER,SLANT,cmu,MED,Y
+Fanga Banga,3,"Stacking by the milly, fuck all the remainder",Stacking,4,Keep the lawyer on retainer if you a gangster,gangster,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,3,"Stacking by the milly, fuck all the remainder",remainder,5,"I ain’t gon’ eat her, but I’m gon’ bang her",ain’t,INNER,SLANT,cmu,MED,Y
+Fanga Banga,3,"Stacking by the milly, fuck all the remainder",Stacking,5,"I ain’t gon’ eat her, but I’m gon’ bang her",bang,INNER,SLANT,cmu,MED,Y
+Fanga Banga,4,Keep the lawyer on retainer if you a gangster,gangster,5,"I ain’t gon’ eat her, but I’m gon’ bang her",bang,END,ASSONANCE,vowel,MED,Y
+Fanga Banga,4,Keep the lawyer on retainer if you a gangster,Keep,5,"I ain’t gon’ eat her, but I’m gon’ bang her",eat,INNER,SLANT,cmu,MED,Y
+Fanga Banga,4,Keep the lawyer on retainer if you a gangster,retainer,5,"I ain’t gon’ eat her, but I’m gon’ bang her",ain’t,INNER,SLANT,cmu,MED,Y
+Fanga Banga,4,Keep the lawyer on retainer if you a gangster,gangster,6,"A few actresses, a few singers",actresses,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,5,"I ain’t gon’ eat her, but I’m gon’ bang her",gon,5,"I ain’t gon’ eat her, but I’m gon’ bang her",gon,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,5,"I ain’t gon’ eat her, but I’m gon’ bang her",bang,6,"A few actresses, a few singers",actresses,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,6,"A few actresses, a few singers",few,6,"A few actresses, a few singers",few,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,6,"A few actresses, a few singers",few,7,"A few models, I got all of the new models",few,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,6,"A few actresses, a few singers",few,7,"A few models, I got all of the new models",new,INNER,PERFECT,cmu,HIGH,Y
+Fanga Banga,6,"A few actresses, a few singers",singers,8,"Business is business, I live by that motto",Business,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,6,"A few actresses, a few singers",singers,9,Smash out I ain’t gon’ linger,linger,END,SLANT,cmu,MED,Y
+Fanga Banga,7,"A few models, I got all of the new models",few,7,"A few models, I got all of the new models",new,INNER,PERFECT,cmu,HIGH,Y
+Fanga Banga,7,"A few models, I got all of the new models",got,7,"A few models, I got all of the new models",models,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,7,"A few models, I got all of the new models",models,7,"A few models, I got all of the new models",got,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,7,"A few models, I got all of the new models",models,7,"A few models, I got all of the new models",models,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,7,"A few models, I got all of the new models",models,8,"Business is business, I live by that motto",motto,END,ASSONANCE,vowel,MED,Y
+Fanga Banga,7,"A few models, I got all of the new models",got,8,"Business is business, I live by that motto",motto,INNER,SLANT,cmu,MED,Y
+Fanga Banga,7,"A few models, I got all of the new models",models,8,"Business is business, I live by that motto",motto,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,8,"Business is business, I live by that motto",Business,8,"Business is business, I live by that motto",business,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,8,"Business is business, I live by that motto",live,8,"Business is business, I live by that motto",by,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,8,"Business is business, I live by that motto",Business,9,Smash out I ain’t gon’ linger,linger,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,9,Smash out I ain’t gon’ linger,ain’t,10,"Straight to the point, I float the boat to the hanger",Straight,INNER,SLANT,cmu,MED,Y
+Fanga Banga,9,Smash out I ain’t gon’ linger,gon,10,"Straight to the point, I float the boat to the hanger",boat,INNER,SLANT,spelling,LOW,Y
+Fanga Banga,9,Smash out I ain’t gon’ linger,gon,10,"Straight to the point, I float the boat to the hanger",float,INNER,SLANT,spelling,LOW,Y
+Fanga Banga,9,Smash out I ain’t gon’ linger,Smash,10,"Straight to the point, I float the boat to the hanger",hanger,INNER,SLANT,cmu,MED,Y
+Fanga Banga,10,"Straight to the point, I float the boat to the hanger",float,10,"Straight to the point, I float the boat to the hanger",boat,INNER,PERFECT,cmu,HIGH,Y
+Fanga Banga,10,"Straight to the point, I float the boat to the hanger",hanger,14,"Finger on the banger, finger on the banger",banger,END,MULTI,multi,HIGH,Y
+Fanga Banga,11,I do this for the sport,sport,12,"Kick shit, hummer hummer, cross country runner",cross,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",country,12,"Kick shit, hummer hummer, cross country runner",runner,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",hummer,12,"Kick shit, hummer hummer, cross country runner",country,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",hummer,12,"Kick shit, hummer hummer, cross country runner",hummer,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",hummer,12,"Kick shit, hummer hummer, cross country runner",runner,INNER,SLANT,cmu,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",Kick,12,"Kick shit, hummer hummer, cross country runner",shit,INNER,SLANT,cmu,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",runner,13,"Quarterback, I never fumble",fumble,END,ASSONANCE,vowel,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",country,13,"Quarterback, I never fumble",fumble,INNER,SLANT,cmu,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",hummer,13,"Quarterback, I never fumble",fumble,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",Kick,14,"Finger on the banger, finger on the banger",Finger,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",shit,14,"Finger on the banger, finger on the banger",Finger,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,12,"Kick shit, hummer hummer, cross country runner",runner,16,"Walked in the bank, came out running",running,END,SLANT,cmu,MED,Y
+Fanga Banga,13,"Quarterback, I never fumble",Quarterback,14,"Finger on the banger, finger on the banger",banger,INNER,SLANT,cmu,MED,Y
+Fanga Banga,13,"Quarterback, I never fumble",Quarterback,15,"Finger on the banger, I keep my finger on the banger",banger,INNER,SLANT,cmu,MED,Y
+Fanga Banga,13,"Quarterback, I never fumble",fumble,16,"Walked in the bank, came out running",running,END,ASSONANCE,vowel,MED,Y
+Fanga Banga,13,"Quarterback, I never fumble",fumble,17,"Skrt skrt in my car, you would’ve thought I stole some money",money,END,ASSONANCE,vowel,MED,Y
+Fanga Banga,14,"Finger on the banger, finger on the banger",banger,14,"Finger on the banger, finger on the banger",banger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,14,"Finger on the banger, finger on the banger",Finger,14,"Finger on the banger, finger on the banger",finger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,14,"Finger on the banger, finger on the banger",banger,15,"Finger on the banger, I keep my finger on the banger",banger,END,REPEAT,spelling,HIGH,N
+Fanga Banga,14,"Finger on the banger, finger on the banger",banger,15,"Finger on the banger, I keep my finger on the banger",banger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,14,"Finger on the banger, finger on the banger",Finger,15,"Finger on the banger, I keep my finger on the banger",Finger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,14,"Finger on the banger, finger on the banger",banger,16,"Walked in the bank, came out running",bank,INNER,SLANT,cmu,MED,Y
+Fanga Banga,15,"Finger on the banger, I keep my finger on the banger",banger,15,"Finger on the banger, I keep my finger on the banger",banger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,15,"Finger on the banger, I keep my finger on the banger",Finger,15,"Finger on the banger, I keep my finger on the banger",finger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,15,"Finger on the banger, I keep my finger on the banger",banger,16,"Walked in the bank, came out running",bank,INNER,SLANT,cmu,MED,Y
+Fanga Banga,16,"Walked in the bank, came out running",running,17,"Skrt skrt in my car, you would’ve thought I stole some money",money,END,SLANT,cmu,MED,Y
+Fanga Banga,16,"Walked in the bank, came out running",running,17,"Skrt skrt in my car, you would’ve thought I stole some money",some,INNER,SLANT,cmu,MED,Y
+Fanga Banga,16,"Walked in the bank, came out running",Walked,17,"Skrt skrt in my car, you would’ve thought I stole some money",thought,INNER,SLANT,cmu,MED,Y
+Fanga Banga,16,"Walked in the bank, came out running",bank,18,"Head held high, mailman disguise",mailman,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,17,"Skrt skrt in my car, you would’ve thought I stole some money",some,17,"Skrt skrt in my car, you would’ve thought I stole some money",money,INNER,SLANT,cmu,MED,Y
+Fanga Banga,17,"Skrt skrt in my car, you would’ve thought I stole some money",car,19,"I’m riding ‘round the Flats, popped like a popped tire",popped,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",Head,18,"Head held high, mailman disguise",held,INNER,SLANT,cmu,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",high,18,"Head held high, mailman disguise",disguise,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",disguise,19,"I’m riding ‘round the Flats, popped like a popped tire",tire,END,ASSONANCE,vowel,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",disguise,19,"I’m riding ‘round the Flats, popped like a popped tire",like,INNER,SLANT,cmu,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",disguise,19,"I’m riding ‘round the Flats, popped like a popped tire",riding,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",high,19,"I’m riding ‘round the Flats, popped like a popped tire",like,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",high,19,"I’m riding ‘round the Flats, popped like a popped tire",riding,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",high,19,"I’m riding ‘round the Flats, popped like a popped tire",tire,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",mailman,19,"I’m riding ‘round the Flats, popped like a popped tire",Flats,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,18,"Head held high, mailman disguise",mailman,20,Be cautious or you’ll be in trouble man,man,INNER,PERFECT,cmu,HIGH,Y
+Fanga Banga,19,"I’m riding ‘round the Flats, popped like a popped tire",like,19,"I’m riding ‘round the Flats, popped like a popped tire",tire,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,19,"I’m riding ‘round the Flats, popped like a popped tire",popped,19,"I’m riding ‘round the Flats, popped like a popped tire",popped,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,19,"I’m riding ‘round the Flats, popped like a popped tire",riding,19,"I’m riding ‘round the Flats, popped like a popped tire",like,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,19,"I’m riding ‘round the Flats, popped like a popped tire",riding,19,"I’m riding ‘round the Flats, popped like a popped tire",tire,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,19,"I’m riding ‘round the Flats, popped like a popped tire",Flats,20,Be cautious or you’ll be in trouble man,man,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,19,"I’m riding ‘round the Flats, popped like a popped tire",Flats,21,"Me and Rocko, winter bowl, or we see Miami Dolphins",Miami,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,19,"I’m riding ‘round the Flats, popped like a popped tire",popped,21,"Me and Rocko, winter bowl, or we see Miami Dolphins",Dolphins,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,20,Be cautious or you’ll be in trouble man,man,21,"Me and Rocko, winter bowl, or we see Miami Dolphins",Miami,INNER,SLANT,cmu,MED,Y
+Fanga Banga,20,Be cautious or you’ll be in trouble man,man,22,She wanna hang with the gang,gang,END,SLANT,cmu,MED,Y
+Fanga Banga,20,Be cautious or you’ll be in trouble man,man,22,She wanna hang with the gang,hang,INNER,SLANT,cmu,MED,Y
+Fanga Banga,21,"Me and Rocko, winter bowl, or we see Miami Dolphins",Rocko,21,"Me and Rocko, winter bowl, or we see Miami Dolphins",bowl,INNER,SLANT,spelling,LOW,Y
+Fanga Banga,21,"Me and Rocko, winter bowl, or we see Miami Dolphins",Dolphins,22,She wanna hang with the gang,wanna,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,21,"Me and Rocko, winter bowl, or we see Miami Dolphins",Miami,22,She wanna hang with the gang,gang,INNER,SLANT,cmu,MED,Y
+Fanga Banga,21,"Me and Rocko, winter bowl, or we see Miami Dolphins",Miami,22,She wanna hang with the gang,hang,INNER,SLANT,cmu,MED,Y
+Fanga Banga,21,"Me and Rocko, winter bowl, or we see Miami Dolphins",bowl,23,Rub off on her like some lotion,lotion,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,22,She wanna hang with the gang,hang,22,She wanna hang with the gang,gang,INNER,PERFECT,cmu,HIGH,Y
+Fanga Banga,22,She wanna hang with the gang,gang,24,"I grab my AR, click clack, it’s in motion",clack,INNER,SLANT,cmu,MED,Y
+Fanga Banga,22,She wanna hang with the gang,gang,24,"I grab my AR, click clack, it’s in motion",grab,INNER,SLANT,cmu,MED,Y
+Fanga Banga,22,She wanna hang with the gang,hang,24,"I grab my AR, click clack, it’s in motion",clack,INNER,SLANT,cmu,MED,Y
+Fanga Banga,22,She wanna hang with the gang,hang,24,"I grab my AR, click clack, it’s in motion",grab,INNER,SLANT,cmu,MED,Y
+Fanga Banga,22,She wanna hang with the gang,wanna,24,"I grab my AR, click clack, it’s in motion",AR,INNER,SLANT,cmu,MED,Y
+Fanga Banga,23,Rub off on her like some lotion,Rub,23,Rub off on her like some lotion,some,INNER,SLANT,cmu,MED,Y
+Fanga Banga,23,Rub off on her like some lotion,lotion,24,"I grab my AR, click clack, it’s in motion",motion,END,MULTI,multi,HIGH,Y
+Fanga Banga,23,Rub off on her like some lotion,Rub,25,"So much bud, Budweiser",bud,INNER,SLANT,cmu,MED,Y
+Fanga Banga,23,Rub off on her like some lotion,Rub,25,"So much bud, Budweiser",Budweiser,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,23,Rub off on her like some lotion,Rub,25,"So much bud, Budweiser",much,INNER,SLANT,cmu,MED,Y
+Fanga Banga,23,Rub off on her like some lotion,some,25,"So much bud, Budweiser",bud,INNER,SLANT,cmu,MED,Y
+Fanga Banga,23,Rub off on her like some lotion,some,25,"So much bud, Budweiser",Budweiser,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,23,Rub off on her like some lotion,some,25,"So much bud, Budweiser",much,INNER,SLANT,cmu,MED,Y
+Fanga Banga,24,"I grab my AR, click clack, it’s in motion",click,24,"I grab my AR, click clack, it’s in motion",clack,INNER,SLANT,spelling,LOW,Y
+Fanga Banga,24,"I grab my AR, click clack, it’s in motion",grab,24,"I grab my AR, click clack, it’s in motion",clack,INNER,SLANT,cmu,MED,Y
+Fanga Banga,24,"I grab my AR, click clack, it’s in motion",clack,26,"Man, I’m the energizer",Man,INNER,SLANT,cmu,MED,Y
+Fanga Banga,24,"I grab my AR, click clack, it’s in motion",grab,26,"Man, I’m the energizer",Man,INNER,SLANT,cmu,MED,Y
+Fanga Banga,24,"I grab my AR, click clack, it’s in motion",motion,28,"If you selling dope, keep it on the low",low,END,ASSONANCE,vowel,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",bud,25,"So much bud, Budweiser",Budweiser,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",much,25,"So much bud, Budweiser",bud,INNER,SLANT,cmu,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",much,25,"So much bud, Budweiser",Budweiser,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",Budweiser,26,"Man, I’m the energizer",energizer,END,MULTI,multi,HIGH,Y
+Fanga Banga,25,"So much bud, Budweiser",bud,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bugs,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",bud,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bunny,INNER,SLANT,cmu,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",bud,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",what’s,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",Budweiser,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bugs,INNER,SLANT,cmu,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",Budweiser,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bunny,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",Budweiser,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",what’s,INNER,SLANT,cmu,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",much,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bugs,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",much,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bunny,INNER,SLANT,cmu,MED,Y
+Fanga Banga,25,"So much bud, Budweiser",much,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",what’s,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bugs,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bunny,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bugs,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",what’s,INNER,SLANT,cmu,MED,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bunny,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bugs,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bunny,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bunny,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bunny,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",what’s,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",eh,28,"If you selling dope, keep it on the low",selling,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bugs,29,"Put your hands to the ceiling, throw the money on the floor",money,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bugs Bunny,29,"Put your hands to the ceiling, throw the money on the floor",throw money,INNER,MULTI,multi,HIGH,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",Bunny,29,"Put your hands to the ceiling, throw the money on the floor",money,INNER,MULTI,multi,HIGH,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",call,29,"Put your hands to the ceiling, throw the money on the floor",floor,INNER,SLANT,cmu,MED,Y
+Fanga Banga,27,"Bunny, call me Bugs Bunny, eh what’s up doc?",what’s,29,"Put your hands to the ceiling, throw the money on the floor",money,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,28,"If you selling dope, keep it on the low",dope,28,"If you selling dope, keep it on the low",low,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,28,"If you selling dope, keep it on the low",dope,29,"Put your hands to the ceiling, throw the money on the floor",throw,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,28,"If you selling dope, keep it on the low",keep,29,"Put your hands to the ceiling, throw the money on the floor",ceiling,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,28,"If you selling dope, keep it on the low",low,29,"Put your hands to the ceiling, throw the money on the floor",throw,INNER,PERFECT,cmu,HIGH,Y
+Fanga Banga,28,"If you selling dope, keep it on the low",selling,29,"Put your hands to the ceiling, throw the money on the floor",ceiling,INNER,PERFECT,spelling,MED,Y
+Fanga Banga,29,"Put your hands to the ceiling, throw the money on the floor",hands,30,"Finger on that bang, bang, bang",bang,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,29,"Put your hands to the ceiling, throw the money on the floor",hands,31,"On that bang, bang, bang",bang,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,30,"Finger on that bang, bang, bang",bang,30,"Finger on that bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,30,"Finger on that bang, bang, bang",bang,31,"On that bang, bang, bang",bang,END,REPEAT,spelling,HIGH,N
+Fanga Banga,30,"Finger on that bang, bang, bang",bang,31,"On that bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,30,"Finger on that bang, bang, bang",bang,32,"I keep my finger on that bang, bang, bang",bang,END,REPEAT,spelling,HIGH,N
+Fanga Banga,30,"Finger on that bang, bang, bang",bang,32,"I keep my finger on that bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,30,"Finger on that bang, bang, bang",Finger,32,"I keep my finger on that bang, bang, bang",finger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,30,"Finger on that bang, bang, bang",bang,33,"Keep my finger on that bang, bang, bang",bang,END,REPEAT,spelling,HIGH,N
+Fanga Banga,30,"Finger on that bang, bang, bang",bang,34,"Keep my finger on that banger, banger",banger,END,SLANT,cmu,MED,Y
+Fanga Banga,31,"On that bang, bang, bang",bang,31,"On that bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,31,"On that bang, bang, bang",bang,32,"I keep my finger on that bang, bang, bang",bang,END,REPEAT,spelling,HIGH,N
+Fanga Banga,31,"On that bang, bang, bang",bang,32,"I keep my finger on that bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,31,"On that bang, bang, bang",bang,33,"Keep my finger on that bang, bang, bang",bang,END,REPEAT,spelling,HIGH,N
+Fanga Banga,31,"On that bang, bang, bang",bang,33,"Keep my finger on that bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,31,"On that bang, bang, bang",bang,34,"Keep my finger on that banger, banger",banger,END,SLANT,cmu,MED,Y
+Fanga Banga,31,"On that bang, bang, bang",bang,35,"Nigga all I make is bangers, bangers",bangers,END,SLANT,cmu,MED,Y
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",bang,32,"I keep my finger on that bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",bang,33,"Keep my finger on that bang, bang, bang",bang,END,REPEAT,spelling,HIGH,N
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",bang,33,"Keep my finger on that bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",finger,33,"Keep my finger on that bang, bang, bang",finger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",keep,33,"Keep my finger on that bang, bang, bang",Keep,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",bang,34,"Keep my finger on that banger, banger",banger,END,SLANT,cmu,MED,Y
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",bang,34,"Keep my finger on that banger, banger",banger,INNER,SLANT,cmu,MED,Y
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",finger,34,"Keep my finger on that banger, banger",finger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",keep,34,"Keep my finger on that banger, banger",Keep,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",bang,35,"Nigga all I make is bangers, bangers",bangers,END,SLANT,cmu,MED,Y
+Fanga Banga,32,"I keep my finger on that bang, bang, bang",bang,36,"Get your bitch before I bang her, bang her",bang,END,REPEAT,spelling,HIGH,N
+Fanga Banga,33,"Keep my finger on that bang, bang, bang",bang,33,"Keep my finger on that bang, bang, bang",bang,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,33,"Keep my finger on that bang, bang, bang",bang,34,"Keep my finger on that banger, banger",banger,END,SLANT,cmu,MED,Y
+Fanga Banga,33,"Keep my finger on that bang, bang, bang",bang,34,"Keep my finger on that banger, banger",banger,INNER,SLANT,cmu,MED,Y
+Fanga Banga,33,"Keep my finger on that bang, bang, bang",finger,34,"Keep my finger on that banger, banger",finger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,33,"Keep my finger on that bang, bang, bang",Keep,34,"Keep my finger on that banger, banger",Keep,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,33,"Keep my finger on that bang, bang, bang",bang,35,"Nigga all I make is bangers, bangers",bangers,END,SLANT,cmu,MED,Y
+Fanga Banga,33,"Keep my finger on that bang, bang, bang",bang,35,"Nigga all I make is bangers, bangers",bangers,INNER,SLANT,cmu,MED,Y
+Fanga Banga,33,"Keep my finger on that bang, bang, bang",finger,35,"Nigga all I make is bangers, bangers",Nigga,INNER,SLANT,spelling,LOW,Y
+Fanga Banga,33,"Keep my finger on that bang, bang, bang",bang,36,"Get your bitch before I bang her, bang her",bang,END,REPEAT,spelling,HIGH,N
+Fanga Banga,34,"Keep my finger on that banger, banger",banger,34,"Keep my finger on that banger, banger",banger,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,34,"Keep my finger on that banger, banger",banger,35,"Nigga all I make is bangers, bangers",bangers,END,SLANT,cmu,MED,Y
+Fanga Banga,34,"Keep my finger on that banger, banger",banger,35,"Nigga all I make is bangers, bangers",bangers,INNER,SLANT,cmu,MED,Y
+Fanga Banga,34,"Keep my finger on that banger, banger",finger,35,"Nigga all I make is bangers, bangers",Nigga,INNER,SLANT,spelling,LOW,Y
+Fanga Banga,34,"Keep my finger on that banger, banger",banger,36,"Get your bitch before I bang her, bang her",bang,END,SLANT,cmu,MED,Y
+Fanga Banga,34,"Keep my finger on that banger, banger",banger,36,"Get your bitch before I bang her, bang her",bang,INNER,SLANT,cmu,MED,Y
+Fanga Banga,34,"Keep my finger on that banger, banger",finger,36,"Get your bitch before I bang her, bang her",bitch,INNER,ASSONANCE,vowel,MED,Y
+Fanga Banga,35,"Nigga all I make is bangers, bangers",bangers,35,"Nigga all I make is bangers, bangers",bangers,INNER,REPEAT,spelling,HIGH,N
+Fanga Banga,35,"Nigga all I make is bangers, bangers",bangers,36,"Get your bitch before I bang her, bang her",bang,END,SLANT,cmu,MED,Y
+Fanga Banga,35,"Nigga all I make is bangers, bangers",all,36,"Get your bitch before I bang her, bang her",before,INNER,SLANT,cmu,MED,Y
+Fanga Banga,35,"Nigga all I make is bangers, bangers",bangers,36,"Get your bitch before I bang her, bang her",bang,INNER,SLANT,cmu,MED,Y
+Fanga Banga,36,"Get your bitch before I bang her, bang her",bang,36,"Get your bitch before I bang her, bang her",bang,INNER,REPEAT,spelling,HIGH,N

@@ -1,0 +1,305 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+No Friend of Me,1,Aye yo DJ Smoke,DJ,2,Are you ready to break the next one?,break,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,1,Aye yo DJ Smoke,DJ,3,DJ Smoke may be found in critical condition after playing this,DJ,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,1,Aye yo DJ Smoke,DJ,3,DJ Smoke may be found in critical condition after playing this,may,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,1,Aye yo DJ Smoke,DJ,3,DJ Smoke may be found in critical condition after playing this,playing,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,1,Aye yo DJ Smoke,Smoke,3,DJ Smoke may be found in critical condition after playing this,Smoke,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,2,Are you ready to break the next one?,ready,2,Are you ready to break the next one?,next,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,2,Are you ready to break the next one?,break,3,DJ Smoke may be found in critical condition after playing this,DJ,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,2,Are you ready to break the next one?,break,3,DJ Smoke may be found in critical condition after playing this,may,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,2,Are you ready to break the next one?,break,3,DJ Smoke may be found in critical condition after playing this,playing,INNER,SLANT,cmu,MED,Y
+No Friend of Me,2,Are you ready to break the next one?,break,4,If he broke he ain't no friend of me,ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,2,Are you ready to break the next one?,break,4,If he broke he ain't no friend of me,broke,INNER,SLANT,spelling,LOW,Y
+No Friend of Me,2,Are you ready to break the next one?,next,4,If he broke he ain't no friend of me,friend,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,2,Are you ready to break the next one?,ready,4,If he broke he ain't no friend of me,friend,INNER,SLANT,cmu,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,critical,3,DJ Smoke may be found in critical condition after playing this,condition,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,DJ,3,DJ Smoke may be found in critical condition after playing this,may,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,DJ,3,DJ Smoke may be found in critical condition after playing this,playing,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,may,3,DJ Smoke may be found in critical condition after playing this,playing,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,DJ,4,If he broke he ain't no friend of me,ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,may,4,If he broke he ain't no friend of me,ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,playing,4,If he broke he ain't no friend of me,ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,Smoke,4,If he broke he ain't no friend of me,broke,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,Smoke,4,If he broke he ain't no friend of me,no,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,DJ,5,"Wearing fake designer, he ain't no friend of me",ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,DJ,5,"Wearing fake designer, he ain't no friend of me",fake,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,may,5,"Wearing fake designer, he ain't no friend of me",ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,may,5,"Wearing fake designer, he ain't no friend of me",fake,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,playing,5,"Wearing fake designer, he ain't no friend of me",ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,playing,5,"Wearing fake designer, he ain't no friend of me",fake,INNER,SLANT,cmu,MED,Y
+No Friend of Me,3,DJ Smoke may be found in critical condition after playing this,Smoke,5,"Wearing fake designer, he ain't no friend of me",no,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,4,If he broke he ain't no friend of me,broke,4,If he broke he ain't no friend of me,no,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,4,If he broke he ain't no friend of me,friend,5,"Wearing fake designer, he ain't no friend of me",friend,END,REPEAT,spelling,HIGH,N
+No Friend of Me,4,If he broke he ain't no friend of me,ain't,5,"Wearing fake designer, he ain't no friend of me",ain't,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,4,If he broke he ain't no friend of me,ain't,5,"Wearing fake designer, he ain't no friend of me",fake,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,4,If he broke he ain't no friend of me,broke,5,"Wearing fake designer, he ain't no friend of me",no,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,4,If he broke he ain't no friend of me,friend,5,"Wearing fake designer, he ain't no friend of me",Wearing,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,4,If he broke he ain't no friend of me,no,5,"Wearing fake designer, he ain't no friend of me",no,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,4,If he broke he ain't no friend of me,friend,6,Money long and still stretching like a centipede,stretching,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,4,If he broke he ain't no friend of me,friend,7,Extended clips and prayers for all my enemies,enemies,END,ASSONANCE,vowel,MED,Y
+No Friend of Me,4,If he broke he ain't no friend of me,friend,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",enemy,END,SLANT,cmu,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",fake,5,"Wearing fake designer, he ain't no friend of me",ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",Wearing,5,"Wearing fake designer, he ain't no friend of me",friend,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",designer,6,Money long and still stretching like a centipede,like,INNER,SLANT,cmu,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",friend,6,Money long and still stretching like a centipede,stretching,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",Wearing,6,Money long and still stretching like a centipede,stretching,INNER,SLANT,cmu,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",friend,7,Extended clips and prayers for all my enemies,enemies,END,ASSONANCE,vowel,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",friend,7,Extended clips and prayers for all my enemies,Extended,INNER,SLANT,cmu,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",friend,7,Extended clips and prayers for all my enemies,prayers,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",Wearing,7,Extended clips and prayers for all my enemies,enemies,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",Wearing,7,Extended clips and prayers for all my enemies,Extended,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",Wearing,7,Extended clips and prayers for all my enemies,prayers,INNER,SLANT,cmu,MED,Y
+No Friend of Me,5,"Wearing fake designer, he ain't no friend of me",friend,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",enemy,END,SLANT,cmu,MED,Y
+No Friend of Me,6,Money long and still stretching like a centipede,long,7,Extended clips and prayers for all my enemies,all,INNER,SLANT,cmu,MED,Y
+No Friend of Me,6,Money long and still stretching like a centipede,still,7,Extended clips and prayers for all my enemies,clips,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,6,Money long and still stretching like a centipede,stretching,7,Extended clips and prayers for all my enemies,enemies,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,6,Money long and still stretching like a centipede,stretching,7,Extended clips and prayers for all my enemies,Extended,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,6,Money long and still stretching like a centipede,stretching,7,Extended clips and prayers for all my enemies,prayers,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,6,Money long and still stretching like a centipede,like,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",like,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,6,Money long and still stretching like a centipede,Money,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",fuckin,INNER,SLANT,cmu,MED,Y
+No Friend of Me,6,Money long and still stretching like a centipede,still,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",kill,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,6,Money long and still stretching like a centipede,stretching,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",enemy,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,6,Money long and still stretching like a centipede,stretching,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",friend,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,Extended,7,Extended clips and prayers for all my enemies,enemies,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,Extended,7,Extended clips and prayers for all my enemies,prayers,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,prayers,7,Extended clips and prayers for all my enemies,enemies,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,enemies,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",enemy,END,SLANT,cmu,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,clips,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",kill,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,enemies,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",friend,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,Extended,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",enemy,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,Extended,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",friend,INNER,SLANT,cmu,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,prayers,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",enemy,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,prayers,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",friend,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,enemies,9,I'm tired of these fuck niggas being frienemies,frienemies,END,PERFECT,spelling,HIGH,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,clips,9,I'm tired of these fuck niggas being frienemies,niggas,INNER,SLANT,spelling,LOW,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,enemies,10,"Only thing that's killing me, my energy (Gang)",energy,END,SLANT,cmu,MED,Y
+No Friend of Me,7,Extended clips and prayers for all my enemies,enemies,11,Catch a fuck nigga show him what he meant to me (Bang Bang),meant,END,ASSONANCE,vowel,MED,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",friend,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",enemy,INNER,SLANT,cmu,MED,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",fuckin,9,I'm tired of these fuck niggas being frienemies,fuck,INNER,SLANT,cmu,MED,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",like,9,I'm tired of these fuck niggas being frienemies,tired,INNER,SLANT,cmu,MED,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",nigga,9,I'm tired of these fuck niggas being frienemies,niggas,INNER,SLANT,spelling,LOW,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",enemy,10,"Only thing that's killing me, my energy (Gang)",energy,END,SLANT,cmu,MED,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",friend,10,"Only thing that's killing me, my energy (Gang)",energy,INNER,SLANT,cmu,MED,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",kill,10,"Only thing that's killing me, my energy (Gang)",killing,INNER,SLANT,cmu,MED,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",kill,10,"Only thing that's killing me, my energy (Gang)",thing,INNER,SLANT,cmu,MED,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",no,10,"Only thing that's killing me, my energy (Gang)",Only,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,8,"He ain't no friend of me, kill that fuckin' nigga like my enemy",enemy,11,Catch a fuck nigga show him what he meant to me (Bang Bang),meant,END,SLANT,cmu,MED,Y
+No Friend of Me,9,I'm tired of these fuck niggas being frienemies,these,9,I'm tired of these fuck niggas being frienemies,being,INNER,SLANT,cmu,MED,Y
+No Friend of Me,9,I'm tired of these fuck niggas being frienemies,fuck,11,Catch a fuck nigga show him what he meant to me (Bang Bang),fuck,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,9,I'm tired of these fuck niggas being frienemies,fuck,11,Catch a fuck nigga show him what he meant to me (Bang Bang),what,INNER,SLANT,cmu,MED,Y
+No Friend of Me,9,I'm tired of these fuck niggas being frienemies,niggas,11,Catch a fuck nigga show him what he meant to me (Bang Bang),nigga,INNER,SLANT,spelling,LOW,Y
+No Friend of Me,10,"Only thing that's killing me, my energy (Gang)",thing,10,"Only thing that's killing me, my energy (Gang)",killing,INNER,SLANT,cmu,MED,Y
+No Friend of Me,10,"Only thing that's killing me, my energy (Gang)",energy,11,Catch a fuck nigga show him what he meant to me (Bang Bang),meant,END,SLANT,cmu,MED,Y
+No Friend of Me,10,"Only thing that's killing me, my energy (Gang)",killing,11,Catch a fuck nigga show him what he meant to me (Bang Bang),him,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,10,"Only thing that's killing me, my energy (Gang)",Only,11,Catch a fuck nigga show him what he meant to me (Bang Bang),show,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,10,"Only thing that's killing me, my energy (Gang)",thing,11,Catch a fuck nigga show him what he meant to me (Bang Bang),him,INNER,SLANT,cmu,MED,Y
+No Friend of Me,10,"Only thing that's killing me, my energy (Gang)",Only,12,"And I got this MAC, it go ratat",go,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,11,Catch a fuck nigga show him what he meant to me (Bang Bang),fuck,11,Catch a fuck nigga show him what he meant to me (Bang Bang),what,INNER,SLANT,cmu,MED,Y
+No Friend of Me,11,Catch a fuck nigga show him what he meant to me (Bang Bang),Catch,12,"And I got this MAC, it go ratat",MAC,INNER,SLANT,cmu,MED,Y
+No Friend of Me,11,Catch a fuck nigga show him what he meant to me (Bang Bang),Catch,12,"And I got this MAC, it go ratat",ratat,INNER,ASSONANCE,vowel,LOW,N
+No Friend of Me,11,Catch a fuck nigga show him what he meant to me (Bang Bang),show,12,"And I got this MAC, it go ratat",go,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,11,Catch a fuck nigga show him what he meant to me (Bang Bang),what,12,"And I got this MAC, it go ratat",ratat,INNER,PERFECT,spelling,MED,Y
+No Friend of Me,11,Catch a fuck nigga show him what he meant to me (Bang Bang),Catch,13,You tote a deuce deuce sound like a high hat,hat,INNER,SLANT,cmu,MED,Y
+No Friend of Me,11,Catch a fuck nigga show him what he meant to me (Bang Bang),show,13,You tote a deuce deuce sound like a high hat,tote,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",MAC,12,"And I got this MAC, it go ratat",ratat,INNER,SLANT,spelling,LOW,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",ratat,13,You tote a deuce deuce sound like a high hat,hat,END,PERFECT,spelling,MED,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",go,13,You tote a deuce deuce sound like a high hat,tote,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",MAC,13,You tote a deuce deuce sound like a high hat,hat,INNER,SLANT,cmu,MED,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",ratat,14,"I'm toting on this chopper, it go grat grat",grat,END,PERFECT,spelling,MED,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",go,14,"I'm toting on this chopper, it go grat grat",go,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,12,"And I got this MAC, it go ratat",go,14,"I'm toting on this chopper, it go grat grat",toting,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",got,14,"I'm toting on this chopper, it go grat grat",chopper,INNER,SLANT,cmu,MED,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",MAC,14,"I'm toting on this chopper, it go grat grat",grat,INNER,SLANT,spelling,LOW,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",ratat,14,"I'm toting on this chopper, it go grat grat",grat,INNER,PERFECT,spelling,MED,Y
+No Friend of Me,12,"And I got this MAC, it go ratat",ratat,15,"Same price I pay for that, I pay for my hat",hat,END,PERFECT,spelling,MED,Y
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,deuce,13,You tote a deuce deuce sound like a high hat,deuce,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,like,13,You tote a deuce deuce sound like a high hat,high,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,hat,14,"I'm toting on this chopper, it go grat grat",grat,END,PERFECT,spelling,MED,Y
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,hat,14,"I'm toting on this chopper, it go grat grat",grat,INNER,PERFECT,spelling,MED,Y
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,tote,14,"I'm toting on this chopper, it go grat grat",go,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,tote,14,"I'm toting on this chopper, it go grat grat",toting,INNER,SLANT,cmu,MED,Y
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,hat,15,"Same price I pay for that, I pay for my hat",hat,END,REPEAT,spelling,HIGH,N
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,high,15,"Same price I pay for that, I pay for my hat",price,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,like,15,"Same price I pay for that, I pay for my hat",price,INNER,SLANT,cmu,MED,Y
+No Friend of Me,13,You tote a deuce deuce sound like a high hat,hat,17,I got my friend with me and that be my gat,gat,END,PERFECT,cmu,HIGH,Y
+No Friend of Me,14,"I'm toting on this chopper, it go grat grat",grat,14,"I'm toting on this chopper, it go grat grat",grat,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,14,"I'm toting on this chopper, it go grat grat",toting,14,"I'm toting on this chopper, it go grat grat",go,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,14,"I'm toting on this chopper, it go grat grat",grat,15,"Same price I pay for that, I pay for my hat",hat,END,PERFECT,spelling,MED,Y
+No Friend of Me,14,"I'm toting on this chopper, it go grat grat",grat,15,"Same price I pay for that, I pay for my hat",hat,INNER,PERFECT,spelling,MED,Y
+No Friend of Me,14,"I'm toting on this chopper, it go grat grat",go,16,"Set me up, baby girl, don't try that",don't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,14,"I'm toting on this chopper, it go grat grat",toting,16,"Set me up, baby girl, don't try that",don't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,14,"I'm toting on this chopper, it go grat grat",grat,17,I got my friend with me and that be my gat,gat,END,PERFECT,spelling,MED,Y
+No Friend of Me,15,"Same price I pay for that, I pay for my hat",pay,15,"Same price I pay for that, I pay for my hat",pay,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,15,"Same price I pay for that, I pay for my hat",Same,15,"Same price I pay for that, I pay for my hat",pay,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,15,"Same price I pay for that, I pay for my hat",pay,16,"Set me up, baby girl, don't try that",baby,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,15,"Same price I pay for that, I pay for my hat",price,16,"Set me up, baby girl, don't try that",try,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,15,"Same price I pay for that, I pay for my hat",Same,16,"Set me up, baby girl, don't try that",baby,INNER,SLANT,cmu,MED,Y
+No Friend of Me,15,"Same price I pay for that, I pay for my hat",hat,17,I got my friend with me and that be my gat,gat,END,PERFECT,cmu,HIGH,Y
+No Friend of Me,16,"Set me up, baby girl, don't try that",Set,17,I got my friend with me and that be my gat,friend,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,16,"Set me up, baby girl, don't try that",try,18,"Too much Tooka pack, where my life at?",life,END,ASSONANCE,vowel,MED,Y
+No Friend of Me,16,"Set me up, baby girl, don't try that",Set,18,"Too much Tooka pack, where my life at?",where,INNER,SLANT,cmu,MED,Y
+No Friend of Me,16,"Set me up, baby girl, don't try that",try,19,"Bullets come out this chopper, where the knife at?",knife,END,ASSONANCE,vowel,MED,Y
+No Friend of Me,17,I got my friend with me and that be my gat,friend,18,"Too much Tooka pack, where my life at?",where,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,17,I got my friend with me and that be my gat,gat,18,"Too much Tooka pack, where my life at?",pack,INNER,SLANT,cmu,MED,Y
+No Friend of Me,17,I got my friend with me and that be my gat,friend,19,"Bullets come out this chopper, where the knife at?",where,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,17,I got my friend with me and that be my gat,got,19,"Bullets come out this chopper, where the knife at?",chopper,INNER,SLANT,cmu,MED,Y
+No Friend of Me,18,"Too much Tooka pack, where my life at?",life,19,"Bullets come out this chopper, where the knife at?",knife,END,PERFECT,cmu,HIGH,Y
+No Friend of Me,18,"Too much Tooka pack, where my life at?",much,19,"Bullets come out this chopper, where the knife at?",come,INNER,SLANT,cmu,MED,Y
+No Friend of Me,18,"Too much Tooka pack, where my life at?",where,19,"Bullets come out this chopper, where the knife at?",where,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,18,"Too much Tooka pack, where my life at?",pack,20,"They say when you're rich, you can't have broke friends",can't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,18,"Too much Tooka pack, where my life at?",pack,20,"They say when you're rich, you can't have broke friends",have,INNER,SLANT,cmu,MED,Y
+No Friend of Me,18,"Too much Tooka pack, where my life at?",where,20,"They say when you're rich, you can't have broke friends",friends,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,18,"Too much Tooka pack, where my life at?",where,20,"They say when you're rich, you can't have broke friends",when,INNER,SLANT,cmu,MED,Y
+No Friend of Me,19,"Bullets come out this chopper, where the knife at?",where,20,"They say when you're rich, you can't have broke friends",friends,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,19,"Bullets come out this chopper, where the knife at?",where,20,"They say when you're rich, you can't have broke friends",when,INNER,SLANT,cmu,MED,Y
+No Friend of Me,19,"Bullets come out this chopper, where the knife at?",where,21,I guess I just noticed that,guess,INNER,SLANT,cmu,MED,Y
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",can't,20,"They say when you're rich, you can't have broke friends",have,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",when,20,"They say when you're rich, you can't have broke friends",friends,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",broke,21,I guess I just noticed that,noticed,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",friends,21,I guess I just noticed that,guess,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",when,21,I guess I just noticed that,guess,INNER,SLANT,cmu,MED,Y
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",friends,22,Niggas with you when you're rich but when it all ends,ends,END,PERFECT,cmu,HIGH,Y
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",friends,22,Niggas with you when you're rich but when it all ends,when,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",rich,22,Niggas with you when you're rich but when it all ends,rich,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",when,22,Niggas with you when you're rich but when it all ends,ends,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,20,"They say when you're rich, you can't have broke friends",when,22,Niggas with you when you're rich but when it all ends,when,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,21,I guess I just noticed that,guess,22,Niggas with you when you're rich but when it all ends,ends,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,21,I guess I just noticed that,guess,22,Niggas with you when you're rich but when it all ends,when,INNER,SLANT,cmu,MED,Y
+No Friend of Me,21,I guess I just noticed that,noticed,23,Bet that shit be all over with,over,END,ASSONANCE,vowel,MED,Y
+No Friend of Me,21,I guess I just noticed that,guess,23,Bet that shit be all over with,Bet,INNER,SLANT,cmu,MED,Y
+No Friend of Me,22,Niggas with you when you're rich but when it all ends,when,22,Niggas with you when you're rich but when it all ends,ends,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,22,Niggas with you when you're rich but when it all ends,when,22,Niggas with you when you're rich but when it all ends,when,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,22,Niggas with you when you're rich but when it all ends,all,23,Bet that shit be all over with,all,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,22,Niggas with you when you're rich but when it all ends,ends,23,Bet that shit be all over with,Bet,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,22,Niggas with you when you're rich but when it all ends,rich,23,Bet that shit be all over with,shit,INNER,SLANT,cmu,MED,Y
+No Friend of Me,22,Niggas with you when you're rich but when it all ends,when,23,Bet that shit be all over with,Bet,INNER,SLANT,cmu,MED,Y
+No Friend of Me,22,Niggas with you when you're rich but when it all ends,ends,24,"I still want none, get on a track and I go dumb",get,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,22,Niggas with you when you're rich but when it all ends,rich,24,"I still want none, get on a track and I go dumb",still,INNER,SLANT,cmu,MED,Y
+No Friend of Me,22,Niggas with you when you're rich but when it all ends,when,24,"I still want none, get on a track and I go dumb",get,INNER,SLANT,cmu,MED,Y
+No Friend of Me,23,Bet that shit be all over with,Bet,24,"I still want none, get on a track and I go dumb",get,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,23,Bet that shit be all over with,over,24,"I still want none, get on a track and I go dumb",go,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,23,Bet that shit be all over with,shit,24,"I still want none, get on a track and I go dumb",still,INNER,SLANT,cmu,MED,Y
+No Friend of Me,23,Bet that shit be all over with,all,25,"Keep talking shit, you see them BDs come",talking,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,23,Bet that shit be all over with,shit,25,"Keep talking shit, you see them BDs come",shit,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,24,"I still want none, get on a track and I go dumb",none,24,"I still want none, get on a track and I go dumb",dumb,INNER,SLANT,cmu,MED,Y
+No Friend of Me,24,"I still want none, get on a track and I go dumb",dumb,25,"Keep talking shit, you see them BDs come",come,END,PERFECT,cmu,HIGH,Y
+No Friend of Me,24,"I still want none, get on a track and I go dumb",none,25,"Keep talking shit, you see them BDs come",come,INNER,SLANT,cmu,MED,Y
+No Friend of Me,24,"I still want none, get on a track and I go dumb",still,25,"Keep talking shit, you see them BDs come",shit,INNER,SLANT,cmu,MED,Y
+No Friend of Me,24,"I still want none, get on a track and I go dumb",dumb,26,And the Lords come and them folks come,come,END,PERFECT,cmu,HIGH,Y
+No Friend of Me,24,"I still want none, get on a track and I go dumb",dumb,26,And the Lords come and them folks come,come,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,24,"I still want none, get on a track and I go dumb",go,26,And the Lords come and them folks come,folks,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,24,"I still want none, get on a track and I go dumb",none,26,And the Lords come and them folks come,come,INNER,SLANT,cmu,MED,Y
+No Friend of Me,25,"Keep talking shit, you see them BDs come",Keep,25,"Keep talking shit, you see them BDs come",see,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,25,"Keep talking shit, you see them BDs come",come,26,And the Lords come and them folks come,come,END,REPEAT,spelling,HIGH,N
+No Friend of Me,25,"Keep talking shit, you see them BDs come",come,26,And the Lords come and them folks come,come,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,25,"Keep talking shit, you see them BDs come",talking,26,And the Lords come and them folks come,Lords,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,25,"Keep talking shit, you see them BDs come",come,27,"And they be coming with some shit, better click at it, clack",coming,INNER,SLANT,cmu,MED,Y
+No Friend of Me,25,"Keep talking shit, you see them BDs come",come,27,"And they be coming with some shit, better click at it, clack",some,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,25,"Keep talking shit, you see them BDs come",shit,27,"And they be coming with some shit, better click at it, clack",click,INNER,SLANT,cmu,MED,Y
+No Friend of Me,25,"Keep talking shit, you see them BDs come",shit,27,"And they be coming with some shit, better click at it, clack",shit,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,26,And the Lords come and them folks come,come,26,And the Lords come and them folks come,come,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,26,And the Lords come and them folks come,come,27,"And they be coming with some shit, better click at it, clack",coming,INNER,SLANT,cmu,MED,Y
+No Friend of Me,26,And the Lords come and them folks come,come,27,"And they be coming with some shit, better click at it, clack",some,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,26,And the Lords come and them folks come,come,28,Clip after clip after Mac and some shit that'll rip out your back,some,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,26,And the Lords come and them folks come,come,30,"My haters get ghost, what, chewing all that money",money,END,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",click,27,"And they be coming with some shit, better click at it, clack",clack,INNER,SLANT,spelling,LOW,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",coming,27,"And they be coming with some shit, better click at it, clack",some,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",shit,27,"And they be coming with some shit, better click at it, clack",click,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",clack,28,Clip after clip after Mac and some shit that'll rip out your back,back,END,PERFECT,cmu,HIGH,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",clack,28,Clip after clip after Mac and some shit that'll rip out your back,after,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",clack,28,Clip after clip after Mac and some shit that'll rip out your back,Mac,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",clack,28,Clip after clip after Mac and some shit that'll rip out your back,that'll,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",click,28,Clip after clip after Mac and some shit that'll rip out your back,Clip,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",click,28,Clip after clip after Mac and some shit that'll rip out your back,rip,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",click,28,Clip after clip after Mac and some shit that'll rip out your back,shit,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",coming,28,Clip after clip after Mac and some shit that'll rip out your back,some,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",shit,28,Clip after clip after Mac and some shit that'll rip out your back,Clip,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",shit,28,Clip after clip after Mac and some shit that'll rip out your back,rip,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",shit,28,Clip after clip after Mac and some shit that'll rip out your back,shit,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",some,28,Clip after clip after Mac and some shit that'll rip out your back,some,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",clack,29,"Hollow heavy hitter, bullets'll slip out the crack",crack,END,PERFECT,cmu,HIGH,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",better,29,"Hollow heavy hitter, bullets'll slip out the crack",heavy,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",click,29,"Hollow heavy hitter, bullets'll slip out the crack",hitter,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",click,29,"Hollow heavy hitter, bullets'll slip out the crack",slip,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",shit,29,"Hollow heavy hitter, bullets'll slip out the crack",hitter,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",shit,29,"Hollow heavy hitter, bullets'll slip out the crack",slip,INNER,SLANT,cmu,MED,Y
+No Friend of Me,27,"And they be coming with some shit, better click at it, clack",some,29,"Hollow heavy hitter, bullets'll slip out the crack",bullets'll,INNER,ASSONANCE,vowel,LOW,N
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,after,28,Clip after clip after Mac and some shit that'll rip out your back,after,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,after,28,Clip after clip after Mac and some shit that'll rip out your back,back,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,after,28,Clip after clip after Mac and some shit that'll rip out your back,Mac,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,after,28,Clip after clip after Mac and some shit that'll rip out your back,that'll,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,Clip,28,Clip after clip after Mac and some shit that'll rip out your back,clip,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,Clip,28,Clip after clip after Mac and some shit that'll rip out your back,rip,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,Clip,28,Clip after clip after Mac and some shit that'll rip out your back,shit,INNER,SLANT,cmu,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,Mac,28,Clip after clip after Mac and some shit that'll rip out your back,back,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,Mac,28,Clip after clip after Mac and some shit that'll rip out your back,that'll,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,shit,28,Clip after clip after Mac and some shit that'll rip out your back,rip,INNER,SLANT,cmu,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,that'll,28,Clip after clip after Mac and some shit that'll rip out your back,back,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,back,29,"Hollow heavy hitter, bullets'll slip out the crack",crack,END,PERFECT,cmu,HIGH,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,after,29,"Hollow heavy hitter, bullets'll slip out the crack",crack,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,Clip,29,"Hollow heavy hitter, bullets'll slip out the crack",hitter,INNER,SLANT,cmu,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,Clip,29,"Hollow heavy hitter, bullets'll slip out the crack",slip,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,Mac,29,"Hollow heavy hitter, bullets'll slip out the crack",crack,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,rip,29,"Hollow heavy hitter, bullets'll slip out the crack",hitter,INNER,SLANT,cmu,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,rip,29,"Hollow heavy hitter, bullets'll slip out the crack",slip,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,shit,29,"Hollow heavy hitter, bullets'll slip out the crack",hitter,INNER,SLANT,cmu,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,shit,29,"Hollow heavy hitter, bullets'll slip out the crack",slip,INNER,SLANT,cmu,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,some,29,"Hollow heavy hitter, bullets'll slip out the crack",bullets'll,INNER,ASSONANCE,vowel,LOW,N
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,that'll,29,"Hollow heavy hitter, bullets'll slip out the crack",crack,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,some,30,"My haters get ghost, what, chewing all that money",money,INNER,SLANT,cmu,MED,Y
+No Friend of Me,28,Clip after clip after Mac and some shit that'll rip out your back,some,30,"My haters get ghost, what, chewing all that money",what,INNER,SLANT,cmu,MED,Y
+No Friend of Me,29,"Hollow heavy hitter, bullets'll slip out the crack",hitter,29,"Hollow heavy hitter, bullets'll slip out the crack",slip,INNER,SLANT,cmu,MED,Y
+No Friend of Me,29,"Hollow heavy hitter, bullets'll slip out the crack",heavy,30,"My haters get ghost, what, chewing all that money",get,INNER,SLANT,cmu,MED,Y
+No Friend of Me,29,"Hollow heavy hitter, bullets'll slip out the crack",Hollow,31,You were saying to me you ain't got a prop or job,got,INNER,SLANT,cmu,MED,Y
+No Friend of Me,29,"Hollow heavy hitter, bullets'll slip out the crack",Hollow,31,You were saying to me you ain't got a prop or job,job,INNER,SLANT,cmu,MED,Y
+No Friend of Me,29,"Hollow heavy hitter, bullets'll slip out the crack",Hollow,31,You were saying to me you ain't got a prop or job,prop,INNER,SLANT,cmu,MED,Y
+No Friend of Me,30,"My haters get ghost, what, chewing all that money",what,30,"My haters get ghost, what, chewing all that money",money,INNER,SLANT,cmu,MED,Y
+No Friend of Me,30,"My haters get ghost, what, chewing all that money",haters,31,You were saying to me you ain't got a prop or job,ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,30,"My haters get ghost, what, chewing all that money",haters,31,You were saying to me you ain't got a prop or job,saying,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,30,"My haters get ghost, what, chewing all that money",money,32,"You're a shame to me, half nigga always in the club",club,END,SLANT,cmu,MED,Y
+No Friend of Me,30,"My haters get ghost, what, chewing all that money",haters,32,"You're a shame to me, half nigga always in the club",always,INNER,SLANT,cmu,MED,Y
+No Friend of Me,30,"My haters get ghost, what, chewing all that money",haters,32,"You're a shame to me, half nigga always in the club",shame,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,30,"My haters get ghost, what, chewing all that money",what,32,"You're a shame to me, half nigga always in the club",club,INNER,SLANT,cmu,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,got,31,You were saying to me you ain't got a prop or job,job,INNER,SLANT,cmu,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,got,31,You were saying to me you ain't got a prop or job,prop,INNER,SLANT,cmu,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,prop,31,You were saying to me you ain't got a prop or job,job,INNER,SLANT,cmu,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,saying,31,You were saying to me you ain't got a prop or job,ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,ain't,32,"You're a shame to me, half nigga always in the club",always,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,ain't,32,"You're a shame to me, half nigga always in the club",shame,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,saying,32,"You're a shame to me, half nigga always in the club",always,INNER,SLANT,cmu,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,saying,32,"You're a shame to me, half nigga always in the club",shame,INNER,SLANT,cmu,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,ain't,33,"You were thot to me, can't pay for VIP, parking, you broke to me",pay,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,got,33,"You were thot to me, can't pay for VIP, parking, you broke to me",parking,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,got,33,"You were thot to me, can't pay for VIP, parking, you broke to me",thot,INNER,PERFECT,spelling,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,job,33,"You were thot to me, can't pay for VIP, parking, you broke to me",parking,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,prop,33,"You were thot to me, can't pay for VIP, parking, you broke to me",parking,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,31,You were saying to me you ain't got a prop or job,saying,33,"You were thot to me, can't pay for VIP, parking, you broke to me",pay,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,32,"You're a shame to me, half nigga always in the club",shame,32,"You're a shame to me, half nigga always in the club",always,INNER,SLANT,cmu,MED,Y
+No Friend of Me,32,"You're a shame to me, half nigga always in the club",always,33,"You were thot to me, can't pay for VIP, parking, you broke to me",pay,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,32,"You're a shame to me, half nigga always in the club",half,33,"You were thot to me, can't pay for VIP, parking, you broke to me",can't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,32,"You're a shame to me, half nigga always in the club",shame,33,"You were thot to me, can't pay for VIP, parking, you broke to me",pay,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,32,"You're a shame to me, half nigga always in the club",always,34,"Used to got no money, you mistaking me",mistaking,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,32,"You're a shame to me, half nigga always in the club",club,34,"Used to got no money, you mistaking me",money,INNER,SLANT,cmu,MED,Y
+No Friend of Me,32,"You're a shame to me, half nigga always in the club",shame,34,"Used to got no money, you mistaking me",mistaking,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,32,"You're a shame to me, half nigga always in the club",club,35,"For that other nigga that you seen, he ain't none of me",none,END,SLANT,cmu,MED,Y
+No Friend of Me,33,"You were thot to me, can't pay for VIP, parking, you broke to me",thot,33,"You were thot to me, can't pay for VIP, parking, you broke to me",broke,INNER,SLANT,spelling,LOW,Y
+No Friend of Me,33,"You were thot to me, can't pay for VIP, parking, you broke to me",broke,34,"Used to got no money, you mistaking me",no,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,33,"You were thot to me, can't pay for VIP, parking, you broke to me",parking,34,"Used to got no money, you mistaking me",got,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,33,"You were thot to me, can't pay for VIP, parking, you broke to me",parking,34,"Used to got no money, you mistaking me",mistaking,INNER,PERFECT,spelling,MED,Y
+No Friend of Me,33,"You were thot to me, can't pay for VIP, parking, you broke to me",pay,34,"Used to got no money, you mistaking me",mistaking,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,33,"You were thot to me, can't pay for VIP, parking, you broke to me",thot,34,"Used to got no money, you mistaking me",got,INNER,PERFECT,spelling,MED,Y
+No Friend of Me,33,"You were thot to me, can't pay for VIP, parking, you broke to me",pay,35,"For that other nigga that you seen, he ain't none of me",ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,33,"You were thot to me, can't pay for VIP, parking, you broke to me",VIP,35,"For that other nigga that you seen, he ain't none of me",seen,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,34,"Used to got no money, you mistaking me",mistaking,35,"For that other nigga that you seen, he ain't none of me",ain't,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,34,"Used to got no money, you mistaking me",money,35,"For that other nigga that you seen, he ain't none of me",none,INNER,SLANT,cmu,MED,Y
+No Friend of Me,34,"Used to got no money, you mistaking me",money,35,"For that other nigga that you seen, he ain't none of me",other,INNER,SLANT,cmu,MED,Y
+No Friend of Me,34,"Used to got no money, you mistaking me",no,36,"Pull up in that Benz with no key, sit on forgis",no,INNER,REPEAT,spelling,HIGH,N
+No Friend of Me,35,"For that other nigga that you seen, he ain't none of me",other,35,"For that other nigga that you seen, he ain't none of me",none,INNER,SLANT,cmu,MED,Y
+No Friend of Me,35,"For that other nigga that you seen, he ain't none of me",nigga,36,"Pull up in that Benz with no key, sit on forgis",sit,INNER,SLANT,spelling,LOW,Y
+No Friend of Me,35,"For that other nigga that you seen, he ain't none of me",seen,36,"Pull up in that Benz with no key, sit on forgis",key,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,35,"For that other nigga that you seen, he ain't none of me",seen,37,"Killers all behind me, send this bitch up, G",G,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,36,"Pull up in that Benz with no key, sit on forgis",Benz,37,"Killers all behind me, send this bitch up, G",send,INNER,SLANT,cmu,MED,Y
+No Friend of Me,36,"Pull up in that Benz with no key, sit on forgis",key,37,"Killers all behind me, send this bitch up, G",G,INNER,PERFECT,cmu,HIGH,Y
+No Friend of Me,36,"Pull up in that Benz with no key, sit on forgis",sit,37,"Killers all behind me, send this bitch up, G",bitch,INNER,SLANT,cmu,MED,Y
+No Friend of Me,36,"Pull up in that Benz with no key, sit on forgis",sit,37,"Killers all behind me, send this bitch up, G",Killers,INNER,ASSONANCE,vowel,MED,Y
+No Friend of Me,37,"Killers all behind me, send this bitch up, G",Killers,37,"Killers all behind me, send this bitch up, G",bitch,INNER,ASSONANCE,vowel,MED,Y

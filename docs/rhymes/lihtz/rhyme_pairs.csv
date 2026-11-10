@@ -1,0 +1,284 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Let You Go,1,I can't let you go,go,2,"And I seen so much in my life, that shit turn you cold",cold,END,ASSONANCE,vowel,MED,Y
+Let You Go,1,I can't let you go,go,3,"Turn you Eskimo, turn you subzero",Eskimo,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,1,I can't let you go,go,4,"I done shed so many tears, that shit turned to snow",snow,END,PERFECT,cmu,HIGH,Y
+Let You Go,1,I can't let you go,go,5,"We done put in all these years, I can't let you go (No)",go,END,REPEAT,spelling,HIGH,N
+Let You Go,2,"And I seen so much in my life, that shit turn you cold",cold,3,"Turn you Eskimo, turn you subzero",Eskimo,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,2,"And I seen so much in my life, that shit turn you cold",shit,3,"Turn you Eskimo, turn you subzero",subzero,INNER,SLANT,cmu,MED,Y
+Let You Go,2,"And I seen so much in my life, that shit turn you cold",turn,3,"Turn you Eskimo, turn you subzero",Turn,INNER,REPEAT,spelling,HIGH,N
+Let You Go,2,"And I seen so much in my life, that shit turn you cold",cold,4,"I done shed so many tears, that shit turned to snow",snow,END,ASSONANCE,vowel,MED,Y
+Let You Go,2,"And I seen so much in my life, that shit turn you cold",much,4,"I done shed so many tears, that shit turned to snow",done,INNER,SLANT,cmu,MED,Y
+Let You Go,2,"And I seen so much in my life, that shit turn you cold",shit,4,"I done shed so many tears, that shit turned to snow",shit,INNER,REPEAT,spelling,HIGH,N
+Let You Go,2,"And I seen so much in my life, that shit turn you cold",turn,4,"I done shed so many tears, that shit turned to snow",turned,INNER,SLANT,cmu,MED,Y
+Let You Go,2,"And I seen so much in my life, that shit turn you cold",cold,5,"We done put in all these years, I can't let you go (No)",go,END,ASSONANCE,vowel,MED,Y
+Let You Go,2,"And I seen so much in my life, that shit turn you cold",cold,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",go,END,ASSONANCE,vowel,MED,Y
+Let You Go,3,"Turn you Eskimo, turn you subzero",Turn,3,"Turn you Eskimo, turn you subzero",turn,INNER,REPEAT,spelling,HIGH,N
+Let You Go,3,"Turn you Eskimo, turn you subzero",Eskimo,4,"I done shed so many tears, that shit turned to snow",snow,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,3,"Turn you Eskimo, turn you subzero",subzero,4,"I done shed so many tears, that shit turned to snow",shit,INNER,SLANT,cmu,MED,Y
+Let You Go,3,"Turn you Eskimo, turn you subzero",Turn,4,"I done shed so many tears, that shit turned to snow",turned,INNER,SLANT,cmu,MED,Y
+Let You Go,3,"Turn you Eskimo, turn you subzero",Eskimo,5,"We done put in all these years, I can't let you go (No)",go,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,3,"Turn you Eskimo, turn you subzero",subzero,5,"We done put in all these years, I can't let you go (No)",years,INNER,SLANT,cmu,MED,Y
+Let You Go,3,"Turn you Eskimo, turn you subzero",subzero,7,We done put in all these years,years,END,SLANT,cmu,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",many,4,"I done shed so many tears, that shit turned to snow",tears,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",shed,4,"I done shed so many tears, that shit turned to snow",many,INNER,SLANT,cmu,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",shed,4,"I done shed so many tears, that shit turned to snow",tears,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",snow,5,"We done put in all these years, I can't let you go (No)",go,END,PERFECT,cmu,HIGH,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",done,5,"We done put in all these years, I can't let you go (No)",done,INNER,REPEAT,spelling,HIGH,N
+Let You Go,4,"I done shed so many tears, that shit turned to snow",many,5,"We done put in all these years, I can't let you go (No)",let,INNER,SLANT,cmu,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",shed,5,"We done put in all these years, I can't let you go (No)",let,INNER,SLANT,cmu,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",shit,5,"We done put in all these years, I can't let you go (No)",years,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",tears,5,"We done put in all these years, I can't let you go (No)",let,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",snow,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",go,END,PERFECT,cmu,HIGH,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",done,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",done,INNER,REPEAT,spelling,HIGH,N
+Let You Go,4,"I done shed so many tears, that shit turned to snow",many,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",let,INNER,SLANT,cmu,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",shed,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",let,INNER,SLANT,cmu,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",shit,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",years,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",tears,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",let,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,4,"I done shed so many tears, that shit turned to snow",snow,8,"We done been through highs and lows, but I still can't let you go",go,END,PERFECT,cmu,HIGH,Y
+Let You Go,5,"We done put in all these years, I can't let you go (No)",go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",go,END,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",all,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",all,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",can't,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",can't,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",done,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",done,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",let,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",let,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",put,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",put,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",these,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",these,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",years,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",years,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",all,7,We done put in all these years,all,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",done,7,We done put in all these years,done,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",put,7,We done put in all these years,put,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",these,7,We done put in all these years,these,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",years,7,We done put in all these years,years,INNER,REPEAT,spelling,HIGH,N
+Let You Go,5,"We done put in all these years, I can't let you go (No)",go,8,"We done been through highs and lows, but I still can't let you go",go,END,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",all,7,We done put in all these years,all,INNER,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",done,7,We done put in all these years,done,INNER,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",put,7,We done put in all these years,put,INNER,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",these,7,We done put in all these years,these,INNER,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",years,7,We done put in all these years,years,INNER,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",go,8,"We done been through highs and lows, but I still can't let you go",go,END,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",can't,8,"We done been through highs and lows, but I still can't let you go",can't,INNER,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",done,8,"We done been through highs and lows, but I still can't let you go",done,INNER,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",go,8,"We done been through highs and lows, but I still can't let you go",lows,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",let,8,"We done been through highs and lows, but I still can't let you go",let,INNER,REPEAT,spelling,HIGH,N
+Let You Go,6,"Hey, we done put in all these years, I just can't let you go, oh, oh",years,8,"We done been through highs and lows, but I still can't let you go",still,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,7,We done put in all these years,done,8,"We done been through highs and lows, but I still can't let you go",done,INNER,REPEAT,spelling,HIGH,N
+Let You Go,7,We done put in all these years,years,8,"We done been through highs and lows, but I still can't let you go",still,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,7,We done put in all these years,all,9,"Cut off all my exes and hoes, man, that shit too technical",all,INNER,REPEAT,spelling,HIGH,N
+Let You Go,7,We done put in all these years,done,9,"Cut off all my exes and hoes, man, that shit too technical",Cut,INNER,SLANT,cmu,MED,Y
+Let You Go,7,We done put in all these years,years,9,"Cut off all my exes and hoes, man, that shit too technical",shit,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",lows,8,"We done been through highs and lows, but I still can't let you go",go,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",can't,9,"Cut off all my exes and hoes, man, that shit too technical",man,INNER,SLANT,cmu,MED,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",done,9,"Cut off all my exes and hoes, man, that shit too technical",Cut,INNER,SLANT,cmu,MED,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",go,9,"Cut off all my exes and hoes, man, that shit too technical",hoes,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",let,9,"Cut off all my exes and hoes, man, that shit too technical",exes,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",let,9,"Cut off all my exes and hoes, man, that shit too technical",technical,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",lows,9,"Cut off all my exes and hoes, man, that shit too technical",hoes,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",still,9,"Cut off all my exes and hoes, man, that shit too technical",shit,INNER,SLANT,cmu,MED,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",can't,10,"Thought I had your heart, but from the start, I was too skeptical",had,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,8,"We done been through highs and lows, but I still can't let you go",let,10,"Thought I had your heart, but from the start, I was too skeptical",skeptical,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",exes,9,"Cut off all my exes and hoes, man, that shit too technical",technical,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",technical,10,"Thought I had your heart, but from the start, I was too skeptical",skeptical,END,SLANT,cmu,MED,Y
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",all,10,"Thought I had your heart, but from the start, I was too skeptical",Thought,INNER,SLANT,cmu,MED,Y
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",exes,10,"Thought I had your heart, but from the start, I was too skeptical",skeptical,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",man,10,"Thought I had your heart, but from the start, I was too skeptical",had,INNER,SLANT,cmu,MED,Y
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",exes,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",best,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",shit,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",shit,INNER,REPEAT,spelling,HIGH,N
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",technical,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",best,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",technical,12,"The car came idеntical, the broads came identical",identical,END,MULTI,multi,HIGH,Y
+Let You Go,9,"Cut off all my exes and hoes, man, that shit too technical",technical,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",meant,END,ASSONANCE,vowel,MED,Y
+Let You Go,10,"Thought I had your heart, but from the start, I was too skeptical",heart,10,"Thought I had your heart, but from the start, I was too skeptical",start,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,10,"Thought I had your heart, but from the start, I was too skeptical",heart,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,10,"Thought I had your heart, but from the start, I was too skeptical",skeptical,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",best,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,10,"Thought I had your heart, but from the start, I was too skeptical",start,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,10,"Thought I had your heart, but from the start, I was too skeptical",skeptical,12,"The car came idеntical, the broads came identical",identical,END,SLANT,cmu,MED,Y
+Let You Go,10,"Thought I had your heart, but from the start, I was too skeptical",heart,12,"The car came idеntical, the broads came identical",car,INNER,SLANT,cmu,MED,Y
+Let You Go,10,"Thought I had your heart, but from the start, I was too skeptical",skeptical,12,"The car came idеntical, the broads came identical",ntical,INNER,PERFECT,spelling,MED,Y
+Let You Go,10,"Thought I had your heart, but from the start, I was too skeptical",start,12,"The car came idеntical, the broads came identical",car,INNER,SLANT,cmu,MED,Y
+Let You Go,10,"Thought I had your heart, but from the start, I was too skeptical",skeptical,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",meant,END,ASSONANCE,vowel,MED,Y
+Let You Go,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",best,12,"The car came idеntical, the broads came identical",identical,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",wasn't,12,"The car came idеntical, the broads came identical",car,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",best,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",meant,INNER,SLANT,cmu,MED,Y
+Let You Go,11,"I just knew I wasn't the best for you, shit I was doin' was unaccеptable",wasn't,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",Gotta,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,12,"The car came idеntical, the broads came identical",came,12,"The car came idеntical, the broads came identical",came,INNER,REPEAT,spelling,HIGH,N
+Let You Go,12,"The car came idеntical, the broads came identical",ntical,12,"The car came idеntical, the broads came identical",identical,INNER,PERFECT,spelling,MED,Y
+Let You Go,12,"The car came idеntical, the broads came identical",identical,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",meant,END,ASSONANCE,vowel,MED,Y
+Let You Go,12,"The car came idеntical, the broads came identical",car,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",Gotta,INNER,SLANT,cmu,MED,Y
+Let You Go,12,"The car came idеntical, the broads came identical",identical,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",meant,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",fuck,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",love,INNER,SLANT,cmu,MED,Y
+Let You Go,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",Gotta,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",gotta,INNER,REPEAT,spelling,HIGH,N
+Let You Go,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",like,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",like,INNER,REPEAT,spelling,HIGH,N
+Let You Go,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",meant,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",meant,INNER,REPEAT,spelling,HIGH,N
+Let You Go,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",meant,15,"When I'm mad, I just think of you, a bag get you in the mood",get,INNER,SLANT,cmu,MED,Y
+Let You Go,13,"Gotta fuck her like she meant for you, gotta love her like you meant to do",meant,15,"When I'm mad, I just think of you, a bag get you in the mood",When,INNER,SLANT,cmu,MED,Y
+Let You Go,14,"Girl, I'm so into you, braggin' in my interviews",interviews,15,"When I'm mad, I just think of you, a bag get you in the mood",mood,END,SLANT,cmu,MED,Y
+Let You Go,14,"Girl, I'm so into you, braggin' in my interviews",braggin,15,"When I'm mad, I just think of you, a bag get you in the mood",bag,INNER,SLANT,cmu,MED,Y
+Let You Go,14,"Girl, I'm so into you, braggin' in my interviews",braggin,15,"When I'm mad, I just think of you, a bag get you in the mood",mad,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,14,"Girl, I'm so into you, braggin' in my interviews",braggin,16,"Bag, gotta go get to it, ask if it's only you",ask,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,14,"Girl, I'm so into you, braggin' in my interviews",braggin,16,"Bag, gotta go get to it, ask if it's only you",Bag,INNER,SLANT,cmu,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",mad,15,"When I'm mad, I just think of you, a bag get you in the mood",bag,INNER,SLANT,cmu,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",When,15,"When I'm mad, I just think of you, a bag get you in the mood",get,INNER,SLANT,cmu,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",bag,16,"Bag, gotta go get to it, ask if it's only you",ask,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",bag,16,"Bag, gotta go get to it, ask if it's only you",Bag,INNER,REPEAT,spelling,HIGH,N
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",get,16,"Bag, gotta go get to it, ask if it's only you",get,INNER,REPEAT,spelling,HIGH,N
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",mad,16,"Bag, gotta go get to it, ask if it's only you",ask,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",mad,16,"Bag, gotta go get to it, ask if it's only you",Bag,INNER,SLANT,cmu,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",When,16,"Bag, gotta go get to it, ask if it's only you",get,INNER,SLANT,cmu,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",get,17,"Said it was only you, dead wrong, I know it too",dead,INNER,SLANT,cmu,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",get,17,"Said it was only you, dead wrong, I know it too",Said,INNER,SLANT,cmu,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",When,17,"Said it was only you, dead wrong, I know it too",dead,INNER,SLANT,cmu,MED,Y
+Let You Go,15,"When I'm mad, I just think of you, a bag get you in the mood",When,17,"Said it was only you, dead wrong, I know it too",Said,INNER,SLANT,cmu,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",Bag,16,"Bag, gotta go get to it, ask if it's only you",ask,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",go,16,"Bag, gotta go get to it, ask if it's only you",only,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",only,17,"Said it was only you, dead wrong, I know it too",know,END,ASSONANCE,vowel,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",get,17,"Said it was only you, dead wrong, I know it too",dead,INNER,SLANT,cmu,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",get,17,"Said it was only you, dead wrong, I know it too",Said,INNER,SLANT,cmu,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",go,17,"Said it was only you, dead wrong, I know it too",know,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",go,17,"Said it was only you, dead wrong, I know it too",only,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",only,17,"Said it was only you, dead wrong, I know it too",only,INNER,REPEAT,spelling,HIGH,N
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",only,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",lovin,END,ASSONANCE,vowel,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",go,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",lovin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",go,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",stone,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",gotta,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",hard,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",gotta,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",heart,INNER,SLANT,cmu,MED,Y
+Let You Go,16,"Bag, gotta go get to it, ask if it's only you",only,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",stone,INNER,SLANT,cmu,MED,Y
+Let You Go,17,"Said it was only you, dead wrong, I know it too",only,17,"Said it was only you, dead wrong, I know it too",know,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,17,"Said it was only you, dead wrong, I know it too",Said,17,"Said it was only you, dead wrong, I know it too",dead,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,17,"Said it was only you, dead wrong, I know it too",know,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",lovin,END,ASSONANCE,vowel,MED,Y
+Let You Go,17,"Said it was only you, dead wrong, I know it too",know,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",stone,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,17,"Said it was only you, dead wrong, I know it too",only,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",lovin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,17,"Said it was only you, dead wrong, I know it too",only,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",stone,INNER,SLANT,cmu,MED,Y
+Let You Go,17,"Said it was only you, dead wrong, I know it too",dead,19,"I said look what they done to me, everything change when it come to you, yeah",said,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,17,"Said it was only you, dead wrong, I know it too",dead,19,"I said look what they done to me, everything change when it come to you, yeah",when,INNER,SLANT,cmu,MED,Y
+Let You Go,17,"Said it was only you, dead wrong, I know it too",Said,19,"I said look what they done to me, everything change when it come to you, yeah",said,INNER,REPEAT,spelling,HIGH,N
+Let You Go,17,"Said it was only you, dead wrong, I know it too",Said,19,"I said look what they done to me, everything change when it come to you, yeah",when,INNER,SLANT,cmu,MED,Y
+Let You Go,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",heart,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",hard,INNER,SLANT,cmu,MED,Y
+Let You Go,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",stone,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",lovin,INNER,SLANT,cmu,MED,Y
+Let You Go,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",baby,19,"I said look what they done to me, everything change when it come to you, yeah",change,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",Give,19,"I said look what they done to me, everything change when it come to you, yeah",everything,INNER,SLANT,cmu,MED,Y
+Let You Go,18,"Give you my heart, how, baby, you turn it to stone? It's so hard lovin' you",how,20,"I just love you, you should move around",around,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",done,19,"I said look what they done to me, everything change when it come to you, yeah",come,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",said,19,"I said look what they done to me, everything change when it come to you, yeah",when,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",what,19,"I said look what they done to me, everything change when it come to you, yeah",come,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",what,19,"I said look what they done to me, everything change when it come to you, yeah",done,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",come,20,"I just love you, you should move around",love,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",done,20,"I just love you, you should move around",love,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",look,20,"I just love you, you should move around",should,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",what,20,"I just love you, you should move around",love,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",change,21,"Find someone that make you happy, that's gon' love you naturally",make,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",come,21,"Find someone that make you happy, that's gon' love you naturally",love,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",come,21,"Find someone that make you happy, that's gon' love you naturally",someone,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",done,21,"Find someone that make you happy, that's gon' love you naturally",love,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",done,21,"Find someone that make you happy, that's gon' love you naturally",someone,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",what,21,"Find someone that make you happy, that's gon' love you naturally",love,INNER,SLANT,cmu,MED,Y
+Let You Go,19,"I said look what they done to me, everything change when it come to you, yeah",what,21,"Find someone that make you happy, that's gon' love you naturally",someone,INNER,SLANT,cmu,MED,Y
+Let You Go,20,"I just love you, you should move around",love,21,"Find someone that make you happy, that's gon' love you naturally",love,INNER,REPEAT,spelling,HIGH,N
+Let You Go,20,"I just love you, you should move around",love,21,"Find someone that make you happy, that's gon' love you naturally",someone,INNER,SLANT,cmu,MED,Y
+Let You Go,20,"I just love you, you should move around",love,22,"Every time that you go through that, you keep runnin' backwards",runnin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,20,"I just love you, you should move around",move,22,"Every time that you go through that, you keep runnin' backwards",through,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",happy,21,"Find someone that make you happy, that's gon' love you naturally",naturally,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",someone,21,"Find someone that make you happy, that's gon' love you naturally",love,INNER,SLANT,cmu,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",naturally,22,"Every time that you go through that, you keep runnin' backwards",backwards,END,ASSONANCE,vowel,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",Find,22,"Every time that you go through that, you keep runnin' backwards",time,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",happy,22,"Every time that you go through that, you keep runnin' backwards",backwards,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",love,22,"Every time that you go through that, you keep runnin' backwards",runnin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",someone,22,"Every time that you go through that, you keep runnin' backwards",runnin,INNER,SLANT,cmu,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",naturally,23,That's 'cause I'm too nasty,nasty,END,ASSONANCE,vowel,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",happy,23,That's 'cause I'm too nasty,nasty,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,21,"Find someone that make you happy, that's gon' love you naturally",naturally,25,And I know you savage,savage,END,ASSONANCE,vowel,MED,Y
+Let You Go,22,"Every time that you go through that, you keep runnin' backwards",backwards,23,That's 'cause I'm too nasty,nasty,END,ASSONANCE,vowel,MED,Y
+Let You Go,22,"Every time that you go through that, you keep runnin' backwards",backwards,24,And I don't move past shit,past,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,22,"Every time that you go through that, you keep runnin' backwards",go,24,And I don't move past shit,don't,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,22,"Every time that you go through that, you keep runnin' backwards",through,24,And I don't move past shit,move,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,22,"Every time that you go through that, you keep runnin' backwards",backwards,25,And I know you savage,savage,END,ASSONANCE,vowel,MED,Y
+Let You Go,22,"Every time that you go through that, you keep runnin' backwards",backwards,26,"I said, ""Come here, sexy, I don't want no static""",static,END,ASSONANCE,vowel,MED,Y
+Let You Go,23,That's 'cause I'm too nasty,nasty,24,And I don't move past shit,past,INNER,SLANT,cmu,MED,Y
+Let You Go,23,That's 'cause I'm too nasty,nasty,25,And I know you savage,savage,END,ASSONANCE,vowel,MED,Y
+Let You Go,23,That's 'cause I'm too nasty,nasty,26,"I said, ""Come here, sexy, I don't want no static""",static,END,ASSONANCE,vowel,MED,Y
+Let You Go,24,And I don't move past shit,don't,25,And I know you savage,know,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,24,And I don't move past shit,past,25,And I know you savage,savage,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,24,And I don't move past shit,don't,26,"I said, ""Come here, sexy, I don't want no static""",don't,INNER,REPEAT,spelling,HIGH,N
+Let You Go,24,And I don't move past shit,don't,26,"I said, ""Come here, sexy, I don't want no static""",no,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,24,And I don't move past shit,past,26,"I said, ""Come here, sexy, I don't want no static""",static,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,24,And I don't move past shit,shit,27,"I know you interested, I don't do internet shit",shit,END,REPEAT,spelling,HIGH,N
+Let You Go,25,And I know you savage,savage,26,"I said, ""Come here, sexy, I don't want no static""",static,END,ASSONANCE,vowel,MED,Y
+Let You Go,25,And I know you savage,know,26,"I said, ""Come here, sexy, I don't want no static""",don't,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,25,And I know you savage,know,26,"I said, ""Come here, sexy, I don't want no static""",no,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,25,And I know you savage,know,27,"I know you interested, I don't do internet shit",don't,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,25,And I know you savage,know,27,"I know you interested, I don't do internet shit",know,INNER,REPEAT,spelling,HIGH,N
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",don't,26,"I said, ""Come here, sexy, I don't want no static""",no,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",said,26,"I said, ""Come here, sexy, I don't want no static""",sexy,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",don't,27,"I know you interested, I don't do internet shit",don't,INNER,REPEAT,spelling,HIGH,N
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",don't,27,"I know you interested, I don't do internet shit",know,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",no,27,"I know you interested, I don't do internet shit",don't,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",no,27,"I know you interested, I don't do internet shit",know,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",said,27,"I know you interested, I don't do internet shit",internet,INNER,SLANT,cmu,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",sexy,27,"I know you interested, I don't do internet shit",internet,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",said,28,I wanna get in your presence,get,INNER,SLANT,cmu,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",said,28,I wanna get in your presence,presence,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",sexy,28,I wanna get in your presence,get,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",sexy,28,I wanna get in your presence,presence,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,26,"I said, ""Come here, sexy, I don't want no static""",want,28,I wanna get in your presence,wanna,INNER,SLANT,cmu,MED,Y
+Let You Go,27,"I know you interested, I don't do internet shit",interested,27,"I know you interested, I don't do internet shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,27,"I know you interested, I don't do internet shit",know,27,"I know you interested, I don't do internet shit",don't,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,27,"I know you interested, I don't do internet shit",internet,28,I wanna get in your presence,get,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,27,"I know you interested, I don't do internet shit",internet,28,I wanna get in your presence,presence,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,27,"I know you interested, I don't do internet shit",don't,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",don't,INNER,REPEAT,spelling,HIGH,N
+Let You Go,27,"I know you interested, I don't do internet shit",interested,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",big,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,27,"I know you interested, I don't do internet shit",internet,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",investment,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,27,"I know you interested, I don't do internet shit",internet,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",stressin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,27,"I know you interested, I don't do internet shit",know,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",don't,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,27,"I know you interested, I don't do internet shit",shit,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",big,INNER,SLANT,cmu,MED,Y
+Let You Go,28,I wanna get in your presence,get,28,I wanna get in your presence,presence,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,presence,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",stressin,END,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,get,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",investment,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,get,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",stressin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,presence,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",investment,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,presence,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",blessin,END,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,get,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",blessin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,get,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",get,INNER,REPEAT,spelling,HIGH,N
+Let You Go,28,I wanna get in your presence,get,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",pregnant,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,presence,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",get,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,presence,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",pregnant,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,presence,31,I just knew that we were destined,destined,END,ASSONANCE,vowel,MED,Y
+Let You Go,28,I wanna get in your presence,presence,32,Every loss is just a lesson,lesson,END,ASSONANCE,vowel,MED,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",investment,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",stressin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",stressin,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",blessin,END,MULTI,multi,HIGH,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",investment,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",blessin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",investment,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",get,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",investment,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",pregnant,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",need,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",tryna,INNER,SLANT,spelling,LOW,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",stressin,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",get,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",stressin,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",pregnant,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",stressin,31,I just knew that we were destined,destined,END,ASSONANCE,vowel,MED,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",investment,31,I just knew that we were destined,destined,INNER,SLANT,cmu,MED,Y
+Let You Go,29,"Girl, you my big investment, huh, I just don't need you stressin', huh",stressin,32,Every loss is just a lesson,lesson,END,SLANT,cmu,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",get,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",blessin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",get,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",pregnant,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",pregnant,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",blessin,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",tryna,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",tryna,INNER,REPEAT,spelling,HIGH,N
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",blessin,31,I just knew that we were destined,destined,END,ASSONANCE,vowel,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",get,31,I just knew that we were destined,destined,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",pregnant,31,I just knew that we were destined,destined,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",blessin,32,Every loss is just a lesson,lesson,END,SLANT,cmu,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",blessin,32,Every loss is just a lesson,Every,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",get,32,Every loss is just a lesson,Every,INNER,SLANT,cmu,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",get,32,Every loss is just a lesson,lesson,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",pregnant,32,Every loss is just a lesson,Every,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,30,"I been tryna get you pregnant, I'm just tryna be your blessin'",pregnant,32,Every loss is just a lesson,lesson,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,31,I just knew that we were destined,destined,32,Every loss is just a lesson,lesson,END,ASSONANCE,vowel,MED,Y
+Let You Go,31,I just knew that we were destined,destined,32,Every loss is just a lesson,Every,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,31,I just knew that we were destined,destined,33,Every talk we had was sacred,Every,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,32,Every loss is just a lesson,Every,32,Every loss is just a lesson,lesson,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,32,Every loss is just a lesson,Every,33,Every talk we had was sacred,Every,INNER,REPEAT,spelling,HIGH,N
+Let You Go,32,Every loss is just a lesson,lesson,33,Every talk we had was sacred,Every,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,32,Every loss is just a lesson,loss,33,Every talk we had was sacred,talk,INNER,SLANT,cmu,MED,Y
+Let You Go,32,Every loss is just a lesson,Every,34,"Girl, you so beautiful, I love when you naked",when,INNER,SLANT,cmu,MED,Y
+Let You Go,32,Every loss is just a lesson,lesson,34,"Girl, you so beautiful, I love when you naked",when,INNER,SLANT,cmu,MED,Y
+Let You Go,33,Every talk we had was sacred,sacred,34,"Girl, you so beautiful, I love when you naked",naked,END,SLANT,cmu,MED,Y
+Let You Go,33,Every talk we had was sacred,Every,34,"Girl, you so beautiful, I love when you naked",when,INNER,SLANT,cmu,MED,Y
+Let You Go,33,Every talk we had was sacred,sacred,35,"We were delusional, but I'm glad we waited",waited,END,SLANT,cmu,MED,Y
+Let You Go,33,Every talk we had was sacred,had,35,"We were delusional, but I'm glad we waited",glad,INNER,PERFECT,cmu,HIGH,Y
+Let You Go,34,"Girl, you so beautiful, I love when you naked",naked,35,"We were delusional, but I'm glad we waited",waited,END,SLANT,cmu,MED,Y
+Let You Go,34,"Girl, you so beautiful, I love when you naked",beautiful,35,"We were delusional, but I'm glad we waited",delusional,INNER,ASSONANCE,vowel,MED,Y
+Let You Go,34,"Girl, you so beautiful, I love when you naked",love,36,"We done put in all these years, I just can't let you go",done,INNER,SLANT,cmu,MED,Y
+Let You Go,34,"Girl, you so beautiful, I love when you naked",when,36,"We done put in all these years, I just can't let you go",let,INNER,SLANT,cmu,MED,Y
+Let You Go,35,"We were delusional, but I'm glad we waited",glad,36,"We done put in all these years, I just can't let you go",can't,INNER,ASSONANCE,vowel,MED,Y

@@ -306,6 +306,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 294 | skooly | Skooly | 1 | 38 | 251 | 38 | 213 | 250 | 2026-11-10 13:25 ET |
 | 295 | young-teetee | Young TeeTee | 1 | 38 | 207 | 47 | 160 | 207 | 2026-11-10 13:25 ET |
 | 296 | bigdawg-money | BigDawg Money | 1 | 37 | 367 | 82 | 285 | 365 | 2026-11-10 13:25 ET |
+| 297 | dj-ess | DJ Ess | 1 | 37 | 368 | 62 | 306 | 360 | 2026-11-10 13:25 ET |
+| 298 | keith-ape | Keith Ape | 1 | 37 | 141 | 49 | 92 | 140 | 2026-11-10 13:25 ET |
+| 299 | twista | Twista | 1 | 37 | 277 | 32 | 245 | 274 | 2026-11-10 13:25 ET |
+| 300 | 30nickk | 30nickk | 1 | 36 | 166 | 24 | 142 | 166 | 2026-11-10 13:25 ET |
+| 301 | benji-glo | Benji Glo | 1 | 36 | 240 | 54 | 186 | 233 | 2026-11-10 13:25 ET |
+| 302 | brian-x-allen | Brian X Allen | 1 | 36 | 194 | 39 | 155 | 192 | 2026-11-10 13:25 ET |
+| 303 | just-rich-gates | Just Rich Gates | 1 | 36 | 222 | 31 | 191 | 214 | 2026-11-10 13:25 ET |
+| 304 | lihtz | Lihtz | 1 | 36 | 234 | 41 | 193 | 234 | 2026-11-10 13:25 ET |
+| 305 | rocko | Rocko | 1 | 36 | 148 | 27 | 121 | 148 | 2026-11-10 13:25 ET |
+| 306 | ybs-skola | YBS Skola | 1 | 36 | 203 | 47 | 156 | 201 | 2026-11-10 13:25 ET |
 
 ## Failures
 
@@ -313,7 +323,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 296/386: BigDawg Money.
+Finished 306/386: YBS Skola.
 
 ## Final
 
