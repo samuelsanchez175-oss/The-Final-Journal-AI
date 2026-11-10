@@ -1,0 +1,328 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Real Chill,1,They can't wait until we turn this bitch upside down,until,1,They can't wait until we turn this bitch upside down,bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,1,They can't wait until we turn this bitch upside down,bitch,3,We smokin' that kill-kill,kill,INNER,SLANT,cmu,MED,Y
+Real Chill,1,They can't wait until we turn this bitch upside down,until,3,We smokin' that kill-kill,kill,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,2,My homies the real deal,real,2,My homies the real deal,deal,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,2,My homies the real deal,deal,4,"She shake it, it feel real",real,END,PERFECT,cmu,HIGH,Y
+Real Chill,2,My homies the real deal,deal,4,"She shake it, it feel real",feel,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,2,My homies the real deal,real,4,"She shake it, it feel real",feel,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,2,My homies the real deal,real,4,"She shake it, it feel real",real,INNER,REPEAT,spelling,HIGH,N
+Real Chill,3,We smokin' that kill-kill,kill,3,We smokin' that kill-kill,kill,INNER,REPEAT,spelling,HIGH,N
+Real Chill,3,We smokin' that kill-kill,kill,5,The paper flowin' still,still,END,PERFECT,cmu,HIGH,Y
+Real Chill,3,We smokin' that kill-kill,kill,5,The paper flowin' still,still,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,3,We smokin' that kill-kill,smokin,5,The paper flowin' still,flowin,INNER,SLANT,cmu,MED,Y
+Real Chill,3,We smokin' that kill-kill,kill,6,Now that bitch wanna chill,chill,END,PERFECT,cmu,HIGH,Y
+Real Chill,3,We smokin' that kill-kill,kill,7,And the shit stay chill,chill,END,PERFECT,cmu,HIGH,Y
+Real Chill,4,"She shake it, it feel real",feel,4,"She shake it, it feel real",real,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,4,"She shake it, it feel real",shake,5,The paper flowin' still,paper,INNER,SLANT,cmu,MED,Y
+Real Chill,4,"She shake it, it feel real",real,8,My homie the real deal,deal,END,PERFECT,cmu,HIGH,Y
+Real Chill,5,The paper flowin' still,still,6,Now that bitch wanna chill,chill,END,PERFECT,cmu,HIGH,Y
+Real Chill,5,The paper flowin' still,still,6,Now that bitch wanna chill,bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,5,The paper flowin' still,still,7,And the shit stay chill,chill,END,PERFECT,cmu,HIGH,Y
+Real Chill,5,The paper flowin' still,paper,7,And the shit stay chill,stay,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,5,The paper flowin' still,still,7,And the shit stay chill,shit,INNER,SLANT,cmu,MED,Y
+Real Chill,6,Now that bitch wanna chill,bitch,6,Now that bitch wanna chill,chill,INNER,SLANT,cmu,MED,Y
+Real Chill,6,Now that bitch wanna chill,chill,7,And the shit stay chill,chill,END,REPEAT,spelling,HIGH,N
+Real Chill,6,Now that bitch wanna chill,bitch,7,And the shit stay chill,chill,INNER,SLANT,cmu,MED,Y
+Real Chill,6,Now that bitch wanna chill,bitch,7,And the shit stay chill,shit,INNER,SLANT,cmu,MED,Y
+Real Chill,6,Now that bitch wanna chill,chill,7,And the shit stay chill,shit,INNER,SLANT,cmu,MED,Y
+Real Chill,7,And the shit stay chill,shit,7,And the shit stay chill,chill,INNER,SLANT,cmu,MED,Y
+Real Chill,7,And the shit stay chill,chill,9,"The big watch on, feel like Ben 10",big,INNER,SLANT,cmu,MED,Y
+Real Chill,7,And the shit stay chill,shit,9,"The big watch on, feel like Ben 10",big,INNER,SLANT,cmu,MED,Y
+Real Chill,7,And the shit stay chill,chill,11,"In this motherfucker with a big grip, bitch",bitch,END,SLANT,cmu,MED,Y
+Real Chill,8,My homie the real deal,real,8,My homie the real deal,deal,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,8,My homie the real deal,deal,9,"The big watch on, feel like Ben 10",feel,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,8,My homie the real deal,real,9,"The big watch on, feel like Ben 10",feel,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,9,"The big watch on, feel like Ben 10",Ben,10,Hell yeah nigga Slim Jxm,Hell,INNER,SLANT,cmu,MED,Y
+Real Chill,9,"The big watch on, feel like Ben 10",big,10,Hell yeah nigga Slim Jxm,nigga,INNER,SLANT,spelling,LOW,Y
+Real Chill,9,"The big watch on, feel like Ben 10",big,10,Hell yeah nigga Slim Jxm,Slim,INNER,SLANT,cmu,MED,Y
+Real Chill,9,"The big watch on, feel like Ben 10",big,11,"In this motherfucker with a big grip, bitch",big,INNER,REPEAT,spelling,HIGH,N
+Real Chill,9,"The big watch on, feel like Ben 10",big,11,"In this motherfucker with a big grip, bitch",bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,9,"The big watch on, feel like Ben 10",big,11,"In this motherfucker with a big grip, bitch",grip,INNER,SLANT,cmu,MED,Y
+Real Chill,10,Hell yeah nigga Slim Jxm,nigga,11,"In this motherfucker with a big grip, bitch",big,INNER,SLANT,spelling,LOW,Y
+Real Chill,10,Hell yeah nigga Slim Jxm,nigga,11,"In this motherfucker with a big grip, bitch",grip,INNER,SLANT,spelling,LOW,Y
+Real Chill,10,Hell yeah nigga Slim Jxm,Slim,11,"In this motherfucker with a big grip, bitch",big,INNER,SLANT,cmu,MED,Y
+Real Chill,10,Hell yeah nigga Slim Jxm,Slim,11,"In this motherfucker with a big grip, bitch",bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,10,Hell yeah nigga Slim Jxm,Slim,11,"In this motherfucker with a big grip, bitch",grip,INNER,SLANT,cmu,MED,Y
+Real Chill,10,Hell yeah nigga Slim Jxm,Hell,12,Nigga get a grip,get,INNER,SLANT,cmu,MED,Y
+Real Chill,10,Hell yeah nigga Slim Jxm,nigga,12,Nigga get a grip,grip,INNER,SLANT,spelling,LOW,Y
+Real Chill,10,Hell yeah nigga Slim Jxm,nigga,12,Nigga get a grip,Nigga,INNER,REPEAT,spelling,HIGH,N
+Real Chill,10,Hell yeah nigga Slim Jxm,Slim,12,Nigga get a grip,grip,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",big,11,"In this motherfucker with a big grip, bitch",bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",big,11,"In this motherfucker with a big grip, bitch",grip,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",grip,11,"In this motherfucker with a big grip, bitch",bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",bitch,12,Nigga get a grip,grip,END,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",big,12,Nigga get a grip,grip,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",big,12,Nigga get a grip,Nigga,INNER,SLANT,spelling,LOW,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",grip,12,Nigga get a grip,grip,INNER,REPEAT,spelling,HIGH,N
+Real Chill,11,"In this motherfucker with a big grip, bitch",grip,12,Nigga get a grip,Nigga,INNER,SLANT,spelling,LOW,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",bitch,13,"I can't get a grip, man this bitch a flip",flip,END,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",big,13,"I can't get a grip, man this bitch a flip",bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",big,13,"I can't get a grip, man this bitch a flip",flip,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",big,13,"I can't get a grip, man this bitch a flip",grip,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",bitch,13,"I can't get a grip, man this bitch a flip",bitch,INNER,REPEAT,spelling,HIGH,N
+Real Chill,11,"In this motherfucker with a big grip, bitch",bitch,13,"I can't get a grip, man this bitch a flip",grip,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",grip,13,"I can't get a grip, man this bitch a flip",bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",grip,13,"I can't get a grip, man this bitch a flip",flip,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,11,"In this motherfucker with a big grip, bitch",grip,13,"I can't get a grip, man this bitch a flip",grip,INNER,REPEAT,spelling,HIGH,N
+Real Chill,12,Nigga get a grip,Nigga,12,Nigga get a grip,grip,INNER,SLANT,spelling,LOW,Y
+Real Chill,12,Nigga get a grip,grip,13,"I can't get a grip, man this bitch a flip",flip,END,PERFECT,cmu,HIGH,Y
+Real Chill,12,Nigga get a grip,get,13,"I can't get a grip, man this bitch a flip",get,INNER,REPEAT,spelling,HIGH,N
+Real Chill,12,Nigga get a grip,grip,13,"I can't get a grip, man this bitch a flip",bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,12,Nigga get a grip,grip,13,"I can't get a grip, man this bitch a flip",grip,INNER,REPEAT,spelling,HIGH,N
+Real Chill,12,Nigga get a grip,Nigga,13,"I can't get a grip, man this bitch a flip",flip,INNER,SLANT,spelling,LOW,Y
+Real Chill,12,Nigga get a grip,Nigga,13,"I can't get a grip, man this bitch a flip",grip,INNER,SLANT,spelling,LOW,Y
+Real Chill,13,"I can't get a grip, man this bitch a flip",bitch,13,"I can't get a grip, man this bitch a flip",flip,INNER,SLANT,cmu,MED,Y
+Real Chill,13,"I can't get a grip, man this bitch a flip",can't,13,"I can't get a grip, man this bitch a flip",man,INNER,SLANT,cmu,MED,Y
+Real Chill,13,"I can't get a grip, man this bitch a flip",grip,13,"I can't get a grip, man this bitch a flip",bitch,INNER,SLANT,cmu,MED,Y
+Real Chill,13,"I can't get a grip, man this bitch a flip",grip,13,"I can't get a grip, man this bitch a flip",flip,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,13,"I can't get a grip, man this bitch a flip",can't,14,"Walked in, throwin' the cash like nerfs",cash,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,13,"I can't get a grip, man this bitch a flip",man,14,"Walked in, throwin' the cash like nerfs",cash,INNER,SLANT,cmu,MED,Y
+Real Chill,13,"I can't get a grip, man this bitch a flip",can't,15,Girl you better put that ass to work,ass,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,13,"I can't get a grip, man this bitch a flip",get,15,Girl you better put that ass to work,better,INNER,SLANT,cmu,MED,Y
+Real Chill,13,"I can't get a grip, man this bitch a flip",man,15,Girl you better put that ass to work,ass,INNER,SLANT,cmu,MED,Y
+Real Chill,14,"Walked in, throwin' the cash like nerfs",cash,15,Girl you better put that ass to work,ass,INNER,SLANT,cmu,MED,Y
+Real Chill,14,"Walked in, throwin' the cash like nerfs",cash,16,Can a nigga hold the cam like Kirk,cam,INNER,SLANT,cmu,MED,Y
+Real Chill,14,"Walked in, throwin' the cash like nerfs",cash,16,Can a nigga hold the cam like Kirk,Can,INNER,SLANT,cmu,MED,Y
+Real Chill,14,"Walked in, throwin' the cash like nerfs",like,16,Can a nigga hold the cam like Kirk,like,INNER,REPEAT,spelling,HIGH,N
+Real Chill,14,"Walked in, throwin' the cash like nerfs",throwin,16,Can a nigga hold the cam like Kirk,hold,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,15,Girl you better put that ass to work,Girl,15,Girl you better put that ass to work,work,INNER,SLANT,cmu,MED,Y
+Real Chill,15,Girl you better put that ass to work,work,16,Can a nigga hold the cam like Kirk,Kirk,END,PERFECT,cmu,HIGH,Y
+Real Chill,15,Girl you better put that ass to work,ass,16,Can a nigga hold the cam like Kirk,cam,INNER,SLANT,cmu,MED,Y
+Real Chill,15,Girl you better put that ass to work,ass,16,Can a nigga hold the cam like Kirk,Can,INNER,SLANT,cmu,MED,Y
+Real Chill,15,Girl you better put that ass to work,Girl,16,Can a nigga hold the cam like Kirk,Kirk,INNER,SLANT,cmu,MED,Y
+Real Chill,15,Girl you better put that ass to work,work,17,Big diamonds on my mouth when I burp,burp,END,SLANT,cmu,MED,Y
+Real Chill,15,Girl you better put that ass to work,better,17,Big diamonds on my mouth when I burp,when,INNER,SLANT,cmu,MED,Y
+Real Chill,15,Girl you better put that ass to work,Girl,17,Big diamonds on my mouth when I burp,burp,INNER,SLANT,cmu,MED,Y
+Real Chill,15,Girl you better put that ass to work,work,19,"Woah, leave my prints in the dirt, yeah",dirt,END,SLANT,cmu,MED,Y
+Real Chill,16,Can a nigga hold the cam like Kirk,Can,16,Can a nigga hold the cam like Kirk,cam,INNER,SLANT,cmu,MED,Y
+Real Chill,16,Can a nigga hold the cam like Kirk,Kirk,17,Big diamonds on my mouth when I burp,burp,END,SLANT,cmu,MED,Y
+Real Chill,16,Can a nigga hold the cam like Kirk,like,17,Big diamonds on my mouth when I burp,diamonds,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,16,Can a nigga hold the cam like Kirk,nigga,17,Big diamonds on my mouth when I burp,Big,INNER,SLANT,spelling,LOW,Y
+Real Chill,16,Can a nigga hold the cam like Kirk,nigga,18,Big rims when I skrt-skrt,Big,INNER,SLANT,spelling,LOW,Y
+Real Chill,16,Can a nigga hold the cam like Kirk,Kirk,19,"Woah, leave my prints in the dirt, yeah",dirt,END,SLANT,cmu,MED,Y
+Real Chill,16,Can a nigga hold the cam like Kirk,Kirk,20,"Leave them broke niggas hurt, uh",hurt,END,SLANT,cmu,MED,Y
+Real Chill,17,Big diamonds on my mouth when I burp,Big,18,Big rims when I skrt-skrt,Big,INNER,REPEAT,spelling,HIGH,N
+Real Chill,17,Big diamonds on my mouth when I burp,Big,18,Big rims when I skrt-skrt,rims,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,17,Big diamonds on my mouth when I burp,when,18,Big rims when I skrt-skrt,when,INNER,REPEAT,spelling,HIGH,N
+Real Chill,17,Big diamonds on my mouth when I burp,burp,19,"Woah, leave my prints in the dirt, yeah",dirt,END,SLANT,cmu,MED,Y
+Real Chill,17,Big diamonds on my mouth when I burp,Big,19,"Woah, leave my prints in the dirt, yeah",prints,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,17,Big diamonds on my mouth when I burp,burp,20,"Leave them broke niggas hurt, uh",hurt,END,SLANT,cmu,MED,Y
+Real Chill,17,Big diamonds on my mouth when I burp,burp,21,"I'm that nigga, fuck you heard",heard,END,SLANT,cmu,MED,Y
+Real Chill,18,Big rims when I skrt-skrt,Big,18,Big rims when I skrt-skrt,rims,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,18,Big rims when I skrt-skrt,Big,19,"Woah, leave my prints in the dirt, yeah",prints,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,18,Big rims when I skrt-skrt,rims,19,"Woah, leave my prints in the dirt, yeah",prints,INNER,SLANT,cmu,MED,Y
+Real Chill,19,"Woah, leave my prints in the dirt, yeah",dirt,20,"Leave them broke niggas hurt, uh",hurt,END,PERFECT,cmu,HIGH,Y
+Real Chill,19,"Woah, leave my prints in the dirt, yeah",leave,20,"Leave them broke niggas hurt, uh",Leave,INNER,REPEAT,spelling,HIGH,N
+Real Chill,19,"Woah, leave my prints in the dirt, yeah",dirt,21,"I'm that nigga, fuck you heard",heard,END,SLANT,cmu,MED,Y
+Real Chill,19,"Woah, leave my prints in the dirt, yeah",dirt,22,A young nigga so superb,superb,END,SLANT,cmu,MED,Y
+Real Chill,19,"Woah, leave my prints in the dirt, yeah",dirt,23,A cool Herc on the Earth,Earth,END,SLANT,cmu,MED,Y
+Real Chill,20,"Leave them broke niggas hurt, uh",hurt,21,"I'm that nigga, fuck you heard",heard,END,SLANT,cmu,MED,Y
+Real Chill,20,"Leave them broke niggas hurt, uh",niggas,21,"I'm that nigga, fuck you heard",nigga,INNER,SLANT,spelling,LOW,Y
+Real Chill,20,"Leave them broke niggas hurt, uh",hurt,22,A young nigga so superb,superb,END,SLANT,cmu,MED,Y
+Real Chill,20,"Leave them broke niggas hurt, uh",niggas,22,A young nigga so superb,nigga,INNER,SLANT,spelling,LOW,Y
+Real Chill,20,"Leave them broke niggas hurt, uh",hurt,23,A cool Herc on the Earth,Earth,END,SLANT,cmu,MED,Y
+Real Chill,21,"I'm that nigga, fuck you heard",heard,22,A young nigga so superb,superb,END,SLANT,cmu,MED,Y
+Real Chill,21,"I'm that nigga, fuck you heard",fuck,22,A young nigga so superb,young,INNER,SLANT,cmu,MED,Y
+Real Chill,21,"I'm that nigga, fuck you heard",nigga,22,A young nigga so superb,nigga,INNER,REPEAT,spelling,HIGH,N
+Real Chill,21,"I'm that nigga, fuck you heard",heard,23,A cool Herc on the Earth,Earth,END,SLANT,cmu,MED,Y
+Real Chill,21,"I'm that nigga, fuck you heard",heard,23,A cool Herc on the Earth,Herc,INNER,SLANT,spelling,LOW,Y
+Real Chill,22,A young nigga so superb,superb,23,A cool Herc on the Earth,Earth,END,SLANT,cmu,MED,Y
+Real Chill,22,A young nigga so superb,superb,23,A cool Herc on the Earth,Herc,INNER,SLANT,spelling,LOW,Y
+Real Chill,23,A cool Herc on the Earth,Herc,23,A cool Herc on the Earth,Earth,INNER,SLANT,spelling,LOW,Y
+Real Chill,23,A cool Herc on the Earth,cool,24,Frank Lucas with a grill,Lucas,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,24,Frank Lucas with a grill,grill,25,All these hoes wanna chill,chill,END,PERFECT,cmu,HIGH,Y
+Real Chill,24,Frank Lucas with a grill,grill,26,Must have seen a nigga skills,skills,END,SLANT,cmu,MED,Y
+Real Chill,24,Frank Lucas with a grill,Frank,26,Must have seen a nigga skills,have,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,24,Frank Lucas with a grill,grill,27,"Pockets fat, Uncle Phil",Phil,END,PERFECT,cmu,HIGH,Y
+Real Chill,24,Frank Lucas with a grill,grill,28,Girls on me like Will (Mike WiLL),Will,END,PERFECT,cmu,HIGH,Y
+Real Chill,25,All these hoes wanna chill,chill,26,Must have seen a nigga skills,skills,END,SLANT,cmu,MED,Y
+Real Chill,25,All these hoes wanna chill,these,26,Must have seen a nigga skills,seen,INNER,SLANT,cmu,MED,Y
+Real Chill,25,All these hoes wanna chill,chill,27,"Pockets fat, Uncle Phil",Phil,END,PERFECT,cmu,HIGH,Y
+Real Chill,25,All these hoes wanna chill,wanna,27,"Pockets fat, Uncle Phil",Pockets,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,25,All these hoes wanna chill,chill,28,Girls on me like Will (Mike WiLL),Will,END,PERFECT,cmu,HIGH,Y
+Real Chill,26,Must have seen a nigga skills,skills,27,"Pockets fat, Uncle Phil",Phil,END,SLANT,cmu,MED,Y
+Real Chill,26,Must have seen a nigga skills,have,27,"Pockets fat, Uncle Phil",fat,INNER,SLANT,cmu,MED,Y
+Real Chill,26,Must have seen a nigga skills,Must,27,"Pockets fat, Uncle Phil",Uncle,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,26,Must have seen a nigga skills,skills,28,Girls on me like Will (Mike WiLL),Will,END,SLANT,cmu,MED,Y
+Real Chill,27,"Pockets fat, Uncle Phil",Phil,28,Girls on me like Will (Mike WiLL),Will,END,PERFECT,cmu,HIGH,Y
+Real Chill,27,"Pockets fat, Uncle Phil",Uncle,29,"All the ladies love Jxm, for real",love,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,27,"Pockets fat, Uncle Phil",Phil,31,They gave me a chill pill (Chill out),pill,END,PERFECT,cmu,HIGH,Y
+Real Chill,28,Girls on me like Will (Mike WiLL),Will,31,They gave me a chill pill (Chill out),pill,END,PERFECT,cmu,HIGH,Y
+Real Chill,29,"All the ladies love Jxm, for real",ladies,31,They gave me a chill pill (Chill out),gave,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,30,They tellin' me slow down (Slow down),tellin,32,Because I was Spend Ben (Spend Ben),Ben,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,30,They tellin' me slow down (Slow down),tellin,32,Because I was Spend Ben (Spend Ben),Spend,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,31,They gave me a chill pill (Chill out),chill,31,They gave me a chill pill (Chill out),pill,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,31,They gave me a chill pill (Chill out),pill,33,They know I would Kill Bill (Hit him),Bill,END,PERFECT,cmu,HIGH,Y
+Real Chill,31,They gave me a chill pill (Chill out),chill,33,They know I would Kill Bill (Hit him),Bill,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,31,They gave me a chill pill (Chill out),chill,33,They know I would Kill Bill (Hit him),Kill,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,31,They gave me a chill pill (Chill out),pill,33,They know I would Kill Bill (Hit him),Kill,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,31,They gave me a chill pill (Chill out),pill,34,I walk round Ben still (Ben still),still,END,PERFECT,cmu,HIGH,Y
+Real Chill,31,They gave me a chill pill (Chill out),pill,35,I'm still on them pills still (Jigga-jigga),still,END,PERFECT,cmu,HIGH,Y
+Real Chill,32,Because I was Spend Ben (Spend Ben),Spend,32,Because I was Spend Ben (Spend Ben),Ben,INNER,SLANT,cmu,MED,Y
+Real Chill,32,Because I was Spend Ben (Spend Ben),Because,34,I walk round Ben still (Ben still),walk,INNER,SLANT,cmu,MED,Y
+Real Chill,32,Because I was Spend Ben (Spend Ben),Ben,34,I walk round Ben still (Ben still),Ben,INNER,REPEAT,spelling,HIGH,N
+Real Chill,32,Because I was Spend Ben (Spend Ben),Spend,34,I walk round Ben still (Ben still),Ben,INNER,SLANT,cmu,MED,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Kill,33,They know I would Kill Bill (Hit him),Bill,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Bill,34,I walk round Ben still (Ben still),still,END,PERFECT,cmu,HIGH,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Kill,34,I walk round Ben still (Ben still),still,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Bill,35,I'm still on them pills still (Jigga-jigga),still,END,PERFECT,cmu,HIGH,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Bill,35,I'm still on them pills still (Jigga-jigga),pills,INNER,SLANT,cmu,MED,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Bill,35,I'm still on them pills still (Jigga-jigga),still,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Kill,35,I'm still on them pills still (Jigga-jigga),pills,INNER,SLANT,cmu,MED,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Kill,35,I'm still on them pills still (Jigga-jigga),still,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Bill,36,I spit that real shit (Real),shit,END,SLANT,cmu,MED,Y
+Real Chill,33,They know I would Kill Bill (Hit him),Bill,37,I call it real spill (Real spill),spill,END,PERFECT,cmu,HIGH,Y
+Real Chill,34,I walk round Ben still (Ben still),still,35,I'm still on them pills still (Jigga-jigga),still,END,REPEAT,spelling,HIGH,N
+Real Chill,34,I walk round Ben still (Ben still),still,35,I'm still on them pills still (Jigga-jigga),pills,INNER,SLANT,cmu,MED,Y
+Real Chill,34,I walk round Ben still (Ben still),still,35,I'm still on them pills still (Jigga-jigga),still,INNER,REPEAT,spelling,HIGH,N
+Real Chill,34,I walk round Ben still (Ben still),still,36,I spit that real shit (Real),shit,END,SLANT,cmu,MED,Y
+Real Chill,34,I walk round Ben still (Ben still),still,36,I spit that real shit (Real),spit,INNER,SLANT,cmu,MED,Y
+Real Chill,34,I walk round Ben still (Ben still),still,37,I call it real spill (Real spill),spill,END,PERFECT,cmu,HIGH,Y
+Real Chill,34,I walk round Ben still (Ben still),still,38,"I need like 10 mil, I need to put my momma in a big crib",crib,END,SLANT,cmu,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),pills,35,I'm still on them pills still (Jigga-jigga),still,INNER,SLANT,cmu,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),still,35,I'm still on them pills still (Jigga-jigga),pills,INNER,SLANT,cmu,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),still,35,I'm still on them pills still (Jigga-jigga),still,INNER,REPEAT,spelling,HIGH,N
+Real Chill,35,I'm still on them pills still (Jigga-jigga),still,36,I spit that real shit (Real),shit,END,SLANT,cmu,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),pills,36,I spit that real shit (Real),shit,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),pills,36,I spit that real shit (Real),spit,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),still,36,I spit that real shit (Real),shit,INNER,SLANT,cmu,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),still,36,I spit that real shit (Real),spit,INNER,SLANT,cmu,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),still,37,I call it real spill (Real spill),spill,END,PERFECT,cmu,HIGH,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),pills,37,I call it real spill (Real spill),spill,INNER,SLANT,cmu,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),still,37,I call it real spill (Real spill),spill,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),still,38,"I need like 10 mil, I need to put my momma in a big crib",crib,END,SLANT,cmu,MED,Y
+Real Chill,35,I'm still on them pills still (Jigga-jigga),still,39,"She be tellin' me ""baby boy don't steal""",steal,END,SLANT,spelling,LOW,Y
+Real Chill,36,I spit that real shit (Real),spit,36,I spit that real shit (Real),shit,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,36,I spit that real shit (Real),shit,37,I call it real spill (Real spill),spill,END,SLANT,cmu,MED,Y
+Real Chill,36,I spit that real shit (Real),real,37,I call it real spill (Real spill),real,INNER,REPEAT,spelling,HIGH,N
+Real Chill,36,I spit that real shit (Real),spit,37,I call it real spill (Real spill),spill,INNER,SLANT,cmu,MED,Y
+Real Chill,36,I spit that real shit (Real),shit,38,"I need like 10 mil, I need to put my momma in a big crib",crib,END,SLANT,cmu,MED,Y
+Real Chill,36,I spit that real shit (Real),real,38,"I need like 10 mil, I need to put my momma in a big crib",need,INNER,SLANT,cmu,MED,Y
+Real Chill,36,I spit that real shit (Real),shit,38,"I need like 10 mil, I need to put my momma in a big crib",big,INNER,SLANT,cmu,MED,Y
+Real Chill,36,I spit that real shit (Real),shit,38,"I need like 10 mil, I need to put my momma in a big crib",mil,INNER,SLANT,cmu,MED,Y
+Real Chill,36,I spit that real shit (Real),spit,38,"I need like 10 mil, I need to put my momma in a big crib",big,INNER,SLANT,cmu,MED,Y
+Real Chill,36,I spit that real shit (Real),spit,38,"I need like 10 mil, I need to put my momma in a big crib",crib,INNER,SLANT,cmu,MED,Y
+Real Chill,36,I spit that real shit (Real),spit,38,"I need like 10 mil, I need to put my momma in a big crib",mil,INNER,SLANT,cmu,MED,Y
+Real Chill,37,I call it real spill (Real spill),spill,38,"I need like 10 mil, I need to put my momma in a big crib",crib,END,SLANT,cmu,MED,Y
+Real Chill,37,I call it real spill (Real spill),real,38,"I need like 10 mil, I need to put my momma in a big crib",need,INNER,SLANT,cmu,MED,Y
+Real Chill,37,I call it real spill (Real spill),spill,38,"I need like 10 mil, I need to put my momma in a big crib",big,INNER,SLANT,cmu,MED,Y
+Real Chill,37,I call it real spill (Real spill),spill,38,"I need like 10 mil, I need to put my momma in a big crib",mil,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,37,I call it real spill (Real spill),real,39,"She be tellin' me ""baby boy don't steal""",steal,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,37,I call it real spill (Real spill),spill,41,"One snap in, I put some racks in my grill",grill,END,PERFECT,cmu,HIGH,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",big,38,"I need like 10 mil, I need to put my momma in a big crib",crib,INNER,SLANT,cmu,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",mil,38,"I need like 10 mil, I need to put my momma in a big crib",big,INNER,SLANT,cmu,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",mil,38,"I need like 10 mil, I need to put my momma in a big crib",crib,INNER,SLANT,cmu,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",need,38,"I need like 10 mil, I need to put my momma in a big crib",need,INNER,REPEAT,spelling,HIGH,N
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",need,39,"She be tellin' me ""baby boy don't steal""",steal,INNER,SLANT,cmu,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",big,40,I ain't listen to her cause I still steal,listen,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",big,40,I ain't listen to her cause I still steal,still,INNER,SLANT,cmu,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",crib,40,I ain't listen to her cause I still steal,listen,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",crib,40,I ain't listen to her cause I still steal,still,INNER,SLANT,cmu,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",mil,40,I ain't listen to her cause I still steal,listen,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",mil,40,I ain't listen to her cause I still steal,still,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",momma,40,I ain't listen to her cause I still steal,cause,INNER,SLANT,cmu,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",need,40,I ain't listen to her cause I still steal,steal,INNER,SLANT,cmu,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",crib,41,"One snap in, I put some racks in my grill",grill,END,SLANT,cmu,MED,Y
+Real Chill,38,"I need like 10 mil, I need to put my momma in a big crib",crib,42,"No weapons allowed, I brought my strap in here still",still,END,SLANT,cmu,MED,Y
+Real Chill,39,"She be tellin' me ""baby boy don't steal""",steal,40,I ain't listen to her cause I still steal,steal,END,REPEAT,spelling,HIGH,N
+Real Chill,39,"She be tellin' me ""baby boy don't steal""",baby,40,I ain't listen to her cause I still steal,ain't,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,39,"She be tellin' me ""baby boy don't steal""",steal,40,I ain't listen to her cause I still steal,still,INNER,SLANT,spelling,LOW,Y
+Real Chill,39,"She be tellin' me ""baby boy don't steal""",steal,42,"No weapons allowed, I brought my strap in here still",still,END,SLANT,spelling,LOW,Y
+Real Chill,39,"She be tellin' me ""baby boy don't steal""",steal,43,"All I smoke is loud yeah, it's gon' blast in your ear",ear,END,SLANT,cmu,MED,Y
+Real Chill,40,I ain't listen to her cause I still steal,listen,40,I ain't listen to her cause I still steal,still,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,40,I ain't listen to her cause I still steal,still,40,I ain't listen to her cause I still steal,steal,INNER,SLANT,spelling,LOW,Y
+Real Chill,40,I ain't listen to her cause I still steal,listen,41,"One snap in, I put some racks in my grill",grill,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,40,I ain't listen to her cause I still steal,still,41,"One snap in, I put some racks in my grill",grill,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,40,I ain't listen to her cause I still steal,steal,42,"No weapons allowed, I brought my strap in here still",still,END,SLANT,spelling,LOW,Y
+Real Chill,40,I ain't listen to her cause I still steal,listen,42,"No weapons allowed, I brought my strap in here still",still,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,40,I ain't listen to her cause I still steal,steal,42,"No weapons allowed, I brought my strap in here still",here,INNER,SLANT,cmu,MED,Y
+Real Chill,40,I ain't listen to her cause I still steal,still,42,"No weapons allowed, I brought my strap in here still",still,INNER,REPEAT,spelling,HIGH,N
+Real Chill,40,I ain't listen to her cause I still steal,steal,43,"All I smoke is loud yeah, it's gon' blast in your ear",ear,END,SLANT,cmu,MED,Y
+Real Chill,41,"One snap in, I put some racks in my grill",One,41,"One snap in, I put some racks in my grill",some,INNER,SLANT,cmu,MED,Y
+Real Chill,41,"One snap in, I put some racks in my grill",snap,41,"One snap in, I put some racks in my grill",racks,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,41,"One snap in, I put some racks in my grill",grill,42,"No weapons allowed, I brought my strap in here still",still,END,PERFECT,cmu,HIGH,Y
+Real Chill,41,"One snap in, I put some racks in my grill",racks,42,"No weapons allowed, I brought my strap in here still",strap,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,41,"One snap in, I put some racks in my grill",snap,42,"No weapons allowed, I brought my strap in here still",strap,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,41,"One snap in, I put some racks in my grill",racks,43,"All I smoke is loud yeah, it's gon' blast in your ear",blast,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,41,"One snap in, I put some racks in my grill",snap,43,"All I smoke is loud yeah, it's gon' blast in your ear",blast,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,41,"One snap in, I put some racks in my grill",grill,44,"Man I'm high as the cloud, I'm on a new atmosphere",atmosphere,END,SLANT,cmu,MED,Y
+Real Chill,42,"No weapons allowed, I brought my strap in here still",allowed,43,"All I smoke is loud yeah, it's gon' blast in your ear",loud,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,42,"No weapons allowed, I brought my strap in here still",brought,43,"All I smoke is loud yeah, it's gon' blast in your ear",All,INNER,SLANT,cmu,MED,Y
+Real Chill,42,"No weapons allowed, I brought my strap in here still",here,43,"All I smoke is loud yeah, it's gon' blast in your ear",ear,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,42,"No weapons allowed, I brought my strap in here still",No,43,"All I smoke is loud yeah, it's gon' blast in your ear",smoke,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,42,"No weapons allowed, I brought my strap in here still",strap,43,"All I smoke is loud yeah, it's gon' blast in your ear",blast,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,42,"No weapons allowed, I brought my strap in here still",still,44,"Man I'm high as the cloud, I'm on a new atmosphere",atmosphere,END,SLANT,cmu,MED,Y
+Real Chill,42,"No weapons allowed, I brought my strap in here still",allowed,44,"Man I'm high as the cloud, I'm on a new atmosphere",cloud,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,42,"No weapons allowed, I brought my strap in here still",strap,44,"Man I'm high as the cloud, I'm on a new atmosphere",Man,INNER,SLANT,cmu,MED,Y
+Real Chill,43,"All I smoke is loud yeah, it's gon' blast in your ear",smoke,43,"All I smoke is loud yeah, it's gon' blast in your ear",gon,INNER,SLANT,spelling,LOW,Y
+Real Chill,43,"All I smoke is loud yeah, it's gon' blast in your ear",blast,44,"Man I'm high as the cloud, I'm on a new atmosphere",Man,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,43,"All I smoke is loud yeah, it's gon' blast in your ear",loud,44,"Man I'm high as the cloud, I'm on a new atmosphere",cloud,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,43,"All I smoke is loud yeah, it's gon' blast in your ear",ear,45,Gotta hold my niggas down till they get back here,here,END,PERFECT,cmu,HIGH,Y
+Real Chill,43,"All I smoke is loud yeah, it's gon' blast in your ear",blast,45,Gotta hold my niggas down till they get back here,back,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,43,"All I smoke is loud yeah, it's gon' blast in your ear",loud,45,Gotta hold my niggas down till they get back here,down,INNER,SLANT,cmu,MED,Y
+Real Chill,43,"All I smoke is loud yeah, it's gon' blast in your ear",smoke,45,Gotta hold my niggas down till they get back here,hold,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,43,"All I smoke is loud yeah, it's gon' blast in your ear",ear,46,Don't come over here 'cause you will get clapped here,here,END,PERFECT,cmu,HIGH,Y
+Real Chill,44,"Man I'm high as the cloud, I'm on a new atmosphere",atmosphere,45,Gotta hold my niggas down till they get back here,till,INNER,SLANT,cmu,MED,Y
+Real Chill,44,"Man I'm high as the cloud, I'm on a new atmosphere",cloud,45,Gotta hold my niggas down till they get back here,down,INNER,SLANT,cmu,MED,Y
+Real Chill,44,"Man I'm high as the cloud, I'm on a new atmosphere",Man,45,Gotta hold my niggas down till they get back here,back,INNER,SLANT,cmu,MED,Y
+Real Chill,44,"Man I'm high as the cloud, I'm on a new atmosphere",atmosphere,46,Don't come over here 'cause you will get clapped here,will,INNER,SLANT,cmu,MED,Y
+Real Chill,44,"Man I'm high as the cloud, I'm on a new atmosphere",Man,46,Don't come over here 'cause you will get clapped here,clapped,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,45,Gotta hold my niggas down till they get back here,here,46,Don't come over here 'cause you will get clapped here,here,END,REPEAT,spelling,HIGH,N
+Real Chill,45,Gotta hold my niggas down till they get back here,back,46,Don't come over here 'cause you will get clapped here,clapped,INNER,SLANT,cmu,MED,Y
+Real Chill,45,Gotta hold my niggas down till they get back here,get,46,Don't come over here 'cause you will get clapped here,get,INNER,REPEAT,spelling,HIGH,N
+Real Chill,45,Gotta hold my niggas down till they get back here,here,46,Don't come over here 'cause you will get clapped here,here,INNER,REPEAT,spelling,HIGH,N
+Real Chill,45,Gotta hold my niggas down till they get back here,hold,46,Don't come over here 'cause you will get clapped here,Don't,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,45,Gotta hold my niggas down till they get back here,hold,46,Don't come over here 'cause you will get clapped here,over,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,45,Gotta hold my niggas down till they get back here,till,46,Don't come over here 'cause you will get clapped here,will,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,45,Gotta hold my niggas down till they get back here,get,47,Spittin' game to that girl and her friend,friend,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,45,Gotta hold my niggas down till they get back here,till,47,Spittin' game to that girl and her friend,Spittin,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,46,Don't come over here 'cause you will get clapped here,Don't,46,Don't come over here 'cause you will get clapped here,over,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,46,Don't come over here 'cause you will get clapped here,here,46,Don't come over here 'cause you will get clapped here,here,INNER,REPEAT,spelling,HIGH,N
+Real Chill,46,Don't come over here 'cause you will get clapped here,get,47,Spittin' game to that girl and her friend,friend,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,46,Don't come over here 'cause you will get clapped here,will,47,Spittin' game to that girl and her friend,Spittin,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,46,Don't come over here 'cause you will get clapped here,get,48,"I got dressed, left the crib, set the trend",dressed,INNER,SLANT,cmu,MED,Y
+Real Chill,46,Don't come over here 'cause you will get clapped here,get,48,"I got dressed, left the crib, set the trend",left,INNER,SLANT,cmu,MED,Y
+Real Chill,46,Don't come over here 'cause you will get clapped here,get,48,"I got dressed, left the crib, set the trend",set,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,46,Don't come over here 'cause you will get clapped here,get,48,"I got dressed, left the crib, set the trend",trend,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,46,Don't come over here 'cause you will get clapped here,will,48,"I got dressed, left the crib, set the trend",crib,INNER,SLANT,cmu,MED,Y
+Real Chill,47,Spittin' game to that girl and her friend,friend,48,"I got dressed, left the crib, set the trend",trend,END,PERFECT,cmu,HIGH,Y
+Real Chill,47,Spittin' game to that girl and her friend,friend,48,"I got dressed, left the crib, set the trend",dressed,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,47,Spittin' game to that girl and her friend,friend,48,"I got dressed, left the crib, set the trend",left,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,47,Spittin' game to that girl and her friend,friend,48,"I got dressed, left the crib, set the trend",set,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,47,Spittin' game to that girl and her friend,Spittin,48,"I got dressed, left the crib, set the trend",crib,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,47,Spittin' game to that girl and her friend,friend,49,"If you ask me, it all spends",spends,END,SLANT,cmu,MED,Y
+Real Chill,47,Spittin' game to that girl and her friend,friend,50,I'm from the mud and my cup needs a cleanse (let's cleanse),cleanse,END,SLANT,cmu,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",dressed,48,"I got dressed, left the crib, set the trend",left,INNER,SLANT,cmu,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",dressed,48,"I got dressed, left the crib, set the trend",set,INNER,SLANT,cmu,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",dressed,48,"I got dressed, left the crib, set the trend",trend,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",left,48,"I got dressed, left the crib, set the trend",set,INNER,SLANT,cmu,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",left,48,"I got dressed, left the crib, set the trend",trend,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",set,48,"I got dressed, left the crib, set the trend",trend,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",trend,49,"If you ask me, it all spends",spends,END,SLANT,cmu,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",dressed,49,"If you ask me, it all spends",spends,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",left,49,"If you ask me, it all spends",spends,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",set,49,"If you ask me, it all spends",spends,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",trend,50,I'm from the mud and my cup needs a cleanse (let's cleanse),cleanse,END,SLANT,cmu,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",dressed,50,I'm from the mud and my cup needs a cleanse (let's cleanse),cleanse,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",left,50,I'm from the mud and my cup needs a cleanse (let's cleanse),cleanse,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,48,"I got dressed, left the crib, set the trend",set,50,I'm from the mud and my cup needs a cleanse (let's cleanse),cleanse,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,49,"If you ask me, it all spends",spends,50,I'm from the mud and my cup needs a cleanse (let's cleanse),cleanse,END,SLANT,cmu,MED,Y
+Real Chill,49,"If you ask me, it all spends",all,51,I can't even cruise because I got a spoiler,because,INNER,SLANT,cmu,MED,Y
+Real Chill,49,"If you ask me, it all spends",ask,51,I can't even cruise because I got a spoiler,can't,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,50,I'm from the mud and my cup needs a cleanse (let's cleanse),mud,50,I'm from the mud and my cup needs a cleanse (let's cleanse),cup,INNER,SLANT,cmu,MED,Y
+Real Chill,50,I'm from the mud and my cup needs a cleanse (let's cleanse),needs,51,I can't even cruise because I got a spoiler,even,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,50,I'm from the mud and my cup needs a cleanse (let's cleanse),cleanse,52,"Hit the store, buy the store, let's not loiter (loiter)",let's,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,51,I can't even cruise because I got a spoiler,spoiler,52,"Hit the store, buy the store, let's not loiter (loiter)",loiter,END,SLANT,cmu,MED,Y
+Real Chill,51,I can't even cruise because I got a spoiler,because,52,"Hit the store, buy the store, let's not loiter (loiter)",store,INNER,SLANT,cmu,MED,Y
+Real Chill,51,I can't even cruise because I got a spoiler,got,52,"Hit the store, buy the store, let's not loiter (loiter)",not,INNER,PERFECT,cmu,HIGH,Y
+Real Chill,51,I can't even cruise because I got a spoiler,can't,53,"Hit the club, need a drink, need a skank (I got it)",skank,INNER,SLANT,spelling,LOW,Y
+Real Chill,51,I can't even cruise because I got a spoiler,even,53,"Hit the club, need a drink, need a skank (I got it)",need,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,52,"Hit the store, buy the store, let's not loiter (loiter)",store,52,"Hit the store, buy the store, let's not loiter (loiter)",store,INNER,REPEAT,spelling,HIGH,N
+Real Chill,52,"Hit the store, buy the store, let's not loiter (loiter)",Hit,53,"Hit the club, need a drink, need a skank (I got it)",drink,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,52,"Hit the store, buy the store, let's not loiter (loiter)",Hit,53,"Hit the club, need a drink, need a skank (I got it)",Hit,INNER,REPEAT,spelling,HIGH,N
+Real Chill,52,"Hit the store, buy the store, let's not loiter (loiter)",let's,54,"The club promoter said ""Swae Lee you off of the chain""",said,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,53,"Hit the club, need a drink, need a skank (I got it)",Hit,53,"Hit the club, need a drink, need a skank (I got it)",drink,INNER,ASSONANCE,vowel,MED,Y
+Real Chill,53,"Hit the club, need a drink, need a skank (I got it)",need,53,"Hit the club, need a drink, need a skank (I got it)",need,INNER,REPEAT,spelling,HIGH,N
+Real Chill,53,"Hit the club, need a drink, need a skank (I got it)",club,54,"The club promoter said ""Swae Lee you off of the chain""",club,INNER,REPEAT,spelling,HIGH,N
+Real Chill,53,"Hit the club, need a drink, need a skank (I got it)",need,54,"The club promoter said ""Swae Lee you off of the chain""",Lee,INNER,ASSONANCE,vowel,MED,Y

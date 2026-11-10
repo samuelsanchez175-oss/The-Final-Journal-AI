@@ -1,0 +1,264 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+New Money,1,Remember way back in the days,way,1,Remember way back in the days,days,INNER,ASSONANCE,vowel,MED,Y
+New Money,1,Remember way back in the days,Remember,2,When homies they called me a junkie,When,INNER,ASSONANCE,vowel,MED,Y
+New Money,1,Remember way back in the days,days,3,I remember back in 7th grade,grade,END,SLANT,cmu,MED,Y
+New Money,1,Remember way back in the days,back,3,I remember back in 7th grade,back,INNER,REPEAT,spelling,HIGH,N
+New Money,1,Remember way back in the days,Remember,3,I remember back in 7th grade,remember,INNER,REPEAT,spelling,HIGH,N
+New Money,1,Remember way back in the days,way,3,I remember back in 7th grade,grade,INNER,ASSONANCE,vowel,MED,Y
+New Money,1,Remember way back in the days,days,5,Don't know how you getting paid,paid,END,SLANT,cmu,MED,Y
+New Money,2,When homies they called me a junkie,When,3,I remember back in 7th grade,remember,INNER,ASSONANCE,vowel,MED,Y
+New Money,2,When homies they called me a junkie,junkie,4,"My teacher, she called me a flunkie",flunkie,END,PERFECT,spelling,MED,Y
+New Money,2,When homies they called me a junkie,called,4,"My teacher, she called me a flunkie",called,INNER,REPEAT,spelling,HIGH,N
+New Money,2,When homies they called me a junkie,junkie,6,But imma go get me some money,money,END,ASSONANCE,vowel,MED,Y
+New Money,3,I remember back in 7th grade,grade,5,Don't know how you getting paid,paid,END,PERFECT,cmu,HIGH,Y
+New Money,3,I remember back in 7th grade,remember,5,Don't know how you getting paid,getting,INNER,ASSONANCE,vowel,MED,Y
+New Money,4,"My teacher, she called me a flunkie",flunkie,6,But imma go get me some money,money,END,SLANT,spelling,LOW,Y
+New Money,4,"My teacher, she called me a flunkie",flunkie,7,"And I'll get new money, don't know what to do money",money,END,SLANT,spelling,LOW,Y
+New Money,5,Don't know how you getting paid,Don't,5,Don't know how you getting paid,know,INNER,ASSONANCE,vowel,MED,Y
+New Money,5,Don't know how you getting paid,Don't,6,But imma go get me some money,go,INNER,ASSONANCE,vowel,MED,Y
+New Money,5,Don't know how you getting paid,getting,6,But imma go get me some money,get,INNER,SLANT,cmu,MED,Y
+New Money,5,Don't know how you getting paid,know,6,But imma go get me some money,go,INNER,PERFECT,cmu,HIGH,Y
+New Money,5,Don't know how you getting paid,Don't,7,"And I'll get new money, don't know what to do money",don't,INNER,REPEAT,spelling,HIGH,N
+New Money,5,Don't know how you getting paid,Don't,7,"And I'll get new money, don't know what to do money",know,INNER,ASSONANCE,vowel,MED,Y
+New Money,5,Don't know how you getting paid,getting,7,"And I'll get new money, don't know what to do money",get,INNER,SLANT,cmu,MED,Y
+New Money,5,Don't know how you getting paid,know,7,"And I'll get new money, don't know what to do money",don't,INNER,ASSONANCE,vowel,MED,Y
+New Money,5,Don't know how you getting paid,know,7,"And I'll get new money, don't know what to do money",know,INNER,REPEAT,spelling,HIGH,N
+New Money,6,But imma go get me some money,some,6,But imma go get me some money,money,INNER,SLANT,cmu,MED,Y
+New Money,6,But imma go get me some money,money,7,"And I'll get new money, don't know what to do money",money,END,REPEAT,spelling,HIGH,N
+New Money,6,But imma go get me some money,get,7,"And I'll get new money, don't know what to do money",get,INNER,REPEAT,spelling,HIGH,N
+New Money,6,But imma go get me some money,go,7,"And I'll get new money, don't know what to do money",don't,INNER,ASSONANCE,vowel,MED,Y
+New Money,6,But imma go get me some money,go,7,"And I'll get new money, don't know what to do money",know,INNER,PERFECT,cmu,HIGH,Y
+New Money,6,But imma go get me some money,money,7,"And I'll get new money, don't know what to do money",money,INNER,REPEAT,spelling,HIGH,N
+New Money,6,But imma go get me some money,money,7,"And I'll get new money, don't know what to do money",what,INNER,SLANT,cmu,MED,Y
+New Money,6,But imma go get me some money,some,7,"And I'll get new money, don't know what to do money",money,INNER,SLANT,cmu,MED,Y
+New Money,6,But imma go get me some money,some,7,"And I'll get new money, don't know what to do money",what,INNER,SLANT,cmu,MED,Y
+New Money,6,But imma go get me some money,money,8,I keep a gun on my side,gun,INNER,SLANT,cmu,MED,Y
+New Money,6,But imma go get me some money,some,8,I keep a gun on my side,gun,INNER,SLANT,cmu,MED,Y
+New Money,7,"And I'll get new money, don't know what to do money",don't,7,"And I'll get new money, don't know what to do money",know,INNER,ASSONANCE,vowel,MED,Y
+New Money,7,"And I'll get new money, don't know what to do money",money,7,"And I'll get new money, don't know what to do money",money,INNER,REPEAT,spelling,HIGH,N
+New Money,7,"And I'll get new money, don't know what to do money",money,7,"And I'll get new money, don't know what to do money",what,INNER,SLANT,cmu,MED,Y
+New Money,7,"And I'll get new money, don't know what to do money",what,7,"And I'll get new money, don't know what to do money",money,INNER,SLANT,cmu,MED,Y
+New Money,7,"And I'll get new money, don't know what to do money",I'll,8,I keep a gun on my side,side,INNER,SLANT,cmu,MED,Y
+New Money,7,"And I'll get new money, don't know what to do money",money,8,I keep a gun on my side,gun,INNER,SLANT,cmu,MED,Y
+New Money,7,"And I'll get new money, don't know what to do money",what,8,I keep a gun on my side,gun,INNER,SLANT,cmu,MED,Y
+New Money,7,"And I'll get new money, don't know what to do money",I'll,9,"A-A-Ask a lil bih ""Wan ride?""",ride,INNER,SLANT,cmu,MED,Y
+New Money,8,I keep a gun on my side,side,9,"A-A-Ask a lil bih ""Wan ride?""",ride,END,PERFECT,cmu,HIGH,Y
+New Money,8,I keep a gun on my side,side,10,Thats a pole ready to slide,slide,END,PERFECT,cmu,HIGH,Y
+New Money,8,I keep a gun on my side,side,11,Tell em we gon be behind,behind,END,SLANT,cmu,MED,Y
+New Money,9,"A-A-Ask a lil bih ""Wan ride?""",lil,9,"A-A-Ask a lil bih ""Wan ride?""",bih,INNER,SLANT,spelling,LOW,Y
+New Money,9,"A-A-Ask a lil bih ""Wan ride?""",ride,10,Thats a pole ready to slide,slide,END,PERFECT,cmu,HIGH,Y
+New Money,9,"A-A-Ask a lil bih ""Wan ride?""",ride,11,Tell em we gon be behind,behind,END,SLANT,cmu,MED,Y
+New Money,9,"A-A-Ask a lil bih ""Wan ride?""",ride,13,Is go be a homicide,homicide,END,PERFECT,cmu,HIGH,Y
+New Money,10,Thats a pole ready to slide,slide,11,Tell em we gon be behind,behind,END,SLANT,cmu,MED,Y
+New Money,10,Thats a pole ready to slide,pole,11,Tell em we gon be behind,gon,INNER,SLANT,spelling,LOW,Y
+New Money,10,Thats a pole ready to slide,ready,11,Tell em we gon be behind,em,INNER,SLANT,cmu,MED,Y
+New Money,10,Thats a pole ready to slide,ready,11,Tell em we gon be behind,Tell,INNER,SLANT,cmu,MED,Y
+New Money,10,Thats a pole ready to slide,ready,12,I send a bar to yo head,head,INNER,SLANT,cmu,MED,Y
+New Money,10,Thats a pole ready to slide,ready,12,I send a bar to yo head,send,INNER,SLANT,cmu,MED,Y
+New Money,10,Thats a pole ready to slide,slide,13,Is go be a homicide,homicide,END,PERFECT,cmu,HIGH,Y
+New Money,10,Thats a pole ready to slide,slide,14,Have yo momma cryin',cryin,END,SLANT,cmu,MED,Y
+New Money,11,Tell em we gon be behind,Tell,11,Tell em we gon be behind,em,INNER,SLANT,cmu,MED,Y
+New Money,11,Tell em we gon be behind,em,12,I send a bar to yo head,head,INNER,SLANT,cmu,MED,Y
+New Money,11,Tell em we gon be behind,em,12,I send a bar to yo head,send,INNER,ASSONANCE,vowel,MED,Y
+New Money,11,Tell em we gon be behind,Tell,12,I send a bar to yo head,head,INNER,SLANT,cmu,MED,Y
+New Money,11,Tell em we gon be behind,Tell,12,I send a bar to yo head,send,INNER,ASSONANCE,vowel,MED,Y
+New Money,11,Tell em we gon be behind,behind,13,Is go be a homicide,homicide,END,SLANT,cmu,MED,Y
+New Money,11,Tell em we gon be behind,behind,14,Have yo momma cryin',cryin,END,ASSONANCE,vowel,MED,Y
+New Money,11,Tell em we gon be behind,behind,15,Babygirl know I be lying,lying,END,ASSONANCE,vowel,MED,Y
+New Money,12,I send a bar to yo head,send,12,I send a bar to yo head,head,INNER,SLANT,cmu,MED,Y
+New Money,12,I send a bar to yo head,bar,14,Have yo momma cryin',momma,INNER,SLANT,cmu,MED,Y
+New Money,13,Is go be a homicide,homicide,14,Have yo momma cryin',cryin,END,SLANT,cmu,MED,Y
+New Money,13,Is go be a homicide,homicide,15,Babygirl know I be lying,lying,END,SLANT,cmu,MED,Y
+New Money,13,Is go be a homicide,go,15,Babygirl know I be lying,know,INNER,PERFECT,cmu,HIGH,Y
+New Money,13,Is go be a homicide,homicide,16,She say she luh me she lying,lying,END,SLANT,cmu,MED,Y
+New Money,13,Is go be a homicide,homicide,17,Tol her I take her home flying,flying,END,SLANT,cmu,MED,Y
+New Money,14,Have yo momma cryin',cryin,15,Babygirl know I be lying,lying,END,MULTI,multi,HIGH,Y
+New Money,14,Have yo momma cryin',cryin,16,She say she luh me she lying,lying,END,MULTI,multi,HIGH,Y
+New Money,14,Have yo momma cryin',cryin,17,Tol her I take her home flying,flying,END,MULTI,multi,HIGH,Y
+New Money,14,Have yo momma cryin',cryin,18,My child want the world im buying,buying,END,MULTI,multi,HIGH,Y
+New Money,15,Babygirl know I be lying,lying,16,She say she luh me she lying,lying,END,REPEAT,spelling,HIGH,N
+New Money,15,Babygirl know I be lying,lying,17,Tol her I take her home flying,flying,END,MULTI,multi,HIGH,Y
+New Money,15,Babygirl know I be lying,know,17,Tol her I take her home flying,home,INNER,ASSONANCE,vowel,MED,Y
+New Money,15,Babygirl know I be lying,lying,18,My child want the world im buying,buying,END,MULTI,multi,HIGH,Y
+New Money,15,Babygirl know I be lying,lying,19,Want diamonds and pearls Im buying,buying,END,MULTI,multi,HIGH,Y
+New Money,16,She say she luh me she lying,lying,17,Tol her I take her home flying,flying,END,MULTI,multi,HIGH,Y
+New Money,16,She say she luh me she lying,say,17,Tol her I take her home flying,take,INNER,ASSONANCE,vowel,MED,Y
+New Money,16,She say she luh me she lying,lying,18,My child want the world im buying,buying,END,MULTI,multi,HIGH,Y
+New Money,16,She say she luh me she lying,lying,18,My child want the world im buying,child,INNER,ASSONANCE,vowel,MED,Y
+New Money,16,She say she luh me she lying,lying,19,Want diamonds and pearls Im buying,buying,END,MULTI,multi,HIGH,Y
+New Money,16,She say she luh me she lying,lying,20,Quite that jocien you nerds are lying,lying,END,REPEAT,spelling,HIGH,N
+New Money,17,Tol her I take her home flying,flying,18,My child want the world im buying,buying,END,MULTI,multi,HIGH,Y
+New Money,17,Tol her I take her home flying,flying,18,My child want the world im buying,child,INNER,ASSONANCE,vowel,MED,Y
+New Money,17,Tol her I take her home flying,flying,19,Want diamonds and pearls Im buying,buying,END,MULTI,multi,HIGH,Y
+New Money,17,Tol her I take her home flying,flying,19,Want diamonds and pearls Im buying,diamonds,INNER,ASSONANCE,vowel,MED,Y
+New Money,17,Tol her I take her home flying,flying,20,Quite that jocien you nerds are lying,lying,END,MULTI,multi,HIGH,Y
+New Money,17,Tol her I take her home flying,flying,21,Milly rock on that curve me line,line,END,SLANT,cmu,MED,Y
+New Money,18,My child want the world im buying,child,18,My child want the world im buying,buying,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,My child want the world im buying,buying,19,Want diamonds and pearls Im buying,buying,END,REPEAT,spelling,HIGH,N
+New Money,18,My child want the world im buying,buying,19,Want diamonds and pearls Im buying,diamonds,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,My child want the world im buying,child,19,Want diamonds and pearls Im buying,buying,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,My child want the world im buying,child,19,Want diamonds and pearls Im buying,diamonds,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,My child want the world im buying,want,19,Want diamonds and pearls Im buying,Want,INNER,REPEAT,spelling,HIGH,N
+New Money,18,My child want the world im buying,world,19,Want diamonds and pearls Im buying,pearls,INNER,SLANT,cmu,MED,Y
+New Money,18,My child want the world im buying,buying,20,Quite that jocien you nerds are lying,lying,END,MULTI,multi,HIGH,Y
+New Money,18,My child want the world im buying,buying,20,Quite that jocien you nerds are lying,Quite,INNER,SLANT,cmu,MED,Y
+New Money,18,My child want the world im buying,child,20,Quite that jocien you nerds are lying,lying,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,My child want the world im buying,child,20,Quite that jocien you nerds are lying,Quite,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,My child want the world im buying,world,20,Quite that jocien you nerds are lying,nerds,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,My child want the world im buying,buying,21,Milly rock on that curve me line,line,END,SLANT,cmu,MED,Y
+New Money,18,My child want the world im buying,buying,22,I remeber when 12 was spying,spying,END,MULTI,multi,HIGH,Y
+New Money,19,Want diamonds and pearls Im buying,diamonds,19,Want diamonds and pearls Im buying,buying,INNER,ASSONANCE,vowel,MED,Y
+New Money,19,Want diamonds and pearls Im buying,buying,20,Quite that jocien you nerds are lying,lying,END,MULTI,multi,HIGH,Y
+New Money,19,Want diamonds and pearls Im buying,buying,20,Quite that jocien you nerds are lying,Quite,INNER,SLANT,cmu,MED,Y
+New Money,19,Want diamonds and pearls Im buying,diamonds,20,Quite that jocien you nerds are lying,lying,INNER,ASSONANCE,vowel,MED,Y
+New Money,19,Want diamonds and pearls Im buying,diamonds,20,Quite that jocien you nerds are lying,Quite,INNER,ASSONANCE,vowel,MED,Y
+New Money,19,Want diamonds and pearls Im buying,pearls,20,Quite that jocien you nerds are lying,nerds,INNER,SLANT,cmu,MED,Y
+New Money,19,Want diamonds and pearls Im buying,buying,21,Milly rock on that curve me line,line,END,SLANT,cmu,MED,Y
+New Money,19,Want diamonds and pearls Im buying,diamonds,21,Milly rock on that curve me line,line,INNER,ASSONANCE,vowel,MED,Y
+New Money,19,Want diamonds and pearls Im buying,pearls,21,Milly rock on that curve me line,curve,INNER,ASSONANCE,vowel,MED,Y
+New Money,19,Want diamonds and pearls Im buying,Want,21,Milly rock on that curve me line,rock,INNER,ASSONANCE,vowel,MED,Y
+New Money,19,Want diamonds and pearls Im buying,buying,22,I remeber when 12 was spying,spying,END,MULTI,multi,HIGH,Y
+New Money,19,Want diamonds and pearls Im buying,buying,23,I was so homless was crying,crying,END,MULTI,multi,HIGH,Y
+New Money,20,Quite that jocien you nerds are lying,Quite,20,Quite that jocien you nerds are lying,lying,INNER,SLANT,cmu,MED,Y
+New Money,20,Quite that jocien you nerds are lying,lying,21,Milly rock on that curve me line,line,END,SLANT,cmu,MED,Y
+New Money,20,Quite that jocien you nerds are lying,nerds,21,Milly rock on that curve me line,curve,INNER,ASSONANCE,vowel,MED,Y
+New Money,20,Quite that jocien you nerds are lying,Quite,21,Milly rock on that curve me line,line,INNER,SLANT,cmu,MED,Y
+New Money,20,Quite that jocien you nerds are lying,lying,22,I remeber when 12 was spying,spying,END,MULTI,multi,HIGH,Y
+New Money,20,Quite that jocien you nerds are lying,jocien,22,I remeber when 12 was spying,when,INNER,PERFECT,spelling,MED,Y
+New Money,20,Quite that jocien you nerds are lying,Quite,22,I remeber when 12 was spying,spying,INNER,SLANT,cmu,MED,Y
+New Money,20,Quite that jocien you nerds are lying,lying,23,I was so homless was crying,crying,END,MULTI,multi,HIGH,Y
+New Money,20,Quite that jocien you nerds are lying,lying,24,Erbody had tol me stop trying,trying,END,MULTI,multi,HIGH,Y
+New Money,21,Milly rock on that curve me line,line,22,I remeber when 12 was spying,spying,END,SLANT,cmu,MED,Y
+New Money,21,Milly rock on that curve me line,line,23,I was so homless was crying,crying,END,SLANT,cmu,MED,Y
+New Money,21,Milly rock on that curve me line,line,24,Erbody had tol me stop trying,trying,END,SLANT,cmu,MED,Y
+New Money,21,Milly rock on that curve me line,line,25,Now they wanna take pics I dont mind,mind,END,SLANT,cmu,MED,Y
+New Money,22,I remeber when 12 was spying,remeber,22,I remeber when 12 was spying,when,INNER,ASSONANCE,vowel,LOW,N
+New Money,22,I remeber when 12 was spying,spying,23,I was so homless was crying,crying,END,MULTI,multi,HIGH,Y
+New Money,22,I remeber when 12 was spying,spying,24,Erbody had tol me stop trying,trying,END,MULTI,multi,HIGH,Y
+New Money,22,I remeber when 12 was spying,spying,25,Now they wanna take pics I dont mind,mind,END,ASSONANCE,vowel,MED,Y
+New Money,22,I remeber when 12 was spying,spying,26,I don't trust you but gotta be kind,kind,END,ASSONANCE,vowel,MED,Y
+New Money,23,I was so homless was crying,crying,24,Erbody had tol me stop trying,trying,END,MULTI,multi,HIGH,Y
+New Money,23,I was so homless was crying,crying,25,Now they wanna take pics I dont mind,mind,END,ASSONANCE,vowel,MED,Y
+New Money,23,I was so homless was crying,crying,26,I don't trust you but gotta be kind,kind,END,ASSONANCE,vowel,MED,Y
+New Money,23,I was so homless was crying,crying,27,For my bro put my life on the line,line,END,SLANT,cmu,MED,Y
+New Money,24,Erbody had tol me stop trying,trying,25,Now they wanna take pics I dont mind,mind,END,ASSONANCE,vowel,MED,Y
+New Money,24,Erbody had tol me stop trying,stop,25,Now they wanna take pics I dont mind,wanna,INNER,SLANT,cmu,MED,Y
+New Money,24,Erbody had tol me stop trying,trying,26,I don't trust you but gotta be kind,kind,END,ASSONANCE,vowel,MED,Y
+New Money,24,Erbody had tol me stop trying,stop,26,I don't trust you but gotta be kind,gotta,INNER,SLANT,cmu,MED,Y
+New Money,24,Erbody had tol me stop trying,trying,27,For my bro put my life on the line,line,END,SLANT,cmu,MED,Y
+New Money,24,Erbody had tol me stop trying,trying,28,Forever you know that im ridin,ridin,END,SLANT,cmu,MED,Y
+New Money,25,Now they wanna take pics I dont mind,mind,26,I don't trust you but gotta be kind,kind,END,PERFECT,cmu,HIGH,Y
+New Money,25,Now they wanna take pics I dont mind,dont,26,I don't trust you but gotta be kind,don't,INNER,REPEAT,spelling,HIGH,N
+New Money,25,Now they wanna take pics I dont mind,wanna,26,I don't trust you but gotta be kind,gotta,INNER,SLANT,cmu,MED,Y
+New Money,25,Now they wanna take pics I dont mind,mind,27,For my bro put my life on the line,line,END,SLANT,cmu,MED,Y
+New Money,25,Now they wanna take pics I dont mind,mind,27,For my bro put my life on the line,life,INNER,ASSONANCE,vowel,MED,Y
+New Money,25,Now they wanna take pics I dont mind,mind,28,Forever you know that im ridin,ridin,END,ASSONANCE,vowel,MED,Y
+New Money,26,I don't trust you but gotta be kind,kind,27,For my bro put my life on the line,line,END,SLANT,cmu,MED,Y
+New Money,26,I don't trust you but gotta be kind,don't,27,For my bro put my life on the line,bro,INNER,ASSONANCE,vowel,MED,Y
+New Money,26,I don't trust you but gotta be kind,kind,27,For my bro put my life on the line,life,INNER,ASSONANCE,vowel,MED,Y
+New Money,26,I don't trust you but gotta be kind,kind,28,Forever you know that im ridin,ridin,END,ASSONANCE,vowel,MED,Y
+New Money,26,I don't trust you but gotta be kind,don't,28,Forever you know that im ridin,know,INNER,ASSONANCE,vowel,MED,Y
+New Money,26,I don't trust you but gotta be kind,kind,30,From that bag you can run but can't hide,hide,END,SLANT,cmu,MED,Y
+New Money,27,For my bro put my life on the line,life,27,For my bro put my life on the line,line,INNER,SLANT,cmu,MED,Y
+New Money,27,For my bro put my life on the line,line,28,Forever you know that im ridin,ridin,END,ASSONANCE,vowel,MED,Y
+New Money,27,For my bro put my life on the line,bro,28,Forever you know that im ridin,know,INNER,PERFECT,cmu,HIGH,Y
+New Money,27,For my bro put my life on the line,life,28,Forever you know that im ridin,ridin,INNER,ASSONANCE,vowel,MED,Y
+New Money,27,For my bro put my life on the line,bro,29,Forever you know that Im slidn,know,INNER,PERFECT,cmu,HIGH,Y
+New Money,27,For my bro put my life on the line,line,30,From that bag you can run but can't hide,hide,END,SLANT,cmu,MED,Y
+New Money,28,Forever you know that im ridin,Forever,29,Forever you know that Im slidn,Forever,INNER,REPEAT,spelling,HIGH,N
+New Money,28,Forever you know that im ridin,know,29,Forever you know that Im slidn,know,INNER,REPEAT,spelling,HIGH,N
+New Money,28,Forever you know that im ridin,ridin,30,From that bag you can run but can't hide,hide,END,SLANT,cmu,MED,Y
+New Money,29,Forever you know that Im slidn,know,31,"Old Money, New Money",Old,INNER,ASSONANCE,vowel,MED,Y
+New Money,30,From that bag you can run but can't hide,bag,30,From that bag you can run but can't hide,can,INNER,SLANT,cmu,MED,Y
+New Money,30,From that bag you can run but can't hide,bag,30,From that bag you can run but can't hide,can't,INNER,ASSONANCE,vowel,MED,Y
+New Money,30,From that bag you can run but can't hide,can,30,From that bag you can run but can't hide,can't,INNER,SLANT,cmu,MED,Y
+New Money,30,From that bag you can run but can't hide,run,31,"Old Money, New Money",Money,INNER,SLANT,cmu,MED,Y
+New Money,30,From that bag you can run but can't hide,run,32,I still got old hundreds,hundreds,INNER,ASSONANCE,vowel,MED,Y
+New Money,31,"Old Money, New Money",Money,31,"Old Money, New Money",Money,INNER,REPEAT,spelling,HIGH,N
+New Money,31,"Old Money, New Money",Money,32,I still got old hundreds,hundreds,END,ASSONANCE,vowel,MED,Y
+New Money,31,"Old Money, New Money",Money,32,I still got old hundreds,hundreds,INNER,ASSONANCE,vowel,MED,Y
+New Money,31,"Old Money, New Money",Old,32,I still got old hundreds,old,INNER,REPEAT,spelling,HIGH,N
+New Money,31,"Old Money, New Money",Money,34,I used to ask papa for money,money,END,REPEAT,spelling,HIGH,N
+New Money,32,I still got old hundreds,still,33,I still walk widd it on me,still,INNER,REPEAT,spelling,HIGH,N
+New Money,32,I still got old hundreds,hundreds,34,I used to ask papa for money,money,END,ASSONANCE,vowel,MED,Y
+New Money,32,I still got old hundreds,hundreds,34,I used to ask papa for money,papa,INNER,ASSONANCE,vowel,MED,Y
+New Money,34,I used to ask papa for money,papa,34,I used to ask papa for money,money,INNER,ASSONANCE,vowel,MED,Y
+New Money,34,I used to ask papa for money,ask,35,"If he had it, he gave me a 20",had,INNER,ASSONANCE,vowel,MED,Y
+New Money,34,I used to ask papa for money,used,36,I used to steal cars,used,INNER,REPEAT,spelling,HIGH,N
+New Money,35,"If he had it, he gave me a 20",had,37,Now I thank the lord,thank,INNER,ASSONANCE,vowel,MED,Y
+New Money,36,I used to steal cars,cars,38,I can walk around with a hundred large,large,END,SLANT,cmu,MED,Y
+New Money,36,I used to steal cars,cars,40,I'm pullin' up in a foreign car,car,END,SLANT,cmu,MED,Y
+New Money,37,Now I thank the lord,lord,38,I can walk around with a hundred large,walk,INNER,ASSONANCE,vowel,MED,Y
+New Money,37,Now I thank the lord,Now,38,I can walk around with a hundred large,around,INNER,ASSONANCE,vowel,MED,Y
+New Money,37,Now I thank the lord,thank,38,I can walk around with a hundred large,can,INNER,ASSONANCE,vowel,MED,Y
+New Money,38,I can walk around with a hundred large,large,40,I'm pullin' up in a foreign car,car,END,SLANT,cmu,MED,Y
+New Money,38,I can walk around with a hundred large,walk,40,I'm pullin' up in a foreign car,foreign,INNER,ASSONANCE,vowel,MED,Y
+New Money,39,From Rachet hoes to the Forein broads,Forein,40,I'm pullin' up in a foreign car,pullin,INNER,PERFECT,spelling,MED,Y
+New Money,40,I'm pullin' up in a foreign car,car,43,"I swear to god, that I am not a star",star,END,PERFECT,cmu,HIGH,Y
+New Money,43,"I swear to god, that I am not a star",god,43,"I swear to god, that I am not a star",not,INNER,SLANT,cmu,MED,Y
+New Money,43,"I swear to god, that I am not a star",god,43,"I swear to god, that I am not a star",star,INNER,SLANT,cmu,MED,Y
+New Money,43,"I swear to god, that I am not a star",not,43,"I swear to god, that I am not a star",star,INNER,SLANT,cmu,MED,Y
+New Money,43,"I swear to god, that I am not a star",god,44,"Was locked in that cell, going through hell",locked,INNER,SLANT,cmu,MED,Y
+New Money,43,"I swear to god, that I am not a star",not,44,"Was locked in that cell, going through hell",locked,INNER,SLANT,cmu,MED,Y
+New Money,43,"I swear to god, that I am not a star",star,44,"Was locked in that cell, going through hell",locked,INNER,ASSONANCE,vowel,MED,Y
+New Money,43,"I swear to god, that I am not a star",swear,44,"Was locked in that cell, going through hell",cell,INNER,SLANT,cmu,MED,Y
+New Money,43,"I swear to god, that I am not a star",swear,44,"Was locked in that cell, going through hell",hell,INNER,SLANT,cmu,MED,Y
+New Money,43,"I swear to god, that I am not a star",star,45,Remember I was countin' all them bars,bars,END,SLANT,cmu,MED,Y
+New Money,43,"I swear to god, that I am not a star",god,45,Remember I was countin' all them bars,bars,INNER,ASSONANCE,vowel,MED,Y
+New Money,43,"I swear to god, that I am not a star",not,45,Remember I was countin' all them bars,bars,INNER,ASSONANCE,vowel,MED,Y
+New Money,43,"I swear to god, that I am not a star",swear,45,Remember I was countin' all them bars,Remember,INNER,ASSONANCE,vowel,MED,Y
+New Money,44,"Was locked in that cell, going through hell",cell,44,"Was locked in that cell, going through hell",hell,INNER,PERFECT,cmu,HIGH,Y
+New Money,44,"Was locked in that cell, going through hell",cell,45,Remember I was countin' all them bars,Remember,INNER,ASSONANCE,vowel,MED,Y
+New Money,44,"Was locked in that cell, going through hell",hell,45,Remember I was countin' all them bars,Remember,INNER,ASSONANCE,vowel,MED,Y
+New Money,44,"Was locked in that cell, going through hell",locked,45,Remember I was countin' all them bars,bars,INNER,ASSONANCE,vowel,MED,Y
+New Money,44,"Was locked in that cell, going through hell",cell,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",twelve,INNER,SLANT,cmu,MED,Y
+New Money,44,"Was locked in that cell, going through hell",going,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",blow,INNER,ASSONANCE,vowel,MED,Y
+New Money,44,"Was locked in that cell, going through hell",hell,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",twelve,INNER,SLANT,cmu,MED,Y
+New Money,44,"Was locked in that cell, going through hell",hell,48,My bitches explicit I swea I came up from them trenches,trenches,END,ASSONANCE,vowel,MED,Y
+New Money,45,Remember I was countin' all them bars,all,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",all,INNER,REPEAT,spelling,HIGH,N
+New Money,45,Remember I was countin' all them bars,countin,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",counted,INNER,SLANT,cmu,MED,Y
+New Money,45,Remember I was countin' all them bars,Remember,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",twelve,INNER,ASSONANCE,vowel,MED,Y
+New Money,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",twelve,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",twelve,INNER,REPEAT,spelling,HIGH,N
+New Money,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",shit,47,This life that im livin,livin,INNER,ASSONANCE,vowel,MED,Y
+New Money,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",shit,48,My bitches explicit I swea I came up from them trenches,bitches,INNER,ASSONANCE,vowel,MED,Y
+New Money,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",shit,48,My bitches explicit I swea I came up from them trenches,explicit,INNER,SLANT,cmu,MED,Y
+New Money,46,"Just for a twelve, I counted up twelve and I blow that shit with all my boys",twelve,48,My bitches explicit I swea I came up from them trenches,trenches,INNER,ASSONANCE,vowel,MED,Y
+New Money,47,This life that im livin,livin,48,My bitches explicit I swea I came up from them trenches,bitches,INNER,ASSONANCE,vowel,MED,Y
+New Money,47,This life that im livin,livin,48,My bitches explicit I swea I came up from them trenches,explicit,INNER,ASSONANCE,vowel,MED,Y
+New Money,47,This life that im livin,livin,49,You know I ain't slippin' I stay with a glizzy,slippin,INNER,SLANT,cmu,MED,Y
+New Money,48,My bitches explicit I swea I came up from them trenches,bitches,48,My bitches explicit I swea I came up from them trenches,explicit,INNER,ASSONANCE,vowel,MED,Y
+New Money,48,My bitches explicit I swea I came up from them trenches,bitches,49,You know I ain't slippin' I stay with a glizzy,glizzy,INNER,SLANT,spelling,LOW,Y
+New Money,48,My bitches explicit I swea I came up from them trenches,bitches,49,You know I ain't slippin' I stay with a glizzy,slippin,INNER,ASSONANCE,vowel,MED,Y
+New Money,48,My bitches explicit I swea I came up from them trenches,came,49,You know I ain't slippin' I stay with a glizzy,ain't,INNER,ASSONANCE,vowel,MED,Y
+New Money,48,My bitches explicit I swea I came up from them trenches,came,49,You know I ain't slippin' I stay with a glizzy,stay,INNER,ASSONANCE,vowel,MED,Y
+New Money,48,My bitches explicit I swea I came up from them trenches,explicit,49,You know I ain't slippin' I stay with a glizzy,slippin,INNER,ASSONANCE,vowel,MED,Y
+New Money,48,My bitches explicit I swea I came up from them trenches,swea,49,You know I ain't slippin' I stay with a glizzy,glizzy,INNER,ASSONANCE,vowel,LOW,N
+New Money,48,My bitches explicit I swea I came up from them trenches,trenches,50,A nigga run up he ca get it,get,END,ASSONANCE,vowel,MED,Y
+New Money,48,My bitches explicit I swea I came up from them trenches,trenches,52,Now nigga check out how im get it,get,END,ASSONANCE,vowel,MED,Y
+New Money,49,You know I ain't slippin' I stay with a glizzy,ain't,49,You know I ain't slippin' I stay with a glizzy,stay,INNER,ASSONANCE,vowel,MED,Y
+New Money,49,You know I ain't slippin' I stay with a glizzy,ain't,51,I completed my mission I played my role,played,INNER,ASSONANCE,vowel,MED,Y
+New Money,49,You know I ain't slippin' I stay with a glizzy,know,51,I completed my mission I played my role,role,INNER,ASSONANCE,vowel,MED,Y
+New Money,49,You know I ain't slippin' I stay with a glizzy,slippin,51,I completed my mission I played my role,mission,INNER,ASSONANCE,vowel,MED,Y
+New Money,49,You know I ain't slippin' I stay with a glizzy,stay,51,I completed my mission I played my role,played,INNER,ASSONANCE,vowel,MED,Y
+New Money,49,You know I ain't slippin' I stay with a glizzy,glizzy,53,See this shit where I play through the city,city,END,ASSONANCE,vowel,LOW,N
+New Money,50,A nigga run up he ca get it,run,50,A nigga run up he ca get it,ca,INNER,ASSONANCE,vowel,MED,Y
+New Money,50,A nigga run up he ca get it,get,52,Now nigga check out how im get it,get,END,REPEAT,spelling,HIGH,N
+New Money,50,A nigga run up he ca get it,get,52,Now nigga check out how im get it,check,INNER,SLANT,cmu,MED,Y
+New Money,50,A nigga run up he ca get it,nigga,52,Now nigga check out how im get it,nigga,INNER,REPEAT,spelling,HIGH,N
+New Money,51,I completed my mission I played my role,completed,53,See this shit where I play through the city,See,INNER,ASSONANCE,vowel,MED,Y
+New Money,51,I completed my mission I played my role,mission,53,See this shit where I play through the city,city,INNER,ASSONANCE,vowel,MED,Y
+New Money,51,I completed my mission I played my role,mission,53,See this shit where I play through the city,shit,INNER,ASSONANCE,vowel,MED,Y
+New Money,51,I completed my mission I played my role,played,53,See this shit where I play through the city,play,INNER,ASSONANCE,vowel,MED,Y
+New Money,52,Now nigga check out how im get it,check,52,Now nigga check out how im get it,get,INNER,SLANT,cmu,MED,Y
+New Money,52,Now nigga check out how im get it,Now,52,Now nigga check out how im get it,how,INNER,PERFECT,cmu,HIGH,Y
+New Money,52,Now nigga check out how im get it,check,53,See this shit where I play through the city,where,INNER,SLANT,cmu,MED,Y
+New Money,52,Now nigga check out how im get it,get,53,See this shit where I play through the city,where,INNER,SLANT,cmu,MED,Y
+New Money,52,Now nigga check out how im get it,nigga,53,See this shit where I play through the city,city,INNER,SLANT,spelling,LOW,Y
+New Money,52,Now nigga check out how im get it,nigga,53,See this shit where I play through the city,shit,INNER,SLANT,spelling,LOW,Y
+New Money,52,Now nigga check out how im get it,check,54,Ready ta die you know I ain't trippin,Ready,INNER,SLANT,cmu,MED,Y
+New Money,52,Now nigga check out how im get it,get,54,Ready ta die you know I ain't trippin,Ready,INNER,SLANT,cmu,MED,Y
+New Money,53,See this shit where I play through the city,shit,53,See this shit where I play through the city,city,INNER,SLANT,cmu,MED,Y
+New Money,53,See this shit where I play through the city,city,54,Ready ta die you know I ain't trippin,trippin,END,ASSONANCE,vowel,MED,Y
+New Money,53,See this shit where I play through the city,play,54,Ready ta die you know I ain't trippin,ain't,INNER,ASSONANCE,vowel,MED,Y
+New Money,53,See this shit where I play through the city,shit,54,Ready ta die you know I ain't trippin,trippin,INNER,ASSONANCE,vowel,MED,Y
+New Money,53,See this shit where I play through the city,where,54,Ready ta die you know I ain't trippin,Ready,INNER,SLANT,cmu,MED,Y

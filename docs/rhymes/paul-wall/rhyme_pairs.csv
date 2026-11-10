@@ -1,0 +1,369 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Bust,1,June you're a Genius,Genius,2,Ramy on the beat,beat,END,ASSONANCE,vowel,MED,Y
+Bust,1,June you're a Genius,June,3,"My diamonds dance like a jewel party, On my neck Bugatti",jewel,INNER,SLANT,cmu,MED,Y
+Bust,2,Ramy on the beat,Ramy,3,"My diamonds dance like a jewel party, On my neck Bugatti",Bugatti,INNER,ASSONANCE,vowel,LOW,N
+Bust,2,Ramy on the beat,Ramy,3,"My diamonds dance like a jewel party, On my neck Bugatti",party,INNER,ASSONANCE,vowel,LOW,N
+Bust,2,Ramy on the beat,Ramy,4,She so wet it's a pool party,party,INNER,ASSONANCE,vowel,LOW,N
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",diamonds,3,"My diamonds dance like a jewel party, On my neck Bugatti",like,INNER,ASSONANCE,vowel,MED,Y
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",party,3,"My diamonds dance like a jewel party, On my neck Bugatti",Bugatti,INNER,SLANT,cmu,MED,Y
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",Bugatti,4,She so wet it's a pool party,party,END,SLANT,cmu,MED,Y
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",jewel,4,She so wet it's a pool party,pool,INNER,SLANT,cmu,MED,Y
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",neck,4,She so wet it's a pool party,wet,INNER,SLANT,cmu,MED,Y
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",party,4,She so wet it's a pool party,party,INNER,REPEAT,spelling,HIGH,N
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",diamonds,5,She ride me like Ducati,like,INNER,ASSONANCE,vowel,MED,Y
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",diamonds,5,She ride me like Ducati,ride,INNER,ASSONANCE,vowel,MED,Y
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",like,5,She ride me like Ducati,like,INNER,REPEAT,spelling,HIGH,N
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",like,5,She ride me like Ducati,ride,INNER,SLANT,cmu,MED,Y
+Bust,3,"My diamonds dance like a jewel party, On my neck Bugatti",Bugatti,6,It's enough jewels on me for two bodies,bodies,END,ASSONANCE,vowel,MED,Y
+Bust,4,She so wet it's a pool party,party,6,It's enough jewels on me for two bodies,bodies,END,ASSONANCE,vowel,MED,Y
+Bust,4,She so wet it's a pool party,pool,6,It's enough jewels on me for two bodies,jewels,INNER,SLANT,cmu,MED,Y
+Bust,4,She so wet it's a pool party,pool,6,It's enough jewels on me for two bodies,two,INNER,ASSONANCE,vowel,MED,Y
+Bust,5,She ride me like Ducati,ride,5,She ride me like Ducati,like,INNER,SLANT,cmu,MED,Y
+Bust,5,She ride me like Ducati,Ducati,7,"Ooh Johnny, I only count the cash, I don't count no punani",punani,END,ASSONANCE,vowel,LOW,N
+Bust,6,It's enough jewels on me for two bodies,jewels,6,It's enough jewels on me for two bodies,two,INNER,ASSONANCE,vowel,MED,Y
+Bust,6,It's enough jewels on me for two bodies,bodies,7,"Ooh Johnny, I only count the cash, I don't count no punani",Johnny,INNER,ASSONANCE,vowel,MED,Y
+Bust,6,It's enough jewels on me for two bodies,bodies,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",stock,INNER,ASSONANCE,vowel,MED,Y
+Bust,6,It's enough jewels on me for two bodies,jewels,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",ruler,INNER,SLANT,cmu,MED,Y
+Bust,6,It's enough jewels on me for two bodies,two,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",ruler,INNER,ASSONANCE,vowel,MED,Y
+Bust,7,"Ooh Johnny, I only count the cash, I don't count no punani",count,7,"Ooh Johnny, I only count the cash, I don't count no punani",count,INNER,REPEAT,spelling,HIGH,N
+Bust,7,"Ooh Johnny, I only count the cash, I don't count no punani",don't,7,"Ooh Johnny, I only count the cash, I don't count no punani",no,INNER,ASSONANCE,vowel,MED,Y
+Bust,7,"Ooh Johnny, I only count the cash, I don't count no punani",only,7,"Ooh Johnny, I only count the cash, I don't count no punani",don't,INNER,SLANT,cmu,MED,Y
+Bust,7,"Ooh Johnny, I only count the cash, I don't count no punani",only,7,"Ooh Johnny, I only count the cash, I don't count no punani",no,INNER,ASSONANCE,vowel,MED,Y
+Bust,7,"Ooh Johnny, I only count the cash, I don't count no punani",don't,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",No,INNER,ASSONANCE,vowel,MED,Y
+Bust,7,"Ooh Johnny, I only count the cash, I don't count no punani",Johnny,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",stock,INNER,SLANT,cmu,MED,Y
+Bust,7,"Ooh Johnny, I only count the cash, I don't count no punani",no,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",No,INNER,REPEAT,spelling,HIGH,N
+Bust,7,"Ooh Johnny, I only count the cash, I don't count no punani",only,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",No,INNER,ASSONANCE,vowel,MED,Y
+Bust,7,"Ooh Johnny, I only count the cash, I don't count no punani",punani,9,"I'll get the pussy later, get the money sooner",money,INNER,SLANT,spelling,LOW,Y
+Bust,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",clip,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",Rick,INNER,SLANT,cmu,MED,Y
+Bust,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",ruler,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",Ruler,INNER,REPEAT,spelling,HIGH,N
+Bust,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",Ruler,9,"I'll get the pussy later, get the money sooner",sooner,END,SLANT,cmu,MED,Y
+Bust,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",ruler,9,"I'll get the pussy later, get the money sooner",sooner,INNER,SLANT,cmu,MED,Y
+Bust,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",Ruler,10,"That's ya ho I'm gon' do her, she's in the Uber",Uber,END,SLANT,cmu,MED,Y
+Bust,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",Chief,10,"That's ya ho I'm gon' do her, she's in the Uber",she's,INNER,SLANT,cmu,MED,Y
+Bust,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",No,10,"That's ya ho I'm gon' do her, she's in the Uber",ho,INNER,PERFECT,cmu,HIGH,Y
+Bust,8,"No stock clip it's a ruler, call me Chief Rick the Ruler",ruler,10,"That's ya ho I'm gon' do her, she's in the Uber",Uber,INNER,SLANT,cmu,MED,Y
+Bust,9,"I'll get the pussy later, get the money sooner",get,9,"I'll get the pussy later, get the money sooner",get,INNER,REPEAT,spelling,HIGH,N
+Bust,9,"I'll get the pussy later, get the money sooner",sooner,10,"That's ya ho I'm gon' do her, she's in the Uber",Uber,END,SLANT,cmu,MED,Y
+Bust,9,"I'll get the pussy later, get the money sooner",get,11,"Tell cash to order that shit, and order two hearses",Tell,INNER,SLANT,cmu,MED,Y
+Bust,9,"I'll get the pussy later, get the money sooner",sooner,11,"Tell cash to order that shit, and order two hearses",two,INNER,ASSONANCE,vowel,MED,Y
+Bust,10,"That's ya ho I'm gon' do her, she's in the Uber",she's,11,"Tell cash to order that shit, and order two hearses",hearses,INNER,ASSONANCE,vowel,LOW,N
+Bust,10,"That's ya ho I'm gon' do her, she's in the Uber",Uber,11,"Tell cash to order that shit, and order two hearses",two,INNER,ASSONANCE,vowel,MED,Y
+Bust,10,"That's ya ho I'm gon' do her, she's in the Uber",she's,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",these,INNER,PERFECT,cmu,HIGH,Y
+Bust,11,"Tell cash to order that shit, and order two hearses",order,11,"Tell cash to order that shit, and order two hearses",order,INNER,REPEAT,spelling,HIGH,N
+Bust,11,"Tell cash to order that shit, and order two hearses",hearses,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",these,INNER,ASSONANCE,vowel,LOW,N
+Bust,11,"Tell cash to order that shit, and order two hearses",shit,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",billin,INNER,ASSONANCE,vowel,MED,Y
+Bust,11,"Tell cash to order that shit, and order two hearses",shit,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",Hilary,INNER,SLANT,cmu,MED,Y
+Bust,11,"Tell cash to order that shit, and order two hearses",shit,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",killin,INNER,ASSONANCE,vowel,MED,Y
+Bust,11,"Tell cash to order that shit, and order two hearses",cash,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",bands,INNER,ASSONANCE,vowel,MED,Y
+Bust,11,"Tell cash to order that shit, and order two hearses",hearses,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",these,INNER,ASSONANCE,vowel,LOW,N
+Bust,11,"Tell cash to order that shit, and order two hearses",shit,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",Hilary,INNER,SLANT,cmu,MED,Y
+Bust,11,"Tell cash to order that shit, and order two hearses",shit,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",Hilary,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",billin,INNER,SLANT,cmu,MED,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",killin,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",billin,INNER,SLANT,cmu,MED,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",killin,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",Hilary,INNER,SLANT,cmu,MED,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",niggas,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",niggas,INNER,REPEAT,spelling,HIGH,N
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",these,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",these,INNER,REPEAT,spelling,HIGH,N
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",niggas,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",nigga,END,SLANT,spelling,LOW,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",billin,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",Hilary,INNER,SLANT,cmu,MED,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",Cuz,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",duff,INNER,SLANT,spelling,LOW,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",Hilary,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",Hilary,INNER,REPEAT,spelling,HIGH,N
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",killin,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",Hilary,INNER,SLANT,cmu,MED,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",niggas,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",niggas,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",niggas,INNER,REPEAT,spelling,HIGH,N
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",these,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",these,INNER,REPEAT,spelling,HIGH,N
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",niggas,14,"They like, ""What's up with Keef nigga?",nigga,END,SLANT,spelling,LOW,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",niggas,14,"They like, ""What's up with Keef nigga?",nigga,INNER,SLANT,spelling,LOW,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",these,14,"They like, ""What's up with Keef nigga?",Keef,INNER,SLANT,cmu,MED,Y
+Bust,12,"Cuz I'm killin' these niggas, Hilary billin' these niggas",niggas,15,"He went def on me nigga.""",nigga,END,SLANT,spelling,LOW,Y
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",Duffin,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",duff,INNER,SLANT,cmu,MED,Y
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",niggas,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",nigga,14,"They like, ""What's up with Keef nigga?",nigga,END,REPEAT,spelling,HIGH,N
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",duff,14,"They like, ""What's up with Keef nigga?",What's,INNER,ASSONANCE,vowel,MED,Y
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",Duffin,14,"They like, ""What's up with Keef nigga?",What's,INNER,ASSONANCE,vowel,MED,Y
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",niggas,14,"They like, ""What's up with Keef nigga?",nigga,INNER,SLANT,spelling,LOW,Y
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",these,14,"They like, ""What's up with Keef nigga?",Keef,INNER,SLANT,cmu,MED,Y
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",nigga,15,"He went def on me nigga.""",nigga,END,REPEAT,spelling,HIGH,N
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",niggas,15,"He went def on me nigga.""",nigga,INNER,SLANT,spelling,LOW,Y
+Bust,13,"Hilary Duffin' these niggas, got bands and duff on me nigga",nigga,17,"Try me, we bust on a nigga",nigga,END,REPEAT,spelling,HIGH,N
+Bust,14,"They like, ""What's up with Keef nigga?",nigga,15,"He went def on me nigga.""",nigga,END,REPEAT,spelling,HIGH,N
+Bust,14,"They like, ""What's up with Keef nigga?",Keef,16,Now it's these big ass earrings,these,INNER,SLANT,cmu,MED,Y
+Bust,14,"They like, ""What's up with Keef nigga?",nigga,16,Now it's these big ass earrings,big,INNER,SLANT,spelling,LOW,Y
+Bust,14,"They like, ""What's up with Keef nigga?",nigga,17,"Try me, we bust on a nigga",nigga,END,REPEAT,spelling,HIGH,N
+Bust,15,"He went def on me nigga.""",nigga,16,Now it's these big ass earrings,big,INNER,SLANT,spelling,LOW,Y
+Bust,15,"He went def on me nigga.""",nigga,17,"Try me, we bust on a nigga",nigga,END,REPEAT,spelling,HIGH,N
+Bust,16,Now it's these big ass earrings,big,16,Now it's these big ass earrings,earrings,INNER,ASSONANCE,vowel,MED,Y
+Bust,16,Now it's these big ass earrings,big,17,"Try me, we bust on a nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Bust,17,"Try me, we bust on a nigga",Try,18,"Pulled up in a hot car, with a hot fire",fire,INNER,ASSONANCE,vowel,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",car,18,"Pulled up in a hot car, with a hot fire",hot,INNER,SLANT,cmu,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",hot,18,"Pulled up in a hot car, with a hot fire",car,INNER,SLANT,cmu,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",hot,18,"Pulled up in a hot car, with a hot fire",hot,INNER,REPEAT,spelling,HIGH,N
+Bust,18,"Pulled up in a hot car, with a hot fire",car,19,And we hot-boxing a hot car,boxing,INNER,ASSONANCE,vowel,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",car,19,And we hot-boxing a hot car,car,INNER,REPEAT,spelling,HIGH,N
+Bust,18,"Pulled up in a hot car, with a hot fire",car,19,And we hot-boxing a hot car,hot,INNER,SLANT,cmu,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",hot,19,And we hot-boxing a hot car,boxing,INNER,ASSONANCE,vowel,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",hot,19,And we hot-boxing a hot car,car,INNER,SLANT,cmu,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",hot,19,And we hot-boxing a hot car,hot,INNER,REPEAT,spelling,HIGH,N
+Bust,18,"Pulled up in a hot car, with a hot fire",fire,20,"Hop out of the hot car, with the hot ice",ice,END,ASSONANCE,vowel,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",car,20,"Hop out of the hot car, with the hot ice",car,INNER,REPEAT,spelling,HIGH,N
+Bust,18,"Pulled up in a hot car, with a hot fire",car,20,"Hop out of the hot car, with the hot ice",Hop,INNER,SLANT,cmu,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",car,20,"Hop out of the hot car, with the hot ice",hot,INNER,SLANT,cmu,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",hot,20,"Hop out of the hot car, with the hot ice",car,INNER,SLANT,cmu,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",hot,20,"Hop out of the hot car, with the hot ice",Hop,INNER,SLANT,cmu,MED,Y
+Bust,18,"Pulled up in a hot car, with a hot fire",hot,20,"Hop out of the hot car, with the hot ice",hot,INNER,REPEAT,spelling,HIGH,N
+Bust,19,And we hot-boxing a hot car,boxing,19,And we hot-boxing a hot car,car,INNER,ASSONANCE,vowel,MED,Y
+Bust,19,And we hot-boxing a hot car,boxing,19,And we hot-boxing a hot car,hot,INNER,ASSONANCE,vowel,MED,Y
+Bust,19,And we hot-boxing a hot car,hot,19,And we hot-boxing a hot car,boxing,INNER,ASSONANCE,vowel,MED,Y
+Bust,19,And we hot-boxing a hot car,hot,19,And we hot-boxing a hot car,car,INNER,SLANT,cmu,MED,Y
+Bust,19,And we hot-boxing a hot car,hot,19,And we hot-boxing a hot car,hot,INNER,REPEAT,spelling,HIGH,N
+Bust,19,And we hot-boxing a hot car,boxing,20,"Hop out of the hot car, with the hot ice",car,INNER,ASSONANCE,vowel,MED,Y
+Bust,19,And we hot-boxing a hot car,boxing,20,"Hop out of the hot car, with the hot ice",Hop,INNER,ASSONANCE,vowel,MED,Y
+Bust,19,And we hot-boxing a hot car,boxing,20,"Hop out of the hot car, with the hot ice",hot,INNER,ASSONANCE,vowel,MED,Y
+Bust,19,And we hot-boxing a hot car,car,20,"Hop out of the hot car, with the hot ice",car,INNER,REPEAT,spelling,HIGH,N
+Bust,19,And we hot-boxing a hot car,car,20,"Hop out of the hot car, with the hot ice",Hop,INNER,SLANT,cmu,MED,Y
+Bust,19,And we hot-boxing a hot car,car,20,"Hop out of the hot car, with the hot ice",hot,INNER,SLANT,cmu,MED,Y
+Bust,19,And we hot-boxing a hot car,hot,20,"Hop out of the hot car, with the hot ice",car,INNER,SLANT,cmu,MED,Y
+Bust,19,And we hot-boxing a hot car,hot,20,"Hop out of the hot car, with the hot ice",Hop,INNER,SLANT,cmu,MED,Y
+Bust,19,And we hot-boxing a hot car,hot,20,"Hop out of the hot car, with the hot ice",hot,INNER,REPEAT,spelling,HIGH,N
+Bust,19,And we hot-boxing a hot car,car,21,And I gotta thank my mama,mama,END,SLANT,cmu,MED,Y
+Bust,19,And we hot-boxing a hot car,boxing,21,And I gotta thank my mama,gotta,INNER,ASSONANCE,vowel,MED,Y
+Bust,19,And we hot-boxing a hot car,boxing,21,And I gotta thank my mama,mama,INNER,ASSONANCE,vowel,MED,Y
+Bust,19,And we hot-boxing a hot car,car,21,And I gotta thank my mama,gotta,INNER,SLANT,cmu,MED,Y
+Bust,19,And we hot-boxing a hot car,hot,21,And I gotta thank my mama,gotta,INNER,SLANT,cmu,MED,Y
+Bust,19,And we hot-boxing a hot car,hot,21,And I gotta thank my mama,mama,INNER,SLANT,cmu,MED,Y
+Bust,19,And we hot-boxing a hot car,car,23,And you know I gotta thank God too,God,END,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",car,20,"Hop out of the hot car, with the hot ice",hot,INNER,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",Hop,20,"Hop out of the hot car, with the hot ice",car,INNER,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",Hop,20,"Hop out of the hot car, with the hot ice",hot,INNER,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",hot,20,"Hop out of the hot car, with the hot ice",car,INNER,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",hot,20,"Hop out of the hot car, with the hot ice",hot,INNER,REPEAT,spelling,HIGH,N
+Bust,20,"Hop out of the hot car, with the hot ice",car,21,And I gotta thank my mama,gotta,INNER,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",car,21,And I gotta thank my mama,mama,INNER,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",Hop,21,And I gotta thank my mama,gotta,INNER,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",Hop,21,And I gotta thank my mama,mama,INNER,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",hot,21,And I gotta thank my mama,gotta,INNER,SLANT,cmu,MED,Y
+Bust,20,"Hop out of the hot car, with the hot ice",hot,21,And I gotta thank my mama,mama,INNER,SLANT,cmu,MED,Y
+Bust,21,And I gotta thank my mama,gotta,21,And I gotta thank my mama,mama,INNER,SLANT,cmu,MED,Y
+Bust,21,And I gotta thank my mama,mama,23,And you know I gotta thank God too,God,END,SLANT,cmu,MED,Y
+Bust,21,And I gotta thank my mama,gotta,23,And you know I gotta thank God too,God,INNER,SLANT,cmu,MED,Y
+Bust,21,And I gotta thank my mama,gotta,23,And you know I gotta thank God too,gotta,INNER,REPEAT,spelling,HIGH,N
+Bust,21,And I gotta thank my mama,mama,23,And you know I gotta thank God too,gotta,INNER,SLANT,cmu,MED,Y
+Bust,21,And I gotta thank my mama,thank,23,And you know I gotta thank God too,thank,INNER,REPEAT,spelling,HIGH,N
+Bust,22,Countin' all this motherfuckin' green,all,24,Only thing I'm worryin' bout is waking up in the morning,morning,INNER,ASSONANCE,vowel,MED,Y
+Bust,22,Countin' all this motherfuckin' green,Countin,24,Only thing I'm worryin' bout is waking up in the morning,bout,INNER,ASSONANCE,vowel,MED,Y
+Bust,23,And you know I gotta thank God too,gotta,23,And you know I gotta thank God too,God,INNER,SLANT,cmu,MED,Y
+Bust,23,And you know I gotta thank God too,know,24,Only thing I'm worryin' bout is waking up in the morning,Only,INNER,ASSONANCE,vowel,MED,Y
+Bust,23,And you know I gotta thank God too,thank,24,Only thing I'm worryin' bout is waking up in the morning,thing,INNER,SLANT,spelling,LOW,Y
+Bust,24,Only thing I'm worryin' bout is waking up in the morning,waking,25,Fuck what they say they gon' do,say,INNER,ASSONANCE,vowel,MED,Y
+Bust,25,Fuck what they say they gon' do,Fuck,25,Fuck what they say they gon' do,what,INNER,SLANT,cmu,MED,Y
+Bust,25,Fuck what they say they gon' do,Fuck,26,"Bust on a nigga, (Try me, we bust)",Bust,INNER,ASSONANCE,vowel,MED,Y
+Bust,25,Fuck what they say they gon' do,what,26,"Bust on a nigga, (Try me, we bust)",Bust,INNER,SLANT,cmu,MED,Y
+Bust,25,Fuck what they say they gon' do,Fuck,27,"Bust on-Bust on a nigga (Try me, we bust)",Bust,INNER,ASSONANCE,vowel,MED,Y
+Bust,25,Fuck what they say they gon' do,what,27,"Bust on-Bust on a nigga (Try me, we bust)",Bust,INNER,SLANT,cmu,MED,Y
+Bust,26,"Bust on a nigga, (Try me, we bust)",nigga,27,"Bust on-Bust on a nigga (Try me, we bust)",nigga,END,REPEAT,spelling,HIGH,N
+Bust,26,"Bust on a nigga, (Try me, we bust)",Bust,27,"Bust on-Bust on a nigga (Try me, we bust)",Bust,INNER,REPEAT,spelling,HIGH,N
+Bust,26,"Bust on a nigga, (Try me, we bust)",Bust,28,Palms Itchin' I got money comin' I can feel it,comin,INNER,ASSONANCE,vowel,MED,Y
+Bust,26,"Bust on a nigga, (Try me, we bust)",Bust,28,Palms Itchin' I got money comin' I can feel it,money,INNER,ASSONANCE,vowel,MED,Y
+Bust,27,"Bust on-Bust on a nigga (Try me, we bust)",Bust,27,"Bust on-Bust on a nigga (Try me, we bust)",Bust,INNER,REPEAT,spelling,HIGH,N
+Bust,27,"Bust on-Bust on a nigga (Try me, we bust)",Bust,28,Palms Itchin' I got money comin' I can feel it,comin,INNER,ASSONANCE,vowel,MED,Y
+Bust,27,"Bust on-Bust on a nigga (Try me, we bust)",Bust,28,Palms Itchin' I got money comin' I can feel it,money,INNER,ASSONANCE,vowel,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,money,28,Palms Itchin' I got money comin' I can feel it,comin,INNER,SLANT,cmu,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,Palms,28,Palms Itchin' I got money comin' I can feel it,got,INNER,ASSONANCE,vowel,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,feel,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",conceal,INNER,PERFECT,cmu,HIGH,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,got,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",Glock,INNER,SLANT,cmu,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,Itchin,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",chill,INNER,ASSONANCE,vowel,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,Itchin,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",grill,INNER,ASSONANCE,vowel,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,Itchin,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",kill,INNER,ASSONANCE,vowel,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,Palms,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",Glock,INNER,ASSONANCE,vowel,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,feel,30,"Off the shoulders, hands quicker than a poker dealer",dealer,END,SLANT,cmu,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,can,30,"Off the shoulders, hands quicker than a poker dealer",hands,INNER,ASSONANCE,vowel,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,Itchin,30,"Off the shoulders, hands quicker than a poker dealer",quicker,INNER,ASSONANCE,vowel,MED,Y
+Bust,28,Palms Itchin' I got money comin' I can feel it,feel,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",Squealer,END,SLANT,spelling,LOW,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",grill,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",chill,INNER,PERFECT,cmu,HIGH,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",kill,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",chill,INNER,PERFECT,cmu,HIGH,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",kill,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",grill,INNER,PERFECT,cmu,HIGH,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",chill,30,"Off the shoulders, hands quicker than a poker dealer",quicker,INNER,SLANT,cmu,MED,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",conceal,30,"Off the shoulders, hands quicker than a poker dealer",dealer,INNER,SLANT,cmu,MED,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",grill,30,"Off the shoulders, hands quicker than a poker dealer",quicker,INNER,SLANT,cmu,MED,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",kill,30,"Off the shoulders, hands quicker than a poker dealer",quicker,INNER,SLANT,cmu,MED,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",chill,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",Pig,INNER,SLANT,cmu,MED,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",conceal,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",E,INNER,ASSONANCE,vowel,MED,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",conceal,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",Squealer,INNER,SLANT,spelling,LOW,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",grill,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",Pig,INNER,SLANT,cmu,MED,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",hatin,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",K,INNER,ASSONANCE,vowel,MED,Y
+Bust,29,"Glock, conceal it, hatin', kill it, ice grill, chill it",kill,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",Pig,INNER,SLANT,cmu,MED,Y
+Bust,30,"Off the shoulders, hands quicker than a poker dealer",shoulders,30,"Off the shoulders, hands quicker than a poker dealer",poker,INNER,ASSONANCE,vowel,MED,Y
+Bust,30,"Off the shoulders, hands quicker than a poker dealer",dealer,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",Squealer,END,MULTI,multi,MED,Y
+Bust,30,"Off the shoulders, hands quicker than a poker dealer",dealer,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",E,INNER,ASSONANCE,vowel,MED,Y
+Bust,30,"Off the shoulders, hands quicker than a poker dealer",poker,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",shotta,INNER,SLANT,spelling,LOW,Y
+Bust,30,"Off the shoulders, hands quicker than a poker dealer",quicker,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",Pig,INNER,SLANT,cmu,MED,Y
+Bust,30,"Off the shoulders, hands quicker than a poker dealer",hands,32,"I don't dance but my diamonds do, watch 'em twerk",dance,INNER,SLANT,cmu,MED,Y
+Bust,30,"Off the shoulders, hands quicker than a poker dealer",poker,32,"I don't dance but my diamonds do, watch 'em twerk",don't,INNER,ASSONANCE,vowel,MED,Y
+Bust,30,"Off the shoulders, hands quicker than a poker dealer",shoulders,32,"I don't dance but my diamonds do, watch 'em twerk",don't,INNER,ASSONANCE,vowel,MED,Y
+Bust,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",E,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",E,INNER,REPEAT,spelling,HIGH,N
+Bust,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",shotta,32,"I don't dance but my diamonds do, watch 'em twerk",don't,INNER,SLANT,spelling,LOW,Y
+Bust,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",E,33,"VVS, g-code, poppin like a perc",g,INNER,PERFECT,cmu,HIGH,Y
+Bust,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",shotta,33,"VVS, g-code, poppin like a perc",code,INNER,SLANT,spelling,LOW,Y
+Bust,31,"Shout out to my shotta E.E A.K.A ""The Pig Squealer""",Squealer,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Keef,END,SLANT,spelling,LOW,Y
+Bust,32,"I don't dance but my diamonds do, watch 'em twerk",twerk,33,"VVS, g-code, poppin like a perc",perc,END,PERFECT,spelling,MED,Y
+Bust,32,"I don't dance but my diamonds do, watch 'em twerk",diamonds,33,"VVS, g-code, poppin like a perc",like,INNER,ASSONANCE,vowel,MED,Y
+Bust,32,"I don't dance but my diamonds do, watch 'em twerk",don't,33,"VVS, g-code, poppin like a perc",code,INNER,ASSONANCE,vowel,MED,Y
+Bust,32,"I don't dance but my diamonds do, watch 'em twerk",watch,33,"VVS, g-code, poppin like a perc",poppin,INNER,ASSONANCE,vowel,MED,Y
+Bust,32,"I don't dance but my diamonds do, watch 'em twerk",diamonds,34,"Diamonds flicker, fuck a swisher",Diamonds,INNER,REPEAT,spelling,HIGH,N
+Bust,33,"VVS, g-code, poppin like a perc",like,34,"Diamonds flicker, fuck a swisher",Diamonds,INNER,ASSONANCE,vowel,MED,Y
+Bust,33,"VVS, g-code, poppin like a perc",code,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Glo,INNER,ASSONANCE,vowel,MED,Y
+Bust,33,"VVS, g-code, poppin like a perc",code,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",gold,INNER,SLANT,cmu,MED,Y
+Bust,33,"VVS, g-code, poppin like a perc",code,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Roll,INNER,SLANT,cmu,MED,Y
+Bust,33,"VVS, g-code, poppin like a perc",g,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Chief,INNER,ASSONANCE,vowel,MED,Y
+Bust,33,"VVS, g-code, poppin like a perc",g,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Keef,INNER,ASSONANCE,vowel,MED,Y
+Bust,33,"VVS, g-code, poppin like a perc",g,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",leaf,INNER,ASSONANCE,vowel,MED,Y
+Bust,34,"Diamonds flicker, fuck a swisher",flicker,34,"Diamonds flicker, fuck a swisher",swisher,INNER,SLANT,cmu,MED,Y
+Bust,34,"Diamonds flicker, fuck a swisher",flicker,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Swishahouse,INNER,ASSONANCE,vowel,LOW,N
+Bust,34,"Diamonds flicker, fuck a swisher",swisher,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Swishahouse,INNER,ASSONANCE,vowel,LOW,N
+Bust,34,"Diamonds flicker, fuck a swisher",Diamonds,36,"Satellite supplied, wrap it with a Keith coat",Satellite,INNER,ASSONANCE,vowel,MED,Y
+Bust,34,"Diamonds flicker, fuck a swisher",Diamonds,36,"Satellite supplied, wrap it with a Keith coat",supplied,INNER,ASSONANCE,vowel,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Chief,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Keef,INNER,PERFECT,cmu,HIGH,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",gold,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Glo,INNER,ASSONANCE,vowel,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",leaf,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Chief,INNER,PERFECT,cmu,HIGH,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",leaf,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Keef,INNER,PERFECT,cmu,HIGH,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Paul,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Wall,INNER,PERFECT,cmu,HIGH,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Roll,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Glo,INNER,ASSONANCE,vowel,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Roll,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",gold,INNER,SLANT,cmu,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Chief,36,"Satellite supplied, wrap it with a Keith coat",Keith,INNER,SLANT,cmu,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Gang,36,"Satellite supplied, wrap it with a Keith coat",wrap,INNER,SLANT,cmu,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Glo,36,"Satellite supplied, wrap it with a Keith coat",coat,INNER,ASSONANCE,vowel,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",gold,36,"Satellite supplied, wrap it with a Keith coat",coat,INNER,ASSONANCE,vowel,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Keef,36,"Satellite supplied, wrap it with a Keith coat",Keith,INNER,SLANT,cmu,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",leaf,36,"Satellite supplied, wrap it with a Keith coat",Keith,INNER,SLANT,cmu,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Roll,36,"Satellite supplied, wrap it with a Keith coat",coat,INNER,SLANT,cmu,MED,Y
+Bust,35,"Roll up a gold leaf Swishahouse, Glo Gang, Paul Wall, Chief Keef",Gang,37,"Wet snake drippin' like the Candy on a 64""",Candy,INNER,ASSONANCE,vowel,MED,Y
+Bust,36,"Satellite supplied, wrap it with a Keith coat",Satellite,36,"Satellite supplied, wrap it with a Keith coat",supplied,INNER,SLANT,cmu,MED,Y
+Bust,36,"Satellite supplied, wrap it with a Keith coat",Satellite,37,"Wet snake drippin' like the Candy on a 64""",like,INNER,SLANT,cmu,MED,Y
+Bust,36,"Satellite supplied, wrap it with a Keith coat",supplied,37,"Wet snake drippin' like the Candy on a 64""",like,INNER,SLANT,cmu,MED,Y
+Bust,36,"Satellite supplied, wrap it with a Keith coat",wrap,37,"Wet snake drippin' like the Candy on a 64""",Candy,INNER,ASSONANCE,vowel,MED,Y
+Bust,36,"Satellite supplied, wrap it with a Keith coat",coat,38,"H-town and Chi-town screamin', free Sergio",Sergio,END,ASSONANCE,vowel,MED,Y
+Bust,36,"Satellite supplied, wrap it with a Keith coat",Keith,38,"H-town and Chi-town screamin', free Sergio",free,INNER,ASSONANCE,vowel,MED,Y
+Bust,36,"Satellite supplied, wrap it with a Keith coat",Keith,38,"H-town and Chi-town screamin', free Sergio",screamin,INNER,ASSONANCE,vowel,MED,Y
+Bust,36,"Satellite supplied, wrap it with a Keith coat",Satellite,38,"H-town and Chi-town screamin', free Sergio",Chi,INNER,ASSONANCE,vowel,MED,Y
+Bust,36,"Satellite supplied, wrap it with a Keith coat",supplied,38,"H-town and Chi-town screamin', free Sergio",Chi,INNER,ASSONANCE,vowel,MED,Y
+Bust,37,"Wet snake drippin' like the Candy on a 64""",like,38,"H-town and Chi-town screamin', free Sergio",Chi,INNER,ASSONANCE,vowel,MED,Y
+Bust,37,"Wet snake drippin' like the Candy on a 64""",snake,38,"H-town and Chi-town screamin', free Sergio",H,INNER,SLANT,cmu,MED,Y
+Bust,37,"Wet snake drippin' like the Candy on a 64""",Candy,39,"Ride the beat, go bang, 44",bang,END,ASSONANCE,vowel,MED,Y
+Bust,37,"Wet snake drippin' like the Candy on a 64""",like,39,"Ride the beat, go bang, 44",Ride,INNER,SLANT,cmu,MED,Y
+Bust,37,"Wet snake drippin' like the Candy on a 64""",Candy,41,TV Johnny got me clearer that's why yo bitch starin',starin,END,ASSONANCE,vowel,MED,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",screamin,38,"H-town and Chi-town screamin', free Sergio",free,INNER,ASSONANCE,vowel,MED,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",town,38,"H-town and Chi-town screamin', free Sergio",town,INNER,REPEAT,spelling,HIGH,N
+Bust,38,"H-town and Chi-town screamin', free Sergio",Chi,39,"Ride the beat, go bang, 44",Ride,INNER,ASSONANCE,vowel,MED,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",free,39,"Ride the beat, go bang, 44",beat,INNER,ASSONANCE,vowel,MED,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",screamin,39,"Ride the beat, go bang, 44",beat,INNER,ASSONANCE,vowel,MED,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",Sergio,39,"Ride the beat, go bang, 44",go,INNER,PERFECT,cmu,HIGH,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",Chi,40,"Ear lobes icey, diamonds dancin' like Ciara",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",Chi,40,"Ear lobes icey, diamonds dancin' like Ciara",like,INNER,ASSONANCE,vowel,MED,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",free,40,"Ear lobes icey, diamonds dancin' like Ciara",Ear,INNER,ASSONANCE,vowel,MED,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",screamin,40,"Ear lobes icey, diamonds dancin' like Ciara",Ear,INNER,ASSONANCE,vowel,MED,Y
+Bust,38,"H-town and Chi-town screamin', free Sergio",Sergio,40,"Ear lobes icey, diamonds dancin' like Ciara",lobes,INNER,ASSONANCE,vowel,MED,Y
+Bust,39,"Ride the beat, go bang, 44",bang,40,"Ear lobes icey, diamonds dancin' like Ciara",dancin,INNER,ASSONANCE,vowel,MED,Y
+Bust,39,"Ride the beat, go bang, 44",beat,40,"Ear lobes icey, diamonds dancin' like Ciara",Ear,INNER,SLANT,cmu,MED,Y
+Bust,39,"Ride the beat, go bang, 44",go,40,"Ear lobes icey, diamonds dancin' like Ciara",lobes,INNER,ASSONANCE,vowel,MED,Y
+Bust,39,"Ride the beat, go bang, 44",Ride,40,"Ear lobes icey, diamonds dancin' like Ciara",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Bust,39,"Ride the beat, go bang, 44",Ride,40,"Ear lobes icey, diamonds dancin' like Ciara",like,INNER,SLANT,cmu,MED,Y
+Bust,39,"Ride the beat, go bang, 44",bang,41,TV Johnny got me clearer that's why yo bitch starin',starin,END,ASSONANCE,vowel,MED,Y
+Bust,39,"Ride the beat, go bang, 44",beat,41,TV Johnny got me clearer that's why yo bitch starin',TV,INNER,ASSONANCE,vowel,MED,Y
+Bust,39,"Ride the beat, go bang, 44",Ride,41,TV Johnny got me clearer that's why yo bitch starin',why,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",diamonds,40,"Ear lobes icey, diamonds dancin' like Ciara",like,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",icey,40,"Ear lobes icey, diamonds dancin' like Ciara",Ciara,INNER,SLANT,spelling,LOW,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",Ciara,41,TV Johnny got me clearer that's why yo bitch starin',bitch,INNER,SLANT,spelling,LOW,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",Ciara,41,TV Johnny got me clearer that's why yo bitch starin',clearer,INNER,SLANT,spelling,LOW,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",dancin,41,TV Johnny got me clearer that's why yo bitch starin',starin,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",diamonds,41,TV Johnny got me clearer that's why yo bitch starin',why,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",Ear,41,TV Johnny got me clearer that's why yo bitch starin',TV,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",icey,41,TV Johnny got me clearer that's why yo bitch starin',bitch,INNER,SLANT,spelling,LOW,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",icey,41,TV Johnny got me clearer that's why yo bitch starin',clearer,INNER,SLANT,spelling,LOW,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",like,41,TV Johnny got me clearer that's why yo bitch starin',why,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",Ciara,42,"Yo grill don't shine like my grill, Why is you comparin'?",grill,INNER,SLANT,spelling,LOW,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",diamonds,42,"Yo grill don't shine like my grill, Why is you comparin'?",like,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",diamonds,42,"Yo grill don't shine like my grill, Why is you comparin'?",shine,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",diamonds,42,"Yo grill don't shine like my grill, Why is you comparin'?",Why,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",icey,42,"Yo grill don't shine like my grill, Why is you comparin'?",grill,INNER,SLANT,spelling,LOW,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",like,42,"Yo grill don't shine like my grill, Why is you comparin'?",like,INNER,REPEAT,spelling,HIGH,N
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",like,42,"Yo grill don't shine like my grill, Why is you comparin'?",shine,INNER,SLANT,cmu,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",like,42,"Yo grill don't shine like my grill, Why is you comparin'?",Why,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",lobes,42,"Yo grill don't shine like my grill, Why is you comparin'?",don't,INNER,ASSONANCE,vowel,MED,Y
+Bust,40,"Ear lobes icey, diamonds dancin' like Ciara",Ciara,44,I don't sell no syrup I just sip it,sip,END,SLANT,spelling,LOW,Y
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',clearer,41,TV Johnny got me clearer that's why yo bitch starin',bitch,INNER,SLANT,cmu,MED,Y
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',Johnny,41,TV Johnny got me clearer that's why yo bitch starin',got,INNER,SLANT,cmu,MED,Y
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',bitch,42,"Yo grill don't shine like my grill, Why is you comparin'?",grill,INNER,SLANT,cmu,MED,Y
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',clearer,42,"Yo grill don't shine like my grill, Why is you comparin'?",grill,INNER,SLANT,cmu,MED,Y
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',why,42,"Yo grill don't shine like my grill, Why is you comparin'?",like,INNER,ASSONANCE,vowel,MED,Y
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',why,42,"Yo grill don't shine like my grill, Why is you comparin'?",shine,INNER,ASSONANCE,vowel,MED,Y
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',why,42,"Yo grill don't shine like my grill, Why is you comparin'?",Why,INNER,REPEAT,spelling,HIGH,N
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',got,43,"I got diamonds twerkin' all on me, 312 to the 713",got,INNER,REPEAT,spelling,HIGH,N
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',Johnny,43,"I got diamonds twerkin' all on me, 312 to the 713",got,INNER,SLANT,cmu,MED,Y
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',starin,43,"I got diamonds twerkin' all on me, 312 to the 713",twerkin,INNER,PERFECT,spelling,MED,Y
+Bust,41,TV Johnny got me clearer that's why yo bitch starin',why,43,"I got diamonds twerkin' all on me, 312 to the 713",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",grill,42,"Yo grill don't shine like my grill, Why is you comparin'?",grill,INNER,REPEAT,spelling,HIGH,N
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",like,42,"Yo grill don't shine like my grill, Why is you comparin'?",Why,INNER,ASSONANCE,vowel,MED,Y
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",shine,42,"Yo grill don't shine like my grill, Why is you comparin'?",like,INNER,SLANT,cmu,MED,Y
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",shine,42,"Yo grill don't shine like my grill, Why is you comparin'?",Why,INNER,ASSONANCE,vowel,MED,Y
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",like,43,"I got diamonds twerkin' all on me, 312 to the 713",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",shine,43,"I got diamonds twerkin' all on me, 312 to the 713",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",Why,43,"I got diamonds twerkin' all on me, 312 to the 713",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",comparin,44,I don't sell no syrup I just sip it,sell,INNER,ASSONANCE,vowel,MED,Y
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",don't,44,I don't sell no syrup I just sip it,don't,INNER,REPEAT,spelling,HIGH,N
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",don't,44,I don't sell no syrup I just sip it,no,INNER,ASSONANCE,vowel,MED,Y
+Bust,42,"Yo grill don't shine like my grill, Why is you comparin'?",grill,44,I don't sell no syrup I just sip it,sip,INNER,SLANT,cmu,MED,Y
+Bust,44,I don't sell no syrup I just sip it,don't,44,I don't sell no syrup I just sip it,no,INNER,ASSONANCE,vowel,MED,Y
+Bust,44,I don't sell no syrup I just sip it,sip,45,I go get new jewelry then I flip it,flip,END,PERFECT,cmu,HIGH,Y
+Bust,44,I don't sell no syrup I just sip it,don't,45,I go get new jewelry then I flip it,go,INNER,ASSONANCE,vowel,MED,Y
+Bust,44,I don't sell no syrup I just sip it,no,45,I go get new jewelry then I flip it,go,INNER,PERFECT,cmu,HIGH,Y
+Bust,44,I don't sell no syrup I just sip it,sell,45,I go get new jewelry then I flip it,get,INNER,SLANT,cmu,MED,Y
+Bust,44,I don't sell no syrup I just sip it,sip,46,I stay well connected this ain't Cricket,Cricket,END,SLANT,cmu,MED,Y
+Bust,44,I don't sell no syrup I just sip it,sell,46,I stay well connected this ain't Cricket,connected,INNER,ASSONANCE,vowel,MED,Y
+Bust,44,I don't sell no syrup I just sip it,sell,46,I stay well connected this ain't Cricket,well,INNER,PERFECT,cmu,HIGH,Y
+Bust,44,I don't sell no syrup I just sip it,sip,47,They know my name from Chicago to Mississippi,Mississippi,END,SLANT,cmu,MED,Y
+Bust,45,I go get new jewelry then I flip it,new,45,I go get new jewelry then I flip it,jewelry,INNER,ASSONANCE,vowel,MED,Y
+Bust,45,I go get new jewelry then I flip it,flip,46,I stay well connected this ain't Cricket,Cricket,END,SLANT,cmu,MED,Y
+Bust,45,I go get new jewelry then I flip it,get,46,I stay well connected this ain't Cricket,connected,INNER,ASSONANCE,vowel,MED,Y
+Bust,45,I go get new jewelry then I flip it,get,46,I stay well connected this ain't Cricket,well,INNER,SLANT,cmu,MED,Y
+Bust,45,I go get new jewelry then I flip it,flip,47,They know my name from Chicago to Mississippi,Mississippi,END,SLANT,cmu,MED,Y
+Bust,45,I go get new jewelry then I flip it,go,47,They know my name from Chicago to Mississippi,Chicago,INNER,PERFECT,cmu,HIGH,Y
+Bust,45,I go get new jewelry then I flip it,go,47,They know my name from Chicago to Mississippi,know,INNER,PERFECT,cmu,HIGH,Y
+Bust,46,I stay well connected this ain't Cricket,stay,46,I stay well connected this ain't Cricket,ain't,INNER,ASSONANCE,vowel,MED,Y
+Bust,46,I stay well connected this ain't Cricket,well,46,I stay well connected this ain't Cricket,connected,INNER,ASSONANCE,vowel,MED,Y
+Bust,46,I stay well connected this ain't Cricket,Cricket,47,They know my name from Chicago to Mississippi,Mississippi,END,SLANT,cmu,MED,Y
+Bust,46,I stay well connected this ain't Cricket,ain't,47,They know my name from Chicago to Mississippi,name,INNER,ASSONANCE,vowel,MED,Y
+Bust,46,I stay well connected this ain't Cricket,stay,47,They know my name from Chicago to Mississippi,name,INNER,ASSONANCE,vowel,MED,Y
+Bust,46,I stay well connected this ain't Cricket,ain't,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",ain't,INNER,REPEAT,spelling,HIGH,N
+Bust,46,I stay well connected this ain't Cricket,Cricket,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",bitch,INNER,ASSONANCE,vowel,MED,Y
+Bust,46,I stay well connected this ain't Cricket,stay,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",ain't,INNER,ASSONANCE,vowel,MED,Y
+Bust,47,They know my name from Chicago to Mississippi,know,47,They know my name from Chicago to Mississippi,Chicago,INNER,PERFECT,cmu,HIGH,Y
+Bust,47,They know my name from Chicago to Mississippi,Mississippi,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",bitch,INNER,SLANT,cmu,MED,Y
+Bust,47,They know my name from Chicago to Mississippi,name,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",ain't,INNER,ASSONANCE,vowel,MED,Y
+Bust,47,They know my name from Chicago to Mississippi,Chicago,49,My pockets flooded like my blazer it's fully loaded,loaded,INNER,ASSONANCE,vowel,MED,Y
+Bust,47,They know my name from Chicago to Mississippi,know,49,My pockets flooded like my blazer it's fully loaded,loaded,INNER,ASSONANCE,vowel,MED,Y
+Bust,47,They know my name from Chicago to Mississippi,name,49,My pockets flooded like my blazer it's fully loaded,blazer,INNER,SLANT,cmu,MED,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",bag,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",bag,INNER,REPEAT,spelling,HIGH,N
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",bag,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",brag,INNER,PERFECT,cmu,HIGH,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",bag,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",pants,INNER,ASSONANCE,vowel,MED,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",bag,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",sag,INNER,PERFECT,cmu,HIGH,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",brag,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",pants,INNER,ASSONANCE,vowel,MED,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",brag,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",sag,INNER,PERFECT,cmu,HIGH,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",got,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",Got,INNER,REPEAT,spelling,HIGH,N
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",pants,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",sag,INNER,ASSONANCE,vowel,MED,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",ain't,49,My pockets flooded like my blazer it's fully loaded,blazer,INNER,ASSONANCE,vowel,MED,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",got,49,My pockets flooded like my blazer it's fully loaded,pockets,INNER,ASSONANCE,vowel,MED,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",why,49,My pockets flooded like my blazer it's fully loaded,like,INNER,ASSONANCE,vowel,MED,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",ain't,50,"Turn in yo lane my lights start glowin', that's promoted",lane,INNER,SLANT,cmu,MED,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",got,50,"Turn in yo lane my lights start glowin', that's promoted",start,INNER,SLANT,cmu,MED,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",tryna,50,"Turn in yo lane my lights start glowin', that's promoted",Turn,INNER,SLANT,spelling,LOW,Y
+Bust,48,"I just got a bag Got my bitch a new bag, and I ain't tryna brag, but that's why my pants sag",why,50,"Turn in yo lane my lights start glowin', that's promoted",lights,INNER,ASSONANCE,vowel,MED,Y
+Bust,49,My pockets flooded like my blazer it's fully loaded,loaded,50,"Turn in yo lane my lights start glowin', that's promoted",promoted,END,SLANT,cmu,MED,Y
+Bust,49,My pockets flooded like my blazer it's fully loaded,blazer,50,"Turn in yo lane my lights start glowin', that's promoted",lane,INNER,SLANT,cmu,MED,Y
+Bust,49,My pockets flooded like my blazer it's fully loaded,like,50,"Turn in yo lane my lights start glowin', that's promoted",lights,INNER,ASSONANCE,vowel,MED,Y
+Bust,49,My pockets flooded like my blazer it's fully loaded,loaded,50,"Turn in yo lane my lights start glowin', that's promoted",glowin,INNER,ASSONANCE,vowel,MED,Y
+Bust,49,My pockets flooded like my blazer it's fully loaded,pockets,50,"Turn in yo lane my lights start glowin', that's promoted",start,INNER,ASSONANCE,vowel,MED,Y
+Bust,49,My pockets flooded like my blazer it's fully loaded,fully,51,"On my grill, I put them VVSs",put,INNER,SLANT,cmu,MED,Y
+Bust,50,"Turn in yo lane my lights start glowin', that's promoted",glowin,50,"Turn in yo lane my lights start glowin', that's promoted",promoted,INNER,ASSONANCE,vowel,MED,Y
+Bust,50,"Turn in yo lane my lights start glowin', that's promoted",lane,52,"I put 20 racks up in my teeth cause, forget the days, them lights was off",days,INNER,SLANT,cmu,MED,Y
+Bust,50,"Turn in yo lane my lights start glowin', that's promoted",lights,52,"I put 20 racks up in my teeth cause, forget the days, them lights was off",lights,INNER,REPEAT,spelling,HIGH,N
+Bust,50,"Turn in yo lane my lights start glowin', that's promoted",start,52,"I put 20 racks up in my teeth cause, forget the days, them lights was off",cause,INNER,ASSONANCE,vowel,MED,Y
+Bust,51,"On my grill, I put them VVSs",put,52,"I put 20 racks up in my teeth cause, forget the days, them lights was off",put,INNER,REPEAT,spelling,HIGH,N

@@ -1,0 +1,382 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Pressure,1,I just bought a coupe about a week ago,about,2,Live by die bout it,bout,INNER,PERFECT,cmu,HIGH,Y
+Pressure,1,I just bought a coupe about a week ago,ago,3,You know what this is,know,INNER,PERFECT,cmu,HIGH,Y
+Pressure,1,I just bought a coupe about a week ago,ago,4,"Look, I just bought a coupe about a week ago (Pressure)",ago,END,REPEAT,spelling,HIGH,N
+Pressure,1,I just bought a coupe about a week ago,ago,5,"See straight through them diamonds, VVS's hoe (Pressure)",hoe,END,PERFECT,cmu,HIGH,Y
+Pressure,2,Live by die bout it,by,2,Live by die bout it,die,INNER,PERFECT,cmu,HIGH,Y
+Pressure,2,Live by die bout it,Live,2,Live by die bout it,by,INNER,ASSONANCE,vowel,MED,Y
+Pressure,2,Live by die bout it,Live,2,Live by die bout it,die,INNER,ASSONANCE,vowel,MED,Y
+Pressure,2,Live by die bout it,bout,4,"Look, I just bought a coupe about a week ago (Pressure)",about,INNER,PERFECT,cmu,HIGH,Y
+Pressure,3,You know what this is,know,4,"Look, I just bought a coupe about a week ago (Pressure)",ago,INNER,PERFECT,cmu,HIGH,Y
+Pressure,3,You know what this is,know,5,"See straight through them diamonds, VVS's hoe (Pressure)",hoe,INNER,PERFECT,cmu,HIGH,Y
+Pressure,4,"Look, I just bought a coupe about a week ago (Pressure)",ago,5,"See straight through them diamonds, VVS's hoe (Pressure)",hoe,END,PERFECT,cmu,HIGH,Y
+Pressure,4,"Look, I just bought a coupe about a week ago (Pressure)",coupe,5,"See straight through them diamonds, VVS's hoe (Pressure)",through,INNER,ASSONANCE,vowel,MED,Y
+Pressure,4,"Look, I just bought a coupe about a week ago (Pressure)",week,5,"See straight through them diamonds, VVS's hoe (Pressure)",See,INNER,ASSONANCE,vowel,MED,Y
+Pressure,5,"See straight through them diamonds, VVS's hoe (Pressure)",straight,7,That pressure fuck around and make your partner snitch (Pressure),make,INNER,SLANT,cmu,MED,Y
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),some,6,That pressure had them niggas on some sucker shit (Pressure),sucker,INNER,SLANT,cmu,MED,Y
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),shit,7,That pressure fuck around and make your partner snitch (Pressure),snitch,END,SLANT,cmu,MED,Y
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),pressure,7,That pressure fuck around and make your partner snitch (Pressure),pressure,INNER,REPEAT,spelling,HIGH,N
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),some,7,That pressure fuck around and make your partner snitch (Pressure),fuck,INNER,SLANT,cmu,MED,Y
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),sucker,7,That pressure fuck around and make your partner snitch (Pressure),fuck,INNER,SLANT,cmu,MED,Y
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),niggas,8,Probably on some shit you niggas never be,niggas,INNER,REPEAT,spelling,HIGH,N
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),pressure,8,Probably on some shit you niggas never be,never,INNER,SLANT,cmu,MED,Y
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),shit,8,Probably on some shit you niggas never be,shit,INNER,REPEAT,spelling,HIGH,N
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),some,8,Probably on some shit you niggas never be,some,INNER,REPEAT,spelling,HIGH,N
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),sucker,8,Probably on some shit you niggas never be,some,INNER,SLANT,cmu,MED,Y
+Pressure,6,That pressure had them niggas on some sucker shit (Pressure),shit,10,"Better pay attention, best be watchin' where ya goin' bitch",bitch,END,SLANT,cmu,MED,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),fuck,8,Probably on some shit you niggas never be,some,INNER,SLANT,cmu,MED,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),pressure,8,Probably on some shit you niggas never be,never,INNER,SLANT,cmu,MED,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),snitch,8,Probably on some shit you niggas never be,shit,INNER,SLANT,cmu,MED,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),around,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",'round,INNER,PERFECT,cmu,HIGH,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),fuck,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",fuck,INNER,REPEAT,spelling,HIGH,N
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),fuck,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",what,INNER,SLANT,cmu,MED,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),make,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",Stay,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),partner,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",conscience,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",tellin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),snitch,10,"Better pay attention, best be watchin' where ya goin' bitch",bitch,END,PERFECT,cmu,HIGH,Y
+Pressure,7,That pressure fuck around and make your partner snitch (Pressure),snitch,11,'Cause when ya get in my lane that's when I get to towin' shit,shit,END,SLANT,cmu,MED,Y
+Pressure,8,Probably on some shit you niggas never be,never,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",tellin,END,ASSONANCE,vowel,MED,Y
+Pressure,8,Probably on some shit you niggas never be,some,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",fuck,INNER,SLANT,cmu,MED,Y
+Pressure,8,Probably on some shit you niggas never be,some,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",what,INNER,SLANT,cmu,MED,Y
+Pressure,8,Probably on some shit you niggas never be,never,10,"Better pay attention, best be watchin' where ya goin' bitch",attention,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,Probably on some shit you niggas never be,never,10,"Better pay attention, best be watchin' where ya goin' bitch",best,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,Probably on some shit you niggas never be,never,10,"Better pay attention, best be watchin' where ya goin' bitch",Better,INNER,SLANT,cmu,MED,Y
+Pressure,8,Probably on some shit you niggas never be,never,10,"Better pay attention, best be watchin' where ya goin' bitch",where,INNER,SLANT,cmu,MED,Y
+Pressure,8,Probably on some shit you niggas never be,shit,10,"Better pay attention, best be watchin' where ya goin' bitch",bitch,INNER,SLANT,cmu,MED,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",fuck,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",what,INNER,SLANT,cmu,MED,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",conscience,10,"Better pay attention, best be watchin' where ya goin' bitch",watchin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",Stay,10,"Better pay attention, best be watchin' where ya goin' bitch",pay,INNER,PERFECT,cmu,HIGH,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",tellin,10,"Better pay attention, best be watchin' where ya goin' bitch",attention,INNER,ASSONANCE,vowel,MED,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",tellin,10,"Better pay attention, best be watchin' where ya goin' bitch",best,INNER,ASSONANCE,vowel,MED,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",tellin,10,"Better pay attention, best be watchin' where ya goin' bitch",Better,INNER,ASSONANCE,vowel,MED,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",tellin,10,"Better pay attention, best be watchin' where ya goin' bitch",where,INNER,ASSONANCE,vowel,MED,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",Stay,11,'Cause when ya get in my lane that's when I get to towin' shit,lane,INNER,ASSONANCE,vowel,MED,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",tellin,11,'Cause when ya get in my lane that's when I get to towin' shit,get,INNER,ASSONANCE,vowel,MED,Y
+Pressure,9,"Stay the fuck from 'round them, that's what my conscience tellin' me",tellin,11,'Cause when ya get in my lane that's when I get to towin' shit,when,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",attention,10,"Better pay attention, best be watchin' where ya goin' bitch",best,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",attention,10,"Better pay attention, best be watchin' where ya goin' bitch",where,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",best,10,"Better pay attention, best be watchin' where ya goin' bitch",where,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",Better,10,"Better pay attention, best be watchin' where ya goin' bitch",attention,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",Better,10,"Better pay attention, best be watchin' where ya goin' bitch",best,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",Better,10,"Better pay attention, best be watchin' where ya goin' bitch",where,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",bitch,11,'Cause when ya get in my lane that's when I get to towin' shit,shit,END,SLANT,cmu,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",attention,11,'Cause when ya get in my lane that's when I get to towin' shit,get,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",attention,11,'Cause when ya get in my lane that's when I get to towin' shit,when,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",best,11,'Cause when ya get in my lane that's when I get to towin' shit,get,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",best,11,'Cause when ya get in my lane that's when I get to towin' shit,when,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",Better,11,'Cause when ya get in my lane that's when I get to towin' shit,get,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",Better,11,'Cause when ya get in my lane that's when I get to towin' shit,when,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",pay,11,'Cause when ya get in my lane that's when I get to towin' shit,lane,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",where,11,'Cause when ya get in my lane that's when I get to towin' shit,get,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",where,11,'Cause when ya get in my lane that's when I get to towin' shit,when,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",bitch,12,"I done been through so much, I seen so much fuck shit",shit,END,SLANT,cmu,MED,Y
+Pressure,10,"Better pay attention, best be watchin' where ya goin' bitch",bitch,13,"When you talk down on me, I don't give a fuck bitch",bitch,END,REPEAT,spelling,HIGH,N
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,get,11,'Cause when ya get in my lane that's when I get to towin' shit,get,INNER,REPEAT,spelling,HIGH,N
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,get,11,'Cause when ya get in my lane that's when I get to towin' shit,when,INNER,SLANT,cmu,MED,Y
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,when,11,'Cause when ya get in my lane that's when I get to towin' shit,get,INNER,SLANT,cmu,MED,Y
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,when,11,'Cause when ya get in my lane that's when I get to towin' shit,when,INNER,REPEAT,spelling,HIGH,N
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,shit,12,"I done been through so much, I seen so much fuck shit",shit,END,REPEAT,spelling,HIGH,N
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,shit,13,"When you talk down on me, I don't give a fuck bitch",bitch,END,SLANT,cmu,MED,Y
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,get,13,"When you talk down on me, I don't give a fuck bitch",When,INNER,SLANT,cmu,MED,Y
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,shit,13,"When you talk down on me, I don't give a fuck bitch",give,INNER,SLANT,cmu,MED,Y
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,towin,13,"When you talk down on me, I don't give a fuck bitch",don't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,11,'Cause when ya get in my lane that's when I get to towin' shit,when,13,"When you talk down on me, I don't give a fuck bitch",When,INNER,REPEAT,spelling,HIGH,N
+Pressure,12,"I done been through so much, I seen so much fuck shit",done,12,"I done been through so much, I seen so much fuck shit",fuck,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",done,12,"I done been through so much, I seen so much fuck shit",much,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",much,12,"I done been through so much, I seen so much fuck shit",fuck,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",much,12,"I done been through so much, I seen so much fuck shit",much,INNER,REPEAT,spelling,HIGH,N
+Pressure,12,"I done been through so much, I seen so much fuck shit",shit,13,"When you talk down on me, I don't give a fuck bitch",bitch,END,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",done,13,"When you talk down on me, I don't give a fuck bitch",fuck,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",fuck,13,"When you talk down on me, I don't give a fuck bitch",fuck,INNER,REPEAT,spelling,HIGH,N
+Pressure,12,"I done been through so much, I seen so much fuck shit",much,13,"When you talk down on me, I don't give a fuck bitch",fuck,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",shit,13,"When you talk down on me, I don't give a fuck bitch",give,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",done,14,"I just want some more paper, I just need some more haters",some,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",fuck,14,"I just want some more paper, I just need some more haters",some,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",much,14,"I just want some more paper, I just need some more haters",some,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I done been through so much, I seen so much fuck shit",seen,14,"I just want some more paper, I just need some more haters",need,INNER,SLANT,cmu,MED,Y
+Pressure,13,"When you talk down on me, I don't give a fuck bitch",give,13,"When you talk down on me, I don't give a fuck bitch",bitch,INNER,SLANT,cmu,MED,Y
+Pressure,13,"When you talk down on me, I don't give a fuck bitch",fuck,14,"I just want some more paper, I just need some more haters",some,INNER,SLANT,cmu,MED,Y
+Pressure,13,"When you talk down on me, I don't give a fuck bitch",talk,14,"I just want some more paper, I just need some more haters",more,INNER,SLANT,cmu,MED,Y
+Pressure,13,"When you talk down on me, I don't give a fuck bitch",bitch,15,"I just bought a new crib, I don't want no neighbors",crib,INNER,SLANT,cmu,MED,Y
+Pressure,13,"When you talk down on me, I don't give a fuck bitch",don't,15,"I just bought a new crib, I don't want no neighbors",don't,INNER,REPEAT,spelling,HIGH,N
+Pressure,13,"When you talk down on me, I don't give a fuck bitch",don't,15,"I just bought a new crib, I don't want no neighbors",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"When you talk down on me, I don't give a fuck bitch",give,15,"I just bought a new crib, I don't want no neighbors",crib,INNER,SLANT,cmu,MED,Y
+Pressure,14,"I just want some more paper, I just need some more haters",more,14,"I just want some more paper, I just need some more haters",more,INNER,REPEAT,spelling,HIGH,N
+Pressure,14,"I just want some more paper, I just need some more haters",paper,14,"I just want some more paper, I just need some more haters",haters,INNER,ASSONANCE,vowel,MED,Y
+Pressure,14,"I just want some more paper, I just need some more haters",some,14,"I just want some more paper, I just need some more haters",some,INNER,REPEAT,spelling,HIGH,N
+Pressure,14,"I just want some more paper, I just need some more haters",haters,15,"I just bought a new crib, I don't want no neighbors",neighbors,END,SLANT,cmu,MED,Y
+Pressure,14,"I just want some more paper, I just need some more haters",paper,15,"I just bought a new crib, I don't want no neighbors",neighbors,INNER,ASSONANCE,vowel,MED,Y
+Pressure,14,"I just want some more paper, I just need some more haters",want,15,"I just bought a new crib, I don't want no neighbors",bought,INNER,SLANT,cmu,MED,Y
+Pressure,14,"I just want some more paper, I just need some more haters",want,15,"I just bought a new crib, I don't want no neighbors",want,INNER,REPEAT,spelling,HIGH,N
+Pressure,14,"I just want some more paper, I just need some more haters",need,16,"Guess I'm anti-social, I don't want no new friends",anti,INNER,ASSONANCE,vowel,MED,Y
+Pressure,14,"I just want some more paper, I just need some more haters",want,16,"Guess I'm anti-social, I don't want no new friends",want,INNER,REPEAT,spelling,HIGH,N
+Pressure,15,"I just bought a new crib, I don't want no neighbors",bought,15,"I just bought a new crib, I don't want no neighbors",want,INNER,SLANT,cmu,MED,Y
+Pressure,15,"I just bought a new crib, I don't want no neighbors",don't,15,"I just bought a new crib, I don't want no neighbors",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,15,"I just bought a new crib, I don't want no neighbors",bought,16,"Guess I'm anti-social, I don't want no new friends",want,INNER,SLANT,cmu,MED,Y
+Pressure,15,"I just bought a new crib, I don't want no neighbors",don't,16,"Guess I'm anti-social, I don't want no new friends",don't,INNER,REPEAT,spelling,HIGH,N
+Pressure,15,"I just bought a new crib, I don't want no neighbors",don't,16,"Guess I'm anti-social, I don't want no new friends",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,15,"I just bought a new crib, I don't want no neighbors",don't,16,"Guess I'm anti-social, I don't want no new friends",social,INNER,ASSONANCE,vowel,MED,Y
+Pressure,15,"I just bought a new crib, I don't want no neighbors",new,16,"Guess I'm anti-social, I don't want no new friends",new,INNER,REPEAT,spelling,HIGH,N
+Pressure,15,"I just bought a new crib, I don't want no neighbors",no,16,"Guess I'm anti-social, I don't want no new friends",don't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,15,"I just bought a new crib, I don't want no neighbors",no,16,"Guess I'm anti-social, I don't want no new friends",no,INNER,REPEAT,spelling,HIGH,N
+Pressure,15,"I just bought a new crib, I don't want no neighbors",no,16,"Guess I'm anti-social, I don't want no new friends",social,INNER,ASSONANCE,vowel,MED,Y
+Pressure,15,"I just bought a new crib, I don't want no neighbors",want,16,"Guess I'm anti-social, I don't want no new friends",want,INNER,REPEAT,spelling,HIGH,N
+Pressure,15,"I just bought a new crib, I don't want no neighbors",neighbors,17,"Y'all waitin' for handouts, Y'all niggas ain't men",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,15,"I just bought a new crib, I don't want no neighbors",neighbors,17,"Y'all waitin' for handouts, Y'all niggas ain't men",waitin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",don't,16,"Guess I'm anti-social, I don't want no new friends",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",Guess,16,"Guess I'm anti-social, I don't want no new friends",friends,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",social,16,"Guess I'm anti-social, I don't want no new friends",don't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",social,16,"Guess I'm anti-social, I don't want no new friends",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",friends,17,"Y'all waitin' for handouts, Y'all niggas ain't men",men,END,ASSONANCE,vowel,MED,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",anti,17,"Y'all waitin' for handouts, Y'all niggas ain't men",ain't,INNER,SLANT,spelling,LOW,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",Guess,17,"Y'all waitin' for handouts, Y'all niggas ain't men",men,INNER,SLANT,cmu,MED,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",friends,18,Pressure make ya dawg straight flip-flop,Pressure,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",Guess,18,Pressure make ya dawg straight flip-flop,Pressure,INNER,SLANT,cmu,MED,Y
+Pressure,16,"Guess I'm anti-social, I don't want no new friends",want,18,Pressure make ya dawg straight flip-flop,flop,INNER,ASSONANCE,vowel,MED,Y
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",waitin,17,"Y'all waitin' for handouts, Y'all niggas ain't men",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",Y'all,17,"Y'all waitin' for handouts, Y'all niggas ain't men",Y'all,INNER,REPEAT,spelling,HIGH,N
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",ain't,18,Pressure make ya dawg straight flip-flop,make,INNER,ASSONANCE,vowel,MED,Y
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",ain't,18,Pressure make ya dawg straight flip-flop,straight,INNER,SLANT,cmu,MED,Y
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",men,18,Pressure make ya dawg straight flip-flop,Pressure,INNER,SLANT,cmu,MED,Y
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",waitin,18,Pressure make ya dawg straight flip-flop,make,INNER,ASSONANCE,vowel,MED,Y
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",waitin,18,Pressure make ya dawg straight flip-flop,straight,INNER,SLANT,cmu,MED,Y
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",Y'all,18,Pressure make ya dawg straight flip-flop,dawg,INNER,SLANT,spelling,LOW,Y
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",men,19,Pressure have a nigga wanna hit ya for ya wristwatch,Pressure,INNER,SLANT,cmu,MED,Y
+Pressure,17,"Y'all waitin' for handouts, Y'all niggas ain't men",niggas,19,Pressure have a nigga wanna hit ya for ya wristwatch,nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,18,Pressure make ya dawg straight flip-flop,flip,18,Pressure make ya dawg straight flip-flop,flop,INNER,SLANT,spelling,LOW,Y
+Pressure,18,Pressure make ya dawg straight flip-flop,make,18,Pressure make ya dawg straight flip-flop,straight,INNER,SLANT,cmu,MED,Y
+Pressure,18,Pressure make ya dawg straight flip-flop,flop,19,Pressure have a nigga wanna hit ya for ya wristwatch,wristwatch,END,SLANT,cmu,MED,Y
+Pressure,18,Pressure make ya dawg straight flip-flop,flip,19,Pressure have a nigga wanna hit ya for ya wristwatch,hit,INNER,SLANT,cmu,MED,Y
+Pressure,18,Pressure make ya dawg straight flip-flop,flip,19,Pressure have a nigga wanna hit ya for ya wristwatch,nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,18,Pressure make ya dawg straight flip-flop,flop,19,Pressure have a nigga wanna hit ya for ya wristwatch,wanna,INNER,SLANT,cmu,MED,Y
+Pressure,18,Pressure make ya dawg straight flip-flop,Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,Pressure,INNER,REPEAT,spelling,HIGH,N
+Pressure,18,Pressure make ya dawg straight flip-flop,flip,20,"Screamin' old scrub ass nigga, fake love ass nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,18,Pressure make ya dawg straight flip-flop,make,20,"Screamin' old scrub ass nigga, fake love ass nigga",fake,INNER,PERFECT,cmu,HIGH,Y
+Pressure,18,Pressure make ya dawg straight flip-flop,straight,20,"Screamin' old scrub ass nigga, fake love ass nigga",fake,INNER,SLANT,cmu,MED,Y
+Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,nigga,19,Pressure have a nigga wanna hit ya for ya wristwatch,hit,INNER,SLANT,spelling,LOW,Y
+Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,wanna,19,Pressure have a nigga wanna hit ya for ya wristwatch,wristwatch,INNER,SLANT,cmu,MED,Y
+Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,have,20,"Screamin' old scrub ass nigga, fake love ass nigga",ass,INNER,SLANT,cmu,MED,Y
+Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,hit,20,"Screamin' old scrub ass nigga, fake love ass nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,nigga,20,"Screamin' old scrub ass nigga, fake love ass nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,have,21,"Every time I be grindin', you in the club ass nigga",ass,INNER,SLANT,cmu,MED,Y
+Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,hit,21,"Every time I be grindin', you in the club ass nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,nigga,21,"Every time I be grindin', you in the club ass nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Pressure,19,Pressure have a nigga wanna hit ya for ya wristwatch,Pressure,21,"Every time I be grindin', you in the club ass nigga",Every,INNER,SLANT,cmu,MED,Y
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",ass,20,"Screamin' old scrub ass nigga, fake love ass nigga",ass,INNER,REPEAT,spelling,HIGH,N
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",nigga,20,"Screamin' old scrub ass nigga, fake love ass nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",scrub,20,"Screamin' old scrub ass nigga, fake love ass nigga",love,INNER,SLANT,cmu,MED,Y
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",nigga,21,"Every time I be grindin', you in the club ass nigga",nigga,END,REPEAT,spelling,HIGH,N
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",ass,21,"Every time I be grindin', you in the club ass nigga",ass,INNER,REPEAT,spelling,HIGH,N
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",love,21,"Every time I be grindin', you in the club ass nigga",club,INNER,SLANT,cmu,MED,Y
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",nigga,21,"Every time I be grindin', you in the club ass nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",scrub,21,"Every time I be grindin', you in the club ass nigga",club,INNER,PERFECT,cmu,HIGH,Y
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",fake,22,That insane chain in that white Mulsanne,chain,INNER,SLANT,cmu,MED,Y
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",fake,22,That insane chain in that white Mulsanne,insane,INNER,SLANT,cmu,MED,Y
+Pressure,20,"Screamin' old scrub ass nigga, fake love ass nigga",love,22,That insane chain in that white Mulsanne,Mulsanne,INNER,ASSONANCE,vowel,LOW,N
+Pressure,21,"Every time I be grindin', you in the club ass nigga",time,21,"Every time I be grindin', you in the club ass nigga",grindin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Every time I be grindin', you in the club ass nigga",grindin,22,That insane chain in that white Mulsanne,white,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Every time I be grindin', you in the club ass nigga",time,22,That insane chain in that white Mulsanne,white,INNER,SLANT,cmu,MED,Y
+Pressure,21,"Every time I be grindin', you in the club ass nigga",grindin,23,"Shit off on my pinky, lookin' like a mood ring",like,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Every time I be grindin', you in the club ass nigga",nigga,23,"Shit off on my pinky, lookin' like a mood ring",Shit,INNER,SLANT,spelling,LOW,Y
+Pressure,21,"Every time I be grindin', you in the club ass nigga",time,23,"Shit off on my pinky, lookin' like a mood ring",like,INNER,SLANT,cmu,MED,Y
+Pressure,22,That insane chain in that white Mulsanne,insane,22,That insane chain in that white Mulsanne,chain,INNER,PERFECT,cmu,HIGH,Y
+Pressure,22,That insane chain in that white Mulsanne,white,23,"Shit off on my pinky, lookin' like a mood ring",like,INNER,SLANT,cmu,MED,Y
+Pressure,22,That insane chain in that white Mulsanne,chain,24,"Aye, that pressure affect every nigga a different way",way,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,That insane chain in that white Mulsanne,insane,24,"Aye, that pressure affect every nigga a different way",way,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",pinky,23,"Shit off on my pinky, lookin' like a mood ring",ring,INNER,SLANT,cmu,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",Shit,23,"Shit off on my pinky, lookin' like a mood ring",pinky,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",Shit,23,"Shit off on my pinky, lookin' like a mood ring",ring,INNER,SLANT,cmu,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",pinky,24,"Aye, that pressure affect every nigga a different way",different,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",ring,24,"Aye, that pressure affect every nigga a different way",different,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",Shit,24,"Aye, that pressure affect every nigga a different way",different,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",Shit,24,"Aye, that pressure affect every nigga a different way",nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",mood,25,How he shoot you in your ass and you still in his face?,shoot,INNER,SLANT,cmu,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",pinky,25,How he shoot you in your ass and you still in his face?,still,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",ring,25,How he shoot you in your ass and you still in his face?,still,INNER,SLANT,cmu,MED,Y
+Pressure,23,"Shit off on my pinky, lookin' like a mood ring",Shit,25,How he shoot you in your ass and you still in his face?,still,INNER,SLANT,cmu,MED,Y
+Pressure,24,"Aye, that pressure affect every nigga a different way",affect,24,"Aye, that pressure affect every nigga a different way",every,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Aye, that pressure affect every nigga a different way",pressure,24,"Aye, that pressure affect every nigga a different way",affect,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Aye, that pressure affect every nigga a different way",pressure,24,"Aye, that pressure affect every nigga a different way",every,INNER,SLANT,cmu,MED,Y
+Pressure,24,"Aye, that pressure affect every nigga a different way",way,25,How he shoot you in your ass and you still in his face?,face,END,ASSONANCE,vowel,MED,Y
+Pressure,24,"Aye, that pressure affect every nigga a different way",different,25,How he shoot you in your ass and you still in his face?,still,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Aye, that pressure affect every nigga a different way",different,26,I shot by a nigga feet but I ain't hit the Js,hit,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Aye, that pressure affect every nigga a different way",nigga,26,I shot by a nigga feet but I ain't hit the Js,hit,INNER,SLANT,spelling,LOW,Y
+Pressure,24,"Aye, that pressure affect every nigga a different way",nigga,26,I shot by a nigga feet but I ain't hit the Js,nigga,INNER,REPEAT,spelling,HIGH,N
+Pressure,24,"Aye, that pressure affect every nigga a different way",way,26,I shot by a nigga feet but I ain't hit the Js,ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Aye, that pressure affect every nigga a different way",way,27,"Just tryna scam, if I was him I'd have killed me anyway",anyway,END,PERFECT,cmu,HIGH,Y
+Pressure,25,How he shoot you in your ass and you still in his face?,face,26,I shot by a nigga feet but I ain't hit the Js,ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,How he shoot you in your ass and you still in his face?,still,26,I shot by a nigga feet but I ain't hit the Js,hit,INNER,SLANT,cmu,MED,Y
+Pressure,25,How he shoot you in your ass and you still in his face?,face,27,"Just tryna scam, if I was him I'd have killed me anyway",anyway,END,ASSONANCE,vowel,MED,Y
+Pressure,25,How he shoot you in your ass and you still in his face?,ass,27,"Just tryna scam, if I was him I'd have killed me anyway",have,INNER,SLANT,cmu,MED,Y
+Pressure,25,How he shoot you in your ass and you still in his face?,ass,27,"Just tryna scam, if I was him I'd have killed me anyway",scam,INNER,SLANT,cmu,MED,Y
+Pressure,25,How he shoot you in your ass and you still in his face?,still,27,"Just tryna scam, if I was him I'd have killed me anyway",him,INNER,SLANT,cmu,MED,Y
+Pressure,25,How he shoot you in your ass and you still in his face?,still,27,"Just tryna scam, if I was him I'd have killed me anyway",killed,INNER,SLANT,cmu,MED,Y
+Pressure,26,I shot by a nigga feet but I ain't hit the Js,nigga,26,I shot by a nigga feet but I ain't hit the Js,hit,INNER,SLANT,spelling,LOW,Y
+Pressure,26,I shot by a nigga feet but I ain't hit the Js,ain't,27,"Just tryna scam, if I was him I'd have killed me anyway",anyway,INNER,ASSONANCE,vowel,MED,Y
+Pressure,26,I shot by a nigga feet but I ain't hit the Js,feet,27,"Just tryna scam, if I was him I'd have killed me anyway",tryna,INNER,SLANT,spelling,LOW,Y
+Pressure,26,I shot by a nigga feet but I ain't hit the Js,hit,27,"Just tryna scam, if I was him I'd have killed me anyway",him,INNER,SLANT,cmu,MED,Y
+Pressure,26,I shot by a nigga feet but I ain't hit the Js,hit,27,"Just tryna scam, if I was him I'd have killed me anyway",killed,INNER,ASSONANCE,vowel,MED,Y
+Pressure,26,I shot by a nigga feet but I ain't hit the Js,feet,28,"Only reason I did the verse, 'cause I fuck with Jeezy",Jeezy,INNER,SLANT,spelling,LOW,Y
+Pressure,26,I shot by a nigga feet but I ain't hit the Js,feet,28,"Only reason I did the verse, 'cause I fuck with Jeezy",reason,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"Just tryna scam, if I was him I'd have killed me anyway",him,27,"Just tryna scam, if I was him I'd have killed me anyway",killed,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"Just tryna scam, if I was him I'd have killed me anyway",scam,27,"Just tryna scam, if I was him I'd have killed me anyway",have,INNER,SLANT,cmu,MED,Y
+Pressure,27,"Just tryna scam, if I was him I'd have killed me anyway",tryna,28,"Only reason I did the verse, 'cause I fuck with Jeezy",Jeezy,INNER,SLANT,spelling,LOW,Y
+Pressure,27,"Just tryna scam, if I was him I'd have killed me anyway",tryna,28,"Only reason I did the verse, 'cause I fuck with Jeezy",reason,INNER,SLANT,spelling,LOW,Y
+Pressure,27,"Just tryna scam, if I was him I'd have killed me anyway",anyway,29,"Let me out of jail, last year that nigga flew and see me",jail,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"Just tryna scam, if I was him I'd have killed me anyway",have,29,"Let me out of jail, last year that nigga flew and see me",last,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"Just tryna scam, if I was him I'd have killed me anyway",him,29,"Let me out of jail, last year that nigga flew and see me",year,INNER,SLANT,cmu,MED,Y
+Pressure,27,"Just tryna scam, if I was him I'd have killed me anyway",killed,29,"Let me out of jail, last year that nigga flew and see me",year,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"Just tryna scam, if I was him I'd have killed me anyway",scam,29,"Let me out of jail, last year that nigga flew and see me",last,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Only reason I did the verse, 'cause I fuck with Jeezy",Only,28,"Only reason I did the verse, 'cause I fuck with Jeezy",Jeezy,INNER,ASSONANCE,vowel,LOW,N
+Pressure,28,"Only reason I did the verse, 'cause I fuck with Jeezy",reason,28,"Only reason I did the verse, 'cause I fuck with Jeezy",Jeezy,INNER,SLANT,spelling,LOW,Y
+Pressure,28,"Only reason I did the verse, 'cause I fuck with Jeezy",Jeezy,29,"Let me out of jail, last year that nigga flew and see me",see,END,ASSONANCE,vowel,LOW,N
+Pressure,28,"Only reason I did the verse, 'cause I fuck with Jeezy",reason,29,"Let me out of jail, last year that nigga flew and see me",see,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Only reason I did the verse, 'cause I fuck with Jeezy",fuck,30,"Yup, VV gleamin', teeth blingin'",Yup,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Only reason I did the verse, 'cause I fuck with Jeezy",Jeezy,30,"Yup, VV gleamin', teeth blingin'",teeth,INNER,SLANT,spelling,LOW,Y
+Pressure,28,"Only reason I did the verse, 'cause I fuck with Jeezy",reason,30,"Yup, VV gleamin', teeth blingin'",gleamin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Only reason I did the verse, 'cause I fuck with Jeezy",reason,30,"Yup, VV gleamin', teeth blingin'",teeth,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Let me out of jail, last year that nigga flew and see me",see,30,"Yup, VV gleamin', teeth blingin'",gleamin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Let me out of jail, last year that nigga flew and see me",see,30,"Yup, VV gleamin', teeth blingin'",teeth,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Let me out of jail, last year that nigga flew and see me",see,31,"I'm so icy, I'm freezin', no fan ceilin'",ceilin,END,ASSONANCE,vowel,MED,Y
+Pressure,29,"Let me out of jail, last year that nigga flew and see me",last,31,"I'm so icy, I'm freezin', no fan ceilin'",fan,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Let me out of jail, last year that nigga flew and see me",see,31,"I'm so icy, I'm freezin', no fan ceilin'",freezin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Let me out of jail, last year that nigga flew and see me",see,32,She gimme head like a nerdy but she failed at readin',readin,END,ASSONANCE,vowel,MED,Y
+Pressure,29,"Let me out of jail, last year that nigga flew and see me",see,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",demon,END,ASSONANCE,vowel,MED,Y
+Pressure,30,"Yup, VV gleamin', teeth blingin'",gleamin,30,"Yup, VV gleamin', teeth blingin'",teeth,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Yup, VV gleamin', teeth blingin'",gleamin,31,"I'm so icy, I'm freezin', no fan ceilin'",ceilin,INNER,SLANT,cmu,MED,Y
+Pressure,30,"Yup, VV gleamin', teeth blingin'",gleamin,31,"I'm so icy, I'm freezin', no fan ceilin'",freezin,INNER,SLANT,cmu,MED,Y
+Pressure,30,"Yup, VV gleamin', teeth blingin'",teeth,31,"I'm so icy, I'm freezin', no fan ceilin'",ceilin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Yup, VV gleamin', teeth blingin'",teeth,31,"I'm so icy, I'm freezin', no fan ceilin'",freezin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Yup, VV gleamin', teeth blingin'",blingin,32,She gimme head like a nerdy but she failed at readin',gimme,INNER,SLANT,spelling,LOW,Y
+Pressure,30,"Yup, VV gleamin', teeth blingin'",gleamin,32,She gimme head like a nerdy but she failed at readin',readin,INNER,SLANT,cmu,MED,Y
+Pressure,30,"Yup, VV gleamin', teeth blingin'",teeth,32,She gimme head like a nerdy but she failed at readin',readin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,31,"I'm so icy, I'm freezin', no fan ceilin'",freezin,31,"I'm so icy, I'm freezin', no fan ceilin'",ceilin,INNER,SLANT,cmu,MED,Y
+Pressure,31,"I'm so icy, I'm freezin', no fan ceilin'",ceilin,32,She gimme head like a nerdy but she failed at readin',readin,END,SLANT,cmu,MED,Y
+Pressure,31,"I'm so icy, I'm freezin', no fan ceilin'",freezin,32,She gimme head like a nerdy but she failed at readin',readin,INNER,SLANT,cmu,MED,Y
+Pressure,31,"I'm so icy, I'm freezin', no fan ceilin'",icy,32,She gimme head like a nerdy but she failed at readin',like,INNER,SLANT,cmu,MED,Y
+Pressure,31,"I'm so icy, I'm freezin', no fan ceilin'",ceilin,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",demon,END,ASSONANCE,vowel,MED,Y
+Pressure,31,"I'm so icy, I'm freezin', no fan ceilin'",freezin,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",demon,INNER,ASSONANCE,vowel,MED,Y
+Pressure,31,"I'm so icy, I'm freezin', no fan ceilin'",ceilin,35,"Bullets be flying out my desert, eagle",eagle,END,ASSONANCE,vowel,MED,Y
+Pressure,32,She gimme head like a nerdy but she failed at readin',readin,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",demon,END,ASSONANCE,vowel,MED,Y
+Pressure,32,She gimme head like a nerdy but she failed at readin',gimme,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",I'ma,INNER,SLANT,spelling,LOW,Y
+Pressure,32,She gimme head like a nerdy but she failed at readin',nerdy,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",clergy,INNER,SLANT,cmu,MED,Y
+Pressure,32,She gimme head like a nerdy but she failed at readin',gimme,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",bring,INNER,SLANT,cmu,MED,Y
+Pressure,32,She gimme head like a nerdy but she failed at readin',head,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",forget,INNER,SLANT,cmu,MED,Y
+Pressure,32,She gimme head like a nerdy but she failed at readin',head,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",pressure,INNER,SLANT,cmu,MED,Y
+Pressure,32,She gimme head like a nerdy but she failed at readin',readin,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",pre,INNER,ASSONANCE,vowel,MED,Y
+Pressure,32,She gimme head like a nerdy but she failed at readin',readin,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",these,INNER,ASSONANCE,vowel,MED,Y
+Pressure,32,She gimme head like a nerdy but she failed at readin',readin,35,"Bullets be flying out my desert, eagle",eagle,END,ASSONANCE,vowel,MED,Y
+Pressure,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",demon,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",pre,INNER,ASSONANCE,vowel,MED,Y
+Pressure,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",demon,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",these,INNER,ASSONANCE,vowel,MED,Y
+Pressure,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",I'ma,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",bring,INNER,SLANT,spelling,LOW,Y
+Pressure,33,"I'm just hollerin' at my clergy, yeah, I'ma demon",demon,35,"Bullets be flying out my desert, eagle",eagle,END,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",pressure,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",forget,INNER,SLANT,cmu,MED,Y
+Pressure,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",these,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",pre,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",forget,35,"Bullets be flying out my desert, eagle",desert,INNER,SLANT,cmu,MED,Y
+Pressure,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",pre,35,"Bullets be flying out my desert, eagle",eagle,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",pressure,35,"Bullets be flying out my desert, eagle",desert,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",these,35,"Bullets be flying out my desert, eagle",eagle,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",forget,36,"Apply that pressure, bust a pipe (aye)",pressure,INNER,SLANT,cmu,MED,Y
+Pressure,34,"I'm 'bout to bring these niggas that pressure, forget the pre-nup",pressure,36,"Apply that pressure, bust a pipe (aye)",pressure,INNER,REPEAT,spelling,HIGH,N
+Pressure,35,"Bullets be flying out my desert, eagle",desert,36,"Apply that pressure, bust a pipe (aye)",pressure,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Bullets be flying out my desert, eagle",flying,36,"Apply that pressure, bust a pipe (aye)",Apply,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Bullets be flying out my desert, eagle",flying,36,"Apply that pressure, bust a pipe (aye)",pipe,INNER,SLANT,cmu,MED,Y
+Pressure,36,"Apply that pressure, bust a pipe (aye)",Apply,36,"Apply that pressure, bust a pipe (aye)",pipe,INNER,ASSONANCE,vowel,MED,Y
+Pressure,36,"Apply that pressure, bust a pipe (aye)",pipe,38,That Bentley coupe my favorite ride (aye),ride,END,SLANT,cmu,MED,Y
+Pressure,36,"Apply that pressure, bust a pipe (aye)",Apply,38,That Bentley coupe my favorite ride (aye),ride,INNER,ASSONANCE,vowel,MED,Y
+Pressure,36,"Apply that pressure, bust a pipe (aye)",pressure,38,That Bentley coupe my favorite ride (aye),Bentley,INNER,ASSONANCE,vowel,MED,Y
+Pressure,36,"Apply that pressure, bust a pipe (aye)",pipe,39,This ain't electric but my niggas slide (aye),slide,END,SLANT,cmu,MED,Y
+Pressure,38,That Bentley coupe my favorite ride (aye),ride,39,This ain't electric but my niggas slide (aye),slide,END,PERFECT,cmu,HIGH,Y
+Pressure,38,That Bentley coupe my favorite ride (aye),Bentley,39,This ain't electric but my niggas slide (aye),electric,INNER,ASSONANCE,vowel,MED,Y
+Pressure,38,That Bentley coupe my favorite ride (aye),favorite,39,This ain't electric but my niggas slide (aye),ain't,INNER,SLANT,cmu,MED,Y
+Pressure,38,That Bentley coupe my favorite ride (aye),Bentley,40,I just pressed a nigga 'bout a week ago,pressed,INNER,ASSONANCE,vowel,MED,Y
+Pressure,39,This ain't electric but my niggas slide (aye),electric,40,I just pressed a nigga 'bout a week ago,pressed,INNER,ASSONANCE,vowel,MED,Y
+Pressure,39,This ain't electric but my niggas slide (aye),niggas,40,I just pressed a nigga 'bout a week ago,nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,39,This ain't electric but my niggas slide (aye),ain't,41,"They say he talkin', I'm around, he never speakin' tho",say,INNER,ASSONANCE,vowel,MED,Y
+Pressure,39,This ain't electric but my niggas slide (aye),electric,41,"They say he talkin', I'm around, he never speakin' tho",never,INNER,ASSONANCE,vowel,MED,Y
+Pressure,40,I just pressed a nigga 'bout a week ago,ago,41,"They say he talkin', I'm around, he never speakin' tho",tho,END,PERFECT,cmu,HIGH,Y
+Pressure,40,I just pressed a nigga 'bout a week ago,'bout,41,"They say he talkin', I'm around, he never speakin' tho",around,INNER,ASSONANCE,vowel,MED,Y
+Pressure,40,I just pressed a nigga 'bout a week ago,pressed,41,"They say he talkin', I'm around, he never speakin' tho",never,INNER,ASSONANCE,vowel,MED,Y
+Pressure,40,I just pressed a nigga 'bout a week ago,week,41,"They say he talkin', I'm around, he never speakin' tho",speakin,INNER,SLANT,cmu,MED,Y
+Pressure,40,I just pressed a nigga 'bout a week ago,ago,42,"Just pull up on these niggas, that's they weakness, bro",bro,END,PERFECT,cmu,HIGH,Y
+Pressure,40,I just pressed a nigga 'bout a week ago,nigga,42,"Just pull up on these niggas, that's they weakness, bro",niggas,INNER,SLANT,spelling,LOW,Y
+Pressure,40,I just pressed a nigga 'bout a week ago,week,42,"Just pull up on these niggas, that's they weakness, bro",these,INNER,SLANT,cmu,MED,Y
+Pressure,40,I just pressed a nigga 'bout a week ago,week,42,"Just pull up on these niggas, that's they weakness, bro",weakness,INNER,ASSONANCE,vowel,MED,Y
+Pressure,40,I just pressed a nigga 'bout a week ago,ago,43,"I meet the ho, beat the ho, then need a ho",ho,END,PERFECT,cmu,HIGH,Y
+Pressure,41,"They say he talkin', I'm around, he never speakin' tho",tho,42,"Just pull up on these niggas, that's they weakness, bro",bro,END,PERFECT,cmu,HIGH,Y
+Pressure,41,"They say he talkin', I'm around, he never speakin' tho",speakin,42,"Just pull up on these niggas, that's they weakness, bro",these,INNER,ASSONANCE,vowel,MED,Y
+Pressure,41,"They say he talkin', I'm around, he never speakin' tho",speakin,42,"Just pull up on these niggas, that's they weakness, bro",weakness,INNER,ASSONANCE,vowel,MED,Y
+Pressure,41,"They say he talkin', I'm around, he never speakin' tho",tho,43,"I meet the ho, beat the ho, then need a ho",ho,END,PERFECT,cmu,HIGH,Y
+Pressure,41,"They say he talkin', I'm around, he never speakin' tho",speakin,43,"I meet the ho, beat the ho, then need a ho",beat,INNER,ASSONANCE,vowel,MED,Y
+Pressure,41,"They say he talkin', I'm around, he never speakin' tho",speakin,43,"I meet the ho, beat the ho, then need a ho",meet,INNER,ASSONANCE,vowel,MED,Y
+Pressure,41,"They say he talkin', I'm around, he never speakin' tho",speakin,43,"I meet the ho, beat the ho, then need a ho",need,INNER,ASSONANCE,vowel,MED,Y
+Pressure,41,"They say he talkin', I'm around, he never speakin' tho",tho,43,"I meet the ho, beat the ho, then need a ho",ho,INNER,PERFECT,cmu,HIGH,Y
+Pressure,42,"Just pull up on these niggas, that's they weakness, bro",these,42,"Just pull up on these niggas, that's they weakness, bro",weakness,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Just pull up on these niggas, that's they weakness, bro",bro,43,"I meet the ho, beat the ho, then need a ho",ho,END,PERFECT,cmu,HIGH,Y
+Pressure,42,"Just pull up on these niggas, that's they weakness, bro",bro,43,"I meet the ho, beat the ho, then need a ho",ho,INNER,PERFECT,cmu,HIGH,Y
+Pressure,42,"Just pull up on these niggas, that's they weakness, bro",these,43,"I meet the ho, beat the ho, then need a ho",beat,INNER,SLANT,cmu,MED,Y
+Pressure,42,"Just pull up on these niggas, that's they weakness, bro",these,43,"I meet the ho, beat the ho, then need a ho",meet,INNER,SLANT,cmu,MED,Y
+Pressure,42,"Just pull up on these niggas, that's they weakness, bro",these,43,"I meet the ho, beat the ho, then need a ho",need,INNER,SLANT,cmu,MED,Y
+Pressure,42,"Just pull up on these niggas, that's they weakness, bro",weakness,43,"I meet the ho, beat the ho, then need a ho",beat,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Just pull up on these niggas, that's they weakness, bro",weakness,43,"I meet the ho, beat the ho, then need a ho",meet,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Just pull up on these niggas, that's they weakness, bro",weakness,43,"I meet the ho, beat the ho, then need a ho",need,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"I meet the ho, beat the ho, then need a ho",beat,43,"I meet the ho, beat the ho, then need a ho",need,INNER,SLANT,cmu,MED,Y
+Pressure,43,"I meet the ho, beat the ho, then need a ho",ho,43,"I meet the ho, beat the ho, then need a ho",ho,INNER,REPEAT,spelling,HIGH,N
+Pressure,43,"I meet the ho, beat the ho, then need a ho",meet,43,"I meet the ho, beat the ho, then need a ho",beat,INNER,PERFECT,cmu,HIGH,Y
+Pressure,43,"I meet the ho, beat the ho, then need a ho",meet,43,"I meet the ho, beat the ho, then need a ho",need,INNER,SLANT,cmu,MED,Y
+Pressure,43,"I meet the ho, beat the ho, then need a ho",ho,45,"My niggas, get money, no, we can't help you",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",necklace,44,"She pressure, my necklace, is shinin', I'm special",special,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",pressure,44,"She pressure, my necklace, is shinin', I'm special",necklace,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",pressure,44,"She pressure, my necklace, is shinin', I'm special",special,INNER,SLANT,cmu,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",special,45,"My niggas, get money, no, we can't help you",help,END,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",necklace,45,"My niggas, get money, no, we can't help you",get,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",necklace,45,"My niggas, get money, no, we can't help you",help,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",pressure,45,"My niggas, get money, no, we can't help you",get,INNER,SLANT,cmu,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",pressure,45,"My niggas, get money, no, we can't help you",help,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",special,45,"My niggas, get money, no, we can't help you",get,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",necklace,46,"I'm selfish, I'm greedy, not needy",selfish,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",pressure,46,"I'm selfish, I'm greedy, not needy",selfish,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",special,46,"I'm selfish, I'm greedy, not needy",selfish,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"She pressure, my necklace, is shinin', I'm special",special,48,"Lay up, neglect her, eject her",eject,END,ASSONANCE,vowel,MED,Y
+Pressure,45,"My niggas, get money, no, we can't help you",get,45,"My niggas, get money, no, we can't help you",help,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"My niggas, get money, no, we can't help you",get,46,"I'm selfish, I'm greedy, not needy",selfish,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"My niggas, get money, no, we can't help you",help,46,"I'm selfish, I'm greedy, not needy",selfish,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"My niggas, get money, no, we can't help you",can't,47,"I'm gangsta, on bloods, this money shit come easy",gangsta,INNER,SLANT,cmu,MED,Y
+Pressure,45,"My niggas, get money, no, we can't help you",money,47,"I'm gangsta, on bloods, this money shit come easy",bloods,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"My niggas, get money, no, we can't help you",money,47,"I'm gangsta, on bloods, this money shit come easy",come,INNER,SLANT,cmu,MED,Y
+Pressure,45,"My niggas, get money, no, we can't help you",money,47,"I'm gangsta, on bloods, this money shit come easy",money,INNER,REPEAT,spelling,HIGH,N
+Pressure,45,"My niggas, get money, no, we can't help you",help,48,"Lay up, neglect her, eject her",eject,END,ASSONANCE,vowel,MED,Y
+Pressure,46,"I'm selfish, I'm greedy, not needy",greedy,46,"I'm selfish, I'm greedy, not needy",needy,INNER,MULTI,multi,HIGH,Y
+Pressure,46,"I'm selfish, I'm greedy, not needy",selfish greedy,46,"I'm selfish, I'm greedy, not needy",not needy,INNER,MULTI,multi,HIGH,Y
+Pressure,46,"I'm selfish, I'm greedy, not needy",needy,47,"I'm gangsta, on bloods, this money shit come easy",easy,END,SLANT,cmu,MED,Y
+Pressure,46,"I'm selfish, I'm greedy, not needy",greedy,47,"I'm gangsta, on bloods, this money shit come easy",easy,INNER,SLANT,cmu,MED,Y
+Pressure,46,"I'm selfish, I'm greedy, not needy",selfish,48,"Lay up, neglect her, eject her",eject,INNER,ASSONANCE,vowel,MED,Y
+Pressure,46,"I'm selfish, I'm greedy, not needy",selfish,48,"Lay up, neglect her, eject her",neglect,INNER,ASSONANCE,vowel,MED,Y
+Pressure,47,"I'm gangsta, on bloods, this money shit come easy",bloods,47,"I'm gangsta, on bloods, this money shit come easy",come,INNER,ASSONANCE,vowel,MED,Y
+Pressure,47,"I'm gangsta, on bloods, this money shit come easy",bloods,47,"I'm gangsta, on bloods, this money shit come easy",money,INNER,ASSONANCE,vowel,MED,Y
+Pressure,47,"I'm gangsta, on bloods, this money shit come easy",money,47,"I'm gangsta, on bloods, this money shit come easy",come,INNER,SLANT,cmu,MED,Y
+Pressure,48,"Lay up, neglect her, eject her",neglect,48,"Lay up, neglect her, eject her",eject,INNER,PERFECT,cmu,HIGH,Y
+Pressure,48,"Lay up, neglect her, eject her",eject,50,"The way you hop in my whip, I don't like your jester",jester,END,SLANT,cmu,MED,Y
+Pressure,48,"Lay up, neglect her, eject her",Lay,50,"The way you hop in my whip, I don't like your jester",way,INNER,PERFECT,cmu,HIGH,Y
+Pressure,48,"Lay up, neglect her, eject her",neglect,50,"The way you hop in my whip, I don't like your jester",jester,INNER,SLANT,cmu,MED,Y
+Pressure,48,"Lay up, neglect her, eject her",eject,51,"You gotta have class the whole year, not a semester",semester,END,SLANT,cmu,MED,Y
+Pressure,48,"Lay up, neglect her, eject her",eject,52,"Think before you speak, I got westside extras",extras,END,ASSONANCE,vowel,MED,Y
+Pressure,49,'Cause I don't do Rebeccas,don't,50,"The way you hop in my whip, I don't like your jester",don't,INNER,REPEAT,spelling,HIGH,N
+Pressure,49,'Cause I don't do Rebeccas,don't,51,"You gotta have class the whole year, not a semester",whole,INNER,ASSONANCE,vowel,MED,Y
+Pressure,49,'Cause I don't do Rebeccas,Rebeccas,51,"You gotta have class the whole year, not a semester",class,INNER,PERFECT,spelling,MED,Y
+Pressure,49,'Cause I don't do Rebeccas,Rebeccas,52,"Think before you speak, I got westside extras",extras,END,PERFECT,spelling,MED,Y
+Pressure,50,"The way you hop in my whip, I don't like your jester",jester,51,"You gotta have class the whole year, not a semester",semester,END,MULTI,multi,HIGH,Y
+Pressure,50,"The way you hop in my whip, I don't like your jester",don't,51,"You gotta have class the whole year, not a semester",whole,INNER,ASSONANCE,vowel,MED,Y
+Pressure,50,"The way you hop in my whip, I don't like your jester",hop,51,"You gotta have class the whole year, not a semester",gotta,INNER,SLANT,cmu,MED,Y
+Pressure,50,"The way you hop in my whip, I don't like your jester",hop,51,"You gotta have class the whole year, not a semester",not,INNER,SLANT,cmu,MED,Y
+Pressure,50,"The way you hop in my whip, I don't like your jester",whip,51,"You gotta have class the whole year, not a semester",year,INNER,SLANT,cmu,MED,Y
+Pressure,50,"The way you hop in my whip, I don't like your jester",jester,52,"Think before you speak, I got westside extras",extras,END,ASSONANCE,vowel,MED,Y
+Pressure,50,"The way you hop in my whip, I don't like your jester",hop,52,"Think before you speak, I got westside extras",got,INNER,SLANT,cmu,MED,Y
+Pressure,50,"The way you hop in my whip, I don't like your jester",like,52,"Think before you speak, I got westside extras",westside,INNER,SLANT,cmu,MED,Y
+Pressure,50,"The way you hop in my whip, I don't like your jester",whip,52,"Think before you speak, I got westside extras",Think,INNER,ASSONANCE,vowel,MED,Y
+Pressure,51,"You gotta have class the whole year, not a semester",gotta,51,"You gotta have class the whole year, not a semester",not,INNER,SLANT,cmu,MED,Y
+Pressure,51,"You gotta have class the whole year, not a semester",have,51,"You gotta have class the whole year, not a semester",class,INNER,SLANT,cmu,MED,Y
+Pressure,51,"You gotta have class the whole year, not a semester",semester,52,"Think before you speak, I got westside extras",extras,END,ASSONANCE,vowel,MED,Y
+Pressure,51,"You gotta have class the whole year, not a semester",gotta,52,"Think before you speak, I got westside extras",got,INNER,SLANT,cmu,MED,Y
+Pressure,51,"You gotta have class the whole year, not a semester",not,52,"Think before you speak, I got westside extras",got,INNER,PERFECT,cmu,HIGH,Y
+Pressure,51,"You gotta have class the whole year, not a semester",year,52,"Think before you speak, I got westside extras",Think,INNER,ASSONANCE,vowel,MED,Y

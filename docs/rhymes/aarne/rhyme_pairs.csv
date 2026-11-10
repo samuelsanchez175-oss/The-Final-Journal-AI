@@ -1,0 +1,519 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+4 ur girl,1,Glory Gang o-o-on 4NEM radio,o,1,Glory Gang o-o-on 4NEM radio,o,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,1,Glory Gang o-o-on 4NEM radio,o,1,Glory Gang o-o-on 4NEM radio,radio,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,1,Glory Gang o-o-on 4NEM radio,Gang,2,"Теперь на моих кистях целая хата, goddamn (Goddamn)",goddamn,INNER,SLANT,cmu,MED,Y
+4 ur girl,1,Glory Gang o-o-on 4NEM radio,Gang,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",gang,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,2,"Теперь на моих кистях целая хата, goddamn (Goddamn)",goddamn,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",gang,INNER,SLANT,cmu,MED,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",chain,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",sayin,INNER,SLANT,cmu,MED,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",fuck,4,"He come to the club, city know what, don't let him in",club,INNER,SLANT,cmu,MED,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",fuck,4,"He come to the club, city know what, don't let him in",come,INNER,SLANT,cmu,MED,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",fuck,4,"He come to the club, city know what, don't let him in",what,INNER,SLANT,cmu,MED,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",sayin,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",playin,END,MULTI,multi,HIGH,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",chain,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",playin,INNER,SLANT,cmu,MED,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",fuck,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",chuck,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",fuck,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",fuck,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",gang,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",ass,INNER,SLANT,cmu,MED,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",sayin,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",playin,END,MULTI,multi,HIGH,Y
+4 ur girl,3,"I'm with the gang, it's on my chain, fuck is you sayin'? (Uh-huh)",sayin,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",sayin,END,REPEAT,spelling,HIGH,N
+4 ur girl,4,"He come to the club, city know what, don't let him in",city,4,"He come to the club, city know what, don't let him in",him,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",club,4,"He come to the club, city know what, don't let him in",what,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",come,4,"He come to the club, city know what, don't let him in",club,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",come,4,"He come to the club, city know what, don't let him in",what,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",know,4,"He come to the club, city know what, don't let him in",don't,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",city,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",lil,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",city,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nick,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",city,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nigga,INNER,SLANT,spelling,LOW,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",club,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",chuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",club,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",fuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",come,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",chuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",come,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",fuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",him,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",lil,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",him,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nick,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",let,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",spent,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",let,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",ten,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",what,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",chuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",what,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",fuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",city,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",give,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",city,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",hit,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",club,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",fuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",come,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",fuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",him,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",give,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",him,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",hit,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",let,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",get,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",let,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",swept,INNER,SLANT,cmu,MED,Y
+4 ur girl,4,"He come to the club, city know what, don't let him in",what,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",fuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",chuck,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",fuck,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nick,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",lil,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nick,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nigga,INNER,SLANT,spelling,LOW,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",spent,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",ten,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",playin,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",playin,END,REPEAT,spelling,HIGH,N
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",ass,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",can,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",chuck,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",fuck,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",fuck,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",fuck,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",lil,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",give,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",lil,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",hit,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nick,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",give,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nick,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",hit,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nigga,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",hit,INNER,SLANT,spelling,LOW,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",spent,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",get,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",spent,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",swept,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",ten,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",get,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",ten,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",swept,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",playin,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",sayin,END,MULTI,multi,HIGH,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",ass,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",last,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",chuck,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",fuck,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",chuck,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",what,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",fuck,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",fuck,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",fuck,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",what,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",lil,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",everything,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",lil,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",lit,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nick,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",everything,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nick,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",lit,INNER,SLANT,cmu,MED,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",nigga,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",lit,INNER,SLANT,spelling,LOW,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",spent,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",went,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,5,"I spent a nick on my chuck, your lil' ass ten, nigga, fuck is you playin'?",ten,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",went,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",get,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",get,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",get,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",swept,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",Glock,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",mob,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",hit,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",give,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",playin,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",sayin,END,MULTI,multi,HIGH,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",can,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",last,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",fuck,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",fuck,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",fuck,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",what,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",get,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",went,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",give,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",everything,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",give,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",lit,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",hit,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",everything,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",hit,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",lit,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",swept,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",went,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",can,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",Ask,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",can,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",hand,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",fuck,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",fucked,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",fuck,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",motherfucker,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",give,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",'til,INNER,SLANT,cmu,MED,Y
+4 ur girl,6,"You can get hit with the Glock, get swept with the mob, give a fuck if you playin'",hit,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",'til,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",lit,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",everything,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",what,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",fuck,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",everything,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",'til,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",fuck,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",fucked,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",fuck,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",motherfucker,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",last,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",Ask,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",last,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",hand,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",lit,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",'til,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",what,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",fucked,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",what,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",motherfucker,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",everything,9,Chief so still be makin' these hoes fly like Peter Pan,still,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",last,9,Chief so still be makin' these hoes fly like Peter Pan,makin,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",last,9,Chief so still be makin' these hoes fly like Peter Pan,Pan,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",lit,9,Chief so still be makin' these hoes fly like Peter Pan,still,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",night,9,Chief so still be makin' these hoes fly like Peter Pan,fly,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",night,9,Chief so still be makin' these hoes fly like Peter Pan,like,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",sleep,9,Chief so still be makin' these hoes fly like Peter Pan,Chief,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",sleep,9,Chief so still be makin' these hoes fly like Peter Pan,Peter,INNER,SLANT,cmu,MED,Y
+4 ur girl,7,"I went to sleep lit, everything was a blur last night, what the fuck was I sayin'?",sleep,9,Chief so still be makin' these hoes fly like Peter Pan,these,INNER,SLANT,cmu,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",Ask,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",hand,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",motherfucker,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",fucked,INNER,SLANT,cmu,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",hand,9,Chief so still be makin' these hoes fly like Peter Pan,Pan,END,SLANT,cmu,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",'til,9,Chief so still be makin' these hoes fly like Peter Pan,still,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",Ask,9,Chief so still be makin' these hoes fly like Peter Pan,makin,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",Ask,9,Chief so still be makin' these hoes fly like Peter Pan,Pan,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",bros,9,Chief so still be makin' these hoes fly like Peter Pan,hoes,INNER,SLANT,spelling,LOW,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",hand,9,Chief so still be makin' these hoes fly like Peter Pan,makin,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",poles,9,Chief so still be makin' these hoes fly like Peter Pan,hoes,INNER,SLANT,cmu,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",bros,10,"Chief so ****, hoes leave out while hoes come in",hoes,INNER,SLANT,spelling,LOW,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",fucked,10,"Chief so ****, hoes leave out while hoes come in",come,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",motherfucker,10,"Chief so ****, hoes leave out while hoes come in",come,INNER,SLANT,cmu,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",poles,10,"Chief so ****, hoes leave out while hoes come in",hoes,INNER,SLANT,cmu,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",hand,11,"All my girls say, ""Mm-hm,"" if you get them racks",racks,END,ASSONANCE,vowel,MED,Y
+4 ur girl,8,"Ask my bros, I blew them poles 'til the motherfucker fucked up my hand (Juicy)",hand,12,"She said, ""My phone died, bae, is you gon' hit me back?""",back,END,ASSONANCE,vowel,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,Chief,9,Chief so still be makin' these hoes fly like Peter Pan,Peter,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,Chief,9,Chief so still be makin' these hoes fly like Peter Pan,these,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,fly,9,Chief so still be makin' these hoes fly like Peter Pan,like,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,makin,9,Chief so still be makin' these hoes fly like Peter Pan,Pan,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,these,9,Chief so still be makin' these hoes fly like Peter Pan,Peter,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,Chief,10,"Chief so ****, hoes leave out while hoes come in",Chief,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,Chief,10,"Chief so ****, hoes leave out while hoes come in",leave,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,fly,10,"Chief so ****, hoes leave out while hoes come in",while,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,hoes,10,"Chief so ****, hoes leave out while hoes come in",hoes,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,like,10,"Chief so ****, hoes leave out while hoes come in",while,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,Peter,10,"Chief so ****, hoes leave out while hoes come in",Chief,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,Peter,10,"Chief so ****, hoes leave out while hoes come in",leave,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,these,10,"Chief so ****, hoes leave out while hoes come in",Chief,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,these,10,"Chief so ****, hoes leave out while hoes come in",leave,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,Pan,11,"All my girls say, ""Mm-hm,"" if you get them racks",racks,END,ASSONANCE,vowel,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,makin,11,"All my girls say, ""Mm-hm,"" if you get them racks",racks,INNER,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,Pan,12,"She said, ""My phone died, bae, is you gon' hit me back?""",back,END,SLANT,cmu,MED,Y
+4 ur girl,9,Chief so still be makin' these hoes fly like Peter Pan,Pan,13,"Baby, tell me, all of your bitches got your back?",back,END,SLANT,cmu,MED,Y
+4 ur girl,10,"Chief so ****, hoes leave out while hoes come in",Chief,10,"Chief so ****, hoes leave out while hoes come in",leave,INNER,SLANT,cmu,MED,Y
+4 ur girl,10,"Chief so ****, hoes leave out while hoes come in",hoes,10,"Chief so ****, hoes leave out while hoes come in",hoes,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,10,"Chief so ****, hoes leave out while hoes come in",hoes,12,"She said, ""My phone died, bae, is you gon' hit me back?""",gon,INNER,SLANT,spelling,LOW,Y
+4 ur girl,10,"Chief so ****, hoes leave out while hoes come in",hoes,12,"She said, ""My phone died, bae, is you gon' hit me back?""",phone,INNER,SLANT,cmu,MED,Y
+4 ur girl,10,"Chief so ****, hoes leave out while hoes come in",while,12,"She said, ""My phone died, bae, is you gon' hit me back?""",bae,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,10,"Chief so ****, hoes leave out while hoes come in",while,12,"She said, ""My phone died, bae, is you gon' hit me back?""",died,INNER,SLANT,cmu,MED,Y
+4 ur girl,11,"All my girls say, ""Mm-hm,"" if you get them racks",racks,12,"She said, ""My phone died, bae, is you gon' hit me back?""",back,END,SLANT,cmu,MED,Y
+4 ur girl,11,"All my girls say, ""Mm-hm,"" if you get them racks",get,12,"She said, ""My phone died, bae, is you gon' hit me back?""",said,INNER,SLANT,cmu,MED,Y
+4 ur girl,11,"All my girls say, ""Mm-hm,"" if you get them racks",racks,13,"Baby, tell me, all of your bitches got your back?",back,END,SLANT,cmu,MED,Y
+4 ur girl,11,"All my girls say, ""Mm-hm,"" if you get them racks",All,13,"Baby, tell me, all of your bitches got your back?",all,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,11,"All my girls say, ""Mm-hm,"" if you get them racks",get,13,"Baby, tell me, all of your bitches got your back?",tell,INNER,SLANT,cmu,MED,Y
+4 ur girl,11,"All my girls say, ""Mm-hm,"" if you get them racks",say,13,"Baby, tell me, all of your bitches got your back?",Baby,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,11,"All my girls say, ""Mm-hm,"" if you get them racks",racks,14,"I'm broke as hell now, I ain't just spend five hundred racks",racks,END,REPEAT,spelling,HIGH,N
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",died,12,"She said, ""My phone died, bae, is you gon' hit me back?""",bae,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",phone,12,"She said, ""My phone died, bae, is you gon' hit me back?""",gon,INNER,PERFECT,spelling,MED,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",back,13,"Baby, tell me, all of your bitches got your back?",back,END,REPEAT,spelling,HIGH,N
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",hit,13,"Baby, tell me, all of your bitches got your back?",bitches,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",said,13,"Baby, tell me, all of your bitches got your back?",tell,INNER,SLANT,cmu,MED,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",back,14,"I'm broke as hell now, I ain't just spend five hundred racks",racks,END,SLANT,cmu,MED,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",bae,14,"I'm broke as hell now, I ain't just spend five hundred racks",five,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",died,14,"I'm broke as hell now, I ain't just spend five hundred racks",five,INNER,SLANT,cmu,MED,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",gon,14,"I'm broke as hell now, I ain't just spend five hundred racks",broke,INNER,SLANT,spelling,LOW,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",phone,14,"I'm broke as hell now, I ain't just spend five hundred racks",broke,INNER,SLANT,cmu,MED,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",said,14,"I'm broke as hell now, I ain't just spend five hundred racks",hell,INNER,SLANT,cmu,MED,Y
+4 ur girl,12,"She said, ""My phone died, bae, is you gon' hit me back?""",said,14,"I'm broke as hell now, I ain't just spend five hundred racks",spend,INNER,SLANT,cmu,MED,Y
+4 ur girl,13,"Baby, tell me, all of your bitches got your back?",back,14,"I'm broke as hell now, I ain't just spend five hundred racks",racks,END,SLANT,cmu,MED,Y
+4 ur girl,13,"Baby, tell me, all of your bitches got your back?",Baby,14,"I'm broke as hell now, I ain't just spend five hundred racks",ain't,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,13,"Baby, tell me, all of your bitches got your back?",tell,14,"I'm broke as hell now, I ain't just spend five hundred racks",hell,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,13,"Baby, tell me, all of your bitches got your back?",tell,14,"I'm broke as hell now, I ain't just spend five hundred racks",spend,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,13,"Baby, tell me, all of your bitches got your back?",back,15,"I run up that shit, but I can't go",can't,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,13,"Baby, tell me, all of your bitches got your back?",bitches,15,"I run up that shit, but I can't go",shit,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,14,"I'm broke as hell now, I ain't just spend five hundred racks",hell,14,"I'm broke as hell now, I ain't just spend five hundred racks",spend,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,14,"I'm broke as hell now, I ain't just spend five hundred racks",broke,15,"I run up that shit, but I can't go",go,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,14,"I'm broke as hell now, I ain't just spend five hundred racks",hundred,15,"I run up that shit, but I can't go",run,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,14,"I'm broke as hell now, I ain't just spend five hundred racks",racks,15,"I run up that shit, but I can't go",can't,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,14,"I'm broke as hell now, I ain't just spend five hundred racks",broke,16,Я вызвал такси 'cause she can't blow,blow,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,14,"I'm broke as hell now, I ain't just spend five hundred racks",racks,16,Я вызвал такси 'cause she can't blow,can't,INNER,ASSONANCE,vowel,MED,Y
+4 ur girl,15,"I run up that shit, but I can't go",go,16,Я вызвал такси 'cause she can't blow,blow,END,PERFECT,cmu,HIGH,Y
+4 ur girl,15,"I run up that shit, but I can't go",can't,16,Я вызвал такси 'cause she can't blow,can't,INNER,REPEAT,spelling,HIGH,N
+4 ur girl,15,"I run up that shit, but I can't go",run,17,"This one for your girlfriend, girlfriend",one,INNER,PERFECT,cmu,HIGH,Y
+4 ur girl,17,"This one for your girlfriend, girlfriend",girlfriend,17,"This one for your girlfriend, girlfriend",girlfriend,INNER,REPEAT,spelling,HIGH,N
+Saint,1,"Please don't play with it, course I stay with it",play,1,"Please don't play with it, course I stay with it",stay,INNER,PERFECT,cmu,HIGH,Y
+Saint,1,"Please don't play with it, course I stay with it",stay,2,"Try have a block party, I'm tapin' it",tapin,END,ASSONANCE,vowel,MED,Y
+Saint,1,"Please don't play with it, course I stay with it",play,2,"Try have a block party, I'm tapin' it",tapin,INNER,ASSONANCE,vowel,MED,Y
+Saint,1,"Please don't play with it, course I stay with it",don't,3,"Ganja baby, I don't pop molly (Yes)",don't,INNER,REPEAT,spelling,HIGH,N
+Saint,1,"Please don't play with it, course I stay with it",play,3,"Ganja baby, I don't pop molly (Yes)",baby,INNER,ASSONANCE,vowel,MED,Y
+Saint,1,"Please don't play with it, course I stay with it",stay,3,"Ganja baby, I don't pop molly (Yes)",baby,INNER,ASSONANCE,vowel,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",block,2,"Try have a block party, I'm tapin' it",party,INNER,ASSONANCE,vowel,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",block,3,"Ganja baby, I don't pop molly (Yes)",molly,INNER,SLANT,cmu,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",block,3,"Ganja baby, I don't pop molly (Yes)",pop,INNER,SLANT,cmu,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",party,3,"Ganja baby, I don't pop molly (Yes)",molly,INNER,ASSONANCE,vowel,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",party,3,"Ganja baby, I don't pop molly (Yes)",pop,INNER,ASSONANCE,vowel,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",tapin,3,"Ganja baby, I don't pop molly (Yes)",baby,INNER,ASSONANCE,vowel,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",block,4,She love badman and she wan' tek cocky (Uh-huh),cocky,INNER,SLANT,cmu,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",block,4,She love badman and she wan' tek cocky (Uh-huh),wan,INNER,SLANT,cmu,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",have,4,She love badman and she wan' tek cocky (Uh-huh),badman,INNER,ASSONANCE,vowel,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",party,4,She love badman and she wan' tek cocky (Uh-huh),cocky,INNER,ASSONANCE,vowel,MED,Y
+Saint,2,"Try have a block party, I'm tapin' it",party,4,She love badman and she wan' tek cocky (Uh-huh),wan,INNER,ASSONANCE,vowel,MED,Y
+Saint,3,"Ganja baby, I don't pop molly (Yes)",pop,3,"Ganja baby, I don't pop molly (Yes)",molly,INNER,SLANT,cmu,MED,Y
+Saint,3,"Ganja baby, I don't pop molly (Yes)",molly,4,She love badman and she wan' tek cocky (Uh-huh),cocky,END,SLANT,cmu,MED,Y
+Saint,3,"Ganja baby, I don't pop molly (Yes)",Ganja,4,She love badman and she wan' tek cocky (Uh-huh),badman,INNER,ASSONANCE,vowel,LOW,N
+Saint,3,"Ganja baby, I don't pop molly (Yes)",molly,4,She love badman and she wan' tek cocky (Uh-huh),wan,INNER,SLANT,cmu,MED,Y
+Saint,3,"Ganja baby, I don't pop molly (Yes)",pop,4,She love badman and she wan' tek cocky (Uh-huh),cocky,INNER,SLANT,cmu,MED,Y
+Saint,3,"Ganja baby, I don't pop molly (Yes)",pop,4,She love badman and she wan' tek cocky (Uh-huh),wan,INNER,SLANT,cmu,MED,Y
+Saint,3,"Ganja baby, I don't pop molly (Yes)",Ganja,5,"Left that bloody man, done it wit' Buni",man,INNER,SLANT,spelling,LOW,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),wan,4,She love badman and she wan' tek cocky (Uh-huh),cocky,INNER,SLANT,cmu,MED,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),badman,5,"Left that bloody man, done it wit' Buni",man,INNER,ASSONANCE,vowel,MED,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),love,5,"Left that bloody man, done it wit' Buni",bloody,INNER,SLANT,cmu,MED,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),love,5,"Left that bloody man, done it wit' Buni",Buni,INNER,SLANT,spelling,LOW,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),love,5,"Left that bloody man, done it wit' Buni",done,INNER,SLANT,cmu,MED,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),tek,5,"Left that bloody man, done it wit' Buni",Left,INNER,ASSONANCE,vowel,MED,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),cocky,6,"Top boy, head gets chippy like Sully (Bullet)",Top,INNER,SLANT,cmu,MED,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),love,6,"Top boy, head gets chippy like Sully (Bullet)",Sully,INNER,SLANT,cmu,MED,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),tek,6,"Top boy, head gets chippy like Sully (Bullet)",gets,INNER,ASSONANCE,vowel,MED,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),tek,6,"Top boy, head gets chippy like Sully (Bullet)",head,INNER,SLANT,cmu,MED,Y
+Saint,4,She love badman and she wan' tek cocky (Uh-huh),wan,6,"Top boy, head gets chippy like Sully (Bullet)",Top,INNER,SLANT,cmu,MED,Y
+Saint,5,"Left that bloody man, done it wit' Buni",bloody,5,"Left that bloody man, done it wit' Buni",Buni,INNER,SLANT,spelling,LOW,Y
+Saint,5,"Left that bloody man, done it wit' Buni",bloody,5,"Left that bloody man, done it wit' Buni",done,INNER,SLANT,cmu,MED,Y
+Saint,5,"Left that bloody man, done it wit' Buni",done,5,"Left that bloody man, done it wit' Buni",Buni,INNER,SLANT,spelling,LOW,Y
+Saint,5,"Left that bloody man, done it wit' Buni",Buni,6,"Top boy, head gets chippy like Sully (Bullet)",Sully,END,SLANT,spelling,LOW,Y
+Saint,5,"Left that bloody man, done it wit' Buni",bloody,6,"Top boy, head gets chippy like Sully (Bullet)",Sully,INNER,SLANT,cmu,MED,Y
+Saint,5,"Left that bloody man, done it wit' Buni",done,6,"Top boy, head gets chippy like Sully (Bullet)",Sully,INNER,SLANT,cmu,MED,Y
+Saint,5,"Left that bloody man, done it wit' Buni",Left,6,"Top boy, head gets chippy like Sully (Bullet)",gets,INNER,ASSONANCE,vowel,MED,Y
+Saint,5,"Left that bloody man, done it wit' Buni",Left,6,"Top boy, head gets chippy like Sully (Bullet)",head,INNER,ASSONANCE,vowel,MED,Y
+Saint,5,"Left that bloody man, done it wit' Buni",wit,6,"Top boy, head gets chippy like Sully (Bullet)",chippy,INNER,SLANT,cmu,MED,Y
+Saint,5,"Left that bloody man, done it wit' Buni",Left,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",gettin,INNER,ASSONANCE,vowel,MED,Y
+Saint,5,"Left that bloody man, done it wit' Buni",Left,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",let,INNER,SLANT,cmu,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",head,6,"Top boy, head gets chippy like Sully (Bullet)",gets,INNER,ASSONANCE,vowel,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",gets,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",gettin,INNER,SLANT,cmu,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",gets,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",let,INNER,SLANT,cmu,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",head,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",gettin,INNER,ASSONANCE,vowel,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",head,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",let,INNER,SLANT,cmu,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",like,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",five,INNER,SLANT,cmu,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",like,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",Like,INNER,REPEAT,spelling,HIGH,N
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",like,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",why,INNER,ASSONANCE,vowel,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",Top,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",Got,INNER,SLANT,cmu,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",Top,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",involved,INNER,ASSONANCE,vowel,MED,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",gets,8,"Got Sebz on the beat, in the booth with bro",Sebz,INNER,SLANT,spelling,LOW,Y
+Saint,6,"Top boy, head gets chippy like Sully (Bullet)",Top,8,"Got Sebz on the beat, in the booth with bro",Got,INNER,SLANT,cmu,MED,Y
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",gettin,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",let,INNER,SLANT,cmu,MED,Y
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",involved,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",Got,INNER,ASSONANCE,vowel,MED,Y
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",Like,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",five,INNER,SLANT,cmu,MED,Y
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",Like,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",why,INNER,ASSONANCE,vowel,MED,Y
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",why,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",five,INNER,ASSONANCE,vowel,MED,Y
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",know,8,"Got Sebz on the beat, in the booth with bro",bro,END,PERFECT,cmu,HIGH,Y
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",Got,8,"Got Sebz on the beat, in the booth with bro",Got,INNER,REPEAT,spelling,HIGH,N
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",involved,8,"Got Sebz on the beat, in the booth with bro",Got,INNER,ASSONANCE,vowel,MED,Y
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",machines,8,"Got Sebz on the beat, in the booth with bro",beat,INNER,ASSONANCE,vowel,MED,Y
+Saint,7,"Like, yo, why you gettin' involved? Got five machines, let the paigons know (Shattai)",know,9,"Make her 6:30, make her touch her toe (Bullet, bullet)",toe,END,PERFECT,cmu,HIGH,Y
+Saint,8,"Got Sebz on the beat, in the booth with bro",bro,9,"Make her 6:30, make her touch her toe (Bullet, bullet)",toe,END,PERFECT,cmu,HIGH,Y
+Saint,9,"Make her 6:30, make her touch her toe (Bullet, bullet)",Make,9,"Make her 6:30, make her touch her toe (Bullet, bullet)",make,INNER,REPEAT,spelling,HIGH,N
+Saint,9,"Make her 6:30, make her touch her toe (Bullet, bullet)",Make,10,"I'm apin' it, she can't take the dick (Ooh)",take,INNER,PERFECT,cmu,HIGH,Y
+Saint,9,"Make her 6:30, make her touch her toe (Bullet, bullet)",Make,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",faith,INNER,SLANT,cmu,MED,Y
+Saint,9,"Make her 6:30, make her touch her toe (Bullet, bullet)",Make,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",rates,INNER,ASSONANCE,vowel,MED,Y
+Saint,10,"I'm apin' it, she can't take the dick (Ooh)",dick,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",kid,INNER,SLANT,cmu,MED,Y
+Saint,10,"I'm apin' it, she can't take the dick (Ooh)",take,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",faith,INNER,SLANT,cmu,MED,Y
+Saint,10,"I'm apin' it, she can't take the dick (Ooh)",take,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",rates,INNER,ASSONANCE,vowel,MED,Y
+Saint,10,"I'm apin' it, she can't take the dick (Ooh)",take,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",say,INNER,ASSONANCE,vowel,MED,Y
+Saint,10,"I'm apin' it, she can't take the dick (Ooh)",dick,13,"Please don't play with it, course I stay wit' it",wit,END,SLANT,cmu,MED,Y
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",rates,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",faith,INNER,ASSONANCE,vowel,MED,Y
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",faith,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",say,INNER,ASSONANCE,vowel,MED,Y
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",not,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",got,INNER,PERFECT,cmu,HIGH,Y
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",rates,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",say,INNER,ASSONANCE,vowel,MED,Y
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",Course,13,"Please don't play with it, course I stay wit' it",course,INNER,REPEAT,spelling,HIGH,N
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",faith,13,"Please don't play with it, course I stay wit' it",play,INNER,ASSONANCE,vowel,MED,Y
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",faith,13,"Please don't play with it, course I stay wit' it",stay,INNER,ASSONANCE,vowel,MED,Y
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",kid,13,"Please don't play with it, course I stay wit' it",wit,INNER,SLANT,cmu,MED,Y
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",rates,13,"Please don't play with it, course I stay wit' it",play,INNER,ASSONANCE,vowel,MED,Y
+Saint,11,"Course she rates the kid, I'm not faith with it (Uh-huh)",rates,13,"Please don't play with it, course I stay wit' it",stay,INNER,ASSONANCE,vowel,MED,Y
+Saint,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",Everyone's,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",nuttin,INNER,ASSONANCE,vowel,MED,Y
+Saint,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",Everyone's,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",somethin,INNER,ASSONANCE,vowel,MED,Y
+Saint,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",got,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",got,INNER,REPEAT,spelling,HIGH,N
+Saint,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",somethin,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",nuttin,INNER,ASSONANCE,vowel,MED,Y
+Saint,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",say,13,"Please don't play with it, course I stay wit' it",play,INNER,PERFECT,cmu,HIGH,Y
+Saint,12,"Everyone's got somethin' to say (Uh-huh, mhm), I got nuttin' to prove (Pussy)",say,13,"Please don't play with it, course I stay wit' it",stay,INNER,PERFECT,cmu,HIGH,Y
+Saint,13,"Please don't play with it, course I stay wit' it",play,13,"Please don't play with it, course I stay wit' it",stay,INNER,PERFECT,cmu,HIGH,Y
+Saint,13,"Please don't play with it, course I stay wit' it",course,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",all,INNER,ASSONANCE,vowel,MED,Y
+Saint,13,"Please don't play with it, course I stay wit' it",course,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",call,INNER,ASSONANCE,vowel,MED,Y
+Saint,13,"Please don't play with it, course I stay wit' it",don't,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",GOAT,INNER,SLANT,cmu,MED,Y
+Saint,13,"Please don't play with it, course I stay wit' it",don't,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",throat,INNER,SLANT,cmu,MED,Y
+Saint,13,"Please don't play with it, course I stay wit' it",Please,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",G,INNER,ASSONANCE,vowel,MED,Y
+Saint,13,"Please don't play with it, course I stay wit' it",wit,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",Big,INNER,SLANT,cmu,MED,Y
+Saint,13,"Please don't play with it, course I stay wit' it",don't,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",go,INNER,ASSONANCE,vowel,MED,Y
+Saint,13,"Please don't play with it, course I stay wit' it",don't,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",smoke,INNER,ASSONANCE,vowel,MED,Y
+Saint,13,"Please don't play with it, course I stay wit' it",don't,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",tote,INNER,SLANT,cmu,MED,Y
+Saint,13,"Please don't play with it, course I stay wit' it",Please,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",thirty,INNER,ASSONANCE,vowel,MED,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",call,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",all,INNER,PERFECT,cmu,HIGH,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",GOAT,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",throat,INNER,PERFECT,cmu,HIGH,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",throat,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",smoke,END,SLANT,cmu,MED,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",G,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",thirty,INNER,PERFECT,cmu,HIGH,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",GOAT,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",go,INNER,ASSONANCE,vowel,MED,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",GOAT,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",smoke,INNER,SLANT,cmu,MED,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",GOAT,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",tote,INNER,PERFECT,cmu,HIGH,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",Herbo,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",go,INNER,ASSONANCE,vowel,LOW,N
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",throat,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",go,INNER,ASSONANCE,vowel,MED,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",throat,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",thirty,INNER,SLANT,spelling,LOW,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",throat,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",tote,INNER,PERFECT,cmu,HIGH,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",throat,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,END,ASSONANCE,vowel,MED,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",Big,16,"I'm Every Body Killer, you friend or foe? (EBK)",Killer,INNER,SLANT,cmu,MED,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",GOAT,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,INNER,ASSONANCE,vowel,MED,Y
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",Herbo,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,INNER,ASSONANCE,vowel,LOW,N
+Saint,14,"Big G Herbo, they call me the GOAT, I'm all in the back of her throat (Yeah)",throat,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,END,PERFECT,cmu,HIGH,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",Glock,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",want,INNER,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",go,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",smoke,INNER,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",tote,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",go,INNER,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",tote,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",smoke,INNER,SLANT,cmu,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",smoke,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,END,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",Glock,16,"I'm Every Body Killer, you friend or foe? (EBK)",Body,INNER,SLANT,cmu,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",go,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,INNER,PERFECT,cmu,HIGH,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",let,16,"I'm Every Body Killer, you friend or foe? (EBK)",Every,INNER,SLANT,cmu,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",let,16,"I'm Every Body Killer, you friend or foe? (EBK)",friend,INNER,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",tote,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,INNER,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",want,16,"I'm Every Body Killer, you friend or foe? (EBK)",Body,INNER,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",Glock,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",got,INNER,SLANT,cmu,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",go,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",Don't,INNER,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",let,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",hell,INNER,SLANT,cmu,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",smoke,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",Don't,INNER,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",thirty,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",least,INNER,ASSONANCE,vowel,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",tote,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",Don't,INNER,SLANT,cmu,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",want,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",got,INNER,SLANT,cmu,MED,Y
+Saint,15,"Glock 23 with a thirty, I tote, I'll let it go if you want smoke (Grrah)",smoke,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,END,SLANT,cmu,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",Every,16,"I'm Every Body Killer, you friend or foe? (EBK)",friend,INNER,ASSONANCE,vowel,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",Body,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",got,INNER,SLANT,cmu,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",Every,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",hell,INNER,SLANT,cmu,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",Don't,INNER,ASSONANCE,vowel,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",friend,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",hell,INNER,ASSONANCE,vowel,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",Killer,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",million,INNER,ASSONANCE,vowel,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,END,ASSONANCE,vowel,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",Body,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",Bossed,INNER,ASSONANCE,vowel,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",Body,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",got,INNER,SLANT,cmu,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",Body,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",yacht,INNER,SLANT,cmu,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",whole,INNER,ASSONANCE,vowel,MED,Y
+Saint,16,"I'm Every Body Killer, you friend or foe? (EBK)",foe,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,END,ASSONANCE,vowel,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",ain't,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",make,INNER,ASSONANCE,vowel,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",more,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",four,INNER,PERFECT,cmu,HIGH,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",talk,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",four,INNER,SLANT,cmu,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",talk,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",more,INNER,SLANT,cmu,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",Don't,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,INNER,SLANT,cmu,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",Don't,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",Don't,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",whole,INNER,ASSONANCE,vowel,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",four,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",all,INNER,SLANT,cmu,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",got,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",Bossed,INNER,SLANT,cmu,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",got,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",got,INNER,REPEAT,spelling,HIGH,N
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",got,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",yacht,INNER,PERFECT,cmu,HIGH,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",more,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",all,INNER,SLANT,cmu,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",talk,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",all,INNER,SLANT,cmu,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",four,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",more,END,PERFECT,cmu,HIGH,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",Don't,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",loads,INNER,ASSONANCE,vowel,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",hell,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",again,INNER,SLANT,cmu,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",hell,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",emptyin,INNER,ASSONANCE,vowel,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",hell,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",let's,INNER,ASSONANCE,vowel,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",least,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",keep,INNER,ASSONANCE,vowel,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",million,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",print,INNER,ASSONANCE,vowel,MED,Y
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",more,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",more,INNER,REPEAT,spelling,HIGH,N
+Saint,17,"Don't talk to me, you ain't got a million or more, hell yeah, I make at least four (Like four)",talk,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",more,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",Bossed,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",got,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",Bossed,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",yacht,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",hoes,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",whole,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",whole,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",hoes,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",yacht,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",got,INNER,PERFECT,cmu,HIGH,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",'em,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",some,INNER,PERFECT,cmu,HIGH,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",all,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",more,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",loads,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",bunch,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",comin,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",bunch,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",money,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",bunch,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",some,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",hoes,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",loads,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",whole,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",loads,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,END,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",grows,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",Bossed,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",everybody,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",Bossed,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",pop,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",Bossed,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rockin,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",Bossed,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rotten,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",got,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",everybody,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",got,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",pop,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",got,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rockin,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",got,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rotten,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",hoes,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",grows,INNER,PERFECT,cmu,HIGH,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",hoes,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,INNER,PERFECT,cmu,HIGH,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",whole,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",grows,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",whole,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",yacht,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",everybody,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",yacht,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",pop,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",yacht,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rockin,INNER,ASSONANCE,vowel,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",yacht,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rotten,INNER,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,21,What happened to lil' buddy? Nobody knows (Nobody knows),knows,END,SLANT,cmu,MED,Y
+Saint,18,"Bossed up on a yacht with a whole bunch of hoes, got all of 'em drivin' the boat (Ayy)",boat,22,All that fake shit gets exposed,exposed,END,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",again,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",emptyin,INNER,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",again,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",let's,INNER,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",comin,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",some,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",emptyin,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",let's,INNER,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",loads,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",let's,INNER,SLANT,spelling,LOW,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",money,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",comin,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",money,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",some,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",keep,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",nobody,INNER,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",keep,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",tree,INNER,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",loads,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",grows,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",loads,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",comin,21,What happened to lil' buddy? Nobody knows (Nobody knows),buddy,INNER,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",comin,21,What happened to lil' buddy? Nobody knows (Nobody knows),What,INNER,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",keep,21,What happened to lil' buddy? Nobody knows (Nobody knows),Nobody,INNER,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",loads,21,What happened to lil' buddy? Nobody knows (Nobody knows),knows,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",money,21,What happened to lil' buddy? Nobody knows (Nobody knows),buddy,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",money,21,What happened to lil' buddy? Nobody knows (Nobody knows),What,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",print,21,What happened to lil' buddy? Nobody knows (Nobody knows),lil,INNER,ASSONANCE,vowel,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",some,21,What happened to lil' buddy? Nobody knows (Nobody knows),buddy,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",some,21,What happened to lil' buddy? Nobody knows (Nobody knows),What,INNER,SLANT,cmu,MED,Y
+Saint,19,"We trappin' again, we emptyin' loads, that money keep comin', let's print up some more (Print up some more)",trappin,21,What happened to lil' buddy? Nobody knows (Nobody knows),happened,INNER,ASSONANCE,vowel,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",grows,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,INNER,PERFECT,cmu,HIGH,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",nobody,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",everybody,INNER,MULTI,multi,HIGH,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",pop,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",everybody,INNER,SLANT,cmu,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",pop,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rockin,INNER,ASSONANCE,vowel,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rockin,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",everybody,INNER,ASSONANCE,vowel,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rotten,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",everybody,INNER,ASSONANCE,vowel,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rotten,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",pop,INNER,ASSONANCE,vowel,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rotten,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rockin,INNER,SLANT,cmu,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rotten nobody,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rockin everybody,INNER,MULTI,multi,HIGH,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",tree,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",nobody,INNER,PERFECT,cmu,HIGH,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,21,What happened to lil' buddy? Nobody knows (Nobody knows),knows,END,PERFECT,cmu,HIGH,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",everybody,21,What happened to lil' buddy? Nobody knows (Nobody knows),Nobody,INNER,MULTI,multi,HIGH,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",grows,21,What happened to lil' buddy? Nobody knows (Nobody knows),knows,INNER,PERFECT,cmu,HIGH,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",nobody,21,What happened to lil' buddy? Nobody knows (Nobody knows),Nobody,INNER,REPEAT,spelling,HIGH,N
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",rockin everybody,21,What happened to lil' buddy? Nobody knows (Nobody knows),buddy Nobody,INNER,MULTI,multi,HIGH,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",tree,21,What happened to lil' buddy? Nobody knows (Nobody knows),Nobody,INNER,PERFECT,cmu,HIGH,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,22,All that fake shit gets exposed,exposed,END,SLANT,cmu,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",grows,22,All that fake shit gets exposed,exposed,INNER,SLANT,cmu,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,23,"I'm still locked in with all my bros, though (All my bros)",though,END,ASSONANCE,vowel,MED,Y
+Saint,20,"The root of the tree rotten, nobody grows, so pop it, she rockin' out, everybody shows",shows,24,That's 'cause we stick to the code,code,END,SLANT,cmu,MED,Y
+Saint,21,What happened to lil' buddy? Nobody knows (Nobody knows),What,21,What happened to lil' buddy? Nobody knows (Nobody knows),buddy,INNER,SLANT,cmu,MED,Y
+Saint,21,What happened to lil' buddy? Nobody knows (Nobody knows),knows,22,All that fake shit gets exposed,exposed,END,SLANT,cmu,MED,Y
+Saint,21,What happened to lil' buddy? Nobody knows (Nobody knows),lil,22,All that fake shit gets exposed,shit,INNER,SLANT,cmu,MED,Y
+Saint,21,What happened to lil' buddy? Nobody knows (Nobody knows),knows,23,"I'm still locked in with all my bros, though (All my bros)",though,END,ASSONANCE,vowel,MED,Y
+Saint,21,What happened to lil' buddy? Nobody knows (Nobody knows),knows,23,"I'm still locked in with all my bros, though (All my bros)",bros,INNER,SLANT,spelling,LOW,Y
+Saint,21,What happened to lil' buddy? Nobody knows (Nobody knows),lil,23,"I'm still locked in with all my bros, though (All my bros)",still,INNER,PERFECT,cmu,HIGH,Y
+Saint,21,What happened to lil' buddy? Nobody knows (Nobody knows),knows,24,That's 'cause we stick to the code,code,END,SLANT,cmu,MED,Y
+Saint,22,All that fake shit gets exposed,exposed,23,"I'm still locked in with all my bros, though (All my bros)",though,END,ASSONANCE,vowel,MED,Y
+Saint,22,All that fake shit gets exposed,All,23,"I'm still locked in with all my bros, though (All my bros)",all,INNER,REPEAT,spelling,HIGH,N
+Saint,22,All that fake shit gets exposed,shit,23,"I'm still locked in with all my bros, though (All my bros)",still,INNER,SLANT,cmu,MED,Y
+Saint,22,All that fake shit gets exposed,exposed,24,That's 'cause we stick to the code,code,END,SLANT,cmu,MED,Y
+Saint,22,All that fake shit gets exposed,shit,24,That's 'cause we stick to the code,stick,INNER,SLANT,cmu,MED,Y
+Saint,22,All that fake shit gets exposed,exposed,26,Aim it and knock off your nose,nose,END,SLANT,cmu,MED,Y
+Saint,23,"I'm still locked in with all my bros, though (All my bros)",though,24,That's 'cause we stick to the code,code,END,ASSONANCE,vowel,MED,Y
+Saint,23,"I'm still locked in with all my bros, though (All my bros)",bros,24,That's 'cause we stick to the code,code,INNER,SLANT,spelling,LOW,Y
+Saint,23,"I'm still locked in with all my bros, though (All my bros)",still,24,That's 'cause we stick to the code,stick,INNER,SLANT,cmu,MED,Y
+Saint,23,"I'm still locked in with all my bros, though (All my bros)",all,25,Red beams on all the Glocks and Dracos,all,INNER,REPEAT,spelling,HIGH,N
+Saint,23,"I'm still locked in with all my bros, though (All my bros)",bros,25,Red beams on all the Glocks and Dracos,Dracos,INNER,PERFECT,spelling,MED,Y
+Saint,23,"I'm still locked in with all my bros, though (All my bros)",bros,25,Red beams on all the Glocks and Dracos,Glocks,INNER,SLANT,spelling,LOW,Y
+Saint,23,"I'm still locked in with all my bros, though (All my bros)",though,26,Aim it and knock off your nose,nose,END,ASSONANCE,vowel,MED,Y
+Saint,23,"I'm still locked in with all my bros, though (All my bros)",though,27,"No new friends, don't make those",those,END,ASSONANCE,vowel,MED,Y
+Saint,24,That's 'cause we stick to the code,code,26,Aim it and knock off your nose,nose,END,SLANT,cmu,MED,Y
+Saint,24,That's 'cause we stick to the code,code,27,"No new friends, don't make those",those,END,SLANT,cmu,MED,Y
+Saint,24,That's 'cause we stick to the code,code,28,"Lame niggas, I hate those",those,END,SLANT,cmu,MED,Y
+Saint,25,Red beams on all the Glocks and Dracos,Glocks,27,"No new friends, don't make those",don't,INNER,ASSONANCE,vowel,LOW,N
+Saint,25,Red beams on all the Glocks and Dracos,Red,27,"No new friends, don't make those",friends,INNER,ASSONANCE,vowel,MED,Y
+Saint,26,Aim it and knock off your nose,nose,27,"No new friends, don't make those",those,END,PERFECT,cmu,HIGH,Y
+Saint,26,Aim it and knock off your nose,Aim,27,"No new friends, don't make those",make,INNER,SLANT,cmu,MED,Y
+Saint,26,Aim it and knock off your nose,nose,27,"No new friends, don't make those",don't,INNER,ASSONANCE,vowel,MED,Y
+Saint,26,Aim it and knock off your nose,nose,27,"No new friends, don't make those",No,INNER,ASSONANCE,vowel,MED,Y
+Saint,26,Aim it and knock off your nose,nose,28,"Lame niggas, I hate those",those,END,PERFECT,cmu,HIGH,Y
+Saint,26,Aim it and knock off your nose,Aim,28,"Lame niggas, I hate those",hate,INNER,SLANT,cmu,MED,Y
+Saint,26,Aim it and knock off your nose,Aim,28,"Lame niggas, I hate those",Lame,INNER,PERFECT,cmu,HIGH,Y
+Saint,26,Aim it and knock off your nose,nose,29,We don't trick on stank hoes,hoes,END,PERFECT,cmu,HIGH,Y
+Saint,26,Aim it and knock off your nose,nose,30,But I got all the bankrolls,bankrolls,END,SLANT,cmu,MED,Y
+Saint,27,"No new friends, don't make those",don't,27,"No new friends, don't make those",those,INNER,ASSONANCE,vowel,MED,Y
+Saint,27,"No new friends, don't make those",No,27,"No new friends, don't make those",don't,INNER,ASSONANCE,vowel,MED,Y
+Saint,27,"No new friends, don't make those",No,27,"No new friends, don't make those",those,INNER,ASSONANCE,vowel,MED,Y
+Saint,27,"No new friends, don't make those",those,28,"Lame niggas, I hate those",those,END,REPEAT,spelling,HIGH,N
+Saint,27,"No new friends, don't make those",don't,28,"Lame niggas, I hate those",those,INNER,ASSONANCE,vowel,MED,Y
+Saint,27,"No new friends, don't make those",make,28,"Lame niggas, I hate those",hate,INNER,SLANT,cmu,MED,Y
+Saint,27,"No new friends, don't make those",make,28,"Lame niggas, I hate those",Lame,INNER,SLANT,cmu,MED,Y
+Saint,27,"No new friends, don't make those",No,28,"Lame niggas, I hate those",those,INNER,ASSONANCE,vowel,MED,Y
+Saint,27,"No new friends, don't make those",those,29,We don't trick on stank hoes,hoes,END,PERFECT,cmu,HIGH,Y
+Saint,27,"No new friends, don't make those",don't,29,We don't trick on stank hoes,don't,INNER,REPEAT,spelling,HIGH,N
+Saint,27,"No new friends, don't make those",don't,29,We don't trick on stank hoes,hoes,INNER,ASSONANCE,vowel,MED,Y
+Saint,27,"No new friends, don't make those",No,29,We don't trick on stank hoes,don't,INNER,ASSONANCE,vowel,MED,Y
+Saint,27,"No new friends, don't make those",No,29,We don't trick on stank hoes,hoes,INNER,ASSONANCE,vowel,MED,Y
+Saint,27,"No new friends, don't make those",those,29,We don't trick on stank hoes,don't,INNER,ASSONANCE,vowel,MED,Y
+Saint,27,"No new friends, don't make those",those,30,But I got all the bankrolls,bankrolls,END,SLANT,cmu,MED,Y
+Saint,27,"No new friends, don't make those",those,31,From the 'Raq like D. Rose,Rose,END,PERFECT,cmu,HIGH,Y
+Saint,28,"Lame niggas, I hate those",Lame,28,"Lame niggas, I hate those",hate,INNER,SLANT,cmu,MED,Y
+Saint,28,"Lame niggas, I hate those",those,29,We don't trick on stank hoes,hoes,END,PERFECT,cmu,HIGH,Y
+Saint,28,"Lame niggas, I hate those",those,29,We don't trick on stank hoes,don't,INNER,ASSONANCE,vowel,MED,Y
+Saint,28,"Lame niggas, I hate those",those,30,But I got all the bankrolls,bankrolls,END,SLANT,cmu,MED,Y
+Saint,28,"Lame niggas, I hate those",those,31,From the 'Raq like D. Rose,Rose,END,PERFECT,cmu,HIGH,Y
+Saint,28,"Lame niggas, I hate those",those,32,"In LA. I stay, though",though,END,ASSONANCE,vowel,MED,Y
+Saint,29,We don't trick on stank hoes,don't,29,We don't trick on stank hoes,hoes,INNER,ASSONANCE,vowel,MED,Y
+Saint,29,We don't trick on stank hoes,hoes,30,But I got all the bankrolls,bankrolls,END,SLANT,cmu,MED,Y
+Saint,29,We don't trick on stank hoes,don't,30,But I got all the bankrolls,bankrolls,INNER,ASSONANCE,vowel,MED,Y
+Saint,29,We don't trick on stank hoes,hoes,31,From the 'Raq like D. Rose,Rose,END,PERFECT,cmu,HIGH,Y
+Saint,29,We don't trick on stank hoes,don't,31,From the 'Raq like D. Rose,Rose,INNER,ASSONANCE,vowel,MED,Y
+Saint,29,We don't trick on stank hoes,stank,31,From the 'Raq like D. Rose,'Raq,INNER,SLANT,spelling,LOW,Y
+Saint,29,We don't trick on stank hoes,hoes,32,"In LA. I stay, though",though,END,ASSONANCE,vowel,MED,Y
+Saint,30,But I got all the bankrolls,bankrolls,31,From the 'Raq like D. Rose,Rose,END,SLANT,cmu,MED,Y
+Saint,30,But I got all the bankrolls,bankrolls,32,"In LA. I stay, though",though,END,ASSONANCE,vowel,MED,Y
+Saint,30,But I got all the bankrolls,got,32,"In LA. I stay, though",LA,INNER,ASSONANCE,vowel,MED,Y
+Saint,31,From the 'Raq like D. Rose,Rose,32,"In LA. I stay, though",though,END,ASSONANCE,vowel,MED,Y
+Saint,31,From the 'Raq like D. Rose,like,33,Life is not a game,Life,INNER,SLANT,cmu,MED,Y
+Saint,32,"In LA. I stay, though",LA,33,Life is not a game,not,INNER,ASSONANCE,vowel,MED,Y
+Saint,32,"In LA. I stay, though",stay,33,Life is not a game,game,INNER,ASSONANCE,vowel,MED,Y
+Saint,32,"In LA. I stay, though",stay,34,So fuck I'ma play for? (Swervo),play,INNER,PERFECT,cmu,HIGH,Y
+Saint,32,"In LA. I stay, though",though,35,"Swerve, big G Herbo",Herbo,END,ASSONANCE,vowel,LOW,N
+Saint,32,"In LA. I stay, though",though,36,"Gotta fuck around, slide to the UK after this one, bro",bro,END,PERFECT,cmu,HIGH,Y
+Saint,33,Life is not a game,game,34,So fuck I'ma play for? (Swervo),play,END,ASSONANCE,vowel,MED,Y
+Saint,34,So fuck I'ma play for? (Swervo),I'ma,35,"Swerve, big G Herbo",big,INNER,SLANT,spelling,LOW,Y
+Saint,34,So fuck I'ma play for? (Swervo),fuck,36,"Gotta fuck around, slide to the UK after this one, bro",fuck,INNER,REPEAT,spelling,HIGH,N
+Saint,34,So fuck I'ma play for? (Swervo),fuck,36,"Gotta fuck around, slide to the UK after this one, bro",one,INNER,SLANT,cmu,MED,Y
+Saint,34,So fuck I'ma play for? (Swervo),play,36,"Gotta fuck around, slide to the UK after this one, bro",UK,INNER,PERFECT,cmu,HIGH,Y
+Saint,35,"Swerve, big G Herbo",Swerve,35,"Swerve, big G Herbo",Herbo,INNER,SLANT,spelling,LOW,Y
+Saint,35,"Swerve, big G Herbo",Herbo,36,"Gotta fuck around, slide to the UK after this one, bro",bro,END,ASSONANCE,vowel,LOW,N
+Saint,36,"Gotta fuck around, slide to the UK after this one, bro",fuck,36,"Gotta fuck around, slide to the UK after this one, bro",one,INNER,SLANT,cmu,MED,Y

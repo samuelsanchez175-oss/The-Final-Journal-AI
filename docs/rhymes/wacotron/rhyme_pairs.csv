@@ -1,0 +1,480 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Umbrella,2,Mello made it right,made,3,"Ayy, pick up the pace (Pick it up)",pace,INNER,SLANT,cmu,MED,Y
+Umbrella,2,Mello made it right,made,4,"No umbrella, I stick up the place (Stick it up)",place,INNER,SLANT,cmu,MED,Y
+Umbrella,2,Mello made it right,Mello,4,"No umbrella, I stick up the place (Stick it up)",umbrella,INNER,SLANT,cmu,MED,Y
+Umbrella,3,"Ayy, pick up the pace (Pick it up)",pace,4,"No umbrella, I stick up the place (Stick it up)",place,END,PERFECT,cmu,HIGH,Y
+Umbrella,3,"Ayy, pick up the pace (Pick it up)",pick,4,"No umbrella, I stick up the place (Stick it up)",stick,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,3,"Ayy, pick up the pace (Pick it up)",pace,5,Matter fact go and switch up the base (Switch it up),base,END,PERFECT,cmu,HIGH,Y
+Umbrella,3,"Ayy, pick up the pace (Pick it up)",pick,5,Matter fact go and switch up the base (Switch it up),switch,INNER,SLANT,cmu,MED,Y
+Umbrella,3,"Ayy, pick up the pace (Pick it up)",pace,6,Moving silent at night with the K (Ha),K,END,ASSONANCE,vowel,MED,Y
+Umbrella,3,"Ayy, pick up the pace (Pick it up)",pace,7,"Wanna make it, then stay out the way (The way)",way,END,ASSONANCE,vowel,MED,Y
+Umbrella,4,"No umbrella, I stick up the place (Stick it up)",place,5,Matter fact go and switch up the base (Switch it up),base,END,PERFECT,cmu,HIGH,Y
+Umbrella,4,"No umbrella, I stick up the place (Stick it up)",No,5,Matter fact go and switch up the base (Switch it up),go,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,4,"No umbrella, I stick up the place (Stick it up)",stick,5,Matter fact go and switch up the base (Switch it up),switch,INNER,SLANT,cmu,MED,Y
+Umbrella,4,"No umbrella, I stick up the place (Stick it up)",place,6,Moving silent at night with the K (Ha),K,END,ASSONANCE,vowel,MED,Y
+Umbrella,4,"No umbrella, I stick up the place (Stick it up)",place,7,"Wanna make it, then stay out the way (The way)",way,END,ASSONANCE,vowel,MED,Y
+Umbrella,4,"No umbrella, I stick up the place (Stick it up)",place,8,Wherever you at better pray (Say),pray,END,ASSONANCE,vowel,MED,Y
+Umbrella,5,Matter fact go and switch up the base (Switch it up),Matter,5,Matter fact go and switch up the base (Switch it up),fact,INNER,SLANT,cmu,MED,Y
+Umbrella,5,Matter fact go and switch up the base (Switch it up),base,6,Moving silent at night with the K (Ha),K,END,ASSONANCE,vowel,MED,Y
+Umbrella,5,Matter fact go and switch up the base (Switch it up),base,7,"Wanna make it, then stay out the way (The way)",way,END,ASSONANCE,vowel,MED,Y
+Umbrella,5,Matter fact go and switch up the base (Switch it up),base,7,"Wanna make it, then stay out the way (The way)",make,INNER,SLANT,cmu,MED,Y
+Umbrella,5,Matter fact go and switch up the base (Switch it up),base,7,"Wanna make it, then stay out the way (The way)",stay,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,5,Matter fact go and switch up the base (Switch it up),base,8,Wherever you at better pray (Say),pray,END,ASSONANCE,vowel,MED,Y
+Umbrella,5,Matter fact go and switch up the base (Switch it up),base,9,‘Cause I promise today ain’t the day (The day),day,END,ASSONANCE,vowel,MED,Y
+Umbrella,6,Moving silent at night with the K (Ha),silent,6,Moving silent at night with the K (Ha),night,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,6,Moving silent at night with the K (Ha),K,7,"Wanna make it, then stay out the way (The way)",way,END,PERFECT,cmu,HIGH,Y
+Umbrella,6,Moving silent at night with the K (Ha),K,7,"Wanna make it, then stay out the way (The way)",make,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,6,Moving silent at night with the K (Ha),K,7,"Wanna make it, then stay out the way (The way)",stay,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,6,Moving silent at night with the K (Ha),K,8,Wherever you at better pray (Say),pray,END,PERFECT,cmu,HIGH,Y
+Umbrella,6,Moving silent at night with the K (Ha),K,9,‘Cause I promise today ain’t the day (The day),day,END,PERFECT,cmu,HIGH,Y
+Umbrella,6,Moving silent at night with the K (Ha),K,10,"When I slide, I ain’t playing it safe (Safe)",safe,END,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",make,7,"Wanna make it, then stay out the way (The way)",stay,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",make,7,"Wanna make it, then stay out the way (The way)",way,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",stay,7,"Wanna make it, then stay out the way (The way)",way,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",way,8,Wherever you at better pray (Say),pray,END,PERFECT,cmu,HIGH,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",make,8,Wherever you at better pray (Say),pray,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",stay,8,Wherever you at better pray (Say),pray,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",way,9,‘Cause I promise today ain’t the day (The day),day,END,PERFECT,cmu,HIGH,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",make,9,‘Cause I promise today ain’t the day (The day),ain’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",make,9,‘Cause I promise today ain’t the day (The day),day,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",make,9,‘Cause I promise today ain’t the day (The day),today,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",stay,9,‘Cause I promise today ain’t the day (The day),ain’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",stay,9,‘Cause I promise today ain’t the day (The day),day,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",stay,9,‘Cause I promise today ain’t the day (The day),today,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",Wanna,9,‘Cause I promise today ain’t the day (The day),Cause,INNER,SLANT,cmu,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",Wanna,9,‘Cause I promise today ain’t the day (The day),promise,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",way,9,‘Cause I promise today ain’t the day (The day),ain’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",way,9,‘Cause I promise today ain’t the day (The day),today,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,7,"Wanna make it, then stay out the way (The way)",way,10,"When I slide, I ain’t playing it safe (Safe)",safe,END,ASSONANCE,vowel,MED,Y
+Umbrella,8,Wherever you at better pray (Say),Wherever,8,Wherever you at better pray (Say),better,INNER,SLANT,cmu,MED,Y
+Umbrella,8,Wherever you at better pray (Say),pray,9,‘Cause I promise today ain’t the day (The day),day,END,PERFECT,cmu,HIGH,Y
+Umbrella,8,Wherever you at better pray (Say),pray,9,‘Cause I promise today ain’t the day (The day),ain’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,8,Wherever you at better pray (Say),pray,9,‘Cause I promise today ain’t the day (The day),today,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,8,Wherever you at better pray (Say),pray,10,"When I slide, I ain’t playing it safe (Safe)",safe,END,ASSONANCE,vowel,MED,Y
+Umbrella,8,Wherever you at better pray (Say),better,10,"When I slide, I ain’t playing it safe (Safe)",When,INNER,SLANT,cmu,MED,Y
+Umbrella,8,Wherever you at better pray (Say),pray,10,"When I slide, I ain’t playing it safe (Safe)",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,8,Wherever you at better pray (Say),pray,10,"When I slide, I ain’t playing it safe (Safe)",playing,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,8,Wherever you at better pray (Say),Wherever,10,"When I slide, I ain’t playing it safe (Safe)",When,INNER,SLANT,cmu,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),ain’t,9,‘Cause I promise today ain’t the day (The day),day,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),Cause,9,‘Cause I promise today ain’t the day (The day),promise,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),today,9,‘Cause I promise today ain’t the day (The day),ain’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),today,9,‘Cause I promise today ain’t the day (The day),day,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),day,10,"When I slide, I ain’t playing it safe (Safe)",safe,END,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),ain’t,10,"When I slide, I ain’t playing it safe (Safe)",ain’t,INNER,REPEAT,spelling,HIGH,N
+Umbrella,9,‘Cause I promise today ain’t the day (The day),ain’t,10,"When I slide, I ain’t playing it safe (Safe)",playing,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),ain’t,10,"When I slide, I ain’t playing it safe (Safe)",safe,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),day,10,"When I slide, I ain’t playing it safe (Safe)",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),day,10,"When I slide, I ain’t playing it safe (Safe)",playing,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),today,10,"When I slide, I ain’t playing it safe (Safe)",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),today,10,"When I slide, I ain’t playing it safe (Safe)",playing,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),today,10,"When I slide, I ain’t playing it safe (Safe)",safe,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),ain’t,11,"How you my partner, but constantly hate on the low (Huh?)",hate,INNER,SLANT,cmu,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),Cause,11,"How you my partner, but constantly hate on the low (Huh?)",constantly,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),Cause,11,"How you my partner, but constantly hate on the low (Huh?)",partner,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),day,11,"How you my partner, but constantly hate on the low (Huh?)",hate,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),promise,11,"How you my partner, but constantly hate on the low (Huh?)",constantly,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),promise,11,"How you my partner, but constantly hate on the low (Huh?)",partner,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,9,‘Cause I promise today ain’t the day (The day),today,11,"How you my partner, but constantly hate on the low (Huh?)",hate,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,10,"When I slide, I ain’t playing it safe (Safe)",ain’t,10,"When I slide, I ain’t playing it safe (Safe)",playing,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,10,"When I slide, I ain’t playing it safe (Safe)",ain’t,10,"When I slide, I ain’t playing it safe (Safe)",safe,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,10,"When I slide, I ain’t playing it safe (Safe)",playing,10,"When I slide, I ain’t playing it safe (Safe)",safe,INNER,SLANT,cmu,MED,Y
+Umbrella,10,"When I slide, I ain’t playing it safe (Safe)",ain’t,11,"How you my partner, but constantly hate on the low (Huh?)",hate,INNER,SLANT,cmu,MED,Y
+Umbrella,10,"When I slide, I ain’t playing it safe (Safe)",playing,11,"How you my partner, but constantly hate on the low (Huh?)",hate,INNER,SLANT,cmu,MED,Y
+Umbrella,10,"When I slide, I ain’t playing it safe (Safe)",safe,11,"How you my partner, but constantly hate on the low (Huh?)",hate,INNER,SLANT,cmu,MED,Y
+Umbrella,11,"How you my partner, but constantly hate on the low (Huh?)",partner,11,"How you my partner, but constantly hate on the low (Huh?)",constantly,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,11,"How you my partner, but constantly hate on the low (Huh?)",low,12,I don’t think that’s how it go,go,END,PERFECT,cmu,HIGH,Y
+Umbrella,11,"How you my partner, but constantly hate on the low (Huh?)",How,12,I don’t think that’s how it go,how,INNER,REPEAT,spelling,HIGH,N
+Umbrella,11,"How you my partner, but constantly hate on the low (Huh?)",low,12,I don’t think that’s how it go,don’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,11,"How you my partner, but constantly hate on the low (Huh?)",low,13,I don’t go with the flow,flow,END,PERFECT,cmu,HIGH,Y
+Umbrella,11,"How you my partner, but constantly hate on the low (Huh?)",low,13,I don’t go with the flow,don’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,11,"How you my partner, but constantly hate on the low (Huh?)",low,13,I don’t go with the flow,go,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,11,"How you my partner, but constantly hate on the low (Huh?)",low,14,"Soon to be said, you’ll know (Woo)",know,END,PERFECT,cmu,HIGH,Y
+Umbrella,11,"How you my partner, but constantly hate on the low (Huh?)",low,15,I promise I been there before when you talk like a pro,pro,END,PERFECT,cmu,HIGH,Y
+Umbrella,12,I don’t think that’s how it go,don’t,12,I don’t think that’s how it go,go,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,12,I don’t think that’s how it go,go,13,I don’t go with the flow,flow,END,PERFECT,cmu,HIGH,Y
+Umbrella,12,I don’t think that’s how it go,don’t,13,I don’t go with the flow,don’t,INNER,REPEAT,spelling,HIGH,N
+Umbrella,12,I don’t think that’s how it go,don’t,13,I don’t go with the flow,flow,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,12,I don’t think that’s how it go,don’t,13,I don’t go with the flow,go,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,12,I don’t think that’s how it go,go,13,I don’t go with the flow,don’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,12,I don’t think that’s how it go,go,13,I don’t go with the flow,go,INNER,REPEAT,spelling,HIGH,N
+Umbrella,12,I don’t think that’s how it go,go,14,"Soon to be said, you’ll know (Woo)",know,END,PERFECT,cmu,HIGH,Y
+Umbrella,12,I don’t think that’s how it go,don’t,14,"Soon to be said, you’ll know (Woo)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,12,I don’t think that’s how it go,go,15,I promise I been there before when you talk like a pro,pro,END,PERFECT,cmu,HIGH,Y
+Umbrella,12,I don’t think that’s how it go,go,16,But we know you talk to them folks,folks,END,ASSONANCE,vowel,MED,Y
+Umbrella,13,I don’t go with the flow,don’t,13,I don’t go with the flow,flow,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,13,I don’t go with the flow,don’t,13,I don’t go with the flow,go,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,13,I don’t go with the flow,go,13,I don’t go with the flow,flow,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,13,I don’t go with the flow,flow,14,"Soon to be said, you’ll know (Woo)",know,END,PERFECT,cmu,HIGH,Y
+Umbrella,13,I don’t go with the flow,don’t,14,"Soon to be said, you’ll know (Woo)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,13,I don’t go with the flow,go,14,"Soon to be said, you’ll know (Woo)",know,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,13,I don’t go with the flow,flow,15,I promise I been there before when you talk like a pro,pro,END,PERFECT,cmu,HIGH,Y
+Umbrella,13,I don’t go with the flow,don’t,15,I promise I been there before when you talk like a pro,pro,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,13,I don’t go with the flow,go,15,I promise I been there before when you talk like a pro,pro,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,13,I don’t go with the flow,flow,16,But we know you talk to them folks,folks,END,ASSONANCE,vowel,MED,Y
+Umbrella,13,I don’t go with the flow,flow,17,This nigga sinking the boat (Rent),boat,END,ASSONANCE,vowel,MED,Y
+Umbrella,14,"Soon to be said, you’ll know (Woo)",know,15,I promise I been there before when you talk like a pro,pro,END,PERFECT,cmu,HIGH,Y
+Umbrella,14,"Soon to be said, you’ll know (Woo)",said,15,I promise I been there before when you talk like a pro,there,INNER,SLANT,cmu,MED,Y
+Umbrella,14,"Soon to be said, you’ll know (Woo)",said,15,I promise I been there before when you talk like a pro,when,INNER,SLANT,cmu,MED,Y
+Umbrella,14,"Soon to be said, you’ll know (Woo)",know,16,But we know you talk to them folks,folks,END,ASSONANCE,vowel,MED,Y
+Umbrella,14,"Soon to be said, you’ll know (Woo)",know,16,But we know you talk to them folks,know,INNER,REPEAT,spelling,HIGH,N
+Umbrella,14,"Soon to be said, you’ll know (Woo)",know,17,This nigga sinking the boat (Rent),boat,END,ASSONANCE,vowel,MED,Y
+Umbrella,14,"Soon to be said, you’ll know (Woo)",know,18,Cutta must think I’m a ho (Never that),ho,END,PERFECT,cmu,HIGH,Y
+Umbrella,15,I promise I been there before when you talk like a pro,before,15,I promise I been there before when you talk like a pro,talk,INNER,SLANT,cmu,MED,Y
+Umbrella,15,I promise I been there before when you talk like a pro,there,15,I promise I been there before when you talk like a pro,when,INNER,SLANT,cmu,MED,Y
+Umbrella,15,I promise I been there before when you talk like a pro,pro,16,But we know you talk to them folks,folks,END,ASSONANCE,vowel,MED,Y
+Umbrella,15,I promise I been there before when you talk like a pro,before,16,But we know you talk to them folks,talk,INNER,SLANT,cmu,MED,Y
+Umbrella,15,I promise I been there before when you talk like a pro,pro,16,But we know you talk to them folks,know,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,15,I promise I been there before when you talk like a pro,talk,16,But we know you talk to them folks,talk,INNER,REPEAT,spelling,HIGH,N
+Umbrella,15,I promise I been there before when you talk like a pro,pro,17,This nigga sinking the boat (Rent),boat,END,ASSONANCE,vowel,MED,Y
+Umbrella,15,I promise I been there before when you talk like a pro,pro,18,Cutta must think I’m a ho (Never that),ho,END,PERFECT,cmu,HIGH,Y
+Umbrella,16,But we know you talk to them folks,know,16,But we know you talk to them folks,folks,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,16,But we know you talk to them folks,folks,17,This nigga sinking the boat (Rent),boat,END,ASSONANCE,vowel,MED,Y
+Umbrella,16,But we know you talk to them folks,know,17,This nigga sinking the boat (Rent),boat,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,16,But we know you talk to them folks,folks,18,Cutta must think I’m a ho (Never that),ho,END,ASSONANCE,vowel,MED,Y
+Umbrella,16,But we know you talk to them folks,know,18,Cutta must think I’m a ho (Never that),ho,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,17,This nigga sinking the boat (Rent),boat,18,Cutta must think I’m a ho (Never that),ho,END,ASSONANCE,vowel,MED,Y
+Umbrella,17,This nigga sinking the boat (Rent),sinking,18,Cutta must think I’m a ho (Never that),think,INNER,SLANT,cmu,MED,Y
+Umbrella,17,This nigga sinking the boat (Rent),sinking,19,I’ma just give him some more (Mo'),give,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,17,This nigga sinking the boat (Rent),sinking,19,I’ma just give him some more (Mo'),him,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,18,Cutta must think I’m a ho (Never that),Cutta,18,Cutta must think I’m a ho (Never that),must,INNER,SLANT,spelling,LOW,Y
+Umbrella,18,Cutta must think I’m a ho (Never that),must,19,I’ma just give him some more (Mo'),some,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,18,Cutta must think I’m a ho (Never that),think,19,I’ma just give him some more (Mo'),give,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,18,Cutta must think I’m a ho (Never that),think,19,I’ma just give him some more (Mo'),him,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,19,I’ma just give him some more (Mo'),give,19,I’ma just give him some more (Mo'),him,INNER,SLANT,cmu,MED,Y
+Umbrella,19,I’ma just give him some more (Mo'),I’ma,19,I’ma just give him some more (Mo'),give,INNER,SLANT,spelling,LOW,Y
+Umbrella,19,I’ma just give him some more (Mo'),I’ma,19,I’ma just give him some more (Mo'),him,INNER,SLANT,spelling,LOW,Y
+Umbrella,19,I’ma just give him some more (Mo'),more,21,"But hating in the back of they mind, that be all the time",all,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",like,20,"These niggas lying, act like they want you to shine",shine,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",lying,20,"These niggas lying, act like they want you to shine",like,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",lying,20,"These niggas lying, act like they want you to shine",shine,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",shine,21,"But hating in the back of they mind, that be all the time",time,END,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",act,21,"But hating in the back of they mind, that be all the time",back,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",like,21,"But hating in the back of they mind, that be all the time",mind,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",like,21,"But hating in the back of they mind, that be all the time",time,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",lying,21,"But hating in the back of they mind, that be all the time",mind,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",lying,21,"But hating in the back of they mind, that be all the time",time,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",shine,21,"But hating in the back of they mind, that be all the time",mind,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",shine,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,END,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",like,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",like,22,"I was somewhere on the grind, somewhere that ain’t easy to find",grind,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",lying,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",lying,22,"I was somewhere on the grind, somewhere that ain’t easy to find",grind,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",shine,22,"I was somewhere on the grind, somewhere that ain’t easy to find",grind,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",These,22,"I was somewhere on the grind, somewhere that ain’t easy to find",easy,INNER,SLANT,cmu,MED,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",shine,23,"I never whined, I took me a seat on the pine",pine,END,PERFECT,cmu,HIGH,Y
+Umbrella,20,"These niggas lying, act like they want you to shine",shine,24,"Them feelings, I put 'em aside",aside,END,SLANT,cmu,MED,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",mind,21,"But hating in the back of they mind, that be all the time",time,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",time,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,END,ASSONANCE,vowel,MED,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",hating,22,"I was somewhere on the grind, somewhere that ain’t easy to find",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",mind,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",mind,22,"I was somewhere on the grind, somewhere that ain’t easy to find",grind,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",time,22,"I was somewhere on the grind, somewhere that ain’t easy to find",grind,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",time,23,"I never whined, I took me a seat on the pine",pine,END,SLANT,cmu,MED,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",mind,23,"I never whined, I took me a seat on the pine",pine,INNER,SLANT,cmu,MED,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",time,24,"Them feelings, I put 'em aside",aside,END,SLANT,cmu,MED,Y
+Umbrella,21,"But hating in the back of they mind, that be all the time",time,25,Go with your moves or somebody gon’ die (Go with it),die,END,ASSONANCE,vowel,MED,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",grind,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",somewhere,22,"I was somewhere on the grind, somewhere that ain’t easy to find",somewhere,INNER,REPEAT,spelling,HIGH,N
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,23,"I never whined, I took me a seat on the pine",pine,END,SLANT,cmu,MED,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",easy,23,"I never whined, I took me a seat on the pine",seat,INNER,SLANT,cmu,MED,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",grind,23,"I never whined, I took me a seat on the pine",pine,INNER,SLANT,cmu,MED,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",somewhere,23,"I never whined, I took me a seat on the pine",never,INNER,SLANT,cmu,MED,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,24,"Them feelings, I put 'em aside",aside,END,SLANT,cmu,MED,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",easy,24,"Them feelings, I put 'em aside",feelings,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",grind,24,"Them feelings, I put 'em aside",aside,INNER,SLANT,cmu,MED,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,25,Go with your moves or somebody gon’ die (Go with it),die,END,ASSONANCE,vowel,MED,Y
+Umbrella,22,"I was somewhere on the grind, somewhere that ain’t easy to find",find,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",try,END,ASSONANCE,vowel,MED,Y
+Umbrella,23,"I never whined, I took me a seat on the pine",pine,24,"Them feelings, I put 'em aside",aside,END,SLANT,cmu,MED,Y
+Umbrella,23,"I never whined, I took me a seat on the pine",seat,24,"Them feelings, I put 'em aside",feelings,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,23,"I never whined, I took me a seat on the pine",took,24,"Them feelings, I put 'em aside",put,INNER,SLANT,cmu,MED,Y
+Umbrella,23,"I never whined, I took me a seat on the pine",pine,25,Go with your moves or somebody gon’ die (Go with it),die,END,ASSONANCE,vowel,MED,Y
+Umbrella,23,"I never whined, I took me a seat on the pine",pine,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",try,END,ASSONANCE,vowel,MED,Y
+Umbrella,24,"Them feelings, I put 'em aside",aside,25,Go with your moves or somebody gon’ die (Go with it),die,END,ASSONANCE,vowel,MED,Y
+Umbrella,24,"Them feelings, I put 'em aside",aside,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",try,END,ASSONANCE,vowel,MED,Y
+Umbrella,25,Go with your moves or somebody gon’ die (Go with it),die,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",try,END,PERFECT,cmu,HIGH,Y
+Umbrella,25,Go with your moves or somebody gon’ die (Go with it),Go,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",don’t,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,25,Go with your moves or somebody gon’ die (Go with it),gon,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",don’t,INNER,SLANT,spelling,LOW,Y
+Umbrella,25,Go with your moves or somebody gon’ die (Go with it),somebody,27,"That’s hate in your heart, prolly was hate from the start",heart,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,25,Go with your moves or somebody gon’ die (Go with it),somebody,27,"That’s hate in your heart, prolly was hate from the start",prolly,INNER,ASSONANCE,vowel,LOW,N
+Umbrella,25,Go with your moves or somebody gon’ die (Go with it),somebody,27,"That’s hate in your heart, prolly was hate from the start",start,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",Shit,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",nigga,INNER,SLANT,spelling,LOW,Y
+Umbrella,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",prayed,27,"That’s hate in your heart, prolly was hate from the start",hate,INNER,SLANT,cmu,MED,Y
+Umbrella,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",nigga,28,"Planning to pick them apart, look at the art",pick,INNER,SLANT,spelling,LOW,Y
+Umbrella,26,"Shit, I just prayed that my nigga don’t try (Let's get it)",Shit,28,"Planning to pick them apart, look at the art",pick,INNER,SLANT,cmu,MED,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",hate,27,"That’s hate in your heart, prolly was hate from the start",hate,INNER,REPEAT,spelling,HIGH,N
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",heart,27,"That’s hate in your heart, prolly was hate from the start",start,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",start,28,"Planning to pick them apart, look at the art",art,END,PERFECT,cmu,HIGH,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",heart,28,"Planning to pick them apart, look at the art",apart,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",heart,28,"Planning to pick them apart, look at the art",art,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",start,28,"Planning to pick them apart, look at the art",apart,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",start,29,"Trip over any remark, and I’m diving right next to a shark",shark,END,SLANT,cmu,MED,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",heart,29,"Trip over any remark, and I’m diving right next to a shark",remark,INNER,SLANT,cmu,MED,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",heart,29,"Trip over any remark, and I’m diving right next to a shark",shark,INNER,SLANT,cmu,MED,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",prolly,29,"Trip over any remark, and I’m diving right next to a shark",any,INNER,ASSONANCE,vowel,LOW,N
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",start,29,"Trip over any remark, and I’m diving right next to a shark",remark,INNER,SLANT,cmu,MED,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",start,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,END,SLANT,cmu,MED,Y
+Umbrella,27,"That’s hate in your heart, prolly was hate from the start",start,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,END,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",apart,28,"Planning to pick them apart, look at the art",art,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,28,"Planning to pick them apart, look at the art",art,29,"Trip over any remark, and I’m diving right next to a shark",shark,END,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",apart,29,"Trip over any remark, and I’m diving right next to a shark",remark,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",apart,29,"Trip over any remark, and I’m diving right next to a shark",shark,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",art,29,"Trip over any remark, and I’m diving right next to a shark",remark,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",pick,29,"Trip over any remark, and I’m diving right next to a shark",Trip,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",art,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,END,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",apart,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",apart,30,"Give it a spark, look out the door see the park is ugly when you in the dark",park,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",apart,30,"Give it a spark, look out the door see the park is ugly when you in the dark",spark,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",art,30,"Give it a spark, look out the door see the park is ugly when you in the dark",park,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",art,30,"Give it a spark, look out the door see the park is ugly when you in the dark",spark,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",look,30,"Give it a spark, look out the door see the park is ugly when you in the dark",look,INNER,REPEAT,spelling,HIGH,N
+Umbrella,28,"Planning to pick them apart, look at the art",pick,30,"Give it a spark, look out the door see the park is ugly when you in the dark",Give,INNER,SLANT,cmu,MED,Y
+Umbrella,28,"Planning to pick them apart, look at the art",art,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,END,SLANT,cmu,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",any,29,"Trip over any remark, and I’m diving right next to a shark",next,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",diving,29,"Trip over any remark, and I’m diving right next to a shark",right,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",remark,29,"Trip over any remark, and I’m diving right next to a shark",shark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",shark,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,END,PERFECT,cmu,HIGH,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",any,30,"Give it a spark, look out the door see the park is ugly when you in the dark",when,INNER,SLANT,cmu,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",next,30,"Give it a spark, look out the door see the park is ugly when you in the dark",when,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",remark,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",remark,30,"Give it a spark, look out the door see the park is ugly when you in the dark",park,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",remark,30,"Give it a spark, look out the door see the park is ugly when you in the dark",spark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",shark,30,"Give it a spark, look out the door see the park is ugly when you in the dark",park,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",shark,30,"Give it a spark, look out the door see the park is ugly when you in the dark",spark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",Trip,30,"Give it a spark, look out the door see the park is ugly when you in the dark",Give,INNER,SLANT,cmu,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",shark,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,END,SLANT,cmu,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",any,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",myself,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",any,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Texas,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",diving,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",by,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",next,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",myself,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",next,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Texas,INNER,SLANT,cmu,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",over,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",smokin,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",remark,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Clark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",remark,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,INNER,SLANT,cmu,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",right,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",by,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",shark,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Clark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,29,"Trip over any remark, and I’m diving right next to a shark",Trip,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Big,INNER,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",park,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",spark,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",spark,30,"Give it a spark, look out the door see the park is ugly when you in the dark",park,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,END,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Clark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",door,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",thought,INNER,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",Give,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Big,INNER,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",park,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Clark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",park,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,INNER,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",spark,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Clark,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",spark,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,INNER,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",when,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",myself,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",when,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Texas,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",dark,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",Glock,INNER,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",Give,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",pick,INNER,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",Give,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",still,INNER,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",park,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",Glock,INNER,SLANT,cmu,MED,Y
+Umbrella,30,"Give it a spark, look out the door see the park is ugly when you in the dark",spark,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",Glock,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Clark,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Texas,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",myself,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Big,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",pick,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Big,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",still,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Clark,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",Glock,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",Glock,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",make,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",face,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",make,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",waist,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Big,33,"Hop in the straight, pick up the pace (Neow)",pick,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",Clark,33,"Hop in the straight, pick up the pace (Neow)",Hop,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",far,33,"Hop in the straight, pick up the pace (Neow)",Hop,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",make,33,"Hop in the straight, pick up the pace (Neow)",pace,INNER,SLANT,cmu,MED,Y
+Umbrella,31,"Passing by Clark, smokin' Big Texas I thought to myself how I make it this far",make,33,"Hop in the straight, pick up the pace (Neow)",straight,INNER,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",still,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",pick,INNER,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",waist,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",face,INNER,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",face,33,"Hop in the straight, pick up the pace (Neow)",pace,END,PERFECT,cmu,HIGH,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",face,33,"Hop in the straight, pick up the pace (Neow)",straight,INNER,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",Glock,33,"Hop in the straight, pick up the pace (Neow)",Hop,INNER,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",pick,33,"Hop in the straight, pick up the pace (Neow)",pick,INNER,REPEAT,spelling,HIGH,N
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",still,33,"Hop in the straight, pick up the pace (Neow)",pick,INNER,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",waist,33,"Hop in the straight, pick up the pace (Neow)",pace,INNER,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",waist,33,"Hop in the straight, pick up the pace (Neow)",straight,INNER,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",face,34,What I'm gon' pick up today (Day),today,END,ASSONANCE,vowel,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",pick,34,What I'm gon' pick up today (Day),pick,INNER,REPEAT,spelling,HIGH,N
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",still,34,What I'm gon' pick up today (Day),pick,INNER,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",waist,34,What I'm gon' pick up today (Day),today,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",face,35,"I'm having M's, I need a safe (Yeah)",safe,END,SLANT,cmu,MED,Y
+Umbrella,32,"40 Glock still on my waist (Grr, bah), pick up his face (His face)",face,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,END,PERFECT,cmu,HIGH,Y
+Umbrella,33,"Hop in the straight, pick up the pace (Neow)",straight,33,"Hop in the straight, pick up the pace (Neow)",pace,INNER,SLANT,cmu,MED,Y
+Umbrella,33,"Hop in the straight, pick up the pace (Neow)",pace,34,What I'm gon' pick up today (Day),today,END,ASSONANCE,vowel,MED,Y
+Umbrella,33,"Hop in the straight, pick up the pace (Neow)",pick,34,What I'm gon' pick up today (Day),pick,INNER,REPEAT,spelling,HIGH,N
+Umbrella,33,"Hop in the straight, pick up the pace (Neow)",straight,34,What I'm gon' pick up today (Day),today,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,33,"Hop in the straight, pick up the pace (Neow)",pace,35,"I'm having M's, I need a safe (Yeah)",safe,END,SLANT,cmu,MED,Y
+Umbrella,33,"Hop in the straight, pick up the pace (Neow)",straight,35,"I'm having M's, I need a safe (Yeah)",safe,INNER,SLANT,cmu,MED,Y
+Umbrella,33,"Hop in the straight, pick up the pace (Neow)",pace,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,END,PERFECT,cmu,HIGH,Y
+Umbrella,33,"Hop in the straight, pick up the pace (Neow)",pace,37,"I'm paying taxes, I need a trace (Yeah)",trace,END,PERFECT,cmu,HIGH,Y
+Umbrella,34,What I'm gon' pick up today (Day),today,35,"I'm having M's, I need a safe (Yeah)",safe,END,ASSONANCE,vowel,MED,Y
+Umbrella,34,What I'm gon' pick up today (Day),today,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,END,ASSONANCE,vowel,MED,Y
+Umbrella,34,What I'm gon' pick up today (Day),pick,36,Lil' 100k what I pick up from Chase (Outta chase),Lil,INNER,SLANT,cmu,MED,Y
+Umbrella,34,What I'm gon' pick up today (Day),pick,36,Lil' 100k what I pick up from Chase (Outta chase),pick,INNER,REPEAT,spelling,HIGH,N
+Umbrella,34,What I'm gon' pick up today (Day),What,36,Lil' 100k what I pick up from Chase (Outta chase),what,INNER,REPEAT,spelling,HIGH,N
+Umbrella,34,What I'm gon' pick up today (Day),today,37,"I'm paying taxes, I need a trace (Yeah)",trace,END,ASSONANCE,vowel,MED,Y
+Umbrella,34,What I'm gon' pick up today (Day),today,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,END,ASSONANCE,vowel,MED,Y
+Umbrella,35,"I'm having M's, I need a safe (Yeah)",safe,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,END,SLANT,cmu,MED,Y
+Umbrella,35,"I'm having M's, I need a safe (Yeah)",safe,37,"I'm paying taxes, I need a trace (Yeah)",trace,END,SLANT,cmu,MED,Y
+Umbrella,35,"I'm having M's, I need a safe (Yeah)",having,37,"I'm paying taxes, I need a trace (Yeah)",taxes,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,35,"I'm having M's, I need a safe (Yeah)",need,37,"I'm paying taxes, I need a trace (Yeah)",need,INNER,REPEAT,spelling,HIGH,N
+Umbrella,35,"I'm having M's, I need a safe (Yeah)",safe,37,"I'm paying taxes, I need a trace (Yeah)",paying,INNER,SLANT,cmu,MED,Y
+Umbrella,35,"I'm having M's, I need a safe (Yeah)",safe,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,END,SLANT,cmu,MED,Y
+Umbrella,35,"I'm having M's, I need a safe (Yeah)",safe,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,END,SLANT,cmu,MED,Y
+Umbrella,36,Lil' 100k what I pick up from Chase (Outta chase),Lil,36,Lil' 100k what I pick up from Chase (Outta chase),pick,INNER,SLANT,cmu,MED,Y
+Umbrella,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,37,"I'm paying taxes, I need a trace (Yeah)",trace,END,PERFECT,cmu,HIGH,Y
+Umbrella,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,37,"I'm paying taxes, I need a trace (Yeah)",paying,INNER,SLANT,cmu,MED,Y
+Umbrella,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,END,PERFECT,cmu,HIGH,Y
+Umbrella,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,38,"Ain't no relaxing, taking up space (Yeah, you know that)",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,38,"Ain't no relaxing, taking up space (Yeah, you know that)",taking,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,END,PERFECT,cmu,HIGH,Y
+Umbrella,36,Lil' 100k what I pick up from Chase (Outta chase),Chase,40,"But I ain't snitching, ain't nothing to say (What)",say,END,ASSONANCE,vowel,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",paying,37,"I'm paying taxes, I need a trace (Yeah)",trace,INNER,SLANT,cmu,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",trace,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,END,PERFECT,cmu,HIGH,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",paying,38,"Ain't no relaxing, taking up space (Yeah, you know that)",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",paying,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,INNER,SLANT,cmu,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",paying,38,"Ain't no relaxing, taking up space (Yeah, you know that)",taking,INNER,SLANT,cmu,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",taxes,38,"Ain't no relaxing, taking up space (Yeah, you know that)",relaxing,INNER,SLANT,cmu,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",trace,38,"Ain't no relaxing, taking up space (Yeah, you know that)",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",trace,38,"Ain't no relaxing, taking up space (Yeah, you know that)",taking,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",trace,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,END,PERFECT,cmu,HIGH,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",need,39,"Niggas be R.I.C.O., I fuck with Ace",C,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",paying,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,INNER,SLANT,cmu,MED,Y
+Umbrella,37,"I'm paying taxes, I need a trace (Yeah)",trace,40,"But I ain't snitching, ain't nothing to say (What)",say,END,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",Ain't,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",Ain't,38,"Ain't no relaxing, taking up space (Yeah, you know that)",taking,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",taking,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,END,PERFECT,cmu,HIGH,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",Ain't,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",no,39,"Niggas be R.I.C.O., I fuck with Ace",O,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",taking,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,40,"But I ain't snitching, ain't nothing to say (What)",say,END,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",Ain't,40,"But I ain't snitching, ain't nothing to say (What)",ain't,INNER,REPEAT,spelling,HIGH,N
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",Ain't,40,"But I ain't snitching, ain't nothing to say (What)",say,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",space,40,"But I ain't snitching, ain't nothing to say (What)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",taking,40,"But I ain't snitching, ain't nothing to say (What)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,38,"Ain't no relaxing, taking up space (Yeah, you know that)",taking,40,"But I ain't snitching, ain't nothing to say (What)",say,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,40,"But I ain't snitching, ain't nothing to say (What)",say,END,ASSONANCE,vowel,MED,Y
+Umbrella,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,40,"But I ain't snitching, ain't nothing to say (What)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,39,"Niggas be R.I.C.O., I fuck with Ace",fuck,40,"But I ain't snitching, ain't nothing to say (What)",nothing,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,39,"Niggas be R.I.C.O., I fuck with Ace",Ace,41,"Niggas finito, made like Carlito",made,INNER,SLANT,cmu,MED,Y
+Umbrella,39,"Niggas be R.I.C.O., I fuck with Ace",C,41,"Niggas finito, made like Carlito",Carlito,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,39,"Niggas be R.I.C.O., I fuck with Ace",Niggas,41,"Niggas finito, made like Carlito",Niggas,INNER,REPEAT,spelling,HIGH,N
+Umbrella,39,"Niggas be R.I.C.O., I fuck with Ace",O,41,"Niggas finito, made like Carlito",finito,INNER,ASSONANCE,vowel,LOW,N
+Umbrella,40,"But I ain't snitching, ain't nothing to say (What)",ain't,40,"But I ain't snitching, ain't nothing to say (What)",ain't,INNER,REPEAT,spelling,HIGH,N
+Umbrella,40,"But I ain't snitching, ain't nothing to say (What)",ain't,40,"But I ain't snitching, ain't nothing to say (What)",say,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,40,"But I ain't snitching, ain't nothing to say (What)",snitching,40,"But I ain't snitching, ain't nothing to say (What)",nothing,INNER,PERFECT,spelling,MED,Y
+Umbrella,40,"But I ain't snitching, ain't nothing to say (What)",ain't,41,"Niggas finito, made like Carlito",made,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,40,"But I ain't snitching, ain't nothing to say (What)",say,41,"Niggas finito, made like Carlito",made,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,41,"Niggas finito, made like Carlito",finito,41,"Niggas finito, made like Carlito",Carlito,INNER,ASSONANCE,vowel,LOW,N
+Umbrella,41,"Niggas finito, made like Carlito",Carlito,42,"My shooters cheat code, treat 'em like free throws",cheat,INNER,SLANT,cmu,MED,Y
+Umbrella,41,"Niggas finito, made like Carlito",Carlito,42,"My shooters cheat code, treat 'em like free throws",free,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,41,"Niggas finito, made like Carlito",Carlito,42,"My shooters cheat code, treat 'em like free throws",treat,INNER,SLANT,cmu,MED,Y
+Umbrella,41,"Niggas finito, made like Carlito",like,42,"My shooters cheat code, treat 'em like free throws",like,INNER,REPEAT,spelling,HIGH,N
+Umbrella,41,"Niggas finito, made like Carlito",finito,43,"Talking digits, I know how to decode (Yeah)",know,INNER,ASSONANCE,vowel,LOW,N
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",cheat,42,"My shooters cheat code, treat 'em like free throws",free,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",cheat,42,"My shooters cheat code, treat 'em like free throws",treat,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",code,42,"My shooters cheat code, treat 'em like free throws",throws,INNER,SLANT,cmu,MED,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",treat,42,"My shooters cheat code, treat 'em like free throws",free,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",throws,43,"Talking digits, I know how to decode (Yeah)",decode,END,SLANT,cmu,MED,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",code,43,"Talking digits, I know how to decode (Yeah)",decode,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",code,43,"Talking digits, I know how to decode (Yeah)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",throws,43,"Talking digits, I know how to decode (Yeah)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",throws,44,"Yeah, know how to empty and reload (G Herbo)",reload,END,SLANT,cmu,MED,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",code,44,"Yeah, know how to empty and reload (G Herbo)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",code,44,"Yeah, know how to empty and reload (G Herbo)",reload,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",throws,44,"Yeah, know how to empty and reload (G Herbo)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,42,"My shooters cheat code, treat 'em like free throws",throws,45,Commas that come after three O's (Yeah),O's,END,PERFECT,cmu,HIGH,Y
+Umbrella,43,"Talking digits, I know how to decode (Yeah)",know,43,"Talking digits, I know how to decode (Yeah)",decode,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,43,"Talking digits, I know how to decode (Yeah)",decode,44,"Yeah, know how to empty and reload (G Herbo)",reload,END,PERFECT,cmu,HIGH,Y
+Umbrella,43,"Talking digits, I know how to decode (Yeah)",decode,44,"Yeah, know how to empty and reload (G Herbo)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,43,"Talking digits, I know how to decode (Yeah)",how,44,"Yeah, know how to empty and reload (G Herbo)",how,INNER,REPEAT,spelling,HIGH,N
+Umbrella,43,"Talking digits, I know how to decode (Yeah)",know,44,"Yeah, know how to empty and reload (G Herbo)",know,INNER,REPEAT,spelling,HIGH,N
+Umbrella,43,"Talking digits, I know how to decode (Yeah)",know,44,"Yeah, know how to empty and reload (G Herbo)",reload,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,43,"Talking digits, I know how to decode (Yeah)",decode,45,Commas that come after three O's (Yeah),O's,END,SLANT,cmu,MED,Y
+Umbrella,43,"Talking digits, I know how to decode (Yeah)",know,45,Commas that come after three O's (Yeah),O's,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,43,"Talking digits, I know how to decode (Yeah)",decode,47,"They get exposed to they hoes (Oh, well)",hoes,END,SLANT,cmu,MED,Y
+Umbrella,44,"Yeah, know how to empty and reload (G Herbo)",know,44,"Yeah, know how to empty and reload (G Herbo)",reload,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,44,"Yeah, know how to empty and reload (G Herbo)",reload,45,Commas that come after three O's (Yeah),O's,END,SLANT,cmu,MED,Y
+Umbrella,44,"Yeah, know how to empty and reload (G Herbo)",know,45,Commas that come after three O's (Yeah),O's,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,44,"Yeah, know how to empty and reload (G Herbo)",reload,46,Most niggas come around and freeload,freeload,END,MULTI,multi,MED,Y
+Umbrella,44,"Yeah, know how to empty and reload (G Herbo)",how,46,Most niggas come around and freeload,around,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,44,"Yeah, know how to empty and reload (G Herbo)",know,46,Most niggas come around and freeload,Most,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,44,"Yeah, know how to empty and reload (G Herbo)",reload,46,Most niggas come around and freeload,Most,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,44,"Yeah, know how to empty and reload (G Herbo)",reload,47,"They get exposed to they hoes (Oh, well)",hoes,END,SLANT,cmu,MED,Y
+Umbrella,44,"Yeah, know how to empty and reload (G Herbo)",reload,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",Rolls,END,ASSONANCE,vowel,MED,Y
+Umbrella,45,Commas that come after three O's (Yeah),come,46,Most niggas come around and freeload,come,INNER,REPEAT,spelling,HIGH,N
+Umbrella,45,Commas that come after three O's (Yeah),Commas,46,Most niggas come around and freeload,niggas,INNER,PERFECT,spelling,MED,Y
+Umbrella,45,Commas that come after three O's (Yeah),O's,46,Most niggas come around and freeload,Most,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,45,Commas that come after three O's (Yeah),O's,47,"They get exposed to they hoes (Oh, well)",hoes,END,PERFECT,cmu,HIGH,Y
+Umbrella,45,Commas that come after three O's (Yeah),O's,47,"They get exposed to they hoes (Oh, well)",exposed,INNER,SLANT,cmu,MED,Y
+Umbrella,45,Commas that come after three O's (Yeah),O's,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",Rolls,END,SLANT,cmu,MED,Y
+Umbrella,46,Most niggas come around and freeload,Most,47,"They get exposed to they hoes (Oh, well)",exposed,INNER,SLANT,cmu,MED,Y
+Umbrella,46,Most niggas come around and freeload,Most,47,"They get exposed to they hoes (Oh, well)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,46,Most niggas come around and freeload,come,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",one,INNER,SLANT,cmu,MED,Y
+Umbrella,46,Most niggas come around and freeload,Most,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,46,Most niggas come around and freeload,niggas,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",umbrellas,INNER,PERFECT,spelling,MED,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",exposed,47,"They get exposed to they hoes (Oh, well)",hoes,INNER,SLANT,cmu,MED,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",hoes,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",Rolls,END,SLANT,cmu,MED,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",exposed,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",get,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",forever,INNER,SLANT,cmu,MED,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",get,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",umbrellas,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",exposed,49,"Don't care if it rain, we still make a flame",Don't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",get,49,"Don't care if it rain, we still make a flame",care,INNER,SLANT,cmu,MED,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",hoes,49,"Don't care if it rain, we still make a flame",Don't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",hoes,50,"So fuck niggas stay on your toes (You know that, bah)",toes,END,PERFECT,cmu,HIGH,Y
+Umbrella,47,"They get exposed to they hoes (Oh, well)",hoes,51,"Don't know how to stop, only go (Only go)",go,END,ASSONANCE,vowel,MED,Y
+Umbrella,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",forever,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",umbrellas,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",forever,49,"Don't care if it rain, we still make a flame",care,INNER,SLANT,cmu,MED,Y
+Umbrella,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",Rolls,49,"Don't care if it rain, we still make a flame",Don't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",umbrellas,49,"Don't care if it rain, we still make a flame",care,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",Rolls,50,"So fuck niggas stay on your toes (You know that, bah)",toes,END,SLANT,cmu,MED,Y
+Umbrella,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",one,50,"So fuck niggas stay on your toes (You know that, bah)",fuck,INNER,SLANT,cmu,MED,Y
+Umbrella,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",umbrellas,50,"So fuck niggas stay on your toes (You know that, bah)",niggas,INNER,PERFECT,spelling,MED,Y
+Umbrella,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",Rolls,51,"Don't know how to stop, only go (Only go)",go,END,ASSONANCE,vowel,MED,Y
+Umbrella,48,"Gangsta forever we talking umbrellas, I got one of them in the Rolls (G Herbo, the rolls)",Rolls,52,"Opps stop and drop, and we roll (Skrrt)",roll,END,SLANT,cmu,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",make,49,"Don't care if it rain, we still make a flame",flame,INNER,SLANT,cmu,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",rain,49,"Don't care if it rain, we still make a flame",flame,INNER,SLANT,cmu,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",rain,49,"Don't care if it rain, we still make a flame",make,INNER,SLANT,cmu,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",Don't,50,"So fuck niggas stay on your toes (You know that, bah)",toes,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",flame,50,"So fuck niggas stay on your toes (You know that, bah)",stay,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",make,50,"So fuck niggas stay on your toes (You know that, bah)",stay,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",rain,50,"So fuck niggas stay on your toes (You know that, bah)",stay,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",Don't,51,"Don't know how to stop, only go (Only go)",Don't,INNER,REPEAT,spelling,HIGH,N
+Umbrella,49,"Don't care if it rain, we still make a flame",Don't,51,"Don't know how to stop, only go (Only go)",go,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",Don't,51,"Don't know how to stop, only go (Only go)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,49,"Don't care if it rain, we still make a flame",Don't,51,"Don't know how to stop, only go (Only go)",only,INNER,SLANT,cmu,MED,Y
+Umbrella,50,"So fuck niggas stay on your toes (You know that, bah)",toes,51,"Don't know how to stop, only go (Only go)",go,END,ASSONANCE,vowel,MED,Y
+Umbrella,50,"So fuck niggas stay on your toes (You know that, bah)",toes,51,"Don't know how to stop, only go (Only go)",Don't,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,50,"So fuck niggas stay on your toes (You know that, bah)",toes,51,"Don't know how to stop, only go (Only go)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,50,"So fuck niggas stay on your toes (You know that, bah)",toes,51,"Don't know how to stop, only go (Only go)",only,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,50,"So fuck niggas stay on your toes (You know that, bah)",toes,52,"Opps stop and drop, and we roll (Skrrt)",roll,END,SLANT,cmu,MED,Y
+Umbrella,50,"So fuck niggas stay on your toes (You know that, bah)",toes,53,"And this life only one that I know (G Herbo), ayy",know,END,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",Don't,51,"Don't know how to stop, only go (Only go)",go,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",Don't,51,"Don't know how to stop, only go (Only go)",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",Don't,51,"Don't know how to stop, only go (Only go)",only,INNER,SLANT,cmu,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",know,51,"Don't know how to stop, only go (Only go)",go,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",know,51,"Don't know how to stop, only go (Only go)",only,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",only,51,"Don't know how to stop, only go (Only go)",go,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",go,52,"Opps stop and drop, and we roll (Skrrt)",roll,END,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",Don't,52,"Opps stop and drop, and we roll (Skrrt)",Opps,INNER,ASSONANCE,vowel,LOW,N
+Umbrella,51,"Don't know how to stop, only go (Only go)",Don't,52,"Opps stop and drop, and we roll (Skrrt)",roll,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",know,52,"Opps stop and drop, and we roll (Skrrt)",Opps,INNER,ASSONANCE,vowel,LOW,N
+Umbrella,51,"Don't know how to stop, only go (Only go)",know,52,"Opps stop and drop, and we roll (Skrrt)",roll,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",only,52,"Opps stop and drop, and we roll (Skrrt)",roll,INNER,SLANT,cmu,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",stop,52,"Opps stop and drop, and we roll (Skrrt)",drop,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",stop,52,"Opps stop and drop, and we roll (Skrrt)",stop,INNER,REPEAT,spelling,HIGH,N
+Umbrella,51,"Don't know how to stop, only go (Only go)",go,53,"And this life only one that I know (G Herbo), ayy",know,END,PERFECT,cmu,HIGH,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",Don't,53,"And this life only one that I know (G Herbo), ayy",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",Don't,53,"And this life only one that I know (G Herbo), ayy",only,INNER,SLANT,cmu,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",go,53,"And this life only one that I know (G Herbo), ayy",only,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",know,53,"And this life only one that I know (G Herbo), ayy",know,INNER,REPEAT,spelling,HIGH,N
+Umbrella,51,"Don't know how to stop, only go (Only go)",know,53,"And this life only one that I know (G Herbo), ayy",only,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",only,53,"And this life only one that I know (G Herbo), ayy",know,INNER,ASSONANCE,vowel,MED,Y
+Umbrella,51,"Don't know how to stop, only go (Only go)",only,53,"And this life only one that I know (G Herbo), ayy",only,INNER,REPEAT,spelling,HIGH,N
+Umbrella,52,"Opps stop and drop, and we roll (Skrrt)",Opps,52,"Opps stop and drop, and we roll (Skrrt)",roll,INNER,ASSONANCE,vowel,LOW,N
+Umbrella,52,"Opps stop and drop, and we roll (Skrrt)",stop,52,"Opps stop and drop, and we roll (Skrrt)",drop,INNER,PERFECT,cmu,HIGH,Y
+Umbrella,52,"Opps stop and drop, and we roll (Skrrt)",roll,53,"And this life only one that I know (G Herbo), ayy",know,END,ASSONANCE,vowel,MED,Y
+Umbrella,52,"Opps stop and drop, and we roll (Skrrt)",Opps,53,"And this life only one that I know (G Herbo), ayy",know,INNER,ASSONANCE,vowel,LOW,N
+Umbrella,52,"Opps stop and drop, and we roll (Skrrt)",roll,53,"And this life only one that I know (G Herbo), ayy",only,INNER,SLANT,cmu,MED,Y
+Umbrella,53,"And this life only one that I know (G Herbo), ayy",only,53,"And this life only one that I know (G Herbo), ayy",know,INNER,ASSONANCE,vowel,MED,Y

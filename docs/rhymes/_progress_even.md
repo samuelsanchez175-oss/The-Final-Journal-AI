@@ -206,6 +206,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 194 | farruko | Farruko | 1 | 54 | 437 | 37 | 400 | 392 | 2026-11-10 13:22 ET |
 | 195 | kyle | KYLE | 1 | 54 | 402 | 96 | 306 | 401 | 2026-11-10 13:22 ET |
 | 196 | made-man | Made Man | 1 | 54 | 208 | 66 | 142 | 207 | 2026-11-10 13:22 ET |
+| 197 | rae-sremmurd | Rae Sremmurd | 1 | 54 | 296 | 78 | 218 | 296 | 2026-11-10 13:22 ET |
+| 198 | spacejam-bo | Spacejam Bo | 1 | 54 | 238 | 85 | 153 | 235 | 2026-11-10 13:22 ET |
+| 199 | aarne | Aarne | 2 | 53 | 487 | 70 | 417 | 481 | 2026-11-10 13:22 ET |
+| 200 | healthy-chill | Healthy Chill | 1 | 53 | 418 | 67 | 351 | 409 | 2026-11-10 13:22 ET |
+| 201 | jose-guapo | Jose Guapo | 1 | 53 | 307 | 31 | 276 | 300 | 2026-11-10 13:22 ET |
+| 202 | mikey-flows | Mikey Flows | 1 | 53 | 341 | 52 | 289 | 339 | 2026-11-10 13:22 ET |
+| 203 | wacotron | Wacotron | 1 | 53 | 453 | 122 | 331 | 444 | 2026-11-10 13:22 ET |
+| 204 | charlie-angel | Charlie Angel | 1 | 52 | 331 | 68 | 263 | 330 | 2026-11-10 13:22 ET |
+| 205 | jeezy | Jeezy | 1 | 52 | 345 | 47 | 298 | 342 | 2026-11-10 13:22 ET |
+| 206 | paul-wall | Paul Wall | 1 | 52 | 323 | 32 | 291 | 314 | 2026-11-10 13:22 ET |
 
 ## Failures
 
@@ -213,7 +223,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 196/386: Made Man.
+Finished 206/386: Paul Wall.
 
 ## Final
 

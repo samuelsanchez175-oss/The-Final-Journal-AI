@@ -1,0 +1,492 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",lot,1,"Whole lot of designers, but ain't nobody robbin' me",robbin,INNER,ASSONANCE,vowel,MED,Y
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",robbin,2,"Now you so bad, baby it's a robbery",robbery,END,SLANT,cmu,MED,Y
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",ain't,2,"Now you so bad, baby it's a robbery",baby,INNER,ASSONANCE,vowel,MED,Y
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",lot,2,"Now you so bad, baby it's a robbery",robbery,INNER,SLANT,cmu,MED,Y
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",ain't,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",ain't,INNER,REPEAT,spelling,HIGH,N
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",ain't,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",hatin,INNER,ASSONANCE,vowel,MED,Y
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",lot,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",bottom,INNER,SLANT,cmu,MED,Y
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",lot,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",nothin,INNER,ASSONANCE,vowel,MED,Y
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",nobody,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",feedin,INNER,ASSONANCE,vowel,MED,Y
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",robbin,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",bottom,INNER,SLANT,cmu,MED,Y
+Designer,1,"Whole lot of designers, but ain't nobody robbin' me",robbin,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",nothin,INNER,SLANT,cmu,MED,Y
+Designer,2,"Now you so bad, baby it's a robbery",baby,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+Designer,2,"Now you so bad, baby it's a robbery",baby,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",hatin,INNER,ASSONANCE,vowel,MED,Y
+Designer,2,"Now you so bad, baby it's a robbery",robbery,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",bottom,INNER,ASSONANCE,vowel,MED,Y
+Designer,2,"Now you so bad, baby it's a robbery",robbery,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",nothin,INNER,ASSONANCE,vowel,MED,Y
+Designer,2,"Now you so bad, baby it's a robbery",bad,4,"Young nigga with that sack, young nigga with that sack on me",sack,INNER,SLANT,cmu,MED,Y
+Designer,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",hatin,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+Designer,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",nothin,3,"Look at them hatin', but they ain't nothin' but bottom feedin'",bottom,INNER,ASSONANCE,vowel,MED,Y
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",nigga,4,"Young nigga with that sack, young nigga with that sack on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",sack,4,"Young nigga with that sack, young nigga with that sack on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",Young,4,"Young nigga with that sack, young nigga with that sack on me",young,INNER,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",sack,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,END,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",nigga,5,"Just a young nigga with a sack, young nigga with a sack on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",sack,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",Young,5,"Just a young nigga with a sack, young nigga with a sack on me",young,INNER,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",sack,6,"Young nigga with a sack, young nigga keep that strap on me",strap,END,SLANT,cmu,MED,Y
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",nigga,6,"Young nigga with a sack, young nigga keep that strap on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",sack,6,"Young nigga with a sack, young nigga keep that strap on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",sack,6,"Young nigga with a sack, young nigga keep that strap on me",strap,INNER,SLANT,cmu,MED,Y
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",Young,6,"Young nigga with a sack, young nigga keep that strap on me",Young,INNER,REPEAT,spelling,HIGH,N
+Designer,4,"Young nigga with that sack, young nigga with that sack on me",sack,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,END,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",nigga,5,"Just a young nigga with a sack, young nigga with a sack on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",young,5,"Just a young nigga with a sack, young nigga with a sack on me",young,INNER,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,6,"Young nigga with a sack, young nigga keep that strap on me",strap,END,SLANT,cmu,MED,Y
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",nigga,6,"Young nigga with a sack, young nigga keep that strap on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,6,"Young nigga with a sack, young nigga keep that strap on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,6,"Young nigga with a sack, young nigga keep that strap on me",strap,INNER,SLANT,cmu,MED,Y
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",young,6,"Young nigga with a sack, young nigga keep that strap on me",Young,INNER,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,END,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",nigga,7,"I'm a young nigga with a sack, young nigga with a sack on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",young,7,"I'm a young nigga with a sack, young nigga with a sack on me",young,INNER,REPEAT,spelling,HIGH,N
+Designer,5,"Just a young nigga with a sack, young nigga with a sack on me",sack,9,As soon as that money change hands then my mind pass,pass,END,SLANT,cmu,MED,Y
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",nigga,6,"Young nigga with a sack, young nigga keep that strap on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",sack,6,"Young nigga with a sack, young nigga keep that strap on me",strap,INNER,SLANT,cmu,MED,Y
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",Young,6,"Young nigga with a sack, young nigga keep that strap on me",young,INNER,REPEAT,spelling,HIGH,N
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",strap,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,END,SLANT,cmu,MED,Y
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",nigga,7,"I'm a young nigga with a sack, young nigga with a sack on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",sack,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",strap,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,INNER,SLANT,cmu,MED,Y
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",Young,7,"I'm a young nigga with a sack, young nigga with a sack on me",young,INNER,REPEAT,spelling,HIGH,N
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",keep,8,"Young nigga with a sack, you know I keep them sticks on me",keep,INNER,REPEAT,spelling,HIGH,N
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",nigga,8,"Young nigga with a sack, you know I keep them sticks on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",sack,8,"Young nigga with a sack, you know I keep them sticks on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",strap,8,"Young nigga with a sack, you know I keep them sticks on me",sack,INNER,SLANT,cmu,MED,Y
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",Young,8,"Young nigga with a sack, you know I keep them sticks on me",Young,INNER,REPEAT,spelling,HIGH,N
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",strap,9,As soon as that money change hands then my mind pass,pass,END,SLANT,cmu,MED,Y
+Designer,6,"Young nigga with a sack, young nigga keep that strap on me",strap,10,"Half real and half misty, have to get one off bad",bad,END,SLANT,cmu,MED,Y
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",nigga,7,"I'm a young nigga with a sack, young nigga with a sack on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",young,7,"I'm a young nigga with a sack, young nigga with a sack on me",young,INNER,REPEAT,spelling,HIGH,N
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",nigga,8,"Young nigga with a sack, you know I keep them sticks on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,8,"Young nigga with a sack, you know I keep them sticks on me",sack,INNER,REPEAT,spelling,HIGH,N
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",young,8,"Young nigga with a sack, you know I keep them sticks on me",Young,INNER,REPEAT,spelling,HIGH,N
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,9,As soon as that money change hands then my mind pass,pass,END,SLANT,cmu,MED,Y
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,9,As soon as that money change hands then my mind pass,hands,INNER,ASSONANCE,vowel,MED,Y
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,9,As soon as that money change hands then my mind pass,pass,INNER,SLANT,cmu,MED,Y
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",young,9,As soon as that money change hands then my mind pass,money,INNER,SLANT,cmu,MED,Y
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,10,"Half real and half misty, have to get one off bad",bad,END,SLANT,cmu,MED,Y
+Designer,7,"I'm a young nigga with a sack, young nigga with a sack on me",sack,11,Came up on 'em and said it was clean but halfass,halfass,END,ASSONANCE,vowel,LOW,N
+Designer,8,"Young nigga with a sack, you know I keep them sticks on me",sack,9,As soon as that money change hands then my mind pass,hands,INNER,ASSONANCE,vowel,MED,Y
+Designer,8,"Young nigga with a sack, you know I keep them sticks on me",sack,9,As soon as that money change hands then my mind pass,pass,INNER,SLANT,cmu,MED,Y
+Designer,8,"Young nigga with a sack, you know I keep them sticks on me",Young,9,As soon as that money change hands then my mind pass,money,INNER,SLANT,cmu,MED,Y
+Designer,8,"Young nigga with a sack, you know I keep them sticks on me",keep,10,"Half real and half misty, have to get one off bad",real,INNER,SLANT,cmu,MED,Y
+Designer,8,"Young nigga with a sack, you know I keep them sticks on me",sack,10,"Half real and half misty, have to get one off bad",bad,INNER,SLANT,cmu,MED,Y
+Designer,8,"Young nigga with a sack, you know I keep them sticks on me",sack,10,"Half real and half misty, have to get one off bad",Half,INNER,SLANT,cmu,MED,Y
+Designer,8,"Young nigga with a sack, you know I keep them sticks on me",sack,10,"Half real and half misty, have to get one off bad",have,INNER,SLANT,cmu,MED,Y
+Designer,8,"Young nigga with a sack, you know I keep them sticks on me",sticks,10,"Half real and half misty, have to get one off bad",misty,INNER,ASSONANCE,vowel,MED,Y
+Designer,8,"Young nigga with a sack, you know I keep them sticks on me",Young,10,"Half real and half misty, have to get one off bad",one,INNER,SLANT,cmu,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,hands,9,As soon as that money change hands then my mind pass,pass,INNER,ASSONANCE,vowel,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,pass,10,"Half real and half misty, have to get one off bad",bad,END,SLANT,cmu,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,hands,10,"Half real and half misty, have to get one off bad",bad,INNER,ASSONANCE,vowel,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,hands,10,"Half real and half misty, have to get one off bad",Half,INNER,ASSONANCE,vowel,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,hands,10,"Half real and half misty, have to get one off bad",have,INNER,ASSONANCE,vowel,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,money,10,"Half real and half misty, have to get one off bad",one,INNER,SLANT,cmu,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,pass,10,"Half real and half misty, have to get one off bad",Half,INNER,SLANT,cmu,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,pass,10,"Half real and half misty, have to get one off bad",have,INNER,SLANT,cmu,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,pass,11,Came up on 'em and said it was clean but halfass,halfass,END,PERFECT,spelling,HIGH,Y
+Designer,9,As soon as that money change hands then my mind pass,change,11,Came up on 'em and said it was clean but halfass,Came,INNER,ASSONANCE,vowel,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,hands,11,Came up on 'em and said it was clean but halfass,halfass,INNER,ASSONANCE,vowel,LOW,N
+Designer,9,As soon as that money change hands then my mind pass,pass,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",back,END,SLANT,cmu,MED,Y
+Designer,9,As soon as that money change hands then my mind pass,pass,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",cats,END,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",Half,10,"Half real and half misty, have to get one off bad",bad,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",Half,10,"Half real and half misty, have to get one off bad",half,INNER,REPEAT,spelling,HIGH,N
+Designer,10,"Half real and half misty, have to get one off bad",Half,10,"Half real and half misty, have to get one off bad",have,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",have,10,"Half real and half misty, have to get one off bad",bad,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",get,11,Came up on 'em and said it was clean but halfass,said,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",Half,11,Came up on 'em and said it was clean but halfass,halfass,INNER,ASSONANCE,vowel,LOW,N
+Designer,10,"Half real and half misty, have to get one off bad",real,11,Came up on 'em and said it was clean but halfass,clean,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",bad,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",back,END,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",bad,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",pack,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",get,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",blessin,INNER,ASSONANCE,vowel,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",get,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",stressin,INNER,ASSONANCE,vowel,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",Half,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",back,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",Half,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",pack,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",have,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",back,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",have,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",pack,INNER,SLANT,cmu,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",misty,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",give,INNER,ASSONANCE,vowel,MED,Y
+Designer,10,"Half real and half misty, have to get one off bad",bad,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",cats,END,ASSONANCE,vowel,MED,Y
+Designer,11,Came up on 'em and said it was clean but halfass,halfass,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",back,END,ASSONANCE,vowel,LOW,N
+Designer,11,Came up on 'em and said it was clean but halfass,halfass,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",pack,INNER,ASSONANCE,vowel,LOW,N
+Designer,11,Came up on 'em and said it was clean but halfass,said,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",blessin,INNER,ASSONANCE,vowel,MED,Y
+Designer,11,Came up on 'em and said it was clean but halfass,said,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",stressin,INNER,ASSONANCE,vowel,MED,Y
+Designer,11,Came up on 'em and said it was clean but halfass,halfass,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",cats,END,ASSONANCE,vowel,LOW,N
+Designer,11,Came up on 'em and said it was clean but halfass,clean,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",PeeWee,INNER,ASSONANCE,vowel,MED,Y
+Designer,11,Came up on 'em and said it was clean but halfass,said,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",Fendi,INNER,SLANT,cmu,MED,Y
+Designer,11,Came up on 'em and said it was clean but halfass,said,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",spent,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",not,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",God,INNER,SLANT,cmu,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",not stressin,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",give blessin,INNER,MULTI,multi,HIGH,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",pack,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",back,INNER,PERFECT,cmu,HIGH,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",stressin,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",blessin,INNER,MULTI,multi,HIGH,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",back,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",cats,END,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",blessin,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",Fendi,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",blessin,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",spent,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",give,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",fifty,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",gon,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",those,INNER,SLANT,spelling,LOW,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",pack,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",cats,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",stressin,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",Fendi,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",stressin,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",spent,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",'cause,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",does,INNER,PERFECT,cmu,HIGH,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",blessin,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",Bentley,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",give,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",give,INNER,REPEAT,spelling,HIGH,N
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",give,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",sixty,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",stressin,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",Bentley,INNER,ASSONANCE,vowel,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",back,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,END,SLANT,cmu,MED,Y
+Designer,12,"I lost the pack, not stressin' that 'cause God gon' give my blessin' back",back,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,END,PERFECT,cmu,HIGH,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",Fendi,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",spent,INNER,SLANT,cmu,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",Fendi,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",Bentley,INNER,ASSONANCE,vowel,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",fifty,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",give,INNER,ASSONANCE,vowel,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",fifty,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",sixty,INNER,ASSONANCE,vowel,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",PeeWee,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",Three,INNER,PERFECT,cmu,HIGH,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",spent,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",Bentley,INNER,SLANT,cmu,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",those,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",told,INNER,ASSONANCE,vowel,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",who,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",who,INNER,REPEAT,spelling,HIGH,N
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",cats,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,END,SLANT,cmu,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",cats,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",rabbits,INNER,SLANT,cmu,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",fifty,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",think,INNER,ASSONANCE,vowel,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",PeeWee,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",Copperfield,INNER,ASSONANCE,vowel,MED,Y
+Designer,13,"Me, PeeWee, and Fendi we spent fifty, who are those cats?",cats,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,END,ASSONANCE,vowel,MED,Y
+Designer,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",sixty,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",give,INNER,ASSONANCE,vowel,MED,Y
+Designer,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",does,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Designer,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",give,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",think,INNER,ASSONANCE,vowel,MED,Y
+Designer,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",sixty,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",think,INNER,ASSONANCE,vowel,MED,Y
+Designer,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",Three,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",Copperfield,INNER,ASSONANCE,vowel,MED,Y
+Designer,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",Three,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",need,INNER,ASSONANCE,vowel,MED,Y
+Designer,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",who,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",food,INNER,ASSONANCE,vowel,MED,Y
+Designer,14,"Three-sixty on a Bentley, told 'em give me that, who does that?",who,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",move,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",rabbits,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,END,SLANT,cmu,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",Copperfield,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",need,INNER,SLANT,cmu,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",gangster,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rabbit,INNER,SLANT,cmu,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rappin,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",rabbits,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",gangster,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",rabbits,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rabbit,INNER,SLANT,cmu,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",rabbits,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rappin,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",rabbits,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",David,17,"I take your bitch and giver her back, got so much cash, can't tote it all",take,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",fuckin,17,"I take your bitch and giver her back, got so much cash, can't tote it all",much,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,17,"I take your bitch and giver her back, got so much cash, can't tote it all",back,INNER,SLANT,cmu,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,17,"I take your bitch and giver her back, got so much cash, can't tote it all",can't,INNER,SLANT,cmu,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",hat,17,"I take your bitch and giver her back, got so much cash, can't tote it all",cash,INNER,SLANT,cmu,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",rabbits,17,"I take your bitch and giver her back, got so much cash, can't tote it all",back,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",rabbits,17,"I take your bitch and giver her back, got so much cash, can't tote it all",can't,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",rabbits,17,"I take your bitch and giver her back, got so much cash, can't tote it all",cash,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",think,17,"I take your bitch and giver her back, got so much cash, can't tote it all",bitch,INNER,ASSONANCE,vowel,MED,Y
+Designer,15,"I think I'm David Copperfield, pull rabbits out a fuckin' hat",think,17,"I take your bitch and giver her back, got so much cash, can't tote it all",giver,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",food,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",move,INNER,SLANT,cmu,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",gangster,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rabbit,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",gangster,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rabbit,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,INNER,SLANT,cmu,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rappin,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",gangster,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rappin,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rabbit,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rappin,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",gangster,17,"I take your bitch and giver her back, got so much cash, can't tote it all",back,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",gangster,17,"I take your bitch and giver her back, got so much cash, can't tote it all",can't,INNER,SLANT,cmu,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",gangster,17,"I take your bitch and giver her back, got so much cash, can't tote it all",cash,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rabbit,17,"I take your bitch and giver her back, got so much cash, can't tote it all",back,INNER,SLANT,cmu,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rabbit,17,"I take your bitch and giver her back, got so much cash, can't tote it all",can't,INNER,SLANT,cmu,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rabbit,17,"I take your bitch and giver her back, got so much cash, can't tote it all",cash,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rappin,17,"I take your bitch and giver her back, got so much cash, can't tote it all",back,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rappin,17,"I take your bitch and giver her back, got so much cash, can't tote it all",can't,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rappin,17,"I take your bitch and giver her back, got so much cash, can't tote it all",cash,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,17,"I take your bitch and giver her back, got so much cash, can't tote it all",back,INNER,PERFECT,cmu,HIGH,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,17,"I take your bitch and giver her back, got so much cash, can't tote it all",can't,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,17,"I take your bitch and giver her back, got so much cash, can't tote it all",cash,INNER,SLANT,cmu,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",gangster,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",crack,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rabbit,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",crack,INNER,SLANT,cmu,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",rappin,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",crack,INNER,ASSONANCE,vowel,MED,Y
+Designer,16,"I'm silent rappin', rabbit food a gangster move, I need a sack",sack,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",crack,INNER,PERFECT,cmu,HIGH,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",back,17,"I take your bitch and giver her back, got so much cash, can't tote it all",can't,INNER,ASSONANCE,vowel,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",back,17,"I take your bitch and giver her back, got so much cash, can't tote it all",cash,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",bitch,17,"I take your bitch and giver her back, got so much cash, can't tote it all",giver,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",cash,17,"I take your bitch and giver her back, got so much cash, can't tote it all",can't,INNER,ASSONANCE,vowel,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",all,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",all,END,REPEAT,spelling,HIGH,N
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",all,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",called,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",back,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",crack,INNER,PERFECT,cmu,HIGH,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",bitch,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",still,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",bitch,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Twin,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",can't,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",crack,INNER,ASSONANCE,vowel,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",cash,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",crack,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",giver,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",still,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",giver,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Twin,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",got,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",cars,INNER,ASSONANCE,vowel,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",take,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",'caine,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",take,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",ain't,INNER,ASSONANCE,vowel,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",take,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Range,INNER,ASSONANCE,vowel,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",tote,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",drove,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",tote,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Rovers,INNER,ASSONANCE,vowel,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",all,19,My kiko got players throwin' grenades and they'll explode the wall,wall,END,PERFECT,cmu,HIGH,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",bitch,19,My kiko got players throwin' grenades and they'll explode the wall,kiko,INNER,SLANT,spelling,LOW,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",giver,19,My kiko got players throwin' grenades and they'll explode the wall,kiko,INNER,SLANT,spelling,LOW,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",got,19,My kiko got players throwin' grenades and they'll explode the wall,got,INNER,REPEAT,spelling,HIGH,N
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",take,19,My kiko got players throwin' grenades and they'll explode the wall,grenades,INNER,ASSONANCE,vowel,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",take,19,My kiko got players throwin' grenades and they'll explode the wall,players,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",take,19,My kiko got players throwin' grenades and they'll explode the wall,they'll,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",tote,19,My kiko got players throwin' grenades and they'll explode the wall,explode,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",tote,19,My kiko got players throwin' grenades and they'll explode the wall,throwin,INNER,SLANT,cmu,MED,Y
+Designer,17,"I take your bitch and giver her back, got so much cash, can't tote it all",all,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,wall,END,PERFECT,cmu,HIGH,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",'caine,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",ain't,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",called,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",all,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Range,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",'caine,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Range,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",ain't,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Rovers,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",drove,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Twin,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",still,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",all,19,My kiko got players throwin' grenades and they'll explode the wall,wall,END,PERFECT,cmu,HIGH,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",'caine,19,My kiko got players throwin' grenades and they'll explode the wall,grenades,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",'caine,19,My kiko got players throwin' grenades and they'll explode the wall,players,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",'caine,19,My kiko got players throwin' grenades and they'll explode the wall,they'll,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",ain't,19,My kiko got players throwin' grenades and they'll explode the wall,grenades,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",ain't,19,My kiko got players throwin' grenades and they'll explode the wall,players,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",ain't,19,My kiko got players throwin' grenades and they'll explode the wall,they'll,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",called,19,My kiko got players throwin' grenades and they'll explode the wall,wall,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",cars,19,My kiko got players throwin' grenades and they'll explode the wall,got,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",drove,19,My kiko got players throwin' grenades and they'll explode the wall,explode,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",drove,19,My kiko got players throwin' grenades and they'll explode the wall,throwin,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Range,19,My kiko got players throwin' grenades and they'll explode the wall,grenades,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Range,19,My kiko got players throwin' grenades and they'll explode the wall,players,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Range,19,My kiko got players throwin' grenades and they'll explode the wall,they'll,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Rovers,19,My kiko got players throwin' grenades and they'll explode the wall,explode,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Rovers,19,My kiko got players throwin' grenades and they'll explode the wall,throwin,INNER,ASSONANCE,vowel,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",still,19,My kiko got players throwin' grenades and they'll explode the wall,kiko,INNER,SLANT,spelling,LOW,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",Twin,19,My kiko got players throwin' grenades and they'll explode the wall,kiko,INNER,SLANT,spelling,LOW,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",all,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,wall,END,PERFECT,cmu,HIGH,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",'em,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,Some,INNER,PERFECT,cmu,HIGH,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",called,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,wall,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",cars,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,choppers,INNER,SLANT,cmu,MED,Y
+Designer,18,"Twin Range Rovers called 'caine and crack, so many cars, still ain't drove 'em all",crack,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,gasolina,INNER,ASSONANCE,vowel,LOW,N
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,grenades,19,My kiko got players throwin' grenades and they'll explode the wall,they'll,INNER,ASSONANCE,vowel,MED,Y
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,players,19,My kiko got players throwin' grenades and they'll explode the wall,grenades,INNER,SLANT,cmu,MED,Y
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,players,19,My kiko got players throwin' grenades and they'll explode the wall,they'll,INNER,SLANT,cmu,MED,Y
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,throwin,19,My kiko got players throwin' grenades and they'll explode the wall,explode,INNER,SLANT,cmu,MED,Y
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,wall,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,wall,END,REPEAT,spelling,HIGH,N
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,got,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,choppers,INNER,ASSONANCE,vowel,MED,Y
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,explode,21,"I'm gettin' to a sack, they wanna know where it's at now",know,INNER,ASSONANCE,vowel,MED,Y
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,got,21,"I'm gettin' to a sack, they wanna know where it's at now",wanna,INNER,SLANT,cmu,MED,Y
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,kiko,21,"I'm gettin' to a sack, they wanna know where it's at now",know,INNER,ASSONANCE,vowel,LOW,N
+Designer,19,My kiko got players throwin' grenades and they'll explode the wall,throwin,21,"I'm gettin' to a sack, they wanna know where it's at now",know,INNER,ASSONANCE,vowel,MED,Y
+Designer,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,choppers,21,"I'm gettin' to a sack, they wanna know where it's at now",wanna,INNER,ASSONANCE,vowel,MED,Y
+Designer,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,gasolina,21,"I'm gettin' to a sack, they wanna know where it's at now",sack,INNER,ASSONANCE,vowel,LOW,N
+Designer,20,Some choppers and that gasolina 'cause Guwop tryna server the wall,choppers,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",talkin,INNER,ASSONANCE,vowel,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",gettin,21,"I'm gettin' to a sack, they wanna know where it's at now",where,INNER,ASSONANCE,vowel,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",now,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",now,END,REPEAT,spelling,HIGH,N
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",gettin,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",check,INNER,ASSONANCE,vowel,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",gettin,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",gettin,INNER,REPEAT,spelling,HIGH,N
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",now,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",'bout,INNER,ASSONANCE,vowel,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",wanna,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",talkin,INNER,SLANT,cmu,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",where,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",check,INNER,SLANT,cmu,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",where,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",gettin,INNER,ASSONANCE,vowel,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",sack,23,"Young nigga from the trap, young nigga not rap",rap,INNER,SLANT,cmu,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",sack,23,"Young nigga from the trap, young nigga not rap",trap,INNER,SLANT,cmu,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",wanna,23,"Young nigga from the trap, young nigga not rap",not,INNER,SLANT,cmu,MED,Y
+Designer,21,"I'm gettin' to a sack, they wanna know where it's at now",now,24,"Young nigga I'm blowin' up quick, everybody like how you do that",how,END,PERFECT,cmu,HIGH,Y
+Designer,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",'bout,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",now,INNER,ASSONANCE,vowel,MED,Y
+Designer,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",gettin,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",check,INNER,ASSONANCE,vowel,MED,Y
+Designer,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",talkin,23,"Young nigga from the trap, young nigga not rap",not,INNER,ASSONANCE,vowel,MED,Y
+Designer,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",now,24,"Young nigga I'm blowin' up quick, everybody like how you do that",how,END,PERFECT,cmu,HIGH,Y
+Designer,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",'bout,24,"Young nigga I'm blowin' up quick, everybody like how you do that",how,INNER,ASSONANCE,vowel,MED,Y
+Designer,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",right,24,"Young nigga I'm blowin' up quick, everybody like how you do that",like,INNER,SLANT,cmu,MED,Y
+Designer,22,"I'm gettin' to a check, boy I'm talkin' 'bout right now",talkin,24,"Young nigga I'm blowin' up quick, everybody like how you do that",everybody,INNER,ASSONANCE,vowel,MED,Y
+Designer,23,"Young nigga from the trap, young nigga not rap",nigga,23,"Young nigga from the trap, young nigga not rap",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,23,"Young nigga from the trap, young nigga not rap",trap,23,"Young nigga from the trap, young nigga not rap",rap,INNER,PERFECT,cmu,HIGH,Y
+Designer,23,"Young nigga from the trap, young nigga not rap",Young,23,"Young nigga from the trap, young nigga not rap",young,INNER,REPEAT,spelling,HIGH,N
+Designer,23,"Young nigga from the trap, young nigga not rap",nigga,24,"Young nigga I'm blowin' up quick, everybody like how you do that",nigga,INNER,REPEAT,spelling,HIGH,N
+Designer,23,"Young nigga from the trap, young nigga not rap",nigga,24,"Young nigga I'm blowin' up quick, everybody like how you do that",quick,INNER,SLANT,spelling,LOW,Y
+Designer,23,"Young nigga from the trap, young nigga not rap",not,24,"Young nigga I'm blowin' up quick, everybody like how you do that",everybody,INNER,SLANT,cmu,MED,Y
+Designer,23,"Young nigga from the trap, young nigga not rap",Young,24,"Young nigga I'm blowin' up quick, everybody like how you do that",Young,INNER,REPEAT,spelling,HIGH,N
+Designer,23,"Young nigga from the trap, young nigga not rap",rap,25,"Fuck up a check, I'ma get it back",back,END,SLANT,cmu,MED,Y
+Designer,23,"Young nigga from the trap, young nigga not rap",trap,25,"Fuck up a check, I'ma get it back",back,INNER,SLANT,cmu,MED,Y
+Designer,23,"Young nigga from the trap, young nigga not rap",Young,25,"Fuck up a check, I'ma get it back",Fuck,INNER,SLANT,cmu,MED,Y
+Designer,23,"Young nigga from the trap, young nigga not rap",rap,26,Niggas be talkin' that chitter chat,chat,END,SLANT,cmu,MED,Y
+Designer,23,"Young nigga from the trap, young nigga not rap",rap,27,"I be that nigga, bring my city back",back,END,SLANT,cmu,MED,Y
+Designer,24,"Young nigga I'm blowin' up quick, everybody like how you do that",nigga,24,"Young nigga I'm blowin' up quick, everybody like how you do that",quick,INNER,SLANT,spelling,LOW,Y
+Designer,24,"Young nigga I'm blowin' up quick, everybody like how you do that",quick,25,"Fuck up a check, I'ma get it back",I'ma,INNER,SLANT,spelling,LOW,Y
+Designer,24,"Young nigga I'm blowin' up quick, everybody like how you do that",Young,25,"Fuck up a check, I'ma get it back",Fuck,INNER,SLANT,cmu,MED,Y
+Designer,24,"Young nigga I'm blowin' up quick, everybody like how you do that",everybody,26,Niggas be talkin' that chitter chat,talkin,INNER,ASSONANCE,vowel,MED,Y
+Designer,24,"Young nigga I'm blowin' up quick, everybody like how you do that",nigga,26,Niggas be talkin' that chitter chat,chitter,INNER,SLANT,spelling,LOW,Y
+Designer,24,"Young nigga I'm blowin' up quick, everybody like how you do that",nigga,26,Niggas be talkin' that chitter chat,Niggas,INNER,SLANT,spelling,LOW,Y
+Designer,24,"Young nigga I'm blowin' up quick, everybody like how you do that",quick,26,Niggas be talkin' that chitter chat,chitter,INNER,SLANT,cmu,MED,Y
+Designer,25,"Fuck up a check, I'ma get it back",check,25,"Fuck up a check, I'ma get it back",get,INNER,SLANT,cmu,MED,Y
+Designer,25,"Fuck up a check, I'ma get it back",back,26,Niggas be talkin' that chitter chat,chat,END,SLANT,cmu,MED,Y
+Designer,25,"Fuck up a check, I'ma get it back",I'ma,26,Niggas be talkin' that chitter chat,chitter,INNER,SLANT,spelling,LOW,Y
+Designer,25,"Fuck up a check, I'ma get it back",back,27,"I be that nigga, bring my city back",back,END,REPEAT,spelling,HIGH,N
+Designer,25,"Fuck up a check, I'ma get it back",I'ma,27,"I be that nigga, bring my city back",bring,INNER,SLANT,spelling,LOW,Y
+Designer,25,"Fuck up a check, I'ma get it back",I'ma,27,"I be that nigga, bring my city back",city,INNER,SLANT,spelling,LOW,Y
+Designer,26,Niggas be talkin' that chitter chat,chat,27,"I be that nigga, bring my city back",back,END,SLANT,cmu,MED,Y
+Designer,26,Niggas be talkin' that chitter chat,chitter,27,"I be that nigga, bring my city back",bring,INNER,SLANT,cmu,MED,Y
+Designer,26,Niggas be talkin' that chitter chat,chitter,27,"I be that nigga, bring my city back",city,INNER,SLANT,cmu,MED,Y
+Designer,26,Niggas be talkin' that chitter chat,chitter,27,"I be that nigga, bring my city back",nigga,INNER,SLANT,spelling,LOW,Y
+Designer,26,Niggas be talkin' that chitter chat,Niggas,27,"I be that nigga, bring my city back",nigga,INNER,SLANT,spelling,LOW,Y
+Designer,27,"I be that nigga, bring my city back",bring,27,"I be that nigga, bring my city back",city,INNER,SLANT,cmu,MED,Y
+Designer,27,"I be that nigga, bring my city back",nigga,27,"I be that nigga, bring my city back",city,INNER,SLANT,spelling,LOW,Y
+Designer,27,"I be that nigga, bring my city back",back,29,Diamonds are dancin' like Diddy,dancin,INNER,ASSONANCE,vowel,MED,Y
+Designer,27,"I be that nigga, bring my city back",bring,29,Diamonds are dancin' like Diddy,Diddy,INNER,SLANT,cmu,MED,Y
+Designer,27,"I be that nigga, bring my city back",city,29,Diamonds are dancin' like Diddy,Diddy,INNER,SLANT,cmu,MED,Y
+Designer,27,"I be that nigga, bring my city back",nigga,29,Diamonds are dancin' like Diddy,Diddy,INNER,SLANT,spelling,LOW,Y
+Designer,27,"I be that nigga, bring my city back",back,31,Look at my diamonds just dancin',dancin,END,ASSONANCE,vowel,MED,Y
+Designer,29,Diamonds are dancin' like Diddy,Diamonds,29,Diamonds are dancin' like Diddy,like,INNER,ASSONANCE,vowel,MED,Y
+Designer,29,Diamonds are dancin' like Diddy,Diddy,30,"No talkin', my nigga we with it",nigga,END,SLANT,cmu,MED,Y
+Designer,29,Diamonds are dancin' like Diddy,dancin,31,Look at my diamonds just dancin',dancin,INNER,REPEAT,spelling,HIGH,N
+Designer,29,Diamonds are dancin' like Diddy,Diamonds,31,Look at my diamonds just dancin',diamonds,INNER,REPEAT,spelling,HIGH,N
+Designer,29,Diamonds are dancin' like Diddy,like,31,Look at my diamonds just dancin',diamonds,INNER,ASSONANCE,vowel,MED,Y
+Designer,30,"No talkin', my nigga we with it",No,32,Look at my Rollie just dancin',Rollie,INNER,ASSONANCE,vowel,MED,Y
+Designer,31,Look at my diamonds just dancin',dancin,32,Look at my Rollie just dancin',dancin,END,REPEAT,spelling,HIGH,N
+Designer,31,Look at my diamonds just dancin',Look,32,Look at my Rollie just dancin',Look,INNER,REPEAT,spelling,HIGH,N
+Designer,31,Look at my diamonds just dancin',diamonds,33,"Whole lotta designer, still Gucci, Louis, no Prada",designer,INNER,ASSONANCE,vowel,MED,Y
+Designer,32,Look at my Rollie just dancin',Rollie,33,"Whole lotta designer, still Gucci, Louis, no Prada",no,INNER,ASSONANCE,vowel,MED,Y
+Designer,32,Look at my Rollie just dancin',Rollie,33,"Whole lotta designer, still Gucci, Louis, no Prada",Whole,INNER,SLANT,cmu,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",Gucci,33,"Whole lotta designer, still Gucci, Louis, no Prada",Louis,INNER,SLANT,cmu,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",lotta,33,"Whole lotta designer, still Gucci, Louis, no Prada",Prada,INNER,SLANT,cmu,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",Whole,33,"Whole lotta designer, still Gucci, Louis, no Prada",no,INNER,ASSONANCE,vowel,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",Prada,34,"I come from the bottom, I be killin' shit to be honest",honest,END,ASSONANCE,vowel,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",lotta,34,"I come from the bottom, I be killin' shit to be honest",bottom,INNER,SLANT,cmu,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",lotta,34,"I come from the bottom, I be killin' shit to be honest",honest,INNER,ASSONANCE,vowel,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",Prada,34,"I come from the bottom, I be killin' shit to be honest",bottom,INNER,ASSONANCE,vowel,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",still,34,"I come from the bottom, I be killin' shit to be honest",killin,INNER,SLANT,cmu,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",still,34,"I come from the bottom, I be killin' shit to be honest",shit,INNER,SLANT,cmu,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",still,35,"I'm in a foreign, I'm with your bitch 'cause she borin'",bitch,INNER,SLANT,cmu,MED,Y
+Designer,33,"Whole lotta designer, still Gucci, Louis, no Prada",Prada,37,You know we havin' sticks like Chop,Chop,END,SLANT,cmu,MED,Y
+Designer,34,"I come from the bottom, I be killin' shit to be honest",bottom,34,"I come from the bottom, I be killin' shit to be honest",honest,INNER,ASSONANCE,vowel,MED,Y
+Designer,34,"I come from the bottom, I be killin' shit to be honest",killin,34,"I come from the bottom, I be killin' shit to be honest",shit,INNER,ASSONANCE,vowel,MED,Y
+Designer,34,"I come from the bottom, I be killin' shit to be honest",killin,35,"I'm in a foreign, I'm with your bitch 'cause she borin'",bitch,INNER,ASSONANCE,vowel,MED,Y
+Designer,34,"I come from the bottom, I be killin' shit to be honest",shit,35,"I'm in a foreign, I'm with your bitch 'cause she borin'",bitch,INNER,SLANT,cmu,MED,Y
+Designer,34,"I come from the bottom, I be killin' shit to be honest",killin,36,"Met her while tourin', she give me neck while you goin', hey",give,INNER,ASSONANCE,vowel,MED,Y
+Designer,34,"I come from the bottom, I be killin' shit to be honest",shit,36,"Met her while tourin', she give me neck while you goin', hey",give,INNER,SLANT,cmu,MED,Y
+Designer,34,"I come from the bottom, I be killin' shit to be honest",honest,37,You know we havin' sticks like Chop,Chop,END,ASSONANCE,vowel,MED,Y
+Designer,35,"I'm in a foreign, I'm with your bitch 'cause she borin'",foreign,35,"I'm in a foreign, I'm with your bitch 'cause she borin'",borin,INNER,SLANT,cmu,MED,Y
+Designer,35,"I'm in a foreign, I'm with your bitch 'cause she borin'",bitch,36,"Met her while tourin', she give me neck while you goin', hey",give,INNER,SLANT,cmu,MED,Y
+Designer,35,"I'm in a foreign, I'm with your bitch 'cause she borin'",bitch,37,You know we havin' sticks like Chop,sticks,INNER,ASSONANCE,vowel,MED,Y
+Designer,36,"Met her while tourin', she give me neck while you goin', hey",Met,36,"Met her while tourin', she give me neck while you goin', hey",neck,INNER,SLANT,cmu,MED,Y
+Designer,36,"Met her while tourin', she give me neck while you goin', hey",while,36,"Met her while tourin', she give me neck while you goin', hey",while,INNER,REPEAT,spelling,HIGH,N
+Designer,36,"Met her while tourin', she give me neck while you goin', hey",give,37,You know we havin' sticks like Chop,sticks,INNER,ASSONANCE,vowel,MED,Y
+Designer,36,"Met her while tourin', she give me neck while you goin', hey",while,37,You know we havin' sticks like Chop,like,INNER,SLANT,cmu,MED,Y
+Designer,36,"Met her while tourin', she give me neck while you goin', hey",give,38,Know we havin' big old gwap,big,INNER,SLANT,cmu,MED,Y
+Designer,37,You know we havin' sticks like Chop,havin,38,Know we havin' big old gwap,havin,INNER,REPEAT,spelling,HIGH,N
+Designer,37,You know we havin' sticks like Chop,know,38,Know we havin' big old gwap,Know,INNER,REPEAT,spelling,HIGH,N
+Designer,37,You know we havin' sticks like Chop,know,38,Know we havin' big old gwap,old,INNER,ASSONANCE,vowel,MED,Y
+Designer,37,You know we havin' sticks like Chop,sticks,38,Know we havin' big old gwap,big,INNER,ASSONANCE,vowel,MED,Y
+Designer,37,You know we havin' sticks like Chop,Chop,39,Know if a nigga ever touch somethin' then you know that bitch got popped,popped,END,SLANT,cmu,MED,Y
+Designer,37,You know we havin' sticks like Chop,Chop,39,Know if a nigga ever touch somethin' then you know that bitch got popped,got,INNER,SLANT,cmu,MED,Y
+Designer,37,You know we havin' sticks like Chop,know,39,Know if a nigga ever touch somethin' then you know that bitch got popped,Know,INNER,REPEAT,spelling,HIGH,N
+Designer,37,You know we havin' sticks like Chop,sticks,39,Know if a nigga ever touch somethin' then you know that bitch got popped,bitch,INNER,ASSONANCE,vowel,MED,Y
+Designer,37,You know we havin' sticks like Chop,Chop,40,"I told Unc put me in the kitchen, you know my wrist don't lock",lock,END,SLANT,cmu,MED,Y
+Designer,37,You know we havin' sticks like Chop,Chop,41,And it took a lot of baking soda to put my wrist on rock,rock,END,SLANT,cmu,MED,Y
+Designer,38,Know we havin' big old gwap,Know,38,Know we havin' big old gwap,old,INNER,ASSONANCE,vowel,MED,Y
+Designer,38,Know we havin' big old gwap,big,39,Know if a nigga ever touch somethin' then you know that bitch got popped,bitch,INNER,SLANT,cmu,MED,Y
+Designer,38,Know we havin' big old gwap,big,39,Know if a nigga ever touch somethin' then you know that bitch got popped,nigga,INNER,SLANT,spelling,LOW,Y
+Designer,38,Know we havin' big old gwap,Know,39,Know if a nigga ever touch somethin' then you know that bitch got popped,Know,INNER,REPEAT,spelling,HIGH,N
+Designer,38,Know we havin' big old gwap,old,39,Know if a nigga ever touch somethin' then you know that bitch got popped,Know,INNER,ASSONANCE,vowel,MED,Y
+Designer,38,Know we havin' big old gwap,big,40,"I told Unc put me in the kitchen, you know my wrist don't lock",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Designer,38,Know we havin' big old gwap,big,40,"I told Unc put me in the kitchen, you know my wrist don't lock",wrist,INNER,ASSONANCE,vowel,MED,Y
+Designer,38,Know we havin' big old gwap,Know,40,"I told Unc put me in the kitchen, you know my wrist don't lock",don't,INNER,ASSONANCE,vowel,MED,Y
+Designer,38,Know we havin' big old gwap,Know,40,"I told Unc put me in the kitchen, you know my wrist don't lock",know,INNER,REPEAT,spelling,HIGH,N
+Designer,38,Know we havin' big old gwap,Know,40,"I told Unc put me in the kitchen, you know my wrist don't lock",told,INNER,ASSONANCE,vowel,MED,Y
+Designer,38,Know we havin' big old gwap,old,40,"I told Unc put me in the kitchen, you know my wrist don't lock",don't,INNER,ASSONANCE,vowel,MED,Y
+Designer,38,Know we havin' big old gwap,old,40,"I told Unc put me in the kitchen, you know my wrist don't lock",know,INNER,ASSONANCE,vowel,MED,Y
+Designer,38,Know we havin' big old gwap,old,40,"I told Unc put me in the kitchen, you know my wrist don't lock",told,INNER,PERFECT,cmu,HIGH,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,got,39,Know if a nigga ever touch somethin' then you know that bitch got popped,popped,INNER,SLANT,cmu,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,Know,39,Know if a nigga ever touch somethin' then you know that bitch got popped,know,INNER,REPEAT,spelling,HIGH,N
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,touch,39,Know if a nigga ever touch somethin' then you know that bitch got popped,somethin,INNER,ASSONANCE,vowel,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,popped,40,"I told Unc put me in the kitchen, you know my wrist don't lock",lock,END,SLANT,cmu,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,bitch,40,"I told Unc put me in the kitchen, you know my wrist don't lock",kitchen,INNER,SLANT,cmu,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,bitch,40,"I told Unc put me in the kitchen, you know my wrist don't lock",wrist,INNER,ASSONANCE,vowel,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,got,40,"I told Unc put me in the kitchen, you know my wrist don't lock",lock,INNER,SLANT,cmu,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,Know,40,"I told Unc put me in the kitchen, you know my wrist don't lock",don't,INNER,ASSONANCE,vowel,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,Know,40,"I told Unc put me in the kitchen, you know my wrist don't lock",know,INNER,REPEAT,spelling,HIGH,N
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,Know,40,"I told Unc put me in the kitchen, you know my wrist don't lock",told,INNER,ASSONANCE,vowel,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,popped,41,And it took a lot of baking soda to put my wrist on rock,rock,END,SLANT,cmu,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,bitch,41,And it took a lot of baking soda to put my wrist on rock,wrist,INNER,ASSONANCE,vowel,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,got,41,And it took a lot of baking soda to put my wrist on rock,lot,INNER,PERFECT,cmu,HIGH,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,got,41,And it took a lot of baking soda to put my wrist on rock,rock,INNER,SLANT,cmu,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,Know,41,And it took a lot of baking soda to put my wrist on rock,soda,INNER,ASSONANCE,vowel,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,popped,41,And it took a lot of baking soda to put my wrist on rock,lot,INNER,SLANT,cmu,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,popped,42,"Yeah hey, tick tock",tock,END,SLANT,cmu,MED,Y
+Designer,39,Know if a nigga ever touch somethin' then you know that bitch got popped,popped,43,Big face look like a big clock,clock,END,SLANT,cmu,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",kitchen,40,"I told Unc put me in the kitchen, you know my wrist don't lock",wrist,INNER,ASSONANCE,vowel,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",know,40,"I told Unc put me in the kitchen, you know my wrist don't lock",don't,INNER,ASSONANCE,vowel,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",told,40,"I told Unc put me in the kitchen, you know my wrist don't lock",don't,INNER,ASSONANCE,vowel,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",told,40,"I told Unc put me in the kitchen, you know my wrist don't lock",know,INNER,ASSONANCE,vowel,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",lock,41,And it took a lot of baking soda to put my wrist on rock,rock,END,PERFECT,cmu,HIGH,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",don't,41,And it took a lot of baking soda to put my wrist on rock,soda,INNER,ASSONANCE,vowel,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",kitchen,41,And it took a lot of baking soda to put my wrist on rock,wrist,INNER,ASSONANCE,vowel,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",know,41,And it took a lot of baking soda to put my wrist on rock,soda,INNER,ASSONANCE,vowel,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",lock,41,And it took a lot of baking soda to put my wrist on rock,lot,INNER,SLANT,cmu,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",put,41,And it took a lot of baking soda to put my wrist on rock,put,INNER,REPEAT,spelling,HIGH,N
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",put,41,And it took a lot of baking soda to put my wrist on rock,took,INNER,SLANT,cmu,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",told,41,And it took a lot of baking soda to put my wrist on rock,soda,INNER,SLANT,cmu,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",wrist,41,And it took a lot of baking soda to put my wrist on rock,wrist,INNER,REPEAT,spelling,HIGH,N
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",lock,42,"Yeah hey, tick tock",tock,END,PERFECT,cmu,HIGH,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",kitchen,42,"Yeah hey, tick tock",tick,INNER,ASSONANCE,vowel,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",wrist,42,"Yeah hey, tick tock",tick,INNER,ASSONANCE,vowel,MED,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",lock,43,Big face look like a big clock,clock,END,PERFECT,cmu,HIGH,Y
+Designer,40,"I told Unc put me in the kitchen, you know my wrist don't lock",lock,44,"Four-five, yeah the big Glock",Glock,END,PERFECT,cmu,HIGH,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,lot,41,And it took a lot of baking soda to put my wrist on rock,rock,INNER,SLANT,cmu,MED,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,took,41,And it took a lot of baking soda to put my wrist on rock,put,INNER,SLANT,cmu,MED,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,rock,42,"Yeah hey, tick tock",tock,END,PERFECT,cmu,HIGH,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,lot,42,"Yeah hey, tick tock",tock,INNER,SLANT,cmu,MED,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,wrist,42,"Yeah hey, tick tock",tick,INNER,ASSONANCE,vowel,MED,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,rock,43,Big face look like a big clock,clock,END,PERFECT,cmu,HIGH,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,baking,43,Big face look like a big clock,face,INNER,ASSONANCE,vowel,MED,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,lot,43,Big face look like a big clock,clock,INNER,SLANT,cmu,MED,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,put,43,Big face look like a big clock,look,INNER,SLANT,cmu,MED,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,took,43,Big face look like a big clock,look,INNER,PERFECT,cmu,HIGH,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,wrist,43,Big face look like a big clock,Big,INNER,ASSONANCE,vowel,MED,Y
+Designer,41,And it took a lot of baking soda to put my wrist on rock,rock,44,"Four-five, yeah the big Glock",Glock,END,PERFECT,cmu,HIGH,Y
+Designer,42,"Yeah hey, tick tock",tock,43,Big face look like a big clock,clock,END,PERFECT,cmu,HIGH,Y
+Designer,42,"Yeah hey, tick tock",tick,43,Big face look like a big clock,Big,INNER,SLANT,cmu,MED,Y
+Designer,42,"Yeah hey, tick tock",tock,44,"Four-five, yeah the big Glock",Glock,END,PERFECT,cmu,HIGH,Y
+Designer,42,"Yeah hey, tick tock",tick,44,"Four-five, yeah the big Glock",big,INNER,SLANT,cmu,MED,Y
+Designer,42,"Yeah hey, tick tock",tock,46,If he lame we serve him sheetrock,sheetrock,END,PERFECT,spelling,HIGH,Y
+Designer,43,Big face look like a big clock,Big,43,Big face look like a big clock,big,INNER,REPEAT,spelling,HIGH,N
+Designer,43,Big face look like a big clock,clock,44,"Four-five, yeah the big Glock",Glock,END,PERFECT,cmu,HIGH,Y
+Designer,43,Big face look like a big clock,Big,44,"Four-five, yeah the big Glock",big,INNER,REPEAT,spelling,HIGH,N
+Designer,43,Big face look like a big clock,like,44,"Four-five, yeah the big Glock",five,INNER,SLANT,cmu,MED,Y
+Designer,43,Big face look like a big clock,Big,45,"All these bags, we need six Glocks",six,INNER,ASSONANCE,vowel,MED,Y
+Designer,43,Big face look like a big clock,clock,46,If he lame we serve him sheetrock,sheetrock,END,PERFECT,spelling,HIGH,Y
+Designer,43,Big face look like a big clock,clock,47,Yeah the Porsche plain but it's a T-top,top,END,SLANT,cmu,MED,Y
+Designer,44,"Four-five, yeah the big Glock",big,45,"All these bags, we need six Glocks",six,INNER,ASSONANCE,vowel,MED,Y
+Designer,44,"Four-five, yeah the big Glock",Four,45,"All these bags, we need six Glocks",All,INNER,SLANT,cmu,MED,Y
+Designer,44,"Four-five, yeah the big Glock",Glock,46,If he lame we serve him sheetrock,sheetrock,END,PERFECT,spelling,HIGH,Y
+Designer,44,"Four-five, yeah the big Glock",big,46,If he lame we serve him sheetrock,him,INNER,SLANT,cmu,MED,Y
+Designer,44,"Four-five, yeah the big Glock",Glock,47,Yeah the Porsche plain but it's a T-top,top,END,SLANT,cmu,MED,Y
+Designer,45,"All these bags, we need six Glocks",these,45,"All these bags, we need six Glocks",need,INNER,SLANT,cmu,MED,Y
+Designer,45,"All these bags, we need six Glocks",six,46,If he lame we serve him sheetrock,him,INNER,ASSONANCE,vowel,MED,Y
+Designer,45,"All these bags, we need six Glocks",All,47,Yeah the Porsche plain but it's a T-top,Porsche,INNER,ASSONANCE,vowel,MED,Y
+Designer,45,"All these bags, we need six Glocks",need,47,Yeah the Porsche plain but it's a T-top,T,INNER,ASSONANCE,vowel,MED,Y
+Designer,45,"All these bags, we need six Glocks",these,47,Yeah the Porsche plain but it's a T-top,T,INNER,ASSONANCE,vowel,MED,Y
+Designer,46,If he lame we serve him sheetrock,lame,47,Yeah the Porsche plain but it's a T-top,plain,INNER,SLANT,cmu,MED,Y
+Designer,46,If he lame we serve him sheetrock,sheetrock,48,"The classic one, no Reebok",Reebok,END,SLANT,spelling,LOW,Y
+Designer,46,If he lame we serve him sheetrock,sheetrock,49,"This the last one, we gotta restock",restock,END,PERFECT,spelling,HIGH,Y
+Designer,47,Yeah the Porsche plain but it's a T-top,T,48,"The classic one, no Reebok",Reebok,INNER,ASSONANCE,vowel,MED,Y
+Designer,47,Yeah the Porsche plain but it's a T-top,top,49,"This the last one, we gotta restock",restock,END,SLANT,cmu,MED,Y
+Designer,47,Yeah the Porsche plain but it's a T-top,top,49,"This the last one, we gotta restock",gotta,INNER,SLANT,cmu,MED,Y
+Designer,48,"The classic one, no Reebok",classic,49,"This the last one, we gotta restock",last,INNER,SLANT,cmu,MED,Y
+Designer,48,"The classic one, no Reebok",one,49,"This the last one, we gotta restock",one,INNER,REPEAT,spelling,HIGH,N
+Designer,48,"The classic one, no Reebok",no,50,"Uh, know my nigga Healthy with me, yeah",know,INNER,PERFECT,cmu,HIGH,Y
+Designer,49,"This the last one, we gotta restock",gotta,49,"This the last one, we gotta restock",restock,INNER,SLANT,cmu,MED,Y
+Designer,50,"Uh, know my nigga Healthy with me, yeah",Healthy,51,"Healthy life, if he prayed, pay the price, yeah",Healthy,INNER,REPEAT,spelling,HIGH,N
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",life,51,"Healthy life, if he prayed, pay the price, yeah",price,INNER,SLANT,cmu,MED,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",prayed,51,"Healthy life, if he prayed, pay the price, yeah",pay,INNER,ASSONANCE,vowel,MED,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",price,52,Make him pay it twice,twice,END,PERFECT,cmu,HIGH,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",life,52,Make him pay it twice,twice,INNER,SLANT,cmu,MED,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",pay,52,Make him pay it twice,Make,INNER,ASSONANCE,vowel,MED,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",pay,52,Make him pay it twice,pay,INNER,REPEAT,spelling,HIGH,N
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",prayed,52,Make him pay it twice,Make,INNER,SLANT,cmu,MED,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",prayed,52,Make him pay it twice,pay,INNER,ASSONANCE,vowel,MED,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",price,53,"Healthy life, if he play, play it twice, yeah",twice,END,PERFECT,cmu,HIGH,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",Healthy,53,"Healthy life, if he play, play it twice, yeah",Healthy,INNER,REPEAT,spelling,HIGH,N
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",life,53,"Healthy life, if he play, play it twice, yeah",life,INNER,REPEAT,spelling,HIGH,N
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",life,53,"Healthy life, if he play, play it twice, yeah",twice,INNER,SLANT,cmu,MED,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",pay,53,"Healthy life, if he play, play it twice, yeah",play,INNER,PERFECT,cmu,HIGH,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",prayed,53,"Healthy life, if he play, play it twice, yeah",play,INNER,ASSONANCE,vowel,MED,Y
+Designer,51,"Healthy life, if he prayed, pay the price, yeah",price,53,"Healthy life, if he play, play it twice, yeah",life,INNER,SLANT,cmu,MED,Y
+Designer,52,Make him pay it twice,Make,52,Make him pay it twice,pay,INNER,ASSONANCE,vowel,MED,Y
+Designer,52,Make him pay it twice,twice,53,"Healthy life, if he play, play it twice, yeah",twice,END,REPEAT,spelling,HIGH,N
+Designer,52,Make him pay it twice,Make,53,"Healthy life, if he play, play it twice, yeah",play,INNER,ASSONANCE,vowel,MED,Y
+Designer,52,Make him pay it twice,pay,53,"Healthy life, if he play, play it twice, yeah",play,INNER,PERFECT,cmu,HIGH,Y
+Designer,52,Make him pay it twice,twice,53,"Healthy life, if he play, play it twice, yeah",life,INNER,SLANT,cmu,MED,Y
+Designer,53,"Healthy life, if he play, play it twice, yeah",life,53,"Healthy life, if he play, play it twice, yeah",twice,INNER,SLANT,cmu,MED,Y
+Designer,53,"Healthy life, if he play, play it twice, yeah",play,53,"Healthy life, if he play, play it twice, yeah",play,INNER,REPEAT,spelling,HIGH,N
