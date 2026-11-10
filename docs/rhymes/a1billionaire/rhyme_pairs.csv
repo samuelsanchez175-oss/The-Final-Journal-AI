@@ -1,0 +1,308 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Chill Pill,1,Take a chill pill,chill,1,Take a chill pill,pill,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,1,Take a chill pill,pill,2,Nigga my money big,big,END,SLANT,cmu,MED,Y
+Chill Pill,1,Take a chill pill,chill,2,Nigga my money big,big,INNER,SLANT,cmu,MED,Y
+Chill Pill,1,Take a chill pill,pill,3,"Nigga, yo money lil'",lil,END,PERFECT,cmu,HIGH,Y
+Chill Pill,1,Take a chill pill,chill,3,"Nigga, yo money lil'",lil,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,1,Take a chill pill,pill,4,"Bentley truck clean, insides ill",ill,END,PERFECT,cmu,HIGH,Y
+Chill Pill,2,Nigga my money big,Nigga,2,Nigga my money big,big,INNER,SLANT,spelling,LOW,Y
+Chill Pill,2,Nigga my money big,big,3,"Nigga, yo money lil'",lil,END,SLANT,cmu,MED,Y
+Chill Pill,2,Nigga my money big,big,3,"Nigga, yo money lil'",Nigga,INNER,SLANT,spelling,LOW,Y
+Chill Pill,2,Nigga my money big,money,3,"Nigga, yo money lil'",money,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,2,Nigga my money big,Nigga,3,"Nigga, yo money lil'",Nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,2,Nigga my money big,big,4,"Bentley truck clean, insides ill",ill,END,SLANT,cmu,MED,Y
+Chill Pill,2,Nigga my money big,money,4,"Bentley truck clean, insides ill",truck,INNER,SLANT,cmu,MED,Y
+Chill Pill,3,"Nigga, yo money lil'",lil,4,"Bentley truck clean, insides ill",ill,END,PERFECT,cmu,HIGH,Y
+Chill Pill,3,"Nigga, yo money lil'",money,4,"Bentley truck clean, insides ill",truck,INNER,SLANT,cmu,MED,Y
+Chill Pill,3,"Nigga, yo money lil'",lil,5,"'Rari guts ew, banana clips peeled",clips,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,3,"Nigga, yo money lil'",money,5,"'Rari guts ew, banana clips peeled",guts,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,4,"Bentley truck clean, insides ill",clean,5,"'Rari guts ew, banana clips peeled",peeled,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,4,"Bentley truck clean, insides ill",ill,5,"'Rari guts ew, banana clips peeled",clips,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,4,"Bentley truck clean, insides ill",truck,5,"'Rari guts ew, banana clips peeled",guts,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,4,"Bentley truck clean, insides ill",clean,6,You say that shit too much so I know you are not real,real,INNER,SLANT,cmu,MED,Y
+Chill Pill,4,"Bentley truck clean, insides ill",ill,6,You say that shit too much so I know you are not real,shit,INNER,SLANT,cmu,MED,Y
+Chill Pill,4,"Bentley truck clean, insides ill",truck,6,You say that shit too much so I know you are not real,much,INNER,SLANT,cmu,MED,Y
+Chill Pill,5,"'Rari guts ew, banana clips peeled",'Rari,5,"'Rari guts ew, banana clips peeled",banana,INNER,SLANT,spelling,LOW,Y
+Chill Pill,5,"'Rari guts ew, banana clips peeled",peeled,6,You say that shit too much so I know you are not real,real,END,SLANT,cmu,MED,Y
+Chill Pill,5,"'Rari guts ew, banana clips peeled",clips,6,You say that shit too much so I know you are not real,shit,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,5,"'Rari guts ew, banana clips peeled",guts,6,You say that shit too much so I know you are not real,much,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,5,"'Rari guts ew, banana clips peeled",peeled,7,You niggas broke ribs showing think you need a meal,meal,END,SLANT,cmu,MED,Y
+Chill Pill,5,"'Rari guts ew, banana clips peeled",clips,7,You niggas broke ribs showing think you need a meal,niggas,INNER,SLANT,spelling,LOW,Y
+Chill Pill,5,"'Rari guts ew, banana clips peeled",clips,7,You niggas broke ribs showing think you need a meal,ribs,INNER,SLANT,cmu,MED,Y
+Chill Pill,5,"'Rari guts ew, banana clips peeled",clips,7,You niggas broke ribs showing think you need a meal,think,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,5,"'Rari guts ew, banana clips peeled",peeled,7,You niggas broke ribs showing think you need a meal,need,INNER,SLANT,cmu,MED,Y
+Chill Pill,6,You say that shit too much so I know you are not real,real,7,You niggas broke ribs showing think you need a meal,meal,END,PERFECT,cmu,HIGH,Y
+Chill Pill,6,You say that shit too much so I know you are not real,know,7,You niggas broke ribs showing think you need a meal,broke,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,6,You say that shit too much so I know you are not real,know,7,You niggas broke ribs showing think you need a meal,showing,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,6,You say that shit too much so I know you are not real,real,7,You niggas broke ribs showing think you need a meal,need,INNER,SLANT,cmu,MED,Y
+Chill Pill,6,You say that shit too much so I know you are not real,shit,7,You niggas broke ribs showing think you need a meal,ribs,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,6,You say that shit too much so I know you are not real,shit,7,You niggas broke ribs showing think you need a meal,think,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,6,You say that shit too much so I know you are not real,shit,8,Nigga my wrist on bustdown (Bitch),Nigga,INNER,SLANT,spelling,LOW,Y
+Chill Pill,6,You say that shit too much so I know you are not real,shit,8,Nigga my wrist on bustdown (Bitch),wrist,INNER,SLANT,cmu,MED,Y
+Chill Pill,7,You niggas broke ribs showing think you need a meal,broke,7,You niggas broke ribs showing think you need a meal,showing,INNER,SLANT,cmu,MED,Y
+Chill Pill,7,You niggas broke ribs showing think you need a meal,need,7,You niggas broke ribs showing think you need a meal,meal,INNER,SLANT,cmu,MED,Y
+Chill Pill,7,You niggas broke ribs showing think you need a meal,niggas,7,You niggas broke ribs showing think you need a meal,ribs,INNER,SLANT,spelling,LOW,Y
+Chill Pill,7,You niggas broke ribs showing think you need a meal,ribs,7,You niggas broke ribs showing think you need a meal,think,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,7,You niggas broke ribs showing think you need a meal,niggas,8,Nigga my wrist on bustdown (Bitch),Nigga,INNER,SLANT,spelling,LOW,Y
+Chill Pill,7,You niggas broke ribs showing think you need a meal,ribs,8,Nigga my wrist on bustdown (Bitch),wrist,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,7,You niggas broke ribs showing think you need a meal,think,8,Nigga my wrist on bustdown (Bitch),wrist,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,7,You niggas broke ribs showing think you need a meal,ribs,9,"Fuckin' yo bitch, she bustdown (Bitch)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,7,You niggas broke ribs showing think you need a meal,think,9,"Fuckin' yo bitch, she bustdown (Bitch)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,8,Nigga my wrist on bustdown (Bitch),bustdown,9,"Fuckin' yo bitch, she bustdown (Bitch)",bustdown,END,REPEAT,spelling,HIGH,N
+Chill Pill,8,Nigga my wrist on bustdown (Bitch),wrist,9,"Fuckin' yo bitch, she bustdown (Bitch)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,9,"Fuckin' yo bitch, she bustdown (Bitch)",Fuckin,10,Pineapple all in my crush now (Yah),crush,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,9,"Fuckin' yo bitch, she bustdown (Bitch)",Fuckin,11,I pour a pint in my crush now (Yah),crush,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,10,Pineapple all in my crush now (Yah),now,11,I pour a pint in my crush now (Yah),now,END,REPEAT,spelling,HIGH,N
+Chill Pill,10,Pineapple all in my crush now (Yah),all,11,I pour a pint in my crush now (Yah),pour,INNER,SLANT,cmu,MED,Y
+Chill Pill,10,Pineapple all in my crush now (Yah),crush,11,I pour a pint in my crush now (Yah),crush,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,10,Pineapple all in my crush now (Yah),all,12,Pourin' up green in a Fanta (Yah),Pourin,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,11,I pour a pint in my crush now (Yah),pour,12,Pourin' up green in a Fanta (Yah),Pourin,INNER,SLANT,cmu,MED,Y
+Chill Pill,12,Pourin' up green in a Fanta (Yah),Fanta,14,Feds got us on they scanners (Woo),got,INNER,SLANT,cmu,MED,Y
+Chill Pill,13,We banging red bandanas (Woo),banging,13,We banging red bandanas (Woo),bandanas,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,13,We banging red bandanas (Woo),bandanas,14,Feds got us on they scanners (Woo),scanners,END,SLANT,cmu,MED,Y
+Chill Pill,13,We banging red bandanas (Woo),banging,14,Feds got us on they scanners (Woo),scanners,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,13,We banging red bandanas (Woo),red,14,Feds got us on they scanners (Woo),Feds,INNER,SLANT,cmu,MED,Y
+Chill Pill,13,We banging red bandanas (Woo),bandanas,16,What the fuck is private dancers (Yah),dancers,END,SLANT,cmu,MED,Y
+Chill Pill,13,We banging red bandanas (Woo),bandanas,17,We ain't into private dances (Yah),dances,END,SLANT,cmu,MED,Y
+Chill Pill,14,Feds got us on they scanners (Woo),scanners,16,What the fuck is private dancers (Yah),dancers,END,SLANT,cmu,MED,Y
+Chill Pill,14,Feds got us on they scanners (Woo),scanners,17,We ain't into private dances (Yah),dances,END,SLANT,cmu,MED,Y
+Chill Pill,14,Feds got us on they scanners (Woo),scanners,18,I got a bitch go to Stanford (Bitch),Stanford,END,ASSONANCE,vowel,MED,Y
+Chill Pill,15,Bitches fuck us 'cause we famous (Woo),fuck,16,What the fuck is private dancers (Yah),fuck,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,15,Bitches fuck us 'cause we famous (Woo),fuck,16,What the fuck is private dancers (Yah),What,INNER,SLANT,cmu,MED,Y
+Chill Pill,15,Bitches fuck us 'cause we famous (Woo),famous,17,We ain't into private dances (Yah),ain't,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,16,What the fuck is private dancers (Yah),What,16,What the fuck is private dancers (Yah),fuck,INNER,SLANT,cmu,MED,Y
+Chill Pill,16,What the fuck is private dancers (Yah),dancers,17,We ain't into private dances (Yah),dances,END,SLANT,cmu,MED,Y
+Chill Pill,16,What the fuck is private dancers (Yah),private,17,We ain't into private dances (Yah),private,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,16,What the fuck is private dancers (Yah),dancers,18,I got a bitch go to Stanford (Bitch),Stanford,END,ASSONANCE,vowel,MED,Y
+Chill Pill,16,What the fuck is private dancers (Yah),dancers,19,We pushin' dope on campus (Bitch),campus,END,SLANT,cmu,MED,Y
+Chill Pill,17,We ain't into private dances (Yah),dances,18,I got a bitch go to Stanford (Bitch),Stanford,END,ASSONANCE,vowel,MED,Y
+Chill Pill,17,We ain't into private dances (Yah),dances,19,We pushin' dope on campus (Bitch),campus,END,SLANT,cmu,MED,Y
+Chill Pill,18,I got a bitch go to Stanford (Bitch),Stanford,19,We pushin' dope on campus (Bitch),campus,END,ASSONANCE,vowel,MED,Y
+Chill Pill,18,I got a bitch go to Stanford (Bitch),go,19,We pushin' dope on campus (Bitch),dope,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,18,I got a bitch go to Stanford (Bitch),bitch,20,Lil' bitch name Taperra (Brr),bitch,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,18,I got a bitch go to Stanford (Bitch),bitch,20,Lil' bitch name Taperra (Brr),Lil,INNER,SLANT,cmu,MED,Y
+Chill Pill,20,Lil' bitch name Taperra (Brr),Lil,20,Lil' bitch name Taperra (Brr),bitch,INNER,SLANT,cmu,MED,Y
+Chill Pill,20,Lil' bitch name Taperra (Brr),bitch,21,I swear her head is superior (Brr),superior,INNER,SLANT,cmu,MED,Y
+Chill Pill,20,Lil' bitch name Taperra (Brr),Lil,21,I swear her head is superior (Brr),superior,INNER,SLANT,cmu,MED,Y
+Chill Pill,20,Lil' bitch name Taperra (Brr),bitch,22,Pussy nigga on ya period (Brr),period,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,20,Lil' bitch name Taperra (Brr),Lil,22,Pussy nigga on ya period (Brr),period,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,20,Lil' bitch name Taperra (Brr),Taperra,24,"Pussy shit, I can not stand for it (Bitch)",stand,END,ASSONANCE,vowel,LOW,N
+Chill Pill,21,I swear her head is superior (Brr),swear,21,I swear her head is superior (Brr),head,INNER,SLANT,cmu,MED,Y
+Chill Pill,21,I swear her head is superior (Brr),superior,22,Pussy nigga on ya period (Brr),period,END,SLANT,cmu,MED,Y
+Chill Pill,21,I swear her head is superior (Brr),superior,23,Me and my niggas ain't fearin' ya (Yah),fearin,END,SLANT,cmu,MED,Y
+Chill Pill,22,Pussy nigga on ya period (Brr),period,23,Me and my niggas ain't fearin' ya (Yah),fearin,END,SLANT,cmu,MED,Y
+Chill Pill,22,Pussy nigga on ya period (Brr),nigga,23,Me and my niggas ain't fearin' ya (Yah),niggas,INNER,SLANT,spelling,LOW,Y
+Chill Pill,22,Pussy nigga on ya period (Brr),nigga,24,"Pussy shit, I can not stand for it (Bitch)",shit,INNER,SLANT,spelling,LOW,Y
+Chill Pill,22,Pussy nigga on ya period (Brr),period,24,"Pussy shit, I can not stand for it (Bitch)",shit,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,22,Pussy nigga on ya period (Brr),Pussy,24,"Pussy shit, I can not stand for it (Bitch)",Pussy,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,23,Me and my niggas ain't fearin' ya (Yah),fearin,24,"Pussy shit, I can not stand for it (Bitch)",shit,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,23,Me and my niggas ain't fearin' ya (Yah),fearin,27,White on white look like a miracle,miracle,END,ASSONANCE,vowel,MED,Y
+Chill Pill,24,"Pussy shit, I can not stand for it (Bitch)",can,24,"Pussy shit, I can not stand for it (Bitch)",stand,INNER,SLANT,cmu,MED,Y
+Chill Pill,24,"Pussy shit, I can not stand for it (Bitch)",not,25,Pop at your door like the landlord (Woo),Pop,INNER,SLANT,cmu,MED,Y
+Chill Pill,24,"Pussy shit, I can not stand for it (Bitch)",can,26,"In something fast, check the dashboard (Woo)",fast,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,24,"Pussy shit, I can not stand for it (Bitch)",stand,26,"In something fast, check the dashboard (Woo)",fast,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,25,Pop at your door like the landlord (Woo),door,25,Pop at your door like the landlord (Woo),landlord,INNER,SLANT,cmu,MED,Y
+Chill Pill,25,Pop at your door like the landlord (Woo),landlord,26,"In something fast, check the dashboard (Woo)",dashboard,END,PERFECT,cmu,HIGH,Y
+Chill Pill,25,Pop at your door like the landlord (Woo),door,26,"In something fast, check the dashboard (Woo)",dashboard,INNER,SLANT,cmu,MED,Y
+Chill Pill,25,Pop at your door like the landlord (Woo),like,27,White on white look like a miracle,like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,25,Pop at your door like the landlord (Woo),like,27,White on white look like a miracle,White,INNER,SLANT,cmu,MED,Y
+Chill Pill,27,White on white look like a miracle,White,27,White on white look like a miracle,like,INNER,SLANT,cmu,MED,Y
+Chill Pill,27,White on white look like a miracle,White,27,White on white look like a miracle,white,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,27,White on white look like a miracle,miracle,28,Interior lookin' like cereal,cereal,END,SLANT,cmu,MED,Y
+Chill Pill,27,White on white look like a miracle,like,28,Interior lookin' like cereal,like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,27,White on white look like a miracle,look,28,Interior lookin' like cereal,lookin,INNER,SLANT,cmu,MED,Y
+Chill Pill,27,White on white look like a miracle,miracle,28,Interior lookin' like cereal,Interior,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,27,White on white look like a miracle,White,28,Interior lookin' like cereal,like,INNER,SLANT,cmu,MED,Y
+Chill Pill,27,White on white look like a miracle,like,29,Ima trap nigga like trap food,like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,27,White on white look like a miracle,White,29,Ima trap nigga like trap food,like,INNER,SLANT,cmu,MED,Y
+Chill Pill,28,Interior lookin' like cereal,Interior,28,Interior lookin' like cereal,cereal,INNER,SLANT,cmu,MED,Y
+Chill Pill,28,Interior lookin' like cereal,Interior,29,Ima trap nigga like trap food,Ima,INNER,SLANT,spelling,LOW,Y
+Chill Pill,28,Interior lookin' like cereal,like,29,Ima trap nigga like trap food,like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,28,Interior lookin' like cereal,cereal,30,Trap lil' bitch like to trap too (Yah),bitch,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,28,Interior lookin' like cereal,cereal,30,Trap lil' bitch like to trap too (Yah),lil,INNER,SLANT,cmu,MED,Y
+Chill Pill,28,Interior lookin' like cereal,Interior,30,Trap lil' bitch like to trap too (Yah),bitch,INNER,SLANT,cmu,MED,Y
+Chill Pill,28,Interior lookin' like cereal,Interior,30,Trap lil' bitch like to trap too (Yah),lil,INNER,SLANT,cmu,MED,Y
+Chill Pill,28,Interior lookin' like cereal,like,30,Trap lil' bitch like to trap too (Yah),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,29,Ima trap nigga like trap food,trap,29,Ima trap nigga like trap food,trap,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,29,Ima trap nigga like trap food,Ima,30,Trap lil' bitch like to trap too (Yah),bitch,INNER,SLANT,spelling,LOW,Y
+Chill Pill,29,Ima trap nigga like trap food,Ima,30,Trap lil' bitch like to trap too (Yah),lil,INNER,SLANT,spelling,LOW,Y
+Chill Pill,29,Ima trap nigga like trap food,like,30,Trap lil' bitch like to trap too (Yah),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,29,Ima trap nigga like trap food,trap,30,Trap lil' bitch like to trap too (Yah),Trap,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,29,Ima trap nigga like trap food,food,31,She just want a nigga with some tattoos (Yah),tattoos,END,SLANT,cmu,MED,Y
+Chill Pill,29,Ima trap nigga like trap food,nigga,31,She just want a nigga with some tattoos (Yah),nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,29,Ima trap nigga like trap food,food,32,She gon' fuck a nigga that didn't go to school,school,END,SLANT,cmu,MED,Y
+Chill Pill,30,Trap lil' bitch like to trap too (Yah),lil,30,Trap lil' bitch like to trap too (Yah),bitch,INNER,SLANT,cmu,MED,Y
+Chill Pill,30,Trap lil' bitch like to trap too (Yah),Trap,30,Trap lil' bitch like to trap too (Yah),trap,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,30,Trap lil' bitch like to trap too (Yah),bitch,32,She gon' fuck a nigga that didn't go to school,didn't,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,30,Trap lil' bitch like to trap too (Yah),lil,32,She gon' fuck a nigga that didn't go to school,didn't,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,31,She just want a nigga with some tattoos (Yah),tattoos,32,She gon' fuck a nigga that didn't go to school,school,END,SLANT,cmu,MED,Y
+Chill Pill,31,She just want a nigga with some tattoos (Yah),nigga,32,She gon' fuck a nigga that didn't go to school,didn't,INNER,SLANT,spelling,LOW,Y
+Chill Pill,31,She just want a nigga with some tattoos (Yah),nigga,32,She gon' fuck a nigga that didn't go to school,nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,31,She just want a nigga with some tattoos (Yah),some,32,She gon' fuck a nigga that didn't go to school,fuck,INNER,SLANT,cmu,MED,Y
+Chill Pill,32,She gon' fuck a nigga that didn't go to school,nigga,32,She gon' fuck a nigga that didn't go to school,didn't,INNER,SLANT,spelling,LOW,Y
+Chill Pill,32,She gon' fuck a nigga that didn't go to school,go,33,Yeah this nice that's beast mode (Bitch),mode,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,32,She gon' fuck a nigga that didn't go to school,gon,33,Yeah this nice that's beast mode (Bitch),mode,INNER,SLANT,spelling,LOW,Y
+Chill Pill,32,She gon' fuck a nigga that didn't go to school,didn't,34,Shoot a pussy nigga like free throw (Bitch),nigga,INNER,SLANT,spelling,LOW,Y
+Chill Pill,32,She gon' fuck a nigga that didn't go to school,go,34,Shoot a pussy nigga like free throw (Bitch),throw,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,32,She gon' fuck a nigga that didn't go to school,nigga,34,Shoot a pussy nigga like free throw (Bitch),nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,32,She gon' fuck a nigga that didn't go to school,school,34,Shoot a pussy nigga like free throw (Bitch),Shoot,INNER,SLANT,cmu,MED,Y
+Chill Pill,33,Yeah this nice that's beast mode (Bitch),mode,34,Shoot a pussy nigga like free throw (Bitch),throw,END,ASSONANCE,vowel,MED,Y
+Chill Pill,33,Yeah this nice that's beast mode (Bitch),beast,34,Shoot a pussy nigga like free throw (Bitch),free,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,33,Yeah this nice that's beast mode (Bitch),nice,34,Shoot a pussy nigga like free throw (Bitch),like,INNER,SLANT,cmu,MED,Y
+Chill Pill,33,Yeah this nice that's beast mode (Bitch),nice,35,Find a lil' nigga like Nemo (brr),Find,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,33,Yeah this nice that's beast mode (Bitch),nice,35,Find a lil' nigga like Nemo (brr),like,INNER,SLANT,cmu,MED,Y
+Chill Pill,34,Shoot a pussy nigga like free throw (Bitch),like,35,Find a lil' nigga like Nemo (brr),Find,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,34,Shoot a pussy nigga like free throw (Bitch),like,35,Find a lil' nigga like Nemo (brr),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,34,Shoot a pussy nigga like free throw (Bitch),nigga,35,Find a lil' nigga like Nemo (brr),nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,34,Shoot a pussy nigga like free throw (Bitch),throw,36,He gonna need a Stitch like Lilo (Brr),Lilo,END,ASSONANCE,vowel,LOW,N
+Chill Pill,34,Shoot a pussy nigga like free throw (Bitch),free,36,He gonna need a Stitch like Lilo (Brr),need,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,34,Shoot a pussy nigga like free throw (Bitch),like,36,He gonna need a Stitch like Lilo (Brr),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,35,Find a lil' nigga like Nemo (brr),Find,35,Find a lil' nigga like Nemo (brr),like,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,35,Find a lil' nigga like Nemo (brr),Nemo,36,He gonna need a Stitch like Lilo (Brr),Lilo,END,ASSONANCE,vowel,LOW,N
+Chill Pill,35,Find a lil' nigga like Nemo (brr),Find,36,He gonna need a Stitch like Lilo (Brr),like,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,35,Find a lil' nigga like Nemo (brr),like,36,He gonna need a Stitch like Lilo (Brr),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,35,Find a lil' nigga like Nemo (brr),lil,36,He gonna need a Stitch like Lilo (Brr),Lilo,INNER,SLANT,spelling,LOW,Y
+Chill Pill,35,Find a lil' nigga like Nemo (brr),lil,36,He gonna need a Stitch like Lilo (Brr),Stitch,INNER,SLANT,cmu,MED,Y
+Chill Pill,35,Find a lil' nigga like Nemo (brr),Find,37,Take a nigga shit like Debo (Brr),like,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,35,Find a lil' nigga like Nemo (brr),like,37,Take a nigga shit like Debo (Brr),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,35,Find a lil' nigga like Nemo (brr),lil,37,Take a nigga shit like Debo (Brr),shit,INNER,SLANT,cmu,MED,Y
+Chill Pill,35,Find a lil' nigga like Nemo (brr),nigga,37,Take a nigga shit like Debo (Brr),nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,35,Find a lil' nigga like Nemo (brr),nigga,37,Take a nigga shit like Debo (Brr),shit,INNER,SLANT,spelling,LOW,Y
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),Stitch,36,He gonna need a Stitch like Lilo (Brr),Lilo,INNER,SLANT,spelling,LOW,Y
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),Lilo,37,Take a nigga shit like Debo (Brr),Debo,END,ASSONANCE,vowel,LOW,N
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),like,37,Take a nigga shit like Debo (Brr),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),Lilo,37,Take a nigga shit like Debo (Brr),shit,INNER,SLANT,spelling,LOW,Y
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),need,37,Take a nigga shit like Debo (Brr),Debo,INNER,SLANT,cmu,MED,Y
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),Stitch,37,Take a nigga shit like Debo (Brr),shit,INNER,SLANT,cmu,MED,Y
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),Lilo,38,Take a nigga bitch like repo (Brr),repo,END,ASSONANCE,vowel,LOW,N
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),like,38,Take a nigga bitch like repo (Brr),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),Lilo,38,Take a nigga bitch like repo (Brr),bitch,INNER,SLANT,spelling,LOW,Y
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),need,38,Take a nigga bitch like repo (Brr),repo,INNER,SLANT,cmu,MED,Y
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),Stitch,38,Take a nigga bitch like repo (Brr),bitch,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,36,He gonna need a Stitch like Lilo (Brr),Lilo,39,Nigga got holes like Zero bitch (Woo),bitch,END,SLANT,spelling,LOW,Y
+Chill Pill,37,Take a nigga shit like Debo (Brr),nigga,37,Take a nigga shit like Debo (Brr),shit,INNER,SLANT,spelling,LOW,Y
+Chill Pill,37,Take a nigga shit like Debo (Brr),Debo,38,Take a nigga bitch like repo (Brr),repo,END,SLANT,cmu,MED,Y
+Chill Pill,37,Take a nigga shit like Debo (Brr),like,38,Take a nigga bitch like repo (Brr),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,37,Take a nigga shit like Debo (Brr),nigga,38,Take a nigga bitch like repo (Brr),nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,37,Take a nigga shit like Debo (Brr),shit,38,Take a nigga bitch like repo (Brr),bitch,INNER,SLANT,cmu,MED,Y
+Chill Pill,37,Take a nigga shit like Debo (Brr),shit,38,Take a nigga bitch like repo (Brr),nigga,INNER,SLANT,spelling,LOW,Y
+Chill Pill,37,Take a nigga shit like Debo (Brr),Take,38,Take a nigga bitch like repo (Brr),Take,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,37,Take a nigga shit like Debo (Brr),like,39,Nigga got holes like Zero bitch (Woo),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,37,Take a nigga shit like Debo (Brr),nigga,39,Nigga got holes like Zero bitch (Woo),Nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,37,Take a nigga shit like Debo (Brr),shit,39,Nigga got holes like Zero bitch (Woo),bitch,INNER,SLANT,cmu,MED,Y
+Chill Pill,37,Take a nigga shit like Debo (Brr),shit,39,Nigga got holes like Zero bitch (Woo),Nigga,INNER,SLANT,spelling,LOW,Y
+Chill Pill,37,Take a nigga shit like Debo (Brr),shit,39,Nigga got holes like Zero bitch (Woo),Zero,INNER,SLANT,cmu,MED,Y
+Chill Pill,38,Take a nigga bitch like repo (Brr),bitch,39,Nigga got holes like Zero bitch (Woo),bitch,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,38,Take a nigga bitch like repo (Brr),bitch,39,Nigga got holes like Zero bitch (Woo),Zero,INNER,SLANT,cmu,MED,Y
+Chill Pill,38,Take a nigga bitch like repo (Brr),like,39,Nigga got holes like Zero bitch (Woo),like,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,38,Take a nigga bitch like repo (Brr),nigga,39,Nigga got holes like Zero bitch (Woo),Nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,39,Nigga got holes like Zero bitch (Woo),Zero,39,Nigga got holes like Zero bitch (Woo),bitch,INNER,SLANT,cmu,MED,Y
+Chill Pill,39,Nigga got holes like Zero bitch (Woo),got,40,Hunnid on a Patek (Yeah),Patek,INNER,SLANT,cmu,MED,Y
+Chill Pill,39,Nigga got holes like Zero bitch (Woo),bitch,41,Chrome hearts tinted (Yeah),tinted,END,ASSONANCE,vowel,MED,Y
+Chill Pill,39,Nigga got holes like Zero bitch (Woo),got,41,Chrome hearts tinted (Yeah),hearts,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,39,Nigga got holes like Zero bitch (Woo),holes,41,Chrome hearts tinted (Yeah),Chrome,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,39,Nigga got holes like Zero bitch (Woo),Zero,41,Chrome hearts tinted (Yeah),tinted,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,40,Hunnid on a Patek (Yeah),Hunnid,41,Chrome hearts tinted (Yeah),tinted,INNER,PERFECT,spelling,MED,Y
+Chill Pill,40,Hunnid on a Patek (Yeah),Patek,41,Chrome hearts tinted (Yeah),hearts,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,40,Hunnid on a Patek (Yeah),Patek,42,Bustdown watch (Hol' up),watch,END,ASSONANCE,vowel,MED,Y
+Chill Pill,40,Hunnid on a Patek (Yeah),Patek,43,Buy a yacht (Hol' up),yacht,END,SLANT,cmu,MED,Y
+Chill Pill,41,Chrome hearts tinted (Yeah),hearts,42,Bustdown watch (Hol' up),watch,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,41,Chrome hearts tinted (Yeah),hearts,43,Buy a yacht (Hol' up),yacht,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,42,Bustdown watch (Hol' up),watch,43,Buy a yacht (Hol' up),yacht,END,SLANT,cmu,MED,Y
+Chill Pill,42,Bustdown watch (Hol' up),watch,46,Bad bitch fucking on spot (Yeah),spot,END,SLANT,cmu,MED,Y
+Chill Pill,43,Buy a yacht (Hol' up),yacht,46,Bad bitch fucking on spot (Yeah),spot,END,PERFECT,cmu,HIGH,Y
+Chill Pill,43,Buy a yacht (Hol' up),yacht,47,Lick it from the bottom to the top (Yeah),top,END,SLANT,cmu,MED,Y
+Chill Pill,44,Nigga can't cuff no thots (Hol' up),thots,45,"Nigga, we ain't cuffing no thots (Yeah)",thots,END,REPEAT,spelling,HIGH,N
+Chill Pill,44,Nigga can't cuff no thots (Hol' up),Nigga,45,"Nigga, we ain't cuffing no thots (Yeah)",Nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,44,Nigga can't cuff no thots (Hol' up),no,45,"Nigga, we ain't cuffing no thots (Yeah)",no,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,44,Nigga can't cuff no thots (Hol' up),can't,46,Bad bitch fucking on spot (Yeah),Bad,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,44,Nigga can't cuff no thots (Hol' up),cuff,46,Bad bitch fucking on spot (Yeah),fucking,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,45,"Nigga, we ain't cuffing no thots (Yeah)",cuffing,46,Bad bitch fucking on spot (Yeah),fucking,INNER,PERFECT,spelling,MED,Y
+Chill Pill,45,"Nigga, we ain't cuffing no thots (Yeah)",Nigga,47,Lick it from the bottom to the top (Yeah),Lick,INNER,SLANT,spelling,LOW,Y
+Chill Pill,45,"Nigga, we ain't cuffing no thots (Yeah)",thots,49,"Nigga, we throwing shots (Yeah)",shots,END,PERFECT,spelling,HIGH,Y
+Chill Pill,46,Bad bitch fucking on spot (Yeah),spot,47,Lick it from the bottom to the top (Yeah),top,END,SLANT,cmu,MED,Y
+Chill Pill,46,Bad bitch fucking on spot (Yeah),bitch,47,Lick it from the bottom to the top (Yeah),Lick,INNER,SLANT,cmu,MED,Y
+Chill Pill,46,Bad bitch fucking on spot (Yeah),spot,47,Lick it from the bottom to the top (Yeah),bottom,INNER,SLANT,cmu,MED,Y
+Chill Pill,46,Bad bitch fucking on spot (Yeah),bitch,48,"Nigga, we ain't dissing on songs (Yeah)",dissing,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,46,Bad bitch fucking on spot (Yeah),spot,49,"Nigga, we throwing shots (Yeah)",shots,END,SLANT,cmu,MED,Y
+Chill Pill,47,Lick it from the bottom to the top (Yeah),bottom,47,Lick it from the bottom to the top (Yeah),top,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,47,Lick it from the bottom to the top (Yeah),Lick,48,"Nigga, we ain't dissing on songs (Yeah)",dissing,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,47,Lick it from the bottom to the top (Yeah),Lick,48,"Nigga, we ain't dissing on songs (Yeah)",Nigga,INNER,SLANT,spelling,LOW,Y
+Chill Pill,47,Lick it from the bottom to the top (Yeah),top,49,"Nigga, we throwing shots (Yeah)",shots,END,ASSONANCE,vowel,MED,Y
+Chill Pill,47,Lick it from the bottom to the top (Yeah),bottom,49,"Nigga, we throwing shots (Yeah)",shots,INNER,SLANT,cmu,MED,Y
+Chill Pill,47,Lick it from the bottom to the top (Yeah),Lick,49,"Nigga, we throwing shots (Yeah)",Nigga,INNER,SLANT,spelling,LOW,Y
+Chill Pill,48,"Nigga, we ain't dissing on songs (Yeah)",Nigga,49,"Nigga, we throwing shots (Yeah)",Nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,49,"Nigga, we throwing shots (Yeah)",throwing,50,Young Savage used to trap on Glennwood Road,Road,INNER,SLANT,cmu,MED,Y
+Chill Pill,49,"Nigga, we throwing shots (Yeah)",throwing,51,"I bank with Wells Fargo, I can't chase no ho",Fargo,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,49,"Nigga, we throwing shots (Yeah)",throwing,51,"I bank with Wells Fargo, I can't chase no ho",ho,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,49,"Nigga, we throwing shots (Yeah)",throwing,51,"I bank with Wells Fargo, I can't chase no ho",no,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,Savage,50,Young Savage used to trap on Glennwood Road,trap,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,Road,51,"I bank with Wells Fargo, I can't chase no ho",ho,END,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,Road,51,"I bank with Wells Fargo, I can't chase no ho",Fargo,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,Road,51,"I bank with Wells Fargo, I can't chase no ho",no,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,Savage,51,"I bank with Wells Fargo, I can't chase no ho",bank,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,Savage,51,"I bank with Wells Fargo, I can't chase no ho",can't,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,trap,51,"I bank with Wells Fargo, I can't chase no ho",bank,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,trap,51,"I bank with Wells Fargo, I can't chase no ho",can't,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,Road,52,"Nigga, I wet my lawyer if my case don't close",close,END,SLANT,cmu,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,Road,52,"Nigga, I wet my lawyer if my case don't close",don't,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,50,Young Savage used to trap on Glennwood Road,Road,53,Hunnids on me and they can't fold (Yeah),fold,END,SLANT,cmu,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",bank,51,"I bank with Wells Fargo, I can't chase no ho",can't,INNER,SLANT,cmu,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",Fargo,51,"I bank with Wells Fargo, I can't chase no ho",ho,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",Fargo,51,"I bank with Wells Fargo, I can't chase no ho",no,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",no,51,"I bank with Wells Fargo, I can't chase no ho",ho,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",ho,52,"Nigga, I wet my lawyer if my case don't close",close,END,ASSONANCE,vowel,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",chase,52,"Nigga, I wet my lawyer if my case don't close",case,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",Fargo,52,"Nigga, I wet my lawyer if my case don't close",close,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",Fargo,52,"Nigga, I wet my lawyer if my case don't close",don't,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",ho,52,"Nigga, I wet my lawyer if my case don't close",don't,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",no,52,"Nigga, I wet my lawyer if my case don't close",close,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",no,52,"Nigga, I wet my lawyer if my case don't close",don't,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",Wells,52,"Nigga, I wet my lawyer if my case don't close",wet,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",ho,53,Hunnids on me and they can't fold (Yeah),fold,END,ASSONANCE,vowel,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",bank,53,Hunnids on me and they can't fold (Yeah),can't,INNER,SLANT,cmu,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",can't,53,Hunnids on me and they can't fold (Yeah),can't,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",Fargo,53,Hunnids on me and they can't fold (Yeah),fold,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,51,"I bank with Wells Fargo, I can't chase no ho",no,53,Hunnids on me and they can't fold (Yeah),fold,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,52,"Nigga, I wet my lawyer if my case don't close",don't,52,"Nigga, I wet my lawyer if my case don't close",close,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,52,"Nigga, I wet my lawyer if my case don't close",close,53,Hunnids on me and they can't fold (Yeah),fold,END,ASSONANCE,vowel,MED,Y
+Chill Pill,52,"Nigga, I wet my lawyer if my case don't close",don't,53,Hunnids on me and they can't fold (Yeah),fold,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,52,"Nigga, I wet my lawyer if my case don't close",lawyer,54,"Pourin' up red, dawg",dawg,INNER,SLANT,spelling,LOW,Y
+Chill Pill,52,"Nigga, I wet my lawyer if my case don't close",lawyer,54,"Pourin' up red, dawg",Pourin,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,52,"Nigga, I wet my lawyer if my case don't close",wet,54,"Pourin' up red, dawg",red,INNER,SLANT,cmu,MED,Y
+Chill Pill,53,Hunnids on me and they can't fold (Yeah),can't,55,"Nigga banging red, dawg",banging,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,54,"Pourin' up red, dawg",dawg,55,"Nigga banging red, dawg",dawg,END,REPEAT,spelling,HIGH,N
+Chill Pill,54,"Pourin' up red, dawg",red,55,"Nigga banging red, dawg",red,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,54,"Pourin' up red, dawg",red,56,When I was a young nigga ran from the red dot,red,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,54,"Pourin' up red, dawg",red,56,When I was a young nigga ran from the red dot,When,INNER,SLANT,cmu,MED,Y
+Chill Pill,54,"Pourin' up red, dawg",dawg,57,Whispering on the iPhone feds got me scared dawg,dawg,END,REPEAT,spelling,HIGH,N
+Chill Pill,54,"Pourin' up red, dawg",dawg,58,He ain't get the money up I shot him the leg dawg,dawg,END,REPEAT,spelling,HIGH,N
+Chill Pill,55,"Nigga banging red, dawg",banging,56,When I was a young nigga ran from the red dot,ran,INNER,SLANT,cmu,MED,Y
+Chill Pill,55,"Nigga banging red, dawg",Nigga,56,When I was a young nigga ran from the red dot,nigga,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,55,"Nigga banging red, dawg",red,56,When I was a young nigga ran from the red dot,red,INNER,REPEAT,spelling,HIGH,N
+Chill Pill,55,"Nigga banging red, dawg",red,56,When I was a young nigga ran from the red dot,When,INNER,SLANT,cmu,MED,Y
+Chill Pill,55,"Nigga banging red, dawg",dawg,57,Whispering on the iPhone feds got me scared dawg,dawg,END,REPEAT,spelling,HIGH,N
+Chill Pill,55,"Nigga banging red, dawg",red,57,Whispering on the iPhone feds got me scared dawg,feds,INNER,SLANT,cmu,MED,Y
+Chill Pill,55,"Nigga banging red, dawg",red,57,Whispering on the iPhone feds got me scared dawg,scared,INNER,SLANT,cmu,MED,Y
+Chill Pill,55,"Nigga banging red, dawg",dawg,58,He ain't get the money up I shot him the leg dawg,dawg,END,REPEAT,spelling,HIGH,N
+Chill Pill,56,When I was a young nigga ran from the red dot,When,56,When I was a young nigga ran from the red dot,red,INNER,SLANT,cmu,MED,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,dot,57,Whispering on the iPhone feds got me scared dawg,got,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,red,57,Whispering on the iPhone feds got me scared dawg,feds,INNER,SLANT,cmu,MED,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,red,57,Whispering on the iPhone feds got me scared dawg,scared,INNER,SLANT,cmu,MED,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,When,57,Whispering on the iPhone feds got me scared dawg,feds,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,When,57,Whispering on the iPhone feds got me scared dawg,scared,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,dot,58,He ain't get the money up I shot him the leg dawg,shot,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,red,58,He ain't get the money up I shot him the leg dawg,get,INNER,SLANT,cmu,MED,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,red,58,He ain't get the money up I shot him the leg dawg,leg,INNER,SLANT,cmu,MED,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,When,58,He ain't get the money up I shot him the leg dawg,get,INNER,SLANT,cmu,MED,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,When,58,He ain't get the money up I shot him the leg dawg,leg,INNER,SLANT,cmu,MED,Y
+Chill Pill,56,When I was a young nigga ran from the red dot,young,58,He ain't get the money up I shot him the leg dawg,money,INNER,SLANT,cmu,MED,Y
+Chill Pill,57,Whispering on the iPhone feds got me scared dawg,feds,57,Whispering on the iPhone feds got me scared dawg,scared,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,57,Whispering on the iPhone feds got me scared dawg,dawg,58,He ain't get the money up I shot him the leg dawg,dawg,END,REPEAT,spelling,HIGH,N
+Chill Pill,57,Whispering on the iPhone feds got me scared dawg,feds,58,He ain't get the money up I shot him the leg dawg,get,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,57,Whispering on the iPhone feds got me scared dawg,feds,58,He ain't get the money up I shot him the leg dawg,leg,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,57,Whispering on the iPhone feds got me scared dawg,got,58,He ain't get the money up I shot him the leg dawg,shot,INNER,PERFECT,cmu,HIGH,Y
+Chill Pill,57,Whispering on the iPhone feds got me scared dawg,scared,58,He ain't get the money up I shot him the leg dawg,get,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,57,Whispering on the iPhone feds got me scared dawg,scared,58,He ain't get the money up I shot him the leg dawg,leg,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,57,Whispering on the iPhone feds got me scared dawg,Whispering,58,He ain't get the money up I shot him the leg dawg,him,INNER,ASSONANCE,vowel,MED,Y
+Chill Pill,58,He ain't get the money up I shot him the leg dawg,get,58,He ain't get the money up I shot him the leg dawg,leg,INNER,SLANT,cmu,MED,Y

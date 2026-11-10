@@ -1,0 +1,400 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+HUNT,1,Proud of her grandson,grandson,2,We gon' make lil' bro shoot you with a cap gun,gun,END,PERFECT,cmu,HIGH,Y
+HUNT,1,Proud of her grandson,grandson,2,We gon' make lil' bro shoot you with a cap gun,gon,INNER,PERFECT,spelling,MED,Y
+HUNT,1,Proud of her grandson,grandson,3,I know grandma real proud of her grandson,grandson,END,REPEAT,spelling,HIGH,N
+HUNT,1,Proud of her grandson,Proud,3,I know grandma real proud of her grandson,proud,INNER,REPEAT,spelling,HIGH,N
+HUNT,1,Proud of her grandson,grandson,5,"And I came to get my sum and then some (Yeah, yeah)",some,END,SLANT,cmu,MED,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,gun,3,I know grandma real proud of her grandson,grandson,END,PERFECT,cmu,HIGH,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,bro,3,I know grandma real proud of her grandson,know,INNER,PERFECT,cmu,HIGH,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,cap,3,I know grandma real proud of her grandson,grandma,INNER,ASSONANCE,vowel,MED,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,gon,3,I know grandma real proud of her grandson,grandson,INNER,PERFECT,spelling,MED,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,cap,4,"Someone hand that boy a hat, he always bappin'",hand,INNER,ASSONANCE,vowel,MED,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,cap,4,"Someone hand that boy a hat, he always bappin'",hat,INNER,SLANT,cmu,MED,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,gun,4,"Someone hand that boy a hat, he always bappin'",Someone,INNER,PERFECT,cmu,HIGH,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,make,4,"Someone hand that boy a hat, he always bappin'",always,INNER,SLANT,cmu,MED,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,gun,5,"And I came to get my sum and then some (Yeah, yeah)",some,END,SLANT,cmu,MED,Y
+HUNT,2,We gon' make lil' bro shoot you with a cap gun,gun,6,AR-15 got a switch and a damn drum,drum,END,SLANT,cmu,MED,Y
+HUNT,3,I know grandma real proud of her grandson,grandma,4,"Someone hand that boy a hat, he always bappin'",hand,INNER,SLANT,cmu,MED,Y
+HUNT,3,I know grandma real proud of her grandson,grandma,4,"Someone hand that boy a hat, he always bappin'",hat,INNER,ASSONANCE,vowel,MED,Y
+HUNT,3,I know grandma real proud of her grandson,grandson,4,"Someone hand that boy a hat, he always bappin'",Someone,INNER,PERFECT,cmu,HIGH,Y
+HUNT,3,I know grandma real proud of her grandson,grandson,5,"And I came to get my sum and then some (Yeah, yeah)",some,END,SLANT,cmu,MED,Y
+HUNT,3,I know grandma real proud of her grandson,grandson,5,"And I came to get my sum and then some (Yeah, yeah)",sum,INNER,SLANT,cmu,MED,Y
+HUNT,3,I know grandma real proud of her grandson,grandson,6,AR-15 got a switch and a damn drum,drum,END,SLANT,cmu,MED,Y
+HUNT,3,I know grandma real proud of her grandson,grandson,7,"Since broski got a MAC, I'll hold it like a Samsung",Samsung,END,SLANT,cmu,MED,Y
+HUNT,4,"Someone hand that boy a hat, he always bappin'",hand,4,"Someone hand that boy a hat, he always bappin'",hat,INNER,ASSONANCE,vowel,MED,Y
+HUNT,4,"Someone hand that boy a hat, he always bappin'",always,5,"And I came to get my sum and then some (Yeah, yeah)",came,INNER,SLANT,cmu,MED,Y
+HUNT,4,"Someone hand that boy a hat, he always bappin'",Someone,5,"And I came to get my sum and then some (Yeah, yeah)",some,INNER,SLANT,cmu,MED,Y
+HUNT,4,"Someone hand that boy a hat, he always bappin'",Someone,5,"And I came to get my sum and then some (Yeah, yeah)",sum,INNER,SLANT,cmu,MED,Y
+HUNT,4,"Someone hand that boy a hat, he always bappin'",hand,6,AR-15 got a switch and a damn drum,damn,INNER,ASSONANCE,vowel,MED,Y
+HUNT,4,"Someone hand that boy a hat, he always bappin'",hat,6,AR-15 got a switch and a damn drum,damn,INNER,SLANT,cmu,MED,Y
+HUNT,4,"Someone hand that boy a hat, he always bappin'",Someone,6,AR-15 got a switch and a damn drum,drum,INNER,SLANT,cmu,MED,Y
+HUNT,5,"And I came to get my sum and then some (Yeah, yeah)",sum,5,"And I came to get my sum and then some (Yeah, yeah)",some,INNER,PERFECT,cmu,HIGH,Y
+HUNT,5,"And I came to get my sum and then some (Yeah, yeah)",some,6,AR-15 got a switch and a damn drum,drum,END,PERFECT,cmu,HIGH,Y
+HUNT,5,"And I came to get my sum and then some (Yeah, yeah)",sum,6,AR-15 got a switch and a damn drum,drum,INNER,PERFECT,cmu,HIGH,Y
+HUNT,5,"And I came to get my sum and then some (Yeah, yeah)",some,7,"Since broski got a MAC, I'll hold it like a Samsung",Samsung,END,SLANT,cmu,MED,Y
+HUNT,5,"And I came to get my sum and then some (Yeah, yeah)",sum,7,"Since broski got a MAC, I'll hold it like a Samsung",Samsung,INNER,SLANT,cmu,MED,Y
+HUNT,5,"And I came to get my sum and then some (Yeah, yeah)",some,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",flunk,END,ASSONANCE,vowel,MED,Y
+HUNT,5,"And I came to get my sum and then some (Yeah, yeah)",some,9,"Sosa, what you smokin' on? This that damn funk (Bang)",funk,END,ASSONANCE,vowel,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,AR,6,AR-15 got a switch and a damn drum,got,INNER,SLANT,cmu,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,drum,7,"Since broski got a MAC, I'll hold it like a Samsung",Samsung,END,SLANT,cmu,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,AR,7,"Since broski got a MAC, I'll hold it like a Samsung",got,INNER,SLANT,cmu,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,damn,7,"Since broski got a MAC, I'll hold it like a Samsung",MAC,INNER,SLANT,cmu,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,got,7,"Since broski got a MAC, I'll hold it like a Samsung",got,INNER,REPEAT,spelling,HIGH,N
+HUNT,6,AR-15 got a switch and a damn drum,switch,7,"Since broski got a MAC, I'll hold it like a Samsung",Since,INNER,ASSONANCE,vowel,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,drum,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",flunk,END,ASSONANCE,vowel,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,AR,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",artist,INNER,ASSONANCE,vowel,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,damn,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",ass,INNER,SLANT,cmu,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,damn,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",damn,INNER,REPEAT,spelling,HIGH,N
+HUNT,6,AR-15 got a switch and a damn drum,got,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",artist,INNER,ASSONANCE,vowel,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,drum,9,"Sosa, what you smokin' on? This that damn funk (Bang)",funk,END,ASSONANCE,vowel,MED,Y
+HUNT,6,AR-15 got a switch and a damn drum,drum,10,"Pull off, leave your ass smellin' like a damn skunk",skunk,END,ASSONANCE,vowel,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",I'll,7,"Since broski got a MAC, I'll hold it like a Samsung",like,INNER,SLANT,cmu,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",Samsung,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",flunk,END,SLANT,cmu,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",got,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",artist,INNER,ASSONANCE,vowel,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",hold,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",told,INNER,PERFECT,cmu,HIGH,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",MAC,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",ass,INNER,SLANT,cmu,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",MAC,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",damn,INNER,SLANT,cmu,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",Samsung,9,"Sosa, what you smokin' on? This that damn funk (Bang)",funk,END,SLANT,cmu,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",hold,9,"Sosa, what you smokin' on? This that damn funk (Bang)",smokin,INNER,ASSONANCE,vowel,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",hold,9,"Sosa, what you smokin' on? This that damn funk (Bang)",Sosa,INNER,ASSONANCE,vowel,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",MAC,9,"Sosa, what you smokin' on? This that damn funk (Bang)",damn,INNER,SLANT,cmu,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",Samsung,9,"Sosa, what you smokin' on? This that damn funk (Bang)",what,INNER,SLANT,cmu,MED,Y
+HUNT,7,"Since broski got a MAC, I'll hold it like a Samsung",Samsung,10,"Pull off, leave your ass smellin' like a damn skunk",skunk,END,SLANT,cmu,MED,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",ass,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",damn,INNER,SLANT,cmu,MED,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",flunk,9,"Sosa, what you smokin' on? This that damn funk (Bang)",funk,END,PERFECT,cmu,HIGH,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",ass,9,"Sosa, what you smokin' on? This that damn funk (Bang)",damn,INNER,SLANT,cmu,MED,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",damn,9,"Sosa, what you smokin' on? This that damn funk (Bang)",damn,INNER,REPEAT,spelling,HIGH,N
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",flunk,9,"Sosa, what you smokin' on? This that damn funk (Bang)",what,INNER,ASSONANCE,vowel,MED,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",told,9,"Sosa, what you smokin' on? This that damn funk (Bang)",smokin,INNER,ASSONANCE,vowel,MED,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",told,9,"Sosa, what you smokin' on? This that damn funk (Bang)",Sosa,INNER,ASSONANCE,vowel,MED,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",flunk,10,"Pull off, leave your ass smellin' like a damn skunk",skunk,END,PERFECT,cmu,HIGH,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",ass,10,"Pull off, leave your ass smellin' like a damn skunk",ass,INNER,REPEAT,spelling,HIGH,N
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",ass,10,"Pull off, leave your ass smellin' like a damn skunk",damn,INNER,SLANT,cmu,MED,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",damn,10,"Pull off, leave your ass smellin' like a damn skunk",ass,INNER,SLANT,cmu,MED,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",damn,10,"Pull off, leave your ass smellin' like a damn skunk",damn,INNER,REPEAT,spelling,HIGH,N
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",flunk,11,"We gon' make you walk it out, call you DJ Unk",Unk,END,PERFECT,spelling,HIGH,Y
+HUNT,8,"I called this artist, told his ass he was a damn flunk (Doo, doo-doo)",flunk,12,"Nigga, ain't no fuckin' place that GBE can't come",come,END,ASSONANCE,vowel,MED,Y
+HUNT,9,"Sosa, what you smokin' on? This that damn funk (Bang)",Sosa,9,"Sosa, what you smokin' on? This that damn funk (Bang)",smokin,INNER,ASSONANCE,vowel,MED,Y
+HUNT,9,"Sosa, what you smokin' on? This that damn funk (Bang)",what,9,"Sosa, what you smokin' on? This that damn funk (Bang)",funk,INNER,ASSONANCE,vowel,MED,Y
+HUNT,9,"Sosa, what you smokin' on? This that damn funk (Bang)",funk,10,"Pull off, leave your ass smellin' like a damn skunk",skunk,END,PERFECT,cmu,HIGH,Y
+HUNT,9,"Sosa, what you smokin' on? This that damn funk (Bang)",damn,10,"Pull off, leave your ass smellin' like a damn skunk",ass,INNER,SLANT,cmu,MED,Y
+HUNT,9,"Sosa, what you smokin' on? This that damn funk (Bang)",damn,10,"Pull off, leave your ass smellin' like a damn skunk",damn,INNER,REPEAT,spelling,HIGH,N
+HUNT,9,"Sosa, what you smokin' on? This that damn funk (Bang)",what,10,"Pull off, leave your ass smellin' like a damn skunk",skunk,INNER,ASSONANCE,vowel,MED,Y
+HUNT,9,"Sosa, what you smokin' on? This that damn funk (Bang)",funk,11,"We gon' make you walk it out, call you DJ Unk",Unk,END,PERFECT,spelling,HIGH,Y
+HUNT,9,"Sosa, what you smokin' on? This that damn funk (Bang)",Sosa,11,"We gon' make you walk it out, call you DJ Unk",gon,INNER,SLANT,spelling,LOW,Y
+HUNT,9,"Sosa, what you smokin' on? This that damn funk (Bang)",funk,12,"Nigga, ain't no fuckin' place that GBE can't come",come,END,ASSONANCE,vowel,MED,Y
+HUNT,10,"Pull off, leave your ass smellin' like a damn skunk",ass,10,"Pull off, leave your ass smellin' like a damn skunk",damn,INNER,SLANT,cmu,MED,Y
+HUNT,10,"Pull off, leave your ass smellin' like a damn skunk",skunk,11,"We gon' make you walk it out, call you DJ Unk",Unk,END,PERFECT,spelling,HIGH,Y
+HUNT,10,"Pull off, leave your ass smellin' like a damn skunk",skunk,12,"Nigga, ain't no fuckin' place that GBE can't come",come,END,ASSONANCE,vowel,MED,Y
+HUNT,10,"Pull off, leave your ass smellin' like a damn skunk",ass,12,"Nigga, ain't no fuckin' place that GBE can't come",can't,INNER,ASSONANCE,vowel,MED,Y
+HUNT,10,"Pull off, leave your ass smellin' like a damn skunk",damn,12,"Nigga, ain't no fuckin' place that GBE can't come",can't,INNER,ASSONANCE,vowel,MED,Y
+HUNT,10,"Pull off, leave your ass smellin' like a damn skunk",skunk,12,"Nigga, ain't no fuckin' place that GBE can't come",fuckin,INNER,ASSONANCE,vowel,MED,Y
+HUNT,11,"We gon' make you walk it out, call you DJ Unk",make,11,"We gon' make you walk it out, call you DJ Unk",DJ,INNER,ASSONANCE,vowel,MED,Y
+HUNT,11,"We gon' make you walk it out, call you DJ Unk",walk,11,"We gon' make you walk it out, call you DJ Unk",call,INNER,SLANT,cmu,MED,Y
+HUNT,11,"We gon' make you walk it out, call you DJ Unk",DJ,12,"Nigga, ain't no fuckin' place that GBE can't come",ain't,INNER,ASSONANCE,vowel,MED,Y
+HUNT,11,"We gon' make you walk it out, call you DJ Unk",DJ,12,"Nigga, ain't no fuckin' place that GBE can't come",place,INNER,ASSONANCE,vowel,MED,Y
+HUNT,11,"We gon' make you walk it out, call you DJ Unk",make,12,"Nigga, ain't no fuckin' place that GBE can't come",ain't,INNER,ASSONANCE,vowel,MED,Y
+HUNT,11,"We gon' make you walk it out, call you DJ Unk",make,12,"Nigga, ain't no fuckin' place that GBE can't come",place,INNER,SLANT,cmu,MED,Y
+HUNT,11,"We gon' make you walk it out, call you DJ Unk",DJ,13,"Niggas ain't no competition, bitch, I need comp",ain't,INNER,ASSONANCE,vowel,MED,Y
+HUNT,11,"We gon' make you walk it out, call you DJ Unk",make,13,"Niggas ain't no competition, bitch, I need comp",ain't,INNER,ASSONANCE,vowel,MED,Y
+HUNT,12,"Nigga, ain't no fuckin' place that GBE can't come",ain't,12,"Nigga, ain't no fuckin' place that GBE can't come",place,INNER,ASSONANCE,vowel,MED,Y
+HUNT,12,"Nigga, ain't no fuckin' place that GBE can't come",fuckin,12,"Nigga, ain't no fuckin' place that GBE can't come",come,INNER,ASSONANCE,vowel,MED,Y
+HUNT,12,"Nigga, ain't no fuckin' place that GBE can't come",ain't,13,"Niggas ain't no competition, bitch, I need comp",ain't,INNER,REPEAT,spelling,HIGH,N
+HUNT,12,"Nigga, ain't no fuckin' place that GBE can't come",Nigga,13,"Niggas ain't no competition, bitch, I need comp",Niggas,INNER,SLANT,spelling,LOW,Y
+HUNT,12,"Nigga, ain't no fuckin' place that GBE can't come",no,13,"Niggas ain't no competition, bitch, I need comp",no,INNER,REPEAT,spelling,HIGH,N
+HUNT,12,"Nigga, ain't no fuckin' place that GBE can't come",place,13,"Niggas ain't no competition, bitch, I need comp",ain't,INNER,ASSONANCE,vowel,MED,Y
+HUNT,12,"Nigga, ain't no fuckin' place that GBE can't come",come,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",fum,END,PERFECT,spelling,MED,Y
+HUNT,13,"Niggas ain't no competition, bitch, I need comp",competition,13,"Niggas ain't no competition, bitch, I need comp",bitch,INNER,ASSONANCE,vowel,MED,Y
+HUNT,13,"Niggas ain't no competition, bitch, I need comp",bitch,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",Glizzy,INNER,SLANT,spelling,LOW,Y
+HUNT,13,"Niggas ain't no competition, bitch, I need comp",bitch,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",him,INNER,SLANT,cmu,MED,Y
+HUNT,13,"Niggas ain't no competition, bitch, I need comp",competition,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",him,INNER,ASSONANCE,vowel,MED,Y
+HUNT,13,"Niggas ain't no competition, bitch, I need comp",need,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",Gee,INNER,ASSONANCE,vowel,MED,Y
+HUNT,13,"Niggas ain't no competition, bitch, I need comp",need,15,We was countin' money then we went to meet foenem,meet,INNER,SLANT,cmu,MED,Y
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",forty,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",call,INNER,ASSONANCE,vowel,MED,Y
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",Glizzy,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",forty,INNER,ASSONANCE,vowel,LOW,N
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",Glizzy,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",Gee,INNER,ASSONANCE,vowel,LOW,N
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",fum,15,We was countin' money then we went to meet foenem,money,INNER,SLANT,spelling,LOW,Y
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",Gee,15,We was countin' money then we went to meet foenem,meet,INNER,ASSONANCE,vowel,MED,Y
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",Glizzy,15,We was countin' money then we went to meet foenem,money,INNER,ASSONANCE,vowel,LOW,N
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",call,16,All this paper fuckin' up the damn ecosystem,All,INNER,PERFECT,cmu,HIGH,Y
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",forty,16,All this paper fuckin' up the damn ecosystem,All,INNER,ASSONANCE,vowel,MED,Y
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",him,16,All this paper fuckin' up the damn ecosystem,ecosystem,INNER,ASSONANCE,vowel,MED,Y
+HUNT,14,"Glizzy forty-five but I call him ""Gee-fo-fum""",fum,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",gun,END,SLANT,spelling,LOW,Y
+HUNT,15,We was countin' money then we went to meet foenem,foenem,16,All this paper fuckin' up the damn ecosystem,ecosystem,END,PERFECT,spelling,MED,Y
+HUNT,15,We was countin' money then we went to meet foenem,money,16,All this paper fuckin' up the damn ecosystem,fuckin,INNER,SLANT,cmu,MED,Y
+HUNT,15,We was countin' money then we went to meet foenem,foenem,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",don't,INNER,SLANT,spelling,LOW,Y
+HUNT,15,We was countin' money then we went to meet foenem,foenem,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",gon,INNER,SLANT,spelling,LOW,Y
+HUNT,15,We was countin' money then we went to meet foenem,money,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",brother,INNER,SLANT,cmu,MED,Y
+HUNT,16,All this paper fuckin' up the damn ecosystem,ecosystem,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",hit,END,ASSONANCE,vowel,MED,Y
+HUNT,16,All this paper fuckin' up the damn ecosystem,damn,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",mans,INNER,ASSONANCE,vowel,MED,Y
+HUNT,16,All this paper fuckin' up the damn ecosystem,fuckin,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",brother,INNER,ASSONANCE,vowel,MED,Y
+HUNT,16,All this paper fuckin' up the damn ecosystem,ecosystem,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",bitch,INNER,ASSONANCE,vowel,MED,Y
+HUNT,16,All this paper fuckin' up the damn ecosystem,fuckin,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",gun,INNER,SLANT,cmu,MED,Y
+HUNT,16,All this paper fuckin' up the damn ecosystem,fuckin,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",none,INNER,SLANT,cmu,MED,Y
+HUNT,16,All this paper fuckin' up the damn ecosystem,paper,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",ain't,INNER,ASSONANCE,vowel,MED,Y
+HUNT,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",don't,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",gon,INNER,SLANT,spelling,LOW,Y
+HUNT,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",brother,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",gun,INNER,SLANT,cmu,MED,Y
+HUNT,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",brother,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",none,INNER,SLANT,cmu,MED,Y
+HUNT,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",hit,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",bitch,INNER,SLANT,cmu,MED,Y
+HUNT,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",brother,19,This shit used to be fun (Hеy),fun,INNER,SLANT,cmu,MED,Y
+HUNT,17,"And my brother mans, don't worry, I'm gon' hit with this onе (Bang, bang)",hit,19,This shit used to be fun (Hеy),shit,INNER,PERFECT,cmu,HIGH,Y
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",none,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",gun,INNER,PERFECT,cmu,HIGH,Y
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",gun,19,This shit used to be fun (Hеy),fun,END,PERFECT,cmu,HIGH,Y
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",bitch,19,This shit used to be fun (Hеy),shit,INNER,SLANT,cmu,MED,Y
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",none,19,This shit used to be fun (Hеy),fun,INNER,PERFECT,cmu,HIGH,Y
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",Shoot,19,This shit used to be fun (Hеy),used,INNER,ASSONANCE,vowel,MED,Y
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",gun,20,"Bitch, your feet run (Hey, doo-doo)",run,END,PERFECT,cmu,HIGH,Y
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",bitch,20,"Bitch, your feet run (Hey, doo-doo)",Bitch,INNER,REPEAT,spelling,HIGH,N
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",none,20,"Bitch, your feet run (Hey, doo-doo)",run,INNER,PERFECT,cmu,HIGH,Y
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",gun,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",grandson,END,PERFECT,cmu,HIGH,Y
+HUNT,18,"Shoot yo' ain't for none, bitch, I got my gun (Shh)",gun,22,Bread up in my pocket look like buns,buns,END,SLANT,cmu,MED,Y
+HUNT,19,This shit used to be fun (Hеy),fun,20,"Bitch, your feet run (Hey, doo-doo)",run,END,PERFECT,cmu,HIGH,Y
+HUNT,19,This shit used to be fun (Hеy),shit,20,"Bitch, your feet run (Hey, doo-doo)",Bitch,INNER,SLANT,cmu,MED,Y
+HUNT,19,This shit used to be fun (Hеy),fun,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",grandson,END,PERFECT,cmu,HIGH,Y
+HUNT,19,This shit used to be fun (Hеy),fun,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",son,INNER,PERFECT,cmu,HIGH,Y
+HUNT,19,This shit used to be fun (Hеy),fun,22,Bread up in my pocket look like buns,buns,END,SLANT,cmu,MED,Y
+HUNT,20,"Bitch, your feet run (Hey, doo-doo)",run,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",grandson,END,PERFECT,cmu,HIGH,Y
+HUNT,20,"Bitch, your feet run (Hey, doo-doo)",run,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",son,INNER,PERFECT,cmu,HIGH,Y
+HUNT,20,"Bitch, your feet run (Hey, doo-doo)",run,22,Bread up in my pocket look like buns,buns,END,SLANT,cmu,MED,Y
+HUNT,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",son,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",grandson,INNER,PERFECT,cmu,HIGH,Y
+HUNT,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",son,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",son,INNER,REPEAT,spelling,HIGH,N
+HUNT,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",grandson,22,Bread up in my pocket look like buns,buns,END,SLANT,cmu,MED,Y
+HUNT,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",son,22,Bread up in my pocket look like buns,buns,INNER,SLANT,cmu,MED,Y
+HUNT,21,"Boy, you my son, half-son, grandson (Let's go, doot-doot)",half,23,"Boring-ass bitch, uh (Man)",ass,INNER,SLANT,cmu,MED,Y
+HUNT,22,Bread up in my pocket look like buns,look,24,"I wish a nigga would Will Smith me (Ayy, ha)",would,INNER,SLANT,cmu,MED,Y
+HUNT,23,"Boring-ass bitch, uh (Man)",bitch,24,"I wish a nigga would Will Smith me (Ayy, ha)",Smith,END,SLANT,cmu,MED,Y
+HUNT,23,"Boring-ass bitch, uh (Man)",bitch,24,"I wish a nigga would Will Smith me (Ayy, ha)",Will,INNER,SLANT,cmu,MED,Y
+HUNT,23,"Boring-ass bitch, uh (Man)",bitch,24,"I wish a nigga would Will Smith me (Ayy, ha)",wish,INNER,SLANT,cmu,MED,Y
+HUNT,23,"Boring-ass bitch, uh (Man)",bitch,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",Wrigley,END,ASSONANCE,vowel,MED,Y
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",Will,24,"I wish a nigga would Will Smith me (Ayy, ha)",Smith,INNER,SLANT,cmu,MED,Y
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",wish,24,"I wish a nigga would Will Smith me (Ayy, ha)",Smith,INNER,SLANT,cmu,MED,Y
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",wish,24,"I wish a nigga would Will Smith me (Ayy, ha)",Will,INNER,SLANT,cmu,MED,Y
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",nigga,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",nigga,INNER,REPEAT,spelling,HIGH,N
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",nigga,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",pig,INNER,SLANT,spelling,LOW,Y
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",Smith,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",pig,INNER,SLANT,cmu,MED,Y
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",Will,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",pig,INNER,SLANT,cmu,MED,Y
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",wish,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",pig,INNER,SLANT,cmu,MED,Y
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",Smith,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",Wrigley,END,ASSONANCE,vowel,MED,Y
+HUNT,24,"I wish a nigga would Will Smith me (Ayy, ha)",Smith,28,"Bitch, I'm in your city (City), yeah, yeah",city,END,SLANT,cmu,MED,Y
+HUNT,25,"They gon' be coming to get me (Ha, get, hoo, hoo, yeah, yeah)",coming,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",cubs,INNER,ASSONANCE,vowel,MED,Y
+HUNT,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",feet,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",feet,INNER,REPEAT,spelling,HIGH,N
+HUNT,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",nigga,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",pig,INNER,SLANT,spelling,LOW,Y
+HUNT,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",nigga,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",Wrigley,INNER,SLANT,spelling,LOW,Y
+HUNT,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",pig,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",Wrigley,INNER,SLANT,cmu,MED,Y
+HUNT,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",nigga,28,"Bitch, I'm in your city (City), yeah, yeah",city,INNER,SLANT,spelling,LOW,Y
+HUNT,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",pig,28,"Bitch, I'm in your city (City), yeah, yeah",Bitch,INNER,SLANT,cmu,MED,Y
+HUNT,26,"Turn a nigga feet to pig feet (Yeah, yeah, on bro, yeah, yeah)",pig,28,"Bitch, I'm in your city (City), yeah, yeah",city,INNER,SLANT,cmu,MED,Y
+HUNT,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",Wrigley,28,"Bitch, I'm in your city (City), yeah, yeah",city,END,ASSONANCE,vowel,MED,Y
+HUNT,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",Wrigley,28,"Bitch, I'm in your city (City), yeah, yeah",Bitch,INNER,ASSONANCE,vowel,MED,Y
+HUNT,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",Wrigley,29,"Second to none, I'm picky (Yeah, okay)",picky,END,ASSONANCE,vowel,MED,Y
+HUNT,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",cubs,29,"Second to none, I'm picky (Yeah, okay)",none,INNER,ASSONANCE,vowel,MED,Y
+HUNT,27,"But me and my cubs, Wrigley (On bro, yeah, yeah)",Wrigley,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Trippie,END,ASSONANCE,vowel,MED,Y
+HUNT,28,"Bitch, I'm in your city (City), yeah, yeah",Bitch,28,"Bitch, I'm in your city (City), yeah, yeah",city,INNER,SLANT,cmu,MED,Y
+HUNT,28,"Bitch, I'm in your city (City), yeah, yeah",city,29,"Second to none, I'm picky (Yeah, okay)",picky,END,SLANT,cmu,MED,Y
+HUNT,28,"Bitch, I'm in your city (City), yeah, yeah",Bitch,29,"Second to none, I'm picky (Yeah, okay)",picky,INNER,SLANT,cmu,MED,Y
+HUNT,28,"Bitch, I'm in your city (City), yeah, yeah",city,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Trippie,END,SLANT,cmu,MED,Y
+HUNT,28,"Bitch, I'm in your city (City), yeah, yeah",Bitch,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Trippie,INNER,SLANT,cmu,MED,Y
+HUNT,28,"Bitch, I'm in your city (City), yeah, yeah",city,32,"I'm in your city (Ha), city",city,END,REPEAT,spelling,HIGH,N
+HUNT,29,"Second to none, I'm picky (Yeah, okay)",picky,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Trippie,END,SLANT,cmu,MED,Y
+HUNT,29,"Second to none, I'm picky (Yeah, okay)",Second,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Red,INNER,ASSONANCE,vowel,MED,Y
+HUNT,29,"Second to none, I'm picky (Yeah, okay)",picky,32,"I'm in your city (Ha), city",city,END,SLANT,cmu,MED,Y
+HUNT,29,"Second to none, I'm picky (Yeah, okay)",picky,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,END,SLANT,cmu,MED,Y
+HUNT,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Trippie,31,"Walk in the spot, I'm drippy (Oh, that's drippy), yeah",drippy,END,SLANT,spelling,LOW,Y
+HUNT,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Trippie,32,"I'm in your city (Ha), city",city,END,SLANT,cmu,MED,Y
+HUNT,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Trippie,32,"I'm in your city (Ha), city",city,INNER,SLANT,cmu,MED,Y
+HUNT,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Trippie,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,END,MULTI,multi,HIGH,Y
+HUNT,30,"Red on me like Trippie (Yeah, Trippie), yeah, yeah",Trippie,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,END,SLANT,spelling,LOW,Y
+HUNT,31,"Walk in the spot, I'm drippy (Oh, that's drippy), yeah",Walk,33,"Shawty pull up, give me lippy (Yeah, yeah)",Shawty,INNER,SLANT,spelling,LOW,Y
+HUNT,32,"I'm in your city (Ha), city",city,32,"I'm in your city (Ha), city",city,INNER,REPEAT,spelling,HIGH,N
+HUNT,32,"I'm in your city (Ha), city",city,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,END,SLANT,cmu,MED,Y
+HUNT,32,"I'm in your city (Ha), city",city,33,"Shawty pull up, give me lippy (Yeah, yeah)",give,INNER,SLANT,cmu,MED,Y
+HUNT,32,"I'm in your city (Ha), city",city,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,INNER,SLANT,cmu,MED,Y
+HUNT,32,"I'm in your city (Ha), city",city,33,"Shawty pull up, give me lippy (Yeah, yeah)",Shawty,INNER,ASSONANCE,vowel,LOW,N
+HUNT,32,"I'm in your city (Ha), city",city,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,END,SLANT,spelling,LOW,Y
+HUNT,32,"I'm in your city (Ha), city",city,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,INNER,SLANT,spelling,LOW,Y
+HUNT,32,"I'm in your city (Ha), city",city,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,INNER,SLANT,spelling,LOW,Y
+HUNT,32,"I'm in your city (Ha), city",city,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",Diddy,END,SLANT,cmu,MED,Y
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",give,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,INNER,SLANT,cmu,MED,Y
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",Shawty,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,INNER,ASSONANCE,vowel,LOW,N
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,END,SLANT,spelling,LOW,Y
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",give,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,INNER,SLANT,spelling,LOW,Y
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,INNER,SLANT,spelling,LOW,Y
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",Shawty,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,INNER,ASSONANCE,vowel,LOW,N
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",Shawty,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,INNER,ASSONANCE,vowel,LOW,N
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",whippy,INNER,SLANT,spelling,LOW,Y
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",Shawty,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Ricky,INNER,ASSONANCE,vowel,LOW,N
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",Shawty,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",whippy,INNER,ASSONANCE,vowel,LOW,N
+HUNT,33,"Shawty pull up, give me lippy (Yeah, yeah)",lippy,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",Diddy,END,SLANT,cmu,MED,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,INNER,SLANT,spelling,LOW,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",got,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",got,INNER,REPEAT,spelling,HIGH,N
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Ricky,END,ASSONANCE,vowel,LOW,N
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Ricky,INNER,MULTI,multi,MED,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",whippy,INNER,SLANT,spelling,LOW,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",boy,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",boy,INNER,REPEAT,spelling,HIGH,N
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",got,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",got,INNER,REPEAT,spelling,HIGH,N
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",got,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Hop,INNER,SLANT,cmu,MED,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",got blicky,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",like Ricky,INNER,MULTI,multi,MED,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",whippy,INNER,SLANT,spelling,LOW,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",Diddy,END,SLANT,spelling,LOW,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",bitty,INNER,SLANT,spelling,LOW,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",Diddy,INNER,SLANT,spelling,LOW,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",give,INNER,SLANT,spelling,LOW,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",blicky,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",P,INNER,ASSONANCE,vowel,LOW,N
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",bitty,INNER,SLANT,spelling,LOW,Y
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",P,INNER,ASSONANCE,vowel,LOW,N
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,37,Niggas can't see-see me (Me),see,END,ASSONANCE,vowel,LOW,N
+HUNT,34,"Bro got the blicky (Blicky), got that boy doing the griddy (Yeah, yeah)",griddy,38,Give her that pee-pee-pee (Pee-pee),pee,END,ASSONANCE,vowel,LOW,N
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Hop,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",got,INNER,SLANT,cmu,MED,Y
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",whippy,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Ricky,INNER,ASSONANCE,vowel,LOW,N
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",like,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",like,INNER,REPEAT,spelling,HIGH,N
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Ricky,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",P,INNER,PERFECT,cmu,HIGH,Y
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",whippy,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",bitty,INNER,SLANT,spelling,LOW,Y
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",whippy,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",Diddy,INNER,SLANT,spelling,LOW,Y
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",whippy,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",P,INNER,ASSONANCE,vowel,LOW,N
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Ricky,37,Niggas can't see-see me (Me),see,END,PERFECT,cmu,HIGH,Y
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Ricky,37,Niggas can't see-see me (Me),see,INNER,PERFECT,cmu,HIGH,Y
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",whippy,37,Niggas can't see-see me (Me),see,INNER,ASSONANCE,vowel,LOW,N
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Ricky,38,Give her that pee-pee-pee (Pee-pee),pee,END,PERFECT,cmu,HIGH,Y
+HUNT,35,"Hop in the whippy (Whippy), got that boy running like Ricky (Yeah, yeah)",Ricky,39,"Hit her with a DDT (DT, ha)",DDT,END,PERFECT,cmu,HIGH,Y
+HUNT,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",bitty,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",Diddy,INNER,SLANT,cmu,MED,Y
+HUNT,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",bitty,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",give,INNER,SLANT,cmu,MED,Y
+HUNT,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",give,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",Diddy,INNER,SLANT,cmu,MED,Y
+HUNT,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",P,37,Niggas can't see-see me (Me),see,INNER,PERFECT,cmu,HIGH,Y
+HUNT,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",bitty,38,Give her that pee-pee-pee (Pee-pee),Give,INNER,SLANT,cmu,MED,Y
+HUNT,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",Diddy,38,Give her that pee-pee-pee (Pee-pee),Give,INNER,SLANT,cmu,MED,Y
+HUNT,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",give,38,Give her that pee-pee-pee (Pee-pee),Give,INNER,REPEAT,spelling,HIGH,N
+HUNT,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",give P,38,Give her that pee-pee-pee (Pee-pee),Give pee,INNER,MULTI,multi,HIGH,Y
+HUNT,36,"I'm with your bitty (Bitty), I give her P like I'm Diddy (Hey)",P,38,Give her that pee-pee-pee (Pee-pee),pee,INNER,PERFECT,cmu,HIGH,Y
+HUNT,37,Niggas can't see-see me (Me),see,37,Niggas can't see-see me (Me),see,INNER,REPEAT,spelling,HIGH,N
+HUNT,37,Niggas can't see-see me (Me),see,38,Give her that pee-pee-pee (Pee-pee),pee,END,PERFECT,cmu,HIGH,Y
+HUNT,37,Niggas can't see-see me (Me),see,38,Give her that pee-pee-pee (Pee-pee),pee,INNER,PERFECT,cmu,HIGH,Y
+HUNT,37,Niggas can't see-see me (Me),see,39,"Hit her with a DDT (DT, ha)",DDT,END,PERFECT,cmu,HIGH,Y
+HUNT,37,Niggas can't see-see me (Me),see,39,"Hit her with a DDT (DT, ha)",DDT,INNER,PERFECT,cmu,HIGH,Y
+HUNT,38,Give her that pee-pee-pee (Pee-pee),pee,38,Give her that pee-pee-pee (Pee-pee),pee,INNER,REPEAT,spelling,HIGH,N
+HUNT,38,Give her that pee-pee-pee (Pee-pee),pee,39,"Hit her with a DDT (DT, ha)",DDT,END,PERFECT,cmu,HIGH,Y
+HUNT,38,Give her that pee-pee-pee (Pee-pee),Give,39,"Hit her with a DDT (DT, ha)",Hit,INNER,SLANT,cmu,MED,Y
+HUNT,38,Give her that pee-pee-pee (Pee-pee),pee,39,"Hit her with a DDT (DT, ha)",DDT,INNER,PERFECT,cmu,HIGH,Y
+HUNT,38,Give her that pee-pee-pee (Pee-pee),Give,40,Caught him on CTV (TV),him,INNER,SLANT,cmu,MED,Y
+HUNT,39,"Hit her with a DDT (DT, ha)",Hit,40,Caught him on CTV (TV),him,INNER,SLANT,cmu,MED,Y
+HUNT,42,Jumping like RVD (Wee),like,43,Niggas ain't hard like me (Pause),like,INNER,REPEAT,spelling,HIGH,N
+HUNT,43,Niggas ain't hard like me (Pause),hard,44,Niggas can't bark this tree (Paws),bark,INNER,SLANT,cmu,MED,Y
+HUNT,43,Niggas ain't hard like me (Pause),Niggas,44,Niggas can't bark this tree (Paws),Niggas,INNER,REPEAT,spelling,HIGH,N
+HUNT,43,Niggas ain't hard like me (Pause),hard,45,I got friends that all lost contact when can't get shit from me,got,INNER,ASSONANCE,vowel,MED,Y
+HUNT,44,Niggas can't bark this tree (Paws),bark,45,I got friends that all lost contact when can't get shit from me,got,INNER,ASSONANCE,vowel,MED,Y
+HUNT,44,Niggas can't bark this tree (Paws),can't,45,I got friends that all lost contact when can't get shit from me,can't,INNER,REPEAT,spelling,HIGH,N
+HUNT,44,Niggas can't bark this tree (Paws),can't,45,I got friends that all lost contact when can't get shit from me,contact,INNER,SLANT,cmu,MED,Y
+HUNT,44,Niggas can't bark this tree (Paws),bark,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),broke,INNER,SLANT,spelling,LOW,Y
+HUNT,44,Niggas can't bark this tree (Paws),can't,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),ass,INNER,ASSONANCE,vowel,MED,Y
+HUNT,44,Niggas can't bark this tree (Paws),Niggas,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),ass,INNER,PERFECT,spelling,MED,Y
+HUNT,44,Niggas can't bark this tree (Paws),Niggas,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),nigga,INNER,SLANT,spelling,LOW,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,all,45,I got friends that all lost contact when can't get shit from me,lost,INNER,ASSONANCE,vowel,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,contact,45,I got friends that all lost contact when can't get shit from me,can't,INNER,SLANT,cmu,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,friends,45,I got friends that all lost contact when can't get shit from me,get,INNER,ASSONANCE,vowel,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,friends,45,I got friends that all lost contact when can't get shit from me,when,INNER,ASSONANCE,vowel,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,when,45,I got friends that all lost contact when can't get shit from me,get,INNER,SLANT,cmu,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,shit,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),hit,END,PERFECT,cmu,HIGH,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,can't,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),ass,INNER,ASSONANCE,vowel,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,contact,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),ass,INNER,ASSONANCE,vowel,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,shit,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),nigga,INNER,SLANT,spelling,LOW,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,all,47,I walked in the club and then a bitch fell on me (Huh?),walked,INNER,ASSONANCE,vowel,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,friends,47,I walked in the club and then a bitch fell on me (Huh?),fell,INNER,ASSONANCE,vowel,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,get,47,I walked in the club and then a bitch fell on me (Huh?),fell,INNER,SLANT,cmu,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,lost,47,I walked in the club and then a bitch fell on me (Huh?),walked,INNER,SLANT,cmu,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,shit,47,I walked in the club and then a bitch fell on me (Huh?),bitch,INNER,SLANT,cmu,MED,Y
+HUNT,45,I got friends that all lost contact when can't get shit from me,when,47,I walked in the club and then a bitch fell on me (Huh?),fell,INNER,SLANT,cmu,MED,Y
+HUNT,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),nigga,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),hit,INNER,SLANT,spelling,LOW,Y
+HUNT,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),hit,47,I walked in the club and then a bitch fell on me (Huh?),bitch,INNER,SLANT,cmu,MED,Y
+HUNT,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),puttin,47,I walked in the club and then a bitch fell on me (Huh?),club,INNER,ASSONANCE,vowel,MED,Y
+HUNT,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),ass,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",cast,INNER,SLANT,cmu,MED,Y
+HUNT,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),broke,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",know,INNER,ASSONANCE,vowel,MED,Y
+HUNT,46,I ain't worried 'bout a broke-ass nigga puttin' a hit on me (Huh?),hit,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",Think,INNER,ASSONANCE,vowel,MED,Y
+HUNT,47,I walked in the club and then a bitch fell on me (Huh?),fell,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",spell,END,PERFECT,cmu,HIGH,Y
+HUNT,47,I walked in the club and then a bitch fell on me (Huh?),bitch,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",Think,INNER,ASSONANCE,vowel,MED,Y
+HUNT,47,I walked in the club and then a bitch fell on me (Huh?),club,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",honey,INNER,SLANT,cmu,MED,Y
+HUNT,47,I walked in the club and then a bitch fell on me (Huh?),club,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",some,INNER,SLANT,cmu,MED,Y
+HUNT,47,I walked in the club and then a bitch fell on me (Huh?),fell,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",bread,INNER,SLANT,cmu,MED,Y
+HUNT,47,I walked in the club and then a bitch fell on me (Huh?),fell,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",get,INNER,SLANT,cmu,MED,Y
+HUNT,47,I walked in the club and then a bitch fell on me (Huh?),fell,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",Hell,INNER,PERFECT,cmu,HIGH,Y
+HUNT,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",cast,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",Can,INNER,ASSONANCE,vowel,MED,Y
+HUNT,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",spell,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",bread,INNER,SLANT,cmu,MED,Y
+HUNT,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",spell,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",get,INNER,SLANT,cmu,MED,Y
+HUNT,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",spell,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",Hell,INNER,PERFECT,cmu,HIGH,Y
+HUNT,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",cast,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",strap,INNER,ASSONANCE,vowel,MED,Y
+HUNT,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",know,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",hold,INNER,ASSONANCE,vowel,MED,Y
+HUNT,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",spell,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Hell,INNER,PERFECT,cmu,HIGH,Y
+HUNT,48,"Think she know voodoo, she tryna cast a spell on me (Huh?)",spell,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Let,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",bread,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",Hell,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",get,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",bread,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",get,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",Hell,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",like,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",like,INNER,REPEAT,spelling,HIGH,N
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",some,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",honey,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",bread,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Hell,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",bread,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Let,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",Can,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",strap,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",get,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Hell,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",get,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Let,INNER,PERFECT,cmu,HIGH,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",Hell,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Hell,INNER,REPEAT,spelling,HIGH,N
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",Hell,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Let,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",like,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",like,INNER,REPEAT,spelling,HIGH,N
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",bread,51,Niggas watch me every day just like my nickname Sony (Huh?),every,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",get,51,Niggas watch me every day just like my nickname Sony (Huh?),every,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",Hell,51,Niggas watch me every day just like my nickname Sony (Huh?),every,INNER,SLANT,cmu,MED,Y
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",like,51,Niggas watch me every day just like my nickname Sony (Huh?),like,INNER,REPEAT,spelling,HIGH,N
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",honey,52,I be takin' all these niggas like my nickname Kony (Okay),Kony,END,ASSONANCE,vowel,LOW,N
+HUNT,49,"She like, ""Can I get some bread?"" I be like, ""Hell nah, honey"" (Huh?)",honey,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),gun,END,SLANT,cmu,MED,Y
+HUNT,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Let,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Hell,INNER,SLANT,cmu,MED,Y
+HUNT,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",like,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",like,INNER,REPEAT,spelling,HIGH,N
+HUNT,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",homie,51,Niggas watch me every day just like my nickname Sony (Huh?),Sony,END,SLANT,spelling,LOW,Y
+HUNT,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Hell,51,Niggas watch me every day just like my nickname Sony (Huh?),every,INNER,SLANT,cmu,MED,Y
+HUNT,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",hold,51,Niggas watch me every day just like my nickname Sony (Huh?),Sony,INNER,ASSONANCE,vowel,MED,Y
+HUNT,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",Let,51,Niggas watch me every day just like my nickname Sony (Huh?),every,INNER,SLANT,cmu,MED,Y
+HUNT,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",like,51,Niggas watch me every day just like my nickname Sony (Huh?),like,INNER,REPEAT,spelling,HIGH,N
+HUNT,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",homie,52,I be takin' all these niggas like my nickname Kony (Okay),Kony,END,SLANT,spelling,LOW,Y
+HUNT,50,"He like, ""Let me hold the strap,"" I be like, ""Hell nah, homie"" (Huh?)",like,52,I be takin' all these niggas like my nickname Kony (Okay),like,INNER,REPEAT,spelling,HIGH,N
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),day,51,Niggas watch me every day just like my nickname Sony (Huh?),nickname,INNER,ASSONANCE,vowel,MED,Y
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),Sony,52,I be takin' all these niggas like my nickname Kony (Okay),Kony,END,MULTI,multi,MED,Y
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),day,52,I be takin' all these niggas like my nickname Kony (Okay),nickname,INNER,ASSONANCE,vowel,MED,Y
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),day,52,I be takin' all these niggas like my nickname Kony (Okay),takin,INNER,ASSONANCE,vowel,MED,Y
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),every,52,I be takin' all these niggas like my nickname Kony (Okay),Kony,INNER,ASSONANCE,vowel,LOW,N
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),like,52,I be takin' all these niggas like my nickname Kony (Okay),like,INNER,REPEAT,spelling,HIGH,N
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),nickname,52,I be takin' all these niggas like my nickname Kony (Okay),nickname,INNER,REPEAT,spelling,HIGH,N
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),nickname,52,I be takin' all these niggas like my nickname Kony (Okay),takin,INNER,ASSONANCE,vowel,MED,Y
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),Niggas,52,I be takin' all these niggas like my nickname Kony (Okay),niggas,INNER,REPEAT,spelling,HIGH,N
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),day,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),make,INNER,ASSONANCE,vowel,MED,Y
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),nickname,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),make,INNER,SLANT,cmu,MED,Y
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),Sony,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),bro,INNER,ASSONANCE,vowel,MED,Y
+HUNT,51,Niggas watch me every day just like my nickname Sony (Huh?),Sony,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),gon,INNER,SLANT,spelling,LOW,Y
+HUNT,52,I be takin' all these niggas like my nickname Kony (Okay),takin,52,I be takin' all these niggas like my nickname Kony (Okay),nickname,INNER,ASSONANCE,vowel,MED,Y
+HUNT,52,I be takin' all these niggas like my nickname Kony (Okay),Kony,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),gon,INNER,SLANT,spelling,LOW,Y
+HUNT,52,I be takin' all these niggas like my nickname Kony (Okay),nickname,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),make,INNER,SLANT,cmu,MED,Y
+HUNT,52,I be takin' all these niggas like my nickname Kony (Okay),takin,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),make,INNER,SLANT,cmu,MED,Y
+HUNT,52,I be takin' all these niggas like my nickname Kony (Okay),Kony,54,How you sayin' that I'm broke and I got mad funds? (How?),broke,INNER,SLANT,spelling,LOW,Y
+HUNT,52,I be takin' all these niggas like my nickname Kony (Okay),nickname,54,How you sayin' that I'm broke and I got mad funds? (How?),sayin,INNER,SLANT,cmu,MED,Y
+HUNT,52,I be takin' all these niggas like my nickname Kony (Okay),takin,54,How you sayin' that I'm broke and I got mad funds? (How?),sayin,INNER,SLANT,cmu,MED,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),gun,54,How you sayin' that I'm broke and I got mad funds? (How?),funds,END,ASSONANCE,vowel,MED,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),bro,54,How you sayin' that I'm broke and I got mad funds? (How?),broke,INNER,ASSONANCE,vowel,MED,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),cap,54,How you sayin' that I'm broke and I got mad funds? (How?),mad,INNER,SLANT,cmu,MED,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),gon,54,How you sayin' that I'm broke and I got mad funds? (How?),broke,INNER,SLANT,spelling,LOW,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),make,54,How you sayin' that I'm broke and I got mad funds? (How?),sayin,INNER,SLANT,cmu,MED,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),gun,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),crumbs,END,ASSONANCE,vowel,MED,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),cap,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),mad,INNER,SLANT,cmu,MED,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),make,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),say,INNER,ASSONANCE,vowel,MED,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),gun,56,"And your shorty sent me pictures, she got mad buns",buns,END,SLANT,cmu,MED,Y
+HUNT,53,You gon' make bro hit you with a cap gun (Boom-boom-boom),gun,57,"I got guys stickin' with me, I don't need gum (Yeah, yeah)",gum,END,SLANT,cmu,MED,Y
+HUNT,54,How you sayin' that I'm broke and I got mad funds? (How?),funds,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),crumbs,END,SLANT,cmu,MED,Y
+HUNT,54,How you sayin' that I'm broke and I got mad funds? (How?),How,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),How,INNER,REPEAT,spelling,HIGH,N
+HUNT,54,How you sayin' that I'm broke and I got mad funds? (How?),mad,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),mad,INNER,REPEAT,spelling,HIGH,N
+HUNT,54,How you sayin' that I'm broke and I got mad funds? (How?),sayin,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),say,INNER,ASSONANCE,vowel,MED,Y
+HUNT,54,How you sayin' that I'm broke and I got mad funds? (How?),funds,56,"And your shorty sent me pictures, she got mad buns",buns,END,SLANT,cmu,MED,Y
+HUNT,54,How you sayin' that I'm broke and I got mad funds? (How?),got,56,"And your shorty sent me pictures, she got mad buns",got,INNER,REPEAT,spelling,HIGH,N
+HUNT,54,How you sayin' that I'm broke and I got mad funds? (How?),mad,56,"And your shorty sent me pictures, she got mad buns",mad,INNER,REPEAT,spelling,HIGH,N
+HUNT,54,How you sayin' that I'm broke and I got mad funds? (How?),funds,57,"I got guys stickin' with me, I don't need gum (Yeah, yeah)",gum,END,ASSONANCE,vowel,MED,Y
+HUNT,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),eatin,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),seein,INNER,SLANT,cmu,MED,Y
+HUNT,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),crumbs,56,"And your shorty sent me pictures, she got mad buns",buns,END,SLANT,cmu,MED,Y
+HUNT,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),mad,56,"And your shorty sent me pictures, she got mad buns",mad,INNER,REPEAT,spelling,HIGH,N
+HUNT,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),crumbs,57,"I got guys stickin' with me, I don't need gum (Yeah, yeah)",gum,END,SLANT,cmu,MED,Y
+HUNT,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),eatin,57,"I got guys stickin' with me, I don't need gum (Yeah, yeah)",need,INNER,ASSONANCE,vowel,MED,Y
+HUNT,55,How you say you eatin' good? I'm seein' mad crumbs (Cap),seein,57,"I got guys stickin' with me, I don't need gum (Yeah, yeah)",need,INNER,SLANT,cmu,MED,Y
+HUNT,56,"And your shorty sent me pictures, she got mad buns",buns,57,"I got guys stickin' with me, I don't need gum (Yeah, yeah)",gum,END,ASSONANCE,vowel,MED,Y
+HUNT,56,"And your shorty sent me pictures, she got mad buns",got,57,"I got guys stickin' with me, I don't need gum (Yeah, yeah)",got,INNER,REPEAT,spelling,HIGH,N
+HUNT,56,"And your shorty sent me pictures, she got mad buns",pictures,57,"I got guys stickin' with me, I don't need gum (Yeah, yeah)",stickin,INNER,ASSONANCE,vowel,MED,Y

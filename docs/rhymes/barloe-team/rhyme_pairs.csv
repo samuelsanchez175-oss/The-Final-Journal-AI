@@ -1,0 +1,271 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Slugg,1,Used to being on the road,road,2,Now we rolling hella' dope,dope,END,SLANT,cmu,MED,Y
+Slugg,1,Used to being on the road,road,2,Now we rolling hella' dope,rolling,INNER,ASSONANCE,vowel,MED,Y
+Slugg,1,Used to being on the road,road,3,"My girl and life, she strike a pose",pose,END,SLANT,cmu,MED,Y
+Slugg,1,Used to being on the road,road,4,Errytime you see 'er bro,bro,END,ASSONANCE,vowel,MED,Y
+Slugg,1,Used to being on the road,road,5,Not the token niggas though,though,END,ASSONANCE,vowel,MED,Y
+Slugg,2,Now we rolling hella' dope,rolling,2,Now we rolling hella' dope,dope,INNER,ASSONANCE,vowel,MED,Y
+Slugg,2,Now we rolling hella' dope,dope,3,"My girl and life, she strike a pose",pose,END,SLANT,cmu,MED,Y
+Slugg,2,Now we rolling hella' dope,rolling,3,"My girl and life, she strike a pose",pose,INNER,ASSONANCE,vowel,MED,Y
+Slugg,2,Now we rolling hella' dope,dope,4,Errytime you see 'er bro,bro,END,ASSONANCE,vowel,MED,Y
+Slugg,2,Now we rolling hella' dope,rolling,4,Errytime you see 'er bro,bro,INNER,ASSONANCE,vowel,MED,Y
+Slugg,2,Now we rolling hella' dope,dope,5,Not the token niggas though,though,END,ASSONANCE,vowel,MED,Y
+Slugg,2,Now we rolling hella' dope,dope,6,We them niggas niggas know,know,END,ASSONANCE,vowel,MED,Y
+Slugg,3,"My girl and life, she strike a pose",life,3,"My girl and life, she strike a pose",strike,INNER,SLANT,cmu,MED,Y
+Slugg,3,"My girl and life, she strike a pose",pose,4,Errytime you see 'er bro,bro,END,ASSONANCE,vowel,MED,Y
+Slugg,3,"My girl and life, she strike a pose",pose,5,Not the token niggas though,though,END,ASSONANCE,vowel,MED,Y
+Slugg,3,"My girl and life, she strike a pose",pose,5,Not the token niggas though,token,INNER,ASSONANCE,vowel,MED,Y
+Slugg,3,"My girl and life, she strike a pose",pose,6,We them niggas niggas know,know,END,ASSONANCE,vowel,MED,Y
+Slugg,3,"My girl and life, she strike a pose",pose,7,Keep it pimpin' figure roll,roll,END,SLANT,cmu,MED,Y
+Slugg,4,Errytime you see 'er bro,bro,5,Not the token niggas though,though,END,PERFECT,cmu,HIGH,Y
+Slugg,4,Errytime you see 'er bro,bro,5,Not the token niggas though,token,INNER,ASSONANCE,vowel,MED,Y
+Slugg,4,Errytime you see 'er bro,bro,6,We them niggas niggas know,know,END,PERFECT,cmu,HIGH,Y
+Slugg,4,Errytime you see 'er bro,bro,7,Keep it pimpin' figure roll,roll,END,ASSONANCE,vowel,MED,Y
+Slugg,4,Errytime you see 'er bro,bro,8,Iced out nigga rope,rope,END,ASSONANCE,vowel,MED,Y
+Slugg,5,Not the token niggas though,token,5,Not the token niggas though,though,INNER,ASSONANCE,vowel,MED,Y
+Slugg,5,Not the token niggas though,though,6,We them niggas niggas know,know,END,PERFECT,cmu,HIGH,Y
+Slugg,5,Not the token niggas though,niggas,6,We them niggas niggas know,niggas,INNER,REPEAT,spelling,HIGH,N
+Slugg,5,Not the token niggas though,token,6,We them niggas niggas know,know,INNER,ASSONANCE,vowel,MED,Y
+Slugg,5,Not the token niggas though,though,7,Keep it pimpin' figure roll,roll,END,ASSONANCE,vowel,MED,Y
+Slugg,5,Not the token niggas though,token,7,Keep it pimpin' figure roll,roll,INNER,ASSONANCE,vowel,MED,Y
+Slugg,5,Not the token niggas though,though,8,Iced out nigga rope,rope,END,ASSONANCE,vowel,MED,Y
+Slugg,6,We them niggas niggas know,niggas,6,We them niggas niggas know,niggas,INNER,REPEAT,spelling,HIGH,N
+Slugg,6,We them niggas niggas know,know,7,Keep it pimpin' figure roll,roll,END,ASSONANCE,vowel,MED,Y
+Slugg,6,We them niggas niggas know,know,8,Iced out nigga rope,rope,END,ASSONANCE,vowel,MED,Y
+Slugg,6,We them niggas niggas know,niggas,8,Iced out nigga rope,nigga,INNER,SLANT,spelling,LOW,Y
+Slugg,6,We them niggas niggas know,know,10,"Sit this good, you just need a clone",clone,END,ASSONANCE,vowel,MED,Y
+Slugg,7,Keep it pimpin' figure roll,pimpin,7,Keep it pimpin' figure roll,figure,INNER,ASSONANCE,vowel,MED,Y
+Slugg,7,Keep it pimpin' figure roll,roll,8,Iced out nigga rope,rope,END,SLANT,cmu,MED,Y
+Slugg,7,Keep it pimpin' figure roll,figure,8,Iced out nigga rope,nigga,INNER,SLANT,spelling,LOW,Y
+Slugg,7,Keep it pimpin' figure roll,roll,10,"Sit this good, you just need a clone",clone,END,SLANT,cmu,MED,Y
+Slugg,8,Iced out nigga rope,rope,10,"Sit this good, you just need a clone",clone,END,SLANT,cmu,MED,Y
+Slugg,8,Iced out nigga rope,nigga,10,"Sit this good, you just need a clone",Sit,INNER,SLANT,spelling,LOW,Y
+Slugg,10,"Sit this good, you just need a clone",need,11,"Run this house, my Adidas on",Adidas,INNER,SLANT,cmu,MED,Y
+Slugg,10,"Sit this good, you just need a clone",clone,12,"Smoked out, young along",Smoked,INNER,ASSONANCE,vowel,MED,Y
+Slugg,10,"Sit this good, you just need a clone",clone,13,"Boy, you broke, you could use a loan",loan,END,PERFECT,cmu,HIGH,Y
+Slugg,11,"Run this house, my Adidas on",Run,12,"Smoked out, young along",young,INNER,SLANT,cmu,MED,Y
+Slugg,12,"Smoked out, young along",Smoked,13,"Boy, you broke, you could use a loan",broke,INNER,SLANT,cmu,MED,Y
+Slugg,12,"Smoked out, young along",Smoked,13,"Boy, you broke, you could use a loan",loan,INNER,ASSONANCE,vowel,MED,Y
+Slugg,13,"Boy, you broke, you could use a loan",broke,13,"Boy, you broke, you could use a loan",loan,INNER,SLANT,cmu,MED,Y
+Slugg,13,"Boy, you broke, you could use a loan",use,15,"Margaret's room, we been gettin' it on",room,INNER,SLANT,cmu,MED,Y
+Slugg,14,"Sitting pretty, got them titties",Sitting,14,"Sitting pretty, got them titties",pretty,INNER,SLANT,cmu,MED,Y
+Slugg,14,"Sitting pretty, got them titties",got,15,"Margaret's room, we been gettin' it on",Margaret's,INNER,ASSONANCE,vowel,MED,Y
+Slugg,14,"Sitting pretty, got them titties",pretty,16,Shell Toes kicked out,kicked,INNER,SLANT,cmu,MED,Y
+Slugg,14,"Sitting pretty, got them titties",Sitting,16,Shell Toes kicked out,kicked,INNER,ASSONANCE,vowel,MED,Y
+Slugg,15,"Margaret's room, we been gettin' it on",gettin,16,Shell Toes kicked out,Shell,INNER,ASSONANCE,vowel,MED,Y
+Slugg,15,"Margaret's room, we been gettin' it on",Margaret's,17,"MAC, Glock, smear it out",Glock,INNER,ASSONANCE,vowel,MED,Y
+Slugg,16,Shell Toes kicked out,kicked,17,"MAC, Glock, smear it out",smear,END,ASSONANCE,vowel,MED,Y
+Slugg,17,"MAC, Glock, smear it out",Glock,19,"Spade, who got them sweet-sixteens?",got,INNER,SLANT,cmu,MED,Y
+Slugg,18,"Yikes, yeeks, pints, peace",yeeks,18,"Yikes, yeeks, pints, peace",peace,INNER,SLANT,spelling,LOW,Y
+Slugg,18,"Yikes, yeeks, pints, peace",Yikes,18,"Yikes, yeeks, pints, peace",pints,INNER,ASSONANCE,vowel,MED,Y
+Slugg,18,"Yikes, yeeks, pints, peace",Yikes,18,"Yikes, yeeks, pints, peace",yeeks,INNER,SLANT,spelling,LOW,Y
+Slugg,18,"Yikes, yeeks, pints, peace",peace,19,"Spade, who got them sweet-sixteens?",sixteens,END,ASSONANCE,vowel,MED,Y
+Slugg,18,"Yikes, yeeks, pints, peace",peace,19,"Spade, who got them sweet-sixteens?",sweet,INNER,SLANT,cmu,MED,Y
+Slugg,19,"Spade, who got them sweet-sixteens?",sweet,19,"Spade, who got them sweet-sixteens?",sixteens,INNER,ASSONANCE,vowel,MED,Y
+Slugg,19,"Spade, who got them sweet-sixteens?",who,20,"Double-dutch, and hoes used to jumpin'",used,INNER,ASSONANCE,vowel,MED,Y
+Slugg,19,"Spade, who got them sweet-sixteens?",who,21,"Troubled world, and my music bustin'",music,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",Double,20,"Double-dutch, and hoes used to jumpin'",dutch,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",Double,20,"Double-dutch, and hoes used to jumpin'",jumpin,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",dutch,20,"Double-dutch, and hoes used to jumpin'",jumpin,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",jumpin,21,"Troubled world, and my music bustin'",bustin,END,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",Double,21,"Troubled world, and my music bustin'",bustin,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",Double,21,"Troubled world, and my music bustin'",Troubled,INNER,SLANT,cmu,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",dutch,21,"Troubled world, and my music bustin'",bustin,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",dutch,21,"Troubled world, and my music bustin'",Troubled,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",jumpin,21,"Troubled world, and my music bustin'",Troubled,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",used,21,"Troubled world, and my music bustin'",music,INNER,SLANT,cmu,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",jumpin,22,"Fuck the word, yeah, we used to thuggin'",thuggin,END,ASSONANCE,vowel,LOW,N
+Slugg,20,"Double-dutch, and hoes used to jumpin'",Double,22,"Fuck the word, yeah, we used to thuggin'",Fuck,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",dutch,22,"Fuck the word, yeah, we used to thuggin'",Fuck,INNER,SLANT,cmu,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",jumpin,22,"Fuck the word, yeah, we used to thuggin'",Fuck,INNER,ASSONANCE,vowel,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",used,22,"Fuck the word, yeah, we used to thuggin'",used,INNER,REPEAT,spelling,HIGH,N
+Slugg,20,"Double-dutch, and hoes used to jumpin'",jumpin,23,"Got a chain, gotta make it something",something,END,SLANT,cmu,MED,Y
+Slugg,20,"Double-dutch, and hoes used to jumpin'",jumpin,24,Why you frontin'? Need for-real budget,budget,END,ASSONANCE,vowel,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",Troubled,21,"Troubled world, and my music bustin'",bustin,INNER,ASSONANCE,vowel,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",bustin,22,"Fuck the word, yeah, we used to thuggin'",thuggin,END,PERFECT,spelling,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",bustin,22,"Fuck the word, yeah, we used to thuggin'",Fuck,INNER,ASSONANCE,vowel,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",music,22,"Fuck the word, yeah, we used to thuggin'",used,INNER,SLANT,cmu,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",Troubled,22,"Fuck the word, yeah, we used to thuggin'",Fuck,INNER,ASSONANCE,vowel,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",world,22,"Fuck the word, yeah, we used to thuggin'",word,INNER,SLANT,cmu,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",bustin,23,"Got a chain, gotta make it something",something,END,ASSONANCE,vowel,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",Troubled,23,"Got a chain, gotta make it something",something,INNER,ASSONANCE,vowel,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",bustin,24,Why you frontin'? Need for-real budget,budget,END,ASSONANCE,vowel,MED,Y
+Slugg,21,"Troubled world, and my music bustin'",bustin,25,"Gold for gold, might as well, fuck it",fuck,END,ASSONANCE,vowel,MED,Y
+Slugg,22,"Fuck the word, yeah, we used to thuggin'",thuggin,23,"Got a chain, gotta make it something",something,END,ASSONANCE,vowel,LOW,N
+Slugg,22,"Fuck the word, yeah, we used to thuggin'",Fuck,23,"Got a chain, gotta make it something",something,INNER,ASSONANCE,vowel,MED,Y
+Slugg,22,"Fuck the word, yeah, we used to thuggin'",Fuck,24,Why you frontin'? Need for-real budget,budget,INNER,ASSONANCE,vowel,MED,Y
+Slugg,22,"Fuck the word, yeah, we used to thuggin'",Fuck,24,Why you frontin'? Need for-real budget,frontin,INNER,ASSONANCE,vowel,MED,Y
+Slugg,22,"Fuck the word, yeah, we used to thuggin'",thuggin,24,Why you frontin'? Need for-real budget,frontin,INNER,ASSONANCE,vowel,LOW,N
+Slugg,22,"Fuck the word, yeah, we used to thuggin'",thuggin,26,Slubbin' always tryna' sell somethin',somethin,END,ASSONANCE,vowel,LOW,N
+Slugg,23,"Got a chain, gotta make it something",chain,23,"Got a chain, gotta make it something",make,INNER,SLANT,cmu,MED,Y
+Slugg,23,"Got a chain, gotta make it something",Got,23,"Got a chain, gotta make it something",gotta,INNER,SLANT,cmu,MED,Y
+Slugg,23,"Got a chain, gotta make it something",something,24,Why you frontin'? Need for-real budget,budget,END,ASSONANCE,vowel,MED,Y
+Slugg,23,"Got a chain, gotta make it something",something,24,Why you frontin'? Need for-real budget,frontin,INNER,SLANT,cmu,MED,Y
+Slugg,23,"Got a chain, gotta make it something",something,25,"Gold for gold, might as well, fuck it",fuck,END,ASSONANCE,vowel,MED,Y
+Slugg,23,"Got a chain, gotta make it something",something,26,Slubbin' always tryna' sell somethin',somethin,END,MULTI,multi,HIGH,Y
+Slugg,23,"Got a chain, gotta make it something",something,27,Actin' if these nigga' mail somethin',somethin,END,MULTI,multi,HIGH,Y
+Slugg,24,Why you frontin'? Need for-real budget,frontin,24,Why you frontin'? Need for-real budget,budget,INNER,ASSONANCE,vowel,MED,Y
+Slugg,24,Why you frontin'? Need for-real budget,Need,24,Why you frontin'? Need for-real budget,real,INNER,SLANT,cmu,MED,Y
+Slugg,24,Why you frontin'? Need for-real budget,budget,25,"Gold for gold, might as well, fuck it",fuck,END,ASSONANCE,vowel,MED,Y
+Slugg,24,Why you frontin'? Need for-real budget,frontin,25,"Gold for gold, might as well, fuck it",fuck,INNER,ASSONANCE,vowel,MED,Y
+Slugg,24,Why you frontin'? Need for-real budget,Why,25,"Gold for gold, might as well, fuck it",might,INNER,ASSONANCE,vowel,MED,Y
+Slugg,24,Why you frontin'? Need for-real budget,budget,26,Slubbin' always tryna' sell somethin',somethin,END,ASSONANCE,vowel,MED,Y
+Slugg,24,Why you frontin'? Need for-real budget,frontin,26,Slubbin' always tryna' sell somethin',Slubbin,INNER,ASSONANCE,vowel,LOW,N
+Slugg,24,Why you frontin'? Need for-real budget,frontin,26,Slubbin' always tryna' sell somethin',somethin,INNER,SLANT,cmu,MED,Y
+Slugg,24,Why you frontin'? Need for-real budget,Need,26,Slubbin' always tryna' sell somethin',tryna,INNER,SLANT,spelling,LOW,Y
+Slugg,24,Why you frontin'? Need for-real budget,real,26,Slubbin' always tryna' sell somethin',tryna,INNER,SLANT,spelling,LOW,Y
+Slugg,24,Why you frontin'? Need for-real budget,budget,27,Actin' if these nigga' mail somethin',somethin,END,ASSONANCE,vowel,MED,Y
+Slugg,25,"Gold for gold, might as well, fuck it",Gold,25,"Gold for gold, might as well, fuck it",gold,INNER,REPEAT,spelling,HIGH,N
+Slugg,25,"Gold for gold, might as well, fuck it",fuck,26,Slubbin' always tryna' sell somethin',somethin,END,ASSONANCE,vowel,MED,Y
+Slugg,25,"Gold for gold, might as well, fuck it",well,26,Slubbin' always tryna' sell somethin',sell,INNER,PERFECT,cmu,HIGH,Y
+Slugg,25,"Gold for gold, might as well, fuck it",fuck,27,Actin' if these nigga' mail somethin',somethin,END,ASSONANCE,vowel,MED,Y
+Slugg,26,Slubbin' always tryna' sell somethin',Slubbin,26,Slubbin' always tryna' sell somethin',somethin,INNER,ASSONANCE,vowel,LOW,N
+Slugg,26,Slubbin' always tryna' sell somethin',somethin,27,Actin' if these nigga' mail somethin',somethin,END,REPEAT,spelling,HIGH,N
+Slugg,26,Slubbin' always tryna' sell somethin',always,27,Actin' if these nigga' mail somethin',mail,INNER,SLANT,cmu,MED,Y
+Slugg,26,Slubbin' always tryna' sell somethin',Slubbin,27,Actin' if these nigga' mail somethin',somethin,INNER,ASSONANCE,vowel,LOW,N
+Slugg,26,Slubbin' always tryna' sell somethin',tryna,27,Actin' if these nigga' mail somethin',these,INNER,SLANT,spelling,LOW,Y
+Slugg,26,Slubbin' always tryna' sell somethin',always,28,That fame shit got a cough,fame,INNER,SLANT,cmu,MED,Y
+Slugg,27,Actin' if these nigga' mail somethin',mail,28,That fame shit got a cough,fame,INNER,SLANT,cmu,MED,Y
+Slugg,27,Actin' if these nigga' mail somethin',nigga,28,That fame shit got a cough,shit,INNER,SLANT,spelling,LOW,Y
+Slugg,28,That fame shit got a cough,got,28,That fame shit got a cough,cough,INNER,SLANT,cmu,MED,Y
+Slugg,28,That fame shit got a cough,cough,29,My new thing count a boss,boss,END,SLANT,cmu,MED,Y
+Slugg,28,That fame shit got a cough,got,29,My new thing count a boss,boss,INNER,SLANT,cmu,MED,Y
+Slugg,28,That fame shit got a cough,shit,29,My new thing count a boss,thing,INNER,SLANT,cmu,MED,Y
+Slugg,28,That fame shit got a cough,cough,30,"You know we gettin' it, ain't gotta floss",floss,END,SLANT,cmu,MED,Y
+Slugg,28,That fame shit got a cough,cough,30,"You know we gettin' it, ain't gotta floss",gotta,INNER,SLANT,cmu,MED,Y
+Slugg,28,That fame shit got a cough,fame,30,"You know we gettin' it, ain't gotta floss",ain't,INNER,ASSONANCE,vowel,MED,Y
+Slugg,28,That fame shit got a cough,got,30,"You know we gettin' it, ain't gotta floss",floss,INNER,SLANT,cmu,MED,Y
+Slugg,28,That fame shit got a cough,got,30,"You know we gettin' it, ain't gotta floss",gotta,INNER,SLANT,cmu,MED,Y
+Slugg,29,My new thing count a boss,boss,30,"You know we gettin' it, ain't gotta floss",floss,END,PERFECT,cmu,HIGH,Y
+Slugg,29,My new thing count a boss,boss,30,"You know we gettin' it, ain't gotta floss",gotta,INNER,SLANT,cmu,MED,Y
+Slugg,29,My new thing count a boss,new,31,"Roamin' through the city, I was lost",through,INNER,PERFECT,cmu,HIGH,Y
+Slugg,29,My new thing count a boss,thing,31,"Roamin' through the city, I was lost",city,INNER,SLANT,cmu,MED,Y
+Slugg,30,"You know we gettin' it, ain't gotta floss",gotta,30,"You know we gettin' it, ain't gotta floss",floss,INNER,SLANT,cmu,MED,Y
+Slugg,30,"You know we gettin' it, ain't gotta floss",know,31,"Roamin' through the city, I was lost",Roamin,INNER,ASSONANCE,vowel,MED,Y
+Slugg,30,"You know we gettin' it, ain't gotta floss",gettin,32,"Where was you, man, you never call",never,INNER,ASSONANCE,vowel,MED,Y
+Slugg,30,"You know we gettin' it, ain't gotta floss",gettin,32,"Where was you, man, you never call",Where,INNER,ASSONANCE,vowel,MED,Y
+Slugg,30,"You know we gettin' it, ain't gotta floss",floss,34,"Bless the streets, I got a sacred heart",heart,END,ASSONANCE,vowel,MED,Y
+Slugg,31,"Roamin' through the city, I was lost",lost,32,"Where was you, man, you never call",call,END,ASSONANCE,vowel,MED,Y
+Slugg,31,"Roamin' through the city, I was lost",lost,33,"On the phone, know when labels call",call,END,ASSONANCE,vowel,MED,Y
+Slugg,31,"Roamin' through the city, I was lost",Roamin,33,"On the phone, know when labels call",know,INNER,ASSONANCE,vowel,MED,Y
+Slugg,31,"Roamin' through the city, I was lost",Roamin,33,"On the phone, know when labels call",phone,INNER,SLANT,cmu,MED,Y
+Slugg,32,"Where was you, man, you never call",Where,32,"Where was you, man, you never call",never,INNER,SLANT,cmu,MED,Y
+Slugg,32,"Where was you, man, you never call",call,33,"On the phone, know when labels call",call,END,REPEAT,spelling,HIGH,N
+Slugg,32,"Where was you, man, you never call",never,33,"On the phone, know when labels call",when,INNER,SLANT,cmu,MED,Y
+Slugg,32,"Where was you, man, you never call",Where,33,"On the phone, know when labels call",when,INNER,SLANT,cmu,MED,Y
+Slugg,32,"Where was you, man, you never call",never,34,"Bless the streets, I got a sacred heart",Bless,INNER,SLANT,cmu,MED,Y
+Slugg,32,"Where was you, man, you never call",Where,34,"Bless the streets, I got a sacred heart",Bless,INNER,SLANT,cmu,MED,Y
+Slugg,33,"On the phone, know when labels call",phone,33,"On the phone, know when labels call",know,INNER,ASSONANCE,vowel,MED,Y
+Slugg,33,"On the phone, know when labels call",labels,34,"Bless the streets, I got a sacred heart",sacred,INNER,ASSONANCE,vowel,MED,Y
+Slugg,33,"On the phone, know when labels call",when,34,"Bless the streets, I got a sacred heart",Bless,INNER,SLANT,cmu,MED,Y
+Slugg,33,"On the phone, know when labels call",know,35,You know what they gon' say,know,INNER,REPEAT,spelling,HIGH,N
+Slugg,33,"On the phone, know when labels call",labels,35,You know what they gon' say,say,INNER,ASSONANCE,vowel,MED,Y
+Slugg,33,"On the phone, know when labels call",phone,35,You know what they gon' say,gon,INNER,PERFECT,spelling,MED,Y
+Slugg,33,"On the phone, know when labels call",phone,35,You know what they gon' say,know,INNER,ASSONANCE,vowel,MED,Y
+Slugg,34,"Bless the streets, I got a sacred heart",got,34,"Bless the streets, I got a sacred heart",heart,INNER,SLANT,cmu,MED,Y
+Slugg,34,"Bless the streets, I got a sacred heart",sacred,35,You know what they gon' say,say,INNER,ASSONANCE,vowel,MED,Y
+Slugg,34,"Bless the streets, I got a sacred heart",Bless,36,"Whatever they feel like, cos' you gon' do the same",Whatever,INNER,SLANT,cmu,MED,Y
+Slugg,34,"Bless the streets, I got a sacred heart",sacred,36,"Whatever they feel like, cos' you gon' do the same",same,INNER,ASSONANCE,vowel,MED,Y
+Slugg,34,"Bless the streets, I got a sacred heart",streets,36,"Whatever they feel like, cos' you gon' do the same",feel,INNER,ASSONANCE,vowel,MED,Y
+Slugg,35,You know what they gon' say,say,36,"Whatever they feel like, cos' you gon' do the same",same,END,ASSONANCE,vowel,MED,Y
+Slugg,35,You know what they gon' say,gon,36,"Whatever they feel like, cos' you gon' do the same",gon,INNER,REPEAT,spelling,HIGH,N
+Slugg,35,You know what they gon' say,say,37,Whenever you feel like you gotta know who they gon' blame,blame,END,ASSONANCE,vowel,MED,Y
+Slugg,35,You know what they gon' say,gon,37,Whenever you feel like you gotta know who they gon' blame,gon,INNER,REPEAT,spelling,HIGH,N
+Slugg,35,You know what they gon' say,know,37,Whenever you feel like you gotta know who they gon' blame,know,INNER,REPEAT,spelling,HIGH,N
+Slugg,36,"Whatever they feel like, cos' you gon' do the same",same,37,Whenever you feel like you gotta know who they gon' blame,blame,END,PERFECT,cmu,HIGH,Y
+Slugg,36,"Whatever they feel like, cos' you gon' do the same",feel,37,Whenever you feel like you gotta know who they gon' blame,feel,INNER,REPEAT,spelling,HIGH,N
+Slugg,36,"Whatever they feel like, cos' you gon' do the same",gon,37,Whenever you feel like you gotta know who they gon' blame,gon,INNER,REPEAT,spelling,HIGH,N
+Slugg,36,"Whatever they feel like, cos' you gon' do the same",like,37,Whenever you feel like you gotta know who they gon' blame,like,INNER,REPEAT,spelling,HIGH,N
+Slugg,36,"Whatever they feel like, cos' you gon' do the same",Whatever,37,Whenever you feel like you gotta know who they gon' blame,Whenever,INNER,MULTI,multi,HIGH,Y
+Slugg,37,Whenever you feel like you gotta know who they gon' blame,who,38,Had to learn how to move,move,INNER,ASSONANCE,vowel,MED,Y
+Slugg,37,Whenever you feel like you gotta know who they gon' blame,who,39,Couple vultures in the room,room,INNER,ASSONANCE,vowel,MED,Y
+Slugg,37,Whenever you feel like you gotta know who they gon' blame,blame,41,"God's great, I'm great, yeah",great,END,SLANT,cmu,MED,Y
+Slugg,38,Had to learn how to move,move,39,Couple vultures in the room,room,END,SLANT,cmu,MED,Y
+Slugg,38,Had to learn how to move,move,40,Had to learn how to use my tools,tools,END,ASSONANCE,vowel,MED,Y
+Slugg,38,Had to learn how to move,Had,40,Had to learn how to use my tools,Had,INNER,REPEAT,spelling,HIGH,N
+Slugg,38,Had to learn how to move,how,40,Had to learn how to use my tools,how,INNER,REPEAT,spelling,HIGH,N
+Slugg,38,Had to learn how to move,learn,40,Had to learn how to use my tools,learn,INNER,REPEAT,spelling,HIGH,N
+Slugg,38,Had to learn how to move,move,40,Had to learn how to use my tools,use,INNER,SLANT,cmu,MED,Y
+Slugg,39,Couple vultures in the room,Couple,39,Couple vultures in the room,vultures,INNER,ASSONANCE,vowel,MED,Y
+Slugg,39,Couple vultures in the room,room,40,Had to learn how to use my tools,tools,END,ASSONANCE,vowel,MED,Y
+Slugg,39,Couple vultures in the room,room,40,Had to learn how to use my tools,use,INNER,SLANT,cmu,MED,Y
+Slugg,40,Had to learn how to use my tools,use,40,Had to learn how to use my tools,tools,INNER,ASSONANCE,vowel,MED,Y
+Slugg,40,Had to learn how to use my tools,Had,42,"Thank god for today, ay",Thank,INNER,ASSONANCE,vowel,MED,Y
+Slugg,41,"God's great, I'm great, yeah",great,41,"God's great, I'm great, yeah",great,INNER,REPEAT,spelling,HIGH,N
+Slugg,41,"God's great, I'm great, yeah",great,42,"Thank god for today, ay",today,END,ASSONANCE,vowel,MED,Y
+Slugg,41,"God's great, I'm great, yeah",God's,42,"Thank god for today, ay",god,INNER,SLANT,cmu,MED,Y
+Slugg,41,"God's great, I'm great, yeah",great,42,"Thank god for today, ay",today,INNER,ASSONANCE,vowel,MED,Y
+Slugg,41,"God's great, I'm great, yeah",great,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",bay,END,ASSONANCE,vowel,MED,Y
+Slugg,41,"God's great, I'm great, yeah",God's,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",talkin,INNER,ASSONANCE,vowel,MED,Y
+Slugg,41,"God's great, I'm great, yeah",great,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",bay,INNER,ASSONANCE,vowel,MED,Y
+Slugg,42,"Thank god for today, ay",today,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",bay,END,PERFECT,cmu,HIGH,Y
+Slugg,42,"Thank god for today, ay",god,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",talkin,INNER,ASSONANCE,vowel,MED,Y
+Slugg,42,"Thank god for today, ay",Thank,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",half,INNER,ASSONANCE,vowel,MED,Y
+Slugg,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",another,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",'nother,INNER,MULTI,multi,HIGH,Y
+Slugg,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",Earn another,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",ball 'nother,INNER,MULTI,multi,HIGH,Y
+Slugg,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",Earn,45,"For a dare, yeah I got a word",word,INNER,SLANT,cmu,MED,Y
+Slugg,43,"Earn another 8-ball, the 'nother half talkin' 'bout the bay",talkin,45,"For a dare, yeah I got a word",got,INNER,ASSONANCE,vowel,MED,Y
+Slugg,44,"I just need a Benz, I need askin'",need,44,"I just need a Benz, I need askin'",need,INNER,REPEAT,spelling,HIGH,N
+Slugg,44,"I just need a Benz, I need askin'",Benz,45,"For a dare, yeah I got a word",dare,INNER,ASSONANCE,vowel,MED,Y
+Slugg,45,"For a dare, yeah I got a word",word,46,"You ain't have to work, but you gotta work",work,END,SLANT,cmu,MED,Y
+Slugg,45,"For a dare, yeah I got a word",got,46,"You ain't have to work, but you gotta work",gotta,INNER,SLANT,cmu,MED,Y
+Slugg,45,"For a dare, yeah I got a word",word,46,"You ain't have to work, but you gotta work",work,INNER,SLANT,cmu,MED,Y
+Slugg,45,"For a dare, yeah I got a word",word,47,"Gotta show your daddy's work, woo",work,END,SLANT,cmu,MED,Y
+Slugg,45,"For a dare, yeah I got a word",got,47,"Gotta show your daddy's work, woo",Gotta,INNER,SLANT,cmu,MED,Y
+Slugg,45,"For a dare, yeah I got a word",word,48,Reminiscing we was on the perc,perc,END,SLANT,cmu,MED,Y
+Slugg,45,"For a dare, yeah I got a word",word,49,"Fresh trippin', he was on them percs",percs,END,ASSONANCE,vowel,MED,Y
+Slugg,46,"You ain't have to work, but you gotta work",work,46,"You ain't have to work, but you gotta work",work,INNER,REPEAT,spelling,HIGH,N
+Slugg,46,"You ain't have to work, but you gotta work",work,47,"Gotta show your daddy's work, woo",work,END,REPEAT,spelling,HIGH,N
+Slugg,46,"You ain't have to work, but you gotta work",gotta,47,"Gotta show your daddy's work, woo",Gotta,INNER,REPEAT,spelling,HIGH,N
+Slugg,46,"You ain't have to work, but you gotta work",have,47,"Gotta show your daddy's work, woo",daddy's,INNER,ASSONANCE,vowel,MED,Y
+Slugg,46,"You ain't have to work, but you gotta work",work,47,"Gotta show your daddy's work, woo",work,INNER,REPEAT,spelling,HIGH,N
+Slugg,46,"You ain't have to work, but you gotta work",work,48,Reminiscing we was on the perc,perc,END,PERFECT,cmu,HIGH,Y
+Slugg,46,"You ain't have to work, but you gotta work",work,48,Reminiscing we was on the perc,perc,INNER,PERFECT,cmu,HIGH,Y
+Slugg,46,"You ain't have to work, but you gotta work",work,49,"Fresh trippin', he was on them percs",percs,END,SLANT,cmu,MED,Y
+Slugg,46,"You ain't have to work, but you gotta work",work,50,"Goose trippin', me above the worst",worst,END,ASSONANCE,vowel,MED,Y
+Slugg,47,"Gotta show your daddy's work, woo",work,48,Reminiscing we was on the perc,perc,END,PERFECT,cmu,HIGH,Y
+Slugg,47,"Gotta show your daddy's work, woo",work,49,"Fresh trippin', he was on them percs",percs,END,SLANT,cmu,MED,Y
+Slugg,47,"Gotta show your daddy's work, woo",work,50,"Goose trippin', me above the worst",worst,END,ASSONANCE,vowel,MED,Y
+Slugg,47,"Gotta show your daddy's work, woo",work,51,"I miss my nigga, shoulda' called him first",first,END,ASSONANCE,vowel,MED,Y
+Slugg,48,Reminiscing we was on the perc,perc,49,"Fresh trippin', he was on them percs",percs,END,SLANT,cmu,MED,Y
+Slugg,48,Reminiscing we was on the perc,Reminiscing,49,"Fresh trippin', he was on them percs",trippin,INNER,SLANT,cmu,MED,Y
+Slugg,48,Reminiscing we was on the perc,perc,50,"Goose trippin', me above the worst",worst,END,ASSONANCE,vowel,MED,Y
+Slugg,48,Reminiscing we was on the perc,Reminiscing,50,"Goose trippin', me above the worst",trippin,INNER,SLANT,cmu,MED,Y
+Slugg,48,Reminiscing we was on the perc,perc,51,"I miss my nigga, shoulda' called him first",first,END,ASSONANCE,vowel,MED,Y
+Slugg,49,"Fresh trippin', he was on them percs",percs,50,"Goose trippin', me above the worst",worst,END,ASSONANCE,vowel,MED,Y
+Slugg,49,"Fresh trippin', he was on them percs",trippin,50,"Goose trippin', me above the worst",trippin,INNER,REPEAT,spelling,HIGH,N
+Slugg,49,"Fresh trippin', he was on them percs",percs,51,"I miss my nigga, shoulda' called him first",first,END,ASSONANCE,vowel,MED,Y
+Slugg,49,"Fresh trippin', he was on them percs",trippin,51,"I miss my nigga, shoulda' called him first",him,INNER,ASSONANCE,vowel,MED,Y
+Slugg,49,"Fresh trippin', he was on them percs",trippin,51,"I miss my nigga, shoulda' called him first",miss,INNER,ASSONANCE,vowel,MED,Y
+Slugg,50,"Goose trippin', me above the worst",worst,51,"I miss my nigga, shoulda' called him first",first,END,PERFECT,cmu,HIGH,Y
+Slugg,50,"Goose trippin', me above the worst",trippin,51,"I miss my nigga, shoulda' called him first",him,INNER,ASSONANCE,vowel,MED,Y
+Slugg,50,"Goose trippin', me above the worst",trippin,51,"I miss my nigga, shoulda' called him first",miss,INNER,ASSONANCE,vowel,MED,Y
+Slugg,51,"I miss my nigga, shoulda' called him first",miss,51,"I miss my nigga, shoulda' called him first",him,INNER,SLANT,cmu,MED,Y
+Slugg,51,"I miss my nigga, shoulda' called him first",called,52,got rap no more,more,INNER,ASSONANCE,vowel,MED,Y
+Slugg,51,"I miss my nigga, shoulda' called him first",him,53,"That shit was five, bro",shit,INNER,SLANT,cmu,MED,Y
+Slugg,51,"I miss my nigga, shoulda' called him first",miss,53,"That shit was five, bro",shit,INNER,SLANT,cmu,MED,Y
+Slugg,51,"I miss my nigga, shoulda' called him first",nigga,53,"That shit was five, bro",shit,INNER,SLANT,spelling,LOW,Y
+Slugg,52,got rap no more,no,53,"That shit was five, bro",bro,INNER,PERFECT,cmu,HIGH,Y
+Slugg,52,got rap no more,rap,54,This might bring the hood back in itself,back,INNER,SLANT,cmu,MED,Y
+Slugg,53,"That shit was five, bro",five,54,This might bring the hood back in itself,might,INNER,SLANT,cmu,MED,Y
+Slugg,53,"That shit was five, bro",shit,54,This might bring the hood back in itself,bring,INNER,SLANT,cmu,MED,Y
+Slugg,53,"That shit was five, bro",shit,55,"808 the motherfuckin' Mafia, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Slugg,53,"That shit was five, bro",bro,57,Recovering from a love I can't get over,over,END,ASSONANCE,vowel,MED,Y
+Slugg,54,This might bring the hood back in itself,bring,56,I'm a recovering undercover over-lover,recovering,INNER,PERFECT,spelling,MED,Y
+Slugg,55,"808 the motherfuckin' Mafia, nigga",motherfuckin,56,I'm a recovering undercover over-lover,lover,INNER,ASSONANCE,vowel,MED,Y
+Slugg,55,"808 the motherfuckin' Mafia, nigga",motherfuckin,56,I'm a recovering undercover over-lover,recovering,INNER,SLANT,cmu,MED,Y
+Slugg,55,"808 the motherfuckin' Mafia, nigga",motherfuckin,56,I'm a recovering undercover over-lover,undercover,INNER,ASSONANCE,vowel,MED,Y
+Slugg,55,"808 the motherfuckin' Mafia, nigga",motherfuckin,57,Recovering from a love I can't get over,love,INNER,ASSONANCE,vowel,MED,Y
+Slugg,55,"808 the motherfuckin' Mafia, nigga",motherfuckin,57,Recovering from a love I can't get over,Recovering,INNER,SLANT,cmu,MED,Y
+Slugg,56,I'm a recovering undercover over-lover,recovering,56,I'm a recovering undercover over-lover,lover,INNER,SLANT,cmu,MED,Y
+Slugg,56,I'm a recovering undercover over-lover,recovering,56,I'm a recovering undercover over-lover,undercover,INNER,SLANT,cmu,MED,Y
+Slugg,56,I'm a recovering undercover over-lover,recovering undercover,56,I'm a recovering undercover over-lover,over lover,INNER,MULTI,multi,HIGH,Y
+Slugg,56,I'm a recovering undercover over-lover,undercover,56,I'm a recovering undercover over-lover,lover,INNER,MULTI,multi,HIGH,Y
+Slugg,56,I'm a recovering undercover over-lover,lover,57,Recovering from a love I can't get over,love,INNER,SLANT,cmu,MED,Y
+Slugg,56,I'm a recovering undercover over-lover,lover,57,Recovering from a love I can't get over,Recovering,INNER,SLANT,cmu,MED,Y
+Slugg,56,I'm a recovering undercover over-lover,over,57,Recovering from a love I can't get over,over,INNER,REPEAT,spelling,HIGH,N
+Slugg,56,I'm a recovering undercover over-lover,recovering,57,Recovering from a love I can't get over,love,INNER,SLANT,cmu,MED,Y
+Slugg,56,I'm a recovering undercover over-lover,recovering,57,Recovering from a love I can't get over,Recovering,INNER,REPEAT,spelling,HIGH,N
+Slugg,56,I'm a recovering undercover over-lover,undercover,57,Recovering from a love I can't get over,love,INNER,SLANT,cmu,MED,Y
+Slugg,56,I'm a recovering undercover over-lover,undercover,57,Recovering from a love I can't get over,Recovering,INNER,SLANT,cmu,MED,Y
+Slugg,57,Recovering from a love I can't get over,Recovering,57,Recovering from a love I can't get over,love,INNER,SLANT,cmu,MED,Y

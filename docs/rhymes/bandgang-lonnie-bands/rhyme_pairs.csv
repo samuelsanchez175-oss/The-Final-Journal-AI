@@ -1,0 +1,287 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+High Way,1,"Hey, I'm back on that highway (Back on that highway)",highway,2,"Ayy, I'm back on that highway",highway,END,REPEAT,spelling,HIGH,N
+High Way,1,"Hey, I'm back on that highway (Back on that highway)",back,2,"Ayy, I'm back on that highway",back,INNER,REPEAT,spelling,HIGH,N
+High Way,1,"Hey, I'm back on that highway (Back on that highway)",highway,3,Doin' shit my way,way,END,PERFECT,cmu,HIGH,Y
+High Way,2,"Ayy, I'm back on that highway",highway,3,Doin' shit my way,way,END,PERFECT,cmu,HIGH,Y
+High Way,2,"Ayy, I'm back on that highway",back,4,Tried that rappin' shit,rappin,INNER,ASSONANCE,vowel,MED,Y
+High Way,3,Doin' shit my way,shit,4,Tried that rappin' shit,shit,INNER,REPEAT,spelling,HIGH,N
+High Way,3,Doin' shit my way,shit,5,Now I'm back wrappin' shit,shit,INNER,REPEAT,spelling,HIGH,N
+High Way,4,Tried that rappin' shit,shit,5,Now I'm back wrappin' shit,shit,END,REPEAT,spelling,HIGH,N
+High Way,4,Tried that rappin' shit,rappin,5,Now I'm back wrappin' shit,back,INNER,ASSONANCE,vowel,MED,Y
+High Way,4,Tried that rappin' shit,rappin,5,Now I'm back wrappin' shit,wrappin,INNER,MULTI,multi,HIGH,Y
+High Way,4,Tried that rappin' shit,Tried rappin,5,Now I'm back wrappin' shit,back wrappin,INNER,MULTI,multi,HIGH,Y
+High Way,4,Tried that rappin' shit,shit,6,I'm back on that savage shit,shit,END,REPEAT,spelling,HIGH,N
+High Way,4,Tried that rappin' shit,rappin,6,I'm back on that savage shit,back,INNER,ASSONANCE,vowel,MED,Y
+High Way,4,Tried that rappin' shit,rappin,6,I'm back on that savage shit,savage,INNER,ASSONANCE,vowel,MED,Y
+High Way,5,Now I'm back wrappin' shit,back,5,Now I'm back wrappin' shit,wrappin,INNER,ASSONANCE,vowel,MED,Y
+High Way,5,Now I'm back wrappin' shit,shit,6,I'm back on that savage shit,shit,END,REPEAT,spelling,HIGH,N
+High Way,5,Now I'm back wrappin' shit,back,6,I'm back on that savage shit,back,INNER,REPEAT,spelling,HIGH,N
+High Way,5,Now I'm back wrappin' shit,back,6,I'm back on that savage shit,savage,INNER,ASSONANCE,vowel,MED,Y
+High Way,5,Now I'm back wrappin' shit,wrappin,6,I'm back on that savage shit,back,INNER,ASSONANCE,vowel,MED,Y
+High Way,5,Now I'm back wrappin' shit,wrappin,6,I'm back on that savage shit,savage,INNER,ASSONANCE,vowel,MED,Y
+High Way,5,Now I'm back wrappin' shit,back,7,"Man, that package here",Man,INNER,SLANT,cmu,MED,Y
+High Way,5,Now I'm back wrappin' shit,back,7,"Man, that package here",package,INNER,SLANT,cmu,MED,Y
+High Way,5,Now I'm back wrappin' shit,wrappin,7,"Man, that package here",Man,INNER,ASSONANCE,vowel,MED,Y
+High Way,5,Now I'm back wrappin' shit,wrappin,7,"Man, that package here",package,INNER,ASSONANCE,vowel,MED,Y
+High Way,6,I'm back on that savage shit,back,6,I'm back on that savage shit,savage,INNER,ASSONANCE,vowel,MED,Y
+High Way,6,I'm back on that savage shit,back,7,"Man, that package here",Man,INNER,SLANT,cmu,MED,Y
+High Way,6,I'm back on that savage shit,back,7,"Man, that package here",package,INNER,SLANT,cmu,MED,Y
+High Way,6,I'm back on that savage shit,savage,7,"Man, that package here",Man,INNER,ASSONANCE,vowel,MED,Y
+High Way,6,I'm back on that savage shit,savage,7,"Man, that package here",package,INNER,SLANT,cmu,MED,Y
+High Way,6,I'm back on that savage shit,shit,8,"Nigga, I'm on my way there",Nigga,INNER,SLANT,spelling,LOW,Y
+High Way,7,"Man, that package here",Man,7,"Man, that package here",package,INNER,ASSONANCE,vowel,MED,Y
+High Way,8,"Nigga, I'm on my way there",there,9,I'm on my way there,there,END,REPEAT,spelling,HIGH,N
+High Way,8,"Nigga, I'm on my way there",way,9,I'm on my way there,way,INNER,REPEAT,spelling,HIGH,N
+High Way,8,"Nigga, I'm on my way there",there,10,"You got it, I'm on my way there",there,END,REPEAT,spelling,HIGH,N
+High Way,8,"Nigga, I'm on my way there",way,10,"You got it, I'm on my way there",way,INNER,REPEAT,spelling,HIGH,N
+High Way,9,I'm on my way there,there,10,"You got it, I'm on my way there",there,END,REPEAT,spelling,HIGH,N
+High Way,9,I'm on my way there,way,10,"You got it, I'm on my way there",way,INNER,REPEAT,spelling,HIGH,N
+High Way,9,I'm on my way there,way,11,These niggas afraid of dark,afraid,INNER,ASSONANCE,vowel,MED,Y
+High Way,10,"You got it, I'm on my way there",got,11,These niggas afraid of dark,dark,INNER,ASSONANCE,vowel,MED,Y
+High Way,10,"You got it, I'm on my way there",way,11,These niggas afraid of dark,afraid,INNER,ASSONANCE,vowel,MED,Y
+High Way,10,"You got it, I'm on my way there",got,12,But we way smarter,smarter,INNER,SLANT,cmu,MED,Y
+High Way,10,"You got it, I'm on my way there",way,12,But we way smarter,way,INNER,REPEAT,spelling,HIGH,N
+High Way,11,These niggas afraid of dark,dark,12,But we way smarter,smarter,END,SLANT,cmu,MED,Y
+High Way,11,These niggas afraid of dark,afraid,12,But we way smarter,way,INNER,ASSONANCE,vowel,MED,Y
+High Way,11,These niggas afraid of dark,dark,13,"All you gotta do, nigga, play your part",part,END,SLANT,cmu,MED,Y
+High Way,11,These niggas afraid of dark,afraid,13,"All you gotta do, nigga, play your part",play,INNER,ASSONANCE,vowel,MED,Y
+High Way,11,These niggas afraid of dark,dark,13,"All you gotta do, nigga, play your part",gotta,INNER,ASSONANCE,vowel,MED,Y
+High Way,11,These niggas afraid of dark,niggas,13,"All you gotta do, nigga, play your part",nigga,INNER,SLANT,spelling,LOW,Y
+High Way,11,These niggas afraid of dark,dark,14,Got a deck of bands and I play my cards,cards,END,ASSONANCE,vowel,MED,Y
+High Way,12,But we way smarter,smarter,13,"All you gotta do, nigga, play your part",part,END,SLANT,cmu,MED,Y
+High Way,12,But we way smarter,smarter,13,"All you gotta do, nigga, play your part",gotta,INNER,SLANT,cmu,MED,Y
+High Way,12,But we way smarter,way,13,"All you gotta do, nigga, play your part",play,INNER,PERFECT,cmu,HIGH,Y
+High Way,12,But we way smarter,smarter,14,Got a deck of bands and I play my cards,cards,END,ASSONANCE,vowel,MED,Y
+High Way,12,But we way smarter,smarter,14,Got a deck of bands and I play my cards,Got,INNER,SLANT,cmu,MED,Y
+High Way,12,But we way smarter,way,14,Got a deck of bands and I play my cards,play,INNER,PERFECT,cmu,HIGH,Y
+High Way,13,"All you gotta do, nigga, play your part",gotta,13,"All you gotta do, nigga, play your part",part,INNER,SLANT,cmu,MED,Y
+High Way,13,"All you gotta do, nigga, play your part",part,14,Got a deck of bands and I play my cards,cards,END,ASSONANCE,vowel,MED,Y
+High Way,13,"All you gotta do, nigga, play your part",gotta,14,Got a deck of bands and I play my cards,cards,INNER,ASSONANCE,vowel,MED,Y
+High Way,13,"All you gotta do, nigga, play your part",gotta,14,Got a deck of bands and I play my cards,Got,INNER,SLANT,cmu,MED,Y
+High Way,13,"All you gotta do, nigga, play your part",part,14,Got a deck of bands and I play my cards,Got,INNER,SLANT,cmu,MED,Y
+High Way,13,"All you gotta do, nigga, play your part",play,14,Got a deck of bands and I play my cards,play,INNER,REPEAT,spelling,HIGH,N
+High Way,13,"All you gotta do, nigga, play your part",play,15,Bunch of rat hoes and I pay them broads,pay,INNER,PERFECT,cmu,HIGH,Y
+High Way,13,"All you gotta do, nigga, play your part",part,17,Ever seen a nigga cook up an ounce of raw?,raw,END,ASSONANCE,vowel,MED,Y
+High Way,14,Got a deck of bands and I play my cards,Got,14,Got a deck of bands and I play my cards,cards,INNER,ASSONANCE,vowel,MED,Y
+High Way,14,Got a deck of bands and I play my cards,bands,15,Bunch of rat hoes and I pay them broads,rat,INNER,ASSONANCE,vowel,MED,Y
+High Way,14,Got a deck of bands and I play my cards,play,15,Bunch of rat hoes and I pay them broads,pay,INNER,PERFECT,cmu,HIGH,Y
+High Way,14,Got a deck of bands and I play my cards,bands,16,Ever seen court a million standin' tall?,standin,INNER,SLANT,cmu,MED,Y
+High Way,14,Got a deck of bands and I play my cards,deck,16,Ever seen court a million standin' tall?,Ever,INNER,SLANT,cmu,MED,Y
+High Way,14,Got a deck of bands and I play my cards,cards,17,Ever seen a nigga cook up an ounce of raw?,raw,END,ASSONANCE,vowel,MED,Y
+High Way,15,Bunch of rat hoes and I pay them broads,rat,16,Ever seen court a million standin' tall?,standin,INNER,ASSONANCE,vowel,MED,Y
+High Way,16,Ever seen court a million standin' tall?,court,16,Ever seen court a million standin' tall?,tall,INNER,ASSONANCE,vowel,MED,Y
+High Way,16,Ever seen court a million standin' tall?,Ever,17,Ever seen a nigga cook up an ounce of raw?,Ever,INNER,REPEAT,spelling,HIGH,N
+High Way,16,Ever seen court a million standin' tall?,seen,17,Ever seen a nigga cook up an ounce of raw?,seen,INNER,REPEAT,spelling,HIGH,N
+High Way,16,Ever seen court a million standin' tall?,Ever,18,"Ayy, you niggas wouldn't know my recipe",recipe,INNER,ASSONANCE,vowel,MED,Y
+High Way,17,Ever seen a nigga cook up an ounce of raw?,cook,18,"Ayy, you niggas wouldn't know my recipe",wouldn't,INNER,ASSONANCE,vowel,MED,Y
+High Way,17,Ever seen a nigga cook up an ounce of raw?,Ever,18,"Ayy, you niggas wouldn't know my recipe",recipe,INNER,ASSONANCE,vowel,MED,Y
+High Way,17,Ever seen a nigga cook up an ounce of raw?,nigga,18,"Ayy, you niggas wouldn't know my recipe",niggas,INNER,SLANT,spelling,LOW,Y
+High Way,17,Ever seen a nigga cook up an ounce of raw?,Ever,19,"Just know my OT connect, just blessin' me",blessin,INNER,ASSONANCE,vowel,MED,Y
+High Way,17,Ever seen a nigga cook up an ounce of raw?,Ever,19,"Just know my OT connect, just blessin' me",connect,INNER,ASSONANCE,vowel,MED,Y
+High Way,18,"Ayy, you niggas wouldn't know my recipe",recipe,19,"Just know my OT connect, just blessin' me",blessin,END,SLANT,cmu,MED,Y
+High Way,18,"Ayy, you niggas wouldn't know my recipe",know,19,"Just know my OT connect, just blessin' me",know,INNER,REPEAT,spelling,HIGH,N
+High Way,18,"Ayy, you niggas wouldn't know my recipe",recipe,19,"Just know my OT connect, just blessin' me",connect,INNER,ASSONANCE,vowel,MED,Y
+High Way,18,"Ayy, you niggas wouldn't know my recipe",recipe,20,My mama be tellin' me,tellin,END,ASSONANCE,vowel,MED,Y
+High Way,18,"Ayy, you niggas wouldn't know my recipe",recipe,21,"Boy, don't let that money get the best of me",best,END,SLANT,cmu,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",connect,19,"Just know my OT connect, just blessin' me",blessin,INNER,ASSONANCE,vowel,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",blessin,20,My mama be tellin' me,tellin,END,SLANT,cmu,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",connect,20,My mama be tellin' me,tellin,INNER,ASSONANCE,vowel,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",blessin,21,"Boy, don't let that money get the best of me",best,END,SLANT,cmu,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",blessin,21,"Boy, don't let that money get the best of me",get,INNER,ASSONANCE,vowel,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",blessin,21,"Boy, don't let that money get the best of me",let,INNER,ASSONANCE,vowel,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",connect,21,"Boy, don't let that money get the best of me",best,INNER,SLANT,cmu,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",connect,21,"Boy, don't let that money get the best of me",get,INNER,SLANT,cmu,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",connect,21,"Boy, don't let that money get the best of me",let,INNER,SLANT,cmu,MED,Y
+High Way,19,"Just know my OT connect, just blessin' me",know,21,"Boy, don't let that money get the best of me",don't,INNER,ASSONANCE,vowel,MED,Y
+High Way,20,My mama be tellin' me,tellin,21,"Boy, don't let that money get the best of me",best,END,ASSONANCE,vowel,MED,Y
+High Way,20,My mama be tellin' me,tellin,21,"Boy, don't let that money get the best of me",get,INNER,ASSONANCE,vowel,MED,Y
+High Way,20,My mama be tellin' me,tellin,21,"Boy, don't let that money get the best of me",let,INNER,ASSONANCE,vowel,MED,Y
+High Way,21,"Boy, don't let that money get the best of me",get,21,"Boy, don't let that money get the best of me",best,INNER,SLANT,cmu,MED,Y
+High Way,21,"Boy, don't let that money get the best of me",let,21,"Boy, don't let that money get the best of me",best,INNER,SLANT,cmu,MED,Y
+High Way,21,"Boy, don't let that money get the best of me",let,21,"Boy, don't let that money get the best of me",get,INNER,PERFECT,cmu,HIGH,Y
+High Way,21,"Boy, don't let that money get the best of me",don't,22,I-94 straight to the gold,gold,INNER,ASSONANCE,vowel,MED,Y
+High Way,21,"Boy, don't let that money get the best of me",best,23,"Ayy, I'll sell them fives straight to the O",sell,INNER,ASSONANCE,vowel,MED,Y
+High Way,21,"Boy, don't let that money get the best of me",don't,23,"Ayy, I'll sell them fives straight to the O",O,INNER,ASSONANCE,vowel,MED,Y
+High Way,21,"Boy, don't let that money get the best of me",get,23,"Ayy, I'll sell them fives straight to the O",sell,INNER,SLANT,cmu,MED,Y
+High Way,21,"Boy, don't let that money get the best of me",let,23,"Ayy, I'll sell them fives straight to the O",sell,INNER,SLANT,cmu,MED,Y
+High Way,22,I-94 straight to the gold,gold,23,"Ayy, I'll sell them fives straight to the O",O,END,ASSONANCE,vowel,MED,Y
+High Way,22,I-94 straight to the gold,straight,23,"Ayy, I'll sell them fives straight to the O",straight,INNER,REPEAT,spelling,HIGH,N
+High Way,22,I-94 straight to the gold,gold,24,"Ayy, and I got my change for them tolls",tolls,END,SLANT,cmu,MED,Y
+High Way,22,I-94 straight to the gold,straight,24,"Ayy, and I got my change for them tolls",change,INNER,ASSONANCE,vowel,MED,Y
+High Way,22,I-94 straight to the gold,gold,25,"Nigga, stuff two hundred bands in each ho",ho,END,ASSONANCE,vowel,MED,Y
+High Way,23,"Ayy, I'll sell them fives straight to the O",I'll,23,"Ayy, I'll sell them fives straight to the O",fives,INNER,ASSONANCE,vowel,MED,Y
+High Way,23,"Ayy, I'll sell them fives straight to the O",O,24,"Ayy, and I got my change for them tolls",tolls,END,ASSONANCE,vowel,MED,Y
+High Way,23,"Ayy, I'll sell them fives straight to the O",straight,24,"Ayy, and I got my change for them tolls",change,INNER,ASSONANCE,vowel,MED,Y
+High Way,23,"Ayy, I'll sell them fives straight to the O",O,25,"Nigga, stuff two hundred bands in each ho",ho,END,PERFECT,cmu,HIGH,Y
+High Way,24,"Ayy, and I got my change for them tolls",tolls,25,"Nigga, stuff two hundred bands in each ho",ho,END,ASSONANCE,vowel,MED,Y
+High Way,24,"Ayy, and I got my change for them tolls",change,26,"Bitch, I'm a plug, I could function with bale",bale,INNER,ASSONANCE,vowel,MED,Y
+High Way,25,"Nigga, stuff two hundred bands in each ho",stuff,25,"Nigga, stuff two hundred bands in each ho",hundred,INNER,ASSONANCE,vowel,MED,Y
+High Way,25,"Nigga, stuff two hundred bands in each ho",hundred,26,"Bitch, I'm a plug, I could function with bale",function,INNER,ASSONANCE,vowel,MED,Y
+High Way,25,"Nigga, stuff two hundred bands in each ho",hundred,26,"Bitch, I'm a plug, I could function with bale",plug,INNER,ASSONANCE,vowel,MED,Y
+High Way,25,"Nigga, stuff two hundred bands in each ho",stuff,26,"Bitch, I'm a plug, I could function with bale",function,INNER,ASSONANCE,vowel,MED,Y
+High Way,25,"Nigga, stuff two hundred bands in each ho",stuff,26,"Bitch, I'm a plug, I could function with bale",plug,INNER,SLANT,cmu,MED,Y
+High Way,25,"Nigga, stuff two hundred bands in each ho",Nigga,27,I'm in the booth with a digital scale,digital,INNER,ASSONANCE,vowel,LOW,N
+High Way,25,"Nigga, stuff two hundred bands in each ho",two,27,I'm in the booth with a digital scale,booth,INNER,ASSONANCE,vowel,MED,Y
+High Way,26,"Bitch, I'm a plug, I could function with bale",plug,26,"Bitch, I'm a plug, I could function with bale",function,INNER,ASSONANCE,vowel,MED,Y
+High Way,26,"Bitch, I'm a plug, I could function with bale",bale,27,I'm in the booth with a digital scale,scale,END,PERFECT,cmu,HIGH,Y
+High Way,26,"Bitch, I'm a plug, I could function with bale",Bitch,27,I'm in the booth with a digital scale,digital,INNER,ASSONANCE,vowel,MED,Y
+High Way,26,"Bitch, I'm a plug, I could function with bale",Bitch,28,"Nigga, quit lyin', you never seen a brick",brick,INNER,SLANT,cmu,MED,Y
+High Way,26,"Bitch, I'm a plug, I could function with bale",Bitch,28,"Nigga, quit lyin', you never seen a brick",quit,INNER,SLANT,cmu,MED,Y
+High Way,27,I'm in the booth with a digital scale,digital,28,"Nigga, quit lyin', you never seen a brick",brick,INNER,ASSONANCE,vowel,MED,Y
+High Way,27,I'm in the booth with a digital scale,digital,28,"Nigga, quit lyin', you never seen a brick",Nigga,INNER,ASSONANCE,vowel,LOW,N
+High Way,27,I'm in the booth with a digital scale,digital,28,"Nigga, quit lyin', you never seen a brick",quit,INNER,ASSONANCE,vowel,MED,Y
+High Way,27,I'm in the booth with a digital scale,digital,29,I told the judge suck a nigga chick,chick,INNER,ASSONANCE,vowel,MED,Y
+High Way,27,I'm in the booth with a digital scale,digital,29,I told the judge suck a nigga chick,nigga,INNER,ASSONANCE,vowel,LOW,N
+High Way,28,"Nigga, quit lyin', you never seen a brick",lyin,28,"Nigga, quit lyin', you never seen a brick",seen,INNER,SLANT,spelling,LOW,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",Nigga,28,"Nigga, quit lyin', you never seen a brick",brick,INNER,SLANT,spelling,LOW,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",Nigga,28,"Nigga, quit lyin', you never seen a brick",quit,INNER,SLANT,spelling,LOW,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",quit,28,"Nigga, quit lyin', you never seen a brick",brick,INNER,SLANT,cmu,MED,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",brick,29,I told the judge suck a nigga chick,chick,END,PERFECT,cmu,HIGH,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",brick,29,I told the judge suck a nigga chick,nigga,INNER,SLANT,spelling,LOW,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",Nigga,29,I told the judge suck a nigga chick,chick,INNER,SLANT,spelling,LOW,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",Nigga,29,I told the judge suck a nigga chick,nigga,INNER,REPEAT,spelling,HIGH,N
+High Way,28,"Nigga, quit lyin', you never seen a brick",quit,29,I told the judge suck a nigga chick,chick,INNER,SLANT,cmu,MED,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",quit,29,I told the judge suck a nigga chick,nigga,INNER,SLANT,spelling,LOW,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",brick,30,"Shoutout to Gucci Mane, I'm a walking lick",lick,END,PERFECT,cmu,HIGH,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",Nigga,30,"Shoutout to Gucci Mane, I'm a walking lick",lick,INNER,SLANT,spelling,LOW,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",quit,30,"Shoutout to Gucci Mane, I'm a walking lick",lick,INNER,SLANT,cmu,MED,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",brick,31,Presidential Rollie on my wrist,wrist,END,ASSONANCE,vowel,MED,Y
+High Way,28,"Nigga, quit lyin', you never seen a brick",brick,32,Spent a thousand dollars for the kiss,kiss,END,SLANT,cmu,MED,Y
+High Way,29,I told the judge suck a nigga chick,judge,29,I told the judge suck a nigga chick,suck,INNER,SLANT,cmu,MED,Y
+High Way,29,I told the judge suck a nigga chick,nigga,29,I told the judge suck a nigga chick,chick,INNER,SLANT,spelling,LOW,Y
+High Way,29,I told the judge suck a nigga chick,chick,30,"Shoutout to Gucci Mane, I'm a walking lick",lick,END,PERFECT,cmu,HIGH,Y
+High Way,29,I told the judge suck a nigga chick,nigga,30,"Shoutout to Gucci Mane, I'm a walking lick",lick,INNER,SLANT,spelling,LOW,Y
+High Way,29,I told the judge suck a nigga chick,chick,31,Presidential Rollie on my wrist,wrist,END,ASSONANCE,vowel,MED,Y
+High Way,29,I told the judge suck a nigga chick,told,31,Presidential Rollie on my wrist,Rollie,INNER,SLANT,cmu,MED,Y
+High Way,29,I told the judge suck a nigga chick,chick,32,Spent a thousand dollars for the kiss,kiss,END,SLANT,cmu,MED,Y
+High Way,29,I told the judge suck a nigga chick,chick,33,Spent a hundred thousand on the whip,whip,END,SLANT,cmu,MED,Y
+High Way,30,"Shoutout to Gucci Mane, I'm a walking lick",lick,31,Presidential Rollie on my wrist,wrist,END,ASSONANCE,vowel,MED,Y
+High Way,30,"Shoutout to Gucci Mane, I'm a walking lick",lick,32,Spent a thousand dollars for the kiss,kiss,END,SLANT,cmu,MED,Y
+High Way,30,"Shoutout to Gucci Mane, I'm a walking lick",lick,33,Spent a hundred thousand on the whip,whip,END,SLANT,cmu,MED,Y
+High Way,31,Presidential Rollie on my wrist,wrist,32,Spent a thousand dollars for the kiss,kiss,END,SLANT,cmu,MED,Y
+High Way,31,Presidential Rollie on my wrist,Presidential,32,Spent a thousand dollars for the kiss,Spent,INNER,ASSONANCE,vowel,MED,Y
+High Way,31,Presidential Rollie on my wrist,wrist,33,Spent a hundred thousand on the whip,whip,END,ASSONANCE,vowel,MED,Y
+High Way,31,Presidential Rollie on my wrist,Presidential,33,Spent a hundred thousand on the whip,Spent,INNER,ASSONANCE,vowel,MED,Y
+High Way,32,Spent a thousand dollars for the kiss,kiss,33,Spent a hundred thousand on the whip,whip,END,SLANT,cmu,MED,Y
+High Way,32,Spent a thousand dollars for the kiss,Spent,33,Spent a hundred thousand on the whip,Spent,INNER,REPEAT,spelling,HIGH,N
+High Way,32,Spent a thousand dollars for the kiss,thousand,33,Spent a hundred thousand on the whip,thousand,INNER,REPEAT,spelling,HIGH,N
+High Way,32,Spent a thousand dollars for the kiss,dollars,34,I got more flavor than a store in Cali,Cali,INNER,SLANT,cmu,MED,Y
+High Way,32,Spent a thousand dollars for the kiss,dollars,34,I got more flavor than a store in Cali,got,INNER,ASSONANCE,vowel,MED,Y
+High Way,33,Spent a hundred thousand on the whip,Spent,35,I got more check than your baby daddy,check,INNER,ASSONANCE,vowel,MED,Y
+High Way,34,I got more flavor than a store in Cali,got,34,I got more flavor than a store in Cali,Cali,INNER,SLANT,cmu,MED,Y
+High Way,34,I got more flavor than a store in Cali,more,34,I got more flavor than a store in Cali,store,INNER,PERFECT,cmu,HIGH,Y
+High Way,34,I got more flavor than a store in Cali,Cali,35,I got more check than your baby daddy,got,INNER,SLANT,cmu,MED,Y
+High Way,34,I got more flavor than a store in Cali,flavor,35,I got more check than your baby daddy,baby,INNER,SLANT,cmu,MED,Y
+High Way,34,I got more flavor than a store in Cali,got,35,I got more check than your baby daddy,got,INNER,REPEAT,spelling,HIGH,N
+High Way,34,I got more flavor than a store in Cali,more,35,I got more check than your baby daddy,more,INNER,REPEAT,spelling,HIGH,N
+High Way,34,I got more flavor than a store in Cali,store,35,I got more check than your baby daddy,more,INNER,PERFECT,cmu,HIGH,Y
+High Way,34,I got more flavor than a store in Cali,Cali,36,I got more stripes than a pair of Balis,Balis,END,SLANT,cmu,MED,Y
+High Way,34,I got more flavor than a store in Cali,Cali,36,I got more stripes than a pair of Balis,got,INNER,SLANT,cmu,MED,Y
+High Way,34,I got more flavor than a store in Cali,got,36,I got more stripes than a pair of Balis,Balis,INNER,ASSONANCE,vowel,MED,Y
+High Way,34,I got more flavor than a store in Cali,got,36,I got more stripes than a pair of Balis,got,INNER,REPEAT,spelling,HIGH,N
+High Way,34,I got more flavor than a store in Cali,more,36,I got more stripes than a pair of Balis,more,INNER,REPEAT,spelling,HIGH,N
+High Way,34,I got more flavor than a store in Cali,store,36,I got more stripes than a pair of Balis,more,INNER,PERFECT,cmu,HIGH,Y
+High Way,35,I got more check than your baby daddy,check,36,I got more stripes than a pair of Balis,pair,INNER,SLANT,cmu,MED,Y
+High Way,35,I got more check than your baby daddy,got,36,I got more stripes than a pair of Balis,Balis,INNER,ASSONANCE,vowel,MED,Y
+High Way,35,I got more check than your baby daddy,got,36,I got more stripes than a pair of Balis,got,INNER,REPEAT,spelling,HIGH,N
+High Way,35,I got more check than your baby daddy,more,36,I got more stripes than a pair of Balis,more,INNER,REPEAT,spelling,HIGH,N
+High Way,35,I got more check than your baby daddy,got,37,I got a hundred P's in a Denali,got,INNER,REPEAT,spelling,HIGH,N
+High Way,36,I got more stripes than a pair of Balis,got,36,I got more stripes than a pair of Balis,Balis,INNER,ASSONANCE,vowel,MED,Y
+High Way,36,I got more stripes than a pair of Balis,Balis,37,I got a hundred P's in a Denali,got,INNER,ASSONANCE,vowel,MED,Y
+High Way,36,I got more stripes than a pair of Balis,got,37,I got a hundred P's in a Denali,got,INNER,REPEAT,spelling,HIGH,N
+High Way,36,I got more stripes than a pair of Balis,Balis,38,I got them bands like I'm BandGang,got,INNER,ASSONANCE,vowel,MED,Y
+High Way,36,I got more stripes than a pair of Balis,got,38,I got them bands like I'm BandGang,got,INNER,REPEAT,spelling,HIGH,N
+High Way,36,I got more stripes than a pair of Balis,stripes,38,I got them bands like I'm BandGang,like,INNER,ASSONANCE,vowel,MED,Y
+High Way,37,I got a hundred P's in a Denali,got,38,I got them bands like I'm BandGang,got,INNER,REPEAT,spelling,HIGH,N
+High Way,38,I got them bands like I'm BandGang,bands,38,I got them bands like I'm BandGang,BandGang,INNER,ASSONANCE,vowel,LOW,N
+High Way,38,I got them bands like I'm BandGang,BandGang,42,I got them choppers like ShredGang,ShredGang,END,PERFECT,spelling,HIGH,Y
+High Way,39,"Nigga be shootin', they was handmade",handmade,40,Ace wanted them since the fifth grade,grade,END,PERFECT,cmu,HIGH,Y
+High Way,39,"Nigga be shootin', they was handmade",handmade,40,Ace wanted them since the fifth grade,Ace,INNER,SLANT,cmu,MED,Y
+High Way,39,"Nigga be shootin', they was handmade",handmade,41,"You ain't got no check, that's a damn shame",shame,END,SLANT,cmu,MED,Y
+High Way,39,"Nigga be shootin', they was handmade",handmade,41,"You ain't got no check, that's a damn shame",ain't,INNER,ASSONANCE,vowel,MED,Y
+High Way,40,Ace wanted them since the fifth grade,Ace,40,Ace wanted them since the fifth grade,grade,INNER,SLANT,cmu,MED,Y
+High Way,40,Ace wanted them since the fifth grade,since,40,Ace wanted them since the fifth grade,fifth,INNER,ASSONANCE,vowel,MED,Y
+High Way,40,Ace wanted them since the fifth grade,grade,41,"You ain't got no check, that's a damn shame",shame,END,SLANT,cmu,MED,Y
+High Way,40,Ace wanted them since the fifth grade,Ace,41,"You ain't got no check, that's a damn shame",ain't,INNER,ASSONANCE,vowel,MED,Y
+High Way,40,Ace wanted them since the fifth grade,Ace,41,"You ain't got no check, that's a damn shame",shame,INNER,SLANT,cmu,MED,Y
+High Way,40,Ace wanted them since the fifth grade,grade,41,"You ain't got no check, that's a damn shame",ain't,INNER,ASSONANCE,vowel,MED,Y
+High Way,41,"You ain't got no check, that's a damn shame",ain't,41,"You ain't got no check, that's a damn shame",shame,INNER,ASSONANCE,vowel,MED,Y
+High Way,41,"You ain't got no check, that's a damn shame",got,42,I got them choppers like ShredGang,choppers,INNER,ASSONANCE,vowel,MED,Y
+High Way,41,"You ain't got no check, that's a damn shame",got,42,I got them choppers like ShredGang,got,INNER,REPEAT,spelling,HIGH,N
+High Way,41,"You ain't got no check, that's a damn shame",got,43,I got more green than dispensaries,got,INNER,REPEAT,spelling,HIGH,N
+High Way,42,I got them choppers like ShredGang,got,42,I got them choppers like ShredGang,choppers,INNER,ASSONANCE,vowel,MED,Y
+High Way,42,I got them choppers like ShredGang,choppers,43,I got more green than dispensaries,got,INNER,ASSONANCE,vowel,MED,Y
+High Way,42,I got them choppers like ShredGang,got,43,I got more green than dispensaries,got,INNER,REPEAT,spelling,HIGH,N
+High Way,44,Turn a nigga to a mystery,mystery,45,"Play with my money, you history",history,END,MULTI,multi,HIGH,Y
+High Way,45,"Play with my money, you history",money,46,I run it up on the road,run,INNER,SLANT,cmu,MED,Y
+High Way,45,"Play with my money, you history",Play,47,"Solid nigga, I ain't never told",ain't,INNER,ASSONANCE,vowel,MED,Y
+High Way,46,I run it up on the road,road,47,"Solid nigga, I ain't never told",told,END,SLANT,cmu,MED,Y
+High Way,46,I run it up on the road,road,48,"Solid nigga, I could never fold",fold,END,SLANT,cmu,MED,Y
+High Way,47,"Solid nigga, I ain't never told",told,48,"Solid nigga, I could never fold",fold,END,PERFECT,cmu,HIGH,Y
+High Way,47,"Solid nigga, I ain't never told",never,48,"Solid nigga, I could never fold",never,INNER,REPEAT,spelling,HIGH,N
+High Way,47,"Solid nigga, I ain't never told",nigga,48,"Solid nigga, I could never fold",nigga,INNER,REPEAT,spelling,HIGH,N
+High Way,47,"Solid nigga, I ain't never told",Solid,48,"Solid nigga, I could never fold",Solid,INNER,REPEAT,spelling,HIGH,N
+High Way,48,"Solid nigga, I could never fold",could,49,"Bitch, I'm a plug, I could put you on, woo",could,INNER,REPEAT,spelling,HIGH,N
+High Way,48,"Solid nigga, I could never fold",could,49,"Bitch, I'm a plug, I could put you on, woo",put,INNER,SLANT,cmu,MED,Y
+High Way,48,"Solid nigga, I could never fold",never,50,I had them nightmares of the feds comin',feds,INNER,ASSONANCE,vowel,MED,Y
+High Way,48,"Solid nigga, I could never fold",never,50,I had them nightmares of the feds comin',nightmares,INNER,ASSONANCE,vowel,MED,Y
+High Way,49,"Bitch, I'm a plug, I could put you on, woo",could,49,"Bitch, I'm a plug, I could put you on, woo",put,INNER,SLANT,cmu,MED,Y
+High Way,49,"Bitch, I'm a plug, I could put you on, woo",plug,50,I had them nightmares of the feds comin',comin,INNER,ASSONANCE,vowel,MED,Y
+High Way,49,"Bitch, I'm a plug, I could put you on, woo",plug,51,"Young nigga, I was goat runnin'",runnin,INNER,ASSONANCE,vowel,MED,Y
+High Way,49,"Bitch, I'm a plug, I could put you on, woo",plug,51,"Young nigga, I was goat runnin'",Young,INNER,SLANT,cmu,MED,Y
+High Way,50,I had them nightmares of the feds comin',nightmares,50,I had them nightmares of the feds comin',feds,INNER,SLANT,cmu,MED,Y
+High Way,50,I had them nightmares of the feds comin',comin,51,"Young nigga, I was goat runnin'",runnin,END,SLANT,cmu,MED,Y
+High Way,50,I had them nightmares of the feds comin',comin,51,"Young nigga, I was goat runnin'",Young,INNER,SLANT,cmu,MED,Y
+High Way,50,I had them nightmares of the feds comin',comin,52,Sold a brick just to shake somethin',somethin,END,SLANT,cmu,MED,Y
+High Way,50,I had them nightmares of the feds comin',comin,53,Sold a four just to make somethin',somethin,END,SLANT,cmu,MED,Y
+High Way,51,"Young nigga, I was goat runnin'",Young,51,"Young nigga, I was goat runnin'",runnin,INNER,SLANT,cmu,MED,Y
+High Way,51,"Young nigga, I was goat runnin'",runnin,52,Sold a brick just to shake somethin',somethin,END,SLANT,cmu,MED,Y
+High Way,51,"Young nigga, I was goat runnin'",goat,52,Sold a brick just to shake somethin',Sold,INNER,ASSONANCE,vowel,MED,Y
+High Way,51,"Young nigga, I was goat runnin'",nigga,52,Sold a brick just to shake somethin',brick,INNER,SLANT,spelling,LOW,Y
+High Way,51,"Young nigga, I was goat runnin'",Young,52,Sold a brick just to shake somethin',somethin,INNER,ASSONANCE,vowel,MED,Y
+High Way,51,"Young nigga, I was goat runnin'",runnin,53,Sold a four just to make somethin',somethin,END,SLANT,cmu,MED,Y
+High Way,51,"Young nigga, I was goat runnin'",goat,53,Sold a four just to make somethin',Sold,INNER,ASSONANCE,vowel,MED,Y
+High Way,51,"Young nigga, I was goat runnin'",Young,53,Sold a four just to make somethin',somethin,INNER,ASSONANCE,vowel,MED,Y
+High Way,52,Sold a brick just to shake somethin',somethin,53,Sold a four just to make somethin',somethin,END,REPEAT,spelling,HIGH,N
+High Way,52,Sold a brick just to shake somethin',shake,53,Sold a four just to make somethin',make,INNER,PERFECT,cmu,HIGH,Y
+High Way,52,Sold a brick just to shake somethin',Sold,53,Sold a four just to make somethin',Sold,INNER,REPEAT,spelling,HIGH,N
+High Way,52,Sold a brick just to shake somethin',shake,54,Pour a four and then float away just to make all my problems go away,away,INNER,ASSONANCE,vowel,MED,Y
+High Way,52,Sold a brick just to shake somethin',shake,54,Pour a four and then float away just to make all my problems go away,make,INNER,PERFECT,cmu,HIGH,Y
+High Way,52,Sold a brick just to shake somethin',Sold,54,Pour a four and then float away just to make all my problems go away,float,INNER,ASSONANCE,vowel,MED,Y
+High Way,52,Sold a brick just to shake somethin',Sold,54,Pour a four and then float away just to make all my problems go away,go,INNER,ASSONANCE,vowel,MED,Y
+High Way,52,Sold a brick just to shake somethin',somethin,56,Wish a nigga would say somethin',somethin,END,REPEAT,spelling,HIGH,N
+High Way,53,Sold a four just to make somethin',four,54,Pour a four and then float away just to make all my problems go away,all,INNER,SLANT,cmu,MED,Y
+High Way,53,Sold a four just to make somethin',four,54,Pour a four and then float away just to make all my problems go away,four,INNER,REPEAT,spelling,HIGH,N
+High Way,53,Sold a four just to make somethin',four,54,Pour a four and then float away just to make all my problems go away,Pour,INNER,PERFECT,cmu,HIGH,Y
+High Way,53,Sold a four just to make somethin',make,54,Pour a four and then float away just to make all my problems go away,away,INNER,ASSONANCE,vowel,MED,Y
+High Way,53,Sold a four just to make somethin',make,54,Pour a four and then float away just to make all my problems go away,make,INNER,REPEAT,spelling,HIGH,N
+High Way,53,Sold a four just to make somethin',Sold,54,Pour a four and then float away just to make all my problems go away,float,INNER,ASSONANCE,vowel,MED,Y
+High Way,53,Sold a four just to make somethin',Sold,54,Pour a four and then float away just to make all my problems go away,go,INNER,ASSONANCE,vowel,MED,Y
+High Way,53,Sold a four just to make somethin',make,55,Ride around with that throwaway,throwaway,INNER,ASSONANCE,vowel,MED,Y
+High Way,53,Sold a four just to make somethin',somethin,56,Wish a nigga would say somethin',somethin,END,REPEAT,spelling,HIGH,N
+High Way,53,Sold a four just to make somethin',somethin,57,"Caught b sale, watch him squirt somethin'",somethin,END,REPEAT,spelling,HIGH,N
+High Way,54,Pour a four and then float away just to make all my problems go away,away,54,Pour a four and then float away just to make all my problems go away,away,INNER,REPEAT,spelling,HIGH,N
+High Way,54,Pour a four and then float away just to make all my problems go away,away,54,Pour a four and then float away just to make all my problems go away,make,INNER,ASSONANCE,vowel,MED,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,float,54,Pour a four and then float away just to make all my problems go away,go,INNER,ASSONANCE,vowel,MED,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,four,54,Pour a four and then float away just to make all my problems go away,all,INNER,SLANT,cmu,MED,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,make,54,Pour a four and then float away just to make all my problems go away,away,INNER,ASSONANCE,vowel,MED,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,Pour,54,Pour a four and then float away just to make all my problems go away,all,INNER,SLANT,cmu,MED,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,Pour,54,Pour a four and then float away just to make all my problems go away,four,INNER,PERFECT,cmu,HIGH,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,away,55,Ride around with that throwaway,throwaway,END,MULTI,multi,HIGH,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,away,55,Ride around with that throwaway,throwaway,INNER,MULTI,multi,HIGH,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,float away,55,Ride around with that throwaway,around throwaway,INNER,MULTI,multi,HIGH,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,make,55,Ride around with that throwaway,throwaway,INNER,ASSONANCE,vowel,MED,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,away,56,Wish a nigga would say somethin',say,INNER,PERFECT,cmu,HIGH,Y
+High Way,54,Pour a four and then float away just to make all my problems go away,make,56,Wish a nigga would say somethin',say,INNER,ASSONANCE,vowel,MED,Y
+High Way,55,Ride around with that throwaway,throwaway,56,Wish a nigga would say somethin',say,INNER,PERFECT,cmu,HIGH,Y
+High Way,55,Ride around with that throwaway,throwaway,57,"Caught b sale, watch him squirt somethin'",sale,INNER,ASSONANCE,vowel,MED,Y
+High Way,56,Wish a nigga would say somethin',somethin,57,"Caught b sale, watch him squirt somethin'",somethin,END,REPEAT,spelling,HIGH,N
+High Way,56,Wish a nigga would say somethin',say,57,"Caught b sale, watch him squirt somethin'",sale,INNER,ASSONANCE,vowel,MED,Y
+High Way,56,Wish a nigga would say somethin',Wish,57,"Caught b sale, watch him squirt somethin'",him,INNER,SLANT,cmu,MED,Y
+High Way,56,Wish a nigga would say somethin',say,58,We just gon' play like that,play,INNER,PERFECT,cmu,HIGH,Y
+High Way,57,"Caught b sale, watch him squirt somethin'",Caught,57,"Caught b sale, watch him squirt somethin'",watch,INNER,SLANT,cmu,MED,Y
+High Way,57,"Caught b sale, watch him squirt somethin'",sale,58,We just gon' play like that,play,INNER,ASSONANCE,vowel,MED,Y
+High Way,57,"Caught b sale, watch him squirt somethin'",him,59,Lil' niggas straight like that,Lil,INNER,SLANT,cmu,MED,Y
+High Way,57,"Caught b sale, watch him squirt somethin'",sale,59,Lil' niggas straight like that,straight,INNER,SLANT,cmu,MED,Y
+High Way,58,We just gon' play like that,like,59,Lil' niggas straight like that,like,END,REPEAT,spelling,HIGH,N
+High Way,58,We just gon' play like that,play,59,Lil' niggas straight like that,straight,INNER,ASSONANCE,vowel,MED,Y
