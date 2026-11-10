@@ -1,0 +1,132 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Dreamy Dragon,1,"Oh, you want me to be good for you",want,2,But you gotta be bad for me,gotta,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,2,But you gotta be bad for me,bad,3,Complete these tasks for me,tasks,END,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,2,But you gotta be bad for me,bad,4,Can you catch this pass for me?,pass,END,SLANT,cmu,MED,Y
+Dreamy Dragon,2,But you gotta be bad for me,bad,4,Can you catch this pass for me?,Can,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,2,But you gotta be bad for me,bad,4,Can you catch this pass for me?,catch,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,3,Complete these tasks for me,Complete,3,Complete these tasks for me,these,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,3,Complete these tasks for me,tasks,4,Can you catch this pass for me?,pass,END,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,3,Complete these tasks for me,tasks,4,Can you catch this pass for me?,Can,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,3,Complete these tasks for me,tasks,4,Can you catch this pass for me?,catch,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,4,Can you catch this pass for me?,Can,4,Can you catch this pass for me?,catch,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,4,Can you catch this pass for me?,Can,4,Can you catch this pass for me?,pass,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,4,Can you catch this pass for me?,catch,4,Can you catch this pass for me?,pass,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,4,Can you catch this pass for me?,Can,6,"If everyone else was fake, would you still have loyalty?",have,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,4,Can you catch this pass for me?,catch,6,"If everyone else was fake, would you still have loyalty?",have,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,4,Can you catch this pass for me?,pass,6,"If everyone else was fake, would you still have loyalty?",have,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,5,"And if the tires pop, would you still ride for me?",tires,5,"And if the tires pop, would you still ride for me?",ride,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,5,"And if the tires pop, would you still ride for me?",still,6,"If everyone else was fake, would you still have loyalty?",still,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,5,"And if the tires pop, would you still ride for me?",would,6,"If everyone else was fake, would you still have loyalty?",would,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,5,"And if the tires pop, would you still ride for me?",pop,7,"I had to get the royalties, dodging them bumble bees",dodging,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,6,"If everyone else was fake, would you still have loyalty?",else,7,"I had to get the royalties, dodging them bumble bees",get,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,6,"If everyone else was fake, would you still have loyalty?",everyone,7,"I had to get the royalties, dodging them bumble bees",bumble,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,6,"If everyone else was fake, would you still have loyalty?",have,7,"I had to get the royalties, dodging them bumble bees",had,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,6,"If everyone else was fake, would you still have loyalty?",loyalty,7,"I had to get the royalties, dodging them bumble bees",royalties,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,7,"I had to get the royalties, dodging them bumble bees",bees,8,I gotta keep my eyes wide open,keep,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,7,"I had to get the royalties, dodging them bumble bees",dodging,8,I gotta keep my eyes wide open,gotta,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,7,"I had to get the royalties, dodging them bumble bees",bees,9,We livin' in a world of creeps,creeps,END,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,8,I gotta keep my eyes wide open,eyes,8,I gotta keep my eyes wide open,wide,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,8,I gotta keep my eyes wide open,keep,9,We livin' in a world of creeps,creeps,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,8,I gotta keep my eyes wide open,eyes,10,Fast car I gotta pipe down,pipe,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,8,I gotta keep my eyes wide open,gotta,10,Fast car I gotta pipe down,car,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,8,I gotta keep my eyes wide open,gotta,10,Fast car I gotta pipe down,gotta,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,8,I gotta keep my eyes wide open,wide,10,Fast car I gotta pipe down,pipe,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,10,Fast car I gotta pipe down,car,10,Fast car I gotta pipe down,gotta,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,10,Fast car I gotta pipe down,down,11,Before I fuck around and wipe out,around,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,10,Fast car I gotta pipe down,pipe,11,Before I fuck around and wipe out,wipe,INNER,PERFECT,cmu,HIGH,Y
+Dreamy Dragon,10,Fast car I gotta pipe down,down,12,Here my love come right now,now,END,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,10,Fast car I gotta pipe down,pipe,12,Here my love come right now,right,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,10,Fast car I gotta pipe down,down,13,She's comin down in a nightgown,nightgown,END,PERFECT,spelling,HIGH,Y
+Dreamy Dragon,11,Before I fuck around and wipe out,around,12,Here my love come right now,now,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,11,Before I fuck around and wipe out,fuck,12,Here my love come right now,come,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,11,Before I fuck around and wipe out,fuck,12,Here my love come right now,love,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,11,Before I fuck around and wipe out,wipe,12,Here my love come right now,right,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,11,Before I fuck around and wipe out,around,13,She's comin down in a nightgown,down,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,11,Before I fuck around and wipe out,fuck,13,She's comin down in a nightgown,comin,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,12,Here my love come right now,love,12,Here my love come right now,come,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,12,Here my love come right now,come,13,She's comin down in a nightgown,comin,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,12,Here my love come right now,Here,13,She's comin down in a nightgown,She's,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,12,Here my love come right now,love,13,She's comin down in a nightgown,comin,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,12,Here my love come right now,now,13,She's comin down in a nightgown,down,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,13,She's comin down in a nightgown,down,13,She's comin down in a nightgown,nightgown,INNER,PERFECT,spelling,HIGH,Y
+Dreamy Dragon,13,She's comin down in a nightgown,comin,15,Jump on a boat and sa-a-ail,Jump,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,14,I had to catch my breath,had,14,I had to catch my breath,catch,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,14,I had to catch my breath,breath,16,"Feelin' like Johnny Depp, out I never will sell",sell,END,SLANT,cmu,MED,Y
+Dreamy Dragon,14,I had to catch my breath,breath,16,"Feelin' like Johnny Depp, out I never will sell",Depp,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,14,I had to catch my breath,breath,16,"Feelin' like Johnny Depp, out I never will sell",never,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,15,Jump on a boat and sa-a-ail,sa,16,"Feelin' like Johnny Depp, out I never will sell",Johnny,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,15,Jump on a boat and sa-a-ail,Jump,17,You love me I can tell and I can tell more than I can feel,love,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",Depp,16,"Feelin' like Johnny Depp, out I never will sell",never,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",Depp,16,"Feelin' like Johnny Depp, out I never will sell",sell,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",never,16,"Feelin' like Johnny Depp, out I never will sell",sell,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",Depp,17,You love me I can tell and I can tell more than I can feel,tell,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",Feelin,17,You love me I can tell and I can tell more than I can feel,feel,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",never,17,You love me I can tell and I can tell more than I can feel,tell,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",sell,17,You love me I can tell and I can tell more than I can feel,tell,INNER,PERFECT,cmu,HIGH,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",Depp,18,"Sorry I didn't mean to yell, bang bang",yell,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",Feelin,18,"Sorry I didn't mean to yell, bang bang",mean,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",Johnny,18,"Sorry I didn't mean to yell, bang bang",Sorry,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",never,18,"Sorry I didn't mean to yell, bang bang",yell,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",sell,18,"Sorry I didn't mean to yell, bang bang",yell,INNER,PERFECT,cmu,HIGH,Y
+Dreamy Dragon,16,"Feelin' like Johnny Depp, out I never will sell",will,18,"Sorry I didn't mean to yell, bang bang",didn't,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,17,You love me I can tell and I can tell more than I can feel,can,17,You love me I can tell and I can tell more than I can feel,can,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,17,You love me I can tell and I can tell more than I can feel,tell,17,You love me I can tell and I can tell more than I can feel,tell,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,17,You love me I can tell and I can tell more than I can feel,can,18,"Sorry I didn't mean to yell, bang bang",bang,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,17,You love me I can tell and I can tell more than I can feel,feel,18,"Sorry I didn't mean to yell, bang bang",mean,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,17,You love me I can tell and I can tell more than I can feel,tell,18,"Sorry I didn't mean to yell, bang bang",yell,INNER,PERFECT,cmu,HIGH,Y
+Dreamy Dragon,18,"Sorry I didn't mean to yell, bang bang",bang,18,"Sorry I didn't mean to yell, bang bang",bang,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,18,"Sorry I didn't mean to yell, bang bang",didn't,20,"I'm gettin tipsy, I might come over",tipsy,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,18,"Sorry I didn't mean to yell, bang bang",yell,20,"I'm gettin tipsy, I might come over",gettin,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,18,"Sorry I didn't mean to yell, bang bang",bang,21,I'm gonna put my hands on you,hands,END,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,19,"Oh, you say you live by canoga",live,19,"Oh, you say you live by canoga",by,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,19,"Oh, you say you live by canoga",canoga,20,"I'm gettin tipsy, I might come over",over,END,SLANT,cmu,MED,Y
+Dreamy Dragon,19,"Oh, you say you live by canoga",by,20,"I'm gettin tipsy, I might come over",might,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,19,"Oh, you say you live by canoga",live,20,"I'm gettin tipsy, I might come over",might,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,19,"Oh, you say you live by canoga",canoga,22,Hands on you like my controller,controller,END,SLANT,cmu,MED,Y
+Dreamy Dragon,19,"Oh, you say you live by canoga",canoga,23,"And I can never sleep, that money be smelling like folgers",folgers,END,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,20,"I'm gettin tipsy, I might come over",over,22,Hands on you like my controller,controller,END,SLANT,cmu,MED,Y
+Dreamy Dragon,20,"I'm gettin tipsy, I might come over",might,22,Hands on you like my controller,like,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,20,"I'm gettin tipsy, I might come over",over,23,"And I can never sleep, that money be smelling like folgers",folgers,END,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,20,"I'm gettin tipsy, I might come over",over,24,"Pick you up in a 600, you know it smell like dope",dope,END,SLANT,cmu,MED,Y
+Dreamy Dragon,21,I'm gonna put my hands on you,hands,22,Hands on you like my controller,Hands,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,21,I'm gonna put my hands on you,hands,23,"And I can never sleep, that money be smelling like folgers",can,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,22,Hands on you like my controller,controller,23,"And I can never sleep, that money be smelling like folgers",folgers,END,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,22,Hands on you like my controller,Hands,23,"And I can never sleep, that money be smelling like folgers",can,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,22,Hands on you like my controller,like,23,"And I can never sleep, that money be smelling like folgers",like,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,22,Hands on you like my controller,controller,24,"Pick you up in a 600, you know it smell like dope",dope,END,SLANT,cmu,MED,Y
+Dreamy Dragon,22,Hands on you like my controller,controller,24,"Pick you up in a 600, you know it smell like dope",know,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,22,Hands on you like my controller,like,24,"Pick you up in a 600, you know it smell like dope",like,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,23,"And I can never sleep, that money be smelling like folgers",never,23,"And I can never sleep, that money be smelling like folgers",smelling,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,23,"And I can never sleep, that money be smelling like folgers",folgers,24,"Pick you up in a 600, you know it smell like dope",dope,END,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,23,"And I can never sleep, that money be smelling like folgers",folgers,24,"Pick you up in a 600, you know it smell like dope",know,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,23,"And I can never sleep, that money be smelling like folgers",like,24,"Pick you up in a 600, you know it smell like dope",like,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,23,"And I can never sleep, that money be smelling like folgers",never,24,"Pick you up in a 600, you know it smell like dope",smell,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,23,"And I can never sleep, that money be smelling like folgers",smelling,24,"Pick you up in a 600, you know it smell like dope",smell,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,23,"And I can never sleep, that money be smelling like folgers",folgers,25,Don't worry about how I drive,Don't,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,23,"And I can never sleep, that money be smelling like folgers",like,25,Don't worry about how I drive,drive,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",know,24,"Pick you up in a 600, you know it smell like dope",dope,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",dope,25,Don't worry about how I drive,Don't,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",know,25,Don't worry about how I drive,Don't,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",like,25,Don't worry about how I drive,drive,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",dope,26,Just know that I'm a pro and I'll never get full,know,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",dope,26,Just know that I'm a pro and I'll never get full,pro,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",know,26,Just know that I'm a pro and I'll never get full,know,INNER,REPEAT,spelling,HIGH,N
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",know,26,Just know that I'm a pro and I'll never get full,pro,INNER,PERFECT,cmu,HIGH,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",like,26,Just know that I'm a pro and I'll never get full,I'll,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",smell,26,Just know that I'm a pro and I'll never get full,get,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,24,"Pick you up in a 600, you know it smell like dope",smell,26,Just know that I'm a pro and I'll never get full,never,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,25,Don't worry about how I drive,about,25,Don't worry about how I drive,how,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,25,Don't worry about how I drive,Don't,26,Just know that I'm a pro and I'll never get full,know,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,25,Don't worry about how I drive,Don't,26,Just know that I'm a pro and I'll never get full,pro,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,25,Don't worry about how I drive,drive,26,Just know that I'm a pro and I'll never get full,I'll,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,26,Just know that I'm a pro and I'll never get full,know,26,Just know that I'm a pro and I'll never get full,pro,INNER,PERFECT,cmu,HIGH,Y
+Dreamy Dragon,26,Just know that I'm a pro and I'll never get full,never,26,Just know that I'm a pro and I'll never get full,get,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,27,I'mma always want some more,more,28,And I thank God everyday that my feet make it on the floor,floor,END,PERFECT,cmu,HIGH,Y
+Dreamy Dragon,27,I'mma always want some more,always,28,And I thank God everyday that my feet make it on the floor,everyday,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,27,I'mma always want some more,always,28,And I thank God everyday that my feet make it on the floor,make,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,27,I'mma always want some more,want,28,And I thank God everyday that my feet make it on the floor,God,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,27,I'mma always want some more,more,29,And if Benjamin didn't die you know he'd be callin' my phone,callin,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,28,And I thank God everyday that my feet make it on the floor,everyday,28,And I thank God everyday that my feet make it on the floor,make,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,28,And I thank God everyday that my feet make it on the floor,feet,29,And if Benjamin didn't die you know he'd be callin' my phone,he'd,INNER,SLANT,cmu,MED,Y
+Dreamy Dragon,28,And I thank God everyday that my feet make it on the floor,floor,29,And if Benjamin didn't die you know he'd be callin' my phone,callin,INNER,ASSONANCE,vowel,MED,Y
+Dreamy Dragon,29,And if Benjamin didn't die you know he'd be callin' my phone,know,29,And if Benjamin didn't die you know he'd be callin' my phone,phone,INNER,ASSONANCE,vowel,MED,Y

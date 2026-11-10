@@ -1,0 +1,219 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Kill Season,1,"Kill season, kill for no reason",Kill,1,"Kill season, kill for no reason",kill,INNER,REPEAT,spelling,HIGH,N
+Kill Season,1,"Kill season, kill for no reason",Kill season,1,"Kill season, kill for no reason",no reason,INNER,MULTI,multi,HIGH,Y
+Kill Season,1,"Kill season, kill for no reason",season,1,"Kill season, kill for no reason",reason,INNER,MULTI,multi,HIGH,Y
+Kill Season,1,"Kill season, kill for no reason",Kill,3,"He slipping, don't think we see him",him,INNER,SLANT,cmu,MED,Y
+Kill Season,1,"Kill season, kill for no reason",Kill,3,"He slipping, don't think we see him",slipping,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,1,"Kill season, kill for no reason",Kill,3,"He slipping, don't think we see him",think,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,1,"Kill season, kill for no reason",no,3,"He slipping, don't think we see him",don't,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,1,"Kill season, kill for no reason",reason,3,"He slipping, don't think we see him",see,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,1,"Kill season, kill for no reason",season,3,"He slipping, don't think we see him",see,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,3,"He slipping, don't think we see him",slipping,3,"He slipping, don't think we see him",him,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,3,"He slipping, don't think we see him",slipping,3,"He slipping, don't think we see him",think,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,3,"He slipping, don't think we see him",think,3,"He slipping, don't think we see him",him,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,3,"He slipping, don't think we see him",don't,4,We play with keys not talking no piano,no,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,3,"He slipping, don't think we see him",see,4,We play with keys not talking no piano,keys,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,3,"He slipping, don't think we see him",him,5,So we had to bring them sticks out,sticks,END,ASSONANCE,vowel,MED,Y
+Kill Season,3,"He slipping, don't think we see him",him,5,So we had to bring them sticks out,bring,INNER,SLANT,cmu,MED,Y
+Kill Season,3,"He slipping, don't think we see him",slipping,5,So we had to bring them sticks out,bring,INNER,SLANT,cmu,MED,Y
+Kill Season,3,"He slipping, don't think we see him",slipping,5,So we had to bring them sticks out,sticks,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,3,"He slipping, don't think we see him",think,5,So we had to bring them sticks out,bring,INNER,SLANT,cmu,MED,Y
+Kill Season,3,"He slipping, don't think we see him",think,5,So we had to bring them sticks out,sticks,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,4,We play with keys not talking no piano,piano,5,So we had to bring them sticks out,had,INNER,SLANT,cmu,MED,Y
+Kill Season,4,We play with keys not talking no piano,no,6,He had to bring extra ammo,ammo,INNER,PERFECT,cmu,HIGH,Y
+Kill Season,4,We play with keys not talking no piano,piano,6,He had to bring extra ammo,had,INNER,SLANT,cmu,MED,Y
+Kill Season,5,So we had to bring them sticks out,bring,5,So we had to bring them sticks out,sticks,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,5,So we had to bring them sticks out,bring,6,He had to bring extra ammo,bring,INNER,REPEAT,spelling,HIGH,N
+Kill Season,5,So we had to bring them sticks out,had,6,He had to bring extra ammo,had,INNER,REPEAT,spelling,HIGH,N
+Kill Season,5,So we had to bring them sticks out,sticks,6,He had to bring extra ammo,bring,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,5,So we had to bring them sticks out,bring,7,Sit now smoke this joint,Sit,INNER,SLANT,cmu,MED,Y
+Kill Season,5,So we had to bring them sticks out,sticks,7,Sit now smoke this joint,Sit,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,5,So we had to bring them sticks out,sticks,8,Let's talk about how we gon do it,gon,END,ASSONANCE,vowel,MED,Y
+Kill Season,6,He had to bring extra ammo,ammo,7,Sit now smoke this joint,smoke,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,6,He had to bring extra ammo,bring,7,Sit now smoke this joint,Sit,INNER,SLANT,cmu,MED,Y
+Kill Season,6,He had to bring extra ammo,bring,8,Let's talk about how we gon do it,gon,INNER,SLANT,cmu,MED,Y
+Kill Season,6,He had to bring extra ammo,extra,8,Let's talk about how we gon do it,Let's,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,7,Sit now smoke this joint,now,8,Let's talk about how we gon do it,about,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,7,Sit now smoke this joint,now,8,Let's talk about how we gon do it,how,INNER,PERFECT,cmu,HIGH,Y
+Kill Season,7,Sit now smoke this joint,Sit,8,Let's talk about how we gon do it,gon,INNER,PERFECT,cmu,HIGH,Y
+Kill Season,7,Sit now smoke this joint,Sit,9,Moss b just bought a stick but I'm gon be the first to use it,stick,INNER,SLANT,cmu,MED,Y
+Kill Season,7,Sit now smoke this joint,smoke,9,Moss b just bought a stick but I'm gon be the first to use it,gon,INNER,SLANT,spelling,LOW,Y
+Kill Season,8,Let's talk about how we gon do it,about,8,Let's talk about how we gon do it,how,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,8,Let's talk about how we gon do it,gon,9,Moss b just bought a stick but I'm gon be the first to use it,gon,INNER,REPEAT,spelling,HIGH,N
+Kill Season,8,Let's talk about how we gon do it,gon,9,Moss b just bought a stick but I'm gon be the first to use it,stick,INNER,SLANT,cmu,MED,Y
+Kill Season,8,Let's talk about how we gon do it,talk,9,Moss b just bought a stick but I'm gon be the first to use it,Moss,INNER,SLANT,cmu,MED,Y
+Kill Season,8,Let's talk about how we gon do it,gon,10,Pull up in a foreign drop that window get to shooting,window,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,8,Let's talk about how we gon do it,Let's,10,Pull up in a foreign drop that window get to shooting,get,INNER,SLANT,cmu,MED,Y
+Kill Season,8,Let's talk about how we gon do it,talk,10,Pull up in a foreign drop that window get to shooting,foreign,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,9,Moss b just bought a stick but I'm gon be the first to use it,use,10,Pull up in a foreign drop that window get to shooting,shooting,END,ASSONANCE,vowel,MED,Y
+Kill Season,9,Moss b just bought a stick but I'm gon be the first to use it,bought,10,Pull up in a foreign drop that window get to shooting,drop,INNER,SLANT,cmu,MED,Y
+Kill Season,9,Moss b just bought a stick but I'm gon be the first to use it,Moss,10,Pull up in a foreign drop that window get to shooting,foreign,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,9,Moss b just bought a stick but I'm gon be the first to use it,stick,10,Pull up in a foreign drop that window get to shooting,window,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,9,Moss b just bought a stick but I'm gon be the first to use it,use,11,Heard police sirens but we ain't speeding off we cruising,cruising,END,ASSONANCE,vowel,MED,Y
+Kill Season,9,Moss b just bought a stick but I'm gon be the first to use it,b,11,Heard police sirens but we ain't speeding off we cruising,police,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,9,Moss b just bought a stick but I'm gon be the first to use it,b,11,Heard police sirens but we ain't speeding off we cruising,speeding,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,9,Moss b just bought a stick but I'm gon be the first to use it,first,11,Heard police sirens but we ain't speeding off we cruising,Heard,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,9,Moss b just bought a stick but I'm gon be the first to use it,use,13,Gotta get to droppin no time for making excuses,excuses,END,SLANT,cmu,MED,Y
+Kill Season,10,Pull up in a foreign drop that window get to shooting,shooting,11,Heard police sirens but we ain't speeding off we cruising,cruising,END,SLANT,cmu,MED,Y
+Kill Season,10,Pull up in a foreign drop that window get to shooting,get,12,Keep your corkers steady we gon drive like we ain't do it,steady,INNER,SLANT,cmu,MED,Y
+Kill Season,10,Pull up in a foreign drop that window get to shooting,shooting,13,Gotta get to droppin no time for making excuses,excuses,END,ASSONANCE,vowel,MED,Y
+Kill Season,10,Pull up in a foreign drop that window get to shooting,shooting,14,All my niggas killers and all my niggas they ruthless,ruthless,END,ASSONANCE,vowel,MED,Y
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,police,11,Heard police sirens but we ain't speeding off we cruising,speeding,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,ain't,12,Keep your corkers steady we gon drive like we ain't do it,ain't,INNER,REPEAT,spelling,HIGH,N
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,police,12,Keep your corkers steady we gon drive like we ain't do it,Keep,INNER,SLANT,cmu,MED,Y
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,sirens,12,Keep your corkers steady we gon drive like we ain't do it,drive,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,sirens,12,Keep your corkers steady we gon drive like we ain't do it,like,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,speeding,12,Keep your corkers steady we gon drive like we ain't do it,Keep,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,cruising,13,Gotta get to droppin no time for making excuses,excuses,END,ASSONANCE,vowel,MED,Y
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,ain't,13,Gotta get to droppin no time for making excuses,making,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,sirens,13,Gotta get to droppin no time for making excuses,time,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,11,Heard police sirens but we ain't speeding off we cruising,cruising,14,All my niggas killers and all my niggas they ruthless,ruthless,END,ASSONANCE,vowel,MED,Y
+Kill Season,12,Keep your corkers steady we gon drive like we ain't do it,drive,12,Keep your corkers steady we gon drive like we ain't do it,like,INNER,SLANT,cmu,MED,Y
+Kill Season,12,Keep your corkers steady we gon drive like we ain't do it,ain't,13,Gotta get to droppin no time for making excuses,making,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,12,Keep your corkers steady we gon drive like we ain't do it,drive,13,Gotta get to droppin no time for making excuses,time,INNER,SLANT,cmu,MED,Y
+Kill Season,12,Keep your corkers steady we gon drive like we ain't do it,like,13,Gotta get to droppin no time for making excuses,time,INNER,SLANT,cmu,MED,Y
+Kill Season,12,Keep your corkers steady we gon drive like we ain't do it,steady,13,Gotta get to droppin no time for making excuses,get,INNER,SLANT,cmu,MED,Y
+Kill Season,12,Keep your corkers steady we gon drive like we ain't do it,corkers,14,All my niggas killers and all my niggas they ruthless,killers,INNER,PERFECT,spelling,MED,Y
+Kill Season,13,Gotta get to droppin no time for making excuses,Gotta,13,Gotta get to droppin no time for making excuses,droppin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,13,Gotta get to droppin no time for making excuses,excuses,14,All my niggas killers and all my niggas they ruthless,ruthless,END,SLANT,cmu,MED,Y
+Kill Season,13,Gotta get to droppin no time for making excuses,droppin,15,You niggas trippinwe bosses we got the swag,got,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,13,Gotta get to droppin no time for making excuses,Gotta,15,You niggas trippinwe bosses we got the swag,got,INNER,SLANT,cmu,MED,Y
+Kill Season,14,All my niggas killers and all my niggas they ruthless,All,14,All my niggas killers and all my niggas they ruthless,all,INNER,REPEAT,spelling,HIGH,N
+Kill Season,14,All my niggas killers and all my niggas they ruthless,niggas,14,All my niggas killers and all my niggas they ruthless,niggas,INNER,REPEAT,spelling,HIGH,N
+Kill Season,14,All my niggas killers and all my niggas they ruthless,All,15,You niggas trippinwe bosses we got the swag,bosses,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,14,All my niggas killers and all my niggas they ruthless,killers,15,You niggas trippinwe bosses we got the swag,trippinwe,INNER,ASSONANCE,vowel,LOW,N
+Kill Season,14,All my niggas killers and all my niggas they ruthless,niggas,15,You niggas trippinwe bosses we got the swag,niggas,INNER,REPEAT,spelling,HIGH,N
+Kill Season,14,All my niggas killers and all my niggas they ruthless,killers,16,Dabbing on these bitches thats what get you niggas mad,bitches,INNER,SLANT,cmu,MED,Y
+Kill Season,14,All my niggas killers and all my niggas they ruthless,niggas,16,Dabbing on these bitches thats what get you niggas mad,niggas,INNER,REPEAT,spelling,HIGH,N
+Kill Season,15,You niggas trippinwe bosses we got the swag,swag,16,Dabbing on these bitches thats what get you niggas mad,mad,END,SLANT,spelling,LOW,Y
+Kill Season,15,You niggas trippinwe bosses we got the swag,niggas,16,Dabbing on these bitches thats what get you niggas mad,niggas,INNER,REPEAT,spelling,HIGH,N
+Kill Season,15,You niggas trippinwe bosses we got the swag,trippinwe,16,Dabbing on these bitches thats what get you niggas mad,bitches,INNER,ASSONANCE,vowel,LOW,N
+Kill Season,15,You niggas trippinwe bosses we got the swag,swag,17,Pull up to the club that money comin out the bag,bag,END,PERFECT,spelling,MED,Y
+Kill Season,15,You niggas trippinwe bosses we got the swag,swag,18,Clutchin on this pistol run up and thats your ass,ass,END,SLANT,spelling,LOW,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,Dabbing,16,Dabbing on these bitches thats what get you niggas mad,mad,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,mad,17,Pull up to the club that money comin out the bag,bag,END,SLANT,cmu,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,Dabbing,17,Pull up to the club that money comin out the bag,bag,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,what,17,Pull up to the club that money comin out the bag,club,INNER,SLANT,cmu,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,what,17,Pull up to the club that money comin out the bag,comin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,what,17,Pull up to the club that money comin out the bag,money,INNER,SLANT,cmu,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,mad,18,Clutchin on this pistol run up and thats your ass,ass,END,SLANT,cmu,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,bitches,18,Clutchin on this pistol run up and thats your ass,pistol,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,Dabbing,18,Clutchin on this pistol run up and thats your ass,ass,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,niggas,18,Clutchin on this pistol run up and thats your ass,ass,INNER,PERFECT,spelling,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,what,18,Clutchin on this pistol run up and thats your ass,Clutchin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,16,Dabbing on these bitches thats what get you niggas mad,what,18,Clutchin on this pistol run up and thats your ass,run,INNER,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,club,17,Pull up to the club that money comin out the bag,comin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,club,17,Pull up to the club that money comin out the bag,money,INNER,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,money,17,Pull up to the club that money comin out the bag,comin,INNER,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,bag,18,Clutchin on this pistol run up and thats your ass,ass,END,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,club,18,Clutchin on this pistol run up and thats your ass,Clutchin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,club,18,Clutchin on this pistol run up and thats your ass,run,INNER,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,comin,18,Clutchin on this pistol run up and thats your ass,Clutchin,INNER,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,comin,18,Clutchin on this pistol run up and thats your ass,run,INNER,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,money,18,Clutchin on this pistol run up and thats your ass,Clutchin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,money,18,Clutchin on this pistol run up and thats your ass,run,INNER,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,bag,19,You ducking map vin chachew,map,INNER,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,club,19,You ducking map vin chachew,ducking,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,comin,19,You ducking map vin chachew,ducking,INNER,SLANT,cmu,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,money,19,You ducking map vin chachew,ducking,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,17,Pull up to the club that money comin out the bag,bag,21,You dont know who in the car sliding in a Tahoe,Tahoe,END,SLANT,cmu,MED,Y
+Kill Season,18,Clutchin on this pistol run up and thats your ass,Clutchin,18,Clutchin on this pistol run up and thats your ass,run,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,18,Clutchin on this pistol run up and thats your ass,ass,19,You ducking map vin chachew,map,INNER,SLANT,cmu,MED,Y
+Kill Season,18,Clutchin on this pistol run up and thats your ass,Clutchin,19,You ducking map vin chachew,ducking,INNER,SLANT,cmu,MED,Y
+Kill Season,18,Clutchin on this pistol run up and thats your ass,pistol,19,You ducking map vin chachew,vin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,18,Clutchin on this pistol run up and thats your ass,run,19,You ducking map vin chachew,ducking,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,18,Clutchin on this pistol run up and thats your ass,ass,20,No I ain't your dad but when I see you I map kalew,dad,INNER,SLANT,cmu,MED,Y
+Kill Season,18,Clutchin on this pistol run up and thats your ass,ass,20,No I ain't your dad but when I see you I map kalew,map,INNER,SLANT,cmu,MED,Y
+Kill Season,18,Clutchin on this pistol run up and thats your ass,ass,21,You dont know who in the car sliding in a Tahoe,Tahoe,END,SLANT,cmu,MED,Y
+Kill Season,19,You ducking map vin chachew,chachew,20,No I ain't your dad but when I see you I map kalew,kalew,END,PERFECT,spelling,MED,Y
+Kill Season,19,You ducking map vin chachew,map,20,No I ain't your dad but when I see you I map kalew,dad,INNER,SLANT,cmu,MED,Y
+Kill Season,19,You ducking map vin chachew,map,20,No I ain't your dad but when I see you I map kalew,map,INNER,REPEAT,spelling,HIGH,N
+Kill Season,19,You ducking map vin chachew,map,21,You dont know who in the car sliding in a Tahoe,Tahoe,INNER,SLANT,cmu,MED,Y
+Kill Season,20,No I ain't your dad but when I see you I map kalew,dad,20,No I ain't your dad but when I see you I map kalew,map,INNER,SLANT,cmu,MED,Y
+Kill Season,20,No I ain't your dad but when I see you I map kalew,dad,21,You dont know who in the car sliding in a Tahoe,Tahoe,INNER,SLANT,cmu,MED,Y
+Kill Season,20,No I ain't your dad but when I see you I map kalew,map,21,You dont know who in the car sliding in a Tahoe,Tahoe,INNER,SLANT,cmu,MED,Y
+Kill Season,20,No I ain't your dad but when I see you I map kalew,No,21,You dont know who in the car sliding in a Tahoe,know,INNER,PERFECT,cmu,HIGH,Y
+Kill Season,21,You dont know who in the car sliding in a Tahoe,dont,21,You dont know who in the car sliding in a Tahoe,know,INNER,ASSONANCE,vowel,LOW,N
+Kill Season,21,You dont know who in the car sliding in a Tahoe,car,22,"I just bought another car, sitting on Forgiatos",bought,INNER,SLANT,cmu,MED,Y
+Kill Season,21,You dont know who in the car sliding in a Tahoe,car,22,"I just bought another car, sitting on Forgiatos",car,INNER,REPEAT,spelling,HIGH,N
+Kill Season,21,You dont know who in the car sliding in a Tahoe,car,23,All these niggas gotta do is go and pick up mano',gotta,INNER,SLANT,cmu,MED,Y
+Kill Season,21,You dont know who in the car sliding in a Tahoe,car,23,All these niggas gotta do is go and pick up mano',mano,INNER,SLANT,cmu,MED,Y
+Kill Season,21,You dont know who in the car sliding in a Tahoe,know,23,All these niggas gotta do is go and pick up mano',go,INNER,PERFECT,cmu,HIGH,Y
+Kill Season,22,"I just bought another car, sitting on Forgiatos",bought,22,"I just bought another car, sitting on Forgiatos",car,INNER,SLANT,cmu,MED,Y
+Kill Season,22,"I just bought another car, sitting on Forgiatos",bought,23,All these niggas gotta do is go and pick up mano',gotta,INNER,SLANT,cmu,MED,Y
+Kill Season,22,"I just bought another car, sitting on Forgiatos",bought,23,All these niggas gotta do is go and pick up mano',mano,INNER,SLANT,cmu,MED,Y
+Kill Season,22,"I just bought another car, sitting on Forgiatos",car,23,All these niggas gotta do is go and pick up mano',gotta,INNER,SLANT,cmu,MED,Y
+Kill Season,22,"I just bought another car, sitting on Forgiatos",car,23,All these niggas gotta do is go and pick up mano',mano,INNER,SLANT,cmu,MED,Y
+Kill Season,22,"I just bought another car, sitting on Forgiatos",sitting,23,All these niggas gotta do is go and pick up mano',pick,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,22,"I just bought another car, sitting on Forgiatos",another,24,"Tell me what you tryna do, you can die tommorow",what,INNER,SLANT,cmu,MED,Y
+Kill Season,23,All these niggas gotta do is go and pick up mano',gotta,23,All these niggas gotta do is go and pick up mano',mano,INNER,SLANT,cmu,MED,Y
+Kill Season,23,All these niggas gotta do is go and pick up mano',these,24,"Tell me what you tryna do, you can die tommorow",tryna,INNER,SLANT,spelling,LOW,Y
+Kill Season,23,All these niggas gotta do is go and pick up mano',go,25,"Nigga why you bluffing, jump out go to dumping",go,INNER,REPEAT,spelling,HIGH,N
+Kill Season,23,All these niggas gotta do is go and pick up mano',niggas,25,"Nigga why you bluffing, jump out go to dumping",Nigga,INNER,SLANT,spelling,LOW,Y
+Kill Season,23,All these niggas gotta do is go and pick up mano',pick,25,"Nigga why you bluffing, jump out go to dumping",Nigga,INNER,SLANT,spelling,LOW,Y
+Kill Season,24,"Tell me what you tryna do, you can die tommorow",die,25,"Nigga why you bluffing, jump out go to dumping",why,INNER,PERFECT,cmu,HIGH,Y
+Kill Season,24,"Tell me what you tryna do, you can die tommorow",what,25,"Nigga why you bluffing, jump out go to dumping",bluffing,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,24,"Tell me what you tryna do, you can die tommorow",what,25,"Nigga why you bluffing, jump out go to dumping",dumping,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,24,"Tell me what you tryna do, you can die tommorow",what,25,"Nigga why you bluffing, jump out go to dumping",jump,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,24,"Tell me what you tryna do, you can die tommorow",tommorow,26,I ain't dont say nothing Im just straight up busting,dont,INNER,ASSONANCE,vowel,LOW,N
+Kill Season,24,"Tell me what you tryna do, you can die tommorow",what,26,I ain't dont say nothing Im just straight up busting,busting,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,24,"Tell me what you tryna do, you can die tommorow",what,26,I ain't dont say nothing Im just straight up busting,nothing,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",bluffing,25,"Nigga why you bluffing, jump out go to dumping",dumping,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",bluffing,25,"Nigga why you bluffing, jump out go to dumping",jump,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",jump,25,"Nigga why you bluffing, jump out go to dumping",dumping,INNER,SLANT,cmu,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",dumping,26,I ain't dont say nothing Im just straight up busting,busting,END,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",bluffing,26,I ain't dont say nothing Im just straight up busting,busting,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",bluffing,26,I ain't dont say nothing Im just straight up busting,nothing,INNER,SLANT,cmu,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",dumping,26,I ain't dont say nothing Im just straight up busting,nothing,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",jump,26,I ain't dont say nothing Im just straight up busting,busting,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",jump,26,I ain't dont say nothing Im just straight up busting,nothing,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",dumping,27,I dont care I catch you with your auntie or your cousin,cousin,END,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",bluffing,27,I dont care I catch you with your auntie or your cousin,cousin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",jump,27,I dont care I catch you with your auntie or your cousin,cousin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",dumping,28,I dont care I catch you on the front street out in public,public,END,ASSONANCE,vowel,MED,Y
+Kill Season,25,"Nigga why you bluffing, jump out go to dumping",dumping,29,Fuck around they gon find your ass they behind the publix,publix,END,ASSONANCE,vowel,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,ain't,26,I ain't dont say nothing Im just straight up busting,say,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,ain't,26,I ain't dont say nothing Im just straight up busting,straight,INNER,SLANT,cmu,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,nothing,26,I ain't dont say nothing Im just straight up busting,busting,INNER,SLANT,cmu,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,say,26,I ain't dont say nothing Im just straight up busting,straight,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,busting,27,I dont care I catch you with your auntie or your cousin,cousin,END,SLANT,cmu,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,ain't,27,I dont care I catch you with your auntie or your cousin,auntie,INNER,SLANT,spelling,LOW,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,dont,27,I dont care I catch you with your auntie or your cousin,dont,INNER,REPEAT,spelling,HIGH,N
+Kill Season,26,I ain't dont say nothing Im just straight up busting,nothing,27,I dont care I catch you with your auntie or your cousin,cousin,INNER,SLANT,cmu,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,busting,28,I dont care I catch you on the front street out in public,public,END,ASSONANCE,vowel,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,busting,28,I dont care I catch you on the front street out in public,front,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,dont,28,I dont care I catch you on the front street out in public,dont,INNER,REPEAT,spelling,HIGH,N
+Kill Season,26,I ain't dont say nothing Im just straight up busting,dont,28,I dont care I catch you on the front street out in public,front,INNER,PERFECT,spelling,HIGH,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,nothing,28,I dont care I catch you on the front street out in public,front,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,nothing,28,I dont care I catch you on the front street out in public,public,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,straight,28,I dont care I catch you on the front street out in public,street,INNER,SLANT,spelling,LOW,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,busting,29,Fuck around they gon find your ass they behind the publix,publix,END,ASSONANCE,vowel,MED,Y
+Kill Season,26,I ain't dont say nothing Im just straight up busting,busting,30,Everyday 24/7 I be clutchin,clutchin,END,SLANT,cmu,MED,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,catch,27,I dont care I catch you with your auntie or your cousin,auntie,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,cousin,28,I dont care I catch you on the front street out in public,public,END,ASSONANCE,vowel,MED,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,auntie,28,I dont care I catch you on the front street out in public,catch,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,care,28,I dont care I catch you on the front street out in public,care,INNER,REPEAT,spelling,HIGH,N
+Kill Season,27,I dont care I catch you with your auntie or your cousin,catch,28,I dont care I catch you on the front street out in public,catch,INNER,REPEAT,spelling,HIGH,N
+Kill Season,27,I dont care I catch you with your auntie or your cousin,cousin,28,I dont care I catch you on the front street out in public,front,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,dont,28,I dont care I catch you on the front street out in public,dont,INNER,REPEAT,spelling,HIGH,N
+Kill Season,27,I dont care I catch you with your auntie or your cousin,dont,28,I dont care I catch you on the front street out in public,front,INNER,PERFECT,spelling,HIGH,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,cousin,29,Fuck around they gon find your ass they behind the publix,publix,END,ASSONANCE,vowel,MED,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,auntie,29,Fuck around they gon find your ass they behind the publix,ass,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,catch,29,Fuck around they gon find your ass they behind the publix,ass,INNER,SLANT,cmu,MED,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,cousin,29,Fuck around they gon find your ass they behind the publix,Fuck,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,dont,29,Fuck around they gon find your ass they behind the publix,gon,INNER,SLANT,spelling,LOW,Y
+Kill Season,27,I dont care I catch you with your auntie or your cousin,cousin,30,Everyday 24/7 I be clutchin,clutchin,END,SLANT,cmu,MED,Y
+Kill Season,28,I dont care I catch you on the front street out in public,dont,28,I dont care I catch you on the front street out in public,front,INNER,PERFECT,spelling,HIGH,Y
+Kill Season,28,I dont care I catch you on the front street out in public,front,28,I dont care I catch you on the front street out in public,public,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,28,I dont care I catch you on the front street out in public,public,29,Fuck around they gon find your ass they behind the publix,publix,END,SLANT,cmu,MED,Y
+Kill Season,28,I dont care I catch you on the front street out in public,catch,29,Fuck around they gon find your ass they behind the publix,ass,INNER,SLANT,cmu,MED,Y
+Kill Season,28,I dont care I catch you on the front street out in public,dont,29,Fuck around they gon find your ass they behind the publix,gon,INNER,SLANT,spelling,LOW,Y
+Kill Season,28,I dont care I catch you on the front street out in public,front,29,Fuck around they gon find your ass they behind the publix,Fuck,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,28,I dont care I catch you on the front street out in public,front,29,Fuck around they gon find your ass they behind the publix,publix,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,28,I dont care I catch you on the front street out in public,public,29,Fuck around they gon find your ass they behind the publix,Fuck,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,28,I dont care I catch you on the front street out in public,public,30,Everyday 24/7 I be clutchin,clutchin,END,ASSONANCE,vowel,MED,Y
+Kill Season,28,I dont care I catch you on the front street out in public,front,30,Everyday 24/7 I be clutchin,clutchin,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,29,Fuck around they gon find your ass they behind the publix,find,29,Fuck around they gon find your ass they behind the publix,behind,INNER,PERFECT,cmu,HIGH,Y
+Kill Season,29,Fuck around they gon find your ass they behind the publix,Fuck,29,Fuck around they gon find your ass they behind the publix,publix,INNER,ASSONANCE,vowel,MED,Y
+Kill Season,29,Fuck around they gon find your ass they behind the publix,publix,30,Everyday 24/7 I be clutchin,clutchin,END,ASSONANCE,vowel,MED,Y
+Kill Season,29,Fuck around they gon find your ass they behind the publix,Fuck,30,Everyday 24/7 I be clutchin,clutchin,INNER,ASSONANCE,vowel,MED,Y

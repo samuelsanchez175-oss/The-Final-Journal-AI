@@ -1,0 +1,266 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+More Than 2,1,"How many ounces I got on me, more than two (aye)",How,1,"How many ounces I got on me, more than two (aye)",ounces,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,1,"How many ounces I got on me, more than two (aye)",two,2,"How many pints I got with me, more than two (aye)",two,END,REPEAT,spelling,HIGH,N
+More Than 2,1,"How many ounces I got on me, more than two (aye)",got,2,"How many pints I got with me, more than two (aye)",got,INNER,REPEAT,spelling,HIGH,N
+More Than 2,1,"How many ounces I got on me, more than two (aye)",How,2,"How many pints I got with me, more than two (aye)",How,INNER,REPEAT,spelling,HIGH,N
+More Than 2,1,"How many ounces I got on me, more than two (aye)",many,2,"How many pints I got with me, more than two (aye)",many,INNER,REPEAT,spelling,HIGH,N
+More Than 2,1,"How many ounces I got on me, more than two (aye)",more,2,"How many pints I got with me, more than two (aye)",more,INNER,REPEAT,spelling,HIGH,N
+More Than 2,1,"How many ounces I got on me, more than two (aye)",ounces,2,"How many pints I got with me, more than two (aye)",How,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,1,"How many ounces I got on me, more than two (aye)",How,3,"How much money do I make, more than you (aye)",How,INNER,REPEAT,spelling,HIGH,N
+More Than 2,1,"How many ounces I got on me, more than two (aye)",more,3,"How much money do I make, more than you (aye)",more,INNER,REPEAT,spelling,HIGH,N
+More Than 2,1,"How many ounces I got on me, more than two (aye)",ounces,3,"How much money do I make, more than you (aye)",How,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,1,"How many ounces I got on me, more than two (aye)",two,5,"How many chains do I got, more than two (aye)",two,END,REPEAT,spelling,HIGH,N
+More Than 2,2,"How many pints I got with me, more than two (aye)",How,3,"How much money do I make, more than you (aye)",How,INNER,REPEAT,spelling,HIGH,N
+More Than 2,2,"How many pints I got with me, more than two (aye)",more,3,"How much money do I make, more than you (aye)",more,INNER,REPEAT,spelling,HIGH,N
+More Than 2,2,"How many pints I got with me, more than two (aye)",pints,4,That's why your bitch with me and she ain't with you (aye),why,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,2,"How many pints I got with me, more than two (aye)",two,5,"How many chains do I got, more than two (aye)",two,END,REPEAT,spelling,HIGH,N
+More Than 2,3,"How much money do I make, more than you (aye)",much,3,"How much money do I make, more than you (aye)",money,INNER,SLANT,cmu,MED,Y
+More Than 2,3,"How much money do I make, more than you (aye)",make,4,That's why your bitch with me and she ain't with you (aye),ain't,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,3,"How much money do I make, more than you (aye)",How,5,"How many chains do I got, more than two (aye)",How,INNER,REPEAT,spelling,HIGH,N
+More Than 2,3,"How much money do I make, more than you (aye)",make,5,"How many chains do I got, more than two (aye)",chains,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,3,"How much money do I make, more than you (aye)",more,5,"How many chains do I got, more than two (aye)",more,INNER,REPEAT,spelling,HIGH,N
+More Than 2,3,"How much money do I make, more than you (aye)",more,6,"How many square feet do I got, more than you (aye)",more,END,REPEAT,spelling,HIGH,N
+More Than 2,4,That's why your bitch with me and she ain't with you (aye),ain't,5,"How many chains do I got, more than two (aye)",chains,INNER,SLANT,cmu,MED,Y
+More Than 2,5,"How many chains do I got, more than two (aye)",got,6,"How many square feet do I got, more than you (aye)",got,INNER,REPEAT,spelling,HIGH,N
+More Than 2,5,"How many chains do I got, more than two (aye)",How,6,"How many square feet do I got, more than you (aye)",How,INNER,REPEAT,spelling,HIGH,N
+More Than 2,5,"How many chains do I got, more than two (aye)",many,6,"How many square feet do I got, more than you (aye)",many,INNER,REPEAT,spelling,HIGH,N
+More Than 2,5,"How many chains do I got, more than two (aye)",many,6,"How many square feet do I got, more than you (aye)",square,INNER,SLANT,cmu,MED,Y
+More Than 2,5,"How many chains do I got, more than two (aye)",more,6,"How many square feet do I got, more than you (aye)",more,INNER,REPEAT,spelling,HIGH,N
+More Than 2,5,"How many chains do I got, more than two (aye)",two,7,"How many cars do I got, more than two (aye)",two,END,REPEAT,spelling,HIGH,N
+More Than 2,5,"How many chains do I got, more than two (aye)",got,7,"How many cars do I got, more than two (aye)",cars,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,5,"How many chains do I got, more than two (aye)",got,7,"How many cars do I got, more than two (aye)",got,INNER,REPEAT,spelling,HIGH,N
+More Than 2,5,"How many chains do I got, more than two (aye)",How,7,"How many cars do I got, more than two (aye)",How,INNER,REPEAT,spelling,HIGH,N
+More Than 2,5,"How many chains do I got, more than two (aye)",many,7,"How many cars do I got, more than two (aye)",many,INNER,REPEAT,spelling,HIGH,N
+More Than 2,5,"How many chains do I got, more than two (aye)",more,7,"How many cars do I got, more than two (aye)",more,INNER,REPEAT,spelling,HIGH,N
+More Than 2,5,"How many chains do I got, more than two (aye)",two,9,Bitch went and told me she wanted some soup,soup,END,ASSONANCE,vowel,MED,Y
+More Than 2,6,"How many square feet do I got, more than you (aye)",many,6,"How many square feet do I got, more than you (aye)",square,INNER,SLANT,cmu,MED,Y
+More Than 2,6,"How many square feet do I got, more than you (aye)",got,7,"How many cars do I got, more than two (aye)",cars,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,6,"How many square feet do I got, more than you (aye)",got,7,"How many cars do I got, more than two (aye)",got,INNER,REPEAT,spelling,HIGH,N
+More Than 2,6,"How many square feet do I got, more than you (aye)",How,7,"How many cars do I got, more than two (aye)",How,INNER,REPEAT,spelling,HIGH,N
+More Than 2,6,"How many square feet do I got, more than you (aye)",many,7,"How many cars do I got, more than two (aye)",many,INNER,REPEAT,spelling,HIGH,N
+More Than 2,6,"How many square feet do I got, more than you (aye)",more,7,"How many cars do I got, more than two (aye)",more,INNER,REPEAT,spelling,HIGH,N
+More Than 2,6,"How many square feet do I got, more than you (aye)",square,7,"How many cars do I got, more than two (aye)",many,INNER,SLANT,cmu,MED,Y
+More Than 2,6,"How many square feet do I got, more than you (aye)",more,8,"How many hits do I make, more than you (aye)",more,END,REPEAT,spelling,HIGH,N
+More Than 2,6,"How many square feet do I got, more than you (aye)",How,8,"How many hits do I make, more than you (aye)",How,INNER,REPEAT,spelling,HIGH,N
+More Than 2,6,"How many square feet do I got, more than you (aye)",many,8,"How many hits do I make, more than you (aye)",many,INNER,REPEAT,spelling,HIGH,N
+More Than 2,6,"How many square feet do I got, more than you (aye)",square,8,"How many hits do I make, more than you (aye)",many,INNER,SLANT,cmu,MED,Y
+More Than 2,7,"How many cars do I got, more than two (aye)",cars,7,"How many cars do I got, more than two (aye)",got,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,7,"How many cars do I got, more than two (aye)",How,8,"How many hits do I make, more than you (aye)",How,INNER,REPEAT,spelling,HIGH,N
+More Than 2,7,"How many cars do I got, more than two (aye)",many,8,"How many hits do I make, more than you (aye)",many,INNER,REPEAT,spelling,HIGH,N
+More Than 2,7,"How many cars do I got, more than two (aye)",more,8,"How many hits do I make, more than you (aye)",more,INNER,REPEAT,spelling,HIGH,N
+More Than 2,7,"How many cars do I got, more than two (aye)",two,9,Bitch went and told me she wanted some soup,soup,END,ASSONANCE,vowel,MED,Y
+More Than 2,7,"How many cars do I got, more than two (aye)",many,9,Bitch went and told me she wanted some soup,went,INNER,SLANT,cmu,MED,Y
+More Than 2,7,"How many cars do I got, more than two (aye)",more,9,Bitch went and told me she wanted some soup,wanted,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,7,"How many cars do I got, more than two (aye)",two,10,"I told the bitch, suck my dick and she may get some juice",juice,END,ASSONANCE,vowel,MED,Y
+More Than 2,7,"How many cars do I got, more than two (aye)",two,11,And if she do not suck my dick she may a get a boot,boot,END,ASSONANCE,vowel,MED,Y
+More Than 2,8,"How many hits do I make, more than you (aye)",hits,9,Bitch went and told me she wanted some soup,Bitch,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,8,"How many hits do I make, more than you (aye)",many,9,Bitch went and told me she wanted some soup,went,INNER,SLANT,cmu,MED,Y
+More Than 2,8,"How many hits do I make, more than you (aye)",more,9,Bitch went and told me she wanted some soup,wanted,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,8,"How many hits do I make, more than you (aye)",hits,10,"I told the bitch, suck my dick and she may get some juice",bitch,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,8,"How many hits do I make, more than you (aye)",hits,10,"I told the bitch, suck my dick and she may get some juice",dick,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,8,"How many hits do I make, more than you (aye)",make,10,"I told the bitch, suck my dick and she may get some juice",may,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,8,"How many hits do I make, more than you (aye)",many,10,"I told the bitch, suck my dick and she may get some juice",get,INNER,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,soup,10,"I told the bitch, suck my dick and she may get some juice",juice,END,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,Bitch,10,"I told the bitch, suck my dick and she may get some juice",bitch,INNER,REPEAT,spelling,HIGH,N
+More Than 2,9,Bitch went and told me she wanted some soup,Bitch,10,"I told the bitch, suck my dick and she may get some juice",dick,INNER,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,some,10,"I told the bitch, suck my dick and she may get some juice",some,INNER,REPEAT,spelling,HIGH,N
+More Than 2,9,Bitch went and told me she wanted some soup,some,10,"I told the bitch, suck my dick and she may get some juice",suck,INNER,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,told,10,"I told the bitch, suck my dick and she may get some juice",told,INNER,REPEAT,spelling,HIGH,N
+More Than 2,9,Bitch went and told me she wanted some soup,went,10,"I told the bitch, suck my dick and she may get some juice",get,INNER,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,soup,11,And if she do not suck my dick she may a get a boot,boot,END,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,Bitch,11,And if she do not suck my dick she may a get a boot,dick,INNER,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,some,11,And if she do not suck my dick she may a get a boot,suck,INNER,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,went,11,And if she do not suck my dick she may a get a boot,get,INNER,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,soup,12,"I own a lot, I tired of drop tops, man I need a roof",roof,END,SLANT,cmu,MED,Y
+More Than 2,9,Bitch went and told me she wanted some soup,soup,13,Went it my pocket pulled out ten thousand then times two,two,END,ASSONANCE,vowel,MED,Y
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",bitch,10,"I told the bitch, suck my dick and she may get some juice",dick,INNER,SLANT,cmu,MED,Y
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",suck,10,"I told the bitch, suck my dick and she may get some juice",some,INNER,SLANT,cmu,MED,Y
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",juice,11,And if she do not suck my dick she may a get a boot,boot,END,SLANT,cmu,MED,Y
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",bitch,11,And if she do not suck my dick she may a get a boot,dick,INNER,SLANT,cmu,MED,Y
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",dick,11,And if she do not suck my dick she may a get a boot,dick,INNER,REPEAT,spelling,HIGH,N
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",get,11,And if she do not suck my dick she may a get a boot,get,INNER,REPEAT,spelling,HIGH,N
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",may,11,And if she do not suck my dick she may a get a boot,may,INNER,REPEAT,spelling,HIGH,N
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",some,11,And if she do not suck my dick she may a get a boot,suck,INNER,SLANT,cmu,MED,Y
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",suck,11,And if she do not suck my dick she may a get a boot,suck,INNER,REPEAT,spelling,HIGH,N
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",juice,12,"I own a lot, I tired of drop tops, man I need a roof",roof,END,SLANT,cmu,MED,Y
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",told,12,"I own a lot, I tired of drop tops, man I need a roof",own,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,10,"I told the bitch, suck my dick and she may get some juice",juice,13,Went it my pocket pulled out ten thousand then times two,two,END,ASSONANCE,vowel,MED,Y
+More Than 2,11,And if she do not suck my dick she may a get a boot,boot,12,"I own a lot, I tired of drop tops, man I need a roof",roof,END,SLANT,cmu,MED,Y
+More Than 2,11,And if she do not suck my dick she may a get a boot,not,12,"I own a lot, I tired of drop tops, man I need a roof",drop,INNER,SLANT,cmu,MED,Y
+More Than 2,11,And if she do not suck my dick she may a get a boot,not,12,"I own a lot, I tired of drop tops, man I need a roof",lot,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,11,And if she do not suck my dick she may a get a boot,not,12,"I own a lot, I tired of drop tops, man I need a roof",tops,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,11,And if she do not suck my dick she may a get a boot,boot,13,Went it my pocket pulled out ten thousand then times two,two,END,ASSONANCE,vowel,MED,Y
+More Than 2,11,And if she do not suck my dick she may a get a boot,get,13,Went it my pocket pulled out ten thousand then times two,ten,INNER,SLANT,cmu,MED,Y
+More Than 2,11,And if she do not suck my dick she may a get a boot,get,13,Went it my pocket pulled out ten thousand then times two,Went,INNER,SLANT,cmu,MED,Y
+More Than 2,11,And if she do not suck my dick she may a get a boot,not,13,Went it my pocket pulled out ten thousand then times two,pocket,INNER,SLANT,cmu,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",drop,12,"I own a lot, I tired of drop tops, man I need a roof",tops,INNER,SLANT,cmu,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",lot,12,"I own a lot, I tired of drop tops, man I need a roof",drop,INNER,SLANT,cmu,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",lot,12,"I own a lot, I tired of drop tops, man I need a roof",tops,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",roof,13,Went it my pocket pulled out ten thousand then times two,two,END,ASSONANCE,vowel,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",drop,13,Went it my pocket pulled out ten thousand then times two,pocket,INNER,SLANT,cmu,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",lot,13,Went it my pocket pulled out ten thousand then times two,pocket,INNER,SLANT,cmu,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",tired,13,Went it my pocket pulled out ten thousand then times two,times,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",tops,13,Went it my pocket pulled out ten thousand then times two,pocket,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",drop,14,It's up to me to up this Glock and catch it that's down to you,Glock,INNER,SLANT,cmu,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",lot,14,It's up to me to up this Glock and catch it that's down to you,Glock,INNER,SLANT,cmu,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",man,14,It's up to me to up this Glock and catch it that's down to you,catch,INNER,SLANT,cmu,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",own,14,It's up to me to up this Glock and catch it that's down to you,down,INNER,SLANT,spelling,LOW,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",tops,14,It's up to me to up this Glock and catch it that's down to you,Glock,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,12,"I own a lot, I tired of drop tops, man I need a roof",roof,16,"She told me, she love me, but we know that is not the truth",truth,END,SLANT,cmu,MED,Y
+More Than 2,13,Went it my pocket pulled out ten thousand then times two,Went,13,Went it my pocket pulled out ten thousand then times two,ten,INNER,SLANT,cmu,MED,Y
+More Than 2,13,Went it my pocket pulled out ten thousand then times two,pocket,14,It's up to me to up this Glock and catch it that's down to you,Glock,INNER,SLANT,cmu,MED,Y
+More Than 2,13,Went it my pocket pulled out ten thousand then times two,thousand,14,It's up to me to up this Glock and catch it that's down to you,down,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,13,Went it my pocket pulled out ten thousand then times two,thousand,15,"I fucked that bitch, since I'm done I pass her ass down to you",down,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,13,Went it my pocket pulled out ten thousand then times two,two,16,"She told me, she love me, but we know that is not the truth",truth,END,ASSONANCE,vowel,MED,Y
+More Than 2,14,It's up to me to up this Glock and catch it that's down to you,down,15,"I fucked that bitch, since I'm done I pass her ass down to you",down,END,REPEAT,spelling,HIGH,N
+More Than 2,14,It's up to me to up this Glock and catch it that's down to you,catch,15,"I fucked that bitch, since I'm done I pass her ass down to you",ass,INNER,SLANT,cmu,MED,Y
+More Than 2,14,It's up to me to up this Glock and catch it that's down to you,catch,15,"I fucked that bitch, since I'm done I pass her ass down to you",pass,INNER,SLANT,cmu,MED,Y
+More Than 2,14,It's up to me to up this Glock and catch it that's down to you,Glock,16,"She told me, she love me, but we know that is not the truth",not,INNER,SLANT,cmu,MED,Y
+More Than 2,15,"I fucked that bitch, since I'm done I pass her ass down to you",bitch,15,"I fucked that bitch, since I'm done I pass her ass down to you",since,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,15,"I fucked that bitch, since I'm done I pass her ass down to you",fucked,15,"I fucked that bitch, since I'm done I pass her ass down to you",done,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,15,"I fucked that bitch, since I'm done I pass her ass down to you",pass,15,"I fucked that bitch, since I'm done I pass her ass down to you",ass,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,15,"I fucked that bitch, since I'm done I pass her ass down to you",done,16,"She told me, she love me, but we know that is not the truth",love,INNER,SLANT,cmu,MED,Y
+More Than 2,15,"I fucked that bitch, since I'm done I pass her ass down to you",fucked,16,"She told me, she love me, but we know that is not the truth",love,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,15,"I fucked that bitch, since I'm done I pass her ass down to you",ass,17,"E-I-G-G, everything is Glo Gang",Gang,INNER,SLANT,cmu,MED,Y
+More Than 2,15,"I fucked that bitch, since I'm done I pass her ass down to you",bitch,17,"E-I-G-G, everything is Glo Gang",everything,INNER,SLANT,cmu,MED,Y
+More Than 2,15,"I fucked that bitch, since I'm done I pass her ass down to you",pass,17,"E-I-G-G, everything is Glo Gang",Gang,INNER,SLANT,cmu,MED,Y
+More Than 2,15,"I fucked that bitch, since I'm done I pass her ass down to you",since,17,"E-I-G-G, everything is Glo Gang",everything,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,16,"She told me, she love me, but we know that is not the truth",told,16,"She told me, she love me, but we know that is not the truth",know,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,16,"She told me, she love me, but we know that is not the truth",know,17,"E-I-G-G, everything is Glo Gang",Glo,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,16,"She told me, she love me, but we know that is not the truth",told,17,"E-I-G-G, everything is Glo Gang",Glo,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,16,"She told me, she love me, but we know that is not the truth",know,18,When I hop up out the car the people know that the show came,know,INNER,REPEAT,spelling,HIGH,N
+More Than 2,16,"She told me, she love me, but we know that is not the truth",know,18,When I hop up out the car the people know that the show came,show,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,16,"She told me, she love me, but we know that is not the truth",not,18,When I hop up out the car the people know that the show came,car,INNER,SLANT,cmu,MED,Y
+More Than 2,16,"She told me, she love me, but we know that is not the truth",not,18,When I hop up out the car the people know that the show came,hop,INNER,SLANT,cmu,MED,Y
+More Than 2,16,"She told me, she love me, but we know that is not the truth",told,18,When I hop up out the car the people know that the show came,know,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,16,"She told me, she love me, but we know that is not the truth",told,18,When I hop up out the car the people know that the show came,show,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,17,"E-I-G-G, everything is Glo Gang",E,17,"E-I-G-G, everything is Glo Gang",G,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,17,"E-I-G-G, everything is Glo Gang",G,17,"E-I-G-G, everything is Glo Gang",G,INNER,REPEAT,spelling,HIGH,N
+More Than 2,17,"E-I-G-G, everything is Glo Gang",E,18,When I hop up out the car the people know that the show came,people,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,17,"E-I-G-G, everything is Glo Gang",G,18,When I hop up out the car the people know that the show came,people,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,17,"E-I-G-G, everything is Glo Gang",Glo,18,When I hop up out the car the people know that the show came,know,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,17,"E-I-G-G, everything is Glo Gang",Glo,18,When I hop up out the car the people know that the show came,show,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,17,"E-I-G-G, everything is Glo Gang",everything,19,"I ain't going off the lot, getting that shit at the showcase",shit,INNER,SLANT,cmu,MED,Y
+More Than 2,17,"E-I-G-G, everything is Glo Gang",Gang,19,"I ain't going off the lot, getting that shit at the showcase",going,INNER,SLANT,spelling,LOW,Y
+More Than 2,17,"E-I-G-G, everything is Glo Gang",Glo,19,"I ain't going off the lot, getting that shit at the showcase",going,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,hop,18,When I hop up out the car the people know that the show came,car,INNER,SLANT,cmu,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,know,18,When I hop up out the car the people know that the show came,show,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,18,When I hop up out the car the people know that the show came,came,19,"I ain't going off the lot, getting that shit at the showcase",showcase,END,SLANT,cmu,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,came,19,"I ain't going off the lot, getting that shit at the showcase",ain't,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,car,19,"I ain't going off the lot, getting that shit at the showcase",lot,INNER,SLANT,cmu,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,hop,19,"I ain't going off the lot, getting that shit at the showcase",lot,INNER,SLANT,cmu,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,know,19,"I ain't going off the lot, getting that shit at the showcase",going,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,show,19,"I ain't going off the lot, getting that shit at the showcase",going,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,When,19,"I ain't going off the lot, getting that shit at the showcase",getting,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,came,20,"Send my boys to get you, bet the cases have no face",face,END,SLANT,cmu,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,came,20,"Send my boys to get you, bet the cases have no face",cases,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,know,20,"Send my boys to get you, bet the cases have no face",no,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,18,When I hop up out the car the people know that the show came,show,20,"Send my boys to get you, bet the cases have no face",no,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,18,When I hop up out the car the people know that the show came,When,20,"Send my boys to get you, bet the cases have no face",bet,INNER,SLANT,cmu,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,When,20,"Send my boys to get you, bet the cases have no face",get,INNER,SLANT,cmu,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,When,20,"Send my boys to get you, bet the cases have no face",Send,INNER,SLANT,cmu,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,came,21,"I'm in a fast car, you're lil ass in the slow lane",lane,END,SLANT,cmu,MED,Y
+More Than 2,18,When I hop up out the car the people know that the show came,came,22,"If I put that bitch in cruise control, you still in a slow pace",pace,END,SLANT,cmu,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",ain't,19,"I ain't going off the lot, getting that shit at the showcase",showcase,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",showcase,20,"Send my boys to get you, bet the cases have no face",face,END,PERFECT,cmu,HIGH,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",ain't,20,"Send my boys to get you, bet the cases have no face",cases,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",ain't,20,"Send my boys to get you, bet the cases have no face",face,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",getting,20,"Send my boys to get you, bet the cases have no face",bet,INNER,SLANT,cmu,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",getting,20,"Send my boys to get you, bet the cases have no face",get,INNER,SLANT,cmu,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",getting,20,"Send my boys to get you, bet the cases have no face",Send,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",going,20,"Send my boys to get you, bet the cases have no face",no,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",showcase,20,"Send my boys to get you, bet the cases have no face",cases,INNER,SLANT,cmu,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",showcase,21,"I'm in a fast car, you're lil ass in the slow lane",lane,END,SLANT,cmu,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",ain't,21,"I'm in a fast car, you're lil ass in the slow lane",lane,INNER,SLANT,cmu,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",going,21,"I'm in a fast car, you're lil ass in the slow lane",slow,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",lot,21,"I'm in a fast car, you're lil ass in the slow lane",car,INNER,SLANT,cmu,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",shit,21,"I'm in a fast car, you're lil ass in the slow lane",lil,INNER,SLANT,cmu,MED,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",showcase,22,"If I put that bitch in cruise control, you still in a slow pace",pace,END,PERFECT,cmu,HIGH,Y
+More Than 2,19,"I ain't going off the lot, getting that shit at the showcase",showcase,23,"Hopped up out the car, it's like I'm killing the door game",game,END,SLANT,cmu,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",cases,20,"Send my boys to get you, bet the cases have no face",face,INNER,SLANT,cmu,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",get,20,"Send my boys to get you, bet the cases have no face",bet,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",Send,20,"Send my boys to get you, bet the cases have no face",bet,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",Send,20,"Send my boys to get you, bet the cases have no face",get,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",face,21,"I'm in a fast car, you're lil ass in the slow lane",lane,END,SLANT,cmu,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",cases,21,"I'm in a fast car, you're lil ass in the slow lane",lane,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",have,21,"I'm in a fast car, you're lil ass in the slow lane",ass,INNER,SLANT,cmu,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",have,21,"I'm in a fast car, you're lil ass in the slow lane",fast,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",no,21,"I'm in a fast car, you're lil ass in the slow lane",slow,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",face,22,"If I put that bitch in cruise control, you still in a slow pace",pace,END,PERFECT,cmu,HIGH,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",cases,22,"If I put that bitch in cruise control, you still in a slow pace",pace,INNER,SLANT,cmu,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",no,22,"If I put that bitch in cruise control, you still in a slow pace",control,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",no,22,"If I put that bitch in cruise control, you still in a slow pace",slow,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",face,23,"Hopped up out the car, it's like I'm killing the door game",game,END,SLANT,cmu,MED,Y
+More Than 2,20,"Send my boys to get you, bet the cases have no face",face,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",name,END,SLANT,cmu,MED,Y
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",fast,21,"I'm in a fast car, you're lil ass in the slow lane",ass,INNER,SLANT,cmu,MED,Y
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",lane,22,"If I put that bitch in cruise control, you still in a slow pace",pace,END,SLANT,cmu,MED,Y
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",lil,22,"If I put that bitch in cruise control, you still in a slow pace",bitch,INNER,SLANT,cmu,MED,Y
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",lil,22,"If I put that bitch in cruise control, you still in a slow pace",still,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",slow,22,"If I put that bitch in cruise control, you still in a slow pace",control,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",slow,22,"If I put that bitch in cruise control, you still in a slow pace",slow,INNER,REPEAT,spelling,HIGH,N
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",lane,23,"Hopped up out the car, it's like I'm killing the door game",game,END,SLANT,cmu,MED,Y
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",car,23,"Hopped up out the car, it's like I'm killing the door game",car,INNER,REPEAT,spelling,HIGH,N
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",car,23,"Hopped up out the car, it's like I'm killing the door game",Hopped,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",lil,23,"Hopped up out the car, it's like I'm killing the door game",killing,INNER,SLANT,cmu,MED,Y
+More Than 2,21,"I'm in a fast car, you're lil ass in the slow lane",lane,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",name,END,SLANT,cmu,MED,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",bitch,22,"If I put that bitch in cruise control, you still in a slow pace",still,INNER,SLANT,cmu,MED,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",control,22,"If I put that bitch in cruise control, you still in a slow pace",slow,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",pace,23,"Hopped up out the car, it's like I'm killing the door game",game,END,SLANT,cmu,MED,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",bitch,23,"Hopped up out the car, it's like I'm killing the door game",killing,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",still,23,"Hopped up out the car, it's like I'm killing the door game",killing,INNER,SLANT,cmu,MED,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",pace,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",name,END,SLANT,cmu,MED,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",control,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",no,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",pace,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",ain't,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",slow,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",no,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,22,"If I put that bitch in cruise control, you still in a slow pace",pace,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",name,END,SLANT,cmu,MED,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",Hopped,23,"Hopped up out the car, it's like I'm killing the door game",car,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",game,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",name,END,PERFECT,cmu,HIGH,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",car,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",got,INNER,SLANT,cmu,MED,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",game,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",ain't,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",Hopped,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",got,INNER,SLANT,cmu,MED,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",like,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",like,INNER,REPEAT,spelling,HIGH,N
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",game,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Wayne,INNER,SLANT,cmu,MED,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",killing,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",bitch,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",killing,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Lil,INNER,SLANT,cmu,MED,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",game,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",name,END,PERFECT,cmu,HIGH,Y
+More Than 2,23,"Hopped up out the car, it's like I'm killing the door game",game,27,I was rolling up some Tooka then some more fucking dope came,came,END,PERFECT,cmu,HIGH,Y
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",ain't,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",name,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",Chief,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",Keef,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",like,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",like,INNER,REPEAT,spelling,HIGH,N
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",ain't,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Wayne,INNER,SLANT,cmu,MED,Y
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",name,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Wayne,INNER,SLANT,cmu,MED,Y
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",no,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Glo,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",name,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",name,END,REPEAT,spelling,HIGH,N
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",ain't,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",brain,INNER,SLANT,cmu,MED,Y
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",ain't,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",name,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",like,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",like,INNER,REPEAT,spelling,HIGH,N
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",name,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",brain,INNER,SLANT,cmu,MED,Y
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",no,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",no,INNER,REPEAT,spelling,HIGH,N
+More Than 2,24,"They like ""is you Chief Keef"", I'm like ""I ain't got no name""",name,27,I was rolling up some Tooka then some more fucking dope came,came,END,PERFECT,cmu,HIGH,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Lil,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",bitch,INNER,SLANT,cmu,MED,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",bitch,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",bitch,INNER,REPEAT,spelling,HIGH,N
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",bitch,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",give,INNER,SLANT,cmu,MED,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Glo,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",no,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Lil,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",bitch,INNER,SLANT,cmu,MED,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Lil,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",give,INNER,SLANT,cmu,MED,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Wayne,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",brain,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Wayne,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",name,INNER,SLANT,cmu,MED,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Glo,27,I was rolling up some Tooka then some more fucking dope came,dope,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Glo,27,I was rolling up some Tooka then some more fucking dope came,rolling,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,25,"It's a bird, it's Lil Wayne, nah bitch it's Glo Gang",Wayne,27,I was rolling up some Tooka then some more fucking dope came,came,INNER,SLANT,cmu,MED,Y
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",brain,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",name,INNER,SLANT,cmu,MED,Y
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",give,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",bitch,INNER,SLANT,cmu,MED,Y
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",name,27,I was rolling up some Tooka then some more fucking dope came,came,END,PERFECT,cmu,HIGH,Y
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",brain,27,I was rolling up some Tooka then some more fucking dope came,came,INNER,SLANT,cmu,MED,Y
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",no,27,I was rolling up some Tooka then some more fucking dope came,dope,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",no,27,I was rolling up some Tooka then some more fucking dope came,rolling,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",bitch,28,"So I'm finna let my windows down, he like I'm so glow",windows,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",give,28,"So I'm finna let my windows down, he like I'm so glow",windows,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",let,28,"So I'm finna let my windows down, he like I'm so glow",let,INNER,REPEAT,spelling,HIGH,N
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",like,28,"So I'm finna let my windows down, he like I'm so glow",like,INNER,REPEAT,spelling,HIGH,N
+More Than 2,26,"She like ""let me give you brain"", ""nah bitch you is a no name""",no,28,"So I'm finna let my windows down, he like I'm so glow",glow,INNER,PERFECT,cmu,HIGH,Y
+More Than 2,27,I was rolling up some Tooka then some more fucking dope came,rolling,27,I was rolling up some Tooka then some more fucking dope came,dope,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,27,I was rolling up some Tooka then some more fucking dope came,some,27,I was rolling up some Tooka then some more fucking dope came,fucking,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,27,I was rolling up some Tooka then some more fucking dope came,some,27,I was rolling up some Tooka then some more fucking dope came,some,INNER,REPEAT,spelling,HIGH,N
+More Than 2,27,I was rolling up some Tooka then some more fucking dope came,dope,28,"So I'm finna let my windows down, he like I'm so glow",glow,INNER,ASSONANCE,vowel,MED,Y
+More Than 2,27,I was rolling up some Tooka then some more fucking dope came,rolling,28,"So I'm finna let my windows down, he like I'm so glow",glow,INNER,ASSONANCE,vowel,MED,Y
