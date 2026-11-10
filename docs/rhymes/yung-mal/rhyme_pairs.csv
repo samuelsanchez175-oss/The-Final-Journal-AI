@@ -1,0 +1,501 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Wassup With Me,1,They tryna figure out what's up with me,what's,2,"Shit, you know what's up with me",what's,END,REPEAT,spelling,HIGH,N
+Wassup With Me,1,They tryna figure out what's up with me,figure,2,"Shit, you know what's up with me",Shit,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,1,They tryna figure out what's up with me,what's,3,"Shit ain't like it was, from the slums, shit was ugly",ugly,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,1,They tryna figure out what's up with me,figure,3,"Shit ain't like it was, from the slums, shit was ugly",Shit,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,1,They tryna figure out what's up with me,what's,3,"Shit ain't like it was, from the slums, shit was ugly",slums,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,2,"Shit, you know what's up with me",what's,3,"Shit ain't like it was, from the slums, shit was ugly",ugly,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,2,"Shit, you know what's up with me",Shit,3,"Shit ain't like it was, from the slums, shit was ugly",Shit,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,2,"Shit, you know what's up with me",what's,3,"Shit ain't like it was, from the slums, shit was ugly",slums,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,2,"Shit, you know what's up with me",what's,4,Now I'm in another league,another,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,3,"Shit ain't like it was, from the slums, shit was ugly",Shit,3,"Shit ain't like it was, from the slums, shit was ugly",shit,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,3,"Shit ain't like it was, from the slums, shit was ugly",slums,3,"Shit ain't like it was, from the slums, shit was ugly",ugly,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,3,"Shit ain't like it was, from the slums, shit was ugly",slums,4,Now I'm in another league,another,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,3,"Shit ain't like it was, from the slums, shit was ugly",ugly,4,Now I'm in another league,another,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,4,Now I'm in another league,league,5,"I'm not Herbo, but I keep it G",G,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,4,Now I'm in another league,league,5,"I'm not Herbo, but I keep it G",keep,INNER,SLANT,cmu,MED,Y
+Wassup With Me,4,Now I'm in another league,league,6,"Swervin', hit the curb in that Benz, boy, I'm super geeked",geeked,END,SLANT,spelling,LOW,Y
+Wassup With Me,4,Now I'm in another league,league,7,"Had to earn my stripes, no Adidas",Adidas,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,4,Now I'm in another league,league,8,"If they try, I get even",even,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,5,"I'm not Herbo, but I keep it G",keep,5,"I'm not Herbo, but I keep it G",G,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,5,"I'm not Herbo, but I keep it G",Herbo,6,"Swervin', hit the curb in that Benz, boy, I'm super geeked",curb,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,5,"I'm not Herbo, but I keep it G",keep,6,"Swervin', hit the curb in that Benz, boy, I'm super geeked",geeked,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,5,"I'm not Herbo, but I keep it G",G,7,"Had to earn my stripes, no Adidas",Adidas,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,5,"I'm not Herbo, but I keep it G",Herbo,7,"Had to earn my stripes, no Adidas",earn,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,5,"I'm not Herbo, but I keep it G",Herbo,7,"Had to earn my stripes, no Adidas",no,INNER,ASSONANCE,vowel,LOW,N
+Wassup With Me,5,"I'm not Herbo, but I keep it G",keep,7,"Had to earn my stripes, no Adidas",Adidas,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,5,"I'm not Herbo, but I keep it G",G,8,"If they try, I get even",even,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,5,"I'm not Herbo, but I keep it G",G,9,"On a whole 'nother level, me and niggas, we not equal",equal,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,6,"Swervin', hit the curb in that Benz, boy, I'm super geeked",curb,7,"Had to earn my stripes, no Adidas",earn,INNER,SLANT,cmu,MED,Y
+Wassup With Me,6,"Swervin', hit the curb in that Benz, boy, I'm super geeked",Swervin,7,"Had to earn my stripes, no Adidas",earn,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,6,"Swervin', hit the curb in that Benz, boy, I'm super geeked",geeked,8,"If they try, I get even",even,END,ASSONANCE,vowel,LOW,N
+Wassup With Me,6,"Swervin', hit the curb in that Benz, boy, I'm super geeked",Benz,8,"If they try, I get even",get,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,6,"Swervin', hit the curb in that Benz, boy, I'm super geeked",Swervin,8,"If they try, I get even",even,INNER,PERFECT,spelling,MED,Y
+Wassup With Me,6,"Swervin', hit the curb in that Benz, boy, I'm super geeked",geeked,10,"I tried to help some people, even gave my last to people",people,END,ASSONANCE,vowel,LOW,N
+Wassup With Me,7,"Had to earn my stripes, no Adidas",Adidas,8,"If they try, I get even",even,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,7,"Had to earn my stripes, no Adidas",stripes,8,"If they try, I get even",try,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,7,"Had to earn my stripes, no Adidas",Adidas,9,"On a whole 'nother level, me and niggas, we not equal",equal,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,7,"Had to earn my stripes, no Adidas",Adidas,9,"On a whole 'nother level, me and niggas, we not equal",niggas,INNER,PERFECT,spelling,MED,Y
+Wassup With Me,7,"Had to earn my stripes, no Adidas",no,9,"On a whole 'nother level, me and niggas, we not equal",whole,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,7,"Had to earn my stripes, no Adidas",Adidas,10,"I tried to help some people, even gave my last to people",people,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,8,"If they try, I get even",even,9,"On a whole 'nother level, me and niggas, we not equal",equal,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,8,"If they try, I get even",get,9,"On a whole 'nother level, me and niggas, we not equal",level,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,8,"If they try, I get even",even,10,"I tried to help some people, even gave my last to people",people,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,8,"If they try, I get even",even,10,"I tried to help some people, even gave my last to people",even,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,8,"If they try, I get even",even,10,"I tried to help some people, even gave my last to people",people,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,8,"If they try, I get even",get,10,"I tried to help some people, even gave my last to people",help,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,8,"If they try, I get even",try,10,"I tried to help some people, even gave my last to people",tried,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,8,"If they try, I get even",even,12,Got more money than all my teachers,teachers,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",equal,10,"I tried to help some people, even gave my last to people",people,END,SLANT,cmu,MED,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",'nother,10,"I tried to help some people, even gave my last to people",some,INNER,SLANT,cmu,MED,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",equal,10,"I tried to help some people, even gave my last to people",even,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",equal,10,"I tried to help some people, even gave my last to people",people,INNER,SLANT,cmu,MED,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",level,10,"I tried to help some people, even gave my last to people",help,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",level,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",peopl,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",niggas,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",ass,INNER,PERFECT,spelling,MED,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",whole,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",only,INNER,SLANT,cmu,MED,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",equal,12,Got more money than all my teachers,teachers,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,9,"On a whole 'nother level, me and niggas, we not equal",equal,13,"Late night, my young niggas, they be creepin'",creepin,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",even,10,"I tried to help some people, even gave my last to people",people,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",people,10,"I tried to help some people, even gave my last to people",even,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",people,10,"I tried to help some people, even gave my last to people",people,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,10,"I tried to help some people, even gave my last to people",people,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",peopl,END,SLANT,spelling,LOW,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",last,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",ass,INNER,SLANT,cmu,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",last,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",back,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",last,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",laugh,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",people,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",peopl,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",tried,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",why,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",people,12,Got more money than all my teachers,teachers,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",even,12,Got more money than all my teachers,teachers,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",people,12,Got more money than all my teachers,teachers,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",some,12,Got more money than all my teachers,money,INNER,SLANT,cmu,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",people,13,"Late night, my young niggas, they be creepin'",creepin,END,SLANT,cmu,MED,Y
+Wassup With Me,10,"I tried to help some people, even gave my last to people",people,14,"Get right, lil' nigga, boy, you better keep that heater",heater,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",ass,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",back,INNER,SLANT,cmu,MED,Y
+Wassup With Me,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",ass,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",laugh,INNER,SLANT,cmu,MED,Y
+Wassup With Me,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",back,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",laugh,INNER,SLANT,cmu,MED,Y
+Wassup With Me,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",giv,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",kiss,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",giv,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",sit,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",kiss,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",sit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,11,"They only givе me they ass to kiss, that's why I sit back and laugh at peoplе",why,13,"Late night, my young niggas, they be creepin'",night,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,12,Got more money than all my teachers,more,12,Got more money than all my teachers,all,INNER,SLANT,cmu,MED,Y
+Wassup With Me,12,Got more money than all my teachers,teachers,13,"Late night, my young niggas, they be creepin'",creepin,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,12,Got more money than all my teachers,money,13,"Late night, my young niggas, they be creepin'",young,INNER,SLANT,cmu,MED,Y
+Wassup With Me,12,Got more money than all my teachers,teachers,14,"Get right, lil' nigga, boy, you better keep that heater",heater,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,12,Got more money than all my teachers,teachers,14,"Get right, lil' nigga, boy, you better keep that heater",keep,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,12,Got more money than all my teachers,teachers,15,"Fuck a bitch, then leave her, swear to God I never ever need her",need,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,12,Got more money than all my teachers,teachers,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Creepers,END,PERFECT,spelling,MED,Y
+Wassup With Me,13,"Late night, my young niggas, they be creepin'",creepin,14,"Get right, lil' nigga, boy, you better keep that heater",heater,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,13,"Late night, my young niggas, they be creepin'",creepin,14,"Get right, lil' nigga, boy, you better keep that heater",keep,INNER,SLANT,cmu,MED,Y
+Wassup With Me,13,"Late night, my young niggas, they be creepin'",niggas,14,"Get right, lil' nigga, boy, you better keep that heater",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,13,"Late night, my young niggas, they be creepin'",night,14,"Get right, lil' nigga, boy, you better keep that heater",right,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,13,"Late night, my young niggas, they be creepin'",creepin,15,"Fuck a bitch, then leave her, swear to God I never ever need her",need,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,13,"Late night, my young niggas, they be creepin'",creepin,15,"Fuck a bitch, then leave her, swear to God I never ever need her",leave,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,13,"Late night, my young niggas, they be creepin'",young,15,"Fuck a bitch, then leave her, swear to God I never ever need her",Fuck,INNER,SLANT,cmu,MED,Y
+Wassup With Me,13,"Late night, my young niggas, they be creepin'",creepin,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Creepers,END,SLANT,spelling,LOW,Y
+Wassup With Me,13,"Late night, my young niggas, they be creepin'",creepin,17,"Nigga, I make this shit look easy",easy,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",Get,14,"Get right, lil' nigga, boy, you better keep that heater",better,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",keep,14,"Get right, lil' nigga, boy, you better keep that heater",heater,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",heater,15,"Fuck a bitch, then leave her, swear to God I never ever need her",need,END,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",better,15,"Fuck a bitch, then leave her, swear to God I never ever need her",ever,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",better,15,"Fuck a bitch, then leave her, swear to God I never ever need her",never,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",better,15,"Fuck a bitch, then leave her, swear to God I never ever need her",swear,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",Get,15,"Fuck a bitch, then leave her, swear to God I never ever need her",ever,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",Get,15,"Fuck a bitch, then leave her, swear to God I never ever need her",never,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",Get,15,"Fuck a bitch, then leave her, swear to God I never ever need her",swear,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",heater,15,"Fuck a bitch, then leave her, swear to God I never ever need her",leave,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",keep,15,"Fuck a bitch, then leave her, swear to God I never ever need her",leave,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",keep,15,"Fuck a bitch, then leave her, swear to God I never ever need her",need,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",lil,15,"Fuck a bitch, then leave her, swear to God I never ever need her",bitch,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",heater,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Creepers,END,ASSONANCE,vowel,LOW,N
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",better,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Tesla,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",Get,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Tesla,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",heater,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Jeepers,INNER,ASSONANCE,vowel,LOW,N
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",keep,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Creepers,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",keep,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Jeepers,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",lil,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",bitch,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",lil,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",wings,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",right,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",like,INNER,SLANT,cmu,MED,Y
+Wassup With Me,14,"Get right, lil' nigga, boy, you better keep that heater",heater,17,"Nigga, I make this shit look easy",easy,END,SLANT,cmu,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",God never,15,"Fuck a bitch, then leave her, swear to God I never ever need her",never ever,INNER,MULTI,multi,HIGH,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",leave,15,"Fuck a bitch, then leave her, swear to God I never ever need her",need,INNER,SLANT,cmu,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",never,15,"Fuck a bitch, then leave her, swear to God I never ever need her",ever,INNER,MULTI,multi,HIGH,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",swear,15,"Fuck a bitch, then leave her, swear to God I never ever need her",ever,INNER,SLANT,cmu,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",swear,15,"Fuck a bitch, then leave her, swear to God I never ever need her",never,INNER,SLANT,cmu,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",bitch,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",bitch,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",bitch,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",wings,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",ever,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Tesla,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",God,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",leave,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Creepers,INNER,ASSONANCE,vowel,LOW,N
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",leave,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Jeepers,INNER,ASSONANCE,vowel,LOW,N
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",never,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Tesla,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",swear,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Tesla,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",need,17,"Nigga, I make this shit look easy",easy,END,SLANT,cmu,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",bitch,17,"Nigga, I make this shit look easy",shit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,15,"Fuck a bitch, then leave her, swear to God I never ever need her",leave,17,"Nigga, I make this shit look easy",easy,INNER,SLANT,cmu,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",bitch,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",wings,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Jeepers,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Creepers,INNER,MULTI,multi,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",like Jeepers,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Jeepers Creepers,INNER,MULTI,multi,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Creepers,17,"Nigga, I make this shit look easy",easy,END,SLANT,spelling,LOW,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",bitch,17,"Nigga, I make this shit look easy",shit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Jeepers,17,"Nigga, I make this shit look easy",easy,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Pull,17,"Nigga, I make this shit look easy",look,INNER,SLANT,cmu,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",wings,17,"Nigga, I make this shit look easy",shit,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",bitch,18,"Nigga, I make this shit look simple",shit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",bitch,18,"Nigga, I make this shit look simple",simple,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",Pull,18,"Nigga, I make this shit look simple",look,INNER,SLANT,cmu,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",wings,18,"Nigga, I make this shit look simple",shit,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,16,"Pull up in Tesla, that bitch got wings just like Jeepers Creepers",wings,18,"Nigga, I make this shit look simple",simple,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,17,"Nigga, I make this shit look easy",Nigga,17,"Nigga, I make this shit look easy",shit,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,17,"Nigga, I make this shit look easy",look,18,"Nigga, I make this shit look simple",look,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,17,"Nigga, I make this shit look easy",make,18,"Nigga, I make this shit look simple",make,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,17,"Nigga, I make this shit look easy",Nigga,18,"Nigga, I make this shit look simple",Nigga,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,17,"Nigga, I make this shit look easy",Nigga,18,"Nigga, I make this shit look simple",shit,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,17,"Nigga, I make this shit look easy",shit,18,"Nigga, I make this shit look simple",Nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,17,"Nigga, I make this shit look easy",shit,18,"Nigga, I make this shit look simple",shit,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,17,"Nigga, I make this shit look easy",shit,18,"Nigga, I make this shit look simple",simple,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,17,"Nigga, I make this shit look easy",Nigga,19,"Nigga trippin', pop him fast just like pimple",Nigga,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,17,"Nigga, I make this shit look easy",shit,19,"Nigga trippin', pop him fast just like pimple",him,INNER,SLANT,cmu,MED,Y
+Wassup With Me,17,"Nigga, I make this shit look easy",shit,19,"Nigga trippin', pop him fast just like pimple",Nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,17,"Nigga, I make this shit look easy",shit,19,"Nigga trippin', pop him fast just like pimple",pimple,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,17,"Nigga, I make this shit look easy",shit,19,"Nigga trippin', pop him fast just like pimple",trippin,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",Nigga,18,"Nigga, I make this shit look simple",shit,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",shit,18,"Nigga, I make this shit look simple",simple,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",simple,19,"Nigga trippin', pop him fast just like pimple",pimple,END,MULTI,multi,HIGH,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",Nigga,19,"Nigga trippin', pop him fast just like pimple",Nigga,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,18,"Nigga, I make this shit look simple",shit,19,"Nigga trippin', pop him fast just like pimple",him,INNER,SLANT,cmu,MED,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",shit,19,"Nigga trippin', pop him fast just like pimple",Nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",shit,19,"Nigga trippin', pop him fast just like pimple",pimple,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",shit,19,"Nigga trippin', pop him fast just like pimple",trippin,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",simple,19,"Nigga trippin', pop him fast just like pimple",him,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",simple,19,"Nigga trippin', pop him fast just like pimple",trippin,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",Nigga,20,Got so much shit on my agenda,shit,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",shit,20,Got so much shit on my agenda,shit,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,18,"Nigga, I make this shit look simple",simple,20,Got so much shit on my agenda,shit,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,18,"Nigga, I make this shit look simple",simple,21,Ain't got no time to kick it with you,kick,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",him,19,"Nigga trippin', pop him fast just like pimple",pimple,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",trippin,19,"Nigga trippin', pop him fast just like pimple",him,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",trippin,19,"Nigga trippin', pop him fast just like pimple",pimple,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",him,20,Got so much shit on my agenda,shit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",Nigga,20,Got so much shit on my agenda,shit,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",pimple,20,Got so much shit on my agenda,shit,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",pop,20,Got so much shit on my agenda,Got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",trippin,20,Got so much shit on my agenda,shit,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",pimple,21,Ain't got no time to kick it with you,kick,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",him,21,Ain't got no time to kick it with you,kick,INNER,SLANT,cmu,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",like,21,Ain't got no time to kick it with you,time,INNER,SLANT,cmu,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",Nigga,21,Ain't got no time to kick it with you,kick,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",pop,21,Ain't got no time to kick it with you,got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,19,"Nigga trippin', pop him fast just like pimple",trippin,21,Ain't got no time to kick it with you,kick,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,20,Got so much shit on my agenda,Got,21,Ain't got no time to kick it with you,got,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,20,Got so much shit on my agenda,shit,21,Ain't got no time to kick it with you,kick,INNER,SLANT,cmu,MED,Y
+Wassup With Me,20,Got so much shit on my agenda,Got,22,"Project livin', keep that blicky",Project,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,20,Got so much shit on my agenda,shit,22,"Project livin', keep that blicky",blicky,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,20,Got so much shit on my agenda,shit,22,"Project livin', keep that blicky",livin,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,20,Got so much shit on my agenda,agenda,23,Never know when niggas come and get you,get,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,21,Ain't got no time to kick it with you,kick,22,"Project livin', keep that blicky",blicky,END,SLANT,spelling,LOW,Y
+Wassup With Me,21,Ain't got no time to kick it with you,got,22,"Project livin', keep that blicky",Project,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,21,Ain't got no time to kick it with you,kick,22,"Project livin', keep that blicky",livin,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,21,Ain't got no time to kick it with you,no,23,Never know when niggas come and get you,know,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,21,Ain't got no time to kick it with you,kick,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",fifty,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,21,Ain't got no time to kick it with you,kick,25,"He got hit all in his shit, but he didn't die, God with him",him,END,SLANT,cmu,MED,Y
+Wassup With Me,22,"Project livin', keep that blicky",blicky,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",fifty,END,ASSONANCE,vowel,LOW,N
+Wassup With Me,22,"Project livin', keep that blicky",blicky,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,22,"Project livin', keep that blicky",keep,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",keep,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,22,"Project livin', keep that blicky",livin,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",fifty,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,22,"Project livin', keep that blicky",Project,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",chopper,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,22,"Project livin', keep that blicky",Project,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Glock,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,22,"Project livin', keep that blicky",Project,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",gotta,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,22,"Project livin', keep that blicky",blicky,25,"He got hit all in his shit, but he didn't die, God with him",him,END,SLANT,spelling,LOW,Y
+Wassup With Me,23,Never know when niggas come and get you,Never,23,Never know when niggas come and get you,get,INNER,SLANT,cmu,MED,Y
+Wassup With Me,23,Never know when niggas come and get you,Never,23,Never know when niggas come and get you,when,INNER,SLANT,cmu,MED,Y
+Wassup With Me,23,Never know when niggas come and get you,when,23,Never know when niggas come and get you,get,INNER,SLANT,cmu,MED,Y
+Wassup With Me,23,Never know when niggas come and get you,come,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",hundred,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,23,Never know when niggas come and get you,get,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Better,INNER,SLANT,cmu,MED,Y
+Wassup With Me,23,Never know when niggas come and get you,know,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",hold,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,23,Never know when niggas come and get you,Never,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Better,INNER,SLANT,cmu,MED,Y
+Wassup With Me,23,Never know when niggas come and get you,niggas,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,23,Never know when niggas come and get you,when,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Better,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",chopper,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Glock,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",chopper,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",gotta,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Glock,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",gotta,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",fifty,25,"He got hit all in his shit, but he didn't die, God with him",him,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",chopper,25,"He got hit all in his shit, but he didn't die, God with him",God,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",chopper,25,"He got hit all in his shit, but he didn't die, God with him",got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",fifty,25,"He got hit all in his shit, but he didn't die, God with him",didn't,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",fifty,25,"He got hit all in his shit, but he didn't die, God with him",hit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",fifty,25,"He got hit all in his shit, but he didn't die, God with him",shit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Glock,25,"He got hit all in his shit, but he didn't die, God with him",God,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Glock,25,"He got hit all in his shit, but he didn't die, God with him",got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",gotta,25,"He got hit all in his shit, but he didn't die, God with him",God,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",gotta,25,"He got hit all in his shit, but he didn't die, God with him",got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",nigga,25,"He got hit all in his shit, but he didn't die, God with him",didn't,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",nigga,25,"He got hit all in his shit, but he didn't die, God with him",hit,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",nigga,25,"He got hit all in his shit, but he didn't die, God with him",shit,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",fifty,26,Got more tools than Bob the Builder,Builder,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",chopper,26,Got more tools than Bob the Builder,Bob,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",chopper,26,Got more tools than Bob the Builder,Got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Glock,26,Got more tools than Bob the Builder,Bob,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",Glock,26,Got more tools than Bob the Builder,Got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",gotta,26,Got more tools than Bob the Builder,Bob,INNER,SLANT,cmu,MED,Y
+Wassup With Me,24,"Better keep a hundred in that chopper, nigga, that Glock gotta hold a fifty",gotta,26,Got more tools than Bob the Builder,Got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",didn't,25,"He got hit all in his shit, but he didn't die, God with him",him,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",got,25,"He got hit all in his shit, but he didn't die, God with him",God,INNER,SLANT,cmu,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",hit,25,"He got hit all in his shit, but he didn't die, God with him",didn't,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",hit,25,"He got hit all in his shit, but he didn't die, God with him",him,INNER,SLANT,cmu,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",hit,25,"He got hit all in his shit, but he didn't die, God with him",shit,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",shit,25,"He got hit all in his shit, but he didn't die, God with him",didn't,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",shit,25,"He got hit all in his shit, but he didn't die, God with him",him,INNER,SLANT,cmu,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",him,26,Got more tools than Bob the Builder,Builder,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",all,26,Got more tools than Bob the Builder,more,INNER,SLANT,cmu,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",didn't,26,Got more tools than Bob the Builder,Builder,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",God,26,Got more tools than Bob the Builder,Bob,INNER,SLANT,cmu,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",God,26,Got more tools than Bob the Builder,Got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",got,26,Got more tools than Bob the Builder,Bob,INNER,SLANT,cmu,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",got,26,Got more tools than Bob the Builder,Got,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",hit,26,Got more tools than Bob the Builder,Builder,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",shit,26,Got more tools than Bob the Builder,Builder,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",all,27,"Yeah, I fuck your daughter, nigga",daughter,INNER,SLANT,cmu,MED,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",didn't,27,"Yeah, I fuck your daughter, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",hit,27,"Yeah, I fuck your daughter, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,25,"He got hit all in his shit, but he didn't die, God with him",shit,27,"Yeah, I fuck your daughter, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,26,Got more tools than Bob the Builder,Got,26,Got more tools than Bob the Builder,Bob,INNER,SLANT,cmu,MED,Y
+Wassup With Me,26,Got more tools than Bob the Builder,more,27,"Yeah, I fuck your daughter, nigga",daughter,INNER,SLANT,cmu,MED,Y
+Wassup With Me,26,Got more tools than Bob the Builder,Bob,28,Might switch my cars up,cars,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,26,Got more tools than Bob the Builder,Builder,28,Might switch my cars up,switch,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,26,Got more tools than Bob the Builder,Got,28,Might switch my cars up,cars,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,26,Got more tools than Bob the Builder,Builder,30,"Percocets, Adderall, we got party pack of pills",pills,END,SLANT,cmu,MED,Y
+Wassup With Me,28,Might switch my cars up,cars,29,"But I'm still on Candler 'cause that's where I started, yeah",started,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,28,Might switch my cars up,switch,29,"But I'm still on Candler 'cause that's where I started, yeah",still,INNER,SLANT,cmu,MED,Y
+Wassup With Me,28,Might switch my cars up,cars,30,"Percocets, Adderall, we got party pack of pills",got,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,28,Might switch my cars up,cars,30,"Percocets, Adderall, we got party pack of pills",party,INNER,SLANT,cmu,MED,Y
+Wassup With Me,28,Might switch my cars up,switch,30,"Percocets, Adderall, we got party pack of pills",pills,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,29,"But I'm still on Candler 'cause that's where I started, yeah",Candler,30,"Percocets, Adderall, we got party pack of pills",pack,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,29,"But I'm still on Candler 'cause that's where I started, yeah",started,30,"Percocets, Adderall, we got party pack of pills",got,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,29,"But I'm still on Candler 'cause that's where I started, yeah",started,30,"Percocets, Adderall, we got party pack of pills",party,INNER,SLANT,cmu,MED,Y
+Wassup With Me,29,"But I'm still on Candler 'cause that's where I started, yeah",still,30,"Percocets, Adderall, we got party pack of pills",pills,INNER,SLANT,cmu,MED,Y
+Wassup With Me,29,"But I'm still on Candler 'cause that's where I started, yeah",started,31,"New spot, ducked off at the top of the hill",spot,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,29,"But I'm still on Candler 'cause that's where I started, yeah",started,31,"New spot, ducked off at the top of the hill",top,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,29,"But I'm still on Candler 'cause that's where I started, yeah",still,31,"New spot, ducked off at the top of the hill",hill,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",Adderall,30,"Percocets, Adderall, we got party pack of pills",pack,INNER,ASSONANCE,vowel,LOW,N
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",got,30,"Percocets, Adderall, we got party pack of pills",party,INNER,SLANT,cmu,MED,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",pills,31,"New spot, ducked off at the top of the hill",hill,END,SLANT,cmu,MED,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",got,31,"New spot, ducked off at the top of the hill",spot,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",got,31,"New spot, ducked off at the top of the hill",top,INNER,SLANT,cmu,MED,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",party,31,"New spot, ducked off at the top of the hill",spot,INNER,SLANT,cmu,MED,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",party,31,"New spot, ducked off at the top of the hill",top,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",pills,32,Broke niggas waitin' on taxes at the top of the year,year,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",got,32,Broke niggas waitin' on taxes at the top of the year,top,INNER,SLANT,cmu,MED,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",pack,32,Broke niggas waitin' on taxes at the top of the year,taxes,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,30,"Percocets, Adderall, we got party pack of pills",party,32,Broke niggas waitin' on taxes at the top of the year,top,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,31,"New spot, ducked off at the top of the hill",spot,31,"New spot, ducked off at the top of the hill",top,INNER,SLANT,cmu,MED,Y
+Wassup With Me,31,"New spot, ducked off at the top of the hill",hill,32,Broke niggas waitin' on taxes at the top of the year,year,END,SLANT,cmu,MED,Y
+Wassup With Me,31,"New spot, ducked off at the top of the hill",spot,32,Broke niggas waitin' on taxes at the top of the year,top,INNER,SLANT,cmu,MED,Y
+Wassup With Me,31,"New spot, ducked off at the top of the hill",top,32,Broke niggas waitin' on taxes at the top of the year,top,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,31,"New spot, ducked off at the top of the hill",spot,33,"I feel like Jay-Z, nigga, I got rocks in my ear",got,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,31,"New spot, ducked off at the top of the hill",spot,33,"I feel like Jay-Z, nigga, I got rocks in my ear",rocks,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,31,"New spot, ducked off at the top of the hill",top,33,"I feel like Jay-Z, nigga, I got rocks in my ear",got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,31,"New spot, ducked off at the top of the hill",top,33,"I feel like Jay-Z, nigga, I got rocks in my ear",rocks,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,niggas,33,"I feel like Jay-Z, nigga, I got rocks in my ear",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,top,33,"I feel like Jay-Z, nigga, I got rocks in my ear",got,INNER,SLANT,cmu,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,top,33,"I feel like Jay-Z, nigga, I got rocks in my ear",rocks,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,waitin,33,"I feel like Jay-Z, nigga, I got rocks in my ear",Jay,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,Broke,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",only,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,niggas,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",ass,INNER,PERFECT,spelling,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,taxes,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",ass,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,taxes,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",back,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,taxes,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",laugh,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,year,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",give,INNER,SLANT,cmu,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,year,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",kiss,INNER,SLANT,cmu,MED,Y
+Wassup With Me,32,Broke niggas waitin' on taxes at the top of the year,year,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",sit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",feel,33,"I feel like Jay-Z, nigga, I got rocks in my ear",ear,INNER,SLANT,cmu,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",feel,33,"I feel like Jay-Z, nigga, I got rocks in my ear",Z,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",got,33,"I feel like Jay-Z, nigga, I got rocks in my ear",rocks,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",Z,33,"I feel like Jay-Z, nigga, I got rocks in my ear",ear,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",ear,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",people,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",feel,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",people,INNER,SLANT,cmu,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",like,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",why,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",nigga,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",sit,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",Z,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",people,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",ear,35,"I gave half to my nigga, we was equal (Equal, nigga)",equal,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",feel,35,"I gave half to my nigga, we was equal (Equal, nigga)",equal,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",Jay,35,"I gave half to my nigga, we was equal (Equal, nigga)",gave,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",nigga,35,"I gave half to my nigga, we was equal (Equal, nigga)",nigga,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",Z,35,"I gave half to my nigga, we was equal (Equal, nigga)",equal,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",ear,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",sequel,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,33,"I feel like Jay-Z, nigga, I got rocks in my ear",ear,37,Parked the foreign and went drop-top Buick Regal (Old-school),Regal,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",ass,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",back,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",ass,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",laugh,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",back,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",laugh,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",give,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",kiss,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",give,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",sit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",kiss,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",sit,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",people,35,"I gave half to my nigga, we was equal (Equal, nigga)",equal,END,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",ass,35,"I gave half to my nigga, we was equal (Equal, nigga)",half,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",back,35,"I gave half to my nigga, we was equal (Equal, nigga)",half,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",laugh,35,"I gave half to my nigga, we was equal (Equal, nigga)",half,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",sit,35,"I gave half to my nigga, we was equal (Equal, nigga)",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",people,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",sequel,END,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",give,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",clip,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",give,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",spinned,INNER,ASSONANCE,vowel,LOW,N
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",kiss,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",clip,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",sit,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",clip,INNER,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",people,37,Parked the foreign and went drop-top Buick Regal (Old-school),Regal,END,SLANT,cmu,MED,Y
+Wassup With Me,34,"They only give me they ass to kiss, that's why I sit back and laugh at people",people,38,"They be killin', we be killin', so who even? (Fuck nigga)",even,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,35,"I gave half to my nigga, we was equal (Equal, nigga)",equal,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",sequel,END,MULTI,multi,HIGH,Y
+Wassup With Me,35,"I gave half to my nigga, we was equal (Equal, nigga)",nigga,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",clip,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,35,"I gave half to my nigga, we was equal (Equal, nigga)",equal,37,Parked the foreign and went drop-top Buick Regal (Old-school),Regal,END,SLANT,cmu,MED,Y
+Wassup With Me,35,"I gave half to my nigga, we was equal (Equal, nigga)",equal,38,"They be killin', we be killin', so who even? (Fuck nigga)",even,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,35,"I gave half to my nigga, we was equal (Equal, nigga)",equal,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",dealing,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",sequel,37,Parked the foreign and went drop-top Buick Regal (Old-school),Regal,END,SLANT,cmu,MED,Y
+Wassup With Me,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",block,37,Parked the foreign and went drop-top Buick Regal (Old-school),drop,INNER,SLANT,cmu,MED,Y
+Wassup With Me,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",block,37,Parked the foreign and went drop-top Buick Regal (Old-school),Parked,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",block,37,Parked the foreign and went drop-top Buick Regal (Old-school),top,INNER,SLANT,cmu,MED,Y
+Wassup With Me,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",Let,37,Parked the foreign and went drop-top Buick Regal (Old-school),went,INNER,SLANT,cmu,MED,Y
+Wassup With Me,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",sequel,38,"They be killin', we be killin', so who even? (Fuck nigga)",even,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",clip,38,"They be killin', we be killin', so who even? (Fuck nigga)",killin,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,36,"Let off one clip, spinned the block, did a sequel (Skrrt)",sequel,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",dealing,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,37,Parked the foreign and went drop-top Buick Regal (Old-school),drop,37,Parked the foreign and went drop-top Buick Regal (Old-school),top,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,37,Parked the foreign and went drop-top Buick Regal (Old-school),Parked,37,Parked the foreign and went drop-top Buick Regal (Old-school),drop,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,37,Parked the foreign and went drop-top Buick Regal (Old-school),Parked,37,Parked the foreign and went drop-top Buick Regal (Old-school),top,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,37,Parked the foreign and went drop-top Buick Regal (Old-school),Regal,38,"They be killin', we be killin', so who even? (Fuck nigga)",even,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,37,Parked the foreign and went drop-top Buick Regal (Old-school),Buick,38,"They be killin', we be killin', so who even? (Fuck nigga)",who,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,37,Parked the foreign and went drop-top Buick Regal (Old-school),Regal,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",dealing,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,37,Parked the foreign and went drop-top Buick Regal (Old-school),Regal,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",feelings,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,38,"They be killin', we be killin', so who even? (Fuck nigga)",killin,38,"They be killin', we be killin', so who even? (Fuck nigga)",killin,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,38,"They be killin', we be killin', so who even? (Fuck nigga)",even,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",dealing,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,38,"They be killin', we be killin', so who even? (Fuck nigga)",even,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",feelings,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,38,"They be killin', we be killin', so who even? (Fuck nigga)",killin,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",chillin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,38,"They be killin', we be killin', so who even? (Fuck nigga)",killin,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drillin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,38,"They be killin', we be killin', so who even? (Fuck nigga)",killin,40,"Guns with us, mug niggas, thug business, uh",business,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drillin,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",chillin,INNER,MULTI,multi,HIGH,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",feelings,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",dealing,INNER,SLANT,cmu,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",Niggas drillin,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drillin chillin,INNER,MULTI,multi,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",numb,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drug,INNER,SLANT,cmu,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",chillin,40,"Guns with us, mug niggas, thug business, uh",business,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drillin,40,"Guns with us, mug niggas, thug business, uh",business,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drug,40,"Guns with us, mug niggas, thug business, uh",Guns,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drug,40,"Guns with us, mug niggas, thug business, uh",mug,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drug,40,"Guns with us, mug niggas, thug business, uh",thug,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",Niggas,40,"Guns with us, mug niggas, thug business, uh",niggas,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",numb,40,"Guns with us, mug niggas, thug business, uh",Guns,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",numb,40,"Guns with us, mug niggas, thug business, uh",mug,INNER,SLANT,cmu,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",numb,40,"Guns with us, mug niggas, thug business, uh",thug,INNER,SLANT,cmu,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",chillin,41,"Worst niggas, first nigga hung with him, uh (Gang)",him,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drillin,41,"Worst niggas, first nigga hung with him, uh (Gang)",him,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",drug,41,"Worst niggas, first nigga hung with him, uh (Gang)",hung,INNER,SLANT,cmu,MED,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",Niggas,41,"Worst niggas, first nigga hung with him, uh (Gang)",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",Niggas,41,"Worst niggas, first nigga hung with him, uh (Gang)",niggas,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,39,"Niggas drillin' or we chillin', numb feelings, drug dealing",numb,41,"Worst niggas, first nigga hung with him, uh (Gang)",hung,INNER,SLANT,cmu,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",Guns,40,"Guns with us, mug niggas, thug business, uh",mug,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",Guns,40,"Guns with us, mug niggas, thug business, uh",thug,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",mug,40,"Guns with us, mug niggas, thug business, uh",thug,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",business,41,"Worst niggas, first nigga hung with him, uh (Gang)",him,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",Guns,41,"Worst niggas, first nigga hung with him, uh (Gang)",hung,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",mug,41,"Worst niggas, first nigga hung with him, uh (Gang)",hung,INNER,SLANT,cmu,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",niggas,41,"Worst niggas, first nigga hung with him, uh (Gang)",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",niggas,41,"Worst niggas, first nigga hung with him, uh (Gang)",niggas,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",thug,41,"Worst niggas, first nigga hung with him, uh (Gang)",hung,INNER,SLANT,cmu,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",business,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",him,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",business,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",think,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",Guns,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",hung,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",mug,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",hung,INNER,SLANT,cmu,MED,Y
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",niggas,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",niggas,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,40,"Guns with us, mug niggas, thug business, uh",thug,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",hung,INNER,SLANT,cmu,MED,Y
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",niggas,41,"Worst niggas, first nigga hung with him, uh (Gang)",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",Worst,41,"Worst niggas, first nigga hung with him, uh (Gang)",first,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",him,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",him,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",him,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",think,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",hung,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",hung,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",nigga,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",niggas,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",niggas,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",niggas,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",hung,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",young,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",nigga,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",nigga,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,41,"Worst niggas, first nigga hung with him, uh (Gang)",niggas,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",nigga,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",Chase,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",face,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",Chase,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",racist,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",face,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",racist,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",him,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",him,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",him,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",think,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",niggas,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",nigga,END,SLANT,spelling,LOW,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",Chase,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",bracelet,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",face,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",bracelet,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",hung,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",young,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",racist,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",bracelet,INNER,SLANT,cmu,MED,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",him,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",still,INNER,SLANT,cmu,MED,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",hung,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",comin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",hung,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",runnin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,42,"Chase him, face him, think we racist, hung niggas (Bah, bah)",think,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",still,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",young,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",comin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",young,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",runnin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,43,"White VS's in my bracelet, young nigga (Ayy, ayy)",young,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",comin,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",runnin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",know,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",Lambo,INNER,ASSONANCE,vowel,LOW,N
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",runnin,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,END,REPEAT,spelling,HIGH,N
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",comin,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",know,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",hoes,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",know,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",runnin,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",still,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",still,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",runnin,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",somethin,END,SLANT,cmu,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",comin,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",run,INNER,SLANT,cmu,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",comin,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",somethin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",know,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",Don't,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",runnin,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",run,INNER,SLANT,cmu,MED,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",still,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",kill,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,44,"They know how I'm comin', Lambo still runnin' (Still runnin')",runnin,48,"You can catch me where I be, I got real money (G Herbo)",money,END,SLANT,cmu,MED,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",Rolls,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",hoes,INNER,SLANT,cmu,MED,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",still,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",still,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",somethin,END,SLANT,cmu,MED,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",hoes,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",Don't,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",hoes,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",gon,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",Rolls,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",Don't,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",run,INNER,SLANT,cmu,MED,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",somethin,INNER,SLANT,cmu,MED,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",still,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",kill,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,48,"You can catch me where I be, I got real money (G Herbo)",money,END,SLANT,cmu,MED,Y
+Wassup With Me,45,"Rolls still runnin' (Still runnin'), hoes still runnin' (Still runnin')",runnin,49,"Independent, as you see, but got deal money",money,END,SLANT,cmu,MED,Y
+Wassup With Me,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",Don't,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",gon,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",run,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",somethin,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",somethin,48,"You can catch me where I be, I got real money (G Herbo)",money,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",run,48,"You can catch me where I be, I got real money (G Herbo)",money,INNER,SLANT,cmu,MED,Y
+Wassup With Me,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",somethin,49,"Independent, as you see, but got deal money",money,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,46,"Don't run up on me like that, they gon' kill somethin' (Kill somethin' 'bout me)",somethin,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",money,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",G,47,"PTSD, but I'm G, so I heal from it (Ayy)",heal,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",PTSD,47,"PTSD, but I'm G, so I heal from it (Ayy)",G,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",PTSD,47,"PTSD, but I'm G, so I heal from it (Ayy)",heal,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",G,48,"You can catch me where I be, I got real money (G Herbo)",real,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",heal,48,"You can catch me where I be, I got real money (G Herbo)",real,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",PTSD,48,"You can catch me where I be, I got real money (G Herbo)",real,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",G,49,"Independent, as you see, but got deal money",deal,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",G,49,"Independent, as you see, but got deal money",see,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",heal,49,"Independent, as you see, but got deal money",deal,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",heal,49,"Independent, as you see, but got deal money",see,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",PTSD,49,"Independent, as you see, but got deal money",deal,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,47,"PTSD, but I'm G, so I heal from it (Ayy)",PTSD,49,"Independent, as you see, but got deal money",see,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",can,48,"You can catch me where I be, I got real money (G Herbo)",catch,INNER,SLANT,cmu,MED,Y
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",money,49,"Independent, as you see, but got deal money",money,END,REPEAT,spelling,HIGH,N
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",got,49,"Independent, as you see, but got deal money",got,INNER,REPEAT,spelling,HIGH,N
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",real,49,"Independent, as you see, but got deal money",deal,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",real,49,"Independent, as you see, but got deal money",see,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",where,49,"Independent, as you see, but got deal money",Independent,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",money,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",money,END,REPEAT,spelling,HIGH,N
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",real,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",G's,INNER,SLANT,cmu,MED,Y
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",where,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",Stressin,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,48,"You can catch me where I be, I got real money (G Herbo)",money,51,Tryna figure out what's up with me,what's,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,49,"Independent, as you see, but got deal money",see,49,"Independent, as you see, but got deal money",deal,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,49,"Independent, as you see, but got deal money",money,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",money,END,REPEAT,spelling,HIGH,N
+Wassup With Me,49,"Independent, as you see, but got deal money",deal,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",G's,INNER,SLANT,cmu,MED,Y
+Wassup With Me,49,"Independent, as you see, but got deal money",Independent,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",Stressin,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,49,"Independent, as you see, but got deal money",see,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",G's,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,49,"Independent, as you see, but got deal money",money,51,Tryna figure out what's up with me,what's,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,49,"Independent, as you see, but got deal money",deal,51,Tryna figure out what's up with me,Tryna,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",bitch,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",still,INNER,SLANT,cmu,MED,Y
+Wassup With Me,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",lil,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",bitch,INNER,SLANT,cmu,MED,Y
+Wassup With Me,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",lil,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",still,INNER,PERFECT,cmu,HIGH,Y
+Wassup With Me,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",money,51,Tryna figure out what's up with me,what's,END,ASSONANCE,vowel,MED,Y
+Wassup With Me,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",bitch,51,Tryna figure out what's up with me,figure,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",G's,51,Tryna figure out what's up with me,Tryna,INNER,SLANT,spelling,LOW,Y
+Wassup With Me,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",lil,51,Tryna figure out what's up with me,figure,INNER,ASSONANCE,vowel,MED,Y
+Wassup With Me,50,"Stressin' me 'bout them lil' G's, bitch, that's still money, ayy",still,51,Tryna figure out what's up with me,figure,INNER,ASSONANCE,vowel,MED,Y

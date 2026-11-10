@@ -1,0 +1,349 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+MONEYMAN,1,"Rich Hood nigga, Pablo Juan nigga",nigga,1,"Rich Hood nigga, Pablo Juan nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,1,"Rich Hood nigga, Pablo Juan nigga",Pablo,1,"Rich Hood nigga, Pablo Juan nigga",Juan,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,1,"Rich Hood nigga, Pablo Juan nigga",nigga,2,"You know what the fuck goin' on, nigga",nigga,END,REPEAT,spelling,HIGH,N
+MONEYMAN,1,"Rich Hood nigga, Pablo Juan nigga",nigga,2,"You know what the fuck goin' on, nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,2,"You know what the fuck goin' on, nigga",what,2,"You know what the fuck goin' on, nigga",fuck,INNER,SLANT,cmu,MED,Y
+MONEYMAN,2,"You know what the fuck goin' on, nigga",know,3,"True story, no lie, three times",no,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,2,"You know what the fuck goin' on, nigga",fuck,4,Don't call my phone unless you talkin' money,money,INNER,SLANT,cmu,MED,Y
+MONEYMAN,2,"You know what the fuck goin' on, nigga",know,4,Don't call my phone unless you talkin' money,Don't,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,2,"You know what the fuck goin' on, nigga",know,4,Don't call my phone unless you talkin' money,phone,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,2,"You know what the fuck goin' on, nigga",what,4,Don't call my phone unless you talkin' money,money,INNER,SLANT,cmu,MED,Y
+MONEYMAN,3,"True story, no lie, three times",lie,3,"True story, no lie, three times",times,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,3,"True story, no lie, three times",no,4,Don't call my phone unless you talkin' money,Don't,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,3,"True story, no lie, three times",no,4,Don't call my phone unless you talkin' money,phone,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,3,"True story, no lie, three times",story,4,Don't call my phone unless you talkin' money,call,INNER,SLANT,cmu,MED,Y
+MONEYMAN,3,"True story, no lie, three times",lie,5,My designer shoes in my closet a hundred grand,designer,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,3,"True story, no lie, three times",times,5,My designer shoes in my closet a hundred grand,designer,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,3,"True story, no lie, three times",True,5,My designer shoes in my closet a hundred grand,shoes,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,4,Don't call my phone unless you talkin' money,Don't,4,Don't call my phone unless you talkin' money,phone,INNER,SLANT,cmu,MED,Y
+MONEYMAN,4,Don't call my phone unless you talkin' money,money,5,My designer shoes in my closet a hundred grand,hundred,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,4,Don't call my phone unless you talkin' money,talkin,5,My designer shoes in my closet a hundred grand,closet,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,4,Don't call my phone unless you talkin' money,money,6,"Send that bitch MIA, she come back with a tan",come,INNER,SLANT,cmu,MED,Y
+MONEYMAN,4,Don't call my phone unless you talkin' money,unless,6,"Send that bitch MIA, she come back with a tan",Send,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,5,My designer shoes in my closet a hundred grand,grand,6,"Send that bitch MIA, she come back with a tan",tan,END,SLANT,cmu,MED,Y
+MONEYMAN,5,My designer shoes in my closet a hundred grand,grand,6,"Send that bitch MIA, she come back with a tan",back,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,5,My designer shoes in my closet a hundred grand,hundred,6,"Send that bitch MIA, she come back with a tan",come,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,5,My designer shoes in my closet a hundred grand,grand,7,"That ain't my bitch, I leave her to the other man",man,END,SLANT,cmu,MED,Y
+MONEYMAN,5,My designer shoes in my closet a hundred grand,hundred,7,"That ain't my bitch, I leave her to the other man",other,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,5,My designer shoes in my closet a hundred grand,grand,8,"Whip it up, they can't believe it's not butter man",man,END,SLANT,cmu,MED,Y
+MONEYMAN,5,My designer shoes in my closet a hundred grand,grand,9,"Put a four in the twenty, we call it that muddy tan",tan,END,SLANT,cmu,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",back,6,"Send that bitch MIA, she come back with a tan",tan,INNER,SLANT,cmu,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",tan,7,"That ain't my bitch, I leave her to the other man",man,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",back,7,"That ain't my bitch, I leave her to the other man",man,INNER,SLANT,cmu,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",bitch,7,"That ain't my bitch, I leave her to the other man",bitch,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",come,7,"That ain't my bitch, I leave her to the other man",other,INNER,SLANT,cmu,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",MIA,7,"That ain't my bitch, I leave her to the other man",leave,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",tan,8,"Whip it up, they can't believe it's not butter man",man,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",back,8,"Whip it up, they can't believe it's not butter man",can't,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",back,8,"Whip it up, they can't believe it's not butter man",man,INNER,SLANT,cmu,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",bitch,8,"Whip it up, they can't believe it's not butter man",Whip,INNER,SLANT,cmu,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",come,8,"Whip it up, they can't believe it's not butter man",butter,INNER,SLANT,cmu,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",MIA,8,"Whip it up, they can't believe it's not butter man",believe,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",tan,8,"Whip it up, they can't believe it's not butter man",can't,INNER,SLANT,cmu,MED,Y
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",tan,9,"Put a four in the twenty, we call it that muddy tan",tan,END,REPEAT,spelling,HIGH,N
+MONEYMAN,6,"Send that bitch MIA, she come back with a tan",tan,10,"We shoot with the chopper, make him do the running man",man,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,7,"That ain't my bitch, I leave her to the other man",man,8,"Whip it up, they can't believe it's not butter man",man,END,REPEAT,spelling,HIGH,N
+MONEYMAN,7,"That ain't my bitch, I leave her to the other man",bitch,8,"Whip it up, they can't believe it's not butter man",Whip,INNER,SLANT,cmu,MED,Y
+MONEYMAN,7,"That ain't my bitch, I leave her to the other man",leave,8,"Whip it up, they can't believe it's not butter man",believe,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,7,"That ain't my bitch, I leave her to the other man",man,8,"Whip it up, they can't believe it's not butter man",can't,INNER,SLANT,cmu,MED,Y
+MONEYMAN,7,"That ain't my bitch, I leave her to the other man",other,8,"Whip it up, they can't believe it's not butter man",butter,INNER,SLANT,cmu,MED,Y
+MONEYMAN,7,"That ain't my bitch, I leave her to the other man",man,9,"Put a four in the twenty, we call it that muddy tan",tan,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,7,"That ain't my bitch, I leave her to the other man",other,9,"Put a four in the twenty, we call it that muddy tan",muddy,INNER,SLANT,cmu,MED,Y
+MONEYMAN,7,"That ain't my bitch, I leave her to the other man",man,10,"We shoot with the chopper, make him do the running man",man,END,REPEAT,spelling,HIGH,N
+MONEYMAN,7,"That ain't my bitch, I leave her to the other man",man,11,"Fuck these bitches and stitches and fame, I want money man",man,END,REPEAT,spelling,HIGH,N
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",can't,8,"Whip it up, they can't believe it's not butter man",man,INNER,SLANT,cmu,MED,Y
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",man,9,"Put a four in the twenty, we call it that muddy tan",tan,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",butter,9,"Put a four in the twenty, we call it that muddy tan",muddy,INNER,SLANT,cmu,MED,Y
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",can't,9,"Put a four in the twenty, we call it that muddy tan",tan,INNER,SLANT,cmu,MED,Y
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",man,10,"We shoot with the chopper, make him do the running man",man,END,REPEAT,spelling,HIGH,N
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",butter,10,"We shoot with the chopper, make him do the running man",running,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",can't,10,"We shoot with the chopper, make him do the running man",man,INNER,SLANT,cmu,MED,Y
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",not,10,"We shoot with the chopper, make him do the running man",chopper,INNER,SLANT,cmu,MED,Y
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",Whip,10,"We shoot with the chopper, make him do the running man",him,INNER,SLANT,cmu,MED,Y
+MONEYMAN,8,"Whip it up, they can't believe it's not butter man",man,11,"Fuck these bitches and stitches and fame, I want money man",man,END,REPEAT,spelling,HIGH,N
+MONEYMAN,9,"Put a four in the twenty, we call it that muddy tan",four,9,"Put a four in the twenty, we call it that muddy tan",call,INNER,SLANT,cmu,MED,Y
+MONEYMAN,9,"Put a four in the twenty, we call it that muddy tan",tan,10,"We shoot with the chopper, make him do the running man",man,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,9,"Put a four in the twenty, we call it that muddy tan",muddy,10,"We shoot with the chopper, make him do the running man",running,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,9,"Put a four in the twenty, we call it that muddy tan",tan,11,"Fuck these bitches and stitches and fame, I want money man",man,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,9,"Put a four in the twenty, we call it that muddy tan",muddy,11,"Fuck these bitches and stitches and fame, I want money man",Fuck,INNER,SLANT,cmu,MED,Y
+MONEYMAN,9,"Put a four in the twenty, we call it that muddy tan",muddy,11,"Fuck these bitches and stitches and fame, I want money man",money,INNER,SLANT,cmu,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",man,11,"Fuck these bitches and stitches and fame, I want money man",man,END,REPEAT,spelling,HIGH,N
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",chopper,11,"Fuck these bitches and stitches and fame, I want money man",want,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",him,11,"Fuck these bitches and stitches and fame, I want money man",bitches,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",him,11,"Fuck these bitches and stitches and fame, I want money man",stitches,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",make,11,"Fuck these bitches and stitches and fame, I want money man",fame,INNER,SLANT,cmu,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",running,11,"Fuck these bitches and stitches and fame, I want money man",Fuck,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",running,11,"Fuck these bitches and stitches and fame, I want money man",money,INNER,SLANT,cmu,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",him,12,"Stick on my hip, blue benjamin bankroll like a crip",crip,INNER,SLANT,cmu,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",him,12,"Stick on my hip, blue benjamin bankroll like a crip",hip,INNER,SLANT,cmu,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",him,12,"Stick on my hip, blue benjamin bankroll like a crip",Stick,INNER,SLANT,cmu,MED,Y
+MONEYMAN,10,"We shoot with the chopper, make him do the running man",shoot,12,"Stick on my hip, blue benjamin bankroll like a crip",blue,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",bitches,11,"Fuck these bitches and stitches and fame, I want money man",stitches,INNER,MULTI,multi,HIGH,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",Fuck,11,"Fuck these bitches and stitches and fame, I want money man",money,INNER,SLANT,cmu,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",these bitches,11,"Fuck these bitches and stitches and fame, I want money man",bitches stitches,INNER,MULTI,multi,HIGH,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",bitches,12,"Stick on my hip, blue benjamin bankroll like a crip",crip,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",bitches,12,"Stick on my hip, blue benjamin bankroll like a crip",hip,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",bitches,12,"Stick on my hip, blue benjamin bankroll like a crip",Stick,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",stitches,12,"Stick on my hip, blue benjamin bankroll like a crip",crip,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",stitches,12,"Stick on my hip, blue benjamin bankroll like a crip",hip,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",stitches,12,"Stick on my hip, blue benjamin bankroll like a crip",Stick,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",bitches,13,"Iced out, I need a quilt",quilt,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",stitches,13,"Iced out, I need a quilt",quilt,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,11,"Fuck these bitches and stitches and fame, I want money man",these,13,"Iced out, I need a quilt",need,INNER,SLANT,cmu,MED,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",hip,12,"Stick on my hip, blue benjamin bankroll like a crip",crip,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",Stick,12,"Stick on my hip, blue benjamin bankroll like a crip",crip,INNER,SLANT,cmu,MED,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",Stick,12,"Stick on my hip, blue benjamin bankroll like a crip",hip,INNER,SLANT,cmu,MED,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",crip,13,"Iced out, I need a quilt",quilt,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",hip,13,"Iced out, I need a quilt",quilt,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",like,13,"Iced out, I need a quilt",Iced,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",Stick,13,"Iced out, I need a quilt",quilt,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",crip,14,Stuck in the slave days with the chains and the whip,whip,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",hip,14,Stuck in the slave days with the chains and the whip,whip,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",Stick,14,Stuck in the slave days with the chains and the whip,Stuck,INNER,SLANT,spelling,LOW,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",Stick,14,Stuck in the slave days with the chains and the whip,whip,INNER,SLANT,cmu,MED,Y
+MONEYMAN,12,"Stick on my hip, blue benjamin bankroll like a crip",crip,15,Am I racist because I like all white bricks?,bricks,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,13,"Iced out, I need a quilt",quilt,14,Stuck in the slave days with the chains and the whip,whip,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,13,"Iced out, I need a quilt",quilt,15,Am I racist because I like all white bricks?,bricks,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,13,"Iced out, I need a quilt",Iced,15,Am I racist because I like all white bricks?,like,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,13,"Iced out, I need a quilt",Iced,15,Am I racist because I like all white bricks?,white,INNER,SLANT,cmu,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,days,14,Stuck in the slave days with the chains and the whip,chains,INNER,SLANT,cmu,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,slave,14,Stuck in the slave days with the chains and the whip,chains,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,slave,14,Stuck in the slave days with the chains and the whip,days,INNER,SLANT,cmu,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,whip,15,Am I racist because I like all white bricks?,bricks,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,chains,15,Am I racist because I like all white bricks?,racist,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,days,15,Am I racist because I like all white bricks?,racist,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,slave,15,Am I racist because I like all white bricks?,racist,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,chains,16,"It's a chicken race, we see the police and we buyin' it",race,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,days,16,"It's a chicken race, we see the police and we buyin' it",race,INNER,SLANT,cmu,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,slave,16,"It's a chicken race, we see the police and we buyin' it",race,INNER,SLANT,cmu,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,whip,16,"It's a chicken race, we see the police and we buyin' it",chicken,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,14,Stuck in the slave days with the chains and the whip,whip,18,"I got M16's, ain't talkin' 'bout bitches",bitches,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,15,Am I racist because I like all white bricks?,because,15,Am I racist because I like all white bricks?,all,INNER,SLANT,cmu,MED,Y
+MONEYMAN,15,Am I racist because I like all white bricks?,like,15,Am I racist because I like all white bricks?,white,INNER,SLANT,cmu,MED,Y
+MONEYMAN,15,Am I racist because I like all white bricks?,bricks,16,"It's a chicken race, we see the police and we buyin' it",chicken,INNER,SLANT,cmu,MED,Y
+MONEYMAN,15,Am I racist because I like all white bricks?,like,16,"It's a chicken race, we see the police and we buyin' it",buyin,INNER,SLANT,cmu,MED,Y
+MONEYMAN,15,Am I racist because I like all white bricks?,racist,16,"It's a chicken race, we see the police and we buyin' it",race,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,15,Am I racist because I like all white bricks?,white,16,"It's a chicken race, we see the police and we buyin' it",buyin,INNER,SLANT,cmu,MED,Y
+MONEYMAN,15,Am I racist because I like all white bricks?,bricks,18,"I got M16's, ain't talkin' 'bout bitches",bitches,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,16,"It's a chicken race, we see the police and we buyin' it",see,16,"It's a chicken race, we see the police and we buyin' it",police,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,16,"It's a chicken race, we see the police and we buyin' it",police,17,"New racks, we do not do leases",leases,INNER,SLANT,cmu,MED,Y
+MONEYMAN,16,"It's a chicken race, we see the police and we buyin' it",see,17,"New racks, we do not do leases",leases,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,16,"It's a chicken race, we see the police and we buyin' it",chicken,18,"I got M16's, ain't talkin' 'bout bitches",bitches,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,16,"It's a chicken race, we see the police and we buyin' it",race,18,"I got M16's, ain't talkin' 'bout bitches",ain't,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,17,"New racks, we do not do leases",not,18,"I got M16's, ain't talkin' 'bout bitches",got,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,17,"New racks, we do not do leases",not,18,"I got M16's, ain't talkin' 'bout bitches",talkin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,17,"New racks, we do not do leases",leases,19,"My dope bell ringin', my trap beat",beat,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,17,"New racks, we do not do leases",racks,19,"My dope bell ringin', my trap beat",trap,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,17,"New racks, we do not do leases",leases,20,"Forty gram blunt like the seasons, at the Four Seasons",Seasons,END,SLANT,cmu,MED,Y
+MONEYMAN,18,"I got M16's, ain't talkin' 'bout bitches",got,18,"I got M16's, ain't talkin' 'bout bitches",talkin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,18,"I got M16's, ain't talkin' 'bout bitches",bitches,19,"My dope bell ringin', my trap beat",ringin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,19,"My dope bell ringin', my trap beat",beat,20,"Forty gram blunt like the seasons, at the Four Seasons",Seasons,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,19,"My dope bell ringin', my trap beat",beat,20,"Forty gram blunt like the seasons, at the Four Seasons",seasons,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,19,"My dope bell ringin', my trap beat",trap,20,"Forty gram blunt like the seasons, at the Four Seasons",gram,INNER,SLANT,cmu,MED,Y
+MONEYMAN,19,"My dope bell ringin', my trap beat",beat,21,Fucked every bitch since I fuck 'em and leave 'em,leave,INNER,SLANT,cmu,MED,Y
+MONEYMAN,19,"My dope bell ringin', my trap beat",bell,21,Fucked every bitch since I fuck 'em and leave 'em,every,INNER,SLANT,cmu,MED,Y
+MONEYMAN,19,"My dope bell ringin', my trap beat",ringin,21,Fucked every bitch since I fuck 'em and leave 'em,bitch,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,19,"My dope bell ringin', my trap beat",ringin,21,Fucked every bitch since I fuck 'em and leave 'em,since,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,19,"My dope bell ringin', my trap beat",beat,22,"Chopper's a bitch, I might just start bleedin'",bleedin,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,19,"My dope bell ringin', my trap beat",beat,23,"On Allah, I got more haters than Jesus",Jesus,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",Forty,20,"Forty gram blunt like the seasons, at the Four Seasons",Four,INNER,SLANT,cmu,MED,Y
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",seasons,20,"Forty gram blunt like the seasons, at the Four Seasons",Seasons,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",blunt,21,Fucked every bitch since I fuck 'em and leave 'em,fuck,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",blunt,21,Fucked every bitch since I fuck 'em and leave 'em,Fucked,INNER,SLANT,cmu,MED,Y
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",seasons,21,Fucked every bitch since I fuck 'em and leave 'em,leave,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",Seasons,22,"Chopper's a bitch, I might just start bleedin'",bleedin,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",like,22,"Chopper's a bitch, I might just start bleedin'",might,INNER,SLANT,cmu,MED,Y
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",seasons,22,"Chopper's a bitch, I might just start bleedin'",bleedin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",Seasons,23,"On Allah, I got more haters than Jesus",Jesus,END,SLANT,cmu,MED,Y
+MONEYMAN,20,"Forty gram blunt like the seasons, at the Four Seasons",Seasons,24,"Complete the puzzle, you ain't got all the pieces",pieces,END,SLANT,cmu,MED,Y
+MONEYMAN,21,Fucked every bitch since I fuck 'em and leave 'em,'em,21,Fucked every bitch since I fuck 'em and leave 'em,'em,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,21,Fucked every bitch since I fuck 'em and leave 'em,bitch,21,Fucked every bitch since I fuck 'em and leave 'em,since,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,21,Fucked every bitch since I fuck 'em and leave 'em,Fucked,21,Fucked every bitch since I fuck 'em and leave 'em,fuck,INNER,SLANT,cmu,MED,Y
+MONEYMAN,21,Fucked every bitch since I fuck 'em and leave 'em,bitch,22,"Chopper's a bitch, I might just start bleedin'",bitch,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,21,Fucked every bitch since I fuck 'em and leave 'em,leave,22,"Chopper's a bitch, I might just start bleedin'",bleedin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,21,Fucked every bitch since I fuck 'em and leave 'em,since,22,"Chopper's a bitch, I might just start bleedin'",bitch,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,21,Fucked every bitch since I fuck 'em and leave 'em,leave,23,"On Allah, I got more haters than Jesus",Jesus,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",Chopper's,22,"Chopper's a bitch, I might just start bleedin'",start,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",bleedin,23,"On Allah, I got more haters than Jesus",Jesus,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",Chopper's,23,"On Allah, I got more haters than Jesus",Allah,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",Chopper's,23,"On Allah, I got more haters than Jesus",got,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",start,23,"On Allah, I got more haters than Jesus",Allah,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",start,23,"On Allah, I got more haters than Jesus",got,INNER,SLANT,cmu,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",bleedin,24,"Complete the puzzle, you ain't got all the pieces",pieces,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",bleedin,24,"Complete the puzzle, you ain't got all the pieces",Complete,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",Chopper's,24,"Complete the puzzle, you ain't got all the pieces",got,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",start,24,"Complete the puzzle, you ain't got all the pieces",got,INNER,SLANT,cmu,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",bleedin,25,"So much money, take care of auntie and nieces",nieces,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,22,"Chopper's a bitch, I might just start bleedin'",bleedin,26,"I fuck like the Energizer, just like Easter",Easter,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",Allah,23,"On Allah, I got more haters than Jesus",got,INNER,SLANT,cmu,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",Jesus,24,"Complete the puzzle, you ain't got all the pieces",pieces,END,SLANT,cmu,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",Allah,24,"Complete the puzzle, you ain't got all the pieces",got,INNER,SLANT,cmu,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",got,24,"Complete the puzzle, you ain't got all the pieces",got,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,23,"On Allah, I got more haters than Jesus",haters,24,"Complete the puzzle, you ain't got all the pieces",ain't,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",Jesus,24,"Complete the puzzle, you ain't got all the pieces",Complete,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",more,24,"Complete the puzzle, you ain't got all the pieces",all,INNER,SLANT,cmu,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",Jesus,25,"So much money, take care of auntie and nieces",nieces,END,SLANT,cmu,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",haters,25,"So much money, take care of auntie and nieces",take,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",Jesus,26,"I fuck like the Energizer, just like Easter",Easter,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,23,"On Allah, I got more haters than Jesus",Jesus,27,I be on the best exotic good reefer,reefer,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",Complete,24,"Complete the puzzle, you ain't got all the pieces",pieces,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",pieces,25,"So much money, take care of auntie and nieces",nieces,END,SLANT,cmu,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",ain't,25,"So much money, take care of auntie and nieces",auntie,INNER,SLANT,spelling,LOW,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",ain't,25,"So much money, take care of auntie and nieces",take,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",Complete,25,"So much money, take care of auntie and nieces",nieces,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",puzzle,25,"So much money, take care of auntie and nieces",money,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",puzzle,25,"So much money, take care of auntie and nieces",much,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",pieces,26,"I fuck like the Energizer, just like Easter",Easter,END,SLANT,cmu,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",Complete,26,"I fuck like the Energizer, just like Easter",Easter,INNER,SLANT,cmu,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",puzzle,26,"I fuck like the Energizer, just like Easter",fuck,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,24,"Complete the puzzle, you ain't got all the pieces",pieces,27,I be on the best exotic good reefer,reefer,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,25,"So much money, take care of auntie and nieces",much,25,"So much money, take care of auntie and nieces",money,INNER,SLANT,cmu,MED,Y
+MONEYMAN,25,"So much money, take care of auntie and nieces",nieces,26,"I fuck like the Energizer, just like Easter",Easter,END,SLANT,cmu,MED,Y
+MONEYMAN,25,"So much money, take care of auntie and nieces",money,26,"I fuck like the Energizer, just like Easter",fuck,INNER,SLANT,cmu,MED,Y
+MONEYMAN,25,"So much money, take care of auntie and nieces",much,26,"I fuck like the Energizer, just like Easter",fuck,INNER,SLANT,cmu,MED,Y
+MONEYMAN,25,"So much money, take care of auntie and nieces",nieces,27,I be on the best exotic good reefer,reefer,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,25,"So much money, take care of auntie and nieces",care,27,I be on the best exotic good reefer,best,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,26,"I fuck like the Energizer, just like Easter",Energizer,26,"I fuck like the Energizer, just like Easter",like,INNER,SLANT,cmu,MED,Y
+MONEYMAN,26,"I fuck like the Energizer, just like Easter",like,26,"I fuck like the Energizer, just like Easter",Energizer,INNER,SLANT,cmu,MED,Y
+MONEYMAN,26,"I fuck like the Energizer, just like Easter",like,26,"I fuck like the Energizer, just like Easter",like,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,26,"I fuck like the Energizer, just like Easter",Easter,27,I be on the best exotic good reefer,reefer,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,26,"I fuck like the Energizer, just like Easter",Easter,28,"Big G Herbo, I remember havin' coke and dope",G,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,27,I be on the best exotic good reefer,best,28,"Big G Herbo, I remember havin' coke and dope",remember,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,27,I be on the best exotic good reefer,reefer,28,"Big G Herbo, I remember havin' coke and dope",G,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,27,I be on the best exotic good reefer,best,29,Mentally was in the kitchen mixin' coke and dope,Mentally,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",coke,28,"Big G Herbo, I remember havin' coke and dope",dope,INNER,SLANT,cmu,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",dope,29,Mentally was in the kitchen mixin' coke and dope,dope,END,REPEAT,spelling,HIGH,N
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",Big,29,Mentally was in the kitchen mixin' coke and dope,kitchen,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",Big,29,Mentally was in the kitchen mixin' coke and dope,mixin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",coke,29,Mentally was in the kitchen mixin' coke and dope,coke,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",coke,29,Mentally was in the kitchen mixin' coke and dope,dope,INNER,SLANT,cmu,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",dope,29,Mentally was in the kitchen mixin' coke and dope,coke,INNER,SLANT,cmu,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",remember,29,Mentally was in the kitchen mixin' coke and dope,Mentally,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",G,30,"I was readin', writin' rhymes in my rap book",readin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",havin,30,"I was readin', writin' rhymes in my rap book",rap,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",dope,31,"Fuck around, now I get a book of coke a show",show,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,28,"Big G Herbo, I remember havin' coke and dope",dope,32,"I got fans out of Indiana, Kokomo",Kokomo,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,29,Mentally was in the kitchen mixin' coke and dope,coke,29,Mentally was in the kitchen mixin' coke and dope,dope,INNER,SLANT,cmu,MED,Y
+MONEYMAN,29,Mentally was in the kitchen mixin' coke and dope,kitchen,29,Mentally was in the kitchen mixin' coke and dope,mixin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,29,Mentally was in the kitchen mixin' coke and dope,dope,31,"Fuck around, now I get a book of coke a show",show,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,29,Mentally was in the kitchen mixin' coke and dope,coke,31,"Fuck around, now I get a book of coke a show",coke,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,29,Mentally was in the kitchen mixin' coke and dope,coke,31,"Fuck around, now I get a book of coke a show",show,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,29,Mentally was in the kitchen mixin' coke and dope,dope,31,"Fuck around, now I get a book of coke a show",coke,INNER,SLANT,cmu,MED,Y
+MONEYMAN,29,Mentally was in the kitchen mixin' coke and dope,Mentally,31,"Fuck around, now I get a book of coke a show",get,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,29,Mentally was in the kitchen mixin' coke and dope,dope,32,"I got fans out of Indiana, Kokomo",Kokomo,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,29,Mentally was in the kitchen mixin' coke and dope,dope,33,BAPE T's comin' straight from out of Tokyo,Tokyo,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,30,"I was readin', writin' rhymes in my rap book",readin,30,"I was readin', writin' rhymes in my rap book",writin,INNER,SLANT,spelling,LOW,Y
+MONEYMAN,30,"I was readin', writin' rhymes in my rap book",writin,30,"I was readin', writin' rhymes in my rap book",rhymes,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,30,"I was readin', writin' rhymes in my rap book",book,31,"Fuck around, now I get a book of coke a show",book,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,30,"I was readin', writin' rhymes in my rap book",rap,32,"I got fans out of Indiana, Kokomo",fans,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,30,"I was readin', writin' rhymes in my rap book",rap,32,"I got fans out of Indiana, Kokomo",Indiana,INNER,SLANT,cmu,MED,Y
+MONEYMAN,31,"Fuck around, now I get a book of coke a show",around,31,"Fuck around, now I get a book of coke a show",now,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,31,"Fuck around, now I get a book of coke a show",coke,31,"Fuck around, now I get a book of coke a show",show,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,31,"Fuck around, now I get a book of coke a show",show,32,"I got fans out of Indiana, Kokomo",Kokomo,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,31,"Fuck around, now I get a book of coke a show",coke,32,"I got fans out of Indiana, Kokomo",Kokomo,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,31,"Fuck around, now I get a book of coke a show",show,33,BAPE T's comin' straight from out of Tokyo,Tokyo,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,31,"Fuck around, now I get a book of coke a show",coke,33,BAPE T's comin' straight from out of Tokyo,Tokyo,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,31,"Fuck around, now I get a book of coke a show",Fuck,33,BAPE T's comin' straight from out of Tokyo,comin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,31,"Fuck around, now I get a book of coke a show",show,35,"Cost me two G's, that's for my lil fit, you know",know,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,32,"I got fans out of Indiana, Kokomo",fans,32,"I got fans out of Indiana, Kokomo",Indiana,INNER,SLANT,cmu,MED,Y
+MONEYMAN,32,"I got fans out of Indiana, Kokomo",Kokomo,33,BAPE T's comin' straight from out of Tokyo,Tokyo,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,32,"I got fans out of Indiana, Kokomo",Indiana,33,BAPE T's comin' straight from out of Tokyo,BAPE,INNER,SLANT,spelling,LOW,Y
+MONEYMAN,32,"I got fans out of Indiana, Kokomo",got,34,Cost a few G's soon as I walked in the door,Cost,INNER,SLANT,cmu,MED,Y
+MONEYMAN,32,"I got fans out of Indiana, Kokomo",Kokomo,35,"Cost me two G's, that's for my lil fit, you know",know,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,33,BAPE T's comin' straight from out of Tokyo,T's,34,Cost a few G's soon as I walked in the door,G's,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,33,BAPE T's comin' straight from out of Tokyo,Tokyo,35,"Cost me two G's, that's for my lil fit, you know",know,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,33,BAPE T's comin' straight from out of Tokyo,T's,35,"Cost me two G's, that's for my lil fit, you know",G's,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,33,BAPE T's comin' straight from out of Tokyo,Tokyo,37,But I still know how to swag in them penny loafs,loafs,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,34,Cost a few G's soon as I walked in the door,few,34,Cost a few G's soon as I walked in the door,soon,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,34,Cost a few G's soon as I walked in the door,walked,34,Cost a few G's soon as I walked in the door,door,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,34,Cost a few G's soon as I walked in the door,Cost,35,"Cost me two G's, that's for my lil fit, you know",Cost,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,34,Cost a few G's soon as I walked in the door,few,35,"Cost me two G's, that's for my lil fit, you know",two,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,34,Cost a few G's soon as I walked in the door,G's,35,"Cost me two G's, that's for my lil fit, you know",G's,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,34,Cost a few G's soon as I walked in the door,soon,35,"Cost me two G's, that's for my lil fit, you know",two,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,34,Cost a few G's soon as I walked in the door,G's,36,What it's worth I spent a bag on my G-Fazos,G,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,35,"Cost me two G's, that's for my lil fit, you know",lil,35,"Cost me two G's, that's for my lil fit, you know",fit,INNER,SLANT,cmu,MED,Y
+MONEYMAN,35,"Cost me two G's, that's for my lil fit, you know",G's,36,What it's worth I spent a bag on my G-Fazos,G,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,35,"Cost me two G's, that's for my lil fit, you know",know,37,But I still know how to swag in them penny loafs,loafs,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,35,"Cost me two G's, that's for my lil fit, you know",fit,37,But I still know how to swag in them penny loafs,still,INNER,SLANT,cmu,MED,Y
+MONEYMAN,35,"Cost me two G's, that's for my lil fit, you know",know,37,But I still know how to swag in them penny loafs,know,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,35,"Cost me two G's, that's for my lil fit, you know",lil,37,But I still know how to swag in them penny loafs,still,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,35,"Cost me two G's, that's for my lil fit, you know",know,38,"Gucci, Louis, that's my swag on the really though",though,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,35,"Cost me two G's, that's for my lil fit, you know",know,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",bro,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,36,What it's worth I spent a bag on my G-Fazos,bag,37,But I still know how to swag in them penny loafs,swag,INNER,PERFECT,spelling,MED,Y
+MONEYMAN,36,What it's worth I spent a bag on my G-Fazos,spent,37,But I still know how to swag in them penny loafs,penny,INNER,SLANT,cmu,MED,Y
+MONEYMAN,36,What it's worth I spent a bag on my G-Fazos,bag,38,"Gucci, Louis, that's my swag on the really though",swag,INNER,PERFECT,spelling,MED,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,know,37,But I still know how to swag in them penny loafs,loafs,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,loafs,38,"Gucci, Louis, that's my swag on the really though",though,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,know,38,"Gucci, Louis, that's my swag on the really though",though,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,still,38,"Gucci, Louis, that's my swag on the really though",really,INNER,SLANT,cmu,MED,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,swag,38,"Gucci, Louis, that's my swag on the really though",swag,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,37,But I still know how to swag in them penny loafs,loafs,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",bro,END,ASSONANCE,vowel,MED,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,know,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",bro,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,know,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",don't,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,loafs,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",don't,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,still,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",fitted,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,37,But I still know how to swag in them penny loafs,swag,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",sag,INNER,PERFECT,spelling,MED,Y
+MONEYMAN,38,"Gucci, Louis, that's my swag on the really though",Gucci,38,"Gucci, Louis, that's my swag on the really though",Louis,INNER,SLANT,cmu,MED,Y
+MONEYMAN,38,"Gucci, Louis, that's my swag on the really though",though,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",bro,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,38,"Gucci, Louis, that's my swag on the really though",really,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",fitted,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,38,"Gucci, Louis, that's my swag on the really though",swag,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",sag,INNER,PERFECT,spelling,MED,Y
+MONEYMAN,38,"Gucci, Louis, that's my swag on the really though",though,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",don't,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,38,"Gucci, Louis, that's my swag on the really though",really,40,Bitch I'll blow out your brains,Bitch,INNER,SLANT,cmu,MED,Y
+MONEYMAN,38,"Gucci, Louis, that's my swag on the really though",though,40,Bitch I'll blow out your brains,blow,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",don't,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",bro,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",bro,40,Bitch I'll blow out your brains,blow,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",don't,40,Bitch I'll blow out your brains,blow,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",fitted,40,Bitch I'll blow out your brains,Bitch,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",Saint,40,Bitch I'll blow out your brains,brains,INNER,SLANT,cmu,MED,Y
+MONEYMAN,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",sag,41,Y'all niggas ain't gang gang,gang,INNER,SLANT,cmu,MED,Y
+MONEYMAN,39,"Saint Laurents don't gotta sag 'cause they fitted, bro",Saint,41,Y'all niggas ain't gang gang,ain't,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,40,Bitch I'll blow out your brains,brains,41,Y'all niggas ain't gang gang,ain't,INNER,SLANT,cmu,MED,Y
+MONEYMAN,40,Bitch I'll blow out your brains,brains,42,Spent a whole thing on my chain,chain,END,SLANT,cmu,MED,Y
+MONEYMAN,40,Bitch I'll blow out your brains,Bitch,42,Spent a whole thing on my chain,thing,INNER,SLANT,cmu,MED,Y
+MONEYMAN,40,Bitch I'll blow out your brains,blow,42,Spent a whole thing on my chain,whole,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,40,Bitch I'll blow out your brains,brains,43,"Used to cookin', bag up 'caine",'caine,END,SLANT,cmu,MED,Y
+MONEYMAN,41,Y'all niggas ain't gang gang,gang,41,Y'all niggas ain't gang gang,gang,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,41,Y'all niggas ain't gang gang,ain't,42,Spent a whole thing on my chain,chain,INNER,SLANT,cmu,MED,Y
+MONEYMAN,41,Y'all niggas ain't gang gang,ain't,43,"Used to cookin', bag up 'caine",'caine,INNER,SLANT,cmu,MED,Y
+MONEYMAN,41,Y'all niggas ain't gang gang,gang,43,"Used to cookin', bag up 'caine",bag,INNER,SLANT,cmu,MED,Y
+MONEYMAN,42,Spent a whole thing on my chain,chain,43,"Used to cookin', bag up 'caine",'caine,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,42,Spent a whole thing on my chain,Spent,44,"I'm on the west, free GeeWee, that's my blooda, bitch",west,INNER,SLANT,cmu,MED,Y
+MONEYMAN,42,Spent a whole thing on my chain,thing,44,"I'm on the west, free GeeWee, that's my blooda, bitch",bitch,INNER,SLANT,cmu,MED,Y
+MONEYMAN,43,"Used to cookin', bag up 'caine",Used,44,"I'm on the west, free GeeWee, that's my blooda, bitch",blooda,INNER,SLANT,spelling,LOW,Y
+MONEYMAN,43,"Used to cookin', bag up 'caine",cookin,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",Brooklyn,INNER,SLANT,cmu,MED,Y
+MONEYMAN,44,"I'm on the west, free GeeWee, that's my blooda, bitch",free,44,"I'm on the west, free GeeWee, that's my blooda, bitch",GeeWee,INNER,PERFECT,spelling,MED,Y
+MONEYMAN,44,"I'm on the west, free GeeWee, that's my blooda, bitch",bitch,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",bitch,END,REPEAT,spelling,HIGH,N
+MONEYMAN,44,"I'm on the west, free GeeWee, that's my blooda, bitch",free,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",east,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,44,"I'm on the west, free GeeWee, that's my blooda, bitch",free,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",free,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,44,"I'm on the west, free GeeWee, that's my blooda, bitch",GeeWee,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",free,INNER,PERFECT,spelling,MED,Y
+MONEYMAN,44,"I'm on the west, free GeeWee, that's my blooda, bitch",bitch,46,"I'm in Houston with J Prince, shout out Mob",Prince,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",east,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",free,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",bitch,46,"I'm in Houston with J Prince, shout out Mob",Prince,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",bitch,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,killed,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",east,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,hear,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,45,"I'm on that east, posted in Brooklyn, free them Shmurdas, bitch",free,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,hear,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,46,"I'm in Houston with J Prince, shout out Mob",Mob,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,robbed,END,SLANT,cmu,MED,Y
+MONEYMAN,46,"I'm in Houston with J Prince, shout out Mob",Houston,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,gon,INNER,PERFECT,spelling,MED,Y
+MONEYMAN,46,"I'm in Houston with J Prince, shout out Mob",Prince,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,killed,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,46,"I'm in Houston with J Prince, shout out Mob",shout,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,'bout,INNER,PERFECT,cmu,HIGH,Y
+MONEYMAN,46,"I'm in Houston with J Prince, shout out Mob",Mob,48,"Bitch, I ain't tryna talk if you ain't tryna slob",slob,END,PERFECT,cmu,HIGH,Y
+MONEYMAN,46,"I'm in Houston with J Prince, shout out Mob",J,48,"Bitch, I ain't tryna talk if you ain't tryna slob",ain't,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,46,"I'm in Houston with J Prince, shout out Mob",Prince,48,"Bitch, I ain't tryna talk if you ain't tryna slob",Bitch,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,46,"I'm in Houston with J Prince, shout out Mob",Mob,50,"Nigga, that's on God",God,END,SLANT,cmu,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,ever,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,get,INNER,SLANT,cmu,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,gettin,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,ever,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,gettin,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,get,INNER,SLANT,cmu,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,robbed,48,"Bitch, I ain't tryna talk if you ain't tryna slob",slob,END,SLANT,cmu,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,hear,48,"Bitch, I ain't tryna talk if you ain't tryna slob",tryna,INNER,SLANT,spelling,LOW,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,killed,48,"Bitch, I ain't tryna talk if you ain't tryna slob",Bitch,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,ever,49,"Platinum sellin' artist, but I'll put you on the news",sellin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,get,49,"Platinum sellin' artist, but I'll put you on the news",sellin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,gettin,49,"Platinum sellin' artist, but I'll put you on the news",sellin,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,robbed,49,"Platinum sellin' artist, but I'll put you on the news",artist,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,47,You gon' hear 'bout a nigga gettin' killed if I ever get robbed,robbed,50,"Nigga, that's on God",God,END,SLANT,cmu,MED,Y
+MONEYMAN,48,"Bitch, I ain't tryna talk if you ain't tryna slob",ain't,48,"Bitch, I ain't tryna talk if you ain't tryna slob",ain't,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,48,"Bitch, I ain't tryna talk if you ain't tryna slob",tryna,48,"Bitch, I ain't tryna talk if you ain't tryna slob",tryna,INNER,REPEAT,spelling,HIGH,N
+MONEYMAN,48,"Bitch, I ain't tryna talk if you ain't tryna slob",slob,49,"Platinum sellin' artist, but I'll put you on the news",artist,INNER,ASSONANCE,vowel,MED,Y
+MONEYMAN,48,"Bitch, I ain't tryna talk if you ain't tryna slob",slob,50,"Nigga, that's on God",God,END,SLANT,cmu,MED,Y
+MONEYMAN,49,"Platinum sellin' artist, but I'll put you on the news",artist,50,"Nigga, that's on God",God,INNER,ASSONANCE,vowel,MED,Y

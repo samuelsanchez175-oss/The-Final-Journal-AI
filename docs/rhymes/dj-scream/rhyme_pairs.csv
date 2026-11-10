@@ -1,0 +1,388 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Lit,1,"I fucks with you, nigga",nigga,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",lit,END,SLANT,spelling,LOW,Y
+Lit,1,"I fucks with you, nigga",nigga,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",Lit,INNER,SLANT,spelling,LOW,Y
+Lit,1,"I fucks with you, nigga",nigga,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",lit,END,SLANT,spelling,LOW,Y
+Lit,1,"I fucks with you, nigga",nigga,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",Lit,INNER,SLANT,spelling,LOW,Y
+Lit,1,"I fucks with you, nigga",nigga,4,Lit like a wick (21),wick,END,SLANT,spelling,LOW,Y
+Lit,1,"I fucks with you, nigga",nigga,5,"Lit like a stick (21, 21)",stick,END,SLANT,spelling,LOW,Y
+Lit,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",Lit,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",lit,INNER,REPEAT,spelling,HIGH,N
+Lit,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",lit,END,REPEAT,spelling,HIGH,N
+Lit,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",Lit,INNER,REPEAT,spelling,HIGH,N
+Lit,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",lit,4,Lit like a wick (21),wick,END,SLANT,cmu,MED,Y
+Lit,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",Lit,4,Lit like a wick (21),Lit,INNER,REPEAT,spelling,HIGH,N
+Lit,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",Lit,4,Lit like a wick (21),wick,INNER,SLANT,cmu,MED,Y
+Lit,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",lit,5,"Lit like a stick (21, 21)",stick,END,SLANT,cmu,MED,Y
+Lit,2,"Lit, lit (21), lit (Yeah, yeah), lit (Yeah, yeah), lit (21, 21, 21, 21)",lit,6,Lit in this bitch (I'm lit in this bitch),bitch,END,SLANT,cmu,MED,Y
+Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",lit,INNER,REPEAT,spelling,HIGH,N
+Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",lit,4,Lit like a wick (21),wick,END,SLANT,cmu,MED,Y
+Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",Lit,4,Lit like a wick (21),Lit,INNER,REPEAT,spelling,HIGH,N
+Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",Lit,4,Lit like a wick (21),wick,INNER,SLANT,cmu,MED,Y
+Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",lit,5,"Lit like a stick (21, 21)",stick,END,SLANT,cmu,MED,Y
+Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",Lit,5,"Lit like a stick (21, 21)",Lit,INNER,REPEAT,spelling,HIGH,N
+Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",Lit,5,"Lit like a stick (21, 21)",stick,INNER,SLANT,cmu,MED,Y
+Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",lit,6,Lit in this bitch (I'm lit in this bitch),bitch,END,SLANT,cmu,MED,Y
+Lit,3,"Lit (Lit), lit (Lit, lit), lit (Lit, lit), lit (Lit, lit)",lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,END,SLANT,cmu,MED,Y
+Lit,4,Lit like a wick (21),Lit,4,Lit like a wick (21),wick,INNER,SLANT,cmu,MED,Y
+Lit,4,Lit like a wick (21),wick,5,"Lit like a stick (21, 21)",stick,END,PERFECT,cmu,HIGH,Y
+Lit,4,Lit like a wick (21),like,5,"Lit like a stick (21, 21)",like,INNER,REPEAT,spelling,HIGH,N
+Lit,4,Lit like a wick (21),Lit,5,"Lit like a stick (21, 21)",Lit,INNER,REPEAT,spelling,HIGH,N
+Lit,4,Lit like a wick (21),Lit,5,"Lit like a stick (21, 21)",stick,INNER,SLANT,cmu,MED,Y
+Lit,4,Lit like a wick (21),wick,5,"Lit like a stick (21, 21)",Lit,INNER,SLANT,cmu,MED,Y
+Lit,4,Lit like a wick (21),wick,6,Lit in this bitch (I'm lit in this bitch),bitch,END,SLANT,cmu,MED,Y
+Lit,4,Lit like a wick (21),Lit,6,Lit in this bitch (I'm lit in this bitch),bitch,INNER,SLANT,cmu,MED,Y
+Lit,4,Lit like a wick (21),Lit,6,Lit in this bitch (I'm lit in this bitch),Lit,INNER,REPEAT,spelling,HIGH,N
+Lit,4,Lit like a wick (21),wick,6,Lit in this bitch (I'm lit in this bitch),Lit,INNER,SLANT,cmu,MED,Y
+Lit,4,Lit like a wick (21),wick,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,END,SLANT,cmu,MED,Y
+Lit,4,Lit like a wick (21),wick,8,I'm lit like a wick (I'm lit like a what?),wick,END,REPEAT,spelling,HIGH,N
+Lit,5,"Lit like a stick (21, 21)",Lit,5,"Lit like a stick (21, 21)",stick,INNER,SLANT,cmu,MED,Y
+Lit,5,"Lit like a stick (21, 21)",stick,6,Lit in this bitch (I'm lit in this bitch),bitch,END,SLANT,cmu,MED,Y
+Lit,5,"Lit like a stick (21, 21)",Lit,6,Lit in this bitch (I'm lit in this bitch),bitch,INNER,SLANT,cmu,MED,Y
+Lit,5,"Lit like a stick (21, 21)",Lit,6,Lit in this bitch (I'm lit in this bitch),Lit,INNER,REPEAT,spelling,HIGH,N
+Lit,5,"Lit like a stick (21, 21)",stick,6,Lit in this bitch (I'm lit in this bitch),Lit,INNER,SLANT,cmu,MED,Y
+Lit,5,"Lit like a stick (21, 21)",stick,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,END,SLANT,cmu,MED,Y
+Lit,5,"Lit like a stick (21, 21)",Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,5,"Lit like a stick (21, 21)",Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",lit,INNER,REPEAT,spelling,HIGH,N
+Lit,5,"Lit like a stick (21, 21)",stick,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",lit,INNER,SLANT,cmu,MED,Y
+Lit,5,"Lit like a stick (21, 21)",stick,8,I'm lit like a wick (I'm lit like a what?),wick,END,PERFECT,cmu,HIGH,Y
+Lit,5,"Lit like a stick (21, 21)",stick,9,I'm lit in this bitch (I'm lit in this bitch),bitch,END,SLANT,cmu,MED,Y
+Lit,6,Lit in this bitch (I'm lit in this bitch),Lit,6,Lit in this bitch (I'm lit in this bitch),bitch,INNER,SLANT,cmu,MED,Y
+Lit,6,Lit in this bitch (I'm lit in this bitch),bitch,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,END,REPEAT,spelling,HIGH,N
+Lit,6,Lit in this bitch (I'm lit in this bitch),bitch,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",lit,INNER,SLANT,cmu,MED,Y
+Lit,6,Lit in this bitch (I'm lit in this bitch),Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,6,Lit in this bitch (I'm lit in this bitch),Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",lit,INNER,REPEAT,spelling,HIGH,N
+Lit,6,Lit in this bitch (I'm lit in this bitch),bitch,8,I'm lit like a wick (I'm lit like a what?),wick,END,SLANT,cmu,MED,Y
+Lit,6,Lit in this bitch (I'm lit in this bitch),bitch,8,I'm lit like a wick (I'm lit like a what?),lit,INNER,SLANT,cmu,MED,Y
+Lit,6,Lit in this bitch (I'm lit in this bitch),Lit,8,I'm lit like a wick (I'm lit like a what?),lit,INNER,REPEAT,spelling,HIGH,N
+Lit,6,Lit in this bitch (I'm lit in this bitch),Lit,8,I'm lit like a wick (I'm lit like a what?),wick,INNER,SLANT,cmu,MED,Y
+Lit,6,Lit in this bitch (I'm lit in this bitch),bitch,9,I'm lit in this bitch (I'm lit in this bitch),bitch,END,REPEAT,spelling,HIGH,N
+Lit,6,Lit in this bitch (I'm lit in this bitch),bitch,10,I bust your wig in this bitch (Pew-pew),bitch,END,REPEAT,spelling,HIGH,N
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,8,I'm lit like a wick (I'm lit like a what?),wick,END,SLANT,cmu,MED,Y
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,8,I'm lit like a wick (I'm lit like a what?),lit,INNER,SLANT,cmu,MED,Y
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",lit,8,I'm lit like a wick (I'm lit like a what?),lit,INNER,REPEAT,spelling,HIGH,N
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",lit,8,I'm lit like a wick (I'm lit like a what?),wick,INNER,SLANT,cmu,MED,Y
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,9,I'm lit in this bitch (I'm lit in this bitch),bitch,END,REPEAT,spelling,HIGH,N
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,9,I'm lit in this bitch (I'm lit in this bitch),lit,INNER,SLANT,cmu,MED,Y
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",lit,9,I'm lit in this bitch (I'm lit in this bitch),bitch,INNER,SLANT,cmu,MED,Y
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",lit,9,I'm lit in this bitch (I'm lit in this bitch),lit,INNER,REPEAT,spelling,HIGH,N
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,10,I bust your wig in this bitch (Pew-pew),bitch,END,REPEAT,spelling,HIGH,N
+Lit,7,"Yeah, I'm lit in this bitch (I'm lit, I'm lit)",bitch,11,I bust a nut on your bitch (Ah-wow),bitch,END,REPEAT,spelling,HIGH,N
+Lit,8,I'm lit like a wick (I'm lit like a what?),lit,8,I'm lit like a wick (I'm lit like a what?),wick,INNER,SLANT,cmu,MED,Y
+Lit,8,I'm lit like a wick (I'm lit like a what?),wick,9,I'm lit in this bitch (I'm lit in this bitch),bitch,END,SLANT,cmu,MED,Y
+Lit,8,I'm lit like a wick (I'm lit like a what?),lit,9,I'm lit in this bitch (I'm lit in this bitch),bitch,INNER,SLANT,cmu,MED,Y
+Lit,8,I'm lit like a wick (I'm lit like a what?),lit,9,I'm lit in this bitch (I'm lit in this bitch),lit,INNER,REPEAT,spelling,HIGH,N
+Lit,8,I'm lit like a wick (I'm lit like a what?),wick,9,I'm lit in this bitch (I'm lit in this bitch),lit,INNER,SLANT,cmu,MED,Y
+Lit,8,I'm lit like a wick (I'm lit like a what?),wick,10,I bust your wig in this bitch (Pew-pew),bitch,END,SLANT,cmu,MED,Y
+Lit,8,I'm lit like a wick (I'm lit like a what?),lit,10,I bust your wig in this bitch (Pew-pew),bitch,INNER,SLANT,cmu,MED,Y
+Lit,8,I'm lit like a wick (I'm lit like a what?),lit,10,I bust your wig in this bitch (Pew-pew),wig,INNER,SLANT,cmu,MED,Y
+Lit,8,I'm lit like a wick (I'm lit like a what?),wick,10,I bust your wig in this bitch (Pew-pew),wig,INNER,SLANT,cmu,MED,Y
+Lit,8,I'm lit like a wick (I'm lit like a what?),wick,11,I bust a nut on your bitch (Ah-wow),bitch,END,SLANT,cmu,MED,Y
+Lit,8,I'm lit like a wick (I'm lit like a what?),wick,12,Hundred-round drum on the stick (Ga-gaow),stick,END,PERFECT,cmu,HIGH,Y
+Lit,9,I'm lit in this bitch (I'm lit in this bitch),lit,9,I'm lit in this bitch (I'm lit in this bitch),bitch,INNER,SLANT,cmu,MED,Y
+Lit,9,I'm lit in this bitch (I'm lit in this bitch),bitch,10,I bust your wig in this bitch (Pew-pew),bitch,END,REPEAT,spelling,HIGH,N
+Lit,9,I'm lit in this bitch (I'm lit in this bitch),bitch,10,I bust your wig in this bitch (Pew-pew),wig,INNER,SLANT,cmu,MED,Y
+Lit,9,I'm lit in this bitch (I'm lit in this bitch),lit,10,I bust your wig in this bitch (Pew-pew),bitch,INNER,SLANT,cmu,MED,Y
+Lit,9,I'm lit in this bitch (I'm lit in this bitch),lit,10,I bust your wig in this bitch (Pew-pew),wig,INNER,SLANT,cmu,MED,Y
+Lit,9,I'm lit in this bitch (I'm lit in this bitch),bitch,11,I bust a nut on your bitch (Ah-wow),bitch,END,REPEAT,spelling,HIGH,N
+Lit,9,I'm lit in this bitch (I'm lit in this bitch),lit,11,I bust a nut on your bitch (Ah-wow),bitch,INNER,SLANT,cmu,MED,Y
+Lit,9,I'm lit in this bitch (I'm lit in this bitch),bitch,12,Hundred-round drum on the stick (Ga-gaow),stick,END,SLANT,cmu,MED,Y
+Lit,9,I'm lit in this bitch (I'm lit in this bitch),bitch,13,"Lit (Lit), lit (Lit)",lit,END,SLANT,cmu,MED,Y
+Lit,10,I bust your wig in this bitch (Pew-pew),wig,10,I bust your wig in this bitch (Pew-pew),bitch,INNER,SLANT,cmu,MED,Y
+Lit,10,I bust your wig in this bitch (Pew-pew),bitch,11,I bust a nut on your bitch (Ah-wow),bitch,END,REPEAT,spelling,HIGH,N
+Lit,10,I bust your wig in this bitch (Pew-pew),bust,11,I bust a nut on your bitch (Ah-wow),bust,INNER,REPEAT,spelling,HIGH,N
+Lit,10,I bust your wig in this bitch (Pew-pew),bust,11,I bust a nut on your bitch (Ah-wow),nut,INNER,SLANT,cmu,MED,Y
+Lit,10,I bust your wig in this bitch (Pew-pew),wig,11,I bust a nut on your bitch (Ah-wow),bitch,INNER,SLANT,cmu,MED,Y
+Lit,10,I bust your wig in this bitch (Pew-pew),bitch,12,Hundred-round drum on the stick (Ga-gaow),stick,END,SLANT,cmu,MED,Y
+Lit,10,I bust your wig in this bitch (Pew-pew),bust,12,Hundred-round drum on the stick (Ga-gaow),drum,INNER,ASSONANCE,vowel,MED,Y
+Lit,10,I bust your wig in this bitch (Pew-pew),bust,12,Hundred-round drum on the stick (Ga-gaow),Hundred,INNER,ASSONANCE,vowel,MED,Y
+Lit,10,I bust your wig in this bitch (Pew-pew),wig,12,Hundred-round drum on the stick (Ga-gaow),stick,INNER,SLANT,cmu,MED,Y
+Lit,10,I bust your wig in this bitch (Pew-pew),bitch,13,"Lit (Lit), lit (Lit)",lit,END,SLANT,cmu,MED,Y
+Lit,10,I bust your wig in this bitch (Pew-pew),bitch,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,END,SLANT,cmu,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),bust,11,I bust a nut on your bitch (Ah-wow),nut,INNER,SLANT,cmu,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),bitch,12,Hundred-round drum on the stick (Ga-gaow),stick,END,SLANT,cmu,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),bust,12,Hundred-round drum on the stick (Ga-gaow),drum,INNER,ASSONANCE,vowel,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),bust,12,Hundred-round drum on the stick (Ga-gaow),Hundred,INNER,ASSONANCE,vowel,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),nut,12,Hundred-round drum on the stick (Ga-gaow),drum,INNER,SLANT,cmu,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),nut,12,Hundred-round drum on the stick (Ga-gaow),Hundred,INNER,ASSONANCE,vowel,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),bitch,13,"Lit (Lit), lit (Lit)",lit,END,SLANT,cmu,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),bitch,13,"Lit (Lit), lit (Lit)",Lit,INNER,SLANT,cmu,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),bitch,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,END,SLANT,cmu,MED,Y
+Lit,11,I bust a nut on your bitch (Ah-wow),bitch,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,END,SLANT,cmu,MED,Y
+Lit,12,Hundred-round drum on the stick (Ga-gaow),Hundred,12,Hundred-round drum on the stick (Ga-gaow),drum,INNER,ASSONANCE,vowel,MED,Y
+Lit,12,Hundred-round drum on the stick (Ga-gaow),stick,13,"Lit (Lit), lit (Lit)",lit,END,SLANT,cmu,MED,Y
+Lit,12,Hundred-round drum on the stick (Ga-gaow),stick,13,"Lit (Lit), lit (Lit)",Lit,INNER,SLANT,cmu,MED,Y
+Lit,12,Hundred-round drum on the stick (Ga-gaow),stick,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,END,SLANT,cmu,MED,Y
+Lit,12,Hundred-round drum on the stick (Ga-gaow),stick,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,INNER,SLANT,cmu,MED,Y
+Lit,12,Hundred-round drum on the stick (Ga-gaow),stick,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,END,SLANT,cmu,MED,Y
+Lit,12,Hundred-round drum on the stick (Ga-gaow),stick,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,END,ASSONANCE,vowel,MED,Y
+Lit,13,"Lit (Lit), lit (Lit)",Lit,13,"Lit (Lit), lit (Lit)",lit,INNER,REPEAT,spelling,HIGH,N
+Lit,13,"Lit (Lit), lit (Lit)",lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,END,REPEAT,spelling,HIGH,N
+Lit,13,"Lit (Lit), lit (Lit)",Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,INNER,REPEAT,spelling,HIGH,N
+Lit,13,"Lit (Lit), lit (Lit)",lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,END,SLANT,cmu,MED,Y
+Lit,13,"Lit (Lit), lit (Lit)",Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,13,"Lit (Lit), lit (Lit)",Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,INNER,SLANT,cmu,MED,Y
+Lit,13,"Lit (Lit), lit (Lit)",Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",lick,INNER,SLANT,cmu,MED,Y
+Lit,13,"Lit (Lit), lit (Lit)",lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,END,ASSONANCE,vowel,MED,Y
+Lit,13,"Lit (Lit), lit (Lit)",lit,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,END,ASSONANCE,vowel,MED,Y
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,INNER,REPEAT,spelling,HIGH,N
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,END,SLANT,cmu,MED,Y
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",Choppers,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",wanna,INNER,ASSONANCE,vowel,MED,Y
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,INNER,SLANT,cmu,MED,Y
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",lick,INNER,SLANT,cmu,MED,Y
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,END,ASSONANCE,vowel,MED,Y
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,INNER,ASSONANCE,vowel,MED,Y
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,END,ASSONANCE,vowel,MED,Y
+Lit,14,"Choppers, they lit, diamonds, they lit (Woah, wow, wow, wow)",lit,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",Whitney,END,SLANT,cmu,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",bitch,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,INNER,SLANT,cmu,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",bitch,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",lick,INNER,SLANT,cmu,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",lick,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,INNER,SLANT,cmu,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,END,SLANT,cmu,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",bitch,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,INNER,ASSONANCE,vowel,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,INNER,SLANT,cmu,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",lick,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,INNER,ASSONANCE,vowel,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,END,ASSONANCE,vowel,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",bitch,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,INNER,ASSONANCE,vowel,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",lick,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,INNER,ASSONANCE,vowel,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",Whitney,END,ASSONANCE,vowel,MED,Y
+Lit,15,"Your bitch wanna lick, the way that I drip (I drip, I drip, I drip)",drip,19,I'm lit like my wrist (Lit like my wrist),wrist,END,ASSONANCE,vowel,MED,Y
+Lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,INNER,REPEAT,spelling,HIGH,N
+Lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,END,ASSONANCE,vowel,MED,Y
+Lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",Aquafina,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",Gang,INNER,ASSONANCE,vowel,LOW,N
+Lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,INNER,ASSONANCE,vowel,MED,Y
+Lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",Shawty,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",Slaughter,INNER,SLANT,spelling,LOW,Y
+Lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",Whitney,END,SLANT,cmu,MED,Y
+Lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",Whitney,INNER,SLANT,cmu,MED,Y
+Lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",Shawty,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",Whitney,INNER,ASSONANCE,vowel,LOW,N
+Lit,16,"Shawty drippin' Aquafina, drippin', yeah, yeah (21, 21, 21, 21)",drippin,19,I'm lit like my wrist (Lit like my wrist),wrist,END,ASSONANCE,vowel,MED,Y
+Lit,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",Whitney,END,SLANT,cmu,MED,Y
+Lit,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,19,I'm lit like my wrist (Lit like my wrist),wrist,END,ASSONANCE,vowel,MED,Y
+Lit,17,"Slaughter Gang, we don’t leave a witness, yeah (Leave a witness)",witness,19,I'm lit like my wrist (Lit like my wrist),lit,INNER,ASSONANCE,vowel,MED,Y
+Lit,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",Whitney,19,I'm lit like my wrist (Lit like my wrist),wrist,END,ASSONANCE,vowel,MED,Y
+Lit,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",like,19,I'm lit like my wrist (Lit like my wrist),like,INNER,REPEAT,spelling,HIGH,N
+Lit,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",nigga,19,I'm lit like my wrist (Lit like my wrist),lit,INNER,SLANT,spelling,LOW,Y
+Lit,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",Whitney,19,I'm lit like my wrist (Lit like my wrist),lit,INNER,SLANT,cmu,MED,Y
+Lit,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",like,20,I'm lit like my necklace,like,INNER,REPEAT,spelling,HIGH,N
+Lit,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",nigga,20,I'm lit like my necklace,lit,INNER,SLANT,spelling,LOW,Y
+Lit,18,"Abusin' drugs, nigga, like I'm Whitney (Whitney, nigga, Whitney, nigga, Whitney)",Whitney,20,I'm lit like my necklace,lit,INNER,SLANT,cmu,MED,Y
+Lit,19,I'm lit like my wrist (Lit like my wrist),lit,19,I'm lit like my wrist (Lit like my wrist),wrist,INNER,SLANT,cmu,MED,Y
+Lit,19,I'm lit like my wrist (Lit like my wrist),like,20,I'm lit like my necklace,like,INNER,REPEAT,spelling,HIGH,N
+Lit,19,I'm lit like my wrist (Lit like my wrist),lit,20,I'm lit like my necklace,lit,INNER,REPEAT,spelling,HIGH,N
+Lit,19,I'm lit like my wrist (Lit like my wrist),wrist,20,I'm lit like my necklace,lit,INNER,SLANT,cmu,MED,Y
+Lit,19,I'm lit like my wrist (Lit like my wrist),lit,21,I got the stick for the hecklers,stick,INNER,SLANT,cmu,MED,Y
+Lit,19,I'm lit like my wrist (Lit like my wrist),wrist,21,I got the stick for the hecklers,stick,INNER,ASSONANCE,vowel,MED,Y
+Lit,20,I'm lit like my necklace,necklace,21,I got the stick for the hecklers,hecklers,END,SLANT,cmu,MED,Y
+Lit,20,I'm lit like my necklace,lit,21,I got the stick for the hecklers,stick,INNER,SLANT,cmu,MED,Y
+Lit,20,I'm lit like my necklace,lit,22,I'm lit in this ho (Lit in this ho),lit,INNER,REPEAT,spelling,HIGH,N
+Lit,21,I got the stick for the hecklers,stick,22,I'm lit in this ho (Lit in this ho),lit,INNER,SLANT,cmu,MED,Y
+Lit,21,I got the stick for the hecklers,stick,23,I pick and I roll (I pick and I roll),pick,INNER,PERFECT,cmu,HIGH,Y
+Lit,22,I'm lit in this ho (Lit in this ho),ho,23,I pick and I roll (I pick and I roll),roll,END,ASSONANCE,vowel,MED,Y
+Lit,22,I'm lit in this ho (Lit in this ho),lit,23,I pick and I roll (I pick and I roll),pick,INNER,SLANT,cmu,MED,Y
+Lit,22,I'm lit in this ho (Lit in this ho),ho,25,How could I stop when I'm on the go? (Grindin'),go,END,PERFECT,cmu,HIGH,Y
+Lit,22,I'm lit in this ho (Lit in this ho),ho,26,Heard you be gettin' that shit off the boat,boat,END,ASSONANCE,vowel,MED,Y
+Lit,23,I pick and I roll (I pick and I roll),roll,25,How could I stop when I'm on the go? (Grindin'),go,END,ASSONANCE,vowel,MED,Y
+Lit,23,I pick and I roll (I pick and I roll),roll,26,Heard you be gettin' that shit off the boat,boat,END,SLANT,cmu,MED,Y
+Lit,23,I pick and I roll (I pick and I roll),roll,27,"Well, nigga, we gon' need a load (Mhm)",load,END,SLANT,cmu,MED,Y
+Lit,24,I do what I want,want,25,How could I stop when I'm on the go? (Grindin'),stop,INNER,ASSONANCE,vowel,MED,Y
+Lit,25,How could I stop when I'm on the go? (Grindin'),go,26,Heard you be gettin' that shit off the boat,boat,END,ASSONANCE,vowel,MED,Y
+Lit,25,How could I stop when I'm on the go? (Grindin'),when,26,Heard you be gettin' that shit off the boat,gettin,INNER,ASSONANCE,vowel,MED,Y
+Lit,25,How could I stop when I'm on the go? (Grindin'),go,27,"Well, nigga, we gon' need a load (Mhm)",load,END,ASSONANCE,vowel,MED,Y
+Lit,25,How could I stop when I'm on the go? (Grindin'),when,27,"Well, nigga, we gon' need a load (Mhm)",Well,INNER,SLANT,cmu,MED,Y
+Lit,25,How could I stop when I'm on the go? (Grindin'),go,28,Heard you be havin' that shit for the low,low,END,PERFECT,cmu,HIGH,Y
+Lit,26,Heard you be gettin' that shit off the boat,boat,27,"Well, nigga, we gon' need a load (Mhm)",load,END,SLANT,cmu,MED,Y
+Lit,26,Heard you be gettin' that shit off the boat,boat,27,"Well, nigga, we gon' need a load (Mhm)",gon,INNER,SLANT,spelling,LOW,Y
+Lit,26,Heard you be gettin' that shit off the boat,gettin,27,"Well, nigga, we gon' need a load (Mhm)",Well,INNER,ASSONANCE,vowel,MED,Y
+Lit,26,Heard you be gettin' that shit off the boat,shit,27,"Well, nigga, we gon' need a load (Mhm)",nigga,INNER,SLANT,spelling,LOW,Y
+Lit,26,Heard you be gettin' that shit off the boat,boat,28,Heard you be havin' that shit for the low,low,END,ASSONANCE,vowel,MED,Y
+Lit,26,Heard you be gettin' that shit off the boat,Heard,28,Heard you be havin' that shit for the low,Heard,INNER,REPEAT,spelling,HIGH,N
+Lit,26,Heard you be gettin' that shit off the boat,shit,28,Heard you be havin' that shit for the low,shit,INNER,REPEAT,spelling,HIGH,N
+Lit,26,Heard you be gettin' that shit off the boat,boat,30,"We breakin' bread like it's toast (Yes, sir)",toast,END,SLANT,cmu,MED,Y
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",gon,27,"Well, nigga, we gon' need a load (Mhm)",load,INNER,SLANT,spelling,LOW,Y
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",load,28,Heard you be havin' that shit for the low,low,END,ASSONANCE,vowel,MED,Y
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",nigga,28,Heard you be havin' that shit for the low,shit,INNER,SLANT,spelling,LOW,Y
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",gon,29,"Well, nigga, we gon' need some more (Mhm)",gon,INNER,REPEAT,spelling,HIGH,N
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",load,29,"Well, nigga, we gon' need some more (Mhm)",gon,INNER,SLANT,spelling,LOW,Y
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",need,29,"Well, nigga, we gon' need some more (Mhm)",need,INNER,REPEAT,spelling,HIGH,N
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",nigga,29,"Well, nigga, we gon' need some more (Mhm)",nigga,INNER,REPEAT,spelling,HIGH,N
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",Well,29,"Well, nigga, we gon' need some more (Mhm)",Well,INNER,REPEAT,spelling,HIGH,N
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",load,30,"We breakin' bread like it's toast (Yes, sir)",toast,END,ASSONANCE,vowel,MED,Y
+Lit,27,"Well, nigga, we gon' need a load (Mhm)",load,31,"Sip out the bottle, no toast (No toast)",toast,END,ASSONANCE,vowel,MED,Y
+Lit,28,Heard you be havin' that shit for the low,shit,29,"Well, nigga, we gon' need some more (Mhm)",nigga,INNER,SLANT,spelling,LOW,Y
+Lit,28,Heard you be havin' that shit for the low,low,30,"We breakin' bread like it's toast (Yes, sir)",toast,END,ASSONANCE,vowel,MED,Y
+Lit,28,Heard you be havin' that shit for the low,low,31,"Sip out the bottle, no toast (No toast)",toast,END,ASSONANCE,vowel,MED,Y
+Lit,28,Heard you be havin' that shit for the low,low,32,Bet that bitch gon' do the most (The most),most,END,ASSONANCE,vowel,MED,Y
+Lit,29,"Well, nigga, we gon' need some more (Mhm)",Well,30,"We breakin' bread like it's toast (Yes, sir)",bread,INNER,SLANT,cmu,MED,Y
+Lit,29,"Well, nigga, we gon' need some more (Mhm)",nigga,31,"Sip out the bottle, no toast (No toast)",Sip,INNER,SLANT,spelling,LOW,Y
+Lit,30,"We breakin' bread like it's toast (Yes, sir)",toast,31,"Sip out the bottle, no toast (No toast)",toast,END,REPEAT,spelling,HIGH,N
+Lit,30,"We breakin' bread like it's toast (Yes, sir)",toast,31,"Sip out the bottle, no toast (No toast)",no,INNER,ASSONANCE,vowel,MED,Y
+Lit,30,"We breakin' bread like it's toast (Yes, sir)",toast,32,Bet that bitch gon' do the most (The most),most,END,PERFECT,cmu,HIGH,Y
+Lit,30,"We breakin' bread like it's toast (Yes, sir)",bread,32,Bet that bitch gon' do the most (The most),Bet,INNER,SLANT,cmu,MED,Y
+Lit,30,"We breakin' bread like it's toast (Yes, sir)",toast,33,Just to hop in the Lam' or the Ghost (Woo),Ghost,END,PERFECT,cmu,HIGH,Y
+Lit,31,"Sip out the bottle, no toast (No toast)",no,31,"Sip out the bottle, no toast (No toast)",toast,INNER,ASSONANCE,vowel,MED,Y
+Lit,31,"Sip out the bottle, no toast (No toast)",toast,32,Bet that bitch gon' do the most (The most),most,END,PERFECT,cmu,HIGH,Y
+Lit,31,"Sip out the bottle, no toast (No toast)",no,32,Bet that bitch gon' do the most (The most),most,INNER,ASSONANCE,vowel,MED,Y
+Lit,31,"Sip out the bottle, no toast (No toast)",Sip,32,Bet that bitch gon' do the most (The most),bitch,INNER,SLANT,cmu,MED,Y
+Lit,31,"Sip out the bottle, no toast (No toast)",toast,33,Just to hop in the Lam' or the Ghost (Woo),Ghost,END,PERFECT,cmu,HIGH,Y
+Lit,31,"Sip out the bottle, no toast (No toast)",bottle,33,Just to hop in the Lam' or the Ghost (Woo),hop,INNER,ASSONANCE,vowel,MED,Y
+Lit,31,"Sip out the bottle, no toast (No toast)",no,33,Just to hop in the Lam' or the Ghost (Woo),Ghost,INNER,ASSONANCE,vowel,MED,Y
+Lit,31,"Sip out the bottle, no toast (No toast)",toast,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",go,END,ASSONANCE,vowel,MED,Y
+Lit,32,Bet that bitch gon' do the most (The most),most,33,Just to hop in the Lam' or the Ghost (Woo),Ghost,END,PERFECT,cmu,HIGH,Y
+Lit,32,Bet that bitch gon' do the most (The most),Bet,34,"When you poppin', you poppin'",When,INNER,SLANT,cmu,MED,Y
+Lit,32,Bet that bitch gon' do the most (The most),most,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",go,END,ASSONANCE,vowel,MED,Y
+Lit,32,Bet that bitch gon' do the most (The most),most,36,But you gotta know,know,END,ASSONANCE,vowel,MED,Y
+Lit,33,Just to hop in the Lam' or the Ghost (Woo),hop,34,"When you poppin', you poppin'",poppin,INNER,SLANT,cmu,MED,Y
+Lit,33,Just to hop in the Lam' or the Ghost (Woo),Ghost,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",go,END,ASSONANCE,vowel,MED,Y
+Lit,33,Just to hop in the Lam' or the Ghost (Woo),Ghost,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",No,INNER,ASSONANCE,vowel,MED,Y
+Lit,33,Just to hop in the Lam' or the Ghost (Woo),hop,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",cop,INNER,PERFECT,cmu,HIGH,Y
+Lit,33,Just to hop in the Lam' or the Ghost (Woo),hop,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",hop,INNER,REPEAT,spelling,HIGH,N
+Lit,33,Just to hop in the Lam' or the Ghost (Woo),hop,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",shoppin,INNER,SLANT,cmu,MED,Y
+Lit,33,Just to hop in the Lam' or the Ghost (Woo),Ghost,36,But you gotta know,know,END,ASSONANCE,vowel,MED,Y
+Lit,34,"When you poppin', you poppin'",poppin,34,"When you poppin', you poppin'",poppin,INNER,REPEAT,spelling,HIGH,N
+Lit,34,"When you poppin', you poppin'",poppin,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",cop,INNER,SLANT,cmu,MED,Y
+Lit,34,"When you poppin', you poppin'",poppin,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",hop,INNER,SLANT,cmu,MED,Y
+Lit,34,"When you poppin', you poppin'",poppin,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",shoppin,INNER,MULTI,multi,HIGH,Y
+Lit,34,"When you poppin', you poppin'",poppin poppin,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",wonder shoppin,INNER,MULTI,multi,HIGH,Y
+Lit,34,"When you poppin', you poppin'",When poppin,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",wonder shoppin,INNER,MULTI,multi,HIGH,Y
+Lit,34,"When you poppin', you poppin'",poppin,36,But you gotta know,gotta,INNER,ASSONANCE,vowel,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",hop,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",cop,INNER,PERFECT,cmu,HIGH,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",No,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",go,INNER,PERFECT,cmu,HIGH,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",shoppin,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",cop,INNER,SLANT,cmu,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",shoppin,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",hop,INNER,SLANT,cmu,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",go,36,But you gotta know,know,END,PERFECT,cmu,HIGH,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",cop,36,But you gotta know,gotta,INNER,SLANT,cmu,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",hop,36,But you gotta know,gotta,INNER,SLANT,cmu,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",No,36,But you gotta know,know,INNER,PERFECT,cmu,HIGH,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",shoppin,36,But you gotta know,gotta,INNER,ASSONANCE,vowel,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",cop,37,That every dollar that you spend should make you some more (Flip it),dollar,INNER,SLANT,cmu,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",hop,37,That every dollar that you spend should make you some more (Flip it),dollar,INNER,SLANT,cmu,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",shoppin,37,That every dollar that you spend should make you some more (Flip it),dollar,INNER,ASSONANCE,vowel,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",wonder,37,That every dollar that you spend should make you some more (Flip it),some,INNER,ASSONANCE,vowel,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",go,38,These bitches ain't lovin' you,lovin,END,ASSONANCE,vowel,MED,Y
+Lit,35,"No wonder you shoppin', you hop out and cop it and go (Flip it)",go,39,"They lovin' your dough, they take it and go (Still ratchet)",go,END,REPEAT,spelling,HIGH,N
+Lit,36,But you gotta know,gotta,37,That every dollar that you spend should make you some more (Flip it),dollar,INNER,SLANT,cmu,MED,Y
+Lit,36,But you gotta know,know,38,These bitches ain't lovin' you,lovin,END,ASSONANCE,vowel,MED,Y
+Lit,36,But you gotta know,know,39,"They lovin' your dough, they take it and go (Still ratchet)",go,END,PERFECT,cmu,HIGH,Y
+Lit,37,That every dollar that you spend should make you some more (Flip it),every,37,That every dollar that you spend should make you some more (Flip it),spend,INNER,ASSONANCE,vowel,MED,Y
+Lit,37,That every dollar that you spend should make you some more (Flip it),make,38,These bitches ain't lovin' you,ain't,INNER,ASSONANCE,vowel,MED,Y
+Lit,37,That every dollar that you spend should make you some more (Flip it),make,39,"They lovin' your dough, they take it and go (Still ratchet)",take,INNER,PERFECT,cmu,HIGH,Y
+Lit,38,These bitches ain't lovin' you,lovin,39,"They lovin' your dough, they take it and go (Still ratchet)",go,END,ASSONANCE,vowel,MED,Y
+Lit,38,These bitches ain't lovin' you,ain't,39,"They lovin' your dough, they take it and go (Still ratchet)",take,INNER,ASSONANCE,vowel,MED,Y
+Lit,38,These bitches ain't lovin' you,lovin,39,"They lovin' your dough, they take it and go (Still ratchet)",dough,INNER,ASSONANCE,vowel,MED,Y
+Lit,38,These bitches ain't lovin' you,lovin,39,"They lovin' your dough, they take it and go (Still ratchet)",lovin,INNER,REPEAT,spelling,HIGH,N
+Lit,38,These bitches ain't lovin' you,bitches,40,These bitches is nothing but scavengers,bitches,INNER,REPEAT,spelling,HIGH,N
+Lit,38,These bitches ain't lovin' you,These,40,These bitches is nothing but scavengers,These,INNER,REPEAT,spelling,HIGH,N
+Lit,39,"They lovin' your dough, they take it and go (Still ratchet)",dough,39,"They lovin' your dough, they take it and go (Still ratchet)",go,INNER,PERFECT,cmu,HIGH,Y
+Lit,39,"They lovin' your dough, they take it and go (Still ratchet)",lovin,39,"They lovin' your dough, they take it and go (Still ratchet)",dough,INNER,ASSONANCE,vowel,MED,Y
+Lit,39,"They lovin' your dough, they take it and go (Still ratchet)",lovin,39,"They lovin' your dough, they take it and go (Still ratchet)",go,INNER,ASSONANCE,vowel,MED,Y
+Lit,39,"They lovin' your dough, they take it and go (Still ratchet)",dough,41,So I feed these hoes to my savages (Still lit),hoes,INNER,ASSONANCE,vowel,MED,Y
+Lit,39,"They lovin' your dough, they take it and go (Still ratchet)",go,41,So I feed these hoes to my savages (Still lit),hoes,INNER,ASSONANCE,vowel,MED,Y
+Lit,39,"They lovin' your dough, they take it and go (Still ratchet)",lovin,41,So I feed these hoes to my savages (Still lit),hoes,INNER,ASSONANCE,vowel,MED,Y
+Lit,40,These bitches is nothing but scavengers,scavengers,41,So I feed these hoes to my savages (Still lit),savages,END,SLANT,cmu,MED,Y
+Lit,40,These bitches is nothing but scavengers,These,41,So I feed these hoes to my savages (Still lit),feed,INNER,SLANT,cmu,MED,Y
+Lit,40,These bitches is nothing but scavengers,These,41,So I feed these hoes to my savages (Still lit),these,INNER,REPEAT,spelling,HIGH,N
+Lit,40,These bitches is nothing but scavengers,bitches,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",lit,INNER,ASSONANCE,vowel,MED,Y
+Lit,40,These bitches is nothing but scavengers,nothing,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",club,INNER,ASSONANCE,vowel,MED,Y
+Lit,40,These bitches is nothing but scavengers,nothing,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",motherfucker,INNER,ASSONANCE,vowel,MED,Y
+Lit,41,So I feed these hoes to my savages (Still lit),feed,41,So I feed these hoes to my savages (Still lit),these,INNER,SLANT,cmu,MED,Y
+Lit,41,So I feed these hoes to my savages (Still lit),feed,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",Three,INNER,ASSONANCE,vowel,MED,Y
+Lit,41,So I feed these hoes to my savages (Still lit),these,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",Three,INNER,ASSONANCE,vowel,MED,Y
+Lit,41,So I feed these hoes to my savages (Still lit),savages,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",damn,END,ASSONANCE,vowel,MED,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",club,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",motherfucker,INNER,SLANT,cmu,MED,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",shit,END,PERFECT,cmu,HIGH,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",club,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",nigga,INNER,SLANT,spelling,LOW,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",rich,INNER,SLANT,cmu,MED,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",motherfucker,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",bitch,END,SLANT,cmu,MED,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",club,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",fucked,INNER,SLANT,cmu,MED,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",hit,INNER,PERFECT,cmu,HIGH,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",lick,INNER,SLANT,cmu,MED,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",shit,INNER,PERFECT,cmu,HIGH,Y
+Lit,42,"Pulled up at the club (Skrrt), this motherfucker lit (Woah)",motherfucker,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",fucked,INNER,SLANT,cmu,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",nigga,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",shit,INNER,SLANT,spelling,LOW,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",rich,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",shit,INNER,SLANT,cmu,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",shit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",bitch,END,SLANT,cmu,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",hundred,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",fucked,INNER,ASSONANCE,vowel,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",ice,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",like,INNER,SLANT,cmu,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",nigga,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",hit,INNER,SLANT,spelling,LOW,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",nigga,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",lick,INNER,SLANT,spelling,LOW,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",nigga,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",shit,INNER,SLANT,spelling,LOW,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",rich,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",bitch,INNER,PERFECT,cmu,HIGH,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",rich,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",hit,INNER,SLANT,cmu,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",rich,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",lick,INNER,SLANT,cmu,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",rich,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",shit,INNER,SLANT,cmu,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",shit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",hit,INNER,PERFECT,cmu,HIGH,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",shit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",lick,INNER,SLANT,cmu,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",shit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",shit,INNER,REPEAT,spelling,HIGH,N
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",hundred,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",motherfuckin,INNER,ASSONANCE,vowel,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",ice,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",buyin,INNER,SLANT,cmu,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",Three,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",keep,INNER,ASSONANCE,vowel,MED,Y
+Lit,43,"Three hundred thou' worth of ice on, that rich nigga shit (Woo)",Three,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",these,INNER,ASSONANCE,vowel,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",hit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",hit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",lick,INNER,SLANT,cmu,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",hit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",shit,INNER,PERFECT,cmu,HIGH,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",lick,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",lick,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",shit,INNER,SLANT,cmu,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",shit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",fucked,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",motherfuckin,INNER,SLANT,cmu,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",like,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",buyin,INNER,SLANT,cmu,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",talkin,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",Cartis,INNER,ASSONANCE,vowel,LOW,N
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",talkin,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",got,INNER,ASSONANCE,vowel,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",fucked,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",fuck,INNER,SLANT,cmu,MED,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",hit,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",nigga,INNER,SLANT,spelling,LOW,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",lick,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",nigga,INNER,SLANT,spelling,LOW,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",shit,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",nigga,INNER,SLANT,spelling,LOW,Y
+Lit,44,"I just hit a lick, he like talkin' shit, but I fucked his bitch (Hahaha)",bitch,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,END,SLANT,cmu,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",keep,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",these,INNER,SLANT,cmu,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",motherfuckin,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",fuck,INNER,SLANT,cmu,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",sense,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",next,INNER,ASSONANCE,vowel,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",sense,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",tell,INNER,ASSONANCE,vowel,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",all,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),all,INNER,REPEAT,spelling,HIGH,N
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",all,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),walk,INNER,SLANT,cmu,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",keep,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),see,INNER,ASSONANCE,vowel,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",keep,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),these,INNER,SLANT,cmu,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",motherfuckin,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),motherfucker,INNER,SLANT,cmu,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",no,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),Dolph,INNER,ASSONANCE,vowel,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",these,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),see,INNER,ASSONANCE,vowel,MED,Y
+Lit,45,"I keep buyin' all these motherfuckin' Cartis, I ain't got no sense (What?), damn",these,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),these,INNER,REPEAT,spelling,HIGH,N
+Lit,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",fuck,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",Fuck,INNER,REPEAT,spelling,HIGH,N
+Lit,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",nigga,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",nigga,INNER,REPEAT,spelling,HIGH,N
+Lit,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",tell,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",next,INNER,ASSONANCE,vowel,MED,Y
+Lit,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",fuck,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),motherfucker,INNER,SLANT,cmu,MED,Y
+Lit,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",pussy,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),lookin,INNER,ASSONANCE,vowel,MED,Y
+Lit,46,"I tell a fuck nigga, ""Fuck you, nigga, and the pussy nigga next to you"" (Yeah)",nigga,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,INNER,SLANT,spelling,LOW,Y
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),see,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),these,INNER,ASSONANCE,vowel,MED,Y
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),walk,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),all,INNER,SLANT,cmu,MED,Y
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),bitches,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),bitches,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,INNER,ASSONANCE,vowel,MED,Y
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),bitches,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",bitches,INNER,REPEAT,spelling,HIGH,N
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),Dolph,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",Roll,INNER,SLANT,cmu,MED,Y
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),motherfucker,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",fuck,INNER,SLANT,cmu,MED,Y
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),motherfucker,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",some,INNER,SLANT,cmu,MED,Y
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),see,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",weed,INNER,ASSONANCE,vowel,MED,Y
+Lit,47,Dolph walk up in this motherfucker and you see all these bitches lookin' (It's Dolph),these,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",weed,INNER,SLANT,cmu,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",bitch,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",bitch,INNER,REPEAT,spelling,HIGH,N
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",bitch,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,INNER,SLANT,cmu,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",got,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",got,INNER,REPEAT,spelling,HIGH,N
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",bitch,INNER,SLANT,cmu,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,INNER,REPEAT,spelling,HIGH,N
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",bitches,END,ASSONANCE,vowel,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",bitch,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",bitches,INNER,SLANT,cmu,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",bitches,INNER,ASSONANCE,vowel,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,50,"Tomorrow, same shit, different city, ayy",city,END,SLANT,cmu,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",bitch,50,"Tomorrow, same shit, different city, ayy",city,INNER,SLANT,cmu,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",bitch,50,"Tomorrow, same shit, different city, ayy",different,INNER,ASSONANCE,vowel,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",bitch,50,"Tomorrow, same shit, different city, ayy",shit,INNER,SLANT,cmu,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,50,"Tomorrow, same shit, different city, ayy",city,INNER,SLANT,cmu,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,50,"Tomorrow, same shit, different city, ayy",different,INNER,ASSONANCE,vowel,MED,Y
+Lit,48,"I got this bitch lit, I got this bitch lit, I got this bitch lit (Dope boy)",lit,50,"Tomorrow, same shit, different city, ayy",shit,INNER,PERFECT,cmu,HIGH,Y
+Lit,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",fuck,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",some,INNER,SLANT,cmu,MED,Y
+Lit,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",some,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",fuck,INNER,SLANT,cmu,MED,Y
+Lit,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",some,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",some,INNER,REPEAT,spelling,HIGH,N
+Lit,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",bitches,50,"Tomorrow, same shit, different city, ayy",city,END,ASSONANCE,vowel,MED,Y
+Lit,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",bitches,50,"Tomorrow, same shit, different city, ayy",different,INNER,ASSONANCE,vowel,MED,Y
+Lit,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",bitches,50,"Tomorrow, same shit, different city, ayy",shit,INNER,ASSONANCE,vowel,MED,Y
+Lit,49,"Roll me some weed (Yeah), fuck with some bitches (Yeah)",Roll,50,"Tomorrow, same shit, different city, ayy",Tomorrow,INNER,ASSONANCE,vowel,MED,Y
+Lit,50,"Tomorrow, same shit, different city, ayy",different,50,"Tomorrow, same shit, different city, ayy",city,INNER,ASSONANCE,vowel,MED,Y
+Lit,50,"Tomorrow, same shit, different city, ayy",shit,50,"Tomorrow, same shit, different city, ayy",city,INNER,SLANT,cmu,MED,Y
+Lit,50,"Tomorrow, same shit, different city, ayy",shit,50,"Tomorrow, same shit, different city, ayy",different,INNER,ASSONANCE,vowel,MED,Y

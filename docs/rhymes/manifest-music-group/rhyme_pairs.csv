@@ -1,0 +1,474 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Heat,1,"Tied, they dead flies everywhere, you heard me?",dead,1,"Tied, they dead flies everywhere, you heard me?",everywhere,INNER,SLANT,cmu,MED,Y
+Heat,1,"Tied, they dead flies everywhere, you heard me?",Tied,1,"Tied, they dead flies everywhere, you heard me?",flies,INNER,SLANT,cmu,MED,Y
+Heat,1,"Tied, they dead flies everywhere, you heard me?",dead,2,"Finesse, two of 'em (X.O. think he all that)",Finesse,INNER,SLANT,cmu,MED,Y
+Heat,1,"Tied, they dead flies everywhere, you heard me?",everywhere,2,"Finesse, two of 'em (X.O. think he all that)",Finesse,INNER,SLANT,cmu,MED,Y
+Heat,3,I’m in Miami with my Heat,Heat,4,I’m out on the front street,street,END,PERFECT,cmu,HIGH,Y
+Heat,3,I’m in Miami with my Heat,Heat,5,Too late to squash the beef,beef,END,SLANT,cmu,MED,Y
+Heat,3,I’m in Miami with my Heat,Heat,6,There’s blood on the concrete,concrete,END,PERFECT,cmu,HIGH,Y
+Heat,3,I’m in Miami with my Heat,Heat,7,Drop a hundred on my piece,piece,END,SLANT,cmu,MED,Y
+Heat,4,I’m out on the front street,street,5,Too late to squash the beef,beef,END,SLANT,cmu,MED,Y
+Heat,4,I’m out on the front street,street,6,There’s blood on the concrete,concrete,END,PERFECT,cmu,HIGH,Y
+Heat,4,I’m out on the front street,front,6,There’s blood on the concrete,blood,INNER,ASSONANCE,vowel,MED,Y
+Heat,4,I’m out on the front street,street,7,Drop a hundred on my piece,piece,END,SLANT,cmu,MED,Y
+Heat,5,Too late to squash the beef,beef,6,There’s blood on the concrete,concrete,END,SLANT,cmu,MED,Y
+Heat,5,Too late to squash the beef,beef,7,Drop a hundred on my piece,piece,END,SLANT,cmu,MED,Y
+Heat,5,Too late to squash the beef,squash,7,Drop a hundred on my piece,Drop,INNER,SLANT,cmu,MED,Y
+Heat,5,Too late to squash the beef,beef,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",sweet,END,SLANT,cmu,MED,Y
+Heat,6,There’s blood on the concrete,concrete,7,Drop a hundred on my piece,piece,END,SLANT,cmu,MED,Y
+Heat,6,There’s blood on the concrete,blood,7,Drop a hundred on my piece,hundred,INNER,ASSONANCE,vowel,MED,Y
+Heat,6,There’s blood on the concrete,blood,8,"You can look, but don’t touch me",touch,INNER,SLANT,cmu,MED,Y
+Heat,6,There’s blood on the concrete,concrete,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",sweet,END,PERFECT,cmu,HIGH,Y
+Heat,6,There’s blood on the concrete,concrete,10,I’m in the cut for the beat,beat,END,PERFECT,cmu,HIGH,Y
+Heat,7,Drop a hundred on my piece,hundred,8,"You can look, but don’t touch me",touch,INNER,ASSONANCE,vowel,MED,Y
+Heat,7,Drop a hundred on my piece,piece,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",sweet,END,SLANT,cmu,MED,Y
+Heat,7,Drop a hundred on my piece,Drop,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",nothin,INNER,ASSONANCE,vowel,MED,Y
+Heat,7,Drop a hundred on my piece,piece,10,I’m in the cut for the beat,beat,END,SLANT,cmu,MED,Y
+Heat,8,"You can look, but don’t touch me",can,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",ass,INNER,SLANT,cmu,MED,Y
+Heat,8,"You can look, but don’t touch me",can,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",gangsta,INNER,ASSONANCE,vowel,MED,Y
+Heat,8,"You can look, but don’t touch me",can,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",romantic,INNER,ASSONANCE,vowel,MED,Y
+Heat,8,"You can look, but don’t touch me",touch,10,I’m in the cut for the beat,cut,INNER,SLANT,cmu,MED,Y
+Heat,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",ass,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",ass,INNER,REPEAT,spelling,HIGH,N
+Heat,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",ass,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",gangsta,INNER,ASSONANCE,vowel,MED,Y
+Heat,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",gangsta,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",ass,INNER,ASSONANCE,vowel,MED,Y
+Heat,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",romantic,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",ass,INNER,ASSONANCE,vowel,MED,Y
+Heat,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",romantic,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",gangsta,INNER,SLANT,cmu,MED,Y
+Heat,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",sweet,10,I’m in the cut for the beat,beat,END,PERFECT,cmu,HIGH,Y
+Heat,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",ain’t,11,"Take over niggas’ cities, send ‘em a cease and desist",Take,INNER,ASSONANCE,vowel,MED,Y
+Heat,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",nigga,11,"Take over niggas’ cities, send ‘em a cease and desist",niggas,INNER,SLANT,spelling,LOW,Y
+Heat,9,"I’m a romantic-ass, gangsta-ass nigga, but ain’t nothin’ sweet",sweet,11,"Take over niggas’ cities, send ‘em a cease and desist",cease,INNER,SLANT,cmu,MED,Y
+Heat,10,I’m in the cut for the beat,beat,11,"Take over niggas’ cities, send ‘em a cease and desist",cease,INNER,SLANT,cmu,MED,Y
+Heat,10,I’m in the cut for the beat,beat,14,"Yeah, this shit really easy",easy,END,SLANT,cmu,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",cities,11,"Take over niggas’ cities, send ‘em a cease and desist",desist,INNER,ASSONANCE,vowel,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",niggas,11,"Take over niggas’ cities, send ‘em a cease and desist",cities,INNER,SLANT,spelling,LOW,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",send,11,"Take over niggas’ cities, send ‘em a cease and desist",em,INNER,ASSONANCE,vowel,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",desist,12,Send a chopper up in your hood to bring the killers to me,killers,END,ASSONANCE,vowel,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",cities,12,Send a chopper up in your hood to bring the killers to me,bring,INNER,ASSONANCE,vowel,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",cities,12,Send a chopper up in your hood to bring the killers to me,killers,INNER,SLANT,cmu,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",desist,12,Send a chopper up in your hood to bring the killers to me,bring,INNER,ASSONANCE,vowel,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",em,12,Send a chopper up in your hood to bring the killers to me,Send,INNER,ASSONANCE,vowel,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",send,12,Send a chopper up in your hood to bring the killers to me,Send,INNER,REPEAT,spelling,HIGH,N
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",cease,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",eat,INNER,SLANT,cmu,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",cities,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",niggas,INNER,SLANT,spelling,LOW,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",em,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",em,INNER,REPEAT,spelling,HIGH,N
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",niggas,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",niggas,INNER,REPEAT,spelling,HIGH,N
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",send,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",em,INNER,ASSONANCE,vowel,MED,Y
+Heat,11,"Take over niggas’ cities, send ‘em a cease and desist",Take,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",Make,INNER,PERFECT,cmu,HIGH,Y
+Heat,12,Send a chopper up in your hood to bring the killers to me,bring,12,Send a chopper up in your hood to bring the killers to me,killers,INNER,ASSONANCE,vowel,MED,Y
+Heat,12,Send a chopper up in your hood to bring the killers to me,hood,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",sure,INNER,SLANT,cmu,MED,Y
+Heat,12,Send a chopper up in your hood to bring the killers to me,Send,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",em,INNER,ASSONANCE,vowel,MED,Y
+Heat,12,Send a chopper up in your hood to bring the killers to me,bring,14,"Yeah, this shit really easy",really,INNER,SLANT,cmu,MED,Y
+Heat,12,Send a chopper up in your hood to bring the killers to me,bring,14,"Yeah, this shit really easy",shit,INNER,SLANT,cmu,MED,Y
+Heat,12,Send a chopper up in your hood to bring the killers to me,killers,14,"Yeah, this shit really easy",really,INNER,SLANT,cmu,MED,Y
+Heat,12,Send a chopper up in your hood to bring the killers to me,killers,14,"Yeah, this shit really easy",shit,INNER,ASSONANCE,vowel,MED,Y
+Heat,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",have,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",standin,INNER,ASSONANCE,vowel,MED,Y
+Heat,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",eat,14,"Yeah, this shit really easy",easy,INNER,SLANT,cmu,MED,Y
+Heat,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",Make,15,I solve a nigga with my same,same,INNER,SLANT,cmu,MED,Y
+Heat,13,"Make sure that young niggas eat, then I have ‘em standin’ for me (?)",niggas,15,I solve a nigga with my same,nigga,INNER,SLANT,spelling,LOW,Y
+Heat,14,"Yeah, this shit really easy",shit,14,"Yeah, this shit really easy",really,INNER,SLANT,cmu,MED,Y
+Heat,14,"Yeah, this shit really easy",shit,15,I solve a nigga with my same,nigga,INNER,SLANT,spelling,LOW,Y
+Heat,14,"Yeah, this shit really easy",really,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",bitch,INNER,SLANT,cmu,MED,Y
+Heat,14,"Yeah, this shit really easy",really,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",Lil,INNER,SLANT,cmu,MED,Y
+Heat,14,"Yeah, this shit really easy",shit,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",bitch,INNER,SLANT,cmu,MED,Y
+Heat,14,"Yeah, this shit really easy",shit,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",Lil,INNER,SLANT,cmu,MED,Y
+Heat,15,I solve a nigga with my same,same,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Heat,15,I solve a nigga with my same,nigga,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",shit,INNER,SLANT,spelling,LOW,Y
+Heat,15,I solve a nigga with my same,same,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",lame,INNER,PERFECT,cmu,HIGH,Y
+Heat,15,I solve a nigga with my same,same,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",way,INNER,ASSONANCE,vowel,MED,Y
+Heat,15,I solve a nigga with my same,solve,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",top,INNER,ASSONANCE,vowel,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",Lil,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",bitch,INNER,SLANT,cmu,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",static,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",matchin,INNER,ASSONANCE,vowel,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",ain’t,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",lame,INNER,ASSONANCE,vowel,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",ain’t,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",way,INNER,ASSONANCE,vowel,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",bitch,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",really,INNER,SLANT,cmu,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",bitch,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",shit,INNER,SLANT,cmu,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",Lil,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",really,INNER,SLANT,cmu,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",Lil,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",shit,INNER,SLANT,cmu,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",throw,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",won’t,INNER,ASSONANCE,vowel,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",ain’t,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",ain’t,INNER,REPEAT,spelling,HIGH,N
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",bitch,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",hideous,INNER,ASSONANCE,vowel,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",Lil,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",hideous,INNER,ASSONANCE,vowel,MED,Y
+Heat,16,"Lil bitch static throw my vibe off, ain’t matchin’ my frequenc’ (?)",vibe,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",right,INNER,SLANT,cmu,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",really,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",shit,INNER,SLANT,cmu,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",way,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",lame,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",shit,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",hideous,END,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",Around,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",bout,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",Around,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",now,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",dog,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",corner,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",lame,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",really,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",hideous,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",top,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",nothin,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",way,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",Around,19,"They say they all on the S O team, and tryouts ain’t recent (?)",tryouts,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",believe,19,"They say they all on the S O team, and tryouts ain’t recent (?)",recent,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",believe,19,"They say they all on the S O team, and tryouts ain’t recent (?)",team,INNER,SLANT,cmu,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",dog,19,"They say they all on the S O team, and tryouts ain’t recent (?)",all,INNER,SLANT,cmu,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",lame,19,"They say they all on the S O team, and tryouts ain’t recent (?)",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",lame,19,"They say they all on the S O team, and tryouts ain’t recent (?)",say,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",way,19,"They say they all on the S O team, and tryouts ain’t recent (?)",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",way,19,"They say they all on the S O team, and tryouts ain’t recent (?)",say,INNER,PERFECT,cmu,HIGH,Y
+Heat,17,"Around my way, I’m really top dog, the lame won’t believe this shit (?)",won’t,19,"They say they all on the S O team, and tryouts ain’t recent (?)",O,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",now,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",bout,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",ain’t,19,"They say they all on the S O team, and tryouts ain’t recent (?)",ain’t,INNER,REPEAT,spelling,HIGH,N
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",ain’t,19,"They say they all on the S O team, and tryouts ain’t recent (?)",say,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",bout,19,"They say they all on the S O team, and tryouts ain’t recent (?)",tryouts,INNER,SLANT,cmu,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",corner,19,"They say they all on the S O team, and tryouts ain’t recent (?)",all,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",now,19,"They say they all on the S O team, and tryouts ain’t recent (?)",tryouts,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",hideous,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",previous,END,MULTI,multi,HIGH,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",ain’t,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",babe,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",bout,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",countin,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",bout,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",mouth,INNER,SLANT,cmu,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",bout,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",now,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",corner,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",saw,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",now,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",countin,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",now,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",mouth,INNER,ASSONANCE,vowel,MED,Y
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",now,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",now,INNER,REPEAT,spelling,HIGH,N
+Heat,18,"I’m on the ugly corner right now, but ain’t nothin’ bout me hideous",ugly,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",fucked,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",say,19,"They say they all on the S O team, and tryouts ain’t recent (?)",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",team,19,"They say they all on the S O team, and tryouts ain’t recent (?)",recent,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",recent,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",previous,END,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",ain’t,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",babe,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",all,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",saw,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",say,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",babe,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",team,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",previous,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",tryouts,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",countin,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",tryouts,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",mouth,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",tryouts,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",now,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",ain’t,21,"My youngin runnin' guns, takin’ trips to Savannah",takin,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",say,21,"My youngin runnin' guns, takin’ trips to Savannah",takin,INNER,ASSONANCE,vowel,MED,Y
+Heat,19,"They say they all on the S O team, and tryouts ain’t recent (?)",team,21,"My youngin runnin' guns, takin’ trips to Savannah",youngin,INNER,SLANT,spelling,LOW,Y
+Heat,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",mouth,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",countin,INNER,ASSONANCE,vowel,MED,Y
+Heat,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",mouth,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",now,INNER,ASSONANCE,vowel,MED,Y
+Heat,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",now,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",countin,INNER,ASSONANCE,vowel,MED,Y
+Heat,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",babe,21,"My youngin runnin' guns, takin’ trips to Savannah",takin,INNER,ASSONANCE,vowel,MED,Y
+Heat,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",fucked,21,"My youngin runnin' guns, takin’ trips to Savannah",guns,INNER,ASSONANCE,vowel,MED,Y
+Heat,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",fucked,21,"My youngin runnin' guns, takin’ trips to Savannah",runnin,INNER,ASSONANCE,vowel,MED,Y
+Heat,20,"I saw that babe, I fucked her mouth, but now I’m countin’ her previous (?)",saw,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",ball,INNER,ASSONANCE,vowel,MED,Y
+Heat,21,"My youngin runnin' guns, takin’ trips to Savannah",runnin,21,"My youngin runnin' guns, takin’ trips to Savannah",guns,INNER,SLANT,cmu,MED,Y
+Heat,21,"My youngin runnin' guns, takin’ trips to Savannah",Savannah,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",camera,END,SLANT,cmu,MED,Y
+Heat,21,"My youngin runnin' guns, takin’ trips to Savannah",Savannah,23,"Throw it back, I’ll make it rain, yeah",back,INNER,SLANT,cmu,MED,Y
+Heat,21,"My youngin runnin' guns, takin’ trips to Savannah",takin,23,"Throw it back, I’ll make it rain, yeah",make,INNER,SLANT,cmu,MED,Y
+Heat,21,"My youngin runnin' guns, takin’ trips to Savannah",takin,23,"Throw it back, I’ll make it rain, yeah",rain,INNER,ASSONANCE,vowel,MED,Y
+Heat,21,"My youngin runnin' guns, takin’ trips to Savannah",Savannah,25,"Four bodies in the same year, fresh out the slammer",slammer,END,SLANT,cmu,MED,Y
+Heat,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",Lamar,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",shot,INNER,SLANT,cmu,MED,Y
+Heat,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",says,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",get,INNER,SLANT,cmu,MED,Y
+Heat,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",camera,23,"Throw it back, I’ll make it rain, yeah",back,INNER,SLANT,cmu,MED,Y
+Heat,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",get,24,I'm the center (?),center,INNER,SLANT,cmu,MED,Y
+Heat,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",says,24,I'm the center (?),center,INNER,ASSONANCE,vowel,MED,Y
+Heat,22,"Lamar says “get the ball”, and shot the nigga on camera (?)",camera,25,"Four bodies in the same year, fresh out the slammer",slammer,END,SLANT,cmu,MED,Y
+Heat,23,"Throw it back, I’ll make it rain, yeah",make,23,"Throw it back, I’ll make it rain, yeah",rain,INNER,SLANT,cmu,MED,Y
+Heat,23,"Throw it back, I’ll make it rain, yeah",back,25,"Four bodies in the same year, fresh out the slammer",slammer,INNER,SLANT,cmu,MED,Y
+Heat,23,"Throw it back, I’ll make it rain, yeah",make,25,"Four bodies in the same year, fresh out the slammer",same,INNER,SLANT,cmu,MED,Y
+Heat,23,"Throw it back, I’ll make it rain, yeah",rain,25,"Four bodies in the same year, fresh out the slammer",same,INNER,SLANT,cmu,MED,Y
+Heat,24,I'm the center (?),center,25,"Four bodies in the same year, fresh out the slammer",fresh,INNER,ASSONANCE,vowel,MED,Y
+Heat,24,I'm the center (?),center,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",there,END,ASSONANCE,vowel,MED,Y
+Heat,24,I'm the center (?),center,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",whatever,END,ASSONANCE,vowel,MED,Y
+Heat,25,"Four bodies in the same year, fresh out the slammer",Four,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",All,INNER,SLANT,cmu,MED,Y
+Heat,25,"Four bodies in the same year, fresh out the slammer",fresh,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",there,INNER,SLANT,cmu,MED,Y
+Heat,25,"Four bodies in the same year, fresh out the slammer",slammer,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",gang,INNER,SLANT,cmu,MED,Y
+Heat,25,"Four bodies in the same year, fresh out the slammer",year,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",lil,INNER,SLANT,cmu,MED,Y
+Heat,25,"Four bodies in the same year, fresh out the slammer",year,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",shit,INNER,SLANT,cmu,MED,Y
+Heat,25,"Four bodies in the same year, fresh out the slammer",bodies,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",Everybody,INNER,SLANT,cmu,MED,Y
+Heat,25,"Four bodies in the same year, fresh out the slammer",bodies,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",pop,INNER,ASSONANCE,vowel,MED,Y
+Heat,25,"Four bodies in the same year, fresh out the slammer",fresh,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",whatever,INNER,SLANT,cmu,MED,Y
+Heat,25,"Four bodies in the same year, fresh out the slammer",same,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",same,INNER,REPEAT,spelling,HIGH,N
+Heat,25,"Four bodies in the same year, fresh out the slammer",year,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",til,INNER,SLANT,cmu,MED,Y
+Heat,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",shit,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",lil,INNER,SLANT,cmu,MED,Y
+Heat,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",these,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",screamin,INNER,ASSONANCE,vowel,MED,Y
+Heat,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",there,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",whatever,END,SLANT,cmu,MED,Y
+Heat,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",lil,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",til,INNER,PERFECT,cmu,HIGH,Y
+Heat,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",shit,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",til,INNER,SLANT,cmu,MED,Y
+Heat,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",niggas,28,And the youngin got the young nigga jumpin' through hundreds (?),nigga,INNER,SLANT,spelling,LOW,Y
+Heat,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",screamin,28,And the youngin got the young nigga jumpin' through hundreds (?),youngin,INNER,SLANT,spelling,LOW,Y
+Heat,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",shit,28,And the youngin got the young nigga jumpin' through hundreds (?),nigga,INNER,SLANT,spelling,LOW,Y
+Heat,26,"All these niggas screamin’ gang shit, we do a lil’ there (?)",there,30,"Yuh, lay back in the Maybach, it’s just me and the members",members,END,ASSONANCE,vowel,MED,Y
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",Everybody,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",pop,INNER,SLANT,cmu,MED,Y
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",Everybody,28,And the youngin got the young nigga jumpin' through hundreds (?),got,INNER,SLANT,cmu,MED,Y
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",pop,28,And the youngin got the young nigga jumpin' through hundreds (?),got,INNER,SLANT,cmu,MED,Y
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",Everybody,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",Everybody,INNER,REPEAT,spelling,HIGH,N
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",Everybody,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",poppin,INNER,ASSONANCE,vowel,MED,Y
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",pop,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",Everybody,INNER,SLANT,cmu,MED,Y
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",pop,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",poppin,INNER,SLANT,cmu,MED,Y
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",whatever,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",checks,INNER,ASSONANCE,vowel,MED,Y
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",whatever,30,"Yuh, lay back in the Maybach, it’s just me and the members",members,END,ASSONANCE,vowel,MED,Y
+Heat,27,"Everybody with me are the same, ‘til we pop off, whatever (?)",whatever,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",remember,END,ASSONANCE,vowel,MED,Y
+Heat,28,And the youngin got the young nigga jumpin' through hundreds (?),jumpin,28,And the youngin got the young nigga jumpin' through hundreds (?),hundreds,INNER,ASSONANCE,vowel,MED,Y
+Heat,28,And the youngin got the young nigga jumpin' through hundreds (?),young,28,And the youngin got the young nigga jumpin' through hundreds (?),hundreds,INNER,ASSONANCE,vowel,MED,Y
+Heat,28,And the youngin got the young nigga jumpin' through hundreds (?),young,28,And the youngin got the young nigga jumpin' through hundreds (?),jumpin,INNER,ASSONANCE,vowel,MED,Y
+Heat,28,And the youngin got the young nigga jumpin' through hundreds (?),got,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",Everybody,INNER,SLANT,cmu,MED,Y
+Heat,28,And the youngin got the young nigga jumpin' through hundreds (?),got,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",poppin,INNER,ASSONANCE,vowel,MED,Y
+Heat,28,And the youngin got the young nigga jumpin' through hundreds (?),hundreds,32,"nigga run this shit, don’t call me by my government",government,END,ASSONANCE,vowel,MED,Y
+Heat,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",Everybody,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",poppin,INNER,ASSONANCE,vowel,MED,Y
+Heat,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",nics,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",pizzils,INNER,ASSONANCE,vowel,LOW,N
+Heat,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",poppin,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",poppin,INNER,REPEAT,spelling,HIGH,N
+Heat,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",checks,30,"Yuh, lay back in the Maybach, it’s just me and the members",members,INNER,ASSONANCE,vowel,MED,Y
+Heat,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",checks,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",remember,INNER,ASSONANCE,vowel,MED,Y
+Heat,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",nics,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",bitch,INNER,ASSONANCE,vowel,LOW,N
+Heat,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",pizzils,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",bitch,INNER,ASSONANCE,vowel,LOW,N
+Heat,29,"Everybody poppin’ checks, poppin’ ‘nics, poppin’ them pizzils",pizzils,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),shit,END,ASSONANCE,vowel,LOW,N
+Heat,30,"Yuh, lay back in the Maybach, it’s just me and the members",members,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",remember,END,SLANT,cmu,MED,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",nigga,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",Flippa,INNER,SLANT,spelling,LOW,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",bitch,32,"nigga run this shit, don’t call me by my government",shit,INNER,SLANT,cmu,MED,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",Flippa,32,"nigga run this shit, don’t call me by my government",nigga,INNER,SLANT,spelling,LOW,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",Flippa,32,"nigga run this shit, don’t call me by my government",shit,INNER,SLANT,spelling,LOW,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",manhunt,32,"nigga run this shit, don’t call me by my government",government,INNER,ASSONANCE,vowel,MED,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",manhunt,32,"nigga run this shit, don’t call me by my government",run,INNER,SLANT,cmu,MED,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",nigga,32,"nigga run this shit, don’t call me by my government",nigga,INNER,REPEAT,spelling,HIGH,N
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",nigga,32,"nigga run this shit, don’t call me by my government",shit,INNER,SLANT,spelling,LOW,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",bitch,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),shit,INNER,SLANT,cmu,MED,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",Flippa,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),shit,INNER,SLANT,spelling,LOW,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",manhunt,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),frontin,INNER,SLANT,cmu,MED,Y
+Heat,31,"Free my nigga, Flippa manhunt, bitch I remember (?)",nigga,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),shit,INNER,SLANT,spelling,LOW,Y
+Heat,32,"nigga run this shit, don’t call me by my government",nigga,32,"nigga run this shit, don’t call me by my government",shit,INNER,SLANT,spelling,LOW,Y
+Heat,32,"nigga run this shit, don’t call me by my government",run,32,"nigga run this shit, don’t call me by my government",government,INNER,ASSONANCE,vowel,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",don’t,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),low,INNER,ASSONANCE,vowel,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",government,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),frontin,INNER,ASSONANCE,vowel,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",nigga,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),shit,INNER,SLANT,spelling,LOW,Y
+Heat,32,"nigga run this shit, don’t call me by my government",run,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),frontin,INNER,ASSONANCE,vowel,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",shit,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),shit,INNER,REPEAT,spelling,HIGH,N
+Heat,32,"nigga run this shit, don’t call me by my government",by,34,"Might pull up in a Cullinan, I just went and bought another stick",Might,INNER,ASSONANCE,vowel,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",government,34,"Might pull up in a Cullinan, I just went and bought another stick",another,INNER,ASSONANCE,vowel,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",government,34,"Might pull up in a Cullinan, I just went and bought another stick",Cullinan,INNER,ASSONANCE,vowel,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",government,34,"Might pull up in a Cullinan, I just went and bought another stick",went,INNER,SLANT,spelling,LOW,Y
+Heat,32,"nigga run this shit, don’t call me by my government",nigga,34,"Might pull up in a Cullinan, I just went and bought another stick",stick,INNER,SLANT,spelling,LOW,Y
+Heat,32,"nigga run this shit, don’t call me by my government",run,34,"Might pull up in a Cullinan, I just went and bought another stick",another,INNER,SLANT,cmu,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",run,34,"Might pull up in a Cullinan, I just went and bought another stick",Cullinan,INNER,ASSONANCE,vowel,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",shit,34,"Might pull up in a Cullinan, I just went and bought another stick",stick,INNER,SLANT,cmu,MED,Y
+Heat,32,"nigga run this shit, don’t call me by my government",government,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",cum,END,ASSONANCE,vowel,MED,Y
+Heat,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),shit,34,"Might pull up in a Cullinan, I just went and bought another stick",stick,END,SLANT,cmu,MED,Y
+Heat,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),Bought,34,"Might pull up in a Cullinan, I just went and bought another stick",bought,INNER,REPEAT,spelling,HIGH,N
+Heat,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),frontin,34,"Might pull up in a Cullinan, I just went and bought another stick",another,INNER,ASSONANCE,vowel,MED,Y
+Heat,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),frontin,34,"Might pull up in a Cullinan, I just went and bought another stick",Cullinan,INNER,ASSONANCE,vowel,MED,Y
+Heat,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),ain’t,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",ain’t,INNER,REPEAT,spelling,HIGH,N
+Heat,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),frontin,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",cum,INNER,ASSONANCE,vowel,MED,Y
+Heat,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),low,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",know,INNER,PERFECT,cmu,HIGH,Y
+Heat,33,Bought 200 bows for the low and I ain’t frontin’ shit (?),shit,37,"My shooter so Satanic, he a veteran on the mission",mission,END,ASSONANCE,vowel,MED,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",Cullinan,34,"Might pull up in a Cullinan, I just went and bought another stick",another,INNER,ASSONANCE,vowel,MED,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",another,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",cum,INNER,SLANT,cmu,MED,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",Cullinan,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",cum,INNER,ASSONANCE,vowel,MED,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",Might,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",right,INNER,PERFECT,cmu,HIGH,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",stick,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",Kendrick,INNER,SLANT,spelling,LOW,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",went,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",Kendrick,INNER,ASSONANCE,vowel,MED,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",went,36,"My load be so heavy, it’s gigantic when I get it",get,INNER,SLANT,cmu,MED,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",went,36,"My load be so heavy, it’s gigantic when I get it",heavy,INNER,ASSONANCE,vowel,MED,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",went,36,"My load be so heavy, it’s gigantic when I get it",when,INNER,SLANT,cmu,MED,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",stick,37,"My shooter so Satanic, he a veteran on the mission",mission,END,ASSONANCE,vowel,MED,Y
+Heat,34,"Might pull up in a Cullinan, I just went and bought another stick",stick,38,"I done under shot a 6, we be thuggin’ niggas bitch (?)",bitch,END,SLANT,cmu,MED,Y
+Heat,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",act,36,"My load be so heavy, it’s gigantic when I get it",gigantic,INNER,ASSONANCE,vowel,MED,Y
+Heat,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",Kendrick,36,"My load be so heavy, it’s gigantic when I get it",get,INNER,ASSONANCE,vowel,MED,Y
+Heat,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",Kendrick,36,"My load be so heavy, it’s gigantic when I get it",heavy,INNER,ASSONANCE,vowel,MED,Y
+Heat,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",Kendrick,36,"My load be so heavy, it’s gigantic when I get it",when,INNER,ASSONANCE,vowel,MED,Y
+Heat,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",know,36,"My load be so heavy, it’s gigantic when I get it",load,INNER,ASSONANCE,vowel,MED,Y
+Heat,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",act,37,"My shooter so Satanic, he a veteran on the mission",Satanic,INNER,ASSONANCE,vowel,MED,Y
+Heat,35,"I know these niggas ain’t act right, I saw Kendrick cum in it",Kendrick,37,"My shooter so Satanic, he a veteran on the mission",veteran,INNER,ASSONANCE,vowel,MED,Y
+Heat,36,"My load be so heavy, it’s gigantic when I get it",heavy,36,"My load be so heavy, it’s gigantic when I get it",get,INNER,SLANT,cmu,MED,Y
+Heat,36,"My load be so heavy, it’s gigantic when I get it",heavy,36,"My load be so heavy, it’s gigantic when I get it",when,INNER,SLANT,cmu,MED,Y
+Heat,36,"My load be so heavy, it’s gigantic when I get it",when,36,"My load be so heavy, it’s gigantic when I get it",get,INNER,SLANT,cmu,MED,Y
+Heat,36,"My load be so heavy, it’s gigantic when I get it",get,37,"My shooter so Satanic, he a veteran on the mission",veteran,INNER,SLANT,cmu,MED,Y
+Heat,36,"My load be so heavy, it’s gigantic when I get it",gigantic,37,"My shooter so Satanic, he a veteran on the mission",Satanic,INNER,SLANT,cmu,MED,Y
+Heat,36,"My load be so heavy, it’s gigantic when I get it",heavy,37,"My shooter so Satanic, he a veteran on the mission",veteran,INNER,ASSONANCE,vowel,MED,Y
+Heat,36,"My load be so heavy, it’s gigantic when I get it",when,37,"My shooter so Satanic, he a veteran on the mission",veteran,INNER,SLANT,cmu,MED,Y
+Heat,37,"My shooter so Satanic, he a veteran on the mission",mission,38,"I done under shot a 6, we be thuggin’ niggas bitch (?)",bitch,END,ASSONANCE,vowel,MED,Y
+Heat,37,"My shooter so Satanic, he a veteran on the mission",mission,39,"I made millions in these trenches, murder, murder, ammunition",ammunition,END,MULTI,multi,HIGH,Y
+Heat,37,"My shooter so Satanic, he a veteran on the mission",mission,39,"I made millions in these trenches, murder, murder, ammunition",millions,INNER,ASSONANCE,vowel,MED,Y
+Heat,37,"My shooter so Satanic, he a veteran on the mission",veteran,39,"I made millions in these trenches, murder, murder, ammunition",trenches,INNER,ASSONANCE,vowel,MED,Y
+Heat,38,"I done under shot a 6, we be thuggin’ niggas bitch (?)",done,38,"I done under shot a 6, we be thuggin’ niggas bitch (?)",under,INNER,SLANT,cmu,MED,Y
+Heat,38,"I done under shot a 6, we be thuggin’ niggas bitch (?)",bitch,39,"I made millions in these trenches, murder, murder, ammunition",ammunition,END,ASSONANCE,vowel,MED,Y
+Heat,38,"I done under shot a 6, we be thuggin’ niggas bitch (?)",bitch,39,"I made millions in these trenches, murder, murder, ammunition",millions,INNER,ASSONANCE,vowel,MED,Y
+Heat,38,"I done under shot a 6, we be thuggin’ niggas bitch (?)",niggas,40,"(unclear) on the floor, these niggas gettin’ stepped over",niggas,INNER,REPEAT,spelling,HIGH,N
+Heat,39,"I made millions in these trenches, murder, murder, ammunition",millions,39,"I made millions in these trenches, murder, murder, ammunition",ammunition,INNER,ASSONANCE,vowel,MED,Y
+Heat,39,"I made millions in these trenches, murder, murder, ammunition",murder,39,"I made millions in these trenches, murder, murder, ammunition",murder,INNER,REPEAT,spelling,HIGH,N
+Heat,39,"I made millions in these trenches, murder, murder, ammunition",these,40,"(unclear) on the floor, these niggas gettin’ stepped over",these,INNER,REPEAT,spelling,HIGH,N
+Heat,39,"I made millions in these trenches, murder, murder, ammunition",trenches,40,"(unclear) on the floor, these niggas gettin’ stepped over",gettin,INNER,ASSONANCE,vowel,MED,Y
+Heat,39,"I made millions in these trenches, murder, murder, ammunition",trenches,40,"(unclear) on the floor, these niggas gettin’ stepped over",stepped,INNER,ASSONANCE,vowel,MED,Y
+Heat,39,"I made millions in these trenches, murder, murder, ammunition",these,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",these,INNER,REPEAT,spelling,HIGH,N
+Heat,39,"I made millions in these trenches, murder, murder, ammunition",trenches,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",slept,INNER,ASSONANCE,vowel,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",gettin,40,"(unclear) on the floor, these niggas gettin’ stepped over",stepped,INNER,ASSONANCE,vowel,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",over,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",over,END,REPEAT,spelling,HIGH,N
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",floor,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",all,INNER,SLANT,cmu,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",gettin,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",slept,INNER,ASSONANCE,vowel,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",over,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",alone,INNER,SLANT,cmu,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",over,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",hoes,INNER,SLANT,cmu,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",stepped,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",slept,INNER,PERFECT,cmu,HIGH,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",these,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",these,INNER,REPEAT,spelling,HIGH,N
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",gettin,42,"Once you drop that check, I’ll get your list and put an X on it",check,INNER,ASSONANCE,vowel,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",gettin,42,"Once you drop that check, I’ll get your list and put an X on it",get,INNER,SLANT,cmu,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",gettin,42,"Once you drop that check, I’ll get your list and put an X on it",X,INNER,ASSONANCE,vowel,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",stepped,42,"Once you drop that check, I’ll get your list and put an X on it",check,INNER,SLANT,cmu,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",stepped,42,"Once you drop that check, I’ll get your list and put an X on it",get,INNER,SLANT,cmu,MED,Y
+Heat,40,"(unclear) on the floor, these niggas gettin’ stepped over",stepped,42,"Once you drop that check, I’ll get your list and put an X on it",X,INNER,ASSONANCE,vowel,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",alone,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",over,INNER,SLANT,cmu,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",hoes,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",alone,INNER,SLANT,cmu,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",hoes,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",over,INNER,SLANT,cmu,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",slept,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",slept,INNER,REPEAT,spelling,HIGH,N
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",last,42,"Once you drop that check, I’ll get your list and put an X on it",list,INNER,SLANT,spelling,LOW,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",slept,42,"Once you drop that check, I’ll get your list and put an X on it",check,INNER,SLANT,cmu,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",slept,42,"Once you drop that check, I’ll get your list and put an X on it",get,INNER,SLANT,cmu,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",slept,42,"Once you drop that check, I’ll get your list and put an X on it",X,INNER,ASSONANCE,vowel,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",time,42,"Once you drop that check, I’ll get your list and put an X on it",I’ll,INNER,SLANT,cmu,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",Trustin,42,"Once you drop that check, I’ll get your list and put an X on it",Once,INNER,ASSONANCE,vowel,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",slept,43,"They got beef with Double G, and that’s your people you need to check on (?)",check,INNER,SLANT,cmu,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",these,43,"They got beef with Double G, and that’s your people you need to check on (?)",beef,INNER,SLANT,cmu,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",these,43,"They got beef with Double G, and that’s your people you need to check on (?)",G,INNER,ASSONANCE,vowel,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",these,43,"They got beef with Double G, and that’s your people you need to check on (?)",need,INNER,SLANT,cmu,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",these,43,"They got beef with Double G, and that’s your people you need to check on (?)",people,INNER,ASSONANCE,vowel,MED,Y
+Heat,41,"Trustin’ all these hoes, she slept alone the last time she slept over (?)",Trustin,43,"They got beef with Double G, and that’s your people you need to check on (?)",Double,INNER,ASSONANCE,vowel,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",check,42,"Once you drop that check, I’ll get your list and put an X on it",get,INNER,SLANT,cmu,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",check,42,"Once you drop that check, I’ll get your list and put an X on it",X,INNER,SLANT,cmu,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",get,42,"Once you drop that check, I’ll get your list and put an X on it",X,INNER,ASSONANCE,vowel,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",X,43,"They got beef with Double G, and that’s your people you need to check on (?)",check,END,SLANT,cmu,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",check,43,"They got beef with Double G, and that’s your people you need to check on (?)",check,INNER,REPEAT,spelling,HIGH,N
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",drop,43,"They got beef with Double G, and that’s your people you need to check on (?)",got,INNER,SLANT,cmu,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",get,43,"They got beef with Double G, and that’s your people you need to check on (?)",check,INNER,SLANT,cmu,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",Once,43,"They got beef with Double G, and that’s your people you need to check on (?)",Double,INNER,ASSONANCE,vowel,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",X,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,END,ASSONANCE,vowel,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",check,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,INNER,SLANT,cmu,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",check,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",get,INNER,SLANT,cmu,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",get,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,INNER,SLANT,cmu,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",get,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",get,INNER,REPEAT,spelling,HIGH,N
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",I’ll,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",like,INNER,SLANT,cmu,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",list,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",wishin,INNER,ASSONANCE,vowel,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",X,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",get,INNER,ASSONANCE,vowel,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",X,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",myself,END,ASSONANCE,vowel,MED,Y
+Heat,42,"Once you drop that check, I’ll get your list and put an X on it",X,46,"When you speak up on my nigga name, make sure you put respect on it",respect,END,SLANT,cmu,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",beef,43,"They got beef with Double G, and that’s your people you need to check on (?)",G,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",beef,43,"They got beef with Double G, and that’s your people you need to check on (?)",need,INNER,SLANT,cmu,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",beef,43,"They got beef with Double G, and that’s your people you need to check on (?)",people,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",G,43,"They got beef with Double G, and that’s your people you need to check on (?)",need,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",G,43,"They got beef with Double G, and that’s your people you need to check on (?)",people,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",people,43,"They got beef with Double G, and that’s your people you need to check on (?)",need,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",check,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,END,SLANT,cmu,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",beef,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",eat,INNER,SLANT,cmu,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",beef,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",see,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",beef,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",these,INNER,SLANT,cmu,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",check,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",get,INNER,SLANT,cmu,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",G,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",eat,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",G,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",see,INNER,PERFECT,cmu,HIGH,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",G,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",these,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",need,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",eat,INNER,SLANT,cmu,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",need,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",see,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",need,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",these,INNER,SLANT,cmu,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",people,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",eat,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",people,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",see,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",people,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",these,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",check,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",myself,END,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",check,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",send,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",Double,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",fuck,INNER,ASSONANCE,vowel,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",got,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",gotta,INNER,SLANT,cmu,MED,Y
+Heat,43,"They got beef with Double G, and that’s your people you need to check on (?)",check,46,"When you speak up on my nigga name, make sure you put respect on it",respect,END,SLANT,cmu,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",eat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",these,INNER,SLANT,cmu,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",get,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,INNER,SLANT,cmu,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",see,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",eat,INNER,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",see,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",these,INNER,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",myself,END,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",send,INNER,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",don’t,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",no,INNER,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",get,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",myself,INNER,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",get,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",send,INNER,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",like,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",hire,INNER,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",wishin,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",killer,INNER,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,46,"When you speak up on my nigga name, make sure you put respect on it",respect,END,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,46,"When you speak up on my nigga name, make sure you put respect on it",When,INNER,SLANT,cmu,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",eat,46,"When you speak up on my nigga name, make sure you put respect on it",speak,INNER,SLANT,cmu,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",get,46,"When you speak up on my nigga name, make sure you put respect on it",respect,INNER,SLANT,cmu,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",get,46,"When you speak up on my nigga name, make sure you put respect on it",When,INNER,SLANT,cmu,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",niggas’ll,46,"When you speak up on my nigga name, make sure you put respect on it",nigga,INNER,ASSONANCE,vowel,LOW,N
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",see,46,"When you speak up on my nigga name, make sure you put respect on it",speak,INNER,ASSONANCE,vowel,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",these,46,"When you speak up on my nigga name, make sure you put respect on it",speak,INNER,SLANT,cmu,MED,Y
+Heat,44,"They don’t like to see you eat, these niggas’ll get to wishin’ death on you",death,48,"lot of real killers, you ain’t one of ‘em",em,END,SLANT,cmu,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",send,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",myself,INNER,ASSONANCE,vowel,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",myself,46,"When you speak up on my nigga name, make sure you put respect on it",respect,END,ASSONANCE,vowel,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",ain’t,46,"When you speak up on my nigga name, make sure you put respect on it",make,INNER,ASSONANCE,vowel,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",ain’t,46,"When you speak up on my nigga name, make sure you put respect on it",name,INNER,ASSONANCE,vowel,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",myself,46,"When you speak up on my nigga name, make sure you put respect on it",When,INNER,ASSONANCE,vowel,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",send,46,"When you speak up on my nigga name, make sure you put respect on it",respect,INNER,ASSONANCE,vowel,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",send,46,"When you speak up on my nigga name, make sure you put respect on it",When,INNER,SLANT,cmu,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",fuck,47,"I’m on the east side with my heat, we run the streets from here to they corner",run,INNER,SLANT,cmu,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",hire,47,"I’m on the east side with my heat, we run the streets from here to they corner",side,INNER,ASSONANCE,vowel,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",myself,48,"lot of real killers, you ain’t one of ‘em",em,END,ASSONANCE,vowel,MED,Y
+Heat,45,"I ain’t gotta hire no killer, I fuck around and send myself on you",myself,49,"I know plenty freaks, I never sleep with none of ‘em",em,END,ASSONANCE,vowel,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",name,46,"When you speak up on my nigga name, make sure you put respect on it",make,INNER,SLANT,cmu,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",sure,46,"When you speak up on my nigga name, make sure you put respect on it",put,INNER,SLANT,cmu,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",When,46,"When you speak up on my nigga name, make sure you put respect on it",respect,INNER,ASSONANCE,vowel,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",speak,47,"I’m on the east side with my heat, we run the streets from here to they corner",east,INNER,ASSONANCE,vowel,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",speak,47,"I’m on the east side with my heat, we run the streets from here to they corner",heat,INNER,SLANT,cmu,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",speak,47,"I’m on the east side with my heat, we run the streets from here to they corner",here,INNER,SLANT,cmu,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",speak,47,"I’m on the east side with my heat, we run the streets from here to they corner",streets,INNER,ASSONANCE,vowel,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",respect,48,"lot of real killers, you ain’t one of ‘em",em,END,ASSONANCE,vowel,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",make,48,"lot of real killers, you ain’t one of ‘em",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",name,48,"lot of real killers, you ain’t one of ‘em",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",speak,48,"lot of real killers, you ain’t one of ‘em",real,INNER,SLANT,cmu,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",When,48,"lot of real killers, you ain’t one of ‘em",em,INNER,SLANT,cmu,MED,Y
+Heat,46,"When you speak up on my nigga name, make sure you put respect on it",respect,49,"I know plenty freaks, I never sleep with none of ‘em",em,END,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",east,47,"I’m on the east side with my heat, we run the streets from here to they corner",heat,INNER,SLANT,cmu,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",east,47,"I’m on the east side with my heat, we run the streets from here to they corner",here,INNER,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",east,47,"I’m on the east side with my heat, we run the streets from here to they corner",streets,INNER,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",here,INNER,SLANT,cmu,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",streets,INNER,SLANT,cmu,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",streets,47,"I’m on the east side with my heat, we run the streets from here to they corner",here,INNER,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",east,48,"lot of real killers, you ain’t one of ‘em",real,INNER,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",heat,48,"lot of real killers, you ain’t one of ‘em",real,INNER,SLANT,cmu,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",here,48,"lot of real killers, you ain’t one of ‘em",real,INNER,SLANT,cmu,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",run,48,"lot of real killers, you ain’t one of ‘em",one,INNER,PERFECT,cmu,HIGH,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",streets,48,"lot of real killers, you ain’t one of ‘em",real,INNER,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",east,49,"I know plenty freaks, I never sleep with none of ‘em",freaks,INNER,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",east,49,"I know plenty freaks, I never sleep with none of ‘em",sleep,INNER,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",heat,49,"I know plenty freaks, I never sleep with none of ‘em",freaks,INNER,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",heat,49,"I know plenty freaks, I never sleep with none of ‘em",sleep,INNER,SLANT,cmu,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",here,49,"I know plenty freaks, I never sleep with none of ‘em",freaks,INNER,ASSONANCE,vowel,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",here,49,"I know plenty freaks, I never sleep with none of ‘em",sleep,INNER,SLANT,cmu,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",run,49,"I know plenty freaks, I never sleep with none of ‘em",none,INNER,PERFECT,cmu,HIGH,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",streets,49,"I know plenty freaks, I never sleep with none of ‘em",freaks,INNER,SLANT,cmu,MED,Y
+Heat,47,"I’m on the east side with my heat, we run the streets from here to they corner",streets,49,"I know plenty freaks, I never sleep with none of ‘em",sleep,INNER,ASSONANCE,vowel,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",em,49,"I know plenty freaks, I never sleep with none of ‘em",em,END,REPEAT,spelling,HIGH,N
+Heat,48,"lot of real killers, you ain’t one of ‘em",em,49,"I know plenty freaks, I never sleep with none of ‘em",never,INNER,SLANT,cmu,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",em,49,"I know plenty freaks, I never sleep with none of ‘em",plenty,INNER,ASSONANCE,vowel,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",one,49,"I know plenty freaks, I never sleep with none of ‘em",none,INNER,PERFECT,cmu,HIGH,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",real,49,"I know plenty freaks, I never sleep with none of ‘em",freaks,INNER,ASSONANCE,vowel,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",real,49,"I know plenty freaks, I never sleep with none of ‘em",sleep,INNER,SLANT,cmu,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",em,50,"Switches on these pistols, fifty shots in every one of 'em",'em,END,REPEAT,spelling,HIGH,N
+Heat,48,"lot of real killers, you ain’t one of ‘em",em,50,"Switches on these pistols, fifty shots in every one of 'em",every,INNER,SLANT,cmu,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",killers,50,"Switches on these pistols, fifty shots in every one of 'em",fifty,INNER,ASSONANCE,vowel,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",killers,50,"Switches on these pistols, fifty shots in every one of 'em",pistols,INNER,ASSONANCE,vowel,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",killers,50,"Switches on these pistols, fifty shots in every one of 'em",Switches,INNER,SLANT,cmu,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",lot,50,"Switches on these pistols, fifty shots in every one of 'em",shots,INNER,SLANT,cmu,MED,Y
+Heat,48,"lot of real killers, you ain’t one of ‘em",one,50,"Switches on these pistols, fifty shots in every one of 'em",one,INNER,REPEAT,spelling,HIGH,N
+Heat,48,"lot of real killers, you ain’t one of ‘em",real,50,"Switches on these pistols, fifty shots in every one of 'em",these,INNER,SLANT,cmu,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",freaks,49,"I know plenty freaks, I never sleep with none of ‘em",sleep,INNER,ASSONANCE,vowel,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",never,49,"I know plenty freaks, I never sleep with none of ‘em",em,INNER,SLANT,cmu,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",plenty,49,"I know plenty freaks, I never sleep with none of ‘em",em,INNER,ASSONANCE,vowel,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",plenty,49,"I know plenty freaks, I never sleep with none of ‘em",never,INNER,ASSONANCE,vowel,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",em,50,"Switches on these pistols, fifty shots in every one of 'em",'em,END,REPEAT,spelling,HIGH,N
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",em,50,"Switches on these pistols, fifty shots in every one of 'em",every,INNER,SLANT,cmu,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",freaks,50,"Switches on these pistols, fifty shots in every one of 'em",these,INNER,ASSONANCE,vowel,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",never,50,"Switches on these pistols, fifty shots in every one of 'em",every,INNER,SLANT,cmu,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",none,50,"Switches on these pistols, fifty shots in every one of 'em",one,INNER,PERFECT,cmu,HIGH,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",plenty,50,"Switches on these pistols, fifty shots in every one of 'em",every,INNER,ASSONANCE,vowel,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",sleep,50,"Switches on these pistols, fifty shots in every one of 'em",these,INNER,SLANT,cmu,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",em,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",ahead,INNER,SLANT,cmu,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",em,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",twenty,INNER,ASSONANCE,vowel,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",know plenty,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",shootin twenty,INNER,MULTI,multi,HIGH,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",never,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",ahead,INNER,SLANT,cmu,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",never,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",twenty,INNER,ASSONANCE,vowel,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",none,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",plenty,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",ahead,INNER,ASSONANCE,vowel,MED,Y
+Heat,49,"I know plenty freaks, I never sleep with none of ‘em",plenty,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",twenty,INNER,MULTI,multi,HIGH,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",pistols,50,"Switches on these pistols, fifty shots in every one of 'em",fifty,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",Switches,50,"Switches on these pistols, fifty shots in every one of 'em",fifty,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",Switches,50,"Switches on these pistols, fifty shots in every one of 'em",pistols,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",every,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",ahead,INNER,SLANT,cmu,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",every,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",twenty,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",fifty,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",bring,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",fifty,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",give,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",fifty,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",six,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",one,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",pistols,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",bring,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",pistols,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",give,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",pistols,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",six,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",Switches,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",bring,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",Switches,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",give,INNER,ASSONANCE,vowel,MED,Y
+Heat,50,"Switches on these pistols, fifty shots in every one of 'em",Switches,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",six,INNER,ASSONANCE,vowel,MED,Y
+Heat,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",give,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",bring,INNER,SLANT,cmu,MED,Y
+Heat,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",give,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",six,INNER,ASSONANCE,vowel,MED,Y
+Heat,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",six,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",bring,INNER,ASSONANCE,vowel,MED,Y
+Heat,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",twenty,51,"My shootin' twenty racks ahead, it give you six, you bring a hundred (?)",ahead,INNER,ASSONANCE,vowel,MED,Y

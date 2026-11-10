@@ -1,0 +1,202 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Bad For Me,1,"Oh, yeah, baby, you're bad for my health",health,2,"Baby, you're bad for my wealth (Hey, yeah, do your thing)",wealth,END,PERFECT,cmu,HIGH,Y
+Bad For Me,1,"Oh, yeah, baby, you're bad for my health",baby,2,"Baby, you're bad for my wealth (Hey, yeah, do your thing)",Baby,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,1,"Oh, yeah, baby, you're bad for my health",bad,2,"Baby, you're bad for my wealth (Hey, yeah, do your thing)",bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,1,"Oh, yeah, baby, you're bad for my health",health,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",yourself,END,SLANT,cmu,MED,Y
+Bad For Me,1,"Oh, yeah, baby, you're bad for my health",baby,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",Baby,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,1,"Oh, yeah, baby, you're bad for my health",bad,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,1,"Oh, yeah, baby, you're bad for my health",health,4,Maybe we should be with someone else (On bro),else,END,SLANT,cmu,MED,Y
+Bad For Me,1,"Oh, yeah, baby, you're bad for my health",health,5,"Baby, you're bad for my health",health,END,REPEAT,spelling,HIGH,N
+Bad For Me,2,"Baby, you're bad for my wealth (Hey, yeah, do your thing)",wealth,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",yourself,END,SLANT,cmu,MED,Y
+Bad For Me,2,"Baby, you're bad for my wealth (Hey, yeah, do your thing)",Baby,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",Baby,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,2,"Baby, you're bad for my wealth (Hey, yeah, do your thing)",bad,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,2,"Baby, you're bad for my wealth (Hey, yeah, do your thing)",wealth,4,Maybe we should be with someone else (On bro),else,END,SLANT,cmu,MED,Y
+Bad For Me,2,"Baby, you're bad for my wealth (Hey, yeah, do your thing)",Baby,4,Maybe we should be with someone else (On bro),Maybe,INNER,MULTI,multi,HIGH,Y
+Bad For Me,2,"Baby, you're bad for my wealth (Hey, yeah, do your thing)",wealth,5,"Baby, you're bad for my health",health,END,PERFECT,cmu,HIGH,Y
+Bad For Me,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",yourself,4,Maybe we should be with someone else (On bro),else,END,SLANT,cmu,MED,Y
+Bad For Me,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",Baby,4,Maybe we should be with someone else (On bro),Maybe,INNER,MULTI,multi,HIGH,Y
+Bad For Me,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",yourself,5,"Baby, you're bad for my health",health,END,SLANT,cmu,MED,Y
+Bad For Me,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",Baby,5,"Baby, you're bad for my health",Baby,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,3,"Baby, you're bad for yourself (Put me on there, show me somethin')",bad,5,"Baby, you're bad for my health",bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,4,Maybe we should be with someone else (On bro),else,5,"Baby, you're bad for my health",health,END,SLANT,cmu,MED,Y
+Bad For Me,4,Maybe we should be with someone else (On bro),Maybe,5,"Baby, you're bad for my health",Baby,INNER,MULTI,multi,HIGH,Y
+Bad For Me,4,Maybe we should be with someone else (On bro),else,6,"Step back and pat yourself on the back, babe (Oh)",Step,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,4,Maybe we should be with someone else (On bro),else,6,"Step back and pat yourself on the back, babe (Oh)",yourself,INNER,SLANT,cmu,MED,Y
+Bad For Me,4,Maybe we should be with someone else (On bro),Maybe,6,"Step back and pat yourself on the back, babe (Oh)",babe,INNER,SLANT,cmu,MED,Y
+Bad For Me,5,"Baby, you're bad for my health",Baby,6,"Step back and pat yourself on the back, babe (Oh)",babe,INNER,SLANT,cmu,MED,Y
+Bad For Me,5,"Baby, you're bad for my health",bad,6,"Step back and pat yourself on the back, babe (Oh)",back,INNER,SLANT,cmu,MED,Y
+Bad For Me,5,"Baby, you're bad for my health",bad,6,"Step back and pat yourself on the back, babe (Oh)",pat,INNER,SLANT,cmu,MED,Y
+Bad For Me,5,"Baby, you're bad for my health",health,6,"Step back and pat yourself on the back, babe (Oh)",Step,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,5,"Baby, you're bad for my health",health,6,"Step back and pat yourself on the back, babe (Oh)",yourself,INNER,SLANT,cmu,MED,Y
+Bad For Me,5,"Baby, you're bad for my health",bad,7,"Go and pour you a cup of Cognac, yeah (Oh)",Cognac,INNER,SLANT,cmu,MED,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",back,6,"Step back and pat yourself on the back, babe (Oh)",back,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",back,6,"Step back and pat yourself on the back, babe (Oh)",pat,INNER,SLANT,cmu,MED,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",pat,6,"Step back and pat yourself on the back, babe (Oh)",back,INNER,SLANT,cmu,MED,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",Step,6,"Step back and pat yourself on the back, babe (Oh)",yourself,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",back,7,"Go and pour you a cup of Cognac, yeah (Oh)",Cognac,INNER,PERFECT,cmu,HIGH,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",pat,7,"Go and pour you a cup of Cognac, yeah (Oh)",Cognac,INNER,SLANT,cmu,MED,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",babe,8,Always actin' phony wit' ya funny ass (Oh),Always,INNER,SLANT,cmu,MED,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",back,8,Always actin' phony wit' ya funny ass (Oh),actin,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",back,8,Always actin' phony wit' ya funny ass (Oh),ass,INNER,SLANT,cmu,MED,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",pat,8,Always actin' phony wit' ya funny ass (Oh),actin,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,6,"Step back and pat yourself on the back, babe (Oh)",pat,8,Always actin' phony wit' ya funny ass (Oh),ass,INNER,SLANT,cmu,MED,Y
+Bad For Me,7,"Go and pour you a cup of Cognac, yeah (Oh)",Cognac,8,Always actin' phony wit' ya funny ass (Oh),ass,END,SLANT,cmu,MED,Y
+Bad For Me,7,"Go and pour you a cup of Cognac, yeah (Oh)",Cognac,8,Always actin' phony wit' ya funny ass (Oh),actin,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,7,"Go and pour you a cup of Cognac, yeah (Oh)",cup,8,Always actin' phony wit' ya funny ass (Oh),funny,INNER,SLANT,cmu,MED,Y
+Bad For Me,7,"Go and pour you a cup of Cognac, yeah (Oh)",Go,8,Always actin' phony wit' ya funny ass (Oh),phony,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,7,"Go and pour you a cup of Cognac, yeah (Oh)",Cognac,9,What you wanna eat wit' ya hungry ass? (Yеah),ass,END,SLANT,cmu,MED,Y
+Bad For Me,7,"Go and pour you a cup of Cognac, yeah (Oh)",cup,9,What you wanna eat wit' ya hungry ass? (Yеah),hungry,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,7,"Go and pour you a cup of Cognac, yeah (Oh)",cup,9,What you wanna eat wit' ya hungry ass? (Yеah),What,INNER,SLANT,cmu,MED,Y
+Bad For Me,8,Always actin' phony wit' ya funny ass (Oh),actin,8,Always actin' phony wit' ya funny ass (Oh),ass,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,8,Always actin' phony wit' ya funny ass (Oh),ass,9,What you wanna eat wit' ya hungry ass? (Yеah),ass,END,REPEAT,spelling,HIGH,N
+Bad For Me,8,Always actin' phony wit' ya funny ass (Oh),actin,9,What you wanna eat wit' ya hungry ass? (Yеah),ass,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,8,Always actin' phony wit' ya funny ass (Oh),funny,9,What you wanna eat wit' ya hungry ass? (Yеah),hungry,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,8,Always actin' phony wit' ya funny ass (Oh),funny,9,What you wanna eat wit' ya hungry ass? (Yеah),What,INNER,SLANT,cmu,MED,Y
+Bad For Me,8,Always actin' phony wit' ya funny ass (Oh),wit,9,What you wanna eat wit' ya hungry ass? (Yеah),wit,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,8,Always actin' phony wit' ya funny ass (Oh),actin,10,"See, you booksmart, you be actin' boss (Ooh)",actin,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,8,Always actin' phony wit' ya funny ass (Oh),ass,10,"See, you booksmart, you be actin' boss (Ooh)",actin,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,9,What you wanna eat wit' ya hungry ass? (Yеah),What,9,What you wanna eat wit' ya hungry ass? (Yеah),hungry,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,9,What you wanna eat wit' ya hungry ass? (Yеah),ass,10,"See, you booksmart, you be actin' boss (Ooh)",actin,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,9,What you wanna eat wit' ya hungry ass? (Yеah),eat,10,"See, you booksmart, you be actin' boss (Ooh)",See,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,9,What you wanna eat wit' ya hungry ass? (Yеah),wanna,10,"See, you booksmart, you be actin' boss (Ooh)",boss,INNER,SLANT,cmu,MED,Y
+Bad For Me,9,What you wanna eat wit' ya hungry ass? (Yеah),hungry,11,Come and shake it on mе to the reggaeton (Oh),Come,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,9,What you wanna eat wit' ya hungry ass? (Yеah),What,11,Come and shake it on mе to the reggaeton (Oh),Come,INNER,SLANT,cmu,MED,Y
+Bad For Me,11,Come and shake it on mе to the reggaeton (Oh),reggaeton,12,He don't like that I'm on her ringtone (Tone),don't,INNER,SLANT,cmu,MED,Y
+Bad For Me,12,He don't like that I'm on her ringtone (Tone),ringtone,13,"You can have her back, I ditched her, ding-dong (Ooh)",ditched,INNER,ASSONANCE,vowel,LOW,N
+Bad For Me,12,He don't like that I'm on her ringtone (Tone),like,14,"You're my drug, my vice, then",vice,INNER,SLANT,cmu,MED,Y
+Bad For Me,13,"You can have her back, I ditched her, ding-dong (Ooh)",can,13,"You can have her back, I ditched her, ding-dong (Ooh)",back,INNER,SLANT,cmu,MED,Y
+Bad For Me,13,"You can have her back, I ditched her, ding-dong (Ooh)",can,13,"You can have her back, I ditched her, ding-dong (Ooh)",have,INNER,SLANT,cmu,MED,Y
+Bad For Me,13,"You can have her back, I ditched her, ding-dong (Ooh)",ding,13,"You can have her back, I ditched her, ding-dong (Ooh)",dong,INNER,SLANT,spelling,LOW,Y
+Bad For Me,13,"You can have her back, I ditched her, ding-dong (Ooh)",ditched,13,"You can have her back, I ditched her, ding-dong (Ooh)",ding,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,13,"You can have her back, I ditched her, ding-dong (Ooh)",have,13,"You can have her back, I ditched her, ding-dong (Ooh)",back,INNER,SLANT,cmu,MED,Y
+Bad For Me,13,"You can have her back, I ditched her, ding-dong (Ooh)",ding,15,"Anything you needed, I swiped it",Anything,INNER,PERFECT,cmu,HIGH,Y
+Bad For Me,13,"You can have her back, I ditched her, ding-dong (Ooh)",ditched,15,"Anything you needed, I swiped it",Anything,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,14,"You're my drug, my vice, then",vice,15,"Anything you needed, I swiped it",swiped,END,ASSONANCE,vowel,MED,Y
+Bad For Me,14,"You're my drug, my vice, then",vice,16,"You're trippin' on me, psilocybin",psilocybin,END,ASSONANCE,vowel,MED,Y
+Bad For Me,14,"You're my drug, my vice, then",vice,17,"Every time we came down, we were fightin' (Fightin')",fightin,END,ASSONANCE,vowel,MED,Y
+Bad For Me,14,"You're my drug, my vice, then",vice,18,You shouldn't like me,like,END,SLANT,cmu,MED,Y
+Bad For Me,15,"Anything you needed, I swiped it",swiped,16,"You're trippin' on me, psilocybin",psilocybin,END,ASSONANCE,vowel,MED,Y
+Bad For Me,15,"Anything you needed, I swiped it",Anything,16,"You're trippin' on me, psilocybin",trippin,INNER,SLANT,cmu,MED,Y
+Bad For Me,15,"Anything you needed, I swiped it",swiped,17,"Every time we came down, we were fightin' (Fightin')",fightin,END,ASSONANCE,vowel,MED,Y
+Bad For Me,15,"Anything you needed, I swiped it",swiped,17,"Every time we came down, we were fightin' (Fightin')",time,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,15,"Anything you needed, I swiped it",swiped,18,You shouldn't like me,like,END,SLANT,cmu,MED,Y
+Bad For Me,16,"You're trippin' on me, psilocybin",psilocybin,17,"Every time we came down, we were fightin' (Fightin')",fightin,END,SLANT,cmu,MED,Y
+Bad For Me,16,"You're trippin' on me, psilocybin",psilocybin,17,"Every time we came down, we were fightin' (Fightin')",time,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,16,"You're trippin' on me, psilocybin",psilocybin,18,You shouldn't like me,like,END,ASSONANCE,vowel,MED,Y
+Bad For Me,17,"Every time we came down, we were fightin' (Fightin')",time,17,"Every time we came down, we were fightin' (Fightin')",fightin,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,17,"Every time we came down, we were fightin' (Fightin')",fightin,18,You shouldn't like me,like,END,ASSONANCE,vowel,MED,Y
+Bad For Me,17,"Every time we came down, we were fightin' (Fightin')",time,18,You shouldn't like me,like,INNER,SLANT,cmu,MED,Y
+Bad For Me,17,"Every time we came down, we were fightin' (Fightin')",came,19,"Babe, you don't even love yourself (Yeah, yeah)",Babe,INNER,SLANT,cmu,MED,Y
+Bad For Me,17,"Every time we came down, we were fightin' (Fightin')",Every,19,"Babe, you don't even love yourself (Yeah, yeah)",yourself,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,18,You shouldn't like me,shouldn't,20,"I didn't mean to put you under my spell (Yeah, yeah)",put,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,19,"Babe, you don't even love yourself (Yeah, yeah)",yourself,20,"I didn't mean to put you under my spell (Yeah, yeah)",spell,END,SLANT,cmu,MED,Y
+Bad For Me,19,"Babe, you don't even love yourself (Yeah, yeah)",even,20,"I didn't mean to put you under my spell (Yeah, yeah)",mean,INNER,SLANT,cmu,MED,Y
+Bad For Me,19,"Babe, you don't even love yourself (Yeah, yeah)",love,20,"I didn't mean to put you under my spell (Yeah, yeah)",under,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,19,"Babe, you don't even love yourself (Yeah, yeah)",yourself,21,"I'm sorry, baby, you're bad for my health",health,END,SLANT,cmu,MED,Y
+Bad For Me,19,"Babe, you don't even love yourself (Yeah, yeah)",Babe,21,"I'm sorry, baby, you're bad for my health",baby,INNER,SLANT,cmu,MED,Y
+Bad For Me,19,"Babe, you don't even love yourself (Yeah, yeah)",yourself,22,"Girl, you bad for me like cigarettes",cigarettes,END,ASSONANCE,vowel,MED,Y
+Bad For Me,19,"Babe, you don't even love yourself (Yeah, yeah)",yourself,23,"Girl, you bad for me, bad intention",intention,END,ASSONANCE,vowel,MED,Y
+Bad For Me,20,"I didn't mean to put you under my spell (Yeah, yeah)",spell,21,"I'm sorry, baby, you're bad for my health",health,END,SLANT,cmu,MED,Y
+Bad For Me,20,"I didn't mean to put you under my spell (Yeah, yeah)",spell,22,"Girl, you bad for me like cigarettes",cigarettes,END,ASSONANCE,vowel,MED,Y
+Bad For Me,20,"I didn't mean to put you under my spell (Yeah, yeah)",spell,23,"Girl, you bad for me, bad intention",intention,END,ASSONANCE,vowel,MED,Y
+Bad For Me,21,"I'm sorry, baby, you're bad for my health",health,22,"Girl, you bad for me like cigarettes",cigarettes,END,ASSONANCE,vowel,MED,Y
+Bad For Me,21,"I'm sorry, baby, you're bad for my health",bad,22,"Girl, you bad for me like cigarettes",bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,21,"I'm sorry, baby, you're bad for my health",health,23,"Girl, you bad for me, bad intention",intention,END,ASSONANCE,vowel,MED,Y
+Bad For Me,21,"I'm sorry, baby, you're bad for my health",bad,23,"Girl, you bad for me, bad intention",bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,21,"I'm sorry, baby, you're bad for my health",health,25,Bad for me like the ghetto,ghetto,END,ASSONANCE,vowel,MED,Y
+Bad For Me,22,"Girl, you bad for me like cigarettes",cigarettes,23,"Girl, you bad for me, bad intention",intention,END,ASSONANCE,vowel,MED,Y
+Bad For Me,22,"Girl, you bad for me like cigarettes",bad,23,"Girl, you bad for me, bad intention",bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,22,"Girl, you bad for me like cigarettes",Girl,23,"Girl, you bad for me, bad intention",Girl,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,22,"Girl, you bad for me like cigarettes",bad,24,"Bad for me, tobacco (Bad)",Bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,22,"Girl, you bad for me like cigarettes",cigarettes,25,Bad for me like the ghetto,ghetto,END,SLANT,cmu,MED,Y
+Bad For Me,23,"Girl, you bad for me, bad intention",bad,23,"Girl, you bad for me, bad intention",bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,23,"Girl, you bad for me, bad intention",bad,24,"Bad for me, tobacco (Bad)",Bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,23,"Girl, you bad for me, bad intention",intention,25,Bad for me like the ghetto,ghetto,END,ASSONANCE,vowel,MED,Y
+Bad For Me,23,"Girl, you bad for me, bad intention",bad,25,Bad for me like the ghetto,Bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,24,"Bad for me, tobacco (Bad)",Bad,25,Bad for me like the ghetto,Bad,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,24,"Bad for me, tobacco (Bad)",tobacco,26,Pull strings like Gepetto,Gepetto,END,ASSONANCE,vowel,LOW,N
+Bad For Me,24,"Bad for me, tobacco (Bad)",tobacco,27,"I got chips, where the queso?",queso,END,ASSONANCE,vowel,LOW,N
+Bad For Me,25,Bad for me like the ghetto,ghetto,26,Pull strings like Gepetto,Gepetto,END,ASSONANCE,vowel,LOW,N
+Bad For Me,25,Bad for me like the ghetto,like,26,Pull strings like Gepetto,like,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,25,Bad for me like the ghetto,ghetto,27,"I got chips, where the queso?",queso,END,SLANT,spelling,LOW,Y
+Bad For Me,25,Bad for me like the ghetto,ghetto,27,"I got chips, where the queso?",where,INNER,SLANT,cmu,MED,Y
+Bad For Me,26,Pull strings like Gepetto,Gepetto,27,"I got chips, where the queso?",queso,END,ASSONANCE,vowel,LOW,N
+Bad For Me,26,Pull strings like Gepetto,strings,27,"I got chips, where the queso?",chips,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,26,Pull strings like Gepetto,like,28,"I don't like to talk, I sing songs, yeah",like,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,26,Pull strings like Gepetto,strings,28,"I don't like to talk, I sing songs, yeah",sing,INNER,SLANT,cmu,MED,Y
+Bad For Me,26,Pull strings like Gepetto,Gepetto,30,"Yeah, you're tryna shoot my heart with an arrow",arrow,END,ASSONANCE,vowel,LOW,N
+Bad For Me,27,"I got chips, where the queso?",where,27,"I got chips, where the queso?",queso,INNER,SLANT,spelling,LOW,Y
+Bad For Me,27,"I got chips, where the queso?",chips,28,"I don't like to talk, I sing songs, yeah",sing,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,27,"I got chips, where the queso?",chips,29,Why you always calling me pissed off?,pissed,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,27,"I got chips, where the queso?",queso,30,"Yeah, you're tryna shoot my heart with an arrow",arrow,END,ASSONANCE,vowel,LOW,N
+Bad For Me,27,"I got chips, where the queso?",queso,31,"Sorry, yeah, life's not fair though",though,END,ASSONANCE,vowel,LOW,N
+Bad For Me,28,"I don't like to talk, I sing songs, yeah",talk,28,"I don't like to talk, I sing songs, yeah",songs,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,28,"I don't like to talk, I sing songs, yeah",like,29,Why you always calling me pissed off?,Why,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,28,"I don't like to talk, I sing songs, yeah",sing,29,Why you always calling me pissed off?,pissed,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,28,"I don't like to talk, I sing songs, yeah",songs,29,Why you always calling me pissed off?,calling,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,28,"I don't like to talk, I sing songs, yeah",talk,29,Why you always calling me pissed off?,calling,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,29,Why you always calling me pissed off?,Why,31,"Sorry, yeah, life's not fair though",life's,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,30,"Yeah, you're tryna shoot my heart with an arrow",heart,31,"Sorry, yeah, life's not fair though",not,INNER,SLANT,cmu,MED,Y
+Bad For Me,30,"Yeah, you're tryna shoot my heart with an arrow",heart,31,"Sorry, yeah, life's not fair though",Sorry,INNER,SLANT,cmu,MED,Y
+Bad For Me,30,"Yeah, you're tryna shoot my heart with an arrow",arrow,32,"If you can find a good girl, point her out (Yeah, yeah)",can,INNER,SLANT,cmu,MED,Y
+Bad For Me,31,"Sorry, yeah, life's not fair though",Sorry,31,"Sorry, yeah, life's not fair though",not,INNER,SLANT,cmu,MED,Y
+Bad For Me,31,"Sorry, yeah, life's not fair though",life's,32,"If you can find a good girl, point her out (Yeah, yeah)",find,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,31,"Sorry, yeah, life's not fair though",life's,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",like,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,31,"Sorry, yeah, life's not fair though",not,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",lotta,INNER,SLANT,cmu,MED,Y
+Bad For Me,31,"Sorry, yeah, life's not fair though",Sorry,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",lotta,INNER,SLANT,cmu,MED,Y
+Bad For Me,32,"If you can find a good girl, point her out (Yeah, yeah)",can,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",bad,INNER,SLANT,cmu,MED,Y
+Bad For Me,32,"If you can find a good girl, point her out (Yeah, yeah)",find,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",like,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,32,"If you can find a good girl, point her out (Yeah, yeah)",girl,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",Girl,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,32,"If you can find a good girl, point her out (Yeah, yeah)",good,34,"She ain't good for me, bro, lock her out (Yeah, yeah)",good,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",lotta,34,"She ain't good for me, bro, lock her out (Yeah, yeah)",lock,INNER,SLANT,cmu,MED,Y
+Bad For Me,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",bad,35,"Look, baddie, you wanna be VIP (Yeah, yeah)",baddie,INNER,SLANT,spelling,LOW,Y
+Bad For Me,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",lotta,35,"Look, baddie, you wanna be VIP (Yeah, yeah)",wanna,INNER,SLANT,cmu,MED,Y
+Bad For Me,33,"Girl, you're bad for me, like a lotta doubt (Yeah, yeah)",doubt,37,"I'ma get the 'Cat, meow, meow (Ayy)",meow,END,ASSONANCE,vowel,MED,Y
+Bad For Me,34,"She ain't good for me, bro, lock her out (Yeah, yeah)",good,35,"Look, baddie, you wanna be VIP (Yeah, yeah)",Look,INNER,SLANT,cmu,MED,Y
+Bad For Me,34,"She ain't good for me, bro, lock her out (Yeah, yeah)",lock,35,"Look, baddie, you wanna be VIP (Yeah, yeah)",wanna,INNER,SLANT,cmu,MED,Y
+Bad For Me,35,"Look, baddie, you wanna be VIP (Yeah, yeah)",baddie,37,"I'ma get the 'Cat, meow, meow (Ayy)",'Cat,INNER,SLANT,spelling,LOW,Y
+Bad For Me,36,"And that ass goin' baow, baow, ayy (Yeah, yeah)",baow,36,"And that ass goin' baow, baow, ayy (Yeah, yeah)",baow,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,36,"And that ass goin' baow, baow, ayy (Yeah, yeah)",ass,37,"I'ma get the 'Cat, meow, meow (Ayy)",'Cat,INNER,SLANT,cmu,MED,Y
+Bad For Me,36,"And that ass goin' baow, baow, ayy (Yeah, yeah)",ass,38,"Well, no money can make a too-cool bitch jump around",can,INNER,SLANT,cmu,MED,Y
+Bad For Me,37,"I'ma get the 'Cat, meow, meow (Ayy)",meow,37,"I'ma get the 'Cat, meow, meow (Ayy)",meow,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,37,"I'ma get the 'Cat, meow, meow (Ayy)",meow,38,"Well, no money can make a too-cool bitch jump around",around,END,ASSONANCE,vowel,MED,Y
+Bad For Me,37,"I'ma get the 'Cat, meow, meow (Ayy)",'Cat,38,"Well, no money can make a too-cool bitch jump around",can,INNER,SLANT,cmu,MED,Y
+Bad For Me,37,"I'ma get the 'Cat, meow, meow (Ayy)",get,38,"Well, no money can make a too-cool bitch jump around",Well,INNER,SLANT,cmu,MED,Y
+Bad For Me,37,"I'ma get the 'Cat, meow, meow (Ayy)",I'ma,38,"Well, no money can make a too-cool bitch jump around",bitch,INNER,SLANT,spelling,LOW,Y
+Bad For Me,37,"I'ma get the 'Cat, meow, meow (Ayy)",meow,38,"Well, no money can make a too-cool bitch jump around",around,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,37,"I'ma get the 'Cat, meow, meow (Ayy)",'Cat,39,"Oh, baby, you're bad for my health",bad,INNER,SLANT,cmu,MED,Y
+Bad For Me,37,"I'ma get the 'Cat, meow, meow (Ayy)",get,39,"Oh, baby, you're bad for my health",health,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,38,"Well, no money can make a too-cool bitch jump around",money,38,"Well, no money can make a too-cool bitch jump around",jump,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,38,"Well, no money can make a too-cool bitch jump around",can,39,"Oh, baby, you're bad for my health",bad,INNER,SLANT,cmu,MED,Y
+Bad For Me,38,"Well, no money can make a too-cool bitch jump around",make,39,"Oh, baby, you're bad for my health",baby,INNER,SLANT,cmu,MED,Y
+Bad For Me,38,"Well, no money can make a too-cool bitch jump around",Well,39,"Oh, baby, you're bad for my health",health,INNER,SLANT,cmu,MED,Y
+Bad For Me,38,"Well, no money can make a too-cool bitch jump around",jump,40,We should be with someone—,someone,INNER,ASSONANCE,vowel,MED,Y
+Bad For Me,38,"Well, no money can make a too-cool bitch jump around",money,40,We should be with someone—,someone,INNER,SLANT,cmu,MED,Y
+Bad For Me,39,"Oh, baby, you're bad for my health",health,41,We should be with someone else,else,END,SLANT,cmu,MED,Y
+Bad For Me,40,We should be with someone—,should,41,We should be with someone else,should,INNER,REPEAT,spelling,HIGH,N
+Bad For Me,40,We should be with someone—,someone,41,We should be with someone else,someone,INNER,REPEAT,spelling,HIGH,N
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],1,Creepin’ / Leave Me Like This (WESH Edit) Lyrics,Creepin,1,Creepin’ / Leave Me Like This (WESH Edit) Lyrics,Leave,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],1,Creepin’ / Leave Me Like This (WESH Edit) Lyrics,Lyrics,3,The person you were kissing wasn't me,kissing,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],2,Somebody said they saw you,Somebody,3,The person you were kissing wasn't me,wasn't,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],2,Somebody said they saw you,said,4,And I would never ask you,never,INNER,SLANT,cmu,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],4,And I would never ask you,never,5,I just kept it to myself,kept,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],4,And I would never ask you,never,5,I just kept it to myself,myself,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],5,I just kept it to myself,kept,5,I just kept it to myself,myself,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],6,I don't wanna know,don't,6,I don't wanna know,know,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],6,I don't wanna know,know,7,"If you're playin' me, keep it on the low",low,END,PERFECT,cmu,HIGH,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],6,I don't wanna know,don't,7,"If you're playin' me, keep it on the low",low,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],6,I don't wanna know,wanna,8,'Cause my heart can't take it anymore,heart,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],6,I don't wanna know,know,9,"And if you creepin', please don't let it show",show,END,PERFECT,cmu,HIGH,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],7,"If you're playin' me, keep it on the low",playin,8,'Cause my heart can't take it anymore,take,INNER,SLANT,cmu,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],7,"If you're playin' me, keep it on the low",low,9,"And if you creepin', please don't let it show",show,END,PERFECT,cmu,HIGH,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],7,"If you're playin' me, keep it on the low",keep,9,"And if you creepin', please don't let it show",creepin,INNER,SLANT,cmu,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],7,"If you're playin' me, keep it on the low",keep,9,"And if you creepin', please don't let it show",please,INNER,SLANT,cmu,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],7,"If you're playin' me, keep it on the low",low,9,"And if you creepin', please don't let it show",don't,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],8,'Cause my heart can't take it anymore,heart,10,"Oh, baby, I don't wanna—",wanna,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],8,'Cause my heart can't take it anymore,take,10,"Oh, baby, I don't wanna—",baby,INNER,SLANT,cmu,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],9,"And if you creepin', please don't let it show",creepin,9,"And if you creepin', please don't let it show",please,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],9,"And if you creepin', please don't let it show",don't,9,"And if you creepin', please don't let it show",show,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],9,"And if you creepin', please don't let it show",don't,10,"Oh, baby, I don't wanna—",don't,INNER,REPEAT,spelling,HIGH,N
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],9,"And if you creepin', please don't let it show",show,10,"Oh, baby, I don't wanna—",don't,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],9,"And if you creepin', please don't let it show",let,11,Stay with me 'til the night ends,ends,INNER,ASSONANCE,vowel,MED,Y
+Creepin’ / Leave Me Like This (WESH Edit) [Mixed],10,"Oh, baby, I don't wanna—",baby,11,Stay with me 'til the night ends,Stay,INNER,ASSONANCE,vowel,MED,Y

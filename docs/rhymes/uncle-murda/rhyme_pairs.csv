@@ -1,0 +1,348 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Right Now,1,Niggas in the club right now,now,2,"Blowin' on kush, gettin' money right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,1,Niggas in the club right now,club,2,"Blowin' on kush, gettin' money right now",money,INNER,SLANT,cmu,MED,Y
+Right Now,1,Niggas in the club right now,right,2,"Blowin' on kush, gettin' money right now",right,INNER,REPEAT,spelling,HIGH,N
+Right Now,1,Niggas in the club right now,now,3,Niggas wanna play right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,1,Niggas in the club right now,Niggas,3,Niggas wanna play right now,Niggas,INNER,REPEAT,spelling,HIGH,N
+Right Now,1,Niggas in the club right now,right,3,Niggas wanna play right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,1,Niggas in the club right now,now,4,"Got jewels, got cars, got shooters right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,2,"Blowin' on kush, gettin' money right now",now,3,Niggas wanna play right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,2,"Blowin' on kush, gettin' money right now",right,3,Niggas wanna play right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,2,"Blowin' on kush, gettin' money right now",now,4,"Got jewels, got cars, got shooters right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,2,"Blowin' on kush, gettin' money right now",right,4,"Got jewels, got cars, got shooters right now",right,INNER,REPEAT,spelling,HIGH,N
+Right Now,3,Niggas wanna play right now,now,4,"Got jewels, got cars, got shooters right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,3,Niggas wanna play right now,right,4,"Got jewels, got cars, got shooters right now",right,INNER,REPEAT,spelling,HIGH,N
+Right Now,3,Niggas wanna play right now,wanna,4,"Got jewels, got cars, got shooters right now",cars,INNER,ASSONANCE,vowel,MED,Y
+Right Now,3,Niggas wanna play right now,wanna,4,"Got jewels, got cars, got shooters right now",Got,INNER,SLANT,cmu,MED,Y
+Right Now,3,Niggas wanna play right now,wanna,5,"100 shooters in the club, 100 bottles",bottles,INNER,ASSONANCE,vowel,MED,Y
+Right Now,4,"Got jewels, got cars, got shooters right now",cars,4,"Got jewels, got cars, got shooters right now",got,INNER,ASSONANCE,vowel,MED,Y
+Right Now,4,"Got jewels, got cars, got shooters right now",Got,4,"Got jewels, got cars, got shooters right now",cars,INNER,ASSONANCE,vowel,MED,Y
+Right Now,4,"Got jewels, got cars, got shooters right now",Got,4,"Got jewels, got cars, got shooters right now",got,INNER,REPEAT,spelling,HIGH,N
+Right Now,4,"Got jewels, got cars, got shooters right now",jewels,4,"Got jewels, got cars, got shooters right now",shooters,INNER,SLANT,cmu,MED,Y
+Right Now,4,"Got jewels, got cars, got shooters right now",cars,5,"100 shooters in the club, 100 bottles",bottles,INNER,ASSONANCE,vowel,MED,Y
+Right Now,4,"Got jewels, got cars, got shooters right now",Got,5,"100 shooters in the club, 100 bottles",bottles,INNER,ASSONANCE,vowel,MED,Y
+Right Now,4,"Got jewels, got cars, got shooters right now",jewels,5,"100 shooters in the club, 100 bottles",shooters,INNER,SLANT,cmu,MED,Y
+Right Now,4,"Got jewels, got cars, got shooters right now",shooters,5,"100 shooters in the club, 100 bottles",shooters,INNER,REPEAT,spelling,HIGH,N
+Right Now,4,"Got jewels, got cars, got shooters right now",cars,6,Coppin' the whips on these niggas,Coppin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,4,"Got jewels, got cars, got shooters right now",Got,6,Coppin' the whips on these niggas,Coppin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,5,"100 shooters in the club, 100 bottles",bottles,6,Coppin' the whips on these niggas,Coppin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,5,"100 shooters in the club, 100 bottles",club,7,"Don't fuck, don't fuck, don't fuck with these niggas",fuck,INNER,SLANT,cmu,MED,Y
+Right Now,6,Coppin' the whips on these niggas,whips,6,Coppin' the whips on these niggas,niggas,INNER,SLANT,spelling,LOW,Y
+Right Now,6,Coppin' the whips on these niggas,niggas,7,"Don't fuck, don't fuck, don't fuck with these niggas",niggas,END,REPEAT,spelling,HIGH,N
+Right Now,6,Coppin' the whips on these niggas,these,7,"Don't fuck, don't fuck, don't fuck with these niggas",these,INNER,REPEAT,spelling,HIGH,N
+Right Now,6,Coppin' the whips on these niggas,whips,7,"Don't fuck, don't fuck, don't fuck with these niggas",niggas,INNER,SLANT,spelling,LOW,Y
+Right Now,6,Coppin' the whips on these niggas,niggas,8,Ain't got no love for these niggas,niggas,END,REPEAT,spelling,HIGH,N
+Right Now,6,Coppin' the whips on these niggas,Coppin,8,Ain't got no love for these niggas,got,INNER,ASSONANCE,vowel,MED,Y
+Right Now,6,Coppin' the whips on these niggas,these,8,Ain't got no love for these niggas,these,INNER,REPEAT,spelling,HIGH,N
+Right Now,6,Coppin' the whips on these niggas,whips,8,Ain't got no love for these niggas,niggas,INNER,SLANT,spelling,LOW,Y
+Right Now,6,Coppin' the whips on these niggas,niggas,9,"No love, no love, no love for these niggas",niggas,END,REPEAT,spelling,HIGH,N
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",Don't,7,"Don't fuck, don't fuck, don't fuck with these niggas",don't,INNER,REPEAT,spelling,HIGH,N
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",fuck,7,"Don't fuck, don't fuck, don't fuck with these niggas",fuck,INNER,REPEAT,spelling,HIGH,N
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",niggas,8,Ain't got no love for these niggas,niggas,END,REPEAT,spelling,HIGH,N
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",Don't,8,Ain't got no love for these niggas,no,INNER,ASSONANCE,vowel,MED,Y
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",fuck,8,Ain't got no love for these niggas,love,INNER,SLANT,cmu,MED,Y
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",these,8,Ain't got no love for these niggas,these,INNER,REPEAT,spelling,HIGH,N
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",niggas,9,"No love, no love, no love for these niggas",niggas,END,REPEAT,spelling,HIGH,N
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",Don't,9,"No love, no love, no love for these niggas",No,INNER,ASSONANCE,vowel,MED,Y
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",fuck,9,"No love, no love, no love for these niggas",love,INNER,SLANT,cmu,MED,Y
+Right Now,7,"Don't fuck, don't fuck, don't fuck with these niggas",these,9,"No love, no love, no love for these niggas",these,INNER,REPEAT,spelling,HIGH,N
+Right Now,8,Ain't got no love for these niggas,niggas,9,"No love, no love, no love for these niggas",niggas,END,REPEAT,spelling,HIGH,N
+Right Now,8,Ain't got no love for these niggas,love,9,"No love, no love, no love for these niggas",love,INNER,REPEAT,spelling,HIGH,N
+Right Now,8,Ain't got no love for these niggas,no,9,"No love, no love, no love for these niggas",No,INNER,REPEAT,spelling,HIGH,N
+Right Now,8,Ain't got no love for these niggas,these,9,"No love, no love, no love for these niggas",these,INNER,REPEAT,spelling,HIGH,N
+Right Now,8,Ain't got no love for these niggas,love,10,I just blow the cash on my young ho,young,INNER,SLANT,cmu,MED,Y
+Right Now,8,Ain't got no love for these niggas,no,10,I just blow the cash on my young ho,blow,INNER,PERFECT,cmu,HIGH,Y
+Right Now,8,Ain't got no love for these niggas,no,10,I just blow the cash on my young ho,ho,INNER,PERFECT,cmu,HIGH,Y
+Right Now,8,Ain't got no love for these niggas,niggas,12,Fuckin' up this cash with my young niggas,niggas,END,REPEAT,spelling,HIGH,N
+Right Now,9,"No love, no love, no love for these niggas",love,9,"No love, no love, no love for these niggas",love,INNER,REPEAT,spelling,HIGH,N
+Right Now,9,"No love, no love, no love for these niggas",No,9,"No love, no love, no love for these niggas",no,INNER,REPEAT,spelling,HIGH,N
+Right Now,9,"No love, no love, no love for these niggas",love,10,I just blow the cash on my young ho,young,INNER,SLANT,cmu,MED,Y
+Right Now,9,"No love, no love, no love for these niggas",No,10,I just blow the cash on my young ho,blow,INNER,PERFECT,cmu,HIGH,Y
+Right Now,9,"No love, no love, no love for these niggas",No,10,I just blow the cash on my young ho,ho,INNER,PERFECT,cmu,HIGH,Y
+Right Now,9,"No love, no love, no love for these niggas",love,11,I just blow some cash on my young ho,some,INNER,SLANT,cmu,MED,Y
+Right Now,9,"No love, no love, no love for these niggas",love,11,I just blow some cash on my young ho,young,INNER,SLANT,cmu,MED,Y
+Right Now,9,"No love, no love, no love for these niggas",No,11,I just blow some cash on my young ho,blow,INNER,PERFECT,cmu,HIGH,Y
+Right Now,9,"No love, no love, no love for these niggas",No,11,I just blow some cash on my young ho,ho,INNER,PERFECT,cmu,HIGH,Y
+Right Now,9,"No love, no love, no love for these niggas",niggas,12,Fuckin' up this cash with my young niggas,niggas,END,REPEAT,spelling,HIGH,N
+Right Now,9,"No love, no love, no love for these niggas",niggas,13,Fuckin' up a bag with my young niggas,niggas,END,REPEAT,spelling,HIGH,N
+Right Now,10,I just blow the cash on my young ho,blow,10,I just blow the cash on my young ho,ho,INNER,PERFECT,cmu,HIGH,Y
+Right Now,10,I just blow the cash on my young ho,ho,11,I just blow some cash on my young ho,ho,END,REPEAT,spelling,HIGH,N
+Right Now,10,I just blow the cash on my young ho,blow,11,I just blow some cash on my young ho,blow,INNER,REPEAT,spelling,HIGH,N
+Right Now,10,I just blow the cash on my young ho,blow,11,I just blow some cash on my young ho,ho,INNER,PERFECT,cmu,HIGH,Y
+Right Now,10,I just blow the cash on my young ho,cash,11,I just blow some cash on my young ho,cash,INNER,REPEAT,spelling,HIGH,N
+Right Now,10,I just blow the cash on my young ho,ho,11,I just blow some cash on my young ho,blow,INNER,PERFECT,cmu,HIGH,Y
+Right Now,10,I just blow the cash on my young ho,young,11,I just blow some cash on my young ho,some,INNER,SLANT,cmu,MED,Y
+Right Now,10,I just blow the cash on my young ho,young,11,I just blow some cash on my young ho,young,INNER,REPEAT,spelling,HIGH,N
+Right Now,10,I just blow the cash on my young ho,cash,12,Fuckin' up this cash with my young niggas,cash,INNER,REPEAT,spelling,HIGH,N
+Right Now,10,I just blow the cash on my young ho,young,12,Fuckin' up this cash with my young niggas,Fuckin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,10,I just blow the cash on my young ho,young,12,Fuckin' up this cash with my young niggas,young,INNER,REPEAT,spelling,HIGH,N
+Right Now,11,I just blow some cash on my young ho,blow,11,I just blow some cash on my young ho,ho,INNER,PERFECT,cmu,HIGH,Y
+Right Now,11,I just blow some cash on my young ho,some,11,I just blow some cash on my young ho,young,INNER,SLANT,cmu,MED,Y
+Right Now,11,I just blow some cash on my young ho,cash,12,Fuckin' up this cash with my young niggas,cash,INNER,REPEAT,spelling,HIGH,N
+Right Now,11,I just blow some cash on my young ho,some,12,Fuckin' up this cash with my young niggas,Fuckin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,11,I just blow some cash on my young ho,some,12,Fuckin' up this cash with my young niggas,young,INNER,SLANT,cmu,MED,Y
+Right Now,11,I just blow some cash on my young ho,young,12,Fuckin' up this cash with my young niggas,Fuckin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,11,I just blow some cash on my young ho,young,12,Fuckin' up this cash with my young niggas,young,INNER,REPEAT,spelling,HIGH,N
+Right Now,11,I just blow some cash on my young ho,cash,13,Fuckin' up a bag with my young niggas,bag,INNER,SLANT,cmu,MED,Y
+Right Now,11,I just blow some cash on my young ho,some,13,Fuckin' up a bag with my young niggas,Fuckin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,11,I just blow some cash on my young ho,some,13,Fuckin' up a bag with my young niggas,young,INNER,SLANT,cmu,MED,Y
+Right Now,11,I just blow some cash on my young ho,young,13,Fuckin' up a bag with my young niggas,Fuckin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,11,I just blow some cash on my young ho,young,13,Fuckin' up a bag with my young niggas,young,INNER,REPEAT,spelling,HIGH,N
+Right Now,12,Fuckin' up this cash with my young niggas,Fuckin,12,Fuckin' up this cash with my young niggas,young,INNER,ASSONANCE,vowel,MED,Y
+Right Now,12,Fuckin' up this cash with my young niggas,niggas,13,Fuckin' up a bag with my young niggas,niggas,END,REPEAT,spelling,HIGH,N
+Right Now,12,Fuckin' up this cash with my young niggas,cash,13,Fuckin' up a bag with my young niggas,bag,INNER,SLANT,cmu,MED,Y
+Right Now,12,Fuckin' up this cash with my young niggas,Fuckin,13,Fuckin' up a bag with my young niggas,Fuckin,INNER,REPEAT,spelling,HIGH,N
+Right Now,12,Fuckin' up this cash with my young niggas,Fuckin,13,Fuckin' up a bag with my young niggas,young,INNER,ASSONANCE,vowel,MED,Y
+Right Now,12,Fuckin' up this cash with my young niggas,young,13,Fuckin' up a bag with my young niggas,Fuckin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,12,Fuckin' up this cash with my young niggas,young,13,Fuckin' up a bag with my young niggas,young,INNER,REPEAT,spelling,HIGH,N
+Right Now,12,Fuckin' up this cash with my young niggas,Fuckin,14,Bitches gettin' high on drugs right now,drugs,INNER,ASSONANCE,vowel,MED,Y
+Right Now,12,Fuckin' up this cash with my young niggas,young,14,Bitches gettin' high on drugs right now,drugs,INNER,ASSONANCE,vowel,MED,Y
+Right Now,12,Fuckin' up this cash with my young niggas,niggas,16,"Real niggas back, I'm puttin' on for my hittas",hittas,END,PERFECT,spelling,MED,Y
+Right Now,13,Fuckin' up a bag with my young niggas,Fuckin,13,Fuckin' up a bag with my young niggas,young,INNER,ASSONANCE,vowel,MED,Y
+Right Now,13,Fuckin' up a bag with my young niggas,Fuckin,14,Bitches gettin' high on drugs right now,drugs,INNER,ASSONANCE,vowel,MED,Y
+Right Now,13,Fuckin' up a bag with my young niggas,young,14,Bitches gettin' high on drugs right now,drugs,INNER,ASSONANCE,vowel,MED,Y
+Right Now,13,Fuckin' up a bag with my young niggas,Fuckin,15,"Got shooters on deck, I call Crips, call Bloods right now",Bloods,INNER,ASSONANCE,vowel,MED,Y
+Right Now,13,Fuckin' up a bag with my young niggas,niggas,15,"Got shooters on deck, I call Crips, call Bloods right now",Crips,INNER,SLANT,spelling,LOW,Y
+Right Now,13,Fuckin' up a bag with my young niggas,young,15,"Got shooters on deck, I call Crips, call Bloods right now",Bloods,INNER,ASSONANCE,vowel,MED,Y
+Right Now,13,Fuckin' up a bag with my young niggas,niggas,16,"Real niggas back, I'm puttin' on for my hittas",hittas,END,PERFECT,spelling,MED,Y
+Right Now,13,Fuckin' up a bag with my young niggas,niggas,17,"We blowin' money, we throwin' money at strippers",strippers,END,SLANT,spelling,LOW,Y
+Right Now,14,Bitches gettin' high on drugs right now,high,14,Bitches gettin' high on drugs right now,right,INNER,ASSONANCE,vowel,MED,Y
+Right Now,14,Bitches gettin' high on drugs right now,now,15,"Got shooters on deck, I call Crips, call Bloods right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,14,Bitches gettin' high on drugs right now,Bitches,15,"Got shooters on deck, I call Crips, call Bloods right now",Crips,INNER,ASSONANCE,vowel,MED,Y
+Right Now,14,Bitches gettin' high on drugs right now,drugs,15,"Got shooters on deck, I call Crips, call Bloods right now",Bloods,INNER,SLANT,cmu,MED,Y
+Right Now,14,Bitches gettin' high on drugs right now,gettin,15,"Got shooters on deck, I call Crips, call Bloods right now",deck,INNER,ASSONANCE,vowel,MED,Y
+Right Now,14,Bitches gettin' high on drugs right now,high,15,"Got shooters on deck, I call Crips, call Bloods right now",right,INNER,ASSONANCE,vowel,MED,Y
+Right Now,14,Bitches gettin' high on drugs right now,right,15,"Got shooters on deck, I call Crips, call Bloods right now",right,INNER,REPEAT,spelling,HIGH,N
+Right Now,14,Bitches gettin' high on drugs right now,drugs,16,"Real niggas back, I'm puttin' on for my hittas",puttin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,14,Bitches gettin' high on drugs right now,now,18,Niggas in the trap right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,15,"Got shooters on deck, I call Crips, call Bloods right now",call,15,"Got shooters on deck, I call Crips, call Bloods right now",call,INNER,REPEAT,spelling,HIGH,N
+Right Now,15,"Got shooters on deck, I call Crips, call Bloods right now",Bloods,16,"Real niggas back, I'm puttin' on for my hittas",puttin,INNER,ASSONANCE,vowel,MED,Y
+Right Now,15,"Got shooters on deck, I call Crips, call Bloods right now",Crips,16,"Real niggas back, I'm puttin' on for my hittas",hittas,INNER,SLANT,spelling,LOW,Y
+Right Now,15,"Got shooters on deck, I call Crips, call Bloods right now",Crips,16,"Real niggas back, I'm puttin' on for my hittas",niggas,INNER,SLANT,spelling,LOW,Y
+Right Now,15,"Got shooters on deck, I call Crips, call Bloods right now",Bloods,17,"We blowin' money, we throwin' money at strippers",money,INNER,ASSONANCE,vowel,MED,Y
+Right Now,15,"Got shooters on deck, I call Crips, call Bloods right now",Crips,17,"We blowin' money, we throwin' money at strippers",strippers,INNER,SLANT,cmu,MED,Y
+Right Now,15,"Got shooters on deck, I call Crips, call Bloods right now",now,18,Niggas in the trap right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,15,"Got shooters on deck, I call Crips, call Bloods right now",now,19,Whippin' it 'til it come back right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,16,"Real niggas back, I'm puttin' on for my hittas",niggas,16,"Real niggas back, I'm puttin' on for my hittas",hittas,INNER,PERFECT,spelling,MED,Y
+Right Now,16,"Real niggas back, I'm puttin' on for my hittas",hittas,17,"We blowin' money, we throwin' money at strippers",strippers,END,SLANT,spelling,LOW,Y
+Right Now,16,"Real niggas back, I'm puttin' on for my hittas",niggas,17,"We blowin' money, we throwin' money at strippers",strippers,INNER,SLANT,spelling,LOW,Y
+Right Now,16,"Real niggas back, I'm puttin' on for my hittas",puttin,17,"We blowin' money, we throwin' money at strippers",money,INNER,ASSONANCE,vowel,MED,Y
+Right Now,16,"Real niggas back, I'm puttin' on for my hittas",back,18,Niggas in the trap right now,trap,INNER,SLANT,cmu,MED,Y
+Right Now,16,"Real niggas back, I'm puttin' on for my hittas",hittas,18,Niggas in the trap right now,Niggas,INNER,PERFECT,spelling,MED,Y
+Right Now,16,"Real niggas back, I'm puttin' on for my hittas",niggas,18,Niggas in the trap right now,Niggas,INNER,REPEAT,spelling,HIGH,N
+Right Now,17,"We blowin' money, we throwin' money at strippers",blowin,17,"We blowin' money, we throwin' money at strippers",throwin,INNER,MULTI,multi,HIGH,Y
+Right Now,17,"We blowin' money, we throwin' money at strippers",money,17,"We blowin' money, we throwin' money at strippers",money,INNER,REPEAT,spelling,HIGH,N
+Right Now,17,"We blowin' money, we throwin' money at strippers",strippers,18,Niggas in the trap right now,Niggas,INNER,SLANT,spelling,LOW,Y
+Right Now,17,"We blowin' money, we throwin' money at strippers",money,19,Whippin' it 'til it come back right now,come,INNER,SLANT,cmu,MED,Y
+Right Now,17,"We blowin' money, we throwin' money at strippers",strippers,19,Whippin' it 'til it come back right now,'til,INNER,ASSONANCE,vowel,MED,Y
+Right Now,17,"We blowin' money, we throwin' money at strippers",strippers,19,Whippin' it 'til it come back right now,Whippin,INNER,SLANT,cmu,MED,Y
+Right Now,18,Niggas in the trap right now,now,19,Whippin' it 'til it come back right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,18,Niggas in the trap right now,right,19,Whippin' it 'til it come back right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,18,Niggas in the trap right now,trap,19,Whippin' it 'til it come back right now,back,INNER,SLANT,cmu,MED,Y
+Right Now,18,Niggas in the trap right now,now,20,I'm strapped right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,18,Niggas in the trap right now,right,20,I'm strapped right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,18,Niggas in the trap right now,trap,20,I'm strapped right now,strapped,INNER,SLANT,cmu,MED,Y
+Right Now,18,Niggas in the trap right now,now,21,Even police get clapped right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,18,Niggas in the trap right now,now,22,Break a whole brick down,down,END,ASSONANCE,vowel,MED,Y
+Right Now,19,Whippin' it 'til it come back right now,Whippin,19,Whippin' it 'til it come back right now,'til,INNER,ASSONANCE,vowel,MED,Y
+Right Now,19,Whippin' it 'til it come back right now,now,20,I'm strapped right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,19,Whippin' it 'til it come back right now,back,20,I'm strapped right now,strapped,INNER,SLANT,cmu,MED,Y
+Right Now,19,Whippin' it 'til it come back right now,right,20,I'm strapped right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,19,Whippin' it 'til it come back right now,now,21,Even police get clapped right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,19,Whippin' it 'til it come back right now,back,21,Even police get clapped right now,clapped,INNER,SLANT,cmu,MED,Y
+Right Now,19,Whippin' it 'til it come back right now,right,21,Even police get clapped right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,19,Whippin' it 'til it come back right now,now,22,Break a whole brick down,down,END,ASSONANCE,vowel,MED,Y
+Right Now,20,I'm strapped right now,now,21,Even police get clapped right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,20,I'm strapped right now,right,21,Even police get clapped right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,20,I'm strapped right now,strapped,21,Even police get clapped right now,clapped,INNER,PERFECT,cmu,HIGH,Y
+Right Now,20,I'm strapped right now,now,22,Break a whole brick down,down,END,ASSONANCE,vowel,MED,Y
+Right Now,21,Even police get clapped right now,Even,21,Even police get clapped right now,police,INNER,ASSONANCE,vowel,MED,Y
+Right Now,21,Even police get clapped right now,now,22,Break a whole brick down,down,END,ASSONANCE,vowel,MED,Y
+Right Now,21,Even police get clapped right now,Even,23,Look at all of these baggies,these,INNER,ASSONANCE,vowel,MED,Y
+Right Now,21,Even police get clapped right now,police,23,Look at all of these baggies,these,INNER,SLANT,cmu,MED,Y
+Right Now,22,Break a whole brick down,Break,22,Break a whole brick down,brick,INNER,SLANT,spelling,LOW,Y
+Right Now,22,Break a whole brick down,Break,24,"I got your bitch on 5th ave, I'm Daddy",ave,INNER,ASSONANCE,vowel,MED,Y
+Right Now,22,Break a whole brick down,brick,24,"I got your bitch on 5th ave, I'm Daddy",bitch,INNER,SLANT,cmu,MED,Y
+Right Now,24,"I got your bitch on 5th ave, I'm Daddy",got,25,"Oh, I just got some pounds from the plug",got,INNER,REPEAT,spelling,HIGH,N
+Right Now,24,"I got your bitch on 5th ave, I'm Daddy",ave,26,"If you ain't gettin' money, you a dub",ain't,INNER,ASSONANCE,vowel,MED,Y
+Right Now,25,"Oh, I just got some pounds from the plug",some,25,"Oh, I just got some pounds from the plug",plug,INNER,SLANT,cmu,MED,Y
+Right Now,25,"Oh, I just got some pounds from the plug",plug,26,"If you ain't gettin' money, you a dub",dub,END,SLANT,cmu,MED,Y
+Right Now,25,"Oh, I just got some pounds from the plug",plug,26,"If you ain't gettin' money, you a dub",money,INNER,SLANT,cmu,MED,Y
+Right Now,25,"Oh, I just got some pounds from the plug",some,26,"If you ain't gettin' money, you a dub",dub,INNER,SLANT,cmu,MED,Y
+Right Now,25,"Oh, I just got some pounds from the plug",some,26,"If you ain't gettin' money, you a dub",money,INNER,SLANT,cmu,MED,Y
+Right Now,25,"Oh, I just got some pounds from the plug",pounds,27,I'm lit right now,now,INNER,ASSONANCE,vowel,MED,Y
+Right Now,26,"If you ain't gettin' money, you a dub",money,26,"If you ain't gettin' money, you a dub",dub,INNER,SLANT,cmu,MED,Y
+Right Now,27,I'm lit right now,now,28,"Bitch, recognize who you with right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,27,I'm lit right now,lit,28,"Bitch, recognize who you with right now",Bitch,INNER,SLANT,cmu,MED,Y
+Right Now,27,I'm lit right now,right,28,"Bitch, recognize who you with right now",recognize,INNER,SLANT,cmu,MED,Y
+Right Now,27,I'm lit right now,right,28,"Bitch, recognize who you with right now",right,INNER,REPEAT,spelling,HIGH,N
+Right Now,27,I'm lit right now,lit,29,I'm the shit right,shit,INNER,PERFECT,cmu,HIGH,Y
+Right Now,27,I'm lit right now,right,29,I'm the shit right,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,27,I'm lit right now,now,30,Look at the flick of the wrist right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,27,I'm lit right now,now,31,This Audemars cost the price of a New York brick right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,28,"Bitch, recognize who you with right now",recognize,28,"Bitch, recognize who you with right now",right,INNER,SLANT,cmu,MED,Y
+Right Now,28,"Bitch, recognize who you with right now",Bitch,29,I'm the shit right,shit,INNER,SLANT,cmu,MED,Y
+Right Now,28,"Bitch, recognize who you with right now",recognize,29,I'm the shit right,right,INNER,SLANT,cmu,MED,Y
+Right Now,28,"Bitch, recognize who you with right now",right,29,I'm the shit right,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,28,"Bitch, recognize who you with right now",now,30,Look at the flick of the wrist right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,28,"Bitch, recognize who you with right now",Bitch,30,Look at the flick of the wrist right now,flick,INNER,SLANT,cmu,MED,Y
+Right Now,28,"Bitch, recognize who you with right now",Bitch,30,Look at the flick of the wrist right now,wrist,INNER,ASSONANCE,vowel,MED,Y
+Right Now,28,"Bitch, recognize who you with right now",recognize,30,Look at the flick of the wrist right now,right,INNER,SLANT,cmu,MED,Y
+Right Now,28,"Bitch, recognize who you with right now",right,30,Look at the flick of the wrist right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,28,"Bitch, recognize who you with right now",now,31,This Audemars cost the price of a New York brick right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,28,"Bitch, recognize who you with right now",now,32,"Scheme on it, I drop a bag and get you hit right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,29,I'm the shit right,right,30,Look at the flick of the wrist right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,29,I'm the shit right,shit,30,Look at the flick of the wrist right now,flick,INNER,SLANT,cmu,MED,Y
+Right Now,29,I'm the shit right,shit,30,Look at the flick of the wrist right now,wrist,INNER,SLANT,cmu,MED,Y
+Right Now,29,I'm the shit right,right,31,This Audemars cost the price of a New York brick right now,price,INNER,SLANT,cmu,MED,Y
+Right Now,29,I'm the shit right,right,31,This Audemars cost the price of a New York brick right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,29,I'm the shit right,shit,31,This Audemars cost the price of a New York brick right now,brick,INNER,SLANT,cmu,MED,Y
+Right Now,30,Look at the flick of the wrist right now,flick,30,Look at the flick of the wrist right now,wrist,INNER,ASSONANCE,vowel,MED,Y
+Right Now,30,Look at the flick of the wrist right now,now,31,This Audemars cost the price of a New York brick right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,30,Look at the flick of the wrist right now,flick,31,This Audemars cost the price of a New York brick right now,brick,INNER,PERFECT,cmu,HIGH,Y
+Right Now,30,Look at the flick of the wrist right now,right,31,This Audemars cost the price of a New York brick right now,price,INNER,SLANT,cmu,MED,Y
+Right Now,30,Look at the flick of the wrist right now,right,31,This Audemars cost the price of a New York brick right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,30,Look at the flick of the wrist right now,wrist,31,This Audemars cost the price of a New York brick right now,brick,INNER,ASSONANCE,vowel,MED,Y
+Right Now,30,Look at the flick of the wrist right now,now,32,"Scheme on it, I drop a bag and get you hit right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,30,Look at the flick of the wrist right now,flick,32,"Scheme on it, I drop a bag and get you hit right now",hit,INNER,SLANT,cmu,MED,Y
+Right Now,30,Look at the flick of the wrist right now,right,32,"Scheme on it, I drop a bag and get you hit right now",right,INNER,REPEAT,spelling,HIGH,N
+Right Now,30,Look at the flick of the wrist right now,wrist,32,"Scheme on it, I drop a bag and get you hit right now",hit,INNER,SLANT,cmu,MED,Y
+Right Now,30,Look at the flick of the wrist right now,now,33,My bread right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,30,Look at the flick of the wrist right now,now,34,Can't tell me I can't beat the Feds right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,31,This Audemars cost the price of a New York brick right now,price,31,This Audemars cost the price of a New York brick right now,right,INNER,SLANT,cmu,MED,Y
+Right Now,31,This Audemars cost the price of a New York brick right now,now,32,"Scheme on it, I drop a bag and get you hit right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,31,This Audemars cost the price of a New York brick right now,brick,32,"Scheme on it, I drop a bag and get you hit right now",hit,INNER,SLANT,cmu,MED,Y
+Right Now,31,This Audemars cost the price of a New York brick right now,cost,32,"Scheme on it, I drop a bag and get you hit right now",drop,INNER,ASSONANCE,vowel,MED,Y
+Right Now,31,This Audemars cost the price of a New York brick right now,price,32,"Scheme on it, I drop a bag and get you hit right now",right,INNER,SLANT,cmu,MED,Y
+Right Now,31,This Audemars cost the price of a New York brick right now,right,32,"Scheme on it, I drop a bag and get you hit right now",right,INNER,REPEAT,spelling,HIGH,N
+Right Now,31,This Audemars cost the price of a New York brick right now,now,33,My bread right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,31,This Audemars cost the price of a New York brick right now,price,33,My bread right now,right,INNER,SLANT,cmu,MED,Y
+Right Now,31,This Audemars cost the price of a New York brick right now,right,33,My bread right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,31,This Audemars cost the price of a New York brick right now,now,34,Can't tell me I can't beat the Feds right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",now,33,My bread right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",get,33,My bread right now,bread,INNER,SLANT,cmu,MED,Y
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",right,33,My bread right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",now,34,Can't tell me I can't beat the Feds right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",bag,34,Can't tell me I can't beat the Feds right now,Can't,INNER,ASSONANCE,vowel,MED,Y
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",get,34,Can't tell me I can't beat the Feds right now,Feds,INNER,ASSONANCE,vowel,MED,Y
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",get,34,Can't tell me I can't beat the Feds right now,tell,INNER,SLANT,cmu,MED,Y
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",right,34,Can't tell me I can't beat the Feds right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",Scheme,34,Can't tell me I can't beat the Feds right now,beat,INNER,SLANT,cmu,MED,Y
+Right Now,32,"Scheme on it, I drop a bag and get you hit right now",now,36,"Bang bang, hit you in the head right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,33,My bread right now,now,34,Can't tell me I can't beat the Feds right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,33,My bread right now,bread,34,Can't tell me I can't beat the Feds right now,Feds,INNER,SLANT,cmu,MED,Y
+Right Now,33,My bread right now,bread,34,Can't tell me I can't beat the Feds right now,tell,INNER,SLANT,cmu,MED,Y
+Right Now,33,My bread right now,right,34,Can't tell me I can't beat the Feds right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,33,My bread right now,now,36,"Bang bang, hit you in the head right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,34,Can't tell me I can't beat the Feds right now,Can't,34,Can't tell me I can't beat the Feds right now,can't,INNER,REPEAT,spelling,HIGH,N
+Right Now,34,Can't tell me I can't beat the Feds right now,tell,34,Can't tell me I can't beat the Feds right now,Feds,INNER,ASSONANCE,vowel,MED,Y
+Right Now,34,Can't tell me I can't beat the Feds right now,now,36,"Bang bang, hit you in the head right now",now,END,REPEAT,spelling,HIGH,N
+Right Now,34,Can't tell me I can't beat the Feds right now,Can't,36,"Bang bang, hit you in the head right now",Bang,INNER,ASSONANCE,vowel,MED,Y
+Right Now,34,Can't tell me I can't beat the Feds right now,Feds,36,"Bang bang, hit you in the head right now",head,INNER,SLANT,cmu,MED,Y
+Right Now,34,Can't tell me I can't beat the Feds right now,right,36,"Bang bang, hit you in the head right now",right,INNER,REPEAT,spelling,HIGH,N
+Right Now,34,Can't tell me I can't beat the Feds right now,tell,36,"Bang bang, hit you in the head right now",head,INNER,SLANT,cmu,MED,Y
+Right Now,35,If Future don't trust ya,don't,37,"If Murda don't trust you, he gon' shoot you",don't,INNER,REPEAT,spelling,HIGH,N
+Right Now,35,If Future don't trust ya,don't,37,"If Murda don't trust you, he gon' shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,35,If Future don't trust ya,Future,37,"If Murda don't trust you, he gon' shoot you",shoot,INNER,SLANT,cmu,MED,Y
+Right Now,35,If Future don't trust ya,trust,37,"If Murda don't trust you, he gon' shoot you",trust,INNER,REPEAT,spelling,HIGH,N
+Right Now,36,"Bang bang, hit you in the head right now",Bang,36,"Bang bang, hit you in the head right now",bang,INNER,REPEAT,spelling,HIGH,N
+Right Now,36,"Bang bang, hit you in the head right now",hit,38,"Lil' Mexico don't trust you, we gon shoot you",Lil,INNER,SLANT,cmu,MED,Y
+Right Now,37,"If Murda don't trust you, he gon' shoot you",don't,37,"If Murda don't trust you, he gon' shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,37,"If Murda don't trust you, he gon' shoot you",shoot,38,"Lil' Mexico don't trust you, we gon shoot you",shoot,END,REPEAT,spelling,HIGH,N
+Right Now,37,"If Murda don't trust you, he gon' shoot you",don't,38,"Lil' Mexico don't trust you, we gon shoot you",don't,INNER,REPEAT,spelling,HIGH,N
+Right Now,37,"If Murda don't trust you, he gon' shoot you",don't,38,"Lil' Mexico don't trust you, we gon shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,37,"If Murda don't trust you, he gon' shoot you",don't,38,"Lil' Mexico don't trust you, we gon shoot you",Mexico,INNER,ASSONANCE,vowel,MED,Y
+Right Now,37,"If Murda don't trust you, he gon' shoot you",gon,38,"Lil' Mexico don't trust you, we gon shoot you",don't,INNER,SLANT,spelling,LOW,Y
+Right Now,37,"If Murda don't trust you, he gon' shoot you",gon,38,"Lil' Mexico don't trust you, we gon shoot you",gon,INNER,REPEAT,spelling,HIGH,N
+Right Now,37,"If Murda don't trust you, he gon' shoot you",trust,38,"Lil' Mexico don't trust you, we gon shoot you",trust,INNER,REPEAT,spelling,HIGH,N
+Right Now,37,"If Murda don't trust you, he gon' shoot you",shoot,39,"Young Metro don't trust you, I'm gon shoot you",shoot,END,REPEAT,spelling,HIGH,N
+Right Now,37,"If Murda don't trust you, he gon' shoot you",don't,39,"Young Metro don't trust you, I'm gon shoot you",don't,INNER,REPEAT,spelling,HIGH,N
+Right Now,37,"If Murda don't trust you, he gon' shoot you",don't,39,"Young Metro don't trust you, I'm gon shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,37,"If Murda don't trust you, he gon' shoot you",don't,39,"Young Metro don't trust you, I'm gon shoot you",Metro,INNER,ASSONANCE,vowel,MED,Y
+Right Now,37,"If Murda don't trust you, he gon' shoot you",gon,39,"Young Metro don't trust you, I'm gon shoot you",don't,INNER,SLANT,spelling,LOW,Y
+Right Now,37,"If Murda don't trust you, he gon' shoot you",gon,39,"Young Metro don't trust you, I'm gon shoot you",gon,INNER,REPEAT,spelling,HIGH,N
+Right Now,37,"If Murda don't trust you, he gon' shoot you",trust,39,"Young Metro don't trust you, I'm gon shoot you",trust,INNER,REPEAT,spelling,HIGH,N
+Right Now,37,"If Murda don't trust you, he gon' shoot you",trust,39,"Young Metro don't trust you, I'm gon shoot you",Young,INNER,ASSONANCE,vowel,MED,Y
+Right Now,37,"If Murda don't trust you, he gon' shoot you",shoot,40,"If Brooklyn don't trust you, they gon shoot you",shoot,END,REPEAT,spelling,HIGH,N
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",don't,38,"Lil' Mexico don't trust you, we gon shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",Mexico,38,"Lil' Mexico don't trust you, we gon shoot you",don't,INNER,ASSONANCE,vowel,MED,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",shoot,39,"Young Metro don't trust you, I'm gon shoot you",shoot,END,REPEAT,spelling,HIGH,N
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",don't,39,"Young Metro don't trust you, I'm gon shoot you",don't,INNER,REPEAT,spelling,HIGH,N
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",don't,39,"Young Metro don't trust you, I'm gon shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",don't,39,"Young Metro don't trust you, I'm gon shoot you",Metro,INNER,ASSONANCE,vowel,MED,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",gon,39,"Young Metro don't trust you, I'm gon shoot you",don't,INNER,SLANT,spelling,LOW,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",gon,39,"Young Metro don't trust you, I'm gon shoot you",gon,INNER,REPEAT,spelling,HIGH,N
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",Mexico,39,"Young Metro don't trust you, I'm gon shoot you",don't,INNER,ASSONANCE,vowel,MED,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",Mexico,39,"Young Metro don't trust you, I'm gon shoot you",Metro,INNER,PERFECT,cmu,HIGH,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",trust,39,"Young Metro don't trust you, I'm gon shoot you",trust,INNER,REPEAT,spelling,HIGH,N
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",trust,39,"Young Metro don't trust you, I'm gon shoot you",Young,INNER,ASSONANCE,vowel,MED,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",shoot,40,"If Brooklyn don't trust you, they gon shoot you",shoot,END,REPEAT,spelling,HIGH,N
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",don't,40,"If Brooklyn don't trust you, they gon shoot you",don't,INNER,REPEAT,spelling,HIGH,N
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",don't,40,"If Brooklyn don't trust you, they gon shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",gon,40,"If Brooklyn don't trust you, they gon shoot you",don't,INNER,SLANT,spelling,LOW,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",gon,40,"If Brooklyn don't trust you, they gon shoot you",gon,INNER,REPEAT,spelling,HIGH,N
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",Mexico,40,"If Brooklyn don't trust you, they gon shoot you",don't,INNER,ASSONANCE,vowel,MED,Y
+Right Now,38,"Lil' Mexico don't trust you, we gon shoot you",trust,40,"If Brooklyn don't trust you, they gon shoot you",trust,INNER,REPEAT,spelling,HIGH,N
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",don't,39,"Young Metro don't trust you, I'm gon shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",Metro,39,"Young Metro don't trust you, I'm gon shoot you",don't,INNER,ASSONANCE,vowel,MED,Y
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",Young,39,"Young Metro don't trust you, I'm gon shoot you",trust,INNER,ASSONANCE,vowel,MED,Y
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",shoot,40,"If Brooklyn don't trust you, they gon shoot you",shoot,END,REPEAT,spelling,HIGH,N
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",don't,40,"If Brooklyn don't trust you, they gon shoot you",don't,INNER,REPEAT,spelling,HIGH,N
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",don't,40,"If Brooklyn don't trust you, they gon shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",gon,40,"If Brooklyn don't trust you, they gon shoot you",don't,INNER,SLANT,spelling,LOW,Y
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",gon,40,"If Brooklyn don't trust you, they gon shoot you",gon,INNER,REPEAT,spelling,HIGH,N
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",Metro,40,"If Brooklyn don't trust you, they gon shoot you",don't,INNER,ASSONANCE,vowel,MED,Y
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",trust,40,"If Brooklyn don't trust you, they gon shoot you",trust,INNER,REPEAT,spelling,HIGH,N
+Right Now,39,"Young Metro don't trust you, I'm gon shoot you",Young,40,"If Brooklyn don't trust you, they gon shoot you",trust,INNER,ASSONANCE,vowel,MED,Y
+Right Now,40,"If Brooklyn don't trust you, they gon shoot you",don't,40,"If Brooklyn don't trust you, they gon shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,41,"Brat, brat, brat, brat, Free Rowdy, bitch!",Brat,41,"Brat, brat, brat, brat, Free Rowdy, bitch!",brat,INNER,REPEAT,spelling,HIGH,N
+Right Now,41,"Brat, brat, brat, brat, Free Rowdy, bitch!",bitch,42,"Brat, brat, brat, brat, Free Bobby, bitch!",bitch,END,REPEAT,spelling,HIGH,N
+Right Now,41,"Brat, brat, brat, brat, Free Rowdy, bitch!",Brat,42,"Brat, brat, brat, brat, Free Bobby, bitch!",Brat,INNER,REPEAT,spelling,HIGH,N
+Right Now,41,"Brat, brat, brat, brat, Free Rowdy, bitch!",Free,42,"Brat, brat, brat, brat, Free Bobby, bitch!",Free,INNER,REPEAT,spelling,HIGH,N
+Right Now,41,"Brat, brat, brat, brat, Free Rowdy, bitch!",Brat,43,Run up on a nigga like bang bang,bang,INNER,SLANT,cmu,MED,Y
+Right Now,42,"Brat, brat, brat, brat, Free Bobby, bitch!",Brat,42,"Brat, brat, brat, brat, Free Bobby, bitch!",brat,INNER,REPEAT,spelling,HIGH,N
+Right Now,42,"Brat, brat, brat, brat, Free Bobby, bitch!",Brat,43,Run up on a nigga like bang bang,bang,INNER,SLANT,cmu,MED,Y
+Right Now,42,"Brat, brat, brat, brat, Free Bobby, bitch!",Bobby,44,Get you popped right now,popped,INNER,SLANT,cmu,MED,Y
+Right Now,43,Run up on a nigga like bang bang,bang,43,Run up on a nigga like bang bang,bang,INNER,REPEAT,spelling,HIGH,N
+Right Now,43,Run up on a nigga like bang bang,like,44,Get you popped right now,right,INNER,SLANT,cmu,MED,Y
+Right Now,43,Run up on a nigga like bang bang,bang,45,Make a nigga go meet 'Pac right now,'Pac,INNER,SLANT,cmu,MED,Y
+Right Now,43,Run up on a nigga like bang bang,like,45,Make a nigga go meet 'Pac right now,right,INNER,SLANT,cmu,MED,Y
+Right Now,43,Run up on a nigga like bang bang,nigga,45,Make a nigga go meet 'Pac right now,nigga,INNER,REPEAT,spelling,HIGH,N
+Right Now,44,Get you popped right now,now,45,Make a nigga go meet 'Pac right now,now,END,REPEAT,spelling,HIGH,N
+Right Now,44,Get you popped right now,right,45,Make a nigga go meet 'Pac right now,right,INNER,REPEAT,spelling,HIGH,N
+Right Now,44,Get you popped right now,popped,46,Coppin' the roof off these niggas,Coppin,INNER,SLANT,cmu,MED,Y
+Right Now,45,Make a nigga go meet 'Pac right now,meet,46,Coppin' the roof off these niggas,these,INNER,SLANT,cmu,MED,Y
+Right Now,45,Make a nigga go meet 'Pac right now,nigga,46,Coppin' the roof off these niggas,niggas,INNER,SLANT,spelling,LOW,Y
+Right Now,45,Make a nigga go meet 'Pac right now,meet,47,"Dont fuck, dont fuck, dont fuck with these niggas",these,INNER,SLANT,cmu,MED,Y
+Right Now,45,Make a nigga go meet 'Pac right now,nigga,47,"Dont fuck, dont fuck, dont fuck with these niggas",niggas,INNER,SLANT,spelling,LOW,Y
+Right Now,46,Coppin' the roof off these niggas,niggas,47,"Dont fuck, dont fuck, dont fuck with these niggas",niggas,END,REPEAT,spelling,HIGH,N
+Right Now,46,Coppin' the roof off these niggas,these,47,"Dont fuck, dont fuck, dont fuck with these niggas",these,INNER,REPEAT,spelling,HIGH,N
+Right Now,46,Coppin' the roof off these niggas,niggas,48,Fuckin' up some bands with my young niggas,niggas,END,REPEAT,spelling,HIGH,N
+Right Now,47,"Dont fuck, dont fuck, dont fuck with these niggas",Dont,47,"Dont fuck, dont fuck, dont fuck with these niggas",dont,INNER,REPEAT,spelling,HIGH,N
+Right Now,47,"Dont fuck, dont fuck, dont fuck with these niggas",fuck,47,"Dont fuck, dont fuck, dont fuck with these niggas",fuck,INNER,REPEAT,spelling,HIGH,N
+Right Now,47,"Dont fuck, dont fuck, dont fuck with these niggas",niggas,48,Fuckin' up some bands with my young niggas,niggas,END,REPEAT,spelling,HIGH,N
+Right Now,47,"Dont fuck, dont fuck, dont fuck with these niggas",fuck,48,Fuckin' up some bands with my young niggas,Fuckin,INNER,SLANT,cmu,MED,Y
+Right Now,47,"Dont fuck, dont fuck, dont fuck with these niggas",fuck,48,Fuckin' up some bands with my young niggas,some,INNER,SLANT,cmu,MED,Y
+Right Now,47,"Dont fuck, dont fuck, dont fuck with these niggas",fuck,48,Fuckin' up some bands with my young niggas,young,INNER,SLANT,cmu,MED,Y
+Right Now,47,"Dont fuck, dont fuck, dont fuck with these niggas",Dont,49,"If Murda don't trust you, we gon' shoot you",don't,INNER,REPEAT,spelling,HIGH,N
+Right Now,47,"Dont fuck, dont fuck, dont fuck with these niggas",Dont,49,"If Murda don't trust you, we gon' shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,47,"Dont fuck, dont fuck, dont fuck with these niggas",fuck,49,"If Murda don't trust you, we gon' shoot you",trust,INNER,ASSONANCE,vowel,MED,Y
+Right Now,48,Fuckin' up some bands with my young niggas,Fuckin,48,Fuckin' up some bands with my young niggas,some,INNER,ASSONANCE,vowel,MED,Y
+Right Now,48,Fuckin' up some bands with my young niggas,Fuckin,48,Fuckin' up some bands with my young niggas,young,INNER,ASSONANCE,vowel,MED,Y
+Right Now,48,Fuckin' up some bands with my young niggas,some,48,Fuckin' up some bands with my young niggas,young,INNER,SLANT,cmu,MED,Y
+Right Now,48,Fuckin' up some bands with my young niggas,Fuckin,49,"If Murda don't trust you, we gon' shoot you",trust,INNER,ASSONANCE,vowel,MED,Y
+Right Now,48,Fuckin' up some bands with my young niggas,some,49,"If Murda don't trust you, we gon' shoot you",trust,INNER,ASSONANCE,vowel,MED,Y
+Right Now,48,Fuckin' up some bands with my young niggas,young,49,"If Murda don't trust you, we gon' shoot you",trust,INNER,ASSONANCE,vowel,MED,Y
+Right Now,48,Fuckin' up some bands with my young niggas,niggas,52,"Metro Boomin want some more, nigga",nigga,END,SLANT,spelling,LOW,Y
+Right Now,49,"If Murda don't trust you, we gon' shoot you",don't,49,"If Murda don't trust you, we gon' shoot you",gon,INNER,SLANT,spelling,LOW,Y
+Right Now,49,"If Murda don't trust you, we gon' shoot you",trust,51,"If money come this fast, I swear to God I never spend it",come,INNER,ASSONANCE,vowel,MED,Y
+Right Now,49,"If Murda don't trust you, we gon' shoot you",trust,51,"If money come this fast, I swear to God I never spend it",money,INNER,ASSONANCE,vowel,MED,Y
+Right Now,50,"The streets watchin', but they ain't trippin'",watchin,51,"If money come this fast, I swear to God I never spend it",God,INNER,ASSONANCE,vowel,MED,Y
+Right Now,50,"The streets watchin', but they ain't trippin'",watchin,52,"Metro Boomin want some more, nigga",want,INNER,ASSONANCE,vowel,MED,Y
+Right Now,51,"If money come this fast, I swear to God I never spend it",money,51,"If money come this fast, I swear to God I never spend it",come,INNER,SLANT,cmu,MED,Y
+Right Now,51,"If money come this fast, I swear to God I never spend it",never,51,"If money come this fast, I swear to God I never spend it",spend,INNER,ASSONANCE,vowel,MED,Y
+Right Now,51,"If money come this fast, I swear to God I never spend it",swear,51,"If money come this fast, I swear to God I never spend it",never,INNER,SLANT,cmu,MED,Y
+Right Now,51,"If money come this fast, I swear to God I never spend it",swear,51,"If money come this fast, I swear to God I never spend it",spend,INNER,ASSONANCE,vowel,MED,Y
+Right Now,51,"If money come this fast, I swear to God I never spend it",come,52,"Metro Boomin want some more, nigga",some,INNER,PERFECT,cmu,HIGH,Y
+Right Now,51,"If money come this fast, I swear to God I never spend it",God,52,"Metro Boomin want some more, nigga",want,INNER,ASSONANCE,vowel,MED,Y
+Right Now,51,"If money come this fast, I swear to God I never spend it",money,52,"Metro Boomin want some more, nigga",some,INNER,SLANT,cmu,MED,Y

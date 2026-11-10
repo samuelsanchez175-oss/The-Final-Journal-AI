@@ -1,0 +1,364 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Loaded,1,"I'm the same nigga that came from the bottom, I don't really care what they think about me",really,1,"I'm the same nigga that came from the bottom, I don't really care what they think about me",think,INNER,ASSONANCE,vowel,MED,Y
+Loaded,1,"I'm the same nigga that came from the bottom, I don't really care what they think about me",same,1,"I'm the same nigga that came from the bottom, I don't really care what they think about me",came,INNER,PERFECT,cmu,HIGH,Y
+Loaded,1,"I'm the same nigga that came from the bottom, I don't really care what they think about me",care,2,"Oh, he dissin'? Man, I said that",said,INNER,SLANT,cmu,MED,Y
+Loaded,1,"I'm the same nigga that came from the bottom, I don't really care what they think about me",really,2,"Oh, he dissin'? Man, I said that",dissin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,1,"I'm the same nigga that came from the bottom, I don't really care what they think about me",think,2,"Oh, he dissin'? Man, I said that",dissin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,1,"I'm the same nigga that came from the bottom, I don't really care what they think about me",care,3,"New 'Vette, I did that",'Vette,INNER,SLANT,cmu,MED,Y
+Loaded,2,"Oh, he dissin'? Man, I said that",said,3,"New 'Vette, I did that",'Vette,END,SLANT,cmu,MED,Y
+Loaded,2,"Oh, he dissin'? Man, I said that",dissin,4,"New stick, I cop that",stick,INNER,ASSONANCE,vowel,MED,Y
+Loaded,3,"New 'Vette, I did that",New,4,"New stick, I cop that",New,INNER,REPEAT,spelling,HIGH,N
+Loaded,4,"New stick, I cop that",cop,5,That's your bitch? I pop that,pop,END,PERFECT,cmu,HIGH,Y
+Loaded,4,"New stick, I cop that",stick,5,That's your bitch? I pop that,bitch,INNER,SLANT,cmu,MED,Y
+Loaded,4,"New stick, I cop that",cop,6,Young-ass nigga with a whole lot of money,lot,INNER,SLANT,cmu,MED,Y
+Loaded,4,"New stick, I cop that",stick,6,Young-ass nigga with a whole lot of money,nigga,INNER,SLANT,spelling,LOW,Y
+Loaded,5,That's your bitch? I pop that,pop,6,Young-ass nigga with a whole lot of money,lot,INNER,SLANT,cmu,MED,Y
+Loaded,5,That's your bitch? I pop that,pop,7,Lot of bags in and a lot of bags comin',Lot,INNER,SLANT,cmu,MED,Y
+Loaded,6,Young-ass nigga with a whole lot of money,Young,6,Young-ass nigga with a whole lot of money,money,INNER,SLANT,cmu,MED,Y
+Loaded,6,Young-ass nigga with a whole lot of money,money,7,Lot of bags in and a lot of bags comin',comin,END,SLANT,cmu,MED,Y
+Loaded,6,Young-ass nigga with a whole lot of money,ass,7,Lot of bags in and a lot of bags comin',bags,INNER,ASSONANCE,vowel,MED,Y
+Loaded,6,Young-ass nigga with a whole lot of money,lot,7,Lot of bags in and a lot of bags comin',Lot,INNER,REPEAT,spelling,HIGH,N
+Loaded,6,Young-ass nigga with a whole lot of money,Young,7,Lot of bags in and a lot of bags comin',comin,INNER,SLANT,cmu,MED,Y
+Loaded,6,Young-ass nigga with a whole lot of money,money,8,Young bad bitch at the table with somethin',somethin,END,ASSONANCE,vowel,MED,Y
+Loaded,6,Young-ass nigga with a whole lot of money,ass,8,Young bad bitch at the table with somethin',bad,INNER,SLANT,cmu,MED,Y
+Loaded,6,Young-ass nigga with a whole lot of money,money,8,Young bad bitch at the table with somethin',Young,INNER,SLANT,cmu,MED,Y
+Loaded,6,Young-ass nigga with a whole lot of money,Young,8,Young bad bitch at the table with somethin',somethin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,6,Young-ass nigga with a whole lot of money,Young,8,Young bad bitch at the table with somethin',Young,INNER,REPEAT,spelling,HIGH,N
+Loaded,7,Lot of bags in and a lot of bags comin',bags,7,Lot of bags in and a lot of bags comin',bags,INNER,REPEAT,spelling,HIGH,N
+Loaded,7,Lot of bags in and a lot of bags comin',Lot,7,Lot of bags in and a lot of bags comin',lot,INNER,REPEAT,spelling,HIGH,N
+Loaded,7,Lot of bags in and a lot of bags comin',comin,8,Young bad bitch at the table with somethin',somethin,END,SLANT,cmu,MED,Y
+Loaded,7,Lot of bags in and a lot of bags comin',bags,8,Young bad bitch at the table with somethin',bad,INNER,ASSONANCE,vowel,MED,Y
+Loaded,7,Lot of bags in and a lot of bags comin',comin,8,Young bad bitch at the table with somethin',Young,INNER,SLANT,cmu,MED,Y
+Loaded,7,Lot of bags in and a lot of bags comin',bags,9,You already know that I'm loaded off ganja,ganja,INNER,ASSONANCE,vowel,LOW,N
+Loaded,7,Lot of bags in and a lot of bags comin',comin,11,"My lean, don't touch my cup",cup,END,ASSONANCE,vowel,MED,Y
+Loaded,8,Young bad bitch at the table with somethin',Young,8,Young bad bitch at the table with somethin',somethin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,8,Young bad bitch at the table with somethin',bad,10,"AP, half a ticket on me, new bitch, quarter mil' on her",half,INNER,SLANT,cmu,MED,Y
+Loaded,8,Young bad bitch at the table with somethin',bitch,10,"AP, half a ticket on me, new bitch, quarter mil' on her",bitch,INNER,REPEAT,spelling,HIGH,N
+Loaded,8,Young bad bitch at the table with somethin',bitch,10,"AP, half a ticket on me, new bitch, quarter mil' on her",mil,INNER,SLANT,cmu,MED,Y
+Loaded,8,Young bad bitch at the table with somethin',bitch,10,"AP, half a ticket on me, new bitch, quarter mil' on her",ticket,INNER,ASSONANCE,vowel,MED,Y
+Loaded,8,Young bad bitch at the table with somethin',somethin,11,"My lean, don't touch my cup",cup,END,ASSONANCE,vowel,MED,Y
+Loaded,9,You already know that I'm loaded off ganja,know,9,You already know that I'm loaded off ganja,loaded,INNER,ASSONANCE,vowel,MED,Y
+Loaded,9,You already know that I'm loaded off ganja,ganja,10,"AP, half a ticket on me, new bitch, quarter mil' on her",half,INNER,ASSONANCE,vowel,LOW,N
+Loaded,9,You already know that I'm loaded off ganja,know,11,"My lean, don't touch my cup",don't,INNER,ASSONANCE,vowel,MED,Y
+Loaded,9,You already know that I'm loaded off ganja,loaded,11,"My lean, don't touch my cup",don't,INNER,ASSONANCE,vowel,MED,Y
+Loaded,10,"AP, half a ticket on me, new bitch, quarter mil' on her",bitch,10,"AP, half a ticket on me, new bitch, quarter mil' on her",mil,INNER,SLANT,cmu,MED,Y
+Loaded,10,"AP, half a ticket on me, new bitch, quarter mil' on her",ticket,10,"AP, half a ticket on me, new bitch, quarter mil' on her",bitch,INNER,ASSONANCE,vowel,MED,Y
+Loaded,10,"AP, half a ticket on me, new bitch, quarter mil' on her",ticket,10,"AP, half a ticket on me, new bitch, quarter mil' on her",mil,INNER,ASSONANCE,vowel,MED,Y
+Loaded,10,"AP, half a ticket on me, new bitch, quarter mil' on her",AP,11,"My lean, don't touch my cup",lean,INNER,ASSONANCE,vowel,MED,Y
+Loaded,10,"AP, half a ticket on me, new bitch, quarter mil' on her",bitch,12,That's your bitch? I don't want her,bitch,INNER,REPEAT,spelling,HIGH,N
+Loaded,10,"AP, half a ticket on me, new bitch, quarter mil' on her",mil,12,That's your bitch? I don't want her,bitch,INNER,SLANT,cmu,MED,Y
+Loaded,10,"AP, half a ticket on me, new bitch, quarter mil' on her",ticket,12,That's your bitch? I don't want her,bitch,INNER,ASSONANCE,vowel,MED,Y
+Loaded,11,"My lean, don't touch my cup",touch,11,"My lean, don't touch my cup",cup,INNER,SLANT,cmu,MED,Y
+Loaded,11,"My lean, don't touch my cup",don't,12,That's your bitch? I don't want her,don't,INNER,REPEAT,spelling,HIGH,N
+Loaded,11,"My lean, don't touch my cup",cup,13,"B say, ""Trust and don't lovе no ho""",Trust,INNER,ASSONANCE,vowel,MED,Y
+Loaded,11,"My lean, don't touch my cup",don't,13,"B say, ""Trust and don't lovе no ho""",don't,INNER,REPEAT,spelling,HIGH,N
+Loaded,11,"My lean, don't touch my cup",don't,13,"B say, ""Trust and don't lovе no ho""",ho,INNER,ASSONANCE,vowel,MED,Y
+Loaded,11,"My lean, don't touch my cup",don't,13,"B say, ""Trust and don't lovе no ho""",no,INNER,ASSONANCE,vowel,MED,Y
+Loaded,11,"My lean, don't touch my cup",lean,13,"B say, ""Trust and don't lovе no ho""",B,INNER,ASSONANCE,vowel,MED,Y
+Loaded,11,"My lean, don't touch my cup",touch,13,"B say, ""Trust and don't lovе no ho""",Trust,INNER,ASSONANCE,vowel,MED,Y
+Loaded,12,That's your bitch? I don't want her,don't,13,"B say, ""Trust and don't lovе no ho""",don't,INNER,REPEAT,spelling,HIGH,N
+Loaded,12,That's your bitch? I don't want her,don't,13,"B say, ""Trust and don't lovе no ho""",ho,INNER,ASSONANCE,vowel,MED,Y
+Loaded,12,That's your bitch? I don't want her,don't,13,"B say, ""Trust and don't lovе no ho""",no,INNER,ASSONANCE,vowel,MED,Y
+Loaded,12,That's your bitch? I don't want her,bitch,14,I be in all type of shit that they don't know,shit,INNER,SLANT,cmu,MED,Y
+Loaded,12,That's your bitch? I don't want her,don't,14,I be in all type of shit that they don't know,don't,INNER,REPEAT,spelling,HIGH,N
+Loaded,12,That's your bitch? I don't want her,don't,14,I be in all type of shit that they don't know,know,INNER,ASSONANCE,vowel,MED,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",don't,13,"B say, ""Trust and don't lovе no ho""",ho,INNER,ASSONANCE,vowel,MED,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",don't,13,"B say, ""Trust and don't lovе no ho""",no,INNER,ASSONANCE,vowel,MED,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",no,13,"B say, ""Trust and don't lovе no ho""",ho,INNER,PERFECT,cmu,HIGH,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",ho,14,I be in all type of shit that they don't know,know,END,PERFECT,cmu,HIGH,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",don't,14,I be in all type of shit that they don't know,don't,INNER,REPEAT,spelling,HIGH,N
+Loaded,13,"B say, ""Trust and don't lovе no ho""",don't,14,I be in all type of shit that they don't know,know,INNER,ASSONANCE,vowel,MED,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",ho,14,I be in all type of shit that they don't know,don't,INNER,ASSONANCE,vowel,MED,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",no,14,I be in all type of shit that they don't know,don't,INNER,ASSONANCE,vowel,MED,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",no,14,I be in all type of shit that they don't know,know,INNER,PERFECT,cmu,HIGH,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",ho,15,Ninе sticks in my whip like Romo,Romo,END,ASSONANCE,vowel,MED,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",don't,15,Ninе sticks in my whip like Romo,Romo,INNER,ASSONANCE,vowel,MED,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",lov,15,Ninе sticks in my whip like Romo,Romo,INNER,SLANT,spelling,LOW,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",no,15,Ninе sticks in my whip like Romo,Romo,INNER,ASSONANCE,vowel,MED,Y
+Loaded,13,"B say, ""Trust and don't lovе no ho""",ho,17,"Stick in my denim, so I can't keep my pants low",low,END,PERFECT,cmu,HIGH,Y
+Loaded,14,I be in all type of shit that they don't know,don't,14,I be in all type of shit that they don't know,know,INNER,ASSONANCE,vowel,MED,Y
+Loaded,14,I be in all type of shit that they don't know,know,15,Ninе sticks in my whip like Romo,Romo,END,ASSONANCE,vowel,MED,Y
+Loaded,14,I be in all type of shit that they don't know,don't,15,Ninе sticks in my whip like Romo,Romo,INNER,ASSONANCE,vowel,MED,Y
+Loaded,14,I be in all type of shit that they don't know,shit,15,Ninе sticks in my whip like Romo,Nin,INNER,SLANT,spelling,LOW,Y
+Loaded,14,I be in all type of shit that they don't know,shit,15,Ninе sticks in my whip like Romo,sticks,INNER,ASSONANCE,vowel,MED,Y
+Loaded,14,I be in all type of shit that they don't know,shit,15,Ninе sticks in my whip like Romo,whip,INNER,SLANT,cmu,MED,Y
+Loaded,14,I be in all type of shit that they don't know,type,15,Ninе sticks in my whip like Romo,like,INNER,SLANT,cmu,MED,Y
+Loaded,14,I be in all type of shit that they don't know,shit,16,New whip I copped came with turbo,whip,INNER,SLANT,cmu,MED,Y
+Loaded,14,I be in all type of shit that they don't know,know,17,"Stick in my denim, so I can't keep my pants low",low,END,PERFECT,cmu,HIGH,Y
+Loaded,15,Ninе sticks in my whip like Romo,Nin,15,Ninе sticks in my whip like Romo,whip,INNER,SLANT,spelling,LOW,Y
+Loaded,15,Ninе sticks in my whip like Romo,sticks,15,Ninе sticks in my whip like Romo,whip,INNER,ASSONANCE,vowel,MED,Y
+Loaded,15,Ninе sticks in my whip like Romo,Nin,16,New whip I copped came with turbo,whip,INNER,SLANT,spelling,LOW,Y
+Loaded,15,Ninе sticks in my whip like Romo,sticks,16,New whip I copped came with turbo,whip,INNER,ASSONANCE,vowel,MED,Y
+Loaded,15,Ninе sticks in my whip like Romo,whip,16,New whip I copped came with turbo,whip,INNER,REPEAT,spelling,HIGH,N
+Loaded,15,Ninе sticks in my whip like Romo,Romo,17,"Stick in my denim, so I can't keep my pants low",low,END,ASSONANCE,vowel,MED,Y
+Loaded,15,Ninе sticks in my whip like Romo,Nin,17,"Stick in my denim, so I can't keep my pants low",Stick,INNER,SLANT,spelling,LOW,Y
+Loaded,15,Ninе sticks in my whip like Romo,sticks,17,"Stick in my denim, so I can't keep my pants low",Stick,INNER,SLANT,cmu,MED,Y
+Loaded,15,Ninе sticks in my whip like Romo,whip,17,"Stick in my denim, so I can't keep my pants low",Stick,INNER,SLANT,cmu,MED,Y
+Loaded,16,New whip I copped came with turbo,whip,17,"Stick in my denim, so I can't keep my pants low",Stick,INNER,SLANT,cmu,MED,Y
+Loaded,16,New whip I copped came with turbo,copped,18,"Ten niggas with me, tryna do it at the Conoco",Conoco,INNER,ASSONANCE,vowel,MED,Y
+Loaded,17,"Stick in my denim, so I can't keep my pants low",can't,17,"Stick in my denim, so I can't keep my pants low",pants,INNER,SLANT,cmu,MED,Y
+Loaded,17,"Stick in my denim, so I can't keep my pants low",denim,18,"Ten niggas with me, tryna do it at the Conoco",Ten,INNER,SLANT,cmu,MED,Y
+Loaded,17,"Stick in my denim, so I can't keep my pants low",keep,18,"Ten niggas with me, tryna do it at the Conoco",tryna,INNER,SLANT,spelling,LOW,Y
+Loaded,17,"Stick in my denim, so I can't keep my pants low",low,19,"Rosary my whole arm, so",Rosary,INNER,ASSONANCE,vowel,MED,Y
+Loaded,17,"Stick in my denim, so I can't keep my pants low",low,19,"Rosary my whole arm, so",whole,INNER,ASSONANCE,vowel,MED,Y
+Loaded,17,"Stick in my denim, so I can't keep my pants low",low,21,"If I don't keep a thing, keep the money and a strap though",though,END,PERFECT,cmu,HIGH,Y
+Loaded,18,"Ten niggas with me, tryna do it at the Conoco",Conoco,19,"Rosary my whole arm, so",arm,END,ASSONANCE,vowel,MED,Y
+Loaded,18,"Ten niggas with me, tryna do it at the Conoco",niggas,20,Hatin'-ass nigga tryna double back and backdoor,ass,INNER,PERFECT,spelling,MED,Y
+Loaded,18,"Ten niggas with me, tryna do it at the Conoco",niggas,20,Hatin'-ass nigga tryna double back and backdoor,nigga,INNER,SLANT,spelling,LOW,Y
+Loaded,18,"Ten niggas with me, tryna do it at the Conoco",tryna,20,Hatin'-ass nigga tryna double back and backdoor,tryna,INNER,REPEAT,spelling,HIGH,N
+Loaded,19,"Rosary my whole arm, so",Rosary,19,"Rosary my whole arm, so",whole,INNER,SLANT,cmu,MED,Y
+Loaded,19,"Rosary my whole arm, so",Rosary,21,"If I don't keep a thing, keep the money and a strap though",don't,INNER,ASSONANCE,vowel,MED,Y
+Loaded,19,"Rosary my whole arm, so",Rosary,21,"If I don't keep a thing, keep the money and a strap though",though,INNER,ASSONANCE,vowel,MED,Y
+Loaded,19,"Rosary my whole arm, so",whole,21,"If I don't keep a thing, keep the money and a strap though",don't,INNER,ASSONANCE,vowel,MED,Y
+Loaded,19,"Rosary my whole arm, so",whole,21,"If I don't keep a thing, keep the money and a strap though",though,INNER,ASSONANCE,vowel,MED,Y
+Loaded,20,Hatin'-ass nigga tryna double back and backdoor,ass,20,Hatin'-ass nigga tryna double back and backdoor,back,INNER,SLANT,cmu,MED,Y
+Loaded,20,Hatin'-ass nigga tryna double back and backdoor,ass,21,"If I don't keep a thing, keep the money and a strap though",strap,INNER,SLANT,cmu,MED,Y
+Loaded,20,Hatin'-ass nigga tryna double back and backdoor,back,21,"If I don't keep a thing, keep the money and a strap though",strap,INNER,SLANT,cmu,MED,Y
+Loaded,20,Hatin'-ass nigga tryna double back and backdoor,double,21,"If I don't keep a thing, keep the money and a strap though",money,INNER,ASSONANCE,vowel,MED,Y
+Loaded,20,Hatin'-ass nigga tryna double back and backdoor,tryna,21,"If I don't keep a thing, keep the money and a strap though",keep,INNER,SLANT,spelling,LOW,Y
+Loaded,20,Hatin'-ass nigga tryna double back and backdoor,ass,22,"You ain't thinkin' with your brain, it get left in your lap, bro",lap,INNER,SLANT,cmu,MED,Y
+Loaded,20,Hatin'-ass nigga tryna double back and backdoor,back,22,"You ain't thinkin' with your brain, it get left in your lap, bro",lap,INNER,SLANT,cmu,MED,Y
+Loaded,20,Hatin'-ass nigga tryna double back and backdoor,Hatin,22,"You ain't thinkin' with your brain, it get left in your lap, bro",ain't,INNER,ASSONANCE,vowel,MED,Y
+Loaded,20,Hatin'-ass nigga tryna double back and backdoor,Hatin,22,"You ain't thinkin' with your brain, it get left in your lap, bro",brain,INNER,ASSONANCE,vowel,MED,Y
+Loaded,21,"If I don't keep a thing, keep the money and a strap though",don't,21,"If I don't keep a thing, keep the money and a strap though",though,INNER,ASSONANCE,vowel,MED,Y
+Loaded,21,"If I don't keep a thing, keep the money and a strap though",keep,21,"If I don't keep a thing, keep the money and a strap though",keep,INNER,REPEAT,spelling,HIGH,N
+Loaded,21,"If I don't keep a thing, keep the money and a strap though",though,22,"You ain't thinkin' with your brain, it get left in your lap, bro",bro,END,PERFECT,cmu,HIGH,Y
+Loaded,21,"If I don't keep a thing, keep the money and a strap though",don't,22,"You ain't thinkin' with your brain, it get left in your lap, bro",bro,INNER,ASSONANCE,vowel,MED,Y
+Loaded,21,"If I don't keep a thing, keep the money and a strap though",strap,22,"You ain't thinkin' with your brain, it get left in your lap, bro",lap,INNER,PERFECT,cmu,HIGH,Y
+Loaded,21,"If I don't keep a thing, keep the money and a strap though",thing,22,"You ain't thinkin' with your brain, it get left in your lap, bro",thinkin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,21,"If I don't keep a thing, keep the money and a strap though",though,24,"So I'ma get the money 'til I'm gone, that's how that go",go,END,PERFECT,cmu,HIGH,Y
+Loaded,22,"You ain't thinkin' with your brain, it get left in your lap, bro",ain't,22,"You ain't thinkin' with your brain, it get left in your lap, bro",brain,INNER,SLANT,cmu,MED,Y
+Loaded,22,"You ain't thinkin' with your brain, it get left in your lap, bro",get,22,"You ain't thinkin' with your brain, it get left in your lap, bro",left,INNER,SLANT,cmu,MED,Y
+Loaded,22,"You ain't thinkin' with your brain, it get left in your lap, bro",ain't,23,"Try me, I ain't worried 'bout them, so",ain't,INNER,REPEAT,spelling,HIGH,N
+Loaded,22,"You ain't thinkin' with your brain, it get left in your lap, bro",brain,23,"Try me, I ain't worried 'bout them, so",ain't,INNER,SLANT,cmu,MED,Y
+Loaded,22,"You ain't thinkin' with your brain, it get left in your lap, bro",bro,24,"So I'ma get the money 'til I'm gone, that's how that go",go,END,PERFECT,cmu,HIGH,Y
+Loaded,22,"You ain't thinkin' with your brain, it get left in your lap, bro",get,24,"So I'ma get the money 'til I'm gone, that's how that go",get,INNER,REPEAT,spelling,HIGH,N
+Loaded,22,"You ain't thinkin' with your brain, it get left in your lap, bro",left,24,"So I'ma get the money 'til I'm gone, that's how that go",get,INNER,SLANT,cmu,MED,Y
+Loaded,22,"You ain't thinkin' with your brain, it get left in your lap, bro",thinkin,24,"So I'ma get the money 'til I'm gone, that's how that go",'til,INNER,ASSONANCE,vowel,MED,Y
+Loaded,22,"You ain't thinkin' with your brain, it get left in your lap, bro",bro,26,"I'm probably doin' business, got six iPhones",iPhones,END,ASSONANCE,vowel,MED,Y
+Loaded,23,"Try me, I ain't worried 'bout them, so",'bout,24,"So I'ma get the money 'til I'm gone, that's how that go",how,INNER,ASSONANCE,vowel,MED,Y
+Loaded,23,"Try me, I ain't worried 'bout them, so",Try,25,"911 ride, see the top all gone",ride,INNER,ASSONANCE,vowel,MED,Y
+Loaded,24,"So I'ma get the money 'til I'm gone, that's how that go",I'ma,24,"So I'ma get the money 'til I'm gone, that's how that go",'til,INNER,SLANT,spelling,LOW,Y
+Loaded,24,"So I'ma get the money 'til I'm gone, that's how that go",gone,25,"911 ride, see the top all gone",all,INNER,SLANT,cmu,MED,Y
+Loaded,24,"So I'ma get the money 'til I'm gone, that's how that go",gone,25,"911 ride, see the top all gone",gone,INNER,REPEAT,spelling,HIGH,N
+Loaded,24,"So I'ma get the money 'til I'm gone, that's how that go",go,26,"I'm probably doin' business, got six iPhones",iPhones,END,ASSONANCE,vowel,MED,Y
+Loaded,24,"So I'ma get the money 'til I'm gone, that's how that go",'til,26,"I'm probably doin' business, got six iPhones",business,INNER,ASSONANCE,vowel,MED,Y
+Loaded,24,"So I'ma get the money 'til I'm gone, that's how that go",'til,26,"I'm probably doin' business, got six iPhones",six,INNER,ASSONANCE,vowel,MED,Y
+Loaded,25,"911 ride, see the top all gone",all,25,"911 ride, see the top all gone",gone,INNER,SLANT,cmu,MED,Y
+Loaded,25,"911 ride, see the top all gone",see,26,"I'm probably doin' business, got six iPhones",probably,INNER,PERFECT,cmu,HIGH,Y
+Loaded,25,"911 ride, see the top all gone",top,26,"I'm probably doin' business, got six iPhones",got,INNER,SLANT,cmu,MED,Y
+Loaded,25,"911 ride, see the top all gone",gone,27,"I'm livin' how I'm livin', don't right my wrongs",wrongs,END,ASSONANCE,vowel,MED,Y
+Loaded,25,"911 ride, see the top all gone",all,27,"I'm livin' how I'm livin', don't right my wrongs",wrongs,INNER,ASSONANCE,vowel,MED,Y
+Loaded,25,"911 ride, see the top all gone",ride,27,"I'm livin' how I'm livin', don't right my wrongs",right,INNER,SLANT,cmu,MED,Y
+Loaded,25,"911 ride, see the top all gone",gone,28,And you knowin' that I'm at it 'til they head all gone,gone,END,REPEAT,spelling,HIGH,N
+Loaded,26,"I'm probably doin' business, got six iPhones",business,26,"I'm probably doin' business, got six iPhones",six,INNER,ASSONANCE,vowel,MED,Y
+Loaded,26,"I'm probably doin' business, got six iPhones",business,27,"I'm livin' how I'm livin', don't right my wrongs",livin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,26,"I'm probably doin' business, got six iPhones",iPhones,27,"I'm livin' how I'm livin', don't right my wrongs",don't,INNER,SLANT,cmu,MED,Y
+Loaded,26,"I'm probably doin' business, got six iPhones",six,27,"I'm livin' how I'm livin', don't right my wrongs",livin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,26,"I'm probably doin' business, got six iPhones",business,28,And you knowin' that I'm at it 'til they head all gone,'til,INNER,ASSONANCE,vowel,MED,Y
+Loaded,26,"I'm probably doin' business, got six iPhones",iPhones,28,And you knowin' that I'm at it 'til they head all gone,knowin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,26,"I'm probably doin' business, got six iPhones",six,28,And you knowin' that I'm at it 'til they head all gone,'til,INNER,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",livin,27,"I'm livin' how I'm livin', don't right my wrongs",livin,INNER,REPEAT,spelling,HIGH,N
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",wrongs,28,And you knowin' that I'm at it 'til they head all gone,gone,END,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",don't,28,And you knowin' that I'm at it 'til they head all gone,knowin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",livin,28,And you knowin' that I'm at it 'til they head all gone,'til,INNER,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",wrongs,28,And you knowin' that I'm at it 'til they head all gone,all,INNER,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",don't,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",gold,INNER,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",don't,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",rose,INNER,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",livin,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",bitch,INNER,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",livin,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",chick,INNER,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",livin,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",lil,INNER,ASSONANCE,vowel,MED,Y
+Loaded,27,"I'm livin' how I'm livin', don't right my wrongs",wrongs,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",shorty,INNER,ASSONANCE,vowel,MED,Y
+Loaded,28,And you knowin' that I'm at it 'til they head all gone,all,28,And you knowin' that I'm at it 'til they head all gone,gone,INNER,SLANT,cmu,MED,Y
+Loaded,28,And you knowin' that I'm at it 'til they head all gone,'til,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",bitch,INNER,SLANT,cmu,MED,Y
+Loaded,28,And you knowin' that I'm at it 'til they head all gone,'til,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",chick,INNER,SLANT,cmu,MED,Y
+Loaded,28,And you knowin' that I'm at it 'til they head all gone,'til,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",lil,INNER,PERFECT,cmu,HIGH,Y
+Loaded,28,And you knowin' that I'm at it 'til they head all gone,all,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",shorty,INNER,ASSONANCE,vowel,MED,Y
+Loaded,28,And you knowin' that I'm at it 'til they head all gone,gone,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",shorty,INNER,ASSONANCE,vowel,MED,Y
+Loaded,28,And you knowin' that I'm at it 'til they head all gone,knowin,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",gold,INNER,ASSONANCE,vowel,MED,Y
+Loaded,28,And you knowin' that I'm at it 'til they head all gone,knowin,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",rose,INNER,SLANT,cmu,MED,Y
+Loaded,28,And you knowin' that I'm at it 'til they head all gone,'til,30,"Got a beam on the glizzy, got a beam on the stick",stick,INNER,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",chick,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",bitch,INNER,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",chick,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",lil,INNER,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",eighteen,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",AP,INNER,ASSONANCE,vowel,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",lil,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",bitch,INNER,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",New,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",new,INNER,REPEAT,spelling,HIGH,N
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",rose,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",gold,INNER,ASSONANCE,vowel,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",bitch,30,"Got a beam on the glizzy, got a beam on the stick",stick,END,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",AP,30,"Got a beam on the glizzy, got a beam on the stick",beam,INNER,ASSONANCE,vowel,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",AP,30,"Got a beam on the glizzy, got a beam on the stick",glizzy,INNER,ASSONANCE,vowel,LOW,N
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",bitch,30,"Got a beam on the glizzy, got a beam on the stick",glizzy,INNER,SLANT,spelling,LOW,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",chick,30,"Got a beam on the glizzy, got a beam on the stick",stick,INNER,PERFECT,cmu,HIGH,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",eighteen,30,"Got a beam on the glizzy, got a beam on the stick",beam,INNER,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",lil,30,"Got a beam on the glizzy, got a beam on the stick",stick,INNER,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",shorty,30,"Got a beam on the glizzy, got a beam on the stick",glizzy,INNER,ASSONANCE,vowel,LOW,N
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",bitch,31,Eight racks total on a Balmain fit,fit,END,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",chick,31,Eight racks total on a Balmain fit,fit,INNER,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",gold,31,Eight racks total on a Balmain fit,total,INNER,ASSONANCE,vowel,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",lil,31,Eight racks total on a Balmain fit,fit,INNER,SLANT,cmu,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",rose,31,Eight racks total on a Balmain fit,total,INNER,ASSONANCE,vowel,MED,Y
+Loaded,29,"New chick and lil' shorty eighteen, with a new AP rose gold, my bitch",bitch,33,"Money comin' by the load, U-Haul got bigger",bigger,END,SLANT,cmu,MED,Y
+Loaded,30,"Got a beam on the glizzy, got a beam on the stick",beam,30,"Got a beam on the glizzy, got a beam on the stick",beam,INNER,REPEAT,spelling,HIGH,N
+Loaded,30,"Got a beam on the glizzy, got a beam on the stick",Got,30,"Got a beam on the glizzy, got a beam on the stick",got,INNER,REPEAT,spelling,HIGH,N
+Loaded,30,"Got a beam on the glizzy, got a beam on the stick",stick,31,Eight racks total on a Balmain fit,fit,END,SLANT,cmu,MED,Y
+Loaded,30,"Got a beam on the glizzy, got a beam on the stick",stick,32,"Say a nigga want smoke, let me call my nigga",nigga,END,SLANT,spelling,LOW,Y
+Loaded,30,"Got a beam on the glizzy, got a beam on the stick",Got,32,"Say a nigga want smoke, let me call my nigga",want,INNER,SLANT,cmu,MED,Y
+Loaded,30,"Got a beam on the glizzy, got a beam on the stick",stick,32,"Say a nigga want smoke, let me call my nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Loaded,30,"Got a beam on the glizzy, got a beam on the stick",stick,33,"Money comin' by the load, U-Haul got bigger",bigger,END,SLANT,cmu,MED,Y
+Loaded,31,Eight racks total on a Balmain fit,fit,32,"Say a nigga want smoke, let me call my nigga",nigga,END,SLANT,spelling,LOW,Y
+Loaded,31,Eight racks total on a Balmain fit,Eight,32,"Say a nigga want smoke, let me call my nigga",Say,INNER,ASSONANCE,vowel,MED,Y
+Loaded,31,Eight racks total on a Balmain fit,fit,32,"Say a nigga want smoke, let me call my nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Loaded,31,Eight racks total on a Balmain fit,total,32,"Say a nigga want smoke, let me call my nigga",smoke,INNER,ASSONANCE,vowel,MED,Y
+Loaded,31,Eight racks total on a Balmain fit,fit,33,"Money comin' by the load, U-Haul got bigger",bigger,END,SLANT,cmu,MED,Y
+Loaded,31,Eight racks total on a Balmain fit,total,33,"Money comin' by the load, U-Haul got bigger",load,INNER,ASSONANCE,vowel,MED,Y
+Loaded,32,"Say a nigga want smoke, let me call my nigga",nigga,32,"Say a nigga want smoke, let me call my nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Loaded,32,"Say a nigga want smoke, let me call my nigga",nigga,33,"Money comin' by the load, U-Haul got bigger",bigger,END,SLANT,spelling,LOW,Y
+Loaded,32,"Say a nigga want smoke, let me call my nigga",call,33,"Money comin' by the load, U-Haul got bigger",Haul,INNER,PERFECT,cmu,HIGH,Y
+Loaded,32,"Say a nigga want smoke, let me call my nigga",nigga,33,"Money comin' by the load, U-Haul got bigger",bigger,INNER,SLANT,spelling,LOW,Y
+Loaded,32,"Say a nigga want smoke, let me call my nigga",smoke,33,"Money comin' by the load, U-Haul got bigger",load,INNER,SLANT,cmu,MED,Y
+Loaded,32,"Say a nigga want smoke, let me call my nigga",want,33,"Money comin' by the load, U-Haul got bigger",got,INNER,SLANT,cmu,MED,Y
+Loaded,32,"Say a nigga want smoke, let me call my nigga",call,34,"Plenty my friends, they done came through the backdoor",backdoor,INNER,SLANT,cmu,MED,Y
+Loaded,32,"Say a nigga want smoke, let me call my nigga",let,34,"Plenty my friends, they done came through the backdoor",friends,INNER,ASSONANCE,vowel,MED,Y
+Loaded,32,"Say a nigga want smoke, let me call my nigga",let,34,"Plenty my friends, they done came through the backdoor",Plenty,INNER,SLANT,cmu,MED,Y
+Loaded,32,"Say a nigga want smoke, let me call my nigga",Say,34,"Plenty my friends, they done came through the backdoor",came,INNER,ASSONANCE,vowel,MED,Y
+Loaded,33,"Money comin' by the load, U-Haul got bigger",Money,33,"Money comin' by the load, U-Haul got bigger",comin,INNER,SLANT,cmu,MED,Y
+Loaded,33,"Money comin' by the load, U-Haul got bigger",comin,34,"Plenty my friends, they done came through the backdoor",done,INNER,SLANT,cmu,MED,Y
+Loaded,33,"Money comin' by the load, U-Haul got bigger",Haul,34,"Plenty my friends, they done came through the backdoor",backdoor,INNER,SLANT,cmu,MED,Y
+Loaded,33,"Money comin' by the load, U-Haul got bigger",Money,34,"Plenty my friends, they done came through the backdoor",done,INNER,SLANT,cmu,MED,Y
+Loaded,33,"Money comin' by the load, U-Haul got bigger",U,34,"Plenty my friends, they done came through the backdoor",through,INNER,PERFECT,cmu,HIGH,Y
+Loaded,33,"Money comin' by the load, U-Haul got bigger",by,35,"Slidin' out a Benz, on the block you sell crack, ho",Slidin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,33,"Money comin' by the load, U-Haul got bigger",got,35,"Slidin' out a Benz, on the block you sell crack, ho",block,INNER,SLANT,cmu,MED,Y
+Loaded,33,"Money comin' by the load, U-Haul got bigger",load,35,"Slidin' out a Benz, on the block you sell crack, ho",ho,INNER,ASSONANCE,vowel,MED,Y
+Loaded,34,"Plenty my friends, they done came through the backdoor",Plenty,34,"Plenty my friends, they done came through the backdoor",friends,INNER,ASSONANCE,vowel,MED,Y
+Loaded,34,"Plenty my friends, they done came through the backdoor",friends,35,"Slidin' out a Benz, on the block you sell crack, ho",Benz,INNER,SLANT,cmu,MED,Y
+Loaded,34,"Plenty my friends, they done came through the backdoor",friends,35,"Slidin' out a Benz, on the block you sell crack, ho",sell,INNER,ASSONANCE,vowel,MED,Y
+Loaded,34,"Plenty my friends, they done came through the backdoor",Plenty,35,"Slidin' out a Benz, on the block you sell crack, ho",Benz,INNER,SLANT,cmu,MED,Y
+Loaded,34,"Plenty my friends, they done came through the backdoor",Plenty,35,"Slidin' out a Benz, on the block you sell crack, ho",sell,INNER,ASSONANCE,vowel,MED,Y
+Loaded,34,"Plenty my friends, they done came through the backdoor",came,36,"Straight tens, she basic",basic,INNER,ASSONANCE,vowel,MED,Y
+Loaded,34,"Plenty my friends, they done came through the backdoor",came,36,"Straight tens, she basic",Straight,INNER,SLANT,cmu,MED,Y
+Loaded,34,"Plenty my friends, they done came through the backdoor",friends,36,"Straight tens, she basic",tens,INNER,SLANT,cmu,MED,Y
+Loaded,34,"Plenty my friends, they done came through the backdoor",Plenty,36,"Straight tens, she basic",tens,INNER,SLANT,cmu,MED,Y
+Loaded,35,"Slidin' out a Benz, on the block you sell crack, ho",Benz,35,"Slidin' out a Benz, on the block you sell crack, ho",sell,INNER,ASSONANCE,vowel,MED,Y
+Loaded,35,"Slidin' out a Benz, on the block you sell crack, ho",Benz,36,"Straight tens, she basic",tens,INNER,PERFECT,cmu,HIGH,Y
+Loaded,35,"Slidin' out a Benz, on the block you sell crack, ho",sell,36,"Straight tens, she basic",tens,INNER,ASSONANCE,vowel,MED,Y
+Loaded,35,"Slidin' out a Benz, on the block you sell crack, ho",Benz,37,"Exotic my whips, X rated",X,INNER,ASSONANCE,vowel,MED,Y
+Loaded,35,"Slidin' out a Benz, on the block you sell crack, ho",block,37,"Exotic my whips, X rated",Exotic,INNER,SLANT,cmu,MED,Y
+Loaded,35,"Slidin' out a Benz, on the block you sell crack, ho",sell,37,"Exotic my whips, X rated",X,INNER,ASSONANCE,vowel,MED,Y
+Loaded,36,"Straight tens, she basic",Straight,36,"Straight tens, she basic",basic,INNER,ASSONANCE,vowel,MED,Y
+Loaded,36,"Straight tens, she basic",basic,37,"Exotic my whips, X rated",rated,END,ASSONANCE,vowel,MED,Y
+Loaded,36,"Straight tens, she basic",Straight,37,"Exotic my whips, X rated",rated,INNER,SLANT,cmu,MED,Y
+Loaded,36,"Straight tens, she basic",tens,37,"Exotic my whips, X rated",X,INNER,ASSONANCE,vowel,MED,Y
+Loaded,36,"Straight tens, she basic",basic,38,"In the project with some Crips, I ain't never ever tradin'",tradin,END,ASSONANCE,vowel,MED,Y
+Loaded,36,"Straight tens, she basic",basic,38,"In the project with some Crips, I ain't never ever tradin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+Loaded,36,"Straight tens, she basic",Straight,38,"In the project with some Crips, I ain't never ever tradin'",ain't,INNER,SLANT,cmu,MED,Y
+Loaded,36,"Straight tens, she basic",Straight,38,"In the project with some Crips, I ain't never ever tradin'",tradin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,36,"Straight tens, she basic",tens,38,"In the project with some Crips, I ain't never ever tradin'",ever,INNER,ASSONANCE,vowel,MED,Y
+Loaded,36,"Straight tens, she basic",tens,38,"In the project with some Crips, I ain't never ever tradin'",never,INNER,ASSONANCE,vowel,MED,Y
+Loaded,36,"Straight tens, she basic",basic,39,Really in the field like an Oakland Raider,Raider,END,ASSONANCE,vowel,MED,Y
+Loaded,37,"Exotic my whips, X rated",rated,38,"In the project with some Crips, I ain't never ever tradin'",tradin,END,ASSONANCE,vowel,MED,Y
+Loaded,37,"Exotic my whips, X rated",Exotic,38,"In the project with some Crips, I ain't never ever tradin'",project,INNER,ASSONANCE,vowel,MED,Y
+Loaded,37,"Exotic my whips, X rated",rated,38,"In the project with some Crips, I ain't never ever tradin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+Loaded,37,"Exotic my whips, X rated",whips,38,"In the project with some Crips, I ain't never ever tradin'",Crips,INNER,PERFECT,cmu,HIGH,Y
+Loaded,37,"Exotic my whips, X rated",X,38,"In the project with some Crips, I ain't never ever tradin'",ever,INNER,ASSONANCE,vowel,MED,Y
+Loaded,37,"Exotic my whips, X rated",X,38,"In the project with some Crips, I ain't never ever tradin'",never,INNER,ASSONANCE,vowel,MED,Y
+Loaded,37,"Exotic my whips, X rated",rated,39,Really in the field like an Oakland Raider,Raider,END,SLANT,cmu,MED,Y
+Loaded,37,"Exotic my whips, X rated",whips,39,Really in the field like an Oakland Raider,Really,INNER,ASSONANCE,vowel,MED,Y
+Loaded,38,"In the project with some Crips, I ain't never ever tradin'",ain't,38,"In the project with some Crips, I ain't never ever tradin'",tradin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,38,"In the project with some Crips, I ain't never ever tradin'",ain't never,38,"In the project with some Crips, I ain't never ever tradin'",never ever,INNER,MULTI,multi,HIGH,Y
+Loaded,38,"In the project with some Crips, I ain't never ever tradin'",never,38,"In the project with some Crips, I ain't never ever tradin'",ever,INNER,MULTI,multi,HIGH,Y
+Loaded,38,"In the project with some Crips, I ain't never ever tradin'",tradin,39,Really in the field like an Oakland Raider,Raider,END,SLANT,cmu,MED,Y
+Loaded,38,"In the project with some Crips, I ain't never ever tradin'",ain't,39,Really in the field like an Oakland Raider,Raider,INNER,ASSONANCE,vowel,MED,Y
+Loaded,38,"In the project with some Crips, I ain't never ever tradin'",Crips,39,Really in the field like an Oakland Raider,Really,INNER,ASSONANCE,vowel,MED,Y
+Loaded,38,"In the project with some Crips, I ain't never ever tradin'",Crips,40,"Out the Caddy, he be rippin' the Uzi",rippin,INNER,SLANT,cmu,MED,Y
+Loaded,39,Really in the field like an Oakland Raider,Really,40,"Out the Caddy, he be rippin' the Uzi",rippin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,39,Really in the field like an Oakland Raider,Really,41,"Get a mansion, we gon' fill it with groupies",fill,INNER,SLANT,cmu,MED,Y
+Loaded,40,"Out the Caddy, he be rippin' the Uzi",Uzi,41,"Get a mansion, we gon' fill it with groupies",groupies,END,SLANT,cmu,MED,Y
+Loaded,40,"Out the Caddy, he be rippin' the Uzi",Caddy,41,"Get a mansion, we gon' fill it with groupies",mansion,INNER,ASSONANCE,vowel,MED,Y
+Loaded,40,"Out the Caddy, he be rippin' the Uzi",rippin,41,"Get a mansion, we gon' fill it with groupies",fill,INNER,ASSONANCE,vowel,MED,Y
+Loaded,40,"Out the Caddy, he be rippin' the Uzi",Uzi,42,"Hundred shots out the clip, make a movie",movie,END,SLANT,cmu,MED,Y
+Loaded,40,"Out the Caddy, he be rippin' the Uzi",rippin,42,"Hundred shots out the clip, make a movie",clip,INNER,SLANT,cmu,MED,Y
+Loaded,40,"Out the Caddy, he be rippin' the Uzi",Uzi,43,Matte black Hellcat with the toolie,toolie,END,SLANT,spelling,LOW,Y
+Loaded,41,"Get a mansion, we gon' fill it with groupies",groupies,42,"Hundred shots out the clip, make a movie",movie,END,ASSONANCE,vowel,MED,Y
+Loaded,41,"Get a mansion, we gon' fill it with groupies",fill,42,"Hundred shots out the clip, make a movie",clip,INNER,SLANT,cmu,MED,Y
+Loaded,41,"Get a mansion, we gon' fill it with groupies",groupies,43,Matte black Hellcat with the toolie,toolie,END,ASSONANCE,vowel,LOW,N
+Loaded,41,"Get a mansion, we gon' fill it with groupies",mansion,43,Matte black Hellcat with the toolie,black,INNER,ASSONANCE,vowel,MED,Y
+Loaded,41,"Get a mansion, we gon' fill it with groupies",mansion,43,Matte black Hellcat with the toolie,Matte,INNER,ASSONANCE,vowel,MED,Y
+Loaded,42,"Hundred shots out the clip, make a movie",movie,43,Matte black Hellcat with the toolie,toolie,END,PERFECT,spelling,MED,Y
+Loaded,42,"Hundred shots out the clip, make a movie",make,44,Get your hat back 'fore you say you gon' do me,say,INNER,ASSONANCE,vowel,MED,Y
+Loaded,43,Matte black Hellcat with the toolie,Matte,43,Matte black Hellcat with the toolie,black,INNER,SLANT,cmu,MED,Y
+Loaded,43,Matte black Hellcat with the toolie,black,44,Get your hat back 'fore you say you gon' do me,back,INNER,PERFECT,cmu,HIGH,Y
+Loaded,43,Matte black Hellcat with the toolie,black,44,Get your hat back 'fore you say you gon' do me,hat,INNER,SLANT,cmu,MED,Y
+Loaded,43,Matte black Hellcat with the toolie,Hellcat,44,Get your hat back 'fore you say you gon' do me,hat,INNER,PERFECT,spelling,MED,Y
+Loaded,43,Matte black Hellcat with the toolie,Matte,44,Get your hat back 'fore you say you gon' do me,back,INNER,SLANT,cmu,MED,Y
+Loaded,43,Matte black Hellcat with the toolie,Matte,44,Get your hat back 'fore you say you gon' do me,hat,INNER,PERFECT,cmu,HIGH,Y
+Loaded,43,Matte black Hellcat with the toolie,black,45,"Blue flag, steady dissin' his dead ass",ass,INNER,SLANT,cmu,MED,Y
+Loaded,43,Matte black Hellcat with the toolie,black,45,"Blue flag, steady dissin' his dead ass",flag,INNER,SLANT,cmu,MED,Y
+Loaded,43,Matte black Hellcat with the toolie,Matte,45,"Blue flag, steady dissin' his dead ass",ass,INNER,SLANT,cmu,MED,Y
+Loaded,43,Matte black Hellcat with the toolie,Matte,45,"Blue flag, steady dissin' his dead ass",flag,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,hat,44,Get your hat back 'fore you say you gon' do me,back,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,back,45,"Blue flag, steady dissin' his dead ass",ass,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,back,45,"Blue flag, steady dissin' his dead ass",flag,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,Get,45,"Blue flag, steady dissin' his dead ass",dead,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,Get,45,"Blue flag, steady dissin' his dead ass",steady,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,hat,45,"Blue flag, steady dissin' his dead ass",ass,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,hat,45,"Blue flag, steady dissin' his dead ass",flag,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,back,46,Who died? I'm in love with her red ass,ass,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,Get,46,Who died? I'm in love with her red ass,red,INNER,SLANT,cmu,MED,Y
+Loaded,44,Get your hat back 'fore you say you gon' do me,hat,46,Who died? I'm in love with her red ass,ass,INNER,SLANT,cmu,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",flag,45,"Blue flag, steady dissin' his dead ass",ass,INNER,SLANT,cmu,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",steady,45,"Blue flag, steady dissin' his dead ass",dead,INNER,SLANT,cmu,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",ass,46,Who died? I'm in love with her red ass,ass,END,REPEAT,spelling,HIGH,N
+Loaded,45,"Blue flag, steady dissin' his dead ass",Blue,46,Who died? I'm in love with her red ass,Who,INNER,PERFECT,cmu,HIGH,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",dead,46,Who died? I'm in love with her red ass,red,INNER,PERFECT,cmu,HIGH,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",flag,46,Who died? I'm in love with her red ass,ass,INNER,SLANT,cmu,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",steady,46,Who died? I'm in love with her red ass,red,INNER,SLANT,cmu,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",ass,47,"Grimy lil' nigga, gon' empty the whole mag'",mag,END,SLANT,cmu,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",dead,47,"Grimy lil' nigga, gon' empty the whole mag'",empty,INNER,ASSONANCE,vowel,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",dissin,47,"Grimy lil' nigga, gon' empty the whole mag'",lil,INNER,ASSONANCE,vowel,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",flag,47,"Grimy lil' nigga, gon' empty the whole mag'",mag,INNER,PERFECT,cmu,HIGH,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",steady,47,"Grimy lil' nigga, gon' empty the whole mag'",empty,INNER,ASSONANCE,vowel,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",ass,48,"Such a slimy lil' nigga, in love with a low rag",rag,END,SLANT,cmu,MED,Y
+Loaded,45,"Blue flag, steady dissin' his dead ass",ass,49,"Fuck all that dissin', boy, come and get your bro back",back,END,SLANT,cmu,MED,Y
+Loaded,46,Who died? I'm in love with her red ass,ass,47,"Grimy lil' nigga, gon' empty the whole mag'",mag,END,SLANT,cmu,MED,Y
+Loaded,46,Who died? I'm in love with her red ass,died,47,"Grimy lil' nigga, gon' empty the whole mag'",Grimy,INNER,SLANT,cmu,MED,Y
+Loaded,46,Who died? I'm in love with her red ass,red,47,"Grimy lil' nigga, gon' empty the whole mag'",empty,INNER,ASSONANCE,vowel,MED,Y
+Loaded,46,Who died? I'm in love with her red ass,ass,48,"Such a slimy lil' nigga, in love with a low rag",rag,END,SLANT,cmu,MED,Y
+Loaded,46,Who died? I'm in love with her red ass,died,48,"Such a slimy lil' nigga, in love with a low rag",slimy,INNER,SLANT,cmu,MED,Y
+Loaded,46,Who died? I'm in love with her red ass,love,48,"Such a slimy lil' nigga, in love with a low rag",love,INNER,REPEAT,spelling,HIGH,N
+Loaded,46,Who died? I'm in love with her red ass,love,48,"Such a slimy lil' nigga, in love with a low rag",Such,INNER,SLANT,cmu,MED,Y
+Loaded,46,Who died? I'm in love with her red ass,ass,49,"Fuck all that dissin', boy, come and get your bro back",back,END,SLANT,cmu,MED,Y
+Loaded,46,Who died? I'm in love with her red ass,ass,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",back,END,SLANT,cmu,MED,Y
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",gon,47,"Grimy lil' nigga, gon' empty the whole mag'",whole,INNER,SLANT,spelling,LOW,Y
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",mag,48,"Such a slimy lil' nigga, in love with a low rag",rag,END,PERFECT,cmu,HIGH,Y
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",Grimy,48,"Such a slimy lil' nigga, in love with a low rag",slimy,INNER,MULTI,multi,HIGH,Y
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",lil,48,"Such a slimy lil' nigga, in love with a low rag",lil,INNER,REPEAT,spelling,HIGH,N
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",nigga,48,"Such a slimy lil' nigga, in love with a low rag",nigga,INNER,REPEAT,spelling,HIGH,N
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",whole,48,"Such a slimy lil' nigga, in love with a low rag",low,INNER,ASSONANCE,vowel,MED,Y
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",mag,49,"Fuck all that dissin', boy, come and get your bro back",back,END,SLANT,cmu,MED,Y
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",empty,49,"Fuck all that dissin', boy, come and get your bro back",get,INNER,ASSONANCE,vowel,MED,Y
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",lil,49,"Fuck all that dissin', boy, come and get your bro back",dissin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",whole,49,"Fuck all that dissin', boy, come and get your bro back",bro,INNER,ASSONANCE,vowel,MED,Y
+Loaded,47,"Grimy lil' nigga, gon' empty the whole mag'",mag,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",back,END,SLANT,cmu,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",Such,48,"Such a slimy lil' nigga, in love with a low rag",love,INNER,SLANT,cmu,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",rag,49,"Fuck all that dissin', boy, come and get your bro back",back,END,SLANT,cmu,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",lil,49,"Fuck all that dissin', boy, come and get your bro back",dissin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",love,49,"Fuck all that dissin', boy, come and get your bro back",come,INNER,SLANT,cmu,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",love,49,"Fuck all that dissin', boy, come and get your bro back",Fuck,INNER,SLANT,cmu,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",low,49,"Fuck all that dissin', boy, come and get your bro back",bro,INNER,PERFECT,cmu,HIGH,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",Such,49,"Fuck all that dissin', boy, come and get your bro back",come,INNER,SLANT,cmu,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",Such,49,"Fuck all that dissin', boy, come and get your bro back",Fuck,INNER,SLANT,cmu,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",rag,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",back,END,SLANT,cmu,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",lil,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",missin,INNER,ASSONANCE,vowel,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",love,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",come,INNER,SLANT,cmu,MED,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",low,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",ho,INNER,PERFECT,cmu,HIGH,Y
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",nigga,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",nigga,INNER,REPEAT,spelling,HIGH,N
+Loaded,48,"Such a slimy lil' nigga, in love with a low rag",Such,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",come,INNER,SLANT,cmu,MED,Y
+Loaded,49,"Fuck all that dissin', boy, come and get your bro back",Fuck,49,"Fuck all that dissin', boy, come and get your bro back",come,INNER,SLANT,cmu,MED,Y
+Loaded,49,"Fuck all that dissin', boy, come and get your bro back",back,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",back,END,REPEAT,spelling,HIGH,N
+Loaded,49,"Fuck all that dissin', boy, come and get your bro back",all,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",shorty,INNER,ASSONANCE,vowel,MED,Y
+Loaded,49,"Fuck all that dissin', boy, come and get your bro back",all dissin,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",shorty missin,INNER,MULTI,multi,HIGH,Y
+Loaded,49,"Fuck all that dissin', boy, come and get your bro back",bro,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",ho,INNER,PERFECT,cmu,HIGH,Y
+Loaded,49,"Fuck all that dissin', boy, come and get your bro back",come,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",come,INNER,REPEAT,spelling,HIGH,N
+Loaded,49,"Fuck all that dissin', boy, come and get your bro back",dissin,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",missin,INNER,MULTI,multi,HIGH,Y
+Loaded,49,"Fuck all that dissin', boy, come and get your bro back",Fuck,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",come,INNER,SLANT,cmu,MED,Y
+Loaded,49,"Fuck all that dissin', boy, come and get your bro back",get,50,"If shorty be missin', nigga, come get your ho back, ha, yeah",get,INNER,REPEAT,spelling,HIGH,N

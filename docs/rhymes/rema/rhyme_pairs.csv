@@ -1,0 +1,260 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Go Fast,1,"She say, ""Let's go stupid, let's do shots""",Let's,1,"She say, ""Let's go stupid, let's do shots""",let's,INNER,REPEAT,spelling,HIGH,N
+Go Fast,1,"She say, ""Let's go stupid, let's do shots""",go,2,"Stomach empty, I know I'm fucked",know,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,1,"She say, ""Let's go stupid, let's do shots""",Let's,2,"Stomach empty, I know I'm fucked",empty,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,1,"She say, ""Let's go stupid, let's do shots""",go,3,"my crazy, I don't do cups",don't,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,1,"She say, ""Let's go stupid, let's do shots""",say,3,"my crazy, I don't do cups",crazy,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,2,"Stomach empty, I know I'm fucked",Stomach,2,"Stomach empty, I know I'm fucked",fucked,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,2,"Stomach empty, I know I'm fucked",fucked,3,"my crazy, I don't do cups",cups,END,ASSONANCE,vowel,MED,Y
+Go Fast,2,"Stomach empty, I know I'm fucked",know,3,"my crazy, I don't do cups",don't,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,2,"Stomach empty, I know I'm fucked",Stomach,3,"my crazy, I don't do cups",cups,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,2,"Stomach empty, I know I'm fucked",fucked,4,"If I drive home safe, then I'm in luck",luck,END,SLANT,cmu,MED,Y
+Go Fast,2,"Stomach empty, I know I'm fucked",know,4,"If I drive home safe, then I'm in luck",home,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,2,"Stomach empty, I know I'm fucked",Stomach,4,"If I drive home safe, then I'm in luck",luck,INNER,SLANT,cmu,MED,Y
+Go Fast,3,"my crazy, I don't do cups",cups,4,"If I drive home safe, then I'm in luck",luck,END,ASSONANCE,vowel,MED,Y
+Go Fast,3,"my crazy, I don't do cups",crazy,4,"If I drive home safe, then I'm in luck",safe,INNER,SLANT,cmu,MED,Y
+Go Fast,3,"my crazy, I don't do cups",don't,4,"If I drive home safe, then I'm in luck",home,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,3,"my crazy, I don't do cups",crazy,5,"Shawty, way ya hatin' with the dirty talk",hatin,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,3,"my crazy, I don't do cups",crazy,5,"Shawty, way ya hatin' with the dirty talk",Shawty,INNER,ASSONANCE,vowel,LOW,N
+Go Fast,3,"my crazy, I don't do cups",crazy,5,"Shawty, way ya hatin' with the dirty talk",way,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,4,"If I drive home safe, then I'm in luck",safe,5,"Shawty, way ya hatin' with the dirty talk",hatin,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,4,"If I drive home safe, then I'm in luck",safe,5,"Shawty, way ya hatin' with the dirty talk",way,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,4,"If I drive home safe, then I'm in luck",luck,6,"Barman, surely deserve some props",some,INNER,SLANT,cmu,MED,Y
+Go Fast,5,"Shawty, way ya hatin' with the dirty talk",Shawty,5,"Shawty, way ya hatin' with the dirty talk",dirty,INNER,ASSONANCE,vowel,LOW,N
+Go Fast,5,"Shawty, way ya hatin' with the dirty talk",Shawty,5,"Shawty, way ya hatin' with the dirty talk",talk,INNER,SLANT,spelling,LOW,Y
+Go Fast,5,"Shawty, way ya hatin' with the dirty talk",way,5,"Shawty, way ya hatin' with the dirty talk",hatin,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,5,"Shawty, way ya hatin' with the dirty talk",dirty,6,"Barman, surely deserve some props",deserve,INNER,SLANT,cmu,MED,Y
+Go Fast,5,"Shawty, way ya hatin' with the dirty talk",Shawty,6,"Barman, surely deserve some props",surely,INNER,ASSONANCE,vowel,LOW,N
+Go Fast,5,"Shawty, way ya hatin' with the dirty talk",hatin,7,"She say, ""Don't leave, I wanna grind on you""",say,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,5,"Shawty, way ya hatin' with the dirty talk",way,7,"She say, ""Don't leave, I wanna grind on you""",say,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,5,"Shawty, way ya hatin' with the dirty talk",talk,8,"I'm stupid if I don't say, ""Of course""",course,END,ASSONANCE,vowel,MED,Y
+Go Fast,6,"Barman, surely deserve some props",Barman,6,"Barman, surely deserve some props",props,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,6,"Barman, surely deserve some props",Barman,7,"She say, ""Don't leave, I wanna grind on you""",wanna,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,6,"Barman, surely deserve some props",props,7,"She say, ""Don't leave, I wanna grind on you""",wanna,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,7,"She say, ""Don't leave, I wanna grind on you""",Don't,8,"I'm stupid if I don't say, ""Of course""",don't,INNER,REPEAT,spelling,HIGH,N
+Go Fast,7,"She say, ""Don't leave, I wanna grind on you""",say,8,"I'm stupid if I don't say, ""Of course""",say,INNER,REPEAT,spelling,HIGH,N
+Go Fast,7,"She say, ""Don't leave, I wanna grind on you""",Don't,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",Go,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,8,"I'm stupid if I don't say, ""Of course""",don't,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",Go,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,8,"I'm stupid if I don't say, ""Of course""",say,10,"You see the way I move, you rock it like a menace",way,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,8,"I'm stupid if I don't say, ""Of course""",stupid,10,"You see the way I move, you rock it like a menace",move,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",fa,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",fa,INNER,REPEAT,spelling,HIGH,N
+Go Fast,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",fast,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",fast,INNER,REPEAT,spelling,HIGH,N
+Go Fast,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",Go,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",go,INNER,REPEAT,spelling,HIGH,N
+Go Fast,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",fast,11,Finna give a badman heart attack,attack,END,ASSONANCE,vowel,MED,Y
+Go Fast,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",fast,11,Finna give a badman heart attack,attack,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",fast,11,Finna give a badman heart attack,badman,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,9,"Go fast, go fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fa-fast",fast,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,END,ASSONANCE,vowel,MED,Y
+Go Fast,10,"You see the way I move, you rock it like a menace",rock,11,Finna give a badman heart attack,heart,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,10,"You see the way I move, you rock it like a menace",rock,12,"Face and body, mad, mad, mad, mad, mad, mad",body,INNER,SLANT,cmu,MED,Y
+Go Fast,10,"You see the way I move, you rock it like a menace",way,12,"Face and body, mad, mad, mad, mad, mad, mad",Face,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,11,Finna give a badman heart attack,badman,11,Finna give a badman heart attack,attack,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,11,Finna give a badman heart attack,attack,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,END,SLANT,cmu,MED,Y
+Go Fast,11,Finna give a badman heart attack,attack,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,INNER,SLANT,cmu,MED,Y
+Go Fast,11,Finna give a badman heart attack,badman,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,11,Finna give a badman heart attack,heart,12,"Face and body, mad, mad, mad, mad, mad, mad",body,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,11,Finna give a badman heart attack,Finna,13,"Other gyal dem try do your ting but they need to learn, do more than that",ting,INNER,SLANT,spelling,LOW,Y
+Go Fast,11,Finna give a badman heart attack,give,13,"Other gyal dem try do your ting but they need to learn, do more than that",ting,INNER,SLANT,cmu,MED,Y
+Go Fast,11,Finna give a badman heart attack,attack,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",packed,END,SLANT,cmu,MED,Y
+Go Fast,11,Finna give a badman heart attack,attack,15,"Don't want paparazzi to get me, so I'm hiding in the back",back,END,PERFECT,cmu,HIGH,Y
+Go Fast,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,INNER,REPEAT,spelling,HIGH,N
+Go Fast,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",packed,END,SLANT,cmu,MED,Y
+Go Fast,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",packed,INNER,SLANT,cmu,MED,Y
+Go Fast,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",Wag,INNER,SLANT,cmu,MED,Y
+Go Fast,12,"Face and body, mad, mad, mad, mad, mad, mad",mad,15,"Don't want paparazzi to get me, so I'm hiding in the back",back,END,SLANT,cmu,MED,Y
+Go Fast,13,"Other gyal dem try do your ting but they need to learn, do more than that",gyal,13,"Other gyal dem try do your ting but they need to learn, do more than that",need,INNER,SLANT,spelling,LOW,Y
+Go Fast,13,"Other gyal dem try do your ting but they need to learn, do more than that",more,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",Call,INNER,SLANT,cmu,MED,Y
+Go Fast,13,"Other gyal dem try do your ting but they need to learn, do more than that",need,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",G,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,13,"Other gyal dem try do your ting but they need to learn, do more than that",ting,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",shit,INNER,SLANT,cmu,MED,Y
+Go Fast,13,"Other gyal dem try do your ting but they need to learn, do more than that",dem,15,"Don't want paparazzi to get me, so I'm hiding in the back",get,INNER,SLANT,spelling,LOW,Y
+Go Fast,13,"Other gyal dem try do your ting but they need to learn, do more than that",need,15,"Don't want paparazzi to get me, so I'm hiding in the back",paparazzi,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,13,"Other gyal dem try do your ting but they need to learn, do more than that",try,15,"Don't want paparazzi to get me, so I'm hiding in the back",hiding,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",friends,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",section,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",pull,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",lookin,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",Wag,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",packed,INNER,SLANT,cmu,MED,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",packed,15,"Don't want paparazzi to get me, so I'm hiding in the back",back,END,SLANT,cmu,MED,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",friends,15,"Don't want paparazzi to get me, so I'm hiding in the back",get,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",G,15,"Don't want paparazzi to get me, so I'm hiding in the back",paparazzi,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",section,15,"Don't want paparazzi to get me, so I'm hiding in the back",get,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",Wag,15,"Don't want paparazzi to get me, so I'm hiding in the back",back,INNER,SLANT,cmu,MED,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",G,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",kiliwee,INNER,ASSONANCE,vowel,LOW,N
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",packed,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",back,INNER,SLANT,cmu,MED,Y
+Go Fast,14,"Call my friends in my section, pull up with a G-Wag', shit is lookin' packed",Wag,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",back,INNER,SLANT,cmu,MED,Y
+Go Fast,15,"Don't want paparazzi to get me, so I'm hiding in the back",back,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",back,INNER,REPEAT,spelling,HIGH,N
+Go Fast,15,"Don't want paparazzi to get me, so I'm hiding in the back",Don't,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",throw,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,15,"Don't want paparazzi to get me, so I'm hiding in the back",paparazzi,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",kiliwee,INNER,ASSONANCE,vowel,LOW,N
+Go Fast,15,"Don't want paparazzi to get me, so I'm hiding in the back",want,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",kiliwee,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,15,"Don't want paparazzi to get me, so I'm hiding in the back",want,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",card,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",kiliwee,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",kiliwee,INNER,REPEAT,spelling,HIGH,N
+Go Fast,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",kiliwee,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",card,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",kiliwee,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",gimme,INNER,ASSONANCE,vowel,LOW,N
+Go Fast,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",kiliwee,18,"You see the way I movе, you rock it like a menace",rock,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,16,"And she throw it back, kiliwee, kiliwee, kiliwee, kiliwee, ah-ha",kiliwee,18,"You see the way I movе, you rock it like a menace",see,INNER,PERFECT,spelling,MED,Y
+Go Fast,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",gimm,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",gimme,INNER,SLANT,spelling,LOW,Y
+Go Fast,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",gimme,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",gimm,INNER,SLANT,spelling,LOW,Y
+Go Fast,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",gimme,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",gimme,INNER,REPEAT,spelling,HIGH,N
+Go Fast,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",Wait,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",take,INNER,SLANT,cmu,MED,Y
+Go Fast,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",card,18,"You see the way I movе, you rock it like a menace",rock,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",take,18,"You see the way I movе, you rock it like a menace",way,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,17,"Wait, I take my card, gimme this, gimmе this, gimme this, gimme this and that",Wait,18,"You see the way I movе, you rock it like a menace",way,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,18,"You see the way I movе, you rock it like a menace",menace,19,"Go fast, let me see you go slow",let,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,18,"You see the way I movе, you rock it like a menace",see,19,"Go fast, let me see you go slow",see,INNER,REPEAT,spelling,HIGH,N
+Go Fast,18,"You see the way I movе, you rock it like a menace",menace,20,"Put your hands on your knees, get low",get,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,18,"You see the way I movе, you rock it like a menace",see,20,"Put your hands on your knees, get low",knees,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,19,"Go fast, let me see you go slow",Go,19,"Go fast, let me see you go slow",go,INNER,REPEAT,spelling,HIGH,N
+Go Fast,19,"Go fast, let me see you go slow",Go,19,"Go fast, let me see you go slow",slow,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,19,"Go fast, let me see you go slow",slow,20,"Put your hands on your knees, get low",low,END,PERFECT,cmu,HIGH,Y
+Go Fast,19,"Go fast, let me see you go slow",fast,20,"Put your hands on your knees, get low",hands,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,19,"Go fast, let me see you go slow",Go,20,"Put your hands on your knees, get low",low,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,19,"Go fast, let me see you go slow",let,20,"Put your hands on your knees, get low",get,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,19,"Go fast, let me see you go slow",see,20,"Put your hands on your knees, get low",knees,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,19,"Go fast, let me see you go slow",let,21,"Met a model, she said she from Lagos",Met,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,19,"Go fast, let me see you go slow",let,21,"Met a model, she said she from Lagos",said,INNER,SLANT,cmu,MED,Y
+Go Fast,19,"Go fast, let me see you go slow",slow,23,"Baby, what's a hundred thousand? That's Play-Doh",Doh,END,PERFECT,cmu,HIGH,Y
+Go Fast,20,"Put your hands on your knees, get low",get,21,"Met a model, she said she from Lagos",Met,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,20,"Put your hands on your knees, get low",get,21,"Met a model, she said she from Lagos",said,INNER,SLANT,cmu,MED,Y
+Go Fast,20,"Put your hands on your knees, get low",get,22,"I got naira, dollars, pesos",naira,INNER,SLANT,cmu,MED,Y
+Go Fast,20,"Put your hands on your knees, get low",low,23,"Baby, what's a hundred thousand? That's Play-Doh",Doh,END,PERFECT,cmu,HIGH,Y
+Go Fast,21,"Met a model, she said she from Lagos",Met,21,"Met a model, she said she from Lagos",said,INNER,SLANT,cmu,MED,Y
+Go Fast,21,"Met a model, she said she from Lagos",Lagos,22,"I got naira, dollars, pesos",pesos,END,ASSONANCE,vowel,MED,Y
+Go Fast,21,"Met a model, she said she from Lagos",Met,22,"I got naira, dollars, pesos",naira,INNER,SLANT,cmu,MED,Y
+Go Fast,21,"Met a model, she said she from Lagos",model,22,"I got naira, dollars, pesos",dollars,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,21,"Met a model, she said she from Lagos",model,22,"I got naira, dollars, pesos",got,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,21,"Met a model, she said she from Lagos",said,22,"I got naira, dollars, pesos",naira,INNER,SLANT,cmu,MED,Y
+Go Fast,21,"Met a model, she said she from Lagos",Lagos,23,"Baby, what's a hundred thousand? That's Play-Doh",Baby,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,21,"Met a model, she said she from Lagos",Lagos,23,"Baby, what's a hundred thousand? That's Play-Doh",Play,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,22,"I got naira, dollars, pesos",got,22,"I got naira, dollars, pesos",dollars,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,22,"I got naira, dollars, pesos",pesos,23,"Baby, what's a hundred thousand? That's Play-Doh",Baby,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,22,"I got naira, dollars, pesos",pesos,23,"Baby, what's a hundred thousand? That's Play-Doh",Play,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,22,"I got naira, dollars, pesos",pesos,24,"Make you a wish, I'm a genie",Make,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,23,"Baby, what's a hundred thousand? That's Play-Doh",Baby,23,"Baby, what's a hundred thousand? That's Play-Doh",Play,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,23,"Baby, what's a hundred thousand? That's Play-Doh",what's,23,"Baby, what's a hundred thousand? That's Play-Doh",hundred,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,23,"Baby, what's a hundred thousand? That's Play-Doh",Baby,24,"Make you a wish, I'm a genie",Make,INNER,SLANT,cmu,MED,Y
+Go Fast,23,"Baby, what's a hundred thousand? That's Play-Doh",Play,24,"Make you a wish, I'm a genie",Make,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,24,"Make you a wish, I'm a genie",genie,25,Get the keys to my Jeep like Beenie,Beenie,END,PERFECT,spelling,MED,Y
+Go Fast,24,"Make you a wish, I'm a genie",genie,25,Get the keys to my Jeep like Beenie,Jeep,INNER,SLANT,cmu,MED,Y
+Go Fast,24,"Make you a wish, I'm a genie",genie,25,Get the keys to my Jeep like Beenie,keys,INNER,SLANT,cmu,MED,Y
+Go Fast,24,"Make you a wish, I'm a genie",genie,26,"You know I'm a big dog, he a weenie",weenie,END,PERFECT,spelling,MED,Y
+Go Fast,24,"Make you a wish, I'm a genie",wish,26,"You know I'm a big dog, he a weenie",big,INNER,SLANT,cmu,MED,Y
+Go Fast,25,Get the keys to my Jeep like Beenie,Jeep,25,Get the keys to my Jeep like Beenie,Beenie,INNER,SLANT,spelling,LOW,Y
+Go Fast,25,Get the keys to my Jeep like Beenie,keys,25,Get the keys to my Jeep like Beenie,Beenie,INNER,SLANT,spelling,LOW,Y
+Go Fast,25,Get the keys to my Jeep like Beenie,keys,25,Get the keys to my Jeep like Beenie,Jeep,INNER,SLANT,cmu,MED,Y
+Go Fast,25,Get the keys to my Jeep like Beenie,Beenie,26,"You know I'm a big dog, he a weenie",weenie,END,MULTI,multi,MED,Y
+Go Fast,25,Get the keys to my Jeep like Beenie,Jeep,26,"You know I'm a big dog, he a weenie",weenie,INNER,SLANT,spelling,LOW,Y
+Go Fast,25,Get the keys to my Jeep like Beenie,keys,26,"You know I'm a big dog, he a weenie",weenie,INNER,SLANT,spelling,LOW,Y
+Go Fast,25,Get the keys to my Jeep like Beenie,Get,27,Take her to the room and we makin' a mess,mess,INNER,SLANT,cmu,MED,Y
+Go Fast,27,Take her to the room and we makin' a mess,mess,28,"She got two exes, them niggas pressed",pressed,END,SLANT,cmu,MED,Y
+Go Fast,27,Take her to the room and we makin' a mess,mess,28,"She got two exes, them niggas pressed",exes,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,27,Take her to the room and we makin' a mess,room,28,"She got two exes, them niggas pressed",two,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,27,Take her to the room and we makin' a mess,mess,29,"Both of 'em cap, Mitchell & Ness",Ness,END,PERFECT,cmu,HIGH,Y
+Go Fast,27,Take her to the room and we makin' a mess,makin,29,"Both of 'em cap, Mitchell & Ness",cap,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,27,Take her to the room and we makin' a mess,mess,30,"Crocodile Birkin, she want the best",best,END,SLANT,cmu,MED,Y
+Go Fast,27,Take her to the room and we makin' a mess,mess,31,"I wanna cuff you, I come and arrest",arrest,END,SLANT,cmu,MED,Y
+Go Fast,28,"She got two exes, them niggas pressed",exes,28,"She got two exes, them niggas pressed",pressed,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,28,"She got two exes, them niggas pressed",pressed,29,"Both of 'em cap, Mitchell & Ness",Ness,END,SLANT,cmu,MED,Y
+Go Fast,28,"She got two exes, them niggas pressed",exes,29,"Both of 'em cap, Mitchell & Ness",Ness,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,28,"She got two exes, them niggas pressed",pressed,30,"Crocodile Birkin, she want the best",best,END,PERFECT,cmu,HIGH,Y
+Go Fast,28,"She got two exes, them niggas pressed",exes,30,"Crocodile Birkin, she want the best",best,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,28,"She got two exes, them niggas pressed",got,30,"Crocodile Birkin, she want the best",want,INNER,SLANT,cmu,MED,Y
+Go Fast,28,"She got two exes, them niggas pressed",pressed,31,"I wanna cuff you, I come and arrest",arrest,END,PERFECT,cmu,HIGH,Y
+Go Fast,28,"She got two exes, them niggas pressed",pressed,32,"Hop in the shower, I like when it's fresh",fresh,END,ASSONANCE,vowel,MED,Y
+Go Fast,29,"Both of 'em cap, Mitchell & Ness",Ness,30,"Crocodile Birkin, she want the best",best,END,SLANT,cmu,MED,Y
+Go Fast,29,"Both of 'em cap, Mitchell & Ness",Ness,31,"I wanna cuff you, I come and arrest",arrest,END,SLANT,cmu,MED,Y
+Go Fast,29,"Both of 'em cap, Mitchell & Ness",'em,31,"I wanna cuff you, I come and arrest",come,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,29,"Both of 'em cap, Mitchell & Ness",Ness,32,"Hop in the shower, I like when it's fresh",fresh,END,SLANT,cmu,MED,Y
+Go Fast,29,"Both of 'em cap, Mitchell & Ness",Ness,33,I got her screamin' and scratchin' my flesh,flesh,END,SLANT,cmu,MED,Y
+Go Fast,30,"Crocodile Birkin, she want the best",best,31,"I wanna cuff you, I come and arrest",arrest,END,PERFECT,cmu,HIGH,Y
+Go Fast,30,"Crocodile Birkin, she want the best",want,31,"I wanna cuff you, I come and arrest",wanna,INNER,SLANT,cmu,MED,Y
+Go Fast,30,"Crocodile Birkin, she want the best",best,32,"Hop in the shower, I like when it's fresh",fresh,END,ASSONANCE,vowel,MED,Y
+Go Fast,30,"Crocodile Birkin, she want the best",best,32,"Hop in the shower, I like when it's fresh",when,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,30,"Crocodile Birkin, she want the best",Crocodile,32,"Hop in the shower, I like when it's fresh",like,INNER,SLANT,cmu,MED,Y
+Go Fast,30,"Crocodile Birkin, she want the best",want,32,"Hop in the shower, I like when it's fresh",Hop,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,30,"Crocodile Birkin, she want the best",best,33,I got her screamin' and scratchin' my flesh,flesh,END,ASSONANCE,vowel,MED,Y
+Go Fast,31,"I wanna cuff you, I come and arrest",cuff,31,"I wanna cuff you, I come and arrest",come,INNER,SLANT,cmu,MED,Y
+Go Fast,31,"I wanna cuff you, I come and arrest",arrest,32,"Hop in the shower, I like when it's fresh",fresh,END,ASSONANCE,vowel,MED,Y
+Go Fast,31,"I wanna cuff you, I come and arrest",arrest,32,"Hop in the shower, I like when it's fresh",when,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,31,"I wanna cuff you, I come and arrest",wanna,32,"Hop in the shower, I like when it's fresh",Hop,INNER,SLANT,cmu,MED,Y
+Go Fast,31,"I wanna cuff you, I come and arrest",arrest,33,I got her screamin' and scratchin' my flesh,flesh,END,ASSONANCE,vowel,MED,Y
+Go Fast,31,"I wanna cuff you, I come and arrest",wanna,33,I got her screamin' and scratchin' my flesh,got,INNER,SLANT,cmu,MED,Y
+Go Fast,32,"Hop in the shower, I like when it's fresh",when,32,"Hop in the shower, I like when it's fresh",fresh,INNER,SLANT,cmu,MED,Y
+Go Fast,32,"Hop in the shower, I like when it's fresh",fresh,33,I got her screamin' and scratchin' my flesh,flesh,END,PERFECT,cmu,HIGH,Y
+Go Fast,32,"Hop in the shower, I like when it's fresh",Hop,33,I got her screamin' and scratchin' my flesh,got,INNER,SLANT,cmu,MED,Y
+Go Fast,32,"Hop in the shower, I like when it's fresh",when,33,I got her screamin' and scratchin' my flesh,flesh,INNER,SLANT,cmu,MED,Y
+Go Fast,32,"Hop in the shower, I like when it's fresh",like,34,"I like my cash just like my whips, fast, fast",like,INNER,REPEAT,spelling,HIGH,N
+Go Fast,33,I got her screamin' and scratchin' my flesh,scratchin,34,"I like my cash just like my whips, fast, fast",cash,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,33,I got her screamin' and scratchin' my flesh,scratchin,34,"I like my cash just like my whips, fast, fast",fast,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,33,I got her screamin' and scratchin' my flesh,scratchin,35,"Faster than yours, 210 on my dash, dash",dash,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,33,I got her screamin' and scratchin' my flesh,scratchin,35,"Faster than yours, 210 on my dash, dash",Faster,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,34,"I like my cash just like my whips, fast, fast",cash,34,"I like my cash just like my whips, fast, fast",fast,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,34,"I like my cash just like my whips, fast, fast",fast,34,"I like my cash just like my whips, fast, fast",fast,INNER,REPEAT,spelling,HIGH,N
+Go Fast,34,"I like my cash just like my whips, fast, fast",like,34,"I like my cash just like my whips, fast, fast",like,INNER,REPEAT,spelling,HIGH,N
+Go Fast,34,"I like my cash just like my whips, fast, fast",fast,35,"Faster than yours, 210 on my dash, dash",dash,END,ASSONANCE,vowel,MED,Y
+Go Fast,34,"I like my cash just like my whips, fast, fast",cash,35,"Faster than yours, 210 on my dash, dash",dash,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,34,"I like my cash just like my whips, fast, fast",cash,35,"Faster than yours, 210 on my dash, dash",Faster,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,34,"I like my cash just like my whips, fast, fast",fast,35,"Faster than yours, 210 on my dash, dash",dash,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,34,"I like my cash just like my whips, fast, fast",fast,35,"Faster than yours, 210 on my dash, dash",Faster,INNER,SLANT,cmu,MED,Y
+Go Fast,34,"I like my cash just like my whips, fast, fast",cash,36,Do sum' bad if you really want me,bad,INNER,SLANT,cmu,MED,Y
+Go Fast,34,"I like my cash just like my whips, fast, fast",fast,36,Do sum' bad if you really want me,bad,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,34,"I like my cash just like my whips, fast, fast",whips,36,Do sum' bad if you really want me,really,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,35,"Faster than yours, 210 on my dash, dash",dash,35,"Faster than yours, 210 on my dash, dash",dash,INNER,REPEAT,spelling,HIGH,N
+Go Fast,35,"Faster than yours, 210 on my dash, dash",Faster,35,"Faster than yours, 210 on my dash, dash",dash,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,35,"Faster than yours, 210 on my dash, dash",dash,36,Do sum' bad if you really want me,bad,INNER,SLANT,cmu,MED,Y
+Go Fast,35,"Faster than yours, 210 on my dash, dash",Faster,36,Do sum' bad if you really want me,bad,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,35,"Faster than yours, 210 on my dash, dash",dash,37,Do some damage and get it started,damage,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,35,"Faster than yours, 210 on my dash, dash",Faster,37,Do some damage and get it started,damage,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,36,Do sum' bad if you really want me,want,37,Do some damage and get it started,started,END,ASSONANCE,vowel,MED,Y
+Go Fast,36,Do sum' bad if you really want me,bad,37,Do some damage and get it started,damage,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,36,Do sum' bad if you really want me,sum,37,Do some damage and get it started,some,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,37,Do some damage and get it started,get,38,How they gon' keep up with me when I wake up looking like I (Do),when,INNER,SLANT,cmu,MED,Y
+Go Fast,38,How they gon' keep up with me when I wake up looking like I (Do),keep,39,I been graced by the evening and by the time you see me,evening,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,38,How they gon' keep up with me when I wake up looking like I (Do),keep,39,I been graced by the evening and by the time you see me,see,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,38,How they gon' keep up with me when I wake up looking like I (Do),like,39,I been graced by the evening and by the time you see me,by,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,38,How they gon' keep up with me when I wake up looking like I (Do),like,39,I been graced by the evening and by the time you see me,time,INNER,SLANT,cmu,MED,Y
+Go Fast,38,How they gon' keep up with me when I wake up looking like I (Do),wake,39,I been graced by the evening and by the time you see me,graced,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,38,How they gon' keep up with me when I wake up looking like I (Do),keep,40,"I'm already leaving, I'ma move",leaving,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,38,How they gon' keep up with me when I wake up looking like I (Do),when,40,"I'm already leaving, I'ma move",already,INNER,SLANT,cmu,MED,Y
+Go Fast,39,I been graced by the evening and by the time you see me,by,39,I been graced by the evening and by the time you see me,by,INNER,REPEAT,spelling,HIGH,N
+Go Fast,39,I been graced by the evening and by the time you see me,by,39,I been graced by the evening and by the time you see me,time,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,39,I been graced by the evening and by the time you see me,evening,39,I been graced by the evening and by the time you see me,see,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,39,I been graced by the evening and by the time you see me,evening,40,"I'm already leaving, I'ma move",leaving,INNER,SLANT,cmu,MED,Y
+Go Fast,39,I been graced by the evening and by the time you see me,see,40,"I'm already leaving, I'ma move",leaving,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,39,I been graced by the evening and by the time you see me,graced,41,From the penthouse to the runway and that's a regular Sunday,runway,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,39,I been graced by the evening and by the time you see me,graced,41,From the penthouse to the runway and that's a regular Sunday,Sunday,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,40,"I'm already leaving, I'ma move",already,41,From the penthouse to the runway and that's a regular Sunday,regular,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,41,From the penthouse to the runway and that's a regular Sunday,runway,41,From the penthouse to the runway and that's a regular Sunday,Sunday,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,41,From the penthouse to the runway and that's a regular Sunday,runway,43,"The way I dey dream, me I no wan stop",dey,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,41,From the penthouse to the runway and that's a regular Sunday,runway,43,"The way I dey dream, me I no wan stop",way,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,41,From the penthouse to the runway and that's a regular Sunday,Sunday,43,"The way I dey dream, me I no wan stop",dey,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,41,From the penthouse to the runway and that's a regular Sunday,Sunday,43,"The way I dey dream, me I no wan stop",way,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,42,"And by Monday you gon' love me, it's on you",Monday,42,"And by Monday you gon' love me, it's on you",love,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,42,"And by Monday you gon' love me, it's on you",love,44,"But I no wan that, man, I get so fucked",fucked,END,ASSONANCE,vowel,MED,Y
+Go Fast,42,"And by Monday you gon' love me, it's on you",Monday,44,"But I no wan that, man, I get so fucked",fucked,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,43,"The way I dey dream, me I no wan stop",wan,43,"The way I dey dream, me I no wan stop",stop,INNER,SLANT,cmu,MED,Y
+Go Fast,43,"The way I dey dream, me I no wan stop",way,43,"The way I dey dream, me I no wan stop",dey,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,43,"The way I dey dream, me I no wan stop",no,44,"But I no wan that, man, I get so fucked",no,INNER,REPEAT,spelling,HIGH,N
+Go Fast,43,"The way I dey dream, me I no wan stop",stop,44,"But I no wan that, man, I get so fucked",wan,INNER,SLANT,cmu,MED,Y
+Go Fast,43,"The way I dey dream, me I no wan stop",wan,44,"But I no wan that, man, I get so fucked",wan,INNER,REPEAT,spelling,HIGH,N
+Go Fast,43,"The way I dey dream, me I no wan stop",dream,45,And the only reason I bad like this,reason,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,43,"The way I dey dream, me I no wan stop",no,45,And the only reason I bad like this,only,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,44,"But I no wan that, man, I get so fucked",man,45,And the only reason I bad like this,bad,INNER,SLANT,cmu,MED,Y
+Go Fast,44,"But I no wan that, man, I get so fucked",no,45,And the only reason I bad like this,only,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,44,"But I no wan that, man, I get so fucked",fucked,46,Tryna run away from all my thoughts,run,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,45,And the only reason I bad like this,reason,46,Tryna run away from all my thoughts,Tryna,INNER,SLANT,spelling,LOW,Y
+Go Fast,45,And the only reason I bad like this,like,47,"If try, no way and I get nowhere",try,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,45,And the only reason I bad like this,only,47,"If try, no way and I get nowhere",no,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,46,Tryna run away from all my thoughts,all,46,Tryna run away from all my thoughts,thoughts,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,46,Tryna run away from all my thoughts,away,47,"If try, no way and I get nowhere",way,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,46,Tryna run away from all my thoughts,thoughts,48,"And I love this fame, I go need it all",all,END,ASSONANCE,vowel,MED,Y
+Go Fast,46,Tryna run away from all my thoughts,all,48,"And I love this fame, I go need it all",all,INNER,REPEAT,spelling,HIGH,N
+Go Fast,46,Tryna run away from all my thoughts,away,48,"And I love this fame, I go need it all",fame,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,46,Tryna run away from all my thoughts,run,48,"And I love this fame, I go need it all",love,INNER,SLANT,cmu,MED,Y
+Go Fast,46,Tryna run away from all my thoughts,Tryna,48,"And I love this fame, I go need it all",need,INNER,SLANT,spelling,LOW,Y
+Go Fast,47,"If try, no way and I get nowhere",get,47,"If try, no way and I get nowhere",nowhere,INNER,SLANT,cmu,MED,Y
+Go Fast,47,"If try, no way and I get nowhere",no,48,"And I love this fame, I go need it all",go,INNER,PERFECT,cmu,HIGH,Y
+Go Fast,47,"If try, no way and I get nowhere",way,48,"And I love this fame, I go need it all",fame,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,47,"If try, no way and I get nowhere",try,49,I try to be with the ones I love,try,INNER,REPEAT,spelling,HIGH,N
+Go Fast,48,"And I love this fame, I go need it all",love,49,I try to be with the ones I love,love,INNER,REPEAT,spelling,HIGH,N
+Go Fast,48,"And I love this fame, I go need it all",love,49,I try to be with the ones I love,ones,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,49,I try to be with the ones I love,ones,49,I try to be with the ones I love,love,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,49,I try to be with the ones I love,try,50,And the girls dem whine this my mind (Do),mind,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,49,I try to be with the ones I love,try,50,And the girls dem whine this my mind (Do),whine,INNER,ASSONANCE,vowel,MED,Y
+Go Fast,50,And the girls dem whine this my mind (Do),whine,50,And the girls dem whine this my mind (Do),mind,INNER,SLANT,cmu,MED,Y
