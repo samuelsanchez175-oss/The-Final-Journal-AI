@@ -1,0 +1,128 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Get Back,1,"Yeah bitch, I'm a big dog",bitch,1,"Yeah bitch, I'm a big dog",big,INNER,SLANT,cmu,MED,Y
+Get Back,1,"Yeah bitch, I'm a big dog",big,2,"In the city, I'm a big deal",big,INNER,REPEAT,spelling,HIGH,N
+Get Back,1,"Yeah bitch, I'm a big dog",big,2,"In the city, I'm a big deal",city,INNER,SLANT,cmu,MED,Y
+Get Back,1,"Yeah bitch, I'm a big dog",bitch,2,"In the city, I'm a big deal",big,INNER,SLANT,cmu,MED,Y
+Get Back,1,"Yeah bitch, I'm a big dog",bitch,2,"In the city, I'm a big deal",city,INNER,SLANT,cmu,MED,Y
+Get Back,1,"Yeah bitch, I'm a big dog",big,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,INNER,SLANT,cmu,MED,Y
+Get Back,1,"Yeah bitch, I'm a big dog",big,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,INNER,ASSONANCE,vowel,MED,Y
+Get Back,1,"Yeah bitch, I'm a big dog",big,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,INNER,SLANT,cmu,MED,Y
+Get Back,1,"Yeah bitch, I'm a big dog",bitch,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,INNER,SLANT,cmu,MED,Y
+Get Back,1,"Yeah bitch, I'm a big dog",bitch,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,INNER,ASSONANCE,vowel,MED,Y
+Get Back,1,"Yeah bitch, I'm a big dog",bitch,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",city,2,"In the city, I'm a big deal",big,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",big,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",big,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,INNER,ASSONANCE,vowel,MED,Y
+Get Back,2,"In the city, I'm a big deal",big,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",city,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",city,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",city,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",deal,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",deal,INNER,REPEAT,spelling,HIGH,N
+Get Back,2,"In the city, I'm a big deal",big,4,"'Fore I had a bitch, fell in love with me Glick",bitch,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",big,4,"'Fore I had a bitch, fell in love with me Glick",Glick,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",city,4,"'Fore I had a bitch, fell in love with me Glick",bitch,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",city,4,"'Fore I had a bitch, fell in love with me Glick",Glick,INNER,SLANT,cmu,MED,Y
+Get Back,2,"In the city, I'm a big deal",deal,6,"And everybody know me, when I ain't have no cheese",cheese,END,SLANT,cmu,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,INNER,ASSONANCE,vowel,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,INNER,SLANT,cmu,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,INNER,ASSONANCE,vowel,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,4,"'Fore I had a bitch, fell in love with me Glick",Glick,END,ASSONANCE,vowel,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,4,"'Fore I had a bitch, fell in love with me Glick",bitch,INNER,SLANT,cmu,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,4,"'Fore I had a bitch, fell in love with me Glick",Glick,INNER,SLANT,cmu,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,4,"'Fore I had a bitch, fell in love with me Glick",bitch,INNER,ASSONANCE,vowel,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,4,"'Fore I had a bitch, fell in love with me Glick",bitch,INNER,SLANT,cmu,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,4,"'Fore I had a bitch, fell in love with me Glick",Glick,INNER,SLANT,cmu,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,5,"Before Christian Loubs, it was blood on my kicks",kicks,END,SLANT,cmu,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,5,"Before Christian Loubs, it was blood on my kicks",Christian,INNER,ASSONANCE,vowel,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",give,5,"Before Christian Loubs, it was blood on my kicks",kicks,INNER,ASSONANCE,vowel,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,5,"Before Christian Loubs, it was blood on my kicks",Christian,INNER,ASSONANCE,vowel,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,5,"Before Christian Loubs, it was blood on my kicks",Christian,INNER,ASSONANCE,vowel,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",mill,5,"Before Christian Loubs, it was blood on my kicks",kicks,INNER,ASSONANCE,vowel,MED,Y
+Get Back,3,"At 17 labels tried to give me a deal for a mill, but I was on hits",hits,7,"Ridin' 'round fo' deep, I was gon' blitz",blitz,END,PERFECT,cmu,HIGH,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",bitch,4,"'Fore I had a bitch, fell in love with me Glick",Glick,INNER,SLANT,cmu,MED,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",Glick,5,"Before Christian Loubs, it was blood on my kicks",kicks,END,SLANT,cmu,MED,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",'Fore,5,"Before Christian Loubs, it was blood on my kicks",Before,INNER,PERFECT,cmu,HIGH,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",bitch,5,"Before Christian Loubs, it was blood on my kicks",Christian,INNER,ASSONANCE,vowel,MED,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",bitch,5,"Before Christian Loubs, it was blood on my kicks",kicks,INNER,ASSONANCE,vowel,MED,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",Glick,5,"Before Christian Loubs, it was blood on my kicks",Christian,INNER,ASSONANCE,vowel,MED,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",love,5,"Before Christian Loubs, it was blood on my kicks",blood,INNER,SLANT,cmu,MED,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",fell,6,"And everybody know me, when I ain't have no cheese",when,INNER,SLANT,cmu,MED,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",had,6,"And everybody know me, when I ain't have no cheese",have,INNER,SLANT,cmu,MED,Y
+Get Back,4,"'Fore I had a bitch, fell in love with me Glick",Glick,7,"Ridin' 'round fo' deep, I was gon' blitz",blitz,END,ASSONANCE,vowel,MED,Y
+Get Back,5,"Before Christian Loubs, it was blood on my kicks",Christian,5,"Before Christian Loubs, it was blood on my kicks",kicks,INNER,ASSONANCE,vowel,MED,Y
+Get Back,5,"Before Christian Loubs, it was blood on my kicks",kicks,7,"Ridin' 'round fo' deep, I was gon' blitz",blitz,END,SLANT,cmu,MED,Y
+Get Back,5,"Before Christian Loubs, it was blood on my kicks",Christian,7,"Ridin' 'round fo' deep, I was gon' blitz",blitz,INNER,ASSONANCE,vowel,MED,Y
+Get Back,5,"Before Christian Loubs, it was blood on my kicks",Loubs,7,"Ridin' 'round fo' deep, I was gon' blitz",'round,INNER,ASSONANCE,vowel,LOW,N
+Get Back,6,"And everybody know me, when I ain't have no cheese",know,6,"And everybody know me, when I ain't have no cheese",no,INNER,PERFECT,cmu,HIGH,Y
+Get Back,6,"And everybody know me, when I ain't have no cheese",cheese,7,"Ridin' 'round fo' deep, I was gon' blitz",deep,INNER,SLANT,cmu,MED,Y
+Get Back,6,"And everybody know me, when I ain't have no cheese",have,8,"Used to be in the Lamb, used to post on",Lamb,INNER,SLANT,cmu,MED,Y
+Get Back,6,"And everybody know me, when I ain't have no cheese",know,8,"Used to be in the Lamb, used to post on",post,INNER,ASSONANCE,vowel,MED,Y
+Get Back,6,"And everybody know me, when I ain't have no cheese",no,8,"Used to be in the Lamb, used to post on",post,INNER,ASSONANCE,vowel,MED,Y
+Get Back,7,"Ridin' 'round fo' deep, I was gon' blitz",'round,9,"Coulda died off Molly, cause I was on 6",Coulda,INNER,SLANT,spelling,LOW,Y
+Get Back,7,"Ridin' 'round fo' deep, I was gon' blitz",Ridin,9,"Coulda died off Molly, cause I was on 6",died,INNER,SLANT,cmu,MED,Y
+Get Back,8,"Used to be in the Lamb, used to post on",Used,8,"Used to be in the Lamb, used to post on",used,INNER,REPEAT,spelling,HIGH,N
+Get Back,8,"Used to be in the Lamb, used to post on",post,10,And you know I'm still Roc Block,know,INNER,ASSONANCE,vowel,MED,Y
+Get Back,8,"Used to be in the Lamb, used to post on",post,12,My lil mans and nem top opps,opps,END,ASSONANCE,vowel,LOW,N
+Get Back,9,"Coulda died off Molly, cause I was on 6",Molly,9,"Coulda died off Molly, cause I was on 6",cause,INNER,SLANT,cmu,MED,Y
+Get Back,9,"Coulda died off Molly, cause I was on 6",cause,10,And you know I'm still Roc Block,Block,END,SLANT,cmu,MED,Y
+Get Back,9,"Coulda died off Molly, cause I was on 6",cause,10,And you know I'm still Roc Block,Roc,INNER,SLANT,cmu,MED,Y
+Get Back,9,"Coulda died off Molly, cause I was on 6",Molly,10,And you know I'm still Roc Block,Block,INNER,SLANT,cmu,MED,Y
+Get Back,9,"Coulda died off Molly, cause I was on 6",Molly,10,And you know I'm still Roc Block,Roc,INNER,SLANT,cmu,MED,Y
+Get Back,9,"Coulda died off Molly, cause I was on 6",cause,11,Nigga play and still shots pop,pop,END,SLANT,cmu,MED,Y
+Get Back,9,"Coulda died off Molly, cause I was on 6",cause,11,Nigga play and still shots pop,shots,INNER,ASSONANCE,vowel,MED,Y
+Get Back,9,"Coulda died off Molly, cause I was on 6",Molly,11,Nigga play and still shots pop,pop,INNER,SLANT,cmu,MED,Y
+Get Back,9,"Coulda died off Molly, cause I was on 6",Molly,11,Nigga play and still shots pop,shots,INNER,ASSONANCE,vowel,MED,Y
+Get Back,10,And you know I'm still Roc Block,Roc,10,And you know I'm still Roc Block,Block,INNER,PERFECT,cmu,HIGH,Y
+Get Back,10,And you know I'm still Roc Block,Block,11,Nigga play and still shots pop,pop,END,SLANT,cmu,MED,Y
+Get Back,10,And you know I'm still Roc Block,Block,11,Nigga play and still shots pop,shots,INNER,ASSONANCE,vowel,MED,Y
+Get Back,10,And you know I'm still Roc Block,Roc,11,Nigga play and still shots pop,pop,INNER,SLANT,cmu,MED,Y
+Get Back,10,And you know I'm still Roc Block,Roc,11,Nigga play and still shots pop,shots,INNER,ASSONANCE,vowel,MED,Y
+Get Back,10,And you know I'm still Roc Block,still,11,Nigga play and still shots pop,still,INNER,REPEAT,spelling,HIGH,N
+Get Back,10,And you know I'm still Roc Block,Block,12,My lil mans and nem top opps,top,INNER,SLANT,cmu,MED,Y
+Get Back,10,And you know I'm still Roc Block,know,12,My lil mans and nem top opps,opps,INNER,ASSONANCE,vowel,LOW,N
+Get Back,10,And you know I'm still Roc Block,Roc,12,My lil mans and nem top opps,top,INNER,SLANT,cmu,MED,Y
+Get Back,10,And you know I'm still Roc Block,still,12,My lil mans and nem top opps,lil,INNER,PERFECT,cmu,HIGH,Y
+Get Back,10,And you know I'm still Roc Block,Block,14,In my city in a drop top,top,END,SLANT,cmu,MED,Y
+Get Back,11,Nigga play and still shots pop,shots,11,Nigga play and still shots pop,pop,INNER,ASSONANCE,vowel,MED,Y
+Get Back,11,Nigga play and still shots pop,pop,12,My lil mans and nem top opps,top,INNER,PERFECT,cmu,HIGH,Y
+Get Back,11,Nigga play and still shots pop,shots,12,My lil mans and nem top opps,top,INNER,ASSONANCE,vowel,MED,Y
+Get Back,11,Nigga play and still shots pop,still,12,My lil mans and nem top opps,lil,INNER,PERFECT,cmu,HIGH,Y
+Get Back,11,Nigga play and still shots pop,pop,14,In my city in a drop top,top,END,PERFECT,cmu,HIGH,Y
+Get Back,11,Nigga play and still shots pop,pop,15,Like a nigga ain't a top slot,slot,END,SLANT,cmu,MED,Y
+Get Back,12,My lil mans and nem top opps,nem,13,Dread head like RastGlocks,Dread,INNER,SLANT,spelling,LOW,Y
+Get Back,12,My lil mans and nem top opps,nem,13,Dread head like RastGlocks,head,INNER,SLANT,spelling,LOW,Y
+Get Back,12,My lil mans and nem top opps,lil,14,In my city in a drop top,city,INNER,SLANT,cmu,MED,Y
+Get Back,12,My lil mans and nem top opps,top,14,In my city in a drop top,drop,INNER,PERFECT,cmu,HIGH,Y
+Get Back,12,My lil mans and nem top opps,top,14,In my city in a drop top,top,INNER,REPEAT,spelling,HIGH,N
+Get Back,13,Dread head like RastGlocks,Dread,13,Dread head like RastGlocks,head,INNER,PERFECT,cmu,HIGH,Y
+Get Back,13,Dread head like RastGlocks,like,15,Like a nigga ain't a top slot,Like,INNER,REPEAT,spelling,HIGH,N
+Get Back,14,In my city in a drop top,drop,14,In my city in a drop top,top,INNER,PERFECT,cmu,HIGH,Y
+Get Back,14,In my city in a drop top,top,15,Like a nigga ain't a top slot,slot,END,SLANT,cmu,MED,Y
+Get Back,14,In my city in a drop top,city,15,Like a nigga ain't a top slot,nigga,INNER,SLANT,spelling,LOW,Y
+Get Back,14,In my city in a drop top,drop,15,Like a nigga ain't a top slot,slot,INNER,SLANT,cmu,MED,Y
+Get Back,14,In my city in a drop top,drop,15,Like a nigga ain't a top slot,top,INNER,PERFECT,cmu,HIGH,Y
+Get Back,14,In my city in a drop top,top,15,Like a nigga ain't a top slot,top,INNER,REPEAT,spelling,HIGH,N
+Get Back,14,In my city in a drop top,drop,16,If you want me gotta work,gotta,INNER,SLANT,cmu,MED,Y
+Get Back,14,In my city in a drop top,drop,16,If you want me gotta work,want,INNER,ASSONANCE,vowel,MED,Y
+Get Back,14,In my city in a drop top,top,16,If you want me gotta work,gotta,INNER,SLANT,cmu,MED,Y
+Get Back,14,In my city in a drop top,top,16,If you want me gotta work,want,INNER,ASSONANCE,vowel,MED,Y
+Get Back,14,In my city in a drop top,top,18,"And it spit at his shirt, 'til it turn to a crop top",top,END,REPEAT,spelling,HIGH,N
+Get Back,15,Like a nigga ain't a top slot,top,15,Like a nigga ain't a top slot,slot,INNER,SLANT,cmu,MED,Y
+Get Back,15,Like a nigga ain't a top slot,slot,16,If you want me gotta work,gotta,INNER,SLANT,cmu,MED,Y
+Get Back,15,Like a nigga ain't a top slot,slot,16,If you want me gotta work,want,INNER,SLANT,cmu,MED,Y
+Get Back,15,Like a nigga ain't a top slot,top,16,If you want me gotta work,gotta,INNER,SLANT,cmu,MED,Y
+Get Back,15,Like a nigga ain't a top slot,top,16,If you want me gotta work,want,INNER,ASSONANCE,vowel,MED,Y
+Get Back,15,Like a nigga ain't a top slot,slot,18,"And it spit at his shirt, 'til it turn to a crop top",top,END,SLANT,cmu,MED,Y
+Get Back,16,If you want me gotta work,want,16,If you want me gotta work,gotta,INNER,SLANT,cmu,MED,Y
+Get Back,16,If you want me gotta work,work,17,Let's see who up first,first,END,ASSONANCE,vowel,MED,Y
+Get Back,16,If you want me gotta work,gotta,18,"And it spit at his shirt, 'til it turn to a crop top",crop,INNER,SLANT,cmu,MED,Y
+Get Back,16,If you want me gotta work,gotta,18,"And it spit at his shirt, 'til it turn to a crop top",top,INNER,SLANT,cmu,MED,Y
+Get Back,16,If you want me gotta work,want,18,"And it spit at his shirt, 'til it turn to a crop top",crop,INNER,ASSONANCE,vowel,MED,Y
+Get Back,16,If you want me gotta work,want,18,"And it spit at his shirt, 'til it turn to a crop top",top,INNER,ASSONANCE,vowel,MED,Y
+Get Back,16,If you want me gotta work,work,18,"And it spit at his shirt, 'til it turn to a crop top",shirt,INNER,SLANT,cmu,MED,Y
+Get Back,16,If you want me gotta work,work,18,"And it spit at his shirt, 'til it turn to a crop top",turn,INNER,SLANT,cmu,MED,Y
+Get Back,17,Let's see who up first,first,18,"And it spit at his shirt, 'til it turn to a crop top",shirt,INNER,SLANT,cmu,MED,Y
+Get Back,17,Let's see who up first,first,18,"And it spit at his shirt, 'til it turn to a crop top",turn,INNER,ASSONANCE,vowel,MED,Y
+Get Back,18,"And it spit at his shirt, 'til it turn to a crop top",crop,18,"And it spit at his shirt, 'til it turn to a crop top",top,INNER,PERFECT,cmu,HIGH,Y
+Get Back,18,"And it spit at his shirt, 'til it turn to a crop top",shirt,18,"And it spit at his shirt, 'til it turn to a crop top",turn,INNER,SLANT,cmu,MED,Y
+Get Back,18,"And it spit at his shirt, 'til it turn to a crop top",spit,18,"And it spit at his shirt, 'til it turn to a crop top",'til,INNER,SLANT,cmu,MED,Y

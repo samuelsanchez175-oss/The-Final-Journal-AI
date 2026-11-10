@@ -376,6 +376,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 364 | cash-out | Ca$h Out | 1 | 21 | 50 | 6 | 44 | 49 | 2026-11-10 13:27 ET |
 | 365 | jeremie | Jeremie | 1 | 21 | 93 | 2 | 91 | 91 | 2026-11-10 13:27 ET |
 | 366 | nervo | NERVO | 1 | 20 | 146 | 9 | 137 | 146 | 2026-11-10 13:27 ET |
+| 367 | zater-mann | Zater Mann | 1 | 20 | 97 | 15 | 82 | 91 | 2026-11-10 13:27 ET |
+| 368 | happybirthdaycalvin | HappyBirthdayCalvin | 1 | 19 | 206 | 32 | 174 | 206 | 2026-11-10 13:28 ET |
+| 369 | kelly-sheridan | Kelly Sheridan | 1 | 18 | 72 | 3 | 69 | 71 | 2026-11-10 13:28 ET |
+| 370 | yak-yola | Yak Yola | 1 | 18 | 119 | 17 | 102 | 116 | 2026-11-10 13:28 ET |
+| 371 | zzz | Zzz. | 1 | 17 | 161 | 27 | 134 | 161 | 2026-11-10 13:28 ET |
+| 372 | luxlie | Luxlie | 1 | 16 | 79 | 5 | 74 | 79 | 2026-11-10 13:28 ET |
+| 373 | flip | Flip | 1 | 15 | 73 | 22 | 51 | 73 | 2026-11-10 13:28 ET |
+| 374 | modjo | Modjo | 1 | 13 | 73 | 32 | 41 | 73 | 2026-11-10 13:28 ET |
+| 375 | bret-epic-mazur | Bret “Epic” Mazur | 1 | 12 | 128 | 7 | 121 | 123 | 2026-11-10 13:28 ET |
+| 376 | randyn-julius | Randyn Julius | 1 | 12 | 79 | 8 | 71 | 77 | 2026-11-10 13:28 ET |
 
 ## Failures
 
@@ -383,7 +393,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 366/386: NERVO.
+Finished 376/386: Randyn Julius.
 
 ## Final
 
