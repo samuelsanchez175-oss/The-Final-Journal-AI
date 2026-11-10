@@ -131,7 +131,38 @@ final class NounBankSheetTests: XCTestCase {
         XCTAssertEqual(NounBankGroup.wear.categories, [.brands, .clothing, .hair, .nails, .tattoos, .lingerie, .toys])
         XCTAssertEqual(
             NounBankGroup.street.categories,
-            [.guns, .kill, .opps, .places, .woman, .twerk, .streets, .kingpin, .trapLife, .paranoia]
+            [.guns, .kill, .opps, .woman, .twerk, .streets, .kingpin, .trapLife, .paranoia]
+        )
+        XCTAssertEqual(NounBankGroup.containing(.places), .places)
+        XCTAssertEqual(NounBankGroup.places.categories, [.places])
+        XCTAssertEqual(NounBankGroup.fos.categories, [])
+        XCTAssertEqual(
+            NounBankGroup.allCases.map(\.rawValue),
+            [
+                "People", "Athletes", "Places", "Food", "Liquids", "Ice", "Wear", "Street",
+                "Vehicles", "Animals", "Apps", "Games", "Looks", "Flowers", "Feelings",
+                "Phrases", "Play on Words", "FOS",
+            ]
+        )
+        XCTAssertEqual(
+            FigurativeSpeech.artists,
+            [
+                "Gunna", "Young Thug",
+                "Lil Wayne", "Lil Uzi Vert", "Juice WRLD", "Quality Control",
+                "YoungBoy Never Broke Again", "Lil Yachty", "Ty Dolla $ign", "Rick Ross", "Yeat", "Drake",
+                "Trippie Redd", "Tory Lanez", "Chief Keef", "JAY-Z", "Meek Mill", "Destroy Lonely", "Future",
+                "Yo Gotti", "Don Toliver", "J. Cole", "Justin Bieber",
+                "Young Dolph", "Big Sean", "Playboi Carti", "Travis Scott", "Tyler, the Creator", "Fetty Wap",
+                "Kodak Black", "Young Stoner Life", "Moneybagg Yo", "Lil Keed",
+                "Chance the Rapper", "Money Man", "03 Greedo", "G Herbo", "Ken Carson", "Key Glock", "Migos",
+                "Cash Cobain", "Vic Mensa", "NAV", "Earl Sweatshirt", "Frank Ocean", "Young Nudy", "PARTYNEXTDOOR",
+                "Fivio Foreign", "EST Gee", "NoCap", "Lil Baby", "Blac Youngsta", "Roddy Ricch",
+                "Latto", "Homixide Gang", "21 Savage", "SahBabii", "Cardi B", "Veeze", "YFN Lucci",
+                "Sleepy Hallow", "Quavo", "Offset",
+                "BIA", "Pop Smoke", "BossMan Dlow", "GloRilla", "diamond*", "DaBaby", "BSlime", "Fridayy",
+                "BashfortheWorld", "Montana 700", "Fatt Smaxk", "Unfoonk", "Takeoff", "Sniper Gang",
+                "Ballout", "Gucci Mane", "YUME", "Lil Unky",
+            ]
         )
         XCTAssertEqual(NounBankGroup.games.categories, [.games])
         XCTAssertEqual(NounBankGroup.apps.categories, [.apps])
