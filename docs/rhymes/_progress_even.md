@@ -56,6 +56,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 44 | fredo-santana | Fredo Santana | 14 | 520 | 3456 | 679 | 2777 | 3408 | 2026-11-10 13:16 ET |
 | 45 | zaytoven | Zaytoven | 11 | 444 | 3341 | 512 | 2829 | 3276 | 2026-11-10 13:16 ET |
 | 46 | dj-khaled | DJ Khaled | 9 | 437 | 2780 | 471 | 2309 | 2757 | 2026-11-10 13:16 ET |
+| 47 | french-montana | French Montana | 13 | 432 | 2649 | 387 | 2262 | 2579 | 2026-11-10 13:17 ET |
+| 48 | johnny-cinco | Johnny Cinco | 10 | 392 | 2153 | 426 | 1727 | 2119 | 2026-11-10 13:17 ET |
+| 49 | rob49 | Rob49 | 6 | 389 | 3023 | 364 | 2659 | 2959 | 2026-11-10 13:17 ET |
+| 50 | doowop-gbe | DooWop (GBE) | 6 | 317 | 2371 | 424 | 1947 | 2276 | 2026-11-10 13:17 ET |
+| 51 | lil-reese | Lil Reese | 8 | 303 | 1697 | 414 | 1283 | 1655 | 2026-11-10 13:17 ET |
+| 52 | a-boogie-wit-da-hoodie | A Boogie wit da Hoodie | 8 | 300 | 2031 | 326 | 1705 | 2008 | 2026-11-10 13:17 ET |
+| 53 | doe-boy | Doe Boy | 5 | 289 | 2409 | 399 | 2010 | 2366 | 2026-11-10 13:17 ET |
+| 54 | 2-chainz | 2 Chainz | 5 | 287 | 1488 | 302 | 1186 | 1456 | 2026-11-10 13:17 ET |
+| 55 | dave-east | Dave East | 5 | 274 | 1976 | 329 | 1647 | 1943 | 2026-11-10 13:17 ET |
+| 56 | polo-g | Polo G | 6 | 267 | 2556 | 437 | 2119 | 2526 | 2026-11-10 13:17 ET |
 
 ## Failures
 
@@ -63,7 +73,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 46/386: DJ Khaled.
+Finished 56/386: Polo G.
 
 ## Final
 
