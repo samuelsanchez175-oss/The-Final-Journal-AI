@@ -16,6 +16,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 | 6 | tory-lanez | Tory Lanez | 1118 | 44124 | 260713 | 36227 | 224486 | 254903 | 2026-11-10 01:21 ET |
 | 7 | yeat | Yeat | 1219 | 35028 | 215296 | 36424 | 178872 | 211761 | 2026-11-10 01:22 ET |
 | 8 | j-cole | J. Cole | 637 | 33703 | 227851 | 29138 | 198713 | 223771 | 2026-11-10 01:24 ET |
+| 9 | future | Future | 756 | 30648 | 166786 | 27705 | 139081 | 164130 | 2026-11-10 01:25 ET |
 
 ## Failures
 
@@ -23,7 +24,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
 ## Status
 
-Finished 8/386: J. Cole.
+Finished 9/386: Future.
 
 ## Final
 
