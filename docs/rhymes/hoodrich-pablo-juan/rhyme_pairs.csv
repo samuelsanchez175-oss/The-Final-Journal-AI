@@ -1,0 +1,498 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Check,1,They say... what's that?,what's,2,"I'ma get that, too, but what's Next?",what's,INNER,REPEAT,spelling,HIGH,N
+Check,2,"I'ma get that, too, but what's Next?",get,2,"I'ma get that, too, but what's Next?",Next,INNER,ASSONANCE,vowel,MED,Y
+Check,2,"I'ma get that, too, but what's Next?",I'ma,3,"Bitch, I'm having (straight up)",Bitch,INNER,SLANT,spelling,LOW,Y
+Check,2,"I'ma get that, too, but what's Next?",Next,4,I just need a check,check,END,ASSONANCE,vowel,MED,Y
+Check,2,"I'ma get that, too, but what's Next?",get,4,I just need a check,check,INNER,SLANT,cmu,MED,Y
+Check,2,"I'ma get that, too, but what's Next?",Next,5,I just copped a Vette,Vette,END,ASSONANCE,vowel,MED,Y
+Check,2,"I'ma get that, too, but what's Next?",Next,6,I got me some head,head,END,ASSONANCE,vowel,MED,Y
+Check,4,I just need a check,check,5,I just copped a Vette,Vette,END,SLANT,cmu,MED,Y
+Check,4,I just need a check,check,6,I got me some head,head,END,SLANT,cmu,MED,Y
+Check,4,I just need a check,check,7,I got many bitches get on my neck,neck,END,PERFECT,cmu,HIGH,Y
+Check,4,I just need a check,check,8,Like I need some head,head,END,SLANT,cmu,MED,Y
+Check,5,I just copped a Vette,Vette,6,I got me some head,head,END,SLANT,cmu,MED,Y
+Check,5,I just copped a Vette,copped,6,I got me some head,got,INNER,SLANT,cmu,MED,Y
+Check,5,I just copped a Vette,Vette,7,I got many bitches get on my neck,neck,END,SLANT,cmu,MED,Y
+Check,5,I just copped a Vette,copped,7,I got many bitches get on my neck,got,INNER,SLANT,cmu,MED,Y
+Check,5,I just copped a Vette,Vette,7,I got many bitches get on my neck,get,INNER,PERFECT,cmu,HIGH,Y
+Check,5,I just copped a Vette,Vette,7,I got many bitches get on my neck,many,INNER,SLANT,cmu,MED,Y
+Check,5,I just copped a Vette,Vette,8,Like I need some head,head,END,SLANT,cmu,MED,Y
+Check,6,I got me some head,head,7,I got many bitches get on my neck,neck,END,SLANT,cmu,MED,Y
+Check,6,I got me some head,got,7,I got many bitches get on my neck,got,INNER,REPEAT,spelling,HIGH,N
+Check,6,I got me some head,head,7,I got many bitches get on my neck,get,INNER,SLANT,cmu,MED,Y
+Check,6,I got me some head,head,7,I got many bitches get on my neck,many,INNER,SLANT,cmu,MED,Y
+Check,6,I got me some head,head,8,Like I need some head,head,END,REPEAT,spelling,HIGH,N
+Check,6,I got me some head,some,8,Like I need some head,some,INNER,REPEAT,spelling,HIGH,N
+Check,7,I got many bitches get on my neck,get,7,I got many bitches get on my neck,neck,INNER,SLANT,cmu,MED,Y
+Check,7,I got many bitches get on my neck,many,7,I got many bitches get on my neck,get,INNER,SLANT,cmu,MED,Y
+Check,7,I got many bitches get on my neck,many,7,I got many bitches get on my neck,neck,INNER,SLANT,cmu,MED,Y
+Check,7,I got many bitches get on my neck,neck,8,Like I need some head,head,END,SLANT,cmu,MED,Y
+Check,7,I got many bitches get on my neck,get,8,Like I need some head,head,INNER,SLANT,cmu,MED,Y
+Check,7,I got many bitches get on my neck,many,8,Like I need some head,head,INNER,SLANT,cmu,MED,Y
+Check,7,I got many bitches get on my neck,get,9,But you better watch your mouth,better,INNER,SLANT,cmu,MED,Y
+Check,7,I got many bitches get on my neck,got,9,But you better watch your mouth,watch,INNER,SLANT,cmu,MED,Y
+Check,7,I got many bitches get on my neck,many,9,But you better watch your mouth,better,INNER,SLANT,cmu,MED,Y
+Check,7,I got many bitches get on my neck,neck,9,But you better watch your mouth,better,INNER,SLANT,cmu,MED,Y
+Check,8,Like I need some head,head,9,But you better watch your mouth,better,INNER,SLANT,cmu,MED,Y
+Check,8,Like I need some head,head,10,Better hold your lip,Better,INNER,SLANT,cmu,MED,Y
+Check,9,But you better watch your mouth,better,10,Better hold your lip,Better,INNER,REPEAT,spelling,HIGH,N
+Check,10,Better hold your lip,lip,11,"Oh shit, that's some real shit",shit,END,SLANT,cmu,MED,Y
+Check,10,Better hold your lip,lip,11,"Oh shit, that's some real shit",shit,INNER,SLANT,cmu,MED,Y
+Check,10,Better hold your lip,Better,12,"Twenty years old, ayy",Twenty,INNER,SLANT,cmu,MED,Y
+Check,10,Better hold your lip,hold,12,"Twenty years old, ayy",old,INNER,PERFECT,cmu,HIGH,Y
+Check,10,Better hold your lip,lip,12,"Twenty years old, ayy",years,INNER,ASSONANCE,vowel,MED,Y
+Check,11,"Oh shit, that's some real shit",shit,11,"Oh shit, that's some real shit",shit,INNER,REPEAT,spelling,HIGH,N
+Check,11,"Oh shit, that's some real shit",shit,12,"Twenty years old, ayy",years,INNER,ASSONANCE,vowel,MED,Y
+Check,11,"Oh shit, that's some real shit",real,13,And I need 30 for show,need,INNER,SLANT,cmu,MED,Y
+Check,12,"Twenty years old, ayy",old,13,And I need 30 for show,show,END,ASSONANCE,vowel,MED,Y
+Check,12,"Twenty years old, ayy",old,14,"Ooh, I had to let you know",know,END,ASSONANCE,vowel,MED,Y
+Check,12,"Twenty years old, ayy",Twenty,14,"Ooh, I had to let you know",let,INNER,SLANT,cmu,MED,Y
+Check,12,"Twenty years old, ayy",old,15,"Ooh, I'm, I'm on that O",O,END,ASSONANCE,vowel,MED,Y
+Check,13,And I need 30 for show,show,14,"Ooh, I had to let you know",know,END,PERFECT,cmu,HIGH,Y
+Check,13,And I need 30 for show,show,15,"Ooh, I'm, I'm on that O",O,END,PERFECT,cmu,HIGH,Y
+Check,13,And I need 30 for show,show,17,And we ain't on dro,dro,END,ASSONANCE,vowel,LOW,N
+Check,14,"Ooh, I had to let you know",know,15,"Ooh, I'm, I'm on that O",O,END,PERFECT,cmu,HIGH,Y
+Check,14,"Ooh, I had to let you know",know,17,And we ain't on dro,dro,END,ASSONANCE,vowel,LOW,N
+Check,15,"Ooh, I'm, I'm on that O",O,17,And we ain't on dro,dro,END,ASSONANCE,vowel,LOW,N
+Check,16,"And young Pablo with me, oh",Pablo,17,And we ain't on dro,dro,END,ASSONANCE,vowel,LOW,N
+Check,16,"And young Pablo with me, oh",Pablo,18,"Ice, ice, got the best price",got,INNER,ASSONANCE,vowel,MED,Y
+Check,18,"Ice, ice, got the best price",Ice,18,"Ice, ice, got the best price",ice,INNER,REPEAT,spelling,HIGH,N
+Check,18,"Ice, ice, got the best price",Ice,18,"Ice, ice, got the best price",price,INNER,PERFECT,cmu,HIGH,Y
+Check,18,"Ice, ice, got the best price",price,19,"I'm selling Vanilla ice, off-white",white,END,SLANT,cmu,MED,Y
+Check,18,"Ice, ice, got the best price",best,19,"I'm selling Vanilla ice, off-white",selling,INNER,ASSONANCE,vowel,MED,Y
+Check,18,"Ice, ice, got the best price",Ice,19,"I'm selling Vanilla ice, off-white",ice,INNER,REPEAT,spelling,HIGH,N
+Check,18,"Ice, ice, got the best price",Ice,19,"I'm selling Vanilla ice, off-white",white,INNER,SLANT,cmu,MED,Y
+Check,18,"Ice, ice, got the best price",price,19,"I'm selling Vanilla ice, off-white",ice,INNER,PERFECT,cmu,HIGH,Y
+Check,18,"Ice, ice, got the best price",price,20,Can't be my bitch unless you a dike,dike,END,SLANT,cmu,MED,Y
+Check,18,"Ice, ice, got the best price",best,20,Can't be my bitch unless you a dike,unless,INNER,SLANT,cmu,MED,Y
+Check,18,"Ice, ice, got the best price",Ice,20,Can't be my bitch unless you a dike,dike,INNER,SLANT,cmu,MED,Y
+Check,18,"Ice, ice, got the best price",price,21,"All that money on you, nigga, it must be nice",nice,END,PERFECT,cmu,HIGH,Y
+Check,19,"I'm selling Vanilla ice, off-white",ice,19,"I'm selling Vanilla ice, off-white",white,INNER,SLANT,cmu,MED,Y
+Check,19,"I'm selling Vanilla ice, off-white",white,20,Can't be my bitch unless you a dike,dike,END,SLANT,cmu,MED,Y
+Check,19,"I'm selling Vanilla ice, off-white",ice,20,Can't be my bitch unless you a dike,dike,INNER,SLANT,cmu,MED,Y
+Check,19,"I'm selling Vanilla ice, off-white",selling,20,Can't be my bitch unless you a dike,unless,INNER,ASSONANCE,vowel,MED,Y
+Check,19,"I'm selling Vanilla ice, off-white",Vanilla,20,Can't be my bitch unless you a dike,bitch,INNER,SLANT,cmu,MED,Y
+Check,19,"I'm selling Vanilla ice, off-white",white,21,"All that money on you, nigga, it must be nice",nice,END,SLANT,cmu,MED,Y
+Check,19,"I'm selling Vanilla ice, off-white",ice,21,"All that money on you, nigga, it must be nice",nice,INNER,PERFECT,cmu,HIGH,Y
+Check,19,"I'm selling Vanilla ice, off-white",Vanilla,21,"All that money on you, nigga, it must be nice",nigga,INNER,ASSONANCE,vowel,LOW,N
+Check,20,Can't be my bitch unless you a dike,dike,21,"All that money on you, nigga, it must be nice",nice,END,SLANT,cmu,MED,Y
+Check,20,Can't be my bitch unless you a dike,Can't,22,I'm pouring a four of that A$AP Yams,Yams,INNER,ASSONANCE,vowel,MED,Y
+Check,21,"All that money on you, nigga, it must be nice",money,21,"All that money on you, nigga, it must be nice",must,INNER,ASSONANCE,vowel,MED,Y
+Check,21,"All that money on you, nigga, it must be nice",All,22,I'm pouring a four of that A$AP Yams,four,INNER,SLANT,cmu,MED,Y
+Check,21,"All that money on you, nigga, it must be nice",All,22,I'm pouring a four of that A$AP Yams,pouring,INNER,ASSONANCE,vowel,MED,Y
+Check,21,"All that money on you, nigga, it must be nice",All,23,I call up my nigga Carti when I land,call,INNER,PERFECT,cmu,HIGH,Y
+Check,21,"All that money on you, nigga, it must be nice",nigga,23,I call up my nigga Carti when I land,nigga,INNER,REPEAT,spelling,HIGH,N
+Check,22,I'm pouring a four of that A$AP Yams,pouring,22,I'm pouring a four of that A$AP Yams,four,INNER,SLANT,cmu,MED,Y
+Check,22,I'm pouring a four of that A$AP Yams,Yams,23,I call up my nigga Carti when I land,land,END,ASSONANCE,vowel,MED,Y
+Check,22,I'm pouring a four of that A$AP Yams,four,23,I call up my nigga Carti when I land,call,INNER,SLANT,cmu,MED,Y
+Check,22,I'm pouring a four of that A$AP Yams,pouring,23,I call up my nigga Carti when I land,call,INNER,ASSONANCE,vowel,MED,Y
+Check,22,I'm pouring a four of that A$AP Yams,Yams,24,"Roll up a fat backwood, three grams",grams,END,PERFECT,cmu,HIGH,Y
+Check,22,I'm pouring a four of that A$AP Yams,AP,24,"Roll up a fat backwood, three grams",three,INNER,PERFECT,cmu,HIGH,Y
+Check,22,I'm pouring a four of that A$AP Yams,Yams,24,"Roll up a fat backwood, three grams",fat,INNER,ASSONANCE,vowel,MED,Y
+Check,22,I'm pouring a four of that A$AP Yams,Yams,25,"Four rings, got a Audi on my hand",hand,END,ASSONANCE,vowel,MED,Y
+Check,22,I'm pouring a four of that A$AP Yams,Yams,26,Bust that bitch down at the Westin and ran,ran,END,ASSONANCE,vowel,MED,Y
+Check,23,I call up my nigga Carti when I land,land,24,"Roll up a fat backwood, three grams",grams,END,ASSONANCE,vowel,MED,Y
+Check,23,I call up my nigga Carti when I land,land,24,"Roll up a fat backwood, three grams",fat,INNER,ASSONANCE,vowel,MED,Y
+Check,23,I call up my nigga Carti when I land,land,25,"Four rings, got a Audi on my hand",hand,END,PERFECT,cmu,HIGH,Y
+Check,23,I call up my nigga Carti when I land,call,25,"Four rings, got a Audi on my hand",Audi,INNER,SLANT,cmu,MED,Y
+Check,23,I call up my nigga Carti when I land,call,25,"Four rings, got a Audi on my hand",Four,INNER,SLANT,cmu,MED,Y
+Check,23,I call up my nigga Carti when I land,Carti,25,"Four rings, got a Audi on my hand",got,INNER,SLANT,spelling,LOW,Y
+Check,23,I call up my nigga Carti when I land,land,26,Bust that bitch down at the Westin and ran,ran,END,SLANT,cmu,MED,Y
+Check,23,I call up my nigga Carti when I land,land,27,"Playboy, two bad bitches from Instagram",Instagram,END,ASSONANCE,vowel,MED,Y
+Check,24,"Roll up a fat backwood, three grams",fat,24,"Roll up a fat backwood, three grams",grams,INNER,ASSONANCE,vowel,MED,Y
+Check,24,"Roll up a fat backwood, three grams",grams,25,"Four rings, got a Audi on my hand",hand,END,ASSONANCE,vowel,MED,Y
+Check,24,"Roll up a fat backwood, three grams",fat,25,"Four rings, got a Audi on my hand",hand,INNER,ASSONANCE,vowel,MED,Y
+Check,24,"Roll up a fat backwood, three grams",grams,26,Bust that bitch down at the Westin and ran,ran,END,ASSONANCE,vowel,MED,Y
+Check,24,"Roll up a fat backwood, three grams",fat,26,Bust that bitch down at the Westin and ran,ran,INNER,SLANT,cmu,MED,Y
+Check,24,"Roll up a fat backwood, three grams",grams,27,"Playboy, two bad bitches from Instagram",Instagram,END,SLANT,cmu,MED,Y
+Check,24,"Roll up a fat backwood, three grams",grams,28,"Swerving, serving, give me one minute, man",man,END,ASSONANCE,vowel,MED,Y
+Check,25,"Four rings, got a Audi on my hand",Four,25,"Four rings, got a Audi on my hand",Audi,INNER,SLANT,cmu,MED,Y
+Check,25,"Four rings, got a Audi on my hand",hand,26,Bust that bitch down at the Westin and ran,ran,END,SLANT,cmu,MED,Y
+Check,25,"Four rings, got a Audi on my hand",rings,26,Bust that bitch down at the Westin and ran,bitch,INNER,ASSONANCE,vowel,MED,Y
+Check,25,"Four rings, got a Audi on my hand",hand,27,"Playboy, two bad bitches from Instagram",Instagram,END,ASSONANCE,vowel,MED,Y
+Check,25,"Four rings, got a Audi on my hand",hand,27,"Playboy, two bad bitches from Instagram",bad,INNER,SLANT,cmu,MED,Y
+Check,25,"Four rings, got a Audi on my hand",rings,27,"Playboy, two bad bitches from Instagram",bitches,INNER,SLANT,cmu,MED,Y
+Check,25,"Four rings, got a Audi on my hand",hand,28,"Swerving, serving, give me one minute, man",man,END,SLANT,cmu,MED,Y
+Check,25,"Four rings, got a Audi on my hand",hand,29,"Gun in my hand, I can't fuck up my pants",pants,END,ASSONANCE,vowel,MED,Y
+Check,26,Bust that bitch down at the Westin and ran,ran,27,"Playboy, two bad bitches from Instagram",Instagram,END,SLANT,cmu,MED,Y
+Check,26,Bust that bitch down at the Westin and ran,bitch,27,"Playboy, two bad bitches from Instagram",bitches,INNER,SLANT,cmu,MED,Y
+Check,26,Bust that bitch down at the Westin and ran,ran,27,"Playboy, two bad bitches from Instagram",bad,INNER,SLANT,cmu,MED,Y
+Check,26,Bust that bitch down at the Westin and ran,ran,28,"Swerving, serving, give me one minute, man",man,END,PERFECT,cmu,HIGH,Y
+Check,26,Bust that bitch down at the Westin and ran,bitch,28,"Swerving, serving, give me one minute, man",give,INNER,SLANT,cmu,MED,Y
+Check,26,Bust that bitch down at the Westin and ran,bitch,28,"Swerving, serving, give me one minute, man",minute,INNER,ASSONANCE,vowel,MED,Y
+Check,26,Bust that bitch down at the Westin and ran,Bust,28,"Swerving, serving, give me one minute, man",one,INNER,ASSONANCE,vowel,MED,Y
+Check,26,Bust that bitch down at the Westin and ran,ran,29,"Gun in my hand, I can't fuck up my pants",pants,END,ASSONANCE,vowel,MED,Y
+Check,26,Bust that bitch down at the Westin and ran,ran,30,"Diamonds dab, nigga, see how they dance",dance,END,SLANT,cmu,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",bad,27,"Playboy, two bad bitches from Instagram",Instagram,INNER,SLANT,cmu,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",Instagram,28,"Swerving, serving, give me one minute, man",man,END,SLANT,cmu,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",bad,28,"Swerving, serving, give me one minute, man",man,INNER,SLANT,cmu,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",bitches,28,"Swerving, serving, give me one minute, man",give,INNER,ASSONANCE,vowel,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",bitches,28,"Swerving, serving, give me one minute, man",minute,INNER,ASSONANCE,vowel,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",Instagram,29,"Gun in my hand, I can't fuck up my pants",pants,END,ASSONANCE,vowel,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",bad,29,"Gun in my hand, I can't fuck up my pants",can't,INNER,ASSONANCE,vowel,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",bad,29,"Gun in my hand, I can't fuck up my pants",hand,INNER,SLANT,cmu,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",bad,29,"Gun in my hand, I can't fuck up my pants",pants,INNER,ASSONANCE,vowel,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",Instagram,29,"Gun in my hand, I can't fuck up my pants",can't,INNER,ASSONANCE,vowel,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",Instagram,29,"Gun in my hand, I can't fuck up my pants",hand,INNER,ASSONANCE,vowel,MED,Y
+Check,27,"Playboy, two bad bitches from Instagram",Instagram,30,"Diamonds dab, nigga, see how they dance",dance,END,ASSONANCE,vowel,MED,Y
+Check,28,"Swerving, serving, give me one minute, man",give,28,"Swerving, serving, give me one minute, man",minute,INNER,ASSONANCE,vowel,MED,Y
+Check,28,"Swerving, serving, give me one minute, man",Swerving,28,"Swerving, serving, give me one minute, man",serving,INNER,MULTI,multi,MED,Y
+Check,28,"Swerving, serving, give me one minute, man",man,29,"Gun in my hand, I can't fuck up my pants",pants,END,ASSONANCE,vowel,MED,Y
+Check,28,"Swerving, serving, give me one minute, man",man,29,"Gun in my hand, I can't fuck up my pants",can't,INNER,SLANT,cmu,MED,Y
+Check,28,"Swerving, serving, give me one minute, man",man,29,"Gun in my hand, I can't fuck up my pants",hand,INNER,SLANT,cmu,MED,Y
+Check,28,"Swerving, serving, give me one minute, man",one,29,"Gun in my hand, I can't fuck up my pants",fuck,INNER,SLANT,cmu,MED,Y
+Check,28,"Swerving, serving, give me one minute, man",one,29,"Gun in my hand, I can't fuck up my pants",Gun,INNER,PERFECT,cmu,HIGH,Y
+Check,28,"Swerving, serving, give me one minute, man",man,30,"Diamonds dab, nigga, see how they dance",dance,END,SLANT,cmu,MED,Y
+Check,28,"Swerving, serving, give me one minute, man",man,30,"Diamonds dab, nigga, see how they dance",dab,INNER,SLANT,cmu,MED,Y
+Check,28,"Swerving, serving, give me one minute, man",man,32,"Watch the door, we got the dope in the pan",pan,END,PERFECT,cmu,HIGH,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",can't,29,"Gun in my hand, I can't fuck up my pants",pants,INNER,SLANT,cmu,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",Gun,29,"Gun in my hand, I can't fuck up my pants",fuck,INNER,SLANT,cmu,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",hand,29,"Gun in my hand, I can't fuck up my pants",can't,INNER,SLANT,cmu,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",hand,29,"Gun in my hand, I can't fuck up my pants",pants,INNER,ASSONANCE,vowel,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",pants,30,"Diamonds dab, nigga, see how they dance",dance,END,SLANT,cmu,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",can't,30,"Diamonds dab, nigga, see how they dance",dab,INNER,ASSONANCE,vowel,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",can't,30,"Diamonds dab, nigga, see how they dance",dance,INNER,SLANT,cmu,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",hand,30,"Diamonds dab, nigga, see how they dance",dab,INNER,ASSONANCE,vowel,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",hand,30,"Diamonds dab, nigga, see how they dance",dance,INNER,SLANT,cmu,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",pants,30,"Diamonds dab, nigga, see how they dance",dab,INNER,ASSONANCE,vowel,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",pants,32,"Watch the door, we got the dope in the pan",pan,END,ASSONANCE,vowel,MED,Y
+Check,29,"Gun in my hand, I can't fuck up my pants",pants,33,Fly nigga like I'm Peter Pan,Pan,END,ASSONANCE,vowel,MED,Y
+Check,30,"Diamonds dab, nigga, see how they dance",dab,30,"Diamonds dab, nigga, see how they dance",dance,INNER,ASSONANCE,vowel,MED,Y
+Check,30,"Diamonds dab, nigga, see how they dance",nigga,31,"Real nigga, I'm just saying",nigga,INNER,REPEAT,spelling,HIGH,N
+Check,30,"Diamonds dab, nigga, see how they dance",see,31,"Real nigga, I'm just saying",Real,INNER,ASSONANCE,vowel,MED,Y
+Check,30,"Diamonds dab, nigga, see how they dance",dance,32,"Watch the door, we got the dope in the pan",pan,END,SLANT,cmu,MED,Y
+Check,30,"Diamonds dab, nigga, see how they dance",dab,32,"Watch the door, we got the dope in the pan",pan,INNER,SLANT,cmu,MED,Y
+Check,30,"Diamonds dab, nigga, see how they dance",dance,33,Fly nigga like I'm Peter Pan,Pan,END,SLANT,cmu,MED,Y
+Check,31,"Real nigga, I'm just saying",nigga,33,Fly nigga like I'm Peter Pan,nigga,INNER,REPEAT,spelling,HIGH,N
+Check,31,"Real nigga, I'm just saying",Real,33,Fly nigga like I'm Peter Pan,Peter,INNER,SLANT,cmu,MED,Y
+Check,32,"Watch the door, we got the dope in the pan",Watch,32,"Watch the door, we got the dope in the pan",got,INNER,SLANT,cmu,MED,Y
+Check,32,"Watch the door, we got the dope in the pan",pan,33,Fly nigga like I'm Peter Pan,Pan,END,REPEAT,spelling,HIGH,N
+Check,32,"Watch the door, we got the dope in the pan",dope,34,"I woke up, these niggas acting like me",woke,INNER,SLANT,cmu,MED,Y
+Check,32,"Watch the door, we got the dope in the pan",pan,34,"I woke up, these niggas acting like me",acting,INNER,ASSONANCE,vowel,MED,Y
+Check,33,Fly nigga like I'm Peter Pan,Fly,33,Fly nigga like I'm Peter Pan,like,INNER,ASSONANCE,vowel,MED,Y
+Check,33,Fly nigga like I'm Peter Pan,Fly,34,"I woke up, these niggas acting like me",like,INNER,ASSONANCE,vowel,MED,Y
+Check,33,Fly nigga like I'm Peter Pan,like,34,"I woke up, these niggas acting like me",like,INNER,REPEAT,spelling,HIGH,N
+Check,33,Fly nigga like I'm Peter Pan,nigga,34,"I woke up, these niggas acting like me",niggas,INNER,SLANT,spelling,LOW,Y
+Check,33,Fly nigga like I'm Peter Pan,Pan,34,"I woke up, these niggas acting like me",acting,INNER,ASSONANCE,vowel,MED,Y
+Check,33,Fly nigga like I'm Peter Pan,Peter,34,"I woke up, these niggas acting like me",these,INNER,SLANT,cmu,MED,Y
+Check,33,Fly nigga like I'm Peter Pan,Fly,35,"They trying to be, but these niggas nothing like me",like,INNER,ASSONANCE,vowel,MED,Y
+Check,33,Fly nigga like I'm Peter Pan,Fly,35,"They trying to be, but these niggas nothing like me",trying,INNER,ASSONANCE,vowel,MED,Y
+Check,33,Fly nigga like I'm Peter Pan,like,35,"They trying to be, but these niggas nothing like me",like,INNER,REPEAT,spelling,HIGH,N
+Check,33,Fly nigga like I'm Peter Pan,like,35,"They trying to be, but these niggas nothing like me",trying,INNER,SLANT,cmu,MED,Y
+Check,33,Fly nigga like I'm Peter Pan,nigga,35,"They trying to be, but these niggas nothing like me",niggas,INNER,SLANT,spelling,LOW,Y
+Check,33,Fly nigga like I'm Peter Pan,Peter,35,"They trying to be, but these niggas nothing like me",these,INNER,SLANT,cmu,MED,Y
+Check,34,"I woke up, these niggas acting like me",like,35,"They trying to be, but these niggas nothing like me",like,END,REPEAT,spelling,HIGH,N
+Check,34,"I woke up, these niggas acting like me",like,35,"They trying to be, but these niggas nothing like me",trying,INNER,SLANT,cmu,MED,Y
+Check,34,"I woke up, these niggas acting like me",niggas,35,"They trying to be, but these niggas nothing like me",niggas,INNER,REPEAT,spelling,HIGH,N
+Check,34,"I woke up, these niggas acting like me",these,35,"They trying to be, but these niggas nothing like me",these,INNER,REPEAT,spelling,HIGH,N
+Check,34,"I woke up, these niggas acting like me",these,36,Pop me a bar and I fucked up that Louis V,V,INNER,ASSONANCE,vowel,MED,Y
+Check,35,"They trying to be, but these niggas nothing like me",trying,35,"They trying to be, but these niggas nothing like me",like,INNER,SLANT,cmu,MED,Y
+Check,35,"They trying to be, but these niggas nothing like me",nothing,36,Pop me a bar and I fucked up that Louis V,fucked,INNER,ASSONANCE,vowel,MED,Y
+Check,35,"They trying to be, but these niggas nothing like me",these,36,Pop me a bar and I fucked up that Louis V,V,INNER,ASSONANCE,vowel,MED,Y
+Check,35,"They trying to be, but these niggas nothing like me",nothing,37,"Fucked your little bitch, I forgot she remembered me",Fucked,INNER,ASSONANCE,vowel,MED,Y
+Check,36,Pop me a bar and I fucked up that Louis V,Pop,36,Pop me a bar and I fucked up that Louis V,bar,INNER,SLANT,cmu,MED,Y
+Check,36,Pop me a bar and I fucked up that Louis V,bar,37,"Fucked your little bitch, I forgot she remembered me",forgot,INNER,SLANT,cmu,MED,Y
+Check,36,Pop me a bar and I fucked up that Louis V,fucked,37,"Fucked your little bitch, I forgot she remembered me",Fucked,INNER,REPEAT,spelling,HIGH,N
+Check,36,Pop me a bar and I fucked up that Louis V,Pop,37,"Fucked your little bitch, I forgot she remembered me",forgot,INNER,SLANT,cmu,MED,Y
+Check,36,Pop me a bar and I fucked up that Louis V,bar,38,We drunk that lean and that shots of that Hennessy,shots,INNER,ASSONANCE,vowel,MED,Y
+Check,36,Pop me a bar and I fucked up that Louis V,fucked,38,We drunk that lean and that shots of that Hennessy,drunk,INNER,ASSONANCE,vowel,MED,Y
+Check,36,Pop me a bar and I fucked up that Louis V,Pop,38,We drunk that lean and that shots of that Hennessy,shots,INNER,ASSONANCE,vowel,MED,Y
+Check,36,Pop me a bar and I fucked up that Louis V,V,38,We drunk that lean and that shots of that Hennessy,lean,INNER,ASSONANCE,vowel,MED,Y
+Check,36,Pop me a bar and I fucked up that Louis V,V,40,"I ain't up 20 mil' yet, but I'm finna be",finna,END,PERFECT,cmu,HIGH,Y
+Check,37,"Fucked your little bitch, I forgot she remembered me",little,37,"Fucked your little bitch, I forgot she remembered me",bitch,INNER,ASSONANCE,vowel,MED,Y
+Check,37,"Fucked your little bitch, I forgot she remembered me",remembered,38,We drunk that lean and that shots of that Hennessy,Hennessy,END,ASSONANCE,vowel,MED,Y
+Check,37,"Fucked your little bitch, I forgot she remembered me",forgot,38,We drunk that lean and that shots of that Hennessy,shots,INNER,SLANT,cmu,MED,Y
+Check,37,"Fucked your little bitch, I forgot she remembered me",Fucked,38,We drunk that lean and that shots of that Hennessy,drunk,INNER,ASSONANCE,vowel,MED,Y
+Check,37,"Fucked your little bitch, I forgot she remembered me",remembered,39,"Glock 40, 30 shots for my enemy",enemy,END,ASSONANCE,vowel,MED,Y
+Check,37,"Fucked your little bitch, I forgot she remembered me",forgot,39,"Glock 40, 30 shots for my enemy",Glock,INNER,SLANT,cmu,MED,Y
+Check,37,"Fucked your little bitch, I forgot she remembered me",forgot,39,"Glock 40, 30 shots for my enemy",shots,INNER,SLANT,cmu,MED,Y
+Check,38,We drunk that lean and that shots of that Hennessy,Hennessy,39,"Glock 40, 30 shots for my enemy",enemy,END,SLANT,cmu,MED,Y
+Check,38,We drunk that lean and that shots of that Hennessy,shots,39,"Glock 40, 30 shots for my enemy",Glock,INNER,ASSONANCE,vowel,MED,Y
+Check,38,We drunk that lean and that shots of that Hennessy,shots,39,"Glock 40, 30 shots for my enemy",shots,INNER,REPEAT,spelling,HIGH,N
+Check,38,We drunk that lean and that shots of that Hennessy,Hennessy,40,"I ain't up 20 mil' yet, but I'm finna be",yet,INNER,ASSONANCE,vowel,MED,Y
+Check,38,We drunk that lean and that shots of that Hennessy,lean,40,"I ain't up 20 mil' yet, but I'm finna be",finna,INNER,ASSONANCE,vowel,MED,Y
+Check,39,"Glock 40, 30 shots for my enemy",Glock,39,"Glock 40, 30 shots for my enemy",shots,INNER,ASSONANCE,vowel,MED,Y
+Check,39,"Glock 40, 30 shots for my enemy",enemy,40,"I ain't up 20 mil' yet, but I'm finna be",yet,INNER,ASSONANCE,vowel,MED,Y
+Check,40,"I ain't up 20 mil' yet, but I'm finna be",finna,41,"Rich nigga in the hood, street niggas feeling me",feeling,END,ASSONANCE,vowel,MED,Y
+Check,40,"I ain't up 20 mil' yet, but I'm finna be",finna,41,"Rich nigga in the hood, street niggas feeling me",street,INNER,ASSONANCE,vowel,MED,Y
+Check,40,"I ain't up 20 mil' yet, but I'm finna be",mil,41,"Rich nigga in the hood, street niggas feeling me",Rich,INNER,SLANT,cmu,MED,Y
+Check,40,"I ain't up 20 mil' yet, but I'm finna be",finna,42,Got these bitches digging me,these,INNER,ASSONANCE,vowel,MED,Y
+Check,40,"I ain't up 20 mil' yet, but I'm finna be",mil,42,Got these bitches digging me,bitches,INNER,ASSONANCE,vowel,MED,Y
+Check,40,"I ain't up 20 mil' yet, but I'm finna be",mil,42,Got these bitches digging me,digging,INNER,ASSONANCE,vowel,MED,Y
+Check,40,"I ain't up 20 mil' yet, but I'm finna be",finna,43,She hold my dick for me while I pee,pee,END,PERFECT,cmu,HIGH,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",nigga,41,"Rich nigga in the hood, street niggas feeling me",niggas,INNER,SLANT,spelling,LOW,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",street,41,"Rich nigga in the hood, street niggas feeling me",feeling,INNER,ASSONANCE,vowel,MED,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",feeling,42,Got these bitches digging me,these,INNER,ASSONANCE,vowel,MED,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",nigga,42,Got these bitches digging me,digging,INNER,SLANT,spelling,LOW,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",Rich,42,Got these bitches digging me,bitches,INNER,SLANT,cmu,MED,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",Rich,42,Got these bitches digging me,digging,INNER,ASSONANCE,vowel,MED,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",street,42,Got these bitches digging me,these,INNER,SLANT,cmu,MED,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",feeling,43,She hold my dick for me while I pee,pee,END,ASSONANCE,vowel,MED,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",nigga,43,She hold my dick for me while I pee,dick,INNER,SLANT,spelling,LOW,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",Rich,43,She hold my dick for me while I pee,dick,INNER,SLANT,cmu,MED,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",street,43,She hold my dick for me while I pee,pee,INNER,ASSONANCE,vowel,MED,Y
+Check,41,"Rich nigga in the hood, street niggas feeling me",feeling,45,Rocking Chanel with the double C,C,END,ASSONANCE,vowel,MED,Y
+Check,42,Got these bitches digging me,bitches,42,Got these bitches digging me,digging,INNER,ASSONANCE,vowel,MED,Y
+Check,42,Got these bitches digging me,bitches,43,She hold my dick for me while I pee,dick,INNER,ASSONANCE,vowel,MED,Y
+Check,42,Got these bitches digging me,digging,43,She hold my dick for me while I pee,dick,INNER,ASSONANCE,vowel,MED,Y
+Check,42,Got these bitches digging me,these,43,She hold my dick for me while I pee,pee,INNER,ASSONANCE,vowel,MED,Y
+Check,42,Got these bitches digging me,bitches,44,"Fresh as a bitch, they like, ""Who is he?""",bitch,INNER,SLANT,cmu,MED,Y
+Check,42,Got these bitches digging me,digging,44,"Fresh as a bitch, they like, ""Who is he?""",bitch,INNER,ASSONANCE,vowel,MED,Y
+Check,43,She hold my dick for me while I pee,dick,44,"Fresh as a bitch, they like, ""Who is he?""",bitch,INNER,SLANT,cmu,MED,Y
+Check,43,She hold my dick for me while I pee,while,44,"Fresh as a bitch, they like, ""Who is he?""",like,INNER,SLANT,cmu,MED,Y
+Check,43,She hold my dick for me while I pee,pee,45,Rocking Chanel with the double C,C,END,PERFECT,cmu,HIGH,Y
+Check,43,She hold my dick for me while I pee,pee,46,Your bitch really ain't my cup of tea,tea,END,PERFECT,cmu,HIGH,Y
+Check,44,"Fresh as a bitch, they like, ""Who is he?""",Fresh,45,Rocking Chanel with the double C,Chanel,INNER,SLANT,cmu,MED,Y
+Check,44,"Fresh as a bitch, they like, ""Who is he?""",bitch,46,Your bitch really ain't my cup of tea,bitch,INNER,REPEAT,spelling,HIGH,N
+Check,44,"Fresh as a bitch, they like, ""Who is he?""",bitch,46,Your bitch really ain't my cup of tea,really,INNER,SLANT,cmu,MED,Y
+Check,45,Rocking Chanel with the double C,C,46,Your bitch really ain't my cup of tea,tea,END,PERFECT,cmu,HIGH,Y
+Check,45,Rocking Chanel with the double C,double,46,Your bitch really ain't my cup of tea,cup,INNER,ASSONANCE,vowel,MED,Y
+Check,45,Rocking Chanel with the double C,double,47,"One of one, nigga, custom me",custom,INNER,ASSONANCE,vowel,MED,Y
+Check,45,Rocking Chanel with the double C,double,47,"One of one, nigga, custom me",One,INNER,ASSONANCE,vowel,MED,Y
+Check,46,Your bitch really ain't my cup of tea,bitch,46,Your bitch really ain't my cup of tea,really,INNER,SLANT,cmu,MED,Y
+Check,46,Your bitch really ain't my cup of tea,cup,47,"One of one, nigga, custom me",custom,INNER,ASSONANCE,vowel,MED,Y
+Check,46,Your bitch really ain't my cup of tea,cup,47,"One of one, nigga, custom me",One,INNER,SLANT,cmu,MED,Y
+Check,46,Your bitch really ain't my cup of tea,cup,48,They wanna know what the recipe,what,INNER,SLANT,cmu,MED,Y
+Check,47,"One of one, nigga, custom me",One,47,"One of one, nigga, custom me",custom,INNER,ASSONANCE,vowel,MED,Y
+Check,47,"One of one, nigga, custom me",One,47,"One of one, nigga, custom me",one,INNER,REPEAT,spelling,HIGH,N
+Check,47,"One of one, nigga, custom me",custom,48,They wanna know what the recipe,what,INNER,ASSONANCE,vowel,MED,Y
+Check,47,"One of one, nigga, custom me",One,48,They wanna know what the recipe,what,INNER,SLANT,cmu,MED,Y
+Check,48,They wanna know what the recipe,recipe,49,Gold on my neck like a treasury,treasury,END,ASSONANCE,vowel,MED,Y
+Check,48,They wanna know what the recipe,know,49,Gold on my neck like a treasury,Gold,INNER,ASSONANCE,vowel,MED,Y
+Check,48,They wanna know what the recipe,recipe,49,Gold on my neck like a treasury,neck,INNER,ASSONANCE,vowel,MED,Y
+Check,49,Gold on my neck like a treasury,neck,49,Gold on my neck like a treasury,treasury,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,1,Riding in the foreign with a bad bitch,bad,2,She suck the dick like a savage,savage,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,1,Riding in the foreign with a bad bitch,bitch,2,She suck the dick like a savage,dick,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,1,Riding in the foreign with a bad bitch,Riding,2,She suck the dick like a savage,like,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,1,Riding in the foreign with a bad bitch,bad,3,Diamonds outside the Cartier glasses,glasses,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,1,Riding in the foreign with a bad bitch,Riding,3,Diamonds outside the Cartier glasses,Diamonds,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,1,Riding in the foreign with a bad bitch,Riding,3,Diamonds outside the Cartier glasses,outside,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,2,She suck the dick like a savage,savage,3,Diamonds outside the Cartier glasses,glasses,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,2,She suck the dick like a savage,like,3,Diamonds outside the Cartier glasses,Diamonds,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,2,She suck the dick like a savage,like,3,Diamonds outside the Cartier glasses,outside,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,2,She suck the dick like a savage,savage,4,I got them racks in my baggage,baggage,END,SLANT,cmu,MED,Y
+They Can’t Stand It,2,She suck the dick like a savage,savage,4,I got them racks in my baggage,racks,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,2,She suck the dick like a savage,savage,5,"I got them racks, they can't stand it",stand,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,2,She suck the dick like a savage,savage,6,"Louis bandana, wrapped up like a bandit",bandit,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,Diamonds,3,Diamonds outside the Cartier glasses,outside,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,glasses,4,I got them racks in my baggage,baggage,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,Cartier,4,I got them racks in my baggage,got,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,glasses,4,I got them racks in my baggage,racks,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,glasses,5,"I got them racks, they can't stand it",stand,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,Cartier,5,"I got them racks, they can't stand it",got,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,glasses,5,"I got them racks, they can't stand it",can't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,glasses,5,"I got them racks, they can't stand it",racks,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,glasses,6,"Louis bandana, wrapped up like a bandit",bandit,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,3,Diamonds outside the Cartier glasses,glasses,7,I just might fuck your little bitch in a mansion,mansion,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,racks,4,I got them racks in my baggage,baggage,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,baggage,5,"I got them racks, they can't stand it",stand,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,baggage,5,"I got them racks, they can't stand it",can't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,baggage,5,"I got them racks, they can't stand it",racks,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,got,5,"I got them racks, they can't stand it",got,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,4,I got them racks in my baggage,racks,5,"I got them racks, they can't stand it",can't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,racks,5,"I got them racks, they can't stand it",racks,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,4,I got them racks in my baggage,racks,5,"I got them racks, they can't stand it",stand,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,baggage,6,"Louis bandana, wrapped up like a bandit",bandit,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,baggage,6,"Louis bandana, wrapped up like a bandit",bandana,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,baggage,6,"Louis bandana, wrapped up like a bandit",wrapped,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,racks,6,"Louis bandana, wrapped up like a bandit",bandana,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,racks,6,"Louis bandana, wrapped up like a bandit",bandit,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,racks,6,"Louis bandana, wrapped up like a bandit",wrapped,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,baggage,7,I just might fuck your little bitch in a mansion,mansion,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,4,I got them racks in my baggage,baggage,8,They pour up the lean when I landed,landed,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",can't,5,"I got them racks, they can't stand it",stand,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",racks,5,"I got them racks, they can't stand it",can't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",racks,5,"I got them racks, they can't stand it",stand,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",stand,6,"Louis bandana, wrapped up like a bandit",bandit,END,SLANT,cmu,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",can't,6,"Louis bandana, wrapped up like a bandit",bandana,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",can't,6,"Louis bandana, wrapped up like a bandit",bandit,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",can't,6,"Louis bandana, wrapped up like a bandit",wrapped,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",racks,6,"Louis bandana, wrapped up like a bandit",bandana,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",racks,6,"Louis bandana, wrapped up like a bandit",bandit,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",racks,6,"Louis bandana, wrapped up like a bandit",wrapped,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",stand,6,"Louis bandana, wrapped up like a bandit",bandana,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",stand,6,"Louis bandana, wrapped up like a bandit",wrapped,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",stand,7,I just might fuck your little bitch in a mansion,mansion,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",can't,7,I just might fuck your little bitch in a mansion,mansion,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",racks,7,I just might fuck your little bitch in a mansion,mansion,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",stand,8,They pour up the lean when I landed,landed,END,SLANT,cmu,MED,Y
+They Can’t Stand It,5,"I got them racks, they can't stand it",stand,9,"Pull up in foreign, my diamonds dancing",dancing,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",bandana,6,"Louis bandana, wrapped up like a bandit",bandit,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",bandana,6,"Louis bandana, wrapped up like a bandit",wrapped,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",wrapped,6,"Louis bandana, wrapped up like a bandit",bandit,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",bandit,7,I just might fuck your little bitch in a mansion,mansion,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",bandana,7,I just might fuck your little bitch in a mansion,mansion,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",like,7,I just might fuck your little bitch in a mansion,might,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",wrapped,7,I just might fuck your little bitch in a mansion,mansion,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",bandit,8,They pour up the lean when I landed,landed,END,SLANT,cmu,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",bandana,8,They pour up the lean when I landed,landed,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",wrapped,8,They pour up the lean when I landed,landed,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",bandit,9,"Pull up in foreign, my diamonds dancing",dancing,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,6,"Louis bandana, wrapped up like a bandit",bandit,10,Rockstar like I'm Marilyn Manson,Manson,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,7,I just might fuck your little bitch in a mansion,little,7,I just might fuck your little bitch in a mansion,bitch,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,7,I just might fuck your little bitch in a mansion,mansion,8,They pour up the lean when I landed,landed,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,7,I just might fuck your little bitch in a mansion,mansion,9,"Pull up in foreign, my diamonds dancing",dancing,END,SLANT,cmu,MED,Y
+They Can’t Stand It,7,I just might fuck your little bitch in a mansion,might,9,"Pull up in foreign, my diamonds dancing",diamonds,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,7,I just might fuck your little bitch in a mansion,mansion,10,Rockstar like I'm Marilyn Manson,Manson,END,SLANT,cmu,MED,Y
+They Can’t Stand It,8,They pour up the lean when I landed,landed,9,"Pull up in foreign, my diamonds dancing",dancing,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,8,They pour up the lean when I landed,pour,9,"Pull up in foreign, my diamonds dancing",foreign,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,8,They pour up the lean when I landed,landed,10,Rockstar like I'm Marilyn Manson,Manson,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,8,They pour up the lean when I landed,when,10,Rockstar like I'm Marilyn Manson,Marilyn,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,9,"Pull up in foreign, my diamonds dancing",dancing,10,Rockstar like I'm Marilyn Manson,Manson,END,SLANT,cmu,MED,Y
+They Can’t Stand It,9,"Pull up in foreign, my diamonds dancing",diamonds,10,Rockstar like I'm Marilyn Manson,like,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,9,"Pull up in foreign, my diamonds dancing",diamonds,11,Riding in a drop top foreign,Riding,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,9,"Pull up in foreign, my diamonds dancing",foreign,11,Riding in a drop top foreign,foreign,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,10,Rockstar like I'm Marilyn Manson,like,11,Riding in a drop top foreign,Riding,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,10,Rockstar like I'm Marilyn Manson,Rockstar,11,Riding in a drop top foreign,drop,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,10,Rockstar like I'm Marilyn Manson,Rockstar,11,Riding in a drop top foreign,top,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,10,Rockstar like I'm Marilyn Manson,Manson,12,"Got a foreign, gon' get me the top when I'm horny",gon,INNER,PERFECT,spelling,MED,Y
+They Can’t Stand It,10,Rockstar like I'm Marilyn Manson,Marilyn,12,"Got a foreign, gon' get me the top when I'm horny",get,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,10,Rockstar like I'm Marilyn Manson,Marilyn,12,"Got a foreign, gon' get me the top when I'm horny",when,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,10,Rockstar like I'm Marilyn Manson,Rockstar,12,"Got a foreign, gon' get me the top when I'm horny",Got,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,10,Rockstar like I'm Marilyn Manson,Rockstar,12,"Got a foreign, gon' get me the top when I'm horny",top,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,11,Riding in a drop top foreign,drop,11,Riding in a drop top foreign,top,INNER,PERFECT,cmu,HIGH,Y
+They Can’t Stand It,11,Riding in a drop top foreign,foreign,12,"Got a foreign, gon' get me the top when I'm horny",horny,END,SLANT,cmu,MED,Y
+They Can’t Stand It,11,Riding in a drop top foreign,drop,12,"Got a foreign, gon' get me the top when I'm horny",Got,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,11,Riding in a drop top foreign,drop,12,"Got a foreign, gon' get me the top when I'm horny",top,INNER,PERFECT,cmu,HIGH,Y
+They Can’t Stand It,11,Riding in a drop top foreign,foreign,12,"Got a foreign, gon' get me the top when I'm horny",foreign,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,11,Riding in a drop top foreign,top,12,"Got a foreign, gon' get me the top when I'm horny",Got,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,11,Riding in a drop top foreign,top,12,"Got a foreign, gon' get me the top when I'm horny",top,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,11,Riding in a drop top foreign,foreign,13,"Just popped the seal on the Hitech, we pouring",pouring,END,SLANT,cmu,MED,Y
+They Can’t Stand It,11,Riding in a drop top foreign,drop,13,"Just popped the seal on the Hitech, we pouring",popped,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,11,Riding in a drop top foreign,top,13,"Just popped the seal on the Hitech, we pouring",popped,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,11,Riding in a drop top foreign,foreign,14,Made a pineapple Fanta dirty orange,orange,END,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",foreign,12,"Got a foreign, gon' get me the top when I'm horny",horny,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",get,12,"Got a foreign, gon' get me the top when I'm horny",when,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",Got,12,"Got a foreign, gon' get me the top when I'm horny",top,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",horny,13,"Just popped the seal on the Hitech, we pouring",pouring,END,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",foreign,13,"Just popped the seal on the Hitech, we pouring",pouring,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",Got,13,"Just popped the seal on the Hitech, we pouring",popped,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",top,13,"Just popped the seal on the Hitech, we pouring",popped,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",horny,14,Made a pineapple Fanta dirty orange,orange,END,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",foreign,14,Made a pineapple Fanta dirty orange,orange,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",Got,14,Made a pineapple Fanta dirty orange,Fanta,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,12,"Got a foreign, gon' get me the top when I'm horny",top,14,Made a pineapple Fanta dirty orange,Fanta,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,13,"Just popped the seal on the Hitech, we pouring",pouring,14,Made a pineapple Fanta dirty orange,orange,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,13,"Just popped the seal on the Hitech, we pouring",popped,14,Made a pineapple Fanta dirty orange,Fanta,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,13,"Just popped the seal on the Hitech, we pouring",popped,15,Tatted all over my arm,arm,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,13,"Just popped the seal on the Hitech, we pouring",pouring,15,Tatted all over my arm,all,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,13,"Just popped the seal on the Hitech, we pouring",pouring,17,"I walk in the club, make it storm",storm,END,SLANT,cmu,MED,Y
+They Can’t Stand It,14,Made a pineapple Fanta dirty orange,Fanta,15,Tatted all over my arm,arm,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,14,Made a pineapple Fanta dirty orange,orange,15,Tatted all over my arm,all,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,14,Made a pineapple Fanta dirty orange,pineapple,15,Tatted all over my arm,Tatted,INNER,ASSONANCE,vowel,LOW,N
+They Can’t Stand It,14,Made a pineapple Fanta dirty orange,Fanta,16,Ice all on my charm,charm,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,14,Made a pineapple Fanta dirty orange,orange,16,Ice all on my charm,all,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,14,Made a pineapple Fanta dirty orange,orange,17,"I walk in the club, make it storm",storm,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,15,Tatted all over my arm,arm,16,Ice all on my charm,charm,END,PERFECT,cmu,HIGH,Y
+They Can’t Stand It,15,Tatted all over my arm,all,16,Ice all on my charm,all,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,15,Tatted all over my arm,all,17,"I walk in the club, make it storm",storm,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,15,Tatted all over my arm,all,17,"I walk in the club, make it storm",walk,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,15,Tatted all over my arm,arm,18,"Louis to the head up, Farrakhan",Farrakhan,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,15,Tatted all over my arm,arm,19,"Roll up a baseball bat, Barry Bonds",Bonds,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,16,Ice all on my charm,all,17,"I walk in the club, make it storm",storm,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,16,Ice all on my charm,all,17,"I walk in the club, make it storm",walk,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,16,Ice all on my charm,charm,18,"Louis to the head up, Farrakhan",Farrakhan,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,16,Ice all on my charm,charm,19,"Roll up a baseball bat, Barry Bonds",Bonds,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,17,"I walk in the club, make it storm",walk,17,"I walk in the club, make it storm",storm,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,17,"I walk in the club, make it storm",storm,19,"Roll up a baseball bat, Barry Bonds",baseball,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,17,"I walk in the club, make it storm",walk,19,"Roll up a baseball bat, Barry Bonds",baseball,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,17,"I walk in the club, make it storm",storm,21,"I fucked that little bitch like a savage, then I'm gone",gone,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,18,"Louis to the head up, Farrakhan",Farrakhan,19,"Roll up a baseball bat, Barry Bonds",Bonds,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,18,"Louis to the head up, Farrakhan",Farrakhan,20,"Turbo OG, smoke all up in my lungs",OG,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,19,"Roll up a baseball bat, Barry Bonds",bat,19,"Roll up a baseball bat, Barry Bonds",Barry,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,19,"Roll up a baseball bat, Barry Bonds",baseball,20,"Turbo OG, smoke all up in my lungs",all,INNER,PERFECT,cmu,HIGH,Y
+They Can’t Stand It,19,"Roll up a baseball bat, Barry Bonds",Bonds,20,"Turbo OG, smoke all up in my lungs",OG,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,19,"Roll up a baseball bat, Barry Bonds",Roll,20,"Turbo OG, smoke all up in my lungs",smoke,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,19,"Roll up a baseball bat, Barry Bonds",Barry,21,"I fucked that little bitch like a savage, then I'm gone",savage,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,19,"Roll up a baseball bat, Barry Bonds",baseball,21,"I fucked that little bitch like a savage, then I'm gone",gone,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,19,"Roll up a baseball bat, Barry Bonds",bat,21,"I fucked that little bitch like a savage, then I'm gone",savage,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,20,"Turbo OG, smoke all up in my lungs",all,21,"I fucked that little bitch like a savage, then I'm gone",gone,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,20,"Turbo OG, smoke all up in my lungs",lungs,21,"I fucked that little bitch like a savage, then I'm gone",fucked,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,20,"Turbo OG, smoke all up in my lungs",OG,22,I got the savages selling and heroin,got,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,21,"I fucked that little bitch like a savage, then I'm gone",little,21,"I fucked that little bitch like a savage, then I'm gone",bitch,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,21,"I fucked that little bitch like a savage, then I'm gone",savage,22,I got the savages selling and heroin,savages,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,21,"I fucked that little bitch like a savage, then I'm gone",bitch,23,I like that raw Hitech like the redbone,Hitech,INNER,SLANT,spelling,LOW,Y
+They Can’t Stand It,21,"I fucked that little bitch like a savage, then I'm gone",like,23,I like that raw Hitech like the redbone,like,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,21,"I fucked that little bitch like a savage, then I'm gone",little,23,I like that raw Hitech like the redbone,Hitech,INNER,SLANT,spelling,LOW,Y
+They Can’t Stand It,22,I got the savages selling and heroin,selling,22,I got the savages selling and heroin,heroin,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,22,I got the savages selling and heroin,got,23,I like that raw Hitech like the redbone,raw,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,22,I got the savages selling and heroin,heroin,24,"Good brain, so she got a good head on",head,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,22,I got the savages selling and heroin,got,24,"Good brain, so she got a good head on",got,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,22,I got the savages selling and heroin,selling,24,"Good brain, so she got a good head on",head,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,23,I like that raw Hitech like the redbone,like,23,I like that raw Hitech like the redbone,like,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,23,I like that raw Hitech like the redbone,raw,24,"Good brain, so she got a good head on",got,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,23,I like that raw Hitech like the redbone,raw,25,"Pablo and Sosa, the world in our palms",Pablo,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,23,I like that raw Hitech like the redbone,raw,25,"Pablo and Sosa, the world in our palms",palms,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,24,"Good brain, so she got a good head on",Good,24,"Good brain, so she got a good head on",good,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,24,"Good brain, so she got a good head on",got,25,"Pablo and Sosa, the world in our palms",Pablo,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,24,"Good brain, so she got a good head on",got,25,"Pablo and Sosa, the world in our palms",palms,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,24,"Good brain, so she got a good head on",got,26,"I got some big O's, Ben Frank, big bankrolls",got,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,24,"Good brain, so she got a good head on",head,26,"I got some big O's, Ben Frank, big bankrolls",Ben,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,25,"Pablo and Sosa, the world in our palms",Pablo,25,"Pablo and Sosa, the world in our palms",palms,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,25,"Pablo and Sosa, the world in our palms",Pablo,26,"I got some big O's, Ben Frank, big bankrolls",got,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,25,"Pablo and Sosa, the world in our palms",palms,26,"I got some big O's, Ben Frank, big bankrolls",got,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,25,"Pablo and Sosa, the world in our palms",Sosa,26,"I got some big O's, Ben Frank, big bankrolls",bankrolls,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,25,"Pablo and Sosa, the world in our palms",Sosa,26,"I got some big O's, Ben Frank, big bankrolls",O's,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,26,"I got some big O's, Ben Frank, big bankrolls",big,26,"I got some big O's, Ben Frank, big bankrolls",big,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,26,"I got some big O's, Ben Frank, big bankrolls",O's,26,"I got some big O's, Ben Frank, big bankrolls",bankrolls,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,26,"I got some big O's, Ben Frank, big bankrolls",big,27,Young niggas riding around big dracos,big,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,26,"I got some big O's, Ben Frank, big bankrolls",O's,27,Young niggas riding around big dracos,dracos,INNER,PERFECT,spelling,MED,Y
+They Can’t Stand It,26,"I got some big O's, Ben Frank, big bankrolls",some,27,Young niggas riding around big dracos,Young,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,26,"I got some big O's, Ben Frank, big bankrolls",Ben,28,The pineapple look like a cherry Faygo,cherry,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,26,"I got some big O's, Ben Frank, big bankrolls",Frank,28,The pineapple look like a cherry Faygo,pineapple,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,26,"I got some big O's, Ben Frank, big bankrolls",bankrolls,30,"And I'm smoking loud packs, so I can't lay low",low,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,27,Young niggas riding around big dracos,riding,28,The pineapple look like a cherry Faygo,like,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,27,Young niggas riding around big dracos,dracos,29,And you know I'm down for life like I'm Fabo,Fabo,END,ASSONANCE,vowel,LOW,N
+They Can’t Stand It,27,Young niggas riding around big dracos,around,29,And you know I'm down for life like I'm Fabo,down,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,27,Young niggas riding around big dracos,riding,29,And you know I'm down for life like I'm Fabo,life,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,27,Young niggas riding around big dracos,riding,29,And you know I'm down for life like I'm Fabo,like,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,28,The pineapple look like a cherry Faygo,Faygo,29,And you know I'm down for life like I'm Fabo,Fabo,END,ASSONANCE,vowel,LOW,N
+They Can’t Stand It,28,The pineapple look like a cherry Faygo,Faygo,29,And you know I'm down for life like I'm Fabo,know,INNER,ASSONANCE,vowel,LOW,N
+They Can’t Stand It,28,The pineapple look like a cherry Faygo,like,29,And you know I'm down for life like I'm Fabo,life,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,28,The pineapple look like a cherry Faygo,like,29,And you know I'm down for life like I'm Fabo,like,INNER,REPEAT,spelling,HIGH,N
+They Can’t Stand It,28,The pineapple look like a cherry Faygo,Faygo,30,"And I'm smoking loud packs, so I can't lay low",low,END,ASSONANCE,vowel,LOW,N
+They Can’t Stand It,28,The pineapple look like a cherry Faygo,pineapple,30,"And I'm smoking loud packs, so I can't lay low",can't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,28,The pineapple look like a cherry Faygo,pineapple,30,"And I'm smoking loud packs, so I can't lay low",packs,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,28,The pineapple look like a cherry Faygo,Faygo,31,And I'm pouring up the purple out the rainbow,rainbow,END,ASSONANCE,vowel,LOW,N
+They Can’t Stand It,29,And you know I'm down for life like I'm Fabo,know,29,And you know I'm down for life like I'm Fabo,Fabo,INNER,ASSONANCE,vowel,LOW,N
+They Can’t Stand It,29,And you know I'm down for life like I'm Fabo,life,29,And you know I'm down for life like I'm Fabo,like,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,29,And you know I'm down for life like I'm Fabo,Fabo,30,"And I'm smoking loud packs, so I can't lay low",low,END,ASSONANCE,vowel,LOW,N
+They Can’t Stand It,29,And you know I'm down for life like I'm Fabo,down,30,"And I'm smoking loud packs, so I can't lay low",loud,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,29,And you know I'm down for life like I'm Fabo,know,30,"And I'm smoking loud packs, so I can't lay low",low,INNER,PERFECT,cmu,HIGH,Y
+They Can’t Stand It,29,And you know I'm down for life like I'm Fabo,know,30,"And I'm smoking loud packs, so I can't lay low",smoking,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,29,And you know I'm down for life like I'm Fabo,Fabo,31,And I'm pouring up the purple out the rainbow,rainbow,END,ASSONANCE,vowel,LOW,N
+They Can’t Stand It,29,And you know I'm down for life like I'm Fabo,know,31,And I'm pouring up the purple out the rainbow,rainbow,INNER,PERFECT,cmu,HIGH,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",packs,30,"And I'm smoking loud packs, so I can't lay low",can't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",smoking,30,"And I'm smoking loud packs, so I can't lay low",low,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",low,31,And I'm pouring up the purple out the rainbow,rainbow,END,PERFECT,cmu,HIGH,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",smoking,31,And I'm pouring up the purple out the rainbow,rainbow,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",low,32,"We don't take L's, we ain't no fucking lame-O's",O's,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",lay,32,"We don't take L's, we ain't no fucking lame-O's",ain't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",lay,32,"We don't take L's, we ain't no fucking lame-O's",lame,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",lay,32,"We don't take L's, we ain't no fucking lame-O's",take,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",low,32,"We don't take L's, we ain't no fucking lame-O's",don't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",low,32,"We don't take L's, we ain't no fucking lame-O's",no,INNER,PERFECT,cmu,HIGH,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",smoking,32,"We don't take L's, we ain't no fucking lame-O's",don't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",smoking,32,"We don't take L's, we ain't no fucking lame-O's",fucking,INNER,PERFECT,spelling,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",smoking,32,"We don't take L's, we ain't no fucking lame-O's",no,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",smoking,32,"We don't take L's, we ain't no fucking lame-O's",O's,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,30,"And I'm smoking loud packs, so I can't lay low",low,33,"Throwing up this cheese, get them bitches raincoats",raincoats,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,31,And I'm pouring up the purple out the rainbow,rainbow,32,"We don't take L's, we ain't no fucking lame-O's",O's,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,31,And I'm pouring up the purple out the rainbow,rainbow,32,"We don't take L's, we ain't no fucking lame-O's",don't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,31,And I'm pouring up the purple out the rainbow,rainbow,32,"We don't take L's, we ain't no fucking lame-O's",no,INNER,PERFECT,cmu,HIGH,Y
+They Can’t Stand It,31,And I'm pouring up the purple out the rainbow,rainbow,33,"Throwing up this cheese, get them bitches raincoats",raincoats,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,31,And I'm pouring up the purple out the rainbow,rainbow,33,"Throwing up this cheese, get them bitches raincoats",Throwing,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",ain't,32,"We don't take L's, we ain't no fucking lame-O's",lame,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",don't,32,"We don't take L's, we ain't no fucking lame-O's",no,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",don't,32,"We don't take L's, we ain't no fucking lame-O's",O's,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",no,32,"We don't take L's, we ain't no fucking lame-O's",O's,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",take,32,"We don't take L's, we ain't no fucking lame-O's",ain't,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",take,32,"We don't take L's, we ain't no fucking lame-O's",lame,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",O's,33,"Throwing up this cheese, get them bitches raincoats",raincoats,END,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",don't,33,"Throwing up this cheese, get them bitches raincoats",raincoats,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",don't,33,"Throwing up this cheese, get them bitches raincoats",Throwing,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",L's,33,"Throwing up this cheese, get them bitches raincoats",get,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",no,33,"Throwing up this cheese, get them bitches raincoats",raincoats,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",no,33,"Throwing up this cheese, get them bitches raincoats",Throwing,INNER,ASSONANCE,vowel,MED,Y
+They Can’t Stand It,32,"We don't take L's, we ain't no fucking lame-O's",O's,33,"Throwing up this cheese, get them bitches raincoats",Throwing,INNER,SLANT,cmu,MED,Y
+They Can’t Stand It,33,"Throwing up this cheese, get them bitches raincoats",Throwing,33,"Throwing up this cheese, get them bitches raincoats",raincoats,INNER,ASSONANCE,vowel,MED,Y

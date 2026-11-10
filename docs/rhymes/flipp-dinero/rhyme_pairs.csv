@@ -1,0 +1,866 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",trappin,2,"Young nigga on the block, I was trappin'",trappin,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",block,2,"Young nigga on the block, I was trappin'",block,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",hitta,2,"Young nigga on the block, I was trappin'",nigga,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",Young,2,"Young nigga on the block, I was trappin'",Young,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",trappin,3,"Ayy, young nigga on the block, I was trappin'",trappin,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",block,3,"Ayy, young nigga on the block, I was trappin'",block,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",hitta,3,"Ayy, young nigga on the block, I was trappin'",nigga,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",Young,3,"Ayy, young nigga on the block, I was trappin'",young,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",trappin,4,"Different type of nigga, I was never with the actin'",actin,END,SLANT,cmu,MED,Y
+Till I’m Gone,1,"Young hitta on the block, I was trappin'",trappin,5,"Glizzy on my hip, and I ain't tryna make it happen",happen,END,SLANT,cmu,MED,Y
+Till I’m Gone,2,"Young nigga on the block, I was trappin'",trappin,3,"Ayy, young nigga on the block, I was trappin'",trappin,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,2,"Young nigga on the block, I was trappin'",block,3,"Ayy, young nigga on the block, I was trappin'",block,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,2,"Young nigga on the block, I was trappin'",nigga,3,"Ayy, young nigga on the block, I was trappin'",nigga,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,2,"Young nigga on the block, I was trappin'",Young,3,"Ayy, young nigga on the block, I was trappin'",young,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,2,"Young nigga on the block, I was trappin'",trappin,4,"Different type of nigga, I was never with the actin'",actin,END,SLANT,cmu,MED,Y
+Till I’m Gone,2,"Young nigga on the block, I was trappin'",nigga,4,"Different type of nigga, I was never with the actin'",nigga,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,2,"Young nigga on the block, I was trappin'",trappin,5,"Glizzy on my hip, and I ain't tryna make it happen",happen,END,SLANT,cmu,MED,Y
+Till I’m Gone,2,"Young nigga on the block, I was trappin'",trappin,6,"Niggas always talkin', but I'm focused on the action",action,END,SLANT,cmu,MED,Y
+Till I’m Gone,3,"Ayy, young nigga on the block, I was trappin'",trappin,4,"Different type of nigga, I was never with the actin'",actin,END,SLANT,cmu,MED,Y
+Till I’m Gone,3,"Ayy, young nigga on the block, I was trappin'",nigga,4,"Different type of nigga, I was never with the actin'",nigga,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,3,"Ayy, young nigga on the block, I was trappin'",trappin,5,"Glizzy on my hip, and I ain't tryna make it happen",happen,END,SLANT,cmu,MED,Y
+Till I’m Gone,3,"Ayy, young nigga on the block, I was trappin'",nigga,5,"Glizzy on my hip, and I ain't tryna make it happen",hip,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,3,"Ayy, young nigga on the block, I was trappin'",trappin,6,"Niggas always talkin', but I'm focused on the action",action,END,SLANT,cmu,MED,Y
+Till I’m Gone,3,"Ayy, young nigga on the block, I was trappin'",trappin,7,"When they come the money, shit, it turn you to a savage",savage,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,4,"Different type of nigga, I was never with the actin'",actin,5,"Glizzy on my hip, and I ain't tryna make it happen",happen,END,SLANT,cmu,MED,Y
+Till I’m Gone,4,"Different type of nigga, I was never with the actin'",Different,5,"Glizzy on my hip, and I ain't tryna make it happen",hip,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,4,"Different type of nigga, I was never with the actin'",nigga,5,"Glizzy on my hip, and I ain't tryna make it happen",hip,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,4,"Different type of nigga, I was never with the actin'",actin,6,"Niggas always talkin', but I'm focused on the action",action,END,SLANT,cmu,MED,Y
+Till I’m Gone,4,"Different type of nigga, I was never with the actin'",nigga,6,"Niggas always talkin', but I'm focused on the action",Niggas,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,4,"Different type of nigga, I was never with the actin'",actin,7,"When they come the money, shit, it turn you to a savage",savage,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,4,"Different type of nigga, I was never with the actin'",actin,8,"When they come the money, nigga say you switched from average",average,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",ain't,5,"Glizzy on my hip, and I ain't tryna make it happen",make,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",happen,6,"Niggas always talkin', but I'm focused on the action",action,END,SLANT,cmu,MED,Y
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",ain't,6,"Niggas always talkin', but I'm focused on the action",always,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",make,6,"Niggas always talkin', but I'm focused on the action",always,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",happen,7,"When they come the money, shit, it turn you to a savage",savage,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",Glizzy,7,"When they come the money, shit, it turn you to a savage",money,INNER,ASSONANCE,vowel,LOW,N
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",hip,7,"When they come the money, shit, it turn you to a savage",shit,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",tryna,7,"When they come the money, shit, it turn you to a savage",turn,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",happen,8,"When they come the money, nigga say you switched from average",average,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,5,"Glizzy on my hip, and I ain't tryna make it happen",happen,9,"Focused what I'm livin', I can't switch up what the bag did",bag,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,6,"Niggas always talkin', but I'm focused on the action",action,7,"When they come the money, shit, it turn you to a savage",savage,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,6,"Niggas always talkin', but I'm focused on the action",action,8,"When they come the money, nigga say you switched from average",average,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,6,"Niggas always talkin', but I'm focused on the action",always,8,"When they come the money, nigga say you switched from average",say,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,6,"Niggas always talkin', but I'm focused on the action",Niggas,8,"When they come the money, nigga say you switched from average",nigga,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,6,"Niggas always talkin', but I'm focused on the action",action,9,"Focused what I'm livin', I can't switch up what the bag did",bag,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,6,"Niggas always talkin', but I'm focused on the action",action,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",come,7,"When they come the money, shit, it turn you to a savage",money,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",savage,8,"When they come the money, nigga say you switched from average",average,END,SLANT,cmu,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",come,8,"When they come the money, nigga say you switched from average",come,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",come,8,"When they come the money, nigga say you switched from average",money,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",money,8,"When they come the money, nigga say you switched from average",come,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",money,8,"When they come the money, nigga say you switched from average",money,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",shit,8,"When they come the money, nigga say you switched from average",nigga,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",shit,8,"When they come the money, nigga say you switched from average",switched,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",When,8,"When they come the money, nigga say you switched from average",When,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",savage,9,"Focused what I'm livin', I can't switch up what the bag did",bag,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",come,9,"Focused what I'm livin', I can't switch up what the bag did",what,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",money,9,"Focused what I'm livin', I can't switch up what the bag did",what,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",savage,9,"Focused what I'm livin', I can't switch up what the bag did",can't,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",shit,9,"Focused what I'm livin', I can't switch up what the bag did",livin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",shit,9,"Focused what I'm livin', I can't switch up what the bag did",switch,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",savage,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,7,"When they come the money, shit, it turn you to a savage",savage,11,What you know 'bout struggle? Flippin' words and make it happen,happen,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",come,8,"When they come the money, nigga say you switched from average",money,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",average,9,"Focused what I'm livin', I can't switch up what the bag did",bag,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",average,9,"Focused what I'm livin', I can't switch up what the bag did",can't,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",come,9,"Focused what I'm livin', I can't switch up what the bag did",what,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",money,9,"Focused what I'm livin', I can't switch up what the bag did",what,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",switched,9,"Focused what I'm livin', I can't switch up what the bag did",livin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",switched,9,"Focused what I'm livin', I can't switch up what the bag did",switch,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",average,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",come,10,"Focused what I'm livin', rockin' foreign shit, Italian",what,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",money,10,"Focused what I'm livin', rockin' foreign shit, Italian",what,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",nigga,10,"Focused what I'm livin', rockin' foreign shit, Italian",shit,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",switched,10,"Focused what I'm livin', rockin' foreign shit, Italian",livin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",switched,10,"Focused what I'm livin', rockin' foreign shit, Italian",shit,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",average,11,What you know 'bout struggle? Flippin' words and make it happen,happen,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,8,"When they come the money, nigga say you switched from average",average,12,"Stuck up on the block, I had my brothers with me trappin'",trappin,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",can't,9,"Focused what I'm livin', I can't switch up what the bag did",bag,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",livin,9,"Focused what I'm livin', I can't switch up what the bag did",switch,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",what,9,"Focused what I'm livin', I can't switch up what the bag did",what,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",bag,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",can't,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",Focused,10,"Focused what I'm livin', rockin' foreign shit, Italian",Focused,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",livin,10,"Focused what I'm livin', rockin' foreign shit, Italian",livin,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",livin,10,"Focused what I'm livin', rockin' foreign shit, Italian",shit,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",switch,10,"Focused what I'm livin', rockin' foreign shit, Italian",livin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",switch,10,"Focused what I'm livin', rockin' foreign shit, Italian",shit,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",what,10,"Focused what I'm livin', rockin' foreign shit, Italian",what,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",bag,11,What you know 'bout struggle? Flippin' words and make it happen,happen,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",can't,11,What you know 'bout struggle? Flippin' words and make it happen,happen,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",Focused,11,What you know 'bout struggle? Flippin' words and make it happen,know,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",livin,11,What you know 'bout struggle? Flippin' words and make it happen,Flippin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",switch,11,What you know 'bout struggle? Flippin' words and make it happen,Flippin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",what,11,What you know 'bout struggle? Flippin' words and make it happen,struggle,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",what,11,What you know 'bout struggle? Flippin' words and make it happen,What,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",bag,12,"Stuck up on the block, I had my brothers with me trappin'",trappin,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,9,"Focused what I'm livin', I can't switch up what the bag did",bag,13,Niggas tried to hate and said I couldn't make it happen,happen,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",livin,10,"Focused what I'm livin', rockin' foreign shit, Italian",shit,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,11,What you know 'bout struggle? Flippin' words and make it happen,happen,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",Focused,11,What you know 'bout struggle? Flippin' words and make it happen,know,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",livin,11,What you know 'bout struggle? Flippin' words and make it happen,Flippin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",shit,11,What you know 'bout struggle? Flippin' words and make it happen,Flippin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",what,11,What you know 'bout struggle? Flippin' words and make it happen,struggle,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",what,11,What you know 'bout struggle? Flippin' words and make it happen,What,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,12,"Stuck up on the block, I had my brothers with me trappin'",trappin,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,12,"Stuck up on the block, I had my brothers with me trappin'",had,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",rockin,12,"Stuck up on the block, I had my brothers with me trappin'",block,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",what,12,"Stuck up on the block, I had my brothers with me trappin'",brothers,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",what,12,"Stuck up on the block, I had my brothers with me trappin'",Stuck,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,13,Niggas tried to hate and said I couldn't make it happen,happen,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,10,"Focused what I'm livin', rockin' foreign shit, Italian",Italian,14,"Now I'm gettin' money, fill the duffel with the racks, and",racks,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,What,11,What you know 'bout struggle? Flippin' words and make it happen,struggle,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,happen,12,"Stuck up on the block, I had my brothers with me trappin'",trappin,END,SLANT,cmu,MED,Y
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,happen,12,"Stuck up on the block, I had my brothers with me trappin'",had,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,struggle,12,"Stuck up on the block, I had my brothers with me trappin'",brothers,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,struggle,12,"Stuck up on the block, I had my brothers with me trappin'",Stuck,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,What,12,"Stuck up on the block, I had my brothers with me trappin'",brothers,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,What,12,"Stuck up on the block, I had my brothers with me trappin'",Stuck,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,happen,13,Niggas tried to hate and said I couldn't make it happen,happen,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,make,13,Niggas tried to hate and said I couldn't make it happen,hate,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,make,13,Niggas tried to hate and said I couldn't make it happen,make,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,11,What you know 'bout struggle? Flippin' words and make it happen,happen,14,"Now I'm gettin' money, fill the duffel with the racks, and",racks,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",had,12,"Stuck up on the block, I had my brothers with me trappin'",trappin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",Stuck,12,"Stuck up on the block, I had my brothers with me trappin'",brothers,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",trappin,13,Niggas tried to hate and said I couldn't make it happen,happen,END,SLANT,cmu,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",had,13,Niggas tried to hate and said I couldn't make it happen,happen,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",trappin,14,"Now I'm gettin' money, fill the duffel with the racks, and",racks,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",brothers,14,"Now I'm gettin' money, fill the duffel with the racks, and",duffel,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",brothers,14,"Now I'm gettin' money, fill the duffel with the racks, and",money,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",had,14,"Now I'm gettin' money, fill the duffel with the racks, and",racks,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",Stuck,14,"Now I'm gettin' money, fill the duffel with the racks, and",duffel,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",Stuck,14,"Now I'm gettin' money, fill the duffel with the racks, and",money,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,12,"Stuck up on the block, I had my brothers with me trappin'",trappin,16,"Work until I get it, always knew I make it happen",happen,END,SLANT,cmu,MED,Y
+Till I’m Gone,13,Niggas tried to hate and said I couldn't make it happen,hate,13,Niggas tried to hate and said I couldn't make it happen,make,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,13,Niggas tried to hate and said I couldn't make it happen,happen,14,"Now I'm gettin' money, fill the duffel with the racks, and",racks,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,13,Niggas tried to hate and said I couldn't make it happen,said,14,"Now I'm gettin' money, fill the duffel with the racks, and",gettin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,13,Niggas tried to hate and said I couldn't make it happen,happen,15,"Now I'm gettin' money, fill the duffel, let the racks build",racks,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,13,Niggas tried to hate and said I couldn't make it happen,said,15,"Now I'm gettin' money, fill the duffel, let the racks build",gettin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,13,Niggas tried to hate and said I couldn't make it happen,said,15,"Now I'm gettin' money, fill the duffel, let the racks build",let,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,13,Niggas tried to hate and said I couldn't make it happen,happen,16,"Work until I get it, always knew I make it happen",happen,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,13,Niggas tried to hate and said I couldn't make it happen,happen,17,"Work until I get it, I'm a guala, I be trappin'",trappin,END,SLANT,cmu,MED,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",money,14,"Now I'm gettin' money, fill the duffel with the racks, and",duffel,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",duffel,15,"Now I'm gettin' money, fill the duffel, let the racks build",duffel,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",duffel,15,"Now I'm gettin' money, fill the duffel, let the racks build",money,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",fill,15,"Now I'm gettin' money, fill the duffel, let the racks build",build,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",fill,15,"Now I'm gettin' money, fill the duffel, let the racks build",fill,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",gettin,15,"Now I'm gettin' money, fill the duffel, let the racks build",gettin,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",gettin,15,"Now I'm gettin' money, fill the duffel, let the racks build",let,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",money,15,"Now I'm gettin' money, fill the duffel, let the racks build",duffel,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",money,15,"Now I'm gettin' money, fill the duffel, let the racks build",money,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",Now,15,"Now I'm gettin' money, fill the duffel, let the racks build",Now,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",racks,15,"Now I'm gettin' money, fill the duffel, let the racks build",racks,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",racks,16,"Work until I get it, always knew I make it happen",happen,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",fill,16,"Work until I get it, always knew I make it happen",until,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",gettin,16,"Work until I get it, always knew I make it happen",get,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",racks,17,"Work until I get it, I'm a guala, I be trappin'",trappin,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,14,"Now I'm gettin' money, fill the duffel with the racks, and",racks,18,"Tell 'em we the best and I'ma live it like a captain, yeah",captain,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",fill,15,"Now I'm gettin' money, fill the duffel, let the racks build",build,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",gettin,15,"Now I'm gettin' money, fill the duffel, let the racks build",let,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",money,15,"Now I'm gettin' money, fill the duffel, let the racks build",duffel,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",build,16,"Work until I get it, always knew I make it happen",until,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",fill,16,"Work until I get it, always knew I make it happen",until,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",gettin,16,"Work until I get it, always knew I make it happen",get,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",let,16,"Work until I get it, always knew I make it happen",get,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",racks,16,"Work until I get it, always knew I make it happen",happen,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",build,17,"Work until I get it, I'm a guala, I be trappin'",until,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",duffel,17,"Work until I get it, I'm a guala, I be trappin'",guala,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",fill,17,"Work until I get it, I'm a guala, I be trappin'",until,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",gettin,17,"Work until I get it, I'm a guala, I be trappin'",get,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",let,17,"Work until I get it, I'm a guala, I be trappin'",get,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",money,17,"Work until I get it, I'm a guala, I be trappin'",guala,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,15,"Now I'm gettin' money, fill the duffel, let the racks build",racks,17,"Work until I get it, I'm a guala, I be trappin'",trappin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,16,"Work until I get it, always knew I make it happen",always,16,"Work until I get it, always knew I make it happen",make,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,16,"Work until I get it, always knew I make it happen",happen,17,"Work until I get it, I'm a guala, I be trappin'",trappin,END,SLANT,cmu,MED,Y
+Till I’m Gone,16,"Work until I get it, always knew I make it happen",get,17,"Work until I get it, I'm a guala, I be trappin'",get,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,16,"Work until I get it, always knew I make it happen",until,17,"Work until I get it, I'm a guala, I be trappin'",until,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,16,"Work until I get it, always knew I make it happen",Work,17,"Work until I get it, I'm a guala, I be trappin'",Work,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,16,"Work until I get it, always knew I make it happen",happen,18,"Tell 'em we the best and I'ma live it like a captain, yeah",captain,END,SLANT,cmu,MED,Y
+Till I’m Gone,16,"Work until I get it, always knew I make it happen",get,18,"Tell 'em we the best and I'ma live it like a captain, yeah",best,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,16,"Work until I get it, always knew I make it happen",get,18,"Tell 'em we the best and I'ma live it like a captain, yeah",Tell,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,16,"Work until I get it, always knew I make it happen",until,18,"Tell 'em we the best and I'ma live it like a captain, yeah",I'ma,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,17,"Work until I get it, I'm a guala, I be trappin'",trappin,18,"Tell 'em we the best and I'ma live it like a captain, yeah",captain,END,SLANT,cmu,MED,Y
+Till I’m Gone,17,"Work until I get it, I'm a guala, I be trappin'",get,18,"Tell 'em we the best and I'ma live it like a captain, yeah",best,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,17,"Work until I get it, I'm a guala, I be trappin'",get,18,"Tell 'em we the best and I'ma live it like a captain, yeah",Tell,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,17,"Work until I get it, I'm a guala, I be trappin'",until,18,"Tell 'em we the best and I'ma live it like a captain, yeah",I'ma,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,17,"Work until I get it, I'm a guala, I be trappin'",until,19,"Grind 'til I'm gone, yeah",'til,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,18,"Tell 'em we the best and I'ma live it like a captain, yeah",live,18,"Tell 'em we the best and I'ma live it like a captain, yeah",like,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,18,"Tell 'em we the best and I'ma live it like a captain, yeah",Tell,18,"Tell 'em we the best and I'ma live it like a captain, yeah",best,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,18,"Tell 'em we the best and I'ma live it like a captain, yeah",I'ma,19,"Grind 'til I'm gone, yeah",'til,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,18,"Tell 'em we the best and I'ma live it like a captain, yeah",like,19,"Grind 'til I'm gone, yeah",Grind,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,18,"Tell 'em we the best and I'ma live it like a captain, yeah",live,19,"Grind 'til I'm gone, yeah",Grind,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,19,"Grind 'til I'm gone, yeah",gone,21,"This weed is so strong, yeah",strong,END,SLANT,cmu,MED,Y
+Till I’m Gone,19,"Grind 'til I'm gone, yeah",gone,22,"I grind 'til I'm gone, yeah",gone,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,20,"Hood I put on, yeah",Hood,20,"Hood I put on, yeah",put,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,20,"Hood I put on, yeah",put,23,"My hood I put on, yeah",put,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,21,"This weed is so strong, yeah",strong,22,"I grind 'til I'm gone, yeah",gone,END,SLANT,cmu,MED,Y
+Till I’m Gone,23,"My hood I put on, yeah",hood,23,"My hood I put on, yeah",put,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",had,24,"Tryna stack this money, man, I had to make it happen",happen,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",man,24,"Tryna stack this money, man, I had to make it happen",had,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",man,24,"Tryna stack this money, man, I had to make it happen",happen,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",stack,24,"Tryna stack this money, man, I had to make it happen",had,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",stack,24,"Tryna stack this money, man, I had to make it happen",happen,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",stack,24,"Tryna stack this money, man, I had to make it happen",man,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",had,25,"Flippin' all this work, I had to re-up, make the bag flip",bag,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",had,25,"Flippin' all this work, I had to re-up, make the bag flip",had,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",happen,25,"Flippin' all this work, I had to re-up, make the bag flip",bag,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",happen,25,"Flippin' all this work, I had to re-up, make the bag flip",had,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",make,25,"Flippin' all this work, I had to re-up, make the bag flip",make,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",make,25,"Flippin' all this work, I had to re-up, make the bag flip",re,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",man,25,"Flippin' all this work, I had to re-up, make the bag flip",bag,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",man,25,"Flippin' all this work, I had to re-up, make the bag flip",had,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",stack,25,"Flippin' all this work, I had to re-up, make the bag flip",bag,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",stack,25,"Flippin' all this work, I had to re-up, make the bag flip",had,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",happen,26,"Smokin' all this dope, to make me ease up off that action",action,END,SLANT,cmu,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",had,26,"Smokin' all this dope, to make me ease up off that action",action,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",make,26,"Smokin' all this dope, to make me ease up off that action",make,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",man,26,"Smokin' all this dope, to make me ease up off that action",action,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",stack,26,"Smokin' all this dope, to make me ease up off that action",action,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",Tryna,26,"Smokin' all this dope, to make me ease up off that action",ease,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",happen,27,"When it come to money, shit it turn them to a savage",savage,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,24,"Tryna stack this money, man, I had to make it happen",happen,28,"When it come to money, separated from the average",average,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",Flippin,25,"Flippin' all this work, I had to re-up, make the bag flip",flip,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",had,25,"Flippin' all this work, I had to re-up, make the bag flip",bag,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",re,25,"Flippin' all this work, I had to re-up, make the bag flip",make,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",all,26,"Smokin' all this dope, to make me ease up off that action",all,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",bag,26,"Smokin' all this dope, to make me ease up off that action",action,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",had,26,"Smokin' all this dope, to make me ease up off that action",action,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",make,26,"Smokin' all this dope, to make me ease up off that action",make,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",re,26,"Smokin' all this dope, to make me ease up off that action",make,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",bag,27,"When it come to money, shit it turn them to a savage",savage,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",flip,27,"When it come to money, shit it turn them to a savage",shit,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",Flippin,27,"When it come to money, shit it turn them to a savage",shit,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",had,27,"When it come to money, shit it turn them to a savage",savage,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,25,"Flippin' all this work, I had to re-up, make the bag flip",work,27,"When it come to money, shit it turn them to a savage",turn,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,26,"Smokin' all this dope, to make me ease up off that action",Smokin,26,"Smokin' all this dope, to make me ease up off that action",dope,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,26,"Smokin' all this dope, to make me ease up off that action",action,27,"When it come to money, shit it turn them to a savage",savage,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,26,"Smokin' all this dope, to make me ease up off that action",action,28,"When it come to money, separated from the average",average,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,26,"Smokin' all this dope, to make me ease up off that action",make,28,"When it come to money, separated from the average",separated,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,26,"Smokin' all this dope, to make me ease up off that action",action,29,"Tryna live it lovely, but I'm caught up in this trappin'",trappin,END,SLANT,cmu,MED,Y
+Till I’m Gone,26,"Smokin' all this dope, to make me ease up off that action",action,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",passin,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",come,27,"When it come to money, shit it turn them to a savage",money,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",savage,28,"When it come to money, separated from the average",average,END,SLANT,cmu,MED,Y
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",come,28,"When it come to money, separated from the average",come,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",come,28,"When it come to money, separated from the average",money,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",money,28,"When it come to money, separated from the average",come,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",money,28,"When it come to money, separated from the average",money,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",When,28,"When it come to money, separated from the average",When,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",savage,29,"Tryna live it lovely, but I'm caught up in this trappin'",trappin,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",come,29,"Tryna live it lovely, but I'm caught up in this trappin'",lovely,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",money,29,"Tryna live it lovely, but I'm caught up in this trappin'",lovely,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",turn,29,"Tryna live it lovely, but I'm caught up in this trappin'",Tryna,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,27,"When it come to money, shit it turn them to a savage",savage,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",passin,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,28,"When it come to money, separated from the average",come,28,"When it come to money, separated from the average",money,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,28,"When it come to money, separated from the average",average,29,"Tryna live it lovely, but I'm caught up in this trappin'",trappin,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,28,"When it come to money, separated from the average",come,29,"Tryna live it lovely, but I'm caught up in this trappin'",lovely,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,28,"When it come to money, separated from the average",money,29,"Tryna live it lovely, but I'm caught up in this trappin'",lovely,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,28,"When it come to money, separated from the average",average,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",passin,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,29,"Tryna live it lovely, but I'm caught up in this trappin'",trappin,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",passin,END,SLANT,cmu,MED,Y
+Till I’m Gone,29,"Tryna live it lovely, but I'm caught up in this trappin'",caught,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",start,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,29,"Tryna live it lovely, but I'm caught up in this trappin'",live,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,29,"Tryna live it lovely, but I'm caught up in this trappin'",live,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",while,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,29,"Tryna live it lovely, but I'm caught up in this trappin'",caught,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",got,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,29,"Tryna live it lovely, but I'm caught up in this trappin'",trappin,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",land,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,29,"Tryna live it lovely, but I'm caught up in this trappin'",Tryna,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",here,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",diamonds,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",while,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",Bimmer,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",thinkin,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",hittin,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",thinkin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",passin,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",land,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",start,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",got,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,30,"Bimmer, push to start, my diamonds hittin' while I'm passin'",start,32,"I ain't never love, 'cause honestly, I never played fair",honestly,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",Smokin,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",dope,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",got,32,"I ain't never love, 'cause honestly, I never played fair",honestly,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",all,33,"All up through the struggles, honestly, I had to stay clear",All,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",got,33,"All up through the struggles, honestly, I had to stay clear",honestly,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",land,33,"All up through the struggles, honestly, I had to stay clear",had,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,31,"Smokin' all this dope, it got me thinkin', ""How I land here?""",thinkin,33,"All up through the struggles, honestly, I had to stay clear",clear,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",ain't,32,"I ain't never love, 'cause honestly, I never played fair",played,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",never,32,"I ain't never love, 'cause honestly, I never played fair",fair,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",never,32,"I ain't never love, 'cause honestly, I never played fair",never,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",ain't,33,"All up through the struggles, honestly, I had to stay clear",stay,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",honestly,33,"All up through the struggles, honestly, I had to stay clear",honestly,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",love,33,"All up through the struggles, honestly, I had to stay clear",struggles,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",played,33,"All up through the struggles, honestly, I had to stay clear",stay,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",fair,34,Why you hatin' on me in my hood? I cannot stay there,there,END,PERFECT,cmu,HIGH,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",ain't,34,Why you hatin' on me in my hood? I cannot stay there,hatin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",ain't,34,Why you hatin' on me in my hood? I cannot stay there,stay,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",never,34,Why you hatin' on me in my hood? I cannot stay there,there,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",played,34,Why you hatin' on me in my hood? I cannot stay there,hatin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",played,34,Why you hatin' on me in my hood? I cannot stay there,stay,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",fair,35,"Tryna live a lovely life, I live it, have sustain there",there,END,PERFECT,cmu,HIGH,Y
+Till I’m Gone,32,"I ain't never love, 'cause honestly, I never played fair",fair,36,"Thousands all up on me, plottin' millions, seen the safe there",there,END,PERFECT,cmu,HIGH,Y
+Till I’m Gone,33,"All up through the struggles, honestly, I had to stay clear",had,34,Why you hatin' on me in my hood? I cannot stay there,cannot,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,33,"All up through the struggles, honestly, I had to stay clear",stay,34,Why you hatin' on me in my hood? I cannot stay there,hatin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,33,"All up through the struggles, honestly, I had to stay clear",stay,34,Why you hatin' on me in my hood? I cannot stay there,stay,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,33,"All up through the struggles, honestly, I had to stay clear",had,35,"Tryna live a lovely life, I live it, have sustain there",have,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,33,"All up through the struggles, honestly, I had to stay clear",stay,35,"Tryna live a lovely life, I live it, have sustain there",sustain,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,33,"All up through the struggles, honestly, I had to stay clear",struggles,35,"Tryna live a lovely life, I live it, have sustain there",lovely,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,hatin,34,Why you hatin' on me in my hood? I cannot stay there,stay,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,there,35,"Tryna live a lovely life, I live it, have sustain there",there,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,cannot,35,"Tryna live a lovely life, I live it, have sustain there",have,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,hatin,35,"Tryna live a lovely life, I live it, have sustain there",sustain,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,stay,35,"Tryna live a lovely life, I live it, have sustain there",sustain,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,Why,35,"Tryna live a lovely life, I live it, have sustain there",life,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,Why,35,"Tryna live a lovely life, I live it, have sustain there",live,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,there,36,"Thousands all up on me, plottin' millions, seen the safe there",there,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,hatin,36,"Thousands all up on me, plottin' millions, seen the safe there",safe,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,stay,36,"Thousands all up on me, plottin' millions, seen the safe there",safe,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,34,Why you hatin' on me in my hood? I cannot stay there,there,37,"Money all I want, and for that green you see I raced there",there,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",life,35,"Tryna live a lovely life, I live it, have sustain there",live,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",live,35,"Tryna live a lovely life, I live it, have sustain there",life,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",live,35,"Tryna live a lovely life, I live it, have sustain there",live,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",there,36,"Thousands all up on me, plottin' millions, seen the safe there",there,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",sustain,36,"Thousands all up on me, plottin' millions, seen the safe there",safe,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",Tryna,36,"Thousands all up on me, plottin' millions, seen the safe there",seen,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",there,37,"Money all I want, and for that green you see I raced there",there,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",lovely,37,"Money all I want, and for that green you see I raced there",Money,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",sustain,37,"Money all I want, and for that green you see I raced there",raced,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,35,"Tryna live a lovely life, I live it, have sustain there",Tryna,37,"Money all I want, and for that green you see I raced there",green,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,36,"Thousands all up on me, plottin' millions, seen the safe there",there,37,"Money all I want, and for that green you see I raced there",there,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,36,"Thousands all up on me, plottin' millions, seen the safe there",all,37,"Money all I want, and for that green you see I raced there",all,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,36,"Thousands all up on me, plottin' millions, seen the safe there",plottin,37,"Money all I want, and for that green you see I raced there",want,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,36,"Thousands all up on me, plottin' millions, seen the safe there",safe,37,"Money all I want, and for that green you see I raced there",raced,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,36,"Thousands all up on me, plottin' millions, seen the safe there",seen,37,"Money all I want, and for that green you see I raced there",green,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,36,"Thousands all up on me, plottin' millions, seen the safe there",seen,37,"Money all I want, and for that green you see I raced there",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,36,"Thousands all up on me, plottin' millions, seen the safe there",seen,38,"Life I live is lovely, for this green you see I'm chasin', yeah",green,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,36,"Thousands all up on me, plottin' millions, seen the safe there",seen,38,"Life I live is lovely, for this green you see I'm chasin', yeah",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",green,37,"Money all I want, and for that green you see I raced there",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",green,38,"Life I live is lovely, for this green you see I'm chasin', yeah",green,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",green,38,"Life I live is lovely, for this green you see I'm chasin', yeah",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",Money,38,"Life I live is lovely, for this green you see I'm chasin', yeah",lovely,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",see,38,"Life I live is lovely, for this green you see I'm chasin', yeah",green,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",see,38,"Life I live is lovely, for this green you see I'm chasin', yeah",see,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",Money,39,"I shared so much tears inside, but I ain't ever cry, though",much,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",raced,39,"I shared so much tears inside, but I ain't ever cry, though",ain't,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",there,39,"I shared so much tears inside, but I ain't ever cry, though",ever,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",there,39,"I shared so much tears inside, but I ain't ever cry, though",shared,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,37,"Money all I want, and for that green you see I raced there",there,39,"I shared so much tears inside, but I ain't ever cry, though",tears,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",green,38,"Life I live is lovely, for this green you see I'm chasin', yeah",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",Life,38,"Life I live is lovely, for this green you see I'm chasin', yeah",live,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",Life,39,"I shared so much tears inside, but I ain't ever cry, though",cry,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",Life,39,"I shared so much tears inside, but I ain't ever cry, though",inside,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",live,39,"I shared so much tears inside, but I ain't ever cry, though",cry,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",live,39,"I shared so much tears inside, but I ain't ever cry, though",inside,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",lovely,39,"I shared so much tears inside, but I ain't ever cry, though",much,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",green,40,"We on the VIP side, we got a hundred bottles",VIP,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",Life,40,"We on the VIP side, we got a hundred bottles",side,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",live,40,"We on the VIP side, we got a hundred bottles",side,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",lovely,40,"We on the VIP side, we got a hundred bottles",hundred,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,38,"Life I live is lovely, for this green you see I'm chasin', yeah",see,40,"We on the VIP side, we got a hundred bottles",VIP,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",inside,39,"I shared so much tears inside, but I ain't ever cry, though",cry,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",shared,39,"I shared so much tears inside, but I ain't ever cry, though",ever,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",shared,39,"I shared so much tears inside, but I ain't ever cry, though",tears,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",tears,39,"I shared so much tears inside, but I ain't ever cry, though",ever,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",cry,40,"We on the VIP side, we got a hundred bottles",side,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",inside,40,"We on the VIP side, we got a hundred bottles",side,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",much,40,"We on the VIP side, we got a hundred bottles",hundred,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",much,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Blood,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",much,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",brother,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",much,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",cousin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,39,"I shared so much tears inside, but I ain't ever cry, though",though,42,"I keep the Glizzy in the club, and I ain't ever shot though",though,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",got,40,"We on the VIP side, we got a hundred bottles",bottles,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",hundred,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Blood,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",hundred,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",brother,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",hundred,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",cousin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",VIP,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Free,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",VIP,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",screamin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",bottles,42,"I keep the Glizzy in the club, and I ain't ever shot though",shot,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",got,42,"I keep the Glizzy in the club, and I ain't ever shot though",shot,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",hundred,42,"I keep the Glizzy in the club, and I ain't ever shot though",club,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",VIP,42,"I keep the Glizzy in the club, and I ain't ever shot though",Glizzy,INNER,ASSONANCE,vowel,LOW,N
+Till I’m Gone,40,"We on the VIP side, we got a hundred bottles",VIP,42,"I keep the Glizzy in the club, and I ain't ever shot though",keep,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Blood,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",cousin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",brother,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Blood,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",brother,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",cousin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Free,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",free,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",screamin,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Free,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Blood,42,"I keep the Glizzy in the club, and I ain't ever shot though",club,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",brother,42,"I keep the Glizzy in the club, and I ain't ever shot though",club,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",cousin,42,"I keep the Glizzy in the club, and I ain't ever shot though",club,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Free,42,"I keep the Glizzy in the club, and I ain't ever shot though",Glizzy,INNER,ASSONANCE,vowel,LOW,N
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Free,42,"I keep the Glizzy in the club, and I ain't ever shot though",keep,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",screamin,42,"I keep the Glizzy in the club, and I ain't ever shot though",keep,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,41,"I'm screamin', ""Free my brother Blood, free my cousin Manu""",Manu,45,They gon' send me right to jail if they knew what I knew,knew,END,PERFECT,cmu,HIGH,Y
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",ain't,43,"I let it off in H-Town, sprayin' fully auto",H,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",ain't,43,"I let it off in H-Town, sprayin' fully auto",sprayin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",ever,43,"I let it off in H-Town, sprayin' fully auto",let,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",Glizzy,43,"I let it off in H-Town, sprayin' fully auto",fully,INNER,ASSONANCE,vowel,LOW,N
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",though,44,"I swear that I ain't ever tell, but I prolly lie, though",though,END,REPEAT,spelling,HIGH,N
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",ain't,44,"I swear that I ain't ever tell, but I prolly lie, though",ain't,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",ever,44,"I swear that I ain't ever tell, but I prolly lie, though",ever,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",ever,44,"I swear that I ain't ever tell, but I prolly lie, though",swear,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",ever,44,"I swear that I ain't ever tell, but I prolly lie, though",tell,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",Glizzy,44,"I swear that I ain't ever tell, but I prolly lie, though",prolly,INNER,ASSONANCE,vowel,LOW,N
+Till I’m Gone,42,"I keep the Glizzy in the club, and I ain't ever shot though",though,46,God'll send me right to Hell if he knew what I know,know,END,PERFECT,cmu,HIGH,Y
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",H,43,"I let it off in H-Town, sprayin' fully auto",sprayin,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",fully,44,"I swear that I ain't ever tell, but I prolly lie, though",prolly,INNER,ASSONANCE,vowel,LOW,N
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",H,44,"I swear that I ain't ever tell, but I prolly lie, though",ain't,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",let,44,"I swear that I ain't ever tell, but I prolly lie, though",ever,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",let,44,"I swear that I ain't ever tell, but I prolly lie, though",swear,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",let,44,"I swear that I ain't ever tell, but I prolly lie, though",tell,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",sprayin,44,"I swear that I ain't ever tell, but I prolly lie, though",ain't,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",H,45,They gon' send me right to jail if they knew what I knew,jail,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",let,45,They gon' send me right to jail if they knew what I knew,send,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,43,"I let it off in H-Town, sprayin' fully auto",sprayin,45,They gon' send me right to jail if they knew what I knew,jail,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",ever,44,"I swear that I ain't ever tell, but I prolly lie, though",tell,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",swear,44,"I swear that I ain't ever tell, but I prolly lie, though",ever,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",swear,44,"I swear that I ain't ever tell, but I prolly lie, though",tell,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",ain't,45,They gon' send me right to jail if they knew what I knew,jail,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",ever,45,They gon' send me right to jail if they knew what I knew,send,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",lie,45,They gon' send me right to jail if they knew what I knew,right,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",swear,45,They gon' send me right to jail if they knew what I knew,send,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",tell,45,They gon' send me right to jail if they knew what I knew,send,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",though,46,God'll send me right to Hell if he knew what I know,know,END,PERFECT,cmu,HIGH,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",ever,46,God'll send me right to Hell if he knew what I know,Hell,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",ever,46,God'll send me right to Hell if he knew what I know,send,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",lie,46,God'll send me right to Hell if he knew what I know,right,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",prolly,46,God'll send me right to Hell if he knew what I know,God'll,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",swear,46,God'll send me right to Hell if he knew what I know,Hell,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",swear,46,God'll send me right to Hell if he knew what I know,send,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",tell,46,God'll send me right to Hell if he knew what I know,Hell,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,44,"I swear that I ain't ever tell, but I prolly lie, though",tell,46,God'll send me right to Hell if he knew what I know,send,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,45,They gon' send me right to jail if they knew what I knew,knew,45,They gon' send me right to jail if they knew what I knew,knew,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,45,They gon' send me right to jail if they knew what I knew,knew,46,God'll send me right to Hell if he knew what I know,knew,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,45,They gon' send me right to jail if they knew what I knew,right,46,God'll send me right to Hell if he knew what I know,right,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,45,They gon' send me right to jail if they knew what I knew,send,46,God'll send me right to Hell if he knew what I know,Hell,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,45,They gon' send me right to jail if they knew what I knew,send,46,God'll send me right to Hell if he knew what I know,send,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,45,They gon' send me right to jail if they knew what I knew,what,46,God'll send me right to Hell if he knew what I know,what,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,46,God'll send me right to Hell if he knew what I know,God'll,46,God'll send me right to Hell if he knew what I know,know,INNER,ASSONANCE,vowel,LOW,N
+Till I’m Gone,46,God'll send me right to Hell if he knew what I know,send,46,God'll send me right to Hell if he knew what I know,Hell,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,47,"These candles on me, they burnin'",burnin,48,Cameras on me keep turnin',turnin,END,MULTI,multi,HIGH,Y
+Till I’m Gone,47,"These candles on me, they burnin'",candles,48,Cameras on me keep turnin',Cameras,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,47,"These candles on me, they burnin'",These,48,Cameras on me keep turnin',keep,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,47,"These candles on me, they burnin'",burnin,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",hurtin,END,SLANT,cmu,MED,Y
+Till I’m Gone,47,"These candles on me, they burnin'",burnin,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",worst,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,48,Cameras on me keep turnin',turnin,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",hurtin,END,SLANT,cmu,MED,Y
+Till I’m Gone,48,Cameras on me keep turnin',turnin,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",worst,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,48,Cameras on me keep turnin',keep,50,I'm tryna turn my life right 'round,tryna,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,48,Cameras on me keep turnin',turnin,50,I'm tryna turn my life right 'round,turn,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",worst,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",hurtin,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",hurtin,50,I'm tryna turn my life right 'round,turn,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",lie,50,I'm tryna turn my life right 'round,life,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",lie,50,I'm tryna turn my life right 'round,right,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",worst,50,I'm tryna turn my life right 'round,turn,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",ain't,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",brain,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",ain't,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",fame,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",lie,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",right,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,49,"Been through the worst, ain't gon' lie, this shit be hurtin'",shit,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",mic,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,50,I'm tryna turn my life right 'round,life,50,I'm tryna turn my life right 'round,right,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,50,I'm tryna turn my life right 'round,tryna,50,I'm tryna turn my life right 'round,turn,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,50,I'm tryna turn my life right 'round,'round,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",down,END,SLANT,cmu,MED,Y
+Till I’m Gone,50,I'm tryna turn my life right 'round,life,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",right,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,50,I'm tryna turn my life right 'round,right,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",right,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,50,I'm tryna turn my life right 'round,tryna,52,"This shit flaw, this shit creep",creep,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",fame,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",brain,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",mic,52,"This shit flaw, this shit creep",shit,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",gettin,53,"In these city streets, ten toes deep, they try to sneak me",ten,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",mic,53,"In these city streets, ten toes deep, they try to sneak me",city,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,51,"This fame be gettin' to my brain, I'm puttin' this mic right down",right,53,"In these city streets, ten toes deep, they try to sneak me",try,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",shit,52,"This shit flaw, this shit creep",shit,INNER,REPEAT,spelling,HIGH,N
+Till I’m Gone,52,"This shit flaw, this shit creep",creep,53,"In these city streets, ten toes deep, they try to sneak me",sneak,END,SLANT,cmu,MED,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",creep,53,"In these city streets, ten toes deep, they try to sneak me",deep,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",creep,53,"In these city streets, ten toes deep, they try to sneak me",streets,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",creep,53,"In these city streets, ten toes deep, they try to sneak me",these,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",shit,53,"In these city streets, ten toes deep, they try to sneak me",city,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",creep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",see,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",creep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",eat,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",creep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",G,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",creep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",keep,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,52,"This shit flaw, this shit creep",creep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",tryna,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",deep,53,"In these city streets, ten toes deep, they try to sneak me",sneak,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",streets,53,"In these city streets, ten toes deep, they try to sneak me",deep,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",streets,53,"In these city streets, ten toes deep, they try to sneak me",sneak,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",these,53,"In these city streets, ten toes deep, they try to sneak me",deep,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",these,53,"In these city streets, ten toes deep, they try to sneak me",sneak,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",these,53,"In these city streets, ten toes deep, they try to sneak me",streets,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",sneak,54,"I'm just tryna eat, and keep it G, they don't wanna see me",see,END,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",deep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",eat,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",deep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",G,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",deep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",keep,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",deep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",deep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",tryna,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",sneak,54,"I'm just tryna eat, and keep it G, they don't wanna see me",eat,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",sneak,54,"I'm just tryna eat, and keep it G, they don't wanna see me",G,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",sneak,54,"I'm just tryna eat, and keep it G, they don't wanna see me",keep,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",sneak,54,"I'm just tryna eat, and keep it G, they don't wanna see me",tryna,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",streets,54,"I'm just tryna eat, and keep it G, they don't wanna see me",eat,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",streets,54,"I'm just tryna eat, and keep it G, they don't wanna see me",G,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",streets,54,"I'm just tryna eat, and keep it G, they don't wanna see me",keep,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",streets,54,"I'm just tryna eat, and keep it G, they don't wanna see me",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",these,54,"I'm just tryna eat, and keep it G, they don't wanna see me",eat,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",these,54,"I'm just tryna eat, and keep it G, they don't wanna see me",G,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",these,54,"I'm just tryna eat, and keep it G, they don't wanna see me",keep,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",these,54,"I'm just tryna eat, and keep it G, they don't wanna see me",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",these,54,"I'm just tryna eat, and keep it G, they don't wanna see me",tryna,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,53,"In these city streets, ten toes deep, they try to sneak me",toes,54,"I'm just tryna eat, and keep it G, they don't wanna see me",don't,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,54,"I'm just tryna eat, and keep it G, they don't wanna see me",eat,54,"I'm just tryna eat, and keep it G, they don't wanna see me",G,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,54,"I'm just tryna eat, and keep it G, they don't wanna see me",eat,54,"I'm just tryna eat, and keep it G, they don't wanna see me",keep,INNER,SLANT,cmu,MED,Y
+Till I’m Gone,54,"I'm just tryna eat, and keep it G, they don't wanna see me",eat,54,"I'm just tryna eat, and keep it G, they don't wanna see me",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,54,"I'm just tryna eat, and keep it G, they don't wanna see me",G,54,"I'm just tryna eat, and keep it G, they don't wanna see me",see,INNER,PERFECT,cmu,HIGH,Y
+Till I’m Gone,54,"I'm just tryna eat, and keep it G, they don't wanna see me",keep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",G,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,54,"I'm just tryna eat, and keep it G, they don't wanna see me",keep,54,"I'm just tryna eat, and keep it G, they don't wanna see me",see,INNER,ASSONANCE,vowel,MED,Y
+Till I’m Gone,54,"I'm just tryna eat, and keep it G, they don't wanna see me",tryna,54,"I'm just tryna eat, and keep it G, they don't wanna see me",eat,INNER,SLANT,spelling,LOW,Y
+Till I’m Gone,54,"I'm just tryna eat, and keep it G, they don't wanna see me",tryna,54,"I'm just tryna eat, and keep it G, they don't wanna see me",keep,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),1,I'm just kinda caught up wit' myself (yeah),kinda,1,I'm just kinda caught up wit' myself (yeah),wit,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),1,I'm just kinda caught up wit' myself (yeah),kinda,2,Livin' 'til my time goes down like it's supposed to,'til,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),1,I'm just kinda caught up wit' myself (yeah),kinda,2,Livin' 'til my time goes down like it's supposed to,Livin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),1,I'm just kinda caught up wit' myself (yeah),wit,2,Livin' 'til my time goes down like it's supposed to,'til,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),1,I'm just kinda caught up wit' myself (yeah),wit,2,Livin' 'til my time goes down like it's supposed to,Livin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),1,I'm just kinda caught up wit' myself (yeah),myself,3,I can't really trust nobody else (yeah),else,END,SLANT,cmu,MED,Y
+Time Goes Down (Remix),1,I'm just kinda caught up wit' myself (yeah),kinda,3,I can't really trust nobody else (yeah),can't,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),1,I'm just kinda caught up wit' myself (yeah),kinda,3,I can't really trust nobody else (yeah),really,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),1,I'm just kinda caught up wit' myself (yeah),wit,3,I can't really trust nobody else (yeah),really,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,goes,2,Livin' 'til my time goes down like it's supposed to,supposed,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,Livin,2,Livin' 'til my time goes down like it's supposed to,'til,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,time,2,Livin' 'til my time goes down like it's supposed to,like,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,'til,3,I can't really trust nobody else (yeah),really,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,Livin,3,I can't really trust nobody else (yeah),really,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,supposed,4,Either way my time goes down like it's supposed to,supposed,END,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,down,4,Either way my time goes down like it's supposed to,down,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,goes,4,Either way my time goes down like it's supposed to,goes,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,goes,4,Either way my time goes down like it's supposed to,supposed,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,like,4,Either way my time goes down like it's supposed to,like,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,like,4,Either way my time goes down like it's supposed to,time,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,supposed,4,Either way my time goes down like it's supposed to,goes,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,time,4,Either way my time goes down like it's supposed to,like,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,time,4,Either way my time goes down like it's supposed to,time,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,supposed,5,"I would know, either way my time goes down like it's supposed to",supposed,END,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),2,Livin' 'til my time goes down like it's supposed to,supposed,6,"I would know, money on my line, oh my gosh, yes I'm going to it",going,END,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),3,I can't really trust nobody else (yeah),nobody,4,Either way my time goes down like it's supposed to,Either,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),3,I can't really trust nobody else (yeah),nobody,5,"I would know, either way my time goes down like it's supposed to",either,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,goes,4,Either way my time goes down like it's supposed to,supposed,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,time,4,Either way my time goes down like it's supposed to,like,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,supposed,5,"I would know, either way my time goes down like it's supposed to",supposed,END,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,down,5,"I would know, either way my time goes down like it's supposed to",down,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,Either,5,"I would know, either way my time goes down like it's supposed to",either,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,goes,5,"I would know, either way my time goes down like it's supposed to",goes,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,goes,5,"I would know, either way my time goes down like it's supposed to",know,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,goes,5,"I would know, either way my time goes down like it's supposed to",supposed,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,like,5,"I would know, either way my time goes down like it's supposed to",like,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,like,5,"I would know, either way my time goes down like it's supposed to",time,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,supposed,5,"I would know, either way my time goes down like it's supposed to",goes,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,supposed,5,"I would know, either way my time goes down like it's supposed to",know,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,time,5,"I would know, either way my time goes down like it's supposed to",like,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,time,5,"I would know, either way my time goes down like it's supposed to",time,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,way,5,"I would know, either way my time goes down like it's supposed to",way,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,supposed,6,"I would know, money on my line, oh my gosh, yes I'm going to it",going,END,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,goes,6,"I would know, money on my line, oh my gosh, yes I'm going to it",going,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,goes,6,"I would know, money on my line, oh my gosh, yes I'm going to it",know,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,like,6,"I would know, money on my line, oh my gosh, yes I'm going to it",line,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,supposed,6,"I would know, money on my line, oh my gosh, yes I'm going to it",know,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),4,Either way my time goes down like it's supposed to,time,6,"I would know, money on my line, oh my gosh, yes I'm going to it",line,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",goes,5,"I would know, either way my time goes down like it's supposed to",supposed,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",know,5,"I would know, either way my time goes down like it's supposed to",goes,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",know,5,"I would know, either way my time goes down like it's supposed to",supposed,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",time,5,"I would know, either way my time goes down like it's supposed to",like,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",supposed,6,"I would know, money on my line, oh my gosh, yes I'm going to it",going,END,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",goes,6,"I would know, money on my line, oh my gosh, yes I'm going to it",going,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",goes,6,"I would know, money on my line, oh my gosh, yes I'm going to it",know,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",know,6,"I would know, money on my line, oh my gosh, yes I'm going to it",going,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",know,6,"I would know, money on my line, oh my gosh, yes I'm going to it",know,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",like,6,"I would know, money on my line, oh my gosh, yes I'm going to it",line,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",supposed,6,"I would know, money on my line, oh my gosh, yes I'm going to it",know,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",time,6,"I would know, money on my line, oh my gosh, yes I'm going to it",line,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",would,6,"I would know, money on my line, oh my gosh, yes I'm going to it",would,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",either,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Nina,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",like,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",by,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",like,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",drive,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",like,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",like,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",like,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",nine,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",time,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",by,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",time,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",drive,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",time,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",like,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),5,"I would know, either way my time goes down like it's supposed to",time,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",nine,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),6,"I would know, money on my line, oh my gosh, yes I'm going to it",know,6,"I would know, money on my line, oh my gosh, yes I'm going to it",going,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),6,"I would know, money on my line, oh my gosh, yes I'm going to it",line,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",by,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),6,"I would know, money on my line, oh my gosh, yes I'm going to it",line,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",drive,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),6,"I would know, money on my line, oh my gosh, yes I'm going to it",line,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",like,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),6,"I would know, money on my line, oh my gosh, yes I'm going to it",line,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",nine,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),6,"I would know, money on my line, oh my gosh, yes I'm going to it",gosh,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",God,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),6,"I would know, money on my line, oh my gosh, yes I'm going to it",money,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",judge,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),6,"I would know, money on my line, oh my gosh, yes I'm going to it",yes,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",bless,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",by,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",nine,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",drive,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",by,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",drive,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",nine,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",like,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",by,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",like,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",drive,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",like,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",nine,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",sitting,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",lives,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Whip,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",lives,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Whip,7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",sitting,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",lives,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",lives,END,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",lives,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",really,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",sitting,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",lives,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",sitting,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",really,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Whip,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",lives,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Whip,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",really,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",by,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",fine,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",by,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mine,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",drive,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",fine,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",drive,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mine,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",foreign,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",all,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",like,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",fine,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",like,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mine,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",lives,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",'til,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Nina,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mean,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Nina,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",see,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Nina,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",Teachin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",nine,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",fine,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",nine,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mine,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",sitting,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",'til,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Whip,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",'til,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),7,"Whip the foreign like a drive by, Nina sitting with me that's for nine lives",Whip,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",nigga,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),8,"I ain't really with the Allahs, pray to God to bless and judge our lives",ain't,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",pray,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),8,"I ain't really with the Allahs, pray to God to bless and judge our lives",really,8,"I ain't really with the Allahs, pray to God to bless and judge our lives",lives,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),8,"I ain't really with the Allahs, pray to God to bless and judge our lives",judge,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",what,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),8,"I ain't really with the Allahs, pray to God to bless and judge our lives",lives,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",'til,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),8,"I ain't really with the Allahs, pray to God to bless and judge our lives",really,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",'til,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),8,"I ain't really with the Allahs, pray to God to bless and judge our lives",lives,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",'til,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),8,"I ain't really with the Allahs, pray to God to bless and judge our lives",really,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",'til,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",fine,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mine,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",niggas,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",nigga,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",see,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mean,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",Teachin,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mean,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",Teachin,9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",see,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mine,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",fine,END,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",'til,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",'til,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",all,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",all,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",fine,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",find,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",fine,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",fine,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mean,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",see,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mine,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",find,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",nigga,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",niggas,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",niggas,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",niggas,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",see,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",see,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",Teachin,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",see,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mine,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",line,END,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",'til,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",bitches,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",all,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",all,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",all,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",small,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",fine,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",line,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",fine,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",time,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",mine,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",time,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",nigga,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",niggas,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",niggas,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",niggas,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),9,"Teachin' niggas 'til their so fine, nigga see what I mean, yeah it's all mine",what,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",front,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",all,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",all,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",find,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",fine,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",niggas,10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",niggas,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",fine,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",line,END,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",'til,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",bitches,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",all,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",all,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",all,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",small,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",find,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",line,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",find,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",time,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",fine,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",time,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",niggas,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",niggas,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",all,12,"See I can trust us all, no, see I just want this dub, yeah",all,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),10,"And niggas searchin' 'til they all find, niggas see you doin' good, it's all fine",see,12,"See I can trust us all, no, see I just want this dub, yeah",See,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",all,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",small,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",fakin,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",fakin,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",time,11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",line,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",all,12,"See I can trust us all, no, see I just want this dub, yeah",all,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",front,12,"See I can trust us all, no, see I just want this dub, yeah",dub,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",front,12,"See I can trust us all, no, see I just want this dub, yeah",trust,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",small,12,"See I can trust us all, no, see I just want this dub, yeah",all,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),11,"And niggas fakin', yeah that's all time, bitches front and fakin', that's a small line",front,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",love,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",See,12,"See I can trust us all, no, see I just want this dub, yeah",see,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",trust,12,"See I can trust us all, no, see I just want this dub, yeah",dub,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",can,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",can't,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",can,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",stack,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",dub,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",love,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",no,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",go,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",no,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",hoes,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",See,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",See,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",See,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",these,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",trust,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",love,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",want,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",can't,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",all,14,"I wanna look wild when I flex it, get diamonds all up in my necklace",all,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),12,"See I can trust us all, no, see I just want this dub, yeah",want,14,"I wanna look wild when I flex it, get diamonds all up in my necklace",wanna,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),13,"See I can't love these hoes, yeah, I stack it up and go, yeah",can't,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",stack,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),13,"See I can't love these hoes, yeah, I stack it up and go, yeah",hoes,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",go,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),13,"See I can't love these hoes, yeah, I stack it up and go, yeah",See,13,"See I can't love these hoes, yeah, I stack it up and go, yeah",these,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",flex,14,"I wanna look wild when I flex it, get diamonds all up in my necklace",get,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",flex,14,"I wanna look wild when I flex it, get diamonds all up in my necklace",necklace,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",get,14,"I wanna look wild when I flex it, get diamonds all up in my necklace",necklace,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",when,14,"I wanna look wild when I flex it, get diamonds all up in my necklace",flex,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",when,14,"I wanna look wild when I flex it, get diamonds all up in my necklace",get,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",when,14,"I wanna look wild when I flex it, get diamonds all up in my necklace",necklace,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",wild,14,"I wanna look wild when I flex it, get diamonds all up in my necklace",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",necklace,15,"Got foreign all on my like Tetris, get mama the crib she requested",requested,END,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",all,15,"Got foreign all on my like Tetris, get mama the crib she requested",all,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",all,15,"Got foreign all on my like Tetris, get mama the crib she requested",foreign,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",diamonds,15,"Got foreign all on my like Tetris, get mama the crib she requested",like,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",flex,15,"Got foreign all on my like Tetris, get mama the crib she requested",get,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",flex,15,"Got foreign all on my like Tetris, get mama the crib she requested",requested,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",flex,15,"Got foreign all on my like Tetris, get mama the crib she requested",Tetris,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",get,15,"Got foreign all on my like Tetris, get mama the crib she requested",get,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",get,15,"Got foreign all on my like Tetris, get mama the crib she requested",requested,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",necklace,15,"Got foreign all on my like Tetris, get mama the crib she requested",get,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",necklace,15,"Got foreign all on my like Tetris, get mama the crib she requested",Tetris,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",wanna,15,"Got foreign all on my like Tetris, get mama the crib she requested",Got,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",wanna,15,"Got foreign all on my like Tetris, get mama the crib she requested",mama,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",when,15,"Got foreign all on my like Tetris, get mama the crib she requested",get,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",when,15,"Got foreign all on my like Tetris, get mama the crib she requested",requested,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),14,"I wanna look wild when I flex it, get diamonds all up in my necklace",wild,15,"Got foreign all on my like Tetris, get mama the crib she requested",like,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),15,"Got foreign all on my like Tetris, get mama the crib she requested",foreign,15,"Got foreign all on my like Tetris, get mama the crib she requested",all,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),15,"Got foreign all on my like Tetris, get mama the crib she requested",get,15,"Got foreign all on my like Tetris, get mama the crib she requested",requested,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),15,"Got foreign all on my like Tetris, get mama the crib she requested",Got,15,"Got foreign all on my like Tetris, get mama the crib she requested",mama,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),15,"Got foreign all on my like Tetris, get mama the crib she requested",crib,16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",nigga,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),15,"Got foreign all on my like Tetris, get mama the crib she requested",crib,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",history,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),15,"Got foreign all on my like Tetris, get mama the crib she requested",crib,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",I'ma,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),15,"Got foreign all on my like Tetris, get mama the crib she requested",crib,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",shit,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),15,"Got foreign all on my like Tetris, get mama the crib she requested",like,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",like,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",can't,16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",stand,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",hatin,16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",make,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",hatin,16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",occupation,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",Niggas,16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",nigga,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",occupation,16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",make,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",another,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",can't,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",makin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",hatin,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",take,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",make,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",take,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",nigga,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",shit,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",occupation,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",take,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",see,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",here,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",stand,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",makin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",another,18,"Money always on my line, yeah, and I answer all the time (hey)",Money,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",can't,18,"Money always on my line, yeah, and I answer all the time (hey)",answer,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",hatin,18,"Money always on my line, yeah, and I answer all the time (hey)",always,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",make,18,"Money always on my line, yeah, and I answer all the time (hey)",always,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",occupation,18,"Money always on my line, yeah, and I answer all the time (hey)",always,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),16,"Niggas hatin' that's their occupation, they can't stand to see another nigga make it",stand,18,"Money always on my line, yeah, and I answer all the time (hey)",answer,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",fuckin,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",fuckin,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",like,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",like,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",shit,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",history,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",shit,17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",I'ma,INNER,SLANT,spelling,LOW,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",like,18,"Money always on my line, yeah, and I answer all the time (hey)",time,END,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",fuckin,18,"Money always on my line, yeah, and I answer all the time (hey)",Money,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",like,18,"Money always on my line, yeah, and I answer all the time (hey)",line,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",like,18,"Money always on my line, yeah, and I answer all the time (hey)",time,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",makin,18,"Money always on my line, yeah, and I answer all the time (hey)",answer,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",take,18,"Money always on my line, yeah, and I answer all the time (hey)",always,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",like,19,"Bitches always on my line, but not important so I decline",decline,END,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",history,19,"Bitches always on my line, but not important so I decline",Bitches,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",like,19,"Bitches always on my line, but not important so I decline",decline,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",like,19,"Bitches always on my line, but not important so I decline",line,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",shit,19,"Bitches always on my line, but not important so I decline",Bitches,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),17,"This shit here like history in the makin', this a fuckin' so I'ma fuckin' take it like",take,19,"Bitches always on my line, but not important so I decline",always,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",line,18,"Money always on my line, yeah, and I answer all the time (hey)",time,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",time,19,"Bitches always on my line, but not important so I decline",decline,END,SLANT,cmu,MED,Y
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",all,19,"Bitches always on my line, but not important so I decline",important,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",always,19,"Bitches always on my line, but not important so I decline",always,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",line,19,"Bitches always on my line, but not important so I decline",decline,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",line,19,"Bitches always on my line, but not important so I decline",line,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",time,19,"Bitches always on my line, but not important so I decline",line,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",all,20,"got imported, you know that it's foreign, ass over M on the A (ay)",foreign,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",all,20,"got imported, you know that it's foreign, ass over M on the A (ay)",imported,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),18,"Money always on my line, yeah, and I answer all the time (hey)",answer,20,"got imported, you know that it's foreign, ass over M on the A (ay)",ass,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),19,"Bitches always on my line, but not important so I decline",line,19,"Bitches always on my line, but not important so I decline",decline,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),19,"Bitches always on my line, but not important so I decline",important,20,"got imported, you know that it's foreign, ass over M on the A (ay)",foreign,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),19,"Bitches always on my line, but not important so I decline",important,20,"got imported, you know that it's foreign, ass over M on the A (ay)",imported,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),19,"Bitches always on my line, but not important so I decline",not,20,"got imported, you know that it's foreign, ass over M on the A (ay)",got,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),19,"Bitches always on my line, but not important so I decline",Bitches,21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",him,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),19,"Bitches always on my line, but not important so I decline",important,21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",billboards,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",imported,20,"got imported, you know that it's foreign, ass over M on the A (ay)",foreign,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",know,20,"got imported, you know that it's foreign, ass over M on the A (ay)",over,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",M,21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",there,END,SLANT,cmu,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",foreign,21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",billboards,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",imported,21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",billboards,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",know,21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",hopin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",over,21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",hopin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",foreign,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Shawn,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",imported,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Shawn,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",M,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Kemp,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),20,"got imported, you know that it's foreign, ass over M on the A (ay)",M,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",wet,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",billboards,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Shawn,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",him,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",swim,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",Lookin,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",could,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",there,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Kemp,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",there,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",wet,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",billboards,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",walk,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",him,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",bitch,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",him,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",him,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",limp,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),21,"Lookin' at billboards hopin' that nigga to see him on there, ay (ay)",see,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",keep,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",'em,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Diamonds,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",I'll,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Diamonds,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",like,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",I'll,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",like,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",wet,22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Kemp,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Diamonds,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",like,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Diamonds,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",why,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",I'll,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",like,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",I'll,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",why,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",like,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",like,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",like,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",why,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Shawn,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",walk,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",swim,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",bitch,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",swim,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",swim,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",limp,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",'em,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",'em,END,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",'em,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Kemp,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",extra,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",Shawn,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",walk,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",shoot,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",shoot,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",swim,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",clip,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",swim,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",dip,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",wet,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",extra,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),22,"Diamonds so wet you could swim on 'em, I'll shoot it out like Shawn Kemp on 'em",'em,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",'em,END,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",bitch,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",bitch,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",limp,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",limp,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",like,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",why,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",limp,23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",bitch,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",clip,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",bitch,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",dip,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",clip,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",dip,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",limp,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",clip,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",limp,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",dip,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",walk,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",walk,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",bitch,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Pimp,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Pimp,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",keep,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",lean,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",like,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",like,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",limp,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Pimp,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",walk,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",pour,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",why,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",like,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),23,"They like that boy keep that bitch on him, that's why he walk with that limp on him",him,27,"My Glock is .357, back of that new '63 with the tint on it (ay)",tint,END,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",'em,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",clip,24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",dip,INNER,PERFECT,cmu,HIGH,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",'em,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",'em,END,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",'em,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",'em,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",block,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",poppin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",block,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Rollin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",clip,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Pimp,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",dip,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Pimp,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",shoot,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",used,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",walk,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",pour,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",block,26,"at 7-Eleven, I just got back from LA on the ( on 'em)",got,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",block,26,"at 7-Eleven, I just got back from LA on the ( on 'em)",LA,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",extra,26,"at 7-Eleven, I just got back from LA on the ( on 'em)",Eleven,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),24,"Fuck round a whole extra clip on 'em, walk in your block, shoot it up and just dip on 'em",'em,28,"Might pull in the on 'em (ay), if you talkin' money, I'ma spend on 'em",'em,END,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Rollin,25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",poppin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",poppin,26,"at 7-Eleven, I just got back from LA on the ( on 'em)",got,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",poppin,26,"at 7-Eleven, I just got back from LA on the ( on 'em)",LA,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Rollin,26,"at 7-Eleven, I just got back from LA on the ( on 'em)",got,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Rollin,26,"at 7-Eleven, I just got back from LA on the ( on 'em)",LA,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Pimp,27,"My Glock is .357, back of that new '63 with the tint on it (ay)",tint,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",poppin,27,"My Glock is .357, back of that new '63 with the tint on it (ay)",Glock,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",Rollin,27,"My Glock is .357, back of that new '63 with the tint on it (ay)",Glock,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",used,27,"My Glock is .357, back of that new '63 with the tint on it (ay)",new,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),25,"Rollin' backwoods poppin' Yerkys, I used to pour up the lean like I'm Pimp on 'em (pow)",'em,28,"Might pull in the on 'em (ay), if you talkin' money, I'ma spend on 'em",'em,END,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),26,"at 7-Eleven, I just got back from LA on the ( on 'em)",got,26,"at 7-Eleven, I just got back from LA on the ( on 'em)",LA,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),26,"at 7-Eleven, I just got back from LA on the ( on 'em)",back,27,"My Glock is .357, back of that new '63 with the tint on it (ay)",back,INNER,REPEAT,spelling,HIGH,N
+Time Goes Down (Remix),26,"at 7-Eleven, I just got back from LA on the ( on 'em)",got,27,"My Glock is .357, back of that new '63 with the tint on it (ay)",Glock,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),26,"at 7-Eleven, I just got back from LA on the ( on 'em)",LA,27,"My Glock is .357, back of that new '63 with the tint on it (ay)",Glock,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),26,"at 7-Eleven, I just got back from LA on the ( on 'em)",Eleven,28,"Might pull in the on 'em (ay), if you talkin' money, I'ma spend on 'em",spend,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),26,"at 7-Eleven, I just got back from LA on the ( on 'em)",got,28,"Might pull in the on 'em (ay), if you talkin' money, I'ma spend on 'em",talkin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),26,"at 7-Eleven, I just got back from LA on the ( on 'em)",LA,28,"Might pull in the on 'em (ay), if you talkin' money, I'ma spend on 'em",talkin,INNER,ASSONANCE,vowel,MED,Y
+Time Goes Down (Remix),27,"My Glock is .357, back of that new '63 with the tint on it (ay)",Glock,28,"Might pull in the on 'em (ay), if you talkin' money, I'ma spend on 'em",talkin,INNER,SLANT,cmu,MED,Y
+Time Goes Down (Remix),28,"Might pull in the on 'em (ay), if you talkin' money, I'ma spend on 'em",'em,28,"Might pull in the on 'em (ay), if you talkin' money, I'ma spend on 'em",'em,INNER,REPEAT,spelling,HIGH,N

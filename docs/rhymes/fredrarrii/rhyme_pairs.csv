@@ -1,0 +1,524 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Balenciaga,1,"Balenciaga steppin, double R pushing",pushing,2,"on my back, so I'm always looking",looking,END,SLANT,cmu,MED,Y
+Balenciaga,1,"Balenciaga steppin, double R pushing",Balenciaga,2,"on my back, so I'm always looking",back,INNER,ASSONANCE,vowel,LOW,N
+Balenciaga,1,"Balenciaga steppin, double R pushing",Balenciaga,3,"Lambo so fast, Ballmains on my ass",fast,INNER,ASSONANCE,vowel,LOW,N
+Balenciaga,2,"on my back, so I'm always looking",back,3,"Lambo so fast, Ballmains on my ass",ass,INNER,SLANT,cmu,MED,Y
+Balenciaga,2,"on my back, so I'm always looking",back,3,"Lambo so fast, Ballmains on my ass",fast,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,2,"on my back, so I'm always looking",back,4,"Got shit I never had, me and Lu just did the dash",dash,INNER,SLANT,cmu,MED,Y
+Balenciaga,2,"on my back, so I'm always looking",back,4,"Got shit I never had, me and Lu just did the dash",had,INNER,SLANT,cmu,MED,Y
+Balenciaga,3,"Lambo so fast, Ballmains on my ass",fast,3,"Lambo so fast, Ballmains on my ass",ass,INNER,SLANT,cmu,MED,Y
+Balenciaga,3,"Lambo so fast, Ballmains on my ass",ass,4,"Got shit I never had, me and Lu just did the dash",dash,END,SLANT,cmu,MED,Y
+Balenciaga,3,"Lambo so fast, Ballmains on my ass",ass,4,"Got shit I never had, me and Lu just did the dash",had,INNER,SLANT,cmu,MED,Y
+Balenciaga,3,"Lambo so fast, Ballmains on my ass",fast,4,"Got shit I never had, me and Lu just did the dash",dash,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,3,"Lambo so fast, Ballmains on my ass",fast,4,"Got shit I never had, me and Lu just did the dash",had,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,3,"Lambo so fast, Ballmains on my ass",ass,5,I did the dash in that bitch,dash,INNER,SLANT,cmu,MED,Y
+Balenciaga,3,"Lambo so fast, Ballmains on my ass",fast,5,I did the dash in that bitch,dash,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,4,"Got shit I never had, me and Lu just did the dash",had,4,"Got shit I never had, me and Lu just did the dash",dash,INNER,SLANT,cmu,MED,Y
+Balenciaga,4,"Got shit I never had, me and Lu just did the dash",dash,5,I did the dash in that bitch,dash,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,4,"Got shit I never had, me and Lu just did the dash",had,5,I did the dash in that bitch,dash,INNER,SLANT,cmu,MED,Y
+Balenciaga,4,"Got shit I never had, me and Lu just did the dash",shit,5,I did the dash in that bitch,bitch,INNER,SLANT,cmu,MED,Y
+Balenciaga,4,"Got shit I never had, me and Lu just did the dash",dash,6,"Double R soundproof, you can't hear shit",can't,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,4,"Got shit I never had, me and Lu just did the dash",Got,6,"Double R soundproof, you can't hear shit",R,INNER,SLANT,cmu,MED,Y
+Balenciaga,4,"Got shit I never had, me and Lu just did the dash",had,6,"Double R soundproof, you can't hear shit",can't,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,4,"Got shit I never had, me and Lu just did the dash",shit,6,"Double R soundproof, you can't hear shit",shit,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,5,I did the dash in that bitch,bitch,6,"Double R soundproof, you can't hear shit",shit,END,SLANT,cmu,MED,Y
+Balenciaga,5,I did the dash in that bitch,dash,6,"Double R soundproof, you can't hear shit",can't,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,5,I did the dash in that bitch,bitch,7,"I'm from the , 13, we ain't have shit",shit,END,SLANT,cmu,MED,Y
+Balenciaga,5,I did the dash in that bitch,dash,7,"I'm from the , 13, we ain't have shit",have,INNER,SLANT,cmu,MED,Y
+Balenciaga,5,I did the dash in that bitch,bitch,8,"Mama starving, son robbing, said you ain't be shit",shit,END,SLANT,cmu,MED,Y
+Balenciaga,6,"Double R soundproof, you can't hear shit",shit,7,"I'm from the , 13, we ain't have shit",shit,END,REPEAT,spelling,HIGH,N
+Balenciaga,6,"Double R soundproof, you can't hear shit",can't,7,"I'm from the , 13, we ain't have shit",have,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,6,"Double R soundproof, you can't hear shit",shit,8,"Mama starving, son robbing, said you ain't be shit",shit,END,REPEAT,spelling,HIGH,N
+Balenciaga,6,"Double R soundproof, you can't hear shit",Double,8,"Mama starving, son robbing, said you ain't be shit",son,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,6,"Double R soundproof, you can't hear shit",R,8,"Mama starving, son robbing, said you ain't be shit",Mama,INNER,SLANT,cmu,MED,Y
+Balenciaga,6,"Double R soundproof, you can't hear shit",R,8,"Mama starving, son robbing, said you ain't be shit",robbing,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,6,"Double R soundproof, you can't hear shit",R,8,"Mama starving, son robbing, said you ain't be shit",starving,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,7,"I'm from the , 13, we ain't have shit",shit,8,"Mama starving, son robbing, said you ain't be shit",shit,END,REPEAT,spelling,HIGH,N
+Balenciaga,7,"I'm from the , 13, we ain't have shit",ain't,8,"Mama starving, son robbing, said you ain't be shit",ain't,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,7,"I'm from the , 13, we ain't have shit",have,9,"Ballmains on my ass, on the tab",ass,INNER,SLANT,cmu,MED,Y
+Balenciaga,7,"I'm from the , 13, we ain't have shit",have,9,"Ballmains on my ass, on the tab",tab,INNER,SLANT,cmu,MED,Y
+Balenciaga,8,"Mama starving, son robbing, said you ain't be shit",Mama,8,"Mama starving, son robbing, said you ain't be shit",robbing,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,8,"Mama starving, son robbing, said you ain't be shit",Mama,8,"Mama starving, son robbing, said you ain't be shit",starving,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,8,"Mama starving, son robbing, said you ain't be shit",starving,8,"Mama starving, son robbing, said you ain't be shit",robbing,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,8,"Mama starving, son robbing, said you ain't be shit",shit,10,"45 on my hip, so fast",hip,INNER,SLANT,cmu,MED,Y
+Balenciaga,9,"Ballmains on my ass, on the tab",ass,9,"Ballmains on my ass, on the tab",tab,INNER,SLANT,cmu,MED,Y
+Balenciaga,9,"Ballmains on my ass, on the tab",tab,10,"45 on my hip, so fast",fast,END,ASSONANCE,vowel,MED,Y
+Balenciaga,9,"Ballmains on my ass, on the tab",ass,10,"45 on my hip, so fast",fast,INNER,SLANT,cmu,MED,Y
+Balenciaga,10,"45 on my hip, so fast",fast,12,"Jason mask on, nigga it's on site",mask,INNER,SLANT,cmu,MED,Y
+Balenciaga,10,"45 on my hip, so fast",hip,12,"Jason mask on, nigga it's on site",nigga,INNER,SLANT,spelling,LOW,Y
+Balenciaga,11,"change your life, take your life",change,11,"change your life, take your life",take,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,11,"change your life, take your life",life,11,"change your life, take your life",life,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,11,"change your life, take your life",life,12,"Jason mask on, nigga it's on site",site,END,SLANT,cmu,MED,Y
+Balenciaga,11,"change your life, take your life",change,12,"Jason mask on, nigga it's on site",Jason,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,11,"change your life, take your life",life,12,"Jason mask on, nigga it's on site",site,INNER,SLANT,cmu,MED,Y
+Balenciaga,11,"change your life, take your life",take,12,"Jason mask on, nigga it's on site",Jason,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,12,"Jason mask on, nigga it's on site",Jason,14,"Talking ain't o , that love",ain't,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,13,"Red bottoms, all I seen was blood",blood,14,"Talking ain't o , that love",love,END,SLANT,cmu,MED,Y
+Balenciaga,13,"Red bottoms, all I seen was blood",all,14,"Talking ain't o , that love",Talking,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,13,"Red bottoms, all I seen was blood",blood,15,"Summerhill to the , now nigga that's love",love,END,SLANT,cmu,MED,Y
+Balenciaga,13,"Red bottoms, all I seen was blood",blood,16,now that's my plug,plug,END,SLANT,cmu,MED,Y
+Balenciaga,13,"Red bottoms, all I seen was blood",blood,17,"Told him if he got a problem, send me a dub",dub,END,SLANT,cmu,MED,Y
+Balenciaga,14,"Talking ain't o , that love",love,15,"Summerhill to the , now nigga that's love",love,END,REPEAT,spelling,HIGH,N
+Balenciaga,14,"Talking ain't o , that love",love,16,now that's my plug,plug,END,SLANT,cmu,MED,Y
+Balenciaga,14,"Talking ain't o , that love",love,17,"Told him if he got a problem, send me a dub",dub,END,SLANT,cmu,MED,Y
+Balenciaga,14,"Talking ain't o , that love",love,18,"Stack my hundreds to the cieling, give my bitches the dub",dub,END,SLANT,cmu,MED,Y
+Balenciaga,15,"Summerhill to the , now nigga that's love",love,16,now that's my plug,plug,END,SLANT,cmu,MED,Y
+Balenciaga,15,"Summerhill to the , now nigga that's love",now,16,now that's my plug,now,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,15,"Summerhill to the , now nigga that's love",love,17,"Told him if he got a problem, send me a dub",dub,END,SLANT,cmu,MED,Y
+Balenciaga,15,"Summerhill to the , now nigga that's love",Summerhill,17,"Told him if he got a problem, send me a dub",him,INNER,SLANT,cmu,MED,Y
+Balenciaga,15,"Summerhill to the , now nigga that's love",love,18,"Stack my hundreds to the cieling, give my bitches the dub",dub,END,SLANT,cmu,MED,Y
+Balenciaga,15,"Summerhill to the , now nigga that's love",love,19,"Feel like a million dollar nigga, when I walk in the club",club,END,SLANT,cmu,MED,Y
+Balenciaga,16,now that's my plug,plug,17,"Told him if he got a problem, send me a dub",dub,END,SLANT,cmu,MED,Y
+Balenciaga,16,now that's my plug,plug,18,"Stack my hundreds to the cieling, give my bitches the dub",dub,END,SLANT,cmu,MED,Y
+Balenciaga,16,now that's my plug,plug,18,"Stack my hundreds to the cieling, give my bitches the dub",hundreds,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,16,now that's my plug,plug,19,"Feel like a million dollar nigga, when I walk in the club",club,END,SLANT,cmu,MED,Y
+Balenciaga,16,now that's my plug,plug,20,"Real niggas give me dap, bad bitches want hugs",hugs,END,SLANT,cmu,MED,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",got,17,"Told him if he got a problem, send me a dub",problem,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",dub,18,"Stack my hundreds to the cieling, give my bitches the dub",dub,END,REPEAT,spelling,HIGH,N
+Balenciaga,17,"Told him if he got a problem, send me a dub",dub,18,"Stack my hundreds to the cieling, give my bitches the dub",hundreds,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",him,18,"Stack my hundreds to the cieling, give my bitches the dub",bitches,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",him,18,"Stack my hundreds to the cieling, give my bitches the dub",give,INNER,SLANT,cmu,MED,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",dub,19,"Feel like a million dollar nigga, when I walk in the club",club,END,PERFECT,cmu,HIGH,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",got,19,"Feel like a million dollar nigga, when I walk in the club",dollar,INNER,SLANT,cmu,MED,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",him,19,"Feel like a million dollar nigga, when I walk in the club",million,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",problem,19,"Feel like a million dollar nigga, when I walk in the club",dollar,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",send,19,"Feel like a million dollar nigga, when I walk in the club",when,INNER,SLANT,cmu,MED,Y
+Balenciaga,17,"Told him if he got a problem, send me a dub",dub,20,"Real niggas give me dap, bad bitches want hugs",hugs,END,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",give,18,"Stack my hundreds to the cieling, give my bitches the dub",bitches,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",hundreds,18,"Stack my hundreds to the cieling, give my bitches the dub",dub,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",dub,19,"Feel like a million dollar nigga, when I walk in the club",club,END,PERFECT,cmu,HIGH,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",bitches,19,"Feel like a million dollar nigga, when I walk in the club",million,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",cieling,19,"Feel like a million dollar nigga, when I walk in the club",million,INNER,SLANT,spelling,LOW,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",give,19,"Feel like a million dollar nigga, when I walk in the club",million,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",hundreds,19,"Feel like a million dollar nigga, when I walk in the club",club,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",dub,20,"Real niggas give me dap, bad bitches want hugs",hugs,END,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",bitches,20,"Real niggas give me dap, bad bitches want hugs",bitches,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",bitches,20,"Real niggas give me dap, bad bitches want hugs",give,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",give,20,"Real niggas give me dap, bad bitches want hugs",bitches,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",give,20,"Real niggas give me dap, bad bitches want hugs",give,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",hundreds,20,"Real niggas give me dap, bad bitches want hugs",hugs,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",Stack,20,"Real niggas give me dap, bad bitches want hugs",bad,INNER,SLANT,cmu,MED,Y
+Balenciaga,18,"Stack my hundreds to the cieling, give my bitches the dub",Stack,20,"Real niggas give me dap, bad bitches want hugs",dap,INNER,SLANT,spelling,LOW,Y
+Balenciaga,19,"Feel like a million dollar nigga, when I walk in the club",club,20,"Real niggas give me dap, bad bitches want hugs",hugs,END,ASSONANCE,vowel,MED,Y
+Balenciaga,19,"Feel like a million dollar nigga, when I walk in the club",dollar,20,"Real niggas give me dap, bad bitches want hugs",want,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,19,"Feel like a million dollar nigga, when I walk in the club",Feel,20,"Real niggas give me dap, bad bitches want hugs",Real,INNER,PERFECT,cmu,HIGH,Y
+Balenciaga,19,"Feel like a million dollar nigga, when I walk in the club",million,20,"Real niggas give me dap, bad bitches want hugs",bitches,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,19,"Feel like a million dollar nigga, when I walk in the club",million,20,"Real niggas give me dap, bad bitches want hugs",give,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,19,"Feel like a million dollar nigga, when I walk in the club",nigga,20,"Real niggas give me dap, bad bitches want hugs",niggas,INNER,SLANT,spelling,LOW,Y
+Balenciaga,19,"Feel like a million dollar nigga, when I walk in the club",dollar,21,"Don dada, Ace of Spade, gold bottles",bottles,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,19,"Feel like a million dollar nigga, when I walk in the club",dollar,21,"Don dada, Ace of Spade, gold bottles",dada,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,19,"Feel like a million dollar nigga, when I walk in the club",dollar,21,"Don dada, Ace of Spade, gold bottles",Don,INNER,SLANT,cmu,MED,Y
+Balenciaga,20,"Real niggas give me dap, bad bitches want hugs",dap,20,"Real niggas give me dap, bad bitches want hugs",bad,INNER,SLANT,spelling,LOW,Y
+Balenciaga,20,"Real niggas give me dap, bad bitches want hugs",give,20,"Real niggas give me dap, bad bitches want hugs",bitches,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,20,"Real niggas give me dap, bad bitches want hugs",want,21,"Don dada, Ace of Spade, gold bottles",bottles,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,20,"Real niggas give me dap, bad bitches want hugs",want,21,"Don dada, Ace of Spade, gold bottles",dada,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,20,"Real niggas give me dap, bad bitches want hugs",want,21,"Don dada, Ace of Spade, gold bottles",Don,INNER,SLANT,cmu,MED,Y
+Balenciaga,20,"Real niggas give me dap, bad bitches want hugs",want,22,"No problems, they don't want no problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,20,"Real niggas give me dap, bad bitches want hugs",want,22,"No problems, they don't want no problems",want,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",Ace,21,"Don dada, Ace of Spade, gold bottles",Spade,INNER,SLANT,cmu,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",dada,21,"Don dada, Ace of Spade, gold bottles",bottles,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",Don,21,"Don dada, Ace of Spade, gold bottles",bottles,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",Don,21,"Don dada, Ace of Spade, gold bottles",dada,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",bottles,22,"No problems, they don't want no problems",problems,END,SLANT,cmu,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",bottles,22,"No problems, they don't want no problems",problems,INNER,SLANT,cmu,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",bottles,22,"No problems, they don't want no problems",want,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",dada,22,"No problems, they don't want no problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",dada,22,"No problems, they don't want no problems",want,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",Don,22,"No problems, they don't want no problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",Don,22,"No problems, they don't want no problems",want,INNER,SLANT,cmu,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",gold,22,"No problems, they don't want no problems",don't,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",gold,22,"No problems, they don't want no problems",No,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",gold,23,"Semmi autos, they know we don't move without 'em",don't,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,21,"Don dada, Ace of Spade, gold bottles",gold,23,"Semmi autos, they know we don't move without 'em",know,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,22,"No problems, they don't want no problems",don't,22,"No problems, they don't want no problems",no,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,22,"No problems, they don't want no problems",No,22,"No problems, they don't want no problems",don't,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,22,"No problems, they don't want no problems",No,22,"No problems, they don't want no problems",no,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,22,"No problems, they don't want no problems",problems,22,"No problems, they don't want no problems",problems,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,22,"No problems, they don't want no problems",problems,22,"No problems, they don't want no problems",want,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,22,"No problems, they don't want no problems",want,22,"No problems, they don't want no problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,22,"No problems, they don't want no problems",don't,23,"Semmi autos, they know we don't move without 'em",don't,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,22,"No problems, they don't want no problems",don't,23,"Semmi autos, they know we don't move without 'em",know,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,22,"No problems, they don't want no problems",No,23,"Semmi autos, they know we don't move without 'em",don't,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,22,"No problems, they don't want no problems",No,23,"Semmi autos, they know we don't move without 'em",know,INNER,PERFECT,cmu,HIGH,Y
+Balenciaga,23,"Semmi autos, they know we don't move without 'em",know,23,"Semmi autos, they know we don't move without 'em",don't,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,23,"Semmi autos, they know we don't move without 'em",'em,24,Fuck 'em all if read about,'em,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,23,"Semmi autos, they know we don't move without 'em",autos,24,Fuck 'em all if read about,all,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,23,"Semmi autos, they know we don't move without 'em",without,24,Fuck 'em all if read about,about,INNER,PERFECT,cmu,HIGH,Y
+Balenciaga,23,"Semmi autos, they know we don't move without 'em",autos,25,"Drop them off in the water, we tryna hide them niggas",water,INNER,SLANT,cmu,MED,Y
+Balenciaga,24,Fuck 'em all if read about,all,25,"Drop them off in the water, we tryna hide them niggas",water,INNER,SLANT,cmu,MED,Y
+Balenciaga,25,"Drop them off in the water, we tryna hide them niggas",niggas,26,"hit they block up, we don't hide from niggas",niggas,END,REPEAT,spelling,HIGH,N
+Balenciaga,25,"Drop them off in the water, we tryna hide them niggas",Drop,26,"hit they block up, we don't hide from niggas",block,INNER,SLANT,cmu,MED,Y
+Balenciaga,25,"Drop them off in the water, we tryna hide them niggas",hide,26,"hit they block up, we don't hide from niggas",hide,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,25,"Drop them off in the water, we tryna hide them niggas",Drop,27,Having muscle like the cars,cars,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,25,"Drop them off in the water, we tryna hide them niggas",hide,27,Having muscle like the cars,like,INNER,SLANT,cmu,MED,Y
+Balenciaga,26,"hit they block up, we don't hide from niggas",block,27,Having muscle like the cars,cars,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,26,"hit they block up, we don't hide from niggas",hide,27,Having muscle like the cars,like,INNER,SLANT,cmu,MED,Y
+Balenciaga,26,"hit they block up, we don't hide from niggas",block,28,All the hating won't get you far,far,INNER,SLANT,cmu,MED,Y
+Balenciaga,26,"hit they block up, we don't hide from niggas",don't,28,All the hating won't get you far,won't,INNER,PERFECT,cmu,HIGH,Y
+Balenciaga,27,Having muscle like the cars,cars,28,All the hating won't get you far,far,END,SLANT,cmu,MED,Y
+Balenciaga,27,Having muscle like the cars,cars,29,"He tried to run, but Fararrii won't let him get too far",far,END,SLANT,cmu,MED,Y
+Balenciaga,27,Having muscle like the cars,like,29,"He tried to run, but Fararrii won't let him get too far",tried,INNER,SLANT,cmu,MED,Y
+Balenciaga,27,Having muscle like the cars,muscle,29,"He tried to run, but Fararrii won't let him get too far",run,INNER,ASSONANCE,vowel,MED,Y
+Balenciaga,27,Having muscle like the cars,cars,30,AP with my new AR,AR,END,SLANT,cmu,MED,Y
+Balenciaga,28,All the hating won't get you far,far,29,"He tried to run, but Fararrii won't let him get too far",far,END,REPEAT,spelling,HIGH,N
+Balenciaga,28,All the hating won't get you far,get,29,"He tried to run, but Fararrii won't let him get too far",get,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,28,All the hating won't get you far,get,29,"He tried to run, but Fararrii won't let him get too far",let,INNER,PERFECT,cmu,HIGH,Y
+Balenciaga,28,All the hating won't get you far,won't,29,"He tried to run, but Fararrii won't let him get too far",won't,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,28,All the hating won't get you far,far,30,AP with my new AR,AR,END,PERFECT,cmu,HIGH,Y
+Balenciaga,29,"He tried to run, but Fararrii won't let him get too far",let,29,"He tried to run, but Fararrii won't let him get too far",get,INNER,PERFECT,cmu,HIGH,Y
+Balenciaga,29,"He tried to run, but Fararrii won't let him get too far",far,30,AP with my new AR,AR,END,PERFECT,cmu,HIGH,Y
+Balenciaga,29,"He tried to run, but Fararrii won't let him get too far",get,31,"fuck the law, get you and your broad hit up",get,INNER,REPEAT,spelling,HIGH,N
+Balenciaga,29,"He tried to run, but Fararrii won't let him get too far",him,31,"fuck the law, get you and your broad hit up",hit,INNER,SLANT,cmu,MED,Y
+Balenciaga,29,"He tried to run, but Fararrii won't let him get too far",let,31,"fuck the law, get you and your broad hit up",get,INNER,PERFECT,cmu,HIGH,Y
+Balenciaga,29,"He tried to run, but Fararrii won't let him get too far",run,31,"fuck the law, get you and your broad hit up",fuck,INNER,SLANT,cmu,MED,Y
+Balenciaga,31,"fuck the law, get you and your broad hit up",law,31,"fuck the law, get you and your broad hit up",broad,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,1,Shit done changed now,changed,2,Ain't no more pain,Ain't,INNER,SLANT,cmu,MED,Y
+Lay It Down,1,Shit done changed now,changed,2,Ain't no more pain,pain,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,1,Shit done changed now,now,3,Ain't no more rain now,now,END,REPEAT,spelling,HIGH,N
+Lay It Down,1,Shit done changed now,changed,3,Ain't no more rain now,Ain't,INNER,SLANT,cmu,MED,Y
+Lay It Down,1,Shit done changed now,changed,3,Ain't no more rain now,rain,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,1,Shit done changed now,now,4,You know we stay down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,2,Ain't no more pain,Ain't,2,Ain't no more pain,pain,INNER,SLANT,cmu,MED,Y
+Lay It Down,2,Ain't no more pain,Ain't,3,Ain't no more rain now,Ain't,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,2,Ain't no more pain,Ain't,3,Ain't no more rain now,rain,INNER,SLANT,cmu,MED,Y
+Lay It Down,2,Ain't no more pain,more,3,Ain't no more rain now,more,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,2,Ain't no more pain,no,3,Ain't no more rain now,no,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,2,Ain't no more pain,pain,3,Ain't no more rain now,Ain't,INNER,SLANT,cmu,MED,Y
+Lay It Down,2,Ain't no more pain,pain,3,Ain't no more rain now,rain,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,2,Ain't no more pain,Ain't,4,You know we stay down,stay,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,2,Ain't no more pain,no,4,You know we stay down,know,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,2,Ain't no more pain,pain,4,You know we stay down,stay,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,2,Ain't no more pain,pain,5,Look how I came out,came,END,SLANT,cmu,MED,Y
+Lay It Down,3,Ain't no more rain now,Ain't,3,Ain't no more rain now,rain,INNER,SLANT,cmu,MED,Y
+Lay It Down,3,Ain't no more rain now,now,4,You know we stay down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,3,Ain't no more rain now,Ain't,4,You know we stay down,stay,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,3,Ain't no more rain now,no,4,You know we stay down,know,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,3,Ain't no more rain now,rain,4,You know we stay down,stay,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,3,Ain't no more rain now,Ain't,5,Look how I came out,came,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,3,Ain't no more rain now,now,5,Look how I came out,how,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,3,Ain't no more rain now,rain,5,Look how I came out,came,INNER,SLANT,cmu,MED,Y
+Lay It Down,3,Ain't no more rain now,now,6,I'm with my same rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Lay It Down,3,Ain't no more rain now,now,7,Why would I change now?,now,END,REPEAT,spelling,HIGH,N
+Lay It Down,4,You know we stay down,down,5,Look how I came out,how,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,4,You know we stay down,stay,5,Look how I came out,came,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,4,You know we stay down,down,6,I'm with my same rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Lay It Down,4,You know we stay down,stay,6,I'm with my same rounds,same,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,4,You know we stay down,down,7,Why would I change now?,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,4,You know we stay down,down,8,I can't let the gang down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,5,Look how I came out,came,6,I'm with my same rounds,same,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,5,Look how I came out,how,6,I'm with my same rounds,rounds,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,5,Look how I came out,came,7,Why would I change now?,change,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,5,Look how I came out,how,7,Why would I change now?,now,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,5,Look how I came out,Look,7,Why would I change now?,would,INNER,SLANT,cmu,MED,Y
+Lay It Down,6,I'm with my same rounds,rounds,7,Why would I change now?,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,6,I'm with my same rounds,same,7,Why would I change now?,change,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,6,I'm with my same rounds,rounds,8,I can't let the gang down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,6,I'm with my same rounds,rounds,9,I can't let my fans down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,7,Why would I change now?,now,8,I can't let the gang down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,7,Why would I change now?,now,9,I can't let my fans down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,7,Why would I change now?,now,11,Never keep my head down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,8,I can't let the gang down,can't,8,I can't let the gang down,gang,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,8,I can't let the gang down,down,9,I can't let my fans down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,8,I can't let the gang down,can't,9,I can't let my fans down,can't,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,8,I can't let the gang down,can't,9,I can't let my fans down,fans,INNER,SLANT,cmu,MED,Y
+Lay It Down,8,I can't let the gang down,gang,9,I can't let my fans down,can't,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,8,I can't let the gang down,gang,9,I can't let my fans down,fans,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,8,I can't let the gang down,let,9,I can't let my fans down,let,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,8,I can't let the gang down,let,10,Gotta keep my prayers up,prayers,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,8,I can't let the gang down,down,11,Never keep my head down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,8,I can't let the gang down,down,12,I'm the best hands down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,9,I can't let my fans down,can't,9,I can't let my fans down,fans,INNER,SLANT,cmu,MED,Y
+Lay It Down,9,I can't let my fans down,let,10,Gotta keep my prayers up,prayers,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,9,I can't let my fans down,down,11,Never keep my head down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,9,I can't let my fans down,let,11,Never keep my head down,head,INNER,SLANT,cmu,MED,Y
+Lay It Down,9,I can't let my fans down,let,11,Never keep my head down,Never,INNER,SLANT,cmu,MED,Y
+Lay It Down,9,I can't let my fans down,down,12,I'm the best hands down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,9,I can't let my fans down,down,13,We can put some land down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,10,Gotta keep my prayers up,keep,11,Never keep my head down,keep,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,10,Gotta keep my prayers up,prayers,11,Never keep my head down,head,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,10,Gotta keep my prayers up,prayers,11,Never keep my head down,Never,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,10,Gotta keep my prayers up,prayers,12,I'm the best hands down,best,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,11,Never keep my head down,Never,11,Never keep my head down,head,INNER,SLANT,cmu,MED,Y
+Lay It Down,11,Never keep my head down,down,12,I'm the best hands down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,11,Never keep my head down,head,12,I'm the best hands down,best,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,11,Never keep my head down,Never,12,I'm the best hands down,best,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,11,Never keep my head down,down,13,We can put some land down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,11,Never keep my head down,down,14,Pussy nigga lay down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,11,Never keep my head down,down,15,"All this pain I done put mama through, no more pain now",now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,12,I'm the best hands down,down,13,We can put some land down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,12,I'm the best hands down,hands,13,We can put some land down,can,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,12,I'm the best hands down,hands,13,We can put some land down,land,INNER,SLANT,cmu,MED,Y
+Lay It Down,12,I'm the best hands down,down,14,Pussy nigga lay down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,12,I'm the best hands down,down,15,"All this pain I done put mama through, no more pain now",now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,12,I'm the best hands down,down,16,Lil ho say I'm cold now,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,13,We can put some land down,can,13,We can put some land down,land,INNER,SLANT,cmu,MED,Y
+Lay It Down,13,We can put some land down,down,14,Pussy nigga lay down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,13,We can put some land down,put,14,Pussy nigga lay down,Pussy,INNER,SLANT,cmu,MED,Y
+Lay It Down,13,We can put some land down,down,15,"All this pain I done put mama through, no more pain now",now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,13,We can put some land down,put,15,"All this pain I done put mama through, no more pain now",put,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,13,We can put some land down,some,15,"All this pain I done put mama through, no more pain now",done,INNER,SLANT,cmu,MED,Y
+Lay It Down,13,We can put some land down,down,16,Lil ho say I'm cold now,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,13,We can put some land down,down,17,Bitch I got that flame now,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,14,Pussy nigga lay down,down,15,"All this pain I done put mama through, no more pain now",now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,14,Pussy nigga lay down,lay,15,"All this pain I done put mama through, no more pain now",pain,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,14,Pussy nigga lay down,Pussy,15,"All this pain I done put mama through, no more pain now",put,INNER,SLANT,cmu,MED,Y
+Lay It Down,14,Pussy nigga lay down,down,16,Lil ho say I'm cold now,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,14,Pussy nigga lay down,lay,16,Lil ho say I'm cold now,say,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,14,Pussy nigga lay down,down,17,Bitch I got that flame now,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,14,Pussy nigga lay down,down,18,Pussy nigga lay it down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,15,"All this pain I done put mama through, no more pain now",All,15,"All this pain I done put mama through, no more pain now",more,INNER,SLANT,cmu,MED,Y
+Lay It Down,15,"All this pain I done put mama through, no more pain now",pain,15,"All this pain I done put mama through, no more pain now",pain,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,15,"All this pain I done put mama through, no more pain now",now,16,Lil ho say I'm cold now,now,END,REPEAT,spelling,HIGH,N
+Lay It Down,15,"All this pain I done put mama through, no more pain now",no,16,Lil ho say I'm cold now,cold,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,15,"All this pain I done put mama through, no more pain now",no,16,Lil ho say I'm cold now,ho,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,15,"All this pain I done put mama through, no more pain now",pain,16,Lil ho say I'm cold now,say,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,15,"All this pain I done put mama through, no more pain now",now,17,Bitch I got that flame now,now,END,REPEAT,spelling,HIGH,N
+Lay It Down,15,"All this pain I done put mama through, no more pain now",mama,17,Bitch I got that flame now,got,INNER,SLANT,cmu,MED,Y
+Lay It Down,15,"All this pain I done put mama through, no more pain now",pain,17,Bitch I got that flame now,flame,INNER,SLANT,cmu,MED,Y
+Lay It Down,15,"All this pain I done put mama through, no more pain now",now,18,Pussy nigga lay it down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,15,"All this pain I done put mama through, no more pain now",now,19,"50,000 on you nigga, know I'm finna lay around",around,END,ASSONANCE,vowel,MED,Y
+Lay It Down,16,Lil ho say I'm cold now,ho,16,Lil ho say I'm cold now,cold,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,16,Lil ho say I'm cold now,now,17,Bitch I got that flame now,now,END,REPEAT,spelling,HIGH,N
+Lay It Down,16,Lil ho say I'm cold now,Lil,17,Bitch I got that flame now,Bitch,INNER,SLANT,cmu,MED,Y
+Lay It Down,16,Lil ho say I'm cold now,say,17,Bitch I got that flame now,flame,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,16,Lil ho say I'm cold now,now,18,Pussy nigga lay it down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,16,Lil ho say I'm cold now,say,18,Pussy nigga lay it down,lay,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,16,Lil ho say I'm cold now,now,19,"50,000 on you nigga, know I'm finna lay around",around,END,ASSONANCE,vowel,MED,Y
+Lay It Down,16,Lil ho say I'm cold now,now,20,Came with my same rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Lay It Down,17,Bitch I got that flame now,now,18,Pussy nigga lay it down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,17,Bitch I got that flame now,flame,18,Pussy nigga lay it down,lay,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,17,Bitch I got that flame now,now,19,"50,000 on you nigga, know I'm finna lay around",around,END,ASSONANCE,vowel,MED,Y
+Lay It Down,17,Bitch I got that flame now,flame,19,"50,000 on you nigga, know I'm finna lay around",lay,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,17,Bitch I got that flame now,now,20,Came with my same rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Lay It Down,17,Bitch I got that flame now,now,21,Know we finna bus it down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,18,Pussy nigga lay it down,down,19,"50,000 on you nigga, know I'm finna lay around",around,END,SLANT,cmu,MED,Y
+Lay It Down,18,Pussy nigga lay it down,lay,19,"50,000 on you nigga, know I'm finna lay around",lay,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,18,Pussy nigga lay it down,nigga,19,"50,000 on you nigga, know I'm finna lay around",finna,INNER,ASSONANCE,vowel,LOW,N
+Lay It Down,18,Pussy nigga lay it down,nigga,19,"50,000 on you nigga, know I'm finna lay around",nigga,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,18,Pussy nigga lay it down,down,20,Came with my same rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Lay It Down,18,Pussy nigga lay it down,lay,20,Came with my same rounds,Came,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,18,Pussy nigga lay it down,lay,20,Came with my same rounds,same,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,18,Pussy nigga lay it down,down,21,Know we finna bus it down,down,END,REPEAT,spelling,HIGH,N
+Lay It Down,18,Pussy nigga lay it down,down,22,Look at how shit done changed now,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",nigga,19,"50,000 on you nigga, know I'm finna lay around",finna,INNER,ASSONANCE,vowel,LOW,N
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",around,20,Came with my same rounds,rounds,END,SLANT,cmu,MED,Y
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",lay,20,Came with my same rounds,Came,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",lay,20,Came with my same rounds,same,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",around,21,Know we finna bus it down,down,END,SLANT,cmu,MED,Y
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",finna,21,Know we finna bus it down,finna,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",know,21,Know we finna bus it down,Know,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",nigga,21,Know we finna bus it down,finna,INNER,ASSONANCE,vowel,LOW,N
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",around,22,Look at how shit done changed now,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,19,"50,000 on you nigga, know I'm finna lay around",around,23,No more foster care house,house,END,ASSONANCE,vowel,MED,Y
+Lay It Down,20,Came with my same rounds,Came,20,Came with my same rounds,same,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,20,Came with my same rounds,rounds,21,Know we finna bus it down,down,END,ASSONANCE,vowel,MED,Y
+Lay It Down,20,Came with my same rounds,rounds,22,Look at how shit done changed now,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,20,Came with my same rounds,Came,22,Look at how shit done changed now,changed,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,20,Came with my same rounds,rounds,22,Look at how shit done changed now,how,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,20,Came with my same rounds,same,22,Look at how shit done changed now,changed,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,20,Came with my same rounds,rounds,23,No more foster care house,house,END,ASSONANCE,vowel,MED,Y
+Lay It Down,20,Came with my same rounds,rounds,24,"House to house, no more pain now",now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,21,Know we finna bus it down,down,22,Look at how shit done changed now,now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,21,Know we finna bus it down,bus,22,Look at how shit done changed now,done,INNER,SLANT,cmu,MED,Y
+Lay It Down,21,Know we finna bus it down,down,22,Look at how shit done changed now,how,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,21,Know we finna bus it down,down,23,No more foster care house,house,END,SLANT,cmu,MED,Y
+Lay It Down,21,Know we finna bus it down,Know,23,No more foster care house,No,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,21,Know we finna bus it down,down,24,"House to house, no more pain now",now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,22,Look at how shit done changed now,how,22,Look at how shit done changed now,now,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,22,Look at how shit done changed now,now,23,No more foster care house,house,END,ASSONANCE,vowel,MED,Y
+Lay It Down,22,Look at how shit done changed now,how,23,No more foster care house,house,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,22,Look at how shit done changed now,now,24,"House to house, no more pain now",now,END,REPEAT,spelling,HIGH,N
+Lay It Down,22,Look at how shit done changed now,changed,24,"House to house, no more pain now",pain,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,22,Look at how shit done changed now,how,24,"House to house, no more pain now",House,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,22,Look at how shit done changed now,how,24,"House to house, no more pain now",now,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,22,Look at how shit done changed now,now,24,"House to house, no more pain now",House,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,23,No more foster care house,house,24,"House to house, no more pain now",now,END,ASSONANCE,vowel,MED,Y
+Lay It Down,23,No more foster care house,house,24,"House to house, no more pain now",House,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,23,No more foster care house,more,24,"House to house, no more pain now",more,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,23,No more foster care house,No,24,"House to house, no more pain now",no,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,24,"House to house, no more pain now",House,24,"House to house, no more pain now",house,INNER,REPEAT,spelling,HIGH,N
+Lay It Down,24,"House to house, no more pain now",House,24,"House to house, no more pain now",now,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,24,"House to house, no more pain now",pain,25,"like Tay-K, praying that I make it out",K,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,24,"House to house, no more pain now",pain,25,"like Tay-K, praying that I make it out",make,INNER,SLANT,cmu,MED,Y
+Lay It Down,24,"House to house, no more pain now",pain,25,"like Tay-K, praying that I make it out",praying,INNER,SLANT,cmu,MED,Y
+Lay It Down,24,"House to house, no more pain now",pain,25,"like Tay-K, praying that I make it out",Tay,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,24,"House to house, no more pain now",pain,26,"step on the scene, your main bitch get naked",main,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,24,"House to house, no more pain now",pain,26,"step on the scene, your main bitch get naked",naked,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",K,25,"like Tay-K, praying that I make it out",make,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",K,25,"like Tay-K, praying that I make it out",praying,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",praying,25,"like Tay-K, praying that I make it out",make,INNER,SLANT,cmu,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",Tay,25,"like Tay-K, praying that I make it out",K,INNER,PERFECT,cmu,HIGH,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",Tay,25,"like Tay-K, praying that I make it out",make,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",Tay,25,"like Tay-K, praying that I make it out",praying,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",make,26,"step on the scene, your main bitch get naked",naked,END,SLANT,cmu,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",K,26,"step on the scene, your main bitch get naked",main,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",K,26,"step on the scene, your main bitch get naked",naked,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",make,26,"step on the scene, your main bitch get naked",main,INNER,SLANT,cmu,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",praying,26,"step on the scene, your main bitch get naked",main,INNER,SLANT,cmu,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",praying,26,"step on the scene, your main bitch get naked",naked,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",Tay,26,"step on the scene, your main bitch get naked",main,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",Tay,26,"step on the scene, your main bitch get naked",naked,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,25,"like Tay-K, praying that I make it out",praying,27,"Swerving in traffic, see me",Swerving,INNER,PERFECT,spelling,MED,Y
+Lay It Down,26,"step on the scene, your main bitch get naked",main,26,"step on the scene, your main bitch get naked",naked,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,26,"step on the scene, your main bitch get naked",step,26,"step on the scene, your main bitch get naked",get,INNER,SLANT,cmu,MED,Y
+Lay It Down,26,"step on the scene, your main bitch get naked",scene,27,"Swerving in traffic, see me",see,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,26,"step on the scene, your main bitch get naked",get,28,"Remember splashing choppers, now Rarrii in",Remember,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,26,"step on the scene, your main bitch get naked",step,28,"Remember splashing choppers, now Rarrii in",Remember,INNER,ASSONANCE,vowel,MED,Y
+Lay It Down,27,"Swerving in traffic, see me",Swerving,28,"Remember splashing choppers, now Rarrii in",splashing,INNER,PERFECT,spelling,MED,Y
+Lay It Down,27,"Swerving in traffic, see me",traffic,28,"Remember splashing choppers, now Rarrii in",splashing,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,1,"I'm a project baby, but I been around the world",world,2,"I'm a project baby, I can take you round the world",world,END,REPEAT,spelling,HIGH,N
+Project Baby,1,"I'm a project baby, but I been around the world",around,2,"I'm a project baby, I can take you round the world",round,INNER,PERFECT,cmu,HIGH,Y
+Project Baby,1,"I'm a project baby, but I been around the world",baby,2,"I'm a project baby, I can take you round the world",baby,INNER,REPEAT,spelling,HIGH,N
+Project Baby,1,"I'm a project baby, but I been around the world",baby,2,"I'm a project baby, I can take you round the world",take,INNER,SLANT,cmu,MED,Y
+Project Baby,1,"I'm a project baby, but I been around the world",project,2,"I'm a project baby, I can take you round the world",project,INNER,REPEAT,spelling,HIGH,N
+Project Baby,1,"I'm a project baby, but I been around the world",world,3,"Different city, different state, girl",girl,END,SLANT,cmu,MED,Y
+Project Baby,1,"I'm a project baby, but I been around the world",baby,3,"Different city, different state, girl",state,INNER,SLANT,cmu,MED,Y
+Project Baby,2,"I'm a project baby, I can take you round the world",baby,2,"I'm a project baby, I can take you round the world",take,INNER,SLANT,cmu,MED,Y
+Project Baby,2,"I'm a project baby, I can take you round the world",world,3,"Different city, different state, girl",girl,END,SLANT,cmu,MED,Y
+Project Baby,2,"I'm a project baby, I can take you round the world",baby,3,"Different city, different state, girl",state,INNER,SLANT,cmu,MED,Y
+Project Baby,2,"I'm a project baby, I can take you round the world",take,3,"Different city, different state, girl",state,INNER,SLANT,cmu,MED,Y
+Project Baby,2,"I'm a project baby, I can take you round the world",project,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",got,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,3,"Different city, different state, girl",city,3,"Different city, different state, girl",different,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,3,"Different city, different state, girl",Different,3,"Different city, different state, girl",city,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,3,"Different city, different state, girl",Different,3,"Different city, different state, girl",different,INNER,REPEAT,spelling,HIGH,N
+Project Baby,3,"Different city, different state, girl",girl,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",shirt,INNER,SLANT,cmu,MED,Y
+Project Baby,3,"Different city, different state, girl",state,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",pay,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",baller,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",all,INNER,SLANT,cmu,MED,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",Meechi,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",leeshes,INNER,SLANT,spelling,LOW,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",all,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",all,INNER,REPEAT,spelling,HIGH,N
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",baller,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",all,INNER,SLANT,cmu,MED,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",got,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",got,INNER,REPEAT,spelling,HIGH,N
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",hoes,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",whole,INNER,SLANT,cmu,MED,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",leeshes,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",leeses,INNER,PERFECT,spelling,MED,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",Meechi,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",leeses,INNER,SLANT,spelling,LOW,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",Eh,6,"Just know what's up when you see me, just might push up in that Geeni",when,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",hoes,6,"Just know what's up when you see me, just might push up in that Geeni",know,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",like,6,"Just know what's up when you see me, just might push up in that Geeni",might,INNER,SLANT,cmu,MED,Y
+Project Baby,4,"Eh I'm a baller just like Meechi, I got all my hoes on leeshes",Meechi,6,"Just know what's up when you see me, just might push up in that Geeni",Geeni,INNER,SLANT,spelling,LOW,Y
+Project Baby,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",tucked,6,"Just know what's up when you see me, just might push up in that Geeni",what's,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,5,"I pay all my whole leeses, I got my shirt tucked in Nemons",whole,6,"Just know what's up when you see me, just might push up in that Geeni",know,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,6,"Just know what's up when you see me, just might push up in that Geeni",Geeni,7,"I just went Luie this season, I went Gucci this evening",evening,END,ASSONANCE,vowel,LOW,N
+Project Baby,6,"Just know what's up when you see me, just might push up in that Geeni",Geeni,7,"I just went Luie this season, I went Gucci this evening",season,INNER,SLANT,spelling,LOW,Y
+Project Baby,6,"Just know what's up when you see me, just might push up in that Geeni",see,7,"I just went Luie this season, I went Gucci this evening",evening,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,6,"Just know what's up when you see me, just might push up in that Geeni",see,7,"I just went Luie this season, I went Gucci this evening",season,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,6,"Just know what's up when you see me, just might push up in that Geeni",when,7,"I just went Luie this season, I went Gucci this evening",went,INNER,SLANT,cmu,MED,Y
+Project Baby,6,"Just know what's up when you see me, just might push up in that Geeni",Geeni,9,"I got people that need me, I been fly since a teen",teen,END,SLANT,spelling,LOW,Y
+Project Baby,7,"I just went Luie this season, I went Gucci this evening",season,7,"I just went Luie this season, I went Gucci this evening",evening,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,7,"I just went Luie this season, I went Gucci this evening",went,7,"I just went Luie this season, I went Gucci this evening",went,INNER,REPEAT,spelling,HIGH,N
+Project Baby,7,"I just went Luie this season, I went Gucci this evening",evening,9,"I got people that need me, I been fly since a teen",teen,END,ASSONANCE,vowel,MED,Y
+Project Baby,7,"I just went Luie this season, I went Gucci this evening",evening,9,"I got people that need me, I been fly since a teen",need,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,7,"I just went Luie this season, I went Gucci this evening",evening,9,"I got people that need me, I been fly since a teen",people,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,7,"I just went Luie this season, I went Gucci this evening",season,9,"I got people that need me, I been fly since a teen",need,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,7,"I just went Luie this season, I went Gucci this evening",season,9,"I got people that need me, I been fly since a teen",people,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,7,"I just went Luie this season, I went Gucci this evening",season,9,"I got people that need me, I been fly since a teen",teen,INNER,SLANT,cmu,MED,Y
+Project Baby,8,I can't stop this shit,shit,9,"I got people that need me, I been fly since a teen",since,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,8,I can't stop this shit,stop,9,"I got people that need me, I been fly since a teen",got,INNER,SLANT,cmu,MED,Y
+Project Baby,8,I can't stop this shit,shit,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",shit,END,REPEAT,spelling,HIGH,N
+Project Baby,8,I can't stop this shit,shit,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",bitch,INNER,SLANT,cmu,MED,Y
+Project Baby,8,I can't stop this shit,shit,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",nigga,INNER,SLANT,spelling,LOW,Y
+Project Baby,9,"I got people that need me, I been fly since a teen",need,9,"I got people that need me, I been fly since a teen",teen,INNER,SLANT,cmu,MED,Y
+Project Baby,9,"I got people that need me, I been fly since a teen",people,9,"I got people that need me, I been fly since a teen",need,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,9,"I got people that need me, I been fly since a teen",people,9,"I got people that need me, I been fly since a teen",teen,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,9,"I got people that need me, I been fly since a teen",need,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",eating,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,9,"I got people that need me, I been fly since a teen",people,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",eating,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,9,"I got people that need me, I been fly since a teen",since,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",bitch,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,9,"I got people that need me, I been fly since a teen",since,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,9,"I got people that need me, I been fly since a teen",teen,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",eating,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,9,"I got people that need me, I been fly since a teen",got,11,I'm a project baby,project,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",ain't,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",ain't,INNER,REPEAT,spelling,HIGH,N
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",bitch,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",shit,INNER,SLANT,cmu,MED,Y
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",nigga,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",shit,INNER,SLANT,spelling,LOW,Y
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",ain't,11,I'm a project baby,baby,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",ain't,12,You ain't never gotta worry about shit baby,ain't,INNER,REPEAT,spelling,HIGH,N
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",ain't,12,You ain't never gotta worry about shit baby,baby,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",bitch,12,You ain't never gotta worry about shit baby,shit,INNER,SLANT,cmu,MED,Y
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",nigga,12,You ain't never gotta worry about shit baby,shit,INNER,SLANT,spelling,LOW,Y
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",shit,12,You ain't never gotta worry about shit baby,shit,INNER,REPEAT,spelling,HIGH,N
+Project Baby,10,"bitch, you ain't put no work in, nigga then you ain't eating shit",work,12,You ain't never gotta worry about shit baby,worry,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,11,I'm a project baby,baby,12,You ain't never gotta worry about shit baby,baby,END,REPEAT,spelling,HIGH,N
+Project Baby,11,I'm a project baby,baby,12,You ain't never gotta worry about shit baby,ain't,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,11,I'm a project baby,project,12,You ain't never gotta worry about shit baby,gotta,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,11,I'm a project baby,project,13,Just know Imma get you out the projects,projects,INNER,SLANT,cmu,MED,Y
+Project Baby,12,You ain't never gotta worry about shit baby,ain't,12,You ain't never gotta worry about shit baby,baby,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,12,You ain't never gotta worry about shit baby,gotta,13,Just know Imma get you out the projects,projects,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,12,You ain't never gotta worry about shit baby,never,13,Just know Imma get you out the projects,get,INNER,SLANT,cmu,MED,Y
+Project Baby,12,You ain't never gotta worry about shit baby,gotta,14,I just wanna get you up out of there,wanna,INNER,SLANT,cmu,MED,Y
+Project Baby,12,You ain't never gotta worry about shit baby,never,14,I just wanna get you up out of there,get,INNER,SLANT,cmu,MED,Y
+Project Baby,12,You ain't never gotta worry about shit baby,never,14,I just wanna get you up out of there,there,INNER,SLANT,cmu,MED,Y
+Project Baby,12,You ain't never gotta worry about shit baby,baby,16,"Everywhere I go, you know I'm safe",safe,END,SLANT,cmu,MED,Y
+Project Baby,13,Just know Imma get you out the projects,get,14,I just wanna get you up out of there,get,INNER,REPEAT,spelling,HIGH,N
+Project Baby,13,Just know Imma get you out the projects,get,14,I just wanna get you up out of there,there,INNER,SLANT,cmu,MED,Y
+Project Baby,13,Just know Imma get you out the projects,projects,14,I just wanna get you up out of there,wanna,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,13,Just know Imma get you out the projects,know,15,"Two Glocks with extendo clips, and they goint through TSA",extendo,INNER,ASSONANCE,vowel,LOW,N
+Project Baby,13,Just know Imma get you out the projects,know,15,"Two Glocks with extendo clips, and they goint through TSA",Glocks,INNER,ASSONANCE,vowel,LOW,N
+Project Baby,14,I just wanna get you up out of there,get,14,I just wanna get you up out of there,there,INNER,SLANT,cmu,MED,Y
+Project Baby,14,I just wanna get you up out of there,get,16,"Everywhere I go, you know I'm safe",Everywhere,INNER,SLANT,cmu,MED,Y
+Project Baby,14,I just wanna get you up out of there,there,16,"Everywhere I go, you know I'm safe",Everywhere,INNER,PERFECT,cmu,HIGH,Y
+Project Baby,15,"Two Glocks with extendo clips, and they goint through TSA",Two,15,"Two Glocks with extendo clips, and they goint through TSA",through,INNER,PERFECT,cmu,HIGH,Y
+Project Baby,15,"Two Glocks with extendo clips, and they goint through TSA",extendo,16,"Everywhere I go, you know I'm safe",go,INNER,ASSONANCE,vowel,LOW,N
+Project Baby,15,"Two Glocks with extendo clips, and they goint through TSA",extendo,16,"Everywhere I go, you know I'm safe",know,INNER,ASSONANCE,vowel,LOW,N
+Project Baby,15,"Two Glocks with extendo clips, and they goint through TSA",Glocks,16,"Everywhere I go, you know I'm safe",know,INNER,ASSONANCE,vowel,LOW,N
+Project Baby,15,"Two Glocks with extendo clips, and they goint through TSA",extendo,17,"YFN, you know we state to state",know,INNER,ASSONANCE,vowel,LOW,N
+Project Baby,15,"Two Glocks with extendo clips, and they goint through TSA",Glocks,17,"YFN, you know we state to state",know,INNER,ASSONANCE,vowel,LOW,N
+Project Baby,16,"Everywhere I go, you know I'm safe",go,16,"Everywhere I go, you know I'm safe",know,INNER,PERFECT,cmu,HIGH,Y
+Project Baby,16,"Everywhere I go, you know I'm safe",safe,17,"YFN, you know we state to state",state,END,SLANT,cmu,MED,Y
+Project Baby,16,"Everywhere I go, you know I'm safe",go,17,"YFN, you know we state to state",know,INNER,PERFECT,cmu,HIGH,Y
+Project Baby,16,"Everywhere I go, you know I'm safe",know,17,"YFN, you know we state to state",know,INNER,REPEAT,spelling,HIGH,N
+Project Baby,16,"Everywhere I go, you know I'm safe",safe,17,"YFN, you know we state to state",state,INNER,SLANT,cmu,MED,Y
+Project Baby,16,"Everywhere I go, you know I'm safe",Everywhere,18,I can take you places that you never been girl,never,INNER,SLANT,cmu,MED,Y
+Project Baby,16,"Everywhere I go, you know I'm safe",safe,18,I can take you places that you never been girl,places,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,16,"Everywhere I go, you know I'm safe",safe,18,I can take you places that you never been girl,take,INNER,SLANT,cmu,MED,Y
+Project Baby,17,"YFN, you know we state to state",state,17,"YFN, you know we state to state",state,INNER,REPEAT,spelling,HIGH,N
+Project Baby,17,"YFN, you know we state to state",state,18,I can take you places that you never been girl,places,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,17,"YFN, you know we state to state",state,18,I can take you places that you never been girl,take,INNER,SLANT,cmu,MED,Y
+Project Baby,17,"YFN, you know we state to state",state,19,I can take you places that you never seen girl,places,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,17,"YFN, you know we state to state",state,19,I can take you places that you never seen girl,take,INNER,SLANT,cmu,MED,Y
+Project Baby,17,"YFN, you know we state to state",YFN,19,I can take you places that you never seen girl,seen,INNER,SLANT,spelling,LOW,Y
+Project Baby,18,I can take you places that you never been girl,take,18,I can take you places that you never been girl,places,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,18,I can take you places that you never been girl,girl,19,I can take you places that you never seen girl,girl,END,REPEAT,spelling,HIGH,N
+Project Baby,18,I can take you places that you never been girl,can,19,I can take you places that you never seen girl,can,INNER,REPEAT,spelling,HIGH,N
+Project Baby,18,I can take you places that you never been girl,never,19,I can take you places that you never seen girl,never,INNER,REPEAT,spelling,HIGH,N
+Project Baby,18,I can take you places that you never been girl,places,19,I can take you places that you never seen girl,places,INNER,REPEAT,spelling,HIGH,N
+Project Baby,18,I can take you places that you never been girl,places,19,I can take you places that you never seen girl,take,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,18,I can take you places that you never been girl,take,19,I can take you places that you never seen girl,places,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,18,I can take you places that you never been girl,take,19,I can take you places that you never seen girl,take,INNER,REPEAT,spelling,HIGH,N
+Project Baby,19,I can take you places that you never seen girl,take,19,I can take you places that you never seen girl,places,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,20,Crib so big like Uncle Phil,big,20,Crib so big like Uncle Phil,Phil,INNER,SLANT,cmu,MED,Y
+Project Baby,20,Crib so big like Uncle Phil,Crib,20,Crib so big like Uncle Phil,big,INNER,SLANT,cmu,MED,Y
+Project Baby,20,Crib so big like Uncle Phil,Crib,20,Crib so big like Uncle Phil,Phil,INNER,SLANT,cmu,MED,Y
+Project Baby,20,Crib so big like Uncle Phil,Phil,21,Parked that Maibach in the hills,hills,END,SLANT,cmu,MED,Y
+Project Baby,20,Crib so big like Uncle Phil,big,21,Parked that Maibach in the hills,hills,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,20,Crib so big like Uncle Phil,Crib,21,Parked that Maibach in the hills,hills,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,21,Parked that Maibach in the hills,hills,23,They know we really for real,really,INNER,SLANT,cmu,MED,Y
+Project Baby,22,They know we with it for real,real,23,They know we really for real,real,END,REPEAT,spelling,HIGH,N
+Project Baby,22,They know we with it for real,know,23,They know we really for real,know,INNER,REPEAT,spelling,HIGH,N
+Project Baby,22,They know we with it for real,real,24,"My niggas silant, won't squeel",squeel,END,PERFECT,spelling,MED,Y
+Project Baby,22,They know we with it for real,know,24,"My niggas silant, won't squeel",won't,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,22,They know we with it for real,real,25,My nigga real for real,real,END,REPEAT,spelling,HIGH,N
+Project Baby,22,They know we with it for real,real,26,Pull in that Rari for real,real,END,REPEAT,spelling,HIGH,N
+Project Baby,23,They know we really for real,real,24,"My niggas silant, won't squeel",squeel,END,PERFECT,spelling,MED,Y
+Project Baby,23,They know we really for real,know,24,"My niggas silant, won't squeel",won't,INNER,ASSONANCE,vowel,MED,Y
+Project Baby,23,They know we really for real,real,25,My nigga real for real,real,END,REPEAT,spelling,HIGH,N
+Project Baby,23,They know we really for real,real,25,My nigga real for real,real,INNER,REPEAT,spelling,HIGH,N
+Project Baby,23,They know we really for real,real,26,Pull in that Rari for real,real,END,REPEAT,spelling,HIGH,N
+Project Baby,24,"My niggas silant, won't squeel",niggas,24,"My niggas silant, won't squeel",silant,INNER,ASSONANCE,vowel,LOW,N
+Project Baby,24,"My niggas silant, won't squeel",squeel,25,My nigga real for real,real,END,PERFECT,spelling,MED,Y
+Project Baby,24,"My niggas silant, won't squeel",niggas,25,My nigga real for real,nigga,INNER,SLANT,spelling,LOW,Y
+Project Baby,24,"My niggas silant, won't squeel",silant,25,My nigga real for real,nigga,INNER,ASSONANCE,vowel,LOW,N
+Project Baby,24,"My niggas silant, won't squeel",squeel,25,My nigga real for real,real,INNER,PERFECT,spelling,MED,Y
+Project Baby,24,"My niggas silant, won't squeel",squeel,26,Pull in that Rari for real,real,END,PERFECT,spelling,MED,Y
+Project Baby,25,My nigga real for real,real,25,My nigga real for real,real,INNER,REPEAT,spelling,HIGH,N
+Project Baby,25,My nigga real for real,real,26,Pull in that Rari for real,real,END,REPEAT,spelling,HIGH,N
+Project Baby,25,My nigga real for real,real,26,Pull in that Rari for real,real,INNER,REPEAT,spelling,HIGH,N
+Project Baby,27,My lil bitch verse you and your bitch,bitch,27,My lil bitch verse you and your bitch,bitch,INNER,REPEAT,spelling,HIGH,N
+Project Baby,27,My lil bitch verse you and your bitch,lil,27,My lil bitch verse you and your bitch,bitch,INNER,SLANT,cmu,MED,Y
+Project Baby,27,My lil bitch verse you and your bitch,bitch,28,"My lil bitch, know she with that shit",shit,END,SLANT,cmu,MED,Y
+Project Baby,27,My lil bitch verse you and your bitch,bitch,28,"My lil bitch, know she with that shit",bitch,INNER,REPEAT,spelling,HIGH,N
+Project Baby,27,My lil bitch verse you and your bitch,bitch,28,"My lil bitch, know she with that shit",lil,INNER,SLANT,cmu,MED,Y
+Project Baby,27,My lil bitch verse you and your bitch,bitch,28,"My lil bitch, know she with that shit",shit,INNER,SLANT,cmu,MED,Y
+Project Baby,27,My lil bitch verse you and your bitch,lil,28,"My lil bitch, know she with that shit",bitch,INNER,SLANT,cmu,MED,Y
+Project Baby,27,My lil bitch verse you and your bitch,lil,28,"My lil bitch, know she with that shit",lil,INNER,REPEAT,spelling,HIGH,N
+Project Baby,27,My lil bitch verse you and your bitch,lil,28,"My lil bitch, know she with that shit",shit,INNER,SLANT,cmu,MED,Y
+Project Baby,28,"My lil bitch, know she with that shit",bitch,28,"My lil bitch, know she with that shit",shit,INNER,SLANT,cmu,MED,Y
+Project Baby,28,"My lil bitch, know she with that shit",lil,28,"My lil bitch, know she with that shit",bitch,INNER,SLANT,cmu,MED,Y
+Project Baby,28,"My lil bitch, know she with that shit",lil,28,"My lil bitch, know she with that shit",shit,INNER,SLANT,cmu,MED,Y

@@ -1,0 +1,244 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Play,2,Gotta keep some 100s on me,keep,2,Gotta keep some 100s on me,100s,INNER,ASSONANCE,vowel,MED,Y
+Play,2,Gotta keep some 100s on me,100s,3,A lot of 100s on me,100s,END,REPEAT,spelling,HIGH,N
+Play,2,Gotta keep some 100s on me,Gotta,3,A lot of 100s on me,lot,INNER,SLANT,cmu,MED,Y
+Play,2,Gotta keep some 100s on me,keep,3,A lot of 100s on me,100s,INNER,ASSONANCE,vowel,MED,Y
+Play,2,Gotta keep some 100s on me,100s,4,Aye see they call me big play,see,INNER,PERFECT,cmu,HIGH,Y
+Play,2,Gotta keep some 100s on me,keep,4,Aye see they call me big play,see,INNER,ASSONANCE,vowel,MED,Y
+Play,3,A lot of 100s on me,100s,4,Aye see they call me big play,see,INNER,PERFECT,cmu,HIGH,Y
+Play,3,A lot of 100s on me,100s,5,Ima keep that shit up in the face,keep,INNER,ASSONANCE,vowel,MED,Y
+Play,4,Aye see they call me big play,play,5,Ima keep that shit up in the face,face,END,ASSONANCE,vowel,MED,Y
+Play,4,Aye see they call me big play,big,5,Ima keep that shit up in the face,Ima,INNER,SLANT,spelling,LOW,Y
+Play,4,Aye see they call me big play,big,5,Ima keep that shit up in the face,shit,INNER,SLANT,cmu,MED,Y
+Play,4,Aye see they call me big play,see,5,Ima keep that shit up in the face,keep,INNER,ASSONANCE,vowel,MED,Y
+Play,4,Aye see they call me big play,big,6,Ah half ah ticket on me,ticket,INNER,SLANT,cmu,MED,Y
+Play,4,Aye see they call me big play,play,7,You know I been having my way,way,END,PERFECT,cmu,HIGH,Y
+Play,5,Ima keep that shit up in the face,Ima,5,Ima keep that shit up in the face,shit,INNER,SLANT,spelling,LOW,Y
+Play,5,Ima keep that shit up in the face,shit,6,Ah half ah ticket on me,ticket,INNER,SLANT,cmu,MED,Y
+Play,5,Ima keep that shit up in the face,face,7,You know I been having my way,way,END,ASSONANCE,vowel,MED,Y
+Play,6,Ah half ah ticket on me,half,7,You know I been having my way,having,INNER,ASSONANCE,vowel,MED,Y
+Play,6,Ah half ah ticket on me,half,8,Can’t tell ah nigga nothing,Can’t,INNER,ASSONANCE,vowel,MED,Y
+Play,6,Ah half ah ticket on me,ticket,8,Can’t tell ah nigga nothing,nigga,INNER,SLANT,spelling,LOW,Y
+Play,7,You know I been having my way,having,8,Can’t tell ah nigga nothing,Can’t,INNER,ASSONANCE,vowel,MED,Y
+Play,7,You know I been having my way,know,9,You know the money don’t sleep,don’t,INNER,ASSONANCE,vowel,MED,Y
+Play,7,You know I been having my way,know,9,You know the money don’t sleep,know,INNER,REPEAT,spelling,HIGH,N
+Play,8,Can’t tell ah nigga nothing,nothing,9,You know the money don’t sleep,money,INNER,ASSONANCE,vowel,MED,Y
+Play,9,You know the money don’t sleep,know,9,You know the money don’t sleep,don’t,INNER,ASSONANCE,vowel,MED,Y
+Play,9,You know the money don’t sleep,sleep,11,Niggas talk shit until we meet,meet,END,SLANT,cmu,MED,Y
+Play,11,Niggas talk shit until we meet,shit,11,Niggas talk shit until we meet,until,INNER,SLANT,cmu,MED,Y
+Play,13,The currency I want,want,14,I made myself ah boss,boss,END,ASSONANCE,vowel,MED,Y
+Play,13,The currency I want,want,17,Like I’m playing golf,golf,END,ASSONANCE,vowel,MED,Y
+Play,14,I made myself ah boss,made,15,Made that spider crawl,Made,INNER,REPEAT,spelling,HIGH,N
+Play,14,I made myself ah boss,boss,16,Hop out shirt tucked in all,Hop,INNER,SLANT,cmu,MED,Y
+Play,14,I made myself ah boss,boss,17,Like I’m playing golf,golf,END,ASSONANCE,vowel,MED,Y
+Play,14,I made myself ah boss,boss,18,Hold lotta green like I’m playing golf,golf,END,ASSONANCE,vowel,MED,Y
+Play,15,Made that spider crawl,crawl,16,Hop out shirt tucked in all,all,END,PERFECT,cmu,HIGH,Y
+Play,15,Made that spider crawl,Made,17,Like I’m playing golf,playing,INNER,SLANT,cmu,MED,Y
+Play,15,Made that spider crawl,spider,17,Like I’m playing golf,Like,INNER,SLANT,cmu,MED,Y
+Play,15,Made that spider crawl,crawl,19,Put some holes in the board,board,END,ASSONANCE,vowel,MED,Y
+Play,16,Hop out shirt tucked in all,Hop,17,Like I’m playing golf,golf,INNER,ASSONANCE,vowel,MED,Y
+Play,16,Hop out shirt tucked in all,Hop,18,Hold lotta green like I’m playing golf,golf,INNER,ASSONANCE,vowel,MED,Y
+Play,16,Hop out shirt tucked in all,Hop,18,Hold lotta green like I’m playing golf,lotta,INNER,SLANT,cmu,MED,Y
+Play,16,Hop out shirt tucked in all,all,19,Put some holes in the board,board,END,ASSONANCE,vowel,MED,Y
+Play,17,Like I’m playing golf,golf,18,Hold lotta green like I’m playing golf,golf,END,REPEAT,spelling,HIGH,N
+Play,17,Like I’m playing golf,golf,18,Hold lotta green like I’m playing golf,lotta,INNER,ASSONANCE,vowel,MED,Y
+Play,17,Like I’m playing golf,Like,18,Hold lotta green like I’m playing golf,like,INNER,REPEAT,spelling,HIGH,N
+Play,17,Like I’m playing golf,playing,18,Hold lotta green like I’m playing golf,playing,INNER,REPEAT,spelling,HIGH,N
+Play,18,Hold lotta green like I’m playing golf,lotta,18,Hold lotta green like I’m playing golf,golf,INNER,ASSONANCE,vowel,MED,Y
+Play,18,Hold lotta green like I’m playing golf,Hold,19,Put some holes in the board,holes,INNER,SLANT,cmu,MED,Y
+Play,18,Hold lotta green like I’m playing golf,golf,20,I got partners who believe,got,INNER,ASSONANCE,vowel,MED,Y
+Play,18,Hold lotta green like I’m playing golf,golf,20,I got partners who believe,partners,INNER,ASSONANCE,vowel,MED,Y
+Play,18,Hold lotta green like I’m playing golf,green,20,I got partners who believe,believe,INNER,SLANT,cmu,MED,Y
+Play,18,Hold lotta green like I’m playing golf,lotta,20,I got partners who believe,got,INNER,SLANT,cmu,MED,Y
+Play,18,Hold lotta green like I’m playing golf,lotta,20,I got partners who believe,partners,INNER,ASSONANCE,vowel,MED,Y
+Play,18,Hold lotta green like I’m playing golf,golf,22,I want ah body for ah body,body,END,ASSONANCE,vowel,MED,Y
+Play,20,I got partners who believe,got,20,I got partners who believe,partners,INNER,ASSONANCE,vowel,MED,Y
+Play,20,I got partners who believe,got,22,I want ah body for ah body,body,INNER,SLANT,cmu,MED,Y
+Play,20,I got partners who believe,got,22,I want ah body for ah body,want,INNER,SLANT,cmu,MED,Y
+Play,20,I got partners who believe,partners,22,I want ah body for ah body,body,INNER,ASSONANCE,vowel,MED,Y
+Play,20,I got partners who believe,partners,22,I want ah body for ah body,want,INNER,ASSONANCE,vowel,MED,Y
+Play,21,But they dead now,now,23,We ain’t laying down,down,END,ASSONANCE,vowel,MED,Y
+Play,21,But they dead now,now,24,Playing we gone tear it down,down,END,ASSONANCE,vowel,MED,Y
+Play,21,But they dead now,now,25,We don’t do no playing round,round,END,ASSONANCE,vowel,MED,Y
+Play,22,I want ah body for ah body,body,22,I want ah body for ah body,body,INNER,REPEAT,spelling,HIGH,N
+Play,22,I want ah body for ah body,want,22,I want ah body for ah body,body,INNER,ASSONANCE,vowel,MED,Y
+Play,23,We ain’t laying down,ain’t,23,We ain’t laying down,laying,INNER,ASSONANCE,vowel,MED,Y
+Play,23,We ain’t laying down,down,24,Playing we gone tear it down,down,END,REPEAT,spelling,HIGH,N
+Play,23,We ain’t laying down,ain’t,24,Playing we gone tear it down,Playing,INNER,ASSONANCE,vowel,MED,Y
+Play,23,We ain’t laying down,laying,24,Playing we gone tear it down,Playing,INNER,MULTI,multi,HIGH,Y
+Play,23,We ain’t laying down,down,25,We don’t do no playing round,round,END,SLANT,cmu,MED,Y
+Play,23,We ain’t laying down,ain’t,25,We don’t do no playing round,playing,INNER,ASSONANCE,vowel,MED,Y
+Play,23,We ain’t laying down,ain’t laying,25,We don’t do no playing round,no playing,INNER,MULTI,multi,HIGH,Y
+Play,23,We ain’t laying down,laying,25,We don’t do no playing round,playing,INNER,MULTI,multi,HIGH,Y
+Play,24,Playing we gone tear it down,down,25,We don’t do no playing round,round,END,SLANT,cmu,MED,Y
+Play,24,Playing we gone tear it down,Playing,25,We don’t do no playing round,playing,INNER,REPEAT,spelling,HIGH,N
+Play,25,We don’t do no playing round,don’t,25,We don’t do no playing round,no,INNER,ASSONANCE,vowel,MED,Y
+Play,26,Ah half ah ticket number on me,ticket,27,They talk big talk,big,INNER,SLANT,cmu,MED,Y
+Play,26,Ah half ah ticket number on me,number,28,But they ain’t talking bout money,money,END,ASSONANCE,vowel,MED,Y
+Play,26,Ah half ah ticket number on me,number,30,Tell them niggas stop frontin,frontin,END,ASSONANCE,vowel,MED,Y
+Play,27,They talk big talk,talk,27,They talk big talk,talk,INNER,REPEAT,spelling,HIGH,N
+Play,27,They talk big talk,talk,28,But they ain’t talking bout money,talking,INNER,SLANT,cmu,MED,Y
+Play,27,They talk big talk,big,29,Big plays heavy motion,Big,INNER,REPEAT,spelling,HIGH,N
+Play,28,But they ain’t talking bout money,ain’t,29,Big plays heavy motion,plays,INNER,ASSONANCE,vowel,MED,Y
+Play,28,But they ain’t talking bout money,money,30,Tell them niggas stop frontin,frontin,END,ASSONANCE,vowel,MED,Y
+Play,29,Big plays heavy motion,heavy,30,Tell them niggas stop frontin,Tell,INNER,SLANT,cmu,MED,Y
+Play,29,Big plays heavy motion,plays,31,If I sign ah deal today,today,INNER,ASSONANCE,vowel,MED,Y
+Play,30,Tell them niggas stop frontin,frontin,34,Got me counting euro money,money,END,ASSONANCE,vowel,MED,Y
+Play,31,If I sign ah deal today,today,32,I break my fam off 100,break,INNER,ASSONANCE,vowel,MED,Y
+Play,31,If I sign ah deal today,sign,33,Fly the Paris in the fall,Fly,INNER,ASSONANCE,vowel,MED,Y
+Play,31,If I sign ah deal today,today,35,I always been the most hated,hated,END,ASSONANCE,vowel,MED,Y
+Play,34,Got me counting euro money,counting,36,It’s only right I keep on stunting,stunting,INNER,PERFECT,spelling,MED,Y
+Play,35,I always been the most hated,always,35,I always been the most hated,hated,INNER,ASSONANCE,vowel,MED,Y
+Play,35,I always been the most hated,most,36,It’s only right I keep on stunting,only,INNER,ASSONANCE,vowel,MED,Y
+Play,35,I always been the most hated,hated,37,Fcg yfn we boutta take,take,END,SLANT,cmu,MED,Y
+Play,35,I always been the most hated,always,37,Fcg yfn we boutta take,take,INNER,SLANT,cmu,MED,Y
+Play,35,I always been the most hated,hated,38,If I lost it all today,today,END,ASSONANCE,vowel,MED,Y
+Play,37,Fcg yfn we boutta take,take,38,If I lost it all today,today,END,ASSONANCE,vowel,MED,Y
+Play,38,If I lost it all today,lost,38,If I lost it all today,all,INNER,ASSONANCE,vowel,MED,Y
+Play,38,If I lost it all today,today,40,Dame time from the 3,Dame,INNER,ASSONANCE,vowel,MED,Y
+Play,39,I get it right back,right,40,Dame time from the 3,time,INNER,SLANT,cmu,MED,Y
+Play,39,I get it right back,back,42,And I even tryna backtrack,backtrack,END,PERFECT,cmu,HIGH,Y
+Play,40,Dame time from the 3,time,43,And I know you ain’t like that,like,END,SLANT,cmu,MED,Y
+Play,42,And I even tryna backtrack,even,42,And I even tryna backtrack,tryna,INNER,SLANT,spelling,LOW,Y
+Play,42,And I even tryna backtrack,even,44,Free chill for real,Free,INNER,ASSONANCE,vowel,MED,Y
+Play,42,And I even tryna backtrack,even,44,Free chill for real,real,INNER,ASSONANCE,vowel,MED,Y
+Play,42,And I even tryna backtrack,tryna,44,Free chill for real,real,INNER,SLANT,spelling,LOW,Y
+Play,43,And I know you ain’t like that,know,45,I know them fuck niggas,know,INNER,REPEAT,spelling,HIGH,N
+Play,44,Free chill for real,Free,44,Free chill for real,real,INNER,ASSONANCE,vowel,MED,Y
+Play,44,Free chill for real,Free,46,If they speakin names,speakin,INNER,ASSONANCE,vowel,MED,Y
+Play,44,Free chill for real,real,46,If they speakin names,speakin,INNER,ASSONANCE,vowel,MED,Y
+Play,47,They get stepped on doormats,get,47,They get stepped on doormats,stepped,INNER,SLANT,cmu,MED,Y
+Play,47,They get stepped on doormats,doormats,48,Stepped on like doormats,doormats,END,REPEAT,spelling,HIGH,N
+Play,47,They get stepped on doormats,get,48,Stepped on like doormats,Stepped,INNER,SLANT,cmu,MED,Y
+Play,47,They get stepped on doormats,stepped,48,Stepped on like doormats,Stepped,INNER,REPEAT,spelling,HIGH,N
+Play,49,Pull up in ah foreign,foreign,51,Cause she say you boring,boring,END,SLANT,cmu,MED,Y
+Play,50,Drop the t top in maro,Drop,50,Drop the t top in maro,maro,INNER,SLANT,cmu,MED,Y
+Play,50,Drop the t top in maro,Drop,50,Drop the t top in maro,top,INNER,PERFECT,cmu,HIGH,Y
+Play,50,Drop the t top in maro,top,50,Drop the t top in maro,maro,INNER,SLANT,cmu,MED,Y
+Play,50,Drop the t top in maro,Drop,51,Cause she say you boring,Cause,INNER,SLANT,cmu,MED,Y
+Play,50,Drop the t top in maro,maro,51,Cause she say you boring,Cause,INNER,SLANT,cmu,MED,Y
+Play,50,Drop the t top in maro,top,51,Cause she say you boring,Cause,INNER,SLANT,cmu,MED,Y
+Play,50,Drop the t top in maro,Drop,52,I got ah big play,got,INNER,SLANT,cmu,MED,Y
+Play,50,Drop the t top in maro,maro,52,I got ah big play,got,INNER,SLANT,cmu,MED,Y
+Play,50,Drop the t top in maro,top,52,I got ah big play,got,INNER,SLANT,cmu,MED,Y
+Play,51,Cause she say you boring,Cause,52,I got ah big play,got,INNER,SLANT,cmu,MED,Y
+Play,51,Cause she say you boring,say,52,I got ah big play,play,INNER,PERFECT,cmu,HIGH,Y
+Play,51,Cause she say you boring,Cause,53,And I can’t stop for none,stop,INNER,SLANT,cmu,MED,Y
+Play,52,I got ah big play,got,53,And I can’t stop for none,stop,INNER,SLANT,cmu,MED,Y
+Play,53,And I can’t stop for none,none,54,What the fuck these niggas,fuck,INNER,SLANT,cmu,MED,Y
+Play,53,And I can’t stop for none,none,54,What the fuck these niggas,What,INNER,SLANT,cmu,MED,Y
+Play,53,And I can’t stop for none,none,55,Talking bout came up from hustle,hustle,END,ASSONANCE,vowel,MED,Y
+Play,53,And I can’t stop for none,none,56,Ni bitches be bugging,bugging,END,ASSONANCE,vowel,MED,Y
+Play,54,What the fuck these niggas,What,54,What the fuck these niggas,fuck,INNER,SLANT,cmu,MED,Y
+Play,54,What the fuck these niggas,fuck,55,Talking bout came up from hustle,hustle,INNER,ASSONANCE,vowel,MED,Y
+Play,54,What the fuck these niggas,What,55,Talking bout came up from hustle,hustle,INNER,ASSONANCE,vowel,MED,Y
+Play,54,What the fuck these niggas,fuck,56,Ni bitches be bugging,bugging,INNER,ASSONANCE,vowel,MED,Y
+Play,54,What the fuck these niggas,these,56,Ni bitches be bugging,Ni,INNER,ASSONANCE,vowel,MED,Y
+Play,54,What the fuck these niggas,What,56,Ni bitches be bugging,bugging,INNER,ASSONANCE,vowel,MED,Y
+Play,55,Talking bout came up from hustle,hustle,56,Ni bitches be bugging,bugging,END,ASSONANCE,vowel,MED,Y
+Play,55,Talking bout came up from hustle,came,57,We came up from that ebt,came,INNER,REPEAT,spelling,HIGH,N
+Play,56,Ni bitches be bugging,Ni,58,People be shiesty out here,here,INNER,ASSONANCE,vowel,MED,Y
+Play,56,Ni bitches be bugging,Ni,58,People be shiesty out here,People,INNER,ASSONANCE,vowel,MED,Y
+Play,56,Ni bitches be bugging,Ni,58,People be shiesty out here,shiesty,INNER,ASSONANCE,vowel,LOW,N
+Play,57,We came up from that ebt,came,59,But hoes stay on my dick,stay,INNER,ASSONANCE,vowel,MED,Y
+Play,57,We came up from that ebt,ebt,60,Skazz Shabazz get that and this,get,END,SLANT,spelling,LOW,Y
+Play,58,People be shiesty out here,People,58,People be shiesty out here,here,INNER,ASSONANCE,vowel,MED,Y
+Play,59,But hoes stay on my dick,stay,61,They say he crazy cause lately,crazy,INNER,ASSONANCE,vowel,MED,Y
+Play,59,But hoes stay on my dick,stay,61,They say he crazy cause lately,lately,INNER,ASSONANCE,vowel,MED,Y
+Play,59,But hoes stay on my dick,stay,61,They say he crazy cause lately,say,INNER,PERFECT,cmu,HIGH,Y
+Play,59,But hoes stay on my dick,dick,62,He working on his shit,shit,END,SLANT,cmu,MED,Y
+Play,60,Skazz Shabazz get that and this,Skazz,60,Skazz Shabazz get that and this,Shabazz,INNER,PERFECT,spelling,HIGH,Y
+Play,60,Skazz Shabazz get that and this,Shabazz,61,They say he crazy cause lately,cause,INNER,SLANT,cmu,MED,Y
+Play,61,They say he crazy cause lately,crazy,61,They say he crazy cause lately,lately,INNER,ASSONANCE,vowel,MED,Y
+Play,61,They say he crazy cause lately,say,61,They say he crazy cause lately,crazy,INNER,ASSONANCE,vowel,MED,Y
+Play,61,They say he crazy cause lately,say,61,They say he crazy cause lately,lately,INNER,ASSONANCE,vowel,MED,Y
+Play,61,They say he crazy cause lately,crazy,63,Patience is ah virtue,Patience,INNER,ASSONANCE,vowel,MED,Y
+Play,61,They say he crazy cause lately,lately,63,Patience is ah virtue,Patience,INNER,ASSONANCE,vowel,MED,Y
+Play,61,They say he crazy cause lately,say,63,Patience is ah virtue,Patience,INNER,ASSONANCE,vowel,MED,Y
+Play,62,He working on his shit,working,63,Patience is ah virtue,virtue,INNER,ASSONANCE,vowel,MED,Y
+Play,63,Patience is ah virtue,Patience,64,What these haters don’t know,haters,INNER,ASSONANCE,vowel,MED,Y
+Play,64,What these haters don’t know,don’t,64,What these haters don’t know,know,INNER,ASSONANCE,vowel,MED,Y
+Play,64,What these haters don’t know,What,65,Is what I been through,what,INNER,REPEAT,spelling,HIGH,N
+Play,65,Is what I been through,through,67,I do this for my crew,crew,END,PERFECT,cmu,HIGH,Y
+Play,65,Is what I been through,through,68,Tell ‘em what we finna do,finna,END,PERFECT,cmu,HIGH,Y
+Play,66,And I gotta tell y’all,tell,68,Tell ‘em what we finna do,em,INNER,SLANT,cmu,MED,Y
+Play,66,And I gotta tell y’all,tell,68,Tell ‘em what we finna do,Tell,INNER,REPEAT,spelling,HIGH,N
+Play,67,I do this for my crew,crew,68,Tell ‘em what we finna do,finna,END,PERFECT,cmu,HIGH,Y
+Play,68,Tell ‘em what we finna do,Tell,68,Tell ‘em what we finna do,em,INNER,SLANT,cmu,MED,Y
+Play,68,Tell ‘em what we finna do,what,69,Some light off white,Some,INNER,SLANT,cmu,MED,Y
+Play,69,Some light off white,light,69,Some light off white,white,INNER,PERFECT,cmu,HIGH,Y
+Play,69,Some light off white,white,70,On ah off night,night,END,PERFECT,cmu,HIGH,Y
+Play,69,Some light off white,light,70,On ah off night,night,INNER,PERFECT,cmu,HIGH,Y
+Play,69,Some light off white,light,71,Boss type nigga play,type,INNER,SLANT,cmu,MED,Y
+Play,69,Some light off white,white,71,Boss type nigga play,type,INNER,SLANT,cmu,MED,Y
+Play,69,Some light off white,white,72,I want em off tonight,tonight,END,PERFECT,cmu,HIGH,Y
+Play,69,Some light off white,white,73,Knots on me like i lost a fight,fight,END,PERFECT,cmu,HIGH,Y
+Play,70,On ah off night,night,71,Boss type nigga play,type,INNER,SLANT,cmu,MED,Y
+Play,70,On ah off night,night,72,I want em off tonight,tonight,END,PERFECT,cmu,HIGH,Y
+Play,70,On ah off night,night,73,Knots on me like i lost a fight,fight,END,PERFECT,cmu,HIGH,Y
+Play,70,On ah off night,night,74,Shining like fog lights,lights,END,SLANT,cmu,MED,Y
+Play,71,Boss type nigga play,Boss,72,I want em off tonight,want,INNER,ASSONANCE,vowel,MED,Y
+Play,71,Boss type nigga play,type,72,I want em off tonight,tonight,INNER,SLANT,cmu,MED,Y
+Play,71,Boss type nigga play,Boss,73,Knots on me like i lost a fight,Knots,INNER,SLANT,cmu,MED,Y
+Play,71,Boss type nigga play,type,73,Knots on me like i lost a fight,fight,INNER,SLANT,cmu,MED,Y
+Play,71,Boss type nigga play,type,73,Knots on me like i lost a fight,like,INNER,SLANT,cmu,MED,Y
+Play,72,I want em off tonight,tonight,73,Knots on me like i lost a fight,fight,END,PERFECT,cmu,HIGH,Y
+Play,72,I want em off tonight,tonight,73,Knots on me like i lost a fight,like,INNER,SLANT,cmu,MED,Y
+Play,72,I want em off tonight,want,73,Knots on me like i lost a fight,Knots,INNER,ASSONANCE,vowel,MED,Y
+Play,72,I want em off tonight,tonight,74,Shining like fog lights,lights,END,SLANT,cmu,MED,Y
+Play,72,I want em off tonight,tonight,74,Shining like fog lights,like,INNER,SLANT,cmu,MED,Y
+Play,72,I want em off tonight,tonight,74,Shining like fog lights,Shining,INNER,ASSONANCE,vowel,MED,Y
+Play,72,I want em off tonight,want,74,Shining like fog lights,fog,INNER,ASSONANCE,vowel,MED,Y
+Play,73,Knots on me like i lost a fight,like,73,Knots on me like i lost a fight,fight,INNER,SLANT,cmu,MED,Y
+Play,73,Knots on me like i lost a fight,fight,74,Shining like fog lights,lights,END,SLANT,cmu,MED,Y
+Play,73,Knots on me like i lost a fight,fight,74,Shining like fog lights,like,INNER,SLANT,cmu,MED,Y
+Play,73,Knots on me like i lost a fight,fight,74,Shining like fog lights,Shining,INNER,ASSONANCE,vowel,MED,Y
+Play,73,Knots on me like i lost a fight,Knots,74,Shining like fog lights,fog,INNER,ASSONANCE,vowel,MED,Y
+Play,73,Knots on me like i lost a fight,like,74,Shining like fog lights,lights,INNER,ASSONANCE,vowel,MED,Y
+Play,73,Knots on me like i lost a fight,like,74,Shining like fog lights,like,INNER,REPEAT,spelling,HIGH,N
+Play,73,Knots on me like i lost a fight,like,74,Shining like fog lights,Shining,INNER,ASSONANCE,vowel,MED,Y
+Play,73,Knots on me like i lost a fight,fight,75,Grinding like I’m tryna,Grinding,INNER,ASSONANCE,vowel,MED,Y
+Play,73,Knots on me like i lost a fight,fight,75,Grinding like I’m tryna,like,INNER,SLANT,cmu,MED,Y
+Play,73,Knots on me like i lost a fight,like,75,Grinding like I’m tryna,Grinding,INNER,ASSONANCE,vowel,MED,Y
+Play,73,Knots on me like i lost a fight,like,75,Grinding like I’m tryna,like,INNER,REPEAT,spelling,HIGH,N
+Play,74,Shining like fog lights,like,74,Shining like fog lights,lights,INNER,ASSONANCE,vowel,MED,Y
+Play,74,Shining like fog lights,Shining,74,Shining like fog lights,lights,INNER,ASSONANCE,vowel,MED,Y
+Play,74,Shining like fog lights,Shining,74,Shining like fog lights,like,INNER,ASSONANCE,vowel,MED,Y
+Play,74,Shining like fog lights,lights,75,Grinding like I’m tryna,Grinding,INNER,ASSONANCE,vowel,MED,Y
+Play,74,Shining like fog lights,lights,75,Grinding like I’m tryna,like,INNER,ASSONANCE,vowel,MED,Y
+Play,74,Shining like fog lights,like,75,Grinding like I’m tryna,Grinding,INNER,ASSONANCE,vowel,MED,Y
+Play,74,Shining like fog lights,like,75,Grinding like I’m tryna,like,INNER,REPEAT,spelling,HIGH,N
+Play,74,Shining like fog lights,Shining,75,Grinding like I’m tryna,Grinding,INNER,SLANT,cmu,MED,Y
+Play,74,Shining like fog lights,Shining,75,Grinding like I’m tryna,like,INNER,ASSONANCE,vowel,MED,Y
+Play,74,Shining like fog lights,fog,76,Move my momma out the projects,momma,INNER,SLANT,cmu,MED,Y
+Play,74,Shining like fog lights,fog,76,Move my momma out the projects,projects,INNER,ASSONANCE,vowel,MED,Y
+Play,75,Grinding like I’m tryna,Grinding,75,Grinding like I’m tryna,like,INNER,ASSONANCE,vowel,MED,Y
+Play,76,Move my momma out the projects,momma,76,Move my momma out the projects,projects,INNER,ASSONANCE,vowel,MED,Y
+Play,76,Move my momma out the projects,projects,77,Gotta 30 in pocket,pocket,END,ASSONANCE,vowel,MED,Y
+Play,76,Move my momma out the projects,momma,77,Gotta 30 in pocket,Gotta,INNER,SLANT,cmu,MED,Y
+Play,76,Move my momma out the projects,momma,77,Gotta 30 in pocket,pocket,INNER,ASSONANCE,vowel,MED,Y
+Play,76,Move my momma out the projects,projects,77,Gotta 30 in pocket,Gotta,INNER,ASSONANCE,vowel,MED,Y
+Play,76,Move my momma out the projects,projects,78,Staying down how I got it,got,END,ASSONANCE,vowel,MED,Y
+Play,76,Move my momma out the projects,momma,78,Staying down how I got it,got,INNER,SLANT,cmu,MED,Y
+Play,77,Gotta 30 in pocket,Gotta,77,Gotta 30 in pocket,pocket,INNER,SLANT,cmu,MED,Y
+Play,77,Gotta 30 in pocket,pocket,78,Staying down how I got it,got,END,SLANT,cmu,MED,Y
+Play,77,Gotta 30 in pocket,Gotta,78,Staying down how I got it,got,INNER,SLANT,cmu,MED,Y
+Play,78,Staying down how I got it,down,78,Staying down how I got it,how,INNER,ASSONANCE,vowel,MED,Y
+Play,79,Ion need ah stylist,Ion,79,Ion need ah stylist,stylist,INNER,ASSONANCE,vowel,MED,Y
+Play,79,Ion need ah stylist,need,80,You can’t get this shit for free,free,INNER,ASSONANCE,vowel,MED,Y
+Play,79,Ion need ah stylist,stylist,81,So I ain’t free styling,styling,END,ASSONANCE,vowel,MED,Y
+Play,79,Ion need ah stylist,Ion,81,So I ain’t free styling,styling,INNER,ASSONANCE,vowel,MED,Y
+Play,79,Ion need ah stylist,need,81,So I ain’t free styling,free,INNER,ASSONANCE,vowel,MED,Y
+Play,80,You can’t get this shit for free,free,81,So I ain’t free styling,free,INNER,REPEAT,spelling,HIGH,N
+Play,80,You can’t get this shit for free,free,82,Pull up the Lamborghini,Lamborghini,END,ASSONANCE,vowel,MED,Y
+Play,80,You can’t get this shit for free,free,83,I’m hard they cannot see me,see,END,PERFECT,cmu,HIGH,Y
+Play,81,So I ain’t free styling,free,82,Pull up the Lamborghini,Lamborghini,INNER,ASSONANCE,vowel,MED,Y
+Play,81,So I ain’t free styling,free,83,I’m hard they cannot see me,see,INNER,PERFECT,cmu,HIGH,Y
+Play,82,Pull up the Lamborghini,Lamborghini,83,I’m hard they cannot see me,see,END,ASSONANCE,vowel,MED,Y
+Play,83,I’m hard they cannot see me,see,87,Got me looking like Chinese,Chinese,END,ASSONANCE,vowel,MED,Y
+Play,84,Baseball summer in the winter,winter,85,Might do the mink,mink,END,SLANT,cmu,MED,Y
+Play,84,Baseball summer in the winter,winter,86,Wraith all summer in the winter,winter,END,REPEAT,spelling,HIGH,N
+Play,84,Baseball summer in the winter,Baseball,86,Wraith all summer in the winter,all,INNER,PERFECT,cmu,HIGH,Y
+Play,84,Baseball summer in the winter,summer,86,Wraith all summer in the winter,summer,INNER,REPEAT,spelling,HIGH,N
+Play,85,Might do the mink,mink,86,Wraith all summer in the winter,winter,END,SLANT,cmu,MED,Y
+Play,85,Might do the mink,Might,87,Got me looking like Chinese,like,INNER,SLANT,cmu,MED,Y

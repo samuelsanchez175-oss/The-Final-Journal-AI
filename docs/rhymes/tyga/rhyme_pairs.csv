@@ -1,0 +1,545 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+100's,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnid,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnid,INNER,REPEAT,spelling,HIGH,N
+100's,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnid,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnids,INNER,SLANT,spelling,LOW,Y
+100's,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnids,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",hunnids,END,REPEAT,spelling,HIGH,N
+100's,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnid,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",Hunnid,INNER,REPEAT,spelling,HIGH,N
+100's,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnid,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",hunnids,INNER,SLANT,spelling,LOW,Y
+100's,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnids,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",Hunnid,INNER,SLANT,spelling,LOW,Y
+100's,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnid,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",Runnin,INNER,ASSONANCE,vowel,LOW,N
+100's,1,"Countin' hunnid, hunnid, hunnid, hunnids",hunnids,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",Runnin,INNER,ASSONANCE,vowel,LOW,N
+100's,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",Hunnid,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",hunnid,INNER,REPEAT,spelling,HIGH,N
+100's,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",Hunnid,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",hunnids,INNER,SLANT,spelling,LOW,Y
+100's,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",Hunnid,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",Runnin,INNER,ASSONANCE,vowel,LOW,N
+100's,2,"Hunnid, hunnid, hunnid, hunnid, hunnid, hunnid hunnids",hunnids,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",Runnin,INNER,ASSONANCE,vowel,LOW,N
+100's,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",Runnin,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",runnin,INNER,REPEAT,spelling,HIGH,N
+100's,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",set,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",check,INNER,SLANT,cmu,MED,Y
+100's,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",through,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",through,INNER,REPEAT,spelling,HIGH,N
+100's,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",bag,4,"Money in the sack, money in the sky, money in the ceilings",sack,INNER,SLANT,cmu,MED,Y
+100's,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",Runnin,4,"Money in the sack, money in the sky, money in the ceilings",Money,INNER,SLANT,cmu,MED,Y
+100's,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",Runnin,5,We don't need no motherfuck' money machine,money,INNER,SLANT,cmu,MED,Y
+100's,3,"Runnin' through the set, runnin' up a check, runnin' through the bag",bag,7,"In the club, throwin' racks and I got swag bustin' out the bag",bag,END,REPEAT,spelling,HIGH,N
+100's,4,"Money in the sack, money in the sky, money in the ceilings",Money,4,"Money in the sack, money in the sky, money in the ceilings",money,INNER,REPEAT,spelling,HIGH,N
+100's,4,"Money in the sack, money in the sky, money in the ceilings",ceilings,5,We don't need no motherfuck' money machine,machine,END,ASSONANCE,vowel,MED,Y
+100's,4,"Money in the sack, money in the sky, money in the ceilings",ceilings,5,We don't need no motherfuck' money machine,need,INNER,ASSONANCE,vowel,MED,Y
+100's,4,"Money in the sack, money in the sky, money in the ceilings",Money,5,We don't need no motherfuck' money machine,money,INNER,REPEAT,spelling,HIGH,N
+100's,4,"Money in the sack, money in the sky, money in the ceilings",Money,6,"We like to touch it, touch it, touch it, touch it",touch,INNER,SLANT,cmu,MED,Y
+100's,4,"Money in the sack, money in the sky, money in the ceilings",sky,6,"We like to touch it, touch it, touch it, touch it",like,INNER,ASSONANCE,vowel,MED,Y
+100's,5,We don't need no motherfuck' money machine,don't,5,We don't need no motherfuck' money machine,no,INNER,ASSONANCE,vowel,MED,Y
+100's,5,We don't need no motherfuck' money machine,need,5,We don't need no motherfuck' money machine,machine,INNER,SLANT,cmu,MED,Y
+100's,5,We don't need no motherfuck' money machine,money,6,"We like to touch it, touch it, touch it, touch it",touch,INNER,SLANT,cmu,MED,Y
+100's,5,We don't need no motherfuck' money machine,don't,7,"In the club, throwin' racks and I got swag bustin' out the bag",throwin,INNER,ASSONANCE,vowel,MED,Y
+100's,5,We don't need no motherfuck' money machine,money,7,"In the club, throwin' racks and I got swag bustin' out the bag",bustin,INNER,ASSONANCE,vowel,MED,Y
+100's,5,We don't need no motherfuck' money machine,money,7,"In the club, throwin' racks and I got swag bustin' out the bag",club,INNER,SLANT,cmu,MED,Y
+100's,5,We don't need no motherfuck' money machine,no,7,"In the club, throwin' racks and I got swag bustin' out the bag",throwin,INNER,ASSONANCE,vowel,MED,Y
+100's,6,"We like to touch it, touch it, touch it, touch it",touch,6,"We like to touch it, touch it, touch it, touch it",touch,INNER,REPEAT,spelling,HIGH,N
+100's,6,"We like to touch it, touch it, touch it, touch it",touch,7,"In the club, throwin' racks and I got swag bustin' out the bag",bustin,INNER,ASSONANCE,vowel,MED,Y
+100's,6,"We like to touch it, touch it, touch it, touch it",touch,7,"In the club, throwin' racks and I got swag bustin' out the bag",club,INNER,SLANT,cmu,MED,Y
+100's,6,"We like to touch it, touch it, touch it, touch it",touch,8,T-Raww pulled up on me in a motherfuckin' Lamb,motherfuckin,INNER,ASSONANCE,vowel,MED,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",club,7,"In the club, throwin' racks and I got swag bustin' out the bag",bustin,INNER,ASSONANCE,vowel,MED,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",racks,7,"In the club, throwin' racks and I got swag bustin' out the bag",bag,INNER,ASSONANCE,vowel,MED,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",racks,7,"In the club, throwin' racks and I got swag bustin' out the bag",swag,INNER,ASSONANCE,vowel,LOW,N
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",swag,7,"In the club, throwin' racks and I got swag bustin' out the bag",bag,INNER,PERFECT,spelling,MED,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",bag,8,T-Raww pulled up on me in a motherfuckin' Lamb,Lamb,END,SLANT,cmu,MED,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",bustin,8,T-Raww pulled up on me in a motherfuckin' Lamb,motherfuckin,INNER,ASSONANCE,vowel,MED,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",club,8,T-Raww pulled up on me in a motherfuckin' Lamb,motherfuckin,INNER,ASSONANCE,vowel,MED,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",racks,8,T-Raww pulled up on me in a motherfuckin' Lamb,Lamb,INNER,ASSONANCE,vowel,MED,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",swag,8,T-Raww pulled up on me in a motherfuckin' Lamb,Lamb,INNER,SLANT,spelling,LOW,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",bustin,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",Jumpin,INNER,ASSONANCE,vowel,MED,Y
+100's,7,"In the club, throwin' racks and I got swag bustin' out the bag",club,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",Jumpin,INNER,ASSONANCE,vowel,MED,Y
+100's,8,T-Raww pulled up on me in a motherfuckin' Lamb,motherfuckin,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",Jumpin,INNER,ASSONANCE,vowel,MED,Y
+100's,8,T-Raww pulled up on me in a motherfuckin' Lamb,motherfuckin,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnid,INNER,ASSONANCE,vowel,LOW,N
+100's,8,T-Raww pulled up on me in a motherfuckin' Lamb,motherfuckin,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnids,INNER,ASSONANCE,vowel,LOW,N
+100's,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",dick,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",dick,INNER,REPEAT,spelling,HIGH,N
+100's,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",Jumpin,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",jumpin,INNER,REPEAT,spelling,HIGH,N
+100's,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",Jumpin,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnid,INNER,ASSONANCE,vowel,LOW,N
+100's,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",Jumpin,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnids,INNER,ASSONANCE,vowel,LOW,N
+100's,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",Jumpin,11,We don't need no motherfuckin' money machine,money,INNER,ASSONANCE,vowel,MED,Y
+100's,9,"Jumpin' on my dick, jumpin' on my dick, jumpin' on my dick",Jumpin,11,We don't need no motherfuckin' money machine,motherfuckin,INNER,ASSONANCE,vowel,MED,Y
+100's,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnid,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnid,INNER,REPEAT,spelling,HIGH,N
+100's,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnid,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnids,INNER,SLANT,spelling,LOW,Y
+100's,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnid,11,We don't need no motherfuckin' money machine,motherfuckin,INNER,ASSONANCE,vowel,LOW,N
+100's,10,"'Cause I'm countin' hunnid, hunnid, hunnid, hunnids",hunnids,11,We don't need no motherfuckin' money machine,motherfuckin,INNER,ASSONANCE,vowel,LOW,N
+100's,11,We don't need no motherfuckin' money machine,don't,11,We don't need no motherfuckin' money machine,no,INNER,ASSONANCE,vowel,MED,Y
+100's,11,We don't need no motherfuckin' money machine,motherfuckin,11,We don't need no motherfuckin' money machine,money,INNER,ASSONANCE,vowel,MED,Y
+100's,11,We don't need no motherfuckin' money machine,need,11,We don't need no motherfuckin' money machine,machine,INNER,SLANT,cmu,MED,Y
+100's,11,We don't need no motherfuckin' money machine,money,12,"We like to touch it, touch it, touch it",touch,INNER,SLANT,cmu,MED,Y
+100's,11,We don't need no motherfuckin' money machine,motherfuckin,12,"We like to touch it, touch it, touch it",touch,INNER,ASSONANCE,vowel,MED,Y
+100's,11,We don't need no motherfuckin' money machine,don't,13,"Runnin' up the set, throwin' up the set, bitches on set",throwin,INNER,ASSONANCE,vowel,MED,Y
+100's,11,We don't need no motherfuckin' money machine,money,13,"Runnin' up the set, throwin' up the set, bitches on set",Runnin,INNER,SLANT,cmu,MED,Y
+100's,11,We don't need no motherfuckin' money machine,motherfuckin,13,"Runnin' up the set, throwin' up the set, bitches on set",Runnin,INNER,SLANT,cmu,MED,Y
+100's,11,We don't need no motherfuckin' money machine,no,13,"Runnin' up the set, throwin' up the set, bitches on set",throwin,INNER,ASSONANCE,vowel,MED,Y
+100's,12,"We like to touch it, touch it, touch it",touch,12,"We like to touch it, touch it, touch it",touch,INNER,REPEAT,spelling,HIGH,N
+100's,12,"We like to touch it, touch it, touch it",touch,13,"Runnin' up the set, throwin' up the set, bitches on set",Runnin,INNER,ASSONANCE,vowel,MED,Y
+100's,13,"Runnin' up the set, throwin' up the set, bitches on set",set,13,"Runnin' up the set, throwin' up the set, bitches on set",set,INNER,REPEAT,spelling,HIGH,N
+100's,13,"Runnin' up the set, throwin' up the set, bitches on set",bitches,14,"Yeah, got bitches in the hallway",bitches,INNER,REPEAT,spelling,HIGH,N
+100's,13,"Runnin' up the set, throwin' up the set, bitches on set",throwin,15,"Dope in the stash, dope in the stash, horse in the back",Dope,INNER,SLANT,cmu,MED,Y
+100's,14,"Yeah, got bitches in the hallway",hallway,16,"Yeah, that Ferrari just foreplay",foreplay,END,PERFECT,cmu,HIGH,Y
+100's,14,"Yeah, got bitches in the hallway",got,16,"Yeah, that Ferrari just foreplay",Ferrari,INNER,SLANT,cmu,MED,Y
+100's,15,"Dope in the stash, dope in the stash, horse in the back",Dope,15,"Dope in the stash, dope in the stash, horse in the back",dope,INNER,REPEAT,spelling,HIGH,N
+100's,15,"Dope in the stash, dope in the stash, horse in the back",stash,15,"Dope in the stash, dope in the stash, horse in the back",back,INNER,SLANT,cmu,MED,Y
+100's,15,"Dope in the stash, dope in the stash, horse in the back",stash,15,"Dope in the stash, dope in the stash, horse in the back",stash,INNER,REPEAT,spelling,HIGH,N
+100's,15,"Dope in the stash, dope in the stash, horse in the back",back,17,"Nigga put the swag, nigga put the cash, nigga put the bag",bag,END,SLANT,cmu,MED,Y
+100's,15,"Dope in the stash, dope in the stash, horse in the back",back,17,"Nigga put the swag, nigga put the cash, nigga put the bag",cash,INNER,SLANT,cmu,MED,Y
+100's,15,"Dope in the stash, dope in the stash, horse in the back",back,17,"Nigga put the swag, nigga put the cash, nigga put the bag",swag,INNER,SLANT,spelling,LOW,Y
+100's,15,"Dope in the stash, dope in the stash, horse in the back",stash,17,"Nigga put the swag, nigga put the cash, nigga put the bag",bag,INNER,SLANT,cmu,MED,Y
+100's,15,"Dope in the stash, dope in the stash, horse in the back",stash,17,"Nigga put the swag, nigga put the cash, nigga put the bag",cash,INNER,PERFECT,cmu,HIGH,Y
+100's,15,"Dope in the stash, dope in the stash, horse in the back",stash,17,"Nigga put the swag, nigga put the cash, nigga put the bag",swag,INNER,SLANT,spelling,LOW,Y
+100's,16,"Yeah, that Ferrari just foreplay",Ferrari,18,"Yeah, everybody know me, bitch",everybody,INNER,SLANT,cmu,MED,Y
+100's,17,"Nigga put the swag, nigga put the cash, nigga put the bag",cash,17,"Nigga put the swag, nigga put the cash, nigga put the bag",bag,INNER,SLANT,cmu,MED,Y
+100's,17,"Nigga put the swag, nigga put the cash, nigga put the bag",Nigga,17,"Nigga put the swag, nigga put the cash, nigga put the bag",nigga,INNER,REPEAT,spelling,HIGH,N
+100's,17,"Nigga put the swag, nigga put the cash, nigga put the bag",put,17,"Nigga put the swag, nigga put the cash, nigga put the bag",put,INNER,REPEAT,spelling,HIGH,N
+100's,17,"Nigga put the swag, nigga put the cash, nigga put the bag",swag,17,"Nigga put the swag, nigga put the cash, nigga put the bag",bag,INNER,PERFECT,spelling,MED,Y
+100's,17,"Nigga put the swag, nigga put the cash, nigga put the bag",swag,17,"Nigga put the swag, nigga put the cash, nigga put the bag",cash,INNER,SLANT,spelling,LOW,Y
+100's,18,"Yeah, everybody know me, bitch",bitch,20,"Pateks with the tech if a nigga play me, bitch",bitch,END,REPEAT,spelling,HIGH,N
+100's,18,"Yeah, everybody know me, bitch",bitch,22,"Bitches come this way, bitches wanna kiss me",kiss,END,SLANT,cmu,MED,Y
+100's,19,"Runnin' up a check, runnin' up a check",check,19,"Runnin' up a check, runnin' up a check",check,INNER,REPEAT,spelling,HIGH,N
+100's,19,"Runnin' up a check, runnin' up a check",Runnin,19,"Runnin' up a check, runnin' up a check",runnin,INNER,REPEAT,spelling,HIGH,N
+100's,19,"Runnin' up a check, runnin' up a check",check,20,"Pateks with the tech if a nigga play me, bitch",tech,INNER,PERFECT,cmu,HIGH,Y
+100's,20,"Pateks with the tech if a nigga play me, bitch",nigga,21,"Nigga, go that way, nigga, go that way",Nigga,INNER,REPEAT,spelling,HIGH,N
+100's,20,"Pateks with the tech if a nigga play me, bitch",play,21,"Nigga, go that way, nigga, go that way",way,INNER,PERFECT,cmu,HIGH,Y
+100's,20,"Pateks with the tech if a nigga play me, bitch",bitch,22,"Bitches come this way, bitches wanna kiss me",kiss,END,SLANT,cmu,MED,Y
+100's,20,"Pateks with the tech if a nigga play me, bitch",bitch,22,"Bitches come this way, bitches wanna kiss me",Bitches,INNER,SLANT,cmu,MED,Y
+100's,20,"Pateks with the tech if a nigga play me, bitch",play,22,"Bitches come this way, bitches wanna kiss me",way,INNER,PERFECT,cmu,HIGH,Y
+100's,21,"Nigga, go that way, nigga, go that way",go,21,"Nigga, go that way, nigga, go that way",go,INNER,REPEAT,spelling,HIGH,N
+100's,21,"Nigga, go that way, nigga, go that way",Nigga,21,"Nigga, go that way, nigga, go that way",nigga,INNER,REPEAT,spelling,HIGH,N
+100's,21,"Nigga, go that way, nigga, go that way",way,21,"Nigga, go that way, nigga, go that way",way,INNER,REPEAT,spelling,HIGH,N
+100's,21,"Nigga, go that way, nigga, go that way",way,22,"Bitches come this way, bitches wanna kiss me",way,INNER,REPEAT,spelling,HIGH,N
+100's,21,"Nigga, go that way, nigga, go that way",way,23,Turn a freeway to a speedrace (Skrrt),freeway,INNER,PERFECT,cmu,HIGH,Y
+100's,21,"Nigga, go that way, nigga, go that way",way,25,Don't be readin' shit in Daily Mail,Mail,END,ASSONANCE,vowel,MED,Y
+100's,22,"Bitches come this way, bitches wanna kiss me",Bitches,22,"Bitches come this way, bitches wanna kiss me",bitches,INNER,REPEAT,spelling,HIGH,N
+100's,22,"Bitches come this way, bitches wanna kiss me",Bitches,22,"Bitches come this way, bitches wanna kiss me",kiss,INNER,SLANT,cmu,MED,Y
+100's,22,"Bitches come this way, bitches wanna kiss me",way,23,Turn a freeway to a speedrace (Skrrt),freeway,INNER,PERFECT,cmu,HIGH,Y
+100's,22,"Bitches come this way, bitches wanna kiss me",Bitches,24,Don't be actin' shit about the fam,shit,INNER,ASSONANCE,vowel,MED,Y
+100's,22,"Bitches come this way, bitches wanna kiss me",kiss,24,Don't be actin' shit about the fam,shit,INNER,SLANT,cmu,MED,Y
+100's,23,Turn a freeway to a speedrace (Skrrt),freeway,25,Don't be readin' shit in Daily Mail,Daily,INNER,ASSONANCE,vowel,MED,Y
+100's,23,Turn a freeway to a speedrace (Skrrt),freeway,25,Don't be readin' shit in Daily Mail,Mail,INNER,ASSONANCE,vowel,MED,Y
+100's,24,Don't be actin' shit about the fam,Don't,25,Don't be readin' shit in Daily Mail,Don't,INNER,REPEAT,spelling,HIGH,N
+100's,24,Don't be actin' shit about the fam,shit,25,Don't be readin' shit in Daily Mail,shit,INNER,REPEAT,spelling,HIGH,N
+100's,24,Don't be actin' shit about the fam,Don't,26,"I just closed a big deal, lookin' through my email",closed,INNER,ASSONANCE,vowel,MED,Y
+100's,24,Don't be actin' shit about the fam,shit,26,"I just closed a big deal, lookin' through my email",big,INNER,SLANT,cmu,MED,Y
+100's,25,Don't be readin' shit in Daily Mail,Daily,25,Don't be readin' shit in Daily Mail,Mail,INNER,SLANT,cmu,MED,Y
+100's,25,Don't be readin' shit in Daily Mail,Daily Mail,26,"I just closed a big deal, lookin' through my email",through email,END,MULTI,multi,HIGH,Y
+100's,25,Don't be readin' shit in Daily Mail,Daily,26,"I just closed a big deal, lookin' through my email",email,INNER,SLANT,cmu,MED,Y
+100's,25,Don't be readin' shit in Daily Mail,Don't,26,"I just closed a big deal, lookin' through my email",closed,INNER,ASSONANCE,vowel,MED,Y
+100's,25,Don't be readin' shit in Daily Mail,readin,26,"I just closed a big deal, lookin' through my email",deal,INNER,ASSONANCE,vowel,MED,Y
+100's,25,Don't be readin' shit in Daily Mail,shit,26,"I just closed a big deal, lookin' through my email",big,INNER,SLANT,cmu,MED,Y
+100's,25,Don't be readin' shit in Daily Mail,shit,27,"Watch this shit sell like Adele, yeah",shit,INNER,REPEAT,spelling,HIGH,N
+100's,26,"I just closed a big deal, lookin' through my email",big,27,"Watch this shit sell like Adele, yeah",shit,INNER,SLANT,cmu,MED,Y
+100's,26,"I just closed a big deal, lookin' through my email",big,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",whip,INNER,SLANT,cmu,MED,Y
+100's,26,"I just closed a big deal, lookin' through my email",closed,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",show,INNER,ASSONANCE,vowel,MED,Y
+100's,26,"I just closed a big deal, lookin' through my email",through,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",room,INNER,ASSONANCE,vowel,MED,Y
+100's,27,"Watch this shit sell like Adele, yeah",sell,27,"Watch this shit sell like Adele, yeah",Adele,INNER,PERFECT,cmu,HIGH,Y
+100's,27,"Watch this shit sell like Adele, yeah",shit,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",whip,INNER,SLANT,cmu,MED,Y
+100's,27,"Watch this shit sell like Adele, yeah",Watch,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",bought,INNER,SLANT,cmu,MED,Y
+100's,27,"Watch this shit sell like Adele, yeah",shit,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",things,INNER,ASSONANCE,vowel,MED,Y
+100's,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",show,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoe,INNER,PERFECT,cmu,HIGH,Y
+100's,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",show,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoes,INNER,ASSONANCE,vowel,MED,Y
+100's,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",whip,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",things,INNER,ASSONANCE,vowel,MED,Y
+100's,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",bought,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",got,INNER,PERFECT,cmu,HIGH,Y
+100's,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",room,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",boo,INNER,ASSONANCE,vowel,MED,Y
+100's,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",show,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",no,INNER,PERFECT,cmu,HIGH,Y
+100's,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",show,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",solo,INNER,PERFECT,cmu,HIGH,Y
+100's,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",whip,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",I'ma,INNER,SLANT,spelling,LOW,Y
+100's,28,"Uh, bought that whip off the show room (Skrrt, skrrt)",room,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",school,END,SLANT,cmu,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoes,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoe,INNER,ASSONANCE,vowel,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",same,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",makes,INNER,ASSONANCE,vowel,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoe,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",no,INNER,PERFECT,cmu,HIGH,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoe,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",solo,INNER,PERFECT,cmu,HIGH,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoes,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",no,INNER,ASSONANCE,vowel,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoes,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",nobu,INNER,SLANT,spelling,LOW,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoes,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",solo,INNER,ASSONANCE,vowel,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",makes,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",ain't,INNER,ASSONANCE,vowel,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",same,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",ain't,INNER,ASSONANCE,vowel,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoe,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",old,INNER,ASSONANCE,vowel,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoes,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",old,INNER,ASSONANCE,vowel,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoes,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",soju,INNER,SLANT,spelling,LOW,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",makes,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",sake,INNER,SLANT,cmu,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",same,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",sake,INNER,SLANT,cmu,MED,Y
+100's,29,"Yeah, she do the same things them hoes do and that makes her a hoe too",hoe,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",told,END,ASSONANCE,vowel,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",no,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",solo,INNER,PERFECT,cmu,HIGH,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",ain't,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",sake,INNER,ASSONANCE,vowel,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",boo,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",juice,INNER,ASSONANCE,vowel,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",boo,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",school,INNER,ASSONANCE,vowel,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",got,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",drop,INNER,SLANT,cmu,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",no,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",old,INNER,ASSONANCE,vowel,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",nobu,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",soju,INNER,SLANT,spelling,LOW,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",solo,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",old,INNER,ASSONANCE,vowel,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",got,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",cock,INNER,SLANT,cmu,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",got,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",Drop,INNER,SLANT,cmu,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",got,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",drops,INNER,ASSONANCE,vowel,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",got,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",got,INNER,REPEAT,spelling,HIGH,N
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",no,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",told,INNER,ASSONANCE,vowel,MED,Y
+100's,30,"I'ma bachelor, I ain't got no boo, it's all be solo and nobu",solo,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",told,INNER,ASSONANCE,vowel,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",juice,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",school,INNER,SLANT,cmu,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",drop,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",cock,INNER,SLANT,cmu,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",drop,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",Drop,INNER,REPEAT,spelling,HIGH,N
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",drop,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",drops,INNER,SLANT,cmu,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",drop,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",got,INNER,SLANT,cmu,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",old,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",told,INNER,PERFECT,cmu,HIGH,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",pull,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",pullin,INNER,SLANT,cmu,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",school,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",juice,END,SLANT,cmu,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",drop,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",got,INNER,SLANT,cmu,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",juice,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",juice,INNER,REPEAT,spelling,HIGH,N
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",juice,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",rumours,INNER,ASSONANCE,vowel,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",juice,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",true,INNER,ASSONANCE,vowel,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",old,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",no,INNER,ASSONANCE,vowel,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",sake,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",ain't,INNER,ASSONANCE,vowel,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",school,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",rumours,INNER,ASSONANCE,vowel,MED,Y
+100's,31,"Uh, drunk off the sake and the soju juice, yeah, drop out, pull up in a old school, ooh",school,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",true,INNER,ASSONANCE,vowel,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",Drop,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",cock,INNER,SLANT,cmu,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",Drop,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",drops,INNER,SLANT,cmu,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",Drop,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",got,INNER,SLANT,cmu,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",drops,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",cock,INNER,ASSONANCE,vowel,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",drops,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",got,INNER,ASSONANCE,vowel,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",got,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",cock,INNER,SLANT,cmu,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",cock,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",got,INNER,SLANT,cmu,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",Drop,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",got,INNER,SLANT,cmu,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",drops,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",got,INNER,ASSONANCE,vowel,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",got,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",got,INNER,REPEAT,spelling,HIGH,N
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",told,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",no,INNER,ASSONANCE,vowel,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",told,34,And gettin' bread somethin' that we toast to,toast,END,ASSONANCE,vowel,MED,Y
+100's,32,"Drop out but I'm pullin' drops out, got my cock out like I told you",told,35,"Two girls asked me what I'm gon' do, I said both of you",both,END,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",Heard,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",thirsty,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",rumours,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",juice,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",rumours,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",true,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",true,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",juice,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",no,34,And gettin' bread somethin' that we toast to,toast,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",Heard,35,"Two girls asked me what I'm gon' do, I said both of you",girls,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",juice,35,"Two girls asked me what I'm gon' do, I said both of you",Two,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",no,35,"Two girls asked me what I'm gon' do, I said both of you",both,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",rumours,35,"Two girls asked me what I'm gon' do, I said both of you",Two,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",thirsty,35,"Two girls asked me what I'm gon' do, I said both of you",girls,INNER,ASSONANCE,vowel,MED,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",true,35,"Two girls asked me what I'm gon' do, I said both of you",Two,INNER,PERFECT,cmu,HIGH,Y
+100's,33,"Heard the rumours 'bout you were so true, you thirsty and you ain't got no juice",juice,36,You don't know what we have to go through,through,END,ASSONANCE,vowel,MED,Y
+100's,34,And gettin' bread somethin' that we toast to,gettin,34,And gettin' bread somethin' that we toast to,bread,INNER,ASSONANCE,vowel,MED,Y
+100's,34,And gettin' bread somethin' that we toast to,toast,35,"Two girls asked me what I'm gon' do, I said both of you",both,END,ASSONANCE,vowel,MED,Y
+100's,34,And gettin' bread somethin' that we toast to,bread,35,"Two girls asked me what I'm gon' do, I said both of you",said,INNER,PERFECT,cmu,HIGH,Y
+100's,34,And gettin' bread somethin' that we toast to,gettin,35,"Two girls asked me what I'm gon' do, I said both of you",said,INNER,ASSONANCE,vowel,MED,Y
+100's,34,And gettin' bread somethin' that we toast to,somethin,35,"Two girls asked me what I'm gon' do, I said both of you",what,INNER,ASSONANCE,vowel,MED,Y
+100's,34,And gettin' bread somethin' that we toast to,somethin,36,You don't know what we have to go through,what,INNER,ASSONANCE,vowel,MED,Y
+100's,34,And gettin' bread somethin' that we toast to,toast,36,You don't know what we have to go through,don't,INNER,SLANT,cmu,MED,Y
+100's,34,And gettin' bread somethin' that we toast to,toast,36,You don't know what we have to go through,go,INNER,ASSONANCE,vowel,MED,Y
+100's,34,And gettin' bread somethin' that we toast to,toast,36,You don't know what we have to go through,know,INNER,ASSONANCE,vowel,MED,Y
+100's,34,And gettin' bread somethin' that we toast to,toast,37,All my day ones is my go-tos,tos,END,SLANT,spelling,LOW,Y
+100's,34,And gettin' bread somethin' that we toast to,toast,38,Got my own show just to show you,show,END,ASSONANCE,vowel,MED,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",gon,35,"Two girls asked me what I'm gon' do, I said both of you",both,INNER,SLANT,spelling,LOW,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",asked,36,You don't know what we have to go through,have,INNER,ASSONANCE,vowel,MED,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",both,36,You don't know what we have to go through,don't,INNER,ASSONANCE,vowel,MED,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",both,36,You don't know what we have to go through,go,INNER,ASSONANCE,vowel,MED,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",both,36,You don't know what we have to go through,know,INNER,ASSONANCE,vowel,MED,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",gon,36,You don't know what we have to go through,don't,INNER,SLANT,spelling,LOW,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",Two,36,You don't know what we have to go through,through,INNER,PERFECT,cmu,HIGH,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",what,36,You don't know what we have to go through,what,INNER,REPEAT,spelling,HIGH,N
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",both,37,All my day ones is my go-tos,tos,END,SLANT,spelling,LOW,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",both,37,All my day ones is my go-tos,go,INNER,ASSONANCE,vowel,MED,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",gon,37,All my day ones is my go-tos,tos,INNER,SLANT,spelling,LOW,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",what,37,All my day ones is my go-tos,ones,INNER,ASSONANCE,vowel,MED,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",both,38,Got my own show just to show you,show,END,ASSONANCE,vowel,MED,Y
+100's,35,"Two girls asked me what I'm gon' do, I said both of you",both,39,I don't trust you as far as I can throw you,throw,END,ASSONANCE,vowel,MED,Y
+100's,36,You don't know what we have to go through,don't,36,You don't know what we have to go through,go,INNER,ASSONANCE,vowel,MED,Y
+100's,36,You don't know what we have to go through,don't,36,You don't know what we have to go through,know,INNER,ASSONANCE,vowel,MED,Y
+100's,36,You don't know what we have to go through,know,36,You don't know what we have to go through,go,INNER,PERFECT,cmu,HIGH,Y
+100's,36,You don't know what we have to go through,don't,37,All my day ones is my go-tos,go,INNER,ASSONANCE,vowel,MED,Y
+100's,36,You don't know what we have to go through,go,37,All my day ones is my go-tos,go,INNER,REPEAT,spelling,HIGH,N
+100's,36,You don't know what we have to go through,know,37,All my day ones is my go-tos,go,INNER,PERFECT,cmu,HIGH,Y
+100's,36,You don't know what we have to go through,what,37,All my day ones is my go-tos,ones,INNER,ASSONANCE,vowel,MED,Y
+100's,36,You don't know what we have to go through,don't,38,Got my own show just to show you,own,INNER,SLANT,cmu,MED,Y
+100's,36,You don't know what we have to go through,don't,38,Got my own show just to show you,show,INNER,ASSONANCE,vowel,MED,Y
+100's,36,You don't know what we have to go through,go,38,Got my own show just to show you,own,INNER,ASSONANCE,vowel,MED,Y
+100's,36,You don't know what we have to go through,go,38,Got my own show just to show you,show,INNER,PERFECT,cmu,HIGH,Y
+100's,36,You don't know what we have to go through,know,38,Got my own show just to show you,own,INNER,ASSONANCE,vowel,MED,Y
+100's,36,You don't know what we have to go through,know,38,Got my own show just to show you,show,INNER,PERFECT,cmu,HIGH,Y
+100's,36,You don't know what we have to go through,through,40,Ch-ch-chop it up like Pro Tools,Tools,END,ASSONANCE,vowel,MED,Y
+100's,37,All my day ones is my go-tos,go,38,Got my own show just to show you,own,INNER,ASSONANCE,vowel,MED,Y
+100's,37,All my day ones is my go-tos,go,38,Got my own show just to show you,show,INNER,PERFECT,cmu,HIGH,Y
+100's,37,All my day ones is my go-tos,tos,38,Got my own show just to show you,own,INNER,SLANT,spelling,LOW,Y
+100's,37,All my day ones is my go-tos,go,39,I don't trust you as far as I can throw you,don't,INNER,ASSONANCE,vowel,MED,Y
+100's,37,All my day ones is my go-tos,go,39,I don't trust you as far as I can throw you,throw,INNER,PERFECT,cmu,HIGH,Y
+100's,37,All my day ones is my go-tos,ones,39,I don't trust you as far as I can throw you,trust,INNER,ASSONANCE,vowel,MED,Y
+100's,38,Got my own show just to show you,own,38,Got my own show just to show you,show,INNER,ASSONANCE,vowel,MED,Y
+100's,38,Got my own show just to show you,show,38,Got my own show just to show you,show,INNER,REPEAT,spelling,HIGH,N
+100's,38,Got my own show just to show you,show,39,I don't trust you as far as I can throw you,throw,END,PERFECT,cmu,HIGH,Y
+100's,38,Got my own show just to show you,Got,39,I don't trust you as far as I can throw you,far,INNER,SLANT,cmu,MED,Y
+100's,38,Got my own show just to show you,own,39,I don't trust you as far as I can throw you,don't,INNER,SLANT,cmu,MED,Y
+100's,38,Got my own show just to show you,own,39,I don't trust you as far as I can throw you,throw,INNER,ASSONANCE,vowel,MED,Y
+100's,38,Got my own show just to show you,show,39,I don't trust you as far as I can throw you,don't,INNER,ASSONANCE,vowel,MED,Y
+100's,38,Got my own show just to show you,show,39,I don't trust you as far as I can throw you,throw,INNER,PERFECT,cmu,HIGH,Y
+100's,38,Got my own show just to show you,Got,40,Ch-ch-chop it up like Pro Tools,chop,INNER,SLANT,cmu,MED,Y
+100's,38,Got my own show just to show you,own,40,Ch-ch-chop it up like Pro Tools,Pro,INNER,ASSONANCE,vowel,MED,Y
+100's,38,Got my own show just to show you,show,40,Ch-ch-chop it up like Pro Tools,Pro,INNER,PERFECT,cmu,HIGH,Y
+100's,38,Got my own show just to show you,show,42,Niggas want beef but they tofu,tofu,END,ASSONANCE,vowel,MED,Y
+100's,39,I don't trust you as far as I can throw you,don't,39,I don't trust you as far as I can throw you,throw,INNER,ASSONANCE,vowel,MED,Y
+100's,39,I don't trust you as far as I can throw you,don't,40,Ch-ch-chop it up like Pro Tools,Pro,INNER,ASSONANCE,vowel,MED,Y
+100's,39,I don't trust you as far as I can throw you,far,40,Ch-ch-chop it up like Pro Tools,chop,INNER,SLANT,cmu,MED,Y
+100's,39,I don't trust you as far as I can throw you,throw,40,Ch-ch-chop it up like Pro Tools,Pro,INNER,PERFECT,cmu,HIGH,Y
+100's,39,I don't trust you as far as I can throw you,throw,42,Niggas want beef but they tofu,tofu,END,ASSONANCE,vowel,MED,Y
+100's,40,Ch-ch-chop it up like Pro Tools,Ch,40,Ch-ch-chop it up like Pro Tools,ch,INNER,REPEAT,spelling,HIGH,N
+100's,40,Ch-ch-chop it up like Pro Tools,like,41,White diamonds drippin' like '02,diamonds,INNER,ASSONANCE,vowel,MED,Y
+100's,40,Ch-ch-chop it up like Pro Tools,like,41,White diamonds drippin' like '02,like,INNER,REPEAT,spelling,HIGH,N
+100's,40,Ch-ch-chop it up like Pro Tools,like,41,White diamonds drippin' like '02,White,INNER,SLANT,cmu,MED,Y
+100's,40,Ch-ch-chop it up like Pro Tools,chop,42,Niggas want beef but they tofu,want,INNER,ASSONANCE,vowel,MED,Y
+100's,40,Ch-ch-chop it up like Pro Tools,Pro,42,Niggas want beef but they tofu,tofu,INNER,ASSONANCE,vowel,MED,Y
+100's,40,Ch-ch-chop it up like Pro Tools,Tools,43,"They like G.O.O.D. Music, baby, that's a good move",move,END,ASSONANCE,vowel,MED,Y
+100's,41,White diamonds drippin' like '02,diamonds,41,White diamonds drippin' like '02,like,INNER,ASSONANCE,vowel,MED,Y
+100's,41,White diamonds drippin' like '02,White,41,White diamonds drippin' like '02,diamonds,INNER,ASSONANCE,vowel,MED,Y
+100's,41,White diamonds drippin' like '02,White,41,White diamonds drippin' like '02,like,INNER,SLANT,cmu,MED,Y
+100's,41,White diamonds drippin' like '02,diamonds,43,"They like G.O.O.D. Music, baby, that's a good move",like,INNER,ASSONANCE,vowel,MED,Y
+100's,41,White diamonds drippin' like '02,like,43,"They like G.O.O.D. Music, baby, that's a good move",like,INNER,REPEAT,spelling,HIGH,N
+100's,41,White diamonds drippin' like '02,White,43,"They like G.O.O.D. Music, baby, that's a good move",like,INNER,SLANT,cmu,MED,Y
+100's,42,Niggas want beef but they tofu,beef,43,"They like G.O.O.D. Music, baby, that's a good move",D,INNER,ASSONANCE,vowel,MED,Y
+100's,42,Niggas want beef but they tofu,beef,43,"They like G.O.O.D. Music, baby, that's a good move",G,INNER,ASSONANCE,vowel,MED,Y
+100's,42,Niggas want beef but they tofu,tofu,43,"They like G.O.O.D. Music, baby, that's a good move",O,INNER,ASSONANCE,vowel,MED,Y
+100's,43,"They like G.O.O.D. Music, baby, that's a good move",G,43,"They like G.O.O.D. Music, baby, that's a good move",D,INNER,PERFECT,cmu,HIGH,Y
+100's,43,"They like G.O.O.D. Music, baby, that's a good move",Music,43,"They like G.O.O.D. Music, baby, that's a good move",move,INNER,ASSONANCE,vowel,MED,Y
+100's,43,"They like G.O.O.D. Music, baby, that's a good move",O,43,"They like G.O.O.D. Music, baby, that's a good move",O,INNER,REPEAT,spelling,HIGH,N
+Sunshine,1,"Sunshine, I could call you my baby boy (Uh-huh)",baby,2,You could call me your baby girl (Yeah),baby,INNER,REPEAT,spelling,HIGH,N
+Sunshine,1,"Sunshine, I could call you my baby boy (Uh-huh)",call,2,You could call me your baby girl (Yeah),call,INNER,REPEAT,spelling,HIGH,N
+Sunshine,1,"Sunshine, I could call you my baby boy (Uh-huh)",could,2,You could call me your baby girl (Yeah),could,INNER,REPEAT,spelling,HIGH,N
+Sunshine,1,"Sunshine, I could call you my baby boy (Uh-huh)",Sunshine,3,"Hit me up, we can spend time (Let's spend)",time,INNER,SLANT,cmu,MED,Y
+Sunshine,2,You could call me your baby girl (Yeah),baby,4,"Lately, you've been on my mind",Lately,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,3,"Hit me up, we can spend time (Let's spend)",time,4,"Lately, you've been on my mind",mind,END,ASSONANCE,vowel,MED,Y
+Sunshine,3,"Hit me up, we can spend time (Let's spend)",Hit,5,I know you wanna chill with a player (Chill),chill,INNER,SLANT,cmu,MED,Y
+Sunshine,4,"Lately, you've been on my mind",Lately,5,I know you wanna chill with a player (Chill),player,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,4,"Lately, you've been on my mind",Lately,6,But all you gotta do is keep it real with a player (Keep it real),player,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,5,I know you wanna chill with a player (Chill),player,6,But all you gotta do is keep it real with a player (Keep it real),player,END,REPEAT,spelling,HIGH,N
+Sunshine,5,I know you wanna chill with a player (Chill),wanna,6,But all you gotta do is keep it real with a player (Keep it real),gotta,INNER,SLANT,cmu,MED,Y
+Sunshine,5,I know you wanna chill with a player (Chill),know,7,Just answer your phone whenever I call (Call),phone,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,6,But all you gotta do is keep it real with a player (Keep it real),keep,6,But all you gotta do is keep it real with a player (Keep it real),real,INNER,SLANT,cmu,MED,Y
+Sunshine,6,But all you gotta do is keep it real with a player (Keep it real),all,7,Just answer your phone whenever I call (Call),call,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,6,But all you gotta do is keep it real with a player (Keep it real),all,8,"Calm me down, pick me up whenever I fall",fall,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,6,But all you gotta do is keep it real with a player (Keep it real),gotta,8,"Calm me down, pick me up whenever I fall",Calm,INNER,SLANT,cmu,MED,Y
+Sunshine,7,Just answer your phone whenever I call (Call),call,8,"Calm me down, pick me up whenever I fall",fall,END,PERFECT,cmu,HIGH,Y
+Sunshine,7,Just answer your phone whenever I call (Call),whenever,8,"Calm me down, pick me up whenever I fall",whenever,INNER,REPEAT,spelling,HIGH,N
+Sunshine,7,Just answer your phone whenever I call (Call),call,9,"I like 'em short and tall, slim and thick",short,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,7,Just answer your phone whenever I call (Call),call,9,"I like 'em short and tall, slim and thick",tall,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,8,"Calm me down, pick me up whenever I fall",fall,9,"I like 'em short and tall, slim and thick",short,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,8,"Calm me down, pick me up whenever I fall",fall,9,"I like 'em short and tall, slim and thick",tall,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,8,"Calm me down, pick me up whenever I fall",pick,9,"I like 'em short and tall, slim and thick",slim,INNER,SLANT,cmu,MED,Y
+Sunshine,8,"Calm me down, pick me up whenever I fall",pick,9,"I like 'em short and tall, slim and thick",thick,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,8,"Calm me down, pick me up whenever I fall",pick,10,"I like 'em cute and sweet, ghetto and fit",fit,INNER,SLANT,cmu,MED,Y
+Sunshine,8,"Calm me down, pick me up whenever I fall",whenever,10,"I like 'em cute and sweet, ghetto and fit",ghetto,INNER,SLANT,cmu,MED,Y
+Sunshine,9,"I like 'em short and tall, slim and thick",short,9,"I like 'em short and tall, slim and thick",tall,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,9,"I like 'em short and tall, slim and thick",slim,9,"I like 'em short and tall, slim and thick",thick,INNER,SLANT,cmu,MED,Y
+Sunshine,9,"I like 'em short and tall, slim and thick",thick,10,"I like 'em cute and sweet, ghetto and fit",fit,END,SLANT,cmu,MED,Y
+Sunshine,9,"I like 'em short and tall, slim and thick",'em,10,"I like 'em cute and sweet, ghetto and fit",'em,INNER,REPEAT,spelling,HIGH,N
+Sunshine,9,"I like 'em short and tall, slim and thick",like,10,"I like 'em cute and sweet, ghetto and fit",like,INNER,REPEAT,spelling,HIGH,N
+Sunshine,9,"I like 'em short and tall, slim and thick",slim,10,"I like 'em cute and sweet, ghetto and fit",fit,INNER,SLANT,cmu,MED,Y
+Sunshine,9,"I like 'em short and tall, slim and thick",like,11,Hop your ass in that Benz 'cause you like my style,like,INNER,REPEAT,spelling,HIGH,N
+Sunshine,9,"I like 'em short and tall, slim and thick",like,11,Hop your ass in that Benz 'cause you like my style,style,INNER,SLANT,cmu,MED,Y
+Sunshine,9,"I like 'em short and tall, slim and thick",thick,13,"I need a lady in the streets, sneaky link",link,END,SLANT,cmu,MED,Y
+Sunshine,10,"I like 'em cute and sweet, ghetto and fit",ghetto,11,Hop your ass in that Benz 'cause you like my style,Benz,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,10,"I like 'em cute and sweet, ghetto and fit",like,11,Hop your ass in that Benz 'cause you like my style,like,INNER,REPEAT,spelling,HIGH,N
+Sunshine,10,"I like 'em cute and sweet, ghetto and fit",like,11,Hop your ass in that Benz 'cause you like my style,style,INNER,SLANT,cmu,MED,Y
+Sunshine,10,"I like 'em cute and sweet, ghetto and fit",fit,12,"You know me, I'd do anything to make you smile",anything,INNER,SLANT,cmu,MED,Y
+Sunshine,10,"I like 'em cute and sweet, ghetto and fit",like,12,"You know me, I'd do anything to make you smile",smile,INNER,SLANT,cmu,MED,Y
+Sunshine,10,"I like 'em cute and sweet, ghetto and fit",fit,13,"I need a lady in the streets, sneaky link",link,END,ASSONANCE,vowel,MED,Y
+Sunshine,11,Hop your ass in that Benz 'cause you like my style,like,11,Hop your ass in that Benz 'cause you like my style,style,INNER,SLANT,cmu,MED,Y
+Sunshine,11,Hop your ass in that Benz 'cause you like my style,style,12,"You know me, I'd do anything to make you smile",smile,END,PERFECT,cmu,HIGH,Y
+Sunshine,11,Hop your ass in that Benz 'cause you like my style,like,12,"You know me, I'd do anything to make you smile",smile,INNER,SLANT,cmu,MED,Y
+Sunshine,12,"You know me, I'd do anything to make you smile",anything,13,"I need a lady in the streets, sneaky link",link,INNER,SLANT,cmu,MED,Y
+Sunshine,12,"You know me, I'd do anything to make you smile",make,13,"I need a lady in the streets, sneaky link",lady,INNER,SLANT,cmu,MED,Y
+Sunshine,13,"I need a lady in the streets, sneaky link",need,13,"I need a lady in the streets, sneaky link",sneaky,INNER,SLANT,cmu,MED,Y
+Sunshine,13,"I need a lady in the streets, sneaky link",need,13,"I need a lady in the streets, sneaky link",streets,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,13,"I need a lady in the streets, sneaky link",streets,13,"I need a lady in the streets, sneaky link",sneaky,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,13,"I need a lady in the streets, sneaky link",need,14,"Gotta watch how you movе, what you get is what you see",see,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,13,"I need a lady in the streets, sneaky link",sneaky,14,"Gotta watch how you movе, what you get is what you see",see,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,13,"I need a lady in the streets, sneaky link",streets,14,"Gotta watch how you movе, what you get is what you see",see,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,13,"I need a lady in the streets, sneaky link",link,15,"Out of sight, out of mind, but I still adore you",still,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,14,"Gotta watch how you movе, what you get is what you see",Gotta,14,"Gotta watch how you movе, what you get is what you see",watch,INNER,SLANT,cmu,MED,Y
+Sunshine,14,"Gotta watch how you movе, what you get is what you see",what,14,"Gotta watch how you movе, what you get is what you see",what,INNER,REPEAT,spelling,HIGH,N
+Sunshine,14,"Gotta watch how you movе, what you get is what you see",get,16,"Just hit me on thе FaceTime, I never ignore you",never,INNER,SLANT,cmu,MED,Y
+Sunshine,15,"Out of sight, out of mind, but I still adore you",sight,15,"Out of sight, out of mind, but I still adore you",mind,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,15,"Out of sight, out of mind, but I still adore you",adore,16,"Just hit me on thе FaceTime, I never ignore you",ignore,END,PERFECT,cmu,HIGH,Y
+Sunshine,15,"Out of sight, out of mind, but I still adore you",still,16,"Just hit me on thе FaceTime, I never ignore you",hit,INNER,SLANT,cmu,MED,Y
+Sunshine,15,"Out of sight, out of mind, but I still adore you",adore,18,"I know you heard stories, but that was before you (Before you)",before,END,PERFECT,cmu,HIGH,Y
+Sunshine,15,"Out of sight, out of mind, but I still adore you",adore,19,Can I CC and Christian Dior you? (Can I?),Dior,END,PERFECT,cmu,HIGH,Y
+Sunshine,16,"Just hit me on thе FaceTime, I never ignore you",th,17,"You know pain is love, but my love is loyal (Loyal)",pain,INNER,SLANT,cmu,MED,Y
+Sunshine,16,"Just hit me on thе FaceTime, I never ignore you",ignore,18,"I know you heard stories, but that was before you (Before you)",before,END,PERFECT,cmu,HIGH,Y
+Sunshine,16,"Just hit me on thе FaceTime, I never ignore you",ignore,18,"I know you heard stories, but that was before you (Before you)",stories,INNER,SLANT,cmu,MED,Y
+Sunshine,16,"Just hit me on thе FaceTime, I never ignore you",ignore,19,Can I CC and Christian Dior you? (Can I?),Dior,END,PERFECT,cmu,HIGH,Y
+Sunshine,16,"Just hit me on thе FaceTime, I never ignore you",ignore,20,You ain't worried about girls 'cause you know this all you (Wait),all,END,SLANT,cmu,MED,Y
+Sunshine,17,"You know pain is love, but my love is loyal (Loyal)",love,17,"You know pain is love, but my love is loyal (Loyal)",love,INNER,REPEAT,spelling,HIGH,N
+Sunshine,17,"You know pain is love, but my love is loyal (Loyal)",know,18,"I know you heard stories, but that was before you (Before you)",know,INNER,REPEAT,spelling,HIGH,N
+Sunshine,18,"I know you heard stories, but that was before you (Before you)",stories,18,"I know you heard stories, but that was before you (Before you)",before,INNER,SLANT,cmu,MED,Y
+Sunshine,18,"I know you heard stories, but that was before you (Before you)",before,19,Can I CC and Christian Dior you? (Can I?),Dior,END,PERFECT,cmu,HIGH,Y
+Sunshine,18,"I know you heard stories, but that was before you (Before you)",stories,19,Can I CC and Christian Dior you? (Can I?),Dior,INNER,SLANT,cmu,MED,Y
+Sunshine,18,"I know you heard stories, but that was before you (Before you)",before,20,You ain't worried about girls 'cause you know this all you (Wait),all,END,SLANT,cmu,MED,Y
+Sunshine,18,"I know you heard stories, but that was before you (Before you)",heard,20,You ain't worried about girls 'cause you know this all you (Wait),girls,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,18,"I know you heard stories, but that was before you (Before you)",heard,20,You ain't worried about girls 'cause you know this all you (Wait),worried,INNER,SLANT,cmu,MED,Y
+Sunshine,18,"I know you heard stories, but that was before you (Before you)",know,20,You ain't worried about girls 'cause you know this all you (Wait),know,INNER,REPEAT,spelling,HIGH,N
+Sunshine,18,"I know you heard stories, but that was before you (Before you)",stories,20,You ain't worried about girls 'cause you know this all you (Wait),all,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,19,Can I CC and Christian Dior you? (Can I?),Dior,20,You ain't worried about girls 'cause you know this all you (Wait),all,END,SLANT,cmu,MED,Y
+Sunshine,19,Can I CC and Christian Dior you? (Can I?),Christian,21,"Maybe we could link tonight (Tonight, just me)",link,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,20,You ain't worried about girls 'cause you know this all you (Wait),worried,20,You ain't worried about girls 'cause you know this all you (Wait),girls,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,20,You ain't worried about girls 'cause you know this all you (Wait),ain't,21,"Maybe we could link tonight (Tonight, just me)",Maybe,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,21,"Maybe we could link tonight (Tonight, just me)",tonight,22,I could be your sunshine,sunshine,END,SLANT,cmu,MED,Y
+Sunshine,21,"Maybe we could link tonight (Tonight, just me)",could,22,I could be your sunshine,could,INNER,REPEAT,spelling,HIGH,N
+Sunshine,21,"Maybe we could link tonight (Tonight, just me)",could,23,"I could call you my baby boy (My baby, uh-huh)",could,INNER,REPEAT,spelling,HIGH,N
+Sunshine,21,"Maybe we could link tonight (Tonight, just me)",Maybe,23,"I could call you my baby boy (My baby, uh-huh)",baby,INNER,MULTI,multi,HIGH,Y
+Sunshine,21,"Maybe we could link tonight (Tonight, just me)",tonight,24,Keep it real and maybe we can spend some time (Uh),time,END,SLANT,cmu,MED,Y
+Sunshine,22,I could be your sunshine,could,23,"I could call you my baby boy (My baby, uh-huh)",could,INNER,REPEAT,spelling,HIGH,N
+Sunshine,22,I could be your sunshine,sunshine,24,Keep it real and maybe we can spend some time (Uh),time,END,SLANT,cmu,MED,Y
+Sunshine,23,"I could call you my baby boy (My baby, uh-huh)",baby,24,Keep it real and maybe we can spend some time (Uh),maybe,INNER,MULTI,multi,HIGH,Y
+Sunshine,23,"I could call you my baby boy (My baby, uh-huh)",call baby,24,Keep it real and maybe we can spend some time (Uh),real maybe,INNER,MULTI,multi,HIGH,Y
+Sunshine,23,"I could call you my baby boy (My baby, uh-huh)",could,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",Look,INNER,SLANT,cmu,MED,Y
+Sunshine,24,Keep it real and maybe we can spend some time (Uh),Keep,24,Keep it real and maybe we can spend some time (Uh),real,INNER,SLANT,cmu,MED,Y
+Sunshine,24,Keep it real and maybe we can spend some time (Uh),Keep,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",need,INNER,SLANT,cmu,MED,Y
+Sunshine,24,Keep it real and maybe we can spend some time (Uh),Keep,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",real,INNER,SLANT,cmu,MED,Y
+Sunshine,24,Keep it real and maybe we can spend some time (Uh),real,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",need,INNER,SLANT,cmu,MED,Y
+Sunshine,24,Keep it real and maybe we can spend some time (Uh),real,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",real,INNER,REPEAT,spelling,HIGH,N
+Sunshine,24,Keep it real and maybe we can spend some time (Uh),some,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",love,INNER,SLANT,cmu,MED,Y
+Sunshine,24,Keep it real and maybe we can spend some time (Uh),Keep,26,And I keep it with me,keep,INNER,REPEAT,spelling,HIGH,N
+Sunshine,24,Keep it real and maybe we can spend some time (Uh),real,26,And I keep it with me,keep,INNER,SLANT,cmu,MED,Y
+Sunshine,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",need,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",real,INNER,SLANT,cmu,MED,Y
+Sunshine,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",talkin,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",Bobby,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",need,26,And I keep it with me,keep,INNER,SLANT,cmu,MED,Y
+Sunshine,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",real,26,And I keep it with me,keep,INNER,SLANT,cmu,MED,Y
+Sunshine,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",Whitney,27,"I don't got no girl, I'm picky (Nah)",picky,END,ASSONANCE,vowel,MED,Y
+Sunshine,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",Bobby,27,"I don't got no girl, I'm picky (Nah)",got,INNER,SLANT,cmu,MED,Y
+Sunshine,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",talkin,27,"I don't got no girl, I'm picky (Nah)",got,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,25,"Look, I need that real love, talkin' Bobby, Whitney (Whitney)",Whitney,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",glizzy,END,ASSONANCE,vowel,LOW,N
+Sunshine,27,"I don't got no girl, I'm picky (Nah)",don't,27,"I don't got no girl, I'm picky (Nah)",no,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,27,"I don't got no girl, I'm picky (Nah)",don't,28,"'Cause I gotta know you with me (Woo, woo)",know,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,27,"I don't got no girl, I'm picky (Nah)",got,28,"'Cause I gotta know you with me (Woo, woo)",gotta,INNER,SLANT,cmu,MED,Y
+Sunshine,27,"I don't got no girl, I'm picky (Nah)",no,28,"'Cause I gotta know you with me (Woo, woo)",know,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,27,"I don't got no girl, I'm picky (Nah)",picky,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",glizzy,END,ASSONANCE,vowel,LOW,N
+Sunshine,27,"I don't got no girl, I'm picky (Nah)",girl picky,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",get sticky,INNER,MULTI,multi,HIGH,Y
+Sunshine,27,"I don't got no girl, I'm picky (Nah)",picky,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",shit,INNER,SLANT,cmu,MED,Y
+Sunshine,27,"I don't got no girl, I'm picky (Nah)",picky,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",sticky,INNER,MULTI,multi,HIGH,Y
+Sunshine,27,"I don't got no girl, I'm picky (Nah)",picky,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,END,SLANT,cmu,MED,Y
+Sunshine,28,"'Cause I gotta know you with me (Woo, woo)",'Cause,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",'Cause,INNER,REPEAT,spelling,HIGH,N
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",shit,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",sticky,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",sticky,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",glizzy,INNER,ASSONANCE,vowel,LOW,N
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",glizzy,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,END,SLANT,spelling,LOW,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",glizzy,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",city,INNER,ASSONANCE,vowel,LOW,N
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",glizzy,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",see,INNER,ASSONANCE,vowel,LOW,N
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",keep,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",see,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",shit,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",city,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",shit,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",sticky,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",city,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",sticky,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",why,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Ridin,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",glizzy,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",bitch,INNER,SLANT,spelling,LOW,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",shit,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",bitch,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",shit,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",dripped,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",shit,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",everything,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",sticky,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",bitch,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",sticky,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",dripped,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",sticky,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",everything,INNER,SLANT,cmu,MED,Y
+Sunshine,29,"'Cause shit could get sticky (Yeah), that's why I keep a glizzy (Glizzy)",glizzy,32,"She come from a broken home (Home), now she got the finer things",things,END,SLANT,spelling,LOW,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",city,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,INNER,SLANT,cmu,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",city,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",bitch,INNER,SLANT,cmu,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",city,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",dripped,INNER,SLANT,cmu,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",city,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",everything,INNER,SLANT,cmu,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",bitch,INNER,SLANT,cmu,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",dripped,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",everything,INNER,SLANT,cmu,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,32,"She come from a broken home (Home), now she got the finer things",things,END,SLANT,cmu,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",'round,32,"She come from a broken home (Home), now she got the finer things",now,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",city,32,"She come from a broken home (Home), now she got the finer things",things,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Ridin,32,"She come from a broken home (Home), now she got the finer things",finer,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,33,"Small peanut butter ring, eleven karats on the ring",ring,END,SLANT,cmu,MED,Y
+Sunshine,30,"Ridin' 'round through my city (City), just in case I see a Dizzy (Dizzy)",Dizzy,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",thing,END,SLANT,cmu,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",Alexander,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",Wang,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",bitch,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",dripped,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",bitch,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",everything,INNER,SLANT,cmu,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",everything,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",dripped,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",bitch,32,"She come from a broken home (Home), now she got the finer things",things,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",dripped,32,"She come from a broken home (Home), now she got the finer things",things,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",everything,32,"She come from a broken home (Home), now she got the finer things",things,INNER,SLANT,cmu,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",bitch,33,"Small peanut butter ring, eleven karats on the ring",ring,INNER,SLANT,cmu,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",dripped,33,"Small peanut butter ring, eleven karats on the ring",ring,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",everything,33,"Small peanut butter ring, eleven karats on the ring",ring,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,31,"That bitch my everything (Thing), dripped in Alexander Wang (Wang)",Wang,33,"Small peanut butter ring, eleven karats on the ring",karats,INNER,ASSONANCE,vowel,LOW,N
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",broken,32,"She come from a broken home (Home), now she got the finer things",home,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",things,33,"Small peanut butter ring, eleven karats on the ring",ring,END,SLANT,cmu,MED,Y
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",come,33,"Small peanut butter ring, eleven karats on the ring",butter,INNER,SLANT,cmu,MED,Y
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",things,33,"Small peanut butter ring, eleven karats on the ring",ring,INNER,SLANT,cmu,MED,Y
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",things,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",thing,END,SLANT,cmu,MED,Y
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",broken,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",don't,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",come,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",Love,INNER,SLANT,cmu,MED,Y
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",got,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",cost,INNER,SLANT,cmu,MED,Y
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",home,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",don't,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,32,"She come from a broken home (Home), now she got the finer things",things,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,33,"Small peanut butter ring, eleven karats on the ring",ring,33,"Small peanut butter ring, eleven karats on the ring",ring,INNER,REPEAT,spelling,HIGH,N
+Sunshine,33,"Small peanut butter ring, eleven karats on the ring",ring,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",thing,END,PERFECT,cmu,HIGH,Y
+Sunshine,33,"Small peanut butter ring, eleven karats on the ring",butter,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",Love,INNER,SLANT,cmu,MED,Y
+Sunshine,33,"Small peanut butter ring, eleven karats on the ring",eleven,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",said,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,33,"Small peanut butter ring, eleven karats on the ring",ring,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",bitch,INNER,SLANT,cmu,MED,Y
+Sunshine,33,"Small peanut butter ring, eleven karats on the ring",ring,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",thing,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,33,"Small peanut butter ring, eleven karats on the ring",butter,35,I saw you in front of the Louis store (Store),front,INNER,SLANT,cmu,MED,Y
+Sunshine,33,"Small peanut butter ring, eleven karats on the ring",Small,35,I saw you in front of the Louis store (Store),saw,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,33,"Small peanut butter ring, eleven karats on the ring",Small,35,I saw you in front of the Louis store (Store),store,INNER,SLANT,cmu,MED,Y
+Sunshine,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",bitch,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",thing,INNER,SLANT,cmu,MED,Y
+Sunshine,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",don't,35,I saw you in front of the Louis store (Store),front,INNER,SLANT,spelling,LOW,Y
+Sunshine,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",Love,35,I saw you in front of the Louis store (Store),front,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",who,35,I saw you in front of the Louis store (Store),Louis,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",who,36,"With your Louis fur (Fur), coolin' with your girls (Girls)",coolin,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",who,36,"With your Louis fur (Fur), coolin' with your girls (Girls)",Louis,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,34,"I spoil my bitch, who said, ""Love don't cost a thing?"" (Thing, thing)",thing,38,"Bag got Italian stitches (Stitches), you know how to pick it",pick,END,SLANT,cmu,MED,Y
+Sunshine,35,I saw you in front of the Louis store (Store),saw,35,I saw you in front of the Louis store (Store),store,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,35,I saw you in front of the Louis store (Store),Louis,36,"With your Louis fur (Fur), coolin' with your girls (Girls)",coolin,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,35,I saw you in front of the Louis store (Store),Louis,36,"With your Louis fur (Fur), coolin' with your girls (Girls)",Louis,INNER,REPEAT,spelling,HIGH,N
+Sunshine,35,I saw you in front of the Louis store (Store),front,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",Honey,INNER,SLANT,cmu,MED,Y
+Sunshine,36,"With your Louis fur (Fur), coolin' with your girls (Girls)",fur,36,"With your Louis fur (Fur), coolin' with your girls (Girls)",girls,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,36,"With your Louis fur (Fur), coolin' with your girls (Girls)",Louis,36,"With your Louis fur (Fur), coolin' with your girls (Girls)",coolin,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",nice,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",eyes,INNER,SLANT,cmu,MED,Y
+Sunshine,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",thighs,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",eyes,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",thighs,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",nice,INNER,SLANT,cmu,MED,Y
+Sunshine,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",blonde,38,"Bag got Italian stitches (Stitches), you know how to pick it",got,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",thick,38,"Bag got Italian stitches (Stitches), you know how to pick it",pick,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",thick,38,"Bag got Italian stitches (Stitches), you know how to pick it",stitches,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,37,"Honey blonde hair, thick thighs (Thighs), nice hazel eyes (Eyes)",blonde,39,"So I hopped out the coupe (Coupe), and I hopped in pursuit (Suit)",hopped,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",Bag,38,"Bag got Italian stitches (Stitches), you know how to pick it",Italian,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",stitches,38,"Bag got Italian stitches (Stitches), you know how to pick it",pick,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",got,39,"So I hopped out the coupe (Coupe), and I hopped in pursuit (Suit)",hopped,INNER,SLANT,cmu,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",Bag,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Papi,INNER,SLANT,spelling,LOW,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",know,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Rovers,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",pick,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",big,INNER,SLANT,cmu,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",pick,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Mr,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",pick,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Spin,INNER,SLANT,cmu,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",stitches,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",big,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",stitches,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Mr,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,38,"Bag got Italian stitches (Stitches), you know how to pick it",stitches,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Spin,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,39,"So I hopped out the coupe (Coupe), and I hopped in pursuit (Suit)",coupe,39,"So I hopped out the coupe (Coupe), and I hopped in pursuit (Suit)",pursuit,INNER,SLANT,cmu,MED,Y
+Sunshine,39,"So I hopped out the coupe (Coupe), and I hopped in pursuit (Suit)",hopped,39,"So I hopped out the coupe (Coupe), and I hopped in pursuit (Suit)",hopped,INNER,REPEAT,spelling,HIGH,N
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",big,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Mr,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",big,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Spin,INNER,SLANT,cmu,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Mr,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Spin,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Rovers,41,"Look up, my face is on a poster (Poster)",poster,END,ASSONANCE,vowel,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Locsta,41,"Look up, my face is on a poster (Poster)",poster,INNER,SLANT,spelling,LOW,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",big,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",ring,INNER,SLANT,cmu,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",big,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",swing,INNER,SLANT,cmu,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Like,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",nine,INNER,SLANT,cmu,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Like,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",sign,INNER,SLANT,cmu,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Mr,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",ring,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Mr,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",swing,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Rovers,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",don’t,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Rovers,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",no,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Spin,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",ring,INNER,SLANT,cmu,MED,Y
+Sunshine,40,"Like, it's big Papi Locsta, Mr. Spin-In-Rovers (Rovers)",Spin,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",swing,INNER,SLANT,cmu,MED,Y
+Sunshine,41,"Look up, my face is on a poster (Poster)",face,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",baby,INNER,SLANT,cmu,MED,Y
+Sunshine,41,"Look up, my face is on a poster (Poster)",poster,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",don’t,INNER,SLANT,cmu,MED,Y
+Sunshine,41,"Look up, my face is on a poster (Poster)",poster,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",no,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",don’t,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",no,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",ring,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",swing,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",sign,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",nine,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",nine,43,"Hit me up, we can spend some time (Spend time)",time,END,SLANT,cmu,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",ring,43,"Hit me up, we can spend some time (Spend time)",Hit,INNER,SLANT,cmu,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",sign,43,"Hit me up, we can spend some time (Spend time)",time,INNER,SLANT,cmu,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",swing,43,"Hit me up, we can spend some time (Spend time)",Hit,INNER,SLANT,cmu,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",baby,44,"Let me light the way, I could be a brighter day",day,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",baby,44,"Let me light the way, I could be a brighter day",way,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",nine,44,"Let me light the way, I could be a brighter day",brighter,INNER,SLANT,cmu,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",nine,44,"Let me light the way, I could be a brighter day",light,INNER,SLANT,cmu,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",sign,44,"Let me light the way, I could be a brighter day",brighter,INNER,SLANT,cmu,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",sign,44,"Let me light the way, I could be a brighter day",light,INNER,SLANT,cmu,MED,Y
+Sunshine,42,"You don’t got no ring, that's a sign (Sign), baby, swing your nine",nine,45,And you'll be my sunshine,sunshine,END,PERFECT,cmu,HIGH,Y
+Sunshine,43,"Hit me up, we can spend some time (Spend time)",spend,44,"Let me light the way, I could be a brighter day",Let,INNER,ASSONANCE,vowel,MED,Y
+Sunshine,43,"Hit me up, we can spend some time (Spend time)",time,44,"Let me light the way, I could be a brighter day",brighter,INNER,SLANT,cmu,MED,Y
+Sunshine,43,"Hit me up, we can spend some time (Spend time)",time,44,"Let me light the way, I could be a brighter day",light,INNER,SLANT,cmu,MED,Y
+Sunshine,43,"Hit me up, we can spend some time (Spend time)",time,45,And you'll be my sunshine,sunshine,END,SLANT,cmu,MED,Y
+Sunshine,44,"Let me light the way, I could be a brighter day",light,44,"Let me light the way, I could be a brighter day",brighter,INNER,SLANT,cmu,MED,Y
+Sunshine,44,"Let me light the way, I could be a brighter day",way,44,"Let me light the way, I could be a brighter day",day,INNER,PERFECT,cmu,HIGH,Y
+Sunshine,44,"Let me light the way, I could be a brighter day",brighter,45,And you'll be my sunshine,sunshine,INNER,SLANT,cmu,MED,Y
+Sunshine,44,"Let me light the way, I could be a brighter day",light,45,And you'll be my sunshine,sunshine,INNER,SLANT,cmu,MED,Y

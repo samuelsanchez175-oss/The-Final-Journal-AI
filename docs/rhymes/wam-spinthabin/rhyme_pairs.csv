@@ -1,0 +1,639 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",ain,1,"Don't call me slime, ain''t no slat, I never snake my nigga",snake,INNER,SLANT,spelling,LOW,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",Don't,1,"Don't call me slime, ain''t no slat, I never snake my nigga",no,INNER,ASSONANCE,vowel,MED,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",'t,2,"Pull up two door coupe, clean Amiri be my denim",clean,INNER,ASSONANCE,vowel,MED,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",call,2,"Pull up two door coupe, clean Amiri be my denim",door,INNER,SLANT,cmu,MED,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",never,2,"Pull up two door coupe, clean Amiri be my denim",denim,INNER,ASSONANCE,vowel,MED,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",'t,3,"A nigga earned my stripes, in the field, I ain't no",field,INNER,ASSONANCE,vowel,MED,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",ain,3,"A nigga earned my stripes, in the field, I ain't no",ain't,INNER,SLANT,spelling,LOW,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",Don't,3,"A nigga earned my stripes, in the field, I ain't no",no,INNER,ASSONANCE,vowel,MED,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",nigga,3,"A nigga earned my stripes, in the field, I ain't no",nigga,INNER,REPEAT,spelling,HIGH,N
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",no,3,"A nigga earned my stripes, in the field, I ain't no",no,INNER,REPEAT,spelling,HIGH,N
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",slime,3,"A nigga earned my stripes, in the field, I ain't no",stripes,INNER,ASSONANCE,vowel,MED,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",snake,3,"A nigga earned my stripes, in the field, I ain't no",ain't,INNER,ASSONANCE,vowel,MED,Y
+Ktb,1,"Don't call me slime, ain''t no slat, I never snake my nigga",nigga,4,"me and Yak, SG did it how you figure",figure,END,SLANT,spelling,LOW,Y
+Ktb,2,"Pull up two door coupe, clean Amiri be my denim",two,2,"Pull up two door coupe, clean Amiri be my denim",coupe,INNER,ASSONANCE,vowel,MED,Y
+Ktb,2,"Pull up two door coupe, clean Amiri be my denim",clean,3,"A nigga earned my stripes, in the field, I ain't no",field,INNER,ASSONANCE,vowel,MED,Y
+Ktb,2,"Pull up two door coupe, clean Amiri be my denim",Amiri,4,"me and Yak, SG did it how you figure",figure,INNER,ASSONANCE,vowel,MED,Y
+Ktb,3,"A nigga earned my stripes, in the field, I ain't no",nigga,4,"me and Yak, SG did it how you figure",figure,INNER,SLANT,spelling,LOW,Y
+Ktb,3,"A nigga earned my stripes, in the field, I ain't no",stripes,5,Slidin' in the scat I'm just zoomin' me and Wiz,Slidin,INNER,ASSONANCE,vowel,MED,Y
+Ktb,4,"me and Yak, SG did it how you figure",figure,5,Slidin' in the scat I'm just zoomin' me and Wiz,Wiz,END,ASSONANCE,vowel,MED,Y
+Ktb,4,"me and Yak, SG did it how you figure",Yak,5,Slidin' in the scat I'm just zoomin' me and Wiz,scat,INNER,SLANT,cmu,MED,Y
+Ktb,4,"me and Yak, SG did it how you figure",figure,6,"Double 0 the gang, nigga, murder be the biz",biz,END,ASSONANCE,vowel,MED,Y
+Ktb,4,"me and Yak, SG did it how you figure",figure,6,"Double 0 the gang, nigga, murder be the biz",nigga,INNER,SLANT,spelling,LOW,Y
+Ktb,4,"me and Yak, SG did it how you figure",Yak,6,"Double 0 the gang, nigga, murder be the biz",gang,INNER,SLANT,cmu,MED,Y
+Ktb,4,"me and Yak, SG did it how you figure",figure,7,"Mojo that my nigga, that my brother, we like kin",kin,END,ASSONANCE,vowel,MED,Y
+Ktb,4,"me and Yak, SG did it how you figure",figure,8,"Nigga play with Yak, ape boys bounce up out this fin",fin,END,ASSONANCE,vowel,MED,Y
+Ktb,5,Slidin' in the scat I'm just zoomin' me and Wiz,Wiz,6,"Double 0 the gang, nigga, murder be the biz",biz,END,PERFECT,cmu,HIGH,Y
+Ktb,5,Slidin' in the scat I'm just zoomin' me and Wiz,scat,6,"Double 0 the gang, nigga, murder be the biz",gang,INNER,SLANT,cmu,MED,Y
+Ktb,5,Slidin' in the scat I'm just zoomin' me and Wiz,Wiz,7,"Mojo that my nigga, that my brother, we like kin",kin,END,SLANT,cmu,MED,Y
+Ktb,5,Slidin' in the scat I'm just zoomin' me and Wiz,Slidin,7,"Mojo that my nigga, that my brother, we like kin",like,INNER,ASSONANCE,vowel,MED,Y
+Ktb,5,Slidin' in the scat I'm just zoomin' me and Wiz,Wiz,8,"Nigga play with Yak, ape boys bounce up out this fin",fin,END,SLANT,cmu,MED,Y
+Ktb,6,"Double 0 the gang, nigga, murder be the biz",biz,7,"Mojo that my nigga, that my brother, we like kin",kin,END,SLANT,cmu,MED,Y
+Ktb,6,"Double 0 the gang, nigga, murder be the biz",Double,7,"Mojo that my nigga, that my brother, we like kin",brother,INNER,ASSONANCE,vowel,MED,Y
+Ktb,6,"Double 0 the gang, nigga, murder be the biz",nigga,7,"Mojo that my nigga, that my brother, we like kin",nigga,INNER,REPEAT,spelling,HIGH,N
+Ktb,6,"Double 0 the gang, nigga, murder be the biz",biz,8,"Nigga play with Yak, ape boys bounce up out this fin",fin,END,SLANT,cmu,MED,Y
+Ktb,6,"Double 0 the gang, nigga, murder be the biz",gang,8,"Nigga play with Yak, ape boys bounce up out this fin",Yak,INNER,SLANT,cmu,MED,Y
+Ktb,6,"Double 0 the gang, nigga, murder be the biz",nigga,8,"Nigga play with Yak, ape boys bounce up out this fin",Nigga,INNER,REPEAT,spelling,HIGH,N
+Ktb,7,"Mojo that my nigga, that my brother, we like kin",kin,8,"Nigga play with Yak, ape boys bounce up out this fin",fin,END,PERFECT,cmu,HIGH,Y
+Ktb,7,"Mojo that my nigga, that my brother, we like kin",nigga,8,"Nigga play with Yak, ape boys bounce up out this fin",Nigga,INNER,REPEAT,spelling,HIGH,N
+Ktb,7,"Mojo that my nigga, that my brother, we like kin",kin,9,"Streets vouch for me, city know I'm speaking facts",city,INNER,SLANT,cmu,MED,Y
+Ktb,7,"Mojo that my nigga, that my brother, we like kin",Mojo,9,"Streets vouch for me, city know I'm speaking facts",know,INNER,ASSONANCE,vowel,MED,Y
+Ktb,7,"Mojo that my nigga, that my brother, we like kin",nigga,9,"Streets vouch for me, city know I'm speaking facts",city,INNER,SLANT,spelling,LOW,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",play,8,"Nigga play with Yak, ape boys bounce up out this fin",ape,INNER,ASSONANCE,vowel,MED,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",bounce,9,"Streets vouch for me, city know I'm speaking facts",vouch,INNER,ASSONANCE,vowel,MED,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",fin,9,"Streets vouch for me, city know I'm speaking facts",city,INNER,SLANT,cmu,MED,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",Nigga,9,"Streets vouch for me, city know I'm speaking facts",city,INNER,SLANT,spelling,LOW,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",Yak,9,"Streets vouch for me, city know I'm speaking facts",facts,INNER,ASSONANCE,vowel,MED,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",fin,10,"Lil Wam with the shit, know I turn shit to a pack",Lil,INNER,SLANT,cmu,MED,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",fin,10,"Lil Wam with the shit, know I turn shit to a pack",shit,INNER,SLANT,cmu,MED,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",Nigga,10,"Lil Wam with the shit, know I turn shit to a pack",shit,INNER,SLANT,spelling,LOW,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",Yak,10,"Lil Wam with the shit, know I turn shit to a pack",pack,INNER,PERFECT,cmu,HIGH,Y
+Ktb,8,"Nigga play with Yak, ape boys bounce up out this fin",Yak,10,"Lil Wam with the shit, know I turn shit to a pack",Wam,INNER,SLANT,spelling,LOW,Y
+Ktb,9,"Streets vouch for me, city know I'm speaking facts",Streets,9,"Streets vouch for me, city know I'm speaking facts",speaking,INNER,ASSONANCE,vowel,MED,Y
+Ktb,9,"Streets vouch for me, city know I'm speaking facts",facts,10,"Lil Wam with the shit, know I turn shit to a pack",pack,END,ASSONANCE,vowel,MED,Y
+Ktb,9,"Streets vouch for me, city know I'm speaking facts",city,10,"Lil Wam with the shit, know I turn shit to a pack",Lil,INNER,SLANT,cmu,MED,Y
+Ktb,9,"Streets vouch for me, city know I'm speaking facts",city,10,"Lil Wam with the shit, know I turn shit to a pack",shit,INNER,SLANT,cmu,MED,Y
+Ktb,9,"Streets vouch for me, city know I'm speaking facts",know,10,"Lil Wam with the shit, know I turn shit to a pack",know,INNER,REPEAT,spelling,HIGH,N
+Ktb,9,"Streets vouch for me, city know I'm speaking facts",facts,11,"Pussy better not try to run, AR, take off that boy's back",back,END,ASSONANCE,vowel,MED,Y
+Ktb,9,"Streets vouch for me, city know I'm speaking facts",facts,12,"put in dirt, I caught me three you know that's facts",facts,END,REPEAT,spelling,HIGH,N
+Ktb,9,"Streets vouch for me, city know I'm speaking facts",facts,13,"God sending blessings, the devil sending me plans",plans,END,ASSONANCE,vowel,MED,Y
+Ktb,10,"Lil Wam with the shit, know I turn shit to a pack",Lil,10,"Lil Wam with the shit, know I turn shit to a pack",shit,INNER,SLANT,cmu,MED,Y
+Ktb,10,"Lil Wam with the shit, know I turn shit to a pack",shit,10,"Lil Wam with the shit, know I turn shit to a pack",shit,INNER,REPEAT,spelling,HIGH,N
+Ktb,10,"Lil Wam with the shit, know I turn shit to a pack",Wam,10,"Lil Wam with the shit, know I turn shit to a pack",pack,INNER,SLANT,spelling,LOW,Y
+Ktb,10,"Lil Wam with the shit, know I turn shit to a pack",pack,11,"Pussy better not try to run, AR, take off that boy's back",back,END,PERFECT,cmu,HIGH,Y
+Ktb,10,"Lil Wam with the shit, know I turn shit to a pack",Wam,11,"Pussy better not try to run, AR, take off that boy's back",back,INNER,SLANT,spelling,LOW,Y
+Ktb,10,"Lil Wam with the shit, know I turn shit to a pack",pack,12,"put in dirt, I caught me three you know that's facts",facts,END,ASSONANCE,vowel,MED,Y
+Ktb,10,"Lil Wam with the shit, know I turn shit to a pack",know,12,"put in dirt, I caught me three you know that's facts",know,INNER,REPEAT,spelling,HIGH,N
+Ktb,10,"Lil Wam with the shit, know I turn shit to a pack",turn,12,"put in dirt, I caught me three you know that's facts",dirt,INNER,SLANT,cmu,MED,Y
+Ktb,10,"Lil Wam with the shit, know I turn shit to a pack",pack,13,"God sending blessings, the devil sending me plans",plans,END,ASSONANCE,vowel,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",not,11,"Pussy better not try to run, AR, take off that boy's back",AR,INNER,SLANT,cmu,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",back,12,"put in dirt, I caught me three you know that's facts",facts,END,ASSONANCE,vowel,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",AR,12,"put in dirt, I caught me three you know that's facts",caught,INNER,SLANT,cmu,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",not,12,"put in dirt, I caught me three you know that's facts",caught,INNER,PERFECT,cmu,HIGH,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",Pussy,12,"put in dirt, I caught me three you know that's facts",put,INNER,SLANT,cmu,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",back,13,"God sending blessings, the devil sending me plans",plans,END,ASSONANCE,vowel,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",AR,13,"God sending blessings, the devil sending me plans",God,INNER,SLANT,cmu,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",better,13,"God sending blessings, the devil sending me plans",blessings,INNER,ASSONANCE,vowel,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",better,13,"God sending blessings, the devil sending me plans",devil,INNER,ASSONANCE,vowel,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",better,13,"God sending blessings, the devil sending me plans",sending,INNER,ASSONANCE,vowel,MED,Y
+Ktb,11,"Pussy better not try to run, AR, take off that boy's back",not,13,"God sending blessings, the devil sending me plans",God,INNER,SLANT,cmu,MED,Y
+Ktb,12,"put in dirt, I caught me three you know that's facts",facts,13,"God sending blessings, the devil sending me plans",plans,END,ASSONANCE,vowel,MED,Y
+Ktb,12,"put in dirt, I caught me three you know that's facts",caught,13,"God sending blessings, the devil sending me plans",God,INNER,SLANT,cmu,MED,Y
+Ktb,12,"put in dirt, I caught me three you know that's facts",know,14,"And yeah we KTB, but I won't cutthroat you, my nigg",cutthroat,INNER,ASSONANCE,vowel,MED,Y
+Ktb,12,"put in dirt, I caught me three you know that's facts",know,14,"And yeah we KTB, but I won't cutthroat you, my nigg",won't,INNER,ASSONANCE,vowel,MED,Y
+Ktb,13,"God sending blessings, the devil sending me plans",blessings,13,"God sending blessings, the devil sending me plans",devil,INNER,ASSONANCE,vowel,MED,Y
+Ktb,13,"God sending blessings, the devil sending me plans",blessings,13,"God sending blessings, the devil sending me plans",sending,INNER,ASSONANCE,vowel,MED,Y
+Ktb,13,"God sending blessings, the devil sending me plans",devil,13,"God sending blessings, the devil sending me plans",sending,INNER,ASSONANCE,vowel,MED,Y
+Ktb,13,"God sending blessings, the devil sending me plans",sending,13,"God sending blessings, the devil sending me plans",blessings,INNER,ASSONANCE,vowel,MED,Y
+Ktb,13,"God sending blessings, the devil sending me plans",sending,13,"God sending blessings, the devil sending me plans",devil,INNER,ASSONANCE,vowel,MED,Y
+Ktb,13,"God sending blessings, the devil sending me plans",sending,13,"God sending blessings, the devil sending me plans",sending,INNER,REPEAT,spelling,HIGH,N
+Ktb,13,"God sending blessings, the devil sending me plans",blessings,15,"My birthday coming up, I'm finna buy my dawg a Benz",Benz,INNER,ASSONANCE,vowel,MED,Y
+Ktb,13,"God sending blessings, the devil sending me plans",devil,15,"My birthday coming up, I'm finna buy my dawg a Benz",Benz,INNER,ASSONANCE,vowel,MED,Y
+Ktb,13,"God sending blessings, the devil sending me plans",sending,15,"My birthday coming up, I'm finna buy my dawg a Benz",Benz,INNER,ASSONANCE,vowel,MED,Y
+Ktb,14,"And yeah we KTB, but I won't cutthroat you, my nigg",won't,14,"And yeah we KTB, but I won't cutthroat you, my nigg",cutthroat,INNER,SLANT,cmu,MED,Y
+Ktb,15,"My birthday coming up, I'm finna buy my dawg a Benz",buy,16,"We at the graveyard, but now we tryna live",live,INNER,ASSONANCE,vowel,MED,Y
+Ktb,15,"My birthday coming up, I'm finna buy my dawg a Benz",Benz,17,"Niggas hating on me, they wanna see me in the pen",pen,END,SLANT,cmu,MED,Y
+Ktb,15,"My birthday coming up, I'm finna buy my dawg a Benz",birthday,17,"Niggas hating on me, they wanna see me in the pen",hating,INNER,ASSONANCE,vowel,MED,Y
+Ktb,15,"My birthday coming up, I'm finna buy my dawg a Benz",finna,17,"Niggas hating on me, they wanna see me in the pen",Niggas,INNER,ASSONANCE,vowel,LOW,N
+Ktb,15,"My birthday coming up, I'm finna buy my dawg a Benz",Benz,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",bend,END,SLANT,cmu,MED,Y
+Ktb,16,"We at the graveyard, but now we tryna live",graveyard,17,"Niggas hating on me, they wanna see me in the pen",wanna,INNER,ASSONANCE,vowel,MED,Y
+Ktb,17,"Niggas hating on me, they wanna see me in the pen",pen,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",bend,END,SLANT,cmu,MED,Y
+Ktb,17,"Niggas hating on me, they wanna see me in the pen",pen,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",steppin,INNER,ASSONANCE,vowel,MED,Y
+Ktb,17,"Niggas hating on me, they wanna see me in the pen",pen,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",unexpectedly,INNER,ASSONANCE,vowel,MED,Y
+Ktb,17,"Niggas hating on me, they wanna see me in the pen",pen,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",when,INNER,PERFECT,cmu,HIGH,Y
+Ktb,17,"Niggas hating on me, they wanna see me in the pen",hating,19,"Pull up Marni callin', we got sticks and all them k's",k's,INNER,ASSONANCE,vowel,MED,Y
+Ktb,17,"Niggas hating on me, they wanna see me in the pen",Niggas,19,"Pull up Marni callin', we got sticks and all them k's",sticks,INNER,SLANT,spelling,LOW,Y
+Ktb,17,"Niggas hating on me, they wanna see me in the pen",wanna,19,"Pull up Marni callin', we got sticks and all them k's",got,INNER,SLANT,cmu,MED,Y
+Ktb,17,"Niggas hating on me, they wanna see me in the pen",wanna,19,"Pull up Marni callin', we got sticks and all them k's",Marni,INNER,SLANT,spelling,LOW,Y
+Ktb,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",don't,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",know,INNER,ASSONANCE,vowel,MED,Y
+Ktb,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",steppin,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",bend,INNER,ASSONANCE,vowel,MED,Y
+Ktb,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",steppin,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",unexpectedly,INNER,ASSONANCE,vowel,MED,Y
+Ktb,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",steppin,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",when,INNER,ASSONANCE,vowel,MED,Y
+Ktb,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",unexpectedly,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",bend,INNER,ASSONANCE,vowel,MED,Y
+Ktb,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",unexpectedly,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",when,INNER,ASSONANCE,vowel,MED,Y
+Ktb,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",when,18,"'Cause I be steppin, unexpectedly they don't know when I'ma bend",bend,INNER,SLANT,cmu,MED,Y
+Ktb,19,"Pull up Marni callin', we got sticks and all them k's",callin,19,"Pull up Marni callin', we got sticks and all them k's",all,INNER,SLANT,cmu,MED,Y
+Ktb,19,"Pull up Marni callin', we got sticks and all them k's",k's,20,"Dissing on the beat, shoot a rapper in his face",face,END,SLANT,cmu,MED,Y
+Ktb,19,"Pull up Marni callin', we got sticks and all them k's",sticks,20,"Dissing on the beat, shoot a rapper in his face",Dissing,INNER,ASSONANCE,vowel,MED,Y
+Ktb,19,"Pull up Marni callin', we got sticks and all them k's",k's,21,"You know it's free the Blood, I pray my nigga beat the case",case,END,SLANT,cmu,MED,Y
+Ktb,19,"Pull up Marni callin', we got sticks and all them k's",k's,21,"You know it's free the Blood, I pray my nigga beat the case",pray,INNER,ASSONANCE,vowel,MED,Y
+Ktb,19,"Pull up Marni callin', we got sticks and all them k's",k's,22,"Lil nigga big dawg, I fly private on the plane",plane,END,SLANT,cmu,MED,Y
+Ktb,20,"Dissing on the beat, shoot a rapper in his face",face,21,"You know it's free the Blood, I pray my nigga beat the case",case,END,PERFECT,cmu,HIGH,Y
+Ktb,20,"Dissing on the beat, shoot a rapper in his face",beat,21,"You know it's free the Blood, I pray my nigga beat the case",beat,INNER,REPEAT,spelling,HIGH,N
+Ktb,20,"Dissing on the beat, shoot a rapper in his face",beat,21,"You know it's free the Blood, I pray my nigga beat the case",free,INNER,ASSONANCE,vowel,MED,Y
+Ktb,20,"Dissing on the beat, shoot a rapper in his face",face,21,"You know it's free the Blood, I pray my nigga beat the case",pray,INNER,ASSONANCE,vowel,MED,Y
+Ktb,20,"Dissing on the beat, shoot a rapper in his face",face,22,"Lil nigga big dawg, I fly private on the plane",plane,END,SLANT,cmu,MED,Y
+Ktb,20,"Dissing on the beat, shoot a rapper in his face",Dissing,22,"Lil nigga big dawg, I fly private on the plane",big,INNER,ASSONANCE,vowel,MED,Y
+Ktb,20,"Dissing on the beat, shoot a rapper in his face",Dissing,22,"Lil nigga big dawg, I fly private on the plane",Lil,INNER,ASSONANCE,vowel,MED,Y
+Ktb,20,"Dissing on the beat, shoot a rapper in his face",face,24,"It seems like yesterday, I was dissin' DJ Jake",Jake,END,SLANT,cmu,MED,Y
+Ktb,21,"You know it's free the Blood, I pray my nigga beat the case",free,21,"You know it's free the Blood, I pray my nigga beat the case",beat,INNER,ASSONANCE,vowel,MED,Y
+Ktb,21,"You know it's free the Blood, I pray my nigga beat the case",pray,21,"You know it's free the Blood, I pray my nigga beat the case",case,INNER,ASSONANCE,vowel,MED,Y
+Ktb,21,"You know it's free the Blood, I pray my nigga beat the case",case,22,"Lil nigga big dawg, I fly private on the plane",plane,END,SLANT,cmu,MED,Y
+Ktb,21,"You know it's free the Blood, I pray my nigga beat the case",nigga,22,"Lil nigga big dawg, I fly private on the plane",big,INNER,SLANT,spelling,LOW,Y
+Ktb,21,"You know it's free the Blood, I pray my nigga beat the case",nigga,22,"Lil nigga big dawg, I fly private on the plane",nigga,INNER,REPEAT,spelling,HIGH,N
+Ktb,21,"You know it's free the Blood, I pray my nigga beat the case",pray,22,"Lil nigga big dawg, I fly private on the plane",plane,INNER,ASSONANCE,vowel,MED,Y
+Ktb,21,"You know it's free the Blood, I pray my nigga beat the case",know,23,"And every now and then, I close my eyes and I just think",close,INNER,ASSONANCE,vowel,MED,Y
+Ktb,21,"You know it's free the Blood, I pray my nigga beat the case",case,24,"It seems like yesterday, I was dissin' DJ Jake",Jake,END,SLANT,cmu,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",fly,22,"Lil nigga big dawg, I fly private on the plane",private,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",Lil,22,"Lil nigga big dawg, I fly private on the plane",big,INNER,SLANT,cmu,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",nigga,22,"Lil nigga big dawg, I fly private on the plane",big,INNER,SLANT,spelling,LOW,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",big,23,"And every now and then, I close my eyes and I just think",think,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",fly,23,"And every now and then, I close my eyes and I just think",eyes,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",Lil,23,"And every now and then, I close my eyes and I just think",think,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",private,23,"And every now and then, I close my eyes and I just think",eyes,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",plane,24,"It seems like yesterday, I was dissin' DJ Jake",Jake,END,SLANT,cmu,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",big,24,"It seems like yesterday, I was dissin' DJ Jake",dissin,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",fly,24,"It seems like yesterday, I was dissin' DJ Jake",like,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",Lil,24,"It seems like yesterday, I was dissin' DJ Jake",dissin,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",plane,24,"It seems like yesterday, I was dissin' DJ Jake",DJ,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",plane,24,"It seems like yesterday, I was dissin' DJ Jake",yesterday,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",private,24,"It seems like yesterday, I was dissin' DJ Jake",like,INNER,ASSONANCE,vowel,MED,Y
+Ktb,22,"Lil nigga big dawg, I fly private on the plane",plane,26,"SG, that's until my dying day",day,END,ASSONANCE,vowel,MED,Y
+Ktb,23,"And every now and then, I close my eyes and I just think",eyes,24,"It seems like yesterday, I was dissin' DJ Jake",like,INNER,SLANT,cmu,MED,Y
+Ktb,23,"And every now and then, I close my eyes and I just think",think,24,"It seems like yesterday, I was dissin' DJ Jake",dissin,INNER,ASSONANCE,vowel,MED,Y
+Ktb,23,"And every now and then, I close my eyes and I just think",think,25,Now I'm tryna go see Johnny I need a coorlink,coorlink,END,PERFECT,spelling,HIGH,Y
+Ktb,23,"And every now and then, I close my eyes and I just think",close,25,Now I'm tryna go see Johnny I need a coorlink,go,INNER,ASSONANCE,vowel,MED,Y
+Ktb,23,"And every now and then, I close my eyes and I just think",now,25,Now I'm tryna go see Johnny I need a coorlink,Now,INNER,REPEAT,spelling,HIGH,N
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",DJ,24,"It seems like yesterday, I was dissin' DJ Jake",Jake,INNER,ASSONANCE,vowel,MED,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",yesterday,24,"It seems like yesterday, I was dissin' DJ Jake",DJ,INNER,PERFECT,cmu,HIGH,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",yesterday,24,"It seems like yesterday, I was dissin' DJ Jake",Jake,INNER,ASSONANCE,vowel,MED,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",seems,25,Now I'm tryna go see Johnny I need a coorlink,need,INNER,ASSONANCE,vowel,MED,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",seems,25,Now I'm tryna go see Johnny I need a coorlink,see,INNER,ASSONANCE,vowel,MED,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",Jake,26,"SG, that's until my dying day",day,END,ASSONANCE,vowel,MED,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",dissin,26,"SG, that's until my dying day",until,INNER,ASSONANCE,vowel,MED,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",DJ,26,"SG, that's until my dying day",day,INNER,PERFECT,cmu,HIGH,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",like,26,"SG, that's until my dying day",dying,INNER,SLANT,cmu,MED,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",yesterday,26,"SG, that's until my dying day",day,INNER,PERFECT,cmu,HIGH,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",Jake,27,"Dissin' on SG, that's the quickest way to lay",lay,END,ASSONANCE,vowel,MED,Y
+Ktb,24,"It seems like yesterday, I was dissin' DJ Jake",Jake,28,"SG Sniper god, sending niggas to they graves",graves,END,ASSONANCE,vowel,MED,Y
+Ktb,25,Now I'm tryna go see Johnny I need a coorlink,see,25,Now I'm tryna go see Johnny I need a coorlink,need,INNER,ASSONANCE,vowel,MED,Y
+Ktb,25,Now I'm tryna go see Johnny I need a coorlink,tryna,25,Now I'm tryna go see Johnny I need a coorlink,need,INNER,SLANT,spelling,LOW,Y
+Ktb,26,"SG, that's until my dying day",day,27,"Dissin' on SG, that's the quickest way to lay",lay,END,PERFECT,cmu,HIGH,Y
+Ktb,26,"SG, that's until my dying day",day,27,"Dissin' on SG, that's the quickest way to lay",way,INNER,PERFECT,cmu,HIGH,Y
+Ktb,26,"SG, that's until my dying day",SG,27,"Dissin' on SG, that's the quickest way to lay",SG,INNER,REPEAT,spelling,HIGH,N
+Ktb,26,"SG, that's until my dying day",until,27,"Dissin' on SG, that's the quickest way to lay",Dissin,INNER,ASSONANCE,vowel,MED,Y
+Ktb,26,"SG, that's until my dying day",until,27,"Dissin' on SG, that's the quickest way to lay",quickest,INNER,ASSONANCE,vowel,MED,Y
+Ktb,26,"SG, that's until my dying day",day,28,"SG Sniper god, sending niggas to they graves",graves,END,ASSONANCE,vowel,MED,Y
+Ktb,26,"SG, that's until my dying day",dying,28,"SG Sniper god, sending niggas to they graves",Sniper,INNER,SLANT,cmu,MED,Y
+Ktb,26,"SG, that's until my dying day",SG,28,"SG Sniper god, sending niggas to they graves",SG,INNER,REPEAT,spelling,HIGH,N
+Ktb,26,"SG, that's until my dying day",day,30,"Out of everybody, you saved us so we could make it",make,END,ASSONANCE,vowel,MED,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",Dissin,27,"Dissin' on SG, that's the quickest way to lay",quickest,INNER,ASSONANCE,vowel,MED,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",way,27,"Dissin' on SG, that's the quickest way to lay",lay,INNER,PERFECT,cmu,HIGH,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",lay,28,"SG Sniper god, sending niggas to they graves",graves,END,ASSONANCE,vowel,MED,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",SG,28,"SG Sniper god, sending niggas to they graves",SG,INNER,REPEAT,spelling,HIGH,N
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",way,28,"SG Sniper god, sending niggas to they graves",graves,INNER,ASSONANCE,vowel,MED,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",Dissin,29,"Father, Lord, I thank you, you made a way for some lil gangstas",lil,INNER,ASSONANCE,vowel,MED,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",lay,29,"Father, Lord, I thank you, you made a way for some lil gangstas",made,INNER,ASSONANCE,vowel,MED,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",lay,29,"Father, Lord, I thank you, you made a way for some lil gangstas",way,INNER,PERFECT,cmu,HIGH,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",quickest,29,"Father, Lord, I thank you, you made a way for some lil gangstas",lil,INNER,ASSONANCE,vowel,MED,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",way,29,"Father, Lord, I thank you, you made a way for some lil gangstas",made,INNER,ASSONANCE,vowel,MED,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",way,29,"Father, Lord, I thank you, you made a way for some lil gangstas",way,INNER,REPEAT,spelling,HIGH,N
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",lay,30,"Out of everybody, you saved us so we could make it",make,END,ASSONANCE,vowel,MED,Y
+Ktb,27,"Dissin' on SG, that's the quickest way to lay",lay,31,"Me, Wiz and Rays, tryna pull a home invasion",invasion,END,ASSONANCE,vowel,MED,Y
+Ktb,28,"SG Sniper god, sending niggas to they graves",god,29,"Father, Lord, I thank you, you made a way for some lil gangstas",Father,INNER,SLANT,cmu,MED,Y
+Ktb,28,"SG Sniper god, sending niggas to they graves",graves,29,"Father, Lord, I thank you, you made a way for some lil gangstas",made,INNER,ASSONANCE,vowel,MED,Y
+Ktb,28,"SG Sniper god, sending niggas to they graves",graves,29,"Father, Lord, I thank you, you made a way for some lil gangstas",way,INNER,ASSONANCE,vowel,MED,Y
+Ktb,28,"SG Sniper god, sending niggas to they graves",niggas,29,"Father, Lord, I thank you, you made a way for some lil gangstas",gangstas,INNER,PERFECT,spelling,MED,Y
+Ktb,28,"SG Sniper god, sending niggas to they graves",graves,30,"Out of everybody, you saved us so we could make it",make,END,ASSONANCE,vowel,MED,Y
+Ktb,28,"SG Sniper god, sending niggas to they graves",god,30,"Out of everybody, you saved us so we could make it",everybody,INNER,SLANT,cmu,MED,Y
+Ktb,28,"SG Sniper god, sending niggas to they graves",graves,30,"Out of everybody, you saved us so we could make it",saved,INNER,SLANT,cmu,MED,Y
+Ktb,28,"SG Sniper god, sending niggas to they graves",graves,31,"Me, Wiz and Rays, tryna pull a home invasion",invasion,END,ASSONANCE,vowel,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",made,29,"Father, Lord, I thank you, you made a way for some lil gangstas",way,INNER,ASSONANCE,vowel,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",thank,29,"Father, Lord, I thank you, you made a way for some lil gangstas",gangstas,INNER,ASSONANCE,vowel,LOW,N
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",Father,30,"Out of everybody, you saved us so we could make it",everybody,INNER,SLANT,cmu,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",made,30,"Out of everybody, you saved us so we could make it",make,INNER,SLANT,cmu,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",made,30,"Out of everybody, you saved us so we could make it",saved,INNER,SLANT,cmu,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",way,30,"Out of everybody, you saved us so we could make it",make,INNER,ASSONANCE,vowel,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",way,30,"Out of everybody, you saved us so we could make it",saved,INNER,ASSONANCE,vowel,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",lil,31,"Me, Wiz and Rays, tryna pull a home invasion",Wiz,INNER,SLANT,cmu,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",made,31,"Me, Wiz and Rays, tryna pull a home invasion",invasion,INNER,ASSONANCE,vowel,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",made,31,"Me, Wiz and Rays, tryna pull a home invasion",Rays,INNER,SLANT,cmu,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",way,31,"Me, Wiz and Rays, tryna pull a home invasion",invasion,INNER,ASSONANCE,vowel,MED,Y
+Ktb,29,"Father, Lord, I thank you, you made a way for some lil gangstas",way,31,"Me, Wiz and Rays, tryna pull a home invasion",Rays,INNER,ASSONANCE,vowel,MED,Y
+Ktb,30,"Out of everybody, you saved us so we could make it",saved,30,"Out of everybody, you saved us so we could make it",make,INNER,ASSONANCE,vowel,MED,Y
+Ktb,30,"Out of everybody, you saved us so we could make it",make,31,"Me, Wiz and Rays, tryna pull a home invasion",invasion,END,ASSONANCE,vowel,MED,Y
+Ktb,30,"Out of everybody, you saved us so we could make it",could,31,"Me, Wiz and Rays, tryna pull a home invasion",pull,INNER,SLANT,cmu,MED,Y
+Ktb,30,"Out of everybody, you saved us so we could make it",make,31,"Me, Wiz and Rays, tryna pull a home invasion",Rays,INNER,SLANT,cmu,MED,Y
+Ktb,30,"Out of everybody, you saved us so we could make it",saved,31,"Me, Wiz and Rays, tryna pull a home invasion",invasion,INNER,ASSONANCE,vowel,MED,Y
+Ktb,30,"Out of everybody, you saved us so we could make it",saved,31,"Me, Wiz and Rays, tryna pull a home invasion",Rays,INNER,ASSONANCE,vowel,MED,Y
+Ktb,30,"Out of everybody, you saved us so we could make it",everybody,32,"The life we live,, na, it ain't right, but that's how shit be",na,INNER,ASSONANCE,vowel,MED,Y
+Ktb,30,"Out of everybody, you saved us so we could make it",make,32,"The life we live,, na, it ain't right, but that's how shit be",ain't,INNER,ASSONANCE,vowel,MED,Y
+Ktb,30,"Out of everybody, you saved us so we could make it",saved,32,"The life we live,, na, it ain't right, but that's how shit be",ain't,INNER,ASSONANCE,vowel,MED,Y
+Ktb,31,"Me, Wiz and Rays, tryna pull a home invasion",Rays,31,"Me, Wiz and Rays, tryna pull a home invasion",invasion,INNER,ASSONANCE,vowel,MED,Y
+Ktb,31,"Me, Wiz and Rays, tryna pull a home invasion",invasion,32,"The life we live,, na, it ain't right, but that's how shit be",ain't,INNER,ASSONANCE,vowel,MED,Y
+Ktb,31,"Me, Wiz and Rays, tryna pull a home invasion",Rays,32,"The life we live,, na, it ain't right, but that's how shit be",ain't,INNER,ASSONANCE,vowel,MED,Y
+Ktb,31,"Me, Wiz and Rays, tryna pull a home invasion",Wiz,32,"The life we live,, na, it ain't right, but that's how shit be",shit,INNER,SLANT,cmu,MED,Y
+Ktb,31,"Me, Wiz and Rays, tryna pull a home invasion",invasion,33,"Ain't talked to Cool in three years, I miss him like he miss me",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Ktb,31,"Me, Wiz and Rays, tryna pull a home invasion",Rays,33,"Ain't talked to Cool in three years, I miss him like he miss me",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Ktb,31,"Me, Wiz and Rays, tryna pull a home invasion",Wiz,33,"Ain't talked to Cool in three years, I miss him like he miss me",him,INNER,SLANT,cmu,MED,Y
+Ktb,31,"Me, Wiz and Rays, tryna pull a home invasion",Wiz,33,"Ain't talked to Cool in three years, I miss him like he miss me",miss,INNER,SLANT,cmu,MED,Y
+Ktb,31,"Me, Wiz and Rays, tryna pull a home invasion",Wiz,33,"Ain't talked to Cool in three years, I miss him like he miss me",years,INNER,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",life,32,"The life we live,, na, it ain't right, but that's how shit be",live,INNER,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",life,32,"The life we live,, na, it ain't right, but that's how shit be",right,INNER,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",live,32,"The life we live,, na, it ain't right, but that's how shit be",right,INNER,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",shit,33,"Ain't talked to Cool in three years, I miss him like he miss me",miss,END,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",ain't,33,"Ain't talked to Cool in three years, I miss him like he miss me",Ain't,INNER,REPEAT,spelling,HIGH,N
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",life,33,"Ain't talked to Cool in three years, I miss him like he miss me",like,INNER,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",live,33,"Ain't talked to Cool in three years, I miss him like he miss me",like,INNER,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",right,33,"Ain't talked to Cool in three years, I miss him like he miss me",like,INNER,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",shit,33,"Ain't talked to Cool in three years, I miss him like he miss me",him,INNER,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",shit,33,"Ain't talked to Cool in three years, I miss him like he miss me",miss,INNER,SLANT,cmu,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",shit,33,"Ain't talked to Cool in three years, I miss him like he miss me",years,INNER,ASSONANCE,vowel,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",na,34,Lil Wam got a spot in my heart that's my lil bro,got,INNER,ASSONANCE,vowel,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",na,34,Lil Wam got a spot in my heart that's my lil bro,heart,INNER,ASSONANCE,vowel,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",na,34,Lil Wam got a spot in my heart that's my lil bro,spot,INNER,ASSONANCE,vowel,MED,Y
+Ktb,32,"The life we live,, na, it ain't right, but that's how shit be",shit,34,Lil Wam got a spot in my heart that's my lil bro,Lil,INNER,SLANT,cmu,MED,Y
+Ktb,33,"Ain't talked to Cool in three years, I miss him like he miss me",him,33,"Ain't talked to Cool in three years, I miss him like he miss me",miss,INNER,SLANT,cmu,MED,Y
+Ktb,33,"Ain't talked to Cool in three years, I miss him like he miss me",miss,33,"Ain't talked to Cool in three years, I miss him like he miss me",him,INNER,SLANT,cmu,MED,Y
+Ktb,33,"Ain't talked to Cool in three years, I miss him like he miss me",miss,33,"Ain't talked to Cool in three years, I miss him like he miss me",miss,INNER,REPEAT,spelling,HIGH,N
+Ktb,33,"Ain't talked to Cool in three years, I miss him like he miss me",years,33,"Ain't talked to Cool in three years, I miss him like he miss me",him,INNER,ASSONANCE,vowel,MED,Y
+Ktb,33,"Ain't talked to Cool in three years, I miss him like he miss me",years,33,"Ain't talked to Cool in three years, I miss him like he miss me",miss,INNER,ASSONANCE,vowel,MED,Y
+Ktb,33,"Ain't talked to Cool in three years, I miss him like he miss me",him,34,Lil Wam got a spot in my heart that's my lil bro,Lil,INNER,SLANT,cmu,MED,Y
+Ktb,33,"Ain't talked to Cool in three years, I miss him like he miss me",miss,34,Lil Wam got a spot in my heart that's my lil bro,Lil,INNER,SLANT,cmu,MED,Y
+Ktb,33,"Ain't talked to Cool in three years, I miss him like he miss me",years,34,Lil Wam got a spot in my heart that's my lil bro,Lil,INNER,ASSONANCE,vowel,MED,Y
+Ktb,33,"Ain't talked to Cool in three years, I miss him like he miss me",talked,35,"If I never said I love you before, nigga, now you know",before,INNER,ASSONANCE,vowel,MED,Y
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,got,34,Lil Wam got a spot in my heart that's my lil bro,heart,INNER,SLANT,cmu,MED,Y
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,got,34,Lil Wam got a spot in my heart that's my lil bro,spot,INNER,PERFECT,cmu,HIGH,Y
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,Lil,34,Lil Wam got a spot in my heart that's my lil bro,lil,INNER,REPEAT,spelling,HIGH,N
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,spot,34,Lil Wam got a spot in my heart that's my lil bro,heart,INNER,SLANT,cmu,MED,Y
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,bro,35,"If I never said I love you before, nigga, now you know",know,END,PERFECT,cmu,HIGH,Y
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,got,36,Young Z I'm up and starting 2004,starting,INNER,ASSONANCE,vowel,MED,Y
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,heart,36,Young Z I'm up and starting 2004,starting,INNER,SLANT,cmu,MED,Y
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,spot,36,Young Z I'm up and starting 2004,starting,INNER,ASSONANCE,vowel,MED,Y
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,bro,37,"Until I get my Grammy award, nigga, I ain't blow",blow,END,PERFECT,cmu,HIGH,Y
+Ktb,34,Lil Wam got a spot in my heart that's my lil bro,bro,38,"I was happy when I was living on fraud, like fuck a show",show,END,PERFECT,cmu,HIGH,Y
+Ktb,35,"If I never said I love you before, nigga, now you know",never,35,"If I never said I love you before, nigga, now you know",said,INNER,SLANT,cmu,MED,Y
+Ktb,35,"If I never said I love you before, nigga, now you know",love,36,Young Z I'm up and starting 2004,Young,INNER,SLANT,cmu,MED,Y
+Ktb,35,"If I never said I love you before, nigga, now you know",know,37,"Until I get my Grammy award, nigga, I ain't blow",blow,END,PERFECT,cmu,HIGH,Y
+Ktb,35,"If I never said I love you before, nigga, now you know",before,37,"Until I get my Grammy award, nigga, I ain't blow",award,INNER,SLANT,cmu,MED,Y
+Ktb,35,"If I never said I love you before, nigga, now you know",never,37,"Until I get my Grammy award, nigga, I ain't blow",get,INNER,SLANT,cmu,MED,Y
+Ktb,35,"If I never said I love you before, nigga, now you know",nigga,37,"Until I get my Grammy award, nigga, I ain't blow",nigga,INNER,REPEAT,spelling,HIGH,N
+Ktb,35,"If I never said I love you before, nigga, now you know",said,37,"Until I get my Grammy award, nigga, I ain't blow",get,INNER,SLANT,cmu,MED,Y
+Ktb,35,"If I never said I love you before, nigga, now you know",know,38,"I was happy when I was living on fraud, like fuck a show",show,END,PERFECT,cmu,HIGH,Y
+Ktb,35,"If I never said I love you before, nigga, now you know",know,39,I know I been ain't stolen,stolen,END,ASSONANCE,vowel,MED,Y
+Ktb,36,Young Z I'm up and starting 2004,Young,38,"I was happy when I was living on fraud, like fuck a show",fuck,INNER,SLANT,cmu,MED,Y
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",blow,38,"I was happy when I was living on fraud, like fuck a show",show,END,PERFECT,cmu,HIGH,Y
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",award,38,"I was happy when I was living on fraud, like fuck a show",fraud,INNER,SLANT,cmu,MED,Y
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",get,38,"I was happy when I was living on fraud, like fuck a show",when,INNER,SLANT,cmu,MED,Y
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",Grammy,38,"I was happy when I was living on fraud, like fuck a show",happy,INNER,SLANT,cmu,MED,Y
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",Until,38,"I was happy when I was living on fraud, like fuck a show",living,INNER,ASSONANCE,vowel,MED,Y
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",blow,39,I know I been ain't stolen,stolen,END,ASSONANCE,vowel,MED,Y
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",ain't,39,I know I been ain't stolen,ain't,INNER,REPEAT,spelling,HIGH,N
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",blow,39,I know I been ain't stolen,know,INNER,PERFECT,cmu,HIGH,Y
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",blow,40,Like my wrist frozen,frozen,END,ASSONANCE,vowel,MED,Y
+Ktb,37,"Until I get my Grammy award, nigga, I ain't blow",blow,41,Iced up to my elbow,elbow,END,PERFECT,cmu,HIGH,Y
+Ktb,38,"I was happy when I was living on fraud, like fuck a show",show,39,I know I been ain't stolen,stolen,END,ASSONANCE,vowel,MED,Y
+Ktb,38,"I was happy when I was living on fraud, like fuck a show",show,39,I know I been ain't stolen,know,INNER,PERFECT,cmu,HIGH,Y
+Ktb,38,"I was happy when I was living on fraud, like fuck a show",show,40,Like my wrist frozen,frozen,END,ASSONANCE,vowel,MED,Y
+Ktb,38,"I was happy when I was living on fraud, like fuck a show",like,40,Like my wrist frozen,Like,INNER,REPEAT,spelling,HIGH,N
+Ktb,38,"I was happy when I was living on fraud, like fuck a show",living,40,Like my wrist frozen,wrist,INNER,ASSONANCE,vowel,MED,Y
+Ktb,38,"I was happy when I was living on fraud, like fuck a show",show,41,Iced up to my elbow,elbow,END,PERFECT,cmu,HIGH,Y
+Ktb,39,I know I been ain't stolen,know,39,I know I been ain't stolen,stolen,INNER,ASSONANCE,vowel,MED,Y
+Ktb,39,I know I been ain't stolen,stolen,40,Like my wrist frozen,frozen,END,SLANT,cmu,MED,Y
+Ktb,39,I know I been ain't stolen,know,40,Like my wrist frozen,frozen,INNER,ASSONANCE,vowel,MED,Y
+Ktb,39,I know I been ain't stolen,stolen,41,Iced up to my elbow,elbow,END,ASSONANCE,vowel,MED,Y
+Ktb,39,I know I been ain't stolen,know,41,Iced up to my elbow,elbow,INNER,PERFECT,cmu,HIGH,Y
+Ktb,40,Like my wrist frozen,frozen,41,Iced up to my elbow,elbow,END,ASSONANCE,vowel,MED,Y
+Ktb,40,Like my wrist frozen,Like,41,Iced up to my elbow,Iced,INNER,ASSONANCE,vowel,MED,Y
+Ktb,41,Iced up to my elbow,Iced,43,"We hit the opp block, sliding Trackhawks, Camaros",sliding,INNER,ASSONANCE,vowel,MED,Y
+Ktb,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",ciggerelos,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",Lambos,INNER,PERFECT,spelling,MED,Y
+Ktb,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",Stuffing,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",trucks,INNER,ASSONANCE,vowel,MED,Y
+Ktb,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",Lambos,43,"We hit the opp block, sliding Trackhawks, Camaros",Camaros,END,PERFECT,spelling,MED,Y
+Ktb,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",ciggerelos,43,"We hit the opp block, sliding Trackhawks, Camaros",Camaros,INNER,PERFECT,spelling,MED,Y
+Ktb,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",Bentley,44,"It's funny people love me, I'm just a youngin' out the ghetto",ghetto,INNER,ASSONANCE,vowel,MED,Y
+Ktb,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",Stuffing,44,"It's funny people love me, I'm just a youngin' out the ghetto",funny,INNER,ASSONANCE,vowel,MED,Y
+Ktb,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",Stuffing,44,"It's funny people love me, I'm just a youngin' out the ghetto",love,INNER,ASSONANCE,vowel,MED,Y
+Ktb,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",trucks,44,"It's funny people love me, I'm just a youngin' out the ghetto",funny,INNER,ASSONANCE,vowel,MED,Y
+Ktb,42,"Stuffing ciggerelos, pull up Bentley trucks and Lambos",trucks,44,"It's funny people love me, I'm just a youngin' out the ghetto",love,INNER,ASSONANCE,vowel,MED,Y
+Ktb,43,"We hit the opp block, sliding Trackhawks, Camaros",block,43,"We hit the opp block, sliding Trackhawks, Camaros",Camaros,INNER,ASSONANCE,vowel,MED,Y
+Ktb,43,"We hit the opp block, sliding Trackhawks, Camaros",opp,43,"We hit the opp block, sliding Trackhawks, Camaros",block,INNER,SLANT,cmu,MED,Y
+Ktb,43,"We hit the opp block, sliding Trackhawks, Camaros",opp,43,"We hit the opp block, sliding Trackhawks, Camaros",Camaros,INNER,ASSONANCE,vowel,MED,Y
+Ktb,44,"It's funny people love me, I'm just a youngin' out the ghetto",funny,44,"It's funny people love me, I'm just a youngin' out the ghetto",love,INNER,SLANT,cmu,MED,Y
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",Bam,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",can't,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",kill,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",Bill,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",niggas,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",niggas,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",These,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",these,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",Wam,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",Bam,INNER,PERFECT,spelling,MED,Y
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",ain't,2,"You niggas ain't get no feet, you niggas don't step like me",ain't,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",niggas,2,"You niggas ain't get no feet, you niggas don't step like me",niggas,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",These,2,"You niggas ain't get no feet, you niggas don't step like me",feet,INNER,SLANT,cmu,MED,Y
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",Bam,3,"I've just been spinnin' 'round, and I've been spendin' bands",bands,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",Bill,3,"I've just been spinnin' 'round, and I've been spendin' bands",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",can't,3,"I've just been spinnin' 'round, and I've been spendin' bands",bands,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",kill,3,"I've just been spinnin' 'round, and I've been spendin' bands",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,1,"These niggas ain't Wam Bam, these niggas can't kill Bill",Bill,5,"I need my percentage, this ain't my first missin'",missin,END,ASSONANCE,vowel,MED,Y
+Roger Dat,2,"You niggas ain't get no feet, you niggas don't step like me",get,2,"You niggas ain't get no feet, you niggas don't step like me",step,INNER,SLANT,cmu,MED,Y
+Roger Dat,2,"You niggas ain't get no feet, you niggas don't step like me",niggas,2,"You niggas ain't get no feet, you niggas don't step like me",niggas,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,2,"You niggas ain't get no feet, you niggas don't step like me",no,2,"You niggas ain't get no feet, you niggas don't step like me",don't,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,2,"You niggas ain't get no feet, you niggas don't step like me",get,3,"I've just been spinnin' 'round, and I've been spendin' bands",spendin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,2,"You niggas ain't get no feet, you niggas don't step like me",step,3,"I've just been spinnin' 'round, and I've been spendin' bands",spendin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,2,"You niggas ain't get no feet, you niggas don't step like me",ain't,4,"Draco with a drum, everybody ran",Draco,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,3,"I've just been spinnin' 'round, and I've been spendin' bands",bands,4,"Draco with a drum, everybody ran",ran,END,ASSONANCE,vowel,MED,Y
+Roger Dat,3,"I've just been spinnin' 'round, and I've been spendin' bands",spendin,5,"I need my percentage, this ain't my first missin'",percentage,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,3,"I've just been spinnin' 'round, and I've been spendin' bands",spinnin,5,"I need my percentage, this ain't my first missin'",missin,INNER,SLANT,cmu,MED,Y
+Roger Dat,4,"Draco with a drum, everybody ran",Draco,5,"I need my percentage, this ain't my first missin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,5,"I need my percentage, this ain't my first missin'",first,6,"No, yeah, murk business, this shit don't ever end",murk,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,5,"I need my percentage, this ain't my first missin'",missin,6,"No, yeah, murk business, this shit don't ever end",business,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,5,"I need my percentage, this ain't my first missin'",missin,6,"No, yeah, murk business, this shit don't ever end",shit,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,5,"I need my percentage, this ain't my first missin'",percentage,6,"No, yeah, murk business, this shit don't ever end",end,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,5,"I need my percentage, this ain't my first missin'",percentage,6,"No, yeah, murk business, this shit don't ever end",ever,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,5,"I need my percentage, this ain't my first missin'",missin,7,"This shit won't ever end, this shit forever now",shit,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,5,"I need my percentage, this ain't my first missin'",percentage,7,"This shit won't ever end, this shit forever now",end,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,5,"I need my percentage, this ain't my first missin'",percentage,7,"This shit won't ever end, this shit forever now",ever,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,5,"I need my percentage, this ain't my first missin'",percentage,7,"This shit won't ever end, this shit forever now",forever,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",business,6,"No, yeah, murk business, this shit don't ever end",shit,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",ever,6,"No, yeah, murk business, this shit don't ever end",end,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",No,6,"No, yeah, murk business, this shit don't ever end",don't,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",business,7,"This shit won't ever end, this shit forever now",shit,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",don't,7,"This shit won't ever end, this shit forever now",won't,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",don't ever,7,"This shit won't ever end, this shit forever now",shit forever,INNER,MULTI,multi,HIGH,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",end,7,"This shit won't ever end, this shit forever now",end,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",end,7,"This shit won't ever end, this shit forever now",ever,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",end,7,"This shit won't ever end, this shit forever now",forever,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",ever,7,"This shit won't ever end, this shit forever now",end,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",ever,7,"This shit won't ever end, this shit forever now",ever,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",ever,7,"This shit won't ever end, this shit forever now",forever,INNER,MULTI,multi,HIGH,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",No,7,"This shit won't ever end, this shit forever now",won't,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",shit,7,"This shit won't ever end, this shit forever now",shit,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",business,8,"Don't let my nigga gym, brought you a lot of guys",gym,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",don't,8,"Don't let my nigga gym, brought you a lot of guys",Don't,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",end,8,"Don't let my nigga gym, brought you a lot of guys",let,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",ever,8,"Don't let my nigga gym, brought you a lot of guys",let,INNER,SLANT,cmu,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",No,8,"Don't let my nigga gym, brought you a lot of guys",Don't,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",shit,8,"Don't let my nigga gym, brought you a lot of guys",gym,INNER,SLANT,cmu,MED,Y
+Roger Dat,6,"No, yeah, murk business, this shit don't ever end",shit,8,"Don't let my nigga gym, brought you a lot of guys",nigga,INNER,SLANT,spelling,LOW,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",end,7,"This shit won't ever end, this shit forever now",forever,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",ever,7,"This shit won't ever end, this shit forever now",end,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",ever,7,"This shit won't ever end, this shit forever now",forever,INNER,MULTI,multi,HIGH,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",shit,7,"This shit won't ever end, this shit forever now",shit,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,7,"This shit won't ever end, this shit forever now",won't ever,7,"This shit won't ever end, this shit forever now",shit forever,INNER,MULTI,multi,HIGH,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",end,8,"Don't let my nigga gym, brought you a lot of guys",let,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",ever,8,"Don't let my nigga gym, brought you a lot of guys",let,INNER,SLANT,cmu,MED,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",forever,8,"Don't let my nigga gym, brought you a lot of guys",let,INNER,SLANT,cmu,MED,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",shit,8,"Don't let my nigga gym, brought you a lot of guys",gym,INNER,SLANT,cmu,MED,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",shit,8,"Don't let my nigga gym, brought you a lot of guys",nigga,INNER,SLANT,spelling,LOW,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",won't,8,"Don't let my nigga gym, brought you a lot of guys",Don't,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",shit,9,"Brought you a lot of smoke, brought you on killin' folk",killin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",won't,9,"Brought you a lot of smoke, brought you on killin' folk",folk,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,7,"This shit won't ever end, this shit forever now",won't,9,"Brought you a lot of smoke, brought you on killin' folk",smoke,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,8,"Don't let my nigga gym, brought you a lot of guys",brought,9,"Brought you a lot of smoke, brought you on killin' folk",Brought,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,8,"Don't let my nigga gym, brought you a lot of guys",Don't,9,"Brought you a lot of smoke, brought you on killin' folk",folk,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,8,"Don't let my nigga gym, brought you a lot of guys",Don't,9,"Brought you a lot of smoke, brought you on killin' folk",smoke,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,8,"Don't let my nigga gym, brought you a lot of guys",gym,9,"Brought you a lot of smoke, brought you on killin' folk",killin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,8,"Don't let my nigga gym, brought you a lot of guys",lot,9,"Brought you a lot of smoke, brought you on killin' folk",lot,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,8,"Don't let my nigga gym, brought you a lot of guys",Don't,10,"The Chevy butter toast, this shit cutthroat",cutthroat,INNER,SLANT,cmu,MED,Y
+Roger Dat,8,"Don't let my nigga gym, brought you a lot of guys",Don't,10,"The Chevy butter toast, this shit cutthroat",toast,INNER,SLANT,cmu,MED,Y
+Roger Dat,8,"Don't let my nigga gym, brought you a lot of guys",gym,10,"The Chevy butter toast, this shit cutthroat",shit,INNER,SLANT,cmu,MED,Y
+Roger Dat,8,"Don't let my nigga gym, brought you a lot of guys",nigga,10,"The Chevy butter toast, this shit cutthroat",shit,INNER,SLANT,spelling,LOW,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",Brought,9,"Brought you a lot of smoke, brought you on killin' folk",brought,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",smoke,9,"Brought you a lot of smoke, brought you on killin' folk",folk,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",folk,10,"The Chevy butter toast, this shit cutthroat",cutthroat,END,SLANT,cmu,MED,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",folk,10,"The Chevy butter toast, this shit cutthroat",toast,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",killin,10,"The Chevy butter toast, this shit cutthroat",shit,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",smoke,10,"The Chevy butter toast, this shit cutthroat",cutthroat,INNER,SLANT,cmu,MED,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",smoke,10,"The Chevy butter toast, this shit cutthroat",toast,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",folk,11,"Yo, just a month ago, got out of prison, I'm already killin'",ago,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",killin,11,"Yo, just a month ago, got out of prison, I'm already killin'",killin,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",killin,11,"Yo, just a month ago, got out of prison, I'm already killin'",prison,INNER,SLANT,cmu,MED,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",lot,11,"Yo, just a month ago, got out of prison, I'm already killin'",got,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,9,"Brought you a lot of smoke, brought you on killin' folk",smoke,11,"Yo, just a month ago, got out of prison, I'm already killin'",ago,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,10,"The Chevy butter toast, this shit cutthroat",toast,10,"The Chevy butter toast, this shit cutthroat",cutthroat,INNER,SLANT,cmu,MED,Y
+Roger Dat,10,"The Chevy butter toast, this shit cutthroat",butter,11,"Yo, just a month ago, got out of prison, I'm already killin'",month,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,10,"The Chevy butter toast, this shit cutthroat",cutthroat,11,"Yo, just a month ago, got out of prison, I'm already killin'",ago,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,10,"The Chevy butter toast, this shit cutthroat",shit,11,"Yo, just a month ago, got out of prison, I'm already killin'",killin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,10,"The Chevy butter toast, this shit cutthroat",shit,11,"Yo, just a month ago, got out of prison, I'm already killin'",prison,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,10,"The Chevy butter toast, this shit cutthroat",toast,11,"Yo, just a month ago, got out of prison, I'm already killin'",ago,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,10,"The Chevy butter toast, this shit cutthroat",butter,12,"I be dumpin' fours, yeah, newspaper sun sellin'",dumpin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,10,"The Chevy butter toast, this shit cutthroat",butter,12,"I be dumpin' fours, yeah, newspaper sun sellin'",sun,INNER,SLANT,cmu,MED,Y
+Roger Dat,11,"Yo, just a month ago, got out of prison, I'm already killin'",prison,11,"Yo, just a month ago, got out of prison, I'm already killin'",killin,INNER,SLANT,cmu,MED,Y
+Roger Dat,11,"Yo, just a month ago, got out of prison, I'm already killin'",already,12,"I be dumpin' fours, yeah, newspaper sun sellin'",sellin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,11,"Yo, just a month ago, got out of prison, I'm already killin'",month,12,"I be dumpin' fours, yeah, newspaper sun sellin'",dumpin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,11,"Yo, just a month ago, got out of prison, I'm already killin'",month,12,"I be dumpin' fours, yeah, newspaper sun sellin'",sun,INNER,SLANT,cmu,MED,Y
+Roger Dat,11,"Yo, just a month ago, got out of prison, I'm already killin'",already,13,I'ma send a nigga to the medical,medical,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,11,"Yo, just a month ago, got out of prison, I'm already killin'",already,13,I'ma send a nigga to the medical,send,INNER,SLANT,cmu,MED,Y
+Roger Dat,12,"I be dumpin' fours, yeah, newspaper sun sellin'",dumpin,12,"I be dumpin' fours, yeah, newspaper sun sellin'",sun,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,12,"I be dumpin' fours, yeah, newspaper sun sellin'",sellin,13,I'ma send a nigga to the medical,medical,END,ASSONANCE,vowel,MED,Y
+Roger Dat,12,"I be dumpin' fours, yeah, newspaper sun sellin'",sellin,13,I'ma send a nigga to the medical,send,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,12,"I be dumpin' fours, yeah, newspaper sun sellin'",sellin,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",f,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,12,"I be dumpin' fours, yeah, newspaper sun sellin'",sellin,16,"You niggas trippin', chopper turn you to an edible",edible,END,ASSONANCE,vowel,MED,Y
+Roger Dat,13,I'ma send a nigga to the medical,send,13,I'ma send a nigga to the medical,medical,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,13,I'ma send a nigga to the medical,medical,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",deral,END,PERFECT,spelling,MED,Y
+Roger Dat,13,I'ma send a nigga to the medical,I'ma,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",Lil,INNER,SLANT,spelling,LOW,Y
+Roger Dat,13,I'ma send a nigga to the medical,medical,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",f,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,13,I'ma send a nigga to the medical,send,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",f,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,13,I'ma send a nigga to the medical,medical,15,308's turn a nigga to a vegetablе,vegetabl,END,SLANT,spelling,LOW,Y
+Roger Dat,13,I'ma send a nigga to the medical,nigga,15,308's turn a nigga to a vegetablе,nigga,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,13,I'ma send a nigga to the medical,medical,16,"You niggas trippin', chopper turn you to an edible",edible,END,SLANT,cmu,MED,Y
+Roger Dat,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",Ask,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",Yak,INNER,SLANT,cmu,MED,Y
+Roger Dat,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",G,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",free,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",deral,15,308's turn a nigga to a vegetablе,vegetabl,END,ASSONANCE,vowel,LOW,N
+Roger Dat,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",f,16,"You niggas trippin', chopper turn you to an edible",edible,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,14,"Ask G, we goin' up, and free Lil' Yak up out the fеderal",Lil,16,"You niggas trippin', chopper turn you to an edible",trippin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,15,308's turn a nigga to a vegetablе,vegetabl,16,"You niggas trippin', chopper turn you to an edible",edible,END,SLANT,spelling,LOW,Y
+Roger Dat,15,308's turn a nigga to a vegetablе,nigga,16,"You niggas trippin', chopper turn you to an edible",niggas,INNER,SLANT,spelling,LOW,Y
+Roger Dat,15,308's turn a nigga to a vegetablе,turn,16,"You niggas trippin', chopper turn you to an edible",turn,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,15,308's turn a nigga to a vegetablе,vegetabl,19,"Double-M, murder, money, this shit inevitable",inevitable,END,SLANT,spelling,LOW,Y
+Roger Dat,16,"You niggas trippin', chopper turn you to an edible",edible,17,"Better send my money, you dry your feet",Better,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,16,"You niggas trippin', chopper turn you to an edible",edible,17,"Better send my money, you dry your feet",send,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,16,"You niggas trippin', chopper turn you to an edible",edible,18,"Then, bitch, I'm steppin' on you",steppin,END,ASSONANCE,vowel,MED,Y
+Roger Dat,16,"You niggas trippin', chopper turn you to an edible",trippin,18,"Then, bitch, I'm steppin' on you",bitch,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,16,"You niggas trippin', chopper turn you to an edible",edible,19,"Double-M, murder, money, this shit inevitable",inevitable,END,MULTI,multi,HIGH,Y
+Roger Dat,17,"Better send my money, you dry your feet",Better,17,"Better send my money, you dry your feet",send,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,17,"Better send my money, you dry your feet",Better,18,"Then, bitch, I'm steppin' on you",steppin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,17,"Better send my money, you dry your feet",send,18,"Then, bitch, I'm steppin' on you",steppin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,17,"Better send my money, you dry your feet",Better,19,"Double-M, murder, money, this shit inevitable",inevitable,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,17,"Better send my money, you dry your feet",Better,19,"Double-M, murder, money, this shit inevitable",M,INNER,SLANT,cmu,MED,Y
+Roger Dat,17,"Better send my money, you dry your feet",money,19,"Double-M, murder, money, this shit inevitable",Double,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,17,"Better send my money, you dry your feet",money,19,"Double-M, murder, money, this shit inevitable",money,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,17,"Better send my money, you dry your feet",send,19,"Double-M, murder, money, this shit inevitable",inevitable,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,17,"Better send my money, you dry your feet",send,19,"Double-M, murder, money, this shit inevitable",M,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,18,"Then, bitch, I'm steppin' on you",steppin,19,"Double-M, murder, money, this shit inevitable",inevitable,END,ASSONANCE,vowel,MED,Y
+Roger Dat,18,"Then, bitch, I'm steppin' on you",bitch,19,"Double-M, murder, money, this shit inevitable",shit,INNER,SLANT,cmu,MED,Y
+Roger Dat,18,"Then, bitch, I'm steppin' on you",steppin,19,"Double-M, murder, money, this shit inevitable",M,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,18,"Then, bitch, I'm steppin' on you",bitch,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Bill,INNER,SLANT,cmu,MED,Y
+Roger Dat,18,"Then, bitch, I'm steppin' on you",bitch,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Kill,INNER,SLANT,cmu,MED,Y
+Roger Dat,18,"Then, bitch, I'm steppin' on you",bitch,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",lil,INNER,SLANT,cmu,MED,Y
+Roger Dat,18,"Then, bitch, I'm steppin' on you",steppin,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",spend,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",Double,19,"Double-M, murder, money, this shit inevitable",inevitable,INNER,MULTI,multi,HIGH,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",Double,19,"Double-M, murder, money, this shit inevitable",money,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",M,19,"Double-M, murder, money, this shit inevitable",inevitable,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",inevitable,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",spend,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",M,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",spend,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",shit,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Bill,INNER,SLANT,cmu,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",shit,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Kill,INNER,SLANT,cmu,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",shit,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",lil,INNER,SLANT,cmu,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",shit,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",Double,21,I better not ever hear about somebody fuckin' with you,fuckin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",inevitable,21,I better not ever hear about somebody fuckin' with you,better,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",inevitable,21,I better not ever hear about somebody fuckin' with you,ever,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",M,21,I better not ever hear about somebody fuckin' with you,better,INNER,SLANT,cmu,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",M,21,I better not ever hear about somebody fuckin' with you,ever,INNER,SLANT,cmu,MED,Y
+Roger Dat,19,"Double-M, murder, money, this shit inevitable",money,21,I better not ever hear about somebody fuckin' with you,fuckin,INNER,SLANT,cmu,MED,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",bands,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Bam,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Bill,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",lil,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Kill,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Bill,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Kill,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",lil,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Wam,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Bam,INNER,PERFECT,spelling,MED,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",spend,21,I better not ever hear about somebody fuckin' with you,better,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",spend,21,I better not ever hear about somebody fuckin' with you,ever,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Bill,22,"Kill Bill, that's my big brother",big,INNER,SLANT,cmu,MED,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Bill,22,"Kill Bill, that's my big brother",Bill,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Bill,22,"Kill Bill, that's my big brother",Kill,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Kill,22,"Kill Bill, that's my big brother",big,INNER,SLANT,cmu,MED,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Kill,22,"Kill Bill, that's my big brother",Bill,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",Kill,22,"Kill Bill, that's my big brother",Kill,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",lil,22,"Kill Bill, that's my big brother",big,INNER,SLANT,cmu,MED,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",lil,22,"Kill Bill, that's my big brother",Bill,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",lil,22,"Kill Bill, that's my big brother",Kill,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,20,"Kill Bill, spend bands, Wam Bam, that's my lil' nigga",nigga,22,"Kill Bill, that's my big brother",big,INNER,SLANT,spelling,LOW,Y
+Roger Dat,21,I better not ever hear about somebody fuckin' with you,better,21,I better not ever hear about somebody fuckin' with you,ever,INNER,SLANT,cmu,MED,Y
+Roger Dat,21,I better not ever hear about somebody fuckin' with you,not,21,I better not ever hear about somebody fuckin' with you,somebody,INNER,SLANT,cmu,MED,Y
+Roger Dat,21,I better not ever hear about somebody fuckin' with you,fuckin,22,"Kill Bill, that's my big brother",brother,END,ASSONANCE,vowel,MED,Y
+Roger Dat,21,I better not ever hear about somebody fuckin' with you,fuckin,23,"If Yak say that's a go, then I'm a hundred",hundred,END,ASSONANCE,vowel,MED,Y
+Roger Dat,21,I better not ever hear about somebody fuckin' with you,fuckin,24,"And we send lots of blicks, you niggas fumble",fumble,END,ASSONANCE,vowel,MED,Y
+Roger Dat,22,"Kill Bill, that's my big brother",Bill,22,"Kill Bill, that's my big brother",big,INNER,SLANT,cmu,MED,Y
+Roger Dat,22,"Kill Bill, that's my big brother",Kill,22,"Kill Bill, that's my big brother",big,INNER,SLANT,cmu,MED,Y
+Roger Dat,22,"Kill Bill, that's my big brother",Kill,22,"Kill Bill, that's my big brother",Bill,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,22,"Kill Bill, that's my big brother",brother,23,"If Yak say that's a go, then I'm a hundred",hundred,END,ASSONANCE,vowel,MED,Y
+Roger Dat,22,"Kill Bill, that's my big brother",brother,24,"And we send lots of blicks, you niggas fumble",fumble,END,ASSONANCE,vowel,MED,Y
+Roger Dat,22,"Kill Bill, that's my big brother",Bill,24,"And we send lots of blicks, you niggas fumble",blicks,INNER,ASSONANCE,vowel,LOW,N
+Roger Dat,22,"Kill Bill, that's my big brother",Kill,24,"And we send lots of blicks, you niggas fumble",blicks,INNER,ASSONANCE,vowel,LOW,N
+Roger Dat,23,"If Yak say that's a go, then I'm a hundred",hundred,24,"And we send lots of blicks, you niggas fumble",fumble,END,ASSONANCE,vowel,MED,Y
+Roger Dat,23,"If Yak say that's a go, then I'm a hundred",go,25,"If he don't send that bread, then I'ma bun him",don't,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,23,"If Yak say that's a go, then I'm a hundred",hundred,25,"If he don't send that bread, then I'ma bun him",bun,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,24,"And we send lots of blicks, you niggas fumble",blicks,24,"And we send lots of blicks, you niggas fumble",niggas,INNER,SLANT,spelling,LOW,Y
+Roger Dat,24,"And we send lots of blicks, you niggas fumble",fumble,25,"If he don't send that bread, then I'ma bun him",bun,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,24,"And we send lots of blicks, you niggas fumble",send,25,"If he don't send that bread, then I'ma bun him",bread,INNER,SLANT,cmu,MED,Y
+Roger Dat,24,"And we send lots of blicks, you niggas fumble",send,25,"If he don't send that bread, then I'ma bun him",send,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,24,"And we send lots of blicks, you niggas fumble",niggas,26,"The seats peanut better, yeah, nigga, jelly",nigga,INNER,SLANT,spelling,LOW,Y
+Roger Dat,24,"And we send lots of blicks, you niggas fumble",send,26,"The seats peanut better, yeah, nigga, jelly",better,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,24,"And we send lots of blicks, you niggas fumble",send,26,"The seats peanut better, yeah, nigga, jelly",jelly,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",I'ma,25,"If he don't send that bread, then I'ma bun him",him,INNER,SLANT,spelling,LOW,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",send,25,"If he don't send that bread, then I'ma bun him",bread,INNER,SLANT,cmu,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",bread,26,"The seats peanut better, yeah, nigga, jelly",better,INNER,SLANT,cmu,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",bread,26,"The seats peanut better, yeah, nigga, jelly",jelly,INNER,SLANT,cmu,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",send,26,"The seats peanut better, yeah, nigga, jelly",better,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",send,26,"The seats peanut better, yeah, nigga, jelly",jelly,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",bread,27,"I be already ready, so I ain't gotta get ready",already,INNER,SLANT,cmu,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",bread,27,"I be already ready, so I ain't gotta get ready",get,INNER,SLANT,cmu,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",bread,27,"I be already ready, so I ain't gotta get ready",ready,INNER,SLANT,cmu,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",send,27,"I be already ready, so I ain't gotta get ready",already,INNER,SLANT,cmu,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",send,27,"I be already ready, so I ain't gotta get ready",get,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,25,"If he don't send that bread, then I'ma bun him",send,27,"I be already ready, so I ain't gotta get ready",ready,INNER,SLANT,cmu,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",better,26,"The seats peanut better, yeah, nigga, jelly",jelly,INNER,SLANT,cmu,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",seats,26,"The seats peanut better, yeah, nigga, jelly",peanut,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",jelly,27,"I be already ready, so I ain't gotta get ready",ready,END,SLANT,cmu,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",better,27,"I be already ready, so I ain't gotta get ready",already,INNER,SLANT,cmu,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",better,27,"I be already ready, so I ain't gotta get ready",get,INNER,SLANT,cmu,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",better,27,"I be already ready, so I ain't gotta get ready",ready,INNER,SLANT,cmu,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",jelly,27,"I be already ready, so I ain't gotta get ready",already,INNER,SLANT,cmu,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",jelly,27,"I be already ready, so I ain't gotta get ready",get,INNER,SLANT,cmu,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",jelly,27,"I be already ready, so I ain't gotta get ready",ready,INNER,SLANT,cmu,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",peanut,28,"Ayy, floatin' off these Percys, ain't no Xannies",these,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",seats,28,"Ayy, floatin' off these Percys, ain't no Xannies",these,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,26,"The seats peanut better, yeah, nigga, jelly",jelly,29,Nigga bounce up out this bitch and hit to heaven,heaven,END,ASSONANCE,vowel,MED,Y
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",already,27,"I be already ready, so I ain't gotta get ready",get,INNER,SLANT,cmu,MED,Y
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",already,27,"I be already ready, so I ain't gotta get ready",ready,INNER,MULTI,multi,HIGH,Y
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",get,27,"I be already ready, so I ain't gotta get ready",ready,INNER,SLANT,cmu,MED,Y
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",ready,27,"I be already ready, so I ain't gotta get ready",get,INNER,SLANT,cmu,MED,Y
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",ready,27,"I be already ready, so I ain't gotta get ready",ready,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",ain't,28,"Ayy, floatin' off these Percys, ain't no Xannies",ain't,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",ready,29,Nigga bounce up out this bitch and hit to heaven,heaven,END,ASSONANCE,vowel,MED,Y
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",already,29,Nigga bounce up out this bitch and hit to heaven,heaven,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",get,29,Nigga bounce up out this bitch and hit to heaven,heaven,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,27,"I be already ready, so I ain't gotta get ready",ready,29,Nigga bounce up out this bitch and hit to heaven,heaven,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,28,"Ayy, floatin' off these Percys, ain't no Xannies",floatin,28,"Ayy, floatin' off these Percys, ain't no Xannies",no,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,28,"Ayy, floatin' off these Percys, ain't no Xannies",Xannies,30,"My name Kodak, but I'm ridin' with the cannon",cannon,END,SLANT,spelling,LOW,Y
+Roger Dat,28,"Ayy, floatin' off these Percys, ain't no Xannies",ain't,30,"My name Kodak, but I'm ridin' with the cannon",name,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,28,"Ayy, floatin' off these Percys, ain't no Xannies",Xannies,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Cannon,END,SLANT,spelling,LOW,Y
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,bitch,29,Nigga bounce up out this bitch and hit to heaven,hit,INNER,SLANT,cmu,MED,Y
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,Nigga,29,Nigga bounce up out this bitch and hit to heaven,hit,INNER,SLANT,spelling,LOW,Y
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,bitch,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",bitch,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,bitch,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Nick,INNER,SLANT,cmu,MED,Y
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,hit,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",bitch,INNER,SLANT,cmu,MED,Y
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,hit,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Nick,INNER,SLANT,cmu,MED,Y
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,hit,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",nigga,INNER,SLANT,spelling,LOW,Y
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,Nigga,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Nick,INNER,SLANT,spelling,LOW,Y
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,Nigga,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",nigga,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,heaven,32,"McLaren, bitches starin', so much rain, I gotta cherish",cherish,END,ASSONANCE,vowel,MED,Y
+Roger Dat,29,Nigga bounce up out this bitch and hit to heaven,heaven,33,"Hit that pussy with somethin' there, I send her letters in the air",air,END,ASSONANCE,vowel,MED,Y
+Roger Dat,30,"My name Kodak, but I'm ridin' with the cannon",Kodak,30,"My name Kodak, but I'm ridin' with the cannon",cannon,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,30,"My name Kodak, but I'm ridin' with the cannon",cannon,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Cannon,END,REPEAT,spelling,HIGH,N
+Roger Dat,30,"My name Kodak, but I'm ridin' with the cannon",Kodak,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Cannon,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,30,"My name Kodak, but I'm ridin' with the cannon",cannon,32,"McLaren, bitches starin', so much rain, I gotta cherish",starin,INNER,SLANT,cmu,MED,Y
+Roger Dat,30,"My name Kodak, but I'm ridin' with the cannon",Kodak,32,"McLaren, bitches starin', so much rain, I gotta cherish",starin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,30,"My name Kodak, but I'm ridin' with the cannon",name,32,"McLaren, bitches starin', so much rain, I gotta cherish",rain,INNER,SLANT,cmu,MED,Y
+Roger Dat,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",bitch,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Nick,INNER,SLANT,cmu,MED,Y
+Roger Dat,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",nigga,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Nick,INNER,SLANT,spelling,LOW,Y
+Roger Dat,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",bitch,32,"McLaren, bitches starin', so much rain, I gotta cherish",bitches,INNER,SLANT,cmu,MED,Y
+Roger Dat,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Cannon,32,"McLaren, bitches starin', so much rain, I gotta cherish",starin,INNER,SLANT,cmu,MED,Y
+Roger Dat,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Nick,32,"McLaren, bitches starin', so much rain, I gotta cherish",bitches,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",wylin,32,"McLaren, bitches starin', so much rain, I gotta cherish",starin,INNER,PERFECT,spelling,MED,Y
+Roger Dat,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",bitch,33,"Hit that pussy with somethin' there, I send her letters in the air",Hit,INNER,SLANT,cmu,MED,Y
+Roger Dat,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",Nick,33,"Hit that pussy with somethin' there, I send her letters in the air",Hit,INNER,SLANT,cmu,MED,Y
+Roger Dat,31,"I be wylin' out this bitch, yeah, nigga, Nick Cannon",nigga,33,"Hit that pussy with somethin' there, I send her letters in the air",Hit,INNER,SLANT,spelling,LOW,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",McLaren,32,"McLaren, bitches starin', so much rain, I gotta cherish",cherish,INNER,SLANT,cmu,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",cherish,33,"Hit that pussy with somethin' there, I send her letters in the air",air,END,SLANT,cmu,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",bitches,33,"Hit that pussy with somethin' there, I send her letters in the air",Hit,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",cherish,33,"Hit that pussy with somethin' there, I send her letters in the air",letters,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",cherish,33,"Hit that pussy with somethin' there, I send her letters in the air",send,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",cherish,33,"Hit that pussy with somethin' there, I send her letters in the air",there,INNER,SLANT,cmu,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",McLaren,33,"Hit that pussy with somethin' there, I send her letters in the air",air,INNER,SLANT,cmu,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",McLaren,33,"Hit that pussy with somethin' there, I send her letters in the air",letters,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",McLaren,33,"Hit that pussy with somethin' there, I send her letters in the air",send,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",McLaren,33,"Hit that pussy with somethin' there, I send her letters in the air",there,INNER,SLANT,cmu,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",much,33,"Hit that pussy with somethin' there, I send her letters in the air",somethin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",bitches,34,"He in jail, but I want him killed, I might bond him out for that",him,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",bitches,34,"He in jail, but I want him killed, I might bond him out for that",killed,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",gotta,34,"He in jail, but I want him killed, I might bond him out for that",bond,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",gotta,34,"He in jail, but I want him killed, I might bond him out for that",want,INNER,SLANT,cmu,MED,Y
+Roger Dat,32,"McLaren, bitches starin', so much rain, I gotta cherish",rain,34,"He in jail, but I want him killed, I might bond him out for that",jail,INNER,SLANT,cmu,MED,Y
+Roger Dat,33,"Hit that pussy with somethin' there, I send her letters in the air",letters,33,"Hit that pussy with somethin' there, I send her letters in the air",air,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,33,"Hit that pussy with somethin' there, I send her letters in the air",send,33,"Hit that pussy with somethin' there, I send her letters in the air",air,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,33,"Hit that pussy with somethin' there, I send her letters in the air",send,33,"Hit that pussy with somethin' there, I send her letters in the air",letters,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,33,"Hit that pussy with somethin' there, I send her letters in the air",there,33,"Hit that pussy with somethin' there, I send her letters in the air",air,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,33,"Hit that pussy with somethin' there, I send her letters in the air",there,33,"Hit that pussy with somethin' there, I send her letters in the air",letters,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,33,"Hit that pussy with somethin' there, I send her letters in the air",there,33,"Hit that pussy with somethin' there, I send her letters in the air",send,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,33,"Hit that pussy with somethin' there, I send her letters in the air",Hit,34,"He in jail, but I want him killed, I might bond him out for that",him,INNER,SLANT,cmu,MED,Y
+Roger Dat,33,"Hit that pussy with somethin' there, I send her letters in the air",Hit,34,"He in jail, but I want him killed, I might bond him out for that",killed,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",him,34,"He in jail, but I want him killed, I might bond him out for that",him,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",him,34,"He in jail, but I want him killed, I might bond him out for that",killed,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",killed,34,"He in jail, but I want him killed, I might bond him out for that",him,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",want,34,"He in jail, but I want him killed, I might bond him out for that",bond,INNER,SLANT,cmu,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",bond,35,My niggas know I'm finna stay on top of that,top,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",him,35,My niggas know I'm finna stay on top of that,finna,INNER,SLANT,spelling,LOW,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",jail,35,My niggas know I'm finna stay on top of that,stay,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",want,35,My niggas know I'm finna stay on top of that,top,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",bond,36,"My niggas on go, they spin on any block for Yak",block,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",him,36,"My niggas on go, they spin on any block for Yak",spin,INNER,SLANT,cmu,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",killed,36,"My niggas on go, they spin on any block for Yak",spin,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,34,"He in jail, but I want him killed, I might bond him out for that",want,36,"My niggas on go, they spin on any block for Yak",block,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,35,My niggas know I'm finna stay on top of that,niggas,35,My niggas know I'm finna stay on top of that,finna,INNER,ASSONANCE,vowel,LOW,N
+Roger Dat,35,My niggas know I'm finna stay on top of that,finna,36,"My niggas on go, they spin on any block for Yak",niggas,INNER,ASSONANCE,vowel,LOW,N
+Roger Dat,35,My niggas know I'm finna stay on top of that,finna,36,"My niggas on go, they spin on any block for Yak",spin,INNER,SLANT,spelling,LOW,Y
+Roger Dat,35,My niggas know I'm finna stay on top of that,know,36,"My niggas on go, they spin on any block for Yak",go,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,35,My niggas know I'm finna stay on top of that,niggas,36,"My niggas on go, they spin on any block for Yak",niggas,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,35,My niggas know I'm finna stay on top of that,top,36,"My niggas on go, they spin on any block for Yak",block,INNER,SLANT,cmu,MED,Y
+Roger Dat,35,My niggas know I'm finna stay on top of that,know,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",no,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,35,My niggas know I'm finna stay on top of that,stay,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",ain't,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",Yak,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",copycat,END,SLANT,cmu,MED,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",any,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",never,INNER,SLANT,cmu,MED,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",go,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",no,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",spin,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",Bitch,INNER,SLANT,cmu,MED,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",Yak,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",Yak,END,REPEAT,spelling,HIGH,N
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",any,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",Benz,INNER,SLANT,cmu,MED,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",block,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",knock,INNER,PERFECT,cmu,HIGH,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",block,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",top,INNER,SLANT,cmu,MED,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",spin,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",Bitch,INNER,SLANT,cmu,MED,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",spin,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",I'ma,INNER,SLANT,spelling,LOW,Y
+Roger Dat,36,"My niggas on go, they spin on any block for Yak",spin,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",spin,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",copycat,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",Yak,END,SLANT,cmu,MED,Y
+Roger Dat,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",Bitch,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",Bitch,INNER,REPEAT,spelling,HIGH,N
+Roger Dat,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",Bitch,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",I'ma,INNER,SLANT,spelling,LOW,Y
+Roger Dat,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",Bitch,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",spin,INNER,SLANT,cmu,MED,Y
+Roger Dat,37,"Bitch, I'm a dawg, ain't never been no copycat, ayy",never,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",Benz,INNER,ASSONANCE,vowel,MED,Y
+Roger Dat,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",Bitch,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",I'ma,INNER,SLANT,spelling,LOW,Y
+Roger Dat,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",Bitch,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",spin,INNER,SLANT,cmu,MED,Y
+Roger Dat,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",I'ma,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",spin,INNER,SLANT,spelling,LOW,Y
+Roger Dat,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",knock,38,"Bitch, I'ma spin the Benz, knock off a top for Yak, ayy",top,INNER,SLANT,cmu,MED,Y

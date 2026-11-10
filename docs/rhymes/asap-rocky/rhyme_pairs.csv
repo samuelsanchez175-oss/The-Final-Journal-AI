@@ -1,0 +1,543 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+CALLDROPS,1,"""Mo—money and the power, money and the power""",money,1,"""Mo—money and the power, money and the power""",money,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,1,"""Mo—money and the power, money and the power""",power,1,"""Mo—money and the power, money and the power""",power,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,2,"Eyedrops, (""Fuckin' with the killas"")",Eyedrops,3,"Droptops, (""Fuckin' with the killas"")",Droptops,END,PERFECT,spelling,HIGH,Y
+CALLDROPS,2,"Eyedrops, (""Fuckin' with the killas"")",Eyedrops,4,"Ice blocks (Beat drop, beat drop)",blocks,END,SLANT,cmu,MED,Y
+CALLDROPS,5,I was thinking to myself (Calldrops),myself,6,Maybe I should seek some help,help,END,SLANT,cmu,MED,Y
+CALLDROPS,5,I was thinking to myself (Calldrops),myself,7,"Maybe I should blame myself (""Don't expect no money"")",myself,END,REPEAT,spelling,HIGH,N
+CALLDROPS,6,Maybe I should seek some help,help,7,"Maybe I should blame myself (""Don't expect no money"")",myself,END,SLANT,cmu,MED,Y
+CALLDROPS,6,Maybe I should seek some help,Maybe,7,"Maybe I should blame myself (""Don't expect no money"")",blame,INNER,SLANT,cmu,MED,Y
+CALLDROPS,6,Maybe I should seek some help,Maybe,7,"Maybe I should blame myself (""Don't expect no money"")",Maybe,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,6,Maybe I should seek some help,should,7,"Maybe I should blame myself (""Don't expect no money"")",should,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,6,Maybe I should seek some help,help,8,My mystique in stealth is gone away,stealth,INNER,SLANT,cmu,MED,Y
+CALLDROPS,6,Maybe I should seek some help,Maybe,8,My mystique in stealth is gone away,away,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,6,Maybe I should seek some help,seek,8,My mystique in stealth is gone away,mystique,INNER,PERFECT,cmu,HIGH,Y
+CALLDROPS,7,"Maybe I should blame myself (""Don't expect no money"")",Maybe,7,"Maybe I should blame myself (""Don't expect no money"")",blame,INNER,SLANT,cmu,MED,Y
+CALLDROPS,7,"Maybe I should blame myself (""Don't expect no money"")",blame,8,My mystique in stealth is gone away,away,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,7,"Maybe I should blame myself (""Don't expect no money"")",Maybe,8,My mystique in stealth is gone away,away,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,7,"Maybe I should blame myself (""Don't expect no money"")",myself,8,My mystique in stealth is gone away,stealth,INNER,SLANT,cmu,MED,Y
+CALLDROPS,7,"Maybe I should blame myself (""Don't expect no money"")",blame,9,"It's going away, it's going away",away,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,7,"Maybe I should blame myself (""Don't expect no money"")",Maybe,9,"It's going away, it's going away",away,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,8,My mystique in stealth is gone away,away,9,"It's going away, it's going away",away,END,REPEAT,spelling,HIGH,N
+CALLDROPS,8,My mystique in stealth is gone away,away,9,"It's going away, it's going away",away,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,9,"It's going away, it's going away",away,9,"It's going away, it's going away",away,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,9,"It's going away, it's going away",going,9,"It's going away, it's going away",going,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,9,"It's going away, it's going away",away,11,This is a prepaid collect call from,prepaid,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,10,You used to be so soft,used,12,Beautiful teardrops on your cheeks,Beautiful,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,10,You used to be so soft,soft,14,This call is subject to recording and monitoring,monitoring,END,ASSONANCE,vowel,MED,Y
+CALLDROPS,11,This is a prepaid collect call from,call,13,An inmate at Florida Correctional Institution,Florida,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,11,This is a prepaid collect call from,collect,13,An inmate at Florida Correctional Institution,Correctional,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,11,This is a prepaid collect call from,prepaid,13,An inmate at Florida Correctional Institution,inmate,INNER,SLANT,cmu,MED,Y
+CALLDROPS,12,Beautiful teardrops on your cheeks,Beautiful,13,An inmate at Florida Correctional Institution,Institution,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,13,An inmate at Florida Correctional Institution,Correctional,14,This call is subject to recording and monitoring,subject,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,13,An inmate at Florida Correctional Institution,Florida,14,This call is subject to recording and monitoring,call,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,13,An inmate at Florida Correctional Institution,Florida,14,This call is subject to recording and monitoring,recording,INNER,SLANT,cmu,MED,Y
+CALLDROPS,13,An inmate at Florida Correctional Institution,Correctional,15,"This-this life situation and shit, you there?",there,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,13,An inmate at Florida Correctional Institution,inmate,15,"This-this life situation and shit, you there?",situation,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,13,An inmate at Florida Correctional Institution,Institution,15,"This-this life situation and shit, you there?",situation,INNER,SLANT,spelling,LOW,Y
+CALLDROPS,14,This call is subject to recording and monitoring,call,14,This call is subject to recording and monitoring,recording,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,14,This call is subject to recording and monitoring,subject,15,"This-this life situation and shit, you there?",there,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,14,This call is subject to recording and monitoring,subject,16,You ready right now?,ready,INNER,SLANT,cmu,MED,Y
+CALLDROPS,15,"This-this life situation and shit, you there?",life,16,You ready right now?,right,INNER,SLANT,cmu,MED,Y
+CALLDROPS,15,"This-this life situation and shit, you there?",there,16,You ready right now?,ready,INNER,SLANT,cmu,MED,Y
+CALLDROPS,15,"This-this life situation and shit, you there?",there,17,"Yeah, I'm ready, got you on speaker",ready,INNER,SLANT,cmu,MED,Y
+CALLDROPS,16,You ready right now?,ready,17,"Yeah, I'm ready, got you on speaker",ready,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,16,You ready right now?,ready,18,All the pain I went through,went,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,17,"Yeah, I'm ready, got you on speaker",ready,18,All the pain I went through,went,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,18,All the pain I went through,through,20,I put it all on my tattoos,tattoos,END,ASSONANCE,vowel,MED,Y
+CALLDROPS,18,All the pain I went through,All,20,I put it all on my tattoos,all,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,20,I put it all on my tattoos,all,22,"If I ain't ever learned before, then it's gon' change me",before,INNER,SLANT,cmu,MED,Y
+CALLDROPS,21,'Cause of where I came from,came,22,"If I ain't ever learned before, then it's gon' change me",change,END,ASSONANCE,vowel,MED,Y
+CALLDROPS,21,'Cause of where I came from,came,22,"If I ain't ever learned before, then it's gon' change me",ain't,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,21,'Cause of where I came from,where,22,"If I ain't ever learned before, then it's gon' change me",ever,INNER,SLANT,cmu,MED,Y
+CALLDROPS,21,'Cause of where I came from,came,23,"Sittin' in institution, I done lost my baby",baby,END,SLANT,cmu,MED,Y
+CALLDROPS,21,'Cause of where I came from,came,24,"If nan' ain't ever woke me up, then it's gon' wake me",wake,END,SLANT,cmu,MED,Y
+CALLDROPS,21,'Cause of where I came from,came,25,"When them people ran up on my spot, and they took my baby",baby,END,SLANT,cmu,MED,Y
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",ain't,22,"If I ain't ever learned before, then it's gon' change me",change,INNER,SLANT,cmu,MED,Y
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",change,23,"Sittin' in institution, I done lost my baby",baby,END,ASSONANCE,vowel,MED,Y
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",ain't,23,"Sittin' in institution, I done lost my baby",baby,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",before,23,"Sittin' in institution, I done lost my baby",lost,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",change,24,"If nan' ain't ever woke me up, then it's gon' wake me",wake,END,ASSONANCE,vowel,MED,Y
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",ain't,24,"If nan' ain't ever woke me up, then it's gon' wake me",ain't,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",ain't,24,"If nan' ain't ever woke me up, then it's gon' wake me",wake,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",change,24,"If nan' ain't ever woke me up, then it's gon' wake me",ain't,INNER,SLANT,cmu,MED,Y
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",ever,24,"If nan' ain't ever woke me up, then it's gon' wake me",ever,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",gon,24,"If nan' ain't ever woke me up, then it's gon' wake me",gon,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",gon,24,"If nan' ain't ever woke me up, then it's gon' wake me",woke,INNER,SLANT,spelling,LOW,Y
+CALLDROPS,22,"If I ain't ever learned before, then it's gon' change me",change,25,"When them people ran up on my spot, and they took my baby",baby,END,ASSONANCE,vowel,MED,Y
+CALLDROPS,23,"Sittin' in institution, I done lost my baby",baby,24,"If nan' ain't ever woke me up, then it's gon' wake me",wake,END,SLANT,cmu,MED,Y
+CALLDROPS,23,"Sittin' in institution, I done lost my baby",baby,24,"If nan' ain't ever woke me up, then it's gon' wake me",ain't,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,23,"Sittin' in institution, I done lost my baby",baby,25,"When them people ran up on my spot, and they took my baby",baby,END,REPEAT,spelling,HIGH,N
+CALLDROPS,24,"If nan' ain't ever woke me up, then it's gon' wake me",ain't,24,"If nan' ain't ever woke me up, then it's gon' wake me",wake,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,24,"If nan' ain't ever woke me up, then it's gon' wake me",woke,24,"If nan' ain't ever woke me up, then it's gon' wake me",gon,INNER,SLANT,spelling,LOW,Y
+CALLDROPS,24,"If nan' ain't ever woke me up, then it's gon' wake me",wake,25,"When them people ran up on my spot, and they took my baby",baby,END,SLANT,cmu,MED,Y
+CALLDROPS,24,"If nan' ain't ever woke me up, then it's gon' wake me",ain't,25,"When them people ran up on my spot, and they took my baby",baby,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,24,"If nan' ain't ever woke me up, then it's gon' wake me",ever,25,"When them people ran up on my spot, and they took my baby",When,INNER,SLANT,cmu,MED,Y
+CALLDROPS,24,"If nan' ain't ever woke me up, then it's gon' wake me",nan,25,"When them people ran up on my spot, and they took my baby",ran,INNER,PERFECT,cmu,HIGH,Y
+CALLDROPS,24,"If nan' ain't ever woke me up, then it's gon' wake me",gon,26,"A random kind that's doing his time, but it's for no reason",reason,INNER,PERFECT,spelling,MED,Y
+CALLDROPS,24,"If nan' ain't ever woke me up, then it's gon' wake me",nan,26,"A random kind that's doing his time, but it's for no reason",random,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,24,"If nan' ain't ever woke me up, then it's gon' wake me",woke,26,"A random kind that's doing his time, but it's for no reason",no,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,25,"When them people ran up on my spot, and they took my baby",people,26,"A random kind that's doing his time, but it's for no reason",reason,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,25,"When them people ran up on my spot, and they took my baby",ran,26,"A random kind that's doing his time, but it's for no reason",random,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,25,"When them people ran up on my spot, and they took my baby",people,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",free,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,25,"When them people ran up on my spot, and they took my baby",ran,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",random,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",kind,26,"A random kind that's doing his time, but it's for no reason",time,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",reason,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",free,END,ASSONANCE,vowel,MED,Y
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",kind,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",kind,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",kind,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",pine,INNER,SLANT,cmu,MED,Y
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",kind,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",ridin,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",random,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",random,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",reason,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",free,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",time,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",kind,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",time,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",pine,INNER,SLANT,cmu,MED,Y
+CALLDROPS,26,"A random kind that's doing his time, but it's for no reason",time,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",ridin,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",free,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",free,INNER,REPEAT,spelling,HIGH,N
+CALLDROPS,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",kind,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",pine,INNER,SLANT,cmu,MED,Y
+CALLDROPS,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",kind,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",ridin,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",ridin,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",pine,INNER,ASSONANCE,vowel,MED,Y
+CALLDROPS,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",something,27,"A random kind that's ridin' the pine, something you free—something you free—something you free",something,INNER,REPEAT,spelling,HIGH,N
+Cocky,1,We got London On Da Track (It's Guwop),got,1,We got London On Da Track (It's Guwop),Da,INNER,ASSONANCE,vowel,MED,Y
+Cocky,1,We got London On Da Track (It's Guwop),Da,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",cocky,INNER,ASSONANCE,vowel,MED,Y
+Cocky,1,We got London On Da Track (It's Guwop),got,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",cocky,INNER,SLANT,cmu,MED,Y
+Cocky,1,We got London On Da Track (It's Guwop),London,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Cocky,1,We got London On Da Track (It's Guwop),Da,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",cocky,INNER,ASSONANCE,vowel,MED,Y
+Cocky,1,We got London On Da Track (It's Guwop),got,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",cocky,INNER,SLANT,cmu,MED,Y
+Cocky,1,We got London On Da Track (It's Guwop),London,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Cocky,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",cocky,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",cocky,INNER,REPEAT,spelling,HIGH,N
+Cocky,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",fuckin,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",fuckin,INNER,REPEAT,spelling,HIGH,N
+Cocky,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",cocky,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",cocky,END,REPEAT,spelling,HIGH,N
+Cocky,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",baby,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",baby,INNER,REPEAT,spelling,HIGH,N
+Cocky,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",cocky,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",cocky,INNER,REPEAT,spelling,HIGH,N
+Cocky,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",fuckin,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",fuckin,INNER,REPEAT,spelling,HIGH,N
+Cocky,2,"Too fuckin' cocky, baby, I'm too fuckin' cocky",cocky,4,"I got so many M's in my bank account, I can't even count 'em",got,INNER,SLANT,cmu,MED,Y
+Cocky,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",cocky,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",cocky,INNER,REPEAT,spelling,HIGH,N
+Cocky,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",fuckin,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",fuckin,INNER,REPEAT,spelling,HIGH,N
+Cocky,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",cocky,4,"I got so many M's in my bank account, I can't even count 'em",got,INNER,SLANT,cmu,MED,Y
+Cocky,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",baby,5,"Too many whips, way I switch my car, I can't even mount 'em",way,INNER,ASSONANCE,vowel,MED,Y
+Cocky,3,"Too fuckin' cocky, baby, I'm so fuckin' cocky",cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",car,INNER,SLANT,cmu,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",account,4,"I got so many M's in my bank account, I can't even count 'em",count,INNER,PERFECT,cmu,HIGH,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",bank,4,"I got so many M's in my bank account, I can't even count 'em",can't,INNER,SLANT,cmu,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",can't,4,"I got so many M's in my bank account, I can't even count 'em",count,INNER,SLANT,spelling,LOW,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",many,4,"I got so many M's in my bank account, I can't even count 'em",M's,INNER,ASSONANCE,vowel,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",'em,5,"Too many whips, way I switch my car, I can't even mount 'em",'em,END,REPEAT,spelling,HIGH,N
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",account,5,"Too many whips, way I switch my car, I can't even mount 'em",mount,INNER,PERFECT,cmu,HIGH,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",bank,5,"Too many whips, way I switch my car, I can't even mount 'em",can't,INNER,SLANT,cmu,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",can't,5,"Too many whips, way I switch my car, I can't even mount 'em",can't,INNER,REPEAT,spelling,HIGH,N
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",count,5,"Too many whips, way I switch my car, I can't even mount 'em",can't,INNER,SLANT,spelling,LOW,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",count,5,"Too many whips, way I switch my car, I can't even mount 'em",mount,INNER,PERFECT,cmu,HIGH,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",even,5,"Too many whips, way I switch my car, I can't even mount 'em",even,INNER,REPEAT,spelling,HIGH,N
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",got,5,"Too many whips, way I switch my car, I can't even mount 'em",car,INNER,SLANT,cmu,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",M's,5,"Too many whips, way I switch my car, I can't even mount 'em",many,INNER,ASSONANCE,vowel,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",many,5,"Too many whips, way I switch my car, I can't even mount 'em",many,INNER,REPEAT,spelling,HIGH,N
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",bank,6,Too many zeros with Versace pillows in my Phantoms,Phantoms,INNER,ASSONANCE,vowel,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",can't,6,Too many zeros with Versace pillows in my Phantoms,Phantoms,INNER,ASSONANCE,vowel,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",got,6,Too many zeros with Versace pillows in my Phantoms,Versace,INNER,SLANT,cmu,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",M's,6,Too many zeros with Versace pillows in my Phantoms,many,INNER,ASSONANCE,vowel,MED,Y
+Cocky,4,"I got so many M's in my bank account, I can't even count 'em",many,6,Too many zeros with Versace pillows in my Phantoms,many,INNER,REPEAT,spelling,HIGH,N
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",whips,5,"Too many whips, way I switch my car, I can't even mount 'em",switch,INNER,ASSONANCE,vowel,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",can't,6,Too many zeros with Versace pillows in my Phantoms,Phantoms,INNER,ASSONANCE,vowel,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",car,6,Too many zeros with Versace pillows in my Phantoms,Versace,INNER,SLANT,cmu,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",many,6,Too many zeros with Versace pillows in my Phantoms,many,INNER,REPEAT,spelling,HIGH,N
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",switch,6,Too many zeros with Versace pillows in my Phantoms,pillows,INNER,ASSONANCE,vowel,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",switch,6,Too many zeros with Versace pillows in my Phantoms,zeros,INNER,ASSONANCE,vowel,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",whips,6,Too many zeros with Versace pillows in my Phantoms,pillows,INNER,ASSONANCE,vowel,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",whips,6,Too many zeros with Versace pillows in my Phantoms,zeros,INNER,ASSONANCE,vowel,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",'em,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",'em,INNER,REPEAT,spelling,HIGH,N
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",can't,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",bad,INNER,ASSONANCE,vowel,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",can't,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",hand,INNER,SLANT,cmu,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",many,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",many,INNER,REPEAT,spelling,HIGH,N
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",switch,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",bitches,INNER,SLANT,cmu,MED,Y
+Cocky,5,"Too many whips, way I switch my car, I can't even mount 'em",whips,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",bitches,INNER,ASSONANCE,vowel,MED,Y
+Cocky,6,Too many zeros with Versace pillows in my Phantoms,zeros,6,Too many zeros with Versace pillows in my Phantoms,pillows,INNER,SLANT,cmu,MED,Y
+Cocky,6,Too many zeros with Versace pillows in my Phantoms,Phantoms,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",hand,END,ASSONANCE,vowel,MED,Y
+Cocky,6,Too many zeros with Versace pillows in my Phantoms,many,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",many,INNER,REPEAT,spelling,HIGH,N
+Cocky,6,Too many zeros with Versace pillows in my Phantoms,Phantoms,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",bad,INNER,ASSONANCE,vowel,MED,Y
+Cocky,6,Too many zeros with Versace pillows in my Phantoms,pillows,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",bitches,INNER,SLANT,cmu,MED,Y
+Cocky,6,Too many zeros with Versace pillows in my Phantoms,zeros,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",bitches,INNER,SLANT,cmu,MED,Y
+Cocky,6,Too many zeros with Versace pillows in my Phantoms,Versace,8,"Off like a lay-up (lay-up), I don't got time to lay up",got,INNER,SLANT,cmu,MED,Y
+Cocky,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",bad,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",hand,INNER,SLANT,cmu,MED,Y
+Cocky,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",don't,8,"Off like a lay-up (lay-up), I don't got time to lay up",don't,INNER,REPEAT,spelling,HIGH,N
+Cocky,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",bitches,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",Chris,INNER,SLANT,cmu,MED,Y
+Cocky,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",don't,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",told,INNER,ASSONANCE,vowel,MED,Y
+Cocky,7,"Too many bad bitches, I don't cuff 'em, I just hand them (21)",many,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",Met,INNER,SLANT,cmu,MED,Y
+Cocky,8,"Off like a lay-up (lay-up), I don't got time to lay up",lay,8,"Off like a lay-up (lay-up), I don't got time to lay up",lay,INNER,REPEAT,spelling,HIGH,N
+Cocky,8,"Off like a lay-up (lay-up), I don't got time to lay up",like,8,"Off like a lay-up (lay-up), I don't got time to lay up",time,INNER,SLANT,cmu,MED,Y
+Cocky,8,"Off like a lay-up (lay-up), I don't got time to lay up",lay,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",way,END,PERFECT,cmu,HIGH,Y
+Cocky,8,"Off like a lay-up (lay-up), I don't got time to lay up",don't,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",told,INNER,ASSONANCE,vowel,MED,Y
+Cocky,8,"Off like a lay-up (lay-up), I don't got time to lay up",lay,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",way,INNER,PERFECT,cmu,HIGH,Y
+Cocky,8,"Off like a lay-up (lay-up), I don't got time to lay up",lay,10,"I already back for seconds, I ain't even clean my plate up",plate,END,ASSONANCE,vowel,MED,Y
+Cocky,8,"Off like a lay-up (lay-up), I don't got time to lay up",lay,10,"I already back for seconds, I ain't even clean my plate up",ain't,INNER,ASSONANCE,vowel,MED,Y
+Cocky,8,"Off like a lay-up (lay-up), I don't got time to lay up",lay,10,"I already back for seconds, I ain't even clean my plate up",plate,INNER,ASSONANCE,vowel,MED,Y
+Cocky,8,"Off like a lay-up (lay-up), I don't got time to lay up",lay,11,Ran me up a hunned M's and then I put my bay up (21),bay,END,PERFECT,cmu,HIGH,Y
+Cocky,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",way,10,"I already back for seconds, I ain't even clean my plate up",plate,END,ASSONANCE,vowel,MED,Y
+Cocky,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",Met,10,"I already back for seconds, I ain't even clean my plate up",already,INNER,SLANT,cmu,MED,Y
+Cocky,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",Met,10,"I already back for seconds, I ain't even clean my plate up",seconds,INNER,ASSONANCE,vowel,MED,Y
+Cocky,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",way,10,"I already back for seconds, I ain't even clean my plate up",ain't,INNER,ASSONANCE,vowel,MED,Y
+Cocky,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",way,11,Ran me up a hunned M's and then I put my bay up (21),bay,END,PERFECT,cmu,HIGH,Y
+Cocky,9,"Met my accountant at Ruth's Chris, she told me that I'm way up (21)",Met,11,Ran me up a hunned M's and then I put my bay up (21),M's,INNER,ASSONANCE,vowel,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",ain't,10,"I already back for seconds, I ain't even clean my plate up",plate,INNER,SLANT,cmu,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",already,10,"I already back for seconds, I ain't even clean my plate up",seconds,INNER,ASSONANCE,vowel,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",even,10,"I already back for seconds, I ain't even clean my plate up",clean,INNER,SLANT,cmu,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",plate,11,Ran me up a hunned M's and then I put my bay up (21),bay,END,ASSONANCE,vowel,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",ain't,11,Ran me up a hunned M's and then I put my bay up (21),bay,INNER,ASSONANCE,vowel,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",already,11,Ran me up a hunned M's and then I put my bay up (21),M's,INNER,ASSONANCE,vowel,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",back,11,Ran me up a hunned M's and then I put my bay up (21),Ran,INNER,SLANT,cmu,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",seconds,11,Ran me up a hunned M's and then I put my bay up (21),M's,INNER,ASSONANCE,vowel,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",ain't,12,"Way out in the hills, I just sign the deal",Way,INNER,ASSONANCE,vowel,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",clean,12,"Way out in the hills, I just sign the deal",deal,INNER,SLANT,cmu,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",even,12,"Way out in the hills, I just sign the deal",deal,INNER,ASSONANCE,vowel,MED,Y
+Cocky,10,"I already back for seconds, I ain't even clean my plate up",plate,12,"Way out in the hills, I just sign the deal",Way,INNER,ASSONANCE,vowel,MED,Y
+Cocky,11,Ran me up a hunned M's and then I put my bay up (21),bay,12,"Way out in the hills, I just sign the deal",Way,INNER,PERFECT,cmu,HIGH,Y
+Cocky,11,Ran me up a hunned M's and then I put my bay up (21),bay,13,"I ain't take no advance, so you know that split was real (21)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Cocky,11,Ran me up a hunned M's and then I put my bay up (21),bay,13,"I ain't take no advance, so you know that split was real (21)",take,INNER,ASSONANCE,vowel,MED,Y
+Cocky,11,Ran me up a hunned M's and then I put my bay up (21),Ran,13,"I ain't take no advance, so you know that split was real (21)",advance,INNER,SLANT,cmu,MED,Y
+Cocky,12,"Way out in the hills, I just sign the deal",deal,13,"I ain't take no advance, so you know that split was real (21)",real,END,PERFECT,cmu,HIGH,Y
+Cocky,12,"Way out in the hills, I just sign the deal",hills,13,"I ain't take no advance, so you know that split was real (21)",split,INNER,ASSONANCE,vowel,MED,Y
+Cocky,12,"Way out in the hills, I just sign the deal",Way,13,"I ain't take no advance, so you know that split was real (21)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Cocky,12,"Way out in the hills, I just sign the deal",Way,13,"I ain't take no advance, so you know that split was real (21)",take,INNER,ASSONANCE,vowel,MED,Y
+Cocky,12,"Way out in the hills, I just sign the deal",hills,14,"All my diamonds carats, them lil' pointers be too lil'",lil,INNER,SLANT,cmu,MED,Y
+Cocky,12,"Way out in the hills, I just sign the deal",sign,14,"All my diamonds carats, them lil' pointers be too lil'",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Cocky,13,"I ain't take no advance, so you know that split was real (21)",ain't,13,"I ain't take no advance, so you know that split was real (21)",take,INNER,ASSONANCE,vowel,MED,Y
+Cocky,13,"I ain't take no advance, so you know that split was real (21)",no,13,"I ain't take no advance, so you know that split was real (21)",know,INNER,PERFECT,cmu,HIGH,Y
+Cocky,13,"I ain't take no advance, so you know that split was real (21)",split,14,"All my diamonds carats, them lil' pointers be too lil'",lil,INNER,SLANT,cmu,MED,Y
+Cocky,13,"I ain't take no advance, so you know that split was real (21)",ain't,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",Glaciers,INNER,ASSONANCE,vowel,MED,Y
+Cocky,13,"I ain't take no advance, so you know that split was real (21)",real,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",ear,INNER,SLANT,cmu,MED,Y
+Cocky,13,"I ain't take no advance, so you know that split was real (21)",real,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",need,INNER,SLANT,cmu,MED,Y
+Cocky,13,"I ain't take no advance, so you know that split was real (21)",split,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",spill,INNER,SLANT,cmu,MED,Y
+Cocky,13,"I ain't take no advance, so you know that split was real (21)",take,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",Glaciers,INNER,ASSONANCE,vowel,MED,Y
+Cocky,13,"I ain't take no advance, so you know that split was real (21)",real,17,How you gon' play D? Can't even take D,D,END,ASSONANCE,vowel,MED,Y
+Cocky,14,"All my diamonds carats, them lil' pointers be too lil'",lil,14,"All my diamonds carats, them lil' pointers be too lil'",lil,INNER,REPEAT,spelling,HIGH,N
+Cocky,14,"All my diamonds carats, them lil' pointers be too lil'",lil,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",spill,END,PERFECT,cmu,HIGH,Y
+Cocky,14,"All my diamonds carats, them lil' pointers be too lil'",lil,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",spill,INNER,PERFECT,cmu,HIGH,Y
+Cocky,14,"All my diamonds carats, them lil' pointers be too lil'",diamonds,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",like,INNER,ASSONANCE,vowel,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",ear,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",need,INNER,SLANT,cmu,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",cup,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",ear,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",feel,INNER,SLANT,cmu,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",Glaciers,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",baby,INNER,ASSONANCE,vowel,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",need,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",feel,INNER,SLANT,cmu,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",'bout,17,How you gon' play D? Can't even take D,How,INNER,ASSONANCE,vowel,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",ear,17,How you gon' play D? Can't even take D,D,INNER,ASSONANCE,vowel,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",ear,17,How you gon' play D? Can't even take D,even,INNER,ASSONANCE,vowel,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",Glaciers,17,How you gon' play D? Can't even take D,play,INNER,ASSONANCE,vowel,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",Glaciers,17,How you gon' play D? Can't even take D,take,INNER,ASSONANCE,vowel,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",need,17,How you gon' play D? Can't even take D,D,INNER,ASSONANCE,vowel,MED,Y
+Cocky,15,"Glaciers in my ear, I need a cup, they 'bout to spill (Uh)",need,17,How you gon' play D? Can't even take D,even,INNER,ASSONANCE,vowel,MED,Y
+Cocky,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",cocky,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",Rocky,INNER,MULTI,multi,HIGH,Y
+Cocky,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",fuckin cocky,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",like Rocky,INNER,MULTI,multi,HIGH,Y
+Cocky,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",baby,17,How you gon' play D? Can't even take D,play,INNER,ASSONANCE,vowel,MED,Y
+Cocky,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",baby,17,How you gon' play D? Can't even take D,take,INNER,SLANT,cmu,MED,Y
+Cocky,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",feel,17,How you gon' play D? Can't even take D,D,INNER,ASSONANCE,vowel,MED,Y
+Cocky,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",feel,17,How you gon' play D? Can't even take D,even,INNER,ASSONANCE,vowel,MED,Y
+Cocky,16,"Too fuckin' cocky, baby, I feel like I'm Rocky",baby,18,Too many fake me's,fake,INNER,SLANT,cmu,MED,Y
+Cocky,17,How you gon' play D? Can't even take D,D,17,How you gon' play D? Can't even take D,D,INNER,REPEAT,spelling,HIGH,N
+Cocky,17,How you gon' play D? Can't even take D,D,17,How you gon' play D? Can't even take D,even,INNER,ASSONANCE,vowel,MED,Y
+Cocky,17,How you gon' play D? Can't even take D,even,17,How you gon' play D? Can't even take D,D,INNER,ASSONANCE,vowel,MED,Y
+Cocky,17,How you gon' play D? Can't even take D,play,17,How you gon' play D? Can't even take D,take,INNER,ASSONANCE,vowel,MED,Y
+Cocky,17,How you gon' play D? Can't even take D,play,18,Too many fake me's,fake,INNER,ASSONANCE,vowel,MED,Y
+Cocky,17,How you gon' play D? Can't even take D,take,18,Too many fake me's,fake,INNER,PERFECT,cmu,HIGH,Y
+Cocky,17,How you gon' play D? Can't even take D,Can't,19,"Way too many fake daps, way too many fake '$APs",daps,INNER,ASSONANCE,vowel,LOW,N
+Cocky,17,How you gon' play D? Can't even take D,play,19,"Way too many fake daps, way too many fake '$APs",fake,INNER,ASSONANCE,vowel,MED,Y
+Cocky,17,How you gon' play D? Can't even take D,play,19,"Way too many fake daps, way too many fake '$APs",Way,INNER,PERFECT,cmu,HIGH,Y
+Cocky,17,How you gon' play D? Can't even take D,take,19,"Way too many fake daps, way too many fake '$APs",fake,INNER,PERFECT,cmu,HIGH,Y
+Cocky,17,How you gon' play D? Can't even take D,take,19,"Way too many fake daps, way too many fake '$APs",Way,INNER,ASSONANCE,vowel,MED,Y
+Cocky,17,How you gon' play D? Can't even take D,D,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",team,END,ASSONANCE,vowel,MED,Y
+Cocky,18,Too many fake me's,many,18,Too many fake me's,me's,INNER,SLANT,spelling,LOW,Y
+Cocky,18,Too many fake me's,fake,19,"Way too many fake daps, way too many fake '$APs",fake,INNER,REPEAT,spelling,HIGH,N
+Cocky,18,Too many fake me's,fake,19,"Way too many fake daps, way too many fake '$APs",Way,INNER,ASSONANCE,vowel,MED,Y
+Cocky,18,Too many fake me's,many,19,"Way too many fake daps, way too many fake '$APs",many,INNER,REPEAT,spelling,HIGH,N
+Cocky,18,Too many fake me's,me's,19,"Way too many fake daps, way too many fake '$APs",many,INNER,SLANT,spelling,LOW,Y
+Cocky,19,"Way too many fake daps, way too many fake '$APs",daps,19,"Way too many fake daps, way too many fake '$APs",APs,INNER,PERFECT,spelling,HIGH,Y
+Cocky,19,"Way too many fake daps, way too many fake '$APs",fake,19,"Way too many fake daps, way too many fake '$APs",fake,INNER,REPEAT,spelling,HIGH,N
+Cocky,19,"Way too many fake daps, way too many fake '$APs",fake,19,"Way too many fake daps, way too many fake '$APs",way,INNER,ASSONANCE,vowel,MED,Y
+Cocky,19,"Way too many fake daps, way too many fake '$APs",many,19,"Way too many fake daps, way too many fake '$APs",many,INNER,REPEAT,spelling,HIGH,N
+Cocky,19,"Way too many fake daps, way too many fake '$APs",Way,19,"Way too many fake daps, way too many fake '$APs",fake,INNER,ASSONANCE,vowel,MED,Y
+Cocky,19,"Way too many fake daps, way too many fake '$APs",Way,19,"Way too many fake daps, way too many fake '$APs",way,INNER,REPEAT,spelling,HIGH,N
+Cocky,20,And I put it on me and I want another ring,another,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",buckle,INNER,ASSONANCE,vowel,MED,Y
+Cocky,20,And I put it on me and I want another ring,another,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",other,INNER,MULTI,multi,HIGH,Y
+Cocky,20,And I put it on me and I want another ring,want another,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",like other,INNER,MULTI,multi,HIGH,Y
+Cocky,20,And I put it on me and I want another ring,ring,22,"You can still hear the sneaks (Woo, swoosh)",still,INNER,SLANT,cmu,MED,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",buckle,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",other,INNER,ASSONANCE,vowel,MED,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",knees,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",team,INNER,SLANT,cmu,MED,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",team,22,"You can still hear the sneaks (Woo, swoosh)",sneaks,END,ASSONANCE,vowel,MED,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",knees,22,"You can still hear the sneaks (Woo, swoosh)",hear,INNER,SLANT,cmu,MED,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",knees,22,"You can still hear the sneaks (Woo, swoosh)",sneaks,INNER,ASSONANCE,vowel,MED,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",team,22,"You can still hear the sneaks (Woo, swoosh)",hear,INNER,SLANT,cmu,MED,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",'em,23,Ballin' in some Dungarees,some,INNER,PERFECT,cmu,HIGH,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",buckle,23,Ballin' in some Dungarees,some,INNER,ASSONANCE,vowel,MED,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",knees,23,Ballin' in some Dungarees,Dungarees,INNER,PERFECT,spelling,HIGH,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",other,23,Ballin' in some Dungarees,some,INNER,SLANT,cmu,MED,Y
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",team,24,"Make a cheerleader cream, so what she on the other team?",team,END,REPEAT,spelling,HIGH,N
+Cocky,21,"Girlies buckle at the knees, swerve 'em like the other team (Skrrt)",team,25,"For the cameras say your cheese, rap game like the league",league,END,SLANT,cmu,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",hear,22,"You can still hear the sneaks (Woo, swoosh)",sneaks,INNER,ASSONANCE,vowel,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",can,23,Ballin' in some Dungarees,Ballin,INNER,SLANT,cmu,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",sneaks,24,"Make a cheerleader cream, so what she on the other team?",team,END,ASSONANCE,vowel,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",hear,24,"Make a cheerleader cream, so what she on the other team?",cheerleader,INNER,SLANT,cmu,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",hear,24,"Make a cheerleader cream, so what she on the other team?",cream,INNER,SLANT,cmu,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",hear,24,"Make a cheerleader cream, so what she on the other team?",team,INNER,SLANT,cmu,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",sneaks,24,"Make a cheerleader cream, so what she on the other team?",cheerleader,INNER,ASSONANCE,vowel,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",sneaks,24,"Make a cheerleader cream, so what she on the other team?",cream,INNER,ASSONANCE,vowel,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",sneaks,25,"For the cameras say your cheese, rap game like the league",league,END,ASSONANCE,vowel,MED,Y
+Cocky,22,"You can still hear the sneaks (Woo, swoosh)",sneaks,26,"Heard you the nigga overseas, but that's only overseas",overseas,END,ASSONANCE,vowel,MED,Y
+Cocky,23,Ballin' in some Dungarees,some,24,"Make a cheerleader cream, so what she on the other team?",other,INNER,SLANT,cmu,MED,Y
+Cocky,23,Ballin' in some Dungarees,some,24,"Make a cheerleader cream, so what she on the other team?",what,INNER,SLANT,cmu,MED,Y
+Cocky,23,Ballin' in some Dungarees,Ballin,25,"For the cameras say your cheese, rap game like the league",cameras,INNER,ASSONANCE,vowel,MED,Y
+Cocky,23,Ballin' in some Dungarees,Ballin,25,"For the cameras say your cheese, rap game like the league",rap,INNER,ASSONANCE,vowel,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",cheerleader,24,"Make a cheerleader cream, so what she on the other team?",cream,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",cheerleader,24,"Make a cheerleader cream, so what she on the other team?",team,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",cream,24,"Make a cheerleader cream, so what she on the other team?",team,INNER,PERFECT,cmu,HIGH,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",what,24,"Make a cheerleader cream, so what she on the other team?",other,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",team,25,"For the cameras say your cheese, rap game like the league",league,END,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",cheerleader,25,"For the cameras say your cheese, rap game like the league",cheese,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",cheerleader,25,"For the cameras say your cheese, rap game like the league",league,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",cream,25,"For the cameras say your cheese, rap game like the league",cheese,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",cream,25,"For the cameras say your cheese, rap game like the league",league,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",Make,25,"For the cameras say your cheese, rap game like the league",game,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",Make,25,"For the cameras say your cheese, rap game like the league",say,INNER,ASSONANCE,vowel,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",team,25,"For the cameras say your cheese, rap game like the league",cheese,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",team,26,"Heard you the nigga overseas, but that's only overseas",overseas,END,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",cheerleader,26,"Heard you the nigga overseas, but that's only overseas",overseas,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",cream,26,"Heard you the nigga overseas, but that's only overseas",overseas,INNER,SLANT,cmu,MED,Y
+Cocky,24,"Make a cheerleader cream, so what she on the other team?",team,26,"Heard you the nigga overseas, but that's only overseas",overseas,INNER,SLANT,cmu,MED,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",cameras,25,"For the cameras say your cheese, rap game like the league",rap,INNER,ASSONANCE,vowel,MED,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",cheese,25,"For the cameras say your cheese, rap game like the league",league,INNER,SLANT,cmu,MED,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",say,25,"For the cameras say your cheese, rap game like the league",game,INNER,ASSONANCE,vowel,MED,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",league,26,"Heard you the nigga overseas, but that's only overseas",overseas,END,SLANT,cmu,MED,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",cheese,26,"Heard you the nigga overseas, but that's only overseas",overseas,INNER,PERFECT,cmu,HIGH,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",league,26,"Heard you the nigga overseas, but that's only overseas",overseas,INNER,SLANT,cmu,MED,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",cameras,27,"I'm the one who oversees shit, ""Oh man, it's him again""",man,INNER,ASSONANCE,vowel,MED,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",cheese,27,"I'm the one who oversees shit, ""Oh man, it's him again""",oversees,INNER,PERFECT,cmu,HIGH,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",league,27,"I'm the one who oversees shit, ""Oh man, it's him again""",oversees,INNER,SLANT,cmu,MED,Y
+Cocky,25,"For the cameras say your cheese, rap game like the league",rap,27,"I'm the one who oversees shit, ""Oh man, it's him again""",man,INNER,SLANT,cmu,MED,Y
+Cocky,26,"Heard you the nigga overseas, but that's only overseas",overseas,26,"Heard you the nigga overseas, but that's only overseas",overseas,INNER,REPEAT,spelling,HIGH,N
+Cocky,26,"Heard you the nigga overseas, but that's only overseas",nigga,27,"I'm the one who oversees shit, ""Oh man, it's him again""",shit,INNER,SLANT,spelling,LOW,Y
+Cocky,26,"Heard you the nigga overseas, but that's only overseas",nigga overseas,27,"I'm the one who oversees shit, ""Oh man, it's him again""",who oversees,INNER,MULTI,multi,MED,Y
+Cocky,26,"Heard you the nigga overseas, but that's only overseas",only overseas,27,"I'm the one who oversees shit, ""Oh man, it's him again""",who oversees,INNER,MULTI,multi,HIGH,Y
+Cocky,26,"Heard you the nigga overseas, but that's only overseas",overseas,27,"I'm the one who oversees shit, ""Oh man, it's him again""",oversees,INNER,MULTI,multi,HIGH,Y
+Cocky,27,"I'm the one who oversees shit, ""Oh man, it's him again""",shit,27,"I'm the one who oversees shit, ""Oh man, it's him again""",him,INNER,SLANT,cmu,MED,Y
+Cocky,27,"I'm the one who oversees shit, ""Oh man, it's him again""",again,28,"I'm up in the rim, Gatorade and M&M's",M's,END,ASSONANCE,vowel,MED,Y
+Cocky,27,"I'm the one who oversees shit, ""Oh man, it's him again""",again,28,"I'm up in the rim, Gatorade and M&M's",M,INNER,SLANT,cmu,MED,Y
+Cocky,27,"I'm the one who oversees shit, ""Oh man, it's him again""",him,28,"I'm up in the rim, Gatorade and M&M's",rim,INNER,PERFECT,cmu,HIGH,Y
+Cocky,27,"I'm the one who oversees shit, ""Oh man, it's him again""",shit,28,"I'm up in the rim, Gatorade and M&M's",rim,INNER,SLANT,cmu,MED,Y
+Cocky,27,"I'm the one who oversees shit, ""Oh man, it's him again""",man,29,Ball on you in my favorite Timberlands,Timberlands,INNER,ASSONANCE,vowel,MED,Y
+Cocky,27,"I'm the one who oversees shit, ""Oh man, it's him again""",again,30,My girlfriend got a little friend,friend,END,SLANT,cmu,MED,Y
+Cocky,27,"I'm the one who oversees shit, ""Oh man, it's him again""",again,31,All the way on the other end,end,END,SLANT,cmu,MED,Y
+Cocky,28,"I'm up in the rim, Gatorade and M&M's",M,28,"I'm up in the rim, Gatorade and M&M's",M's,INNER,SLANT,cmu,MED,Y
+Cocky,28,"I'm up in the rim, Gatorade and M&M's",Gatorade,29,Ball on you in my favorite Timberlands,favorite,INNER,ASSONANCE,vowel,MED,Y
+Cocky,28,"I'm up in the rim, Gatorade and M&M's",M's,30,My girlfriend got a little friend,friend,END,ASSONANCE,vowel,MED,Y
+Cocky,28,"I'm up in the rim, Gatorade and M&M's",M,30,My girlfriend got a little friend,friend,INNER,ASSONANCE,vowel,MED,Y
+Cocky,28,"I'm up in the rim, Gatorade and M&M's",M,30,My girlfriend got a little friend,girlfriend,INNER,ASSONANCE,vowel,MED,Y
+Cocky,28,"I'm up in the rim, Gatorade and M&M's",M's,30,My girlfriend got a little friend,girlfriend,INNER,ASSONANCE,vowel,MED,Y
+Cocky,28,"I'm up in the rim, Gatorade and M&M's",rim,30,My girlfriend got a little friend,little,INNER,ASSONANCE,vowel,MED,Y
+Cocky,28,"I'm up in the rim, Gatorade and M&M's",M's,31,All the way on the other end,end,END,ASSONANCE,vowel,MED,Y
+Cocky,29,Ball on you in my favorite Timberlands,Ball,31,All the way on the other end,All,INNER,PERFECT,cmu,HIGH,Y
+Cocky,29,Ball on you in my favorite Timberlands,favorite,31,All the way on the other end,way,INNER,ASSONANCE,vowel,MED,Y
+Cocky,29,Ball on you in my favorite Timberlands,Timberlands,32,'Cause she don't deal with the middle man,man,END,ASSONANCE,vowel,MED,Y
+Cocky,30,My girlfriend got a little friend,girlfriend,30,My girlfriend got a little friend,friend,INNER,PERFECT,cmu,HIGH,Y
+Cocky,30,My girlfriend got a little friend,friend,31,All the way on the other end,end,END,PERFECT,cmu,HIGH,Y
+Cocky,30,My girlfriend got a little friend,girlfriend,31,All the way on the other end,end,INNER,PERFECT,cmu,HIGH,Y
+Cocky,30,My girlfriend got a little friend,little,32,'Cause she don't deal with the middle man,middle,INNER,SLANT,cmu,MED,Y
+Cocky,31,All the way on the other end,end,33,"Harlem world stole my flow, friends and my foes",friends,INNER,SLANT,cmu,MED,Y
+Cocky,32,'Cause she don't deal with the middle man,don't,33,"Harlem world stole my flow, friends and my foes",flow,INNER,ASSONANCE,vowel,MED,Y
+Cocky,32,'Cause she don't deal with the middle man,don't,33,"Harlem world stole my flow, friends and my foes",foes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,32,'Cause she don't deal with the middle man,don't,33,"Harlem world stole my flow, friends and my foes",stole,INNER,ASSONANCE,vowel,MED,Y
+Cocky,32,'Cause she don't deal with the middle man,don't,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",clothes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,32,'Cause she don't deal with the middle man,don't,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,32,'Cause she don't deal with the middle man,don't,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",flow,33,"Harlem world stole my flow, friends and my foes",foes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",stole,33,"Harlem world stole my flow, friends and my foes",flow,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",stole,33,"Harlem world stole my flow, friends and my foes",foes,INNER,SLANT,cmu,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",foes,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,END,PERFECT,cmu,HIGH,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",flow,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",clothes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",flow,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",flow,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",foes,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",clothes,INNER,SLANT,cmu,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",foes,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",hoes,INNER,PERFECT,cmu,HIGH,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",friends,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",ten,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",Harlem,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",Got,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",Harlem,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",want,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",stole,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",clothes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",stole,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",hoes,INNER,SLANT,cmu,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",stole,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,INNER,SLANT,cmu,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",foes,35,Just pass me the rock and watch him go,go,END,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",flow,35,Just pass me the rock and watch him go,go,INNER,PERFECT,cmu,HIGH,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",Harlem,35,Just pass me the rock and watch him go,rock,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",Harlem,35,Just pass me the rock and watch him go,watch,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",stole,35,Just pass me the rock and watch him go,go,INNER,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",foes,36,Just run me the play and let me know,know,END,ASSONANCE,vowel,MED,Y
+Cocky,33,"Harlem world stole my flow, friends and my foes",foes,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",go,END,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",clothes,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,INNER,SLANT,cmu,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",Got,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",want,INNER,SLANT,cmu,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",hoes,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",clothes,INNER,SLANT,cmu,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",hoes,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,INNER,PERFECT,cmu,HIGH,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,35,Just pass me the rock and watch him go,go,END,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",clothes,35,Just pass me the rock and watch him go,go,INNER,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",Got,35,Just pass me the rock and watch him go,rock,INNER,SLANT,cmu,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",Got,35,Just pass me the rock and watch him go,watch,INNER,SLANT,cmu,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",hoes,35,Just pass me the rock and watch him go,go,INNER,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",want,35,Just pass me the rock and watch him go,rock,INNER,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",want,35,Just pass me the rock and watch him go,watch,INNER,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,36,Just run me the play and let me know,know,END,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",clothes,36,Just run me the play and let me know,know,INNER,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",hoes,36,Just run me the play and let me know,know,INNER,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",ten,36,Just run me the play and let me know,let,INNER,SLANT,cmu,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",go,END,ASSONANCE,vowel,MED,Y
+Cocky,34,"Got my hoes in my clothes, they want ten like my toes (A$AP)",toes,38,I ain't gotta say it 'cause they know (Woo),know,END,ASSONANCE,vowel,MED,Y
+Cocky,35,Just pass me the rock and watch him go,rock,35,Just pass me the rock and watch him go,watch,INNER,SLANT,cmu,MED,Y
+Cocky,35,Just pass me the rock and watch him go,go,36,Just run me the play and let me know,know,END,PERFECT,cmu,HIGH,Y
+Cocky,35,Just pass me the rock and watch him go,go,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",go,END,REPEAT,spelling,HIGH,N
+Cocky,35,Just pass me the rock and watch him go,go,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",broken,INNER,ASSONANCE,vowel,MED,Y
+Cocky,35,Just pass me the rock and watch him go,go,38,I ain't gotta say it 'cause they know (Woo),know,END,PERFECT,cmu,HIGH,Y
+Cocky,36,Just run me the play and let me know,know,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",go,END,PERFECT,cmu,HIGH,Y
+Cocky,36,Just run me the play and let me know,know,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",broken,INNER,ASSONANCE,vowel,MED,Y
+Cocky,36,Just run me the play and let me know,let,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",leg,INNER,SLANT,cmu,MED,Y
+Cocky,36,Just run me the play and let me know,let,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",let,INNER,REPEAT,spelling,HIGH,N
+Cocky,36,Just run me the play and let me know,know,38,I ain't gotta say it 'cause they know (Woo),know,END,REPEAT,spelling,HIGH,N
+Cocky,36,Just run me the play and let me know,play,38,I ain't gotta say it 'cause they know (Woo),ain't,INNER,ASSONANCE,vowel,MED,Y
+Cocky,36,Just run me the play and let me know,play,38,I ain't gotta say it 'cause they know (Woo),say,INNER,PERFECT,cmu,HIGH,Y
+Cocky,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",broken,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",go,INNER,ASSONANCE,vowel,MED,Y
+Cocky,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",leg,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",let,INNER,SLANT,cmu,MED,Y
+Cocky,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",go,38,I ain't gotta say it 'cause they know (Woo),know,END,PERFECT,cmu,HIGH,Y
+Cocky,37,"With a broken leg, I let it go (Leggo, leggo, leggo)",broken,38,I ain't gotta say it 'cause they know (Woo),know,INNER,ASSONANCE,vowel,MED,Y
+Cocky,38,I ain't gotta say it 'cause they know (Woo),ain't,38,I ain't gotta say it 'cause they know (Woo),say,INNER,ASSONANCE,vowel,MED,Y
+Cocky,38,I ain't gotta say it 'cause they know (Woo),ain't,40,"He smoke when he wanna smoke, think the world is his ashtray",ashtray,INNER,ASSONANCE,vowel,MED,Y
+Cocky,38,I ain't gotta say it 'cause they know (Woo),gotta,40,"He smoke when he wanna smoke, think the world is his ashtray",wanna,INNER,SLANT,cmu,MED,Y
+Cocky,38,I ain't gotta say it 'cause they know (Woo),know,40,"He smoke when he wanna smoke, think the world is his ashtray",smoke,INNER,ASSONANCE,vowel,MED,Y
+Cocky,38,I ain't gotta say it 'cause they know (Woo),say,40,"He smoke when he wanna smoke, think the world is his ashtray",ashtray,INNER,PERFECT,cmu,HIGH,Y
+Cocky,39,"Gucci is materialistic, he's too fuckin' flashy",materialistic,40,"He smoke when he wanna smoke, think the world is his ashtray",think,INNER,ASSONANCE,vowel,MED,Y
+Cocky,39,"Gucci is materialistic, he's too fuckin' flashy",fuckin,41,"So, so deaf to these suckers, I'm like JD in '03",suckers,INNER,SLANT,cmu,MED,Y
+Cocky,39,"Gucci is materialistic, he's too fuckin' flashy",he's,41,"So, so deaf to these suckers, I'm like JD in '03",these,INNER,PERFECT,cmu,HIGH,Y
+Cocky,40,"He smoke when he wanna smoke, think the world is his ashtray",smoke,40,"He smoke when he wanna smoke, think the world is his ashtray",smoke,INNER,REPEAT,spelling,HIGH,N
+Cocky,40,"He smoke when he wanna smoke, think the world is his ashtray",when,41,"So, so deaf to these suckers, I'm like JD in '03",deaf,INNER,SLANT,cmu,MED,Y
+Cocky,40,"He smoke when he wanna smoke, think the world is his ashtray",ashtray,42,"My ho said that I'm too cocky, I don't play nothin' but me",play,INNER,PERFECT,cmu,HIGH,Y
+Cocky,40,"He smoke when he wanna smoke, think the world is his ashtray",smoke,42,"My ho said that I'm too cocky, I don't play nothin' but me",don't,INNER,ASSONANCE,vowel,MED,Y
+Cocky,40,"He smoke when he wanna smoke, think the world is his ashtray",smoke,42,"My ho said that I'm too cocky, I don't play nothin' but me",ho,INNER,ASSONANCE,vowel,MED,Y
+Cocky,40,"He smoke when he wanna smoke, think the world is his ashtray",wanna,42,"My ho said that I'm too cocky, I don't play nothin' but me",cocky,INNER,SLANT,cmu,MED,Y
+Cocky,40,"He smoke when he wanna smoke, think the world is his ashtray",wanna,42,"My ho said that I'm too cocky, I don't play nothin' but me",nothin,INNER,SLANT,cmu,MED,Y
+Cocky,40,"He smoke when he wanna smoke, think the world is his ashtray",when,42,"My ho said that I'm too cocky, I don't play nothin' but me",said,INNER,SLANT,cmu,MED,Y
+Cocky,41,"So, so deaf to these suckers, I'm like JD in '03",deaf,42,"My ho said that I'm too cocky, I don't play nothin' but me",said,INNER,SLANT,cmu,MED,Y
+Cocky,41,"So, so deaf to these suckers, I'm like JD in '03",like,43,"These girls got nothing to show you, I'll give you something to see",I'll,INNER,SLANT,cmu,MED,Y
+Cocky,41,"So, so deaf to these suckers, I'm like JD in '03",suckers,43,"These girls got nothing to show you, I'll give you something to see",nothing,INNER,ASSONANCE,vowel,MED,Y
+Cocky,41,"So, so deaf to these suckers, I'm like JD in '03",suckers,43,"These girls got nothing to show you, I'll give you something to see",something,INNER,ASSONANCE,vowel,MED,Y
+Cocky,41,"So, so deaf to these suckers, I'm like JD in '03",these,43,"These girls got nothing to show you, I'll give you something to see",see,INNER,ASSONANCE,vowel,MED,Y
+Cocky,41,"So, so deaf to these suckers, I'm like JD in '03",these,43,"These girls got nothing to show you, I'll give you something to see",These,INNER,REPEAT,spelling,HIGH,N
+Cocky,42,"My ho said that I'm too cocky, I don't play nothin' but me",cocky,42,"My ho said that I'm too cocky, I don't play nothin' but me",nothin,INNER,ASSONANCE,vowel,MED,Y
+Cocky,42,"My ho said that I'm too cocky, I don't play nothin' but me",ho,42,"My ho said that I'm too cocky, I don't play nothin' but me",don't,INNER,ASSONANCE,vowel,MED,Y
+Cocky,42,"My ho said that I'm too cocky, I don't play nothin' but me",cocky,43,"These girls got nothing to show you, I'll give you something to see",got,INNER,SLANT,cmu,MED,Y
+Cocky,42,"My ho said that I'm too cocky, I don't play nothin' but me",don't,43,"These girls got nothing to show you, I'll give you something to see",show,INNER,ASSONANCE,vowel,MED,Y
+Cocky,42,"My ho said that I'm too cocky, I don't play nothin' but me",ho,43,"These girls got nothing to show you, I'll give you something to see",show,INNER,PERFECT,cmu,HIGH,Y
+Cocky,42,"My ho said that I'm too cocky, I don't play nothin' but me",nothin,43,"These girls got nothing to show you, I'll give you something to see",got,INNER,ASSONANCE,vowel,MED,Y
+Cocky,42,"My ho said that I'm too cocky, I don't play nothin' but me",said,44,These dudes keep comin' up short like they a pair of capris,pair,INNER,SLANT,cmu,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",nothing,43,"These girls got nothing to show you, I'll give you something to see",something,INNER,PERFECT,spelling,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",These,43,"These girls got nothing to show you, I'll give you something to see",see,INNER,ASSONANCE,vowel,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",I'll,44,These dudes keep comin' up short like they a pair of capris,like,INNER,SLANT,cmu,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",nothing,44,These dudes keep comin' up short like they a pair of capris,comin,INNER,SLANT,cmu,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",see,44,These dudes keep comin' up short like they a pair of capris,keep,INNER,ASSONANCE,vowel,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",see,44,These dudes keep comin' up short like they a pair of capris,These,INNER,ASSONANCE,vowel,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",something,44,These dudes keep comin' up short like they a pair of capris,comin,INNER,SLANT,cmu,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",These,44,These dudes keep comin' up short like they a pair of capris,keep,INNER,SLANT,cmu,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",These,44,These dudes keep comin' up short like they a pair of capris,These,INNER,REPEAT,spelling,HIGH,N
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",see,45,"Don't group me with these rappers, these boys embarrassin' me",these,INNER,ASSONANCE,vowel,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",show,45,"Don't group me with these rappers, these boys embarrassin' me",Don't,INNER,ASSONANCE,vowel,MED,Y
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",These,45,"Don't group me with these rappers, these boys embarrassin' me",these,INNER,REPEAT,spelling,HIGH,N
+Cocky,43,"These girls got nothing to show you, I'll give you something to see",see,46,"Them dudes ain't got nothin' on me, I got a money disease",disease,END,ASSONANCE,vowel,MED,Y
+Cocky,44,These dudes keep comin' up short like they a pair of capris,These,44,These dudes keep comin' up short like they a pair of capris,keep,INNER,SLANT,cmu,MED,Y
+Cocky,44,These dudes keep comin' up short like they a pair of capris,capris,45,"Don't group me with these rappers, these boys embarrassin' me",rappers,INNER,SLANT,spelling,LOW,Y
+Cocky,44,These dudes keep comin' up short like they a pair of capris,dudes,45,"Don't group me with these rappers, these boys embarrassin' me",group,INNER,ASSONANCE,vowel,MED,Y
+Cocky,44,These dudes keep comin' up short like they a pair of capris,keep,45,"Don't group me with these rappers, these boys embarrassin' me",these,INNER,SLANT,cmu,MED,Y
+Cocky,44,These dudes keep comin' up short like they a pair of capris,pair,45,"Don't group me with these rappers, these boys embarrassin' me",embarrassin,INNER,ASSONANCE,vowel,MED,Y
+Cocky,44,These dudes keep comin' up short like they a pair of capris,These,45,"Don't group me with these rappers, these boys embarrassin' me",these,INNER,REPEAT,spelling,HIGH,N
+Cocky,44,These dudes keep comin' up short like they a pair of capris,comin,46,"Them dudes ain't got nothin' on me, I got a money disease",money,INNER,SLANT,cmu,MED,Y
+Cocky,44,These dudes keep comin' up short like they a pair of capris,dudes,46,"Them dudes ain't got nothin' on me, I got a money disease",dudes,INNER,REPEAT,spelling,HIGH,N
+Cocky,44,These dudes keep comin' up short like they a pair of capris,keep,46,"Them dudes ain't got nothin' on me, I got a money disease",disease,INNER,SLANT,cmu,MED,Y
+Cocky,44,These dudes keep comin' up short like they a pair of capris,These,46,"Them dudes ain't got nothin' on me, I got a money disease",disease,INNER,PERFECT,cmu,HIGH,Y
+Cocky,45,"Don't group me with these rappers, these boys embarrassin' me",these,45,"Don't group me with these rappers, these boys embarrassin' me",these,INNER,REPEAT,spelling,HIGH,N
+Cocky,45,"Don't group me with these rappers, these boys embarrassin' me",group,46,"Them dudes ain't got nothin' on me, I got a money disease",dudes,INNER,ASSONANCE,vowel,MED,Y
+Cocky,45,"Don't group me with these rappers, these boys embarrassin' me",these,46,"Them dudes ain't got nothin' on me, I got a money disease",disease,INNER,PERFECT,cmu,HIGH,Y
+Cocky,45,"Don't group me with these rappers, these boys embarrassin' me",Don't,47,"I'm too cold for these suckers, they ain't got more money than me",cold,INNER,ASSONANCE,vowel,MED,Y
+Cocky,45,"Don't group me with these rappers, these boys embarrassin' me",these,47,"I'm too cold for these suckers, they ain't got more money than me",these,INNER,REPEAT,spelling,HIGH,N
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",got,46,"Them dudes ain't got nothin' on me, I got a money disease",got,INNER,REPEAT,spelling,HIGH,N
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",got,46,"Them dudes ain't got nothin' on me, I got a money disease",nothin,INNER,ASSONANCE,vowel,MED,Y
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",nothin,46,"Them dudes ain't got nothin' on me, I got a money disease",got,INNER,ASSONANCE,vowel,MED,Y
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",ain't,47,"I'm too cold for these suckers, they ain't got more money than me",ain't,INNER,REPEAT,spelling,HIGH,N
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",disease,47,"I'm too cold for these suckers, they ain't got more money than me",these,INNER,PERFECT,cmu,HIGH,Y
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",got,47,"I'm too cold for these suckers, they ain't got more money than me",got,INNER,REPEAT,spelling,HIGH,N
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",money,47,"I'm too cold for these suckers, they ain't got more money than me",money,INNER,REPEAT,spelling,HIGH,N
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",money,47,"I'm too cold for these suckers, they ain't got more money than me",suckers,INNER,ASSONANCE,vowel,MED,Y
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",nothin,47,"I'm too cold for these suckers, they ain't got more money than me",got,INNER,ASSONANCE,vowel,MED,Y
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",disease,48,I wear my mink in the summer when it's a hundred and three (Burr),three,END,ASSONANCE,vowel,MED,Y
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",money,48,I wear my mink in the summer when it's a hundred and three (Burr),hundred,INNER,ASSONANCE,vowel,MED,Y
+Cocky,46,"Them dudes ain't got nothin' on me, I got a money disease",money,48,I wear my mink in the summer when it's a hundred and three (Burr),summer,INNER,SLANT,cmu,MED,Y
+Cocky,47,"I'm too cold for these suckers, they ain't got more money than me",suckers,47,"I'm too cold for these suckers, they ain't got more money than me",money,INNER,ASSONANCE,vowel,MED,Y
+Cocky,47,"I'm too cold for these suckers, they ain't got more money than me",money,48,I wear my mink in the summer when it's a hundred and three (Burr),hundred,INNER,ASSONANCE,vowel,MED,Y
+Cocky,47,"I'm too cold for these suckers, they ain't got more money than me",money,48,I wear my mink in the summer when it's a hundred and three (Burr),summer,INNER,SLANT,cmu,MED,Y
+Cocky,47,"I'm too cold for these suckers, they ain't got more money than me",suckers,48,I wear my mink in the summer when it's a hundred and three (Burr),hundred,INNER,ASSONANCE,vowel,MED,Y
+Cocky,47,"I'm too cold for these suckers, they ain't got more money than me",suckers,48,I wear my mink in the summer when it's a hundred and three (Burr),summer,INNER,ASSONANCE,vowel,MED,Y
+Cocky,47,"I'm too cold for these suckers, they ain't got more money than me",these,48,I wear my mink in the summer when it's a hundred and three (Burr),three,INNER,ASSONANCE,vowel,MED,Y
+Cocky,47,"I'm too cold for these suckers, they ain't got more money than me",ain't,49,I make a bitch feel self-conscious like she too shiny for me,make,INNER,ASSONANCE,vowel,MED,Y
+Cocky,47,"I'm too cold for these suckers, they ain't got more money than me",got,49,I make a bitch feel self-conscious like she too shiny for me,conscious,INNER,ASSONANCE,vowel,MED,Y
+Cocky,47,"I'm too cold for these suckers, they ain't got more money than me",these,49,I make a bitch feel self-conscious like she too shiny for me,feel,INNER,SLANT,cmu,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),summer,48,I wear my mink in the summer when it's a hundred and three (Burr),hundred,INNER,ASSONANCE,vowel,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),wear,48,I wear my mink in the summer when it's a hundred and three (Burr),when,INNER,SLANT,cmu,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),mink,49,I make a bitch feel self-conscious like she too shiny for me,bitch,INNER,ASSONANCE,vowel,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),three,49,I make a bitch feel self-conscious like she too shiny for me,feel,INNER,ASSONANCE,vowel,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),wear,49,I make a bitch feel self-conscious like she too shiny for me,self,INNER,ASSONANCE,vowel,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),when,49,I make a bitch feel self-conscious like she too shiny for me,self,INNER,ASSONANCE,vowel,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),hundred,50,"I know that bitch want to fuck me, but she's too tiny for me",fuck,INNER,ASSONANCE,vowel,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),mink,50,"I know that bitch want to fuck me, but she's too tiny for me",bitch,INNER,ASSONANCE,vowel,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),summer,50,"I know that bitch want to fuck me, but she's too tiny for me",fuck,INNER,SLANT,cmu,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),three,50,"I know that bitch want to fuck me, but she's too tiny for me",she's,INNER,ASSONANCE,vowel,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),three,51,"It's my way or the highway, you either like or leave",leave,END,ASSONANCE,vowel,MED,Y
+Cocky,48,I wear my mink in the summer when it's a hundred and three (Burr),three,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",sleeve,END,ASSONANCE,vowel,MED,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,like,49,I make a bitch feel self-conscious like she too shiny for me,shiny,INNER,SLANT,cmu,MED,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,shiny,50,"I know that bitch want to fuck me, but she's too tiny for me",tiny,END,MULTI,multi,HIGH,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,bitch,50,"I know that bitch want to fuck me, but she's too tiny for me",bitch,INNER,REPEAT,spelling,HIGH,N
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,conscious,50,"I know that bitch want to fuck me, but she's too tiny for me",want,INNER,ASSONANCE,vowel,MED,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,feel,50,"I know that bitch want to fuck me, but she's too tiny for me",she's,INNER,SLANT,cmu,MED,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,like,50,"I know that bitch want to fuck me, but she's too tiny for me",tiny,INNER,SLANT,cmu,MED,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,feel,51,"It's my way or the highway, you either like or leave",either,INNER,SLANT,cmu,MED,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,feel,51,"It's my way or the highway, you either like or leave",leave,INNER,SLANT,cmu,MED,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,like,51,"It's my way or the highway, you either like or leave",like,INNER,REPEAT,spelling,HIGH,N
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,make,51,"It's my way or the highway, you either like or leave",highway,INNER,ASSONANCE,vowel,MED,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,make,51,"It's my way or the highway, you either like or leave",way,INNER,ASSONANCE,vowel,MED,Y
+Cocky,49,I make a bitch feel self-conscious like she too shiny for me,shiny,51,"It's my way or the highway, you either like or leave",like,INNER,SLANT,cmu,MED,Y
+Cocky,50,"I know that bitch want to fuck me, but she's too tiny for me",she's,51,"It's my way or the highway, you either like or leave",either,INNER,SLANT,cmu,MED,Y
+Cocky,50,"I know that bitch want to fuck me, but she's too tiny for me",she's,51,"It's my way or the highway, you either like or leave",leave,INNER,SLANT,cmu,MED,Y
+Cocky,50,"I know that bitch want to fuck me, but she's too tiny for me",tiny,51,"It's my way or the highway, you either like or leave",like,INNER,SLANT,cmu,MED,Y
+Cocky,50,"I know that bitch want to fuck me, but she's too tiny for me",bitch,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",bricks,INNER,ASSONANCE,vowel,MED,Y
+Cocky,50,"I know that bitch want to fuck me, but she's too tiny for me",fuck,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",couple,INNER,ASSONANCE,vowel,MED,Y
+Cocky,50,"I know that bitch want to fuck me, but she's too tiny for me",know,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",Rollie,INNER,ASSONANCE,vowel,MED,Y
+Cocky,50,"I know that bitch want to fuck me, but she's too tiny for me",she's,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",G's,INNER,PERFECT,cmu,HIGH,Y
+Cocky,50,"I know that bitch want to fuck me, but she's too tiny for me",she's,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",sleeve,INNER,SLANT,cmu,MED,Y
+Cocky,50,"I know that bitch want to fuck me, but she's too tiny for me",want,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",cost,INNER,SLANT,cmu,MED,Y
+Cocky,51,"It's my way or the highway, you either like or leave",either,51,"It's my way or the highway, you either like or leave",leave,INNER,SLANT,cmu,MED,Y
+Cocky,51,"It's my way or the highway, you either like or leave",way,51,"It's my way or the highway, you either like or leave",highway,INNER,PERFECT,cmu,HIGH,Y
+Cocky,51,"It's my way or the highway, you either like or leave",leave,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",sleeve,END,PERFECT,cmu,HIGH,Y
+Cocky,51,"It's my way or the highway, you either like or leave",either,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",G's,INNER,SLANT,cmu,MED,Y
+Cocky,51,"It's my way or the highway, you either like or leave",either,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",sleeve,INNER,SLANT,cmu,MED,Y
+Cocky,51,"It's my way or the highway, you either like or leave",leave,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",G's,INNER,SLANT,cmu,MED,Y
+Cocky,51,"It's my way or the highway, you either like or leave",leave,53,"When I first fell on the scene, I drove a Cutlass Supreme",Supreme,END,SLANT,cmu,MED,Y
+Cocky,51,"It's my way or the highway, you either like or leave",either,53,"When I first fell on the scene, I drove a Cutlass Supreme",scene,INNER,SLANT,cmu,MED,Y
+Cocky,51,"It's my way or the highway, you either like or leave",either,53,"When I first fell on the scene, I drove a Cutlass Supreme",Supreme,INNER,SLANT,cmu,MED,Y
+Cocky,51,"It's my way or the highway, you either like or leave",leave,53,"When I first fell on the scene, I drove a Cutlass Supreme",scene,INNER,SLANT,cmu,MED,Y
+Cocky,51,"It's my way or the highway, you either like or leave",leave,54,"A half a brick, a pint of lean, and a new money machine",machine,END,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",G's,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",sleeve,INNER,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",sleeve,53,"When I first fell on the scene, I drove a Cutlass Supreme",Supreme,END,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",couple,53,"When I first fell on the scene, I drove a Cutlass Supreme",Cutlass,INNER,ASSONANCE,vowel,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",G's,53,"When I first fell on the scene, I drove a Cutlass Supreme",scene,INNER,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",G's,53,"When I first fell on the scene, I drove a Cutlass Supreme",Supreme,INNER,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",Rollie,53,"When I first fell on the scene, I drove a Cutlass Supreme",drove,INNER,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",sleeve,53,"When I first fell on the scene, I drove a Cutlass Supreme",scene,INNER,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",sleeve,54,"A half a brick, a pint of lean, and a new money machine",machine,END,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",bricks,54,"A half a brick, a pint of lean, and a new money machine",brick,INNER,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",couple,54,"A half a brick, a pint of lean, and a new money machine",money,INNER,ASSONANCE,vowel,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",G's,54,"A half a brick, a pint of lean, and a new money machine",lean,INNER,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",G's,54,"A half a brick, a pint of lean, and a new money machine",machine,INNER,SLANT,cmu,MED,Y
+Cocky,52,"This Rollie cost us the G's, a couple bricks on my sleeve (Yeah)",sleeve,54,"A half a brick, a pint of lean, and a new money machine",lean,INNER,SLANT,cmu,MED,Y
+Cocky,53,"When I first fell on the scene, I drove a Cutlass Supreme",scene,53,"When I first fell on the scene, I drove a Cutlass Supreme",Supreme,INNER,SLANT,cmu,MED,Y
+Cocky,53,"When I first fell on the scene, I drove a Cutlass Supreme",When,53,"When I first fell on the scene, I drove a Cutlass Supreme",fell,INNER,SLANT,cmu,MED,Y
+Cocky,53,"When I first fell on the scene, I drove a Cutlass Supreme",Supreme,54,"A half a brick, a pint of lean, and a new money machine",machine,END,SLANT,cmu,MED,Y
+Cocky,53,"When I first fell on the scene, I drove a Cutlass Supreme",Cutlass,54,"A half a brick, a pint of lean, and a new money machine",money,INNER,ASSONANCE,vowel,MED,Y
+Cocky,53,"When I first fell on the scene, I drove a Cutlass Supreme",scene,54,"A half a brick, a pint of lean, and a new money machine",lean,INNER,PERFECT,cmu,HIGH,Y
+Cocky,53,"When I first fell on the scene, I drove a Cutlass Supreme",scene,54,"A half a brick, a pint of lean, and a new money machine",machine,INNER,PERFECT,cmu,HIGH,Y
+Cocky,53,"When I first fell on the scene, I drove a Cutlass Supreme",Supreme,54,"A half a brick, a pint of lean, and a new money machine",lean,INNER,SLANT,cmu,MED,Y
+Cocky,54,"A half a brick, a pint of lean, and a new money machine",lean,54,"A half a brick, a pint of lean, and a new money machine",machine,INNER,PERFECT,cmu,HIGH,Y
