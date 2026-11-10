@@ -1,43 +1,47 @@
 import SwiftUI
 
 enum NounBankGroup: String, CaseIterable, Identifiable {
-    case liquids = "Liquids"
+    case people = "People"
+    case athletes = "Athletes"
+    case places = "Places"
     case food = "Food"
+    case liquids = "Liquids"
     case ice = "Ice"
     case wear = "Wear"
     case street = "Street"
     case vehicles = "Vehicles"
-    case people = "People"
-    case athletes = "Athletes"
     case animals = "Animals"
-    case games = "Games"
     case apps = "Apps"
+    case games = "Games"
     case looks = "Looks"
     case flowers = "Flowers"
     case feelings = "Feelings"
     case phrases = "Phrases"
     case wordplay = "Play on Words"
+    case fos = "FOS"
 
     var id: String { rawValue }
 
     var categories: [NounBankCategory] {
         switch self {
-        case .liquids: return [.liquors, .syrups, .drugs, .substances]
-        case .food: return [.food]
-        case .ice: return [.jewelry, .grills, .jewelers, .money]
-        case .wear: return [.brands, .clothing, .hair, .nails, .tattoos, .lingerie, .toys]
-        case .street: return [.guns, .kill, .opps, .places, .woman, .twerk, .streets, .kingpin, .trapLife, .paranoia]
-        case .vehicles: return [.cars, .motorcycles, .boats, .aviation, .military]
         case .people: return [.family, .friends, .producers, .artists, .celebs, .events, .characters, .actors, .streamers, .religion]
         case .athletes: return [.nba, .nfl, .boxing, .sports, .wrestlers]
+        case .places: return [.places]
+        case .food: return [.food]
+        case .liquids: return [.liquors, .syrups, .drugs, .substances]
+        case .ice: return [.jewelry, .grills, .jewelers, .money]
+        case .wear: return [.brands, .clothing, .hair, .nails, .tattoos, .lingerie, .toys]
+        case .street: return [.guns, .kill, .opps, .woman, .twerk, .streets, .kingpin, .trapLife, .paranoia]
+        case .vehicles: return [.cars, .motorcycles, .boats, .aviation, .military]
         case .animals: return [.animals, .insects]
-        case .games: return [.games]
         case .apps: return [.apps]
+        case .games: return [.games]
         case .looks: return [.looks]
         case .flowers: return [.flowers]
         case .feelings: return [.feelings]
         case .phrases: return [.phrases]
         case .wordplay: return [.wordplay]
+        case .fos: return []
         }
     }
 
@@ -96,8 +100,11 @@ struct NounBankSheet: View {
     let onInsert: (String) -> Void
     @Environment(\.dismiss) private var dismiss
     @AppStorage("nounBank.lastCategory") private var lastCategoryRaw = NounBankCategory.liquors.rawValue
+    @AppStorage("nounBank.lastGroup") private var lastGroupRaw = ""
     @State private var group: NounBankGroup = .liquids
     @State private var category: NounBankCategory = .liquors
+    @State private var fosArtist = FigurativeSpeech.artists[0]
+    @State private var fosFigure: String? = nil
     @State private var showingRecents = false
     @State private var query = ""
     @State private var linesHit: NounBankSearch.Hit?
@@ -202,13 +209,29 @@ struct NounBankSheet: View {
 
     private var isSearching: Bool { !needle.isEmpty }
 
-    /// Whether Blocks (wordplay) browsing is currently active
-    private var showBlocks: Bool { wordplayTab != nil || wordplaySubTab != nil }
+    /// Play on Words shows the Blocks rows. Search and Recents stay on the noun grid.
+    private var showsWordplayRows: Bool {
+        !isSearching && !showingRecents && group == .wordplay
+    }
+
+    /// FOS shows the artist row and the figure row.
+    private var showsFOSRows: Bool {
+        !isSearching && !showingRecents && group == .fos
+    }
 
     private var hits: [NounBankSearch.Hit] {
         let hits = NounBankSearch.hits(query: query, selected: category)
-        guard !showBlocks else { return [] }
-        return hits
+        guard showsWordplayRows else { return hits }
+        return hits.filter(matchesWordplayTab)
+    }
+
+    private func matchesWordplayTab(_ hit: NounBankSearch.Hit) -> Bool {
+        guard let tab = wordplayTab else { return true }
+        let chip = hit.item.insertWord
+        if let subTab = wordplaySubTab, subTab != .all {
+            return WordplayFlips.contains(chip, in: tab, subTab: subTab)
+        }
+        return WordplayFlips.contains(chip, in: tab)
     }
 
     private var recentHits: [NounBankSearch.Hit] {
@@ -230,25 +253,9 @@ struct NounBankSheet: View {
         Array(repeating: GridItem(.flexible(minimum: 64), spacing: 8), count: 4)
     }
 
-    /// Result counter for search/filter — shows "Showing X of Y entries"
-    private var resultCounterText: String? {
-        guard showBlocks else { return nil }
-        let total: Int
-        if let subTab = wordplaySubTab, let tab = wordplayTab {
-            total = WordplayFlips.entryCount(for: subTab, within: tab)
-        } else if let tab = wordplayTab {
-            total = WordplayFlips.entryCount(for: tab)
-        } else {
-            total = WordplayFlips.allEntryCount
-        }
-        let showing = gridHits.count
-        guard showing != total else { return nil }
-        return "Showing \(formattedCount(showing)) of \(formattedCount(total)) entries"
-    }
-
     /// Data completeness note — explains partial catalog data
     private var dataCompletenessNote: Text? {
-        guard showBlocks else { return nil }
+        guard showsWordplayRows else { return nil }
         let assignedCount = WordplayFlips.entriesWithTabAssignment
         let totalCount = WordplayFlips.allEntryCount
         let unassignedCount = totalCount - assignedCount
@@ -260,15 +267,6 @@ struct NounBankSheet: View {
         NavigationStack {
             VStack(spacing: 0) {
                 tabStrip
-                if let counter = resultCounterText {
-                    Text(counter)
-                        .font(.system(size: 12, weight: .medium, design: .rounded))
-                        .foregroundStyle(Momentum.contentSecondary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 4)
-                        .accessibilityLabel(counter)
-                }
                 if let note = dataCompletenessNote {
                     note
                 }
@@ -276,7 +274,9 @@ struct NounBankSheet: View {
                     feelingNote
                 }
 
-                if gridHits.isEmpty {
+                if showsFOSRows {
+                    fosList
+                } else if gridHits.isEmpty {
                     emptyState
                 } else {
                     chipGrid
@@ -308,7 +308,10 @@ struct NounBankSheet: View {
                 }
             }
             .onAppear {
-                if let saved = NounBankCategory(rawValue: lastCategoryRaw) {
+                if NounBankGroup(rawValue: lastGroupRaw) == .fos {
+                    group = .fos
+                    showingRecents = false
+                } else if let saved = NounBankCategory(rawValue: lastCategoryRaw) {
                     category = saved
                     group = NounBankGroup.containing(saved)
                 }
@@ -344,12 +347,15 @@ struct NounBankSheet: View {
                 .padding(.bottom, 8)
             }
 
-            // Blocks sub-tab row (Wordplay category -> Blocks tabs)
-            if showBlocks {
+            if showsWordplayRows {
                 wordplayTabRow
                 if wordplayTab != nil {
                     wordplaySubTabRow
                 }
+            }
+            if showsFOSRows {
+                fosArtistRow
+                fosFigureRow
             }
             if !showingRecents && !isSearching && group.categories.count > 1 {
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -385,7 +391,7 @@ struct NounBankSheet: View {
     }
 
     private var showsFeelingNote: Bool {
-        !isSearching && !showingRecents && category == .feelings
+        !isSearching && !showingRecents && group == .feelings && category == .feelings
     }
 
     private var feelingNote: some View {
@@ -508,7 +514,11 @@ struct NounBankSheet: View {
                 let dx = value.translation.width
                 let dy = value.translation.height
                 guard abs(dx) > 64, abs(dx) > abs(dy) * 1.75 else { return }
-                stepCategory(by: dx < 0 ? 1 : -1)
+                if group == .fos {
+                    stepFOSArtist(by: dx < 0 ? 1 : -1)
+                } else {
+                    stepCategory(by: dx < 0 ? 1 : -1)
+                }
             }
     }
 
@@ -521,17 +531,31 @@ struct NounBankSheet: View {
         lastCategoryRaw = next.rawValue
     }
 
+    private func stepFOSArtist(by step: Int) {
+        guard step != 0, let index = FigurativeSpeech.artists.firstIndex(of: fosArtist) else { return }
+        let next = index + step
+        guard FigurativeSpeech.artists.indices.contains(next) else { return }
+        withAnimation(.easeInOut(duration: 0.2)) {
+            fosArtist = FigurativeSpeech.artists[next]
+        }
+    }
+
     private func selectRecents() {
         query = ""
         showingRecents = true
+        lastGroupRaw = ""
     }
 
     private func selectGroup(_ g: NounBankGroup) {
         query = ""
         showingRecents = false
         group = g
+        lastGroupRaw = g.rawValue
+        wordplayTab = nil
+        wordplaySubTab = nil
+        guard let first = g.categories.first else { return }
         if !g.categories.contains(category) {
-            category = g.categories[0]
+            category = first
         }
         lastCategoryRaw = category.rawValue
     }
@@ -540,6 +564,7 @@ struct NounBankSheet: View {
         showingRecents = false
         category = cat
         group = NounBankGroup.containing(cat)
+        lastGroupRaw = group.rawValue
         lastCategoryRaw = cat.rawValue
     }
 
@@ -548,7 +573,6 @@ struct NounBankSheet: View {
             wordplayTab = tab
             wordplaySubTab = nil
         }
-        NounBankRecents.record(word: tab.map { "Blocks: \($0.title)" } ?? "Blocks", category: .wordplay)
     }
 
     private func selectWordplaySubTab(_ subTab: WordplaySubTab) {
@@ -556,6 +580,75 @@ struct NounBankSheet: View {
             wordplaySubTab = subTab
             wordplaySubTabScrollID = subTab
         }
+    }
+
+    private var fosArtistRow: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                ForEach(FigurativeSpeech.artists, id: \.self) { artist in
+                    NounBankPill(title: artist, selected: artist == fosArtist) {
+                        fosArtist = artist
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.bottom, 8)
+        }
+    }
+
+    private var fosFigureRow: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                ForEach(FigurativeSpeech.typeOrder, id: \.self) { figure in
+                    NounBankPill(title: figure, selected: fosFigure == figure) {
+                        fosFigure = figure
+                    }
+                }
+                NounBankPill(title: "All", selected: fosFigure == nil) {
+                    fosFigure = nil
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.bottom, 8)
+        }
+    }
+
+    private var fosList: some View {
+        let rows = FigurativeSpeech.bars(artist: fosArtist, figure: fosFigure)
+        return ScrollView {
+            if rows.isEmpty {
+                Text("No bars for this figure yet")
+                    .font(.system(size: 16, weight: .medium, design: .rounded))
+                    .foregroundStyle(Momentum.contentSecondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 16)
+                    .padding(.top, 24)
+                    .accessibilityLabel("No bars for this figure yet")
+            } else {
+                LazyVStack(alignment: .leading, spacing: 0) {
+                    ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(row.figure)
+                                .font(.system(size: 12, weight: .semibold, design: .rounded))
+                                .foregroundStyle(Momentum.contentSecondary)
+                            Text(row.bar)
+                                .font(.system(size: 15, weight: .medium, design: .rounded))
+                                .foregroundStyle(Momentum.contentPrimary)
+                                .fixedSize(horizontal: false, vertical: true)
+                            Text(row.song)
+                                .font(.system(size: 12, weight: .regular, design: .rounded))
+                                .foregroundStyle(Momentum.contentSecondary)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 10)
+                        .accessibilityElement(children: .combine)
+                        .accessibilityLabel("\(row.figure). \(row.bar). \(row.artist). \(row.song)")
+                    }
+                }
+            }
+        }
+        .simultaneousGesture(categorySwipe)
     }
 
 
@@ -933,7 +1026,7 @@ private struct NounMentionLinesView: View {
 
     private var nounHeaderLead: some View {
         Group {
-            if leadBullets.isEmpty && leadSignature == nil {
+            if leadBullets.isEmpty && leadSignature == nil && athleteCard?.surname == nil {
                 Text(passageText)
                     .font(.system(.callout, design: .rounded))
                     .foregroundStyle(Momentum.contentPrimary)
@@ -942,6 +1035,12 @@ private struct NounMentionLinesView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
             } else {
                 VStack(alignment: .leading, spacing: 7) {
+                    if let surname = athleteCard?.surname {
+                        Text(surname)
+                            .font(.system(.title3, design: .rounded).weight(.semibold))
+                            .foregroundStyle(Momentum.contentPrimary)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                     if let signature = leadSignature {
                         Text("\"\(signature.line)\" — \(signature.artist) | \(signature.song)")
                             .font(.system(.callout, design: .rounded))
@@ -1132,16 +1231,32 @@ private struct NounMentionLinesView: View {
         return "Filter by artist"
     }
 
+    private var athleteCard: AthleteSheet.Card? {
+        AthleteSheet.card(category: hit.category, word: hit.item.insertWord)
+    }
+
     private var leadSignature: NounCharacteristics.Signature? {
         NounCharacteristics.signature(category: hit.category, word: hit.item.insertWord)
     }
 
     private var leadBullets: [String] {
-        NounCharacteristics.bullets(category: hit.category, word: hit.item.insertWord)
+        let stored = NounCharacteristics.bullets(category: hit.category, word: hit.item.insertWord)
+        guard let card = athleteCard else { return stored }
+        if card.surname == nil {
+            if let line = card.line { return [line] }
+            return stored
+        }
+        guard let line = card.line else { return stored }
+        var bullets = stored.filter { !$0.lowercased().hasPrefix("tied to the ") }
+        bullets.insert(line, at: 0)
+        return bullets
     }
 
     private var leadSpoken: String {
         var parts: [String] = []
+        if let surname = athleteCard?.surname {
+            parts.append(surname)
+        }
         if let signature = leadSignature {
             parts.append("\(signature.line). \(signature.artist), \(signature.song)")
         }
