@@ -15,6 +15,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 | 5 | ty-dolla-sign | Ty Dolla $ign | 1279 | 45467 | 215331 | 35797 | 179534 | 211904 | 2026-11-10 01:19 ET |
 | 6 | tory-lanez | Tory Lanez | 1118 | 44124 | 260713 | 36227 | 224486 | 254903 | 2026-11-10 01:21 ET |
 | 7 | yeat | Yeat | 1219 | 35028 | 215296 | 36424 | 178872 | 211761 | 2026-11-10 01:22 ET |
+| 8 | j-cole | J. Cole | 637 | 33703 | 227851 | 29138 | 198713 | 223771 | 2026-11-10 01:24 ET |
 
 ## Failures
 
@@ -22,7 +23,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
 ## Status
 
-Finished 7/386: Yeat.
+Finished 8/386: J. Cole.
 
 ## Final
 
