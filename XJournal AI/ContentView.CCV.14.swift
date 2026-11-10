@@ -141,6 +141,8 @@ struct DynamicIslandToolbarView: View {
     @Binding var ghostModeRaw: String
     @Binding var showGhostPricing: Bool
     var onGhostModeChange: (String) -> Void = { _ in }
+    /// Noun-bank insert-at-caret. Lightbulb taps use this.
+    var onInsertWord: (String) -> Void = { _ in }
     
     // MARK: - Enhancement State Variables
     @State private var autoCollapseTimer: Timer?
@@ -304,7 +306,8 @@ struct DynamicIslandToolbarView: View {
         .popover(isPresented: $showRhymeGroupsPopover, arrowEdge: .bottom) {
             RhymeGroupListView(
                 groups: rhymeGroups,
-                currentText: currentText
+                currentText: currentText,
+                onInsert: onInsertWord
             )
             .presentationCompactAdaptation(.popover)
         }

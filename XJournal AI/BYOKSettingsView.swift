@@ -9,6 +9,7 @@
 //  3. Per-feature overrides: Planner, Polish, Sparkle model assignments.
 //
 
+import Combine
 import SwiftUI
 
 public enum BYOKModelSource: String, CaseIterable, Identifiable {
@@ -87,6 +88,11 @@ public struct BYOKPricingManifest: Codable {
             providers: ["anthropic": anthropic, "openai": openai, "google": google]
         )
     }()
+
+    /// Name the request router already calls. Same loader as `load()`.
+    public static func loadFromBundle() -> BYOKPricingManifest {
+        load()
+    }
 
     public static func load() -> BYOKPricingManifest {
         if let url = Bundle.main.url(forResource: "model_pricing", withExtension: "json"),

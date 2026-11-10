@@ -15,6 +15,7 @@ struct RapIslandToolbar: View {
     @Binding var stackOn: Bool      // stack: syllable stress emphasis
     let rhymeGroups: [RhymeHighlighterEngine.RhymeGroup]
     let currentText: String
+    var onInsertWord: (String) -> Void = { _ in }
 
     @State private var showGroups = false
     @State private var showRemindsMeOf = false
@@ -71,7 +72,7 @@ struct RapIslandToolbar: View {
         .buttonStyle(.plain)
         .accessibilityLabel("Rhyme groups")
         .popover(isPresented: $showGroups, arrowEdge: .bottom) {
-            RhymeGroupListView(groups: rhymeGroups, currentText: currentText)
+            RhymeGroupListView(groups: rhymeGroups, currentText: currentText, onInsert: onInsertWord)
                 .presentationCompactAdaptation(.popover)
         }
     }

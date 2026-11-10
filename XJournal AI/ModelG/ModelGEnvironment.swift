@@ -88,6 +88,22 @@ enum ModelGEnvironment {
         set { UserDefaults.standard.set(min(max(newValue, 0), 1), forKey: "model_g_quality_bar") }
     }
 
+    /// ModelGLLMService already calls these. Off unless the UserDefaults flag is set.
+    static var useLocalMLXAdapter: Bool {
+        get { (UserDefaults.standard.object(forKey: "model_g_local_mlx_enabled") as? Bool) ?? false }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_local_mlx_enabled") }
+    }
+
+    static var localMLXBaseURL: String {
+        get { UserDefaults.standard.string(forKey: "model_g_local_mlx_url") ?? "http://127.0.0.1:8766" }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_local_mlx_url") }
+    }
+
+    static var localMLXVoice: String {
+        get { UserDefaults.standard.string(forKey: "model_g_local_mlx_voice") ?? "Drake" }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_local_mlx_voice") }
+    }
+
     private static let v3OnlyDefaultsAppliedKey = "ai_product_defaults_v3_only_applied"
 
     /// Pin the product to a single Model G path (planned verse + corpus). Legacy engine flags stay in UserDefaults but are forced off.

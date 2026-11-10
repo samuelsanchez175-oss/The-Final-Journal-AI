@@ -30,6 +30,7 @@ struct RapSuggestionView: View {
     @Binding var humanCriticLoading: Bool
     @Binding var humanCriticError: String?
     let onRetryHumanCritic: () -> Void
+    var onInsertWord: (String) -> Void = { _ in }
 
     private var isParallelMode: Bool {
         leftTitle != nil && rightTitle != nil
@@ -58,7 +59,8 @@ struct RapSuggestionView: View {
         humanCriticFeedback: Binding<HumanCriticFeedback?>,
         humanCriticLoading: Binding<Bool>,
         humanCriticError: Binding<String?>,
-        onRetryHumanCritic: @escaping () -> Void
+        onRetryHumanCritic: @escaping () -> Void,
+        onInsertWord: @escaping (String) -> Void = { _ in }
     ) {
         self.suggestions = suggestions
         self.isLoading = isLoading
@@ -83,6 +85,7 @@ struct RapSuggestionView: View {
         _humanCriticLoading = humanCriticLoading
         _humanCriticError = humanCriticError
         self.onRetryHumanCritic = onRetryHumanCritic
+        self.onInsertWord = onInsertWord
     }
     
     @Environment(\.colorScheme) private var colorScheme
@@ -375,7 +378,8 @@ struct RapSuggestionView: View {
                 rhymeOn: $rhymeOn,
                 stackOn: $stackOn,
                 rhymeGroups: deckRhymeGroups,
-                currentText: currentDeckText
+                currentText: currentDeckText,
+                onInsertWord: onInsertWord
             )
             .padding(.bottom, 12)
         }

@@ -10,6 +10,21 @@
 
 import Foundation
 
+/// Planner, polish, and sparkle. The settings screen already writes these UserDefaults keys.
+public enum BYOKFeatureRole: String, Codable, Equatable {
+    case planner
+    case polish
+    case sparkle
+
+    public var userDefaultsKey: String {
+        switch self {
+        case .planner: return "byok_override_planner"
+        case .polish: return "byok_override_polish"
+        case .sparkle: return "byok_override_sparkle"
+        }
+    }
+}
+
 // MARK: - Protocols for Testing & Injection
 
 public protocol BYOKURLSessionProtocol {

@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import PennWork_Studios
+@testable import XJournal_AI
 
 private final class MockBridgeURLSession: BYOKURLSessionProtocol {
     var nextData: Data = Data()

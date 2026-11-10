@@ -971,7 +971,8 @@ struct NoteEditorView: View {
                 humanCriticFeedback: $rapSuggestionEngine.humanCriticFeedback,
                 humanCriticLoading: $rapSuggestionEngine.humanCriticLoading,
                 humanCriticError: $rapSuggestionEngine.humanCriticError,
-                onRetryHumanCritic: retryHumanCriticForCurrentNote
+                onRetryHumanCritic: retryHumanCriticForCurrentNote,
+                onInsertWord: insertNounBankWord
             )
         }
         .sheet(isPresented: $showRhymeSuggestions, onDismiss: { clearHoldPulse() }) {
@@ -1019,7 +1020,8 @@ struct NoteEditorView: View {
                 humanCriticFeedback: .constant(nil),
                 humanCriticLoading: .constant(false),
                 humanCriticError: .constant(nil),
-                onRetryHumanCritic: {}
+                onRetryHumanCritic: {},
+                onInsertWord: insertNounBankWord
             )
         }
         .toolbar {
@@ -1685,7 +1687,8 @@ struct NoteEditorView: View {
             onEnsureRhymes: { ensureEyeHighlight(.rhymes) },
             ghostModeRaw: $ghostModeRaw,
             showGhostPricing: $showGhostPricing,
-            onGhostModeChange: applyGhostMode
+            onGhostModeChange: applyGhostMode,
+            onInsertWord: insertNounBankWord
         )
         .frame(maxWidth: 680)
     }
