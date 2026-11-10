@@ -1,0 +1,4544 @@
+{
+  "artists": [
+    {
+      "name": "Lil Wayne",
+      "slug": "lil-wayne",
+      "side": "odd",
+      "core_pairs": 219369
+    },
+    {
+      "name": "Lil Uzi Vert",
+      "slug": "lil-uzi-vert",
+      "side": "odd",
+      "core_pairs": 121533
+    },
+    {
+      "name": "Juice WRLD",
+      "slug": "juice-wrld",
+      "side": "odd",
+      "core_pairs": 101606
+    },
+    {
+      "name": "JAY-Z",
+      "slug": "jay-z",
+      "side": "odd",
+      "core_pairs": 89888
+    },
+    {
+      "name": "YoungBoy Never Broke Again",
+      "slug": "youngboy-never-broke-again",
+      "side": "odd",
+      "core_pairs": 109033
+    },
+    {
+      "name": "Meek Mill",
+      "slug": "meek-mill",
+      "side": "odd",
+      "core_pairs": 88569
+    },
+    {
+      "name": "Chief Keef",
+      "slug": "chief-keef",
+      "side": "odd",
+      "core_pairs": 70518
+    },
+    {
+      "name": "Yo Gotti",
+      "slug": "yo-gotti",
+      "side": "odd",
+      "core_pairs": 60916
+    },
+    {
+      "name": "Trippie Redd",
+      "slug": "trippie-redd",
+      "side": "odd",
+      "core_pairs": 55329
+    },
+    {
+      "name": "Big Sean",
+      "slug": "big-sean",
+      "side": "odd",
+      "core_pairs": 52622
+    },
+    {
+      "name": "Destroy Lonely",
+      "slug": "destroy-lonely",
+      "side": "odd",
+      "core_pairs": 53812
+    },
+    {
+      "name": "Kodak Black",
+      "slug": "kodak-black",
+      "side": "odd",
+      "core_pairs": 49230
+    },
+    {
+      "name": "Tyler, the Creator",
+      "slug": "tyler-the-creator",
+      "side": "odd",
+      "core_pairs": 38489
+    },
+    {
+      "name": "Moneybagg Yo",
+      "slug": "moneybagg-yo",
+      "side": "odd",
+      "core_pairs": 38942
+    },
+    {
+      "name": "Migos",
+      "slug": "migos",
+      "side": "odd",
+      "core_pairs": 34473
+    },
+    {
+      "name": "Money Man",
+      "slug": "money-man",
+      "side": "odd",
+      "core_pairs": 35212
+    },
+    {
+      "name": "Playboi Carti",
+      "slug": "playboi-carti",
+      "side": "odd",
+      "core_pairs": 23423
+    },
+    {
+      "name": "03 Greedo",
+      "slug": "03-greedo",
+      "side": "odd",
+      "core_pairs": 32808
+    },
+    {
+      "name": "Don Toliver",
+      "slug": "don-toliver",
+      "side": "odd",
+      "core_pairs": 25141
+    },
+    {
+      "name": "Key Glock",
+      "slug": "key-glock",
+      "side": "odd",
+      "core_pairs": 28144
+    },
+    {
+      "name": "Fivio Foreign",
+      "slug": "fivio-foreign",
+      "side": "odd",
+      "core_pairs": 22224
+    },
+    {
+      "name": "Lil Baby",
+      "slug": "lil-baby",
+      "side": "odd",
+      "core_pairs": 25919
+    },
+    {
+      "name": "EST Gee",
+      "slug": "est-gee",
+      "side": "odd",
+      "core_pairs": 30259
+    },
+    {
+      "name": "NAV",
+      "slug": "nav",
+      "side": "odd",
+      "core_pairs": 23278
+    },
+    {
+      "name": "Roddy Ricch",
+      "slug": "roddy-ricch",
+      "side": "odd",
+      "core_pairs": 19858
+    },
+    {
+      "name": "NoCap",
+      "slug": "nocap",
+      "side": "odd",
+      "core_pairs": 17838
+    },
+    {
+      "name": "21 Savage",
+      "slug": "21-savage",
+      "side": "odd",
+      "core_pairs": 16744
+    },
+    {
+      "name": "YFN Lucci",
+      "slug": "yfn-lucci",
+      "side": "odd",
+      "core_pairs": 16541
+    },
+    {
+      "name": "SahBabii",
+      "slug": "sahbabii",
+      "side": "odd",
+      "core_pairs": 13303
+    },
+    {
+      "name": "Sleepy Hallow",
+      "slug": "sleepy-hallow",
+      "side": "odd",
+      "core_pairs": 12603
+    },
+    {
+      "name": "Quavo",
+      "slug": "quavo",
+      "side": "odd",
+      "core_pairs": 9414
+    },
+    {
+      "name": "GloRilla",
+      "slug": "glorilla",
+      "side": "odd",
+      "core_pairs": 11484
+    },
+    {
+      "name": "DaBaby",
+      "slug": "dababy",
+      "side": "odd",
+      "core_pairs": 7696
+    },
+    {
+      "name": "diamond*",
+      "slug": "diamond",
+      "side": "odd",
+      "core_pairs": 7071
+    },
+    {
+      "name": "Fridayy",
+      "slug": "fridayy",
+      "side": "odd",
+      "core_pairs": 2968
+    },
+    {
+      "name": "BashfortheWorld",
+      "slug": "bashfortheworld",
+      "side": "odd",
+      "core_pairs": 4112
+    },
+    {
+      "name": "Kendrick Lamar",
+      "slug": "kendrick-lamar",
+      "side": "odd",
+      "core_pairs": 2417
+    },
+    {
+      "name": "Sniper Gang",
+      "slug": "sniper-gang",
+      "side": "odd",
+      "core_pairs": 2453
+    },
+    {
+      "name": "Fatt Smaxk",
+      "slug": "fatt-smaxk",
+      "side": "odd",
+      "core_pairs": 2440
+    },
+    {
+      "name": "YUME",
+      "slug": "yume",
+      "side": "odd",
+      "core_pairs": 2007
+    },
+    {
+      "name": "Lil Unky",
+      "slug": "lil-unky",
+      "side": "odd",
+      "core_pairs": 1329
+    },
+    {
+      "name": "Metro Boomin",
+      "slug": "metro-boomin",
+      "side": "odd",
+      "core_pairs": 1214
+    },
+    {
+      "name": "DP Beats",
+      "slug": "dp-beats",
+      "side": "odd",
+      "core_pairs": 929
+    },
+    {
+      "name": "Ralo",
+      "slug": "ralo",
+      "side": "odd",
+      "core_pairs": 885
+    },
+    {
+      "name": "Philthy Rich",
+      "slug": "philthy-rich",
+      "side": "odd",
+      "core_pairs": 929
+    },
+    {
+      "name": "Mike WiLL Made-It",
+      "slug": "mike-will-made-it",
+      "side": "odd",
+      "core_pairs": 852
+    },
+    {
+      "name": "Jackboy",
+      "slug": "jackboy",
+      "side": "odd",
+      "core_pairs": 970
+    },
+    {
+      "name": "Mozzy",
+      "slug": "mozzy",
+      "side": "odd",
+      "core_pairs": 1003
+    },
+    {
+      "name": "Young Scooter",
+      "slug": "young-scooter",
+      "side": "odd",
+      "core_pairs": 670
+    },
+    {
+      "name": "Tadoe",
+      "slug": "tadoe",
+      "side": "odd",
+      "core_pairs": 785
+    },
+    {
+      "name": "Young Chop",
+      "slug": "young-chop",
+      "side": "odd",
+      "core_pairs": 541
+    },
+    {
+      "name": "Vulture Love",
+      "slug": "vulture-love",
+      "side": "odd",
+      "core_pairs": 994
+    },
+    {
+      "name": "Joyner Lucas",
+      "slug": "joyner-lucas",
+      "side": "odd",
+      "core_pairs": 678
+    },
+    {
+      "name": "Lil Tjay",
+      "slug": "lil-tjay",
+      "side": "odd",
+      "core_pairs": 656
+    },
+    {
+      "name": "BET",
+      "slug": "bet",
+      "side": "odd",
+      "core_pairs": 518
+    },
+    {
+      "name": "OMB Peezy",
+      "slug": "omb-peezy",
+      "side": "odd",
+      "core_pairs": 642
+    },
+    {
+      "name": "NLE Choppa",
+      "slug": "nle-choppa",
+      "side": "odd",
+      "core_pairs": 558
+    },
+    {
+      "name": "Shy Glizzy",
+      "slug": "shy-glizzy",
+      "side": "odd",
+      "core_pairs": 534
+    },
+    {
+      "name": "Gunna",
+      "slug": "gunna",
+      "side": "odd",
+      "core_pairs": 50763
+    },
+    {
+      "name": "Quality Control",
+      "slug": "quality-control",
+      "side": "even",
+      "core_pairs": 429149
+    },
+    {
+      "name": "Rick Ross",
+      "slug": "rick-ross",
+      "side": "even",
+      "core_pairs": 364836
+    },
+    {
+      "name": "Lil Yachty",
+      "slug": "lil-yachty",
+      "side": "even",
+      "core_pairs": 296941
+    },
+    {
+      "name": "Drake",
+      "slug": "drake",
+      "side": "even",
+      "core_pairs": 289188
+    },
+    {
+      "name": "Ty Dolla $ign",
+      "slug": "ty-dolla-sign",
+      "side": "even",
+      "core_pairs": 211904
+    },
+    {
+      "name": "Tory Lanez",
+      "slug": "tory-lanez",
+      "side": "even",
+      "core_pairs": 254903
+    },
+    {
+      "name": "Yeat",
+      "slug": "yeat",
+      "side": "even",
+      "core_pairs": 211761
+    },
+    {
+      "name": "J. Cole",
+      "slug": "j-cole",
+      "side": "even",
+      "core_pairs": 223771
+    },
+    {
+      "name": "Future",
+      "slug": "future",
+      "side": "even",
+      "core_pairs": 164130
+    },
+    {
+      "name": "Young Dolph",
+      "slug": "young-dolph",
+      "side": "even",
+      "core_pairs": 152111
+    },
+    {
+      "name": "Young Stoner Life",
+      "slug": "young-stoner-life",
+      "side": "even",
+      "core_pairs": 137607
+    },
+    {
+      "name": "Travis Scott",
+      "slug": "travis-scott",
+      "side": "even",
+      "core_pairs": 121764
+    },
+    {
+      "name": "G Herbo",
+      "slug": "g-herbo",
+      "side": "even",
+      "core_pairs": 173951
+    },
+    {
+      "name": "Fetty Wap",
+      "slug": "fetty-wap",
+      "side": "even",
+      "core_pairs": 104237
+    },
+    {
+      "name": "Chance the Rapper",
+      "slug": "chance-the-rapper",
+      "side": "even",
+      "core_pairs": 111855
+    },
+    {
+      "name": "Lil Keed",
+      "slug": "lil-keed",
+      "side": "even",
+      "core_pairs": 103128
+    },
+    {
+      "name": "Vic Mensa",
+      "slug": "vic-mensa",
+      "side": "even",
+      "core_pairs": 104704
+    },
+    {
+      "name": "Justin Bieber",
+      "slug": "justin-bieber",
+      "side": "even",
+      "core_pairs": 70781
+    },
+    {
+      "name": "Young Nudy",
+      "slug": "young-nudy",
+      "side": "even",
+      "core_pairs": 84771
+    },
+    {
+      "name": "Ken Carson",
+      "slug": "ken-carson",
+      "side": "even",
+      "core_pairs": 87013
+    },
+    {
+      "name": "Earl Sweatshirt",
+      "slug": "earl-sweatshirt",
+      "side": "even",
+      "core_pairs": 97586
+    },
+    {
+      "name": "Cash Cobain",
+      "slug": "cash-cobain",
+      "side": "even",
+      "core_pairs": 72041
+    },
+    {
+      "name": "Blac Youngsta",
+      "slug": "blac-youngsta",
+      "side": "even",
+      "core_pairs": 76447
+    },
+    {
+      "name": "PARTYNEXTDOOR",
+      "slug": "partynextdoor",
+      "side": "even",
+      "core_pairs": 41393
+    },
+    {
+      "name": "Frank Ocean",
+      "slug": "frank-ocean",
+      "side": "even",
+      "core_pairs": 43422
+    },
+    {
+      "name": "Latto",
+      "slug": "latto",
+      "side": "even",
+      "core_pairs": 57977
+    },
+    {
+      "name": "Veeze",
+      "slug": "veeze",
+      "side": "even",
+      "core_pairs": 81192
+    },
+    {
+      "name": "Cardi B",
+      "slug": "cardi-b",
+      "side": "even",
+      "core_pairs": 45847
+    },
+    {
+      "name": "Offset",
+      "slug": "offset",
+      "side": "even",
+      "core_pairs": 40997
+    },
+    {
+      "name": "Homixide Gang",
+      "slug": "homixide-gang",
+      "side": "even",
+      "core_pairs": 30107
+    },
+    {
+      "name": "BIA",
+      "slug": "bia",
+      "side": "even",
+      "core_pairs": 30192
+    },
+    {
+      "name": "Pop Smoke",
+      "slug": "pop-smoke",
+      "side": "even",
+      "core_pairs": 20862
+    },
+    {
+      "name": "BossMan Dlow",
+      "slug": "bossman-dlow",
+      "side": "even",
+      "core_pairs": 32596
+    },
+    {
+      "name": "BSlime",
+      "slug": "bslime",
+      "side": "even",
+      "core_pairs": 16816
+    },
+    {
+      "name": "Montana 700",
+      "slug": "montana-700",
+      "side": "even",
+      "core_pairs": 16402
+    },
+    {
+      "name": "Unfoonk",
+      "slug": "unfoonk",
+      "side": "even",
+      "core_pairs": 8105
+    },
+    {
+      "name": "Takeoff",
+      "slug": "takeoff",
+      "side": "even",
+      "core_pairs": 6930
+    },
+    {
+      "name": "Gucci Mane",
+      "slug": "gucci-mane",
+      "side": "even",
+      "core_pairs": 7146
+    },
+    {
+      "name": "Ballout",
+      "slug": "ballout",
+      "side": "even",
+      "core_pairs": 6189
+    },
+    {
+      "name": "Lil Bibby",
+      "slug": "lil-bibby",
+      "side": "even",
+      "core_pairs": 5547
+    },
+    {
+      "name": "Lil Durk",
+      "slug": "lil-durk",
+      "side": "even",
+      "core_pairs": 4654
+    },
+    {
+      "name": "Peewee Longway",
+      "slug": "peewee-longway",
+      "side": "even",
+      "core_pairs": 3690
+    },
+    {
+      "name": "Rich The Kid",
+      "slug": "rich-the-kid",
+      "side": "even",
+      "core_pairs": 2926
+    },
+    {
+      "name": "Fredo Santana",
+      "slug": "fredo-santana",
+      "side": "even",
+      "core_pairs": 3408
+    },
+    {
+      "name": "Zaytoven",
+      "slug": "zaytoven",
+      "side": "even",
+      "core_pairs": 3276
+    },
+    {
+      "name": "DJ Khaled",
+      "slug": "dj-khaled",
+      "side": "even",
+      "core_pairs": 2757
+    },
+    {
+      "name": "French Montana",
+      "slug": "french-montana",
+      "side": "even",
+      "core_pairs": 2579
+    },
+    {
+      "name": "Johnny Cinco",
+      "slug": "johnny-cinco",
+      "side": "even",
+      "core_pairs": 2119
+    },
+    {
+      "name": "Rob49",
+      "slug": "rob49",
+      "side": "even",
+      "core_pairs": 2959
+    },
+    {
+      "name": "DooWop (GBE)",
+      "slug": "doowop-gbe",
+      "side": "even",
+      "core_pairs": 2276
+    },
+    {
+      "name": "Lil Reese",
+      "slug": "lil-reese",
+      "side": "even",
+      "core_pairs": 1655
+    },
+    {
+      "name": "A Boogie wit da Hoodie",
+      "slug": "a-boogie-wit-da-hoodie",
+      "side": "even",
+      "core_pairs": 2008
+    },
+    {
+      "name": "Doe Boy",
+      "slug": "doe-boy",
+      "side": "even",
+      "core_pairs": 2366
+    },
+    {
+      "name": "2 Chainz",
+      "slug": "2-chainz",
+      "side": "even",
+      "core_pairs": 1456
+    },
+    {
+      "name": "Dave East",
+      "slug": "dave-east",
+      "side": "even",
+      "core_pairs": 1943
+    },
+    {
+      "name": "Polo G",
+      "slug": "polo-g",
+      "side": "even",
+      "core_pairs": 2526
+    },
+    {
+      "name": "YG",
+      "slug": "yg",
+      "side": "even",
+      "core_pairs": 1670
+    },
+    {
+      "name": "2Pac",
+      "slug": "2pac",
+      "side": "even",
+      "core_pairs": 1924
+    },
+    {
+      "name": "Q Money",
+      "slug": "q-money",
+      "side": "even",
+      "core_pairs": 1629
+    },
+    {
+      "name": "Capo (GBE)",
+      "slug": "capo-gbe",
+      "side": "even",
+      "core_pairs": 1778
+    },
+    {
+      "name": "21 Lil Harold",
+      "slug": "21-lil-harold",
+      "side": "even",
+      "core_pairs": 1599
+    },
+    {
+      "name": "Boosie Badazz",
+      "slug": "boosie-badazz",
+      "side": "even",
+      "core_pairs": 1617
+    },
+    {
+      "name": "Icewear Vezzo",
+      "slug": "icewear-vezzo",
+      "side": "even",
+      "core_pairs": 1448
+    },
+    {
+      "name": "PnB Rock",
+      "slug": "pnb-rock",
+      "side": "even",
+      "core_pairs": 1182
+    },
+    {
+      "name": "Kanye West",
+      "slug": "kanye-west",
+      "side": "even",
+      "core_pairs": 1100
+    },
+    {
+      "name": "HotBlock Jmoe",
+      "slug": "hotblock-jmoe",
+      "side": "even",
+      "core_pairs": 1605
+    },
+    {
+      "name": "Trae tha Truth",
+      "slug": "trae-tha-truth",
+      "side": "even",
+      "core_pairs": 1117
+    },
+    {
+      "name": "The Game",
+      "slug": "the-game",
+      "side": "even",
+      "core_pairs": 1299
+    },
+    {
+      "name": "DJ Drama",
+      "slug": "dj-drama",
+      "side": "even",
+      "core_pairs": 1072
+    },
+    {
+      "name": "DJ Pharris",
+      "slug": "dj-pharris",
+      "side": "even",
+      "core_pairs": 1016
+    },
+    {
+      "name": "PGF Nuk",
+      "slug": "pgf-nuk",
+      "side": "even",
+      "core_pairs": 1095
+    },
+    {
+      "name": "Rundown Zay",
+      "slug": "rundown-zay",
+      "side": "even",
+      "core_pairs": 1031
+    },
+    {
+      "name": "DJ Holiday",
+      "slug": "dj-holiday",
+      "side": "even",
+      "core_pairs": 696
+    },
+    {
+      "name": "Big Opp",
+      "slug": "big-opp",
+      "side": "even",
+      "core_pairs": 1487
+    },
+    {
+      "name": "Sosamann",
+      "slug": "sosamann",
+      "side": "even",
+      "core_pairs": 758
+    },
+    {
+      "name": "Coi Leray",
+      "slug": "coi-leray",
+      "side": "even",
+      "core_pairs": 907
+    },
+    {
+      "name": "Bandhunta Izzy",
+      "slug": "bandhunta-izzy",
+      "side": "even",
+      "core_pairs": 933
+    },
+    {
+      "name": "Bloody Jay",
+      "slug": "bloody-jay",
+      "side": "even",
+      "core_pairs": 646
+    },
+    {
+      "name": "YN Jay",
+      "slug": "yn-jay",
+      "side": "even",
+      "core_pairs": 864
+    },
+    {
+      "name": "Guap Tarantino",
+      "slug": "guap-tarantino",
+      "side": "even",
+      "core_pairs": 665
+    },
+    {
+      "name": "The Kid LAROI",
+      "slug": "the-kid-laroi",
+      "side": "even",
+      "core_pairs": 1201
+    },
+    {
+      "name": "Sada Baby",
+      "slug": "sada-baby",
+      "side": "even",
+      "core_pairs": 1056
+    },
+    {
+      "name": "Yungeen Ace",
+      "slug": "yungeen-ace",
+      "side": "even",
+      "core_pairs": 1044
+    },
+    {
+      "name": "Peezy",
+      "slug": "peezy",
+      "side": "even",
+      "core_pairs": 1093
+    },
+    {
+      "name": "YFN Trae Pound",
+      "slug": "yfn-trae-pound",
+      "side": "even",
+      "core_pairs": 638
+    },
+    {
+      "name": "22Gz",
+      "slug": "22gz",
+      "side": "even",
+      "core_pairs": 940
+    },
+    {
+      "name": "FTP Records",
+      "slug": "ftp-records",
+      "side": "even",
+      "core_pairs": 779
+    },
+    {
+      "name": "Rylo Rodriguez",
+      "slug": "rylo-rodriguez",
+      "side": "even",
+      "core_pairs": 831
+    },
+    {
+      "name": "Skrilla",
+      "slug": "skrilla",
+      "side": "even",
+      "core_pairs": 913
+    },
+    {
+      "name": "Lil Zay Osama",
+      "slug": "lil-zay-osama",
+      "side": "even",
+      "core_pairs": 915
+    },
+    {
+      "name": "No Plug",
+      "slug": "no-plug",
+      "side": "even",
+      "core_pairs": 553
+    },
+    {
+      "name": "John Wicks",
+      "slug": "john-wicks",
+      "side": "even",
+      "core_pairs": 620
+    },
+    {
+      "name": "Neek Bucks",
+      "slug": "neek-bucks",
+      "side": "even",
+      "core_pairs": 909
+    },
+    {
+      "name": "King Louie",
+      "slug": "king-louie",
+      "side": "even",
+      "core_pairs": 927
+    },
+    {
+      "name": "VonOff1700",
+      "slug": "vonoff1700",
+      "side": "even",
+      "core_pairs": 1284
+    },
+    {
+      "name": "Lotto Savage",
+      "slug": "lotto-savage",
+      "side": "even",
+      "core_pairs": 617
+    },
+    {
+      "name": "BlocBoy JB",
+      "slug": "blocboy-jb",
+      "side": "even",
+      "core_pairs": 606
+    },
+    {
+      "name": "The Weeknd",
+      "slug": "the-weeknd",
+      "side": "even",
+      "core_pairs": 586
+    },
+    {
+      "name": "Reem (Rap)",
+      "slug": "reem-rap",
+      "side": "even",
+      "core_pairs": 790
+    },
+    {
+      "name": "Sheff G",
+      "slug": "sheff-g",
+      "side": "even",
+      "core_pairs": 511
+    },
+    {
+      "name": "Godfather of Harlem",
+      "slug": "godfather-of-harlem",
+      "side": "even",
+      "core_pairs": 705
+    },
+    {
+      "name": "Pooh Shiesty",
+      "slug": "pooh-shiesty",
+      "side": "even",
+      "core_pairs": 946
+    },
+    {
+      "name": "1504 MuteBaby",
+      "slug": "1504-mutebaby",
+      "side": "even",
+      "core_pairs": 772
+    },
+    {
+      "name": "TeeJay3k",
+      "slug": "teejay3k",
+      "side": "even",
+      "core_pairs": 765
+    },
+    {
+      "name": "Jay Gwuapo",
+      "slug": "jay-gwuapo",
+      "side": "even",
+      "core_pairs": 567
+    },
+    {
+      "name": "Big Moochie Grape",
+      "slug": "big-moochie-grape",
+      "side": "even",
+      "core_pairs": 591
+    },
+    {
+      "name": "Ice Billion Berg",
+      "slug": "ice-billion-berg",
+      "side": "even",
+      "core_pairs": 543
+    },
+    {
+      "name": "Millyz",
+      "slug": "millyz",
+      "side": "even",
+      "core_pairs": 731
+    },
+    {
+      "name": "Lil Poppa",
+      "slug": "lil-poppa",
+      "side": "even",
+      "core_pairs": 774
+    },
+    {
+      "name": "Bay Swag",
+      "slug": "bay-swag",
+      "side": "even",
+      "core_pairs": 761
+    },
+    {
+      "name": "Ann Marie",
+      "slug": "ann-marie",
+      "side": "even",
+      "core_pairs": 534
+    },
+    {
+      "name": "Sauce Walka",
+      "slug": "sauce-walka",
+      "side": "even",
+      "core_pairs": 559
+    },
+    {
+      "name": "TEC",
+      "slug": "tec",
+      "side": "even",
+      "core_pairs": 729
+    },
+    {
+      "name": "Babyface Ray",
+      "slug": "babyface-ray",
+      "side": "even",
+      "core_pairs": 690
+    },
+    {
+      "name": "Bloodhound Lil Jeff",
+      "slug": "bloodhound-lil-jeff",
+      "side": "even",
+      "core_pairs": 626
+    },
+    {
+      "name": "Mudbaby Ru",
+      "slug": "mudbaby-ru",
+      "side": "even",
+      "core_pairs": 739
+    },
+    {
+      "name": "Only The Family",
+      "slug": "only-the-family",
+      "side": "even",
+      "core_pairs": 628
+    },
+    {
+      "name": "ZayBang",
+      "slug": "zaybang",
+      "side": "even",
+      "core_pairs": 575
+    },
+    {
+      "name": "Anuel AA",
+      "slug": "anuel-aa",
+      "side": "even",
+      "core_pairs": 518
+    },
+    {
+      "name": "FaZe Kaysan",
+      "slug": "faze-kaysan",
+      "side": "even",
+      "core_pairs": 558
+    },
+    {
+      "name": "Cash Berry",
+      "slug": "cash-berry",
+      "side": "even",
+      "core_pairs": 500
+    },
+    {
+      "name": "Chicken P",
+      "slug": "chicken-p",
+      "side": "even",
+      "core_pairs": 752
+    },
+    {
+      "name": "BabyTron",
+      "slug": "babytron",
+      "side": "even",
+      "core_pairs": 631
+    },
+    {
+      "name": "Z Money",
+      "slug": "z-money",
+      "side": "even",
+      "core_pairs": 650
+    },
+    {
+      "name": "Kur",
+      "slug": "kur",
+      "side": "even",
+      "core_pairs": 793
+    },
+    {
+      "name": "Lil Double 0",
+      "slug": "lil-double-0",
+      "side": "even",
+      "core_pairs": 555
+    },
+    {
+      "name": "Young Thug",
+      "slug": "young-thug",
+      "side": "even",
+      "core_pairs": 13761
+    }
+  ],
+  "all": "All artists",
+  "dropped_under_500_core_pairs": [
+    {
+      "name": "Tink",
+      "slug": "tink",
+      "side": "odd",
+      "core_pairs": 455
+    },
+    {
+      "name": "YFN Kay",
+      "slug": "yfn-kay",
+      "side": "odd",
+      "core_pairs": 434
+    },
+    {
+      "name": "Kolyon",
+      "slug": "kolyon",
+      "side": "odd",
+      "core_pairs": 443
+    },
+    {
+      "name": "Tee Grizzley",
+      "slug": "tee-grizzley",
+      "side": "odd",
+      "core_pairs": 459
+    },
+    {
+      "name": "Kane Rell",
+      "slug": "kane-rell",
+      "side": "odd",
+      "core_pairs": 386
+    },
+    {
+      "name": "King Von",
+      "slug": "king-von",
+      "side": "odd",
+      "core_pairs": 322
+    },
+    {
+      "name": "Lil Pump",
+      "slug": "lil-pump",
+      "side": "odd",
+      "core_pairs": 388
+    },
+    {
+      "name": "Sexyy Red",
+      "slug": "sexyy-red",
+      "side": "odd",
+      "core_pairs": 456
+    },
+    {
+      "name": "Nardo Wick",
+      "slug": "nardo-wick",
+      "side": "odd",
+      "core_pairs": 422
+    },
+    {
+      "name": "2KBABY",
+      "slug": "2kbaby",
+      "side": "odd",
+      "core_pairs": 340
+    },
+    {
+      "name": "DJ Bandz",
+      "slug": "dj-bandz",
+      "side": "odd",
+      "core_pairs": 375
+    },
+    {
+      "name": "Soulja Boy",
+      "slug": "soulja-boy",
+      "side": "odd",
+      "core_pairs": 224
+    },
+    {
+      "name": "Chris Brown",
+      "slug": "chris-brown",
+      "side": "odd",
+      "core_pairs": 316
+    },
+    {
+      "name": "ATLTop20",
+      "slug": "atltop20",
+      "side": "odd",
+      "core_pairs": 158
+    },
+    {
+      "name": "BabyDrill",
+      "slug": "babydrill",
+      "side": "odd",
+      "core_pairs": 316
+    },
+    {
+      "name": "Nicki Minaj",
+      "slug": "nicki-minaj",
+      "side": "odd",
+      "core_pairs": 244
+    },
+    {
+      "name": "YBN Nahmir",
+      "slug": "ybn-nahmir",
+      "side": "odd",
+      "core_pairs": 402
+    },
+    {
+      "name": "Katie Got Bandz",
+      "slug": "katie-got-bandz",
+      "side": "odd",
+      "core_pairs": 267
+    },
+    {
+      "name": "Omelly",
+      "slug": "omelly",
+      "side": "odd",
+      "core_pairs": 214
+    },
+    {
+      "name": "T.I.",
+      "slug": "t-i",
+      "side": "odd",
+      "core_pairs": 351
+    },
+    {
+      "name": "Dreezy",
+      "slug": "dreezy",
+      "side": "odd",
+      "core_pairs": 203
+    },
+    {
+      "name": "YNW Melly",
+      "slug": "ynw-melly",
+      "side": "odd",
+      "core_pairs": 242
+    },
+    {
+      "name": "Rich Kidz",
+      "slug": "rich-kidz",
+      "side": "odd",
+      "core_pairs": 171
+    },
+    {
+      "name": "Hardo",
+      "slug": "hardo",
+      "side": "odd",
+      "core_pairs": 204
+    },
+    {
+      "name": "Lil Blessin",
+      "slug": "lil-blessin",
+      "side": "odd",
+      "core_pairs": 178
+    },
+    {
+      "name": "Hunxho",
+      "slug": "hunxho",
+      "side": "odd",
+      "core_pairs": 259
+    },
+    {
+      "name": "JID",
+      "slug": "jid",
+      "side": "odd",
+      "core_pairs": 281
+    },
+    {
+      "name": "¥$",
+      "slug": "yens",
+      "side": "odd",
+      "core_pairs": 287
+    },
+    {
+      "name": "Lyrical Lemonade",
+      "slug": "lyrical-lemonade",
+      "side": "odd",
+      "core_pairs": 302
+    },
+    {
+      "name": "DJ Twin",
+      "slug": "dj-twin",
+      "side": "odd",
+      "core_pairs": 216
+    },
+    {
+      "name": "Boss Top",
+      "slug": "boss-top",
+      "side": "odd",
+      "core_pairs": 237
+    },
+    {
+      "name": "Albee Al",
+      "slug": "albee-al",
+      "side": "odd",
+      "core_pairs": 235
+    },
+    {
+      "name": "Cdot Honcho",
+      "slug": "cdot-honcho",
+      "side": "odd",
+      "core_pairs": 298
+    },
+    {
+      "name": "Kap G",
+      "slug": "kap-g",
+      "side": "odd",
+      "core_pairs": 122
+    },
+    {
+      "name": "Mustard",
+      "slug": "mustard",
+      "side": "odd",
+      "core_pairs": 238
+    },
+    {
+      "name": "William Aston",
+      "slug": "william-aston",
+      "side": "odd",
+      "core_pairs": 153
+    },
+    {
+      "name": "MAF Teeski",
+      "slug": "maf-teeski",
+      "side": "odd",
+      "core_pairs": 303
+    },
+    {
+      "name": "Terintino",
+      "slug": "terintino",
+      "side": "odd",
+      "core_pairs": 181
+    },
+    {
+      "name": "DJ Snake",
+      "slug": "dj-snake",
+      "side": "odd",
+      "core_pairs": 205
+    },
+    {
+      "name": "RiFF RAFF",
+      "slug": "riff-raff",
+      "side": "odd",
+      "core_pairs": 194
+    },
+    {
+      "name": "Jace!",
+      "slug": "jace",
+      "side": "odd",
+      "core_pairs": 234
+    },
+    {
+      "name": "K$upreme",
+      "slug": "ksupreme",
+      "side": "odd",
+      "core_pairs": 177
+    },
+    {
+      "name": "Humble Haitian",
+      "slug": "humble-haitian",
+      "side": "odd",
+      "core_pairs": 268
+    },
+    {
+      "name": "Never Broke Again",
+      "slug": "never-broke-again",
+      "side": "odd",
+      "core_pairs": 240
+    },
+    {
+      "name": "Rod Wave",
+      "slug": "rod-wave",
+      "side": "odd",
+      "core_pairs": 177
+    },
+    {
+      "name": "Lightshow",
+      "slug": "lightshow",
+      "side": "odd",
+      "core_pairs": 308
+    },
+    {
+      "name": "Conway the Machine",
+      "slug": "conway-the-machine",
+      "side": "odd",
+      "core_pairs": 244
+    },
+    {
+      "name": "Rell Havoc",
+      "slug": "rell-havoc",
+      "side": "odd",
+      "core_pairs": 246
+    },
+    {
+      "name": "tobi lou",
+      "slug": "tobi-lou",
+      "side": "odd",
+      "core_pairs": 242
+    },
+    {
+      "name": "Benny the Butcher",
+      "slug": "benny-the-butcher",
+      "side": "odd",
+      "core_pairs": 131
+    },
+    {
+      "name": "Steve Aoki",
+      "slug": "steve-aoki",
+      "side": "odd",
+      "core_pairs": 90
+    },
+    {
+      "name": "Skilla Baby",
+      "slug": "skilla-baby",
+      "side": "odd",
+      "core_pairs": 346
+    },
+    {
+      "name": "DJ Luke Nasty",
+      "slug": "dj-luke-nasty",
+      "side": "odd",
+      "core_pairs": 145
+    },
+    {
+      "name": "Lil Flash",
+      "slug": "lil-flash",
+      "side": "odd",
+      "core_pairs": 110
+    },
+    {
+      "name": "Desto Cash",
+      "slug": "desto-cash",
+      "side": "odd",
+      "core_pairs": 138
+    },
+    {
+      "name": "SG Tip",
+      "slug": "sg-tip",
+      "side": "odd",
+      "core_pairs": 156
+    },
+    {
+      "name": "Doodie Lo",
+      "slug": "doodie-lo",
+      "side": "odd",
+      "core_pairs": 253
+    },
+    {
+      "name": "Rocco (Rapper)",
+      "slug": "rocco-rapper",
+      "side": "odd",
+      "core_pairs": 128
+    },
+    {
+      "name": "Enima",
+      "slug": "enima",
+      "side": "odd",
+      "core_pairs": 151
+    },
+    {
+      "name": "Lil Eazzyy",
+      "slug": "lil-eazzyy",
+      "side": "odd",
+      "core_pairs": 257
+    },
+    {
+      "name": "INDIGO64",
+      "slug": "indigo64",
+      "side": "odd",
+      "core_pairs": 205
+    },
+    {
+      "name": "Golden Animal (rap)",
+      "slug": "golden-animal-rap",
+      "side": "odd",
+      "core_pairs": 200
+    },
+    {
+      "name": "YC (Yung Chris)",
+      "slug": "yc-yung-chris",
+      "side": "odd",
+      "core_pairs": 63
+    },
+    {
+      "name": "Lil Duke",
+      "slug": "lil-duke",
+      "side": "odd",
+      "core_pairs": 141
+    },
+    {
+      "name": "GoldenBoy CountUp",
+      "slug": "goldenboy-countup",
+      "side": "odd",
+      "core_pairs": 286
+    },
+    {
+      "name": "MO3",
+      "slug": "mo3",
+      "side": "odd",
+      "core_pairs": 173
+    },
+    {
+      "name": "Yamine",
+      "slug": "yamine",
+      "side": "odd",
+      "core_pairs": 111
+    },
+    {
+      "name": "Ann Marie",
+      "slug": "ann-marie",
+      "side": "odd",
+      "core_pairs": 126
+    },
+    {
+      "name": "London on da Track",
+      "slug": "london-on-da-track",
+      "side": "odd",
+      "core_pairs": 133
+    },
+    {
+      "name": "Pharrell Williams",
+      "slug": "pharrell-williams",
+      "side": "odd",
+      "core_pairs": 108
+    },
+    {
+      "name": "Sy Ari da Kid",
+      "slug": "sy-ari-da-kid",
+      "side": "odd",
+      "core_pairs": 100
+    },
+    {
+      "name": "Curly Savv",
+      "slug": "curly-savv",
+      "side": "odd",
+      "core_pairs": 196
+    },
+    {
+      "name": "Plies",
+      "slug": "plies",
+      "side": "odd",
+      "core_pairs": 165
+    },
+    {
+      "name": "100 Cloccs",
+      "slug": "100-cloccs",
+      "side": "odd",
+      "core_pairs": 118
+    },
+    {
+      "name": "Don Q",
+      "slug": "don-q",
+      "side": "odd",
+      "core_pairs": 224
+    },
+    {
+      "name": "K.M. tha Original",
+      "slug": "k-m-tha-original",
+      "side": "odd",
+      "core_pairs": 98
+    },
+    {
+      "name": "Kuttem Reese",
+      "slug": "kuttem-reese",
+      "side": "odd",
+      "core_pairs": 217
+    },
+    {
+      "name": "Rubi Rose",
+      "slug": "rubi-rose",
+      "side": "odd",
+      "core_pairs": 87
+    },
+    {
+      "name": "The Twilite Tone",
+      "slug": "the-twilite-tone",
+      "side": "odd",
+      "core_pairs": 177
+    },
+    {
+      "name": "Curren$y",
+      "slug": "currensy",
+      "side": "odd",
+      "core_pairs": 148
+    },
+    {
+      "name": "Rick Hyde",
+      "slug": "rick-hyde",
+      "side": "odd",
+      "core_pairs": 212
+    },
+    {
+      "name": "Kerch Dolla",
+      "slug": "kerch-dolla",
+      "side": "odd",
+      "core_pairs": 192
+    },
+    {
+      "name": "Buddah Bless",
+      "slug": "buddah-bless",
+      "side": "odd",
+      "core_pairs": 151
+    },
+    {
+      "name": "JARIS",
+      "slug": "jaris",
+      "side": "odd",
+      "core_pairs": 199
+    },
+    {
+      "name": "Skepta",
+      "slug": "skepta",
+      "side": "odd",
+      "core_pairs": 141
+    },
+    {
+      "name": "Jacquees",
+      "slug": "jacquees",
+      "side": "odd",
+      "core_pairs": 99
+    },
+    {
+      "name": "Tsu Surf",
+      "slug": "tsu-surf",
+      "side": "odd",
+      "core_pairs": 201
+    },
+    {
+      "name": "Juicy J",
+      "slug": "juicy-j",
+      "side": "odd",
+      "core_pairs": 102
+    },
+    {
+      "name": "Yung Stakks",
+      "slug": "yung-stakks",
+      "side": "odd",
+      "core_pairs": 138
+    },
+    {
+      "name": "DJ Showtime",
+      "slug": "dj-showtime",
+      "side": "odd",
+      "core_pairs": 185
+    },
+    {
+      "name": "Slutty Boyz",
+      "slug": "slutty-boyz",
+      "side": "odd",
+      "core_pairs": 177
+    },
+    {
+      "name": "Kay Flock",
+      "slug": "kay-flock",
+      "side": "odd",
+      "core_pairs": 158
+    },
+    {
+      "name": "Stape",
+      "slug": "stape",
+      "side": "odd",
+      "core_pairs": 110
+    },
+    {
+      "name": "42 Dugg",
+      "slug": "42-dugg",
+      "side": "odd",
+      "core_pairs": 141
+    },
+    {
+      "name": "Ghost808",
+      "slug": "ghost808",
+      "side": "odd",
+      "core_pairs": 127
+    },
+    {
+      "name": "Homey High Deff",
+      "slug": "homey-high-deff",
+      "side": "odd",
+      "core_pairs": 72
+    },
+    {
+      "name": "Melvoni",
+      "slug": "melvoni",
+      "side": "odd",
+      "core_pairs": 152
+    },
+    {
+      "name": "Bo Deal",
+      "slug": "bo-deal",
+      "side": "odd",
+      "core_pairs": 155
+    },
+    {
+      "name": "FaZe Kaysan",
+      "slug": "faze-kaysan",
+      "side": "odd",
+      "core_pairs": 156
+    },
+    {
+      "name": "Money Mu",
+      "slug": "money-mu",
+      "side": "odd",
+      "core_pairs": 159
+    },
+    {
+      "name": "James Tonic",
+      "slug": "james-tonic",
+      "side": "odd",
+      "core_pairs": 86
+    },
+    {
+      "name": "1900Rugrat",
+      "slug": "1900rugrat",
+      "side": "odd",
+      "core_pairs": 138
+    },
+    {
+      "name": "Don Quan (Daquan Drayton)",
+      "slug": "don-quan-daquan-drayton",
+      "side": "odd",
+      "core_pairs": 74
+    },
+    {
+      "name": "Wyclef Jean",
+      "slug": "wyclef-jean",
+      "side": "odd",
+      "core_pairs": 94
+    },
+    {
+      "name": "Foolio",
+      "slug": "foolio",
+      "side": "odd",
+      "core_pairs": 219
+    },
+    {
+      "name": "Jhené Aiko",
+      "slug": "jhene-aiko",
+      "side": "odd",
+      "core_pairs": 105
+    },
+    {
+      "name": "Shaun Sloan",
+      "slug": "shaun-sloan",
+      "side": "odd",
+      "core_pairs": 98
+    },
+    {
+      "name": "Yae Yae Jordan",
+      "slug": "yae-yae-jordan",
+      "side": "odd",
+      "core_pairs": 133
+    },
+    {
+      "name": "RX PESO",
+      "slug": "rx-peso",
+      "side": "odd",
+      "core_pairs": 62
+    },
+    {
+      "name": "DMX",
+      "slug": "dmx",
+      "side": "odd",
+      "core_pairs": 100
+    },
+    {
+      "name": "Ski Mask the Slump God",
+      "slug": "ski-mask-the-slump-god",
+      "side": "odd",
+      "core_pairs": 105
+    },
+    {
+      "name": "Young Dro",
+      "slug": "young-dro",
+      "side": "odd",
+      "core_pairs": 107
+    },
+    {
+      "name": "Jeremih",
+      "slug": "jeremih",
+      "side": "odd",
+      "core_pairs": 74
+    },
+    {
+      "name": "SevenSixSupah",
+      "slug": "sevensixsupah",
+      "side": "odd",
+      "core_pairs": 117
+    },
+    {
+      "name": "YungManny",
+      "slug": "yungmanny",
+      "side": "odd",
+      "core_pairs": 154
+    },
+    {
+      "name": "Ayetian",
+      "slug": "ayetian",
+      "side": "odd",
+      "core_pairs": 137
+    },
+    {
+      "name": "Dumar 1k",
+      "slug": "dumar-1k",
+      "side": "odd",
+      "core_pairs": 143
+    },
+    {
+      "name": "Marty Mard",
+      "slug": "marty-mard",
+      "side": "odd",
+      "core_pairs": 73
+    },
+    {
+      "name": "Blood Money",
+      "slug": "blood-money",
+      "side": "odd",
+      "core_pairs": 183
+    },
+    {
+      "name": "Pretty Savage",
+      "slug": "pretty-savage",
+      "side": "odd",
+      "core_pairs": 143
+    },
+    {
+      "name": "Robb Bank$",
+      "slug": "robb-banks",
+      "side": "odd",
+      "core_pairs": 75
+    },
+    {
+      "name": "DKGGlockboy1800",
+      "slug": "dkgglockboy1800",
+      "side": "odd",
+      "core_pairs": 55
+    },
+    {
+      "name": "A$AP Mob",
+      "slug": "asap-mob",
+      "side": "odd",
+      "core_pairs": 93
+    },
+    {
+      "name": "Big Ro6",
+      "slug": "big-ro6",
+      "side": "odd",
+      "core_pairs": 139
+    },
+    {
+      "name": "Ebk Eski",
+      "slug": "ebk-eski",
+      "side": "odd",
+      "core_pairs": 162
+    },
+    {
+      "name": "Trim",
+      "slug": "trim",
+      "side": "odd",
+      "core_pairs": 147
+    },
+    {
+      "name": "Bricc Baby",
+      "slug": "bricc-baby",
+      "side": "odd",
+      "core_pairs": 121
+    },
+    {
+      "name": "Kenny Muney",
+      "slug": "kenny-muney",
+      "side": "odd",
+      "core_pairs": 106
+    },
+    {
+      "name": "Tay-K",
+      "slug": "tay-k",
+      "side": "odd",
+      "core_pairs": 97
+    },
+    {
+      "name": "YTB Fatt",
+      "slug": "ytb-fatt",
+      "side": "odd",
+      "core_pairs": 78
+    },
+    {
+      "name": "Bankroll Fresh",
+      "slug": "bankroll-fresh",
+      "side": "odd",
+      "core_pairs": 98
+    },
+    {
+      "name": "Gudda Brvckin",
+      "slug": "gudda-brvckin",
+      "side": "odd",
+      "core_pairs": 134
+    },
+    {
+      "name": "SoFaygo",
+      "slug": "sofaygo",
+      "side": "odd",
+      "core_pairs": 60
+    },
+    {
+      "name": "YRN Murk",
+      "slug": "yrn-murk",
+      "side": "odd",
+      "core_pairs": 108
+    },
+    {
+      "name": "DJ ESCO",
+      "slug": "dj-esco",
+      "side": "odd",
+      "core_pairs": 99
+    },
+    {
+      "name": "K-Trap",
+      "slug": "k-trap",
+      "side": "odd",
+      "core_pairs": 77
+    },
+    {
+      "name": "M Row",
+      "slug": "m-row",
+      "side": "odd",
+      "core_pairs": 135
+    },
+    {
+      "name": "Popp Hunna",
+      "slug": "popp-hunna",
+      "side": "odd",
+      "core_pairs": 92
+    },
+    {
+      "name": "S.A.Y.L.E (Elyas le Simple)",
+      "slug": "s-a-y-l-e-elyas-le-simple",
+      "side": "odd",
+      "core_pairs": 83
+    },
+    {
+      "name": "Yung Miami",
+      "slug": "yung-miami",
+      "side": "odd",
+      "core_pairs": 106
+    },
+    {
+      "name": "Berner",
+      "slug": "berner",
+      "side": "odd",
+      "core_pairs": 82
+    },
+    {
+      "name": "JAE (Hip-Hop)",
+      "slug": "jae-hip-hop",
+      "side": "odd",
+      "core_pairs": 39
+    },
+    {
+      "name": "Kalan.FrFr",
+      "slug": "kalan-frfr",
+      "side": "odd",
+      "core_pairs": 139
+    },
+    {
+      "name": "RondoNumbaNine",
+      "slug": "rondonumbanine",
+      "side": "odd",
+      "core_pairs": 60
+    },
+    {
+      "name": "Butterknife King",
+      "slug": "butterknife-king",
+      "side": "odd",
+      "core_pairs": 58
+    },
+    {
+      "name": "Gleesh",
+      "slug": "gleesh",
+      "side": "odd",
+      "core_pairs": 66
+    },
+    {
+      "name": "Myloyd47",
+      "slug": "myloyd47",
+      "side": "odd",
+      "core_pairs": 100
+    },
+    {
+      "name": "Skengdo",
+      "slug": "skengdo",
+      "side": "odd",
+      "core_pairs": 111
+    },
+    {
+      "name": "SosMula",
+      "slug": "sosmula",
+      "side": "odd",
+      "core_pairs": 142
+    },
+    {
+      "name": "44G",
+      "slug": "44g",
+      "side": "odd",
+      "core_pairs": 45
+    },
+    {
+      "name": "Lil Donald",
+      "slug": "lil-donald",
+      "side": "odd",
+      "core_pairs": 95
+    },
+    {
+      "name": "TYuS",
+      "slug": "tyus",
+      "side": "odd",
+      "core_pairs": 65
+    },
+    {
+      "name": "Baby Keem",
+      "slug": "baby-keem",
+      "side": "odd",
+      "core_pairs": 153
+    },
+    {
+      "name": "Cassius Jay",
+      "slug": "cassius-jay",
+      "side": "odd",
+      "core_pairs": 80
+    },
+    {
+      "name": "Marlo",
+      "slug": "marlo",
+      "side": "odd",
+      "core_pairs": 91
+    },
+    {
+      "name": "Real Boston Richey",
+      "slug": "real-boston-richey",
+      "side": "odd",
+      "core_pairs": 112
+    },
+    {
+      "name": "Scarz Woo",
+      "slug": "scarz-woo",
+      "side": "odd",
+      "core_pairs": 69
+    },
+    {
+      "name": "Tray Savage",
+      "slug": "tray-savage",
+      "side": "odd",
+      "core_pairs": 85
+    },
+    {
+      "name": "Common",
+      "slug": "common",
+      "side": "odd",
+      "core_pairs": 142
+    },
+    {
+      "name": "Poppa Da Don",
+      "slug": "poppa-da-don",
+      "side": "odd",
+      "core_pairs": 43
+    },
+    {
+      "name": "Screwly G",
+      "slug": "screwly-g",
+      "side": "odd",
+      "core_pairs": 120
+    },
+    {
+      "name": ".idk.",
+      "slug": "idk",
+      "side": "odd",
+      "core_pairs": 49
+    },
+    {
+      "name": "Ajani Benitez",
+      "slug": "ajani-benitez",
+      "side": "odd",
+      "core_pairs": 47
+    },
+    {
+      "name": "Clay “Krucial” Perry III",
+      "slug": "clay-krucial-perry-iii",
+      "side": "odd",
+      "core_pairs": 83
+    },
+    {
+      "name": "Fireboy DML",
+      "slug": "fireboy-dml",
+      "side": "odd",
+      "core_pairs": 90
+    },
+    {
+      "name": "Quin NFN",
+      "slug": "quin-nfn",
+      "side": "odd",
+      "core_pairs": 150
+    },
+    {
+      "name": "Big 36oz",
+      "slug": "big-36oz",
+      "side": "odd",
+      "core_pairs": 82
+    },
+    {
+      "name": "Coca Vango",
+      "slug": "coca-vango",
+      "side": "odd",
+      "core_pairs": 55
+    },
+    {
+      "name": "El Alfa",
+      "slug": "el-alfa",
+      "side": "odd",
+      "core_pairs": 146
+    },
+    {
+      "name": "Lil Gotit",
+      "slug": "lil-gotit",
+      "side": "odd",
+      "core_pairs": 54
+    },
+    {
+      "name": "Mg Lil Bubba",
+      "slug": "mg-lil-bubba",
+      "side": "odd",
+      "core_pairs": 69
+    },
+    {
+      "name": "Pressa",
+      "slug": "pressa",
+      "side": "odd",
+      "core_pairs": 101
+    },
+    {
+      "name": "Young M.A",
+      "slug": "young-m-a",
+      "side": "odd",
+      "core_pairs": 96
+    },
+    {
+      "name": "Yung Bleu",
+      "slug": "yung-bleu",
+      "side": "odd",
+      "core_pairs": 86
+    },
+    {
+      "name": "Finesse2Tymes",
+      "slug": "finesse2tymes",
+      "side": "odd",
+      "core_pairs": 119
+    },
+    {
+      "name": "Landstrip Chip",
+      "slug": "landstrip-chip",
+      "side": "odd",
+      "core_pairs": 116
+    },
+    {
+      "name": "Muni Long",
+      "slug": "muni-long",
+      "side": "odd",
+      "core_pairs": 32
+    },
+    {
+      "name": "ScHoolboy Q",
+      "slug": "schoolboy-q",
+      "side": "odd",
+      "core_pairs": 79
+    },
+    {
+      "name": "USHER",
+      "slug": "usher",
+      "side": "odd",
+      "core_pairs": 66
+    },
+    {
+      "name": "Yung Sinn",
+      "slug": "yung-sinn",
+      "side": "odd",
+      "core_pairs": 81
+    },
+    {
+      "name": "Beece Daytona",
+      "slug": "beece-daytona",
+      "side": "odd",
+      "core_pairs": 72
+    },
+    {
+      "name": "Clever",
+      "slug": "clever",
+      "side": "odd",
+      "core_pairs": 96
+    },
+    {
+      "name": "Lah Daddy",
+      "slug": "lah-daddy",
+      "side": "odd",
+      "core_pairs": 114
+    },
+    {
+      "name": "REYNA (ITA)",
+      "slug": "reyna-ita",
+      "side": "odd",
+      "core_pairs": 193
+    },
+    {
+      "name": "Sonta",
+      "slug": "sonta",
+      "side": "odd",
+      "core_pairs": 84
+    },
+    {
+      "name": "SyKo",
+      "slug": "syko",
+      "side": "odd",
+      "core_pairs": 28
+    },
+    {
+      "name": "HotRod SKM",
+      "slug": "hotrod-skm",
+      "side": "odd",
+      "core_pairs": 76
+    },
+    {
+      "name": "Mac Miller",
+      "slug": "mac-miller",
+      "side": "odd",
+      "core_pairs": 105
+    },
+    {
+      "name": "OBN Jay",
+      "slug": "obn-jay",
+      "side": "odd",
+      "core_pairs": 95
+    },
+    {
+      "name": "Shawn Ferrari",
+      "slug": "shawn-ferrari",
+      "side": "odd",
+      "core_pairs": 93
+    },
+    {
+      "name": "TiaCorine",
+      "slug": "tiacorine",
+      "side": "odd",
+      "core_pairs": 59
+    },
+    {
+      "name": "Yung D.I.",
+      "slug": "yung-d-i",
+      "side": "odd",
+      "core_pairs": 29
+    },
+    {
+      "name": "AB",
+      "slug": "ab",
+      "side": "odd",
+      "core_pairs": 123
+    },
+    {
+      "name": "G4 Boyz",
+      "slug": "g4-boyz",
+      "side": "odd",
+      "core_pairs": 100
+    },
+    {
+      "name": "Golde",
+      "slug": "golde",
+      "side": "odd",
+      "core_pairs": 37
+    },
+    {
+      "name": "Jermaine Dupri",
+      "slug": "jermaine-dupri",
+      "side": "odd",
+      "core_pairs": 62
+    },
+    {
+      "name": "K CAMP",
+      "slug": "k-camp",
+      "side": "odd",
+      "core_pairs": 43
+    },
+    {
+      "name": "OnPointLikeOP",
+      "slug": "onpointlikeop",
+      "side": "odd",
+      "core_pairs": 97
+    },
+    {
+      "name": "Rico Beats",
+      "slug": "rico-beats",
+      "side": "odd",
+      "core_pairs": 121
+    },
+    {
+      "name": "Tony Zuko",
+      "slug": "tony-zuko",
+      "side": "odd",
+      "core_pairs": 70
+    },
+    {
+      "name": "6ix9ine",
+      "slug": "6ix9ine",
+      "side": "odd",
+      "core_pairs": 130
+    },
+    {
+      "name": "Armani Caesar",
+      "slug": "armani-caesar",
+      "side": "odd",
+      "core_pairs": 82
+    },
+    {
+      "name": "DJ Victoriouz",
+      "slug": "dj-victoriouz",
+      "side": "odd",
+      "core_pairs": 31
+    },
+    {
+      "name": "Fedy",
+      "slug": "fedy",
+      "side": "odd",
+      "core_pairs": 94
+    },
+    {
+      "name": "Gino Marley",
+      "slug": "gino-marley",
+      "side": "odd",
+      "core_pairs": 161
+    },
+    {
+      "name": "MF SKUAD",
+      "slug": "mf-skuad",
+      "side": "odd",
+      "core_pairs": 93
+    },
+    {
+      "name": "Prince Track",
+      "slug": "prince-track",
+      "side": "odd",
+      "core_pairs": 115
+    },
+    {
+      "name": "Rockout Danny",
+      "slug": "rockout-danny",
+      "side": "odd",
+      "core_pairs": 141
+    },
+    {
+      "name": "550",
+      "slug": "550",
+      "side": "odd",
+      "core_pairs": 32
+    },
+    {
+      "name": "BEO Lil Kenny",
+      "slug": "beo-lil-kenny",
+      "side": "odd",
+      "core_pairs": 139
+    },
+    {
+      "name": "Hurricane Wisdom",
+      "slug": "hurricane-wisdom",
+      "side": "odd",
+      "core_pairs": 75
+    },
+    {
+      "name": "Lor Scoota",
+      "slug": "lor-scoota",
+      "side": "odd",
+      "core_pairs": 73
+    },
+    {
+      "name": "Rubberband OG",
+      "slug": "rubberband-og",
+      "side": "odd",
+      "core_pairs": 78
+    },
+    {
+      "name": "Slayter",
+      "slug": "slayter",
+      "side": "odd",
+      "core_pairs": 80
+    },
+    {
+      "name": "Vanilla Ice",
+      "slug": "vanilla-ice",
+      "side": "odd",
+      "core_pairs": 36
+    },
+    {
+      "name": "2g Kaash",
+      "slug": "2g-kaash",
+      "side": "odd",
+      "core_pairs": 55
+    },
+    {
+      "name": "Baby Soulja",
+      "slug": "baby-soulja",
+      "side": "odd",
+      "core_pairs": 69
+    },
+    {
+      "name": "BigBankBandz",
+      "slug": "bigbankbandz",
+      "side": "odd",
+      "core_pairs": 92
+    },
+    {
+      "name": "Dess Dior",
+      "slug": "dess-dior",
+      "side": "odd",
+      "core_pairs": 60
+    },
+    {
+      "name": "EBG EJizzle",
+      "slug": "ebg-ejizzle",
+      "side": "odd",
+      "core_pairs": 67
+    },
+    {
+      "name": "Fetty Luciano",
+      "slug": "fetty-luciano",
+      "side": "odd",
+      "core_pairs": 51
+    },
+    {
+      "name": "Khaotic",
+      "slug": "khaotic",
+      "side": "odd",
+      "core_pairs": 54
+    },
+    {
+      "name": "Prince Bopp",
+      "slug": "prince-bopp",
+      "side": "odd",
+      "core_pairs": 105
+    },
+    {
+      "name": "SWAVAY",
+      "slug": "swavay",
+      "side": "odd",
+      "core_pairs": 83
+    },
+    {
+      "name": "YSL (USA)",
+      "slug": "ysl-usa",
+      "side": "odd",
+      "core_pairs": 75
+    },
+    {
+      "name": "41",
+      "slug": "41",
+      "side": "odd",
+      "core_pairs": 73
+    },
+    {
+      "name": "Burna Boy",
+      "slug": "burna-boy",
+      "side": "odd",
+      "core_pairs": 63
+    },
+    {
+      "name": "GARREN",
+      "slug": "garren",
+      "side": "odd",
+      "core_pairs": 83
+    },
+    {
+      "name": "Kayla Brianna",
+      "slug": "kayla-brianna",
+      "side": "odd",
+      "core_pairs": 45
+    },
+    {
+      "name": "Luh Tyler",
+      "slug": "luh-tyler",
+      "side": "odd",
+      "core_pairs": 175
+    },
+    {
+      "name": "Mýa",
+      "slug": "mya",
+      "side": "odd",
+      "core_pairs": 74
+    },
+    {
+      "name": "Stargate",
+      "slug": "stargate",
+      "side": "odd",
+      "core_pairs": 81
+    },
+    {
+      "name": "Trav",
+      "slug": "trav",
+      "side": "odd",
+      "core_pairs": 60
+    },
+    {
+      "name": "Chris Cheney",
+      "slug": "chris-cheney",
+      "side": "odd",
+      "core_pairs": 55
+    },
+    {
+      "name": "Kevin Gates",
+      "slug": "kevin-gates",
+      "side": "odd",
+      "core_pairs": 76
+    },
+    {
+      "name": "Skooly",
+      "slug": "skooly",
+      "side": "odd",
+      "core_pairs": 81
+    },
+    {
+      "name": "Young TeeTee",
+      "slug": "young-teetee",
+      "side": "odd",
+      "core_pairs": 65
+    },
+    {
+      "name": "D-Block Europe",
+      "slug": "d-block-europe",
+      "side": "odd",
+      "core_pairs": 69
+    },
+    {
+      "name": "K-Moe (USA)",
+      "slug": "k-moe-usa",
+      "side": "odd",
+      "core_pairs": 92
+    },
+    {
+      "name": "Kosine",
+      "slug": "kosine",
+      "side": "odd",
+      "core_pairs": 92
+    },
+    {
+      "name": "Twista",
+      "slug": "twista",
+      "side": "odd",
+      "core_pairs": 91
+    },
+    {
+      "name": "Benji Glo",
+      "slug": "benji-glo",
+      "side": "odd",
+      "core_pairs": 61
+    },
+    {
+      "name": "BJRNCK",
+      "slug": "bjrnck",
+      "side": "odd",
+      "core_pairs": 49
+    },
+    {
+      "name": "Fredo",
+      "slug": "fredo",
+      "side": "odd",
+      "core_pairs": 61
+    },
+    {
+      "name": "Law G",
+      "slug": "law-g",
+      "side": "odd",
+      "core_pairs": 46
+    },
+    {
+      "name": "Raq Baby",
+      "slug": "raq-baby",
+      "side": "odd",
+      "core_pairs": 113
+    },
+    {
+      "name": "Tiësto",
+      "slug": "tiesto",
+      "side": "odd",
+      "core_pairs": 38
+    },
+    {
+      "name": "Bandman Kevo",
+      "slug": "bandman-kevo",
+      "side": "odd",
+      "core_pairs": 101
+    },
+    {
+      "name": "Blueface",
+      "slug": "blueface",
+      "side": "odd",
+      "core_pairs": 95
+    },
+    {
+      "name": "Calboy",
+      "slug": "calboy",
+      "side": "odd",
+      "core_pairs": 98
+    },
+    {
+      "name": "Matt OX",
+      "slug": "matt-ox",
+      "side": "odd",
+      "core_pairs": 64
+    },
+    {
+      "name": "PopLord",
+      "slug": "poplord",
+      "side": "odd",
+      "core_pairs": 53
+    },
+    {
+      "name": "Shenseea",
+      "slug": "shenseea",
+      "side": "odd",
+      "core_pairs": 39
+    },
+    {
+      "name": "Baby Crash",
+      "slug": "baby-crash",
+      "side": "odd",
+      "core_pairs": 83
+    },
+    {
+      "name": "Choshane Johnson",
+      "slug": "choshane-johnson",
+      "side": "odd",
+      "core_pairs": 37
+    },
+    {
+      "name": "Da Boi Hustlz",
+      "slug": "da-boi-hustlz",
+      "side": "odd",
+      "core_pairs": 41
+    },
+    {
+      "name": "DeJ Loaf",
+      "slug": "dej-loaf",
+      "side": "odd",
+      "core_pairs": 25
+    },
+    {
+      "name": "JayDaYoungan",
+      "slug": "jaydayoungan",
+      "side": "odd",
+      "core_pairs": 121
+    },
+    {
+      "name": "Mello Buckzz",
+      "slug": "mello-buckzz",
+      "side": "odd",
+      "core_pairs": 93
+    },
+    {
+      "name": "Normani",
+      "slug": "normani",
+      "side": "odd",
+      "core_pairs": 63
+    },
+    {
+      "name": "Raw Youngin",
+      "slug": "raw-youngin",
+      "side": "odd",
+      "core_pairs": 48
+    },
+    {
+      "name": "ZillaKami",
+      "slug": "zillakami",
+      "side": "odd",
+      "core_pairs": 80
+    },
+    {
+      "name": "C-ClipBeatz",
+      "slug": "c-clipbeatz",
+      "side": "odd",
+      "core_pairs": 57
+    },
+    {
+      "name": "Gloss Up",
+      "slug": "gloss-up",
+      "side": "odd",
+      "core_pairs": 86
+    },
+    {
+      "name": "Lil Nuu",
+      "slug": "lil-nuu",
+      "side": "odd",
+      "core_pairs": 135
+    },
+    {
+      "name": "Shoreline Mafia",
+      "slug": "shoreline-mafia",
+      "side": "odd",
+      "core_pairs": 84
+    },
+    {
+      "name": "Wiz Khalifa",
+      "slug": "wiz-khalifa",
+      "side": "odd",
+      "core_pairs": 67
+    },
+    {
+      "name": "Amaru Cloud",
+      "slug": "amaru-cloud",
+      "side": "odd",
+      "core_pairs": 63
+    },
+    {
+      "name": "Busta Rhymes",
+      "slug": "busta-rhymes",
+      "side": "odd",
+      "core_pairs": 139
+    },
+    {
+      "name": "Charlie Heat",
+      "slug": "charlie-heat",
+      "side": "odd",
+      "core_pairs": 54
+    },
+    {
+      "name": "Kid Cudi",
+      "slug": "kid-cudi",
+      "side": "odd",
+      "core_pairs": 60
+    },
+    {
+      "name": "Pi’erre Bourne",
+      "slug": "pi-erre-bourne",
+      "side": "odd",
+      "core_pairs": 50
+    },
+    {
+      "name": "Bhad Bhabie",
+      "slug": "bhad-bhabie",
+      "side": "odd",
+      "core_pairs": 60
+    },
+    {
+      "name": "Juan Magán",
+      "slug": "juan-magan",
+      "side": "odd",
+      "core_pairs": 34
+    },
+    {
+      "name": "Mojo Sys",
+      "slug": "mojo-sys",
+      "side": "odd",
+      "core_pairs": 44
+    },
+    {
+      "name": "Sauce Twinz",
+      "slug": "sauce-twinz",
+      "side": "odd",
+      "core_pairs": 13
+    },
+    {
+      "name": "Camila Cabello",
+      "slug": "camila-cabello",
+      "side": "odd",
+      "core_pairs": 20
+    },
+    {
+      "name": "Edai",
+      "slug": "edai",
+      "side": "odd",
+      "core_pairs": 50
+    },
+    {
+      "name": "YDV Savage",
+      "slug": "ydv-savage",
+      "side": "odd",
+      "core_pairs": 25
+    },
+    {
+      "name": "Cago Leek",
+      "slug": "cago-leek",
+      "side": "odd",
+      "core_pairs": 107
+    },
+    {
+      "name": "Hboydaman",
+      "slug": "hboydaman",
+      "side": "odd",
+      "core_pairs": 50
+    },
+    {
+      "name": "Larry June",
+      "slug": "larry-june",
+      "side": "odd",
+      "core_pairs": 80
+    },
+    {
+      "name": "Chris James",
+      "slug": "chris-james",
+      "side": "odd",
+      "core_pairs": 16
+    },
+    {
+      "name": "Lil 50",
+      "slug": "lil-50",
+      "side": "odd",
+      "core_pairs": 94
+    },
+    {
+      "name": "Mookie Mardi Gra",
+      "slug": "mookie-mardi-gra",
+      "side": "odd",
+      "core_pairs": 53
+    },
+    {
+      "name": "Spodee",
+      "slug": "spodee",
+      "side": "odd",
+      "core_pairs": 66
+    },
+    {
+      "name": "Bazzi",
+      "slug": "bazzi",
+      "side": "odd",
+      "core_pairs": 32
+    },
+    {
+      "name": "EyeBlind",
+      "slug": "eyeblind",
+      "side": "odd",
+      "core_pairs": 45
+    },
+    {
+      "name": "Internet Money",
+      "slug": "internet-money",
+      "side": "odd",
+      "core_pairs": 41
+    },
+    {
+      "name": "Petho Burr",
+      "slug": "petho-burr",
+      "side": "odd",
+      "core_pairs": 39
+    },
+    {
+      "name": "DJ YUNG VAMP",
+      "slug": "dj-yung-vamp",
+      "side": "odd",
+      "core_pairs": 52
+    },
+    {
+      "name": "Man Rider",
+      "slug": "man-rider",
+      "side": "odd",
+      "core_pairs": 51
+    },
+    {
+      "name": "Totally Spies",
+      "slug": "totally-spies",
+      "side": "odd",
+      "core_pairs": 30
+    },
+    {
+      "name": "Apple Music",
+      "slug": "apple-music",
+      "side": "odd",
+      "core_pairs": 3
+    },
+    {
+      "name": "Fabolous",
+      "slug": "fabolous",
+      "side": "odd",
+      "core_pairs": 70
+    },
+    {
+      "name": "G2 (GMG)",
+      "slug": "g2-gmg",
+      "side": "odd",
+      "core_pairs": 39
+    },
+    {
+      "name": "PopOutBoyz",
+      "slug": "popoutboyz",
+      "side": "odd",
+      "core_pairs": 73
+    },
+    {
+      "name": "SleazyWorld Go",
+      "slug": "sleazyworld-go",
+      "side": "odd",
+      "core_pairs": 51
+    },
+    {
+      "name": "Lil West",
+      "slug": "lil-west",
+      "side": "odd",
+      "core_pairs": 26
+    },
+    {
+      "name": "Spazz Floss",
+      "slug": "spazz-floss",
+      "side": "odd",
+      "core_pairs": 30
+    },
+    {
+      "name": "Bullet",
+      "slug": "bullet",
+      "side": "odd",
+      "core_pairs": 19
+    },
+    {
+      "name": "WxSTxRN",
+      "slug": "wxstxrn",
+      "side": "odd",
+      "core_pairs": 54
+    },
+    {
+      "name": "Druski",
+      "slug": "druski",
+      "side": "odd",
+      "core_pairs": 16
+    },
+    {
+      "name": "GuyATL",
+      "slug": "guyatl",
+      "side": "odd",
+      "core_pairs": 30
+    },
+    {
+      "name": "Loopy Ferrell",
+      "slug": "loopy-ferrell",
+      "side": "odd",
+      "core_pairs": 33
+    },
+    {
+      "name": "David Pablo",
+      "slug": "david-pablo",
+      "side": "odd",
+      "core_pairs": 17
+    },
+    {
+      "name": "Lil Amp",
+      "slug": "lil-amp",
+      "side": "odd",
+      "core_pairs": 36
+    },
+    {
+      "name": "Nico Santanna",
+      "slug": "nico-santanna",
+      "side": "odd",
+      "core_pairs": 87
+    },
+    {
+      "name": "DJ Diamond Kuts",
+      "slug": "dj-diamond-kuts",
+      "side": "odd",
+      "core_pairs": 29
+    },
+    {
+      "name": "Kai Cenat",
+      "slug": "kai-cenat",
+      "side": "odd",
+      "core_pairs": 13
+    },
+    {
+      "name": "Ryan C.",
+      "slug": "ryan-c",
+      "side": "odd",
+      "core_pairs": 57
+    },
+    {
+      "name": "Dave Blunts",
+      "slug": "dave-blunts",
+      "side": "odd",
+      "core_pairs": 41
+    },
+    {
+      "name": "Futurebirds",
+      "slug": "futurebirds",
+      "side": "odd",
+      "core_pairs": 7
+    },
+    {
+      "name": "Deleted Artist 2",
+      "slug": "deleted-artist-2",
+      "side": "odd",
+      "core_pairs": 4
+    },
+    {
+      "name": "SOLP",
+      "slug": "solp",
+      "side": "odd",
+      "core_pairs": 47
+    },
+    {
+      "name": "Nigerian Coke",
+      "slug": "nigerian-coke",
+      "side": "odd",
+      "core_pairs": 22
+    },
+    {
+      "name": "Majid Razavi",
+      "slug": "majid-razavi",
+      "side": "odd",
+      "core_pairs": 32
+    },
+    {
+      "name": "Sheck Wes",
+      "slug": "sheck-wes",
+      "side": "odd",
+      "core_pairs": 7
+    },
+    {
+      "name": "Lil Lani",
+      "slug": "lil-lani",
+      "side": "odd",
+      "core_pairs": 7
+    },
+    {
+      "name": "Chaboki",
+      "slug": "chaboki",
+      "side": "odd",
+      "core_pairs": 14
+    },
+    {
+      "name": "Smileyface",
+      "slug": "smileyface",
+      "side": "odd",
+      "core_pairs": 11
+    },
+    {
+      "name": "Bouba Savage",
+      "slug": "bouba-savage",
+      "side": "odd",
+      "core_pairs": 6
+    },
+    {
+      "name": "ISOxo",
+      "slug": "isoxo",
+      "side": "odd",
+      "core_pairs": 8
+    },
+    {
+      "name": "ROSALÍA",
+      "slug": "rosalia",
+      "side": "odd",
+      "core_pairs": 3
+    },
+    {
+      "name": "DannyTheHydrant",
+      "slug": "dannythehydrant",
+      "side": "odd",
+      "core_pairs": 12
+    },
+    {
+      "name": "Cae Cartier",
+      "slug": "cae-cartier",
+      "side": "odd",
+      "core_pairs": 12
+    },
+    {
+      "name": "Jam (POL)",
+      "slug": "jam-pol",
+      "side": "odd",
+      "core_pairs": 7
+    },
+    {
+      "name": "FILI",
+      "slug": "fili",
+      "side": "odd",
+      "core_pairs": 0
+    },
+    {
+      "name": "Lil Tecca",
+      "slug": "lil-tecca",
+      "side": "even",
+      "core_pairs": 481
+    },
+    {
+      "name": "Post Malone",
+      "slug": "post-malone",
+      "side": "even",
+      "core_pairs": 495
+    },
+    {
+      "name": "Bizzy Banks",
+      "slug": "bizzy-banks",
+      "side": "even",
+      "core_pairs": 446
+    },
+    {
+      "name": "Loso Loaded",
+      "slug": "loso-loaded",
+      "side": "even",
+      "core_pairs": 465
+    },
+    {
+      "name": "Tyga",
+      "slug": "tyga",
+      "side": "even",
+      "core_pairs": 462
+    },
+    {
+      "name": "FredRarrii",
+      "slug": "fredrarrii",
+      "side": "even",
+      "core_pairs": 415
+    },
+    {
+      "name": "Skazz",
+      "slug": "skazz",
+      "side": "even",
+      "core_pairs": 219
+    },
+    {
+      "name": "Birdman",
+      "slug": "birdman",
+      "side": "even",
+      "core_pairs": 434
+    },
+    {
+      "name": "Hoodrich Pablo Juan",
+      "slug": "hoodrich-pablo-juan",
+      "side": "even",
+      "core_pairs": 448
+    },
+    {
+      "name": "A$AP Rocky",
+      "slug": "asap-rocky",
+      "side": "even",
+      "core_pairs": 477
+    },
+    {
+      "name": "Jason Derulo",
+      "slug": "jason-derulo",
+      "side": "even",
+      "core_pairs": 449
+    },
+    {
+      "name": "Summer Walker",
+      "slug": "summer-walker",
+      "side": "even",
+      "core_pairs": 334
+    },
+    {
+      "name": "Bankroll Mafia",
+      "slug": "bankroll-mafia",
+      "side": "even",
+      "core_pairs": 461
+    },
+    {
+      "name": "Obasi Jackson",
+      "slug": "obasi-jackson",
+      "side": "even",
+      "core_pairs": 250
+    },
+    {
+      "name": "Bop Menaxe",
+      "slug": "bop-menaxe",
+      "side": "even",
+      "core_pairs": 373
+    },
+    {
+      "name": "JNR CHOI",
+      "slug": "jnr-choi",
+      "side": "even",
+      "core_pairs": 322
+    },
+    {
+      "name": "DCG BROTHERS",
+      "slug": "dcg-brothers",
+      "side": "even",
+      "core_pairs": 493
+    },
+    {
+      "name": "Paxquiao",
+      "slug": "paxquiao",
+      "side": "even",
+      "core_pairs": 397
+    },
+    {
+      "name": "Genius Türkçe Çeviriler",
+      "slug": "genius-t-rk-e-eviriler",
+      "side": "even",
+      "core_pairs": 420
+    },
+    {
+      "name": "Saba",
+      "slug": "saba",
+      "side": "even",
+      "core_pairs": 481
+    },
+    {
+      "name": "Chuckyy",
+      "slug": "chuckyy",
+      "side": "even",
+      "core_pairs": 439
+    },
+    {
+      "name": "Tsunami J",
+      "slug": "tsunami-j",
+      "side": "even",
+      "core_pairs": 417
+    },
+    {
+      "name": "Yung Gravy",
+      "slug": "yung-gravy",
+      "side": "even",
+      "core_pairs": 328
+    },
+    {
+      "name": "DJ Showtime",
+      "slug": "dj-showtime",
+      "side": "even",
+      "core_pairs": 483
+    },
+    {
+      "name": "S.Dot (Rapper)",
+      "slug": "s-dot-rapper",
+      "side": "even",
+      "core_pairs": 296
+    },
+    {
+      "name": "Lil Lonnie",
+      "slug": "lil-lonnie",
+      "side": "even",
+      "core_pairs": 362
+    },
+    {
+      "name": "1WayFrank",
+      "slug": "1wayfrank",
+      "side": "even",
+      "core_pairs": 320
+    },
+    {
+      "name": "Casino",
+      "slug": "casino",
+      "side": "even",
+      "core_pairs": 423
+    },
+    {
+      "name": "H.E.R.",
+      "slug": "h-e-r",
+      "side": "even",
+      "core_pairs": 376
+    },
+    {
+      "name": "King Combs",
+      "slug": "king-combs",
+      "side": "even",
+      "core_pairs": 310
+    },
+    {
+      "name": "Louis Rose",
+      "slug": "louis-rose",
+      "side": "even",
+      "core_pairs": 422
+    },
+    {
+      "name": "DY Krazy",
+      "slug": "dy-krazy",
+      "side": "even",
+      "core_pairs": 377
+    },
+    {
+      "name": "Smokepurpp",
+      "slug": "smokepurpp",
+      "side": "even",
+      "core_pairs": 255
+    },
+    {
+      "name": "VEDO",
+      "slug": "vedo",
+      "side": "even",
+      "core_pairs": 241
+    },
+    {
+      "name": "Goodbye Tomorrow",
+      "slug": "goodbye-tomorrow",
+      "side": "even",
+      "core_pairs": 394
+    },
+    {
+      "name": "Red Cafe",
+      "slug": "red-cafe",
+      "side": "even",
+      "core_pairs": 361
+    },
+    {
+      "name": "Turk",
+      "slug": "turk",
+      "side": "even",
+      "core_pairs": 315
+    },
+    {
+      "name": "Blacc Zacc",
+      "slug": "blacc-zacc",
+      "side": "even",
+      "core_pairs": 263
+    },
+    {
+      "name": "SD",
+      "slug": "sd",
+      "side": "even",
+      "core_pairs": 251
+    },
+    {
+      "name": "Katy Perry",
+      "slug": "katy-perry",
+      "side": "even",
+      "core_pairs": 223
+    },
+    {
+      "name": "Trench Baby",
+      "slug": "trench-baby",
+      "side": "even",
+      "core_pairs": 342
+    },
+    {
+      "name": "Sad Frosty",
+      "slug": "sad-frosty",
+      "side": "even",
+      "core_pairs": 425
+    },
+    {
+      "name": "Yin Yang",
+      "slug": "yin-yang",
+      "side": "even",
+      "core_pairs": 260
+    },
+    {
+      "name": "Diddy",
+      "slug": "diddy",
+      "side": "even",
+      "core_pairs": 359
+    },
+    {
+      "name": "ManMan Savage",
+      "slug": "manman-savage",
+      "side": "even",
+      "core_pairs": 419
+    },
+    {
+      "name": "BandGang Lonnie Bands",
+      "slug": "bandgang-lonnie-bands",
+      "side": "even",
+      "core_pairs": 232
+    },
+    {
+      "name": "Prince Dre",
+      "slug": "prince-dre",
+      "side": "even",
+      "core_pairs": 441
+    },
+    {
+      "name": "A1Billionaire",
+      "slug": "a1billionaire",
+      "side": "even",
+      "core_pairs": 249
+    },
+    {
+      "name": "24Heavy",
+      "slug": "24heavy",
+      "side": "even",
+      "core_pairs": 305
+    },
+    {
+      "name": "Barloe Team",
+      "slug": "barloe-team",
+      "side": "even",
+      "core_pairs": 238
+    },
+    {
+      "name": "Cochise",
+      "slug": "cochise",
+      "side": "even",
+      "core_pairs": 338
+    },
+    {
+      "name": "Ray Vicks",
+      "slug": "ray-vicks",
+      "side": "even",
+      "core_pairs": 364
+    },
+    {
+      "name": "B-Lovee",
+      "slug": "b-lovee",
+      "side": "even",
+      "core_pairs": 301
+    },
+    {
+      "name": "HXLLYWOOD",
+      "slug": "hxllywood",
+      "side": "even",
+      "core_pairs": 235
+    },
+    {
+      "name": "Leaf Ward",
+      "slug": "leaf-ward",
+      "side": "even",
+      "core_pairs": 280
+    },
+    {
+      "name": "Trouble",
+      "slug": "trouble",
+      "side": "even",
+      "core_pairs": 462
+    },
+    {
+      "name": "B La B",
+      "slug": "b-la-b",
+      "side": "even",
+      "core_pairs": 287
+    },
+    {
+      "name": "Doechii",
+      "slug": "doechii",
+      "side": "even",
+      "core_pairs": 269
+    },
+    {
+      "name": "Rich Brian",
+      "slug": "rich-brian",
+      "side": "even",
+      "core_pairs": 339
+    },
+    {
+      "name": "UnoTheActivist",
+      "slug": "unotheactivist",
+      "side": "even",
+      "core_pairs": 267
+    },
+    {
+      "name": "1Up Tee",
+      "slug": "1up-tee",
+      "side": "even",
+      "core_pairs": 444
+    },
+    {
+      "name": "Farruko",
+      "slug": "farruko",
+      "side": "even",
+      "core_pairs": 392
+    },
+    {
+      "name": "KYLE",
+      "slug": "kyle",
+      "side": "even",
+      "core_pairs": 401
+    },
+    {
+      "name": "Made Man",
+      "slug": "made-man",
+      "side": "even",
+      "core_pairs": 207
+    },
+    {
+      "name": "Rae Sremmurd",
+      "slug": "rae-sremmurd",
+      "side": "even",
+      "core_pairs": 296
+    },
+    {
+      "name": "Spacejam Bo",
+      "slug": "spacejam-bo",
+      "side": "even",
+      "core_pairs": 235
+    },
+    {
+      "name": "Aarne",
+      "slug": "aarne",
+      "side": "even",
+      "core_pairs": 481
+    },
+    {
+      "name": "Healthy Chill",
+      "slug": "healthy-chill",
+      "side": "even",
+      "core_pairs": 409
+    },
+    {
+      "name": "Jose Guapo",
+      "slug": "jose-guapo",
+      "side": "even",
+      "core_pairs": 300
+    },
+    {
+      "name": "Mikey Flows",
+      "slug": "mikey-flows",
+      "side": "even",
+      "core_pairs": 339
+    },
+    {
+      "name": "Wacotron",
+      "slug": "wacotron",
+      "side": "even",
+      "core_pairs": 444
+    },
+    {
+      "name": "Charlie Angel",
+      "slug": "charlie-angel",
+      "side": "even",
+      "core_pairs": 330
+    },
+    {
+      "name": "Jeezy",
+      "slug": "jeezy",
+      "side": "even",
+      "core_pairs": 342
+    },
+    {
+      "name": "Paul Wall",
+      "slug": "paul-wall",
+      "side": "even",
+      "core_pairs": 314
+    },
+    {
+      "name": "Skrillex",
+      "slug": "skrillex",
+      "side": "even",
+      "core_pairs": 162
+    },
+    {
+      "name": "Uncle Murda",
+      "slug": "uncle-murda",
+      "side": "even",
+      "core_pairs": 207
+    },
+    {
+      "name": "Alicia Keys",
+      "slug": "alicia-keys",
+      "side": "even",
+      "core_pairs": 306
+    },
+    {
+      "name": "Manifest Music Group",
+      "slug": "manifest-music-group",
+      "side": "even",
+      "core_pairs": 441
+    },
+    {
+      "name": "Yung Mal",
+      "slug": "yung-mal",
+      "side": "even",
+      "core_pairs": 452
+    },
+    {
+      "name": "Booka600",
+      "slug": "booka600",
+      "side": "even",
+      "core_pairs": 151
+    },
+    {
+      "name": "DJ Scream",
+      "slug": "dj-scream",
+      "side": "even",
+      "core_pairs": 322
+    },
+    {
+      "name": "Quando Rondo",
+      "slug": "quando-rondo",
+      "side": "even",
+      "core_pairs": 326
+    },
+    {
+      "name": "Rema",
+      "slug": "rema",
+      "side": "even",
+      "core_pairs": 231
+    },
+    {
+      "name": "TGUT",
+      "slug": "tgut",
+      "side": "even",
+      "core_pairs": 319
+    },
+    {
+      "name": "Big Lean",
+      "slug": "big-lean",
+      "side": "even",
+      "core_pairs": 243
+    },
+    {
+      "name": "Nas",
+      "slug": "nas",
+      "side": "even",
+      "core_pairs": 381
+    },
+    {
+      "name": "Reese LAFLARE",
+      "slug": "reese-laflare",
+      "side": "even",
+      "core_pairs": 204
+    },
+    {
+      "name": "TRENDY BOIIZ",
+      "slug": "trendy-boiiz",
+      "side": "even",
+      "core_pairs": 240
+    },
+    {
+      "name": "2KDrae",
+      "slug": "2kdrae",
+      "side": "even",
+      "core_pairs": 317
+    },
+    {
+      "name": "Alan Awesome",
+      "slug": "alan-awesome",
+      "side": "even",
+      "core_pairs": 256
+    },
+    {
+      "name": "FBG Duck",
+      "slug": "fbg-duck",
+      "side": "even",
+      "core_pairs": 266
+    },
+    {
+      "name": "Lud Foe",
+      "slug": "lud-foe",
+      "side": "even",
+      "core_pairs": 416
+    },
+    {
+      "name": "Ye",
+      "slug": "ye",
+      "side": "even",
+      "core_pairs": 385
+    },
+    {
+      "name": "Bobby Raps",
+      "slug": "bobby-raps",
+      "side": "even",
+      "core_pairs": 239
+    },
+    {
+      "name": "Doa Beezy",
+      "slug": "doa-beezy",
+      "side": "even",
+      "core_pairs": 267
+    },
+    {
+      "name": "KSI",
+      "slug": "ksi",
+      "side": "even",
+      "core_pairs": 210
+    },
+    {
+      "name": "Loe Shimmy",
+      "slug": "loe-shimmy",
+      "side": "even",
+      "core_pairs": 418
+    },
+    {
+      "name": "Nigo",
+      "slug": "nigo",
+      "side": "even",
+      "core_pairs": 195
+    },
+    {
+      "name": "Rich Homie Quan",
+      "slug": "rich-homie-quan",
+      "side": "even",
+      "core_pairs": 299
+    },
+    {
+      "name": "Young M.A",
+      "slug": "young-m-a",
+      "side": "even",
+      "core_pairs": 431
+    },
+    {
+      "name": "Aminé",
+      "slug": "amin",
+      "side": "even",
+      "core_pairs": 165
+    },
+    {
+      "name": "Finesse2Tymes",
+      "slug": "finesse2tymes",
+      "side": "even",
+      "core_pairs": 406
+    },
+    {
+      "name": "Mac Ty",
+      "slug": "mac-ty",
+      "side": "even",
+      "core_pairs": 261
+    },
+    {
+      "name": "NBA KD",
+      "slug": "nba-kd",
+      "side": "even",
+      "core_pairs": 250
+    },
+    {
+      "name": "Taylor Bennett",
+      "slug": "taylor-bennett",
+      "side": "even",
+      "core_pairs": 318
+    },
+    {
+      "name": "Valee",
+      "slug": "valee",
+      "side": "even",
+      "core_pairs": 378
+    },
+    {
+      "name": "$hang (Rapper)",
+      "slug": "shang-rapper",
+      "side": "even",
+      "core_pairs": 142
+    },
+    {
+      "name": "Beece Daytona",
+      "slug": "beece-daytona",
+      "side": "even",
+      "core_pairs": 272
+    },
+    {
+      "name": "JACKBOYS",
+      "slug": "jackboys",
+      "side": "even",
+      "core_pairs": 189
+    },
+    {
+      "name": "SBGLol",
+      "slug": "sbglol",
+      "side": "even",
+      "core_pairs": 211
+    },
+    {
+      "name": "Suav Corleone",
+      "slug": "suav-corleone",
+      "side": "even",
+      "core_pairs": 154
+    },
+    {
+      "name": "DJ Kash",
+      "slug": "dj-kash",
+      "side": "even",
+      "core_pairs": 331
+    },
+    {
+      "name": "Ksoo",
+      "slug": "ksoo",
+      "side": "even",
+      "core_pairs": 157
+    },
+    {
+      "name": "Major Nine",
+      "slug": "major-nine",
+      "side": "even",
+      "core_pairs": 226
+    },
+    {
+      "name": "Ralph’s One",
+      "slug": "ralphs-one",
+      "side": "even",
+      "core_pairs": 164
+    },
+    {
+      "name": "THF LIL LAW",
+      "slug": "thf-lil-law",
+      "side": "even",
+      "core_pairs": 451
+    },
+    {
+      "name": "VL Deck",
+      "slug": "vl-deck",
+      "side": "even",
+      "core_pairs": 353
+    },
+    {
+      "name": "Yuno Miles",
+      "slug": "yuno-miles",
+      "side": "even",
+      "core_pairs": 257
+    },
+    {
+      "name": "DJ Nick",
+      "slug": "dj-nick",
+      "side": "even",
+      "core_pairs": 163
+    },
+    {
+      "name": "Giggs",
+      "slug": "giggs",
+      "side": "even",
+      "core_pairs": 221
+    },
+    {
+      "name": "J. Stone",
+      "slug": "j-stone",
+      "side": "even",
+      "core_pairs": 345
+    },
+    {
+      "name": "Jimbo World",
+      "slug": "jimbo-world",
+      "side": "even",
+      "core_pairs": 273
+    },
+    {
+      "name": "MobSquad Nard",
+      "slug": "mobsquad-nard",
+      "side": "even",
+      "core_pairs": 194
+    },
+    {
+      "name": "Poundside Pop",
+      "slug": "poundside-pop",
+      "side": "even",
+      "core_pairs": 144
+    },
+    {
+      "name": "Rico Beats",
+      "slug": "rico-beats",
+      "side": "even",
+      "core_pairs": 428
+    },
+    {
+      "name": "Wave Chapelle",
+      "slug": "wave-chapelle",
+      "side": "even",
+      "core_pairs": 217
+    },
+    {
+      "name": "Alcy",
+      "slug": "alcy",
+      "side": "even",
+      "core_pairs": 272
+    },
+    {
+      "name": "DJ Victoriouz",
+      "slug": "dj-victoriouz",
+      "side": "even",
+      "core_pairs": 127
+    },
+    {
+      "name": "FatBoy SSE",
+      "slug": "fatboy-sse",
+      "side": "even",
+      "core_pairs": 289
+    },
+    {
+      "name": "G.T.",
+      "slug": "g-t",
+      "side": "even",
+      "core_pairs": 333
+    },
+    {
+      "name": "Lil Pete",
+      "slug": "lil-pete",
+      "side": "even",
+      "core_pairs": 292
+    },
+    {
+      "name": "Octavian",
+      "slug": "octavian",
+      "side": "even",
+      "core_pairs": 183
+    },
+    {
+      "name": "Rah Swish",
+      "slug": "rah-swish",
+      "side": "even",
+      "core_pairs": 251
+    },
+    {
+      "name": "Zona Man",
+      "slug": "zona-man",
+      "side": "even",
+      "core_pairs": 439
+    },
+    {
+      "name": "Alexander Lewis",
+      "slug": "alexander-lewis",
+      "side": "even",
+      "core_pairs": 125
+    }
+  ],
+  "extra_cut_removed": [
+    {
+      "name": "Lil Gnar",
+      "slug": "lil-gnar",
+      "side": "odd",
+      "core_pairs": 599
+    },
+    {
+      "name": "Childish Gambino",
+      "slug": "childish-gambino",
+      "side": "even",
+      "core_pairs": 564
+    },
+    {
+      "name": "XXL",
+      "slug": "xxl",
+      "side": "even",
+      "core_pairs": 686
+    },
+    {
+      "name": "Fredo Bang",
+      "slug": "fredo-bang",
+      "side": "even",
+      "core_pairs": 725
+    },
+    {
+      "name": "Drench (USA)",
+      "slug": "drench-usa",
+      "side": "even",
+      "core_pairs": 569
+    },
+    {
+      "name": "Flipp Dinero",
+      "slug": "flipp-dinero",
+      "side": "even",
+      "core_pairs": 730
+    },
+    {
+      "name": "Wam SpinThaBin",
+      "slug": "wam-spinthabin",
+      "side": "even",
+      "core_pairs": 578
+    },
+    {
+      "name": "Jeymes Samuel",
+      "slug": "jeymes-samuel",
+      "side": "even",
+      "core_pairs": 595
+    }
+  ],
+  "missing_even": [
+    {
+      "rank": "538",
+      "name": "D1LebronGlazer",
+      "slug": "d1lebronglazer"
+    },
+    {
+      "rank": "540",
+      "name": "Jimin (지민)",
+      "slug": "jimin"
+    },
+    {
+      "rank": "542",
+      "name": "Queen Key",
+      "slug": "queen-key"
+    },
+    {
+      "rank": "544",
+      "name": "Sean Kingston",
+      "slug": "sean-kingston"
+    },
+    {
+      "rank": "546",
+      "name": "Tray Tray",
+      "slug": "tray-tray"
+    },
+    {
+      "rank": "548",
+      "name": "YGG Tay",
+      "slug": "ygg-tay"
+    },
+    {
+      "rank": "550",
+      "name": "Alley Boy",
+      "slug": "alley-boy"
+    },
+    {
+      "rank": "552",
+      "name": "BanzG",
+      "slug": "banzg"
+    },
+    {
+      "rank": "554",
+      "name": "DatBoiSkeet",
+      "slug": "datboiskeet"
+    },
+    {
+      "rank": "556",
+      "name": "Diplo",
+      "slug": "diplo"
+    },
+    {
+      "rank": "558",
+      "name": "Eearz",
+      "slug": "eearz"
+    },
+    {
+      "rank": "560",
+      "name": "G Count",
+      "slug": "g-count"
+    },
+    {
+      "rank": "562",
+      "name": "OMN Twee",
+      "slug": "omn-twee"
+    },
+    {
+      "rank": "564",
+      "name": "Revii",
+      "slug": "revii"
+    },
+    {
+      "rank": "566",
+      "name": "The Plug",
+      "slug": "the-plug"
+    },
+    {
+      "rank": "568",
+      "name": "Yung Jaroc",
+      "slug": "yung-jaroc"
+    },
+    {
+      "rank": "570",
+      "name": "Belly Gang Kushington",
+      "slug": "belly-gang-kushington"
+    },
+    {
+      "rank": "572",
+      "name": "Elijah James",
+      "slug": "elijah-james"
+    },
+    {
+      "rank": "574",
+      "name": "Jim Jones",
+      "slug": "jim-jones"
+    },
+    {
+      "rank": "576",
+      "name": "Lil Tracy",
+      "slug": "lil-tracy"
+    },
+    {
+      "rank": "578",
+      "name": "Mariah the Scientist",
+      "slug": "mariah-the-scientist"
+    },
+    {
+      "rank": "580",
+      "name": "Quicktrip",
+      "slug": "quicktrip"
+    },
+    {
+      "rank": "582",
+      "name": "Top5",
+      "slug": "top5"
+    },
+    {
+      "rank": "584",
+      "name": "Bankroll Freddie",
+      "slug": "bankroll-freddie"
+    },
+    {
+      "rank": "586",
+      "name": "Don Ace",
+      "slug": "don-ace"
+    },
+    {
+      "rank": "588",
+      "name": "Skooly",
+      "slug": "skooly"
+    },
+    {
+      "rank": "590",
+      "name": "Young TeeTee",
+      "slug": "young-teetee"
+    },
+    {
+      "rank": "592",
+      "name": "BigDawg Money",
+      "slug": "bigdawg-money"
+    },
+    {
+      "rank": "594",
+      "name": "DJ Ess",
+      "slug": "dj-ess"
+    },
+    {
+      "rank": "596",
+      "name": "Keith Ape",
+      "slug": "keith-ape"
+    },
+    {
+      "rank": "598",
+      "name": "Twista",
+      "slug": "twista"
+    },
+    {
+      "rank": "600",
+      "name": "30nickk",
+      "slug": "30nickk"
+    },
+    {
+      "rank": "602",
+      "name": "Benji Glo",
+      "slug": "benji-glo"
+    },
+    {
+      "rank": "604",
+      "name": "Brian X Allen",
+      "slug": "brian-x-allen"
+    },
+    {
+      "rank": "606",
+      "name": "Just Rich Gates",
+      "slug": "just-rich-gates"
+    },
+    {
+      "rank": "608",
+      "name": "Lihtz",
+      "slug": "lihtz"
+    },
+    {
+      "rank": "610",
+      "name": "Rocko",
+      "slug": "rocko"
+    },
+    {
+      "rank": "612",
+      "name": "YBS Skola",
+      "slug": "ybs-skola"
+    },
+    {
+      "rank": "614",
+      "name": "Bandman Kevo",
+      "slug": "bandman-kevo"
+    },
+    {
+      "rank": "616",
+      "name": "Boosa Da Shoota",
+      "slug": "boosa-da-shoota"
+    },
+    {
+      "rank": "618",
+      "name": "Joey Shady",
+      "slug": "joey-shady"
+    },
+    {
+      "rank": "620",
+      "name": "Nino Breeze",
+      "slug": "nino-breeze"
+    },
+    {
+      "rank": "622",
+      "name": "Project Pat",
+      "slug": "project-pat"
+    },
+    {
+      "rank": "624",
+      "name": "Woop",
+      "slug": "woop"
+    },
+    {
+      "rank": "626",
+      "name": "Bring Me The Horizon",
+      "slug": "bring-me-the-horizon"
+    },
+    {
+      "rank": "628",
+      "name": "Choshane Johnson",
+      "slug": "choshane-johnson"
+    },
+    {
+      "rank": "630",
+      "name": "Da Boi Hustlz",
+      "slug": "da-boi-hustlz"
+    },
+    {
+      "rank": "632",
+      "name": "JayDaYoungan",
+      "slug": "jaydayoungan"
+    },
+    {
+      "rank": "634",
+      "name": "Mello Buckzz",
+      "slug": "mello-buckzz"
+    },
+    {
+      "rank": "636",
+      "name": "Normani",
+      "slug": "normani"
+    },
+    {
+      "rank": "638",
+      "name": "Raw Youngin",
+      "slug": "raw-youngin"
+    },
+    {
+      "rank": "640",
+      "name": "ZillaKami",
+      "slug": "zillakami"
+    },
+    {
+      "rank": "642",
+      "name": "24hrs",
+      "slug": "24hrs"
+    },
+    {
+      "rank": "644",
+      "name": "Chopsquad DJ",
+      "slug": "chopsquad-dj"
+    },
+    {
+      "rank": "646",
+      "name": "Hotboii",
+      "slug": "hotboii"
+    },
+    {
+      "rank": "648",
+      "name": "Riko",
+      "slug": "riko"
+    },
+    {
+      "rank": "650",
+      "name": "TK Kravitz",
+      "slug": "tk-kravitz"
+    },
+    {
+      "rank": "652",
+      "name": "WizDaWizard",
+      "slug": "wizdawizard"
+    },
+    {
+      "rank": "654",
+      "name": "Big Flock",
+      "slug": "big-flock"
+    },
+    {
+      "rank": "656",
+      "name": "Central Cee",
+      "slug": "central-cee"
+    },
+    {
+      "rank": "658",
+      "name": "ChrisTheCooker",
+      "slug": "christhecooker"
+    },
+    {
+      "rank": "660",
+      "name": "Lil Nizzy",
+      "slug": "lil-nizzy"
+    },
+    {
+      "rank": "662",
+      "name": "Arin Ray",
+      "slug": "arin-ray"
+    },
+    {
+      "rank": "664",
+      "name": "Derez De’Shon",
+      "slug": "derez-deshon"
+    },
+    {
+      "rank": "666",
+      "name": "KAIBA",
+      "slug": "kaiba"
+    },
+    {
+      "rank": "668",
+      "name": "Real Recognize Rio",
+      "slug": "real-recognize-rio"
+    },
+    {
+      "rank": "670",
+      "name": "That Mexican OT",
+      "slug": "that-mexican-ot"
+    },
+    {
+      "rank": "672",
+      "name": "D.Flores",
+      "slug": "d-flores"
+    },
+    {
+      "rank": "674",
+      "name": "RealBosses",
+      "slug": "realbosses"
+    },
+    {
+      "rank": "676",
+      "name": "Alison Wonderland",
+      "slug": "alison-wonderland"
+    },
+    {
+      "rank": "678",
+      "name": "FattMack",
+      "slug": "fattmack"
+    },
+    {
+      "rank": "680",
+      "name": "Justo (GBE)",
+      "slug": "justo-gbe"
+    },
+    {
+      "rank": "682",
+      "name": "Ralfy the Plug",
+      "slug": "ralfy-the-plug"
+    },
+    {
+      "rank": "684",
+      "name": "James Ongige",
+      "slug": "james-ongige"
+    },
+    {
+      "rank": "686",
+      "name": "Momoh",
+      "slug": "momoh"
+    },
+    {
+      "rank": "688",
+      "name": "Ralphsnightmare",
+      "slug": "ralphsnightmare"
+    },
+    {
+      "rank": "690",
+      "name": "Yung Mazi",
+      "slug": "yung-mazi"
+    },
+    {
+      "rank": "692",
+      "name": "Billie Eilish",
+      "slug": "billie-eilish"
+    },
+    {
+      "rank": "694",
+      "name": "Internet Money",
+      "slug": "internet-money"
+    },
+    {
+      "rank": "696",
+      "name": "Petho Burr",
+      "slug": "petho-burr"
+    },
+    {
+      "rank": "698",
+      "name": "Charlie Sloth",
+      "slug": "charlie-sloth"
+    },
+    {
+      "rank": "700",
+      "name": "JT the Bigga Figga",
+      "slug": "jt-the-bigga-figga"
+    },
+    {
+      "rank": "702",
+      "name": "Mura Masa",
+      "slug": "mura-masa"
+    },
+    {
+      "rank": "704",
+      "name": "310Babii",
+      "slug": "310babii"
+    },
+    {
+      "rank": "706",
+      "name": "Calvin Harris",
+      "slug": "calvin-harris"
+    },
+    {
+      "rank": "708",
+      "name": "Fred again..",
+      "slug": "fred-again"
+    },
+    {
+      "rank": "710",
+      "name": "PinkPantheress",
+      "slug": "pinkpantheress"
+    },
+    {
+      "rank": "712",
+      "name": "Ripp Flamez",
+      "slug": "ripp-flamez"
+    },
+    {
+      "rank": "714",
+      "name": "DJ Wrecked",
+      "slug": "dj-wrecked"
+    },
+    {
+      "rank": "716",
+      "name": "Pop Smoke AI",
+      "slug": "pop-smoke-ai"
+    },
+    {
+      "rank": "718",
+      "name": "Waka Flocka Flame",
+      "slug": "waka-flocka-flame"
+    },
+    {
+      "rank": "720",
+      "name": "TYB",
+      "slug": "tyb"
+    },
+    {
+      "rank": "722",
+      "name": "DIONIS LIMCER",
+      "slug": "dionis-limcer"
+    },
+    {
+      "rank": "724",
+      "name": "Genius",
+      "slug": "genius"
+    },
+    {
+      "rank": "726",
+      "name": "KEY!",
+      "slug": "key"
+    },
+    {
+      "rank": "728",
+      "name": "Ca$h Out",
+      "slug": "cash-out"
+    },
+    {
+      "rank": "730",
+      "name": "Jeremie",
+      "slug": "jeremie"
+    },
+    {
+      "rank": "732",
+      "name": "NERVO",
+      "slug": "nervo"
+    },
+    {
+      "rank": "734",
+      "name": "Zater Mann",
+      "slug": "zater-mann"
+    },
+    {
+      "rank": "736",
+      "name": "HappyBirthdayCalvin",
+      "slug": "happybirthdaycalvin"
+    },
+    {
+      "rank": "738",
+      "name": "Kelly Sheridan",
+      "slug": "kelly-sheridan"
+    },
+    {
+      "rank": "740",
+      "name": "Yak Yola",
+      "slug": "yak-yola"
+    },
+    {
+      "rank": "742",
+      "name": "Zzz.",
+      "slug": "zzz"
+    },
+    {
+      "rank": "744",
+      "name": "Luxlie",
+      "slug": "luxlie"
+    },
+    {
+      "rank": "746",
+      "name": "Flip",
+      "slug": "flip"
+    },
+    {
+      "rank": "748",
+      "name": "Modjo",
+      "slug": "modjo"
+    },
+    {
+      "rank": "750",
+      "name": "Bret “Epic” Mazur",
+      "slug": "bret-epic-mazur"
+    },
+    {
+      "rank": "752",
+      "name": "Randyn Julius",
+      "slug": "randyn-julius"
+    },
+    {
+      "rank": "754",
+      "name": "Choo Choo",
+      "slug": "choo-choo"
+    },
+    {
+      "rank": "756",
+      "name": "Susie Anne",
+      "slug": "susie-anne"
+    },
+    {
+      "rank": "758",
+      "name": "LIL ARSA",
+      "slug": "lil-arsa"
+    },
+    {
+      "rank": "760",
+      "name": "YBK Quan",
+      "slug": "ybk-quan"
+    },
+    {
+      "rank": "762",
+      "name": "Cordae",
+      "slug": "cordae"
+    },
+    {
+      "rank": "764",
+      "name": "MAKJ",
+      "slug": "makj"
+    },
+    {
+      "rank": "766",
+      "name": "SDDSBHASP",
+      "slug": "sddsbhasp"
+    },
+    {
+      "rank": "768",
+      "name": "Behind The Frames",
+      "slug": "behind-the-frames"
+    },
+    {
+      "rank": "770",
+      "name": "Duvy",
+      "slug": "duvy"
+    },
+    {
+      "rank": "772",
+      "name": "Eminem",
+      "slug": "eminem"
+    }
+  ],
+  "vault_bars": 1708472
+}

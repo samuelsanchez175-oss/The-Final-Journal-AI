@@ -1,0 +1,653 @@
+# Rhyme index
+
+Vault bars 1708472.
+Output folder: `XJournal AI/Resources/RhymeIndex/`. Main has no bundled JSON data folder, so this is the folder the job named.
+Keys are `RhymeHighlighterEngine.endGroupKey` from ContentView.CCV.3.swift. `rime()` is the phonetic rime key.
+Pairs are core = Y only. Ad-libs, rhyme stopwords, words under 2 letters, and tokens with digits or img tags are skipped.
+
+## Artists
+
+Included 186. Odd 59. Even 127.
+Source rows read: odd 388 (387 odd-rank artists plus Gunna), even 269 (finished progress rows plus Young Thug).
+Key-match rate 11709945/12131653 = 96.5%. A token counts once it passes the skip list. A match is a token that received an end-group key.
+rhyme_index.json 26086437 bytes (24.88 MB). artists.json 85267 bytes.
+Words per key 20. Cut applied: True.
+Extra cut: per-artist keys under 60 uses dropped (189302 keys). Artists removed by that cut: 8. The All artists map was kept.
+
+## Gunna top 10 keys
+
+| key | uses |
+|---|---:|
+| EY | 2738 |
+| UW | 2624 |
+| IH|STOP-PBGK | 1805 |
+| AH|N | 1750 |
+| AH|M | 1719 |
+| IH|TCH | 1602 |
+| EH|T | 1432 |
+| AE|N | 1418 |
+| IY | 1398 |
+| IH|ALVSTOP | 1384 |
+
+## 10 random lookups
+
+Seed 20261109.
+
+- Quality Control · AA|M-IH0-EH0 · homie · count 75 · end 14 · inner 61 · Drugs Only (Remix)
+  "Dead homie, dead homie"
+- YoungBoy Never Broke Again · OY|Z · boys · count 51 · end 6 · inner 45 · Thirty
+  "Straight on Pluto, land them boys"
+- Cash Cobain · OW|SH-AH0-N · ocean · count 40 · end 10 · inner 30 · Unbelievable
+  "Mi a think yuh a ocean"
+- Tory Lanez · AE|N-S-ER0 · answer · count 57 · end 15 · inner 42 · Nobody (Lost Tapes 2018)
+  "You know we answer"
+- Roddy Ricch · AY|S · ice · count 36 · end 9 · inner 27 · Real Life
+  "I spent a M on this ice"
+- Lil Keed · OW|N · phone · count 203 · end 36 · inner 167 · BMP
+  "Blow up my phone"
+- Young Stoner Life · IH|R-Z · years · count 47 · end 7 · inner 40 · Billboard
+  "Now I'm at three years on my dick"
+- Quality Control · AY|L-AH0-N-D · island · count 86 · end 0 · inner 86 · Go Krazy, Go Stupid Freestyle
+  "I need my own island, Gilligan"
+- Lil Wayne · OW|L-IH0-N · rollin' · count 132 · end 12 · inner 120 · Life of the Party
+  "Rollin' up the Cali"
+- Ken Carson · UW · new · count 162 · end 21 · inner 141 · Me vs. Me*
+  "I got a new bae"
+
+## Dropped under 500 core pairs
+
+- Tink (odd) core 455
+- YFN Kay (odd) core 434
+- Kolyon (odd) core 443
+- Tee Grizzley (odd) core 459
+- Kane Rell (odd) core 386
+- King Von (odd) core 322
+- Lil Pump (odd) core 388
+- Sexyy Red (odd) core 456
+- Nardo Wick (odd) core 422
+- 2KBABY (odd) core 340
+- DJ Bandz (odd) core 375
+- Soulja Boy (odd) core 224
+- Chris Brown (odd) core 316
+- ATLTop20 (odd) core 158
+- BabyDrill (odd) core 316
+- Nicki Minaj (odd) core 244
+- YBN Nahmir (odd) core 402
+- Katie Got Bandz (odd) core 267
+- Omelly (odd) core 214
+- T.I. (odd) core 351
+- Dreezy (odd) core 203
+- YNW Melly (odd) core 242
+- Rich Kidz (odd) core 171
+- Hardo (odd) core 204
+- Lil Blessin (odd) core 178
+- Hunxho (odd) core 259
+- JID (odd) core 281
+- ¥$ (odd) core 287
+- Lyrical Lemonade (odd) core 302
+- DJ Twin (odd) core 216
+- Boss Top (odd) core 237
+- Albee Al (odd) core 235
+- Cdot Honcho (odd) core 298
+- Kap G (odd) core 122
+- Mustard (odd) core 238
+- William Aston (odd) core 153
+- MAF Teeski (odd) core 303
+- Terintino (odd) core 181
+- DJ Snake (odd) core 205
+- RiFF RAFF (odd) core 194
+- Jace! (odd) core 234
+- K$upreme (odd) core 177
+- Humble Haitian (odd) core 268
+- Never Broke Again (odd) core 240
+- Rod Wave (odd) core 177
+- Lightshow (odd) core 308
+- Conway the Machine (odd) core 244
+- Rell Havoc (odd) core 246
+- tobi lou (odd) core 242
+- Benny the Butcher (odd) core 131
+- Steve Aoki (odd) core 90
+- Skilla Baby (odd) core 346
+- DJ Luke Nasty (odd) core 145
+- Lil Flash (odd) core 110
+- Desto Cash (odd) core 138
+- SG Tip (odd) core 156
+- Doodie Lo (odd) core 253
+- Rocco (Rapper) (odd) core 128
+- Enima (odd) core 151
+- Lil Eazzyy (odd) core 257
+- INDIGO64 (odd) core 205
+- Golden Animal (rap) (odd) core 200
+- YC (Yung Chris) (odd) core 63
+- Lil Duke (odd) core 141
+- GoldenBoy CountUp (odd) core 286
+- MO3 (odd) core 173
+- Yamine (odd) core 111
+- Ann Marie (odd) core 126
+- London on da Track (odd) core 133
+- Pharrell Williams (odd) core 108
+- Sy Ari da Kid (odd) core 100
+- Curly Savv (odd) core 196
+- Plies (odd) core 165
+- 100 Cloccs (odd) core 118
+- Don Q (odd) core 224
+- K.M. tha Original (odd) core 98
+- Kuttem Reese (odd) core 217
+- Rubi Rose (odd) core 87
+- The Twilite Tone (odd) core 177
+- Curren$y (odd) core 148
+- Rick Hyde (odd) core 212
+- Kerch Dolla (odd) core 192
+- Buddah Bless (odd) core 151
+- JARIS (odd) core 199
+- Skepta (odd) core 141
+- Jacquees (odd) core 99
+- Tsu Surf (odd) core 201
+- Juicy J (odd) core 102
+- Yung Stakks (odd) core 138
+- DJ Showtime (odd) core 185
+- Slutty Boyz (odd) core 177
+- Kay Flock (odd) core 158
+- Stape (odd) core 110
+- 42 Dugg (odd) core 141
+- Ghost808 (odd) core 127
+- Homey High Deff (odd) core 72
+- Melvoni (odd) core 152
+- Bo Deal (odd) core 155
+- FaZe Kaysan (odd) core 156
+- Money Mu (odd) core 159
+- James Tonic (odd) core 86
+- 1900Rugrat (odd) core 138
+- Don Quan (Daquan Drayton) (odd) core 74
+- Wyclef Jean (odd) core 94
+- Foolio (odd) core 219
+- Jhené Aiko (odd) core 105
+- Shaun Sloan (odd) core 98
+- Yae Yae Jordan (odd) core 133
+- RX PESO (odd) core 62
+- DMX (odd) core 100
+- Ski Mask the Slump God (odd) core 105
+- Young Dro (odd) core 107
+- Jeremih (odd) core 74
+- SevenSixSupah (odd) core 117
+- YungManny (odd) core 154
+- Ayetian (odd) core 137
+- Dumar 1k (odd) core 143
+- Marty Mard (odd) core 73
+- Blood Money (odd) core 183
+- Pretty Savage (odd) core 143
+- Robb Bank$ (odd) core 75
+- DKGGlockboy1800 (odd) core 55
+- A$AP Mob (odd) core 93
+- Big Ro6 (odd) core 139
+- Ebk Eski (odd) core 162
+- Trim (odd) core 147
+- Bricc Baby (odd) core 121
+- Kenny Muney (odd) core 106
+- Tay-K (odd) core 97
+- YTB Fatt (odd) core 78
+- Bankroll Fresh (odd) core 98
+- Gudda Brvckin (odd) core 134
+- SoFaygo (odd) core 60
+- YRN Murk (odd) core 108
+- DJ ESCO (odd) core 99
+- K-Trap (odd) core 77
+- M Row (odd) core 135
+- Popp Hunna (odd) core 92
+- S.A.Y.L.E (Elyas le Simple) (odd) core 83
+- Yung Miami (odd) core 106
+- Berner (odd) core 82
+- JAE (Hip-Hop) (odd) core 39
+- Kalan.FrFr (odd) core 139
+- RondoNumbaNine (odd) core 60
+- Butterknife King (odd) core 58
+- Gleesh (odd) core 66
+- Myloyd47 (odd) core 100
+- Skengdo (odd) core 111
+- SosMula (odd) core 142
+- 44G (odd) core 45
+- Lil Donald (odd) core 95
+- TYuS (odd) core 65
+- Baby Keem (odd) core 153
+- Cassius Jay (odd) core 80
+- Marlo (odd) core 91
+- Real Boston Richey (odd) core 112
+- Scarz Woo (odd) core 69
+- Tray Savage (odd) core 85
+- Common (odd) core 142
+- Poppa Da Don (odd) core 43
+- Screwly G (odd) core 120
+- .idk. (odd) core 49
+- Ajani Benitez (odd) core 47
+- Clay “Krucial” Perry III (odd) core 83
+- Fireboy DML (odd) core 90
+- Quin NFN (odd) core 150
+- Big 36oz (odd) core 82
+- Coca Vango (odd) core 55
+- El Alfa (odd) core 146
+- Lil Gotit (odd) core 54
+- Mg Lil Bubba (odd) core 69
+- Pressa (odd) core 101
+- Young M.A (odd) core 96
+- Yung Bleu (odd) core 86
+- Finesse2Tymes (odd) core 119
+- Landstrip Chip (odd) core 116
+- Muni Long (odd) core 32
+- ScHoolboy Q (odd) core 79
+- USHER (odd) core 66
+- Yung Sinn (odd) core 81
+- Beece Daytona (odd) core 72
+- Clever (odd) core 96
+- Lah Daddy (odd) core 114
+- REYNA (ITA) (odd) core 193
+- Sonta (odd) core 84
+- SyKo (odd) core 28
+- HotRod SKM (odd) core 76
+- Mac Miller (odd) core 105
+- OBN Jay (odd) core 95
+- Shawn Ferrari (odd) core 93
+- TiaCorine (odd) core 59
+- Yung D.I. (odd) core 29
+- AB (odd) core 123
+- G4 Boyz (odd) core 100
+- Golde (odd) core 37
+- Jermaine Dupri (odd) core 62
+- K CAMP (odd) core 43
+- OnPointLikeOP (odd) core 97
+- Rico Beats (odd) core 121
+- Tony Zuko (odd) core 70
+- 6ix9ine (odd) core 130
+- Armani Caesar (odd) core 82
+- DJ Victoriouz (odd) core 31
+- Fedy (odd) core 94
+- Gino Marley (odd) core 161
+- MF SKUAD (odd) core 93
+- Prince Track (odd) core 115
+- Rockout Danny (odd) core 141
+- 550 (odd) core 32
+- BEO Lil Kenny (odd) core 139
+- Hurricane Wisdom (odd) core 75
+- Lor Scoota (odd) core 73
+- Rubberband OG (odd) core 78
+- Slayter (odd) core 80
+- Vanilla Ice (odd) core 36
+- 2g Kaash (odd) core 55
+- Baby Soulja (odd) core 69
+- BigBankBandz (odd) core 92
+- Dess Dior (odd) core 60
+- EBG EJizzle (odd) core 67
+- Fetty Luciano (odd) core 51
+- Khaotic (odd) core 54
+- Prince Bopp (odd) core 105
+- SWAVAY (odd) core 83
+- YSL (USA) (odd) core 75
+- 41 (odd) core 73
+- Burna Boy (odd) core 63
+- GARREN (odd) core 83
+- Kayla Brianna (odd) core 45
+- Luh Tyler (odd) core 175
+- Mýa (odd) core 74
+- Stargate (odd) core 81
+- Trav (odd) core 60
+- Chris Cheney (odd) core 55
+- Kevin Gates (odd) core 76
+- Skooly (odd) core 81
+- Young TeeTee (odd) core 65
+- D-Block Europe (odd) core 69
+- K-Moe (USA) (odd) core 92
+- Kosine (odd) core 92
+- Twista (odd) core 91
+- Benji Glo (odd) core 61
+- BJRNCK (odd) core 49
+- Fredo (odd) core 61
+- Law G (odd) core 46
+- Raq Baby (odd) core 113
+- Tiësto (odd) core 38
+- Bandman Kevo (odd) core 101
+- Blueface (odd) core 95
+- Calboy (odd) core 98
+- Matt OX (odd) core 64
+- PopLord (odd) core 53
+- Shenseea (odd) core 39
+- Baby Crash (odd) core 83
+- Choshane Johnson (odd) core 37
+- Da Boi Hustlz (odd) core 41
+- DeJ Loaf (odd) core 25
+- JayDaYoungan (odd) core 121
+- Mello Buckzz (odd) core 93
+- Normani (odd) core 63
+- Raw Youngin (odd) core 48
+- ZillaKami (odd) core 80
+- C-ClipBeatz (odd) core 57
+- Gloss Up (odd) core 86
+- Lil Nuu (odd) core 135
+- Shoreline Mafia (odd) core 84
+- Wiz Khalifa (odd) core 67
+- Amaru Cloud (odd) core 63
+- Busta Rhymes (odd) core 139
+- Charlie Heat (odd) core 54
+- Kid Cudi (odd) core 60
+- Pi’erre Bourne (odd) core 50
+- Bhad Bhabie (odd) core 60
+- Juan Magán (odd) core 34
+- Mojo Sys (odd) core 44
+- Sauce Twinz (odd) core 13
+- Camila Cabello (odd) core 20
+- Edai (odd) core 50
+- YDV Savage (odd) core 25
+- Cago Leek (odd) core 107
+- Hboydaman (odd) core 50
+- Larry June (odd) core 80
+- Chris James (odd) core 16
+- Lil 50 (odd) core 94
+- Mookie Mardi Gra (odd) core 53
+- Spodee (odd) core 66
+- Bazzi (odd) core 32
+- EyeBlind (odd) core 45
+- Internet Money (odd) core 41
+- Petho Burr (odd) core 39
+- DJ YUNG VAMP (odd) core 52
+- Man Rider (odd) core 51
+- Totally Spies (odd) core 30
+- Apple Music (odd) core 3
+- Fabolous (odd) core 70
+- G2 (GMG) (odd) core 39
+- PopOutBoyz (odd) core 73
+- SleazyWorld Go (odd) core 51
+- Lil West (odd) core 26
+- Spazz Floss (odd) core 30
+- Bullet (odd) core 19
+- WxSTxRN (odd) core 54
+- Druski (odd) core 16
+- GuyATL (odd) core 30
+- Loopy Ferrell (odd) core 33
+- David Pablo (odd) core 17
+- Lil Amp (odd) core 36
+- Nico Santanna (odd) core 87
+- DJ Diamond Kuts (odd) core 29
+- Kai Cenat (odd) core 13
+- Ryan C. (odd) core 57
+- Dave Blunts (odd) core 41
+- Futurebirds (odd) core 7
+- Deleted Artist 2 (odd) core 4
+- SOLP (odd) core 47
+- Nigerian Coke (odd) core 22
+- Majid Razavi (odd) core 32
+- Sheck Wes (odd) core 7
+- Lil Lani (odd) core 7
+- Chaboki (odd) core 14
+- Smileyface (odd) core 11
+- Bouba Savage (odd) core 6
+- ISOxo (odd) core 8
+- ROSALÍA (odd) core 3
+- DannyTheHydrant (odd) core 12
+- Cae Cartier (odd) core 12
+- Jam (POL) (odd) core 7
+- FILI (odd) core 0
+- Lil Tecca (even) core 481
+- Post Malone (even) core 495
+- Bizzy Banks (even) core 446
+- Loso Loaded (even) core 465
+- Tyga (even) core 462
+- FredRarrii (even) core 415
+- Skazz (even) core 219
+- Birdman (even) core 434
+- Hoodrich Pablo Juan (even) core 448
+- A$AP Rocky (even) core 477
+- Jason Derulo (even) core 449
+- Summer Walker (even) core 334
+- Bankroll Mafia (even) core 461
+- Obasi Jackson (even) core 250
+- Bop Menaxe (even) core 373
+- JNR CHOI (even) core 322
+- DCG BROTHERS (even) core 493
+- Paxquiao (even) core 397
+- Genius Türkçe Çeviriler (even) core 420
+- Saba (even) core 481
+- Chuckyy (even) core 439
+- Tsunami J (even) core 417
+- Yung Gravy (even) core 328
+- DJ Showtime (even) core 483
+- S.Dot (Rapper) (even) core 296
+- Lil Lonnie (even) core 362
+- 1WayFrank (even) core 320
+- Casino (even) core 423
+- H.E.R. (even) core 376
+- King Combs (even) core 310
+- Louis Rose (even) core 422
+- DY Krazy (even) core 377
+- Smokepurpp (even) core 255
+- VEDO (even) core 241
+- Goodbye Tomorrow (even) core 394
+- Red Cafe (even) core 361
+- Turk (even) core 315
+- Blacc Zacc (even) core 263
+- SD (even) core 251
+- Katy Perry (even) core 223
+- Trench Baby (even) core 342
+- Sad Frosty (even) core 425
+- Yin Yang (even) core 260
+- Diddy (even) core 359
+- ManMan Savage (even) core 419
+- BandGang Lonnie Bands (even) core 232
+- Prince Dre (even) core 441
+- A1Billionaire (even) core 249
+- 24Heavy (even) core 305
+- Barloe Team (even) core 238
+- Cochise (even) core 338
+- Ray Vicks (even) core 364
+- B-Lovee (even) core 301
+- HXLLYWOOD (even) core 235
+- Leaf Ward (even) core 280
+- Trouble (even) core 462
+- B La B (even) core 287
+- Doechii (even) core 269
+- Rich Brian (even) core 339
+- UnoTheActivist (even) core 267
+- 1Up Tee (even) core 444
+- Farruko (even) core 392
+- KYLE (even) core 401
+- Made Man (even) core 207
+- Rae Sremmurd (even) core 296
+- Spacejam Bo (even) core 235
+- Aarne (even) core 481
+- Healthy Chill (even) core 409
+- Jose Guapo (even) core 300
+- Mikey Flows (even) core 339
+- Wacotron (even) core 444
+- Charlie Angel (even) core 330
+- Jeezy (even) core 342
+- Paul Wall (even) core 314
+- Skrillex (even) core 162
+- Uncle Murda (even) core 207
+- Alicia Keys (even) core 306
+- Manifest Music Group (even) core 441
+- Yung Mal (even) core 452
+- Booka600 (even) core 151
+- DJ Scream (even) core 322
+- Quando Rondo (even) core 326
+- Rema (even) core 231
+- TGUT (even) core 319
+- Big Lean (even) core 243
+- Nas (even) core 381
+- Reese LAFLARE (even) core 204
+- TRENDY BOIIZ (even) core 240
+- 2KDrae (even) core 317
+- Alan Awesome (even) core 256
+- FBG Duck (even) core 266
+- Lud Foe (even) core 416
+- Ye (even) core 385
+- Bobby Raps (even) core 239
+- Doa Beezy (even) core 267
+- KSI (even) core 210
+- Loe Shimmy (even) core 418
+- Nigo (even) core 195
+- Rich Homie Quan (even) core 299
+- Young M.A (even) core 431
+- Aminé (even) core 165
+- Finesse2Tymes (even) core 406
+- Mac Ty (even) core 261
+- NBA KD (even) core 250
+- Taylor Bennett (even) core 318
+- Valee (even) core 378
+- $hang (Rapper) (even) core 142
+- Beece Daytona (even) core 272
+- JACKBOYS (even) core 189
+- SBGLol (even) core 211
+- Suav Corleone (even) core 154
+- DJ Kash (even) core 331
+- Ksoo (even) core 157
+- Major Nine (even) core 226
+- Ralph’s One (even) core 164
+- THF LIL LAW (even) core 451
+- VL Deck (even) core 353
+- Yuno Miles (even) core 257
+- DJ Nick (even) core 163
+- Giggs (even) core 221
+- J. Stone (even) core 345
+- Jimbo World (even) core 273
+- MobSquad Nard (even) core 194
+- Poundside Pop (even) core 144
+- Rico Beats (even) core 428
+- Wave Chapelle (even) core 217
+- Alcy (even) core 272
+- DJ Victoriouz (even) core 127
+- FatBoy SSE (even) core 289
+- G.T. (even) core 333
+- Lil Pete (even) core 292
+- Octavian (even) core 183
+- Rah Swish (even) core 251
+- Zona Man (even) core 439
+- Alexander Lewis (even) core 125
+
+## Removed by the use-floor cut
+
+- Lil Gnar (odd) core 599
+- Childish Gambino (even) core 564
+- XXL (even) core 686
+- Fredo Bang (even) core 725
+- Drench (USA) (even) core 569
+- Flipp Dinero (even) core 730
+- Wam SpinThaBin (even) core 578
+- Jeymes Samuel (even) core 595
+
+## Even-rank artists still missing
+
+- D1LebronGlazer (d1lebronglazer), post-skip rank 538
+- Jimin (지민) (jimin), post-skip rank 540
+- Queen Key (queen-key), post-skip rank 542
+- Sean Kingston (sean-kingston), post-skip rank 544
+- Tray Tray (tray-tray), post-skip rank 546
+- YGG Tay (ygg-tay), post-skip rank 548
+- Alley Boy (alley-boy), post-skip rank 550
+- BanzG (banzg), post-skip rank 552
+- DatBoiSkeet (datboiskeet), post-skip rank 554
+- Diplo (diplo), post-skip rank 556
+- Eearz (eearz), post-skip rank 558
+- G Count (g-count), post-skip rank 560
+- OMN Twee (omn-twee), post-skip rank 562
+- Revii (revii), post-skip rank 564
+- The Plug (the-plug), post-skip rank 566
+- Yung Jaroc (yung-jaroc), post-skip rank 568
+- Belly Gang Kushington (belly-gang-kushington), post-skip rank 570
+- Elijah James (elijah-james), post-skip rank 572
+- Jim Jones (jim-jones), post-skip rank 574
+- Lil Tracy (lil-tracy), post-skip rank 576
+- Mariah the Scientist (mariah-the-scientist), post-skip rank 578
+- Quicktrip (quicktrip), post-skip rank 580
+- Top5 (top5), post-skip rank 582
+- Bankroll Freddie (bankroll-freddie), post-skip rank 584
+- Don Ace (don-ace), post-skip rank 586
+- Skooly (skooly), post-skip rank 588
+- Young TeeTee (young-teetee), post-skip rank 590
+- BigDawg Money (bigdawg-money), post-skip rank 592
+- DJ Ess (dj-ess), post-skip rank 594
+- Keith Ape (keith-ape), post-skip rank 596
+- Twista (twista), post-skip rank 598
+- 30nickk (30nickk), post-skip rank 600
+- Benji Glo (benji-glo), post-skip rank 602
+- Brian X Allen (brian-x-allen), post-skip rank 604
+- Just Rich Gates (just-rich-gates), post-skip rank 606
+- Lihtz (lihtz), post-skip rank 608
+- Rocko (rocko), post-skip rank 610
+- YBS Skola (ybs-skola), post-skip rank 612
+- Bandman Kevo (bandman-kevo), post-skip rank 614
+- Boosa Da Shoota (boosa-da-shoota), post-skip rank 616
+- Joey Shady (joey-shady), post-skip rank 618
+- Nino Breeze (nino-breeze), post-skip rank 620
+- Project Pat (project-pat), post-skip rank 622
+- Woop (woop), post-skip rank 624
+- Bring Me The Horizon (bring-me-the-horizon), post-skip rank 626
+- Choshane Johnson (choshane-johnson), post-skip rank 628
+- Da Boi Hustlz (da-boi-hustlz), post-skip rank 630
+- JayDaYoungan (jaydayoungan), post-skip rank 632
+- Mello Buckzz (mello-buckzz), post-skip rank 634
+- Normani (normani), post-skip rank 636
+- Raw Youngin (raw-youngin), post-skip rank 638
+- ZillaKami (zillakami), post-skip rank 640
+- 24hrs (24hrs), post-skip rank 642
+- Chopsquad DJ (chopsquad-dj), post-skip rank 644
+- Hotboii (hotboii), post-skip rank 646
+- Riko (riko), post-skip rank 648
+- TK Kravitz (tk-kravitz), post-skip rank 650
+- WizDaWizard (wizdawizard), post-skip rank 652
+- Big Flock (big-flock), post-skip rank 654
+- Central Cee (central-cee), post-skip rank 656
+- ChrisTheCooker (christhecooker), post-skip rank 658
+- Lil Nizzy (lil-nizzy), post-skip rank 660
+- Arin Ray (arin-ray), post-skip rank 662
+- Derez De’Shon (derez-deshon), post-skip rank 664
+- KAIBA (kaiba), post-skip rank 666
+- Real Recognize Rio (real-recognize-rio), post-skip rank 668
+- That Mexican OT (that-mexican-ot), post-skip rank 670
+- D.Flores (d-flores), post-skip rank 672
+- RealBosses (realbosses), post-skip rank 674
+- Alison Wonderland (alison-wonderland), post-skip rank 676
+- FattMack (fattmack), post-skip rank 678
+- Justo (GBE) (justo-gbe), post-skip rank 680
+- Ralfy the Plug (ralfy-the-plug), post-skip rank 682
+- James Ongige (james-ongige), post-skip rank 684
+- Momoh (momoh), post-skip rank 686
+- Ralphsnightmare (ralphsnightmare), post-skip rank 688
+- Yung Mazi (yung-mazi), post-skip rank 690
+- Billie Eilish (billie-eilish), post-skip rank 692
+- Internet Money (internet-money), post-skip rank 694
+- Petho Burr (petho-burr), post-skip rank 696
+- Charlie Sloth (charlie-sloth), post-skip rank 698
+- JT the Bigga Figga (jt-the-bigga-figga), post-skip rank 700
+- Mura Masa (mura-masa), post-skip rank 702
+- 310Babii (310babii), post-skip rank 704
+- Calvin Harris (calvin-harris), post-skip rank 706
+- Fred again.. (fred-again), post-skip rank 708
+- PinkPantheress (pinkpantheress), post-skip rank 710
+- Ripp Flamez (ripp-flamez), post-skip rank 712
+- DJ Wrecked (dj-wrecked), post-skip rank 714
+- Pop Smoke AI (pop-smoke-ai), post-skip rank 716
+- Waka Flocka Flame (waka-flocka-flame), post-skip rank 718
+- TYB (tyb), post-skip rank 720
+- DIONIS LIMCER (dionis-limcer), post-skip rank 722
+- Genius (genius), post-skip rank 724
+- KEY! (key), post-skip rank 726
+- Ca$h Out (cash-out), post-skip rank 728
+- Jeremie (jeremie), post-skip rank 730
+- NERVO (nervo), post-skip rank 732
+- Zater Mann (zater-mann), post-skip rank 734
+- HappyBirthdayCalvin (happybirthdaycalvin), post-skip rank 736
+- Kelly Sheridan (kelly-sheridan), post-skip rank 738
+- Yak Yola (yak-yola), post-skip rank 740
+- Zzz. (zzz), post-skip rank 742
+- Luxlie (luxlie), post-skip rank 744
+- Flip (flip), post-skip rank 746
+- Modjo (modjo), post-skip rank 748
+- Bret “Epic” Mazur (bret-epic-mazur), post-skip rank 750
+- Randyn Julius (randyn-julius), post-skip rank 752
+- Choo Choo (choo-choo), post-skip rank 754
+- Susie Anne (susie-anne), post-skip rank 756
+- LIL ARSA (lil-arsa), post-skip rank 758
+- YBK Quan (ybk-quan), post-skip rank 760
+- Cordae (cordae), post-skip rank 762
+- MAKJ (makj), post-skip rank 764
+- SDDSBHASP (sddsbhasp), post-skip rank 766
+- Behind The Frames (behind-the-frames), post-skip rank 768
+- Duvy (duvy), post-skip rank 770
+- Eminem (eminem), post-skip rank 772
