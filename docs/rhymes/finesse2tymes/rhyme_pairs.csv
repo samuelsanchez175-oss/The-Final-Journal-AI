@@ -1,0 +1,423 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Miami with the Heat,1,"Tied, they dead flies everywhere, you heard me?",dead,1,"Tied, they dead flies everywhere, you heard me?",everywhere,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,1,"Tied, they dead flies everywhere, you heard me?",Tied,1,"Tied, they dead flies everywhere, you heard me?",flies,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,1,"Tied, they dead flies everywhere, you heard me?",dead,2,"Finesse, two of 'em (X.O. think he all that)",Finesse,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,1,"Tied, they dead flies everywhere, you heard me?",everywhere,2,"Finesse, two of 'em (X.O. think he all that)",Finesse,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,2,"Finesse, two of 'em (X.O. think he all that)",two,3,"Ayy, I'm in Houston with the rocket (Rocket)",Houston,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,3,"Ayy, I'm in Houston with the rocket (Rocket)",rocket,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",profit,END,SLANT,cmu,MED,Y
+Miami with the Heat,3,"Ayy, I'm in Houston with the rocket (Rocket)",rocket,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),stop,END,SLANT,cmu,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",Hundred,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",plug,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",profit,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),stop,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",K,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),Say,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",forty,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",quarter,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",Hundred,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",Double,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",Hundred,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",fuck,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",K,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",ain't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",plug,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",Double,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",plug,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",fuck,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",profit,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",pocket,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",profit,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",R,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,4,"Hundred K to the plug, forty-five thousand in profit (That's profit)",thousand,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",South,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),can't,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),back,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),Memphis,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),said,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),Memphis,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),Tell,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),Tell,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),said,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),Memphis,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",Memphis,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),said,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",Memphis,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),Say,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",ain't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),stop,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",pocket,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),stop,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",R,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),Tell,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",Memphis,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),go,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",no,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),Say,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,5,Say I can't go back to Memphis? Tell them niggas I said stop it (Stop it),stop,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",problems,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",Double,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",fuck,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",R,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",pocket,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",ain't,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",ain't,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",Double,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",duckin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",fuck,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",duckin,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",mil,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",shit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",pocket,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",problems,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",R,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",problems,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",ain't,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",baby,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",Double,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",Cut,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",fuck,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",Cut,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",pocket,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",mama,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,6,"Double-R, I'm in South Memphis, a quarter mil' in my pocket, ain't gon' fuck with me",R,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",mama,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",ain't,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",ain't,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",either,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",keep,END,SLANT,cmu,MED,Y
+Miami with the Heat,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",ain't,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",baby,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",duckin,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",Cut,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",either,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",cheaper,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",problems,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",mama,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",either,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Felicia,END,SLANT,cmu,MED,Y
+Miami with the Heat,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",duckin,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",fuck,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,7,"Ayy, I ain't lookin' for no problems, I ain't duckin' shit either (I ain't duckin' shit either)",either,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",Juanita,END,SLANT,cmu,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",cheaper,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",keep,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",keep,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Felicia,END,SLANT,cmu,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",cheaper,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Felicia,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",Cut,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",fuck,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",keep,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",Juanita,END,SLANT,cmu,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",baby,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",Made,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",cheaper,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",Juanita,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",cheaper,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",P,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",keep,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",P,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",mama,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",R,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,8,"Cut my baby mama off, but it was cheaper to keep her (But it was cheaper to keep her)",mama,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",stop,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Left,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Memphis,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Left,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",went,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",went,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Memphis,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Felicia,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",Juanita,END,SLANT,cmu,MED,Y
+Miami with the Heat,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Felicia,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",P,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,9,"Left Atlanta, went to Memphis just to fuck on Felicia (Bye)",Felicia,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",thirty,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",P,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",Juanita,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",stop,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",R,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",Juanita,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",thirty,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",P,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",thirty,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",R,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",got,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,10,"Made her stop and walk her home, R.I.P. to Juanita (R.I.P.)",stop,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",got,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",millions,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",clip,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",clip,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),Crips,END,SLANT,cmu,MED,Y
+Miami with the Heat,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",clip,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),shit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",millions,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),Crips,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,11,"I got millions on my mind (Big bags), thirty in my clip (Big clip)",millions,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),shit,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),plus,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),runnin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),plus,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),some,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),runnin,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),some,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),shit,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),Crips,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),some,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),plus,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),some,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),runnin,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),some,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),some,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),plus,13,"I'm a 'Wood smokin' (Smokin'), hundred-thou', I'm totin' (Big one)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),runnin,13,"I'm a 'Wood smokin' (Smokin'), hundred-thou', I'm totin' (Big one)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),some,13,"I'm a 'Wood smokin' (Smokin'), hundred-thou', I'm totin' (Big one)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),bangin,14,"Realest rapper in my city that's really out in the open, man (Uh)",man,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),bangin,14,"Realest rapper in my city that's really out in the open, man (Uh)",rapper,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),Crips,14,"Realest rapper in my city that's really out in the open, man (Uh)",city,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),Crips,14,"Realest rapper in my city that's really out in the open, man (Uh)",really,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),shit,14,"Realest rapper in my city that's really out in the open, man (Uh)",city,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,12,I'm on some bangin' shit plus I been runnin' with some Crips (Cuz),shit,14,"Realest rapper in my city that's really out in the open, man (Uh)",really,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,13,"I'm a 'Wood smokin' (Smokin'), hundred-thou', I'm totin' (Big one)",smokin,13,"I'm a 'Wood smokin' (Smokin'), hundred-thou', I'm totin' (Big one)",totin,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,13,"I'm a 'Wood smokin' (Smokin'), hundred-thou', I'm totin' (Big one)",smokin,14,"Realest rapper in my city that's really out in the open, man (Uh)",open,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,13,"I'm a 'Wood smokin' (Smokin'), hundred-thou', I'm totin' (Big one)",totin,14,"Realest rapper in my city that's really out in the open, man (Uh)",open,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,13,"I'm a 'Wood smokin' (Smokin'), hundred-thou', I'm totin' (Big one)",hundred,15,"I'm in Miami with my heat, I'm all on the front street",front,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,14,"Realest rapper in my city that's really out in the open, man (Uh)",city,14,"Realest rapper in my city that's really out in the open, man (Uh)",really,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,14,"Realest rapper in my city that's really out in the open, man (Uh)",rapper,14,"Realest rapper in my city that's really out in the open, man (Uh)",man,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,14,"Realest rapper in my city that's really out in the open, man (Uh)",man,15,"I'm in Miami with my heat, I'm all on the front street",Miami,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,14,"Realest rapper in my city that's really out in the open, man (Uh)",rapper,15,"I'm in Miami with my heat, I'm all on the front street",Miami,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,14,"Realest rapper in my city that's really out in the open, man (Uh)",Realest,16,"Too late to squash the beef, it's blood on the concrete",concrete,INNER,ASSONANCE,vowel,LOW,N
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",heat,15,"I'm in Miami with my heat, I'm all on the front street",street,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",street,16,"Too late to squash the beef, it's blood on the concrete",concrete,END,PERFECT,cmu,HIGH,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",front,16,"Too late to squash the beef, it's blood on the concrete",blood,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",heat,16,"Too late to squash the beef, it's blood on the concrete",beef,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",heat,16,"Too late to squash the beef, it's blood on the concrete",concrete,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",street,16,"Too late to squash the beef, it's blood on the concrete",beef,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",front,17,"Drop a hundred on my piece, you can look, but don't touch me",don't,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",front,17,"Drop a hundred on my piece, you can look, but don't touch me",hundred,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",front,17,"Drop a hundred on my piece, you can look, but don't touch me",touch,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",heat,17,"Drop a hundred on my piece, you can look, but don't touch me",piece,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",Miami,17,"Drop a hundred on my piece, you can look, but don't touch me",can,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",street,17,"Drop a hundred on my piece, you can look, but don't touch me",piece,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",street,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",sweet,END,PERFECT,cmu,HIGH,Y
+Miami with the Heat,15,"I'm in Miami with my heat, I'm all on the front street",street,19,I'm in the cut fifty deep,deep,END,SLANT,cmu,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",beef,16,"Too late to squash the beef, it's blood on the concrete",concrete,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",beef,17,"Drop a hundred on my piece, you can look, but don't touch me",piece,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",blood,17,"Drop a hundred on my piece, you can look, but don't touch me",hundred,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",blood,17,"Drop a hundred on my piece, you can look, but don't touch me",touch,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",concrete,17,"Drop a hundred on my piece, you can look, but don't touch me",piece,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",squash,17,"Drop a hundred on my piece, you can look, but don't touch me",Drop,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",concrete,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",sweet,END,PERFECT,cmu,HIGH,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",beef,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",sweet,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",late,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",ain't,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",squash,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",nothin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,16,"Too late to squash the beef, it's blood on the concrete",concrete,19,I'm in the cut fifty deep,deep,END,SLANT,cmu,MED,Y
+Miami with the Heat,17,"Drop a hundred on my piece, you can look, but don't touch me",hundred,17,"Drop a hundred on my piece, you can look, but don't touch me",touch,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,17,"Drop a hundred on my piece, you can look, but don't touch me",can,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",ass,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,17,"Drop a hundred on my piece, you can look, but don't touch me",can,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",gangster,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,17,"Drop a hundred on my piece, you can look, but don't touch me",can,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",romantic,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,17,"Drop a hundred on my piece, you can look, but don't touch me",Drop,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",nothin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,17,"Drop a hundred on my piece, you can look, but don't touch me",piece,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",sweet,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,17,"Drop a hundred on my piece, you can look, but don't touch me",hundred,19,I'm in the cut fifty deep,cut,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,17,"Drop a hundred on my piece, you can look, but don't touch me",piece,19,I'm in the cut fifty deep,deep,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,17,"Drop a hundred on my piece, you can look, but don't touch me",touch,19,I'm in the cut fifty deep,cut,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",ass,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",ass,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",ass,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",gangster,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",gangster,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",ass,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",romantic,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",ass,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",romantic,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",gangster,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",sweet,19,I'm in the cut fifty deep,deep,END,SLANT,cmu,MED,Y
+Miami with the Heat,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",ain't,20,"Take over niggas' cities, send 'em a cease and desist",Take,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",nigga,20,"Take over niggas' cities, send 'em a cease and desist",niggas,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,18,"I'm a romantic-ass, gangster-ass nigga, but ain't nothin' sweet",sweet,20,"Take over niggas' cities, send 'em a cease and desist",cease,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,19,I'm in the cut fifty deep,deep,20,"Take over niggas' cities, send 'em a cease and desist",cease,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,19,I'm in the cut fifty deep,fifty,20,"Take over niggas' cities, send 'em a cease and desist",cities,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,19,I'm in the cut fifty deep,fifty,20,"Take over niggas' cities, send 'em a cease and desist",desist,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,19,I'm in the cut fifty deep,fifty,21,Set a trap up in your hood and bring them killers to me,bring,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,19,I'm in the cut fifty deep,fifty,21,Set a trap up in your hood and bring them killers to me,killers,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,19,I'm in the cut fifty deep,deep,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",meeting,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",cities,20,"Take over niggas' cities, send 'em a cease and desist",desist,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",niggas,20,"Take over niggas' cities, send 'em a cease and desist",cities,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",desist,21,Set a trap up in your hood and bring them killers to me,killers,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",cities,21,Set a trap up in your hood and bring them killers to me,bring,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",cities,21,Set a trap up in your hood and bring them killers to me,killers,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",desist,21,Set a trap up in your hood and bring them killers to me,bring,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",send,21,Set a trap up in your hood and bring them killers to me,Set,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",desist,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",'em,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",'em,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",cease,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",eat,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",cities,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",niggas,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",cities,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",niggas,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",niggas,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,20,"Take over niggas' cities, send 'em a cease and desist",Take,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",Make,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,bring,21,Set a trap up in your hood and bring them killers to me,killers,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,killers,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,bring,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,hood,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",sure,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,trap,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",have,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,bring,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",really,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,bring,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",shit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,killers,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",really,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,killers,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",shit,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,21,Set a trap up in your hood and bring them killers to me,killers,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",shit,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",eat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",easy,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",eat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",meeting,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",I'll,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",I'll,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",Make,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",same,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",niggas,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",nigga,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",really,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",shit,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",eat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",frequency,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",have,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",matchin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",I'll,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",vibe,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",Make,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",ain't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",bitch,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",Lil,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",shit,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,22,"Make sure the young niggas eat, then I'll have 'em spinnin' for me",spinnin,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",hideous,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",easy,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",meeting,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",shit,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",nigga,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",shit,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",really,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",solve,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",swapped,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",solve,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",watch,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",watch,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",swapped,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",meeting,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",frequency,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",easy,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",frequency,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",I'll,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",vibe,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",really,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",bitch,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",really,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",Lil,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",same,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",ain't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",shit,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",bitch,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",shit,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",Lil,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",easy,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",believe,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",meeting,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",believe,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",nigga,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",shit,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",really,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",really,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",really,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",shit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",same,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",ain't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",same,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",way,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",shit,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",really,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",shit,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",shit,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",solve,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",top,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",solve,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",wanna,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",swapped,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",top,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",swapped,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",wanna,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",watch,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",top,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",watch,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",wanna,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,23,"Yeah, this shit really easy, I'll solve a nigga with my same watch, I swapped out the meeting",meeting,27,"The same day I bought an SRT and a traphouse, just recently",recently,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",Lil,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",bitch,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",ain't,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",ain't,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",ain't,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",way,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",bitch,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",really,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",bitch,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",shit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",frequency,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",believe,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",Lil,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",really,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",Lil,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",shit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",bitch,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",hideous,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",Lil,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",hideous,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",vibe,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",right,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",frequency,27,"The same day I bought an SRT and a traphouse, just recently",recently,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,24,"Lil' bitch steady throwin' my vibe off, ain't matchin' my frequency",frequency,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",previous,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",really,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",shit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",top,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",wanna,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",way,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",ain't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",shit,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",hideous,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",Around,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",'bout,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",Around,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",now,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",dog,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",corner,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",really,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",hideous,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",top,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",nothin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",wanna,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",nothin,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",ain't,27,"The same day I bought an SRT and a traphouse, just recently",day,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",ain't,27,"The same day I bought an SRT and a traphouse, just recently",same,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",believe,27,"The same day I bought an SRT and a traphouse, just recently",recently,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",top,27,"The same day I bought an SRT and a traphouse, just recently",bought,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",wanna,27,"The same day I bought an SRT and a traphouse, just recently",bought,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",way,27,"The same day I bought an SRT and a traphouse, just recently",day,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,25,"Around my way, I'm really top dog, but they ain't wanna believe this shit",way,27,"The same day I bought an SRT and a traphouse, just recently",same,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",now,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",'bout,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",nothin,27,"The same day I bought an SRT and a traphouse, just recently",bought,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",hideous,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",previous,END,MULTI,multi,HIGH,Y
+Miami with the Heat,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",'bout,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",count,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",'bout,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",mouth,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",nothin,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",sorry,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",now,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",count,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",now,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",mouth,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,26,"I'm on the ugly corner right now, but nothin' 'bout me hideous",ugly,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",fucked,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,27,"The same day I bought an SRT and a traphouse, just recently",same,27,"The same day I bought an SRT and a traphouse, just recently",day,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,27,"The same day I bought an SRT and a traphouse, just recently",recently,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",previous,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,27,"The same day I bought an SRT and a traphouse, just recently",bought,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",sorry,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,27,"The same day I bought an SRT and a traphouse, just recently",day,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",baby,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,27,"The same day I bought an SRT and a traphouse, just recently",same,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",baby,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,27,"The same day I bought an SRT and a traphouse, just recently",day,29,"My youngin runnin' guns, takin' trips to Savannah",takin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,27,"The same day I bought an SRT and a traphouse, just recently",same,29,"My youngin runnin' guns, takin' trips to Savannah",takin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",mouth,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",count,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",baby,29,"My youngin runnin' guns, takin' trips to Savannah",takin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",fucked,29,"My youngin runnin' guns, takin' trips to Savannah",guns,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",fucked,29,"My youngin runnin' guns, takin' trips to Savannah",runnin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",sorry,30,"Lil' Marco get the bond, he shot the nigga on camera",bond,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",sorry,30,"Lil' Marco get the bond, he shot the nigga on camera",Marco,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,28,"I'm sorry, baby, I fucked her mouth, but that don't count, that was previous",sorry,30,"Lil' Marco get the bond, he shot the nigga on camera",shot,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,29,"My youngin runnin' guns, takin' trips to Savannah",runnin,29,"My youngin runnin' guns, takin' trips to Savannah",guns,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,29,"My youngin runnin' guns, takin' trips to Savannah",Savannah,30,"Lil' Marco get the bond, he shot the nigga on camera",camera,END,SLANT,cmu,MED,Y
+Miami with the Heat,29,"My youngin runnin' guns, takin' trips to Savannah",trips,30,"Lil' Marco get the bond, he shot the nigga on camera",Lil,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,29,"My youngin runnin' guns, takin' trips to Savannah",Savannah,31,"Throw it back, I make it rain, dear, call me Santa",Santa,END,SLANT,cmu,MED,Y
+Miami with the Heat,29,"My youngin runnin' guns, takin' trips to Savannah",Savannah,31,"Throw it back, I make it rain, dear, call me Santa",back,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,29,"My youngin runnin' guns, takin' trips to Savannah",takin,31,"Throw it back, I make it rain, dear, call me Santa",make,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,29,"My youngin runnin' guns, takin' trips to Savannah",takin,31,"Throw it back, I make it rain, dear, call me Santa",rain,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,29,"My youngin runnin' guns, takin' trips to Savannah",trips,31,"Throw it back, I make it rain, dear, call me Santa",dear,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,29,"My youngin runnin' guns, takin' trips to Savannah",Savannah,32,"Four bodies in the same year, fresh out the slammer",slammer,END,SLANT,cmu,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",bond,30,"Lil' Marco get the bond, he shot the nigga on camera",shot,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",Marco,30,"Lil' Marco get the bond, he shot the nigga on camera",bond,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",Marco,30,"Lil' Marco get the bond, he shot the nigga on camera",shot,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",camera,31,"Throw it back, I make it rain, dear, call me Santa",Santa,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",camera,31,"Throw it back, I make it rain, dear, call me Santa",back,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",Lil,31,"Throw it back, I make it rain, dear, call me Santa",dear,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",camera,32,"Four bodies in the same year, fresh out the slammer",slammer,END,SLANT,cmu,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",bond,32,"Four bodies in the same year, fresh out the slammer",bodies,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",get,32,"Four bodies in the same year, fresh out the slammer",fresh,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",Lil,32,"Four bodies in the same year, fresh out the slammer",year,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",Marco,32,"Four bodies in the same year, fresh out the slammer",bodies,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,30,"Lil' Marco get the bond, he shot the nigga on camera",shot,32,"Four bodies in the same year, fresh out the slammer",bodies,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",back,31,"Throw it back, I make it rain, dear, call me Santa",Santa,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",make,31,"Throw it back, I make it rain, dear, call me Santa",rain,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",Santa,32,"Four bodies in the same year, fresh out the slammer",slammer,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",back,32,"Four bodies in the same year, fresh out the slammer",slammer,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",call,32,"Four bodies in the same year, fresh out the slammer",Four,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",dear,32,"Four bodies in the same year, fresh out the slammer",year,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",make,32,"Four bodies in the same year, fresh out the slammer",same,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",rain,32,"Four bodies in the same year, fresh out the slammer",same,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",back,33,"All these niggas screamin' gang shit, we do a lil' better",gang,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",call,33,"All these niggas screamin' gang shit, we do a lil' better",All,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",dear,33,"All these niggas screamin' gang shit, we do a lil' better",lil,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",dear,33,"All these niggas screamin' gang shit, we do a lil' better",shit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,31,"Throw it back, I make it rain, dear, call me Santa",Santa,33,"All these niggas screamin' gang shit, we do a lil' better",gang,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",Four,33,"All these niggas screamin' gang shit, we do a lil' better",All,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",fresh,33,"All these niggas screamin' gang shit, we do a lil' better",better,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",slammer,33,"All these niggas screamin' gang shit, we do a lil' better",gang,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",year,33,"All these niggas screamin' gang shit, we do a lil' better",lil,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",year,33,"All these niggas screamin' gang shit, we do a lil' better",shit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",bodies,34,"Everybody with me on the same tip, gon' pop off wherever",Everybody,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",bodies,34,"Everybody with me on the same tip, gon' pop off wherever",pop,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",fresh,34,"Everybody with me on the same tip, gon' pop off wherever",wherever,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",same,34,"Everybody with me on the same tip, gon' pop off wherever",same,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,32,"Four bodies in the same year, fresh out the slammer",year,34,"Everybody with me on the same tip, gon' pop off wherever",tip,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",shit,33,"All these niggas screamin' gang shit, we do a lil' better",lil,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",these,33,"All these niggas screamin' gang shit, we do a lil' better",screamin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",better,34,"Everybody with me on the same tip, gon' pop off wherever",wherever,END,SLANT,cmu,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",lil,34,"Everybody with me on the same tip, gon' pop off wherever",tip,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",shit,34,"Everybody with me on the same tip, gon' pop off wherever",tip,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",All,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",'Fore,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",better,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",get,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",screamin,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",need,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",screamin,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",please,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",these,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",need,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,33,"All these niggas screamin' gang shit, we do a lil' better",these,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",please,INNER,PERFECT,cmu,HIGH,Y
+Miami with the Heat,34,"Everybody with me on the same tip, gon' pop off wherever",Everybody,34,"Everybody with me on the same tip, gon' pop off wherever",pop,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,34,"Everybody with me on the same tip, gon' pop off wherever",same,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",stage,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,34,"Everybody with me on the same tip, gon' pop off wherever",wherever,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",get,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,34,"Everybody with me on the same tip, gon' pop off wherever",same,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",paid,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",need,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",please,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",dub,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",dub,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",sluts,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",stage,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",paid,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",please,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",deep,END,SLANT,cmu,MED,Y
+Miami with the Heat,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",dub,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",come,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",need,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",deep,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",please,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",cheese,END,PERFECT,cmu,HIGH,Y
+Miami with the Heat,35,"'Fore I get on the stage (Stage), I need me a dub please (Yeah)",please,39,"Way richer than my haters, they can't even compete",compete,END,SLANT,cmu,MED,Y
+Miami with the Heat,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",fuckin,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",sluts,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",fuckin,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",come,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",sluts,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",come,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",fuckin,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",fuck,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",paid,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,36,"She fuckin' 'cause I'm paid, you know how them sluts be (Ugh)",sluts,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",fuck,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",deep,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",cheese,END,SLANT,cmu,MED,Y
+Miami with the Heat,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",come,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",fuck,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",deep,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",beef,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",slidin,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",type,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",deep,39,"Way richer than my haters, they can't even compete",compete,END,SLANT,cmu,MED,Y
+Miami with the Heat,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",deep,39,"Way richer than my haters, they can't even compete",even,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,37,"They slidin' for the Skii, my niggas gon' come deep (Skrrt)",deep,40,"I keep a couple on my roster (Damn), I can't just have one freak",freak,END,SLANT,cmu,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",beef,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",cheese,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",cheese,39,"Way richer than my haters, they can't even compete",compete,END,SLANT,cmu,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",ain't,39,"Way richer than my haters, they can't even compete",haters,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",ain't,39,"Way richer than my haters, they can't even compete",Way,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",beef,39,"Way richer than my haters, they can't even compete",compete,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",beef,39,"Way richer than my haters, they can't even compete",even,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",cheese,39,"Way richer than my haters, they can't even compete",even,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",cheese,40,"I keep a couple on my roster (Damn), I can't just have one freak",freak,END,SLANT,cmu,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",beef,40,"I keep a couple on my roster (Damn), I can't just have one freak",freak,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",beef,40,"I keep a couple on my roster (Damn), I can't just have one freak",keep,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",cheese,40,"I keep a couple on my roster (Damn), I can't just have one freak",keep,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",fuck,40,"I keep a couple on my roster (Damn), I can't just have one freak",couple,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,38,"I ain't the type to beef, I'm spendin' that fuck cheese (On God)",fuck,40,"I keep a couple on my roster (Damn), I can't just have one freak",one,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",even,39,"Way richer than my haters, they can't even compete",compete,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",Way,39,"Way richer than my haters, they can't even compete",haters,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",compete,40,"I keep a couple on my roster (Damn), I can't just have one freak",freak,END,SLANT,cmu,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",can't,40,"I keep a couple on my roster (Damn), I can't just have one freak",can't,INNER,REPEAT,spelling,HIGH,N
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",can't,40,"I keep a couple on my roster (Damn), I can't just have one freak",have,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",compete,40,"I keep a couple on my roster (Damn), I can't just have one freak",keep,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",even,40,"I keep a couple on my roster (Damn), I can't just have one freak",freak,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",even,40,"I keep a couple on my roster (Damn), I can't just have one freak",keep,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",compete,41,"All these niggas see a dollar (What?), they don't really love me",see,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",compete,41,"All these niggas see a dollar (What?), they don't really love me",these,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",even,41,"All these niggas see a dollar (What?), they don't really love me",see,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",even,41,"All these niggas see a dollar (What?), they don't really love me",these,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,39,"Way richer than my haters, they can't even compete",richer,41,"All these niggas see a dollar (What?), they don't really love me",really,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",can't,40,"I keep a couple on my roster (Damn), I can't just have one freak",have,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",couple,40,"I keep a couple on my roster (Damn), I can't just have one freak",one,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",keep,40,"I keep a couple on my roster (Damn), I can't just have one freak",freak,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",couple,41,"All these niggas see a dollar (What?), they don't really love me",love,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",freak,41,"All these niggas see a dollar (What?), they don't really love me",see,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",freak,41,"All these niggas see a dollar (What?), they don't really love me",these,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",keep,41,"All these niggas see a dollar (What?), they don't really love me",see,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",keep,41,"All these niggas see a dollar (What?), they don't really love me",these,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",one,41,"All these niggas see a dollar (What?), they don't really love me",love,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",roster,41,"All these niggas see a dollar (What?), they don't really love me",dollar,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,40,"I keep a couple on my roster (Damn), I can't just have one freak",one,42,He hatin' on Luh Tyler 'cause he wish that he was me,Luh,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,41,"All these niggas see a dollar (What?), they don't really love me",these,41,"All these niggas see a dollar (What?), they don't really love me",see,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,41,"All these niggas see a dollar (What?), they don't really love me",dollar,42,He hatin' on Luh Tyler 'cause he wish that he was me,Tyler,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,41,"All these niggas see a dollar (What?), they don't really love me",love,42,He hatin' on Luh Tyler 'cause he wish that he was me,Luh,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,41,"All these niggas see a dollar (What?), they don't really love me",really,42,He hatin' on Luh Tyler 'cause he wish that he was me,wish,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,41,"All these niggas see a dollar (What?), they don't really love me",dollar,43,"When I was down, they wasn't 'round to lift me up (Yeah)",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,41,"All these niggas see a dollar (What?), they don't really love me",really,43,"When I was down, they wasn't 'round to lift me up (Yeah)",lift,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,41,"All these niggas see a dollar (What?), they don't really love me",love,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",fuck,END,SLANT,cmu,MED,Y
+Miami with the Heat,42,He hatin' on Luh Tyler 'cause he wish that he was me,wish,43,"When I was down, they wasn't 'round to lift me up (Yeah)",lift,END,ASSONANCE,vowel,MED,Y
+Miami with the Heat,42,He hatin' on Luh Tyler 'cause he wish that he was me,wish,44,"But now I'm rich, know they mad because I ran it up (Yeah)",rich,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,43,"When I was down, they wasn't 'round to lift me up (Yeah)",down,43,"When I was down, they wasn't 'round to lift me up (Yeah)",'round,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,43,"When I was down, they wasn't 'round to lift me up (Yeah)",'round,44,"But now I'm rich, know they mad because I ran it up (Yeah)",now,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,43,"When I was down, they wasn't 'round to lift me up (Yeah)",down,44,"But now I'm rich, know they mad because I ran it up (Yeah)",now,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,43,"When I was down, they wasn't 'round to lift me up (Yeah)",lift,44,"But now I'm rich, know they mad because I ran it up (Yeah)",rich,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,43,"When I was down, they wasn't 'round to lift me up (Yeah)",lift,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",lit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,44,"But now I'm rich, know they mad because I ran it up (Yeah)",mad,44,"But now I'm rich, know they mad because I ran it up (Yeah)",ran,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,44,"But now I'm rich, know they mad because I ran it up (Yeah)",rich,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",lit,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,44,"But now I'm rich, know they mad because I ran it up (Yeah)",know,46,"They said they did, but whole time, they didn't love me (Didn't love me)",whole,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,44,"But now I'm rich, know they mad because I ran it up (Yeah)",rich,46,"They said they did, but whole time, they didn't love me (Didn't love me)",didn't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",club,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",fuck,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",nigga,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",lit,INNER,SLANT,spelling,LOW,Y
+Miami with the Heat,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",turnt,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",club,INNER,ASSONANCE,vowel,LOW,N
+Miami with the Heat,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",turnt,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",fuck,INNER,ASSONANCE,vowel,LOW,N
+Miami with the Heat,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",fuck,46,"They said they did, but whole time, they didn't love me (Didn't love me)",love,END,SLANT,cmu,MED,Y
+Miami with the Heat,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",club,46,"They said they did, but whole time, they didn't love me (Didn't love me)",love,INNER,SLANT,cmu,MED,Y
+Miami with the Heat,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",lit,46,"They said they did, but whole time, they didn't love me (Didn't love me)",didn't,INNER,ASSONANCE,vowel,MED,Y
+Miami with the Heat,45,"I'm turnt up in the club, nigga, I'm lit as fuck (Lit as fuck)",nigga,46,"They said they did, but whole time, they didn't love me (Didn't love me)",didn't,INNER,SLANT,spelling,LOW,Y

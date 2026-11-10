@@ -1,0 +1,211 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+DAPPERDAN,1,"Attitude like ""what you lookin' at?""",like,2,"My face look like ""I don't wanna chat""",like,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,1,"Attitude like ""what you lookin' at?""",lookin,2,"My face look like ""I don't wanna chat""",look,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,1,"Attitude like ""what you lookin' at?""",lookin,3,"My wrist look clean, and it's mean, it's mean",look,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,2,"My face look like ""I don't wanna chat""",look,3,"My wrist look clean, and it's mean, it's mean",look,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,2,"My face look like ""I don't wanna chat""",chat,4,"Your party look lame, I'ma have to pass",pass,END,SLANT,cmu,MED,Y
+DAPPERDAN,2,"My face look like ""I don't wanna chat""",chat,4,"Your party look lame, I'ma have to pass",have,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,2,"My face look like ""I don't wanna chat""",face,4,"Your party look lame, I'ma have to pass",lame,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,2,"My face look like ""I don't wanna chat""",look,4,"Your party look lame, I'ma have to pass",look,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,2,"My face look like ""I don't wanna chat""",wanna,4,"Your party look lame, I'ma have to pass",party,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,3,"My wrist look clean, and it's mean, it's mean",clean,3,"My wrist look clean, and it's mean, it's mean",mean,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,3,"My wrist look clean, and it's mean, it's mean",mean,3,"My wrist look clean, and it's mean, it's mean",mean,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,3,"My wrist look clean, and it's mean, it's mean",look,4,"Your party look lame, I'ma have to pass",look,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,4,"Your party look lame, I'ma have to pass",have,4,"Your party look lame, I'ma have to pass",pass,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,4,"Your party look lame, I'ma have to pass",I'ma,6,"I told that bitch I'm fresh, I'm fresh in the flesh",bitch,INNER,SLANT,spelling,LOW,Y
+DAPPERDAN,5,"'Cause I'm fresh, I'm fresh in the flesh",fresh,5,"'Cause I'm fresh, I'm fresh in the flesh",flesh,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,5,"'Cause I'm fresh, I'm fresh in the flesh",fresh,5,"'Cause I'm fresh, I'm fresh in the flesh",fresh,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,5,"'Cause I'm fresh, I'm fresh in the flesh",flesh,6,"I told that bitch I'm fresh, I'm fresh in the flesh",flesh,END,REPEAT,spelling,HIGH,N
+DAPPERDAN,5,"'Cause I'm fresh, I'm fresh in the flesh",flesh,6,"I told that bitch I'm fresh, I'm fresh in the flesh",fresh,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,5,"'Cause I'm fresh, I'm fresh in the flesh",fresh,6,"I told that bitch I'm fresh, I'm fresh in the flesh",flesh,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,5,"'Cause I'm fresh, I'm fresh in the flesh",fresh,6,"I told that bitch I'm fresh, I'm fresh in the flesh",fresh,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,5,"'Cause I'm fresh, I'm fresh in the flesh",flesh,7,I told that bitch I'm fresh ('Cause my drip too clean!),fresh,END,PERFECT,cmu,HIGH,Y
+DAPPERDAN,5,"'Cause I'm fresh, I'm fresh in the flesh",fresh,7,I told that bitch I'm fresh ('Cause my drip too clean!),fresh,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,6,"I told that bitch I'm fresh, I'm fresh in the flesh",fresh,6,"I told that bitch I'm fresh, I'm fresh in the flesh",flesh,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,6,"I told that bitch I'm fresh, I'm fresh in the flesh",fresh,6,"I told that bitch I'm fresh, I'm fresh in the flesh",fresh,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,6,"I told that bitch I'm fresh, I'm fresh in the flesh",flesh,7,I told that bitch I'm fresh ('Cause my drip too clean!),fresh,END,PERFECT,cmu,HIGH,Y
+DAPPERDAN,6,"I told that bitch I'm fresh, I'm fresh in the flesh",bitch,7,I told that bitch I'm fresh ('Cause my drip too clean!),bitch,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,6,"I told that bitch I'm fresh, I'm fresh in the flesh",fresh,7,I told that bitch I'm fresh ('Cause my drip too clean!),fresh,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,6,"I told that bitch I'm fresh, I'm fresh in the flesh",told,7,I told that bitch I'm fresh ('Cause my drip too clean!),told,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,6,"I told that bitch I'm fresh, I'm fresh in the flesh",bitch,8,I'm starin' at the window of this Buick (yuh!),window,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,7,I told that bitch I'm fresh ('Cause my drip too clean!),bitch,8,I'm starin' at the window of this Buick (yuh!),window,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,7,I told that bitch I'm fresh ('Cause my drip too clean!),told,9,Hoes say I'm heroic but I told her I'm historic (hey!),heroic,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,7,I told that bitch I'm fresh ('Cause my drip too clean!),told,9,Hoes say I'm heroic but I told her I'm historic (hey!),Hoes,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,7,I told that bitch I'm fresh ('Cause my drip too clean!),told,9,Hoes say I'm heroic but I told her I'm historic (hey!),told,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,8,I'm starin' at the window of this Buick (yuh!),window,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",Bitch,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,8,I'm starin' at the window of this Buick (yuh!),window,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",mixed,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,8,I'm starin' at the window of this Buick (yuh!),Buick,12,(Woo!) Scene! That's the end of the movie,movie,END,SLANT,cmu,MED,Y
+DAPPERDAN,9,Hoes say I'm heroic but I told her I'm historic (hey!),heroic,9,Hoes say I'm heroic but I told her I'm historic (hey!),told,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,9,Hoes say I'm heroic but I told her I'm historic (hey!),Hoes,9,Hoes say I'm heroic but I told her I'm historic (hey!),heroic,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,9,Hoes say I'm heroic but I told her I'm historic (hey!),Hoes,9,Hoes say I'm heroic but I told her I'm historic (hey!),told,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,9,Hoes say I'm heroic but I told her I'm historic (hey!),historic,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",Maury,END,SLANT,cmu,MED,Y
+DAPPERDAN,9,Hoes say I'm heroic but I told her I'm historic (hey!),historic,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",Boris,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,9,Hoes say I'm heroic but I told her I'm historic (hey!),told,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",Borat,INNER,SLANT,spelling,LOW,Y
+DAPPERDAN,9,Hoes say I'm heroic but I told her I'm historic (hey!),say,11,I'm out here with Topanga like I'm white and my name Cory,name,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",Bitch,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",mixed,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",Boris,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",Maury,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,10,"Bitch, ya boy a Borat and a Boris mixed with Maury (true!)",Maury,11,I'm out here with Topanga like I'm white and my name Cory,Cory,END,MULTI,multi,HIGH,Y
+DAPPERDAN,11,I'm out here with Topanga like I'm white and my name Cory,here,11,I'm out here with Topanga like I'm white and my name Cory,Cory,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,11,I'm out here with Topanga like I'm white and my name Cory,like,11,I'm out here with Topanga like I'm white and my name Cory,white,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,11,I'm out here with Topanga like I'm white and my name Cory,Cory,12,(Woo!) Scene! That's the end of the movie,Scene,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,11,I'm out here with Topanga like I'm white and my name Cory,here,12,(Woo!) Scene! That's the end of the movie,Scene,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,11,I'm out here with Topanga like I'm white and my name Cory,like,13,Looks like you a lame old goofy,like,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,11,I'm out here with Topanga like I'm white and my name Cory,name,13,Looks like you a lame old goofy,lame,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,11,I'm out here with Topanga like I'm white and my name Cory,white,13,Looks like you a lame old goofy,like,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,12,(Woo!) Scene! That's the end of the movie,movie,13,Looks like you a lame old goofy,goofy,END,SLANT,cmu,MED,Y
+DAPPERDAN,12,(Woo!) Scene! That's the end of the movie,movie,14,We don't ever love thots or the groupies,groupies,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,12,(Woo!) Scene! That's the end of the movie,end,14,We don't ever love thots or the groupies,ever,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,12,(Woo!) Scene! That's the end of the movie,movie,15,That's word to my OG Boosie,Boosie,END,PERFECT,spelling,MED,Y
+DAPPERDAN,12,(Woo!) Scene! That's the end of the movie,movie,16,Independent like my first name Webbie,Webbie,END,PERFECT,spelling,MED,Y
+DAPPERDAN,13,Looks like you a lame old goofy,goofy,14,We don't ever love thots or the groupies,groupies,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,13,Looks like you a lame old goofy,old,14,We don't ever love thots or the groupies,don't,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,13,Looks like you a lame old goofy,goofy,15,That's word to my OG Boosie,Boosie,END,SLANT,spelling,LOW,Y
+DAPPERDAN,14,We don't ever love thots or the groupies,don't,14,We don't ever love thots or the groupies,thots,INNER,ASSONANCE,vowel,LOW,N
+DAPPERDAN,14,We don't ever love thots or the groupies,groupies,15,That's word to my OG Boosie,Boosie,END,ASSONANCE,vowel,LOW,N
+DAPPERDAN,14,We don't ever love thots or the groupies,ever,16,Independent like my first name Webbie,Independent,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,15,That's word to my OG Boosie,Boosie,16,Independent like my first name Webbie,Webbie,END,PERFECT,spelling,MED,Y
+DAPPERDAN,15,That's word to my OG Boosie,word,16,Independent like my first name Webbie,first,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,16,Independent like my first name Webbie,Independent,17,"I look clean, I don't ever look messy",ever,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,16,Independent like my first name Webbie,Independent,17,"I look clean, I don't ever look messy",messy,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,16,Independent like my first name Webbie,Independent,18,"Goddammit, I know I'm sexy, Goddammit-",sexy,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,17,"I look clean, I don't ever look messy",ever,17,"I look clean, I don't ever look messy",messy,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,17,"I look clean, I don't ever look messy",look,17,"I look clean, I don't ever look messy",look,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,17,"I look clean, I don't ever look messy",don't,18,"Goddammit, I know I'm sexy, Goddammit-",know,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,17,"I look clean, I don't ever look messy",ever,18,"Goddammit, I know I'm sexy, Goddammit-",sexy,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,17,"I look clean, I don't ever look messy",messy,18,"Goddammit, I know I'm sexy, Goddammit-",sexy,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,17,"I look clean, I don't ever look messy",clean,19,"Bitch I'm fresh as hell, these Amiri’s now",these,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,17,"I look clean, I don't ever look messy",ever,19,"Bitch I'm fresh as hell, these Amiri’s now",fresh,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,17,"I look clean, I don't ever look messy",ever,19,"Bitch I'm fresh as hell, these Amiri’s now",hell,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,17,"I look clean, I don't ever look messy",messy,19,"Bitch I'm fresh as hell, these Amiri’s now",fresh,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,17,"I look clean, I don't ever look messy",messy,19,"Bitch I'm fresh as hell, these Amiri’s now",hell,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,18,"Goddammit, I know I'm sexy, Goddammit-",Goddammit,18,"Goddammit, I know I'm sexy, Goddammit-",Goddammit,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,18,"Goddammit, I know I'm sexy, Goddammit-",Goddammit,19,"Bitch I'm fresh as hell, these Amiri’s now",Amiri’s,INNER,ASSONANCE,vowel,LOW,N
+DAPPERDAN,18,"Goddammit, I know I'm sexy, Goddammit-",sexy,19,"Bitch I'm fresh as hell, these Amiri’s now",fresh,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,18,"Goddammit, I know I'm sexy, Goddammit-",sexy,19,"Bitch I'm fresh as hell, these Amiri’s now",hell,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,18,"Goddammit, I know I'm sexy, Goddammit-",Goddammit,20,Mike Amiri DM’d me on the ‘Gram,Gram,END,SLANT,cmu,MED,Y
+DAPPERDAN,18,"Goddammit, I know I'm sexy, Goddammit-",Goddammit,20,Mike Amiri DM’d me on the ‘Gram,Gram,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,18,"Goddammit, I know I'm sexy, Goddammit-",Goddammit,21,Told me do the Amiri challenge,challenge,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,19,"Bitch I'm fresh as hell, these Amiri’s now",fresh,19,"Bitch I'm fresh as hell, these Amiri’s now",hell,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,19,"Bitch I'm fresh as hell, these Amiri’s now",Bitch,20,Mike Amiri DM’d me on the ‘Gram,Amiri,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,19,"Bitch I'm fresh as hell, these Amiri’s now",Bitch,21,Told me do the Amiri challenge,Amiri,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,20,Mike Amiri DM’d me on the ‘Gram,Gram,21,Told me do the Amiri challenge,challenge,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,20,Mike Amiri DM’d me on the ‘Gram,Amiri,21,Told me do the Amiri challenge,Amiri,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,20,Mike Amiri DM’d me on the ‘Gram,Amiri,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,Amiri,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,20,Mike Amiri DM’d me on the ‘Gram,Amiri,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,Mixin,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,20,Mike Amiri DM’d me on the ‘Gram,Gram,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,jacket,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,20,Mike Amiri DM’d me on the ‘Gram,Gram,23,That’s the Amiri balance,balance,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,20,Mike Amiri DM’d me on the ‘Gram,Gram,24,"Say I'm gettin' money, you accurate",accurate,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,21,Told me do the Amiri challenge,Amiri,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,Amiri,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,21,Told me do the Amiri challenge,Amiri,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,Mixin,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,21,Told me do the Amiri challenge,challenge,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,jacket,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,21,Told me do the Amiri challenge,challenge,23,That’s the Amiri balance,balance,END,SLANT,cmu,MED,Y
+DAPPERDAN,21,Told me do the Amiri challenge,Amiri,23,That’s the Amiri balance,Amiri,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,21,Told me do the Amiri challenge,challenge,24,"Say I'm gettin' money, you accurate",accurate,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,21,Told me do the Amiri challenge,challenge,25,You don't ever see me ridin' no Acura,Acura,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,Mixin,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,Amiri,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,Amiri,23,That’s the Amiri balance,Amiri,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,jacket,23,That’s the Amiri balance,balance,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,Mixin,23,That’s the Amiri balance,Amiri,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,22,Mixin’ Amiri jeans and jacket with the Guwop shirt,jacket,24,"Say I'm gettin' money, you accurate",accurate,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,23,That’s the Amiri balance,balance,24,"Say I'm gettin' money, you accurate",accurate,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,23,That’s the Amiri balance,balance,25,You don't ever see me ridin' no Acura,Acura,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,24,"Say I'm gettin' money, you accurate",accurate,25,You don't ever see me ridin' no Acura,Acura,END,SLANT,cmu,MED,Y
+DAPPERDAN,24,"Say I'm gettin' money, you accurate",gettin,25,You don't ever see me ridin' no Acura,ever,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,24,"Say I'm gettin' money, you accurate",accurate,28,"Bitch, I'm hot, what's happenin'?",happenin,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,25,You don't ever see me ridin' no Acura,don't,25,You don't ever see me ridin' no Acura,no,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,25,You don't ever see me ridin' no Acura,Acura,27,You can't hear me slide,can't,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,25,You don't ever see me ridin' no Acura,ridin,27,You can't hear me slide,slide,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,25,You don't ever see me ridin' no Acura,see,27,You can't hear me slide,hear,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,25,You don't ever see me ridin' no Acura,Acura,28,"Bitch, I'm hot, what's happenin'?",happenin,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,25,You don't ever see me ridin' no Acura,Acura,29,Gelato and Percocets one of my habits,habits,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,26,"This a Hellcat, 700 horsepower on that bitch",bitch,28,"Bitch, I'm hot, what's happenin'?",Bitch,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,27,You can't hear me slide,can't,28,"Bitch, I'm hot, what's happenin'?",happenin,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,27,You can't hear me slide,can't,29,Gelato and Percocets one of my habits,habits,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,27,You can't hear me slide,slide,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",diamonds,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,28,"Bitch, I'm hot, what's happenin'?",happenin,29,Gelato and Percocets one of my habits,habits,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,28,"Bitch, I'm hot, what's happenin'?",what's,29,Gelato and Percocets one of my habits,one,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,28,"Bitch, I'm hot, what's happenin'?",Bitch,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",Shit,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,28,"Bitch, I'm hot, what's happenin'?",happenin,31,"Ain't talkin' shit, I'm a savage",savage,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,28,"Bitch, I'm hot, what's happenin'?",happenin,32,"Reach for this bitch, I'm blastin' (bow!)",blastin,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,29,Gelato and Percocets one of my habits,habits,31,"Ain't talkin' shit, I'm a savage",savage,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,29,Gelato and Percocets one of my habits,habits,32,"Reach for this bitch, I'm blastin' (bow!)",blastin,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",buyin,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",diamonds,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",shine,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",buyin,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",shine,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",diamonds,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",Shit,31,"Ain't talkin' shit, I'm a savage",shit,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,30,"Shit, if it shine, I'm buyin', 200, 300k for my diamonds",Shit,32,"Reach for this bitch, I'm blastin' (bow!)",bitch,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,31,"Ain't talkin' shit, I'm a savage",savage,32,"Reach for this bitch, I'm blastin' (bow!)",blastin,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,31,"Ain't talkin' shit, I'm a savage",shit,32,"Reach for this bitch, I'm blastin' (bow!)",bitch,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,31,"Ain't talkin' shit, I'm a savage",shit,33,"You see me doin' shit, bitch, and I've got you shook!",bitch,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,31,"Ain't talkin' shit, I'm a savage",shit,33,"You see me doin' shit, bitch, and I've got you shook!",shit,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,31,"Ain't talkin' shit, I'm a savage",talkin,33,"You see me doin' shit, bitch, and I've got you shook!",got,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,32,"Reach for this bitch, I'm blastin' (bow!)",bitch,33,"You see me doin' shit, bitch, and I've got you shook!",bitch,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,32,"Reach for this bitch, I'm blastin' (bow!)",bitch,33,"You see me doin' shit, bitch, and I've got you shook!",shit,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,32,"Reach for this bitch, I'm blastin' (bow!)",Reach,33,"You see me doin' shit, bitch, and I've got you shook!",see,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,32,"Reach for this bitch, I'm blastin' (bow!)",bitch,34,"Ooh, I got you shook bitch, I know you wanna look bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",shit,33,"You see me doin' shit, bitch, and I've got you shook!",bitch,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",bitch,34,"Ooh, I got you shook bitch, I know you wanna look bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",got,34,"Ooh, I got you shook bitch, I know you wanna look bitch",got,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",got,34,"Ooh, I got you shook bitch, I know you wanna look bitch",wanna,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",shit,34,"Ooh, I got you shook bitch, I know you wanna look bitch",bitch,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",shook,34,"Ooh, I got you shook bitch, I know you wanna look bitch",look,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",shook,34,"Ooh, I got you shook bitch, I know you wanna look bitch",shook,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",bitch,35,My drip got your bitch like (Oh my gosh!),bitch,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",bitch,35,My drip got your bitch like (Oh my gosh!),drip,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",got,35,My drip got your bitch like (Oh my gosh!),got,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",shit,35,My drip got your bitch like (Oh my gosh!),bitch,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,33,"You see me doin' shit, bitch, and I've got you shook!",shit,35,My drip got your bitch like (Oh my gosh!),drip,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",bitch,34,"Ooh, I got you shook bitch, I know you wanna look bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",got,34,"Ooh, I got you shook bitch, I know you wanna look bitch",wanna,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",shook,34,"Ooh, I got you shook bitch, I know you wanna look bitch",look,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",bitch,35,My drip got your bitch like (Oh my gosh!),bitch,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",bitch,35,My drip got your bitch like (Oh my gosh!),drip,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",got,35,My drip got your bitch like (Oh my gosh!),got,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",wanna,35,My drip got your bitch like (Oh my gosh!),got,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",bitch,36,"This that ""in my bag shit,"" ""never look at tags"" shit",shit,END,SLANT,cmu,MED,Y
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",bitch,36,"This that ""in my bag shit,"" ""never look at tags"" shit",shit,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",look,36,"This that ""in my bag shit,"" ""never look at tags"" shit",look,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,34,"Ooh, I got you shook bitch, I know you wanna look bitch",shook,36,"This that ""in my bag shit,"" ""never look at tags"" shit",look,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,35,My drip got your bitch like (Oh my gosh!),drip,35,My drip got your bitch like (Oh my gosh!),bitch,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,35,My drip got your bitch like (Oh my gosh!),bitch,36,"This that ""in my bag shit,"" ""never look at tags"" shit",shit,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,35,My drip got your bitch like (Oh my gosh!),drip,36,"This that ""in my bag shit,"" ""never look at tags"" shit",shit,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,35,My drip got your bitch like (Oh my gosh!),bitch,37,This dick make your shawty say (Oh my gosh!),dick,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,35,My drip got your bitch like (Oh my gosh!),drip,37,This dick make your shawty say (Oh my gosh!),dick,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,36,"This that ""in my bag shit,"" ""never look at tags"" shit",bag,36,"This that ""in my bag shit,"" ""never look at tags"" shit",tags,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,36,"This that ""in my bag shit,"" ""never look at tags"" shit",shit,36,"This that ""in my bag shit,"" ""never look at tags"" shit",shit,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,36,"This that ""in my bag shit,"" ""never look at tags"" shit",shit,37,This dick make your shawty say (Oh my gosh!),dick,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,37,This dick make your shawty say (Oh my gosh!),make,37,This dick make your shawty say (Oh my gosh!),say,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,37,This dick make your shawty say (Oh my gosh!),make,38,In LA like my name Dre,name,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,37,This dick make your shawty say (Oh my gosh!),say,38,In LA like my name Dre,name,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,37,This dick make your shawty say (Oh my gosh!),say,39,Hit Gabe up for a fade,fade,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,37,This dick make your shawty say (Oh my gosh!),dick,39,Hit Gabe up for a fade,Hit,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,37,This dick make your shawty say (Oh my gosh!),make,39,Hit Gabe up for a fade,fade,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,37,This dick make your shawty say (Oh my gosh!),make,39,Hit Gabe up for a fade,Gabe,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,37,This dick make your shawty say (Oh my gosh!),say,39,Hit Gabe up for a fade,Gabe,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,37,This dick make your shawty say (Oh my gosh!),say,40,"My jewels is custom made, but I didn't go to Kay",Kay,END,PERFECT,cmu,HIGH,Y
+DAPPERDAN,38,In LA like my name Dre,name,39,Hit Gabe up for a fade,fade,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,38,In LA like my name Dre,name,39,Hit Gabe up for a fade,Gabe,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,38,In LA like my name Dre,name,40,"My jewels is custom made, but I didn't go to Kay",Kay,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,38,In LA like my name Dre,name,40,"My jewels is custom made, but I didn't go to Kay",made,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,39,Hit Gabe up for a fade,Gabe,39,Hit Gabe up for a fade,fade,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,39,Hit Gabe up for a fade,fade,40,"My jewels is custom made, but I didn't go to Kay",Kay,END,ASSONANCE,vowel,MED,Y
+DAPPERDAN,39,Hit Gabe up for a fade,fade,40,"My jewels is custom made, but I didn't go to Kay",made,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,39,Hit Gabe up for a fade,Gabe,40,"My jewels is custom made, but I didn't go to Kay",Kay,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,39,Hit Gabe up for a fade,Gabe,40,"My jewels is custom made, but I didn't go to Kay",made,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,39,Hit Gabe up for a fade,Hit,40,"My jewels is custom made, but I didn't go to Kay",didn't,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,39,Hit Gabe up for a fade,Hit,41,I'm whippin' right down Pico,whippin,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,40,"My jewels is custom made, but I didn't go to Kay",made,40,"My jewels is custom made, but I didn't go to Kay",Kay,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,40,"My jewels is custom made, but I didn't go to Kay",didn't,41,I'm whippin' right down Pico,whippin,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,41,I'm whippin' right down Pico,Pico,42,I'm nasty like I'm Rico,Rico,END,MULTI,multi,HIGH,Y
+DAPPERDAN,41,I'm whippin' right down Pico,right,42,I'm nasty like I'm Rico,like,INNER,SLANT,cmu,MED,Y
+DAPPERDAN,41,I'm whippin' right down Pico,whippin,43,I'm skrtin' through the bullshit,bullshit,INNER,ASSONANCE,vowel,MED,Y
+DAPPERDAN,41,I'm whippin' right down Pico,whippin,43,I'm skrtin' through the bullshit,skrtin,INNER,ASSONANCE,vowel,LOW,N
+DAPPERDAN,41,I'm whippin' right down Pico,Pico,44,I Swervo like I'm Herbo,Herbo,END,ASSONANCE,vowel,LOW,N
+DAPPERDAN,42,I'm nasty like I'm Rico,Rico,44,I Swervo like I'm Herbo,Herbo,END,ASSONANCE,vowel,LOW,N
+DAPPERDAN,42,I'm nasty like I'm Rico,like,44,I Swervo like I'm Herbo,like,INNER,REPEAT,spelling,HIGH,N
+DAPPERDAN,42,I'm nasty like I'm Rico,Rico,44,I Swervo like I'm Herbo,Swervo,INNER,ASSONANCE,vowel,LOW,N
+DAPPERDAN,43,I'm skrtin' through the bullshit,skrtin,43,I'm skrtin' through the bullshit,bullshit,INNER,SLANT,spelling,LOW,Y
+DAPPERDAN,43,I'm skrtin' through the bullshit,bullshit,45,"Oh shit, my bad",shit,INNER,PERFECT,cmu,HIGH,Y
+DAPPERDAN,43,I'm skrtin' through the bullshit,skrtin,45,"Oh shit, my bad",shit,INNER,SLANT,spelling,LOW,Y
+DAPPERDAN,44,I Swervo like I'm Herbo,Swervo,44,I Swervo like I'm Herbo,Herbo,INNER,SLANT,spelling,LOW,Y
+DAPPERDAN,44,I Swervo like I'm Herbo,like,46,"Umm, alright, next song",alright,INNER,SLANT,cmu,MED,Y

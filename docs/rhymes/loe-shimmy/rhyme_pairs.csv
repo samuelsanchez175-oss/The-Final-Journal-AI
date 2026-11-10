@@ -1,0 +1,461 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Bounty,1,"Man, Zombieland, Taliban, man",Man,1,"Man, Zombieland, Taliban, man",man,INNER,REPEAT,spelling,HIGH,N
+Bounty,1,"Man, Zombieland, Taliban, man",Man,1,"Man, Zombieland, Taliban, man",Taliban,INNER,PERFECT,cmu,HIGH,Y
+Bounty,1,"Man, Zombieland, Taliban, man",Taliban,1,"Man, Zombieland, Taliban, man",man,INNER,PERFECT,cmu,HIGH,Y
+Bounty,1,"Man, Zombieland, Taliban, man",man,2,"Pompanolia shit, man, yeah, man",man,END,REPEAT,spelling,HIGH,N
+Bounty,1,"Man, Zombieland, Taliban, man",Man,2,"Pompanolia shit, man, yeah, man",man,INNER,REPEAT,spelling,HIGH,N
+Bounty,1,"Man, Zombieland, Taliban, man",Taliban,2,"Pompanolia shit, man, yeah, man",man,INNER,PERFECT,cmu,HIGH,Y
+Bounty,1,"Man, Zombieland, Taliban, man",man,3,"Nigga know what it is, man",man,END,REPEAT,spelling,HIGH,N
+Bounty,1,"Man, Zombieland, Taliban, man",Man,3,"Nigga know what it is, man",man,INNER,REPEAT,spelling,HIGH,N
+Bounty,1,"Man, Zombieland, Taliban, man",Taliban,3,"Nigga know what it is, man",man,INNER,PERFECT,cmu,HIGH,Y
+Bounty,2,"Pompanolia shit, man, yeah, man",man,2,"Pompanolia shit, man, yeah, man",man,INNER,REPEAT,spelling,HIGH,N
+Bounty,2,"Pompanolia shit, man, yeah, man",man,3,"Nigga know what it is, man",man,END,REPEAT,spelling,HIGH,N
+Bounty,2,"Pompanolia shit, man, yeah, man",man,3,"Nigga know what it is, man",man,INNER,REPEAT,spelling,HIGH,N
+Bounty,2,"Pompanolia shit, man, yeah, man",shit,3,"Nigga know what it is, man",Nigga,INNER,SLANT,spelling,LOW,Y
+Bounty,2,"Pompanolia shit, man, yeah, man",shit,4,I ain't playin' with no nigga,nigga,INNER,SLANT,spelling,LOW,Y
+Bounty,3,"Nigga know what it is, man",know,4,I ain't playin' with no nigga,no,INNER,PERFECT,cmu,HIGH,Y
+Bounty,3,"Nigga know what it is, man",Nigga,4,I ain't playin' with no nigga,nigga,INNER,REPEAT,spelling,HIGH,N
+Bounty,3,"Nigga know what it is, man",know,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",post,INNER,ASSONANCE,vowel,MED,Y
+Bounty,3,"Nigga know what it is, man",know,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",stones,INNER,ASSONANCE,vowel,MED,Y
+Bounty,4,I ain't playin' with no nigga,ain't,4,I ain't playin' with no nigga,playin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,4,I ain't playin' with no nigga,ain't,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",Ave,INNER,ASSONANCE,vowel,MED,Y
+Bounty,4,I ain't playin' with no nigga,no,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",post,INNER,ASSONANCE,vowel,MED,Y
+Bounty,4,I ain't playin' with no nigga,no,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",stones,INNER,ASSONANCE,vowel,MED,Y
+Bounty,4,I ain't playin' with no nigga,playin,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",Ave,INNER,ASSONANCE,vowel,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",stones,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",post,INNER,ASSONANCE,vowel,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",trees,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",Rees,INNER,PERFECT,cmu,HIGH,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",Rees,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,END,PERFECT,cmu,HIGH,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",flippin,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",grippin,INNER,SLANT,cmu,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",flippin,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",trippin,INNER,SLANT,cmu,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",trees,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,INNER,PERFECT,cmu,HIGH,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",Rees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,END,SLANT,cmu,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",flippin,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",fulfill,INNER,ASSONANCE,vowel,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",flippin,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",tricks,INNER,ASSONANCE,vowel,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",Rees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,INNER,PERFECT,cmu,HIGH,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",Rees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,INNER,SLANT,cmu,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",trees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,INNER,PERFECT,cmu,HIGH,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",trees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,INNER,SLANT,cmu,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",trees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,INNER,SLANT,cmu,MED,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",Rees,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,END,PERFECT,cmu,HIGH,Y
+Bounty,5,"I'm on 5th Ave, flippin' stones and trees, post up in Soulja Rees",Rees,9,"Pocket full of G's, but I'm bangin' Z's",Z's,END,PERFECT,cmu,HIGH,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",trippin,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",grippin,INNER,MULTI,multi,HIGH,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,END,SLANT,cmu,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",down,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",down,INNER,REPEAT,spelling,HIGH,N
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",Glock,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",wants,INNER,ASSONANCE,vowel,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",grippin,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",fulfill,INNER,ASSONANCE,vowel,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",grippin,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",tricks,INNER,ASSONANCE,vowel,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,INNER,REPEAT,spelling,HIGH,N
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,INNER,SLANT,cmu,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",trippin,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",fulfill,INNER,ASSONANCE,vowel,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",trippin,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",tricks,INNER,ASSONANCE,vowel,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,END,PERFECT,cmu,HIGH,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",fallin,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",rappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",Glock,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",got,INNER,SLANT,cmu,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",grippin,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",until,INNER,ASSONANCE,vowel,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,INNER,SLANT,cmu,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,INNER,SLANT,cmu,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,INNER,PERFECT,cmu,HIGH,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",trippin,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",until,INNER,ASSONANCE,vowel,MED,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,9,"Pocket full of G's, but I'm bangin' Z's",Z's,END,PERFECT,cmu,HIGH,Y
+Bounty,6,"I'm trippin', grippin', booted up out my mind, Glock fallin' down my knees",knees,10,Rap don't work and then it's back to sellin' keys,keys,END,PERFECT,cmu,HIGH,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",fulfill,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",tricks,INNER,ASSONANCE,vowel,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,INNER,ASSONANCE,vowel,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,END,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",fulfill,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",until,INNER,PERFECT,cmu,HIGH,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",Get,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",sellin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",Get,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",TEC,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",Get,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",there,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,INNER,PERFECT,cmu,HIGH,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,INNER,PERFECT,cmu,HIGH,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,INNER,ASSONANCE,vowel,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,INNER,ASSONANCE,vowel,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",tricks,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",until,INNER,ASSONANCE,vowel,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",wants,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",got,INNER,ASSONANCE,vowel,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,9,"Pocket full of G's, but I'm bangin' Z's",Z's,END,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,9,"Pocket full of G's, but I'm bangin' Z's",G's,INNER,PERFECT,cmu,HIGH,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",knees,9,"Pocket full of G's, but I'm bangin' Z's",Z's,INNER,PERFECT,cmu,HIGH,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,9,"Pocket full of G's, but I'm bangin' Z's",G's,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",needs,9,"Pocket full of G's, but I'm bangin' Z's",Z's,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,9,"Pocket full of G's, but I'm bangin' Z's",G's,INNER,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",wants,9,"Pocket full of G's, but I'm bangin' Z's",Pocket,INNER,ASSONANCE,vowel,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,10,Rap don't work and then it's back to sellin' keys,keys,END,SLANT,cmu,MED,Y
+Bounty,7,"Get down on your knees, fulfill my wants and needs, tricks up my sleeve",sleeve,11,"Never slippin', buy a chopper overseas",overseas,END,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",TEC,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",sellin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",TEC,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",there,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",there,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",sellin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,INNER,PERFECT,cmu,HIGH,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,9,"Pocket full of G's, but I'm bangin' Z's",Z's,END,PERFECT,cmu,HIGH,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",got,9,"Pocket full of G's, but I'm bangin' Z's",Pocket,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,9,"Pocket full of G's, but I'm bangin' Z's",G's,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,9,"Pocket full of G's, but I'm bangin' Z's",Z's,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,9,"Pocket full of G's, but I'm bangin' Z's",G's,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,9,"Pocket full of G's, but I'm bangin' Z's",Z's,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,9,"Pocket full of G's, but I'm bangin' Z's",G's,INNER,PERFECT,cmu,HIGH,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",rappin,9,"Pocket full of G's, but I'm bangin' Z's",bangin,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,9,"Pocket full of G's, but I'm bangin' Z's",G's,INNER,PERFECT,cmu,HIGH,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,9,"Pocket full of G's, but I'm bangin' Z's",Z's,INNER,PERFECT,cmu,HIGH,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,10,Rap don't work and then it's back to sellin' keys,keys,END,PERFECT,cmu,HIGH,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",gon,10,Rap don't work and then it's back to sellin' keys,don't,INNER,SLANT,spelling,LOW,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",here,10,Rap don't work and then it's back to sellin' keys,keys,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",keep,10,Rap don't work and then it's back to sellin' keys,keys,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",rappin,10,Rap don't work and then it's back to sellin' keys,back,INNER,ASSONANCE,vowel,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",rappin,10,Rap don't work and then it's back to sellin' keys,Rap,INNER,SLANT,cmu,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",sellin,10,Rap don't work and then it's back to sellin' keys,sellin,INNER,REPEAT,spelling,HIGH,N
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",TEC,10,Rap don't work and then it's back to sellin' keys,sellin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",there,10,Rap don't work and then it's back to sellin' keys,sellin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",these,10,Rap don't work and then it's back to sellin' keys,keys,INNER,PERFECT,cmu,HIGH,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,11,"Never slippin', buy a chopper overseas",overseas,END,PERFECT,cmu,HIGH,Y
+Bounty,8,"Uh, I got that TEC in here, rappin' gon' take me there, but until then, I keep sellin' these P's",P's,12,Perky got me itchin' just like I got fleas,fleas,END,PERFECT,cmu,HIGH,Y
+Bounty,9,"Pocket full of G's, but I'm bangin' Z's",G's,9,"Pocket full of G's, but I'm bangin' Z's",Z's,INNER,PERFECT,cmu,HIGH,Y
+Bounty,9,"Pocket full of G's, but I'm bangin' Z's",Z's,10,Rap don't work and then it's back to sellin' keys,keys,END,PERFECT,cmu,HIGH,Y
+Bounty,9,"Pocket full of G's, but I'm bangin' Z's",bangin,10,Rap don't work and then it's back to sellin' keys,back,INNER,ASSONANCE,vowel,MED,Y
+Bounty,9,"Pocket full of G's, but I'm bangin' Z's",bangin,10,Rap don't work and then it's back to sellin' keys,Rap,INNER,ASSONANCE,vowel,MED,Y
+Bounty,9,"Pocket full of G's, but I'm bangin' Z's",G's,10,Rap don't work and then it's back to sellin' keys,keys,INNER,PERFECT,cmu,HIGH,Y
+Bounty,9,"Pocket full of G's, but I'm bangin' Z's",Z's,11,"Never slippin', buy a chopper overseas",overseas,END,PERFECT,cmu,HIGH,Y
+Bounty,9,"Pocket full of G's, but I'm bangin' Z's",G's,11,"Never slippin', buy a chopper overseas",overseas,INNER,PERFECT,cmu,HIGH,Y
+Bounty,9,"Pocket full of G's, but I'm bangin' Z's",Pocket,11,"Never slippin', buy a chopper overseas",chopper,INNER,SLANT,cmu,MED,Y
+Bounty,9,"Pocket full of G's, but I'm bangin' Z's",Z's,12,Perky got me itchin' just like I got fleas,fleas,END,PERFECT,cmu,HIGH,Y
+Bounty,10,Rap don't work and then it's back to sellin' keys,Rap,10,Rap don't work and then it's back to sellin' keys,back,INNER,SLANT,cmu,MED,Y
+Bounty,10,Rap don't work and then it's back to sellin' keys,keys,11,"Never slippin', buy a chopper overseas",overseas,END,PERFECT,cmu,HIGH,Y
+Bounty,10,Rap don't work and then it's back to sellin' keys,sellin,11,"Never slippin', buy a chopper overseas",Never,INNER,ASSONANCE,vowel,MED,Y
+Bounty,10,Rap don't work and then it's back to sellin' keys,keys,12,Perky got me itchin' just like I got fleas,fleas,END,PERFECT,cmu,HIGH,Y
+Bounty,10,Rap don't work and then it's back to sellin' keys,work,12,Perky got me itchin' just like I got fleas,Perky,INNER,SLANT,cmu,MED,Y
+Bounty,11,"Never slippin', buy a chopper overseas",overseas,12,Perky got me itchin' just like I got fleas,fleas,END,PERFECT,cmu,HIGH,Y
+Bounty,11,"Never slippin', buy a chopper overseas",buy,12,Perky got me itchin' just like I got fleas,like,INNER,ASSONANCE,vowel,MED,Y
+Bounty,11,"Never slippin', buy a chopper overseas",chopper,12,Perky got me itchin' just like I got fleas,got,INNER,SLANT,cmu,MED,Y
+Bounty,11,"Never slippin', buy a chopper overseas",slippin,12,Perky got me itchin' just like I got fleas,itchin,INNER,SLANT,cmu,MED,Y
+Bounty,11,"Never slippin', buy a chopper overseas",chopper,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",got,INNER,SLANT,cmu,MED,Y
+Bounty,11,"Never slippin', buy a chopper overseas",Never,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",collect,INNER,ASSONANCE,vowel,MED,Y
+Bounty,11,"Never slippin', buy a chopper overseas",Never,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",head,INNER,SLANT,cmu,MED,Y
+Bounty,12,Perky got me itchin' just like I got fleas,got,12,Perky got me itchin' just like I got fleas,got,INNER,REPEAT,spelling,HIGH,N
+Bounty,12,Perky got me itchin' just like I got fleas,got,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",got,INNER,REPEAT,spelling,HIGH,N
+Bounty,12,Perky got me itchin' just like I got fleas,itchin,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",shit,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",'round,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",bounty,INNER,SLANT,cmu,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",head,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",collect,INNER,SLANT,cmu,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",found,END,SLANT,cmu,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",'round,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",found,INNER,PERFECT,cmu,HIGH,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",collect,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",fences,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",collect,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",trenches,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",head,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",fences,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",head,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",trenches,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",what's,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",jumpin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",what's,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",stuck,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",bounty,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",around,END,SLANT,cmu,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",'round,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",around,INNER,PERFECT,cmu,HIGH,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",'round,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",doubt,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",bounty,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",doubt,INNER,SLANT,cmu,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",collect,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",energy,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",gon,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",don't,INNER,SLANT,spelling,LOW,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",got,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",want,INNER,SLANT,cmu,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",head,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",energy,INNER,ASSONANCE,vowel,MED,Y
+Bounty,13,"I got straight Zombieland 'round me, yeah, what's on his head? We gon' collect that bounty",what's,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",fuck,INNER,ASSONANCE,vowel,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",stuck,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",jumpin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",trenches,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",fences,INNER,SLANT,cmu,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",found,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",around,END,PERFECT,cmu,HIGH,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",fences,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",energy,INNER,SLANT,cmu,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",found,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",doubt,INNER,ASSONANCE,vowel,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",jumpin,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",fuck,INNER,ASSONANCE,vowel,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",stuck,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",fuck,INNER,PERFECT,cmu,HIGH,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",trenches,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",energy,INNER,SLANT,cmu,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",found,16,How you think I got them racks up? Straight finessing,How,INNER,ASSONANCE,vowel,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",jumpin,16,How you think I got them racks up? Straight finessing,finessing,INNER,PERFECT,spelling,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",rappin,16,How you think I got them racks up? Straight finessing,finessing,INNER,PERFECT,spelling,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",rappin,16,How you think I got them racks up? Straight finessing,racks,INNER,ASSONANCE,vowel,MED,Y
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",shit,16,How you think I got them racks up? Straight finessing,finessing,INNER,ASSONANCE,vowel,LOW,N
+Bounty,14,"I was so stuck in them trenches and jumpin' them fences, this rappin' shit found me",shit,16,How you think I got them racks up? Straight finessing,think,INNER,ASSONANCE,vowel,MED,Y
+Bounty,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",doubt,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",around,INNER,ASSONANCE,vowel,MED,Y
+Bounty,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",around,16,How you think I got them racks up? Straight finessing,How,INNER,ASSONANCE,vowel,MED,Y
+Bounty,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",doubt,16,How you think I got them racks up? Straight finessing,How,INNER,ASSONANCE,vowel,MED,Y
+Bounty,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",want,16,How you think I got them racks up? Straight finessing,got,INNER,SLANT,cmu,MED,Y
+Bounty,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",energy,17,"Spin a bend in SRT, you hear the engine",bend,INNER,SLANT,cmu,MED,Y
+Bounty,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",energy,17,"Spin a bend in SRT, you hear the engine",engine,INNER,SLANT,cmu,MED,Y
+Bounty,15,"Them niggas fuck up my energy, they tryna doubt me, don't want 'em around me",tryna,17,"Spin a bend in SRT, you hear the engine",hear,INNER,SLANT,spelling,LOW,Y
+Bounty,16,How you think I got them racks up? Straight finessing,think,16,How you think I got them racks up? Straight finessing,finessing,INNER,ASSONANCE,vowel,LOW,N
+Bounty,16,How you think I got them racks up? Straight finessing,finessing,17,"Spin a bend in SRT, you hear the engine",Spin,INNER,ASSONANCE,vowel,LOW,N
+Bounty,16,How you think I got them racks up? Straight finessing,think,17,"Spin a bend in SRT, you hear the engine",Spin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,16,How you think I got them racks up? Straight finessing,racks,18,"We in B-more with it, I ain't have to check in",have,INNER,ASSONANCE,vowel,MED,Y
+Bounty,16,How you think I got them racks up? Straight finessing,Straight,18,"We in B-more with it, I ain't have to check in",ain't,INNER,SLANT,cmu,MED,Y
+Bounty,17,"Spin a bend in SRT, you hear the engine",bend,17,"Spin a bend in SRT, you hear the engine",engine,INNER,ASSONANCE,vowel,MED,Y
+Bounty,17,"Spin a bend in SRT, you hear the engine",engine,18,"We in B-more with it, I ain't have to check in",check,END,ASSONANCE,vowel,MED,Y
+Bounty,17,"Spin a bend in SRT, you hear the engine",bend,18,"We in B-more with it, I ain't have to check in",check,INNER,ASSONANCE,vowel,MED,Y
+Bounty,17,"Spin a bend in SRT, you hear the engine",hear,18,"We in B-more with it, I ain't have to check in",B,INNER,ASSONANCE,vowel,MED,Y
+Bounty,17,"Spin a bend in SRT, you hear the engine",engine,19,"Big ass .308, it's rippin' through intestines",intestines,END,ASSONANCE,vowel,MED,Y
+Bounty,17,"Spin a bend in SRT, you hear the engine",bend,19,"Big ass .308, it's rippin' through intestines",intestines,INNER,ASSONANCE,vowel,MED,Y
+Bounty,17,"Spin a bend in SRT, you hear the engine",Spin,19,"Big ass .308, it's rippin' through intestines",Big,INNER,SLANT,cmu,MED,Y
+Bounty,17,"Spin a bend in SRT, you hear the engine",Spin,19,"Big ass .308, it's rippin' through intestines",rippin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,18,"We in B-more with it, I ain't have to check in",check,19,"Big ass .308, it's rippin' through intestines",intestines,END,ASSONANCE,vowel,MED,Y
+Bounty,18,"We in B-more with it, I ain't have to check in",have,19,"Big ass .308, it's rippin' through intestines",ass,INNER,SLANT,cmu,MED,Y
+Bounty,18,"We in B-more with it, I ain't have to check in",ain't,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",play,INNER,ASSONANCE,vowel,MED,Y
+Bounty,18,"We in B-more with it, I ain't have to check in",check,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",denim,INNER,ASSONANCE,vowel,MED,Y
+Bounty,18,"We in B-more with it, I ain't have to check in",check,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",Givenchy,INNER,ASSONANCE,vowel,MED,Y
+Bounty,18,"We in B-more with it, I ain't have to check in",check,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",send,INNER,ASSONANCE,vowel,MED,Y
+Bounty,19,"Big ass .308, it's rippin' through intestines",Big,19,"Big ass .308, it's rippin' through intestines",rippin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,19,"Big ass .308, it's rippin' through intestines",Big,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",nigga,INNER,SLANT,spelling,LOW,Y
+Bounty,19,"Big ass .308, it's rippin' through intestines",intestines,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",denim,INNER,ASSONANCE,vowel,MED,Y
+Bounty,19,"Big ass .308, it's rippin' through intestines",intestines,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",Givenchy,INNER,ASSONANCE,vowel,MED,Y
+Bounty,19,"Big ass .308, it's rippin' through intestines",intestines,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",send,INNER,ASSONANCE,vowel,MED,Y
+Bounty,19,"Big ass .308, it's rippin' through intestines",intestines,21,Booted off of Perkies when I'm divin' in her,when,INNER,ASSONANCE,vowel,MED,Y
+Bounty,19,"Big ass .308, it's rippin' through intestines",through,21,Booted off of Perkies when I'm divin' in her,Booted,INNER,ASSONANCE,vowel,MED,Y
+Bounty,19,"Big ass .308, it's rippin' through intestines",intestines,23,"When it's time to murder, I get sentimental",sentimental,END,ASSONANCE,vowel,MED,Y
+Bounty,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",denim,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",send,INNER,SLANT,cmu,MED,Y
+Bounty,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",Givenchy,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",denim,INNER,SLANT,cmu,MED,Y
+Bounty,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",Givenchy,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",send,INNER,SLANT,cmu,MED,Y
+Bounty,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",denim,21,Booted off of Perkies when I'm divin' in her,when,INNER,SLANT,cmu,MED,Y
+Bounty,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",Givenchy,21,Booted off of Perkies when I'm divin' in her,when,INNER,SLANT,cmu,MED,Y
+Bounty,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",send,21,Booted off of Perkies when I'm divin' in her,when,INNER,SLANT,cmu,MED,Y
+Bounty,20,"Uh, it's Givenchy denim, nigga play, I send 'em, oh, oh",play,22,"Bust down Cuban link, it make it feel like winter",make,INNER,ASSONANCE,vowel,MED,Y
+Bounty,21,Booted off of Perkies when I'm divin' in her,Booted,22,"Bust down Cuban link, it make it feel like winter",Cuban,INNER,ASSONANCE,vowel,MED,Y
+Bounty,21,Booted off of Perkies when I'm divin' in her,divin,22,"Bust down Cuban link, it make it feel like winter",like,INNER,ASSONANCE,vowel,MED,Y
+Bounty,21,Booted off of Perkies when I'm divin' in her,divin,23,"When it's time to murder, I get sentimental",time,INNER,ASSONANCE,vowel,MED,Y
+Bounty,21,Booted off of Perkies when I'm divin' in her,when,23,"When it's time to murder, I get sentimental",get,INNER,SLANT,cmu,MED,Y
+Bounty,21,Booted off of Perkies when I'm divin' in her,when,23,"When it's time to murder, I get sentimental",sentimental,INNER,ASSONANCE,vowel,MED,Y
+Bounty,21,Booted off of Perkies when I'm divin' in her,when,23,"When it's time to murder, I get sentimental",When,INNER,REPEAT,spelling,HIGH,N
+Bounty,22,"Bust down Cuban link, it make it feel like winter",link,22,"Bust down Cuban link, it make it feel like winter",winter,INNER,SLANT,cmu,MED,Y
+Bounty,22,"Bust down Cuban link, it make it feel like winter",like,23,"When it's time to murder, I get sentimental",time,INNER,SLANT,cmu,MED,Y
+Bounty,22,"Bust down Cuban link, it make it feel like winter",winter,24,"Uh, I'm so gentle with her, don't know I'm a sinner",sinner,END,SLANT,cmu,MED,Y
+Bounty,22,"Bust down Cuban link, it make it feel like winter",link,24,"Uh, I'm so gentle with her, don't know I'm a sinner",sinner,INNER,ASSONANCE,vowel,MED,Y
+Bounty,23,"When it's time to murder, I get sentimental",get,23,"When it's time to murder, I get sentimental",sentimental,INNER,ASSONANCE,vowel,MED,Y
+Bounty,23,"When it's time to murder, I get sentimental",When,23,"When it's time to murder, I get sentimental",get,INNER,SLANT,cmu,MED,Y
+Bounty,23,"When it's time to murder, I get sentimental",When,23,"When it's time to murder, I get sentimental",sentimental,INNER,ASSONANCE,vowel,MED,Y
+Bounty,23,"When it's time to murder, I get sentimental",get,24,"Uh, I'm so gentle with her, don't know I'm a sinner",gentle,INNER,ASSONANCE,vowel,MED,Y
+Bounty,23,"When it's time to murder, I get sentimental",sentimental,24,"Uh, I'm so gentle with her, don't know I'm a sinner",gentle,INNER,MULTI,multi,HIGH,Y
+Bounty,23,"When it's time to murder, I get sentimental",When,24,"Uh, I'm so gentle with her, don't know I'm a sinner",gentle,INNER,ASSONANCE,vowel,MED,Y
+Bounty,23,"When it's time to murder, I get sentimental",sentimental,25,"Skeeted in her, told her it was accidental",accidental,END,MULTI,multi,HIGH,Y
+Bounty,23,"When it's time to murder, I get sentimental",get,25,"Skeeted in her, told her it was accidental",accidental,INNER,ASSONANCE,vowel,MED,Y
+Bounty,23,"When it's time to murder, I get sentimental",When,25,"Skeeted in her, told her it was accidental",accidental,INNER,ASSONANCE,vowel,MED,Y
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",don't,24,"Uh, I'm so gentle with her, don't know I'm a sinner",know,INNER,ASSONANCE,vowel,MED,Y
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",don't,25,"Skeeted in her, told her it was accidental",told,INNER,ASSONANCE,vowel,MED,Y
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",gentle,25,"Skeeted in her, told her it was accidental",accidental,INNER,MULTI,multi,HIGH,Y
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",know,25,"Skeeted in her, told her it was accidental",told,INNER,ASSONANCE,vowel,MED,Y
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",don't,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",Don't,INNER,REPEAT,spelling,HIGH,N
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",don't,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",no,INNER,ASSONANCE,vowel,MED,Y
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",gentle,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",cred,INNER,ASSONANCE,vowel,LOW,N
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",know,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",Don't,INNER,ASSONANCE,vowel,MED,Y
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",know,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",no,INNER,PERFECT,cmu,HIGH,Y
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",sinner,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",give,INNER,SLANT,cmu,MED,Y
+Bounty,24,"Uh, I'm so gentle with her, don't know I'm a sinner",sinner,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",pig,END,SLANT,cmu,MED,Y
+Bounty,25,"Skeeted in her, told her it was accidental",Skeeted,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",cred,INNER,PERFECT,spelling,MED,Y
+Bounty,25,"Skeeted in her, told her it was accidental",told,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",Don't,INNER,ASSONANCE,vowel,MED,Y
+Bounty,25,"Skeeted in her, told her it was accidental",told,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",no,INNER,ASSONANCE,vowel,MED,Y
+Bounty,25,"Skeeted in her, told her it was accidental",told,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cody,INNER,SLANT,cmu,MED,Y
+Bounty,25,"Skeeted in her, told her it was accidental",accidental,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",feds,END,ASSONANCE,vowel,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",Don't,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",no,INNER,ASSONANCE,vowel,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",give,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",give,INNER,REPEAT,spelling,HIGH,N
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",claim,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Baby,INNER,SLANT,cmu,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",Don't,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cody,INNER,ASSONANCE,vowel,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",give,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",lil,INNER,SLANT,cmu,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",give,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",pig,INNER,SLANT,cmu,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",give,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Six,INNER,ASSONANCE,vowel,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",give,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",niggas,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Six,INNER,SLANT,spelling,LOW,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",no,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cody,INNER,ASSONANCE,vowel,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",bodies,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",got,INNER,ASSONANCE,vowel,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",cred,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",head,INNER,PERFECT,spelling,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",cred,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",leg,INNER,SLANT,spelling,LOW,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",Don't,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",don't,INNER,REPEAT,spelling,HIGH,N
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",Don't,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",know,INNER,ASSONANCE,vowel,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",no,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",don't,INNER,ASSONANCE,vowel,MED,Y
+Bounty,26,"Don't give me my flowers or give me no cred', them niggas claim bodies we did",no,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",know,INNER,PERFECT,cmu,HIGH,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cat,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",splats,INNER,SLANT,spelling,LOW,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",lil,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",pig,INNER,SLANT,cmu,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",lil,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Man,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cat,INNER,SLANT,cmu,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Six,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",lil,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Six,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",pig,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Six,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",spinnin,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",pig,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cat,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",bag,INNER,SLANT,cmu,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cat,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",band,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cat,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",crackers,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cody,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",don't,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cody,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",know,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Man,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",bag,INNER,SLANT,cmu,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Man,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",band,INNER,SLANT,cmu,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Man,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",crackers,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",splats,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",band,INNER,ASSONANCE,vowel,LOW,N
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",splats,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",crackers,INNER,SLANT,spelling,LOW,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Baby,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",same,INNER,SLANT,cmu,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cat,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",rappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cat,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",smackin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Cat,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",trappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",lil,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Man,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",rappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Man,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",smackin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Man,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",trappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",pig,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",Six,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,27,"Man, free Baby Six and lil' Cat, we was spinnin' in splats, Cody turned to a pig",spinnin,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",spinnin,INNER,REPEAT,spelling,HIGH,N
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",band,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",bag,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",crackers,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",bag,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",crackers,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",band,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",don't,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",know,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",leg,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",head,INNER,SLANT,cmu,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",bag,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",rappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",bag,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",smackin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",bag,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",trappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",band,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",rappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",band,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",smackin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",band,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",trappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",crackers,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",rappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",crackers,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",smackin,INNER,SLANT,cmu,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",crackers,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",trappin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",head,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",feds,INNER,SLANT,cmu,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",leg,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",feds,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",what,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",duckin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",don't,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",don't,INNER,REPEAT,spelling,HIGH,N
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",don't,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",LOE,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",head,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",let,INNER,SLANT,cmu,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",know,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",don't,INNER,ASSONANCE,vowel,MED,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",know,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",LOE,INNER,PERFECT,cmu,HIGH,Y
+Bounty,28,"Them crackers put a band on my leg, got a bag on my head, I don't know what I did",leg,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",let,INNER,SLANT,cmu,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",rappin,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",smackin,INNER,SLANT,cmu,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",rappin,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",trappin,INNER,MULTI,multi,HIGH,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",smackin,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",trappin,INNER,SLANT,cmu,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",spinnin rappin,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",smackin trappin,INNER,MULTI,multi,HIGH,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",feds,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",let,INNER,ASSONANCE,vowel,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",same,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",braces,INNER,ASSONANCE,vowel,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",same,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",say,INNER,ASSONANCE,vowel,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",spinnin,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",hitter,INNER,ASSONANCE,vowel,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",spinnin,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",Shimmy,INNER,SLANT,cmu,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",feds,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",already,INNER,SLANT,cmu,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",rappin,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",landed,INNER,ASSONANCE,vowel,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",smackin,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",landed,INNER,ASSONANCE,vowel,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",spinnin,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",think,INNER,ASSONANCE,vowel,MED,Y
+Bounty,29,"I'm spinnin' and rappin' and smackin' and trappin', the same time, I'm duckin' the feds",trappin,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",landed,INNER,ASSONANCE,vowel,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",LOE,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",don't,INNER,ASSONANCE,vowel,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",nigga,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",hitter,INNER,SLANT,spelling,LOW,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",say,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",braces,INNER,ASSONANCE,vowel,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",Shimmy,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",hitter,INNER,SLANT,cmu,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",fool,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Voodoo,END,ASSONANCE,vowel,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",don't,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Pompano,INNER,ASSONANCE,vowel,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",hitter,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",nigga,INNER,SLANT,spelling,LOW,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",hitter,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",think,INNER,ASSONANCE,vowel,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",let,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",already,INNER,SLANT,cmu,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",LOE,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Pompano,INNER,PERFECT,cmu,HIGH,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",nigga,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",nigga,INNER,REPEAT,spelling,HIGH,N
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",Shimmy,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",think,INNER,ASSONANCE,vowel,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",fool,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",usual,END,ASSONANCE,vowel,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",fool,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",zoolin,INNER,SLANT,spelling,LOW,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",Shimmy,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",Yeezy,INNER,ASSONANCE,vowel,LOW,N
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",fool,33,Don't let these bitches use you,use,END,SLANT,cmu,MED,Y
+Bounty,30,"LOE Shimmy my nigga, I say he a hitter, so don't let them braces fool you",fool,34,"Niggas and bitches, they just wanna use you",use,END,SLANT,cmu,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Shot,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Cali,INNER,SLANT,cmu,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Voodoo,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",usual,END,ASSONANCE,vowel,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",already,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",Yeezy,INNER,ASSONANCE,vowel,LOW,N
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Cali,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",rockin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Cali,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",sock,INNER,SLANT,cmu,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Cali,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",Yeezy,INNER,ASSONANCE,vowel,LOW,N
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Shot,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",rockin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Shot,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",sock,INNER,SLANT,cmu,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Voodoo,33,Don't let these bitches use you,use,END,ASSONANCE,vowel,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",already,33,Don't let these bitches use you,let,INNER,SLANT,cmu,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Pompano,33,Don't let these bitches use you,Don't,INNER,ASSONANCE,vowel,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",think,33,Don't let these bitches use you,bitches,INNER,ASSONANCE,vowel,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Voodoo,34,"Niggas and bitches, they just wanna use you",use,END,ASSONANCE,vowel,MED,Y
+Bounty,31,"Shot a nigga in Pompano, landed in Cali' already, they think I do Voodoo",Voodoo,35,"I kept it goin', uploadin' on YouTube",YouTube,END,ASSONANCE,vowel,MED,Y
+Bounty,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",rockin,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",sock,INNER,SLANT,cmu,MED,Y
+Bounty,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",usual,33,Don't let these bitches use you,use,END,ASSONANCE,vowel,MED,Y
+Bounty,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",Yeezy,33,Don't let these bitches use you,these,INNER,SLANT,spelling,LOW,Y
+Bounty,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",usual,34,"Niggas and bitches, they just wanna use you",use,END,ASSONANCE,vowel,MED,Y
+Bounty,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",rockin,34,"Niggas and bitches, they just wanna use you",wanna,INNER,ASSONANCE,vowel,MED,Y
+Bounty,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",sock,34,"Niggas and bitches, they just wanna use you",wanna,INNER,SLANT,cmu,MED,Y
+Bounty,32,"I'm rockin' the SG sock with the Yeezy slides, I'm zoolin' as usual",usual,35,"I kept it goin', uploadin' on YouTube",YouTube,END,ASSONANCE,vowel,MED,Y
+Bounty,33,Don't let these bitches use you,use,34,"Niggas and bitches, they just wanna use you",use,END,REPEAT,spelling,HIGH,N
+Bounty,33,Don't let these bitches use you,bitches,34,"Niggas and bitches, they just wanna use you",bitches,INNER,REPEAT,spelling,HIGH,N
+Bounty,33,Don't let these bitches use you,use,35,"I kept it goin', uploadin' on YouTube",YouTube,END,SLANT,cmu,MED,Y
+Bounty,33,Don't let these bitches use you,Don't,35,"I kept it goin', uploadin' on YouTube",uploadin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,33,Don't let these bitches use you,let,35,"I kept it goin', uploadin' on YouTube",kept,INNER,SLANT,cmu,MED,Y
+Bounty,34,"Niggas and bitches, they just wanna use you",use,35,"I kept it goin', uploadin' on YouTube",YouTube,END,SLANT,cmu,MED,Y
+Bounty,34,"Niggas and bitches, they just wanna use you",bitches,36,"Bitch, I don't owe you, don't know you, lil' dog",Bitch,INNER,SLANT,cmu,MED,Y
+Bounty,34,"Niggas and bitches, they just wanna use you",bitches,36,"Bitch, I don't owe you, don't know you, lil' dog",lil,INNER,ASSONANCE,vowel,MED,Y
+Bounty,35,"I kept it goin', uploadin' on YouTube",uploadin,36,"Bitch, I don't owe you, don't know you, lil' dog",don't,INNER,ASSONANCE,vowel,MED,Y
+Bounty,35,"I kept it goin', uploadin' on YouTube",uploadin,36,"Bitch, I don't owe you, don't know you, lil' dog",know,INNER,ASSONANCE,vowel,MED,Y
+Bounty,35,"I kept it goin', uploadin' on YouTube",uploadin,36,"Bitch, I don't owe you, don't know you, lil' dog",owe,INNER,ASSONANCE,vowel,MED,Y
+Bounty,35,"I kept it goin', uploadin' on YouTube",kept,37,"Ain't no leechin', nigga, get you a job",get,INNER,SLANT,cmu,MED,Y
+Bounty,35,"I kept it goin', uploadin' on YouTube",uploadin,37,"Ain't no leechin', nigga, get you a job",no,INNER,ASSONANCE,vowel,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",Bitch,36,"Bitch, I don't owe you, don't know you, lil' dog",lil,INNER,SLANT,cmu,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",don't,36,"Bitch, I don't owe you, don't know you, lil' dog",don't,INNER,REPEAT,spelling,HIGH,N
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",don't,36,"Bitch, I don't owe you, don't know you, lil' dog",know,INNER,ASSONANCE,vowel,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",don't,36,"Bitch, I don't owe you, don't know you, lil' dog",owe,INNER,ASSONANCE,vowel,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",owe,36,"Bitch, I don't owe you, don't know you, lil' dog",don't,INNER,ASSONANCE,vowel,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",owe,36,"Bitch, I don't owe you, don't know you, lil' dog",know,INNER,PERFECT,cmu,HIGH,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",don't,37,"Ain't no leechin', nigga, get you a job",no,INNER,ASSONANCE,vowel,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",know,37,"Ain't no leechin', nigga, get you a job",no,INNER,PERFECT,cmu,HIGH,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",owe,37,"Ain't no leechin', nigga, get you a job",no,INNER,PERFECT,cmu,HIGH,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",Bitch,38,"Broke as fuck, I used to sit on the block",sit,INNER,SLANT,cmu,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",don't,38,"Broke as fuck, I used to sit on the block",Broke,INNER,ASSONANCE,vowel,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",know,38,"Broke as fuck, I used to sit on the block",Broke,INNER,ASSONANCE,vowel,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",lil,38,"Broke as fuck, I used to sit on the block",sit,INNER,SLANT,cmu,MED,Y
+Bounty,36,"Bitch, I don't owe you, don't know you, lil' dog",owe,38,"Broke as fuck, I used to sit on the block",Broke,INNER,ASSONANCE,vowel,MED,Y
+Bounty,37,"Ain't no leechin', nigga, get you a job",job,38,"Broke as fuck, I used to sit on the block",block,END,SLANT,cmu,MED,Y
+Bounty,37,"Ain't no leechin', nigga, get you a job",nigga,38,"Broke as fuck, I used to sit on the block",sit,INNER,SLANT,spelling,LOW,Y
+Bounty,37,"Ain't no leechin', nigga, get you a job",no,38,"Broke as fuck, I used to sit on the block",Broke,INNER,ASSONANCE,vowel,MED,Y
+Bounty,37,"Ain't no leechin', nigga, get you a job",Ain't,39,"Dead broke, I was gettin' impatient",impatient,INNER,SLANT,cmu,MED,Y
+Bounty,37,"Ain't no leechin', nigga, get you a job",get,39,"Dead broke, I was gettin' impatient",Dead,INNER,SLANT,cmu,MED,Y
+Bounty,37,"Ain't no leechin', nigga, get you a job",get,39,"Dead broke, I was gettin' impatient",gettin,INNER,SLANT,cmu,MED,Y
+Bounty,37,"Ain't no leechin', nigga, get you a job",no,39,"Dead broke, I was gettin' impatient",broke,INNER,ASSONANCE,vowel,MED,Y
+Bounty,38,"Broke as fuck, I used to sit on the block",Broke,39,"Dead broke, I was gettin' impatient",broke,INNER,REPEAT,spelling,HIGH,N
+Bounty,39,"Dead broke, I was gettin' impatient",Dead,39,"Dead broke, I was gettin' impatient",gettin,INNER,ASSONANCE,vowel,MED,Y
+Bounty,39,"Dead broke, I was gettin' impatient",impatient,40,"Cash4Gold, I made plenty exchanges",exchanges,END,ASSONANCE,vowel,MED,Y
+Bounty,39,"Dead broke, I was gettin' impatient",Dead,40,"Cash4Gold, I made plenty exchanges",plenty,INNER,ASSONANCE,vowel,MED,Y
+Bounty,39,"Dead broke, I was gettin' impatient",gettin,40,"Cash4Gold, I made plenty exchanges",plenty,INNER,ASSONANCE,vowel,MED,Y
+Bounty,39,"Dead broke, I was gettin' impatient",impatient,40,"Cash4Gold, I made plenty exchanges",made,INNER,ASSONANCE,vowel,MED,Y
+Bounty,39,"Dead broke, I was gettin' impatient",impatient,41,"Let me hold somethin' or, bitch, I'ma take it",take,END,ASSONANCE,vowel,MED,Y
+Bounty,39,"Dead broke, I was gettin' impatient",broke,41,"Let me hold somethin' or, bitch, I'ma take it",hold,INNER,ASSONANCE,vowel,MED,Y
+Bounty,39,"Dead broke, I was gettin' impatient",Dead,41,"Let me hold somethin' or, bitch, I'ma take it",Let,INNER,SLANT,cmu,MED,Y
+Bounty,39,"Dead broke, I was gettin' impatient",gettin,41,"Let me hold somethin' or, bitch, I'ma take it",Let,INNER,SLANT,cmu,MED,Y
+Bounty,39,"Dead broke, I was gettin' impatient",impatient,42,"Fuck the opps, I'll drop my location",location,END,SLANT,cmu,MED,Y
+Bounty,40,"Cash4Gold, I made plenty exchanges",made,40,"Cash4Gold, I made plenty exchanges",exchanges,INNER,ASSONANCE,vowel,MED,Y
+Bounty,40,"Cash4Gold, I made plenty exchanges",exchanges,41,"Let me hold somethin' or, bitch, I'ma take it",take,END,ASSONANCE,vowel,MED,Y
+Bounty,40,"Cash4Gold, I made plenty exchanges",Cash4Gold,41,"Let me hold somethin' or, bitch, I'ma take it",hold,INNER,PERFECT,spelling,HIGH,Y
+Bounty,40,"Cash4Gold, I made plenty exchanges",made,41,"Let me hold somethin' or, bitch, I'ma take it",take,INNER,SLANT,cmu,MED,Y
+Bounty,40,"Cash4Gold, I made plenty exchanges",plenty,41,"Let me hold somethin' or, bitch, I'ma take it",Let,INNER,SLANT,cmu,MED,Y
+Bounty,40,"Cash4Gold, I made plenty exchanges",exchanges,42,"Fuck the opps, I'll drop my location",location,END,ASSONANCE,vowel,MED,Y
+Bounty,40,"Cash4Gold, I made plenty exchanges",made,42,"Fuck the opps, I'll drop my location",location,INNER,ASSONANCE,vowel,MED,Y
+Bounty,41,"Let me hold somethin' or, bitch, I'ma take it",bitch,41,"Let me hold somethin' or, bitch, I'ma take it",I'ma,INNER,SLANT,spelling,LOW,Y
+Bounty,41,"Let me hold somethin' or, bitch, I'ma take it",take,42,"Fuck the opps, I'll drop my location",location,END,ASSONANCE,vowel,MED,Y
+Bounty,41,"Let me hold somethin' or, bitch, I'ma take it",hold,42,"Fuck the opps, I'll drop my location",opps,INNER,ASSONANCE,vowel,LOW,N
+Bounty,41,"Let me hold somethin' or, bitch, I'ma take it",somethin,42,"Fuck the opps, I'll drop my location",Fuck,INNER,ASSONANCE,vowel,MED,Y
+Bounty,41,"Let me hold somethin' or, bitch, I'ma take it",bitch,43,Bitch better not pull up on me with no pistol,Bitch,INNER,REPEAT,spelling,HIGH,N
+Bounty,41,"Let me hold somethin' or, bitch, I'ma take it",bitch,43,Bitch better not pull up on me with no pistol,pistol,INNER,ASSONANCE,vowel,MED,Y
+Bounty,41,"Let me hold somethin' or, bitch, I'ma take it",hold,43,Bitch better not pull up on me with no pistol,no,INNER,ASSONANCE,vowel,MED,Y
+Bounty,41,"Let me hold somethin' or, bitch, I'ma take it",I'ma,43,Bitch better not pull up on me with no pistol,Bitch,INNER,SLANT,spelling,LOW,Y
+Bounty,41,"Let me hold somethin' or, bitch, I'ma take it",Let,43,Bitch better not pull up on me with no pistol,better,INNER,SLANT,cmu,MED,Y
+Bounty,42,"Fuck the opps, I'll drop my location",drop,43,Bitch better not pull up on me with no pistol,not,INNER,SLANT,cmu,MED,Y
+Bounty,42,"Fuck the opps, I'll drop my location",Fuck,44,"Blackout, hundred rounds, quick shoot, missile",hundred,INNER,ASSONANCE,vowel,MED,Y
+Bounty,43,Bitch better not pull up on me with no pistol,Bitch,43,Bitch better not pull up on me with no pistol,pistol,INNER,ASSONANCE,vowel,MED,Y
+Bounty,43,Bitch better not pull up on me with no pistol,pistol,44,"Blackout, hundred rounds, quick shoot, missile",missile,END,SLANT,cmu,MED,Y
+Bounty,43,Bitch better not pull up on me with no pistol,Bitch,44,"Blackout, hundred rounds, quick shoot, missile",missile,INNER,ASSONANCE,vowel,MED,Y
+Bounty,43,Bitch better not pull up on me with no pistol,Bitch,44,"Blackout, hundred rounds, quick shoot, missile",quick,INNER,SLANT,cmu,MED,Y
+Bounty,43,Bitch better not pull up on me with no pistol,pistol,44,"Blackout, hundred rounds, quick shoot, missile",quick,INNER,ASSONANCE,vowel,MED,Y
+Bounty,43,Bitch better not pull up on me with no pistol,better,45,"Hundred rounds, ten seconds",seconds,INNER,ASSONANCE,vowel,MED,Y
+Bounty,43,Bitch better not pull up on me with no pistol,better,45,"Hundred rounds, ten seconds",ten,INNER,SLANT,cmu,MED,Y
+Bounty,43,Bitch better not pull up on me with no pistol,pistol,47,Ten Percs in ten minutes,minutes,END,ASSONANCE,vowel,MED,Y
+Bounty,44,"Blackout, hundred rounds, quick shoot, missile",Blackout,44,"Blackout, hundred rounds, quick shoot, missile",rounds,INNER,ASSONANCE,vowel,MED,Y
+Bounty,44,"Blackout, hundred rounds, quick shoot, missile",quick,44,"Blackout, hundred rounds, quick shoot, missile",missile,INNER,ASSONANCE,vowel,MED,Y
+Bounty,44,"Blackout, hundred rounds, quick shoot, missile",Blackout,45,"Hundred rounds, ten seconds",rounds,INNER,ASSONANCE,vowel,MED,Y
+Bounty,44,"Blackout, hundred rounds, quick shoot, missile",hundred,45,"Hundred rounds, ten seconds",Hundred,INNER,REPEAT,spelling,HIGH,N
+Bounty,44,"Blackout, hundred rounds, quick shoot, missile",rounds,45,"Hundred rounds, ten seconds",rounds,INNER,REPEAT,spelling,HIGH,N
+Bounty,44,"Blackout, hundred rounds, quick shoot, missile",hundred,46,"Popped a hundred Percs, nigga",hundred,INNER,REPEAT,spelling,HIGH,N
+Bounty,44,"Blackout, hundred rounds, quick shoot, missile",quick,46,"Popped a hundred Percs, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Bounty,44,"Blackout, hundred rounds, quick shoot, missile",missile,47,Ten Percs in ten minutes,minutes,END,ASSONANCE,vowel,MED,Y
+Bounty,45,"Hundred rounds, ten seconds",ten,45,"Hundred rounds, ten seconds",seconds,INNER,ASSONANCE,vowel,MED,Y
+Bounty,45,"Hundred rounds, ten seconds",Hundred,46,"Popped a hundred Percs, nigga",hundred,INNER,REPEAT,spelling,HIGH,N
+Bounty,45,"Hundred rounds, ten seconds",seconds,47,Ten Percs in ten minutes,Ten,INNER,ASSONANCE,vowel,MED,Y
+Bounty,45,"Hundred rounds, ten seconds",ten,47,Ten Percs in ten minutes,Ten,INNER,REPEAT,spelling,HIGH,N
+Bounty,46,"Popped a hundred Percs, nigga",Percs,47,Ten Percs in ten minutes,Percs,INNER,REPEAT,spelling,HIGH,N
+Bounty,47,Ten Percs in ten minutes,Ten,47,Ten Percs in ten minutes,ten,INNER,REPEAT,spelling,HIGH,N

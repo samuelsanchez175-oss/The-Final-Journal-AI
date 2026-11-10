@@ -1,0 +1,227 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Remember,1,"Uh, stay out my fuckin' temple",fuckin,2,"Why the fuck are you hatin', lil' nigga?",fuck,INNER,SLANT,cmu,MED,Y
+Remember,1,"Uh, stay out my fuckin' temple",stay,2,"Why the fuck are you hatin', lil' nigga?",hatin,INNER,ASSONANCE,vowel,MED,Y
+Remember,1,"Uh, stay out my fuckin' temple",stay,3,"Lil' nigga, I know why you hatin', lil' nigga",hatin,INNER,ASSONANCE,vowel,MED,Y
+Remember,2,"Why the fuck are you hatin', lil' nigga?",nigga,3,"Lil' nigga, I know why you hatin', lil' nigga",nigga,END,REPEAT,spelling,HIGH,N
+Remember,2,"Why the fuck are you hatin', lil' nigga?",hatin,3,"Lil' nigga, I know why you hatin', lil' nigga",hatin,INNER,REPEAT,spelling,HIGH,N
+Remember,2,"Why the fuck are you hatin', lil' nigga?",lil,3,"Lil' nigga, I know why you hatin', lil' nigga",Lil,INNER,REPEAT,spelling,HIGH,N
+Remember,2,"Why the fuck are you hatin', lil' nigga?",nigga,3,"Lil' nigga, I know why you hatin', lil' nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Remember,2,"Why the fuck are you hatin', lil' nigga?",Why,3,"Lil' nigga, I know why you hatin', lil' nigga",why,INNER,REPEAT,spelling,HIGH,N
+Remember,2,"Why the fuck are you hatin', lil' nigga?",fuck,4,"'Cause I got that money, now you want that money",money,INNER,SLANT,cmu,MED,Y
+Remember,3,"Lil' nigga, I know why you hatin', lil' nigga",Lil,3,"Lil' nigga, I know why you hatin', lil' nigga",lil,INNER,REPEAT,spelling,HIGH,N
+Remember,3,"Lil' nigga, I know why you hatin', lil' nigga",nigga,3,"Lil' nigga, I know why you hatin', lil' nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Remember,4,"'Cause I got that money, now you want that money",got,4,"'Cause I got that money, now you want that money",want,INNER,SLANT,cmu,MED,Y
+Remember,4,"'Cause I got that money, now you want that money",money,4,"'Cause I got that money, now you want that money",money,INNER,REPEAT,spelling,HIGH,N
+Remember,4,"'Cause I got that money, now you want that money",now,5,"I get the clout, now you chasin' the fact",clout,INNER,ASSONANCE,vowel,MED,Y
+Remember,4,"'Cause I got that money, now you want that money",now,5,"I get the clout, now you chasin' the fact",now,INNER,REPEAT,spelling,HIGH,N
+Remember,5,"I get the clout, now you chasin' the fact",chasin,5,"I get the clout, now you chasin' the fact",fact,INNER,ASSONANCE,vowel,MED,Y
+Remember,5,"I get the clout, now you chasin' the fact",clout,5,"I get the clout, now you chasin' the fact",now,INNER,ASSONANCE,vowel,MED,Y
+Remember,5,"I get the clout, now you chasin' the fact",chasin,7,"Know how to trap, nigga, three different ways",trap,INNER,ASSONANCE,vowel,MED,Y
+Remember,5,"I get the clout, now you chasin' the fact",clout,7,"Know how to trap, nigga, three different ways",how,INNER,ASSONANCE,vowel,MED,Y
+Remember,5,"I get the clout, now you chasin' the fact",fact,7,"Know how to trap, nigga, three different ways",trap,INNER,SLANT,cmu,MED,Y
+Remember,5,"I get the clout, now you chasin' the fact",now,7,"Know how to trap, nigga, three different ways",how,INNER,PERFECT,cmu,HIGH,Y
+Remember,6,I put VSs in all of my chains,chains,7,"Know how to trap, nigga, three different ways",ways,END,SLANT,cmu,MED,Y
+Remember,6,I put VSs in all of my chains,chains,8,"I ain't comin' outside, boy, unless I get paid",paid,END,ASSONANCE,vowel,MED,Y
+Remember,6,I put VSs in all of my chains,chains,8,"I ain't comin' outside, boy, unless I get paid",ain't,INNER,SLANT,cmu,MED,Y
+Remember,7,"Know how to trap, nigga, three different ways",ways,8,"I ain't comin' outside, boy, unless I get paid",paid,END,SLANT,cmu,MED,Y
+Remember,7,"Know how to trap, nigga, three different ways",ways,8,"I ain't comin' outside, boy, unless I get paid",ain't,INNER,ASSONANCE,vowel,MED,Y
+Remember,8,"I ain't comin' outside, boy, unless I get paid",ain't,8,"I ain't comin' outside, boy, unless I get paid",paid,INNER,ASSONANCE,vowel,MED,Y
+Remember,8,"I ain't comin' outside, boy, unless I get paid",unless,8,"I ain't comin' outside, boy, unless I get paid",get,INNER,SLANT,cmu,MED,Y
+Remember,8,"I ain't comin' outside, boy, unless I get paid",outside,9,"Yeah, we droppin' the fives and we droppin' them Gs",fives,INNER,ASSONANCE,vowel,MED,Y
+Remember,8,"I ain't comin' outside, boy, unless I get paid",boy,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",boy,INNER,REPEAT,spelling,HIGH,N
+Remember,8,"I ain't comin' outside, boy, unless I get paid",comin,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",fuck,INNER,ASSONANCE,vowel,MED,Y
+Remember,8,"I ain't comin' outside, boy, unless I get paid",comin,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",uppin,INNER,SLANT,cmu,MED,Y
+Remember,8,"I ain't comin' outside, boy, unless I get paid",get,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",EBK,INNER,SLANT,spelling,LOW,Y
+Remember,8,"I ain't comin' outside, boy, unless I get paid",outside,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",I'll,INNER,SLANT,cmu,MED,Y
+Remember,9,"Yeah, we droppin' the fives and we droppin' them Gs",droppin,9,"Yeah, we droppin' the fives and we droppin' them Gs",droppin,INNER,REPEAT,spelling,HIGH,N
+Remember,9,"Yeah, we droppin' the fives and we droppin' them Gs",droppin,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",droppin,INNER,REPEAT,spelling,HIGH,N
+Remember,9,"Yeah, we droppin' the fives and we droppin' them Gs",droppin,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",knot,INNER,ASSONANCE,vowel,MED,Y
+Remember,9,"Yeah, we droppin' the fives and we droppin' them Gs",fives,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",I'll,INNER,ASSONANCE,vowel,MED,Y
+Remember,9,"Yeah, we droppin' the fives and we droppin' them Gs",droppin,11,"Opp up in Heaven, send shots to the sky",Opp,INNER,SLANT,cmu,MED,Y
+Remember,9,"Yeah, we droppin' the fives and we droppin' them Gs",droppin,11,"Opp up in Heaven, send shots to the sky",shots,INNER,ASSONANCE,vowel,MED,Y
+Remember,9,"Yeah, we droppin' the fives and we droppin' them Gs",fives,11,"Opp up in Heaven, send shots to the sky",sky,INNER,ASSONANCE,vowel,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",Big,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",everything,INNER,SLANT,cmu,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",droppin,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",knot,INNER,ASSONANCE,vowel,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",fuck,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",uppin,INNER,ASSONANCE,vowel,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",knot,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",knot,INNER,REPEAT,spelling,HIGH,N
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",Mr,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",Big,INNER,ASSONANCE,vowel,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",Mr,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",everything,INNER,ASSONANCE,vowel,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",droppin,11,"Opp up in Heaven, send shots to the sky",Opp,INNER,SLANT,cmu,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",droppin,11,"Opp up in Heaven, send shots to the sky",shots,INNER,ASSONANCE,vowel,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",I'll,11,"Opp up in Heaven, send shots to the sky",sky,INNER,ASSONANCE,vowel,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",knot,11,"Opp up in Heaven, send shots to the sky",Opp,INNER,SLANT,cmu,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",knot,11,"Opp up in Heaven, send shots to the sky",shots,INNER,SLANT,cmu,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",I'll,12,"Ride for my niggas, yeah, only my guys",guys,INNER,SLANT,cmu,MED,Y
+Remember,10,"Mr. Big EBK, boy I'll fuck everything if you droppin' my knot, uppin' my knot",I'll,12,"Ride for my niggas, yeah, only my guys",Ride,INNER,SLANT,cmu,MED,Y
+Remember,11,"Opp up in Heaven, send shots to the sky",Heaven,11,"Opp up in Heaven, send shots to the sky",send,INNER,ASSONANCE,vowel,MED,Y
+Remember,11,"Opp up in Heaven, send shots to the sky",Opp,11,"Opp up in Heaven, send shots to the sky",shots,INNER,ASSONANCE,vowel,MED,Y
+Remember,11,"Opp up in Heaven, send shots to the sky",sky,12,"Ride for my niggas, yeah, only my guys",guys,END,ASSONANCE,vowel,MED,Y
+Remember,11,"Opp up in Heaven, send shots to the sky",sky,12,"Ride for my niggas, yeah, only my guys",Ride,INNER,ASSONANCE,vowel,MED,Y
+Remember,11,"Opp up in Heaven, send shots to the sky",sky,15,"Mama, no vacation but I'm on a island",island,END,ASSONANCE,vowel,MED,Y
+Remember,12,"Ride for my niggas, yeah, only my guys",Ride,12,"Ride for my niggas, yeah, only my guys",guys,INNER,SLANT,cmu,MED,Y
+Remember,12,"Ride for my niggas, yeah, only my guys",niggas,13,"For my lil' niggas, we pourin' out liquor",niggas,INNER,REPEAT,spelling,HIGH,N
+Remember,12,"Ride for my niggas, yeah, only my guys",niggas,14,I'm tryna see seven figures,figures,INNER,SLANT,spelling,LOW,Y
+Remember,12,"Ride for my niggas, yeah, only my guys",guys,15,"Mama, no vacation but I'm on a island",island,END,ASSONANCE,vowel,MED,Y
+Remember,12,"Ride for my niggas, yeah, only my guys",guys,16,"Since a young nigga, we wildin'",wildin,END,ASSONANCE,vowel,MED,Y
+Remember,13,"For my lil' niggas, we pourin' out liquor",lil,13,"For my lil' niggas, we pourin' out liquor",liquor,INNER,SLANT,cmu,MED,Y
+Remember,13,"For my lil' niggas, we pourin' out liquor",liquor,14,I'm tryna see seven figures,figures,END,ASSONANCE,vowel,MED,Y
+Remember,13,"For my lil' niggas, we pourin' out liquor",lil,14,I'm tryna see seven figures,figures,INNER,ASSONANCE,vowel,MED,Y
+Remember,13,"For my lil' niggas, we pourin' out liquor",niggas,14,I'm tryna see seven figures,figures,INNER,SLANT,spelling,LOW,Y
+Remember,14,I'm tryna see seven figures,figures,16,"Since a young nigga, we wildin'",Since,INNER,ASSONANCE,vowel,MED,Y
+Remember,15,"Mama, no vacation but I'm on a island",island,16,"Since a young nigga, we wildin'",wildin,END,ASSONANCE,vowel,MED,Y
+Remember,15,"Mama, no vacation but I'm on a island",Mama,17,"Call up the Batman, I'm robbin'",robbin,INNER,ASSONANCE,vowel,MED,Y
+Remember,15,"Mama, no vacation but I'm on a island",island,18,Niggas ain't on my timin',timin,END,ASSONANCE,vowel,MED,Y
+Remember,15,"Mama, no vacation but I'm on a island",island,19,And my money keep pilin' and pilin',pilin,END,ASSONANCE,vowel,MED,Y
+Remember,16,"Since a young nigga, we wildin'",wildin,18,Niggas ain't on my timin',timin,END,ASSONANCE,vowel,MED,Y
+Remember,16,"Since a young nigga, we wildin'",nigga,18,Niggas ain't on my timin',Niggas,INNER,SLANT,spelling,LOW,Y
+Remember,16,"Since a young nigga, we wildin'",wildin,19,And my money keep pilin' and pilin',pilin,END,SLANT,cmu,MED,Y
+Remember,16,"Since a young nigga, we wildin'",wildin,20,"Lil' nigga, you chuckin' and jivin'",jivin,END,ASSONANCE,vowel,MED,Y
+Remember,18,Niggas ain't on my timin',timin,19,And my money keep pilin' and pilin',pilin,END,SLANT,cmu,MED,Y
+Remember,18,Niggas ain't on my timin',timin,19,And my money keep pilin' and pilin',pilin,INNER,SLANT,cmu,MED,Y
+Remember,18,Niggas ain't on my timin',timin,20,"Lil' nigga, you chuckin' and jivin'",jivin,END,SLANT,cmu,MED,Y
+Remember,18,Niggas ain't on my timin',Niggas,20,"Lil' nigga, you chuckin' and jivin'",nigga,INNER,SLANT,spelling,LOW,Y
+Remember,19,And my money keep pilin' and pilin',pilin,19,And my money keep pilin' and pilin',pilin,INNER,REPEAT,spelling,HIGH,N
+Remember,19,And my money keep pilin' and pilin',pilin,20,"Lil' nigga, you chuckin' and jivin'",jivin,END,SLANT,cmu,MED,Y
+Remember,19,And my money keep pilin' and pilin',money,20,"Lil' nigga, you chuckin' and jivin'",chuckin,INNER,ASSONANCE,vowel,MED,Y
+Remember,19,And my money keep pilin' and pilin',pilin,20,"Lil' nigga, you chuckin' and jivin'",jivin,INNER,SLANT,cmu,MED,Y
+Remember,19,And my money keep pilin' and pilin',money,21,"I'm like, ""Mm-hmm, whatеver""",what,INNER,SLANT,cmu,MED,Y
+Remember,19,And my money keep pilin' and pilin',pilin,21,"I'm like, ""Mm-hmm, whatеver""",like,INNER,ASSONANCE,vowel,MED,Y
+Remember,20,"Lil' nigga, you chuckin' and jivin'",chuckin,21,"I'm like, ""Mm-hmm, whatеver""",what,INNER,ASSONANCE,vowel,MED,Y
+Remember,20,"Lil' nigga, you chuckin' and jivin'",jivin,21,"I'm like, ""Mm-hmm, whatеver""",like,INNER,ASSONANCE,vowel,MED,Y
+Remember,20,"Lil' nigga, you chuckin' and jivin'",chuckin,22,I'm still gon' send shots like thе motherfuckin' reverend,motherfuckin,INNER,MULTI,multi,HIGH,Y
+Remember,20,"Lil' nigga, you chuckin' and jivin'",jivin,22,I'm still gon' send shots like thе motherfuckin' reverend,like,INNER,ASSONANCE,vowel,MED,Y
+Remember,20,"Lil' nigga, you chuckin' and jivin'",Lil,22,I'm still gon' send shots like thе motherfuckin' reverend,still,INNER,PERFECT,cmu,HIGH,Y
+Remember,20,"Lil' nigga, you chuckin' and jivin'",nigga chuckin,22,I'm still gon' send shots like thе motherfuckin' reverend,th motherfuckin,INNER,MULTI,multi,MED,Y
+Remember,21,"I'm like, ""Mm-hmm, whatеver""",like,22,I'm still gon' send shots like thе motherfuckin' reverend,like,INNER,REPEAT,spelling,HIGH,N
+Remember,21,"I'm like, ""Mm-hmm, whatеver""",what,22,I'm still gon' send shots like thе motherfuckin' reverend,motherfuckin,INNER,ASSONANCE,vowel,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,send,22,I'm still gon' send shots like thе motherfuckin' reverend,reverend,INNER,PERFECT,spelling,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,reverend,23,"Knock on the door, nigga, let me in",let,END,ASSONANCE,vowel,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,send,23,"Knock on the door, nigga, let me in",let,INNER,ASSONANCE,vowel,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,shots,23,"Knock on the door, nigga, let me in",Knock,INNER,ASSONANCE,vowel,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,reverend,24,"Yeah, we still sendin' shots up on President",President,END,ASSONANCE,vowel,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,reverend,24,"Yeah, we still sendin' shots up on President",sendin,INNER,ASSONANCE,vowel,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,send,24,"Yeah, we still sendin' shots up on President",President,INNER,SLANT,cmu,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,send,24,"Yeah, we still sendin' shots up on President",sendin,INNER,SLANT,cmu,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,shots,24,"Yeah, we still sendin' shots up on President",shots,INNER,REPEAT,spelling,HIGH,N
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,still,24,"Yeah, we still sendin' shots up on President",still,INNER,REPEAT,spelling,HIGH,N
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,reverend,25,All my niggas is felon and evident,evident,END,SLANT,cmu,MED,Y
+Remember,22,I'm still gon' send shots like thе motherfuckin' reverend,reverend,26,Shack through the sea with no evidence,evidence,END,ASSONANCE,vowel,MED,Y
+Remember,23,"Knock on the door, nigga, let me in",let,24,"Yeah, we still sendin' shots up on President",President,END,SLANT,cmu,MED,Y
+Remember,23,"Knock on the door, nigga, let me in",Knock,24,"Yeah, we still sendin' shots up on President",shots,INNER,ASSONANCE,vowel,MED,Y
+Remember,23,"Knock on the door, nigga, let me in",let,24,"Yeah, we still sendin' shots up on President",sendin,INNER,ASSONANCE,vowel,MED,Y
+Remember,23,"Knock on the door, nigga, let me in",let,25,All my niggas is felon and evident,evident,END,ASSONANCE,vowel,MED,Y
+Remember,23,"Knock on the door, nigga, let me in",door,25,All my niggas is felon and evident,All,INNER,SLANT,cmu,MED,Y
+Remember,23,"Knock on the door, nigga, let me in",let,25,All my niggas is felon and evident,felon,INNER,ASSONANCE,vowel,MED,Y
+Remember,23,"Knock on the door, nigga, let me in",nigga,25,All my niggas is felon and evident,niggas,INNER,SLANT,spelling,LOW,Y
+Remember,23,"Knock on the door, nigga, let me in",let,26,Shack through the sea with no evidence,evidence,END,ASSONANCE,vowel,MED,Y
+Remember,24,"Yeah, we still sendin' shots up on President",sendin,24,"Yeah, we still sendin' shots up on President",President,INNER,ASSONANCE,vowel,MED,Y
+Remember,24,"Yeah, we still sendin' shots up on President",President,25,All my niggas is felon and evident,evident,END,PERFECT,spelling,MED,Y
+Remember,24,"Yeah, we still sendin' shots up on President",President,25,All my niggas is felon and evident,felon,INNER,ASSONANCE,vowel,MED,Y
+Remember,24,"Yeah, we still sendin' shots up on President",sendin,25,All my niggas is felon and evident,evident,INNER,ASSONANCE,vowel,MED,Y
+Remember,24,"Yeah, we still sendin' shots up on President",sendin,25,All my niggas is felon and evident,felon,INNER,ASSONANCE,vowel,MED,Y
+Remember,24,"Yeah, we still sendin' shots up on President",President,26,Shack through the sea with no evidence,evidence,END,ASSONANCE,vowel,MED,Y
+Remember,24,"Yeah, we still sendin' shots up on President",sendin,26,Shack through the sea with no evidence,evidence,INNER,ASSONANCE,vowel,MED,Y
+Remember,25,All my niggas is felon and evident,felon,25,All my niggas is felon and evident,evident,INNER,ASSONANCE,vowel,MED,Y
+Remember,25,All my niggas is felon and evident,evident,26,Shack through the sea with no evidence,evidence,END,SLANT,cmu,MED,Y
+Remember,25,All my niggas is felon and evident,felon,26,Shack through the sea with no evidence,evidence,INNER,ASSONANCE,vowel,MED,Y
+Remember,25,All my niggas is felon and evident,evident,27,"DayDay, have you screamin' through mega like, ""Mayday""",mega,INNER,ASSONANCE,vowel,MED,Y
+Remember,25,All my niggas is felon and evident,felon,27,"DayDay, have you screamin' through mega like, ""Mayday""",mega,INNER,ASSONANCE,vowel,MED,Y
+Remember,26,Shack through the sea with no evidence,evidence,27,"DayDay, have you screamin' through mega like, ""Mayday""",mega,INNER,ASSONANCE,vowel,MED,Y
+Remember,26,Shack through the sea with no evidence,sea,27,"DayDay, have you screamin' through mega like, ""Mayday""",screamin,INNER,ASSONANCE,vowel,MED,Y
+Remember,26,Shack through the sea with no evidence,Shack,27,"DayDay, have you screamin' through mega like, ""Mayday""",have,INNER,SLANT,cmu,MED,Y
+Remember,26,Shack through the sea with no evidence,through,27,"DayDay, have you screamin' through mega like, ""Mayday""",through,INNER,REPEAT,spelling,HIGH,N
+Remember,26,Shack through the sea with no evidence,through,28,Who the fuck are you talkin' to crazy?,Who,INNER,PERFECT,cmu,HIGH,Y
+Remember,27,"DayDay, have you screamin' through mega like, ""Mayday""",DayDay,27,"DayDay, have you screamin' through mega like, ""Mayday""",Mayday,INNER,MULTI,multi,MED,Y
+Remember,27,"DayDay, have you screamin' through mega like, ""Mayday""",Mayday,28,Who the fuck are you talkin' to crazy?,crazy,END,SLANT,cmu,MED,Y
+Remember,27,"DayDay, have you screamin' through mega like, ""Mayday""",DayDay,28,Who the fuck are you talkin' to crazy?,crazy,INNER,SLANT,spelling,LOW,Y
+Remember,27,"DayDay, have you screamin' through mega like, ""Mayday""",through,28,Who the fuck are you talkin' to crazy?,Who,INNER,PERFECT,cmu,HIGH,Y
+Remember,27,"DayDay, have you screamin' through mega like, ""Mayday""",Mayday,29,"If you don't want no beef, nigga, pay me",pay,END,ASSONANCE,vowel,MED,Y
+Remember,27,"DayDay, have you screamin' through mega like, ""Mayday""",DayDay,29,"If you don't want no beef, nigga, pay me",pay,INNER,PERFECT,spelling,MED,Y
+Remember,27,"DayDay, have you screamin' through mega like, ""Mayday""",screamin,29,"If you don't want no beef, nigga, pay me",beef,INNER,ASSONANCE,vowel,MED,Y
+Remember,27,"DayDay, have you screamin' through mega like, ""Mayday""",Mayday,30,"Nigga, talk to me nice, nigga LayLay",LayLay,END,PERFECT,spelling,MED,Y
+Remember,28,Who the fuck are you talkin' to crazy?,crazy,29,"If you don't want no beef, nigga, pay me",pay,END,ASSONANCE,vowel,MED,Y
+Remember,28,Who the fuck are you talkin' to crazy?,talkin,29,"If you don't want no beef, nigga, pay me",want,INNER,ASSONANCE,vowel,MED,Y
+Remember,28,Who the fuck are you talkin' to crazy?,crazy,30,"Nigga, talk to me nice, nigga LayLay",LayLay,END,SLANT,spelling,LOW,Y
+Remember,28,Who the fuck are you talkin' to crazy?,crazy,32,'Cause that money gon' stay up on me,stay,END,ASSONANCE,vowel,MED,Y
+Remember,29,"If you don't want no beef, nigga, pay me",don't,29,"If you don't want no beef, nigga, pay me",no,INNER,ASSONANCE,vowel,MED,Y
+Remember,29,"If you don't want no beef, nigga, pay me",pay,30,"Nigga, talk to me nice, nigga LayLay",LayLay,END,PERFECT,spelling,MED,Y
+Remember,29,"If you don't want no beef, nigga, pay me",nigga,30,"Nigga, talk to me nice, nigga LayLay",Nigga,INNER,REPEAT,spelling,HIGH,N
+Remember,29,"If you don't want no beef, nigga, pay me",beef,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",nigga,INNER,ASSONANCE,vowel,MED,Y
+Remember,29,"If you don't want no beef, nigga, pay me",nigga,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",nigga,INNER,REPEAT,spelling,HIGH,N
+Remember,29,"If you don't want no beef, nigga, pay me",pay,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",hatin,INNER,ASSONANCE,vowel,MED,Y
+Remember,29,"If you don't want no beef, nigga, pay me",pay,32,'Cause that money gon' stay up on me,stay,END,PERFECT,cmu,HIGH,Y
+Remember,29,"If you don't want no beef, nigga, pay me",pay,33,Know some niggas that changed up on me,changed,END,ASSONANCE,vowel,MED,Y
+Remember,30,"Nigga, talk to me nice, nigga LayLay",Nigga,30,"Nigga, talk to me nice, nigga LayLay",nigga,INNER,REPEAT,spelling,HIGH,N
+Remember,30,"Nigga, talk to me nice, nigga LayLay",nice,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",Why,INNER,ASSONANCE,vowel,MED,Y
+Remember,30,"Nigga, talk to me nice, nigga LayLay",Nigga,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",nigga,INNER,REPEAT,spelling,HIGH,N
+Remember,30,"Nigga, talk to me nice, nigga LayLay",LayLay,32,'Cause that money gon' stay up on me,stay,END,PERFECT,spelling,MED,Y
+Remember,30,"Nigga, talk to me nice, nigga LayLay",LayLay,34,That's why I keep Trey up on me,Trey,END,ASSONANCE,vowel,LOW,N
+Remember,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",lil,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",lil,INNER,REPEAT,spelling,HIGH,N
+Remember,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",nigga,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",nigga,INNER,REPEAT,spelling,HIGH,N
+Remember,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",fuck,32,'Cause that money gon' stay up on me,money,INNER,SLANT,cmu,MED,Y
+Remember,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",hatin,32,'Cause that money gon' stay up on me,stay,INNER,ASSONANCE,vowel,MED,Y
+Remember,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",fuck,33,Know some niggas that changed up on me,some,INNER,SLANT,cmu,MED,Y
+Remember,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",hatin,33,Know some niggas that changed up on me,changed,INNER,ASSONANCE,vowel,MED,Y
+Remember,31,"Why the fuck are you hatin', lil' nigga, lil' nigga, on me?",nigga,33,Know some niggas that changed up on me,niggas,INNER,SLANT,spelling,LOW,Y
+Remember,32,'Cause that money gon' stay up on me,stay,33,Know some niggas that changed up on me,changed,END,ASSONANCE,vowel,MED,Y
+Remember,32,'Cause that money gon' stay up on me,money,33,Know some niggas that changed up on me,some,INNER,SLANT,cmu,MED,Y
+Remember,32,'Cause that money gon' stay up on me,stay,34,That's why I keep Trey up on me,Trey,END,PERFECT,cmu,HIGH,Y
+Remember,32,'Cause that money gon' stay up on me,stay,35,Now your bitch wanna lay up on me,lay,END,PERFECT,cmu,HIGH,Y
+Remember,32,'Cause that money gon' stay up on me,stay,36,And she wanna come lay up on me,lay,END,PERFECT,cmu,HIGH,Y
+Remember,33,Know some niggas that changed up on me,changed,34,That's why I keep Trey up on me,Trey,END,ASSONANCE,vowel,MED,Y
+Remember,33,Know some niggas that changed up on me,changed,35,Now your bitch wanna lay up on me,lay,END,ASSONANCE,vowel,MED,Y
+Remember,33,Know some niggas that changed up on me,changed,36,And she wanna come lay up on me,lay,END,ASSONANCE,vowel,MED,Y
+Remember,34,That's why I keep Trey up on me,Trey,35,Now your bitch wanna lay up on me,lay,END,PERFECT,cmu,HIGH,Y
+Remember,34,That's why I keep Trey up on me,Trey,36,And she wanna come lay up on me,lay,END,PERFECT,cmu,HIGH,Y
+Remember,35,Now your bitch wanna lay up on me,lay,36,And she wanna come lay up on me,lay,END,REPEAT,spelling,HIGH,N
+Remember,35,Now your bitch wanna lay up on me,wanna,36,And she wanna come lay up on me,wanna,INNER,REPEAT,spelling,HIGH,N
+Remember,37,I remember when I was on E,remember,37,I remember when I was on E,when,INNER,ASSONANCE,vowel,MED,Y
+Remember,37,I remember when I was on E,remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",bread,INNER,ASSONANCE,vowel,MED,Y
+Remember,37,I remember when I was on E,remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",flexin,INNER,ASSONANCE,vowel,MED,Y
+Remember,37,I remember when I was on E,remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",gettin,INNER,ASSONANCE,vowel,MED,Y
+Remember,37,I remember when I was on E,remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",stressin,INNER,ASSONANCE,vowel,MED,Y
+Remember,37,I remember when I was on E,when,38,"Uh, flexin', if you gettin' bread, why you stressin'?",bread,INNER,SLANT,cmu,MED,Y
+Remember,37,I remember when I was on E,when,38,"Uh, flexin', if you gettin' bread, why you stressin'?",flexin,INNER,ASSONANCE,vowel,MED,Y
+Remember,37,I remember when I was on E,when,38,"Uh, flexin', if you gettin' bread, why you stressin'?",gettin,INNER,ASSONANCE,vowel,MED,Y
+Remember,37,I remember when I was on E,when,38,"Uh, flexin', if you gettin' bread, why you stressin'?",stressin,INNER,ASSONANCE,vowel,MED,Y
+Remember,37,I remember when I was on E,remember,39,I bought a chain and a TEC in,TEC,INNER,ASSONANCE,vowel,MED,Y
+Remember,37,I remember when I was on E,when,39,I bought a chain and a TEC in,TEC,INNER,SLANT,cmu,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",bread,38,"Uh, flexin', if you gettin' bread, why you stressin'?",stressin,INNER,ASSONANCE,vowel,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",flexin,38,"Uh, flexin', if you gettin' bread, why you stressin'?",bread,INNER,ASSONANCE,vowel,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",flexin,38,"Uh, flexin', if you gettin' bread, why you stressin'?",gettin,INNER,SLANT,cmu,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",flexin,38,"Uh, flexin', if you gettin' bread, why you stressin'?",stressin,INNER,SLANT,cmu,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",gettin,38,"Uh, flexin', if you gettin' bread, why you stressin'?",bread,INNER,ASSONANCE,vowel,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",gettin,38,"Uh, flexin', if you gettin' bread, why you stressin'?",stressin,INNER,SLANT,cmu,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",stressin,39,I bought a chain and a TEC in,TEC,END,ASSONANCE,vowel,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",bread,39,I bought a chain and a TEC in,TEC,INNER,SLANT,cmu,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",flexin,39,I bought a chain and a TEC in,TEC,INNER,ASSONANCE,vowel,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",gettin,39,I bought a chain and a TEC in,TEC,INNER,ASSONANCE,vowel,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",bread,40,I did fifteen on my check-ins,check,INNER,SLANT,cmu,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",flexin,40,I did fifteen on my check-ins,check,INNER,ASSONANCE,vowel,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",gettin,40,I did fifteen on my check-ins,check,INNER,ASSONANCE,vowel,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",stressin,40,I did fifteen on my check-ins,check,INNER,ASSONANCE,vowel,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",stressin,41,"Big Louboutin, what I'm steppin'",steppin,END,SLANT,cmu,MED,Y
+Remember,38,"Uh, flexin', if you gettin' bread, why you stressin'?",stressin,42,Big .38 for the weapon,weapon,END,ASSONANCE,vowel,MED,Y
+Remember,39,I bought a chain and a TEC in,TEC,40,I did fifteen on my check-ins,check,INNER,PERFECT,cmu,HIGH,Y
+Remember,39,I bought a chain and a TEC in,TEC,41,"Big Louboutin, what I'm steppin'",steppin,END,ASSONANCE,vowel,MED,Y
+Remember,39,I bought a chain and a TEC in,TEC,42,Big .38 for the weapon,weapon,END,ASSONANCE,vowel,MED,Y
+Remember,40,I did fifteen on my check-ins,check,41,"Big Louboutin, what I'm steppin'",steppin,INNER,ASSONANCE,vowel,MED,Y
+Remember,40,I did fifteen on my check-ins,ins,41,"Big Louboutin, what I'm steppin'",Big,INNER,ASSONANCE,vowel,MED,Y
+Remember,40,I did fifteen on my check-ins,check,42,Big .38 for the weapon,weapon,INNER,ASSONANCE,vowel,MED,Y
+Remember,40,I did fifteen on my check-ins,ins,42,Big .38 for the weapon,Big,INNER,ASSONANCE,vowel,MED,Y
+Remember,41,"Big Louboutin, what I'm steppin'",steppin,42,Big .38 for the weapon,weapon,END,SLANT,cmu,MED,Y
+Remember,41,"Big Louboutin, what I'm steppin'",Big,42,Big .38 for the weapon,Big,INNER,REPEAT,spelling,HIGH,N
+Remember,43,"And my pockets on swole, yeah, I keep a bankroll",swole,43,"And my pockets on swole, yeah, I keep a bankroll",bankroll,INNER,SLANT,spelling,LOW,Y
+Remember,43,"And my pockets on swole, yeah, I keep a bankroll",bankroll,44,"Walk with a pole yeah, I'm always on go",go,END,ASSONANCE,vowel,MED,Y
+Remember,43,"And my pockets on swole, yeah, I keep a bankroll",bankroll,44,"Walk with a pole yeah, I'm always on go",pole,INNER,PERFECT,cmu,HIGH,Y
+Remember,43,"And my pockets on swole, yeah, I keep a bankroll",swole,44,"Walk with a pole yeah, I'm always on go",pole,INNER,SLANT,spelling,LOW,Y
+Remember,44,"Walk with a pole yeah, I'm always on go",pole,44,"Walk with a pole yeah, I'm always on go",go,INNER,ASSONANCE,vowel,MED,Y
+Remember,44,"Walk with a pole yeah, I'm always on go",always,45,'Member them days I was all in the slum,days,INNER,PERFECT,cmu,HIGH,Y
+Remember,44,"Walk with a pole yeah, I'm always on go",Walk,45,'Member them days I was all in the slum,all,INNER,SLANT,cmu,MED,Y
+Remember,44,"Walk with a pole yeah, I'm always on go",always,46,'Member them days I was playin' with—,days,INNER,PERFECT,cmu,HIGH,Y
+Remember,44,"Walk with a pole yeah, I'm always on go",always,46,'Member them days I was playin' with—,playin,INNER,SLANT,cmu,MED,Y
+Remember,45,'Member them days I was all in the slum,'Member,46,'Member them days I was playin' with—,'Member,INNER,REPEAT,spelling,HIGH,N
+Remember,45,'Member them days I was all in the slum,days,46,'Member them days I was playin' with—,days,INNER,REPEAT,spelling,HIGH,N
+Remember,45,'Member them days I was all in the slum,days,46,'Member them days I was playin' with—,playin,INNER,SLANT,cmu,MED,Y
+Remember,45,'Member them days I was all in the slum,slum,47,"We both had a ****, nigga, why did you run? (Run)",run,END,SLANT,cmu,MED,Y
+Remember,46,'Member them days I was playin' with—,days,46,'Member them days I was playin' with—,playin,INNER,SLANT,cmu,MED,Y

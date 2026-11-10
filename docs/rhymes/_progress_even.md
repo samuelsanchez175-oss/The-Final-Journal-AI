@@ -236,6 +236,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 224 | lud-foe | Lud Foe | 1 | 48 | 431 | 81 | 350 | 416 | 2026-11-10 13:23 ET |
 | 225 | ye | Ye | 1 | 48 | 390 | 56 | 334 | 385 | 2026-11-10 13:23 ET |
 | 226 | bobby-raps | Bobby Raps | 1 | 47 | 242 | 38 | 204 | 239 | 2026-11-10 13:23 ET |
+| 227 | doa-beezy | Doa Beezy | 1 | 47 | 277 | 71 | 206 | 267 | 2026-11-10 13:23 ET |
+| 228 | ksi | KSI | 1 | 47 | 213 | 29 | 184 | 210 | 2026-11-10 13:23 ET |
+| 229 | loe-shimmy | Loe Shimmy | 1 | 47 | 427 | 56 | 371 | 418 | 2026-11-10 13:23 ET |
+| 230 | nigo | Nigo | 1 | 47 | 196 | 55 | 141 | 195 | 2026-11-10 13:23 ET |
+| 231 | rich-homie-quan | Rich Homie Quan | 1 | 47 | 304 | 57 | 247 | 299 | 2026-11-10 13:23 ET |
+| 232 | young-m-a | Young M.A | 1 | 47 | 442 | 60 | 382 | 431 | 2026-11-10 13:23 ET |
+| 233 | amin | Aminé | 1 | 46 | 172 | 42 | 130 | 165 | 2026-11-10 13:23 ET |
+| 234 | finesse2tymes | Finesse2Tymes | 1 | 46 | 409 | 49 | 360 | 406 | 2026-11-10 13:23 ET |
+| 235 | mac-ty | Mac Ty | 1 | 46 | 265 | 81 | 184 | 261 | 2026-11-10 13:23 ET |
+| 236 | nba-kd | NBA KD | 1 | 46 | 252 | 64 | 188 | 250 | 2026-11-10 13:23 ET |
 
 ## Failures
 
@@ -243,7 +253,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 226/386: Bobby Raps.
+Finished 236/386: NBA KD.
 
 ## Final
 

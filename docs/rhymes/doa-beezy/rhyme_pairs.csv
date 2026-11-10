@@ -1,0 +1,323 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Chiraq Baby,1,"I'm a Chiraq baby, where niggas be getting clapped",Chiraq,1,"I'm a Chiraq baby, where niggas be getting clapped",niggas,INNER,ASSONANCE,vowel,LOW,N
+Chiraq Baby,1,"I'm a Chiraq baby, where niggas be getting clapped",where,1,"I'm a Chiraq baby, where niggas be getting clapped",getting,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,1,"I'm a Chiraq baby, where niggas be getting clapped",clapped,2,You ain't know I'm from that raq,raq,END,SLANT,spelling,LOW,Y
+Chiraq Baby,1,"I'm a Chiraq baby, where niggas be getting clapped",baby,2,You ain't know I'm from that raq,ain't,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,1,"I'm a Chiraq baby, where niggas be getting clapped",Chiraq,2,You ain't know I'm from that raq,raq,INNER,PERFECT,spelling,MED,Y
+Chiraq Baby,1,"I'm a Chiraq baby, where niggas be getting clapped",clapped,3,Home of that murder cap,cap,END,SLANT,cmu,MED,Y
+Chiraq Baby,1,"I'm a Chiraq baby, where niggas be getting clapped",clapped,4,Where niggas be woofin on these apps,apps,END,SLANT,cmu,MED,Y
+Chiraq Baby,1,"I'm a Chiraq baby, where niggas be getting clapped",clapped,5,To these streets you better adapt,adapt,END,PERFECT,cmu,HIGH,Y
+Chiraq Baby,2,You ain't know I'm from that raq,raq,3,Home of that murder cap,cap,END,SLANT,spelling,LOW,Y
+Chiraq Baby,2,You ain't know I'm from that raq,know,3,Home of that murder cap,Home,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,2,You ain't know I'm from that raq,raq,5,To these streets you better adapt,adapt,END,SLANT,spelling,LOW,Y
+Chiraq Baby,2,You ain't know I'm from that raq,raq,6,Pull up on a fuck nigga like what's up with all that cap,cap,END,SLANT,spelling,LOW,Y
+Chiraq Baby,3,Home of that murder cap,cap,4,Where niggas be woofin on these apps,apps,END,SLANT,cmu,MED,Y
+Chiraq Baby,3,Home of that murder cap,cap,5,To these streets you better adapt,adapt,END,SLANT,cmu,MED,Y
+Chiraq Baby,3,Home of that murder cap,cap,6,Pull up on a fuck nigga like what's up with all that cap,cap,END,REPEAT,spelling,HIGH,N
+Chiraq Baby,4,Where niggas be woofin on these apps,apps,5,To these streets you better adapt,adapt,END,SLANT,cmu,MED,Y
+Chiraq Baby,4,Where niggas be woofin on these apps,these,5,To these streets you better adapt,streets,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,4,Where niggas be woofin on these apps,these,5,To these streets you better adapt,these,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,4,Where niggas be woofin on these apps,Where,5,To these streets you better adapt,better,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,4,Where niggas be woofin on these apps,apps,6,Pull up on a fuck nigga like what's up with all that cap,cap,END,SLANT,cmu,MED,Y
+Chiraq Baby,4,Where niggas be woofin on these apps,niggas,6,Pull up on a fuck nigga like what's up with all that cap,nigga,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,5,To these streets you better adapt,these,5,To these streets you better adapt,streets,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,5,To these streets you better adapt,adapt,6,Pull up on a fuck nigga like what's up with all that cap,cap,END,SLANT,cmu,MED,Y
+Chiraq Baby,5,To these streets you better adapt,better,7,Where niggas be oppin out,Where,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,6,Pull up on a fuck nigga like what's up with all that cap,fuck,6,Pull up on a fuck nigga like what's up with all that cap,what's,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,6,Pull up on a fuck nigga like what's up with all that cap,nigga,7,Where niggas be oppin out,niggas,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,6,Pull up on a fuck nigga like what's up with all that cap,fuck,8,Ain't got yo gun ain't no poppin out,gun,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,6,Pull up on a fuck nigga like what's up with all that cap,what's,8,Ain't got yo gun ain't no poppin out,gun,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,7,Where niggas be oppin out,niggas,9,Where niggas pull up on yo block and get to hoppin out,niggas,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,7,Where niggas be oppin out,Where,9,Where niggas pull up on yo block and get to hoppin out,get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,7,Where niggas be oppin out,Where,9,Where niggas pull up on yo block and get to hoppin out,Where,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,7,Where niggas be oppin out,oppin,10,Where niggas act like what they not about,about,END,PERFECT,cmu,HIGH,Y
+Chiraq Baby,7,Where niggas be oppin out,oppin,11,Where niggas get shot everyday it ain't really shit to get shot about,about,END,PERFECT,cmu,HIGH,Y
+Chiraq Baby,8,Ain't got yo gun ain't no poppin out,Ain't,8,Ain't got yo gun ain't no poppin out,ain't,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,8,Ain't got yo gun ain't no poppin out,got,8,Ain't got yo gun ain't no poppin out,poppin,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,8,Ain't got yo gun ain't no poppin out,poppin,9,Where niggas pull up on yo block and get to hoppin out,hoppin,END,MULTI,multi,HIGH,Y
+Chiraq Baby,8,Ain't got yo gun ain't no poppin out,got,9,Where niggas pull up on yo block and get to hoppin out,block,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,8,Ain't got yo gun ain't no poppin out,got,9,Where niggas pull up on yo block and get to hoppin out,hoppin,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,8,Ain't got yo gun ain't no poppin out,poppin,9,Where niggas pull up on yo block and get to hoppin out,block,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,8,Ain't got yo gun ain't no poppin out,got,10,Where niggas act like what they not about,not,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,8,Ain't got yo gun ain't no poppin out,gun,10,Where niggas act like what they not about,what,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,8,Ain't got yo gun ain't no poppin out,poppin,10,Where niggas act like what they not about,not,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,block,9,Where niggas pull up on yo block and get to hoppin out,hoppin,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,Where,9,Where niggas pull up on yo block and get to hoppin out,get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,block,10,Where niggas act like what they not about,not,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,get,10,Where niggas act like what they not about,Where,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,hoppin,10,Where niggas act like what they not about,not,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,niggas,10,Where niggas act like what they not about,niggas,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,Where,10,Where niggas act like what they not about,Where,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,block,11,Where niggas get shot everyday it ain't really shit to get shot about,shot,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,get,11,Where niggas get shot everyday it ain't really shit to get shot about,get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,get,11,Where niggas get shot everyday it ain't really shit to get shot about,Where,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,hoppin,11,Where niggas get shot everyday it ain't really shit to get shot about,shot,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,niggas,11,Where niggas get shot everyday it ain't really shit to get shot about,niggas,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,Where,11,Where niggas get shot everyday it ain't really shit to get shot about,get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,9,Where niggas pull up on yo block and get to hoppin out,Where,11,Where niggas get shot everyday it ain't really shit to get shot about,Where,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,10,Where niggas act like what they not about,about,11,Where niggas get shot everyday it ain't really shit to get shot about,about,END,REPEAT,spelling,HIGH,N
+Chiraq Baby,10,Where niggas act like what they not about,niggas,11,Where niggas get shot everyday it ain't really shit to get shot about,niggas,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,10,Where niggas act like what they not about,not,11,Where niggas get shot everyday it ain't really shit to get shot about,shot,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,10,Where niggas act like what they not about,Where,11,Where niggas get shot everyday it ain't really shit to get shot about,get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,10,Where niggas act like what they not about,Where,11,Where niggas get shot everyday it ain't really shit to get shot about,Where,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,10,Where niggas act like what they not about,niggas,12,"Lil nigga it's a warzone, lil nigga it's a warzone",nigga,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,everyday,11,Where niggas get shot everyday it ain't really shit to get shot about,ain't,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,get,11,Where niggas get shot everyday it ain't really shit to get shot about,get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,really,11,Where niggas get shot everyday it ain't really shit to get shot about,shit,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,shot,11,Where niggas get shot everyday it ain't really shit to get shot about,shot,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,Where,11,Where niggas get shot everyday it ain't really shit to get shot about,get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,niggas,12,"Lil nigga it's a warzone, lil nigga it's a warzone",nigga,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,really,12,"Lil nigga it's a warzone, lil nigga it's a warzone",Lil,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,shit,12,"Lil nigga it's a warzone, lil nigga it's a warzone",Lil,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,shit,12,"Lil nigga it's a warzone, lil nigga it's a warzone",nigga,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,really,13,He makin diss songs,diss,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,11,Where niggas get shot everyday it ain't really shit to get shot about,shit,13,He makin diss songs,diss,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,12,"Lil nigga it's a warzone, lil nigga it's a warzone",Lil,12,"Lil nigga it's a warzone, lil nigga it's a warzone",lil,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,12,"Lil nigga it's a warzone, lil nigga it's a warzone",nigga,12,"Lil nigga it's a warzone, lil nigga it's a warzone",nigga,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,12,"Lil nigga it's a warzone, lil nigga it's a warzone",warzone,12,"Lil nigga it's a warzone, lil nigga it's a warzone",warzone,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,12,"Lil nigga it's a warzone, lil nigga it's a warzone",Lil,13,He makin diss songs,diss,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,13,He makin diss songs,songs,14,He won't live for long,long,END,SLANT,cmu,MED,Y
+Chiraq Baby,13,He makin diss songs,songs,15,Even the toughest niggas get scored on,scored,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,13,He makin diss songs,songs,16,We be doin niggas so wrong,wrong,END,SLANT,cmu,MED,Y
+Chiraq Baby,14,He won't live for long,long,15,Even the toughest niggas get scored on,scored,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,14,He won't live for long,long,16,We be doin niggas so wrong,wrong,END,PERFECT,cmu,HIGH,Y
+Chiraq Baby,15,Even the toughest niggas get scored on,scored,16,We be doin niggas so wrong,wrong,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,15,Even the toughest niggas get scored on,niggas,16,We be doin niggas so wrong,niggas,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,15,Even the toughest niggas get scored on,get,17,Kids and innocents get whacked too,get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,15,Even the toughest niggas get scored on,niggas,17,Kids and innocents get whacked too,Kids,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,16,We be doin niggas so wrong,niggas,17,Kids and innocents get whacked too,Kids,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,17,Kids and innocents get whacked too,Kids,17,Kids and innocents get whacked too,innocents,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,17,Kids and innocents get whacked too,get,18,(?) tell really go on,tell,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,17,Kids and innocents get whacked too,innocents,18,(?) tell really go on,really,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,17,Kids and innocents get whacked too,Kids,18,(?) tell really go on,really,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,17,Kids and innocents get whacked too,get,19,Better watch yo back if you got that shit on you,Better,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,17,Kids and innocents get whacked too,innocents,19,Better watch yo back if you got that shit on you,shit,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,17,Kids and innocents get whacked too,Kids,19,Better watch yo back if you got that shit on you,shit,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,17,Kids and innocents get whacked too,whacked,19,Better watch yo back if you got that shit on you,back,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,18,(?) tell really go on,really,19,Better watch yo back if you got that shit on you,shit,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,18,(?) tell really go on,tell,19,Better watch yo back if you got that shit on you,Better,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,18,(?) tell really go on,really,20,That block you bet not sit on,sit,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,18,(?) tell really go on,tell,20,That block you bet not sit on,bet,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,watch,19,Better watch yo back if you got that shit on you,got,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,shit,20,That block you bet not sit on,sit,END,PERFECT,cmu,HIGH,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,Better,20,That block you bet not sit on,bet,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,got,20,That block you bet not sit on,block,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,got,20,That block you bet not sit on,not,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,watch,20,That block you bet not sit on,block,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,watch,20,That block you bet not sit on,not,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,shit,21,Even the police will get lit on,lit,END,PERFECT,cmu,HIGH,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,Better,21,Even the police will get lit on,get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,shit,21,Even the police will get lit on,will,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,shit,22,Where they do drugs and get they kill on,kill,END,SLANT,cmu,MED,Y
+Chiraq Baby,19,Better watch yo back if you got that shit on you,shit,23,Even yo mama will get drilled on (hell yeah),drilled,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,20,That block you bet not sit on,block,20,That block you bet not sit on,not,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,20,That block you bet not sit on,sit,21,Even the police will get lit on,lit,END,PERFECT,cmu,HIGH,Y
+Chiraq Baby,20,That block you bet not sit on,bet,21,Even the police will get lit on,get,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,20,That block you bet not sit on,sit,21,Even the police will get lit on,will,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,20,That block you bet not sit on,sit,22,Where they do drugs and get they kill on,kill,END,SLANT,cmu,MED,Y
+Chiraq Baby,20,That block you bet not sit on,bet,22,Where they do drugs and get they kill on,get,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,20,That block you bet not sit on,bet,22,Where they do drugs and get they kill on,Where,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,20,That block you bet not sit on,sit,23,Even yo mama will get drilled on (hell yeah),drilled,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,21,Even the police will get lit on,Even,21,Even the police will get lit on,police,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,21,Even the police will get lit on,will,21,Even the police will get lit on,lit,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,21,Even the police will get lit on,lit,22,Where they do drugs and get they kill on,kill,END,SLANT,cmu,MED,Y
+Chiraq Baby,21,Even the police will get lit on,get,22,Where they do drugs and get they kill on,get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,21,Even the police will get lit on,get,22,Where they do drugs and get they kill on,Where,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,21,Even the police will get lit on,will,22,Where they do drugs and get they kill on,kill,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,21,Even the police will get lit on,lit,23,Even yo mama will get drilled on (hell yeah),drilled,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,21,Even the police will get lit on,Even,23,Even yo mama will get drilled on (hell yeah),Even,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,21,Even the police will get lit on,get,23,Even yo mama will get drilled on (hell yeah),get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,21,Even the police will get lit on,lit,23,Even yo mama will get drilled on (hell yeah),will,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,21,Even the police will get lit on,police,23,Even yo mama will get drilled on (hell yeah),Even,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,21,Even the police will get lit on,will,23,Even yo mama will get drilled on (hell yeah),drilled,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,21,Even the police will get lit on,will,23,Even yo mama will get drilled on (hell yeah),will,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,22,Where they do drugs and get they kill on,Where,22,Where they do drugs and get they kill on,get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,22,Where they do drugs and get they kill on,kill,23,Even yo mama will get drilled on (hell yeah),drilled,END,SLANT,cmu,MED,Y
+Chiraq Baby,22,Where they do drugs and get they kill on,get,23,Even yo mama will get drilled on (hell yeah),get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,22,Where they do drugs and get they kill on,kill,23,Even yo mama will get drilled on (hell yeah),will,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,22,Where they do drugs and get they kill on,Where,23,Even yo mama will get drilled on (hell yeah),get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,23,Even yo mama will get drilled on (hell yeah),will,23,Even yo mama will get drilled on (hell yeah),drilled,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,23,Even yo mama will get drilled on (hell yeah),drilled,24,I'm a Chiraq baby nigga im a Chiraq baby,Chiraq,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,23,Even yo mama will get drilled on (hell yeah),Even,25,Real raq we all goin crazy,Real,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,baby,24,I'm a Chiraq baby nigga im a Chiraq baby,baby,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,Chiraq,24,I'm a Chiraq baby nigga im a Chiraq baby,Chiraq,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,Chiraq,24,I'm a Chiraq baby nigga im a Chiraq baby,nigga,INNER,ASSONANCE,vowel,LOW,N
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,nigga,24,I'm a Chiraq baby nigga im a Chiraq baby,Chiraq,INNER,ASSONANCE,vowel,LOW,N
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,baby,25,Real raq we all goin crazy,crazy,END,SLANT,cmu,MED,Y
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,baby,25,Real raq we all goin crazy,crazy,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,Chiraq,25,Real raq we all goin crazy,raq,INNER,PERFECT,spelling,MED,Y
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,baby,26,We been walkin goin on the daily,daily,END,SLANT,cmu,MED,Y
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,baby,26,We been walkin goin on the daily,daily,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,baby,27,Yeah you know lil bro goin brazy,brazy,END,ASSONANCE,vowel,LOW,N
+Chiraq Baby,24,I'm a Chiraq baby nigga im a Chiraq baby,baby,28,Yeah you know them boys goin brazy,brazy,END,ASSONANCE,vowel,LOW,N
+Chiraq Baby,25,Real raq we all goin crazy,crazy,26,We been walkin goin on the daily,daily,END,SLANT,cmu,MED,Y
+Chiraq Baby,25,Real raq we all goin crazy,all,26,We been walkin goin on the daily,walkin,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,25,Real raq we all goin crazy,goin,26,We been walkin goin on the daily,goin,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,25,Real raq we all goin crazy,crazy,27,Yeah you know lil bro goin brazy,brazy,END,ASSONANCE,vowel,LOW,N
+Chiraq Baby,25,Real raq we all goin crazy,goin,27,Yeah you know lil bro goin brazy,goin,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,25,Real raq we all goin crazy,raq,27,Yeah you know lil bro goin brazy,brazy,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,25,Real raq we all goin crazy,crazy,28,Yeah you know them boys goin brazy,brazy,END,ASSONANCE,vowel,LOW,N
+Chiraq Baby,26,We been walkin goin on the daily,daily,27,Yeah you know lil bro goin brazy,brazy,END,ASSONANCE,vowel,LOW,N
+Chiraq Baby,26,We been walkin goin on the daily,goin,27,Yeah you know lil bro goin brazy,goin,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,26,We been walkin goin on the daily,daily,28,Yeah you know them boys goin brazy,brazy,END,ASSONANCE,vowel,LOW,N
+Chiraq Baby,26,We been walkin goin on the daily,goin,28,Yeah you know them boys goin brazy,boys,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,26,We been walkin goin on the daily,goin,28,Yeah you know them boys goin brazy,goin,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,27,Yeah you know lil bro goin brazy,know,27,Yeah you know lil bro goin brazy,bro,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,27,Yeah you know lil bro goin brazy,brazy,28,Yeah you know them boys goin brazy,brazy,END,REPEAT,spelling,HIGH,N
+Chiraq Baby,27,Yeah you know lil bro goin brazy,bro,28,Yeah you know them boys goin brazy,know,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,27,Yeah you know lil bro goin brazy,goin,28,Yeah you know them boys goin brazy,boys,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,27,Yeah you know lil bro goin brazy,goin,28,Yeah you know them boys goin brazy,goin,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,27,Yeah you know lil bro goin brazy,know,28,Yeah you know them boys goin brazy,know,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,27,Yeah you know lil bro goin brazy,brazy,29,I can hear them demons talkin yeah,can,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,28,Yeah you know them boys goin brazy,boys,28,Yeah you know them boys goin brazy,goin,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,28,Yeah you know them boys goin brazy,brazy,29,I can hear them demons talkin yeah,can,INNER,SLANT,spelling,LOW,Y
+Chiraq Baby,29,I can hear them demons talkin yeah,hear,29,I can hear them demons talkin yeah,demons,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,29,I can hear them demons talkin yeah,demons,30,They get you they gon creep up walkin ya,creep,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,29,I can hear them demons talkin yeah,hear,30,They get you they gon creep up walkin ya,creep,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,29,I can hear them demons talkin yeah,talkin,32,Jumpout gang invented hoppin out,hoppin,END,SLANT,cmu,MED,Y
+Chiraq Baby,30,They get you they gon creep up walkin ya,walkin,31,And you know for me they hawkin ya,hawkin,END,MULTI,multi,HIGH,Y
+Chiraq Baby,30,They get you they gon creep up walkin ya,get,32,Jumpout gang invented hoppin out,invented,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,32,Jumpout gang invented hoppin out,hoppin,33,That's cause niggas love to die for clout,cause,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,32,Jumpout gang invented hoppin out,Jumpout,33,That's cause niggas love to die for clout,clout,INNER,PERFECT,spelling,HIGH,Y
+Chiraq Baby,32,Jumpout gang invented hoppin out,hoppin,34,His block just gon shout em out,block,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,32,Jumpout gang invented hoppin out,invented,34,His block just gon shout em out,em,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,32,Jumpout gang invented hoppin out,Jumpout,34,His block just gon shout em out,shout,INNER,PERFECT,spelling,HIGH,Y
+Chiraq Baby,33,That's cause niggas love to die for clout,cause,34,His block just gon shout em out,block,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,33,That's cause niggas love to die for clout,clout,34,His block just gon shout em out,shout,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,33,That's cause niggas love to die for clout,clout,35,Send lil bro on one they'll get a route right now,now,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,33,That's cause niggas love to die for clout,die,35,Send lil bro on one they'll get a route right now,right,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,33,That's cause niggas love to die for clout,love,35,Send lil bro on one they'll get a route right now,one,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,33,That's cause niggas love to die for clout,clout,36,If they get the loe they'll lurk outside for hours,hours,END,SLANT,cmu,MED,Y
+Chiraq Baby,33,That's cause niggas love to die for clout,clout,37,Still we'll get a nigga house knocked down,down,END,SLANT,cmu,MED,Y
+Chiraq Baby,34,His block just gon shout em out,em,35,Send lil bro on one they'll get a route right now,get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,34,His block just gon shout em out,em,35,Send lil bro on one they'll get a route right now,Send,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,34,His block just gon shout em out,shout,35,Send lil bro on one they'll get a route right now,now,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,34,His block just gon shout em out,em,36,If they get the loe they'll lurk outside for hours,get,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,34,His block just gon shout em out,shout,36,If they get the loe they'll lurk outside for hours,hours,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,Send,35,Send lil bro on one they'll get a route right now,get,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,now,36,If they get the loe they'll lurk outside for hours,hours,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,bro,36,If they get the loe they'll lurk outside for hours,loe,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,get,36,If they get the loe they'll lurk outside for hours,get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,right,36,If they get the loe they'll lurk outside for hours,outside,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,Send,36,If they get the loe they'll lurk outside for hours,get,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,they'll,36,If they get the loe they'll lurk outside for hours,they'll,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,now,37,Still we'll get a nigga house knocked down,down,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,get,37,Still we'll get a nigga house knocked down,get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,lil,37,Still we'll get a nigga house knocked down,Still,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,now,37,Still we'll get a nigga house knocked down,house,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,Send,37,Still we'll get a nigga house knocked down,get,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,now,38,Get up to the opps cause they got knocked down,down,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,35,Send lil bro on one they'll get a route right now,now,39,Anybody left they don't even pop round,round,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,36,If they get the loe they'll lurk outside for hours,hours,37,Still we'll get a nigga house knocked down,down,END,SLANT,cmu,MED,Y
+Chiraq Baby,36,If they get the loe they'll lurk outside for hours,get,37,Still we'll get a nigga house knocked down,get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,36,If they get the loe they'll lurk outside for hours,hours,37,Still we'll get a nigga house knocked down,house,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,36,If they get the loe they'll lurk outside for hours,hours,38,Get up to the opps cause they got knocked down,down,END,SLANT,cmu,MED,Y
+Chiraq Baby,36,If they get the loe they'll lurk outside for hours,get,38,Get up to the opps cause they got knocked down,Get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,36,If they get the loe they'll lurk outside for hours,hours,39,Anybody left they don't even pop round,round,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,36,If they get the loe they'll lurk outside for hours,hours,40,Pull on they block and pop rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,house,37,Still we'll get a nigga house knocked down,down,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,down,38,Get up to the opps cause they got knocked down,down,END,REPEAT,spelling,HIGH,N
+Chiraq Baby,37,Still we'll get a nigga house knocked down,get,38,Get up to the opps cause they got knocked down,Get,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,37,Still we'll get a nigga house knocked down,house,38,Get up to the opps cause they got knocked down,down,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,knocked,38,Get up to the opps cause they got knocked down,cause,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,knocked,38,Get up to the opps cause they got knocked down,got,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,knocked,38,Get up to the opps cause they got knocked down,knocked,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,37,Still we'll get a nigga house knocked down,down,39,Anybody left they don't even pop round,round,END,SLANT,cmu,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,get,39,Anybody left they don't even pop round,Anybody,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,get,39,Anybody left they don't even pop round,left,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,house,39,Anybody left they don't even pop round,round,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,knocked,39,Anybody left they don't even pop round,pop,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,we'll,39,Anybody left they don't even pop round,even,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,down,40,Pull on they block and pop rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,37,Still we'll get a nigga house knocked down,down,41,"Lil boys better stop clownin, (pussy)",clownin,END,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,cause,38,Get up to the opps cause they got knocked down,got,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,cause,38,Get up to the opps cause they got knocked down,knocked,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,got,38,Get up to the opps cause they got knocked down,knocked,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,down,39,Anybody left they don't even pop round,round,END,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,cause,39,Anybody left they don't even pop round,pop,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,Get,39,Anybody left they don't even pop round,Anybody,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,Get,39,Anybody left they don't even pop round,left,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,got,39,Anybody left they don't even pop round,pop,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,knocked,39,Anybody left they don't even pop round,pop,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,opps,39,Anybody left they don't even pop round,don't,INNER,ASSONANCE,vowel,LOW,N
+Chiraq Baby,38,Get up to the opps cause they got knocked down,down,40,Pull on they block and pop rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,cause,40,Pull on they block and pop rounds,block,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,cause,40,Pull on they block and pop rounds,pop,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,got,40,Pull on they block and pop rounds,block,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,got,40,Pull on they block and pop rounds,pop,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,knocked,40,Pull on they block and pop rounds,block,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,knocked,40,Pull on they block and pop rounds,pop,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,38,Get up to the opps cause they got knocked down,down,41,"Lil boys better stop clownin, (pussy)",clownin,END,SLANT,cmu,MED,Y
+Chiraq Baby,39,Anybody left they don't even pop round,Anybody,39,Anybody left they don't even pop round,left,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,39,Anybody left they don't even pop round,round,40,Pull on they block and pop rounds,rounds,END,SLANT,cmu,MED,Y
+Chiraq Baby,39,Anybody left they don't even pop round,pop,40,Pull on they block and pop rounds,block,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,39,Anybody left they don't even pop round,pop,40,Pull on they block and pop rounds,pop,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,39,Anybody left they don't even pop round,round,41,"Lil boys better stop clownin, (pussy)",clownin,END,SLANT,cmu,MED,Y
+Chiraq Baby,39,Anybody left they don't even pop round,Anybody,41,"Lil boys better stop clownin, (pussy)",better,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,39,Anybody left they don't even pop round,left,41,"Lil boys better stop clownin, (pussy)",better,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,39,Anybody left they don't even pop round,pop,41,"Lil boys better stop clownin, (pussy)",stop,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,39,Anybody left they don't even pop round,round,43,"A lot of mamas frownin, (Aye, aye, aye)",frownin,END,SLANT,cmu,MED,Y
+Chiraq Baby,40,Pull on they block and pop rounds,block,40,Pull on they block and pop rounds,pop,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,40,Pull on they block and pop rounds,rounds,41,"Lil boys better stop clownin, (pussy)",clownin,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,40,Pull on they block and pop rounds,block,41,"Lil boys better stop clownin, (pussy)",stop,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,40,Pull on they block and pop rounds,pop,41,"Lil boys better stop clownin, (pussy)",stop,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,40,Pull on they block and pop rounds,block,42,Lurkin so it ain't take long until he got left where they found em,got,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,40,Pull on they block and pop rounds,pop,42,Lurkin so it ain't take long until he got left where they found em,got,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,40,Pull on they block and pop rounds,rounds,42,Lurkin so it ain't take long until he got left where they found em,found,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,40,Pull on they block and pop rounds,rounds,43,"A lot of mamas frownin, (Aye, aye, aye)",frownin,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,40,Pull on they block and pop rounds,rounds,44,Couldn't swim in that water he got to deep he drownin,drownin,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",better,42,Lurkin so it ain't take long until he got left where they found em,em,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",better,42,Lurkin so it ain't take long until he got left where they found em,left,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",better,42,Lurkin so it ain't take long until he got left where they found em,where,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",clownin,42,Lurkin so it ain't take long until he got left where they found em,found,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",Lil,42,Lurkin so it ain't take long until he got left where they found em,until,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",stop,42,Lurkin so it ain't take long until he got left where they found em,got,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",clownin,43,"A lot of mamas frownin, (Aye, aye, aye)",frownin,END,MULTI,multi,HIGH,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",stop,43,"A lot of mamas frownin, (Aye, aye, aye)",lot,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",stop,43,"A lot of mamas frownin, (Aye, aye, aye)",mamas,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,41,"Lil boys better stop clownin, (pussy)",clownin,44,Couldn't swim in that water he got to deep he drownin,drownin,END,MULTI,multi,HIGH,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,ain't,42,Lurkin so it ain't take long until he got left where they found em,take,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,left,42,Lurkin so it ain't take long until he got left where they found em,em,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,left,42,Lurkin so it ain't take long until he got left where they found em,where,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,where,42,Lurkin so it ain't take long until he got left where they found em,em,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,found,43,"A lot of mamas frownin, (Aye, aye, aye)",frownin,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,got,43,"A lot of mamas frownin, (Aye, aye, aye)",lot,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,got,43,"A lot of mamas frownin, (Aye, aye, aye)",mamas,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,found,44,Couldn't swim in that water he got to deep he drownin,drownin,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,got,44,Couldn't swim in that water he got to deep he drownin,got,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,long,44,Couldn't swim in that water he got to deep he drownin,water,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,42,Lurkin so it ain't take long until he got left where they found em,until,44,Couldn't swim in that water he got to deep he drownin,swim,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,43,"A lot of mamas frownin, (Aye, aye, aye)",lot,43,"A lot of mamas frownin, (Aye, aye, aye)",mamas,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,43,"A lot of mamas frownin, (Aye, aye, aye)",frownin,44,Couldn't swim in that water he got to deep he drownin,drownin,END,MULTI,multi,HIGH,Y
+Chiraq Baby,43,"A lot of mamas frownin, (Aye, aye, aye)",lot,44,Couldn't swim in that water he got to deep he drownin,got,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,43,"A lot of mamas frownin, (Aye, aye, aye)",mamas,44,Couldn't swim in that water he got to deep he drownin,got,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,43,"A lot of mamas frownin, (Aye, aye, aye)",frownin,45,My nigga just got on his feet right now at least he smilin,now,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,43,"A lot of mamas frownin, (Aye, aye, aye)",lot,45,My nigga just got on his feet right now at least he smilin,got,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,43,"A lot of mamas frownin, (Aye, aye, aye)",mamas,45,My nigga just got on his feet right now at least he smilin,got,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,44,Couldn't swim in that water he got to deep he drownin,deep,45,My nigga just got on his feet right now at least he smilin,feet,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,44,Couldn't swim in that water he got to deep he drownin,deep,45,My nigga just got on his feet right now at least he smilin,least,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,44,Couldn't swim in that water he got to deep he drownin,drownin,45,My nigga just got on his feet right now at least he smilin,now,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,44,Couldn't swim in that water he got to deep he drownin,got,45,My nigga just got on his feet right now at least he smilin,got,INNER,REPEAT,spelling,HIGH,N
+Chiraq Baby,44,Couldn't swim in that water he got to deep he drownin,deep,46,He popped out without that heat he wildin,heat,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,44,Couldn't swim in that water he got to deep he drownin,drownin,46,He popped out without that heat he wildin,without,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,44,Couldn't swim in that water he got to deep he drownin,got,46,He popped out without that heat he wildin,popped,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,feet,45,My nigga just got on his feet right now at least he smilin,least,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,right,45,My nigga just got on his feet right now at least he smilin,smilin,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,smilin,46,He popped out without that heat he wildin,wildin,END,SLANT,cmu,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,feet,46,He popped out without that heat he wildin,heat,INNER,PERFECT,cmu,HIGH,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,got,46,He popped out without that heat he wildin,popped,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,least,46,He popped out without that heat he wildin,heat,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,now,46,He popped out without that heat he wildin,without,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,right,46,He popped out without that heat he wildin,wildin,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,smilin,47,He be toting less than thirty shots i see he childish,childish,END,ASSONANCE,vowel,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,feet,47,He be toting less than thirty shots i see he childish,see,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,feet,47,He be toting less than thirty shots i see he childish,thirty,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,got,47,He be toting less than thirty shots i see he childish,shots,INNER,SLANT,cmu,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,least,47,He be toting less than thirty shots i see he childish,see,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,least,47,He be toting less than thirty shots i see he childish,thirty,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,45,My nigga just got on his feet right now at least he smilin,right,47,He be toting less than thirty shots i see he childish,childish,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,46,He popped out without that heat he wildin,wildin,47,He be toting less than thirty shots i see he childish,childish,END,SLANT,cmu,MED,Y
+Chiraq Baby,46,He popped out without that heat he wildin,heat,47,He be toting less than thirty shots i see he childish,see,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,46,He popped out without that heat he wildin,heat,47,He be toting less than thirty shots i see he childish,thirty,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,46,He popped out without that heat he wildin,popped,47,He be toting less than thirty shots i see he childish,shots,INNER,ASSONANCE,vowel,MED,Y
+Chiraq Baby,47,He be toting less than thirty shots i see he childish,thirty,47,He be toting less than thirty shots i see he childish,see,INNER,PERFECT,cmu,HIGH,Y

@@ -1,0 +1,246 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Number 2,1,"Lord forgive us, ooh, ooh (D-Diego)",forgive,2,"Hit me on my burner, hit me on my burner, ayy",Hit,INNER,SLANT,cmu,MED,Y
+Number 2,1,"Lord forgive us, ooh, ooh (D-Diego)",Lord,3,"All we know is murder, all we know is murder",All,INNER,ASSONANCE,vowel,MED,Y
+Number 2,2,"Hit me on my burner, hit me on my burner, ayy",burner,2,"Hit me on my burner, hit me on my burner, ayy",burner,INNER,REPEAT,spelling,HIGH,N
+Number 2,2,"Hit me on my burner, hit me on my burner, ayy",Hit,2,"Hit me on my burner, hit me on my burner, ayy",hit,INNER,REPEAT,spelling,HIGH,N
+Number 2,2,"Hit me on my burner, hit me on my burner, ayy",burner,3,"All we know is murder, all we know is murder",murder,END,SLANT,cmu,MED,Y
+Number 2,2,"Hit me on my burner, hit me on my burner, ayy",burner,3,"All we know is murder, all we know is murder",murder,INNER,SLANT,cmu,MED,Y
+Number 2,3,"All we know is murder, all we know is murder",All,3,"All we know is murder, all we know is murder",all,INNER,REPEAT,spelling,HIGH,N
+Number 2,3,"All we know is murder, all we know is murder",know,3,"All we know is murder, all we know is murder",know,INNER,REPEAT,spelling,HIGH,N
+Number 2,3,"All we know is murder, all we know is murder",murder,3,"All we know is murder, all we know is murder",murder,INNER,REPEAT,spelling,HIGH,N
+Number 2,4,It's goin' down in my hood,hood,5,"They shoot rounds in my hood, they shoot rounds in my hood (Lovely)",hood,END,REPEAT,spelling,HIGH,N
+Number 2,4,It's goin' down in my hood,down,5,"They shoot rounds in my hood, they shoot rounds in my hood (Lovely)",rounds,INNER,ASSONANCE,vowel,MED,Y
+Number 2,4,It's goin' down in my hood,hood,5,"They shoot rounds in my hood, they shoot rounds in my hood (Lovely)",hood,INNER,REPEAT,spelling,HIGH,N
+Number 2,5,"They shoot rounds in my hood, they shoot rounds in my hood (Lovely)",hood,5,"They shoot rounds in my hood, they shoot rounds in my hood (Lovely)",hood,INNER,REPEAT,spelling,HIGH,N
+Number 2,5,"They shoot rounds in my hood, they shoot rounds in my hood (Lovely)",rounds,5,"They shoot rounds in my hood, they shoot rounds in my hood (Lovely)",rounds,INNER,REPEAT,spelling,HIGH,N
+Number 2,5,"They shoot rounds in my hood, they shoot rounds in my hood (Lovely)",shoot,5,"They shoot rounds in my hood, they shoot rounds in my hood (Lovely)",shoot,INNER,REPEAT,spelling,HIGH,N
+Number 2,6,"Tears in your eyes, on your mama cheek (Mama cheek)",cheek,7,Bloodstains dryin' on the concrete,concrete,END,SLANT,cmu,MED,Y
+Number 2,6,"Tears in your eyes, on your mama cheek (Mama cheek)",eyes,7,Bloodstains dryin' on the concrete,dryin,INNER,SLANT,cmu,MED,Y
+Number 2,6,"Tears in your eyes, on your mama cheek (Mama cheek)",eyes,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",like,INNER,SLANT,cmu,MED,Y
+Number 2,7,Bloodstains dryin' on the concrete,dryin,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",like,INNER,SLANT,cmu,MED,Y
+Number 2,7,Bloodstains dryin' on the concrete,Bloodstains,9,"All my niggas militant, take a hit for benefit (Gi-gi)",take,INNER,ASSONANCE,vowel,MED,Y
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",Twitter,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",shit,INNER,SLANT,cmu,MED,Y
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",all,9,"All my niggas militant, take a hit for benefit (Gi-gi)",All,INNER,REPEAT,spelling,HIGH,N
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",shit,9,"All my niggas militant, take a hit for benefit (Gi-gi)",hit,INNER,PERFECT,cmu,HIGH,Y
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",shit,9,"All my niggas militant, take a hit for benefit (Gi-gi)",militant,INNER,ASSONANCE,vowel,MED,Y
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",Twitter,9,"All my niggas militant, take a hit for benefit (Gi-gi)",hit,INNER,SLANT,cmu,MED,Y
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",Twitter,9,"All my niggas militant, take a hit for benefit (Gi-gi)",militant,INNER,ASSONANCE,vowel,MED,Y
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",shit,10,And I'm fuckin' all the witnesses,witnesses,END,ASSONANCE,vowel,MED,Y
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",all,10,And I'm fuckin' all the witnesses,all,INNER,REPEAT,spelling,HIGH,N
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",Fuckin,10,And I'm fuckin' all the witnesses,fuckin,INNER,REPEAT,spelling,HIGH,N
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",Twitter,10,And I'm fuckin' all the witnesses,witnesses,INNER,ASSONANCE,vowel,MED,Y
+Number 2,8,"Yeah, we be like, ""Fuckin' all that Twitter shit""",shit,11,These stripper bitches ain't gon' say shit,shit,END,REPEAT,spelling,HIGH,N
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",militant,9,"All my niggas militant, take a hit for benefit (Gi-gi)",hit,INNER,ASSONANCE,vowel,MED,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",niggas,9,"All my niggas militant, take a hit for benefit (Gi-gi)",militant,INNER,ASSONANCE,vowel,LOW,N
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",All,10,And I'm fuckin' all the witnesses,all,INNER,REPEAT,spelling,HIGH,N
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",hit,10,And I'm fuckin' all the witnesses,witnesses,INNER,ASSONANCE,vowel,MED,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",militant,10,And I'm fuckin' all the witnesses,witnesses,INNER,ASSONANCE,vowel,MED,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",niggas,10,And I'm fuckin' all the witnesses,witnesses,INNER,SLANT,spelling,LOW,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",hit,11,These stripper bitches ain't gon' say shit,bitches,INNER,ASSONANCE,vowel,MED,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",hit,11,These stripper bitches ain't gon' say shit,shit,INNER,PERFECT,cmu,HIGH,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",hit,11,These stripper bitches ain't gon' say shit,stripper,INNER,SLANT,cmu,MED,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",militant,11,These stripper bitches ain't gon' say shit,bitches,INNER,ASSONANCE,vowel,MED,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",militant,11,These stripper bitches ain't gon' say shit,shit,INNER,ASSONANCE,vowel,MED,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",militant,11,These stripper bitches ain't gon' say shit,stripper,INNER,ASSONANCE,vowel,MED,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",take,11,These stripper bitches ain't gon' say shit,ain't,INNER,ASSONANCE,vowel,MED,Y
+Number 2,9,"All my niggas militant, take a hit for benefit (Gi-gi)",take,11,These stripper bitches ain't gon' say shit,say,INNER,ASSONANCE,vowel,MED,Y
+Number 2,10,And I'm fuckin' all the witnesses,witnesses,11,These stripper bitches ain't gon' say shit,shit,END,ASSONANCE,vowel,MED,Y
+Number 2,10,And I'm fuckin' all the witnesses,witnesses,11,These stripper bitches ain't gon' say shit,bitches,INNER,ASSONANCE,vowel,MED,Y
+Number 2,10,And I'm fuckin' all the witnesses,witnesses,11,These stripper bitches ain't gon' say shit,stripper,INNER,ASSONANCE,vowel,MED,Y
+Number 2,10,And I'm fuckin' all the witnesses,witnesses,14,"Whole gang up, all my brothers lit (True)",lit,END,ASSONANCE,vowel,MED,Y
+Number 2,11,These stripper bitches ain't gon' say shit,ain't,11,These stripper bitches ain't gon' say shit,say,INNER,ASSONANCE,vowel,MED,Y
+Number 2,11,These stripper bitches ain't gon' say shit,bitches,11,These stripper bitches ain't gon' say shit,shit,INNER,ASSONANCE,vowel,MED,Y
+Number 2,11,These stripper bitches ain't gon' say shit,stripper,11,These stripper bitches ain't gon' say shit,bitches,INNER,ASSONANCE,vowel,MED,Y
+Number 2,11,These stripper bitches ain't gon' say shit,stripper,11,These stripper bitches ain't gon' say shit,shit,INNER,SLANT,cmu,MED,Y
+Number 2,11,These stripper bitches ain't gon' say shit,These,12,"Ayy, that's an unsolved freak (Freaky, freaky)",freak,INNER,SLANT,cmu,MED,Y
+Number 2,11,These stripper bitches ain't gon' say shit,These,13,Have mеrcy on a G (Woo),G,INNER,ASSONANCE,vowel,MED,Y
+Number 2,11,These stripper bitches ain't gon' say shit,shit,14,"Whole gang up, all my brothers lit (True)",lit,END,PERFECT,cmu,HIGH,Y
+Number 2,12,"Ayy, that's an unsolved freak (Freaky, freaky)",freak,13,Have mеrcy on a G (Woo),G,END,ASSONANCE,vowel,MED,Y
+Number 2,13,Have mеrcy on a G (Woo),rcy,13,Have mеrcy on a G (Woo),G,INNER,ASSONANCE,vowel,LOW,N
+Number 2,13,Have mеrcy on a G (Woo),Have,14,"Whole gang up, all my brothers lit (True)",gang,INNER,SLANT,cmu,MED,Y
+Number 2,13,Have mеrcy on a G (Woo),Have,15,"Racks on racks, ain't too much to spеnd (Never waiting)",Racks,INNER,ASSONANCE,vowel,MED,Y
+Number 2,14,"Whole gang up, all my brothers lit (True)",brothers,15,"Racks on racks, ain't too much to spеnd (Never waiting)",much,INNER,SLANT,cmu,MED,Y
+Number 2,14,"Whole gang up, all my brothers lit (True)",gang,15,"Racks on racks, ain't too much to spеnd (Never waiting)",Racks,INNER,ASSONANCE,vowel,MED,Y
+Number 2,14,"Whole gang up, all my brothers lit (True)",brothers,16,Old come through when they wanna lend (See they with the),come,INNER,ASSONANCE,vowel,MED,Y
+Number 2,14,"Whole gang up, all my brothers lit (True)",Whole,16,Old come through when they wanna lend (See they with the),Old,INNER,SLANT,cmu,MED,Y
+Number 2,14,"Whole gang up, all my brothers lit (True)",lit,17,New chain chillin' and it got a twin,twin,END,SLANT,cmu,MED,Y
+Number 2,15,"Racks on racks, ain't too much to spеnd (Never waiting)",Racks,15,"Racks on racks, ain't too much to spеnd (Never waiting)",racks,INNER,REPEAT,spelling,HIGH,N
+Number 2,15,"Racks on racks, ain't too much to spеnd (Never waiting)",much,16,Old come through when they wanna lend (See they with the),come,INNER,SLANT,cmu,MED,Y
+Number 2,15,"Racks on racks, ain't too much to spеnd (Never waiting)",ain't,17,New chain chillin' and it got a twin,chain,INNER,SLANT,cmu,MED,Y
+Number 2,16,Old come through when they wanna lend (See they with the),when,16,Old come through when they wanna lend (See they with the),lend,INNER,SLANT,cmu,MED,Y
+Number 2,16,Old come through when they wanna lend (See they with the),through,17,New chain chillin' and it got a twin,New,INNER,PERFECT,cmu,HIGH,Y
+Number 2,16,Old come through when they wanna lend (See they with the),wanna,17,New chain chillin' and it got a twin,got,INNER,SLANT,cmu,MED,Y
+Number 2,16,Old come through when they wanna lend (See they with the),lend,18,Where were you when I was down?,when,INNER,SLANT,cmu,MED,Y
+Number 2,16,Old come through when they wanna lend (See they with the),lend,18,Where were you when I was down?,Where,INNER,ASSONANCE,vowel,MED,Y
+Number 2,16,Old come through when they wanna lend (See they with the),when,18,Where were you when I was down?,when,INNER,REPEAT,spelling,HIGH,N
+Number 2,16,Old come through when they wanna lend (See they with the),when,18,Where were you when I was down?,Where,INNER,SLANT,cmu,MED,Y
+Number 2,16,Old come through when they wanna lend (See they with the),lend,19,Where were you? (Where were you?),Where,END,ASSONANCE,vowel,MED,Y
+Number 2,17,New chain chillin' and it got a twin,chillin,17,New chain chillin' and it got a twin,twin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,18,Where were you when I was down?,Where,18,Where were you when I was down?,when,INNER,SLANT,cmu,MED,Y
+Number 2,18,Where were you when I was down?,when,19,Where were you? (Where were you?),Where,INNER,SLANT,cmu,MED,Y
+Number 2,18,Where were you when I was down?,Where,19,Where were you? (Where were you?),Where,INNER,REPEAT,spelling,HIGH,N
+Number 2,18,Where were you when I was down?,down,20,"Guess who is the shit now, number two (Look at you)",now,INNER,ASSONANCE,vowel,MED,Y
+Number 2,18,Where were you when I was down?,when,20,"Guess who is the shit now, number two (Look at you)",Guess,INNER,SLANT,cmu,MED,Y
+Number 2,18,Where were you when I was down?,Where,20,"Guess who is the shit now, number two (Look at you)",Guess,INNER,SLANT,cmu,MED,Y
+Number 2,19,Where were you? (Where were you?),Where,20,"Guess who is the shit now, number two (Look at you)",Guess,INNER,SLANT,cmu,MED,Y
+Number 2,20,"Guess who is the shit now, number two (Look at you)",who,20,"Guess who is the shit now, number two (Look at you)",two,INNER,PERFECT,cmu,HIGH,Y
+Number 2,20,"Guess who is the shit now, number two (Look at you)",now,21,"In the circus you a clown, look at you (You)",clown,INNER,ASSONANCE,vowel,MED,Y
+Number 2,20,"Guess who is the shit now, number two (Look at you)",number,22,"I pick what I want then I cop, cop",what,INNER,ASSONANCE,vowel,MED,Y
+Number 2,20,"Guess who is the shit now, number two (Look at you)",shit,22,"I pick what I want then I cop, cop",pick,INNER,SLANT,cmu,MED,Y
+Number 2,22,"I pick what I want then I cop, cop",cop,22,"I pick what I want then I cop, cop",cop,INNER,REPEAT,spelling,HIGH,N
+Number 2,22,"I pick what I want then I cop, cop",want,22,"I pick what I want then I cop, cop",cop,INNER,ASSONANCE,vowel,MED,Y
+Number 2,22,"I pick what I want then I cop, cop",cop,23,"That shit you dropped just gon' flop, flop",flop,END,PERFECT,cmu,HIGH,Y
+Number 2,22,"I pick what I want then I cop, cop",cop,23,"That shit you dropped just gon' flop, flop",dropped,INNER,SLANT,cmu,MED,Y
+Number 2,22,"I pick what I want then I cop, cop",cop,23,"That shit you dropped just gon' flop, flop",flop,INNER,PERFECT,cmu,HIGH,Y
+Number 2,22,"I pick what I want then I cop, cop",pick,23,"That shit you dropped just gon' flop, flop",shit,INNER,SLANT,cmu,MED,Y
+Number 2,22,"I pick what I want then I cop, cop",want,23,"That shit you dropped just gon' flop, flop",dropped,INNER,SLANT,cmu,MED,Y
+Number 2,22,"I pick what I want then I cop, cop",want,23,"That shit you dropped just gon' flop, flop",flop,INNER,ASSONANCE,vowel,MED,Y
+Number 2,22,"I pick what I want then I cop, cop",cop,24,"When the future is present, we pop off",pop,END,PERFECT,cmu,HIGH,Y
+Number 2,22,"I pick what I want then I cop, cop",cop,24,"When the future is present, we pop off",pop,INNER,PERFECT,cmu,HIGH,Y
+Number 2,22,"I pick what I want then I cop, cop",want,24,"When the future is present, we pop off",pop,INNER,ASSONANCE,vowel,MED,Y
+Number 2,22,"I pick what I want then I cop, cop",cop,25,Then tell me how can I drop off? (Yeah),drop,END,PERFECT,cmu,HIGH,Y
+Number 2,23,"That shit you dropped just gon' flop, flop",dropped,23,"That shit you dropped just gon' flop, flop",flop,INNER,SLANT,cmu,MED,Y
+Number 2,23,"That shit you dropped just gon' flop, flop",flop,23,"That shit you dropped just gon' flop, flop",flop,INNER,REPEAT,spelling,HIGH,N
+Number 2,23,"That shit you dropped just gon' flop, flop",flop,24,"When the future is present, we pop off",pop,END,PERFECT,cmu,HIGH,Y
+Number 2,23,"That shit you dropped just gon' flop, flop",dropped,24,"When the future is present, we pop off",pop,INNER,SLANT,cmu,MED,Y
+Number 2,23,"That shit you dropped just gon' flop, flop",flop,24,"When the future is present, we pop off",pop,INNER,PERFECT,cmu,HIGH,Y
+Number 2,23,"That shit you dropped just gon' flop, flop",flop,25,Then tell me how can I drop off? (Yeah),drop,END,PERFECT,cmu,HIGH,Y
+Number 2,23,"That shit you dropped just gon' flop, flop",dropped,25,Then tell me how can I drop off? (Yeah),drop,INNER,SLANT,cmu,MED,Y
+Number 2,23,"That shit you dropped just gon' flop, flop",flop,25,Then tell me how can I drop off? (Yeah),drop,INNER,PERFECT,cmu,HIGH,Y
+Number 2,24,"When the future is present, we pop off",When,24,"When the future is present, we pop off",present,INNER,ASSONANCE,vowel,MED,Y
+Number 2,24,"When the future is present, we pop off",pop,25,Then tell me how can I drop off? (Yeah),drop,END,PERFECT,cmu,HIGH,Y
+Number 2,24,"When the future is present, we pop off",present,25,Then tell me how can I drop off? (Yeah),tell,INNER,ASSONANCE,vowel,MED,Y
+Number 2,24,"When the future is present, we pop off",When,25,Then tell me how can I drop off? (Yeah),tell,INNER,SLANT,cmu,MED,Y
+Number 2,25,Then tell me how can I drop off? (Yeah),tell,27,"When you reach my level, my many medals seem lazy (Brr)",level,INNER,SLANT,cmu,MED,Y
+Number 2,25,Then tell me how can I drop off? (Yeah),tell,27,"When you reach my level, my many medals seem lazy (Brr)",many,INNER,SLANT,cmu,MED,Y
+Number 2,25,Then tell me how can I drop off? (Yeah),tell,27,"When you reach my level, my many medals seem lazy (Brr)",medals,INNER,ASSONANCE,vowel,MED,Y
+Number 2,25,Then tell me how can I drop off? (Yeah),tell,27,"When you reach my level, my many medals seem lazy (Brr)",When,INNER,SLANT,cmu,MED,Y
+Number 2,26,Their demeanour is fugazi,demeanour,27,"When you reach my level, my many medals seem lazy (Brr)",reach,INNER,SLANT,cmu,MED,Y
+Number 2,26,Their demeanour is fugazi,demeanour,27,"When you reach my level, my many medals seem lazy (Brr)",seem,INNER,SLANT,cmu,MED,Y
+Number 2,27,"When you reach my level, my many medals seem lazy (Brr)",level,27,"When you reach my level, my many medals seem lazy (Brr)",many,INNER,ASSONANCE,vowel,MED,Y
+Number 2,27,"When you reach my level, my many medals seem lazy (Brr)",level,27,"When you reach my level, my many medals seem lazy (Brr)",medals,INNER,ASSONANCE,vowel,MED,Y
+Number 2,27,"When you reach my level, my many medals seem lazy (Brr)",many,27,"When you reach my level, my many medals seem lazy (Brr)",medals,INNER,ASSONANCE,vowel,MED,Y
+Number 2,27,"When you reach my level, my many medals seem lazy (Brr)",reach,27,"When you reach my level, my many medals seem lazy (Brr)",seem,INNER,SLANT,cmu,MED,Y
+Number 2,27,"When you reach my level, my many medals seem lazy (Brr)",When,27,"When you reach my level, my many medals seem lazy (Brr)",level,INNER,ASSONANCE,vowel,MED,Y
+Number 2,27,"When you reach my level, my many medals seem lazy (Brr)",When,27,"When you reach my level, my many medals seem lazy (Brr)",many,INNER,SLANT,cmu,MED,Y
+Number 2,27,"When you reach my level, my many medals seem lazy (Brr)",When,27,"When you reach my level, my many medals seem lazy (Brr)",medals,INNER,ASSONANCE,vowel,MED,Y
+Number 2,27,"When you reach my level, my many medals seem lazy (Brr)",lazy,31,They go to West whenever packin' for the holidays,holidays,END,SLANT,cmu,MED,Y
+Number 2,28,Plaque after plaque while the industry's on my back,after,28,Plaque after plaque while the industry's on my back,back,INNER,ASSONANCE,vowel,MED,Y
+Number 2,28,Plaque after plaque while the industry's on my back,after,28,Plaque after plaque while the industry's on my back,plaque,INNER,ASSONANCE,vowel,MED,Y
+Number 2,28,Plaque after plaque while the industry's on my back,Plaque,28,Plaque after plaque while the industry's on my back,after,INNER,ASSONANCE,vowel,MED,Y
+Number 2,28,Plaque after plaque while the industry's on my back,Plaque,28,Plaque after plaque while the industry's on my back,back,INNER,PERFECT,cmu,HIGH,Y
+Number 2,28,Plaque after plaque while the industry's on my back,Plaque,28,Plaque after plaque while the industry's on my back,plaque,INNER,REPEAT,spelling,HIGH,N
+Number 2,28,Plaque after plaque while the industry's on my back,back,29,19 on my wrist so I'm roaming it with a pack,pack,END,PERFECT,cmu,HIGH,Y
+Number 2,28,Plaque after plaque while the industry's on my back,after,29,19 on my wrist so I'm roaming it with a pack,pack,INNER,ASSONANCE,vowel,MED,Y
+Number 2,28,Plaque after plaque while the industry's on my back,industry's,29,19 on my wrist so I'm roaming it with a pack,wrist,INNER,ASSONANCE,vowel,MED,Y
+Number 2,28,Plaque after plaque while the industry's on my back,Plaque,29,19 on my wrist so I'm roaming it with a pack,pack,INNER,PERFECT,cmu,HIGH,Y
+Number 2,28,Plaque after plaque while the industry's on my back,back,30,I got runners on the ándale,ndale,END,SLANT,spelling,LOW,Y
+Number 2,28,Plaque after plaque while the industry's on my back,after,30,I got runners on the ándale,ndale,INNER,ASSONANCE,vowel,LOW,N
+Number 2,28,Plaque after plaque while the industry's on my back,Plaque,30,I got runners on the ándale,ndale,INNER,SLANT,spelling,LOW,Y
+Number 2,29,19 on my wrist so I'm roaming it with a pack,pack,30,I got runners on the ándale,ndale,END,SLANT,spelling,LOW,Y
+Number 2,29,19 on my wrist so I'm roaming it with a pack,pack,31,They go to West whenever packin' for the holidays,packin,INNER,SLANT,cmu,MED,Y
+Number 2,29,19 on my wrist so I'm roaming it with a pack,roaming,31,They go to West whenever packin' for the holidays,go,INNER,ASSONANCE,vowel,MED,Y
+Number 2,30,I got runners on the ándale,got,32,Been dodging Judas since the time he kissed my money gone,dodging,INNER,ASSONANCE,vowel,MED,Y
+Number 2,30,I got runners on the ándale,runners,32,Been dodging Judas since the time he kissed my money gone,money,INNER,SLANT,cmu,MED,Y
+Number 2,31,They go to West whenever packin' for the holidays,West,31,They go to West whenever packin' for the holidays,whenever,INNER,ASSONANCE,vowel,MED,Y
+Number 2,31,They go to West whenever packin' for the holidays,go,33,Been gettin' boomers since the mainstream got their focus on,focus,INNER,ASSONANCE,vowel,MED,Y
+Number 2,31,They go to West whenever packin' for the holidays,West,33,Been gettin' boomers since the mainstream got their focus on,gettin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,31,They go to West whenever packin' for the holidays,whenever,33,Been gettin' boomers since the mainstream got their focus on,gettin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,32,Been dodging Judas since the time he kissed my money gone,since,32,Been dodging Judas since the time he kissed my money gone,kissed,INNER,ASSONANCE,vowel,MED,Y
+Number 2,32,Been dodging Judas since the time he kissed my money gone,dodging,33,Been gettin' boomers since the mainstream got their focus on,got,INNER,ASSONANCE,vowel,MED,Y
+Number 2,32,Been dodging Judas since the time he kissed my money gone,Judas,33,Been gettin' boomers since the mainstream got their focus on,boomers,INNER,ASSONANCE,vowel,MED,Y
+Number 2,32,Been dodging Judas since the time he kissed my money gone,kissed,33,Been gettin' boomers since the mainstream got their focus on,since,INNER,ASSONANCE,vowel,MED,Y
+Number 2,32,Been dodging Judas since the time he kissed my money gone,since,33,Been gettin' boomers since the mainstream got their focus on,since,INNER,REPEAT,spelling,HIGH,N
+Number 2,32,Been dodging Judas since the time he kissed my money gone,money,34,The focus' number one,number,INNER,ASSONANCE,vowel,MED,Y
+Number 2,32,Been dodging Judas since the time he kissed my money gone,money,34,The focus' number one,one,INNER,SLANT,cmu,MED,Y
+Number 2,33,Been gettin' boomers since the mainstream got their focus on,focus,34,The focus' number one,focus,INNER,REPEAT,spelling,HIGH,N
+Number 2,33,Been gettin' boomers since the mainstream got their focus on,boomers,35,"Never follow rules, I was skippin' school (21)",rules,INNER,SLANT,cmu,MED,Y
+Number 2,33,Been gettin' boomers since the mainstream got their focus on,boomers,35,"Never follow rules, I was skippin' school (21)",school,INNER,ASSONANCE,vowel,MED,Y
+Number 2,33,Been gettin' boomers since the mainstream got their focus on,gettin,35,"Never follow rules, I was skippin' school (21)",Never,INNER,ASSONANCE,vowel,MED,Y
+Number 2,33,Been gettin' boomers since the mainstream got their focus on,got,35,"Never follow rules, I was skippin' school (21)",follow,INNER,SLANT,cmu,MED,Y
+Number 2,33,Been gettin' boomers since the mainstream got their focus on,since,35,"Never follow rules, I was skippin' school (21)",skippin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,34,The focus' number one,number,34,The focus' number one,one,INNER,ASSONANCE,vowel,MED,Y
+Number 2,34,The focus' number one,focus,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",know,INNER,ASSONANCE,vowel,MED,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",rules,35,"Never follow rules, I was skippin' school (21)",school,INNER,SLANT,cmu,MED,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",school,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",cool,END,PERFECT,cmu,HIGH,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",Never,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",friendly,INNER,ASSONANCE,vowel,MED,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",rules,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",cool,INNER,SLANT,cmu,MED,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",skippin,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",quit,INNER,ASSONANCE,vowel,MED,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",follow,37,Spin them niggas block 'cause we have nothin' else to do (21),block,INNER,SLANT,cmu,MED,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",follow,37,Spin them niggas block 'cause we have nothin' else to do (21),nothin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",Never,37,Spin them niggas block 'cause we have nothin' else to do (21),else,INNER,ASSONANCE,vowel,MED,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",skippin,37,Spin them niggas block 'cause we have nothin' else to do (21),Spin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,35,"Never follow rules, I was skippin' school (21)",school,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",shoes,END,SLANT,cmu,MED,Y
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",actin,37,Spin them niggas block 'cause we have nothin' else to do (21),have,INNER,ASSONANCE,vowel,MED,Y
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",friendly,37,Spin them niggas block 'cause we have nothin' else to do (21),else,INNER,ASSONANCE,vowel,MED,Y
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",quit,37,Spin them niggas block 'cause we have nothin' else to do (21),Spin,INNER,SLANT,cmu,MED,Y
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",cool,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",shoes,END,SLANT,cmu,MED,Y
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",ain't,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",Ain't,INNER,REPEAT,spelling,HIGH,N
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",ain't,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",player,INNER,ASSONANCE,vowel,MED,Y
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",know,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",know,INNER,REPEAT,spelling,HIGH,N
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",know,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",no,INNER,PERFECT,cmu,HIGH,Y
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",like,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",tie,INNER,ASSONANCE,vowel,MED,Y
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",quit,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",bitch,INNER,SLANT,cmu,MED,Y
+Number 2,36,"You know I ain't friendly, so quit actin' like we cool (Pussy)",quit,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",trippin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,37,Spin them niggas block 'cause we have nothin' else to do (21),block,37,Spin them niggas block 'cause we have nothin' else to do (21),nothin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,37,Spin them niggas block 'cause we have nothin' else to do (21),Spin,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",bitch,INNER,SLANT,cmu,MED,Y
+Number 2,37,Spin them niggas block 'cause we have nothin' else to do (21),Spin,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",trippin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,37,Spin them niggas block 'cause we have nothin' else to do (21),Spin,39,All my diamonds hit up (21),hit,INNER,SLANT,cmu,MED,Y
+Number 2,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",Ain't,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",player,INNER,ASSONANCE,vowel,MED,Y
+Number 2,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",no,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",know,INNER,PERFECT,cmu,HIGH,Y
+Number 2,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",trippin,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Number 2,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",bitch,39,All my diamonds hit up (21),hit,INNER,SLANT,cmu,MED,Y
+Number 2,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",tie,39,All my diamonds hit up (21),diamonds,INNER,ASSONANCE,vowel,MED,Y
+Number 2,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",trippin,39,All my diamonds hit up (21),hit,INNER,ASSONANCE,vowel,MED,Y
+Number 2,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",bitch,40,Wet your block in a pick up (21),pick,INNER,SLANT,cmu,MED,Y
+Number 2,38,"Ain't trippin' 'bout no bitch, you know I'm a player, I tie my shoes (On God)",trippin,40,Wet your block in a pick up (21),pick,INNER,ASSONANCE,vowel,MED,Y
+Number 2,39,All my diamonds hit up (21),hit,40,Wet your block in a pick up (21),pick,END,SLANT,cmu,MED,Y
+Number 2,39,All my diamonds hit up (21),All,41,"All-all my cars they go fast, face ain't shit but I like her ass",All,INNER,REPEAT,spelling,HIGH,N
+Number 2,39,All my diamonds hit up (21),diamonds,41,"All-all my cars they go fast, face ain't shit but I like her ass",like,INNER,ASSONANCE,vowel,MED,Y
+Number 2,39,All my diamonds hit up (21),hit,41,"All-all my cars they go fast, face ain't shit but I like her ass",shit,INNER,PERFECT,cmu,HIGH,Y
+Number 2,40,Wet your block in a pick up (21),block,41,"All-all my cars they go fast, face ain't shit but I like her ass",cars,INNER,ASSONANCE,vowel,MED,Y
+Number 2,40,Wet your block in a pick up (21),pick,41,"All-all my cars they go fast, face ain't shit but I like her ass",shit,INNER,SLANT,cmu,MED,Y
+Number 2,40,Wet your block in a pick up (21),Wet,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",wearin,INNER,ASSONANCE,vowel,MED,Y
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",All,41,"All-all my cars they go fast, face ain't shit but I like her ass",all,INNER,REPEAT,spelling,HIGH,N
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",face,41,"All-all my cars they go fast, face ain't shit but I like her ass",ain't,INNER,ASSONANCE,vowel,MED,Y
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",fast,41,"All-all my cars they go fast, face ain't shit but I like her ass",ass,INNER,SLANT,cmu,MED,Y
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",ass,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",mask,END,SLANT,cmu,MED,Y
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",ass,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",cash,INNER,SLANT,cmu,MED,Y
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",fast,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",cash,INNER,ASSONANCE,vowel,MED,Y
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",fast,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",mask,INNER,SLANT,cmu,MED,Y
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",go,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",don't,INNER,ASSONANCE,vowel,MED,Y
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",go,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",know,INNER,PERFECT,cmu,HIGH,Y
+Number 2,41,"All-all my cars they go fast, face ain't shit but I like her ass",like,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",like,INNER,REPEAT,spelling,HIGH,N
+Number 2,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",cash,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",mask,INNER,ASSONANCE,vowel,MED,Y
+Number 2,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",love,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",love,INNER,REPEAT,spelling,HIGH,N
+Number 2,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",don't,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",know,INNER,ASSONANCE,vowel,MED,Y
+Number 2,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",love,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",love,INNER,REPEAT,spelling,HIGH,N
+Number 2,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",love,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",suck,INNER,SLANT,cmu,MED,Y
+Number 2,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",cash,44,"Last opp played with us, we turned his ass duppy (Whack)",ass,INNER,SLANT,cmu,MED,Y
+Number 2,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",cash,44,"Last opp played with us, we turned his ass duppy (Whack)",Last,INNER,ASSONANCE,vowel,MED,Y
+Number 2,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",mask,44,"Last opp played with us, we turned his ass duppy (Whack)",ass,INNER,SLANT,cmu,MED,Y
+Number 2,42,"I don't love her but I love my cash, COVID-19, I'm wearin' my mask",mask,44,"Last opp played with us, we turned his ass duppy (Whack)",Last,INNER,SLANT,cmu,MED,Y
+Number 2,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",suck,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",love,INNER,SLANT,cmu,MED,Y
+Number 2,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",suck,44,"Last opp played with us, we turned his ass duppy (Whack)",duppy,INNER,SLANT,spelling,LOW,Y
+Number 2,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",love,45,I'm a big dog and I love to step on puppy (21),puppy,END,SLANT,cmu,MED,Y
+Number 2,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",love,45,I'm a big dog and I love to step on puppy (21),love,INNER,REPEAT,spelling,HIGH,N
+Number 2,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",suck,45,I'm a big dog and I love to step on puppy (21),love,INNER,SLANT,cmu,MED,Y
+Number 2,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",suck,45,I'm a big dog and I love to step on puppy (21),puppy,INNER,SLANT,cmu,MED,Y
+Number 2,43,"You know I'm out here thuggin', so suck me like you love me (Facts)",love,46,"Two-tone Maybach, same color, Kentucky (21)",Kentucky,END,SLANT,cmu,MED,Y
+Number 2,44,"Last opp played with us, we turned his ass duppy (Whack)",Last,44,"Last opp played with us, we turned his ass duppy (Whack)",ass,INNER,SLANT,cmu,MED,Y
+Number 2,44,"Last opp played with us, we turned his ass duppy (Whack)",duppy,45,I'm a big dog and I love to step on puppy (21),puppy,END,SLANT,spelling,LOW,Y
+Number 2,44,"Last opp played with us, we turned his ass duppy (Whack)",duppy,46,"Two-tone Maybach, same color, Kentucky (21)",Kentucky,END,SLANT,spelling,LOW,Y
+Number 2,44,"Last opp played with us, we turned his ass duppy (Whack)",played,46,"Two-tone Maybach, same color, Kentucky (21)",same,INNER,SLANT,cmu,MED,Y
+Number 2,45,I'm a big dog and I love to step on puppy (21),love,45,I'm a big dog and I love to step on puppy (21),puppy,INNER,SLANT,cmu,MED,Y
+Number 2,45,I'm a big dog and I love to step on puppy (21),puppy,46,"Two-tone Maybach, same color, Kentucky (21)",Kentucky,END,SLANT,cmu,MED,Y
+Number 2,45,I'm a big dog and I love to step on puppy (21),love,46,"Two-tone Maybach, same color, Kentucky (21)",color,INNER,SLANT,cmu,MED,Y
+Number 2,45,I'm a big dog and I love to step on puppy (21),love,46,"Two-tone Maybach, same color, Kentucky (21)",Kentucky,INNER,SLANT,cmu,MED,Y
+Number 2,45,I'm a big dog and I love to step on puppy (21),puppy,46,"Two-tone Maybach, same color, Kentucky (21)",color,INNER,SLANT,cmu,MED,Y
+Number 2,45,I'm a big dog and I love to step on puppy (21),love,47,"Racks on racks, ain't too much to spend (Never waiting)",much,INNER,SLANT,cmu,MED,Y
+Number 2,45,I'm a big dog and I love to step on puppy (21),puppy,47,"Racks on racks, ain't too much to spend (Never waiting)",much,INNER,SLANT,cmu,MED,Y
+Number 2,45,I'm a big dog and I love to step on puppy (21),step,47,"Racks on racks, ain't too much to spend (Never waiting)",spend,INNER,ASSONANCE,vowel,MED,Y
+Number 2,46,"Two-tone Maybach, same color, Kentucky (21)",color,46,"Two-tone Maybach, same color, Kentucky (21)",Kentucky,INNER,SLANT,cmu,MED,Y
+Number 2,46,"Two-tone Maybach, same color, Kentucky (21)",color,47,"Racks on racks, ain't too much to spend (Never waiting)",much,INNER,SLANT,cmu,MED,Y
+Number 2,46,"Two-tone Maybach, same color, Kentucky (21)",Kentucky,47,"Racks on racks, ain't too much to spend (Never waiting)",much,INNER,SLANT,cmu,MED,Y
+Number 2,46,"Two-tone Maybach, same color, Kentucky (21)",same,47,"Racks on racks, ain't too much to spend (Never waiting)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Number 2,47,"Racks on racks, ain't too much to spend (Never waiting)",Racks,47,"Racks on racks, ain't too much to spend (Never waiting)",racks,INNER,REPEAT,spelling,HIGH,N

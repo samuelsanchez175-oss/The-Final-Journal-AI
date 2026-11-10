@@ -1,0 +1,480 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Pressure,1,"Oh, this what we doing",doing,2,"One, two, three, four",two,INNER,ASSONANCE,vowel,MED,Y
+Pressure,1,"Oh, this what we doing",what,2,"One, two, three, four",One,INNER,SLANT,cmu,MED,Y
+Pressure,2,"One, two, three, four",three,4,"Vintage on the denims, copped it overseas",overseas,INNER,ASSONANCE,vowel,MED,Y
+Pressure,3,"Getting Gs, spending Gs",Getting,3,"Getting Gs, spending Gs",spending,INNER,ASSONANCE,vowel,MED,Y
+Pressure,3,"Getting Gs, spending Gs",Gs,3,"Getting Gs, spending Gs",Gs,INNER,REPEAT,spelling,HIGH,N
+Pressure,3,"Getting Gs, spending Gs",Getting,4,"Vintage on the denims, copped it overseas",denims,INNER,ASSONANCE,vowel,LOW,N
+Pressure,3,"Getting Gs, spending Gs",spending,4,"Vintage on the denims, copped it overseas",denims,INNER,ASSONANCE,vowel,LOW,N
+Pressure,3,"Getting Gs, spending Gs",Getting,5,"I'm thugging any occasion, sanction, fuck you mean?",any,INNER,ASSONANCE,vowel,MED,Y
+Pressure,3,"Getting Gs, spending Gs",Getting,5,"I'm thugging any occasion, sanction, fuck you mean?",thugging,INNER,PERFECT,spelling,MED,Y
+Pressure,3,"Getting Gs, spending Gs",spending,5,"I'm thugging any occasion, sanction, fuck you mean?",any,INNER,ASSONANCE,vowel,MED,Y
+Pressure,3,"Getting Gs, spending Gs",spending,5,"I'm thugging any occasion, sanction, fuck you mean?",thugging,INNER,PERFECT,spelling,MED,Y
+Pressure,4,"Vintage on the denims, copped it overseas",overseas,5,"I'm thugging any occasion, sanction, fuck you mean?",mean,END,SLANT,cmu,MED,Y
+Pressure,4,"Vintage on the denims, copped it overseas",overseas,6,Me and Wapo state to state just thugging with my bleed,bleed,END,SLANT,cmu,MED,Y
+Pressure,5,"I'm thugging any occasion, sanction, fuck you mean?",occasion,5,"I'm thugging any occasion, sanction, fuck you mean?",sanction,INNER,SLANT,spelling,LOW,Y
+Pressure,5,"I'm thugging any occasion, sanction, fuck you mean?",mean,6,Me and Wapo state to state just thugging with my bleed,bleed,END,SLANT,cmu,MED,Y
+Pressure,5,"I'm thugging any occasion, sanction, fuck you mean?",occasion,6,Me and Wapo state to state just thugging with my bleed,state,INNER,ASSONANCE,vowel,MED,Y
+Pressure,5,"I'm thugging any occasion, sanction, fuck you mean?",thugging,6,Me and Wapo state to state just thugging with my bleed,thugging,INNER,REPEAT,spelling,HIGH,N
+Pressure,5,"I'm thugging any occasion, sanction, fuck you mean?",any,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",check,INNER,SLANT,cmu,MED,Y
+Pressure,5,"I'm thugging any occasion, sanction, fuck you mean?",fuck,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",run,INNER,SLANT,cmu,MED,Y
+Pressure,5,"I'm thugging any occasion, sanction, fuck you mean?",occasion,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",chase,INNER,ASSONANCE,vowel,MED,Y
+Pressure,5,"I'm thugging any occasion, sanction, fuck you mean?",mean,9,"She throwing that pussy, but she toxic, that ain't what I need",need,END,SLANT,cmu,MED,Y
+Pressure,6,Me and Wapo state to state just thugging with my bleed,state,6,Me and Wapo state to state just thugging with my bleed,state,INNER,REPEAT,spelling,HIGH,N
+Pressure,6,Me and Wapo state to state just thugging with my bleed,state,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",chase,INNER,SLANT,cmu,MED,Y
+Pressure,6,Me and Wapo state to state just thugging with my bleed,state,8,"I went legit, ain't been broke since, now them checks come to me",ain't,INNER,SLANT,cmu,MED,Y
+Pressure,6,Me and Wapo state to state just thugging with my bleed,bleed,9,"She throwing that pussy, but she toxic, that ain't what I need",need,END,PERFECT,cmu,HIGH,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",run,8,"I went legit, ain't been broke since, now them checks come to me",come,END,SLANT,cmu,MED,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",chase,8,"I went legit, ain't been broke since, now them checks come to me",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",check,8,"I went legit, ain't been broke since, now them checks come to me",checks,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",check,8,"I went legit, ain't been broke since, now them checks come to me",legit,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",check,8,"I went legit, ain't been broke since, now them checks come to me",went,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",don't,8,"I went legit, ain't been broke since, now them checks come to me",broke,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",chase,9,"She throwing that pussy, but she toxic, that ain't what I need",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",don't,9,"She throwing that pussy, but she toxic, that ain't what I need",throwing,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",run,9,"She throwing that pussy, but she toxic, that ain't what I need",what,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Used to chase a check like, ''Ah-ah, don't you run from me''",run,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",one,END,PERFECT,cmu,HIGH,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",legit,8,"I went legit, ain't been broke since, now them checks come to me",checks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",went,8,"I went legit, ain't been broke since, now them checks come to me",checks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",went,8,"I went legit, ain't been broke since, now them checks come to me",legit,INNER,SLANT,cmu,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",ain't,9,"She throwing that pussy, but she toxic, that ain't what I need",ain't,INNER,REPEAT,spelling,HIGH,N
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",broke,9,"She throwing that pussy, but she toxic, that ain't what I need",throwing,INNER,SLANT,cmu,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",come,9,"She throwing that pussy, but she toxic, that ain't what I need",what,INNER,SLANT,cmu,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",come,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",one,END,SLANT,cmu,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",ain't,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",ain't,INNER,REPEAT,spelling,HIGH,N
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",checks,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",ten,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",legit,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",ten,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",since,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",bitch,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",since,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",lil,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,"I went legit, ain't been broke since, now them checks come to me",went,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",ten,INNER,SLANT,cmu,MED,Y
+Pressure,9,"She throwing that pussy, but she toxic, that ain't what I need",ain't,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",ain't,INNER,REPEAT,spelling,HIGH,N
+Pressure,9,"She throwing that pussy, but she toxic, that ain't what I need",what,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",one,INNER,SLANT,cmu,MED,Y
+Pressure,9,"She throwing that pussy, but she toxic, that ain't what I need",throwing,11,"Yes, yeah, yeah, yeah, it's a no for me",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",lil,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",bitch,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",ten,11,"Yes, yeah, yeah, yeah, it's a no for me",Yes,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",bitch,12,"I wanted to cop that Maybach, but that big shit just too slow for me",big,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",bitch,12,"I wanted to cop that Maybach, but that big shit just too slow for me",shit,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",lil,12,"I wanted to cop that Maybach, but that big shit just too slow for me",big,INNER,SLANT,cmu,MED,Y
+Pressure,10,"Bad lil' bitch, yeah, she a ten, but ain't the one for me",lil,12,"I wanted to cop that Maybach, but that big shit just too slow for me",shit,INNER,SLANT,cmu,MED,Y
+Pressure,11,"Yes, yeah, yeah, yeah, it's a no for me",no,12,"I wanted to cop that Maybach, but that big shit just too slow for me",slow,END,PERFECT,cmu,HIGH,Y
+Pressure,11,"Yes, yeah, yeah, yeah, it's a no for me",no,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",go,END,PERFECT,cmu,HIGH,Y
+Pressure,11,"Yes, yeah, yeah, yeah, it's a no for me",no,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",go,END,PERFECT,cmu,HIGH,Y
+Pressure,12,"I wanted to cop that Maybach, but that big shit just too slow for me",big,12,"I wanted to cop that Maybach, but that big shit just too slow for me",shit,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I wanted to cop that Maybach, but that big shit just too slow for me",slow,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",go,END,PERFECT,cmu,HIGH,Y
+Pressure,12,"I wanted to cop that Maybach, but that big shit just too slow for me",cop,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",copp,INNER,PERFECT,cmu,HIGH,Y
+Pressure,12,"I wanted to cop that Maybach, but that big shit just too slow for me",slow,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",go,END,PERFECT,cmu,HIGH,Y
+Pressure,12,"I wanted to cop that Maybach, but that big shit just too slow for me",big,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",still,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I wanted to cop that Maybach, but that big shit just too slow for me",shit,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",still,INNER,SLANT,cmu,MED,Y
+Pressure,12,"I wanted to cop that Maybach, but that big shit just too slow for me",slow,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",Bro,INNER,PERFECT,cmu,HIGH,Y
+Pressure,12,"I wanted to cop that Maybach, but that big shit just too slow for me",slow,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,12,"I wanted to cop that Maybach, but that big shit just too slow for me",slow,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",pole,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",black,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",black,INNER,REPEAT,spelling,HIGH,N
+Pressure,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",go,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",go,END,REPEAT,spelling,HIGH,N
+Pressure,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",black,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",can't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",d,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",he'll,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",go,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",Bro,INNER,PERFECT,cmu,HIGH,Y
+Pressure,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",go,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",go,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",pole,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"So I coppеd that Hellcat black on black, yeah, it's a go for me",copp,15,M's bitch and I want more,want,INNER,ASSONANCE,vowel,MED,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",Bro,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",go,INNER,PERFECT,cmu,HIGH,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",Bro,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",Bro,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",pole,INNER,ASSONANCE,vowel,MED,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",no,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",go,INNER,PERFECT,cmu,HIGH,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",no,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",pole,INNER,ASSONANCE,vowel,MED,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",parol,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",pole,INNER,PERFECT,spelling,MED,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",pole,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",go,INNER,ASSONANCE,vowel,MED,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",can't,15,M's bitch and I want more,want,INNER,SLANT,spelling,LOW,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",still,15,M's bitch and I want more,bitch,INNER,SLANT,cmu,MED,Y
+Pressure,14,"Bro still on parolе, can't shoot no pole, but he'll go for me",still,16,"Five, six, seven, eight",six,INNER,ASSONANCE,vowel,MED,Y
+Pressure,15,M's bitch and I want more,bitch,16,"Five, six, seven, eight",six,INNER,ASSONANCE,vowel,MED,Y
+Pressure,15,M's bitch and I want more,M's,16,"Five, six, seven, eight",seven,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,"Five, six, seven, eight",eight,17,"They fake, I don't affiliate",affiliate,END,PERFECT,cmu,HIGH,Y
+Pressure,16,"Five, six, seven, eight",eight,17,"They fake, I don't affiliate",fake,INNER,SLANT,cmu,MED,Y
+Pressure,16,"Five, six, seven, eight",Five,18,"Nine, ten, eleven, twelve",Nine,INNER,SLANT,cmu,MED,Y
+Pressure,16,"Five, six, seven, eight",seven,18,"Nine, ten, eleven, twelve",eleven,INNER,MULTI,multi,HIGH,Y
+Pressure,16,"Five, six, seven, eight",seven,18,"Nine, ten, eleven, twelve",ten,INNER,SLANT,cmu,MED,Y
+Pressure,16,"Five, six, seven, eight",seven,18,"Nine, ten, eleven, twelve",twelve,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,"Five, six, seven, eight",six seven,18,"Nine, ten, eleven, twelve",ten eleven,INNER,MULTI,multi,HIGH,Y
+Pressure,16,"Five, six, seven, eight",eight,20,Ain't worried 'bout what niggas say long as them checks is in the mail,mail,END,SLANT,cmu,MED,Y
+Pressure,17,"They fake, I don't affiliate",fake,17,"They fake, I don't affiliate",affiliate,INNER,SLANT,cmu,MED,Y
+Pressure,17,"They fake, I don't affiliate",affiliate,19,Pray to God and give 'em hell,Pray,INNER,ASSONANCE,vowel,MED,Y
+Pressure,17,"They fake, I don't affiliate",fake,19,Pray to God and give 'em hell,Pray,INNER,ASSONANCE,vowel,MED,Y
+Pressure,17,"They fake, I don't affiliate",affiliate,20,Ain't worried 'bout what niggas say long as them checks is in the mail,mail,END,SLANT,cmu,MED,Y
+Pressure,17,"They fake, I don't affiliate",affiliate,21,"Whenever my back against the wall, I lift my head up and prevail",prevail,END,SLANT,cmu,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",eleven,18,"Nine, ten, eleven, twelve",twelve,INNER,ASSONANCE,vowel,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",ten,18,"Nine, ten, eleven, twelve",eleven,INNER,SLANT,cmu,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",ten,18,"Nine, ten, eleven, twelve",twelve,INNER,ASSONANCE,vowel,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",twelve,19,Pray to God and give 'em hell,hell,END,SLANT,cmu,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",eleven,19,Pray to God and give 'em hell,hell,INNER,ASSONANCE,vowel,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",ten,19,Pray to God and give 'em hell,hell,INNER,SLANT,cmu,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",eleven,20,Ain't worried 'bout what niggas say long as them checks is in the mail,checks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",ten,20,Ain't worried 'bout what niggas say long as them checks is in the mail,checks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",twelve,20,Ain't worried 'bout what niggas say long as them checks is in the mail,checks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,18,"Nine, ten, eleven, twelve",twelve,22,"Everytime they try to go against me, gave their ass a L",L,END,SLANT,cmu,MED,Y
+Pressure,19,Pray to God and give 'em hell,hell,20,Ain't worried 'bout what niggas say long as them checks is in the mail,checks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,19,Pray to God and give 'em hell,Pray,20,Ain't worried 'bout what niggas say long as them checks is in the mail,Ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,19,Pray to God and give 'em hell,Pray,20,Ain't worried 'bout what niggas say long as them checks is in the mail,mail,INNER,ASSONANCE,vowel,MED,Y
+Pressure,19,Pray to God and give 'em hell,Pray,20,Ain't worried 'bout what niggas say long as them checks is in the mail,say,INNER,PERFECT,cmu,HIGH,Y
+Pressure,19,Pray to God and give 'em hell,give,21,"Whenever my back against the wall, I lift my head up and prevail",lift,INNER,ASSONANCE,vowel,MED,Y
+Pressure,19,Pray to God and give 'em hell,hell,21,"Whenever my back against the wall, I lift my head up and prevail",against,INNER,ASSONANCE,vowel,MED,Y
+Pressure,19,Pray to God and give 'em hell,hell,21,"Whenever my back against the wall, I lift my head up and prevail",head,INNER,SLANT,cmu,MED,Y
+Pressure,19,Pray to God and give 'em hell,hell,21,"Whenever my back against the wall, I lift my head up and prevail",Whenever,INNER,SLANT,cmu,MED,Y
+Pressure,19,Pray to God and give 'em hell,Pray,21,"Whenever my back against the wall, I lift my head up and prevail",prevail,INNER,ASSONANCE,vowel,MED,Y
+Pressure,19,Pray to God and give 'em hell,hell,22,"Everytime they try to go against me, gave their ass a L",L,END,PERFECT,cmu,HIGH,Y
+Pressure,19,Pray to God and give 'em hell,hell,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",shell,END,PERFECT,cmu,HIGH,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,Ain't,20,Ain't worried 'bout what niggas say long as them checks is in the mail,mail,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,Ain't,20,Ain't worried 'bout what niggas say long as them checks is in the mail,say,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,say,20,Ain't worried 'bout what niggas say long as them checks is in the mail,mail,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,mail,21,"Whenever my back against the wall, I lift my head up and prevail",prevail,END,PERFECT,cmu,HIGH,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,Ain't,21,"Whenever my back against the wall, I lift my head up and prevail",prevail,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,checks,21,"Whenever my back against the wall, I lift my head up and prevail",against,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,checks,21,"Whenever my back against the wall, I lift my head up and prevail",head,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,checks,21,"Whenever my back against the wall, I lift my head up and prevail",Whenever,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,long,21,"Whenever my back against the wall, I lift my head up and prevail",wall,INNER,SLANT,cmu,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,say,21,"Whenever my back against the wall, I lift my head up and prevail",prevail,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,Ain't,22,"Everytime they try to go against me, gave their ass a L",gave,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,checks,22,"Everytime they try to go against me, gave their ass a L",against,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,checks,22,"Everytime they try to go against me, gave their ass a L",L,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,mail,22,"Everytime they try to go against me, gave their ass a L",gave,INNER,SLANT,cmu,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,niggas,22,"Everytime they try to go against me, gave their ass a L",ass,INNER,PERFECT,spelling,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,say,22,"Everytime they try to go against me, gave their ass a L",gave,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,Ain't worried 'bout what niggas say long as them checks is in the mail,mail,24,"I keep it, everytime when I got caught with it, I made bail",bail,END,PERFECT,cmu,HIGH,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",against,21,"Whenever my back against the wall, I lift my head up and prevail",head,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",Whenever,21,"Whenever my back against the wall, I lift my head up and prevail",against,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",Whenever,21,"Whenever my back against the wall, I lift my head up and prevail",head,INNER,SLANT,cmu,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",against,22,"Everytime they try to go against me, gave their ass a L",against,INNER,REPEAT,spelling,HIGH,N
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",against,22,"Everytime they try to go against me, gave their ass a L",L,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",back,22,"Everytime they try to go against me, gave their ass a L",ass,INNER,SLANT,cmu,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",head,22,"Everytime they try to go against me, gave their ass a L",against,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",head,22,"Everytime they try to go against me, gave their ass a L",L,INNER,SLANT,cmu,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",prevail,22,"Everytime they try to go against me, gave their ass a L",gave,INNER,SLANT,cmu,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",Whenever,22,"Everytime they try to go against me, gave their ass a L",against,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",Whenever,22,"Everytime they try to go against me, gave their ass a L",L,INNER,SLANT,cmu,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",against,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",shell,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",head,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",shell,INNER,SLANT,cmu,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",lift,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",bitch,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",wall,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",talking,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",Whenever,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",shell,INNER,SLANT,cmu,MED,Y
+Pressure,21,"Whenever my back against the wall, I lift my head up and prevail",prevail,24,"I keep it, everytime when I got caught with it, I made bail",bail,END,PERFECT,cmu,HIGH,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",against,22,"Everytime they try to go against me, gave their ass a L",L,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",Everytime,22,"Everytime they try to go against me, gave their ass a L",try,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",L,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",shell,END,PERFECT,cmu,HIGH,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",against,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",shell,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",Everytime,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",Anytime,INNER,MULTI,multi,HIGH,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",go,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",try,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",Anytime,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",against,24,"I keep it, everytime when I got caught with it, I made bail",when,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",Everytime,24,"I keep it, everytime when I got caught with it, I made bail",everytime,INNER,REPEAT,spelling,HIGH,N
+Pressure,22,"Everytime they try to go against me, gave their ass a L",gave,24,"I keep it, everytime when I got caught with it, I made bail",bail,INNER,SLANT,cmu,MED,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",gave,24,"I keep it, everytime when I got caught with it, I made bail",made,INNER,SLANT,cmu,MED,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",L,24,"I keep it, everytime when I got caught with it, I made bail",when,INNER,SLANT,cmu,MED,Y
+Pressure,22,"Everytime they try to go against me, gave their ass a L",try,24,"I keep it, everytime when I got caught with it, I made bail",everytime,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",Anytime,24,"I keep it, everytime when I got caught with it, I made bail",everytime,INNER,MULTI,multi,HIGH,Y
+Pressure,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",Glock,24,"I keep it, everytime when I got caught with it, I made bail",caught,INNER,SLANT,cmu,MED,Y
+Pressure,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",Glock,24,"I keep it, everytime when I got caught with it, I made bail",got,INNER,SLANT,cmu,MED,Y
+Pressure,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",shell,24,"I keep it, everytime when I got caught with it, I made bail",when,INNER,SLANT,cmu,MED,Y
+Pressure,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",Glock,25,"I can't even tote this, 30 in my Glock is poking",Glock,INNER,REPEAT,spelling,HIGH,N
+Pressure,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",no,25,"I can't even tote this, 30 in my Glock is poking",poking,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",no,25,"I can't even tote this, 30 in my Glock is poking",tote,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Anytime I up my Glock, no talking, bitch, I threw a shell",talking,25,"I can't even tote this, 30 in my Glock is poking",poking,INNER,PERFECT,spelling,MED,Y
+Pressure,24,"I keep it, everytime when I got caught with it, I made bail",got,24,"I keep it, everytime when I got caught with it, I made bail",caught,INNER,PERFECT,cmu,HIGH,Y
+Pressure,24,"I keep it, everytime when I got caught with it, I made bail",made,24,"I keep it, everytime when I got caught with it, I made bail",bail,INNER,SLANT,cmu,MED,Y
+Pressure,24,"I keep it, everytime when I got caught with it, I made bail",caught,25,"I can't even tote this, 30 in my Glock is poking",Glock,INNER,SLANT,cmu,MED,Y
+Pressure,24,"I keep it, everytime when I got caught with it, I made bail",got,25,"I can't even tote this, 30 in my Glock is poking",Glock,INNER,SLANT,cmu,MED,Y
+Pressure,24,"I keep it, everytime when I got caught with it, I made bail",keep,25,"I can't even tote this, 30 in my Glock is poking",even,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"I keep it, everytime when I got caught with it, I made bail",caught,26,"I got killers on that, catch up with your bro and smoke him",got,INNER,PERFECT,cmu,HIGH,Y
+Pressure,24,"I keep it, everytime when I got caught with it, I made bail",got,26,"I got killers on that, catch up with your bro and smoke him",got,INNER,REPEAT,spelling,HIGH,N
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",tote,25,"I can't even tote this, 30 in my Glock is poking",poking,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",can't,26,"I got killers on that, catch up with your bro and smoke him",catch,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",Glock,26,"I got killers on that, catch up with your bro and smoke him",got,INNER,SLANT,cmu,MED,Y
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",poking,26,"I got killers on that, catch up with your bro and smoke him",bro,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",poking,26,"I got killers on that, catch up with your bro and smoke him",smoke,INNER,SLANT,cmu,MED,Y
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",tote,26,"I got killers on that, catch up with your bro and smoke him",bro,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",tote,26,"I got killers on that, catch up with your bro and smoke him",smoke,INNER,SLANT,cmu,MED,Y
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",can't,27,"I be fresh as fuck with all my ice, look like a dope man",man,INNER,SLANT,cmu,MED,Y
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",poking,27,"I be fresh as fuck with all my ice, look like a dope man",dope,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"I can't even tote this, 30 in my Glock is poking",tote,27,"I be fresh as fuck with all my ice, look like a dope man",dope,INNER,SLANT,cmu,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",bro,26,"I got killers on that, catch up with your bro and smoke him",smoke,INNER,ASSONANCE,vowel,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",killers,26,"I got killers on that, catch up with your bro and smoke him",him,INNER,ASSONANCE,vowel,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",bro,27,"I be fresh as fuck with all my ice, look like a dope man",dope,INNER,ASSONANCE,vowel,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",catch,27,"I be fresh as fuck with all my ice, look like a dope man",man,INNER,SLANT,cmu,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",smoke,27,"I be fresh as fuck with all my ice, look like a dope man",dope,INNER,SLANT,cmu,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",bro,28,"Fuck your hoe, no romance, that's why they call me the goat man",goat,INNER,ASSONANCE,vowel,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",bro,28,"Fuck your hoe, no romance, that's why they call me the goat man",hoe,INNER,PERFECT,cmu,HIGH,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",bro,28,"Fuck your hoe, no romance, that's why they call me the goat man",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",catch,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,INNER,SLANT,cmu,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",catch,28,"Fuck your hoe, no romance, that's why they call me the goat man",romance,INNER,ASSONANCE,vowel,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",smoke,28,"Fuck your hoe, no romance, that's why they call me the goat man",goat,INNER,SLANT,cmu,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",smoke,28,"Fuck your hoe, no romance, that's why they call me the goat man",hoe,INNER,ASSONANCE,vowel,MED,Y
+Pressure,26,"I got killers on that, catch up with your bro and smoke him",smoke,28,"Fuck your hoe, no romance, that's why they call me the goat man",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",ice,27,"I be fresh as fuck with all my ice, look like a dope man",like,INNER,SLANT,cmu,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",man,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,END,REPEAT,spelling,HIGH,N
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",all,28,"Fuck your hoe, no romance, that's why they call me the goat man",call,INNER,PERFECT,cmu,HIGH,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",dope,28,"Fuck your hoe, no romance, that's why they call me the goat man",goat,INNER,SLANT,cmu,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",dope,28,"Fuck your hoe, no romance, that's why they call me the goat man",hoe,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",dope,28,"Fuck your hoe, no romance, that's why they call me the goat man",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",fuck,28,"Fuck your hoe, no romance, that's why they call me the goat man",Fuck,INNER,REPEAT,spelling,HIGH,N
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",ice,28,"Fuck your hoe, no romance, that's why they call me the goat man",why,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",like,28,"Fuck your hoe, no romance, that's why they call me the goat man",why,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",man,28,"Fuck your hoe, no romance, that's why they call me the goat man",romance,INNER,SLANT,cmu,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",man,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,END,ASSONANCE,vowel,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",dope,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",fresh,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",Went,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",ice,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",like,INNER,SLANT,cmu,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",like,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",like,INNER,REPEAT,spelling,HIGH,N
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",man,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",bands,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",man,30,"Brand new mansions, cash out, heard you ain't owning no land",land,END,SLANT,cmu,MED,Y
+Pressure,27,"I be fresh as fuck with all my ice, look like a dope man",man,31,"Ain't no Ms in your account, you tricking on these hoes plan",plan,END,PERFECT,cmu,HIGH,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",hoe,28,"Fuck your hoe, no romance, that's why they call me the goat man",goat,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",hoe,28,"Fuck your hoe, no romance, that's why they call me the goat man",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",no,28,"Fuck your hoe, no romance, that's why they call me the goat man",goat,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",romance,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,END,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",goat,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",hoe,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",bands,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",no,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",romance,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",bands,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",romance,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",why,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",like,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,30,"Brand new mansions, cash out, heard you ain't owning no land",land,END,SLANT,cmu,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",goat,30,"Brand new mansions, cash out, heard you ain't owning no land",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",goat,30,"Brand new mansions, cash out, heard you ain't owning no land",owning,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",hoe,30,"Brand new mansions, cash out, heard you ain't owning no land",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",hoe,30,"Brand new mansions, cash out, heard you ain't owning no land",owning,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,30,"Brand new mansions, cash out, heard you ain't owning no land",Brand,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,30,"Brand new mansions, cash out, heard you ain't owning no land",cash,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,30,"Brand new mansions, cash out, heard you ain't owning no land",mansions,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",no,30,"Brand new mansions, cash out, heard you ain't owning no land",no,INNER,REPEAT,spelling,HIGH,N
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",no,30,"Brand new mansions, cash out, heard you ain't owning no land",owning,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",romance,30,"Brand new mansions, cash out, heard you ain't owning no land",Brand,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",romance,30,"Brand new mansions, cash out, heard you ain't owning no land",cash,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",romance,30,"Brand new mansions, cash out, heard you ain't owning no land",land,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",romance,30,"Brand new mansions, cash out, heard you ain't owning no land",mansions,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,31,"Ain't no Ms in your account, you tricking on these hoes plan",plan,END,PERFECT,cmu,HIGH,Y
+Pressure,28,"Fuck your hoe, no romance, that's why they call me the goat man",man,32,I put dick up in her mouth and I ain't sent her no bands,bands,END,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",bands,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,30,"Brand new mansions, cash out, heard you ain't owning no land",land,END,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",bands,30,"Brand new mansions, cash out, heard you ain't owning no land",Brand,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",bands,30,"Brand new mansions, cash out, heard you ain't owning no land",cash,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",bands,30,"Brand new mansions, cash out, heard you ain't owning no land",land,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",bands,30,"Brand new mansions, cash out, heard you ain't owning no land",mansions,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,30,"Brand new mansions, cash out, heard you ain't owning no land",Brand,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,30,"Brand new mansions, cash out, heard you ain't owning no land",cash,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,30,"Brand new mansions, cash out, heard you ain't owning no land",mansions,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",Rolls,30,"Brand new mansions, cash out, heard you ain't owning no land",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",Rolls,30,"Brand new mansions, cash out, heard you ain't owning no land",owning,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",through,30,"Brand new mansions, cash out, heard you ain't owning no land",new,INNER,PERFECT,cmu,HIGH,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,31,"Ain't no Ms in your account, you tricking on these hoes plan",plan,END,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",'bout,31,"Ain't no Ms in your account, you tricking on these hoes plan",account,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",bands,31,"Ain't no Ms in your account, you tricking on these hoes plan",plan,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",Rolls,31,"Ain't no Ms in your account, you tricking on these hoes plan",hoes,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",Rolls,31,"Ain't no Ms in your account, you tricking on these hoes plan",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Went through 20 bands, this Rolls Royce is 'bout like 4 lambs",lambs,32,I put dick up in her mouth and I ain't sent her no bands,bands,END,SLANT,cmu,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",Brand,30,"Brand new mansions, cash out, heard you ain't owning no land",cash,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",Brand,30,"Brand new mansions, cash out, heard you ain't owning no land",land,INNER,PERFECT,cmu,HIGH,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",Brand,30,"Brand new mansions, cash out, heard you ain't owning no land",mansions,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",cash,30,"Brand new mansions, cash out, heard you ain't owning no land",land,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",mansions,30,"Brand new mansions, cash out, heard you ain't owning no land",cash,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",mansions,30,"Brand new mansions, cash out, heard you ain't owning no land",land,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",owning,30,"Brand new mansions, cash out, heard you ain't owning no land",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",land,31,"Ain't no Ms in your account, you tricking on these hoes plan",plan,END,SLANT,cmu,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",ain't,31,"Ain't no Ms in your account, you tricking on these hoes plan",Ain't,INNER,REPEAT,spelling,HIGH,N
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",Brand,31,"Ain't no Ms in your account, you tricking on these hoes plan",plan,INNER,SLANT,cmu,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",cash,31,"Ain't no Ms in your account, you tricking on these hoes plan",plan,INNER,SLANT,cmu,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",mansions,31,"Ain't no Ms in your account, you tricking on these hoes plan",plan,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",no,31,"Ain't no Ms in your account, you tricking on these hoes plan",hoes,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",no,31,"Ain't no Ms in your account, you tricking on these hoes plan",no,INNER,REPEAT,spelling,HIGH,N
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",owning,31,"Ain't no Ms in your account, you tricking on these hoes plan",hoes,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",owning,31,"Ain't no Ms in your account, you tricking on these hoes plan",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",land,32,I put dick up in her mouth and I ain't sent her no bands,bands,END,SLANT,cmu,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",ain't,32,I put dick up in her mouth and I ain't sent her no bands,ain't,INNER,REPEAT,spelling,HIGH,N
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",Brand,32,I put dick up in her mouth and I ain't sent her no bands,bands,INNER,SLANT,cmu,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",cash,32,I put dick up in her mouth and I ain't sent her no bands,bands,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",mansions,32,I put dick up in her mouth and I ain't sent her no bands,bands,INNER,SLANT,cmu,MED,Y
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",no,32,I put dick up in her mouth and I ain't sent her no bands,no,INNER,REPEAT,spelling,HIGH,N
+Pressure,30,"Brand new mansions, cash out, heard you ain't owning no land",owning,32,I put dick up in her mouth and I ain't sent her no bands,no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",Ms,31,"Ain't no Ms in your account, you tricking on these hoes plan",tricking,INNER,ASSONANCE,vowel,MED,Y
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",no,31,"Ain't no Ms in your account, you tricking on these hoes plan",hoes,INNER,ASSONANCE,vowel,MED,Y
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",plan,32,I put dick up in her mouth and I ain't sent her no bands,bands,END,ASSONANCE,vowel,MED,Y
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",account,32,I put dick up in her mouth and I ain't sent her no bands,mouth,INNER,ASSONANCE,vowel,MED,Y
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",Ain't,32,I put dick up in her mouth and I ain't sent her no bands,ain't,INNER,REPEAT,spelling,HIGH,N
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",hoes,32,I put dick up in her mouth and I ain't sent her no bands,no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",Ms,32,I put dick up in her mouth and I ain't sent her no bands,dick,INNER,SLANT,cmu,MED,Y
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",no,32,I put dick up in her mouth and I ain't sent her no bands,no,INNER,REPEAT,spelling,HIGH,N
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",tricking,32,I put dick up in her mouth and I ain't sent her no bands,dick,INNER,SLANT,cmu,MED,Y
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",hoes,33,"Yeah, that's what it is, that's what it 'posed to be",'posed,INNER,SLANT,cmu,MED,Y
+Pressure,31,"Ain't no Ms in your account, you tricking on these hoes plan",no,33,"Yeah, that's what it is, that's what it 'posed to be",'posed,INNER,ASSONANCE,vowel,MED,Y
+Pressure,32,I put dick up in her mouth and I ain't sent her no bands,no,33,"Yeah, that's what it is, that's what it 'posed to be",'posed,INNER,ASSONANCE,vowel,MED,Y
+Pressure,32,I put dick up in her mouth and I ain't sent her no bands,dick,34,"I'm really antisocially, so please approach appropriately",really,INNER,SLANT,cmu,MED,Y
+Pressure,32,I put dick up in her mouth and I ain't sent her no bands,no,34,"I'm really antisocially, so please approach appropriately",approach,INNER,ASSONANCE,vowel,MED,Y
+Pressure,32,I put dick up in her mouth and I ain't sent her no bands,no,34,"I'm really antisocially, so please approach appropriately",appropriately,INNER,ASSONANCE,vowel,MED,Y
+Pressure,33,"Yeah, that's what it is, that's what it 'posed to be",what,33,"Yeah, that's what it is, that's what it 'posed to be",what,INNER,REPEAT,spelling,HIGH,N
+Pressure,33,"Yeah, that's what it is, that's what it 'posed to be",'posed,34,"I'm really antisocially, so please approach appropriately",appropriately,END,ASSONANCE,vowel,MED,Y
+Pressure,33,"Yeah, that's what it is, that's what it 'posed to be",'posed,34,"I'm really antisocially, so please approach appropriately",approach,INNER,ASSONANCE,vowel,MED,Y
+Pressure,33,"Yeah, that's what it is, that's what it 'posed to be",'posed,35,"Wifey, I need some new shit, you can put that bitch on no degree",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,33,"Yeah, that's what it is, that's what it 'posed to be",what,35,"Wifey, I need some new shit, you can put that bitch on no degree",some,INNER,SLANT,cmu,MED,Y
+Pressure,33,"Yeah, that's what it is, that's what it 'posed to be",'posed,37,Even with the tints they already know it's me,know,END,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",antisocially,34,"I'm really antisocially, so please approach appropriately",appropriately,INNER,ASSONANCE,vowel,LOW,N
+Pressure,34,"I'm really antisocially, so please approach appropriately",approach,34,"I'm really antisocially, so please approach appropriately",appropriately,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",really,34,"I'm really antisocially, so please approach appropriately",antisocially,INNER,ASSONANCE,vowel,LOW,N
+Pressure,34,"I'm really antisocially, so please approach appropriately",antisocially,35,"Wifey, I need some new shit, you can put that bitch on no degree",degree,INNER,ASSONANCE,vowel,LOW,N
+Pressure,34,"I'm really antisocially, so please approach appropriately",approach,35,"Wifey, I need some new shit, you can put that bitch on no degree",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",appropriately,35,"Wifey, I need some new shit, you can put that bitch on no degree",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",please,35,"Wifey, I need some new shit, you can put that bitch on no degree",degree,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",please,35,"Wifey, I need some new shit, you can put that bitch on no degree",need,INNER,SLANT,cmu,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",really,35,"Wifey, I need some new shit, you can put that bitch on no degree",bitch,INNER,SLANT,cmu,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",really,35,"Wifey, I need some new shit, you can put that bitch on no degree",shit,INNER,SLANT,cmu,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",really,35,"Wifey, I need some new shit, you can put that bitch on no degree",Wifey,INNER,SLANT,spelling,LOW,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",antisocially,36,"Just pulled up to the function, caddy trucks, you already know we deep",already,INNER,ASSONANCE,vowel,LOW,N
+Pressure,34,"I'm really antisocially, so please approach appropriately",antisocially,36,"Just pulled up to the function, caddy trucks, you already know we deep",caddy,INNER,ASSONANCE,vowel,LOW,N
+Pressure,34,"I'm really antisocially, so please approach appropriately",approach,36,"Just pulled up to the function, caddy trucks, you already know we deep",know,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",appropriately,36,"Just pulled up to the function, caddy trucks, you already know we deep",know,INNER,ASSONANCE,vowel,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",please,36,"Just pulled up to the function, caddy trucks, you already know we deep",deep,INNER,SLANT,cmu,MED,Y
+Pressure,34,"I'm really antisocially, so please approach appropriately",appropriately,37,Even with the tints they already know it's me,know,END,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",need,35,"Wifey, I need some new shit, you can put that bitch on no degree",degree,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",shit,35,"Wifey, I need some new shit, you can put that bitch on no degree",bitch,INNER,SLANT,cmu,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",Wifey,35,"Wifey, I need some new shit, you can put that bitch on no degree",bitch,INNER,SLANT,spelling,LOW,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",Wifey,35,"Wifey, I need some new shit, you can put that bitch on no degree",shit,INNER,SLANT,spelling,LOW,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",degree,36,"Just pulled up to the function, caddy trucks, you already know we deep",deep,END,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",can,36,"Just pulled up to the function, caddy trucks, you already know we deep",caddy,INNER,SLANT,cmu,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",need,36,"Just pulled up to the function, caddy trucks, you already know we deep",deep,INNER,SLANT,cmu,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",no,36,"Just pulled up to the function, caddy trucks, you already know we deep",know,INNER,PERFECT,cmu,HIGH,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",put,36,"Just pulled up to the function, caddy trucks, you already know we deep",pulled,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",some,36,"Just pulled up to the function, caddy trucks, you already know we deep",function,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",some,36,"Just pulled up to the function, caddy trucks, you already know we deep",trucks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",bitch,37,Even with the tints they already know it's me,tints,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",degree,37,Even with the tints they already know it's me,Even,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",need,37,Even with the tints they already know it's me,Even,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",no,37,Even with the tints they already know it's me,know,INNER,PERFECT,cmu,HIGH,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",shit,37,Even with the tints they already know it's me,tints,INNER,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",degree,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",peep,END,ASSONANCE,vowel,MED,Y
+Pressure,35,"Wifey, I need some new shit, you can put that bitch on no degree",degree,39,"Man, I ain't no bitch and ain't no hoing me",hoing,END,PERFECT,cmu,HIGH,Y
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",function,36,"Just pulled up to the function, caddy trucks, you already know we deep",trucks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",already,37,Even with the tints they already know it's me,already,INNER,REPEAT,spelling,HIGH,N
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",deep,37,Even with the tints they already know it's me,Even,INNER,ASSONANCE,vowel,MED,Y
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",know,37,Even with the tints they already know it's me,know,INNER,REPEAT,spelling,HIGH,N
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",deep,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",peep,END,PERFECT,cmu,HIGH,Y
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",already,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",already,INNER,REPEAT,spelling,HIGH,N
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",already,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",defense,INNER,ASSONANCE,vowel,MED,Y
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",function,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",cut,INNER,ASSONANCE,vowel,MED,Y
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",know,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",know,INNER,REPEAT,spelling,HIGH,N
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",know,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",opps,INNER,ASSONANCE,vowel,LOW,N
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",trucks,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",cut,INNER,ASSONANCE,vowel,MED,Y
+Pressure,36,"Just pulled up to the function, caddy trucks, you already know we deep",deep,39,"Man, I ain't no bitch and ain't no hoing me",hoing,END,ASSONANCE,vowel,MED,Y
+Pressure,37,Even with the tints they already know it's me,already,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",already,INNER,REPEAT,spelling,HIGH,N
+Pressure,37,Even with the tints they already know it's me,already,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",defense,INNER,ASSONANCE,vowel,MED,Y
+Pressure,37,Even with the tints they already know it's me,Even,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",peep,INNER,ASSONANCE,vowel,MED,Y
+Pressure,37,Even with the tints they already know it's me,know,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",know,INNER,REPEAT,spelling,HIGH,N
+Pressure,37,Even with the tints they already know it's me,know,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",opps,INNER,ASSONANCE,vowel,LOW,N
+Pressure,37,Even with the tints they already know it's me,Even,39,"Man, I ain't no bitch and ain't no hoing me",hoing,INNER,ASSONANCE,vowel,MED,Y
+Pressure,37,Even with the tints they already know it's me,know,39,"Man, I ain't no bitch and ain't no hoing me",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,37,Even with the tints they already know it's me,tints,39,"Man, I ain't no bitch and ain't no hoing me",bitch,INNER,ASSONANCE,vowel,MED,Y
+Pressure,37,Even with the tints they already know it's me,know,40,"I hope being on my dick is getting you niggas some money, hopefully",hopefully,END,ASSONANCE,vowel,MED,Y
+Pressure,37,Even with the tints they already know it's me,know,41,"Man, I'ma certified CEO",CEO,END,PERFECT,cmu,HIGH,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",defense,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",already,INNER,ASSONANCE,vowel,MED,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",opps,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",know,INNER,ASSONANCE,vowel,LOW,N
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",peep,39,"Man, I ain't no bitch and ain't no hoing me",hoing,END,ASSONANCE,vowel,MED,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",know,39,"Man, I ain't no bitch and ain't no hoing me",no,INNER,PERFECT,cmu,HIGH,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",already,40,"I hope being on my dick is getting you niggas some money, hopefully",getting,INNER,ASSONANCE,vowel,MED,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",cut,40,"I hope being on my dick is getting you niggas some money, hopefully",money,INNER,SLANT,cmu,MED,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",cut,40,"I hope being on my dick is getting you niggas some money, hopefully",some,INNER,SLANT,cmu,MED,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",defense,40,"I hope being on my dick is getting you niggas some money, hopefully",getting,INNER,ASSONANCE,vowel,MED,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",know,40,"I hope being on my dick is getting you niggas some money, hopefully",hope,INNER,ASSONANCE,vowel,MED,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",know,40,"I hope being on my dick is getting you niggas some money, hopefully",hopefully,INNER,ASSONANCE,vowel,MED,Y
+Pressure,38,"We on defense, a few opps in the cut, you already know we peep (We see them niggas)",peep,40,"I hope being on my dick is getting you niggas some money, hopefully",being,INNER,SLANT,cmu,MED,Y
+Pressure,39,"Man, I ain't no bitch and ain't no hoing me",ain't,39,"Man, I ain't no bitch and ain't no hoing me",ain't,INNER,REPEAT,spelling,HIGH,N
+Pressure,39,"Man, I ain't no bitch and ain't no hoing me",no,39,"Man, I ain't no bitch and ain't no hoing me",no,INNER,REPEAT,spelling,HIGH,N
+Pressure,39,"Man, I ain't no bitch and ain't no hoing me",bitch,40,"I hope being on my dick is getting you niggas some money, hopefully",dick,INNER,SLANT,cmu,MED,Y
+Pressure,39,"Man, I ain't no bitch and ain't no hoing me",hoing,40,"I hope being on my dick is getting you niggas some money, hopefully",being,INNER,ASSONANCE,vowel,MED,Y
+Pressure,39,"Man, I ain't no bitch and ain't no hoing me",no,40,"I hope being on my dick is getting you niggas some money, hopefully",hope,INNER,ASSONANCE,vowel,MED,Y
+Pressure,39,"Man, I ain't no bitch and ain't no hoing me",no,40,"I hope being on my dick is getting you niggas some money, hopefully",hopefully,INNER,ASSONANCE,vowel,MED,Y
+Pressure,39,"Man, I ain't no bitch and ain't no hoing me",bitch,41,"Man, I'ma certified CEO",I'ma,INNER,SLANT,spelling,LOW,Y
+Pressure,39,"Man, I ain't no bitch and ain't no hoing me",Man,41,"Man, I'ma certified CEO",Man,INNER,REPEAT,spelling,HIGH,N
+Pressure,39,"Man, I ain't no bitch and ain't no hoing me",no,41,"Man, I'ma certified CEO",CEO,INNER,PERFECT,cmu,HIGH,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",hope,40,"I hope being on my dick is getting you niggas some money, hopefully",hopefully,INNER,ASSONANCE,vowel,MED,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",some,40,"I hope being on my dick is getting you niggas some money, hopefully",money,INNER,SLANT,cmu,MED,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",hopefully,41,"Man, I'ma certified CEO",CEO,END,ASSONANCE,vowel,MED,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",dick,41,"Man, I'ma certified CEO",I'ma,INNER,SLANT,spelling,LOW,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",hope,41,"Man, I'ma certified CEO",CEO,INNER,ASSONANCE,vowel,MED,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",dick,42,"Business in Manhattan, I go to Brooklyn just to link the bros",Business,INNER,ASSONANCE,vowel,MED,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",dick,42,"Business in Manhattan, I go to Brooklyn just to link the bros",link,INNER,SLANT,cmu,MED,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",hope,42,"Business in Manhattan, I go to Brooklyn just to link the bros",bros,INNER,SLANT,spelling,LOW,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",hope,42,"Business in Manhattan, I go to Brooklyn just to link the bros",go,INNER,ASSONANCE,vowel,MED,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",hopefully,42,"Business in Manhattan, I go to Brooklyn just to link the bros",go,INNER,ASSONANCE,vowel,MED,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",hopefully,43,"Gotta see my folks, 'cause on the road is where I be the most",most,END,ASSONANCE,vowel,MED,Y
+Pressure,40,"I hope being on my dick is getting you niggas some money, hopefully",hopefully,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,END,ASSONANCE,vowel,MED,Y
+Pressure,41,"Man, I'ma certified CEO",CEO,42,"Business in Manhattan, I go to Brooklyn just to link the bros",go,INNER,PERFECT,cmu,HIGH,Y
+Pressure,41,"Man, I'ma certified CEO",Man,42,"Business in Manhattan, I go to Brooklyn just to link the bros",Manhattan,INNER,SLANT,cmu,MED,Y
+Pressure,41,"Man, I'ma certified CEO",CEO,43,"Gotta see my folks, 'cause on the road is where I be the most",most,END,ASSONANCE,vowel,MED,Y
+Pressure,41,"Man, I'ma certified CEO",CEO,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,41,"Man, I'ma certified CEO",CEO,43,"Gotta see my folks, 'cause on the road is where I be the most",road,INNER,ASSONANCE,vowel,MED,Y
+Pressure,41,"Man, I'ma certified CEO",CEO,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,END,ASSONANCE,vowel,MED,Y
+Pressure,41,"Man, I'ma certified CEO",CEO,45,"He says no business like hoe business, you know?",know,END,PERFECT,cmu,HIGH,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",Business,42,"Business in Manhattan, I go to Brooklyn just to link the bros",link,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",bros,43,"Gotta see my folks, 'cause on the road is where I be the most",most,END,SLANT,spelling,LOW,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",bros,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,INNER,SLANT,spelling,LOW,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",bros,43,"Gotta see my folks, 'cause on the road is where I be the most",road,INNER,SLANT,spelling,LOW,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",go,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",go,43,"Gotta see my folks, 'cause on the road is where I be the most",most,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",go,43,"Gotta see my folks, 'cause on the road is where I be the most",road,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",bros,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,END,SLANT,spelling,LOW,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",bros,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",pole,INNER,SLANT,spelling,LOW,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",Business,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",thing,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",go,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",go,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",pole,INNER,ASSONANCE,vowel,MED,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",link,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",thing,INNER,SLANT,cmu,MED,Y
+Pressure,42,"Business in Manhattan, I go to Brooklyn just to link the bros",bros,45,"He says no business like hoe business, you know?",know,END,ASSONANCE,vowel,LOW,N
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,43,"Gotta see my folks, 'cause on the road is where I be the most",most,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,43,"Gotta see my folks, 'cause on the road is where I be the most",road,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",road,43,"Gotta see my folks, 'cause on the road is where I be the most",most,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",most,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,END,REPEAT,spelling,HIGH,N
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",'cause,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",'cause,INNER,REPEAT,spelling,HIGH,N
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",pole,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",Gotta,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",gotta,INNER,REPEAT,spelling,HIGH,N
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",most,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",pole,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",road,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",road,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",pole,INNER,SLANT,cmu,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",see,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",keep,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",see,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",need,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",most,45,"He says no business like hoe business, you know?",know,END,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,45,"He says no business like hoe business, you know?",hoe,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,45,"He says no business like hoe business, you know?",know,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",folks,45,"He says no business like hoe business, you know?",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",most,45,"He says no business like hoe business, you know?",hoe,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",most,45,"He says no business like hoe business, you know?",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",road,45,"He says no business like hoe business, you know?",hoe,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",road,45,"He says no business like hoe business, you know?",know,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",road,45,"He says no business like hoe business, you know?",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,43,"Gotta see my folks, 'cause on the road is where I be the most",where,45,"He says no business like hoe business, you know?",says,INNER,SLANT,cmu,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",keep,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",need,INNER,SLANT,cmu,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",pole,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",thing,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",I'ma,INNER,SLANT,spelling,LOW,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,45,"He says no business like hoe business, you know?",know,END,ASSONANCE,vowel,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,45,"He says no business like hoe business, you know?",hoe,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",most,45,"He says no business like hoe business, you know?",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",pole,45,"He says no business like hoe business, you know?",hoe,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",pole,45,"He says no business like hoe business, you know?",know,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",pole,45,"He says no business like hoe business, you know?",no,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",thing,45,"He says no business like hoe business, you know?",business,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",thing,46,"Say, you talk a little better if you listen a little fast",listen,INNER,ASSONANCE,vowel,MED,Y
+Pressure,44,"And gotta keep my pole, 'cause that's one thing that I'ma need the most",thing,46,"Say, you talk a little better if you listen a little fast",little,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"He says no business like hoe business, you know?",business,45,"He says no business like hoe business, you know?",business,INNER,REPEAT,spelling,HIGH,N
+Pressure,45,"He says no business like hoe business, you know?",hoe,45,"He says no business like hoe business, you know?",know,INNER,PERFECT,cmu,HIGH,Y
+Pressure,45,"He says no business like hoe business, you know?",no,45,"He says no business like hoe business, you know?",hoe,INNER,PERFECT,cmu,HIGH,Y
+Pressure,45,"He says no business like hoe business, you know?",no,45,"He says no business like hoe business, you know?",know,INNER,PERFECT,cmu,HIGH,Y
+Pressure,45,"He says no business like hoe business, you know?",business,46,"Say, you talk a little better if you listen a little fast",listen,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"He says no business like hoe business, you know?",business,46,"Say, you talk a little better if you listen a little fast",little,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"He says no business like hoe business, you know?",says,46,"Say, you talk a little better if you listen a little fast",better,INNER,SLANT,cmu,MED,Y
+Pressure,45,"He says no business like hoe business, you know?",business,47,"I ain't slowing down for you to catch up, bitch",bitch,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"He says no business like hoe business, you know?",hoe,47,"I ain't slowing down for you to catch up, bitch",slowing,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"He says no business like hoe business, you know?",know,47,"I ain't slowing down for you to catch up, bitch",slowing,INNER,ASSONANCE,vowel,MED,Y
+Pressure,45,"He says no business like hoe business, you know?",no,47,"I ain't slowing down for you to catch up, bitch",slowing,INNER,ASSONANCE,vowel,MED,Y
+Pressure,46,"Say, you talk a little better if you listen a little fast",listen,46,"Say, you talk a little better if you listen a little fast",little,INNER,ASSONANCE,vowel,MED,Y
+Pressure,46,"Say, you talk a little better if you listen a little fast",little,46,"Say, you talk a little better if you listen a little fast",listen,INNER,ASSONANCE,vowel,MED,Y
+Pressure,46,"Say, you talk a little better if you listen a little fast",little,46,"Say, you talk a little better if you listen a little fast",little,INNER,REPEAT,spelling,HIGH,N
+Pressure,46,"Say, you talk a little better if you listen a little fast",fast,47,"I ain't slowing down for you to catch up, bitch",catch,INNER,ASSONANCE,vowel,MED,Y
+Pressure,46,"Say, you talk a little better if you listen a little fast",listen,47,"I ain't slowing down for you to catch up, bitch",bitch,INNER,ASSONANCE,vowel,MED,Y
+Pressure,46,"Say, you talk a little better if you listen a little fast",little,47,"I ain't slowing down for you to catch up, bitch",bitch,INNER,ASSONANCE,vowel,MED,Y
+Pressure,46,"Say, you talk a little better if you listen a little fast",Say,47,"I ain't slowing down for you to catch up, bitch",ain't,INNER,ASSONANCE,vowel,MED,Y

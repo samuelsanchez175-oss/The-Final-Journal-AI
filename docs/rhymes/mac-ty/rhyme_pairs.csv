@@ -1,0 +1,291 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Fashion,1,I'm in the trap I ain't paying no taxes,ain't,1,I'm in the trap I ain't paying no taxes,paying,INNER,ASSONANCE,vowel,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,trap,1,I'm in the trap I ain't paying no taxes,taxes,INNER,ASSONANCE,vowel,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,taxes,2,Lil bitch with me you know she ratchet,ratchet,END,ASSONANCE,vowel,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,no,2,Lil bitch with me you know she ratchet,know,INNER,PERFECT,cmu,HIGH,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,trap,2,Lil bitch with me you know she ratchet,ratchet,INNER,ASSONANCE,vowel,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,taxes,3,She ain't gotta waste a dime cause I'm gonna snatch it,snatch,END,ASSONANCE,vowel,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,ain't,3,She ain't gotta waste a dime cause I'm gonna snatch it,ain't,INNER,REPEAT,spelling,HIGH,N
+Fashion,1,I'm in the trap I ain't paying no taxes,ain't,3,She ain't gotta waste a dime cause I'm gonna snatch it,waste,INNER,SLANT,cmu,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,paying,3,She ain't gotta waste a dime cause I'm gonna snatch it,ain't,INNER,ASSONANCE,vowel,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,paying,3,She ain't gotta waste a dime cause I'm gonna snatch it,waste,INNER,ASSONANCE,vowel,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,trap,3,She ain't gotta waste a dime cause I'm gonna snatch it,snatch,INNER,SLANT,cmu,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,taxes,4,Nigga got double G on my fabric,fabric,END,ASSONANCE,vowel,MED,Y
+Fashion,1,I'm in the trap I ain't paying no taxes,taxes,5,Nigga got LV on my fabric,fabric,END,ASSONANCE,vowel,MED,Y
+Fashion,2,Lil bitch with me you know she ratchet,Lil,2,Lil bitch with me you know she ratchet,bitch,INNER,SLANT,cmu,MED,Y
+Fashion,2,Lil bitch with me you know she ratchet,ratchet,3,She ain't gotta waste a dime cause I'm gonna snatch it,snatch,END,SLANT,cmu,MED,Y
+Fashion,2,Lil bitch with me you know she ratchet,ratchet,4,Nigga got double G on my fabric,fabric,END,ASSONANCE,vowel,MED,Y
+Fashion,2,Lil bitch with me you know she ratchet,ratchet,5,Nigga got LV on my fabric,fabric,END,ASSONANCE,vowel,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,ain't,3,She ain't gotta waste a dime cause I'm gonna snatch it,waste,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,cause,3,She ain't gotta waste a dime cause I'm gonna snatch it,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,gotta,3,She ain't gotta waste a dime cause I'm gonna snatch it,cause,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,gotta,3,She ain't gotta waste a dime cause I'm gonna snatch it,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,snatch,4,Nigga got double G on my fabric,fabric,END,ASSONANCE,vowel,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,cause,4,Nigga got double G on my fabric,got,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,gonna,4,Nigga got double G on my fabric,got,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,gotta,4,Nigga got double G on my fabric,got,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,snatch,5,Nigga got LV on my fabric,fabric,END,ASSONANCE,vowel,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,cause,5,Nigga got LV on my fabric,got,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,gonna,5,Nigga got LV on my fabric,got,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,gotta,5,Nigga got LV on my fabric,got,INNER,SLANT,cmu,MED,Y
+Fashion,3,She ain't gotta waste a dime cause I'm gonna snatch it,snatch,7,We gonna fuck all night we gonna start clashin',clashin,END,ASSONANCE,vowel,MED,Y
+Fashion,4,Nigga got double G on my fabric,fabric,5,Nigga got LV on my fabric,fabric,END,REPEAT,spelling,HIGH,N
+Fashion,4,Nigga got double G on my fabric,got,5,Nigga got LV on my fabric,got,INNER,REPEAT,spelling,HIGH,N
+Fashion,4,Nigga got double G on my fabric,Nigga,5,Nigga got LV on my fabric,Nigga,INNER,REPEAT,spelling,HIGH,N
+Fashion,4,Nigga got double G on my fabric,Nigga,6,All this drip nigga,drip,INNER,SLANT,spelling,LOW,Y
+Fashion,4,Nigga got double G on my fabric,Nigga,6,All this drip nigga,nigga,INNER,REPEAT,spelling,HIGH,N
+Fashion,4,Nigga got double G on my fabric,fabric,7,We gonna fuck all night we gonna start clashin',clashin,END,ASSONANCE,vowel,MED,Y
+Fashion,4,Nigga got double G on my fabric,fabric,8,She ain't gotta waste cause I'm gonna snatch it,snatch,END,ASSONANCE,vowel,MED,Y
+Fashion,5,Nigga got LV on my fabric,Nigga,6,All this drip nigga,drip,INNER,SLANT,spelling,LOW,Y
+Fashion,5,Nigga got LV on my fabric,Nigga,6,All this drip nigga,nigga,INNER,REPEAT,spelling,HIGH,N
+Fashion,5,Nigga got LV on my fabric,fabric,7,We gonna fuck all night we gonna start clashin',clashin,END,ASSONANCE,vowel,MED,Y
+Fashion,5,Nigga got LV on my fabric,got,7,We gonna fuck all night we gonna start clashin',gonna,INNER,SLANT,cmu,MED,Y
+Fashion,5,Nigga got LV on my fabric,got,7,We gonna fuck all night we gonna start clashin',start,INNER,SLANT,cmu,MED,Y
+Fashion,5,Nigga got LV on my fabric,fabric,8,She ain't gotta waste cause I'm gonna snatch it,snatch,END,ASSONANCE,vowel,MED,Y
+Fashion,6,All this drip nigga,drip,6,All this drip nigga,nigga,INNER,SLANT,spelling,LOW,Y
+Fashion,6,All this drip nigga,All,7,We gonna fuck all night we gonna start clashin',all,INNER,REPEAT,spelling,HIGH,N
+Fashion,7,We gonna fuck all night we gonna start clashin',gonna,7,We gonna fuck all night we gonna start clashin',gonna,INNER,REPEAT,spelling,HIGH,N
+Fashion,7,We gonna fuck all night we gonna start clashin',gonna,7,We gonna fuck all night we gonna start clashin',start,INNER,ASSONANCE,vowel,MED,Y
+Fashion,7,We gonna fuck all night we gonna start clashin',clashin,8,She ain't gotta waste cause I'm gonna snatch it,snatch,END,ASSONANCE,vowel,MED,Y
+Fashion,7,We gonna fuck all night we gonna start clashin',gonna,8,She ain't gotta waste cause I'm gonna snatch it,cause,INNER,SLANT,cmu,MED,Y
+Fashion,7,We gonna fuck all night we gonna start clashin',gonna,8,She ain't gotta waste cause I'm gonna snatch it,gonna,INNER,REPEAT,spelling,HIGH,N
+Fashion,7,We gonna fuck all night we gonna start clashin',gonna,8,She ain't gotta waste cause I'm gonna snatch it,gotta,INNER,SLANT,cmu,MED,Y
+Fashion,7,We gonna fuck all night we gonna start clashin',start,8,She ain't gotta waste cause I'm gonna snatch it,cause,INNER,ASSONANCE,vowel,MED,Y
+Fashion,7,We gonna fuck all night we gonna start clashin',start,8,She ain't gotta waste cause I'm gonna snatch it,gonna,INNER,ASSONANCE,vowel,MED,Y
+Fashion,7,We gonna fuck all night we gonna start clashin',start,8,She ain't gotta waste cause I'm gonna snatch it,gotta,INNER,SLANT,cmu,MED,Y
+Fashion,7,We gonna fuck all night we gonna start clashin',clashin,9,Lil mama bad I'ma fuck her to sleep,bad,INNER,ASSONANCE,vowel,MED,Y
+Fashion,7,We gonna fuck all night we gonna start clashin',fuck,9,Lil mama bad I'ma fuck her to sleep,fuck,INNER,REPEAT,spelling,HIGH,N
+Fashion,7,We gonna fuck all night we gonna start clashin',gonna,9,Lil mama bad I'ma fuck her to sleep,mama,INNER,SLANT,cmu,MED,Y
+Fashion,7,We gonna fuck all night we gonna start clashin',start,9,Lil mama bad I'ma fuck her to sleep,mama,INNER,ASSONANCE,vowel,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,ain't,8,She ain't gotta waste cause I'm gonna snatch it,waste,INNER,SLANT,cmu,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,cause,8,She ain't gotta waste cause I'm gonna snatch it,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,gotta,8,She ain't gotta waste cause I'm gonna snatch it,cause,INNER,SLANT,cmu,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,gotta,8,She ain't gotta waste cause I'm gonna snatch it,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,cause,9,Lil mama bad I'ma fuck her to sleep,mama,INNER,SLANT,cmu,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,gonna,9,Lil mama bad I'ma fuck her to sleep,mama,INNER,SLANT,cmu,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,gotta,9,Lil mama bad I'ma fuck her to sleep,mama,INNER,SLANT,cmu,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,snatch,9,Lil mama bad I'ma fuck her to sleep,bad,INNER,SLANT,cmu,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,ain't,10,Been in the trap I ain't been home in a week,ain't,INNER,REPEAT,spelling,HIGH,N
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,snatch,10,Been in the trap I ain't been home in a week,trap,INNER,SLANT,cmu,MED,Y
+Fashion,8,She ain't gotta waste cause I'm gonna snatch it,waste,10,Been in the trap I ain't been home in a week,ain't,INNER,SLANT,cmu,MED,Y
+Fashion,9,Lil mama bad I'ma fuck her to sleep,Lil,9,Lil mama bad I'ma fuck her to sleep,I'ma,INNER,SLANT,spelling,LOW,Y
+Fashion,9,Lil mama bad I'ma fuck her to sleep,sleep,10,Been in the trap I ain't been home in a week,week,END,SLANT,cmu,MED,Y
+Fashion,9,Lil mama bad I'ma fuck her to sleep,bad,10,Been in the trap I ain't been home in a week,trap,INNER,SLANT,cmu,MED,Y
+Fashion,9,Lil mama bad I'ma fuck her to sleep,mama,11,Selling designer while I'm rocking Versace,rocking,INNER,ASSONANCE,vowel,MED,Y
+Fashion,9,Lil mama bad I'ma fuck her to sleep,mama,11,Selling designer while I'm rocking Versace,Versace,INNER,SLANT,cmu,MED,Y
+Fashion,10,Been in the trap I ain't been home in a week,home,12,I got designer all over my body,over,INNER,SLANT,cmu,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,designer,11,Selling designer while I'm rocking Versace,while,INNER,SLANT,cmu,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,rocking,11,Selling designer while I'm rocking Versace,Versace,INNER,ASSONANCE,vowel,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,Versace,12,I got designer all over my body,body,END,SLANT,cmu,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,designer,12,I got designer all over my body,designer,INNER,REPEAT,spelling,HIGH,N
+Fashion,11,Selling designer while I'm rocking Versace,rocking,12,I got designer all over my body,body,INNER,ASSONANCE,vowel,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,rocking,12,I got designer all over my body,got,INNER,ASSONANCE,vowel,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,Versace,12,I got designer all over my body,got,INNER,SLANT,cmu,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,while,12,I got designer all over my body,designer,INNER,SLANT,cmu,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,Versace,13,Nigga be biting you know they gonna copy,copy,END,SLANT,cmu,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,designer,13,Nigga be biting you know they gonna copy,biting,INNER,ASSONANCE,vowel,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,rocking,13,Nigga be biting you know they gonna copy,copy,INNER,ASSONANCE,vowel,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,rocking,13,Nigga be biting you know they gonna copy,gonna,INNER,ASSONANCE,vowel,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,Versace,13,Nigga be biting you know they gonna copy,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,while,13,Nigga be biting you know they gonna copy,biting,INNER,ASSONANCE,vowel,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,Versace,14,I saw like 12 at the dealership copy me,copy,END,SLANT,cmu,MED,Y
+Fashion,11,Selling designer while I'm rocking Versace,Versace,15,We pull up with speed nigga you know how I'm rockin',rockin,END,ASSONANCE,vowel,MED,Y
+Fashion,12,I got designer all over my body,got,12,I got designer all over my body,body,INNER,SLANT,cmu,MED,Y
+Fashion,12,I got designer all over my body,body,13,Nigga be biting you know they gonna copy,copy,END,SLANT,cmu,MED,Y
+Fashion,12,I got designer all over my body,body,13,Nigga be biting you know they gonna copy,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,12,I got designer all over my body,designer,13,Nigga be biting you know they gonna copy,biting,INNER,ASSONANCE,vowel,MED,Y
+Fashion,12,I got designer all over my body,got,13,Nigga be biting you know they gonna copy,copy,INNER,SLANT,cmu,MED,Y
+Fashion,12,I got designer all over my body,got,13,Nigga be biting you know they gonna copy,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,12,I got designer all over my body,over,13,Nigga be biting you know they gonna copy,know,INNER,ASSONANCE,vowel,MED,Y
+Fashion,12,I got designer all over my body,body,14,I saw like 12 at the dealership copy me,copy,END,SLANT,cmu,MED,Y
+Fashion,12,I got designer all over my body,all,14,I saw like 12 at the dealership copy me,saw,INNER,ASSONANCE,vowel,MED,Y
+Fashion,12,I got designer all over my body,designer,14,I saw like 12 at the dealership copy me,like,INNER,SLANT,cmu,MED,Y
+Fashion,12,I got designer all over my body,got,14,I saw like 12 at the dealership copy me,copy,INNER,SLANT,cmu,MED,Y
+Fashion,12,I got designer all over my body,body,15,We pull up with speed nigga you know how I'm rockin',rockin,END,ASSONANCE,vowel,MED,Y
+Fashion,13,Nigga be biting you know they gonna copy,gonna,13,Nigga be biting you know they gonna copy,copy,INNER,SLANT,cmu,MED,Y
+Fashion,13,Nigga be biting you know they gonna copy,copy,14,I saw like 12 at the dealership copy me,copy,END,REPEAT,spelling,HIGH,N
+Fashion,13,Nigga be biting you know they gonna copy,biting,14,I saw like 12 at the dealership copy me,like,INNER,ASSONANCE,vowel,MED,Y
+Fashion,13,Nigga be biting you know they gonna copy,gonna,14,I saw like 12 at the dealership copy me,copy,INNER,SLANT,cmu,MED,Y
+Fashion,13,Nigga be biting you know they gonna copy,Nigga,14,I saw like 12 at the dealership copy me,dealership,INNER,SLANT,spelling,LOW,Y
+Fashion,13,Nigga be biting you know they gonna copy,copy,15,We pull up with speed nigga you know how I'm rockin',rockin,END,ASSONANCE,vowel,MED,Y
+Fashion,13,Nigga be biting you know they gonna copy,gonna,15,We pull up with speed nigga you know how I'm rockin',rockin,INNER,ASSONANCE,vowel,MED,Y
+Fashion,13,Nigga be biting you know they gonna copy,know,15,We pull up with speed nigga you know how I'm rockin',know,INNER,REPEAT,spelling,HIGH,N
+Fashion,13,Nigga be biting you know they gonna copy,Nigga,15,We pull up with speed nigga you know how I'm rockin',nigga,INNER,REPEAT,spelling,HIGH,N
+Fashion,14,I saw like 12 at the dealership copy me,copy,15,We pull up with speed nigga you know how I'm rockin',rockin,END,ASSONANCE,vowel,MED,Y
+Fashion,14,I saw like 12 at the dealership copy me,dealership,15,We pull up with speed nigga you know how I'm rockin',nigga,INNER,SLANT,spelling,LOW,Y
+Fashion,14,I saw like 12 at the dealership copy me,copy,16,She all on my jock she tryna get freaky,jock,INNER,SLANT,cmu,MED,Y
+Fashion,14,I saw like 12 at the dealership copy me,saw,16,She all on my jock she tryna get freaky,all,INNER,ASSONANCE,vowel,MED,Y
+Fashion,15,We pull up with speed nigga you know how I'm rockin',rockin,16,She all on my jock she tryna get freaky,jock,INNER,SLANT,cmu,MED,Y
+Fashion,15,We pull up with speed nigga you know how I'm rockin',speed,16,She all on my jock she tryna get freaky,freaky,INNER,SLANT,cmu,MED,Y
+Fashion,15,We pull up with speed nigga you know how I'm rockin',speed,16,She all on my jock she tryna get freaky,tryna,INNER,SLANT,spelling,LOW,Y
+Fashion,15,We pull up with speed nigga you know how I'm rockin',speed,17,"I cut him off, he was too sneaky",sneaky,INNER,SLANT,cmu,MED,Y
+Fashion,16,She all on my jock she tryna get freaky,tryna,16,She all on my jock she tryna get freaky,freaky,INNER,SLANT,spelling,LOW,Y
+Fashion,16,She all on my jock she tryna get freaky,freaky,17,"I cut him off, he was too sneaky",sneaky,END,MULTI,multi,HIGH,Y
+Fashion,16,She all on my jock she tryna get freaky,tryna,17,"I cut him off, he was too sneaky",sneaky,INNER,SLANT,spelling,LOW,Y
+Fashion,16,She all on my jock she tryna get freaky,freaky,18,"My jewelry cold, that shit be freezing",freezing,END,ASSONANCE,vowel,MED,Y
+Fashion,16,She all on my jock she tryna get freaky,freaky,19,Feeling like Lucifer my inner demon,demon,END,ASSONANCE,vowel,MED,Y
+Fashion,16,She all on my jock she tryna get freaky,freaky,20,Feeling like Rider respond every season,season,END,ASSONANCE,vowel,MED,Y
+Fashion,17,"I cut him off, he was too sneaky",sneaky,18,"My jewelry cold, that shit be freezing",freezing,END,ASSONANCE,vowel,MED,Y
+Fashion,17,"I cut him off, he was too sneaky",him,18,"My jewelry cold, that shit be freezing",shit,INNER,SLANT,cmu,MED,Y
+Fashion,17,"I cut him off, he was too sneaky",sneaky,19,Feeling like Lucifer my inner demon,demon,END,ASSONANCE,vowel,MED,Y
+Fashion,17,"I cut him off, he was too sneaky",him,19,Feeling like Lucifer my inner demon,inner,INNER,SLANT,cmu,MED,Y
+Fashion,17,"I cut him off, he was too sneaky",sneaky,19,Feeling like Lucifer my inner demon,Feeling,INNER,ASSONANCE,vowel,MED,Y
+Fashion,17,"I cut him off, he was too sneaky",sneaky,20,Feeling like Rider respond every season,season,END,ASSONANCE,vowel,MED,Y
+Fashion,18,"My jewelry cold, that shit be freezing",freezing,19,Feeling like Lucifer my inner demon,demon,END,ASSONANCE,vowel,MED,Y
+Fashion,18,"My jewelry cold, that shit be freezing",freezing,19,Feeling like Lucifer my inner demon,Feeling,INNER,SLANT,cmu,MED,Y
+Fashion,18,"My jewelry cold, that shit be freezing",jewelry,19,Feeling like Lucifer my inner demon,Lucifer,INNER,ASSONANCE,vowel,MED,Y
+Fashion,18,"My jewelry cold, that shit be freezing",shit,19,Feeling like Lucifer my inner demon,inner,INNER,SLANT,cmu,MED,Y
+Fashion,18,"My jewelry cold, that shit be freezing",freezing,20,Feeling like Rider respond every season,season,END,SLANT,cmu,MED,Y
+Fashion,18,"My jewelry cold, that shit be freezing",freezing,20,Feeling like Rider respond every season,Feeling,INNER,SLANT,cmu,MED,Y
+Fashion,18,"My jewelry cold, that shit be freezing",freezing,21,Walk out the bag you know I be cheesin',cheesin,END,SLANT,spelling,LOW,Y
+Fashion,19,Feeling like Lucifer my inner demon,Feeling,19,Feeling like Lucifer my inner demon,demon,INNER,ASSONANCE,vowel,MED,Y
+Fashion,19,Feeling like Lucifer my inner demon,demon,20,Feeling like Rider respond every season,season,END,SLANT,cmu,MED,Y
+Fashion,19,Feeling like Lucifer my inner demon,demon,20,Feeling like Rider respond every season,Feeling,INNER,ASSONANCE,vowel,MED,Y
+Fashion,19,Feeling like Lucifer my inner demon,Feeling,20,Feeling like Rider respond every season,Feeling,INNER,REPEAT,spelling,HIGH,N
+Fashion,19,Feeling like Lucifer my inner demon,Feeling,20,Feeling like Rider respond every season,season,INNER,ASSONANCE,vowel,MED,Y
+Fashion,19,Feeling like Lucifer my inner demon,like,20,Feeling like Rider respond every season,like,INNER,REPEAT,spelling,HIGH,N
+Fashion,19,Feeling like Lucifer my inner demon,like,20,Feeling like Rider respond every season,Rider,INNER,SLANT,cmu,MED,Y
+Fashion,19,Feeling like Lucifer my inner demon,demon,21,Walk out the bag you know I be cheesin',cheesin,END,SLANT,spelling,LOW,Y
+Fashion,19,Feeling like Lucifer my inner demon,Feeling,21,Walk out the bag you know I be cheesin',cheesin,INNER,ASSONANCE,vowel,LOW,N
+Fashion,19,Feeling like Lucifer my inner demon,demon,23,She see them racks and I see what you speakin',speakin,END,ASSONANCE,vowel,MED,Y
+Fashion,20,Feeling like Rider respond every season,Feeling,20,Feeling like Rider respond every season,season,INNER,ASSONANCE,vowel,MED,Y
+Fashion,20,Feeling like Rider respond every season,like,20,Feeling like Rider respond every season,Rider,INNER,SLANT,cmu,MED,Y
+Fashion,20,Feeling like Rider respond every season,season,21,Walk out the bag you know I be cheesin',cheesin,END,SLANT,spelling,LOW,Y
+Fashion,20,Feeling like Rider respond every season,Feeling,21,Walk out the bag you know I be cheesin',cheesin,INNER,ASSONANCE,vowel,LOW,N
+Fashion,20,Feeling like Rider respond every season,Feeling,22,Then I proceed to go walk up in Neiman's,proceed,INNER,ASSONANCE,vowel,MED,Y
+Fashion,20,Feeling like Rider respond every season,season,22,Then I proceed to go walk up in Neiman's,proceed,INNER,ASSONANCE,vowel,MED,Y
+Fashion,20,Feeling like Rider respond every season,season,23,She see them racks and I see what you speakin',speakin,END,ASSONANCE,vowel,MED,Y
+Fashion,20,Feeling like Rider respond every season,season,24,This is a foregin the car riding keyless,keyless,END,ASSONANCE,vowel,MED,Y
+Fashion,21,Walk out the bag you know I be cheesin',know,22,Then I proceed to go walk up in Neiman's,go,INNER,PERFECT,cmu,HIGH,Y
+Fashion,21,Walk out the bag you know I be cheesin',Walk,22,Then I proceed to go walk up in Neiman's,walk,INNER,REPEAT,spelling,HIGH,N
+Fashion,21,Walk out the bag you know I be cheesin',cheesin,23,She see them racks and I see what you speakin',speakin,END,ASSONANCE,vowel,LOW,N
+Fashion,21,Walk out the bag you know I be cheesin',bag,23,She see them racks and I see what you speakin',racks,INNER,ASSONANCE,vowel,MED,Y
+Fashion,22,Then I proceed to go walk up in Neiman's,proceed,23,She see them racks and I see what you speakin',see,INNER,ASSONANCE,vowel,MED,Y
+Fashion,22,Then I proceed to go walk up in Neiman's,proceed,23,She see them racks and I see what you speakin',speakin,INNER,ASSONANCE,vowel,MED,Y
+Fashion,22,Then I proceed to go walk up in Neiman's,proceed,24,This is a foregin the car riding keyless,keyless,INNER,ASSONANCE,vowel,MED,Y
+Fashion,23,She see them racks and I see what you speakin',see,23,She see them racks and I see what you speakin',see,INNER,REPEAT,spelling,HIGH,N
+Fashion,23,She see them racks and I see what you speakin',see,23,She see them racks and I see what you speakin',speakin,INNER,ASSONANCE,vowel,MED,Y
+Fashion,23,She see them racks and I see what you speakin',speakin,24,This is a foregin the car riding keyless,keyless,END,ASSONANCE,vowel,MED,Y
+Fashion,23,She see them racks and I see what you speakin',see,24,This is a foregin the car riding keyless,keyless,INNER,ASSONANCE,vowel,MED,Y
+Fashion,23,She see them racks and I see what you speakin',racks,25,Had to go get me some racks I was praying,Had,INNER,ASSONANCE,vowel,MED,Y
+Fashion,23,She see them racks and I see what you speakin',racks,25,Had to go get me some racks I was praying,racks,INNER,REPEAT,spelling,HIGH,N
+Fashion,23,She see them racks and I see what you speakin',what,25,Had to go get me some racks I was praying,some,INNER,SLANT,cmu,MED,Y
+Fashion,25,Had to go get me some racks I was praying,Had,25,Had to go get me some racks I was praying,racks,INNER,ASSONANCE,vowel,MED,Y
+Fashion,25,Had to go get me some racks I was praying,praying,26,456 when I weigh in,weigh,END,ASSONANCE,vowel,MED,Y
+Fashion,25,Had to go get me some racks I was praying,get,26,456 when I weigh in,when,INNER,SLANT,cmu,MED,Y
+Fashion,25,Had to go get me some racks I was praying,praying,27,I put in work in the streets you was playin',playin,END,MULTI,multi,HIGH,Y
+Fashion,26,456 when I weigh in,weigh,27,I put in work in the streets you was playin',playin,END,ASSONANCE,vowel,MED,Y
+Fashion,27,I put in work in the streets you was playin',playin,29,Diamondback AR gonna aim at ya mans,aim,INNER,SLANT,cmu,MED,Y
+Fashion,28,12 hit the grow had to switch up the plans,had,28,12 hit the grow had to switch up the plans,plans,INNER,ASSONANCE,vowel,MED,Y
+Fashion,28,12 hit the grow had to switch up the plans,hit,28,12 hit the grow had to switch up the plans,switch,INNER,SLANT,cmu,MED,Y
+Fashion,28,12 hit the grow had to switch up the plans,plans,29,Diamondback AR gonna aim at ya mans,mans,END,PERFECT,cmu,HIGH,Y
+Fashion,28,12 hit the grow had to switch up the plans,had,29,Diamondback AR gonna aim at ya mans,mans,INNER,ASSONANCE,vowel,MED,Y
+Fashion,28,12 hit the grow had to switch up the plans,plans,30,I heard you solid come fuck with the clan,clan,END,SLANT,cmu,MED,Y
+Fashion,28,12 hit the grow had to switch up the plans,had,30,I heard you solid come fuck with the clan,clan,INNER,SLANT,cmu,MED,Y
+Fashion,28,12 hit the grow had to switch up the plans,plans,31,Pallet full bale nigga I got the bands,bands,END,SLANT,cmu,MED,Y
+Fashion,29,Diamondback AR gonna aim at ya mans,AR,29,Diamondback AR gonna aim at ya mans,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,29,Diamondback AR gonna aim at ya mans,mans,30,I heard you solid come fuck with the clan,clan,END,SLANT,cmu,MED,Y
+Fashion,29,Diamondback AR gonna aim at ya mans,AR,30,I heard you solid come fuck with the clan,solid,INNER,ASSONANCE,vowel,MED,Y
+Fashion,29,Diamondback AR gonna aim at ya mans,gonna,30,I heard you solid come fuck with the clan,solid,INNER,ASSONANCE,vowel,MED,Y
+Fashion,29,Diamondback AR gonna aim at ya mans,mans,31,Pallet full bale nigga I got the bands,bands,END,SLANT,cmu,MED,Y
+Fashion,29,Diamondback AR gonna aim at ya mans,aim,31,Pallet full bale nigga I got the bands,bale,INNER,SLANT,cmu,MED,Y
+Fashion,29,Diamondback AR gonna aim at ya mans,AR,31,Pallet full bale nigga I got the bands,got,INNER,SLANT,cmu,MED,Y
+Fashion,29,Diamondback AR gonna aim at ya mans,Diamondback,31,Pallet full bale nigga I got the bands,nigga,INNER,ASSONANCE,vowel,LOW,N
+Fashion,29,Diamondback AR gonna aim at ya mans,gonna,31,Pallet full bale nigga I got the bands,got,INNER,SLANT,cmu,MED,Y
+Fashion,29,Diamondback AR gonna aim at ya mans,mans,31,Pallet full bale nigga I got the bands,Pallet,INNER,ASSONANCE,vowel,MED,Y
+Fashion,30,I heard you solid come fuck with the clan,come,30,I heard you solid come fuck with the clan,fuck,INNER,SLANT,cmu,MED,Y
+Fashion,30,I heard you solid come fuck with the clan,clan,31,Pallet full bale nigga I got the bands,bands,END,ASSONANCE,vowel,MED,Y
+Fashion,30,I heard you solid come fuck with the clan,clan,31,Pallet full bale nigga I got the bands,Pallet,INNER,ASSONANCE,vowel,MED,Y
+Fashion,30,I heard you solid come fuck with the clan,solid,31,Pallet full bale nigga I got the bands,got,INNER,ASSONANCE,vowel,MED,Y
+Fashion,31,Pallet full bale nigga I got the bands,Pallet,31,Pallet full bale nigga I got the bands,bands,INNER,ASSONANCE,vowel,MED,Y
+Fashion,31,Pallet full bale nigga I got the bands,bale,32,She missin' a nigga I just made it home,made,INNER,SLANT,cmu,MED,Y
+Fashion,31,Pallet full bale nigga I got the bands,nigga,32,She missin' a nigga I just made it home,nigga,INNER,REPEAT,spelling,HIGH,N
+Fashion,31,Pallet full bale nigga I got the bands,full,33,I pull out my dick when I walk through the door,pull,INNER,PERFECT,cmu,HIGH,Y
+Fashion,31,Pallet full bale nigga I got the bands,nigga,33,I pull out my dick when I walk through the door,dick,INNER,SLANT,spelling,LOW,Y
+Fashion,32,She missin' a nigga I just made it home,missin,33,I pull out my dick when I walk through the door,dick,INNER,ASSONANCE,vowel,MED,Y
+Fashion,32,She missin' a nigga I just made it home,nigga,33,I pull out my dick when I walk through the door,dick,INNER,SLANT,spelling,LOW,Y
+Fashion,32,She missin' a nigga I just made it home,home,34,Swimmin' in money I need me a float,float,END,SLANT,cmu,MED,Y
+Fashion,32,She missin' a nigga I just made it home,missin,34,Swimmin' in money I need me a float,Swimmin,INNER,SLANT,cmu,MED,Y
+Fashion,32,She missin' a nigga I just made it home,home,35,"These niggas so broke, they live in a float",float,END,SLANT,cmu,MED,Y
+Fashion,33,I pull out my dick when I walk through the door,walk,33,I pull out my dick when I walk through the door,door,INNER,SLANT,cmu,MED,Y
+Fashion,33,I pull out my dick when I walk through the door,dick,34,Swimmin' in money I need me a float,Swimmin,INNER,ASSONANCE,vowel,MED,Y
+Fashion,34,Swimmin' in money I need me a float,float,35,"These niggas so broke, they live in a float",float,END,REPEAT,spelling,HIGH,N
+Fashion,34,Swimmin' in money I need me a float,float,35,"These niggas so broke, they live in a float",broke,INNER,SLANT,cmu,MED,Y
+Fashion,34,Swimmin' in money I need me a float,need,35,"These niggas so broke, they live in a float",These,INNER,SLANT,cmu,MED,Y
+Fashion,34,Swimmin' in money I need me a float,float,36,She diggin 'my fashion I know she a ratchet,know,INNER,ASSONANCE,vowel,MED,Y
+Fashion,34,Swimmin' in money I need me a float,Swimmin,36,She diggin 'my fashion I know she a ratchet,diggin,INNER,SLANT,cmu,MED,Y
+Fashion,35,"These niggas so broke, they live in a float",broke,35,"These niggas so broke, they live in a float",float,INNER,SLANT,cmu,MED,Y
+Fashion,35,"These niggas so broke, they live in a float",broke,36,She diggin 'my fashion I know she a ratchet,know,INNER,ASSONANCE,vowel,MED,Y
+Fashion,35,"These niggas so broke, they live in a float",float,36,She diggin 'my fashion I know she a ratchet,know,INNER,ASSONANCE,vowel,MED,Y
+Fashion,35,"These niggas so broke, they live in a float",broke,37,"She know I got money, shes on the fabric",know,INNER,ASSONANCE,vowel,MED,Y
+Fashion,35,"These niggas so broke, they live in a float",float,37,"She know I got money, shes on the fabric",know,INNER,ASSONANCE,vowel,MED,Y
+Fashion,36,She diggin 'my fashion I know she a ratchet,fashion,36,She diggin 'my fashion I know she a ratchet,ratchet,INNER,ASSONANCE,vowel,MED,Y
+Fashion,36,She diggin 'my fashion I know she a ratchet,ratchet,37,"She know I got money, shes on the fabric",fabric,END,ASSONANCE,vowel,MED,Y
+Fashion,36,She diggin 'my fashion I know she a ratchet,fashion,37,"She know I got money, shes on the fabric",fabric,INNER,ASSONANCE,vowel,MED,Y
+Fashion,36,She diggin 'my fashion I know she a ratchet,know,37,"She know I got money, shes on the fabric",know,INNER,REPEAT,spelling,HIGH,N
+Fashion,36,She diggin 'my fashion I know she a ratchet,ratchet,38,"Eating too much, I need to fasting",fasting,END,ASSONANCE,vowel,MED,Y
+Fashion,36,She diggin 'my fashion I know she a ratchet,fashion,38,"Eating too much, I need to fasting",fasting,INNER,SLANT,cmu,MED,Y
+Fashion,36,She diggin 'my fashion I know she a ratchet,ratchet,39,"broke, I trap with a passion",passion,END,ASSONANCE,vowel,MED,Y
+Fashion,36,She diggin 'my fashion I know she a ratchet,ratchet,40,"Trap where I lay, 10 P's in the attic",attic,END,ASSONANCE,vowel,MED,Y
+Fashion,37,"She know I got money, shes on the fabric",fabric,38,"Eating too much, I need to fasting",fasting,END,ASSONANCE,vowel,MED,Y
+Fashion,37,"She know I got money, shes on the fabric",money,38,"Eating too much, I need to fasting",much,INNER,SLANT,cmu,MED,Y
+Fashion,37,"She know I got money, shes on the fabric",fabric,39,"broke, I trap with a passion",passion,END,ASSONANCE,vowel,MED,Y
+Fashion,37,"She know I got money, shes on the fabric",fabric,39,"broke, I trap with a passion",trap,INNER,ASSONANCE,vowel,MED,Y
+Fashion,37,"She know I got money, shes on the fabric",know,39,"broke, I trap with a passion",broke,INNER,ASSONANCE,vowel,MED,Y
+Fashion,37,"She know I got money, shes on the fabric",fabric,40,"Trap where I lay, 10 P's in the attic",attic,END,SLANT,cmu,MED,Y
+Fashion,37,"She know I got money, shes on the fabric",fabric,41,Plus I got money just sittin' in my attic,attic,END,SLANT,cmu,MED,Y
+Fashion,38,"Eating too much, I need to fasting",Eating,38,"Eating too much, I need to fasting",fasting,INNER,PERFECT,spelling,MED,Y
+Fashion,38,"Eating too much, I need to fasting",Eating,38,"Eating too much, I need to fasting",need,INNER,ASSONANCE,vowel,MED,Y
+Fashion,38,"Eating too much, I need to fasting",fasting,39,"broke, I trap with a passion",passion,END,SLANT,cmu,MED,Y
+Fashion,38,"Eating too much, I need to fasting",fasting,39,"broke, I trap with a passion",trap,INNER,ASSONANCE,vowel,MED,Y
+Fashion,38,"Eating too much, I need to fasting",fasting,40,"Trap where I lay, 10 P's in the attic",attic,END,ASSONANCE,vowel,MED,Y
+Fashion,38,"Eating too much, I need to fasting",Eating,40,"Trap where I lay, 10 P's in the attic",P's,INNER,ASSONANCE,vowel,MED,Y
+Fashion,38,"Eating too much, I need to fasting",fasting,40,"Trap where I lay, 10 P's in the attic",Trap,INNER,ASSONANCE,vowel,MED,Y
+Fashion,38,"Eating too much, I need to fasting",need,40,"Trap where I lay, 10 P's in the attic",P's,INNER,SLANT,cmu,MED,Y
+Fashion,38,"Eating too much, I need to fasting",fasting,41,Plus I got money just sittin' in my attic,attic,END,ASSONANCE,vowel,MED,Y
+Fashion,38,"Eating too much, I need to fasting",fasting,42,I ain't payin' no taxes,taxes,END,ASSONANCE,vowel,MED,Y
+Fashion,39,"broke, I trap with a passion",trap,39,"broke, I trap with a passion",passion,INNER,ASSONANCE,vowel,MED,Y
+Fashion,39,"broke, I trap with a passion",passion,40,"Trap where I lay, 10 P's in the attic",attic,END,ASSONANCE,vowel,MED,Y
+Fashion,39,"broke, I trap with a passion",passion,40,"Trap where I lay, 10 P's in the attic",Trap,INNER,ASSONANCE,vowel,MED,Y
+Fashion,39,"broke, I trap with a passion",trap,40,"Trap where I lay, 10 P's in the attic",attic,INNER,SLANT,cmu,MED,Y
+Fashion,39,"broke, I trap with a passion",trap,40,"Trap where I lay, 10 P's in the attic",Trap,INNER,REPEAT,spelling,HIGH,N
+Fashion,39,"broke, I trap with a passion",passion,41,Plus I got money just sittin' in my attic,attic,END,ASSONANCE,vowel,MED,Y
+Fashion,39,"broke, I trap with a passion",trap,41,Plus I got money just sittin' in my attic,attic,INNER,SLANT,cmu,MED,Y
+Fashion,39,"broke, I trap with a passion",passion,42,I ain't payin' no taxes,taxes,END,ASSONANCE,vowel,MED,Y
+Fashion,39,"broke, I trap with a passion",passion,43,"Find me a plug, and he made it happen",happen,END,SLANT,cmu,MED,Y
+Fashion,40,"Trap where I lay, 10 P's in the attic",Trap,40,"Trap where I lay, 10 P's in the attic",attic,INNER,SLANT,cmu,MED,Y
+Fashion,40,"Trap where I lay, 10 P's in the attic",attic,41,Plus I got money just sittin' in my attic,attic,END,REPEAT,spelling,HIGH,N
+Fashion,40,"Trap where I lay, 10 P's in the attic",Trap,41,Plus I got money just sittin' in my attic,attic,INNER,SLANT,cmu,MED,Y
+Fashion,40,"Trap where I lay, 10 P's in the attic",attic,42,I ain't payin' no taxes,taxes,END,ASSONANCE,vowel,MED,Y
+Fashion,40,"Trap where I lay, 10 P's in the attic",lay,42,I ain't payin' no taxes,ain't,INNER,ASSONANCE,vowel,MED,Y
+Fashion,40,"Trap where I lay, 10 P's in the attic",lay,42,I ain't payin' no taxes,payin,INNER,ASSONANCE,vowel,MED,Y
+Fashion,40,"Trap where I lay, 10 P's in the attic",Trap,42,I ain't payin' no taxes,taxes,INNER,ASSONANCE,vowel,MED,Y
+Fashion,40,"Trap where I lay, 10 P's in the attic",attic,43,"Find me a plug, and he made it happen",happen,END,ASSONANCE,vowel,MED,Y
+Fashion,41,Plus I got money just sittin' in my attic,Plus,41,Plus I got money just sittin' in my attic,money,INNER,SLANT,cmu,MED,Y
+Fashion,41,Plus I got money just sittin' in my attic,attic,42,I ain't payin' no taxes,taxes,END,ASSONANCE,vowel,MED,Y
+Fashion,41,Plus I got money just sittin' in my attic,attic,43,"Find me a plug, and he made it happen",happen,END,ASSONANCE,vowel,MED,Y
+Fashion,41,Plus I got money just sittin' in my attic,money,43,"Find me a plug, and he made it happen",plug,INNER,SLANT,cmu,MED,Y
+Fashion,41,Plus I got money just sittin' in my attic,Plus,43,"Find me a plug, and he made it happen",plug,INNER,SLANT,cmu,MED,Y
+Fashion,41,Plus I got money just sittin' in my attic,attic,45,You don't like me change the fuckin' channel,channel,END,ASSONANCE,vowel,MED,Y
+Fashion,42,I ain't payin' no taxes,ain't,42,I ain't payin' no taxes,payin,INNER,ASSONANCE,vowel,MED,Y
+Fashion,42,I ain't payin' no taxes,taxes,43,"Find me a plug, and he made it happen",happen,END,ASSONANCE,vowel,MED,Y
+Fashion,42,I ain't payin' no taxes,ain't,43,"Find me a plug, and he made it happen",made,INNER,ASSONANCE,vowel,MED,Y
+Fashion,42,I ain't payin' no taxes,payin,43,"Find me a plug, and he made it happen",made,INNER,SLANT,cmu,MED,Y
+Fashion,42,I ain't payin' no taxes,taxes,45,You don't like me change the fuckin' channel,channel,END,ASSONANCE,vowel,MED,Y
+Fashion,42,I ain't payin' no taxes,taxes,46,She ain't gotta waste cause I'm gonna snatch,snatch,END,ASSONANCE,vowel,MED,Y
+Fashion,43,"Find me a plug, and he made it happen",happen,45,You don't like me change the fuckin' channel,channel,END,ASSONANCE,vowel,MED,Y
+Fashion,43,"Find me a plug, and he made it happen",Find,45,You don't like me change the fuckin' channel,like,INNER,ASSONANCE,vowel,MED,Y
+Fashion,43,"Find me a plug, and he made it happen",made,45,You don't like me change the fuckin' channel,change,INNER,ASSONANCE,vowel,MED,Y
+Fashion,43,"Find me a plug, and he made it happen",plug,45,You don't like me change the fuckin' channel,fuckin,INNER,ASSONANCE,vowel,MED,Y
+Fashion,43,"Find me a plug, and he made it happen",happen,46,She ain't gotta waste cause I'm gonna snatch,snatch,END,ASSONANCE,vowel,MED,Y
+Fashion,44,Ya'll let me fall in with the rest,let,44,Ya'll let me fall in with the rest,rest,INNER,SLANT,cmu,MED,Y
+Fashion,44,Ya'll let me fall in with the rest,Ya'll,46,She ain't gotta waste cause I'm gonna snatch,cause,INNER,SLANT,cmu,MED,Y
+Fashion,44,Ya'll let me fall in with the rest,Ya'll,46,She ain't gotta waste cause I'm gonna snatch,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,44,Ya'll let me fall in with the rest,Ya'll,46,She ain't gotta waste cause I'm gonna snatch,gotta,INNER,SLANT,cmu,MED,Y
+Fashion,45,You don't like me change the fuckin' channel,channel,46,She ain't gotta waste cause I'm gonna snatch,snatch,END,ASSONANCE,vowel,MED,Y
+Fashion,45,You don't like me change the fuckin' channel,change,46,She ain't gotta waste cause I'm gonna snatch,ain't,INNER,SLANT,cmu,MED,Y
+Fashion,45,You don't like me change the fuckin' channel,change,46,She ain't gotta waste cause I'm gonna snatch,waste,INNER,ASSONANCE,vowel,MED,Y
+Fashion,46,She ain't gotta waste cause I'm gonna snatch,ain't,46,She ain't gotta waste cause I'm gonna snatch,waste,INNER,SLANT,cmu,MED,Y
+Fashion,46,She ain't gotta waste cause I'm gonna snatch,cause,46,She ain't gotta waste cause I'm gonna snatch,gonna,INNER,SLANT,cmu,MED,Y
+Fashion,46,She ain't gotta waste cause I'm gonna snatch,gotta,46,She ain't gotta waste cause I'm gonna snatch,cause,INNER,SLANT,cmu,MED,Y
+Fashion,46,She ain't gotta waste cause I'm gonna snatch,gotta,46,She ain't gotta waste cause I'm gonna snatch,gonna,INNER,SLANT,cmu,MED,Y
