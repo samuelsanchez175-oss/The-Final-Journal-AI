@@ -106,6 +106,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 94 | no-plug | No Plug | 3 | 114 | 565 | 141 | 424 | 553 | 2026-11-10 13:18 ET |
 | 95 | john-wicks | John Wicks | 3 | 111 | 638 | 124 | 514 | 620 | 2026-11-10 13:18 ET |
 | 96 | neek-bucks | Neek Bucks | 2 | 111 | 915 | 146 | 769 | 909 | 2026-11-10 13:18 ET |
+| 97 | king-louie | King Louie | 3 | 110 | 947 | 130 | 817 | 927 | 2026-11-10 13:18 ET |
+| 98 | lil-tecca | Lil Tecca | 2 | 108 | 495 | 115 | 380 | 481 | 2026-11-10 13:18 ET |
+| 99 | vonoff1700 | VonOff1700 | 2 | 108 | 1323 | 189 | 1134 | 1284 | 2026-11-10 13:18 ET |
+| 100 | post-malone | Post Malone | 4 | 107 | 502 | 91 | 411 | 495 | 2026-11-10 13:18 ET |
+| 101 | drench-usa | Drench (USA) | 2 | 105 | 575 | 111 | 464 | 569 | 2026-11-10 13:18 ET |
+| 102 | lotto-savage | Lotto Savage | 3 | 105 | 625 | 121 | 504 | 617 | 2026-11-10 13:18 ET |
+| 103 | blocboy-jb | BlocBoy JB | 2 | 104 | 615 | 108 | 507 | 606 | 2026-11-10 13:18 ET |
+| 104 | the-weeknd | The Weeknd | 3 | 104 | 683 | 77 | 606 | 586 | 2026-11-10 13:18 ET |
+| 105 | reem-rap | Reem (Rap) | 1 | 102 | 801 | 145 | 656 | 790 | 2026-11-10 13:19 ET |
+| 106 | bizzy-banks | Bizzy Banks | 1 | 99 | 455 | 120 | 335 | 446 | 2026-11-10 13:19 ET |
 
 ## Failures
 
@@ -113,7 +123,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 96/386: Neek Bucks.
+Finished 106/386: Bizzy Banks.
 
 ## Final
 

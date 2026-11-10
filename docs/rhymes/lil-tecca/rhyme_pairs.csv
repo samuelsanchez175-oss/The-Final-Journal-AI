@@ -1,0 +1,665 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+CHOPPA SHOOT THE LOUDEST,1,"Man, you ain't no booty call",ain't,2,"I'm not, babe (Damn, Ryder)",babe,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,1,"Man, you ain't no booty call",call,3,"Ight then, it's 3AM, what you—, what you calling for?",calling,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,1,"Man, you ain't no booty call",Man,3,"Ight then, it's 3AM, what you—, what you calling for?",3AM,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,1,"Man, you ain't no booty call",call,5,"Nah, I ain't no booty callin' nigga, don't call me",call,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,2,"I'm not, babe (Damn, Ryder)",not,4,"It's not, it's 2, it's 2",not,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,3,"Ight then, it's 3AM, what you—, what you calling for?",what,3,"Ight then, it's 3AM, what you—, what you calling for?",what,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,3,"Ight then, it's 3AM, what you—, what you calling for?",calling,5,"Nah, I ain't no booty callin' nigga, don't call me",call,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,3,"Ight then, it's 3AM, what you—, what you calling for?",calling,5,"Nah, I ain't no booty callin' nigga, don't call me",callin,INNER,MULTI,multi,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,3,"Ight then, it's 3AM, what you—, what you calling for?",what calling,5,"Nah, I ain't no booty callin' nigga, don't call me",booty callin,INNER,MULTI,multi,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,4,"It's not, it's 2, it's 2",not,6,"I got 'til 3, I got 'til 3",got,INNER,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,5,"Nah, I ain't no booty callin' nigga, don't call me",callin,5,"Nah, I ain't no booty callin' nigga, don't call me",call,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,5,"Nah, I ain't no booty callin' nigga, don't call me",no,5,"Nah, I ain't no booty callin' nigga, don't call me",don't,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,5,"Nah, I ain't no booty callin' nigga, don't call me",ain't,7,"I ain't no dick call, bitch",ain't,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,5,"Nah, I ain't no booty callin' nigga, don't call me",call,7,"I ain't no dick call, bitch",call,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,5,"Nah, I ain't no booty callin' nigga, don't call me",callin,7,"I ain't no dick call, bitch",call,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,5,"Nah, I ain't no booty callin' nigga, don't call me",don't,7,"I ain't no dick call, bitch",no,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,5,"Nah, I ain't no booty callin' nigga, don't call me",nigga,7,"I ain't no dick call, bitch",dick,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,5,"Nah, I ain't no booty callin' nigga, don't call me",no,7,"I ain't no dick call, bitch",no,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,5,"Nah, I ain't no booty callin' nigga, don't call me",call,8,"You said, “I ain't no dick call”",call,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,6,"I got 'til 3, I got 'til 3",'til,6,"I got 'til 3, I got 'til 3",'til,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,6,"I got 'til 3, I got 'til 3",got,6,"I got 'til 3, I got 'til 3",got,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,6,"I got 'til 3, I got 'til 3",'til,7,"I ain't no dick call, bitch",bitch,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,6,"I got 'til 3, I got 'til 3",'til,7,"I ain't no dick call, bitch",bitch,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,6,"I got 'til 3, I got 'til 3",'til,7,"I ain't no dick call, bitch",dick,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,6,"I got 'til 3, I got 'til 3",'til,8,"You said, “I ain't no dick call”",dick,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,7,"I ain't no dick call, bitch",dick,7,"I ain't no dick call, bitch",bitch,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,7,"I ain't no dick call, bitch",ain't,8,"You said, “I ain't no dick call”",ain't,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,7,"I ain't no dick call, bitch",bitch,8,"You said, “I ain't no dick call”",dick,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,7,"I ain't no dick call, bitch",call,8,"You said, “I ain't no dick call”",call,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,7,"I ain't no dick call, bitch",dick,8,"You said, “I ain't no dick call”",dick,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,7,"I ain't no dick call, bitch",no,8,"You said, “I ain't no dick call”",no,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,8,"You said, “I ain't no dick call”",dick,10,Choppa hit the target (Loudest),hit,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,9,Choppa shoot the loudest (Loud),Choppa,10,Choppa hit the target (Loudest),Choppa,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,9,Choppa shoot the loudest (Loud),loudest,11,"Type of young nigga that's sliming you out (Ooh, yeah)",sliming,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,9,Choppa shoot the loudest (Loud),loudest,12,Type of young nigga keep that in a drought (Ha),drought,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,10,Choppa hit the target (Loudest),hit,11,"Type of young nigga that's sliming you out (Ooh, yeah)",nigga,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,10,Choppa hit the target (Loudest),hit,12,Type of young nigga keep that in a drought (Ha),nigga,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,11,"Type of young nigga that's sliming you out (Ooh, yeah)",sliming,12,Type of young nigga keep that in a drought (Ha),drought,END,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,11,"Type of young nigga that's sliming you out (Ooh, yeah)",nigga,12,Type of young nigga keep that in a drought (Ha),nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,11,"Type of young nigga that's sliming you out (Ooh, yeah)",Type,12,Type of young nigga keep that in a drought (Ha),Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,11,"Type of young nigga that's sliming you out (Ooh, yeah)",young,12,Type of young nigga keep that in a drought (Ha),young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,11,"Type of young nigga that's sliming you out (Ooh, yeah)",sliming,13,"Only keep diamonds inside of my mouth, gang (Yeah)",mouth,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,11,"Type of young nigga that's sliming you out (Ooh, yeah)",Type,13,"Only keep diamonds inside of my mouth, gang (Yeah)",diamonds,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,11,"Type of young nigga that's sliming you out (Ooh, yeah)",Type,13,"Only keep diamonds inside of my mouth, gang (Yeah)",inside,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,12,Type of young nigga keep that in a drought (Ha),drought,13,"Only keep diamonds inside of my mouth, gang (Yeah)",mouth,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,12,Type of young nigga keep that in a drought (Ha),keep,13,"Only keep diamonds inside of my mouth, gang (Yeah)",keep,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,12,Type of young nigga keep that in a drought (Ha),Type,13,"Only keep diamonds inside of my mouth, gang (Yeah)",diamonds,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,12,Type of young nigga keep that in a drought (Ha),Type,13,"Only keep diamonds inside of my mouth, gang (Yeah)",inside,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,12,Type of young nigga keep that in a drought (Ha),keep,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",keep,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,12,Type of young nigga keep that in a drought (Ha),nigga,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,12,Type of young nigga keep that in a drought (Ha),Type,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,12,Type of young nigga keep that in a drought (Ha),young,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",cut,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,12,Type of young nigga keep that in a drought (Ha),young,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,13,"Only keep diamonds inside of my mouth, gang (Yeah)",diamonds,13,"Only keep diamonds inside of my mouth, gang (Yeah)",inside,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,13,"Only keep diamonds inside of my mouth, gang (Yeah)",diamonds,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",Type,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,13,"Only keep diamonds inside of my mouth, gang (Yeah)",inside,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",Type,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,13,"Only keep diamonds inside of my mouth, gang (Yeah)",keep,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",keep,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,13,"Only keep diamonds inside of my mouth, gang (Yeah)",gang,15,"Type of young nigga send packages out (Yeah, yeah)",packages,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,13,"Only keep diamonds inside of my mouth, gang (Yeah)",diamonds,15,"Type of young nigga send packages out (Yeah, yeah)",Type,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,13,"Only keep diamonds inside of my mouth, gang (Yeah)",inside,15,"Type of young nigga send packages out (Yeah, yeah)",Type,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",young,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",cut,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",cut,15,"Type of young nigga send packages out (Yeah, yeah)",young,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",nigga,15,"Type of young nigga send packages out (Yeah, yeah)",nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",Type,15,"Type of young nigga send packages out (Yeah, yeah)",Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",young,15,"Type of young nigga send packages out (Yeah, yeah)",young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",cut,16,Eatin' the dust when the boys pop out (Ah),dust,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",keep,16,Eatin' the dust when the boys pop out (Ah),Eatin,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,14,"Type of young nigga keep sticks in the cut (Ooh, yeah)",young,16,Eatin' the dust when the boys pop out (Ah),dust,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,15,"Type of young nigga send packages out (Yeah, yeah)",send,16,Eatin' the dust when the boys pop out (Ah),when,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,15,"Type of young nigga send packages out (Yeah, yeah)",young,16,Eatin' the dust when the boys pop out (Ah),dust,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,15,"Type of young nigga send packages out (Yeah, yeah)",send,17,I'm in a Lambo' where foreigns pull out,where,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,16,Eatin' the dust when the boys pop out (Ah),when,17,I'm in a Lambo' where foreigns pull out,where,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,16,Eatin' the dust when the boys pop out (Ah),pop,18,"Had to relocate, I just bought a house",bought,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,18,"Had to relocate, I just bought a house",house,19,"She slide and I hit it, now she need a towel (Yeah)",towel,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,18,"Had to relocate, I just bought a house",house,19,"She slide and I hit it, now she need a towel (Yeah)",now,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,18,"Had to relocate, I just bought a house",Had,20,"My baby, she bad, I go the extra mile (Woah)",bad,INNER,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,18,"Had to relocate, I just bought a house",relocate,20,"My baby, she bad, I go the extra mile (Woah)",go,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,18,"Had to relocate, I just bought a house",house,21,"Don't hear what you sayin', bitch, I'm off the loud (Loud)",loud,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,18,"Had to relocate, I just bought a house",house,22,"And she do not want me 'cause I been around, yeah (Around)",around,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,19,"She slide and I hit it, now she need a towel (Yeah)",now,19,"She slide and I hit it, now she need a towel (Yeah)",towel,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,19,"She slide and I hit it, now she need a towel (Yeah)",slide,20,"My baby, she bad, I go the extra mile (Woah)",mile,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,19,"She slide and I hit it, now she need a towel (Yeah)",towel,21,"Don't hear what you sayin', bitch, I'm off the loud (Loud)",loud,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,19,"She slide and I hit it, now she need a towel (Yeah)",hit,21,"Don't hear what you sayin', bitch, I'm off the loud (Loud)",bitch,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,19,"She slide and I hit it, now she need a towel (Yeah)",need,21,"Don't hear what you sayin', bitch, I'm off the loud (Loud)",hear,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,19,"She slide and I hit it, now she need a towel (Yeah)",now,21,"Don't hear what you sayin', bitch, I'm off the loud (Loud)",loud,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,19,"She slide and I hit it, now she need a towel (Yeah)",towel,22,"And she do not want me 'cause I been around, yeah (Around)",around,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,20,"My baby, she bad, I go the extra mile (Woah)",baby,21,"Don't hear what you sayin', bitch, I'm off the loud (Loud)",sayin,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,20,"My baby, she bad, I go the extra mile (Woah)",go,21,"Don't hear what you sayin', bitch, I'm off the loud (Loud)",Don't,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,21,"Don't hear what you sayin', bitch, I'm off the loud (Loud)",loud,22,"And she do not want me 'cause I been around, yeah (Around)",around,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,22,"And she do not want me 'cause I been around, yeah (Around)",not,22,"And she do not want me 'cause I been around, yeah (Around)",want,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,22,"And she do not want me 'cause I been around, yeah (Around)",not,23,"I got gas up in my pocket, I got gas up in the air",got,INNER,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,22,"And she do not want me 'cause I been around, yeah (Around)",not,23,"I got gas up in my pocket, I got gas up in the air",pocket,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,22,"And she do not want me 'cause I been around, yeah (Around)",want,23,"I got gas up in my pocket, I got gas up in the air",got,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,22,"And she do not want me 'cause I been around, yeah (Around)",want,23,"I got gas up in my pocket, I got gas up in the air",pocket,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",gas,23,"I got gas up in my pocket, I got gas up in the air",gas,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",got,23,"I got gas up in my pocket, I got gas up in the air",got,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",got,23,"I got gas up in my pocket, I got gas up in the air",pocket,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",pocket,23,"I got gas up in my pocket, I got gas up in the air",got,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",air,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",hell,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",air,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",Heaven,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",air,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",send,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",air,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",well,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",gas,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",asked,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",air,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,23,"I got gas up in my pocket, I got gas up in the air",air,27,"Do it again, yeah, told 'em to do it again, yeah",again,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",boy,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",boy,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",gon,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",gon,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",Heaven,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",hell,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",Heaven,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",send,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",send,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",Heaven,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",send,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",hell,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",send,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",send,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",hell,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",well,END,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",Heaven,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",well,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",send,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",well,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",hell,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",Heaven,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",send,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",Trip,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",really,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",Trip,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",thinkin,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",hell,27,"Do it again, yeah, told 'em to do it again, yeah",again,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,24,"Trip' gon' send that boy to Heaven, I'm gon' send that boy to hell (Boy)",hell,28,"Said that I'm doin' her friend, do it again, yeah",again,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",doin,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",doin,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",well,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",told,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",told,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",well,27,"Do it again, yeah, told 'em to do it again, yeah",again,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",told,27,"Do it again, yeah, told 'em to do it again, yeah",told,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",well,27,"Do it again, yeah, told 'em to do it again, yeah",again,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",well,28,"Said that I'm doin' her friend, do it again, yeah",again,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,25,"She just asked me how I'm doin', I told her, ""I'm doin' well""",well,29,"Told her to do it again, yeah",again,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",really,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",thinkin,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,27,"Do it again, yeah, told 'em to do it again, yeah",again,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",'em,27,"Do it again, yeah, told 'em to do it again, yeah",'em,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,27,"Do it again, yeah, told 'em to do it again, yeah",again,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",told,27,"Do it again, yeah, told 'em to do it again, yeah",told,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,28,"Said that I'm doin' her friend, do it again, yeah",again,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,28,"Said that I'm doin' her friend, do it again, yeah",friend,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,28,"Said that I'm doin' her friend, do it again, yeah",Said,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,26,"If you really thinkin' that you like that, told 'em to pull up and do it again",again,29,"Told her to do it again, yeah",again,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,27,"Do it again, yeah, told 'em to do it again, yeah",again,27,"Do it again, yeah, told 'em to do it again, yeah",again,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,27,"Do it again, yeah, told 'em to do it again, yeah",again,28,"Said that I'm doin' her friend, do it again, yeah",again,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,27,"Do it again, yeah, told 'em to do it again, yeah",again,28,"Said that I'm doin' her friend, do it again, yeah",again,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,27,"Do it again, yeah, told 'em to do it again, yeah",again,28,"Said that I'm doin' her friend, do it again, yeah",friend,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,27,"Do it again, yeah, told 'em to do it again, yeah",again,28,"Said that I'm doin' her friend, do it again, yeah",Said,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,27,"Do it again, yeah, told 'em to do it again, yeah",again,29,"Told her to do it again, yeah",again,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,27,"Do it again, yeah, told 'em to do it again, yeah",again,29,"Told her to do it again, yeah",again,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,27,"Do it again, yeah, told 'em to do it again, yeah",told,29,"Told her to do it again, yeah",Told,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,28,"Said that I'm doin' her friend, do it again, yeah",friend,28,"Said that I'm doin' her friend, do it again, yeah",again,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,28,"Said that I'm doin' her friend, do it again, yeah",Said,28,"Said that I'm doin' her friend, do it again, yeah",again,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,28,"Said that I'm doin' her friend, do it again, yeah",Said,28,"Said that I'm doin' her friend, do it again, yeah",friend,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,28,"Said that I'm doin' her friend, do it again, yeah",again,29,"Told her to do it again, yeah",again,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,28,"Said that I'm doin' her friend, do it again, yeah",friend,29,"Told her to do it again, yeah",again,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,28,"Said that I'm doin' her friend, do it again, yeah",Said,29,"Told her to do it again, yeah",again,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,29,"Told her to do it again, yeah",again,31,Type of young nigga spent it all on ammo (Ammo),spent,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,29,"Told her to do it again, yeah",Told,31,Type of young nigga spent it all on ammo (Ammo),ammo,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),Type,30,Type of young nigga wide body the Lambo' (Lambo'),wide,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),Lambo,31,Type of young nigga spent it all on ammo (Ammo),ammo,END,ASSONANCE,vowel,LOW,N
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),nigga,31,Type of young nigga spent it all on ammo (Ammo),nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),Type,31,Type of young nigga spent it all on ammo (Ammo),Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),wide,31,Type of young nigga spent it all on ammo (Ammo),Type,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),young,31,Type of young nigga spent it all on ammo (Ammo),young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),Lambo,32,Type of young nigga with the all black camo (Camo),camo,END,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),nigga,32,Type of young nigga with the all black camo (Camo),nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),Type,32,Type of young nigga with the all black camo (Camo),Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),wide,32,Type of young nigga with the all black camo (Camo),Type,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),young,32,Type of young nigga with the all black camo (Camo),young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),Lambo,33,Type of young nigga that chased down famo,famo,END,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,30,Type of young nigga wide body the Lambo' (Lambo'),Lambo,34,Type of young nigga send fifty on Venmo,Venmo,END,ASSONANCE,vowel,LOW,N
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),ammo,32,Type of young nigga with the all black camo (Camo),camo,END,MULTI,multi,MED,Y
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),all,32,Type of young nigga with the all black camo (Camo),all,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),nigga,32,Type of young nigga with the all black camo (Camo),nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),Type,32,Type of young nigga with the all black camo (Camo),Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),young,32,Type of young nigga with the all black camo (Camo),young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),ammo,33,Type of young nigga that chased down famo,famo,END,MULTI,multi,MED,Y
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),nigga,33,Type of young nigga that chased down famo,nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),Type,33,Type of young nigga that chased down famo,Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),young,33,Type of young nigga that chased down famo,young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,31,Type of young nigga spent it all on ammo (Ammo),ammo,34,Type of young nigga send fifty on Venmo,Venmo,END,ASSONANCE,vowel,LOW,N
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),black,32,Type of young nigga with the all black camo (Camo),camo,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),camo,33,Type of young nigga that chased down famo,famo,END,MULTI,multi,MED,Y
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),black,33,Type of young nigga that chased down famo,famo,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),nigga,33,Type of young nigga that chased down famo,nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),Type,33,Type of young nigga that chased down famo,Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),young,33,Type of young nigga that chased down famo,young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),camo,34,Type of young nigga send fifty on Venmo,Venmo,END,ASSONANCE,vowel,LOW,N
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),nigga,34,Type of young nigga send fifty on Venmo,nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),Type,34,Type of young nigga send fifty on Venmo,Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,32,Type of young nigga with the all black camo (Camo),young,34,Type of young nigga send fifty on Venmo,young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,33,Type of young nigga that chased down famo,famo,34,Type of young nigga send fifty on Venmo,Venmo,END,ASSONANCE,vowel,LOW,N
+CHOPPA SHOOT THE LOUDEST,33,Type of young nigga that chased down famo,nigga,34,Type of young nigga send fifty on Venmo,nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,33,Type of young nigga that chased down famo,Type,34,Type of young nigga send fifty on Venmo,Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,33,Type of young nigga that chased down famo,young,34,Type of young nigga send fifty on Venmo,young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,33,Type of young nigga that chased down famo,nigga,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,33,Type of young nigga that chased down famo,Type,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,33,Type of young nigga that chased down famo,young,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,send,34,Type of young nigga send fifty on Venmo,Venmo,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,nigga,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,send,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",sense,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,Type,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,Venmo,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",sense,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,young,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,nigga,36,Type of young nigga wear Moncler sandals (Yeah),nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,send,36,Type of young nigga wear Moncler sandals (Yeah),wear,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,Type,36,Type of young nigga wear Moncler sandals (Yeah),Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,34,Type of young nigga send fifty on Venmo,young,36,Type of young nigga wear Moncler sandals (Yeah),young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",scandal,36,Type of young nigga wear Moncler sandals (Yeah),sandals,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",nigga,36,Type of young nigga wear Moncler sandals (Yeah),nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",sense,36,Type of young nigga wear Moncler sandals (Yeah),wear,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",Type,36,Type of young nigga wear Moncler sandals (Yeah),Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",young,36,Type of young nigga wear Moncler sandals (Yeah),young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",scandal,37,"Type of young nigga backyard where the sand be (Damn, yeah)",sand,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",nigga,37,"Type of young nigga backyard where the sand be (Damn, yeah)",nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",sense,37,"Type of young nigga backyard where the sand be (Damn, yeah)",where,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",Type,37,"Type of young nigga backyard where the sand be (Damn, yeah)",Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",young,37,"Type of young nigga backyard where the sand be (Damn, yeah)",young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,35,"Type of young nigga that sense a scandal (Yeah, yeah, yeah)",scandal,38,And I got them tools like I'm handy,handy,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,36,Type of young nigga wear Moncler sandals (Yeah),sandals,37,"Type of young nigga backyard where the sand be (Damn, yeah)",sand,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,36,Type of young nigga wear Moncler sandals (Yeah),nigga,37,"Type of young nigga backyard where the sand be (Damn, yeah)",nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,36,Type of young nigga wear Moncler sandals (Yeah),Type,37,"Type of young nigga backyard where the sand be (Damn, yeah)",Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,36,Type of young nigga wear Moncler sandals (Yeah),wear,37,"Type of young nigga backyard where the sand be (Damn, yeah)",where,INNER,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,36,Type of young nigga wear Moncler sandals (Yeah),young,37,"Type of young nigga backyard where the sand be (Damn, yeah)",young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,36,Type of young nigga wear Moncler sandals (Yeah),sandals,38,And I got them tools like I'm handy,handy,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,36,Type of young nigga wear Moncler sandals (Yeah),Type,38,And I got them tools like I'm handy,like,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,37,"Type of young nigga backyard where the sand be (Damn, yeah)",sand,38,And I got them tools like I'm handy,handy,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,37,"Type of young nigga backyard where the sand be (Damn, yeah)",backyard,38,And I got them tools like I'm handy,got,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,37,"Type of young nigga backyard where the sand be (Damn, yeah)",Type,38,And I got them tools like I'm handy,like,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,37,"Type of young nigga backyard where the sand be (Damn, yeah)",backyard,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",got,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,37,"Type of young nigga backyard where the sand be (Damn, yeah)",nigga,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,37,"Type of young nigga backyard where the sand be (Damn, yeah)",Type,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",like,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,37,"Type of young nigga backyard where the sand be (Damn, yeah)",Type,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,37,"Type of young nigga backyard where the sand be (Damn, yeah)",where,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",Wendy's,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,37,"Type of young nigga backyard where the sand be (Damn, yeah)",young,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,38,And I got them tools like I'm handy,got,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",got,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,38,And I got them tools like I'm handy,like,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",like,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,38,And I got them tools like I'm handy,like,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",Type,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,38,And I got them tools like I'm handy,tools,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",deals,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,38,And I got them tools like I'm handy,like,40,Type of young nigga Trackhawk's and semi's,Type,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",Type,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",like,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",Wendy's,40,Type of young nigga Trackhawk's and semi's,semi's,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",like,40,Type of young nigga Trackhawk's and semi's,Type,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",nigga,40,Type of young nigga Trackhawk's and semi's,nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",Type,40,Type of young nigga Trackhawk's and semi's,Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",young,40,Type of young nigga Trackhawk's and semi's,young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",Wendy's,41,Type of young nigga took off on the enemy (Skuduskuh),enemy,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",like,41,Type of young nigga took off on the enemy (Skuduskuh),Type,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",nigga,41,Type of young nigga took off on the enemy (Skuduskuh),nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",Type,41,Type of young nigga took off on the enemy (Skuduskuh),Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,39,"Type of young nigga got deals like Wendy's (Skuduskuh, skuduskuh)",young,41,Type of young nigga took off on the enemy (Skuduskuh),young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,40,Type of young nigga Trackhawk's and semi's,semi's,41,Type of young nigga took off on the enemy (Skuduskuh),enemy,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,40,Type of young nigga Trackhawk's and semi's,nigga,41,Type of young nigga took off on the enemy (Skuduskuh),nigga,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,40,Type of young nigga Trackhawk's and semi's,Type,41,Type of young nigga took off on the enemy (Skuduskuh),Type,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,40,Type of young nigga Trackhawk's and semi's,young,41,Type of young nigga took off on the enemy (Skuduskuh),young,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,40,Type of young nigga Trackhawk's and semi's,semi's,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Ketchum,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,40,Type of young nigga Trackhawk's and semi's,Trackhawk's,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",can't,INNER,ASSONANCE,vowel,LOW,N
+CHOPPA SHOOT THE LOUDEST,40,Type of young nigga Trackhawk's and semi's,Trackhawk's,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",catch,INNER,ASSONANCE,vowel,LOW,N
+CHOPPA SHOOT THE LOUDEST,40,Type of young nigga Trackhawk's and semi's,Type,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Like,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,40,Type of young nigga Trackhawk's and semi's,semi's,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",steppin,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,41,Type of young nigga took off on the enemy (Skuduskuh),enemy,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Ketchum,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,41,Type of young nigga took off on the enemy (Skuduskuh),Type,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Like,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,41,Type of young nigga took off on the enemy (Skuduskuh),enemy,43,"We catch 'em, then stretch 'em (Bang, bang)",stretch,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,41,Type of young nigga took off on the enemy (Skuduskuh),enemy,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",steppin,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",can't,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",catch,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",'em,43,"We catch 'em, then stretch 'em (Bang, bang)",'em,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",'em,43,"We catch 'em, then stretch 'em (Bang, bang)",'em,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",can't,43,"We catch 'em, then stretch 'em (Bang, bang)",catch,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",catch,43,"We catch 'em, then stretch 'em (Bang, bang)",catch,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Ketchum,43,"We catch 'em, then stretch 'em (Bang, bang)",stretch,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Like Ketchum,43,"We catch 'em, then stretch 'em (Bang, bang)",stretch 'em,INNER,MULTI,multi,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Ketchum,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",better,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Ketchum,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",step,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Ketchum,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",steppin,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,42,"Like Ketchum can't catch 'em (Skuduskuh, skuduskuh, skuduskuh)",Ketchum,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",When,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,43,"We catch 'em, then stretch 'em (Bang, bang)",'em,43,"We catch 'em, then stretch 'em (Bang, bang)",'em,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,43,"We catch 'em, then stretch 'em (Bang, bang)",stretch,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",better,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,43,"We catch 'em, then stretch 'em (Bang, bang)",stretch,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",step,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,43,"We catch 'em, then stretch 'em (Bang, bang)",stretch,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",steppin,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,43,"We catch 'em, then stretch 'em (Bang, bang)",stretch,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",When,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,43,"We catch 'em, then stretch 'em (Bang, bang)",catch,45,"I done grew up and seen all type of shit happen (Bang, what you do?)",happen,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",better,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",step,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",better,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",steppin,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",step,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",steppin,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",When,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",better,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",When,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",step,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",When,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",steppin,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",better,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",get,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",better,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",spent,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",step,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",get,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",step,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",spent,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",steppin,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",get,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",steppin,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",spent,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",When,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",get,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,44,"When we pull up, you better step up (Bang), you say you steppin' (Gang)",When,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",spent,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,45,"I done grew up and seen all type of shit happen (Bang, what you do?)",happen,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",captain,END,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,45,"I done grew up and seen all type of shit happen (Bang, what you do?)",all,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",all,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,45,"I done grew up and seen all type of shit happen (Bang, what you do?)",all,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",Morgan,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,45,"I done grew up and seen all type of shit happen (Bang, what you do?)",happen,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",absent,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,45,"I done grew up and seen all type of shit happen (Bang, what you do?)",all,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",call,INNER,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,45,"I done grew up and seen all type of shit happen (Bang, what you do?)",grew,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",school,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,45,"I done grew up and seen all type of shit happen (Bang, what you do?)",happen,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",granny,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,45,"I done grew up and seen all type of shit happen (Bang, what you do?)",happen,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",flashin,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",all,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",Morgan,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",spent,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",get,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",captain,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",absent,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",all,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",call,INNER,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",captain,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",granny,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",get,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",Where,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",Morgan,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",call,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",spent,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",absent,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",spent,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",Where,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",captain,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",flashin,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",get,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",where,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,46,"I just spent it all and get Morgan, I'm captain (Damn, Ryder, skuduskuh, okay, okay)",spent,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",where,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",don't,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",know,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",granny,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",absent,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",absent,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",flashin,END,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",don't,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",show,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",granny,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",flashin,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",know,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",show,INNER,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",Where,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",where,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,47,"Where I'm from, the school don't call granny, ain't know I was absent (Don't, granny)",ain't,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",crazy,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",bitches,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",him,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",flashin,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",dappin,INNER,ASSONANCE,vowel,LOW,N
+CHOPPA SHOOT THE LOUDEST,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",got,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",not,INNER,PERFECT,cmu,HIGH,Y
+CHOPPA SHOOT THE LOUDEST,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",got,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",talkin,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",bitches,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",him,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",flashin,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",smackin,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",show,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",Told,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,48,"Now I'm at the show, where I got white bitches flashin' (Gang)",where,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",when,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",talkin,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",not,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",him,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",him,END,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",dappin,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",smackin,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",him,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",him,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",him,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",bitch,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",not,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",opposites,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,49,"Heard he was talkin' crazy, so I am not dappin' him (Bang, what you do?)",talkin,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",opposites,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",him,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",him,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",foenem,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",don't,INNER,SLANT,spelling,LOW,Y
+CHOPPA SHOOT THE LOUDEST,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",him,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",bitch,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",Told,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",don't,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",foenem,52,Ride with a bunny rabbit made me feel like Eminem,Eminem,INNER,PERFECT,spelling,MED,Y
+CHOPPA SHOOT THE LOUDEST,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",see,52,Ride with a bunny rabbit made me feel like Eminem,feel,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",smackin,52,Ride with a bunny rabbit made me feel like Eminem,rabbit,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,50,"Told foenem, 20K when I see him, I'm smackin' him (Damn, Ryder, skuduskuh, okay, okay)",when,52,Ride with a bunny rabbit made me feel like Eminem,Eminem,INNER,ASSONANCE,vowel,MED,Y
+CHOPPA SHOOT THE LOUDEST,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",don't,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",don't,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",fuck,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",fuck,INNER,REPEAT,spelling,HIGH,N
+CHOPPA SHOOT THE LOUDEST,51,"We don't fuck with opposites, bitch, we don't fuck with antonyms (Dududuh)",fuck,52,Ride with a bunny rabbit made me feel like Eminem,bunny,INNER,SLANT,cmu,MED,Y
+CHOPPA SHOOT THE LOUDEST,52,Ride with a bunny rabbit made me feel like Eminem,Ride,52,Ride with a bunny rabbit made me feel like Eminem,like,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",E,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",E,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",H,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",H,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",O,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",O,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",E,2,"That's my H.O.E, H.O.E",E,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",E,2,"That's my H.O.E, H.O.E",E,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",H,2,"That's my H.O.E, H.O.E",H,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",O,2,"That's my H.O.E, H.O.E",O,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",earth,3,"Heaven on earth, my—",earth,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,1,"Heaven on earth, my H.O.E, H.O.E, H.O.E",Heaven,3,"Heaven on earth, my—",Heaven,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,2,"That's my H.O.E, H.O.E",E,2,"That's my H.O.E, H.O.E",E,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,2,"That's my H.O.E, H.O.E",H,2,"That's my H.O.E, H.O.E",H,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,2,"That's my H.O.E, H.O.E",O,2,"That's my H.O.E, H.O.E",O,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,3,"Heaven on earth, my—",Heaven,5,I never had the time to make a way,never,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,5,I never had the time to make a way,make,5,I never had the time to make a way,way,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,5,I never had the time to make a way,way,6,"I only had the time to make a play (Oh-oh, oh)",play,END,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,5,I never had the time to make a way,had,6,"I only had the time to make a play (Oh-oh, oh)",had,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,5,I never had the time to make a way,make,6,"I only had the time to make a play (Oh-oh, oh)",make,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,5,I never had the time to make a way,make,6,"I only had the time to make a play (Oh-oh, oh)",play,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,5,I never had the time to make a way,time,6,"I only had the time to make a play (Oh-oh, oh)",time,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,5,I never had the time to make a way,way,6,"I only had the time to make a play (Oh-oh, oh)",make,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,5,I never had the time to make a way,had,7,I had to learn nobody savin' me,had,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,5,I never had the time to make a way,had,7,I had to learn nobody savin' me,savin,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,5,I never had the time to make a way,way,8,"If you gon' run it up, then why wait? (That's my—that's my—)",wait,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,5,I never had the time to make a way,way,9,They see I got a lot up in my plate,plate,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,6,"I only had the time to make a play (Oh-oh, oh)",make,6,"I only had the time to make a play (Oh-oh, oh)",play,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,6,"I only had the time to make a play (Oh-oh, oh)",had,7,I had to learn nobody savin' me,had,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,6,"I only had the time to make a play (Oh-oh, oh)",had,7,I had to learn nobody savin' me,savin,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,6,"I only had the time to make a play (Oh-oh, oh)",play,8,"If you gon' run it up, then why wait? (That's my—that's my—)",wait,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,6,"I only had the time to make a play (Oh-oh, oh)",make,8,"If you gon' run it up, then why wait? (That's my—that's my—)",wait,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,6,"I only had the time to make a play (Oh-oh, oh)",only,8,"If you gon' run it up, then why wait? (That's my—that's my—)",gon,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,6,"I only had the time to make a play (Oh-oh, oh)",time,8,"If you gon' run it up, then why wait? (That's my—that's my—)",why,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,6,"I only had the time to make a play (Oh-oh, oh)",play,9,They see I got a lot up in my plate,plate,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,6,"I only had the time to make a play (Oh-oh, oh)",play,10,"When you been workin', it's not 'bout the faith (Oh-oh, oh)",faith,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,7,I had to learn nobody savin' me,had,7,I had to learn nobody savin' me,savin,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,7,I had to learn nobody savin' me,nobody,9,They see I got a lot up in my plate,see,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,8,"If you gon' run it up, then why wait? (That's my—that's my—)",wait,9,They see I got a lot up in my plate,plate,END,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,8,"If you gon' run it up, then why wait? (That's my—that's my—)",wait,10,"When you been workin', it's not 'bout the faith (Oh-oh, oh)",faith,END,SLANT,cmu,MED,Y
+HVN ON EARTH,8,"If you gon' run it up, then why wait? (That's my—that's my—)",wait,11,She on my phone and what she 'bout to say?,say,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,9,They see I got a lot up in my plate,got,9,They see I got a lot up in my plate,lot,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,9,They see I got a lot up in my plate,plate,10,"When you been workin', it's not 'bout the faith (Oh-oh, oh)",faith,END,SLANT,cmu,MED,Y
+HVN ON EARTH,9,They see I got a lot up in my plate,got,10,"When you been workin', it's not 'bout the faith (Oh-oh, oh)",not,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,9,They see I got a lot up in my plate,lot,10,"When you been workin', it's not 'bout the faith (Oh-oh, oh)",not,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,9,They see I got a lot up in my plate,plate,11,She on my phone and what she 'bout to say?,say,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,10,"When you been workin', it's not 'bout the faith (Oh-oh, oh)",faith,11,She on my phone and what she 'bout to say?,say,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,10,"When you been workin', it's not 'bout the faith (Oh-oh, oh)",'bout,11,She on my phone and what she 'bout to say?,'bout,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,10,"When you been workin', it's not 'bout the faith (Oh-oh, oh)",When,12,She let me know (That's my—that's my—),let,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,11,She on my phone and what she 'bout to say?,phone,12,She let me know (That's my—that's my—),know,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,11,She on my phone and what she 'bout to say?,'bout,13,"Yeah, nowadays I'm just thinkin' 'bout a bag",'bout,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,11,She on my phone and what she 'bout to say?,say,13,"Yeah, nowadays I'm just thinkin' 'bout a bag",nowadays,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,13,"Yeah, nowadays I'm just thinkin' 'bout a bag",bag,14,Got '85 Undercovers on my ass,ass,END,SLANT,cmu,MED,Y
+HVN ON EARTH,13,"Yeah, nowadays I'm just thinkin' 'bout a bag",bag,15,"That ho, she say, ""Yo,"" 'cause I got money bags",bags,END,SLANT,cmu,MED,Y
+HVN ON EARTH,13,"Yeah, nowadays I'm just thinkin' 'bout a bag",nowadays,15,"That ho, she say, ""Yo,"" 'cause I got money bags",say,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,13,"Yeah, nowadays I'm just thinkin' 'bout a bag",bag,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),stashed,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,13,"Yeah, nowadays I'm just thinkin' 'bout a bag",bag,17,"Easy to get it, now go make it last",last,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,14,Got '85 Undercovers on my ass,ass,15,"That ho, she say, ""Yo,"" 'cause I got money bags",bags,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,14,Got '85 Undercovers on my ass,Got,15,"That ho, she say, ""Yo,"" 'cause I got money bags",got,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,14,Got '85 Undercovers on my ass,ass,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),stashed,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,14,Got '85 Undercovers on my ass,Got,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),got,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,14,Got '85 Undercovers on my ass,ass,17,"Easy to get it, now go make it last",last,END,SLANT,cmu,MED,Y
+HVN ON EARTH,14,Got '85 Undercovers on my ass,ass,18,"You gon' turn on me, I'ma watch you crash",crash,END,SLANT,cmu,MED,Y
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",bags,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),stashed,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",'cause,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),'cause,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",got,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),got,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",ho,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),dope,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",money,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),money,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",bags,17,"Easy to get it, now go make it last",last,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",ho,17,"Easy to get it, now go make it last",go,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",say,17,"Easy to get it, now go make it last",make,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",bags,18,"You gon' turn on me, I'ma watch you crash",crash,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,15,"That ho, she say, ""Yo,"" 'cause I got money bags",bags,19,"Don't give a fuck, no-one get a pass",pass,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),stashed,17,"Easy to get it, now go make it last",last,END,SLANT,cmu,MED,Y
+HVN ON EARTH,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),dope,17,"Easy to get it, now go make it last",go,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),feds,17,"Easy to get it, now go make it last",get,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),stashed,18,"You gon' turn on me, I'ma watch you crash",crash,END,SLANT,cmu,MED,Y
+HVN ON EARTH,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),dope,18,"You gon' turn on me, I'ma watch you crash",gon,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),got,18,"You gon' turn on me, I'ma watch you crash",watch,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,16,The feds on my dope 'cause I got money stashed (That's my—that's my—),stashed,19,"Don't give a fuck, no-one get a pass",pass,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,17,"Easy to get it, now go make it last",last,18,"You gon' turn on me, I'ma watch you crash",crash,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,17,"Easy to get it, now go make it last",last,19,"Don't give a fuck, no-one get a pass",pass,END,SLANT,cmu,MED,Y
+HVN ON EARTH,17,"Easy to get it, now go make it last",get,19,"Don't give a fuck, no-one get a pass",get,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,17,"Easy to get it, now go make it last",go,19,"Don't give a fuck, no-one get a pass",Don't,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,17,"Easy to get it, now go make it last",go,19,"Don't give a fuck, no-one get a pass",no,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,18,"You gon' turn on me, I'ma watch you crash",crash,19,"Don't give a fuck, no-one get a pass",pass,END,SLANT,cmu,MED,Y
+HVN ON EARTH,18,"You gon' turn on me, I'ma watch you crash",gon,19,"Don't give a fuck, no-one get a pass",Don't,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,18,"You gon' turn on me, I'ma watch you crash",I'ma,19,"Don't give a fuck, no-one get a pass",give,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,19,"Don't give a fuck, no-one get a pass",Don't,19,"Don't give a fuck, no-one get a pass",no,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,19,"Don't give a fuck, no-one get a pass",fuck,19,"Don't give a fuck, no-one get a pass",one,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,19,"Don't give a fuck, no-one get a pass",Don't,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",Know,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,19,"Don't give a fuck, no-one get a pass",get,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",meant,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,19,"Don't give a fuck, no-one get a pass",get,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",said,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,19,"Don't give a fuck, no-one get a pass",no,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",Know,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,19,"Don't give a fuck, no-one get a pass",Don't,21,"You got it goin', hold up now",hold,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,19,"Don't give a fuck, no-one get a pass",no,21,"You got it goin', hold up now",hold,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",said,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",meant,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",Know,21,"You got it goin', hold up now",hold,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",Know,22,"Say you wanna get high, then roll up now",roll,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",meant,22,"Say you wanna get high, then roll up now",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",said,22,"Say you wanna get high, then roll up now",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,20,"Know if I said it, yeah, I meant that (That's my—that's my—)",meant,24,"She hit my line, said (That's my—that's my—)",said,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,21,"You got it goin', hold up now",now,22,"Say you wanna get high, then roll up now",now,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,21,"You got it goin', hold up now",got,22,"Say you wanna get high, then roll up now",wanna,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,21,"You got it goin', hold up now",hold,22,"Say you wanna get high, then roll up now",roll,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,21,"You got it goin', hold up now",now,23,You say you not gon' fold up now,now,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,21,"You got it goin', hold up now",got,23,You say you not gon' fold up now,not,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,21,"You got it goin', hold up now",hold,23,You say you not gon' fold up now,fold,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,21,"You got it goin', hold up now",now,25,I never showed them up no love now,now,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,22,"Say you wanna get high, then roll up now",now,23,You say you not gon' fold up now,now,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,22,"Say you wanna get high, then roll up now",roll,23,You say you not gon' fold up now,fold,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,22,"Say you wanna get high, then roll up now",roll,23,You say you not gon' fold up now,gon,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,22,"Say you wanna get high, then roll up now",Say,23,You say you not gon' fold up now,say,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,22,"Say you wanna get high, then roll up now",wanna,23,You say you not gon' fold up now,not,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,22,"Say you wanna get high, then roll up now",get,24,"She hit my line, said (That's my—that's my—)",said,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,22,"Say you wanna get high, then roll up now",high,24,"She hit my line, said (That's my—that's my—)",line,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,22,"Say you wanna get high, then roll up now",now,25,I never showed them up no love now,now,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,22,"Say you wanna get high, then roll up now",now,26,"I can't say what's on my mind, get dumbed down",down,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,23,You say you not gon' fold up now,now,25,I never showed them up no love now,now,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,23,You say you not gon' fold up now,fold,25,I never showed them up no love now,no,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,23,You say you not gon' fold up now,fold,25,I never showed them up no love now,showed,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,23,You say you not gon' fold up now,gon,25,I never showed them up no love now,showed,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,23,You say you not gon' fold up now,now,26,"I can't say what's on my mind, get dumbed down",down,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,23,You say you not gon' fold up now,now,27,Thinkin' too much then my mind get shut down,down,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,24,"She hit my line, said (That's my—that's my—)",said,25,I never showed them up no love now,never,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,24,"She hit my line, said (That's my—that's my—)",line,26,"I can't say what's on my mind, get dumbed down",mind,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,24,"She hit my line, said (That's my—that's my—)",said,26,"I can't say what's on my mind, get dumbed down",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,25,I never showed them up no love now,showed,25,I never showed them up no love now,no,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,25,I never showed them up no love now,now,26,"I can't say what's on my mind, get dumbed down",down,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,25,I never showed them up no love now,love,26,"I can't say what's on my mind, get dumbed down",dumbed,INNER,ASSONANCE,vowel,LOW,N
+HVN ON EARTH,25,I never showed them up no love now,love,26,"I can't say what's on my mind, get dumbed down",what's,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,25,I never showed them up no love now,never,26,"I can't say what's on my mind, get dumbed down",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,25,I never showed them up no love now,now,27,Thinkin' too much then my mind get shut down,down,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,25,I never showed them up no love now,love,27,Thinkin' too much then my mind get shut down,much,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,25,I never showed them up no love now,love,27,Thinkin' too much then my mind get shut down,shut,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,25,I never showed them up no love now,never,27,Thinkin' too much then my mind get shut down,get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,26,"I can't say what's on my mind, get dumbed down",down,27,Thinkin' too much then my mind get shut down,down,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,26,"I can't say what's on my mind, get dumbed down",get,27,Thinkin' too much then my mind get shut down,get,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,26,"I can't say what's on my mind, get dumbed down",mind,27,Thinkin' too much then my mind get shut down,mind,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,26,"I can't say what's on my mind, get dumbed down",what's,27,Thinkin' too much then my mind get shut down,much,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,26,"I can't say what's on my mind, get dumbed down",what's,27,Thinkin' too much then my mind get shut down,shut,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,26,"I can't say what's on my mind, get dumbed down",get,28,"Every time I see her, shawty got on tights",Every,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,26,"I can't say what's on my mind, get dumbed down",mind,28,"Every time I see her, shawty got on tights",tights,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,26,"I can't say what's on my mind, get dumbed down",mind,28,"Every time I see her, shawty got on tights",time,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,27,Thinkin' too much then my mind get shut down,much,27,Thinkin' too much then my mind get shut down,shut,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,27,Thinkin' too much then my mind get shut down,get,28,"Every time I see her, shawty got on tights",Every,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,27,Thinkin' too much then my mind get shut down,mind,28,"Every time I see her, shawty got on tights",tights,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,27,Thinkin' too much then my mind get shut down,mind,28,"Every time I see her, shawty got on tights",time,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,27,Thinkin' too much then my mind get shut down,mind,29,"Rain hit my wrist, water turn to ice",ice,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,27,Thinkin' too much then my mind get shut down,Thinkin,29,"Rain hit my wrist, water turn to ice",hit,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,27,Thinkin' too much then my mind get shut down,Thinkin,29,"Rain hit my wrist, water turn to ice",wrist,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,28,"Every time I see her, shawty got on tights",Every,28,"Every time I see her, shawty got on tights",shawty,INNER,ASSONANCE,vowel,LOW,N
+HVN ON EARTH,28,"Every time I see her, shawty got on tights",see,28,"Every time I see her, shawty got on tights",shawty,INNER,ASSONANCE,vowel,LOW,N
+HVN ON EARTH,28,"Every time I see her, shawty got on tights",time,28,"Every time I see her, shawty got on tights",tights,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,28,"Every time I see her, shawty got on tights",tights,29,"Rain hit my wrist, water turn to ice",ice,END,SLANT,cmu,MED,Y
+HVN ON EARTH,28,"Every time I see her, shawty got on tights",shawty,29,"Rain hit my wrist, water turn to ice",water,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,28,"Every time I see her, shawty got on tights",time,29,"Rain hit my wrist, water turn to ice",ice,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,28,"Every time I see her, shawty got on tights",tights,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",life,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,29,"Rain hit my wrist, water turn to ice",hit,29,"Rain hit my wrist, water turn to ice",wrist,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,29,"Rain hit my wrist, water turn to ice",Rain,30,What could I say? I'm just cut that way,say,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,29,"Rain hit my wrist, water turn to ice",Rain,30,What could I say? I'm just cut that way,way,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,29,"Rain hit my wrist, water turn to ice",ice,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",life,END,SLANT,cmu,MED,Y
+HVN ON EARTH,29,"Rain hit my wrist, water turn to ice",hit,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",I'ma,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,29,"Rain hit my wrist, water turn to ice",Rain,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",lay,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,29,"Rain hit my wrist, water turn to ice",Rain,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",play,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,29,"Rain hit my wrist, water turn to ice",Rain,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",take,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,30,What could I say? I'm just cut that way,say,30,What could I say? I'm just cut that way,way,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,30,What could I say? I'm just cut that way,What,30,What could I say? I'm just cut that way,cut,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,30,What could I say? I'm just cut that way,say,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",lay,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,30,What could I say? I'm just cut that way,say,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",play,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,30,What could I say? I'm just cut that way,say,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",take,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,30,What could I say? I'm just cut that way,way,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",lay,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,30,What could I say? I'm just cut that way,way,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",play,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,30,What could I say? I'm just cut that way,way,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",take,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,30,What could I say? I'm just cut that way,could,32,"I'm a killer, so don't push me",push,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",lay,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",take,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",play,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",lay,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",play,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",take,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",I'ma,32,"I'm a killer, so don't push me",killer,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,31,"If you play, you lay, I'ma take your life (That's my—that's my—)",I'ma,33,I don't really care too much for pussy,really,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,32,"I'm a killer, so don't push me",push,33,I don't really care too much for pussy,pussy,END,SLANT,cmu,MED,Y
+HVN ON EARTH,32,"I'm a killer, so don't push me",don't,33,I don't really care too much for pussy,don't,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,32,"I'm a killer, so don't push me",killer,33,I don't really care too much for pussy,really,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,32,"I'm a killer, so don't push me",push,34,"I ain't cheat the grind, look where it took me",took,END,SLANT,cmu,MED,Y
+HVN ON EARTH,32,"I'm a killer, so don't push me",push,34,"I ain't cheat the grind, look where it took me",look,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,32,"I'm a killer, so don't push me",push,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",cookie,END,SLANT,cmu,MED,Y
+HVN ON EARTH,33,I don't really care too much for pussy,pussy,34,"I ain't cheat the grind, look where it took me",took,END,SLANT,cmu,MED,Y
+HVN ON EARTH,33,I don't really care too much for pussy,care,34,"I ain't cheat the grind, look where it took me",where,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,33,I don't really care too much for pussy,pussy,34,"I ain't cheat the grind, look where it took me",look,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,33,I don't really care too much for pussy,pussy,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",cookie,END,SLANT,cmu,MED,Y
+HVN ON EARTH,33,I don't really care too much for pussy,care,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",stepper,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,33,I don't really care too much for pussy,much,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",What,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,34,"I ain't cheat the grind, look where it took me",look,34,"I ain't cheat the grind, look where it took me",took,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,34,"I ain't cheat the grind, look where it took me",took,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",cookie,END,SLANT,cmu,MED,Y
+HVN ON EARTH,34,"I ain't cheat the grind, look where it took me",look,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",cookie,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,34,"I ain't cheat the grind, look where it took me",where,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",stepper,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,34,"I ain't cheat the grind, look where it took me",look,36,"There's no question, I put the bros before bitches",put,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,34,"I ain't cheat the grind, look where it took me",took,36,"There's no question, I put the bros before bitches",put,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,34,"I ain't cheat the grind, look where it took me",where,36,"There's no question, I put the bros before bitches",question,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,34,"I ain't cheat the grind, look where it took me",where,36,"There's no question, I put the bros before bitches",There's,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",cookie,36,"There's no question, I put the bros before bitches",put,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",stepper,36,"There's no question, I put the bros before bitches",question,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",stepper,36,"There's no question, I put the bros before bitches",There's,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",stepper,37,"In four seconds, Beamer go zero to sixty",seconds,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,35,"You a stepper? What you want, a cookie? (That's my—that's my—)",cookie,38,Ain't no tellin' what do I got on this glizzy,glizzy,END,ASSONANCE,vowel,LOW,N
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",There's,36,"There's no question, I put the bros before bitches",question,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",bitches,37,"In four seconds, Beamer go zero to sixty",sixty,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",before,37,"In four seconds, Beamer go zero to sixty",four,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",bitches,37,"In four seconds, Beamer go zero to sixty",zero,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",no,37,"In four seconds, Beamer go zero to sixty",go,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",question,37,"In four seconds, Beamer go zero to sixty",seconds,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",There's,37,"In four seconds, Beamer go zero to sixty",seconds,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",bitches,38,Ain't no tellin' what do I got on this glizzy,glizzy,END,SLANT,spelling,LOW,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",no,38,Ain't no tellin' what do I got on this glizzy,no,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",question,38,Ain't no tellin' what do I got on this glizzy,tellin,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",There's,38,Ain't no tellin' what do I got on this glizzy,tellin,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,36,"There's no question, I put the bros before bitches",bitches,39,"There's no hesitation, I get on her business (That's my—that's my—)",business,END,SLANT,cmu,MED,Y
+HVN ON EARTH,37,"In four seconds, Beamer go zero to sixty",zero,37,"In four seconds, Beamer go zero to sixty",sixty,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,37,"In four seconds, Beamer go zero to sixty",sixty,38,Ain't no tellin' what do I got on this glizzy,glizzy,END,ASSONANCE,vowel,LOW,N
+HVN ON EARTH,37,"In four seconds, Beamer go zero to sixty",go,38,Ain't no tellin' what do I got on this glizzy,no,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,37,"In four seconds, Beamer go zero to sixty",seconds,38,Ain't no tellin' what do I got on this glizzy,tellin,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,37,"In four seconds, Beamer go zero to sixty",sixty,39,"There's no hesitation, I get on her business (That's my—that's my—)",business,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,37,"In four seconds, Beamer go zero to sixty",go,39,"There's no hesitation, I get on her business (That's my—that's my—)",no,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,37,"In four seconds, Beamer go zero to sixty",seconds,39,"There's no hesitation, I get on her business (That's my—that's my—)",get,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,37,"In four seconds, Beamer go zero to sixty",seconds,39,"There's no hesitation, I get on her business (That's my—that's my—)",There's,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,37,"In four seconds, Beamer go zero to sixty",zero,39,"There's no hesitation, I get on her business (That's my—that's my—)",business,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,38,Ain't no tellin' what do I got on this glizzy,glizzy,39,"There's no hesitation, I get on her business (That's my—that's my—)",business,END,SLANT,spelling,LOW,Y
+HVN ON EARTH,38,Ain't no tellin' what do I got on this glizzy,Ain't,39,"There's no hesitation, I get on her business (That's my—that's my—)",hesitation,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,38,Ain't no tellin' what do I got on this glizzy,no,39,"There's no hesitation, I get on her business (That's my—that's my—)",no,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,38,Ain't no tellin' what do I got on this glizzy,tellin,39,"There's no hesitation, I get on her business (That's my—that's my—)",get,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,38,Ain't no tellin' what do I got on this glizzy,tellin,39,"There's no hesitation, I get on her business (That's my—that's my—)",There's,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,38,Ain't no tellin' what do I got on this glizzy,glizzy,40,I've been two years out the feds,years,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,38,Ain't no tellin' what do I got on this glizzy,tellin,40,I've been two years out the feds,feds,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,39,"There's no hesitation, I get on her business (That's my—that's my—)",There's,39,"There's no hesitation, I get on her business (That's my—that's my—)",get,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,39,"There's no hesitation, I get on her business (That's my—that's my—)",business,40,I've been two years out the feds,years,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,39,"There's no hesitation, I get on her business (That's my—that's my—)",get,40,I've been two years out the feds,feds,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,39,"There's no hesitation, I get on her business (That's my—that's my—)",There's,40,I've been two years out the feds,feds,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,39,"There's no hesitation, I get on her business (That's my—that's my—)",business,41,And I still been gettin' niggas pluckered,still,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,39,"There's no hesitation, I get on her business (That's my—that's my—)",get,41,And I still been gettin' niggas pluckered,gettin,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,39,"There's no hesitation, I get on her business (That's my—that's my—)",There's,41,And I still been gettin' niggas pluckered,gettin,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,40,I've been two years out the feds,feds,41,And I still been gettin' niggas pluckered,gettin,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,40,I've been two years out the feds,years,41,And I still been gettin' niggas pluckered,still,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,40,I've been two years out the feds,feds,42,Put a bounty on a nigga head,head,END,SLANT,cmu,MED,Y
+HVN ON EARTH,41,And I still been gettin' niggas pluckered,pluckered,42,Put a bounty on a nigga head,head,END,PERFECT,spelling,MED,Y
+HVN ON EARTH,41,And I still been gettin' niggas pluckered,gettin,42,Put a bounty on a nigga head,head,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,41,And I still been gettin' niggas pluckered,niggas,42,Put a bounty on a nigga head,nigga,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,41,And I still been gettin' niggas pluckered,pluckered,43,Told him that the quicker picker-upper (That's my—that's my—),upper,END,ASSONANCE,vowel,LOW,N
+HVN ON EARTH,41,And I still been gettin' niggas pluckered,still,43,Told him that the quicker picker-upper (That's my—that's my—),him,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,41,And I still been gettin' niggas pluckered,still,43,Told him that the quicker picker-upper (That's my—that's my—),picker,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,41,And I still been gettin' niggas pluckered,still,43,Told him that the quicker picker-upper (That's my—that's my—),quicker,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,42,Put a bounty on a nigga head,nigga,43,Told him that the quicker picker-upper (That's my—that's my—),picker,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,42,Put a bounty on a nigga head,nigga,43,Told him that the quicker picker-upper (That's my—that's my—),quicker,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,43,Told him that the quicker picker-upper (That's my—that's my—),him,43,Told him that the quicker picker-upper (That's my—that's my—),picker,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,43,Told him that the quicker picker-upper (That's my—that's my—),him,43,Told him that the quicker picker-upper (That's my—that's my—),quicker,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,43,Told him that the quicker picker-upper (That's my—that's my—),him quicker,43,Told him that the quicker picker-upper (That's my—that's my—),quicker picker,INNER,MULTI,multi,HIGH,Y
+HVN ON EARTH,43,Told him that the quicker picker-upper (That's my—that's my—),quicker,43,Told him that the quicker picker-upper (That's my—that's my—),picker,INNER,MULTI,multi,HIGH,Y
+HVN ON EARTH,43,Told him that the quicker picker-upper (That's my—that's my—),him,45,"Pourin' the drink by the tablespoon (Oh-oh, oh)",drink,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,43,Told him that the quicker picker-upper (That's my—that's my—),picker,45,"Pourin' the drink by the tablespoon (Oh-oh, oh)",drink,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,43,Told him that the quicker picker-upper (That's my—that's my—),quicker,45,"Pourin' the drink by the tablespoon (Oh-oh, oh)",drink,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,44,The AK made in Romania,made,44,The AK made in Romania,Romania,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,44,The AK made in Romania,made,46,I feed a bad bitch baby food,baby,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,44,The AK made in Romania,Romania,46,I feed a bad bitch baby food,baby,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,44,The AK made in Romania,Romania,47,"They on my macadamia (Oh-oh, oh)",macadamia,END,SLANT,cmu,MED,Y
+HVN ON EARTH,45,"Pourin' the drink by the tablespoon (Oh-oh, oh)",tablespoon,46,I feed a bad bitch baby food,food,END,SLANT,cmu,MED,Y
+HVN ON EARTH,45,"Pourin' the drink by the tablespoon (Oh-oh, oh)",drink,46,I feed a bad bitch baby food,bitch,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,46,I feed a bad bitch baby food,baby,47,"They on my macadamia (Oh-oh, oh)",macadamia,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,46,I feed a bad bitch baby food,bad,48,"Sprite spiked up, thank ya",thank,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,47,"They on my macadamia (Oh-oh, oh)",macadamia,49,"I'm in the suburbs, I'm servin' my neighbor (Oh-oh, oh)",neighbor,END,SLANT,cmu,MED,Y
+HVN ON EARTH,47,"They on my macadamia (Oh-oh, oh)",macadamia,50,I don't got time to respond to no haters,haters,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,47,"They on my macadamia (Oh-oh, oh)",macadamia,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",later,END,SLANT,cmu,MED,Y
+HVN ON EARTH,48,"Sprite spiked up, thank ya",Sprite,48,"Sprite spiked up, thank ya",spiked,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,48,"Sprite spiked up, thank ya",spiked,50,I don't got time to respond to no haters,time,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,48,"Sprite spiked up, thank ya",Sprite,50,I don't got time to respond to no haters,time,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,49,"I'm in the suburbs, I'm servin' my neighbor (Oh-oh, oh)",neighbor,50,I don't got time to respond to no haters,haters,END,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,49,"I'm in the suburbs, I'm servin' my neighbor (Oh-oh, oh)",neighbor,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",later,END,SLANT,cmu,MED,Y
+HVN ON EARTH,50,I don't got time to respond to no haters,don't,50,I don't got time to respond to no haters,no,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,50,I don't got time to respond to no haters,got,50,I don't got time to respond to no haters,respond,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,50,I don't got time to respond to no haters,haters,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",later,END,SLANT,cmu,MED,Y
+HVN ON EARTH,50,I don't got time to respond to no haters,got,52,"Yeah, drum stick, pump rock",rock,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,50,I don't got time to respond to no haters,respond,52,"Yeah, drum stick, pump rock",rock,INNER,ASSONANCE,vowel,MED,Y
+HVN ON EARTH,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",I'ma,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",kill,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",I'ma,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",lil,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",kill,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",lil,INNER,PERFECT,cmu,HIGH,Y
+HVN ON EARTH,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",I'ma,52,"Yeah, drum stick, pump rock",stick,INNER,SLANT,spelling,LOW,Y
+HVN ON EARTH,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",kill,52,"Yeah, drum stick, pump rock",stick,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,51,"But I'ma kill all them lil' niggas later (Oh-oh, oh)",lil,52,"Yeah, drum stick, pump rock",stick,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,52,"Yeah, drum stick, pump rock",drum,52,"Yeah, drum stick, pump rock",pump,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,52,"Yeah, drum stick, pump rock",drum,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",drum,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,52,"Yeah, drum stick, pump rock",pump,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",drum,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,52,"Yeah, drum stick, pump rock",stick,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",stick,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,53,"She like my vibe, uh, yeah (I-I-I—)",like,53,"She like my vibe, uh, yeah (I-I-I—)",vibe,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,53,"She like my vibe, uh, yeah (I-I-I—)",like,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",slide,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,53,"She like my vibe, uh, yeah (I-I-I—)",vibe,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",slide,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",Get,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",get,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",Get,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",let's,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",let's,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",get,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",get,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",drum,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",drum,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",Get,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",get,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",Get,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",let's,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",let's,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",let's,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",let's,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",stick,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",stick,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",get,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",get,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",drum,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",drum,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",Get,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",get,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",Get,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",let's,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",let's,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",let's,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",let's,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,54,"Get it, slide, ooh, drum stick, let's get it (That's my—that's my—)",stick,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",stick,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",let's,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",get,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",get,END,REPEAT,spelling,HIGH,N
+HVN ON EARTH,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",drum,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",drum,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",get,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",let's,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",let's,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",let's,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",let's,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,55,"Yeah (Ooh), drum stick, let's get it (I-I-I—)",stick,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",stick,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",drum,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",drum,INNER,REPEAT,spelling,HIGH,N
+HVN ON EARTH,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",let's,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",get,INNER,SLANT,cmu,MED,Y
+HVN ON EARTH,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",stick,56,"Yeah (Ooh), drum stick, drum stick, rock, let's get it (That's my—that's my—)",stick,INNER,REPEAT,spelling,HIGH,N

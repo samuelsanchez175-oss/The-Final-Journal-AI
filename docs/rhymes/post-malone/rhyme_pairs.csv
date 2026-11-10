@@ -1,0 +1,554 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Die For Me,2,"Yeah, you'd die for me",die,3,"Said you'd die, said you'd die",die,END,REPEAT,spelling,HIGH,N
+Die For Me,2,"Yeah, you'd die for me",die,3,"Said you'd die, said you'd die",die,INNER,REPEAT,spelling,HIGH,N
+Die For Me,2,"Yeah, you'd die for me",you'd,3,"Said you'd die, said you'd die",you'd,INNER,REPEAT,spelling,HIGH,N
+Die For Me,2,"Yeah, you'd die for me",die,4,"But you lied, you lied to me",lied,END,ASSONANCE,vowel,MED,Y
+Die For Me,2,"Yeah, you'd die for me",die,4,"But you lied, you lied to me",lied,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,2,"Yeah, you'd die for me",die,5,"Said you'd take a bullet, told me you would die for me",die,END,REPEAT,spelling,HIGH,N
+Die For Me,2,"Yeah, you'd die for me",die,6,I had a really bad feeling you'd been lying to me,lying,END,ASSONANCE,vowel,MED,Y
+Die For Me,3,"Said you'd die, said you'd die",die,3,"Said you'd die, said you'd die",die,INNER,REPEAT,spelling,HIGH,N
+Die For Me,3,"Said you'd die, said you'd die",Said,3,"Said you'd die, said you'd die",said,INNER,REPEAT,spelling,HIGH,N
+Die For Me,3,"Said you'd die, said you'd die",you'd,3,"Said you'd die, said you'd die",you'd,INNER,REPEAT,spelling,HIGH,N
+Die For Me,3,"Said you'd die, said you'd die",die,4,"But you lied, you lied to me",lied,END,ASSONANCE,vowel,MED,Y
+Die For Me,3,"Said you'd die, said you'd die",die,4,"But you lied, you lied to me",lied,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,3,"Said you'd die, said you'd die",die,5,"Said you'd take a bullet, told me you would die for me",die,END,REPEAT,spelling,HIGH,N
+Die For Me,3,"Said you'd die, said you'd die",die,5,"Said you'd take a bullet, told me you would die for me",die,INNER,REPEAT,spelling,HIGH,N
+Die For Me,3,"Said you'd die, said you'd die",Said,5,"Said you'd take a bullet, told me you would die for me",Said,INNER,REPEAT,spelling,HIGH,N
+Die For Me,3,"Said you'd die, said you'd die",you'd,5,"Said you'd take a bullet, told me you would die for me",you'd,INNER,REPEAT,spelling,HIGH,N
+Die For Me,3,"Said you'd die, said you'd die",die,6,I had a really bad feeling you'd been lying to me,lying,END,ASSONANCE,vowel,MED,Y
+Die For Me,3,"Said you'd die, said you'd die",die,7,"We were on the low, but you were getting high with me",high,END,PERFECT,cmu,HIGH,Y
+Die For Me,4,"But you lied, you lied to me",lied,4,"But you lied, you lied to me",lied,INNER,REPEAT,spelling,HIGH,N
+Die For Me,4,"But you lied, you lied to me",lied,5,"Said you'd take a bullet, told me you would die for me",die,END,ASSONANCE,vowel,MED,Y
+Die For Me,4,"But you lied, you lied to me",lied,5,"Said you'd take a bullet, told me you would die for me",die,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,4,"But you lied, you lied to me",lied,6,I had a really bad feeling you'd been lying to me,lying,END,SLANT,cmu,MED,Y
+Die For Me,4,"But you lied, you lied to me",lied,6,I had a really bad feeling you'd been lying to me,lying,INNER,SLANT,cmu,MED,Y
+Die For Me,4,"But you lied, you lied to me",lied,7,"We were on the low, but you were getting high with me",high,END,ASSONANCE,vowel,MED,Y
+Die For Me,5,"Said you'd take a bullet, told me you would die for me",bullet,5,"Said you'd take a bullet, told me you would die for me",would,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,5,"Said you'd take a bullet, told me you would die for me",die,6,I had a really bad feeling you'd been lying to me,lying,END,ASSONANCE,vowel,MED,Y
+Die For Me,5,"Said you'd take a bullet, told me you would die for me",you'd,6,I had a really bad feeling you'd been lying to me,you'd,INNER,REPEAT,spelling,HIGH,N
+Die For Me,5,"Said you'd take a bullet, told me you would die for me",die,7,"We were on the low, but you were getting high with me",high,END,PERFECT,cmu,HIGH,Y
+Die For Me,5,"Said you'd take a bullet, told me you would die for me",Said,7,"We were on the low, but you were getting high with me",getting,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,5,"Said you'd take a bullet, told me you would die for me",told,7,"We were on the low, but you were getting high with me",low,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,5,"Said you'd take a bullet, told me you would die for me",die,9,"Said you'd die for me, you'd die for me, you'd die for me",die,END,REPEAT,spelling,HIGH,N
+Die For Me,6,I had a really bad feeling you'd been lying to me,had,6,I had a really bad feeling you'd been lying to me,bad,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,6,I had a really bad feeling you'd been lying to me,lying,7,"We were on the low, but you were getting high with me",high,END,ASSONANCE,vowel,MED,Y
+Die For Me,6,I had a really bad feeling you'd been lying to me,bad,8,"When it's past 11, that's a different side I see",past,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,6,I had a really bad feeling you'd been lying to me,feeling,8,"When it's past 11, that's a different side I see",see,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,6,I had a really bad feeling you'd been lying to me,had,8,"When it's past 11, that's a different side I see",past,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,6,I had a really bad feeling you'd been lying to me,lying,8,"When it's past 11, that's a different side I see",side,INNER,SLANT,cmu,MED,Y
+Die For Me,6,I had a really bad feeling you'd been lying to me,really,8,"When it's past 11, that's a different side I see",different,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,6,I had a really bad feeling you'd been lying to me,lying,9,"Said you'd die for me, you'd die for me, you'd die for me",die,END,ASSONANCE,vowel,MED,Y
+Die For Me,6,I had a really bad feeling you'd been lying to me,lying,10,"But you lied to me, you lied to me, you lied to me",lied,END,SLANT,cmu,MED,Y
+Die For Me,7,"We were on the low, but you were getting high with me",getting,8,"When it's past 11, that's a different side I see",When,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,7,"We were on the low, but you were getting high with me",high,8,"When it's past 11, that's a different side I see",side,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,7,"We were on the low, but you were getting high with me",high,9,"Said you'd die for me, you'd die for me, you'd die for me",die,END,PERFECT,cmu,HIGH,Y
+Die For Me,7,"We were on the low, but you were getting high with me",getting,9,"Said you'd die for me, you'd die for me, you'd die for me",Said,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,7,"We were on the low, but you were getting high with me",high,9,"Said you'd die for me, you'd die for me, you'd die for me",die,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,7,"We were on the low, but you were getting high with me",high,10,"But you lied to me, you lied to me, you lied to me",lied,END,ASSONANCE,vowel,MED,Y
+Die For Me,8,"When it's past 11, that's a different side I see",side,9,"Said you'd die for me, you'd die for me, you'd die for me",die,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,8,"When it's past 11, that's a different side I see",When,9,"Said you'd die for me, you'd die for me, you'd die for me",Said,INNER,SLANT,cmu,MED,Y
+Die For Me,8,"When it's past 11, that's a different side I see",side,10,"But you lied to me, you lied to me, you lied to me",lied,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,9,"Said you'd die for me, you'd die for me, you'd die for me",die,9,"Said you'd die for me, you'd die for me, you'd die for me",die,INNER,REPEAT,spelling,HIGH,N
+Die For Me,9,"Said you'd die for me, you'd die for me, you'd die for me",you'd,9,"Said you'd die for me, you'd die for me, you'd die for me",you'd,INNER,REPEAT,spelling,HIGH,N
+Die For Me,9,"Said you'd die for me, you'd die for me, you'd die for me",die,10,"But you lied to me, you lied to me, you lied to me",lied,END,ASSONANCE,vowel,MED,Y
+Die For Me,9,"Said you'd die for me, you'd die for me, you'd die for me",die,10,"But you lied to me, you lied to me, you lied to me",lied,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,9,"Said you'd die for me, you'd die for me, you'd die for me",die,11,"It was love at first sight, felt like you were chosen (Oh)",like,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,9,"Said you'd die for me, you'd die for me, you'd die for me",die,11,"It was love at first sight, felt like you were chosen (Oh)",sight,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,9,"Said you'd die for me, you'd die for me, you'd die for me",Said,11,"It was love at first sight, felt like you were chosen (Oh)",felt,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,10,"But you lied to me, you lied to me, you lied to me",lied,10,"But you lied to me, you lied to me, you lied to me",lied,INNER,REPEAT,spelling,HIGH,N
+Die For Me,10,"But you lied to me, you lied to me, you lied to me",lied,11,"It was love at first sight, felt like you were chosen (Oh)",like,INNER,SLANT,cmu,MED,Y
+Die For Me,10,"But you lied to me, you lied to me, you lied to me",lied,11,"It was love at first sight, felt like you were chosen (Oh)",sight,INNER,SLANT,cmu,MED,Y
+Die For Me,11,"It was love at first sight, felt like you were chosen (Oh)",sight,11,"It was love at first sight, felt like you were chosen (Oh)",like,INNER,SLANT,cmu,MED,Y
+Die For Me,11,"It was love at first sight, felt like you were chosen (Oh)",chosen,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",frozen,END,MULTI,multi,HIGH,Y
+Die For Me,11,"It was love at first sight, felt like you were chosen (Oh)",chosen,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",know,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,11,"It was love at first sight, felt like you were chosen (Oh)",love,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",blood,INNER,SLANT,cmu,MED,Y
+Die For Me,11,"It was love at first sight, felt like you were chosen (Oh)",chosen,13,"Got no patience no more (No), been waitin' too long (Yeah)",no,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",know,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",frozen,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",frozen,13,"Got no patience no more (No), been waitin' too long (Yeah)",no,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",know,13,"Got no patience no more (No), been waitin' too long (Yeah)",no,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",veins,13,"Got no patience no more (No), been waitin' too long (Yeah)",patience,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",veins,13,"Got no patience no more (No), been waitin' too long (Yeah)",waitin,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",blood,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",one,INNER,SLANT,cmu,MED,Y
+Die For Me,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",frozen,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",know,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",know,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",know,INNER,REPEAT,spelling,HIGH,N
+Die For Me,12,"But that blood in your veins, yeah, I know it's frozen (It's so cold)",veins,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",away,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,13,"Got no patience no more (No), been waitin' too long (Yeah)",more,13,"Got no patience no more (No), been waitin' too long (Yeah)",long,INNER,SLANT,cmu,MED,Y
+Die For Me,13,"Got no patience no more (No), been waitin' too long (Yeah)",no,13,"Got no patience no more (No), been waitin' too long (Yeah)",no,INNER,REPEAT,spelling,HIGH,N
+Die For Me,13,"Got no patience no more (No), been waitin' too long (Yeah)",patience,13,"Got no patience no more (No), been waitin' too long (Yeah)",waitin,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,13,"Got no patience no more (No), been waitin' too long (Yeah)",no,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",know,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,13,"Got no patience no more (No), been waitin' too long (Yeah)",patience,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",away,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,13,"Got no patience no more (No), been waitin' too long (Yeah)",waitin,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",away,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,13,"Got no patience no more (No), been waitin' too long (Yeah)",patience,15,"I heard you comin' in, I was lyin' there awake (Awake)",awake,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,13,"Got no patience no more (No), been waitin' too long (Yeah)",waitin,15,"I heard you comin' in, I was lyin' there awake (Awake)",awake,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",hid,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",bitch,INNER,SLANT,cmu,MED,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",hid,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",shit,INNER,SLANT,cmu,MED,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",shit,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",bitch,INNER,SLANT,cmu,MED,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",away,15,"I heard you comin' in, I was lyin' there awake (Awake)",awake,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",one,15,"I heard you comin' in, I was lyin' there awake (Awake)",comin,INNER,SLANT,cmu,MED,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",away,16,"Didn't know that it was you, got the gun right out the safe (Damn)",safe,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",bitch,16,"Didn't know that it was you, got the gun right out the safe (Damn)",Didn't,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",hid,16,"Didn't know that it was you, got the gun right out the safe (Damn)",Didn't,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",know,16,"Didn't know that it was you, got the gun right out the safe (Damn)",know,INNER,REPEAT,spelling,HIGH,N
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",one,16,"Didn't know that it was you, got the gun right out the safe (Damn)",gun,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,14,"You hid that shit away and I was the last one to know, bitch (Ayy, ooh)",shit,16,"Didn't know that it was you, got the gun right out the safe (Damn)",Didn't,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,15,"I heard you comin' in, I was lyin' there awake (Awake)",awake,16,"Didn't know that it was you, got the gun right out the safe (Damn)",safe,END,SLANT,cmu,MED,Y
+Die For Me,15,"I heard you comin' in, I was lyin' there awake (Awake)",comin,16,"Didn't know that it was you, got the gun right out the safe (Damn)",gun,INNER,SLANT,cmu,MED,Y
+Die For Me,15,"I heard you comin' in, I was lyin' there awake (Awake)",there,17,Remember when you got my ass arrested (Wow),arrested,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,15,"I heard you comin' in, I was lyin' there awake (Awake)",there,17,Remember when you got my ass arrested (Wow),Remember,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,15,"I heard you comin' in, I was lyin' there awake (Awake)",there,17,Remember when you got my ass arrested (Wow),when,INNER,SLANT,cmu,MED,Y
+Die For Me,16,"Didn't know that it was you, got the gun right out the safe (Damn)",got,17,Remember when you got my ass arrested (Wow),got,INNER,REPEAT,spelling,HIGH,N
+Die For Me,16,"Didn't know that it was you, got the gun right out the safe (Damn)",got,18,"At least when I was in jail, I got some rest in (Yeah)",got,INNER,REPEAT,spelling,HIGH,N
+Die For Me,16,"Didn't know that it was you, got the gun right out the safe (Damn)",gun,18,"At least when I was in jail, I got some rest in (Yeah)",some,INNER,SLANT,cmu,MED,Y
+Die For Me,16,"Didn't know that it was you, got the gun right out the safe (Damn)",safe,18,"At least when I was in jail, I got some rest in (Yeah)",jail,INNER,SLANT,cmu,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),Remember,17,Remember when you got my ass arrested (Wow),arrested,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),Remember,17,Remember when you got my ass arrested (Wow),when,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),when,17,Remember when you got my ass arrested (Wow),arrested,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),arrested,18,"At least when I was in jail, I got some rest in (Yeah)",rest,END,SLANT,cmu,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),arrested,18,"At least when I was in jail, I got some rest in (Yeah)",when,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),got,18,"At least when I was in jail, I got some rest in (Yeah)",got,INNER,REPEAT,spelling,HIGH,N
+Die For Me,17,Remember when you got my ass arrested (Wow),Remember,18,"At least when I was in jail, I got some rest in (Yeah)",rest,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),Remember,18,"At least when I was in jail, I got some rest in (Yeah)",when,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),when,18,"At least when I was in jail, I got some rest in (Yeah)",rest,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),when,18,"At least when I was in jail, I got some rest in (Yeah)",when,INNER,REPEAT,spelling,HIGH,N
+Die For Me,17,Remember when you got my ass arrested (Wow),arrested,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",forget,END,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),arrested,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",surrender,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),Remember,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",forget,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),Remember,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",surrender,INNER,SLANT,cmu,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),when,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",forget,INNER,SLANT,cmu,MED,Y
+Die For Me,17,Remember when you got my ass arrested (Wow),when,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",surrender,INNER,SLANT,cmu,MED,Y
+Die For Me,18,"At least when I was in jail, I got some rest in (Yeah)",when,18,"At least when I was in jail, I got some rest in (Yeah)",rest,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,18,"At least when I was in jail, I got some rest in (Yeah)",rest,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",forget,END,SLANT,cmu,MED,Y
+Die For Me,18,"At least when I was in jail, I got some rest in (Yeah)",rest,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",surrender,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,18,"At least when I was in jail, I got some rest in (Yeah)",when,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",forget,INNER,SLANT,cmu,MED,Y
+Die For Me,18,"At least when I was in jail, I got some rest in (Yeah)",when,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",surrender,INNER,SLANT,cmu,MED,Y
+Die For Me,18,"At least when I was in jail, I got some rest in (Yeah)",got,20,"I'm too tired to forgive ya (Ayy), it's too hard on my liver (Ayy)",hard,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",surrender,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",forget,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,19,"Ooh, I surrender (Ayy), time to forget ya (Ayy)",time,20,"I'm too tired to forgive ya (Ayy), it's too hard on my liver (Ayy)",tired,INNER,SLANT,cmu,MED,Y
+Die For Me,20,"I'm too tired to forgive ya (Ayy), it's too hard on my liver (Ayy)",forgive,20,"I'm too tired to forgive ya (Ayy), it's too hard on my liver (Ayy)",liver,INNER,SLANT,cmu,MED,Y
+Die For Me,21,And you know (Ayy) it’s all (Ayy) over now,know,21,And you know (Ayy) it’s all (Ayy) over now,over,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,21,And you know (Ayy) it’s all (Ayy) over now,all,22,"All your friends (Ayy), you know (Ayy) they sold you out",All,INNER,REPEAT,spelling,HIGH,N
+Die For Me,21,And you know (Ayy) it’s all (Ayy) over now,know,22,"All your friends (Ayy), you know (Ayy) they sold you out",know,INNER,REPEAT,spelling,HIGH,N
+Die For Me,21,And you know (Ayy) it’s all (Ayy) over now,know,22,"All your friends (Ayy), you know (Ayy) they sold you out",sold,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,21,And you know (Ayy) it’s all (Ayy) over now,over,22,"All your friends (Ayy), you know (Ayy) they sold you out",know,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,21,And you know (Ayy) it’s all (Ayy) over now,over,22,"All your friends (Ayy), you know (Ayy) they sold you out",sold,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,22,"All your friends (Ayy), you know (Ayy) they sold you out",know,22,"All your friends (Ayy), you know (Ayy) they sold you out",sold,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,22,"All your friends (Ayy), you know (Ayy) they sold you out",friends,24,"It was a VIP, happened to be one of my best nights (Yeah)",best,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,23,"But you lied to me, you lied to me, you lied to me, yeah (You lied, yeah)",lied,23,"But you lied to me, you lied to me, you lied to me, yeah (You lied, yeah)",lied,INNER,REPEAT,spelling,HIGH,N
+Die For Me,23,"But you lied to me, you lied to me, you lied to me, yeah (You lied, yeah)",lied,24,"It was a VIP, happened to be one of my best nights (Yeah)",nights,END,ASSONANCE,vowel,MED,Y
+Die For Me,23,"But you lied to me, you lied to me, you lied to me, yeah (You lied, yeah)",lied,24,"It was a VIP, happened to be one of my best nights (Yeah)",nights,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,23,"But you lied to me, you lied to me, you lied to me, yeah (You lied, yeah)",lied,25,"9 AM, I came from out the club, it was daylight (Daylight)",daylight,END,SLANT,cmu,MED,Y
+Die For Me,23,"But you lied to me, you lied to me, you lied to me, yeah (You lied, yeah)",lied,25,"9 AM, I came from out the club, it was daylight (Daylight)",daylight,INNER,SLANT,cmu,MED,Y
+Die For Me,23,"But you lied to me, you lied to me, you lied to me, yeah (You lied, yeah)",lied,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",nice,END,SLANT,cmu,MED,Y
+Die For Me,24,"It was a VIP, happened to be one of my best nights (Yeah)",nights,25,"9 AM, I came from out the club, it was daylight (Daylight)",daylight,END,SLANT,cmu,MED,Y
+Die For Me,24,"It was a VIP, happened to be one of my best nights (Yeah)",one,25,"9 AM, I came from out the club, it was daylight (Daylight)",club,INNER,SLANT,cmu,MED,Y
+Die For Me,24,"It was a VIP, happened to be one of my best nights (Yeah)",nights,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",nice,END,SLANT,cmu,MED,Y
+Die For Me,24,"It was a VIP, happened to be one of my best nights (Yeah)",happened,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",bad,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,24,"It was a VIP, happened to be one of my best nights (Yeah)",VIP,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",treating,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,24,"It was a VIP, happened to be one of my best nights (Yeah)",nights,28,"You just sold your soul, girl, quit crying (Sold your soul)",crying,END,ASSONANCE,vowel,MED,Y
+Die For Me,25,"9 AM, I came from out the club, it was daylight (Daylight)",daylight,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",nice,END,SLANT,cmu,MED,Y
+Die For Me,25,"9 AM, I came from out the club, it was daylight (Daylight)",came,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,25,"9 AM, I came from out the club, it was daylight (Daylight)",club,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",vulnerable,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,25,"9 AM, I came from out the club, it was daylight (Daylight)",club,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",what,INNER,SLANT,cmu,MED,Y
+Die For Me,25,"9 AM, I came from out the club, it was daylight (Daylight)",daylight,28,"You just sold your soul, girl, quit crying (Sold your soul)",crying,END,SLANT,cmu,MED,Y
+Die For Me,25,"9 AM, I came from out the club, it was daylight (Daylight)",daylight,29,"From your passport, it looks like you lying (Know you cold)",lying,END,SLANT,cmu,MED,Y
+Die For Me,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",Got,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",Caught,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",treating,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",being,INNER,SLANT,cmu,MED,Y
+Die For Me,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",treating,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",need,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",nice,28,"You just sold your soul, girl, quit crying (Sold your soul)",crying,END,SLANT,cmu,MED,Y
+Die For Me,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",girl,28,"You just sold your soul, girl, quit crying (Sold your soul)",girl,INNER,REPEAT,spelling,HIGH,N
+Die For Me,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",nice,29,"From your passport, it looks like you lying (Know you cold)",lying,END,SLANT,cmu,MED,Y
+Die For Me,26,"Got a bad girl, I was treating her too nice (I was treating her too nice)",nice,30,"You broken down by your past, don't deny it (You know I know)",deny,END,ASSONANCE,vowel,MED,Y
+Die For Me,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",being,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",need,INNER,SLANT,cmu,MED,Y
+Die For Me,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",vulnerable,27,"Caught you being vulnerable, that ain't what I need, ayy (That ain't what I need)",what,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",sold,28,"You just sold your soul, girl, quit crying (Sold your soul)",soul,INNER,SLANT,cmu,MED,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",crying,29,"From your passport, it looks like you lying (Know you cold)",lying,END,MULTI,multi,HIGH,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",crying,29,"From your passport, it looks like you lying (Know you cold)",like,INNER,SLANT,cmu,MED,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",crying,30,"You broken down by your past, don't deny it (You know I know)",deny,END,ASSONANCE,vowel,MED,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",crying,30,"You broken down by your past, don't deny it (You know I know)",by,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",sold,30,"You broken down by your past, don't deny it (You know I know)",broken,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",sold,30,"You broken down by your past, don't deny it (You know I know)",don't,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",soul,30,"You broken down by your past, don't deny it (You know I know)",broken,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",soul,30,"You broken down by your past, don't deny it (You know I know)",don't,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",crying,31,"Your ex called, you was vulnerable, you flying, nah (Flying)",flying,END,MULTI,multi,HIGH,Y
+Die For Me,28,"You just sold your soul, girl, quit crying (Sold your soul)",crying,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",trying,END,MULTI,multi,HIGH,Y
+Die For Me,29,"From your passport, it looks like you lying (Know you cold)",like,29,"From your passport, it looks like you lying (Know you cold)",lying,INNER,SLANT,cmu,MED,Y
+Die For Me,29,"From your passport, it looks like you lying (Know you cold)",lying,30,"You broken down by your past, don't deny it (You know I know)",deny,END,ASSONANCE,vowel,MED,Y
+Die For Me,29,"From your passport, it looks like you lying (Know you cold)",like,30,"You broken down by your past, don't deny it (You know I know)",by,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,29,"From your passport, it looks like you lying (Know you cold)",like,30,"You broken down by your past, don't deny it (You know I know)",deny,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,29,"From your passport, it looks like you lying (Know you cold)",lying,30,"You broken down by your past, don't deny it (You know I know)",by,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,29,"From your passport, it looks like you lying (Know you cold)",lying,31,"Your ex called, you was vulnerable, you flying, nah (Flying)",flying,END,MULTI,multi,HIGH,Y
+Die For Me,29,"From your passport, it looks like you lying (Know you cold)",like,31,"Your ex called, you was vulnerable, you flying, nah (Flying)",flying,INNER,SLANT,cmu,MED,Y
+Die For Me,29,"From your passport, it looks like you lying (Know you cold)",passport,31,"Your ex called, you was vulnerable, you flying, nah (Flying)",called,INNER,SLANT,cmu,MED,Y
+Die For Me,29,"From your passport, it looks like you lying (Know you cold)",lying,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",trying,END,MULTI,multi,HIGH,Y
+Die For Me,30,"You broken down by your past, don't deny it (You know I know)",broken,30,"You broken down by your past, don't deny it (You know I know)",don't,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,30,"You broken down by your past, don't deny it (You know I know)",by,30,"You broken down by your past, don't deny it (You know I know)",deny,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,30,"You broken down by your past, don't deny it (You know I know)",deny,31,"Your ex called, you was vulnerable, you flying, nah (Flying)",flying,END,ASSONANCE,vowel,MED,Y
+Die For Me,30,"You broken down by your past, don't deny it (You know I know)",by,31,"Your ex called, you was vulnerable, you flying, nah (Flying)",flying,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,30,"You broken down by your past, don't deny it (You know I know)",deny,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",trying,END,ASSONANCE,vowel,MED,Y
+Die For Me,30,"You broken down by your past, don't deny it (You know I know)",by,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",trying,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,31,"Your ex called, you was vulnerable, you flying, nah (Flying)",flying,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",trying,END,MULTI,multi,HIGH,Y
+Die For Me,31,"Your ex called, you was vulnerable, you flying, nah (Flying)",ex,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",best,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",terms,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",girl,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",best,34,Said you never had me caught up in no drama (No drama),never,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",best,34,Said you never had me caught up in no drama (No drama),Said,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",Wasn't,34,Said you never had me caught up in no drama (No drama),caught,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",Wasn't,34,Said you never had me caught up in no drama (No drama),drama,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,32,"Wasn't on the best of terms, girl, I was trying (I was trying on ya)",trying,36,"We been on the low, but you been getting high with me (You was high)",high,END,ASSONANCE,vowel,MED,Y
+Die For Me,34,Said you never had me caught up in no drama (No drama),caught,34,Said you never had me caught up in no drama (No drama),drama,INNER,SLANT,cmu,MED,Y
+Die For Me,34,Said you never had me caught up in no drama (No drama),Said,34,Said you never had me caught up in no drama (No drama),never,INNER,SLANT,cmu,MED,Y
+Die For Me,34,Said you never had me caught up in no drama (No drama),drama,35,I done ran into my karma (I done ran),karma,END,SLANT,cmu,MED,Y
+Die For Me,34,Said you never had me caught up in no drama (No drama),caught,35,I done ran into my karma (I done ran),karma,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,34,Said you never had me caught up in no drama (No drama),had,35,I done ran into my karma (I done ran),ran,INNER,SLANT,cmu,MED,Y
+Die For Me,34,Said you never had me caught up in no drama (No drama),never,36,"We been on the low, but you been getting high with me (You was high)",getting,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,34,Said you never had me caught up in no drama (No drama),no,36,"We been on the low, but you been getting high with me (You was high)",low,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,34,Said you never had me caught up in no drama (No drama),Said,36,"We been on the low, but you been getting high with me (You was high)",getting,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,35,I done ran into my karma (I done ran),done,37,"Settle down, I'll spell it out, it's simple enough",enough,INNER,SLANT,cmu,MED,Y
+Die For Me,36,"We been on the low, but you been getting high with me (You was high)",getting,37,"Settle down, I'll spell it out, it's simple enough",Settle,INNER,SLANT,cmu,MED,Y
+Die For Me,36,"We been on the low, but you been getting high with me (You was high)",getting,37,"Settle down, I'll spell it out, it's simple enough",spell,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,36,"We been on the low, but you been getting high with me (You was high)",high,37,"Settle down, I'll spell it out, it's simple enough",I'll,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,37,"Settle down, I'll spell it out, it's simple enough",Settle,37,"Settle down, I'll spell it out, it's simple enough",spell,INNER,SLANT,cmu,MED,Y
+Die For Me,37,"Settle down, I'll spell it out, it's simple enough",enough,38,"I came around, I figured out, should follow my gut",gut,END,SLANT,cmu,MED,Y
+Die For Me,37,"Settle down, I'll spell it out, it's simple enough",down,38,"I came around, I figured out, should follow my gut",around,INNER,SLANT,cmu,MED,Y
+Die For Me,37,"Settle down, I'll spell it out, it's simple enough",simple,38,"I came around, I figured out, should follow my gut",figured,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,37,"Settle down, I'll spell it out, it's simple enough",enough,39,"I don't play anymore, I went through your phone",through,INNER,SLANT,spelling,LOW,Y
+Die For Me,37,"Settle down, I'll spell it out, it's simple enough",Settle,39,"I don't play anymore, I went through your phone",went,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,37,"Settle down, I'll spell it out, it's simple enough",spell,39,"I don't play anymore, I went through your phone",went,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,38,"I came around, I figured out, should follow my gut",came,39,"I don't play anymore, I went through your phone",play,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,38,"I came around, I figured out, should follow my gut",should,40,And called the girls in your DMs and took all them home,took,INNER,SLANT,cmu,MED,Y
+Die For Me,39,"I don't play anymore, I went through your phone",don't,39,"I don't play anymore, I went through your phone",phone,INNER,SLANT,cmu,MED,Y
+Die For Me,39,"I don't play anymore, I went through your phone",phone,40,And called the girls in your DMs and took all them home,home,END,SLANT,cmu,MED,Y
+Die For Me,39,"I don't play anymore, I went through your phone",anymore,40,And called the girls in your DMs and took all them home,all,INNER,SLANT,cmu,MED,Y
+Die For Me,39,"I don't play anymore, I went through your phone",anymore,40,And called the girls in your DMs and took all them home,called,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,39,"I don't play anymore, I went through your phone",don't,40,And called the girls in your DMs and took all them home,home,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,39,"I don't play anymore, I went through your phone",don't,41,And I know it's been a while since the last time you heard from me,know,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,39,"I don't play anymore, I went through your phone",phone,41,And I know it's been a while since the last time you heard from me,know,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,39,"I don't play anymore, I went through your phone",phone,43,Turns out it shows 'cause they turn out at shows,shows,END,SLANT,cmu,MED,Y
+Die For Me,40,And called the girls in your DMs and took all them home,called,40,And called the girls in your DMs and took all them home,all,INNER,SLANT,cmu,MED,Y
+Die For Me,40,And called the girls in your DMs and took all them home,girls,41,And I know it's been a while since the last time you heard from me,heard,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,40,And called the girls in your DMs and took all them home,home,41,And I know it's been a while since the last time you heard from me,know,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,40,And called the girls in your DMs and took all them home,girls,42,Grew into a savage and that's why they gave this verse to me,verse,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,40,And called the girls in your DMs and took all them home,home,43,Turns out it shows 'cause they turn out at shows,shows,END,SLANT,cmu,MED,Y
+Die For Me,40,And called the girls in your DMs and took all them home,home,44,I sold fifteen million copies of a break-up note,note,END,SLANT,cmu,MED,Y
+Die For Me,41,And I know it's been a while since the last time you heard from me,while,41,And I know it's been a while since the last time you heard from me,time,INNER,SLANT,cmu,MED,Y
+Die For Me,41,And I know it's been a while since the last time you heard from me,heard,42,Grew into a savage and that's why they gave this verse to me,verse,END,SLANT,cmu,MED,Y
+Die For Me,41,And I know it's been a while since the last time you heard from me,last,42,Grew into a savage and that's why they gave this verse to me,savage,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,41,And I know it's been a while since the last time you heard from me,time,42,Grew into a savage and that's why they gave this verse to me,why,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,41,And I know it's been a while since the last time you heard from me,while,42,Grew into a savage and that's why they gave this verse to me,why,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,41,And I know it's been a while since the last time you heard from me,heard,43,Turns out it shows 'cause they turn out at shows,turn,INNER,SLANT,cmu,MED,Y
+Die For Me,41,And I know it's been a while since the last time you heard from me,heard,43,Turns out it shows 'cause they turn out at shows,Turns,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,41,And I know it's been a while since the last time you heard from me,know,43,Turns out it shows 'cause they turn out at shows,shows,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,42,Grew into a savage and that's why they gave this verse to me,verse,43,Turns out it shows 'cause they turn out at shows,turn,INNER,SLANT,cmu,MED,Y
+Die For Me,42,Grew into a savage and that's why they gave this verse to me,verse,43,Turns out it shows 'cause they turn out at shows,Turns,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,42,Grew into a savage and that's why they gave this verse to me,gave,44,I sold fifteen million copies of a break-up note,break,INNER,SLANT,cmu,MED,Y
+Die For Me,43,Turns out it shows 'cause they turn out at shows,shows,43,Turns out it shows 'cause they turn out at shows,shows,INNER,REPEAT,spelling,HIGH,N
+Die For Me,43,Turns out it shows 'cause they turn out at shows,Turns,43,Turns out it shows 'cause they turn out at shows,turn,INNER,SLANT,cmu,MED,Y
+Die For Me,43,Turns out it shows 'cause they turn out at shows,shows,44,I sold fifteen million copies of a break-up note,note,END,SLANT,cmu,MED,Y
+Die For Me,43,Turns out it shows 'cause they turn out at shows,shows,44,I sold fifteen million copies of a break-up note,note,INNER,SLANT,cmu,MED,Y
+Die For Me,43,Turns out it shows 'cause they turn out at shows,shows,44,I sold fifteen million copies of a break-up note,sold,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,44,I sold fifteen million copies of a break-up note,sold,44,I sold fifteen million copies of a break-up note,note,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,44,I sold fifteen million copies of a break-up note,break,45,Brought some strangers in our beds,strangers,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,45,Brought some strangers in our beds,Brought,46,And now you lost your right to privacy,lost,INNER,SLANT,cmu,MED,Y
+Die For Me,45,Brought some strangers in our beds,Brought,47,Spilling all our secrets,all,INNER,SLANT,cmu,MED,Y
+Die For Me,46,And now you lost your right to privacy,right,46,And now you lost your right to privacy,privacy,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,46,And now you lost your right to privacy,lost,47,Spilling all our secrets,all,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,46,And now you lost your right to privacy,privacy,48,When you thought they'd probably die with me,die,END,ASSONANCE,vowel,MED,Y
+Die For Me,46,And now you lost your right to privacy,lost,48,When you thought they'd probably die with me,thought,INNER,SLANT,cmu,MED,Y
+Die For Me,46,And now you lost your right to privacy,right,48,When you thought they'd probably die with me,die,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,47,Spilling all our secrets,all,48,When you thought they'd probably die with me,thought,INNER,SLANT,cmu,MED,Y
+Die For Me,47,Spilling all our secrets,secrets,48,When you thought they'd probably die with me,probably,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,48,When you thought they'd probably die with me,they'd,50,And you don't have to say I'm crazy,crazy,INNER,SLANT,cmu,MED,Y
+Die For Me,48,When you thought they'd probably die with me,they'd,50,And you don't have to say I'm crazy,say,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,49,Know you fucking love it on the low,fucking,49,Know you fucking love it on the low,love,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,49,Know you fucking love it on the low,Know,49,Know you fucking love it on the low,low,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,49,Know you fucking love it on the low,Know,50,And you don't have to say I'm crazy,don't,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,49,Know you fucking love it on the low,low,50,And you don't have to say I'm crazy,don't,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,49,Know you fucking love it on the low,low,51,'Cause I know nothing's changed though,though,END,PERFECT,cmu,HIGH,Y
+Die For Me,49,Know you fucking love it on the low,fucking,51,'Cause I know nothing's changed though,nothing's,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,49,Know you fucking love it on the low,Know,51,'Cause I know nothing's changed though,know,INNER,REPEAT,spelling,HIGH,N
+Die For Me,49,Know you fucking love it on the low,Know,51,'Cause I know nothing's changed though,though,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,49,Know you fucking love it on the low,love,51,'Cause I know nothing's changed though,nothing's,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,49,Know you fucking love it on the low,low,51,'Cause I know nothing's changed though,know,INNER,PERFECT,cmu,HIGH,Y
+Die For Me,50,And you don't have to say I'm crazy,say,50,And you don't have to say I'm crazy,crazy,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,50,And you don't have to say I'm crazy,crazy,51,'Cause I know nothing's changed though,changed,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,50,And you don't have to say I'm crazy,don't,51,'Cause I know nothing's changed though,know,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,50,And you don't have to say I'm crazy,don't,51,'Cause I know nothing's changed though,though,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,50,And you don't have to say I'm crazy,say,51,'Cause I know nothing's changed though,changed,INNER,ASSONANCE,vowel,MED,Y
+Die For Me,51,'Cause I know nothing's changed though,know,51,'Cause I know nothing's changed though,though,INNER,PERFECT,cmu,HIGH,Y
+Rockstar (Crankdat Remix),1,Post Malone – Rockstar ft. 21 Savage – Remix by Crankdat,Post,1,Post Malone – Rockstar ft. 21 Savage – Remix by Crankdat,Malone,INNER,ASSONANCE,vowel,MED,Y
+Rockstar (Crankdat Remix),1,Post Malone – Rockstar ft. 21 Savage – Remix by Crankdat,Crankdat,2,They make that thing go grrra-ta-ta-ta,grrra,INNER,ASSONANCE,vowel,LOW,N
+Rockstar (Crankdat Remix),1,Post Malone – Rockstar ft. 21 Savage – Remix by Crankdat,Malone,2,They make that thing go grrra-ta-ta-ta,go,INNER,ASSONANCE,vowel,MED,Y
+Rockstar (Crankdat Remix),1,Post Malone – Rockstar ft. 21 Savage – Remix by Crankdat,Post,2,They make that thing go grrra-ta-ta-ta,go,INNER,ASSONANCE,vowel,MED,Y
+Rockstar (Crankdat Remix),1,Post Malone – Rockstar ft. 21 Savage – Remix by Crankdat,Rockstar,2,They make that thing go grrra-ta-ta-ta,ta,INNER,ASSONANCE,vowel,MED,Y
+Rockstar (Crankdat Remix),1,Post Malone – Rockstar ft. 21 Savage – Remix by Crankdat,Crankdat,3,"Sayin', ""I'm with the band"" (ayy, ayy)",band,END,ASSONANCE,vowel,LOW,N
+Rockstar (Crankdat Remix),1,Post Malone – Rockstar ft. 21 Savage – Remix by Crankdat,Savage,3,"Sayin', ""I'm with the band"" (ayy, ayy)",band,INNER,ASSONANCE,vowel,MED,Y
+Rockstar (Crankdat Remix),2,They make that thing go grrra-ta-ta-ta,ta,2,They make that thing go grrra-ta-ta-ta,ta,INNER,REPEAT,spelling,HIGH,N
+Rockstar (Crankdat Remix),2,They make that thing go grrra-ta-ta-ta,grrra,3,"Sayin', ""I'm with the band"" (ayy, ayy)",band,INNER,ASSONANCE,vowel,LOW,N
+Rockstar (Crankdat Remix),2,They make that thing go grrra-ta-ta-ta,make,3,"Sayin', ""I'm with the band"" (ayy, ayy)",Sayin,INNER,SLANT,cmu,MED,Y
+Rockstar (Crankdat Remix),2,They make that thing go grrra-ta-ta-ta,ta,4,"Feel just like a rockstar (star, ayy, ayy)",rockstar,END,ASSONANCE,vowel,MED,Y
+Rockstar (Crankdat Remix),2,They make that thing go grrra-ta-ta-ta,ta,4,"Feel just like a rockstar (star, ayy, ayy)",rockstar,INNER,ASSONANCE,vowel,MED,Y
+Rockstar (Crankdat Remix),2,They make that thing go grrra-ta-ta-ta,ta,5,I've been poppin' pillies feel just like a rockstar,rockstar,END,ASSONANCE,vowel,MED,Y
+Rockstar (Crankdat Remix),4,"Feel just like a rockstar (star, ayy, ayy)",rockstar,5,I've been poppin' pillies feel just like a rockstar,rockstar,END,REPEAT,spelling,HIGH,N
+Rockstar (Crankdat Remix),4,"Feel just like a rockstar (star, ayy, ayy)",Feel,5,I've been poppin' pillies feel just like a rockstar,feel,INNER,REPEAT,spelling,HIGH,N
+Rockstar (Crankdat Remix),4,"Feel just like a rockstar (star, ayy, ayy)",like,5,I've been poppin' pillies feel just like a rockstar,like,INNER,REPEAT,spelling,HIGH,N
+Rockstar (Crankdat Remix),4,"Feel just like a rockstar (star, ayy, ayy)",rockstar,5,I've been poppin' pillies feel just like a rockstar,poppin,INNER,ASSONANCE,vowel,MED,Y
+Rockstar (Crankdat Remix),5,I've been poppin' pillies feel just like a rockstar,poppin,5,I've been poppin' pillies feel just like a rockstar,rockstar,INNER,ASSONANCE,vowel,MED,Y
+rockstar,1,I've been fuckin' hoes and poppin' pillies,poppin,2,"Man, I feel just like a rockstar (Ayy, ayy)",rockstar,INNER,ASSONANCE,vowel,MED,Y
+rockstar,1,I've been fuckin' hoes and poppin' pillies,fuckin,3,All my brothers got that gas,brothers,INNER,ASSONANCE,vowel,MED,Y
+rockstar,1,I've been fuckin' hoes and poppin' pillies,poppin,3,All my brothers got that gas,got,INNER,ASSONANCE,vowel,MED,Y
+rockstar,2,"Man, I feel just like a rockstar (Ayy, ayy)",Man,3,All my brothers got that gas,gas,INNER,SLANT,cmu,MED,Y
+rockstar,2,"Man, I feel just like a rockstar (Ayy, ayy)",rockstar,3,All my brothers got that gas,got,INNER,SLANT,cmu,MED,Y
+rockstar,2,"Man, I feel just like a rockstar (Ayy, ayy)",like,4,And they always be smokin' like a Rasta,like,INNER,REPEAT,spelling,HIGH,N
+rockstar,3,All my brothers got that gas,gas,4,And they always be smokin' like a Rasta,Rasta,END,SLANT,spelling,LOW,Y
+rockstar,3,All my brothers got that gas,All,5,"Fuckin' with me, call up on a Uzi",call,INNER,PERFECT,cmu,HIGH,Y
+rockstar,3,All my brothers got that gas,brothers,5,"Fuckin' with me, call up on a Uzi",Fuckin,INNER,ASSONANCE,vowel,MED,Y
+rockstar,3,All my brothers got that gas,gas,6,"And show up, man, them the shottas",shottas,END,PERFECT,spelling,MED,Y
+rockstar,4,And they always be smokin' like a Rasta,smokin,6,"And show up, man, them the shottas",show,INNER,ASSONANCE,vowel,MED,Y
+rockstar,6,"And show up, man, them the shottas",show,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",go,INNER,PERFECT,cmu,HIGH,Y
+rockstar,7,When my homies pull up on your block,block,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",ta,END,ASSONANCE,vowel,MED,Y
+rockstar,7,When my homies pull up on your block,block,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",ta,INNER,ASSONANCE,vowel,MED,Y
+rockstar,7,When my homies pull up on your block,block,9,"Switch my whip, came back in black",black,END,SLANT,spelling,LOW,Y
+rockstar,7,When my homies pull up on your block,block,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",Scott,END,SLANT,cmu,MED,Y
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",ta,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",ta,INNER,REPEAT,spelling,HIGH,N
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",grra,9,"Switch my whip, came back in black",back,INNER,ASSONANCE,vowel,LOW,N
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",grra,9,"Switch my whip, came back in black",black,INNER,ASSONANCE,vowel,LOW,N
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",make,9,"Switch my whip, came back in black",came,INNER,SLANT,cmu,MED,Y
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",thing,9,"Switch my whip, came back in black",Switch,INNER,SLANT,cmu,MED,Y
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",thing,9,"Switch my whip, came back in black",whip,INNER,SLANT,cmu,MED,Y
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",ta,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",Scott,END,ASSONANCE,vowel,MED,Y
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",make,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",sayin,INNER,SLANT,cmu,MED,Y
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",ta,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",Bon,INNER,ASSONANCE,vowel,MED,Y
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",ta,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",Scott,INNER,ASSONANCE,vowel,MED,Y
+rockstar,8,"They make that thing go grra-ta-ta-ta (Pow, pow, pow, ayy, ayy)",ta,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",startin,INNER,ASSONANCE,vowel,MED,Y
+rockstar,9,"Switch my whip, came back in black",back,9,"Switch my whip, came back in black",black,INNER,PERFECT,cmu,HIGH,Y
+rockstar,9,"Switch my whip, came back in black",Switch,9,"Switch my whip, came back in black",whip,INNER,SLANT,cmu,MED,Y
+rockstar,9,"Switch my whip, came back in black",came,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",sayin,INNER,SLANT,cmu,MED,Y
+rockstar,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",Bon,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",Scott,INNER,SLANT,cmu,MED,Y
+rockstar,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",startin,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",Bon,INNER,ASSONANCE,vowel,MED,Y
+rockstar,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",startin,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",Scott,INNER,ASSONANCE,vowel,MED,Y
+rockstar,10,"I'm startin' sayin', ""Rest in peace to Bon Scott"" (Ayy)",Scott,14,Prolly leave my fuckin' show in a cop car (Ayy),car,END,SLANT,cmu,MED,Y
+rockstar,11,"Close that door, we blowin' smoke",blowin,11,"Close that door, we blowin' smoke",smoke,INNER,SLANT,cmu,MED,Y
+rockstar,11,"Close that door, we blowin' smoke",Close,11,"Close that door, we blowin' smoke",blowin,INNER,SLANT,cmu,MED,Y
+rockstar,11,"Close that door, we blowin' smoke",Close,11,"Close that door, we blowin' smoke",smoke,INNER,SLANT,cmu,MED,Y
+rockstar,11,"Close that door, we blowin' smoke",door,12,She ask me light a fire like I'm Morrison (Ayy),Morrison,INNER,ASSONANCE,vowel,MED,Y
+rockstar,12,She ask me light a fire like I'm Morrison (Ayy),fire,12,She ask me light a fire like I'm Morrison (Ayy),like,INNER,ASSONANCE,vowel,MED,Y
+rockstar,12,She ask me light a fire like I'm Morrison (Ayy),light,12,She ask me light a fire like I'm Morrison (Ayy),fire,INNER,ASSONANCE,vowel,MED,Y
+rockstar,12,She ask me light a fire like I'm Morrison (Ayy),light,12,She ask me light a fire like I'm Morrison (Ayy),like,INNER,SLANT,cmu,MED,Y
+rockstar,12,She ask me light a fire like I'm Morrison (Ayy),ask,13,Act a fool on stage,Act,INNER,ASSONANCE,vowel,MED,Y
+rockstar,13,Act a fool on stage,fool,15,Threw a TV out the window of the Montage,Threw,INNER,ASSONANCE,vowel,MED,Y
+rockstar,14,Prolly leave my fuckin' show in a cop car (Ayy),cop,14,Prolly leave my fuckin' show in a cop car (Ayy),car,INNER,SLANT,cmu,MED,Y
+rockstar,14,Prolly leave my fuckin' show in a cop car (Ayy),car,15,Threw a TV out the window of the Montage,Montage,END,SLANT,cmu,MED,Y
+rockstar,14,Prolly leave my fuckin' show in a cop car (Ayy),cop,15,Threw a TV out the window of the Montage,Montage,INNER,SLANT,cmu,MED,Y
+rockstar,14,Prolly leave my fuckin' show in a cop car (Ayy),leave,15,Threw a TV out the window of the Montage,TV,INNER,ASSONANCE,vowel,MED,Y
+rockstar,14,Prolly leave my fuckin' show in a cop car (Ayy),Prolly,15,Threw a TV out the window of the Montage,TV,INNER,ASSONANCE,vowel,LOW,N
+rockstar,14,Prolly leave my fuckin' show in a cop car (Ayy),show,16,"Cocaine on the table, liquor pourin', don't give a damn",don't,INNER,ASSONANCE,vowel,MED,Y
+rockstar,15,Threw a TV out the window of the Montage,window,16,"Cocaine on the table, liquor pourin', don't give a damn",give,INNER,ASSONANCE,vowel,MED,Y
+rockstar,15,Threw a TV out the window of the Montage,window,16,"Cocaine on the table, liquor pourin', don't give a damn",liquor,INNER,ASSONANCE,vowel,MED,Y
+rockstar,15,Threw a TV out the window of the Montage,Threw,17,"Dude, your girlfriend is a groupie, she just tryna get in",Dude,INNER,ASSONANCE,vowel,MED,Y
+rockstar,15,Threw a TV out the window of the Montage,Threw,17,"Dude, your girlfriend is a groupie, she just tryna get in",groupie,INNER,ASSONANCE,vowel,MED,Y
+rockstar,16,"Cocaine on the table, liquor pourin', don't give a damn",Cocaine,16,"Cocaine on the table, liquor pourin', don't give a damn",table,INNER,ASSONANCE,vowel,MED,Y
+rockstar,16,"Cocaine on the table, liquor pourin', don't give a damn",liquor,16,"Cocaine on the table, liquor pourin', don't give a damn",give,INNER,SLANT,cmu,MED,Y
+rockstar,16,"Cocaine on the table, liquor pourin', don't give a damn",damn,18,"Sayin', ""I'm with the band"", ayy, ayy",band,END,ASSONANCE,vowel,MED,Y
+rockstar,16,"Cocaine on the table, liquor pourin', don't give a damn",Cocaine,18,"Sayin', ""I'm with the band"", ayy, ayy",Sayin,INNER,SLANT,cmu,MED,Y
+rockstar,16,"Cocaine on the table, liquor pourin', don't give a damn",table,18,"Sayin', ""I'm with the band"", ayy, ayy",Sayin,INNER,ASSONANCE,vowel,MED,Y
+rockstar,16,"Cocaine on the table, liquor pourin', don't give a damn",damn,19,"Now she actin' outta pocket, tryna grab up on my pants",pants,END,ASSONANCE,vowel,MED,Y
+rockstar,16,"Cocaine on the table, liquor pourin', don't give a damn",damn,20,Hundred bitches in my trailer say they ain't got a man,man,END,SLANT,cmu,MED,Y
+rockstar,17,"Dude, your girlfriend is a groupie, she just tryna get in",Dude,17,"Dude, your girlfriend is a groupie, she just tryna get in",groupie,INNER,SLANT,cmu,MED,Y
+rockstar,17,"Dude, your girlfriend is a groupie, she just tryna get in",girlfriend,17,"Dude, your girlfriend is a groupie, she just tryna get in",get,INNER,ASSONANCE,vowel,MED,Y
+rockstar,17,"Dude, your girlfriend is a groupie, she just tryna get in",Dude,19,"Now she actin' outta pocket, tryna grab up on my pants",outta,INNER,SLANT,cmu,MED,Y
+rockstar,17,"Dude, your girlfriend is a groupie, she just tryna get in",groupie,19,"Now she actin' outta pocket, tryna grab up on my pants",outta,INNER,SLANT,cmu,MED,Y
+rockstar,17,"Dude, your girlfriend is a groupie, she just tryna get in",tryna,19,"Now she actin' outta pocket, tryna grab up on my pants",tryna,INNER,REPEAT,spelling,HIGH,N
+rockstar,17,"Dude, your girlfriend is a groupie, she just tryna get in",get,21,"And they all brought a friend, yeah, ayy",friend,END,ASSONANCE,vowel,MED,Y
+rockstar,18,"Sayin', ""I'm with the band"", ayy, ayy",band,19,"Now she actin' outta pocket, tryna grab up on my pants",pants,END,ASSONANCE,vowel,MED,Y
+rockstar,18,"Sayin', ""I'm with the band"", ayy, ayy",band,19,"Now she actin' outta pocket, tryna grab up on my pants",actin,INNER,ASSONANCE,vowel,MED,Y
+rockstar,18,"Sayin', ""I'm with the band"", ayy, ayy",band,19,"Now she actin' outta pocket, tryna grab up on my pants",grab,INNER,ASSONANCE,vowel,MED,Y
+rockstar,18,"Sayin', ""I'm with the band"", ayy, ayy",band,20,Hundred bitches in my trailer say they ain't got a man,man,END,SLANT,cmu,MED,Y
+rockstar,18,"Sayin', ""I'm with the band"", ayy, ayy",Sayin,20,Hundred bitches in my trailer say they ain't got a man,ain't,INNER,ASSONANCE,vowel,MED,Y
+rockstar,18,"Sayin', ""I'm with the band"", ayy, ayy",Sayin,20,Hundred bitches in my trailer say they ain't got a man,say,INNER,ASSONANCE,vowel,MED,Y
+rockstar,18,"Sayin', ""I'm with the band"", ayy, ayy",Sayin,20,Hundred bitches in my trailer say they ain't got a man,trailer,INNER,SLANT,cmu,MED,Y
+rockstar,19,"Now she actin' outta pocket, tryna grab up on my pants",actin,19,"Now she actin' outta pocket, tryna grab up on my pants",grab,INNER,ASSONANCE,vowel,MED,Y
+rockstar,19,"Now she actin' outta pocket, tryna grab up on my pants",actin,19,"Now she actin' outta pocket, tryna grab up on my pants",pants,INNER,ASSONANCE,vowel,MED,Y
+rockstar,19,"Now she actin' outta pocket, tryna grab up on my pants",grab,19,"Now she actin' outta pocket, tryna grab up on my pants",pants,INNER,ASSONANCE,vowel,MED,Y
+rockstar,19,"Now she actin' outta pocket, tryna grab up on my pants",pants,20,Hundred bitches in my trailer say they ain't got a man,man,END,ASSONANCE,vowel,MED,Y
+rockstar,19,"Now she actin' outta pocket, tryna grab up on my pants",actin,20,Hundred bitches in my trailer say they ain't got a man,man,INNER,ASSONANCE,vowel,MED,Y
+rockstar,19,"Now she actin' outta pocket, tryna grab up on my pants",grab,20,Hundred bitches in my trailer say they ain't got a man,man,INNER,SLANT,cmu,MED,Y
+rockstar,19,"Now she actin' outta pocket, tryna grab up on my pants",pocket,20,Hundred bitches in my trailer say they ain't got a man,got,INNER,SLANT,cmu,MED,Y
+rockstar,20,Hundred bitches in my trailer say they ain't got a man,say,20,Hundred bitches in my trailer say they ain't got a man,ain't,INNER,ASSONANCE,vowel,MED,Y
+rockstar,20,Hundred bitches in my trailer say they ain't got a man,trailer,20,Hundred bitches in my trailer say they ain't got a man,ain't,INNER,ASSONANCE,vowel,MED,Y
+rockstar,20,Hundred bitches in my trailer say they ain't got a man,trailer,20,Hundred bitches in my trailer say they ain't got a man,say,INNER,ASSONANCE,vowel,MED,Y
+rockstar,20,Hundred bitches in my trailer say they ain't got a man,bitches,22,I've been in the Hills fuckin' superstars,Hills,INNER,SLANT,cmu,MED,Y
+rockstar,20,Hundred bitches in my trailer say they ain't got a man,got,22,I've been in the Hills fuckin' superstars,superstars,INNER,ASSONANCE,vowel,MED,Y
+rockstar,20,Hundred bitches in my trailer say they ain't got a man,Hundred,22,I've been in the Hills fuckin' superstars,fuckin,INNER,ASSONANCE,vowel,MED,Y
+rockstar,21,"And they all brought a friend, yeah, ayy",all,21,"And they all brought a friend, yeah, ayy",brought,INNER,SLANT,cmu,MED,Y
+rockstar,22,I've been in the Hills fuckin' superstars,fuckin,24,"Drankin' Henny, bad bitches jumpin' in the pool",Drankin,INNER,PERFECT,spelling,MED,Y
+rockstar,22,I've been in the Hills fuckin' superstars,fuckin,24,"Drankin' Henny, bad bitches jumpin' in the pool",jumpin,INNER,ASSONANCE,vowel,MED,Y
+rockstar,22,I've been in the Hills fuckin' superstars,Hills,24,"Drankin' Henny, bad bitches jumpin' in the pool",bitches,INNER,SLANT,cmu,MED,Y
+rockstar,22,I've been in the Hills fuckin' superstars,superstars,25,And they ain't got on no bra (Bra),bra,END,ASSONANCE,vowel,MED,Y
+rockstar,24,"Drankin' Henny, bad bitches jumpin' in the pool",bad,26,"Hit her from the back, pullin' on her tracks",back,INNER,SLANT,cmu,MED,Y
+rockstar,24,"Drankin' Henny, bad bitches jumpin' in the pool",bad,26,"Hit her from the back, pullin' on her tracks",tracks,INNER,ASSONANCE,vowel,MED,Y
+rockstar,24,"Drankin' Henny, bad bitches jumpin' in the pool",bitches,26,"Hit her from the back, pullin' on her tracks",Hit,INNER,ASSONANCE,vowel,MED,Y
+rockstar,24,"Drankin' Henny, bad bitches jumpin' in the pool",Drankin,26,"Hit her from the back, pullin' on her tracks",pullin,INNER,PERFECT,spelling,MED,Y
+rockstar,25,And they ain't got on no bra (Bra),got,25,And they ain't got on no bra (Bra),bra,INNER,ASSONANCE,vowel,MED,Y
+rockstar,25,And they ain't got on no bra (Bra),no,27,"And now she screamin' out, ""¡No más!"" (Yeah, yeah, yeah)",No,INNER,REPEAT,spelling,HIGH,N
+rockstar,25,And they ain't got on no bra (Bra),bra,28,"They like, ""Savage, why you got a twelve car garage",garage,END,ASSONANCE,vowel,MED,Y
+rockstar,25,And they ain't got on no bra (Bra),bra,29,"And you only got six cars?"" (21)",cars,END,ASSONANCE,vowel,MED,Y
+rockstar,26,"Hit her from the back, pullin' on her tracks",back,26,"Hit her from the back, pullin' on her tracks",tracks,INNER,SLANT,cmu,MED,Y
+rockstar,26,"Hit her from the back, pullin' on her tracks",back,28,"They like, ""Savage, why you got a twelve car garage",Savage,INNER,ASSONANCE,vowel,MED,Y
+rockstar,26,"Hit her from the back, pullin' on her tracks",tracks,28,"They like, ""Savage, why you got a twelve car garage",Savage,INNER,ASSONANCE,vowel,MED,Y
+rockstar,27,"And now she screamin' out, ""¡No más!"" (Yeah, yeah, yeah)",m,27,"And now she screamin' out, ""¡No más!"" (Yeah, yeah, yeah)",s,INNER,SLANT,cmu,MED,Y
+rockstar,27,"And now she screamin' out, ""¡No más!"" (Yeah, yeah, yeah)",m,28,"They like, ""Savage, why you got a twelve car garage",twelve,INNER,ASSONANCE,vowel,MED,Y
+rockstar,27,"And now she screamin' out, ""¡No más!"" (Yeah, yeah, yeah)",s,28,"They like, ""Savage, why you got a twelve car garage",twelve,INNER,ASSONANCE,vowel,MED,Y
+rockstar,27,"And now she screamin' out, ""¡No más!"" (Yeah, yeah, yeah)",No,29,"And you only got six cars?"" (21)",only,INNER,ASSONANCE,vowel,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",car,28,"They like, ""Savage, why you got a twelve car garage",garage,INNER,SLANT,cmu,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",got,28,"They like, ""Savage, why you got a twelve car garage",car,INNER,SLANT,cmu,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",got,28,"They like, ""Savage, why you got a twelve car garage",garage,INNER,SLANT,cmu,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",like,28,"They like, ""Savage, why you got a twelve car garage",why,INNER,ASSONANCE,vowel,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",garage,29,"And you only got six cars?"" (21)",cars,END,ASSONANCE,vowel,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",car,29,"And you only got six cars?"" (21)",cars,INNER,SLANT,cmu,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",car,29,"And you only got six cars?"" (21)",got,INNER,SLANT,cmu,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",garage,29,"And you only got six cars?"" (21)",got,INNER,SLANT,cmu,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",got,29,"And you only got six cars?"" (21)",cars,INNER,ASSONANCE,vowel,MED,Y
+rockstar,28,"They like, ""Savage, why you got a twelve car garage",got,29,"And you only got six cars?"" (21)",got,INNER,REPEAT,spelling,HIGH,N
+rockstar,29,"And you only got six cars?"" (21)",got,29,"And you only got six cars?"" (21)",cars,INNER,ASSONANCE,vowel,MED,Y
+rockstar,29,"And you only got six cars?"" (21)",six,30,"I ain't with the cakin', how you kiss that? (Kiss that)",kiss,INNER,SLANT,cmu,MED,Y
+rockstar,29,"And you only got six cars?"" (21)",only,31,Your wifey say I'm lookin' like a whole snack (Big snack),whole,INNER,SLANT,cmu,MED,Y
+rockstar,30,"I ain't with the cakin', how you kiss that? (Kiss that)",ain't,31,Your wifey say I'm lookin' like a whole snack (Big snack),say,INNER,ASSONANCE,vowel,MED,Y
+rockstar,30,"I ain't with the cakin', how you kiss that? (Kiss that)",cakin,31,Your wifey say I'm lookin' like a whole snack (Big snack),snack,INNER,SLANT,spelling,LOW,Y
+rockstar,30,"I ain't with the cakin', how you kiss that? (Kiss that)",kiss,31,Your wifey say I'm lookin' like a whole snack (Big snack),wifey,INNER,SLANT,spelling,LOW,Y
+rockstar,30,"I ain't with the cakin', how you kiss that? (Kiss that)",ain't,32,"Green hunnids in my safe, I got old racks (Old racks)",safe,INNER,ASSONANCE,vowel,MED,Y
+rockstar,30,"I ain't with the cakin', how you kiss that? (Kiss that)",cakin,32,"Green hunnids in my safe, I got old racks (Old racks)",racks,INNER,SLANT,spelling,LOW,Y
+rockstar,31,Your wifey say I'm lookin' like a whole snack (Big snack),wifey,31,Your wifey say I'm lookin' like a whole snack (Big snack),say,INNER,ASSONANCE,vowel,LOW,N
+rockstar,31,Your wifey say I'm lookin' like a whole snack (Big snack),snack,32,"Green hunnids in my safe, I got old racks (Old racks)",racks,END,SLANT,cmu,MED,Y
+rockstar,31,Your wifey say I'm lookin' like a whole snack (Big snack),say,32,"Green hunnids in my safe, I got old racks (Old racks)",safe,INNER,ASSONANCE,vowel,MED,Y
+rockstar,31,Your wifey say I'm lookin' like a whole snack (Big snack),whole,32,"Green hunnids in my safe, I got old racks (Old racks)",old,INNER,SLANT,cmu,MED,Y
+rockstar,31,Your wifey say I'm lookin' like a whole snack (Big snack),say,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",always,INNER,ASSONANCE,vowel,MED,Y
+rockstar,31,Your wifey say I'm lookin' like a whole snack (Big snack),whole,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",coke,INNER,SLANT,cmu,MED,Y
+rockstar,31,Your wifey say I'm lookin' like a whole snack (Big snack),wifey,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",askin,INNER,SLANT,spelling,LOW,Y
+rockstar,32,"Green hunnids in my safe, I got old racks (Old racks)",old,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",coke,INNER,ASSONANCE,vowel,MED,Y
+rockstar,32,"Green hunnids in my safe, I got old racks (Old racks)",safe,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",always,INNER,SLANT,cmu,MED,Y
+rockstar,32,"Green hunnids in my safe, I got old racks (Old racks)",got,34,"Livin' like a rockstar, smash out on a cop car",car,INNER,SLANT,cmu,MED,Y
+rockstar,32,"Green hunnids in my safe, I got old racks (Old racks)",got,34,"Livin' like a rockstar, smash out on a cop car",cop,INNER,SLANT,cmu,MED,Y
+rockstar,32,"Green hunnids in my safe, I got old racks (Old racks)",got,34,"Livin' like a rockstar, smash out on a cop car",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,32,"Green hunnids in my safe, I got old racks (Old racks)",racks,34,"Livin' like a rockstar, smash out on a cop car",smash,INNER,ASSONANCE,vowel,MED,Y
+rockstar,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",bitches,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",askin,INNER,ASSONANCE,vowel,MED,Y
+rockstar,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",L,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",Where,INNER,SLANT,cmu,MED,Y
+rockstar,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",askin,34,"Livin' like a rockstar, smash out on a cop car",Livin,INNER,ASSONANCE,vowel,MED,Y
+rockstar,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",bitches,34,"Livin' like a rockstar, smash out on a cop car",Livin,INNER,ASSONANCE,vowel,MED,Y
+rockstar,33,"L.A. bitches always askin', ""Where the coke at?"" (21, 21)",coke,35,"Sweeter than a Pop-Tart, you know you are not hard",know,INNER,ASSONANCE,vowel,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",cop,34,"Livin' like a rockstar, smash out on a cop car",car,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,INNER,PERFECT,cmu,HIGH,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",rockstar,34,"Livin' like a rockstar, smash out on a cop car",cop,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,END,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,35,"Sweeter than a Pop-Tart, you know you are not hard",not,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",cop,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,INNER,ASSONANCE,vowel,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",cop,35,"Sweeter than a Pop-Tart, you know you are not hard",not,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",cop,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,INNER,PERFECT,cmu,HIGH,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",cop,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,INNER,ASSONANCE,vowel,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",not,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,36,"I done made the hot chart, 'member I used to trap hard",hard,END,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,36,"I done made the hot chart, 'member I used to trap hard",chart,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,36,"I done made the hot chart, 'member I used to trap hard",hot,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",cop,36,"I done made the hot chart, 'member I used to trap hard",chart,INNER,ASSONANCE,vowel,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",cop,36,"I done made the hot chart, 'member I used to trap hard",hard,INNER,ASSONANCE,vowel,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",cop,36,"I done made the hot chart, 'member I used to trap hard",hot,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",rockstar,36,"I done made the hot chart, 'member I used to trap hard",chart,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",rockstar,36,"I done made the hot chart, 'member I used to trap hard",hard,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",rockstar,36,"I done made the hot chart, 'member I used to trap hard",hot,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",smash,36,"I done made the hot chart, 'member I used to trap hard",trap,INNER,SLANT,cmu,MED,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,END,PERFECT,cmu,HIGH,Y
+rockstar,34,"Livin' like a rockstar, smash out on a cop car",car,38,"Star, star, rockstar, rockstar, star",star,END,PERFECT,cmu,HIGH,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",not,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,INNER,ASSONANCE,vowel,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,INNER,ASSONANCE,vowel,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,35,"Sweeter than a Pop-Tart, you know you are not hard",not,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,INNER,ASSONANCE,vowel,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,35,"Sweeter than a Pop-Tart, you know you are not hard",not,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,36,"I done made the hot chart, 'member I used to trap hard",hard,END,REPEAT,spelling,HIGH,N
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,36,"I done made the hot chart, 'member I used to trap hard",chart,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,36,"I done made the hot chart, 'member I used to trap hard",hot,INNER,ASSONANCE,vowel,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",not,36,"I done made the hot chart, 'member I used to trap hard",chart,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",not,36,"I done made the hot chart, 'member I used to trap hard",hard,INNER,ASSONANCE,vowel,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",not,36,"I done made the hot chart, 'member I used to trap hard",hot,INNER,PERFECT,cmu,HIGH,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,36,"I done made the hot chart, 'member I used to trap hard",chart,INNER,ASSONANCE,vowel,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,36,"I done made the hot chart, 'member I used to trap hard",hard,INNER,ASSONANCE,vowel,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,36,"I done made the hot chart, 'member I used to trap hard",hot,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,36,"I done made the hot chart, 'member I used to trap hard",chart,INNER,PERFECT,cmu,HIGH,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,36,"I done made the hot chart, 'member I used to trap hard",hard,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,36,"I done made the hot chart, 'member I used to trap hard",hot,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,END,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",not,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Pop,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",Tart,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,35,"Sweeter than a Pop-Tart, you know you are not hard",hard,38,"Star, star, rockstar, rockstar, star",star,END,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",chart,36,"I done made the hot chart, 'member I used to trap hard",hard,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hot,36,"I done made the hot chart, 'member I used to trap hard",chart,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hot,36,"I done made the hot chart, 'member I used to trap hard",hard,INNER,ASSONANCE,vowel,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hard,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,END,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",chart,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hard,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hot,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hard,38,"Star, star, rockstar, rockstar, star",star,END,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",chart,38,"Star, star, rockstar, rockstar, star",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",chart,38,"Star, star, rockstar, rockstar, star",Star,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hard,38,"Star, star, rockstar, rockstar, star",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hard,38,"Star, star, rockstar, rockstar, star",Star,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hot,38,"Star, star, rockstar, rockstar, star",rockstar,INNER,SLANT,cmu,MED,Y
+rockstar,36,"I done made the hot chart, 'member I used to trap hard",hot,38,"Star, star, rockstar, rockstar, star",Star,INNER,SLANT,cmu,MED,Y
+rockstar,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",like,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",like,INNER,REPEAT,spelling,HIGH,N
+rockstar,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",Livin,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",livin,INNER,REPEAT,spelling,HIGH,N
+rockstar,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,INNER,REPEAT,spelling,HIGH,N
+rockstar,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,38,"Star, star, rockstar, rockstar, star",star,END,PERFECT,cmu,HIGH,Y
+rockstar,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,38,"Star, star, rockstar, rockstar, star",rockstar,INNER,REPEAT,spelling,HIGH,N
+rockstar,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,38,"Star, star, rockstar, rockstar, star",Star,INNER,PERFECT,cmu,HIGH,Y
+rockstar,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",like,39,"Rockstar, feel just like a—",like,INNER,REPEAT,spelling,HIGH,N
+rockstar,37,"Livin' like a rockstar, I'm livin' like a rockstar (Ayy)",rockstar,39,"Rockstar, feel just like a—",Rockstar,INNER,REPEAT,spelling,HIGH,N
+rockstar,38,"Star, star, rockstar, rockstar, star",rockstar,38,"Star, star, rockstar, rockstar, star",rockstar,INNER,REPEAT,spelling,HIGH,N
+rockstar,38,"Star, star, rockstar, rockstar, star",rockstar,38,"Star, star, rockstar, rockstar, star",star,INNER,PERFECT,cmu,HIGH,Y
+rockstar,38,"Star, star, rockstar, rockstar, star",Star,38,"Star, star, rockstar, rockstar, star",rockstar,INNER,PERFECT,cmu,HIGH,Y
+rockstar,38,"Star, star, rockstar, rockstar, star",Star,38,"Star, star, rockstar, rockstar, star",star,INNER,REPEAT,spelling,HIGH,N
+rockstar,38,"Star, star, rockstar, rockstar, star",rockstar,39,"Rockstar, feel just like a—",Rockstar,INNER,REPEAT,spelling,HIGH,N
+rockstar,38,"Star, star, rockstar, rockstar, star",Star,39,"Rockstar, feel just like a—",Rockstar,INNER,PERFECT,cmu,HIGH,Y
+rockstar,39,"Rockstar, feel just like a—",like,40,Feel just like a—,like,END,REPEAT,spelling,HIGH,N
+rockstar,39,"Rockstar, feel just like a—",feel,40,Feel just like a—,Feel,INNER,REPEAT,spelling,HIGH,N
+rockstar (Clean Radio Edit),1,I've been ******* **** and poppin' *******,poppin,3,"Prolly leave my ******* show in a cop car (Car, ayy)",car,END,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),1,I've been ******* **** and poppin' *******,poppin,3,"Prolly leave my ******* show in a cop car (Car, ayy)",cop,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),2,"With me, with me, call up on a",call,4,"******* on the table, liquor pourin', don't give a damn",pourin,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),3,"Prolly leave my ******* show in a cop car (Car, ayy)",cop,3,"Prolly leave my ******* show in a cop car (Car, ayy)",car,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),3,"Prolly leave my ******* show in a cop car (Car, ayy)",show,4,"******* on the table, liquor pourin', don't give a damn",don't,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),4,"******* on the table, liquor pourin', don't give a damn",liquor,4,"******* on the table, liquor pourin', don't give a damn",give,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),4,"******* on the table, liquor pourin', don't give a damn",damn,5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",band,END,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),4,"******* on the table, liquor pourin', don't give a damn",table,5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",Sayin,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),4,"******* on the table, liquor pourin', don't give a damn",table,5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",th,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),4,"******* on the table, liquor pourin', don't give a damn",damn,6,Hundred ******* in my trailеr say they ain't got a man,man,END,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),4,"******* on the table, liquor pourin', don't give a damn",table,6,Hundred ******* in my trailеr say they ain't got a man,ain't,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),4,"******* on the table, liquor pourin', don't give a damn",table,6,Hundred ******* in my trailеr say they ain't got a man,say,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),4,"******* on the table, liquor pourin', don't give a damn",table,6,Hundred ******* in my trailеr say they ain't got a man,trail,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",Sayin,5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",th,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",band,6,Hundred ******* in my trailеr say they ain't got a man,man,END,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",Sayin,6,Hundred ******* in my trailеr say they ain't got a man,ain't,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",Sayin,6,Hundred ******* in my trailеr say they ain't got a man,say,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",Sayin,6,Hundred ******* in my trailеr say they ain't got a man,trail,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",th,6,Hundred ******* in my trailеr say they ain't got a man,ain't,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",th,6,Hundred ******* in my trailеr say they ain't got a man,say,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),5,"Sayin', ""I'm with thе band"" (Ayy, ayy)",th,6,Hundred ******* in my trailеr say they ain't got a man,trail,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),6,Hundred ******* in my trailеr say they ain't got a man,r,6,Hundred ******* in my trailеr say they ain't got a man,got,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),6,Hundred ******* in my trailеr say they ain't got a man,say,6,Hundred ******* in my trailеr say they ain't got a man,ain't,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),6,Hundred ******* in my trailеr say they ain't got a man,trail,6,Hundred ******* in my trailеr say they ain't got a man,ain't,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),6,Hundred ******* in my trailеr say they ain't got a man,trail,6,Hundred ******* in my trailеr say they ain't got a man,say,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),6,Hundred ******* in my trailеr say they ain't got a man,got,8,I've been in the Hills ******* superstars,superstars,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),6,Hundred ******* in my trailеr say they ain't got a man,r,8,I've been in the Hills ******* superstars,superstars,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),6,Hundred ******* in my trailеr say they ain't got a man,man,10,"Green hundreds in my safe, I got old racks (Old racks)",racks,END,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),7,"And they all brought a friend (Yeah, ayy, ayy, ayy)",all,7,"And they all brought a friend (Yeah, ayy, ayy, ayy)",brought,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),7,"And they all brought a friend (Yeah, ayy, ayy, ayy)",friend,9,"Drankin' Henny, bad ******* jumpin' in the pool",Henny,INNER,SLANT,spelling,LOW,Y
+rockstar (Clean Radio Edit),8,I've been in the Hills ******* superstars,superstars,10,"Green hundreds in my safe, I got old racks (Old racks)",got,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),9,"Drankin' Henny, bad ******* jumpin' in the pool",bad,10,"Green hundreds in my safe, I got old racks (Old racks)",racks,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),9,"Drankin' Henny, bad ******* jumpin' in the pool",jumpin,10,"Green hundreds in my safe, I got old racks (Old racks)",hundreds,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),9,"Drankin' Henny, bad ******* jumpin' in the pool",Drankin,11,"L.A. ******* always askin', ""Where the coke at?"" (21, 21)",askin,INNER,PERFECT,spelling,MED,Y
+rockstar (Clean Radio Edit),10,"Green hundreds in my safe, I got old racks (Old racks)",old,11,"L.A. ******* always askin', ""Where the coke at?"" (21, 21)",coke,INNER,ASSONANCE,vowel,MED,Y
+rockstar (Clean Radio Edit),10,"Green hundreds in my safe, I got old racks (Old racks)",safe,11,"L.A. ******* always askin', ""Where the coke at?"" (21, 21)",always,INNER,SLANT,cmu,MED,Y
+rockstar (Clean Radio Edit),11,"L.A. ******* always askin', ""Where the coke at?"" (21, 21)",L,11,"L.A. ******* always askin', ""Where the coke at?"" (21, 21)",Where,INNER,SLANT,cmu,MED,Y
