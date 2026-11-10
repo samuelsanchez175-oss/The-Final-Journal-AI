@@ -36,6 +36,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 24 | partynextdoor | PARTYNEXTDOOR | 312 | 10357 | 41946 | 6635 | 35311 | 41393 | 2026-11-10 13:12 ET |
 | 25 | frank-ocean | Frank Ocean | 324 | 10043 | 44377 | 6230 | 38147 | 43422 | 2026-11-10 13:13 ET |
 | 26 | latto | Latto | 254 | 9691 | 59220 | 9765 | 49455 | 57977 | 2026-11-10 13:13 ET |
+| 27 | veeze | Veeze | 220 | 9373 | 82322 | 11320 | 71002 | 81192 | 2026-11-10 13:14 ET |
+| 28 | cardi-b | Cardi B | 222 | 8459 | 47706 | 6996 | 40710 | 45847 | 2026-11-10 13:14 ET |
+| 29 | offset | Offset | 182 | 7078 | 41646 | 9803 | 31843 | 40997 | 2026-11-10 13:15 ET |
+| 30 | homixide-gang | Homixide Gang | 235 | 6431 | 30651 | 5698 | 24953 | 30107 | 2026-11-10 13:15 ET |
+| 31 | bia | BIA | 158 | 5439 | 31799 | 5421 | 26378 | 30192 | 2026-11-10 13:15 ET |
+| 32 | pop-smoke | Pop Smoke | 152 | 4685 | 21423 | 4218 | 17205 | 20862 | 2026-11-10 13:15 ET |
+| 33 | bossman-dlow | BossMan Dlow | 142 | 4233 | 32948 | 3558 | 29390 | 32596 | 2026-11-10 13:16 ET |
+| 34 | bslime | BSlime | 69 | 2847 | 17065 | 3007 | 14058 | 16816 | 2026-11-10 13:16 ET |
+| 35 | montana-700 | Montana 700 | 55 | 2016 | 16508 | 2360 | 14148 | 16402 | 2026-11-10 13:16 ET |
+| 36 | unfoonk | Unfoonk | 36 | 1302 | 8200 | 1126 | 7074 | 8105 | 2026-11-10 13:16 ET |
 
 ## Failures
 
@@ -43,7 +53,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 26/386: Latto.
+Finished 36/386: Unfoonk.
 
 ## Final
 
