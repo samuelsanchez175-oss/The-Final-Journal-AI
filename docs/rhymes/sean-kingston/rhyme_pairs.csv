@@ -1,0 +1,216 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Darkest Times,1,I've been thinking 'bout my darkest days,days,2,Remember all the times we had away,away,END,ASSONANCE,vowel,MED,Y
+Darkest Times,1,I've been thinking 'bout my darkest days,days,3,"I'm so scarred, you can see it in my face, oh-oh",face,END,SLANT,cmu,MED,Y
+Darkest Times,1,I've been thinking 'bout my darkest days,darkest,3,"I'm so scarred, you can see it in my face, oh-oh",scarred,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,2,Remember all the times we had away,away,3,"I'm so scarred, you can see it in my face, oh-oh",face,END,ASSONANCE,vowel,MED,Y
+Darkest Times,2,Remember all the times we had away,had,3,"I'm so scarred, you can see it in my face, oh-oh",can,INNER,SLANT,cmu,MED,Y
+Darkest Times,2,Remember all the times we had away,times,4,"Oh, I don't know why I'm holdin' on, holdin' on",why,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,3,"I'm so scarred, you can see it in my face, oh-oh",scarred,5,"Oh I, need you in my darkest times",darkest,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,3,"I'm so scarred, you can see it in my face, oh-oh",see,5,"Oh I, need you in my darkest times",need,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,3,"I'm so scarred, you can see it in my face, oh-oh",face,7,"Sometimes we walk through the rain, ah (Rain)",rain,END,SLANT,cmu,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",don't,4,"Oh, I don't know why I'm holdin' on, holdin' on",holdin,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",don't,4,"Oh, I don't know why I'm holdin' on, holdin' on",know,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",holdin,4,"Oh, I don't know why I'm holdin' on, holdin' on",holdin,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",know,4,"Oh, I don't know why I'm holdin' on, holdin' on",holdin,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",why,5,"Oh I, need you in my darkest times",times,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",don't,6,"Oh-woah, oh, I, know I won't let time go by",go,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",don't,6,"Oh-woah, oh, I, know I won't let time go by",know,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",don't,6,"Oh-woah, oh, I, know I won't let time go by",won't,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",holdin,6,"Oh-woah, oh, I, know I won't let time go by",go,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",holdin,6,"Oh-woah, oh, I, know I won't let time go by",know,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",holdin,6,"Oh-woah, oh, I, know I won't let time go by",won't,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",know,6,"Oh-woah, oh, I, know I won't let time go by",go,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",know,6,"Oh-woah, oh, I, know I won't let time go by",know,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",know,6,"Oh-woah, oh, I, know I won't let time go by",won't,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",why,6,"Oh-woah, oh, I, know I won't let time go by",by,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,4,"Oh, I don't know why I'm holdin' on, holdin' on",why,6,"Oh-woah, oh, I, know I won't let time go by",time,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,5,"Oh I, need you in my darkest times",times,6,"Oh-woah, oh, I, know I won't let time go by",by,END,ASSONANCE,vowel,MED,Y
+Darkest Times,5,"Oh I, need you in my darkest times",times,6,"Oh-woah, oh, I, know I won't let time go by",time,INNER,SLANT,cmu,MED,Y
+Darkest Times,5,"Oh I, need you in my darkest times",times,7,"Sometimes we walk through the rain, ah (Rain)",Sometimes,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,6,"Oh-woah, oh, I, know I won't let time go by",know,6,"Oh-woah, oh, I, know I won't let time go by",go,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,6,"Oh-woah, oh, I, know I won't let time go by",know,6,"Oh-woah, oh, I, know I won't let time go by",won't,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,6,"Oh-woah, oh, I, know I won't let time go by",time,6,"Oh-woah, oh, I, know I won't let time go by",by,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,6,"Oh-woah, oh, I, know I won't let time go by",won't,6,"Oh-woah, oh, I, know I won't let time go by",go,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,6,"Oh-woah, oh, I, know I won't let time go by",by,7,"Sometimes we walk through the rain, ah (Rain)",Sometimes,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,6,"Oh-woah, oh, I, know I won't let time go by",time,7,"Sometimes we walk through the rain, ah (Rain)",Sometimes,INNER,SLANT,cmu,MED,Y
+Darkest Times,6,"Oh-woah, oh, I, know I won't let time go by",go,8,"Can't feel no pain, ah (Pain)",no,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,6,"Oh-woah, oh, I, know I won't let time go by",know,8,"Can't feel no pain, ah (Pain)",no,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,6,"Oh-woah, oh, I, know I won't let time go by",won't,8,"Can't feel no pain, ah (Pain)",no,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,7,"Sometimes we walk through the rain, ah (Rain)",rain,8,"Can't feel no pain, ah (Pain)",pain,END,PERFECT,cmu,HIGH,Y
+Darkest Times,7,"Sometimes we walk through the rain, ah (Rain)",Sometimes,9,"Took a couple years of my life, to run a check, ah",life,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,7,"Sometimes we walk through the rain, ah (Rain)",rain,10,"What did you face, ah? Demons in my way, ah",way,END,ASSONANCE,vowel,MED,Y
+Darkest Times,7,"Sometimes we walk through the rain, ah (Rain)",rain,11,Did it but I had to fight with no favor,favor,END,SLANT,cmu,MED,Y
+Darkest Times,8,"Can't feel no pain, ah (Pain)",pain,10,"What did you face, ah? Demons in my way, ah",way,END,ASSONANCE,vowel,MED,Y
+Darkest Times,8,"Can't feel no pain, ah (Pain)",feel,10,"What did you face, ah? Demons in my way, ah",Demons,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,8,"Can't feel no pain, ah (Pain)",pain,10,"What did you face, ah? Demons in my way, ah",face,INNER,SLANT,cmu,MED,Y
+Darkest Times,8,"Can't feel no pain, ah (Pain)",pain,11,Did it but I had to fight with no favor,favor,END,SLANT,cmu,MED,Y
+Darkest Times,9,"Took a couple years of my life, to run a check, ah",couple,9,"Took a couple years of my life, to run a check, ah",run,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,9,"Took a couple years of my life, to run a check, ah",couple,10,"What did you face, ah? Demons in my way, ah",What,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,9,"Took a couple years of my life, to run a check, ah",run,10,"What did you face, ah? Demons in my way, ah",What,INNER,SLANT,cmu,MED,Y
+Darkest Times,9,"Took a couple years of my life, to run a check, ah",life,11,Did it but I had to fight with no favor,fight,INNER,SLANT,cmu,MED,Y
+Darkest Times,10,"What did you face, ah? Demons in my way, ah",face,10,"What did you face, ah? Demons in my way, ah",way,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,10,"What did you face, ah? Demons in my way, ah",way,11,Did it but I had to fight with no favor,favor,END,ASSONANCE,vowel,MED,Y
+Darkest Times,10,"What did you face, ah? Demons in my way, ah",face,11,Did it but I had to fight with no favor,favor,INNER,SLANT,cmu,MED,Y
+Darkest Times,10,"What did you face, ah? Demons in my way, ah",Demons,12,When I was sixteen that's when I buss down straight VVs,sixteen,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,10,"What did you face, ah? Demons in my way, ah",face,12,When I was sixteen that's when I buss down straight VVs,straight,INNER,SLANT,cmu,MED,Y
+Darkest Times,10,"What did you face, ah? Demons in my way, ah",way,12,When I was sixteen that's when I buss down straight VVs,straight,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,10,"What did you face, ah? Demons in my way, ah",What,12,When I was sixteen that's when I buss down straight VVs,buss,INNER,SLANT,cmu,MED,Y
+Darkest Times,11,Did it but I had to fight with no favor,favor,12,When I was sixteen that's when I buss down straight VVs,straight,INNER,SLANT,cmu,MED,Y
+Darkest Times,11,Did it but I had to fight with no favor,favor,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",crazy,INNER,SLANT,cmu,MED,Y
+Darkest Times,11,Did it but I had to fight with no favor,favor,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",say,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,12,When I was sixteen that's when I buss down straight VVs,When,12,When I was sixteen that's when I buss down straight VVs,when,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,12,When I was sixteen that's when I buss down straight VVs,down,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",Now,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,12,When I was sixteen that's when I buss down straight VVs,sixteen,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",TV,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,12,When I was sixteen that's when I buss down straight VVs,straight,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",crazy,INNER,SLANT,cmu,MED,Y
+Darkest Times,12,When I was sixteen that's when I buss down straight VVs,straight,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",say,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,12,When I was sixteen that's when I buss down straight VVs,buss,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",what,INNER,SLANT,cmu,MED,Y
+Darkest Times,12,When I was sixteen that's when I buss down straight VVs,sixteen,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",feel,INNER,SLANT,cmu,MED,Y
+Darkest Times,12,When I was sixteen that's when I buss down straight VVs,When,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",Let,INNER,SLANT,cmu,MED,Y
+Darkest Times,12,When I was sixteen that's when I buss down straight VVs,When,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",tell,INNER,SLANT,cmu,MED,Y
+Darkest Times,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",crazy,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",say,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",TV,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",feel,END,ASSONANCE,vowel,MED,Y
+Darkest Times,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",TV,15,And let me know if it's a problem 'cause we late-night creepin',creepin,END,ASSONANCE,vowel,MED,Y
+Darkest Times,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",crazy,15,And let me know if it's a problem 'cause we late-night creepin',late,INNER,SLANT,cmu,MED,Y
+Darkest Times,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",ma,15,And let me know if it's a problem 'cause we late-night creepin',problem,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,13,"Now this shit so crazy, I say, ""Look, ma', we on TV""",say,15,And let me know if it's a problem 'cause we late-night creepin',late,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",Let,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",tell,INNER,SLANT,cmu,MED,Y
+Darkest Times,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",feel,15,And let me know if it's a problem 'cause we late-night creepin',creepin,END,ASSONANCE,vowel,MED,Y
+Darkest Times,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",hope,15,And let me know if it's a problem 'cause we late-night creepin',know,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",Let,15,And let me know if it's a problem 'cause we late-night creepin',let,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",tell,15,And let me know if it's a problem 'cause we late-night creepin',let,INNER,SLANT,cmu,MED,Y
+Darkest Times,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",Let,16,Nothin' you could tell us,tell,INNER,SLANT,cmu,MED,Y
+Darkest Times,14,"Let me tell you what it is, I just hope you niggas feel me (Yeah)",tell,16,Nothin' you could tell us,tell,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,15,And let me know if it's a problem 'cause we late-night creepin',let,16,Nothin' you could tell us,tell,INNER,SLANT,cmu,MED,Y
+Darkest Times,15,And let me know if it's a problem 'cause we late-night creepin',problem,16,Nothin' you could tell us,Nothin,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,15,And let me know if it's a problem 'cause we late-night creepin',let,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",fellas,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,16,Nothin' you could tell us,tell,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",fellas,END,SLANT,cmu,MED,Y
+Darkest Times,16,Nothin' you could tell us,tell,20,Need a Sunday hella,hella,END,SLANT,spelling,LOW,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",struggle,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",some,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",struggle,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",what,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",what,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",some,INNER,SLANT,cmu,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",Grew,18,And we shoot it all off,shoot,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",fellas,19,"Get you an umbrella, someone is smokin' that air, dawg",air,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",fellas,19,"Get you an umbrella, someone is smokin' that air, dawg",Get,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",fellas,19,"Get you an umbrella, someone is smokin' that air, dawg",umbrella,INNER,SLANT,cmu,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",some,19,"Get you an umbrella, someone is smokin' that air, dawg",someone,INNER,SLANT,cmu,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",struggle,19,"Get you an umbrella, someone is smokin' that air, dawg",someone,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",what,19,"Get you an umbrella, someone is smokin' that air, dawg",someone,INNER,SLANT,cmu,MED,Y
+Darkest Times,17,"Grew up in the struggle, that's what turned us in to some fellas (Hey)",fellas,20,Need a Sunday hella,hella,END,SLANT,spelling,LOW,Y
+Darkest Times,18,And we shoot it all off,all,19,"Get you an umbrella, someone is smokin' that air, dawg",dawg,END,SLANT,spelling,LOW,Y
+Darkest Times,19,"Get you an umbrella, someone is smokin' that air, dawg",Get,19,"Get you an umbrella, someone is smokin' that air, dawg",air,INNER,SLANT,cmu,MED,Y
+Darkest Times,19,"Get you an umbrella, someone is smokin' that air, dawg",Get,19,"Get you an umbrella, someone is smokin' that air, dawg",umbrella,INNER,SLANT,cmu,MED,Y
+Darkest Times,19,"Get you an umbrella, someone is smokin' that air, dawg",umbrella,19,"Get you an umbrella, someone is smokin' that air, dawg",air,INNER,SLANT,cmu,MED,Y
+Darkest Times,19,"Get you an umbrella, someone is smokin' that air, dawg",air,20,Need a Sunday hella,hella,INNER,SLANT,spelling,LOW,Y
+Darkest Times,19,"Get you an umbrella, someone is smokin' that air, dawg",umbrella,20,Need a Sunday hella,hella,INNER,SLANT,spelling,LOW,Y
+Darkest Times,21,Lambo doors turn into butterfly (Hey),butterfly,22,"Too much money on me, I throw it in the sky",sky,END,PERFECT,cmu,HIGH,Y
+Darkest Times,21,Lambo doors turn into butterfly (Hey),Lambo,22,"Too much money on me, I throw it in the sky",throw,INNER,ASSONANCE,vowel,LOW,N
+Darkest Times,21,Lambo doors turn into butterfly (Hey),butterfly,23,But I can't fuck with too many niggas 'cause they switchin' sides,sides,END,ASSONANCE,vowel,MED,Y
+Darkest Times,21,Lambo doors turn into butterfly (Hey),Lambo,23,But I can't fuck with too many niggas 'cause they switchin' sides,can't,INNER,SLANT,spelling,LOW,Y
+Darkest Times,21,Lambo doors turn into butterfly (Hey),butterfly,24,"So many of my niggas dyin', it left me terrified",terrified,END,ASSONANCE,vowel,MED,Y
+Darkest Times,22,"Too much money on me, I throw it in the sky",much,22,"Too much money on me, I throw it in the sky",money,INNER,SLANT,cmu,MED,Y
+Darkest Times,22,"Too much money on me, I throw it in the sky",sky,23,But I can't fuck with too many niggas 'cause they switchin' sides,sides,END,ASSONANCE,vowel,MED,Y
+Darkest Times,22,"Too much money on me, I throw it in the sky",money,23,But I can't fuck with too many niggas 'cause they switchin' sides,fuck,INNER,SLANT,cmu,MED,Y
+Darkest Times,22,"Too much money on me, I throw it in the sky",much,23,But I can't fuck with too many niggas 'cause they switchin' sides,fuck,INNER,SLANT,cmu,MED,Y
+Darkest Times,22,"Too much money on me, I throw it in the sky",sky,24,"So many of my niggas dyin', it left me terrified",terrified,END,ASSONANCE,vowel,MED,Y
+Darkest Times,23,But I can't fuck with too many niggas 'cause they switchin' sides,sides,24,"So many of my niggas dyin', it left me terrified",terrified,END,SLANT,cmu,MED,Y
+Darkest Times,23,But I can't fuck with too many niggas 'cause they switchin' sides,many,24,"So many of my niggas dyin', it left me terrified",left,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,23,But I can't fuck with too many niggas 'cause they switchin' sides,many,24,"So many of my niggas dyin', it left me terrified",many,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,23,But I can't fuck with too many niggas 'cause they switchin' sides,niggas,24,"So many of my niggas dyin', it left me terrified",niggas,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,23,But I can't fuck with too many niggas 'cause they switchin' sides,can't,25,I can't love you if you go away (I can't love you if you go),can't,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,23,But I can't fuck with too many niggas 'cause they switchin' sides,fuck,25,I can't love you if you go away (I can't love you if you go),love,INNER,SLANT,cmu,MED,Y
+Darkest Times,24,"So many of my niggas dyin', it left me terrified",many,24,"So many of my niggas dyin', it left me terrified",left,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,25,I can't love you if you go away (I can't love you if you go),away,26,"You know what I'm goin' through, I know you wanna stay (I know)",stay,END,PERFECT,cmu,HIGH,Y
+Darkest Times,25,I can't love you if you go away (I can't love you if you go),go,26,"You know what I'm goin' through, I know you wanna stay (I know)",know,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,25,I can't love you if you go away (I can't love you if you go),love,26,"You know what I'm goin' through, I know you wanna stay (I know)",what,INNER,SLANT,cmu,MED,Y
+Darkest Times,25,I can't love you if you go away (I can't love you if you go),away,27,Nigga tryna duck the past like a runaway,runaway,END,MULTI,multi,HIGH,Y
+Darkest Times,25,I can't love you if you go away (I can't love you if you go),can't,27,Nigga tryna duck the past like a runaway,past,INNER,SLANT,cmu,MED,Y
+Darkest Times,25,I can't love you if you go away (I can't love you if you go),love,27,Nigga tryna duck the past like a runaway,duck,INNER,SLANT,cmu,MED,Y
+Darkest Times,25,I can't love you if you go away (I can't love you if you go),away,28,"Faithful but I finger fuck the cash, every other day",day,END,PERFECT,cmu,HIGH,Y
+Darkest Times,26,"You know what I'm goin' through, I know you wanna stay (I know)",know,26,"You know what I'm goin' through, I know you wanna stay (I know)",know,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,26,"You know what I'm goin' through, I know you wanna stay (I know)",stay,27,Nigga tryna duck the past like a runaway,runaway,END,PERFECT,cmu,HIGH,Y
+Darkest Times,26,"You know what I'm goin' through, I know you wanna stay (I know)",what,27,Nigga tryna duck the past like a runaway,duck,INNER,SLANT,cmu,MED,Y
+Darkest Times,26,"You know what I'm goin' through, I know you wanna stay (I know)",stay,28,"Faithful but I finger fuck the cash, every other day",day,END,PERFECT,cmu,HIGH,Y
+Darkest Times,26,"You know what I'm goin' through, I know you wanna stay (I know)",stay,28,"Faithful but I finger fuck the cash, every other day",Faithful,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,26,"You know what I'm goin' through, I know you wanna stay (I know)",what,28,"Faithful but I finger fuck the cash, every other day",fuck,INNER,SLANT,cmu,MED,Y
+Darkest Times,26,"You know what I'm goin' through, I know you wanna stay (I know)",what,28,"Faithful but I finger fuck the cash, every other day",other,INNER,SLANT,cmu,MED,Y
+Darkest Times,27,Nigga tryna duck the past like a runaway,runaway,28,"Faithful but I finger fuck the cash, every other day",day,END,PERFECT,cmu,HIGH,Y
+Darkest Times,27,Nigga tryna duck the past like a runaway,duck,28,"Faithful but I finger fuck the cash, every other day",fuck,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,27,Nigga tryna duck the past like a runaway,duck,28,"Faithful but I finger fuck the cash, every other day",other,INNER,SLANT,cmu,MED,Y
+Darkest Times,27,Nigga tryna duck the past like a runaway,Nigga,28,"Faithful but I finger fuck the cash, every other day",finger,INNER,SLANT,spelling,LOW,Y
+Darkest Times,27,Nigga tryna duck the past like a runaway,past,28,"Faithful but I finger fuck the cash, every other day",cash,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,27,Nigga tryna duck the past like a runaway,runaway,28,"Faithful but I finger fuck the cash, every other day",Faithful,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,27,Nigga tryna duck the past like a runaway,past,29,I know bitches loyal to the bag (What?),bag,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,28,"Faithful but I finger fuck the cash, every other day",Faithful,28,"Faithful but I finger fuck the cash, every other day",day,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,28,"Faithful but I finger fuck the cash, every other day",fuck,28,"Faithful but I finger fuck the cash, every other day",other,INNER,SLANT,cmu,MED,Y
+Darkest Times,28,"Faithful but I finger fuck the cash, every other day",cash,29,I know bitches loyal to the bag (What?),bag,INNER,SLANT,cmu,MED,Y
+Darkest Times,28,"Faithful but I finger fuck the cash, every other day",finger,29,I know bitches loyal to the bag (What?),bitches,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,28,"Faithful but I finger fuck the cash, every other day",cash,30,"I know you'll be down, if I get down to my last (What?)",last,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,28,"Faithful but I finger fuck the cash, every other day",every,30,"I know you'll be down, if I get down to my last (What?)",get,INNER,SLANT,cmu,MED,Y
+Darkest Times,29,I know bitches loyal to the bag (What?),bag,30,"I know you'll be down, if I get down to my last (What?)",last,END,ASSONANCE,vowel,MED,Y
+Darkest Times,29,I know bitches loyal to the bag (What?),know,30,"I know you'll be down, if I get down to my last (What?)",know,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,29,I know bitches loyal to the bag (What?),bitches,31,"Real street nigga, got a lick for all of that (Got a lick for all of that)",lick,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,30,"I know you'll be down, if I get down to my last (What?)",down,30,"I know you'll be down, if I get down to my last (What?)",down,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,30,"I know you'll be down, if I get down to my last (What?)",get,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",M's,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,30,"I know you'll be down, if I get down to my last (What?)",know,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",don't,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,30,"I know you'll be down, if I get down to my last (What?)",know,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",know,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,30,"I know you'll be down, if I get down to my last (What?)",last,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",Havin,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,31,"Real street nigga, got a lick for all of that (Got a lick for all of that)",nigga,31,"Real street nigga, got a lick for all of that (Got a lick for all of that)",lick,INNER,SLANT,spelling,LOW,Y
+Darkest Times,31,"Real street nigga, got a lick for all of that (Got a lick for all of that)",Real,31,"Real street nigga, got a lick for all of that (Got a lick for all of that)",street,INNER,SLANT,cmu,MED,Y
+Darkest Times,31,"Real street nigga, got a lick for all of that (Got a lick for all of that)",all,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",all,END,REPEAT,spelling,HIGH,N
+Darkest Times,31,"Real street nigga, got a lick for all of that (Got a lick for all of that)",all,33,"Thug love, I can write a book on all of that, girl (I swear)",all,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",don't,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",know,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",all,33,"Thug love, I can write a book on all of that, girl (I swear)",all,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",Havin,33,"Thug love, I can write a book on all of that, girl (I swear)",can,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",took,33,"Thug love, I can write a book on all of that, girl (I swear)",book,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",what,33,"Thug love, I can write a book on all of that, girl (I swear)",love,INNER,SLANT,cmu,MED,Y
+Darkest Times,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",what,33,"Thug love, I can write a book on all of that, girl (I swear)",Thug,INNER,SLANT,cmu,MED,Y
+Darkest Times,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",Havin,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",back,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,32,"Havin' M's, don't know what it took for all of that (What it took for all of that)",took,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",hood,INNER,SLANT,cmu,MED,Y
+Darkest Times,33,"Thug love, I can write a book on all of that, girl (I swear)",Thug,33,"Thug love, I can write a book on all of that, girl (I swear)",love,INNER,SLANT,cmu,MED,Y
+Darkest Times,33,"Thug love, I can write a book on all of that, girl (I swear)",girl,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",girl,END,REPEAT,spelling,HIGH,N
+Darkest Times,33,"Thug love, I can write a book on all of that, girl (I swear)",book,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",hood,INNER,SLANT,cmu,MED,Y
+Darkest Times,33,"Thug love, I can write a book on all of that, girl (I swear)",can,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",back,INNER,SLANT,cmu,MED,Y
+Darkest Times,33,"Thug love, I can write a book on all of that, girl (I swear)",girl,35,"I don't like change, I be good where I'm at, girl (I be good where I'm at)",girl,END,REPEAT,spelling,HIGH,N
+Darkest Times,33,"Thug love, I can write a book on all of that, girl (I swear)",book,35,"I don't like change, I be good where I'm at, girl (I be good where I'm at)",good,INNER,SLANT,cmu,MED,Y
+Darkest Times,33,"Thug love, I can write a book on all of that, girl (I swear)",write,35,"I don't like change, I be good where I'm at, girl (I be good where I'm at)",like,INNER,SLANT,cmu,MED,Y
+Darkest Times,33,"Thug love, I can write a book on all of that, girl (I swear)",girl,36,"Tap into my heart, knew I could when I rap, girl",girl,END,REPEAT,spelling,HIGH,N
+Darkest Times,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",girl,35,"I don't like change, I be good where I'm at, girl (I be good where I'm at)",girl,END,REPEAT,spelling,HIGH,N
+Darkest Times,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",hood,35,"I don't like change, I be good where I'm at, girl (I be good where I'm at)",good,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",girl,36,"Tap into my heart, knew I could when I rap, girl",girl,END,REPEAT,spelling,HIGH,N
+Darkest Times,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",back,36,"Tap into my heart, knew I could when I rap, girl",rap,INNER,SLANT,cmu,MED,Y
+Darkest Times,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",back,36,"Tap into my heart, knew I could when I rap, girl",Tap,INNER,SLANT,cmu,MED,Y
+Darkest Times,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",got,36,"Tap into my heart, knew I could when I rap, girl",heart,INNER,SLANT,cmu,MED,Y
+Darkest Times,34,"Still a street nigga, got the hood on my back, girl (Hood on my back)",hood,36,"Tap into my heart, knew I could when I rap, girl",could,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,35,"I don't like change, I be good where I'm at, girl (I be good where I'm at)",girl,36,"Tap into my heart, knew I could when I rap, girl",girl,END,REPEAT,spelling,HIGH,N
+Darkest Times,35,"I don't like change, I be good where I'm at, girl (I be good where I'm at)",good,36,"Tap into my heart, knew I could when I rap, girl",could,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,35,"I don't like change, I be good where I'm at, girl (I be good where I'm at)",where,36,"Tap into my heart, knew I could when I rap, girl",when,INNER,SLANT,cmu,MED,Y
+Darkest Times,36,"Tap into my heart, knew I could when I rap, girl",Tap,36,"Tap into my heart, knew I could when I rap, girl",rap,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,36,"Tap into my heart, knew I could when I rap, girl",heart,37,"Jump into the car, with some stars, see the stars (Stars)",car,INNER,SLANT,cmu,MED,Y
+Darkest Times,36,"Tap into my heart, knew I could when I rap, girl",heart,37,"Jump into the car, with some stars, see the stars (Stars)",stars,INNER,SLANT,cmu,MED,Y
+Darkest Times,36,"Tap into my heart, knew I could when I rap, girl",could,38,"Look into the future, ain't no good lookin' back",good,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,36,"Tap into my heart, knew I could when I rap, girl",could,38,"Look into the future, ain't no good lookin' back",Look,INNER,SLANT,cmu,MED,Y
+Darkest Times,36,"Tap into my heart, knew I could when I rap, girl",could,38,"Look into the future, ain't no good lookin' back",lookin,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,36,"Tap into my heart, knew I could when I rap, girl",knew,38,"Look into the future, ain't no good lookin' back",future,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,36,"Tap into my heart, knew I could when I rap, girl",rap,38,"Look into the future, ain't no good lookin' back",back,INNER,SLANT,cmu,MED,Y
+Darkest Times,36,"Tap into my heart, knew I could when I rap, girl",Tap,38,"Look into the future, ain't no good lookin' back",back,INNER,SLANT,cmu,MED,Y
+Darkest Times,37,"Jump into the car, with some stars, see the stars (Stars)",car,37,"Jump into the car, with some stars, see the stars (Stars)",stars,INNER,SLANT,cmu,MED,Y
+Darkest Times,37,"Jump into the car, with some stars, see the stars (Stars)",Jump,37,"Jump into the car, with some stars, see the stars (Stars)",some,INNER,SLANT,cmu,MED,Y
+Darkest Times,37,"Jump into the car, with some stars, see the stars (Stars)",stars,37,"Jump into the car, with some stars, see the stars (Stars)",stars,INNER,REPEAT,spelling,HIGH,N
+Darkest Times,38,"Look into the future, ain't no good lookin' back",good,38,"Look into the future, ain't no good lookin' back",lookin,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",Look,38,"Look into the future, ain't no good lookin' back",good,INNER,SLANT,cmu,MED,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",Look,38,"Look into the future, ain't no good lookin' back",lookin,INNER,SLANT,cmu,MED,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",back,39,Backwoods in the 'Raq,'Raq,END,PERFECT,spelling,MED,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",good,39,Backwoods in the 'Raq,Backwoods,INNER,SLANT,cmu,MED,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",Look,39,Backwoods in the 'Raq,Backwoods,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",lookin,39,Backwoods in the 'Raq,Backwoods,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",good,40,"Chillin' with a real nigga, know you could get a Tesla",could,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",Look,40,"Chillin' with a real nigga, know you could get a Tesla",could,INNER,SLANT,cmu,MED,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",lookin,40,"Chillin' with a real nigga, know you could get a Tesla",could,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",no,40,"Chillin' with a real nigga, know you could get a Tesla",know,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,38,"Look into the future, ain't no good lookin' back",back,41,"Day ones, Draco, wood on my lap, yeah",lap,END,SLANT,cmu,MED,Y
+Darkest Times,39,Backwoods in the 'Raq,Backwoods,40,"Chillin' with a real nigga, know you could get a Tesla",could,INNER,SLANT,cmu,MED,Y
+Darkest Times,39,Backwoods in the 'Raq,'Raq,41,"Day ones, Draco, wood on my lap, yeah",lap,END,SLANT,spelling,LOW,Y
+Darkest Times,39,Backwoods in the 'Raq,Backwoods,41,"Day ones, Draco, wood on my lap, yeah",wood,INNER,SLANT,cmu,MED,Y
+Darkest Times,40,"Chillin' with a real nigga, know you could get a Tesla",get,40,"Chillin' with a real nigga, know you could get a Tesla",Tesla,INNER,ASSONANCE,vowel,MED,Y
+Darkest Times,40,"Chillin' with a real nigga, know you could get a Tesla",could,41,"Day ones, Draco, wood on my lap, yeah",wood,INNER,PERFECT,cmu,HIGH,Y
+Darkest Times,41,"Day ones, Draco, wood on my lap, yeah",Day,41,"Day ones, Draco, wood on my lap, yeah",Draco,INNER,ASSONANCE,vowel,MED,Y

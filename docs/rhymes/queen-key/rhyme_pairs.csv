@@ -1,0 +1,369 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Sneakey Talez,1,These are the tails I tell so well,tell,1,These are the tails I tell so well,well,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,1,These are the tails I tell so well,tails,2,"These are the tails, the sneaky tails",tails,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,1,These are the tails I tell so well,These,2,"These are the tails, the sneaky tails",sneaky,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,1,These are the tails I tell so well,These,2,"These are the tails, the sneaky tails",These,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,1,These are the tails I tell so well,well,3,These are the tails that I tell so well,well,END,REPEAT,spelling,HIGH,N
+Sneakey Talez,1,These are the tails I tell so well,tails,3,These are the tails that I tell so well,tails,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,1,These are the tails I tell so well,tell,3,These are the tails that I tell so well,tell,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,1,These are the tails I tell so well,tell,3,These are the tails that I tell so well,well,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,1,These are the tails I tell so well,These,3,These are the tails that I tell so well,These,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,1,These are the tails I tell so well,well,3,These are the tails that I tell so well,tell,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,2,"These are the tails, the sneaky tails",tails,2,"These are the tails, the sneaky tails",tails,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,2,"These are the tails, the sneaky tails",These,2,"These are the tails, the sneaky tails",sneaky,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,2,"These are the tails, the sneaky tails",sneaky,3,These are the tails that I tell so well,These,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,2,"These are the tails, the sneaky tails",tails,3,These are the tails that I tell so well,tails,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,2,"These are the tails, the sneaky tails",These,3,These are the tails that I tell so well,These,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,2,"These are the tails, the sneaky tails",tails,4,"I met this boy, his name was Joe",name,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,3,These are the tails that I tell so well,tell,3,These are the tails that I tell so well,well,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,3,These are the tails that I tell so well,tails,4,"I met this boy, his name was Joe",name,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,3,These are the tails that I tell so well,tell,4,"I met this boy, his name was Joe",met,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,3,These are the tails that I tell so well,well,4,"I met this boy, his name was Joe",met,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,3,These are the tails that I tell so well,tails,5,Joe was always tryna put on a show,always,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,3,These are the tails that I tell so well,These,5,Joe was always tryna put on a show,tryna,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,4,"I met this boy, his name was Joe",Joe,5,Joe was always tryna put on a show,show,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,4,"I met this boy, his name was Joe",Joe,5,Joe was always tryna put on a show,Joe,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,4,"I met this boy, his name was Joe",name,5,Joe was always tryna put on a show,always,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,4,"I met this boy, his name was Joe",Joe,6,"Joe had hoes, but he let me know",know,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,4,"I met this boy, his name was Joe",Joe,6,"Joe had hoes, but he let me know",hoes,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,4,"I met this boy, his name was Joe",Joe,6,"Joe had hoes, but he let me know",Joe,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,4,"I met this boy, his name was Joe",met,6,"Joe had hoes, but he let me know",let,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,4,"I met this boy, his name was Joe",Joe,7,"So I could never love him, I just take his dough",dough,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,5,Joe was always tryna put on a show,Joe,5,Joe was always tryna put on a show,show,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,5,Joe was always tryna put on a show,show,6,"Joe had hoes, but he let me know",know,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,5,Joe was always tryna put on a show,Joe,6,"Joe had hoes, but he let me know",hoes,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,5,Joe was always tryna put on a show,Joe,6,"Joe had hoes, but he let me know",Joe,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,5,Joe was always tryna put on a show,Joe,6,"Joe had hoes, but he let me know",know,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,5,Joe was always tryna put on a show,show,6,"Joe had hoes, but he let me know",hoes,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,5,Joe was always tryna put on a show,show,6,"Joe had hoes, but he let me know",Joe,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,5,Joe was always tryna put on a show,show,7,"So I could never love him, I just take his dough",dough,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,5,Joe was always tryna put on a show,always,7,"So I could never love him, I just take his dough",take,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,5,Joe was always tryna put on a show,Joe,7,"So I could never love him, I just take his dough",dough,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,5,Joe was always tryna put on a show,put,7,"So I could never love him, I just take his dough",could,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",hoes,6,"Joe had hoes, but he let me know",know,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",Joe,6,"Joe had hoes, but he let me know",hoes,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",Joe,6,"Joe had hoes, but he let me know",know,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",know,7,"So I could never love him, I just take his dough",dough,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",hoes,7,"So I could never love him, I just take his dough",dough,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",Joe,7,"So I could never love him, I just take his dough",dough,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",let,7,"So I could never love him, I just take his dough",never,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",hoes,8,"And when he go, I’ma call my ex",go,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",Joe,8,"And when he go, I’ma call my ex",go,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",know,8,"And when he go, I’ma call my ex",go,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",let,8,"And when he go, I’ma call my ex",ex,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,6,"Joe had hoes, but he let me know",let,8,"And when he go, I’ma call my ex",when,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,7,"So I could never love him, I just take his dough",dough,8,"And when he go, I’ma call my ex",go,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,7,"So I could never love him, I just take his dough",him,8,"And when he go, I’ma call my ex",I’ma,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,7,"So I could never love him, I just take his dough",never,8,"And when he go, I’ma call my ex",ex,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,7,"So I could never love him, I just take his dough",never,8,"And when he go, I’ma call my ex",when,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,7,"So I could never love him, I just take his dough",him,9,"Nigga ain't shit, but his dick was the best",dick,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,7,"So I could never love him, I just take his dough",him,9,"Nigga ain't shit, but his dick was the best",shit,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,7,"So I could never love him, I just take his dough",never,9,"Nigga ain't shit, but his dick was the best",best,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,7,"So I could never love him, I just take his dough",take,9,"Nigga ain't shit, but his dick was the best",ain't,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,8,"And when he go, I’ma call my ex",when,8,"And when he go, I’ma call my ex",ex,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,8,"And when he go, I’ma call my ex",ex,9,"Nigga ain't shit, but his dick was the best",best,END,ASSONANCE,vowel,MED,Y
+Sneakey Talez,8,"And when he go, I’ma call my ex",I’ma,9,"Nigga ain't shit, but his dick was the best",dick,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,8,"And when he go, I’ma call my ex",I’ma,9,"Nigga ain't shit, but his dick was the best",shit,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,8,"And when he go, I’ma call my ex",when,9,"Nigga ain't shit, but his dick was the best",best,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,8,"And when he go, I’ma call my ex",ex,10,"He always come back, like he under a hex",hex,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,8,"And when he go, I’ma call my ex",when,10,"He always come back, like he under a hex",hex,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,8,"And when he go, I’ma call my ex",ex,11,"When he fuck another bitch, he think about my sex",sex,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",Nigga,9,"Nigga ain't shit, but his dick was the best",dick,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",Nigga,9,"Nigga ain't shit, but his dick was the best",shit,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",shit,9,"Nigga ain't shit, but his dick was the best",dick,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",best,10,"He always come back, like he under a hex",hex,END,ASSONANCE,vowel,MED,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",ain't,10,"He always come back, like he under a hex",always,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",best,11,"When he fuck another bitch, he think about my sex",sex,END,ASSONANCE,vowel,MED,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",best,11,"When he fuck another bitch, he think about my sex",When,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",dick,11,"When he fuck another bitch, he think about my sex",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",dick,11,"When he fuck another bitch, he think about my sex",think,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",shit,11,"When he fuck another bitch, he think about my sex",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,9,"Nigga ain't shit, but his dick was the best",shit,11,"When he fuck another bitch, he think about my sex",think,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,10,"He always come back, like he under a hex",come,10,"He always come back, like he under a hex",under,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,10,"He always come back, like he under a hex",hex,11,"When he fuck another bitch, he think about my sex",sex,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,10,"He always come back, like he under a hex",come,11,"When he fuck another bitch, he think about my sex",another,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,10,"He always come back, like he under a hex",come,11,"When he fuck another bitch, he think about my sex",fuck,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,10,"He always come back, like he under a hex",hex,11,"When he fuck another bitch, he think about my sex",When,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,10,"He always come back, like he under a hex",under,11,"When he fuck another bitch, he think about my sex",another,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,10,"He always come back, like he under a hex",under,11,"When he fuck another bitch, he think about my sex",fuck,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,10,"He always come back, like he under a hex",like,12,"Ha ha ha, that remind me of Chris",remind,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,11,"When he fuck another bitch, he think about my sex",bitch,11,"When he fuck another bitch, he think about my sex",think,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,11,"When he fuck another bitch, he think about my sex",fuck,11,"When he fuck another bitch, he think about my sex",another,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,11,"When he fuck another bitch, he think about my sex",When,11,"When he fuck another bitch, he think about my sex",sex,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,11,"When he fuck another bitch, he think about my sex",bitch,12,"Ha ha ha, that remind me of Chris",Chris,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,11,"When he fuck another bitch, he think about my sex",think,12,"Ha ha ha, that remind me of Chris",Chris,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,11,"When he fuck another bitch, he think about my sex",bitch,13,"He be eating pussy, and we don't even kiss",kiss,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,11,"When he fuck another bitch, he think about my sex",think,13,"He be eating pussy, and we don't even kiss",kiss,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,12,"Ha ha ha, that remind me of Chris",Chris,13,"He be eating pussy, and we don't even kiss",kiss,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,12,"Ha ha ha, that remind me of Chris",Chris,14,"Chris super sweet, he like to call me Miss",Miss,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,12,"Ha ha ha, that remind me of Chris",Chris,14,"Chris super sweet, he like to call me Miss",Chris,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,12,"Ha ha ha, that remind me of Chris",remind,14,"Chris super sweet, he like to call me Miss",like,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,12,"Ha ha ha, that remind me of Chris",Chris,15,"But I don't like nice niggas, Chris, call me bitch",bitch,END,SLANT,cmu,MED,Y
+Sneakey Talez,12,"Ha ha ha, that remind me of Chris",Chris,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,END,SLANT,cmu,MED,Y
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",eating,13,"He be eating pussy, and we don't even kiss",even,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",kiss,14,"Chris super sweet, he like to call me Miss",Miss,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",eating,14,"Chris super sweet, he like to call me Miss",sweet,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",even,14,"Chris super sweet, he like to call me Miss",sweet,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",kiss,14,"Chris super sweet, he like to call me Miss",Chris,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",kiss,15,"But I don't like nice niggas, Chris, call me bitch",bitch,END,SLANT,cmu,MED,Y
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",don't,15,"But I don't like nice niggas, Chris, call me bitch",don't,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",kiss,15,"But I don't like nice niggas, Chris, call me bitch",Chris,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",kiss,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,END,SLANT,cmu,MED,Y
+Sneakey Talez,13,"He be eating pussy, and we don't even kiss",kiss,17,"In a matter of just seconds, I hit that bitch",bitch,END,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Chris,14,"Chris super sweet, he like to call me Miss",Miss,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Miss,15,"But I don't like nice niggas, Chris, call me bitch",bitch,END,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",call,15,"But I don't like nice niggas, Chris, call me bitch",call,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Chris,15,"But I don't like nice niggas, Chris, call me bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Chris,15,"But I don't like nice niggas, Chris, call me bitch",Chris,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",like,15,"But I don't like nice niggas, Chris, call me bitch",like,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",like,15,"But I don't like nice niggas, Chris, call me bitch",nice,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Miss,15,"But I don't like nice niggas, Chris, call me bitch",Chris,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Miss,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,END,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",call,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",Call,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Chris,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Chris,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Chris,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",rich,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",like,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",I’ll,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Miss,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Miss,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Miss,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",rich,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",sweet,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",beef,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Miss,17,"In a matter of just seconds, I hit that bitch",bitch,END,SLANT,cmu,MED,Y
+Sneakey Talez,14,"Chris super sweet, he like to call me Miss",Miss,18,"If he eat my pussy, he forget that bitch",bitch,END,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",Chris,15,"But I don't like nice niggas, Chris, call me bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",like,15,"But I don't like nice niggas, Chris, call me bitch",nice,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",bitch,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,END,REPEAT,spelling,HIGH,N
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",bitch,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",bitch,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",bitch,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",rich,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",call,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",Call,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",Chris,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",Chris,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",Chris,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",rich,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",don't,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",don't,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",like,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",I’ll,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",nice,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",I’ll,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",niggas,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",ass,INNER,PERFECT,spelling,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",bitch,17,"In a matter of just seconds, I hit that bitch",bitch,END,REPEAT,spelling,HIGH,N
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",bitch,17,"In a matter of just seconds, I hit that bitch",hit,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",Chris,17,"In a matter of just seconds, I hit that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",Chris,17,"In a matter of just seconds, I hit that bitch",hit,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,15,"But I don't like nice niggas, Chris, call me bitch",bitch,18,"If he eat my pussy, he forget that bitch",bitch,END,REPEAT,spelling,HIGH,N
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",rich,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",rich,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,17,"In a matter of just seconds, I hit that bitch",bitch,END,REPEAT,spelling,HIGH,N
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",ass,17,"In a matter of just seconds, I hit that bitch",matter,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,17,"In a matter of just seconds, I hit that bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,17,"In a matter of just seconds, I hit that bitch",hit,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,17,"In a matter of just seconds, I hit that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,17,"In a matter of just seconds, I hit that bitch",hit,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",get,17,"In a matter of just seconds, I hit that bitch",seconds,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",rich,17,"In a matter of just seconds, I hit that bitch",bitch,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",rich,17,"In a matter of just seconds, I hit that bitch",hit,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,18,"If he eat my pussy, he forget that bitch",bitch,END,REPEAT,spelling,HIGH,N
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",beef,18,"If he eat my pussy, he forget that bitch",eat,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitch,18,"If he eat my pussy, he forget that bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",bitches,18,"If he eat my pussy, he forget that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",get,18,"If he eat my pussy, he forget that bitch",forget,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,16,"Call me a rich ass bitch, I don't beef with bitches, I’ll get that bitch",rich,18,"If he eat my pussy, he forget that bitch",bitch,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,17,"In a matter of just seconds, I hit that bitch",hit,17,"In a matter of just seconds, I hit that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,17,"In a matter of just seconds, I hit that bitch",bitch,18,"If he eat my pussy, he forget that bitch",bitch,END,REPEAT,spelling,HIGH,N
+Sneakey Talez,17,"In a matter of just seconds, I hit that bitch",hit,18,"If he eat my pussy, he forget that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,17,"In a matter of just seconds, I hit that bitch",seconds,18,"If he eat my pussy, he forget that bitch",forget,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,17,"In a matter of just seconds, I hit that bitch",bitch,19,"Big swerve, bitch don't touch me, touch your toes",Big,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,17,"In a matter of just seconds, I hit that bitch",bitch,19,"Big swerve, bitch don't touch me, touch your toes",bitch,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,17,"In a matter of just seconds, I hit that bitch",hit,19,"Big swerve, bitch don't touch me, touch your toes",Big,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,17,"In a matter of just seconds, I hit that bitch",hit,19,"Big swerve, bitch don't touch me, touch your toes",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,18,"If he eat my pussy, he forget that bitch",bitch,19,"Big swerve, bitch don't touch me, touch your toes",Big,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,18,"If he eat my pussy, he forget that bitch",bitch,19,"Big swerve, bitch don't touch me, touch your toes",bitch,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,18,"If he eat my pussy, he forget that bitch",bitch,20,"Lil Herb, before money, I had hoes",Lil,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",Big,19,"Big swerve, bitch don't touch me, touch your toes",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",don't,19,"Big swerve, bitch don't touch me, touch your toes",toes,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",touch,19,"Big swerve, bitch don't touch me, touch your toes",touch,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",toes,20,"Lil Herb, before money, I had hoes",hoes,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",Big,20,"Lil Herb, before money, I had hoes",Lil,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",bitch,20,"Lil Herb, before money, I had hoes",Lil,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",don't,20,"Lil Herb, before money, I had hoes",hoes,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",swerve,20,"Lil Herb, before money, I had hoes",Herb,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",touch,20,"Lil Herb, before money, I had hoes",money,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",toes,21,"Spanish bitch named Rose, she love playing with her nose",nose,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",Big,21,"Spanish bitch named Rose, she love playing with her nose",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",bitch,21,"Spanish bitch named Rose, she love playing with her nose",bitch,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",don't,21,"Spanish bitch named Rose, she love playing with her nose",nose,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",don't,21,"Spanish bitch named Rose, she love playing with her nose",Rose,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",toes,21,"Spanish bitch named Rose, she love playing with her nose",Rose,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",touch,21,"Spanish bitch named Rose, she love playing with her nose",love,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,19,"Big swerve, bitch don't touch me, touch your toes",toes,22,"Wanna suck it in my Rose, used to fuck me after my shows",shows,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",hoes,21,"Spanish bitch named Rose, she love playing with her nose",nose,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",had,21,"Spanish bitch named Rose, she love playing with her nose",Spanish,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",hoes,21,"Spanish bitch named Rose, she love playing with her nose",Rose,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",Lil,21,"Spanish bitch named Rose, she love playing with her nose",bitch,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",money,21,"Spanish bitch named Rose, she love playing with her nose",love,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",hoes,22,"Wanna suck it in my Rose, used to fuck me after my shows",shows,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",had,22,"Wanna suck it in my Rose, used to fuck me after my shows",after,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",hoes,22,"Wanna suck it in my Rose, used to fuck me after my shows",Rose,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",money,22,"Wanna suck it in my Rose, used to fuck me after my shows",fuck,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,20,"Lil Herb, before money, I had hoes",money,22,"Wanna suck it in my Rose, used to fuck me after my shows",suck,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",named,21,"Spanish bitch named Rose, she love playing with her nose",playing,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",Rose,21,"Spanish bitch named Rose, she love playing with her nose",nose,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",nose,22,"Wanna suck it in my Rose, used to fuck me after my shows",shows,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",love,22,"Wanna suck it in my Rose, used to fuck me after my shows",fuck,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",love,22,"Wanna suck it in my Rose, used to fuck me after my shows",suck,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",nose,22,"Wanna suck it in my Rose, used to fuck me after my shows",Rose,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",Rose,22,"Wanna suck it in my Rose, used to fuck me after my shows",Rose,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",Rose,22,"Wanna suck it in my Rose, used to fuck me after my shows",shows,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",Spanish,22,"Wanna suck it in my Rose, used to fuck me after my shows",after,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,21,"Spanish bitch named Rose, she love playing with her nose",bitch,23,"Freek-a-leek, she with sneaky link",link,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,22,"Wanna suck it in my Rose, used to fuck me after my shows",Rose,22,"Wanna suck it in my Rose, used to fuck me after my shows",shows,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,22,"Wanna suck it in my Rose, used to fuck me after my shows",suck,22,"Wanna suck it in my Rose, used to fuck me after my shows",fuck,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,22,"Wanna suck it in my Rose, used to fuck me after my shows",fuck,24,"They all love the G, kiss my pinky ring",love,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,22,"Wanna suck it in my Rose, used to fuck me after my shows",suck,24,"They all love the G, kiss my pinky ring",love,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",Freek,23,"Freek-a-leek, she with sneaky link",leek,INNER,PERFECT,spelling,HIGH,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",Freek,23,"Freek-a-leek, she with sneaky link",sneaky,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",leek,23,"Freek-a-leek, she with sneaky link",sneaky,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",link,24,"They all love the G, kiss my pinky ring",ring,END,SLANT,cmu,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",leek,24,"They all love the G, kiss my pinky ring",G,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",link,24,"They all love the G, kiss my pinky ring",kiss,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",link,24,"They all love the G, kiss my pinky ring",pinky,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",sneaky,24,"They all love the G, kiss my pinky ring",G,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",Freek,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",seen,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",Freek,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",sleep,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",leek,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",dreams,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",leek,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",seen,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",leek,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",sleep,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",link,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",til,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",sneaky,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",dreams,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",sneaky,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",seen,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,23,"Freek-a-leek, she with sneaky link",sneaky,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",sleep,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",kiss,24,"They all love the G, kiss my pinky ring",pinky,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",kiss,24,"They all love the G, kiss my pinky ring",ring,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",pinky,24,"They all love the G, kiss my pinky ring",ring,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",G,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",dreams,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",G,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",seen,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",G,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",sleep,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",kiss,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",til,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",love,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",suck,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",pinky,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",til,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",ring,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",til,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",kiss,26,"Shirley, pull up, give me temple, i want extra grenadine",give,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",pinky,26,"Shirley, pull up, give me temple, i want extra grenadine",give,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,24,"They all love the G, kiss my pinky ring",ring,26,"Shirley, pull up, give me temple, i want extra grenadine",give,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",seen,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",dreams,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",sleep,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",dreams,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",sleep,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",seen,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",til,26,"Shirley, pull up, give me temple, i want extra grenadine",give,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",dreams,27,"This shit easy, just like free throws",easy,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",dreams,27,"This shit easy, just like free throws",free,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",gon,27,"This shit easy, just like free throws",throws,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",know,27,"This shit easy, just like free throws",throws,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",seen,27,"This shit easy, just like free throws",easy,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",seen,27,"This shit easy, just like free throws",free,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",sleep,27,"This shit easy, just like free throws",easy,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",sleep,27,"This shit easy, just like free throws",free,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,25,"I know she gon’ suck me ‘til i’m sleep, i seen her in her dreams",til,27,"This shit easy, just like free throws",shit,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,26,"Shirley, pull up, give me temple, i want extra grenadine",temple,26,"Shirley, pull up, give me temple, i want extra grenadine",extra,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,26,"Shirley, pull up, give me temple, i want extra grenadine",temple,26,"Shirley, pull up, give me temple, i want extra grenadine",grenadine,INNER,ASSONANCE,vowel,LOW,N
+Sneakey Talez,26,"Shirley, pull up, give me temple, i want extra grenadine",give,27,"This shit easy, just like free throws",shit,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,26,"Shirley, pull up, give me temple, i want extra grenadine",Shirley,28,"Dirty weak hoes, i don’t greet those",Dirty,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,27,"This shit easy, just like free throws",easy,27,"This shit easy, just like free throws",free,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,27,"This shit easy, just like free throws",throws,28,"Dirty weak hoes, i don’t greet those",those,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,27,"This shit easy, just like free throws",easy,28,"Dirty weak hoes, i don’t greet those",greet,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,27,"This shit easy, just like free throws",easy,28,"Dirty weak hoes, i don’t greet those",weak,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,27,"This shit easy, just like free throws",free,28,"Dirty weak hoes, i don’t greet those",greet,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,27,"This shit easy, just like free throws",free,28,"Dirty weak hoes, i don’t greet those",weak,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,27,"This shit easy, just like free throws",throws,28,"Dirty weak hoes, i don’t greet those",don’t,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,27,"This shit easy, just like free throws",throws,28,"Dirty weak hoes, i don’t greet those",hoes,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,27,"This shit easy, just like free throws",throws,29,that's the G code,code,END,SLANT,cmu,MED,Y
+Sneakey Talez,27,"This shit easy, just like free throws",easy,29,that's the G code,G,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,27,"This shit easy, just like free throws",free,29,that's the G code,G,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,27,"This shit easy, just like free throws",throws,30,"Cuban links on, all she see gold",gold,END,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",don’t,28,"Dirty weak hoes, i don’t greet those",those,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",hoes,28,"Dirty weak hoes, i don’t greet those",don’t,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",hoes,28,"Dirty weak hoes, i don’t greet those",those,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",weak,28,"Dirty weak hoes, i don’t greet those",greet,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",those,29,that's the G code,code,END,SLANT,cmu,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",don’t,29,that's the G code,code,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",greet,29,that's the G code,G,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",hoes,29,that's the G code,code,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",weak,29,that's the G code,G,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",those,30,"Cuban links on, all she see gold",gold,END,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",don’t,30,"Cuban links on, all she see gold",gold,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",greet,30,"Cuban links on, all she see gold",see,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",hoes,30,"Cuban links on, all she see gold",gold,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,28,"Dirty weak hoes, i don’t greet those",weak,30,"Cuban links on, all she see gold",see,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,29,that's the G code,code,30,"Cuban links on, all she see gold",gold,END,SLANT,cmu,MED,Y
+Sneakey Talez,29,that's the G code,G,30,"Cuban links on, all she see gold",see,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,29,that's the G code,code,31,"Want me places I don't be though, all in Rio, Puerto Rico",don't,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,29,that's the G code,code,31,"Want me places I don't be though, all in Rio, Puerto Rico",Puerto,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,29,that's the G code,code,31,"Want me places I don't be though, all in Rio, Puerto Rico",though,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,29,that's the G code,G,31,"Want me places I don't be though, all in Rio, Puerto Rico",Rico,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,29,that's the G code,G,31,"Want me places I don't be though, all in Rio, Puerto Rico",Rio,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,30,"Cuban links on, all she see gold",all,31,"Want me places I don't be though, all in Rio, Puerto Rico",all,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,30,"Cuban links on, all she see gold",gold,31,"Want me places I don't be though, all in Rio, Puerto Rico",don't,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,30,"Cuban links on, all she see gold",gold,31,"Want me places I don't be though, all in Rio, Puerto Rico",Puerto,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,30,"Cuban links on, all she see gold",gold,31,"Want me places I don't be though, all in Rio, Puerto Rico",though,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,30,"Cuban links on, all she see gold",see,31,"Want me places I don't be though, all in Rio, Puerto Rico",Rico,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,30,"Cuban links on, all she see gold",see,31,"Want me places I don't be though, all in Rio, Puerto Rico",Rio,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,30,"Cuban links on, all she see gold",gold,32,"Know they love me, bitch i’ma husband",Know,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,30,"Cuban links on, all she see gold",links,32,"Know they love me, bitch i’ma husband",bitch,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,31,"Want me places I don't be though, all in Rio, Puerto Rico",don't,31,"Want me places I don't be though, all in Rio, Puerto Rico",Puerto,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,31,"Want me places I don't be though, all in Rio, Puerto Rico",don't,31,"Want me places I don't be though, all in Rio, Puerto Rico",though,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,31,"Want me places I don't be though, all in Rio, Puerto Rico",Rio,31,"Want me places I don't be though, all in Rio, Puerto Rico",Rico,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,31,"Want me places I don't be though, all in Rio, Puerto Rico",though,31,"Want me places I don't be though, all in Rio, Puerto Rico",Puerto,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,31,"Want me places I don't be though, all in Rio, Puerto Rico",don't,32,"Know they love me, bitch i’ma husband",Know,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,31,"Want me places I don't be though, all in Rio, Puerto Rico",Puerto,32,"Know they love me, bitch i’ma husband",Know,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,31,"Want me places I don't be though, all in Rio, Puerto Rico",though,32,"Know they love me, bitch i’ma husband",Know,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,32,"Know they love me, bitch i’ma husband",bitch,32,"Know they love me, bitch i’ma husband",i’ma,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,32,"Know they love me, bitch i’ma husband",love,32,"Know they love me, bitch i’ma husband",husband,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,32,"Know they love me, bitch i’ma husband",husband,33,my little cousin (ayo ),cousin,END,ASSONANCE,vowel,MED,Y
+Sneakey Talez,32,"Know they love me, bitch i’ma husband",bitch,33,my little cousin (ayo ),little,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,32,"Know they love me, bitch i’ma husband",love,33,my little cousin (ayo ),cousin,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,32,"Know they love me, bitch i’ma husband",bitch,34,"I don't trust 'em, I can't blink",blink,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,32,"Know they love me, bitch i’ma husband",husband,34,"I don't trust 'em, I can't blink",trust,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,32,"Know they love me, bitch i’ma husband",Know,34,"I don't trust 'em, I can't blink",don't,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,32,"Know they love me, bitch i’ma husband",love,34,"I don't trust 'em, I can't blink",trust,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,33,my little cousin (ayo ),cousin,34,"I don't trust 'em, I can't blink",trust,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,33,my little cousin (ayo ),little,34,"I don't trust 'em, I can't blink",blink,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,33,my little cousin (ayo ),little,35,"Man brazy, need a shrink",shrink,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,34,"I don't trust 'em, I can't blink",blink,35,"Man brazy, need a shrink",shrink,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,34,"I don't trust 'em, I can't blink",can't,35,"Man brazy, need a shrink",Man,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,34,"I don't trust 'em, I can't blink",blink,36,You bitches aging like a raisin,bitches,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,34,"I don't trust 'em, I can't blink",blink,38,"If it's water, I’ma sink",sink,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,35,"Man brazy, need a shrink",Man,35,"Man brazy, need a shrink",brazy,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,35,"Man brazy, need a shrink",shrink,36,You bitches aging like a raisin,bitches,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,35,"Man brazy, need a shrink",brazy,37,"Pussy pink, but why it stale?",Pussy,INNER,ASSONANCE,vowel,LOW,N
+Sneakey Talez,35,"Man brazy, need a shrink",shrink,37,"Pussy pink, but why it stale?",pink,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,35,"Man brazy, need a shrink",shrink,38,"If it's water, I’ma sink",sink,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,35,"Man brazy, need a shrink",shrink,39,"Pimp shit, I’m rockin’ mink",mink,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,36,You bitches aging like a raisin,aging,36,You bitches aging like a raisin,raisin,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,36,You bitches aging like a raisin,raisin,37,"Pussy pink, but why it stale?",stale,END,ASSONANCE,vowel,MED,Y
+Sneakey Talez,36,You bitches aging like a raisin,aging,37,"Pussy pink, but why it stale?",stale,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,36,You bitches aging like a raisin,bitches,37,"Pussy pink, but why it stale?",pink,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,36,You bitches aging like a raisin,like,37,"Pussy pink, but why it stale?",why,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,36,You bitches aging like a raisin,bitches,38,"If it's water, I’ma sink",sink,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,37,"Pussy pink, but why it stale?",pink,38,"If it's water, I’ma sink",sink,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,37,"Pussy pink, but why it stale?",pink,39,"Pimp shit, I’m rockin’ mink",mink,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,37,"Pussy pink, but why it stale?",pink,39,"Pimp shit, I’m rockin’ mink",Pimp,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,37,"Pussy pink, but why it stale?",pink,39,"Pimp shit, I’m rockin’ mink",shit,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,38,"If it's water, I’ma sink",sink,39,"Pimp shit, I’m rockin’ mink",mink,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,38,"If it's water, I’ma sink",I’ma,39,"Pimp shit, I’m rockin’ mink",Pimp,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,38,"If it's water, I’ma sink",I’ma,39,"Pimp shit, I’m rockin’ mink",shit,INNER,SLANT,spelling,LOW,Y
+Sneakey Talez,38,"If it's water, I’ma sink",sink,39,"Pimp shit, I’m rockin’ mink",Pimp,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,38,"If it's water, I’ma sink",sink,39,"Pimp shit, I’m rockin’ mink",shit,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,38,"If it's water, I’ma sink",sink,41,"Wait a minute, let me think",think,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",Pimp,39,"Pimp shit, I’m rockin’ mink",mink,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",Pimp,39,"Pimp shit, I’m rockin’ mink",shit,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",shit,39,"Pimp shit, I’m rockin’ mink",mink,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",rockin,40,"Wanna ride it, let me inside it",Wanna,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",mink,41,"Wait a minute, let me think",think,END,PERFECT,cmu,HIGH,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",mink,41,"Wait a minute, let me think",minute,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",Pimp,41,"Wait a minute, let me think",minute,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",Pimp,41,"Wait a minute, let me think",think,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",shit,41,"Wait a minute, let me think",minute,INNER,SLANT,cmu,MED,Y
+Sneakey Talez,39,"Pimp shit, I’m rockin’ mink",shit,41,"Wait a minute, let me think",think,INNER,ASSONANCE,vowel,MED,Y
+Sneakey Talez,40,"Wanna ride it, let me inside it",ride,40,"Wanna ride it, let me inside it",inside,INNER,PERFECT,cmu,HIGH,Y
+Sneakey Talez,40,"Wanna ride it, let me inside it",let,41,"Wait a minute, let me think",let,INNER,REPEAT,spelling,HIGH,N
+Sneakey Talez,41,"Wait a minute, let me think",minute,41,"Wait a minute, let me think",think,INNER,SLANT,cmu,MED,Y

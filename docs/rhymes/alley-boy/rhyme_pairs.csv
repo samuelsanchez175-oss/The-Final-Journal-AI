@@ -1,0 +1,241 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Fish Fry,1,Zone 6 shit right here,right,2,Somebody might get killed to this,might,INNER,PERFECT,cmu,HIGH,Y
+Fish Fry,1,Zone 6 shit right here,shit,2,Somebody might get killed to this,killed,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,1,Zone 6 shit right here,shit,3,Somebody block get spinned to this,spinned,INNER,SLANT,cmu,MED,Y
+Fish Fry,2,Somebody might get killed to this,killed,3,Somebody block get spinned to this,spinned,END,ASSONANCE,vowel,MED,Y
+Fish Fry,2,Somebody might get killed to this,get,3,Somebody block get spinned to this,get,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,2,Somebody might get killed to this,Somebody,3,Somebody block get spinned to this,block,INNER,SLANT,cmu,MED,Y
+Fish Fry,2,Somebody might get killed to this,Somebody,3,Somebody block get spinned to this,Somebody,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,2,Somebody might get killed to this,killed,4,"Young nigga pull them sticks to this, ha-ha-ha",sticks,END,ASSONANCE,vowel,MED,Y
+Fish Fry,3,Somebody block get spinned to this,Somebody,3,Somebody block get spinned to this,block,INNER,SLANT,cmu,MED,Y
+Fish Fry,3,Somebody block get spinned to this,spinned,4,"Young nigga pull them sticks to this, ha-ha-ha",sticks,END,SLANT,cmu,MED,Y
+Fish Fry,3,Somebody block get spinned to this,spinned,5,"Damn it, it's a fish fry, it's a fish fry",fish,INNER,SLANT,cmu,MED,Y
+Fish Fry,4,"Young nigga pull them sticks to this, ha-ha-ha",sticks,5,"Damn it, it's a fish fry, it's a fish fry",fish,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,4,"Young nigga pull them sticks to this, ha-ha-ha",nigga,6,"Draco spittin' out big fire, spittin' out big fire",big,INNER,SLANT,spelling,LOW,Y
+Fish Fry,4,"Young nigga pull them sticks to this, ha-ha-ha",sticks,6,"Draco spittin' out big fire, spittin' out big fire",big,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,4,"Young nigga pull them sticks to this, ha-ha-ha",sticks,6,"Draco spittin' out big fire, spittin' out big fire",spittin,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,5,"Damn it, it's a fish fry, it's a fish fry",fish,5,"Damn it, it's a fish fry, it's a fish fry",fish,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,5,"Damn it, it's a fish fry, it's a fish fry",fry,5,"Damn it, it's a fish fry, it's a fish fry",fry,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,5,"Damn it, it's a fish fry, it's a fish fry",fry,6,"Draco spittin' out big fire, spittin' out big fire",fire,END,ASSONANCE,vowel,MED,Y
+Fish Fry,5,"Damn it, it's a fish fry, it's a fish fry",fish,6,"Draco spittin' out big fire, spittin' out big fire",big,INNER,SLANT,cmu,MED,Y
+Fish Fry,5,"Damn it, it's a fish fry, it's a fish fry",fish,6,"Draco spittin' out big fire, spittin' out big fire",spittin,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,5,"Damn it, it's a fish fry, it's a fish fry",fry,6,"Draco spittin' out big fire, spittin' out big fire",fire,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,5,"Damn it, it's a fish fry, it's a fish fry",fish,7,"Fuck them RIP shirts, fuck them T-shirts",RIP,INNER,SLANT,cmu,MED,Y
+Fish Fry,6,"Draco spittin' out big fire, spittin' out big fire",big,6,"Draco spittin' out big fire, spittin' out big fire",big,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,6,"Draco spittin' out big fire, spittin' out big fire",big,6,"Draco spittin' out big fire, spittin' out big fire",spittin,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,6,"Draco spittin' out big fire, spittin' out big fire",fire,6,"Draco spittin' out big fire, spittin' out big fire",fire,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,6,"Draco spittin' out big fire, spittin' out big fire",spittin,6,"Draco spittin' out big fire, spittin' out big fire",big,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,6,"Draco spittin' out big fire, spittin' out big fire",spittin,6,"Draco spittin' out big fire, spittin' out big fire",spittin,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,6,"Draco spittin' out big fire, spittin' out big fire",big,7,"Fuck them RIP shirts, fuck them T-shirts",RIP,INNER,SLANT,cmu,MED,Y
+Fish Fry,6,"Draco spittin' out big fire, spittin' out big fire",spittin,7,"Fuck them RIP shirts, fuck them T-shirts",RIP,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,7,"Fuck them RIP shirts, fuck them T-shirts",Fuck,7,"Fuck them RIP shirts, fuck them T-shirts",fuck,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,7,"Fuck them RIP shirts, fuck them T-shirts",shirts,7,"Fuck them RIP shirts, fuck them T-shirts",shirts,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,7,"Fuck them RIP shirts, fuck them T-shirts",shirts,8,"Three shouts for the real steppers, puttin' in real work, yeah",work,END,ASSONANCE,vowel,MED,Y
+Fish Fry,7,"Fuck them RIP shirts, fuck them T-shirts",Fuck,8,"Three shouts for the real steppers, puttin' in real work, yeah",puttin,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,7,"Fuck them RIP shirts, fuck them T-shirts",shirts,8,"Three shouts for the real steppers, puttin' in real work, yeah",work,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,7,"Fuck them RIP shirts, fuck them T-shirts",T,8,"Three shouts for the real steppers, puttin' in real work, yeah",real,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,7,"Fuck them RIP shirts, fuck them T-shirts",T,8,"Three shouts for the real steppers, puttin' in real work, yeah",Three,INNER,PERFECT,cmu,HIGH,Y
+Fish Fry,7,"Fuck them RIP shirts, fuck them T-shirts",RIP,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bitch,INNER,SLANT,cmu,MED,Y
+Fish Fry,7,"Fuck them RIP shirts, fuck them T-shirts",T,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",keep,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,8,"Three shouts for the real steppers, puttin' in real work, yeah",real,8,"Three shouts for the real steppers, puttin' in real work, yeah",real,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,8,"Three shouts for the real steppers, puttin' in real work, yeah",Three,8,"Three shouts for the real steppers, puttin' in real work, yeah",real,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,8,"Three shouts for the real steppers, puttin' in real work, yeah",real,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",keep,INNER,SLANT,cmu,MED,Y
+Fish Fry,8,"Three shouts for the real steppers, puttin' in real work, yeah",steppers,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",get,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,8,"Three shouts for the real steppers, puttin' in real work, yeah",Three,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",keep,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,8,"Three shouts for the real steppers, puttin' in real work, yeah",puttin,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",young,INNER,SLANT,cmu,MED,Y
+Fish Fry,8,"Three shouts for the real steppers, puttin' in real work, yeah",real,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",free,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,8,"Three shouts for the real steppers, puttin' in real work, yeah",shouts,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",thou,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,8,"Three shouts for the real steppers, puttin' in real work, yeah",Three,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",free,INNER,PERFECT,cmu,HIGH,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bag,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bad,INNER,SLANT,cmu,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bitch,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",gotta,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",gotta,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bad,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",crashin,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bag,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",crashin,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bitch,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",drip,INNER,SLANT,cmu,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",gotta,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",cost,INNER,SLANT,cmu,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",keep,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",free,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bitch,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,END,SLANT,cmu,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bad,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",smash,INNER,SLANT,cmu,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bag,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",smash,INNER,SLANT,cmu,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bitch,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,INNER,SLANT,cmu,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bitch,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",I'ma,INNER,SLANT,spelling,LOW,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",get,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",'dem,INNER,SLANT,spelling,LOW,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",get,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",air,INNER,SLANT,cmu,MED,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",get,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",let,INNER,PERFECT,cmu,HIGH,Y
+Fish Fry,9,"I gotta get me a bag, bitch, I gotta keep me a bad bitch",bitch,12,"Nigga wouldn't listen, we whacked him out",him,END,SLANT,cmu,MED,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",crashin,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",smash,INNER,SLANT,cmu,MED,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",drip,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,INNER,SLANT,cmu,MED,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",drip,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",I'ma,INNER,SLANT,spelling,LOW,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",few,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",Nefew,INNER,PERFECT,spelling,MED,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",Smoke,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",gon,INNER,SLANT,spelling,LOW,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",crashin,12,"Nigga wouldn't listen, we whacked him out",whacked,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",drip,12,"Nigga wouldn't listen, we whacked him out",him,INNER,SLANT,cmu,MED,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",drip,12,"Nigga wouldn't listen, we whacked him out",listen,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",drip,12,"Nigga wouldn't listen, we whacked him out",Nigga,INNER,SLANT,spelling,LOW,Y
+Fish Fry,10,"Smoke free, drip cost a few thou', all my young niggas crashin'",niggas,12,"Nigga wouldn't listen, we whacked him out",Nigga,INNER,SLANT,spelling,LOW,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",'dem,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",air,INNER,SLANT,spelling,LOW,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",I'ma,INNER,SLANT,spelling,LOW,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",I'ma,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,INNER,SLANT,spelling,LOW,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",let,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",'dem,INNER,SLANT,spelling,LOW,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",let,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",air,INNER,SLANT,cmu,MED,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,12,"Nigga wouldn't listen, we whacked him out",him,END,REPEAT,spelling,HIGH,N
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,12,"Nigga wouldn't listen, we whacked him out",him,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,12,"Nigga wouldn't listen, we whacked him out",listen,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",I'ma,12,"Nigga wouldn't listen, we whacked him out",him,INNER,SLANT,spelling,LOW,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",smash,12,"Nigga wouldn't listen, we whacked him out",whacked,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",'dem,13,"Fuck all that wet, hit his granny house",wet,INNER,SLANT,spelling,LOW,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",air,13,"Fuck all that wet, hit his granny house",wet,INNER,SLANT,cmu,MED,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",him,13,"Fuck all that wet, hit his granny house",hit,INNER,SLANT,cmu,MED,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",I'ma,13,"Fuck all that wet, hit his granny house",hit,INNER,SLANT,spelling,LOW,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",let,13,"Fuck all that wet, hit his granny house",wet,INNER,PERFECT,cmu,HIGH,Y
+Fish Fry,11,"On sight, we gon' smash him, I'ma let Nefew 'dem air him out",smash,13,"Fuck all that wet, hit his granny house",granny,INNER,SLANT,cmu,MED,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",listen,12,"Nigga wouldn't listen, we whacked him out",him,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",him,13,"Fuck all that wet, hit his granny house",hit,INNER,SLANT,cmu,MED,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",listen,13,"Fuck all that wet, hit his granny house",hit,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",Nigga,13,"Fuck all that wet, hit his granny house",hit,INNER,SLANT,spelling,LOW,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",whacked,13,"Fuck all that wet, hit his granny house",granny,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",him,14,"Taliban shit with these choppers, nigga",shit,INNER,SLANT,cmu,MED,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",listen,14,"Taliban shit with these choppers, nigga",shit,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",Nigga,14,"Taliban shit with these choppers, nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",Nigga,14,"Taliban shit with these choppers, nigga",shit,INNER,SLANT,spelling,LOW,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",whacked,14,"Taliban shit with these choppers, nigga",Taliban,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,12,"Nigga wouldn't listen, we whacked him out",him,16,I'ma pull up with some real killers,killers,END,ASSONANCE,vowel,MED,Y
+Fish Fry,13,"Fuck all that wet, hit his granny house",granny,14,"Taliban shit with these choppers, nigga",Taliban,INNER,SLANT,cmu,MED,Y
+Fish Fry,13,"Fuck all that wet, hit his granny house",hit,14,"Taliban shit with these choppers, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Fish Fry,13,"Fuck all that wet, hit his granny house",hit,14,"Taliban shit with these choppers, nigga",shit,INNER,PERFECT,cmu,HIGH,Y
+Fish Fry,13,"Fuck all that wet, hit his granny house",house,15,How we gon' play with these type of niggas?,How,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,14,"Taliban shit with these choppers, nigga",shit,14,"Taliban shit with these choppers, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Fish Fry,14,"Taliban shit with these choppers, nigga",nigga,15,How we gon' play with these type of niggas?,niggas,END,SLANT,spelling,LOW,Y
+Fish Fry,14,"Taliban shit with these choppers, nigga",these,15,How we gon' play with these type of niggas?,these,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,14,"Taliban shit with these choppers, nigga",shit,16,I'ma pull up with some real killers,I'ma,INNER,SLANT,spelling,LOW,Y
+Fish Fry,14,"Taliban shit with these choppers, nigga",shit,16,I'ma pull up with some real killers,killers,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,14,"Taliban shit with these choppers, nigga",these,16,I'ma pull up with some real killers,real,INNER,SLANT,cmu,MED,Y
+Fish Fry,15,How we gon' play with these type of niggas?,these,16,I'ma pull up with some real killers,real,INNER,SLANT,cmu,MED,Y
+Fish Fry,15,How we gon' play with these type of niggas?,these,17,"Bodybag, homicide, deal with him",deal,INNER,SLANT,cmu,MED,Y
+Fish Fry,15,How we gon' play with these type of niggas?,type,17,"Bodybag, homicide, deal with him",homicide,INNER,SLANT,cmu,MED,Y
+Fish Fry,16,I'ma pull up with some real killers,killers,17,"Bodybag, homicide, deal with him",him,END,ASSONANCE,vowel,MED,Y
+Fish Fry,16,I'ma pull up with some real killers,I'ma,17,"Bodybag, homicide, deal with him",him,INNER,SLANT,spelling,LOW,Y
+Fish Fry,16,I'ma pull up with some real killers,real,17,"Bodybag, homicide, deal with him",deal,INNER,PERFECT,cmu,HIGH,Y
+Fish Fry,16,I'ma pull up with some real killers,I'ma,18,I'ma show them what this money do,I'ma,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,16,I'ma pull up with some real killers,some,18,I'ma show them what this money do,money,INNER,SLANT,cmu,MED,Y
+Fish Fry,16,I'ma pull up with some real killers,some,18,I'ma show them what this money do,what,INNER,SLANT,cmu,MED,Y
+Fish Fry,17,"Bodybag, homicide, deal with him",him,18,I'ma show them what this money do,I'ma,INNER,SLANT,spelling,LOW,Y
+Fish Fry,17,"Bodybag, homicide, deal with him",homicide,19,Sendin' out ghosts like peekaboo,like,INNER,SLANT,cmu,MED,Y
+Fish Fry,18,I'ma show them what this money do,what,18,I'ma show them what this money do,money,INNER,SLANT,cmu,MED,Y
+Fish Fry,18,I'ma show them what this money do,show,19,Sendin' out ghosts like peekaboo,ghosts,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,18,I'ma show them what this money do,I'ma,20,"Blessin' them, stick with no achoo",stick,INNER,SLANT,spelling,LOW,Y
+Fish Fry,18,I'ma show them what this money do,show,20,"Blessin' them, stick with no achoo",no,INNER,PERFECT,cmu,HIGH,Y
+Fish Fry,19,Sendin' out ghosts like peekaboo,peekaboo,20,"Blessin' them, stick with no achoo",achoo,END,PERFECT,spelling,MED,Y
+Fish Fry,19,Sendin' out ghosts like peekaboo,ghosts,20,"Blessin' them, stick with no achoo",no,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,19,Sendin' out ghosts like peekaboo,Sendin,20,"Blessin' them, stick with no achoo",Blessin,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,20,"Blessin' them, stick with no achoo",achoo,21,"Soon as they hop out, they start shootin'",shootin,END,ASSONANCE,vowel,MED,Y
+Fish Fry,20,"Blessin' them, stick with no achoo",achoo,21,"Soon as they hop out, they start shootin'",Soon,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,20,"Blessin' them, stick with no achoo",stick,22,"Young nigga pull them sticks to this, ha-ha",nigga,INNER,SLANT,spelling,LOW,Y
+Fish Fry,20,"Blessin' them, stick with no achoo",stick,22,"Young nigga pull them sticks to this, ha-ha",sticks,INNER,SLANT,cmu,MED,Y
+Fish Fry,21,"Soon as they hop out, they start shootin'",hop,21,"Soon as they hop out, they start shootin'",start,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,21,"Soon as they hop out, they start shootin'",Soon,21,"Soon as they hop out, they start shootin'",shootin,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,22,"Young nigga pull them sticks to this, ha-ha",pull,23,"I'm on Glenwood, Alley Boy in the Edge' (Edgewood)",Glenwood,INNER,SLANT,cmu,MED,Y
+Fish Fry,23,"I'm on Glenwood, Alley Boy in the Edge' (Edgewood)",Edge,24,"I be on 800, where the rappers be scared (On God)",scared,END,ASSONANCE,vowel,MED,Y
+Fish Fry,23,"I'm on Glenwood, Alley Boy in the Edge' (Edgewood)",Alley,24,"I be on 800, where the rappers be scared (On God)",rappers,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,23,"I'm on Glenwood, Alley Boy in the Edge' (Edgewood)",Edge,24,"I be on 800, where the rappers be scared (On God)",where,INNER,SLANT,cmu,MED,Y
+Fish Fry,23,"I'm on Glenwood, Alley Boy in the Edge' (Edgewood)",Edge,25,"Been in so many shootouts, gotta keep one in the head (21)",head,END,SLANT,cmu,MED,Y
+Fish Fry,23,"I'm on Glenwood, Alley Boy in the Edge' (Edgewood)",Edge,25,"Been in so many shootouts, gotta keep one in the head (21)",many,INNER,SLANT,cmu,MED,Y
+Fish Fry,23,"I'm on Glenwood, Alley Boy in the Edge' (Edgewood)",Edge,26,"And when the gang slide, we don't shoot at no legs (On God)",legs,END,ASSONANCE,vowel,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",where,24,"I be on 800, where the rappers be scared (On God)",scared,INNER,SLANT,cmu,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",scared,25,"Been in so many shootouts, gotta keep one in the head (21)",head,END,SLANT,cmu,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",scared,25,"Been in so many shootouts, gotta keep one in the head (21)",many,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",where,25,"Been in so many shootouts, gotta keep one in the head (21)",head,INNER,SLANT,cmu,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",where,25,"Been in so many shootouts, gotta keep one in the head (21)",many,INNER,SLANT,cmu,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",scared,26,"And when the gang slide, we don't shoot at no legs (On God)",legs,END,ASSONANCE,vowel,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",rappers,26,"And when the gang slide, we don't shoot at no legs (On God)",gang,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",scared,26,"And when the gang slide, we don't shoot at no legs (On God)",when,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",where,26,"And when the gang slide, we don't shoot at no legs (On God)",legs,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",where,26,"And when the gang slide, we don't shoot at no legs (On God)",when,INNER,SLANT,cmu,MED,Y
+Fish Fry,24,"I be on 800, where the rappers be scared (On God)",scared,28,Me and my .223 got married (On God),married,END,SLANT,cmu,MED,Y
+Fish Fry,25,"Been in so many shootouts, gotta keep one in the head (21)",many,25,"Been in so many shootouts, gotta keep one in the head (21)",head,INNER,SLANT,cmu,MED,Y
+Fish Fry,25,"Been in so many shootouts, gotta keep one in the head (21)",head,26,"And when the gang slide, we don't shoot at no legs (On God)",legs,END,ASSONANCE,vowel,MED,Y
+Fish Fry,25,"Been in so many shootouts, gotta keep one in the head (21)",head,26,"And when the gang slide, we don't shoot at no legs (On God)",when,INNER,SLANT,cmu,MED,Y
+Fish Fry,25,"Been in so many shootouts, gotta keep one in the head (21)",many,26,"And when the gang slide, we don't shoot at no legs (On God)",legs,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,25,"Been in so many shootouts, gotta keep one in the head (21)",many,26,"And when the gang slide, we don't shoot at no legs (On God)",when,INNER,SLANT,cmu,MED,Y
+Fish Fry,25,"Been in so many shootouts, gotta keep one in the head (21)",shootouts,26,"And when the gang slide, we don't shoot at no legs (On God)",shoot,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,25,"Been in so many shootouts, gotta keep one in the head (21)",head,28,Me and my .223 got married (On God),married,END,SLANT,cmu,MED,Y
+Fish Fry,26,"And when the gang slide, we don't shoot at no legs (On God)",don't,26,"And when the gang slide, we don't shoot at no legs (On God)",no,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,26,"And when the gang slide, we don't shoot at no legs (On God)",when,26,"And when the gang slide, we don't shoot at no legs (On God)",legs,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,26,"And when the gang slide, we don't shoot at no legs (On God)",gang,27,7.62's I carry (21),carry,INNER,SLANT,cmu,MED,Y
+Fish Fry,26,"And when the gang slide, we don't shoot at no legs (On God)",legs,28,Me and my .223 got married (On God),married,END,ASSONANCE,vowel,MED,Y
+Fish Fry,26,"And when the gang slide, we don't shoot at no legs (On God)",when,28,Me and my .223 got married (On God),married,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,26,"And when the gang slide, we don't shoot at no legs (On God)",legs,29,"When I was young nigga, used to hit licks",licks,END,SLANT,spelling,LOW,Y
+Fish Fry,27,7.62's I carry (21),carry,30,Go to Lenox and spend it on Bally (Straight up),Bally,END,SLANT,cmu,MED,Y
+Fish Fry,28,Me and my .223 got married (On God),married,29,"When I was young nigga, used to hit licks",When,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,28,Me and my .223 got married (On God),married,30,Go to Lenox and spend it on Bally (Straight up),Lenox,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,28,Me and my .223 got married (On God),married,30,Go to Lenox and spend it on Bally (Straight up),spend,INNER,SLANT,cmu,MED,Y
+Fish Fry,28,Me and my .223 got married (On God),married,32,"Nigga, we don't talk, rest them niggas get buried (On God)",buried,END,MULTI,multi,HIGH,Y
+Fish Fry,29,"When I was young nigga, used to hit licks",hit,29,"When I was young nigga, used to hit licks",licks,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,29,"When I was young nigga, used to hit licks",nigga,29,"When I was young nigga, used to hit licks",hit,INNER,SLANT,spelling,LOW,Y
+Fish Fry,29,"When I was young nigga, used to hit licks",When,30,Go to Lenox and spend it on Bally (Straight up),Lenox,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,29,"When I was young nigga, used to hit licks",When,30,Go to Lenox and spend it on Bally (Straight up),spend,INNER,SLANT,cmu,MED,Y
+Fish Fry,29,"When I was young nigga, used to hit licks",hit,31,Y'all keep making these diss songs,diss,INNER,SLANT,cmu,MED,Y
+Fish Fry,29,"When I was young nigga, used to hit licks",licks,31,Y'all keep making these diss songs,diss,INNER,SLANT,cmu,MED,Y
+Fish Fry,30,Go to Lenox and spend it on Bally (Straight up),Lenox,30,Go to Lenox and spend it on Bally (Straight up),spend,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,30,Go to Lenox and spend it on Bally (Straight up),Go,32,"Nigga, we don't talk, rest them niggas get buried (On God)",don't,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,30,Go to Lenox and spend it on Bally (Straight up),Lenox,32,"Nigga, we don't talk, rest them niggas get buried (On God)",buried,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,30,Go to Lenox and spend it on Bally (Straight up),Lenox,32,"Nigga, we don't talk, rest them niggas get buried (On God)",get,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,30,Go to Lenox and spend it on Bally (Straight up),Lenox,32,"Nigga, we don't talk, rest them niggas get buried (On God)",rest,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,30,Go to Lenox and spend it on Bally (Straight up),spend,32,"Nigga, we don't talk, rest them niggas get buried (On God)",buried,INNER,SLANT,cmu,MED,Y
+Fish Fry,30,Go to Lenox and spend it on Bally (Straight up),spend,32,"Nigga, we don't talk, rest them niggas get buried (On God)",get,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,30,Go to Lenox and spend it on Bally (Straight up),spend,32,"Nigga, we don't talk, rest them niggas get buried (On God)",rest,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,30,Go to Lenox and spend it on Bally (Straight up),Bally,34,"Ain't no permits, nigga, everybody carried (Keeps it)",carried,END,ASSONANCE,vowel,MED,Y
+Fish Fry,31,Y'all keep making these diss songs,keep,31,Y'all keep making these diss songs,these,INNER,SLANT,cmu,MED,Y
+Fish Fry,31,Y'all keep making these diss songs,Y'all,31,Y'all keep making these diss songs,songs,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,31,Y'all keep making these diss songs,songs,32,"Nigga, we don't talk, rest them niggas get buried (On God)",talk,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,31,Y'all keep making these diss songs,Y'all,32,"Nigga, we don't talk, rest them niggas get buried (On God)",talk,INNER,SLANT,cmu,MED,Y
+Fish Fry,31,Y'all keep making these diss songs,making,33,I come straight up out the 6,straight,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,32,"Nigga, we don't talk, rest them niggas get buried (On God)",get,32,"Nigga, we don't talk, rest them niggas get buried (On God)",buried,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,32,"Nigga, we don't talk, rest them niggas get buried (On God)",Nigga,32,"Nigga, we don't talk, rest them niggas get buried (On God)",niggas,INNER,SLANT,spelling,LOW,Y
+Fish Fry,32,"Nigga, we don't talk, rest them niggas get buried (On God)",rest,32,"Nigga, we don't talk, rest them niggas get buried (On God)",buried,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,32,"Nigga, we don't talk, rest them niggas get buried (On God)",rest,32,"Nigga, we don't talk, rest them niggas get buried (On God)",get,INNER,SLANT,cmu,MED,Y
+Fish Fry,32,"Nigga, we don't talk, rest them niggas get buried (On God)",buried,34,"Ain't no permits, nigga, everybody carried (Keeps it)",carried,END,SLANT,spelling,LOW,Y
+Fish Fry,32,"Nigga, we don't talk, rest them niggas get buried (On God)",don't,34,"Ain't no permits, nigga, everybody carried (Keeps it)",no,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,32,"Nigga, we don't talk, rest them niggas get buried (On God)",Nigga,34,"Ain't no permits, nigga, everybody carried (Keeps it)",nigga,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,32,"Nigga, we don't talk, rest them niggas get buried (On God)",niggas,34,"Ain't no permits, nigga, everybody carried (Keeps it)",nigga,INNER,SLANT,spelling,LOW,Y
+Fish Fry,32,"Nigga, we don't talk, rest them niggas get buried (On God)",niggas,34,"Ain't no permits, nigga, everybody carried (Keeps it)",permits,INNER,SLANT,spelling,LOW,Y
+Fish Fry,33,I come straight up out the 6,straight,34,"Ain't no permits, nigga, everybody carried (Keeps it)",Ain't,INNER,SLANT,cmu,MED,Y
+Fish Fry,34,"Ain't no permits, nigga, everybody carried (Keeps it)",everybody,35,Keep me a Glock-27 (I do),Glock,INNER,SLANT,cmu,MED,Y
+Fish Fry,34,"Ain't no permits, nigga, everybody carried (Keeps it)",carried,36,Nigga won't catch me without it (They won't),catch,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,34,"Ain't no permits, nigga, everybody carried (Keeps it)",nigga,36,Nigga won't catch me without it (They won't),Nigga,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,34,"Ain't no permits, nigga, everybody carried (Keeps it)",no,36,Nigga won't catch me without it (They won't),won't,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,35,Keep me a Glock-27 (I do),Glock,37,Lil' nigga think you hard cause you got one (So what?),cause,INNER,SLANT,cmu,MED,Y
+Fish Fry,35,Keep me a Glock-27 (I do),Glock,37,Lil' nigga think you hard cause you got one (So what?),got,INNER,SLANT,cmu,MED,Y
+Fish Fry,35,Keep me a Glock-27 (I do),Glock,37,Lil' nigga think you hard cause you got one (So what?),hard,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,35,Keep me a Glock-27 (I do),Glock,38,But most of my niggas got bodies (On God),bodies,END,ASSONANCE,vowel,MED,Y
+Fish Fry,36,Nigga won't catch me without it (They won't),Nigga,37,Lil' nigga think you hard cause you got one (So what?),nigga,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,36,Nigga won't catch me without it (They won't),Nigga,38,But most of my niggas got bodies (On God),niggas,INNER,SLANT,spelling,LOW,Y
+Fish Fry,36,Nigga won't catch me without it (They won't),won't,38,But most of my niggas got bodies (On God),most,INNER,SLANT,cmu,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),cause,37,Lil' nigga think you hard cause you got one (So what?),got,INNER,SLANT,cmu,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),hard,37,Lil' nigga think you hard cause you got one (So what?),cause,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),hard,37,Lil' nigga think you hard cause you got one (So what?),got,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),Lil,37,Lil' nigga think you hard cause you got one (So what?),think,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),cause,38,But most of my niggas got bodies (On God),bodies,INNER,SLANT,cmu,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),cause,38,But most of my niggas got bodies (On God),got,INNER,SLANT,cmu,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),got,38,But most of my niggas got bodies (On God),bodies,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),got,38,But most of my niggas got bodies (On God),got,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),hard,38,But most of my niggas got bodies (On God),bodies,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),hard,38,But most of my niggas got bodies (On God),got,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),nigga,38,But most of my niggas got bodies (On God),niggas,INNER,SLANT,spelling,LOW,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),cause,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",gotta,INNER,SLANT,cmu,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),got,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",gotta,INNER,SLANT,cmu,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),hard,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",gotta,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,37,Lil' nigga think you hard cause you got one (So what?),nigga,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",niggas,INNER,SLANT,spelling,LOW,Y
+Fish Fry,38,But most of my niggas got bodies (On God),got,38,But most of my niggas got bodies (On God),bodies,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,38,But most of my niggas got bodies (On God),bodies,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",gotta,INNER,ASSONANCE,vowel,MED,Y
+Fish Fry,38,But most of my niggas got bodies (On God),got,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",gotta,INNER,SLANT,cmu,MED,Y
+Fish Fry,38,But most of my niggas got bodies (On God),niggas,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",niggas,INNER,REPEAT,spelling,HIGH,N
+Fish Fry,38,But most of my niggas got bodies (On God),bodies,40,"On God, I'm 21 gang, if you reach for my chain then it's gon be a riot (21, 21)",God,INNER,SLANT,cmu,MED,Y
+Fish Fry,38,But most of my niggas got bodies (On God),got,40,"On God, I'm 21 gang, if you reach for my chain then it's gon be a riot (21, 21)",God,INNER,SLANT,cmu,MED,Y
+Fish Fry,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",might,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",quiet,INNER,SLANT,cmu,MED,Y
+Fish Fry,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",y'all,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",dawg,INNER,SLANT,spelling,LOW,Y
+Fish Fry,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",quiet,40,"On God, I'm 21 gang, if you reach for my chain then it's gon be a riot (21, 21)",riot,END,MULTI,multi,HIGH,Y
+Fish Fry,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",gotta,40,"On God, I'm 21 gang, if you reach for my chain then it's gon be a riot (21, 21)",God,INNER,SLANT,cmu,MED,Y
+Fish Fry,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",keep,40,"On God, I'm 21 gang, if you reach for my chain then it's gon be a riot (21, 21)",reach,INNER,SLANT,cmu,MED,Y
+Fish Fry,39,"Shh, y'all niggas might tattletale, dawg, gotta keep that quiet (Lil' pussy)",might,40,"On God, I'm 21 gang, if you reach for my chain then it's gon be a riot (21, 21)",riot,INNER,SLANT,cmu,MED,Y

@@ -276,6 +276,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 264 | lil-pete | Lil Pete | 1 | 42 | 302 | 49 | 253 | 292 | 2026-11-10 13:24 ET |
 | 265 | octavian | Octavian | 1 | 42 | 210 | 42 | 168 | 183 | 2026-11-10 13:24 ET |
 | 266 | rah-swish | Rah Swish | 1 | 42 | 255 | 67 | 188 | 251 | 2026-11-10 13:24 ET |
+| 267 | zona-man | Zona Man | 1 | 42 | 445 | 67 | 378 | 439 | 2026-11-10 13:24 ET |
+| 268 | alexander-lewis | Alexander Lewis | 1 | 41 | 130 | 34 | 96 | 125 | 2026-11-10 13:24 ET |
+| 269 | d1lebronglazer | D1LebronGlazer | 1 | 41 | 299 | 30 | 269 | 295 | 2026-11-10 13:24 ET |
+| 270 | jimin | Jimin (지민) | 1 | 41 | 209 | 24 | 185 | 209 | 2026-11-10 13:24 ET |
+| 271 | queen-key | Queen Key | 1 | 41 | 331 | 46 | 285 | 329 | 2026-11-10 13:24 ET |
+| 272 | sean-kingston | Sean Kingston | 1 | 41 | 193 | 34 | 159 | 192 | 2026-11-10 13:24 ET |
+| 273 | tray-tray | Tray Tray | 1 | 41 | 270 | 44 | 226 | 265 | 2026-11-10 13:24 ET |
+| 274 | ygg-tay | YGG Tay | 1 | 41 | 363 | 23 | 340 | 363 | 2026-11-10 13:24 ET |
+| 275 | alley-boy | Alley Boy | 1 | 40 | 217 | 28 | 189 | 217 | 2026-11-10 13:24 ET |
+| 276 | banzg | BanzG | 1 | 40 | 351 | 56 | 295 | 336 | 2026-11-10 13:24 ET |
 
 ## Failures
 
@@ -283,7 +293,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 266/386: Rah Swish.
+Finished 276/386: BanzG.
 
 ## Final
 
