@@ -19,6 +19,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 | 9 | future | Future | 756 | 30648 | 166786 | 27705 | 139081 | 164130 | 2026-11-10 01:25 ET |
 | 10 | young-dolph | Young Dolph | 632 | 25431 | 154359 | 26238 | 128121 | 152111 | 2026-11-10 01:26 ET |
 | 11 | young-stoner-life | Young Stoner Life | 544 | 23989 | 139607 | 27920 | 111687 | 137607 | 2026-11-10 01:27 ET |
+| 12 | travis-scott | Travis Scott | 588 | 23407 | 123803 | 22437 | 101366 | 121764 | 2026-11-10 01:28 ET |
 
 ## Failures
 
@@ -26,7 +27,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
 ## Status
 
-Finished 11/386: Young Stoner Life.
+Finished 12/386: Travis Scott.
 
 ## Final
 
