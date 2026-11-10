@@ -4,54 +4,60 @@ Vault `tools/bar-hits-catalog/BarHitsCatalog.sqlite` was opened read-only. Count
 
 ## Coverage
 
-- Artist credits opened: Young Stoner Life & Young Thug, Young Stoner Life, Young Thug & Gunna, Young Stoner Life, Young Thug & Meek Mill, Young Thug
-- Songs: 52
-- Bars kept (Young Thug lyric lines): 2586
-- Section headers dropped, not counted as bars: 3
+- Artist credits opened: Young Thug, Young Stoner Life & Young Thug, Young Stoner Life, Young Thug & Gunna, Young Stoner Life, Young Thug & Meek Mill
+- Songs: 53
+- Bars kept (Young Thug lyric lines): 2659
+- Section headers dropped, not counted as bars: 4
 - Genius page chrome dropped, not counted as bars: 85. These vault rows are a leading `|`, an `aria-label`, or the words "You might also like". They are not lyric bars and they are not rhyme examples. Songs that had them: Bad Bad Bad (5), Cartier Gucci Scarf (2), Circle of Bosses (4), Diamonds (6), Die Today (3), Hot (Remix) (3), I'm Scared (2), Jumped Out The Window (5), Mack Truck (5), My City (Remix) (3), No Surprise (3), Paid the Fine (6), Proud of You (4), Pussy (1), Ski (6), Slam the Door (4), Solid (6), Sup Mate (3), Superstar (4), Surf (4), That Go! (6)
-- Lines skipped because a section header named another artist: 0
+- Lines skipped because a section header named another artist: 3
 - Kept bars that are only an ad-lib or filler after the parenthetical is stripped: 19
 - Thugger: no vault credit contains Thugger. Nothing under that name was opened.
 - YSL (USA) does not contain Young Thug or Thugger. That credit was not opened.
+- Every matched artist string, the rejected titles, and the feature sections are in `coverage.md`.
 
-A bar index is the 1-based position of the line in that song after section headers and Genius chrome are removed. END rhymes compare line endings within 4 of those lines. INNER rhymes compare a word that is not the last word, inside the same line or against a word in the next one or two lines. The same normalized word is REPEAT, not a rhyme. REPEAT rows are in `rhyme_pairs.csv` and the All sheet. They are not in the end, inner, multi, or low sheets, and they are not in the layer share.
+A bar index is the 1-based position of the line in that song after section headers and Genius chrome are removed. END rhymes compare line endings within 4 of those lines. INNER rhymes compare a word that is not the last word, inside the same line or against a word in the next one or two lines. The same normalized word is REPEAT, not a rhyme. REPEAT rows are in `rhyme_pairs.csv` and the All sheet. They are not in the End, Inner, Multi-syllable, or Low confidence sheets, and they are not in the layer share. `core` is Y when the match is PERFECT, SLANT, or MULTI, or the confidence is HIGH or MED. `core` is N for a LOW-confidence ASSONANCE and for REPEAT. The Core sheet is core Y only. Nothing is dropped from the csv.
 
 Parenthetical ad-libs are ignored when the rhyme word is chosen. The quoted bar is the vault line.
 
 ## Pair counts
 
-- Rhyme pairs, excluding REPEAT: 13468
-- REPEAT pairs, recorded separately: 2239
-- END rhymes: 2132
-- INNER rhymes: 11336
+- Rhyme pairs, excluding REPEAT: 14013
+- REPEAT pairs, recorded separately: 2282
+- END rhymes: 2193
+- INNER rhymes: 11820
 
 By match:
 
-- PERFECT: 947 (END 224, INNER 723)
-- SLANT: 5724 (END 841, INNER 4883)
-- ASSONANCE: 6712 (END 1023, INNER 5689)
-- MULTI: 85 (END 44, INNER 41)
+- PERFECT: 1000 (END 234, INNER 766)
+- SLANT: 5938 (END 870, INNER 5068)
+- ASSONANCE: 6977 (END 1043, INNER 5934)
+- MULTI: 98 (END 46, INNER 52)
 
 By confidence:
 
-- HIGH: 956
-- MED: 11611
-- LOW: 901
+- HIGH: 1021
+- MED: 12054
+- LOW: 938
+
+## Core
+
+- Core Y: 13761
+- Core N among rhyme pairs: 252
 
 ## Layer share
 
 Share of rhyme pairs (REPEAT excluded). CMU is `pronouncing` / cmudict, plus the vault `phonetic_class` tail when the end word is not in the dictionary. Vowel is assonance. Spelling is the normalized ending plus Metaphone (`jellyfish.metaphone`; that package has no Double Metaphone). Multi is the last 2–3 syllables, including a phrase at the end of the line.
 
-- cmu: 5938 (44.1%)
-- vowel: 6712 (49.8%)
-- spelling: 733 (5.4%)
-- multi: 85 (0.6%)
+- cmu: 6169 (44.0%)
+- vowel: 6977 (49.8%)
+- spelling: 769 (5.5%)
+- multi: 98 (0.7%)
 
 ## Schemes
 
 A scheme uses END pairs scored PERFECT, SLANT, or MULTI inside 4 lines. Assonance and REPEAT do not set the letter. A known pattern is kept when it covers at least 40% of the 4-line windows. Otherwise the song is loose.
 
-- loose: 52 songs
+- loose: 53 songs
 
 ## Alphabetical vault order
 
@@ -74,25 +80,25 @@ These songs are still A-to-Z after section headers and Genius chrome are removed
 
 ## Top 20 families
 
-1. `vow:IH` — 1267 pairs (END 221, INNER 1046). Words: bitch, shit, bitches, wrist, big, lil, kids, think.
-2. `vow:OW` — 865 pairs (END 68, INNER 797). Words: don't, no, know, told, go, won't, ho, gold.
-3. `vow:EH` — 761 pairs (END 101, INNER 660). Words: get, gettin, tell, when, never, every, let's, left.
-4. `vow:AE` — 695 pairs (END 161, INNER 534). Words: can't, had, back, man, racks, can, bad, ass.
-5. `vow:AA` — 640 pairs (END 73, INNER 567). Words: got, want, nothin, top, not, gotta, card, cops.
-6. `vow:EY` — 602 pairs (END 91, INNER 511). Words: ain't, play, say, baby, way, stay, came, pay.
-7. `vow:AY` — 576 pairs (END 95, INNER 481). Words: like, diamonds, by, ridin, fly, die, why, life.
-8. `vow:IY` — 515 pairs (END 112, INNER 403). Words: see, three, shawty, need, streets, these, feel, seats.
-9. `vow:AH` — 437 pairs (END 45, INNER 392). Words: hundred, fuck, come, one, some, done, somethin, fuckin.
-10. `slant:AA:stop` — 363 pairs (END 27, INNER 336). Words: got, not, want, gotta, block, opp, top, bought.
-11. `slant:IH:sib-stop` — 288 pairs (END 38, INNER 250). Words: bitch, shit, hit, rich, stick, niggas, big, nigga.
-12. `slant:IH:stop` — 279 pairs (END 38, INNER 241). Words: nigga, shit, big, hit, stick, dick, wrist, kick.
+1. `vow:IH` — 1391 pairs (END 226, INNER 1165). Words: bitch, shit, bitches, big, wrist, lil, think, business.
+2. `vow:OW` — 905 pairs (END 74, INNER 831). Words: don't, no, know, told, go, ho, won't, gold.
+3. `vow:EH` — 764 pairs (END 101, INNER 663). Words: get, gettin, tell, when, never, every, let's, left.
+4. `vow:AE` — 708 pairs (END 161, INNER 547). Words: can't, man, had, back, racks, can, bad, ass.
+5. `vow:AA` — 654 pairs (END 73, INNER 581). Words: got, want, nothin, not, top, gotta, card, cops.
+6. `vow:EY` — 612 pairs (END 91, INNER 521). Words: ain't, play, say, baby, way, stay, came, day.
+7. `vow:AY` — 586 pairs (END 97, INNER 489). Words: like, diamonds, by, ridin, fly, die, why, life.
+8. `vow:IY` — 532 pairs (END 112, INNER 420). Words: see, three, shawty, need, streets, these, seats, feel.
+9. `vow:AH` — 452 pairs (END 46, INNER 406). Words: hundred, fuck, come, one, some, done, somethin, fuckin.
+10. `slant:AA:stop` — 367 pairs (END 27, INNER 340). Words: got, not, gotta, want, block, opp, top, bought.
+11. `slant:IH:sib-stop` — 303 pairs (END 38, INNER 265). Words: bitch, shit, hit, rich, big, stick, dick, niggas.
+12. `slant:IH:stop` — 292 pairs (END 38, INNER 254). Words: nigga, shit, big, hit, stick, dick, wrist, kick.
 13. `slant:AE:stop` — 221 pairs (END 56, INNER 165). Words: slatt, slatty, back, bad, had, can't, bag, brand.
-14. `slant:EH:stop` — 172 pairs (END 16, INNER 156). Words: get, let, neck, head, went, check, red, twenty.
-15. `slant:IH:liq-stop` — 160 pairs (END 4, INNER 156). Words: shit, lil, still, big, really, crib, 'til, kill.
-16. `slant:AH:nas-stop` — 159 pairs (END 5, INNER 154). Words: fuck, some, what, come, young, money, thug, one.
-17. `slant:AY:stop` — 146 pairs (END 10, INNER 136). Words: like, right, side, might, ride, light, night, wipe.
-18. `slant:EH:nas-stop` — 146 pairs (END 28, INNER 118). Words: when, get, gettin, again, head, ten, let, send.
-19. `cmu:OW` — 136 pairs (END 12, INNER 124). Words: no, know, go, ho, show, throw, bro, blow.
+14. `slant:EH:stop` — 188 pairs (END 20, INNER 168). Words: get, let, neck, went, head, check, red, twenty.
+15. `slant:IH:liq-stop` — 168 pairs (END 4, INNER 164). Words: shit, lil, still, big, really, crib, 'til, kill.
+16. `slant:AH:nas-stop` — 165 pairs (END 5, INNER 160). Words: fuck, some, what, come, young, one, money, thug.
+17. `slant:AY:stop` — 150 pairs (END 10, INNER 140). Words: like, right, side, might, ride, light, night, white.
+18. `slant:EH:nas-stop` — 148 pairs (END 28, INNER 120). Words: when, get, gettin, again, head, ten, let, send.
+19. `cmu:OW` — 139 pairs (END 12, INNER 127). Words: no, know, go, ho, show, throw, blow, bro.
 20. `slant:AE:sib-stop` — 136 pairs (END 39, INNER 97). Words: ass, back, racks, bad, cash, had, sack, relax.
 
 ## Out of dictionary
@@ -100,35 +106,35 @@ These songs are still A-to-Z after section headers and Genius chrome are removed
 Top 30 normalized words that are not in cmudict and still landed in a pair. Count is pair sides, so a word in two pairs counts twice.
 
 - nigga — 130 pair sides, mostly spelling via spelling phonetic key, often with shit (18)
-- gon — 60 pair sides, mostly spelling via spelling phonetic key, often with dont (24)
+- gon — 62 pair sides, mostly spelling via spelling phonetic key, often with dont (24)
 - ima — 56 pair sides, mostly spelling via spelling phonetic key, often with shit (8)
 - slatt — 54 pair sides, mostly spelling via spelling phonetic key, often with slatty (40)
+- tryna — 47 pair sides, mostly spelling via spelling phonetic key, often with these (8)
 - slatty — 47 pair sides, mostly spelling via spelling phonetic key, often with slatt (40)
-- tryna — 46 pair sides, mostly spelling via spelling phonetic key, often with these (8)
 - shawty — 44 pair sides, mostly vowel via spelling phonetic key, often with money (3)
-- niggas — 26 pair sides, mostly spelling via spelling phonetic key, often with nigga (14)
+- niggas — 29 pair sides, mostly spelling via spelling phonetic key, often with nigga (14)
 - birkin — 18 pair sides, mostly vowel via spelling phonetic key, often with bitch (4)
 - gunna — 14 pair sides, mostly spelling via spelling phonetic key, often with one (2)
 - dawg — 14 pair sides, mostly spelling via spelling phonetic key, often with all (5)
 - wussy — 14 pair sides, mostly vowel via spelling phonetic key, often with pussy (12)
 - piranhas — 14 pair sides, mostly vowel via vault phonetic_class, often with slatts (4)
+- bidness — 13 pair sides, mostly spelling via spelling phonetic key, often with witness (3)
 - molto — 12 pair sides, mostly vowel via spelling phonetic key, often with no (3)
 - opps — 12 pair sides, mostly vowel via spelling phonetic key, often with dont (5)
 - thot — 12 pair sides, mostly spelling via spelling phonetic key, often with not (5)
 - bling — 12 pair sides, mostly spelling via spelling phonetic key, often with wrist (2)
 - tris — 12 pair sides, mostly spelling via spelling phonetic key, often with bitch (3)
+- lyin — 11 pair sides, mostly spelling via spelling phonetic key, often with eat (2)
 - popo — 11 pair sides, mostly vowel via spelling phonetic key, often with no (2)
 - thugger — 11 pair sides, mostly vowel via vault phonetic_class, often with hundred (1)
 - rari — 10 pair sides, mostly spelling via spelling phonetic key, often with bad (4)
 - kizzy — 10 pair sides, mostly cmu via vault phonetic_class, often with get (1)
+- sike — 9 pair sides, mostly spelling via spelling phonetic key, often with shit (3)
 - coolie — 9 pair sides, mostly spelling via spelling phonetic key, often with woolie (1)
 - roofy — 9 pair sides, mostly spelling via spelling phonetic key, often with woolie (1)
 - rackity — 8 pair sides, mostly vowel via spelling phonetic key, often with knapity (2)
 - neets — 8 pair sides, mostly spelling via spelling phonetic key, often with street (2)
 - slatts — 8 pair sides, mostly spelling via spelling phonetic key, often with rats (4)
-- hellcat — 7 pair sides, mostly spelling via spelling phonetic key, often with bat (3)
-- zaddy — 7 pair sides, mostly spelling via spelling phonetic key, often with bad (5)
-- bando — 7 pair sides, mostly vowel via spelling phonetic key, often with molto (1)
 
 ## Songs
 
@@ -136,6 +142,7 @@ Top 30 normalized words that are not in cmudict and still landed in a pair. Coun
 | --- | --- | --- | --- | --- | --- |
 | Young Thug | Audemar (Demo) | 64 | 113 | 224 | loose |
 | Young Thug | Bad Bad Bad | 49 | 64 | 267 | loose |
+| Big Sean | Big Bidness | 73 | 61 | 484 | loose |
 | Young Thug | Big Racks | 58 | 72 | 210 | loose |
 | Young Thug | Big Tipper | 61 | 26 | 423 | loose |
 | Young Thug | Boy Back | 44 | 41 | 226 | loose |
