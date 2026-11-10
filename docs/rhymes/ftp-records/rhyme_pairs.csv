@@ -1,0 +1,932 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Charlie,1,Cvstillo going back to work,back,2,"High as a roof (Huh?), off of the planet (Ayy)",planet,INNER,ASSONANCE,vowel,MED,Y
+Charlie,1,Cvstillo going back to work,back,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Janet,INNER,ASSONANCE,vowel,MED,Y
+Charlie,1,Cvstillo going back to work,back,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Trap,INNER,SLANT,cmu,MED,Y
+Charlie,1,Cvstillo going back to work,Cvstillo,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",know,INNER,ASSONANCE,vowel,LOW,N
+Charlie,1,Cvstillo going back to work,going,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",don't,INNER,ASSONANCE,vowel,MED,Y
+Charlie,1,Cvstillo going back to work,going,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",know,INNER,ASSONANCE,vowel,MED,Y
+Charlie,2,"High as a roof (Huh?), off of the planet (Ayy)",planet,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Janet,END,MULTI,multi,HIGH,Y
+Charlie,2,"High as a roof (Huh?), off of the planet (Ayy)",High,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Michael,INNER,ASSONANCE,vowel,MED,Y
+Charlie,2,"High as a roof (Huh?), off of the planet (Ayy)",planet,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Trap,INNER,ASSONANCE,vowel,MED,Y
+Charlie,2,"High as a roof (Huh?), off of the planet (Ayy)",roof,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",two,INNER,ASSONANCE,vowel,MED,Y
+Charlie,2,"High as a roof (Huh?), off of the planet (Ayy)",planet,5,"Not in my home town, I still got advantage (Yeah)",advantage,END,SLANT,cmu,MED,Y
+Charlie,2,"High as a roof (Huh?), off of the planet (Ayy)",planet,6,"I lost my granny, you'on get mo' grannies",grannies,END,SLANT,cmu,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",don't,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",know,INNER,ASSONANCE,vowel,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Trap,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Janet,INNER,ASSONANCE,vowel,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",don't,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",jumping,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",country,INNER,ASSONANCE,vowel,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",know,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Janet,5,"Not in my home town, I still got advantage (Yeah)",advantage,END,SLANT,cmu,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",don't,5,"Not in my home town, I still got advantage (Yeah)",home,INNER,ASSONANCE,vowel,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",know,5,"Not in my home town, I still got advantage (Yeah)",home,INNER,ASSONANCE,vowel,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Trap,5,"Not in my home town, I still got advantage (Yeah)",advantage,INNER,ASSONANCE,vowel,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Janet,6,"I lost my granny, you'on get mo' grannies",grannies,END,SLANT,cmu,MED,Y
+Charlie,3,"Trap jumping, Michael? (Skrrt), I don't know Janet (Skrrt)",Janet,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",scan,END,SLANT,cmu,MED,Y
+Charlie,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",sammich,5,"Not in my home town, I still got advantage (Yeah)",advantage,END,SLANT,spelling,LOW,Y
+Charlie,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",hoes,5,"Not in my home town, I still got advantage (Yeah)",home,INNER,SLANT,cmu,MED,Y
+Charlie,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",wanna,5,"Not in my home town, I still got advantage (Yeah)",got,INNER,SLANT,cmu,MED,Y
+Charlie,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",wanna,5,"Not in my home town, I still got advantage (Yeah)",Not,INNER,SLANT,cmu,MED,Y
+Charlie,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",sammich,6,"I lost my granny, you'on get mo' grannies",grannies,END,SLANT,spelling,LOW,Y
+Charlie,4,"I'm with two country hoes (Ha), wanna make a sammich (bitch)",hoes,6,"I lost my granny, you'on get mo' grannies",mo,INNER,ASSONANCE,vowel,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",Not,5,"Not in my home town, I still got advantage (Yeah)",got,INNER,PERFECT,cmu,HIGH,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",advantage,6,"I lost my granny, you'on get mo' grannies",grannies,END,SLANT,cmu,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",advantage,6,"I lost my granny, you'on get mo' grannies",granny,INNER,ASSONANCE,vowel,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",home,6,"I lost my granny, you'on get mo' grannies",mo,INNER,ASSONANCE,vowel,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",advantage,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",scan,END,ASSONANCE,vowel,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",got,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",card,INNER,ASSONANCE,vowel,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",got,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",got,INNER,REPEAT,spelling,HIGH,N
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",home,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",don't,INNER,ASSONANCE,vowel,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",home,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",go,INNER,ASSONANCE,vowel,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",Not,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",card,INNER,ASSONANCE,vowel,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",Not,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",got,INNER,PERFECT,cmu,HIGH,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",still,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",Bitch,INNER,SLANT,cmu,MED,Y
+Charlie,5,"Not in my home town, I still got advantage (Yeah)",still,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",think,INNER,ASSONANCE,vowel,MED,Y
+Charlie,6,"I lost my granny, you'on get mo' grannies",granny,6,"I lost my granny, you'on get mo' grannies",grannies,INNER,SLANT,cmu,MED,Y
+Charlie,6,"I lost my granny, you'on get mo' grannies",grannies,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",scan,END,SLANT,cmu,MED,Y
+Charlie,6,"I lost my granny, you'on get mo' grannies",granny,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",scan,INNER,SLANT,cmu,MED,Y
+Charlie,6,"I lost my granny, you'on get mo' grannies",mo,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",don't,INNER,ASSONANCE,vowel,MED,Y
+Charlie,6,"I lost my granny, you'on get mo' grannies",mo,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",go,INNER,PERFECT,cmu,HIGH,Y
+Charlie,6,"I lost my granny, you'on get mo' grannies",get,8,"Baby, ride my wave like I'm runnin' for senate",senate,INNER,SLANT,cmu,MED,Y
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",Bitch,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",bitch,INNER,REPEAT,spelling,HIGH,N
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",Bitch,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",think,INNER,ASSONANCE,vowel,MED,Y
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",don't,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",go,INNER,ASSONANCE,vowel,MED,Y
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",got,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",card,INNER,ASSONANCE,vowel,MED,Y
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",think,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",face,8,"Baby, ride my wave like I'm runnin' for senate",Baby,INNER,SLANT,cmu,MED,Y
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",face,8,"Baby, ride my wave like I'm runnin' for senate",wave,INNER,SLANT,cmu,MED,Y
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",Bitch,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",think,INNER,ASSONANCE,vowel,MED,Y
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",card,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",got,INNER,ASSONANCE,vowel,MED,Y
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",got,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",got,INNER,REPEAT,spelling,HIGH,N
+Charlie,7,"Bitch think she got a face card, bitch, if you don't go scan it (Ha)",think,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",think,INNER,REPEAT,spelling,HIGH,N
+Charlie,8,"Baby, ride my wave like I'm runnin' for senate",Baby,8,"Baby, ride my wave like I'm runnin' for senate",wave,INNER,SLANT,cmu,MED,Y
+Charlie,8,"Baby, ride my wave like I'm runnin' for senate",ride,8,"Baby, ride my wave like I'm runnin' for senate",like,INNER,SLANT,cmu,MED,Y
+Charlie,8,"Baby, ride my wave like I'm runnin' for senate",senate,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",get,END,SLANT,cmu,MED,Y
+Charlie,8,"Baby, ride my wave like I'm runnin' for senate",senate,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",Let's,INNER,ASSONANCE,vowel,MED,Y
+Charlie,8,"Baby, ride my wave like I'm runnin' for senate",senate,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",tell,INNER,ASSONANCE,vowel,MED,Y
+Charlie,8,"Baby, ride my wave like I'm runnin' for senate",like,10,"Been running shit from the crib, been running shit from outside (Ha)",outside,INNER,SLANT,cmu,MED,Y
+Charlie,8,"Baby, ride my wave like I'm runnin' for senate",like runnin,10,"Been running shit from the crib, been running shit from outside (Ha)",crib running,INNER,MULTI,multi,HIGH,Y
+Charlie,8,"Baby, ride my wave like I'm runnin' for senate",ride,10,"Been running shit from the crib, been running shit from outside (Ha)",outside,INNER,PERFECT,cmu,HIGH,Y
+Charlie,8,"Baby, ride my wave like I'm runnin' for senate",runnin,10,"Been running shit from the crib, been running shit from outside (Ha)",running,INNER,MULTI,multi,HIGH,Y
+Charlie,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",Let's,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",get,INNER,SLANT,cmu,MED,Y
+Charlie,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",tell,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",get,INNER,SLANT,cmu,MED,Y
+Charlie,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",tell,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",Let's,INNER,ASSONANCE,vowel,MED,Y
+Charlie,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",think,10,"Been running shit from the crib, been running shit from outside (Ha)",crib,INNER,ASSONANCE,vowel,MED,Y
+Charlie,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",think,10,"Been running shit from the crib, been running shit from outside (Ha)",shit,INNER,ASSONANCE,vowel,MED,Y
+Charlie,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",Pussies,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",put,INNER,ASSONANCE,vowel,MED,Y
+Charlie,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",think,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Charlie,9,"Pussies think they got it (Bitch), tell them niggas, ""Let's get it""",think,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",crib,INNER,ASSONANCE,vowel,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",crib,10,"Been running shit from the crib, been running shit from outside (Ha)",shit,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",running,10,"Been running shit from the crib, been running shit from outside (Ha)",running,INNER,REPEAT,spelling,HIGH,N
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",shit,10,"Been running shit from the crib, been running shit from outside (Ha)",crib,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",shit,10,"Been running shit from the crib, been running shit from outside (Ha)",shit,INNER,REPEAT,spelling,HIGH,N
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",outside,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",five,END,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",crib,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",bitch,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",crib,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",crib,INNER,REPEAT,spelling,HIGH,N
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",outside,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",I'll,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",running,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",hunnid,INNER,ASSONANCE,vowel,LOW,N
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",shit,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",bitch,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",shit,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",crib,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",outside,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",side,END,PERFECT,cmu,HIGH,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",crib,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",crib,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",running,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",hundred,INNER,ASSONANCE,vowel,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",shit,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",shit,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,INNER,SLANT,cmu,MED,Y
+Charlie,10,"Been running shit from the crib, been running shit from outside (Ha)",outside,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",tired,END,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",crib,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",bitch,INNER,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",I'll,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",five,INNER,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",five,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",side,END,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",bitch,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,INNER,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",bitch,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,INNER,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",crib,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,INNER,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",crib,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,INNER,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",hunnid,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",hundred,INNER,SLANT,spelling,LOW,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",I'll,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,INNER,SLANT,spelling,LOW,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",I'll,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",side,INNER,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",I'll,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,INNER,SLANT,spelling,LOW,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",put,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",could,INNER,SLANT,cmu,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",sold,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",throwin,INNER,ASSONANCE,vowel,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",bitch,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",It'll,INNER,ASSONANCE,vowel,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",bitch,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ti'd,INNER,SLANT,spelling,LOW,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",crib,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",It'll,INNER,ASSONANCE,vowel,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",crib,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ti'd,INNER,SLANT,spelling,LOW,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",hunnid,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ti'd,INNER,PERFECT,spelling,MED,Y
+Charlie,11,"I'll put a hunnid in the crib (Sos' baby), then sold that bitch about five (Beep, beep)",five,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",tired,END,SLANT,cmu,MED,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,INNER,PERFECT,cmu,HIGH,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",It'll,INNER,SLANT,cmu,MED,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ti'd,INNER,SLANT,spelling,LOW,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",It'll,INNER,SLANT,cmu,MED,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ti'd,INNER,SLANT,spelling,LOW,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",side,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",tired,END,SLANT,cmu,MED,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",bitch,INNER,SLANT,cmu,MED,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",bill,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'll,INNER,SLANT,spelling,LOW,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",hundred,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",fuck,INNER,ASSONANCE,vowel,MED,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",side,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'll,INNER,SLANT,cmu,MED,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",side,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'on,INNER,SLANT,cmu,MED,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",bitch,INNER,SLANT,cmu,MED,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",still,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'll,INNER,SLANT,spelling,LOW,Y
+Charlie,12,"I could be worth a hundred bill', still throwin' up my side (Yeah)",throwin,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",ho,INNER,ASSONANCE,vowel,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ever,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",never,INNER,MULTI,multi,HIGH,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",It'll,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",it'll,INNER,REPEAT,spelling,HIGH,N
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",It'll never,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",never ever,INNER,MULTI,multi,HIGH,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",never,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ever,INNER,MULTI,multi,HIGH,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",never,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",never,INNER,REPEAT,spelling,HIGH,N
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",never ever,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",it'll never,INNER,MULTI,multi,HIGH,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ever,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",let,INNER,SLANT,cmu,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",It'll,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",never,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",let,INNER,SLANT,cmu,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",stop,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",gotta,INNER,SLANT,cmu,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ti'd,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",bitch,INNER,SLANT,spelling,LOW,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",'caus,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",all,INNER,SLANT,spelling,LOW,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ever,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",get,INNER,SLANT,cmu,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",It'll,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",It'll,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",shit,INNER,SLANT,cmu,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",never,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",get,INNER,SLANT,cmu,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",stop,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",swatted,INNER,SLANT,cmu,MED,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ti'd,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",bitch,INNER,SLANT,spelling,LOW,Y
+Charlie,13,"It'll never ever stop (Gang), it'll never be 'causе I'm ti'd (Bang, bang, bang)",ti'd,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",shit,INNER,SLANT,spelling,LOW,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",even,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",g,INNER,ASSONANCE,vowel,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",even,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",t,INNER,ASSONANCE,vowel,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",g,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",t,INNER,PERFECT,cmu,HIGH,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'll,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",tired,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'on,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'll,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'on,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",tired,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",bitch,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",bitch,INNER,REPEAT,spelling,HIGH,N
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",bitch,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",shit,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",fuck,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",Fuck,INNER,REPEAT,spelling,HIGH,N
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",fuck,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",other,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",gotta,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",swatted,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'll,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",flies,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",I'on,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",flies,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",let,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",get,INNER,PERFECT,cmu,HIGH,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",tired,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",flies,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",bitch,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",bitch,INNER,REPEAT,spelling,HIGH,N
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",even,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",tryna,INNER,SLANT,spelling,LOW,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",fuck,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",mushroom,INNER,ASSONANCE,vowel,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",gotta,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",molly,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",gotta,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",popped,INNER,SLANT,cmu,MED,Y
+Charlie,14,"I'on even gotta fuck a ho (No), I'll let a bitch gеt tired (Ha?)",let,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",get,INNER,PERFECT,cmu,HIGH,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",bitch,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",shit,INNER,SLANT,cmu,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",Fuck,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",other,INNER,SLANT,cmu,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",swatted,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",molly,END,ASSONANCE,vowel,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",bitch,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",bitch,INNER,REPEAT,spelling,HIGH,N
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",Fuck,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",mushroom,INNER,ASSONANCE,vowel,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",get,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",get,INNER,REPEAT,spelling,HIGH,N
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",other,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",mushroom,INNER,ASSONANCE,vowel,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",room,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",mushroom,INNER,SLANT,spelling,LOW,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",shit,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",bitch,INNER,SLANT,cmu,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",swatted,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",popped,INNER,SLANT,cmu,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",swatted,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,END,ASSONANCE,vowel,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",bitch,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",shit,INNER,SLANT,cmu,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",flies,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",biting,INNER,ASSONANCE,vowel,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",flies,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Why,INNER,ASSONANCE,vowel,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",shit,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",shit,INNER,REPEAT,spelling,HIGH,N
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",swatted,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,INNER,ASSONANCE,vowel,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",swatted,18,"I fuck the hoes around here, Charlie",Charlie,END,ASSONANCE,vowel,MED,Y
+Charlie,15,"Fuck a bitch in the other room (Yeah), all this shit flies, get swatted (Okay)",swatted,19,"I'm in the kitchen 'round here, Charlie (Ha?)",Charlie,END,ASSONANCE,vowel,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",popped,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",molly,INNER,ASSONANCE,vowel,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",molly,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,END,SLANT,cmu,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",bitch,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",shit,INNER,SLANT,cmu,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",molly,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,INNER,SLANT,cmu,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",popped,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,INNER,ASSONANCE,vowel,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",tryna,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",here,INNER,SLANT,spelling,LOW,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",molly,18,"I fuck the hoes around here, Charlie",Charlie,END,SLANT,cmu,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",mushroom,18,"I fuck the hoes around here, Charlie",fuck,INNER,ASSONANCE,vowel,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",popped,18,"I fuck the hoes around here, Charlie",Charlie,INNER,ASSONANCE,vowel,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",tryna,18,"I fuck the hoes around here, Charlie",here,INNER,SLANT,spelling,LOW,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",molly,19,"I'm in the kitchen 'round here, Charlie (Ha?)",Charlie,END,SLANT,cmu,MED,Y
+Charlie,16,"I just popped me a mushroom (Bling), man, this bitch tryna get molly (Duh)",molly,20,"I'm swingin' my dick around here, Charlie",Charlie,END,SLANT,cmu,MED,Y
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,INNER,REPEAT,spelling,HIGH,N
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Why,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",biting,INNER,ASSONANCE,vowel,MED,Y
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,18,"I fuck the hoes around here, Charlie",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",around,18,"I fuck the hoes around here, Charlie",around,INNER,REPEAT,spelling,HIGH,N
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,18,"I fuck the hoes around here, Charlie",Charlie,INNER,REPEAT,spelling,HIGH,N
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",here,18,"I fuck the hoes around here, Charlie",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",around,19,"I'm in the kitchen 'round here, Charlie (Ha?)",'round,INNER,PERFECT,cmu,HIGH,Y
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",Charlie,INNER,REPEAT,spelling,HIGH,N
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",here,19,"I'm in the kitchen 'round here, Charlie (Ha?)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",shit,19,"I'm in the kitchen 'round here, Charlie (Ha?)",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,20,"I'm swingin' my dick around here, Charlie",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,17,"Why you biting off me, Charlie? (Ha), I'm the shit around here, Charlie (Yeah)",Charlie,21,"All my picks around here, Charlie (Ha)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,18,"I fuck the hoes around here, Charlie",Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,18,"I fuck the hoes around here, Charlie",around,19,"I'm in the kitchen 'round here, Charlie (Ha?)",'round,INNER,PERFECT,cmu,HIGH,Y
+Charlie,18,"I fuck the hoes around here, Charlie",here,19,"I'm in the kitchen 'round here, Charlie (Ha?)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,18,"I fuck the hoes around here, Charlie",Charlie,20,"I'm swingin' my dick around here, Charlie",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,18,"I fuck the hoes around here, Charlie",around,20,"I'm swingin' my dick around here, Charlie",around,INNER,REPEAT,spelling,HIGH,N
+Charlie,18,"I fuck the hoes around here, Charlie",here,20,"I'm swingin' my dick around here, Charlie",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,18,"I fuck the hoes around here, Charlie",Charlie,21,"All my picks around here, Charlie (Ha)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,18,"I fuck the hoes around here, Charlie",Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",Charlie,20,"I'm swingin' my dick around here, Charlie",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",'round,20,"I'm swingin' my dick around here, Charlie",around,INNER,PERFECT,cmu,HIGH,Y
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",here,20,"I'm swingin' my dick around here, Charlie",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",kitchen,20,"I'm swingin' my dick around here, Charlie",dick,INNER,ASSONANCE,vowel,MED,Y
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",kitchen,20,"I'm swingin' my dick around here, Charlie",swingin,INNER,ASSONANCE,vowel,MED,Y
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",Charlie,21,"All my picks around here, Charlie (Ha)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",'round,21,"All my picks around here, Charlie (Ha)",around,INNER,PERFECT,cmu,HIGH,Y
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",here,21,"All my picks around here, Charlie (Ha)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",kitchen,21,"All my picks around here, Charlie (Ha)",picks,INNER,ASSONANCE,vowel,MED,Y
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,19,"I'm in the kitchen 'round here, Charlie (Ha?)",Charlie,23,"I pay rent around here, Charlie (Skrrt)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,20,"I'm swingin' my dick around here, Charlie",swingin,20,"I'm swingin' my dick around here, Charlie",dick,INNER,ASSONANCE,vowel,MED,Y
+Charlie,20,"I'm swingin' my dick around here, Charlie",Charlie,21,"All my picks around here, Charlie (Ha)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,20,"I'm swingin' my dick around here, Charlie",around,21,"All my picks around here, Charlie (Ha)",around,INNER,REPEAT,spelling,HIGH,N
+Charlie,20,"I'm swingin' my dick around here, Charlie",dick,21,"All my picks around here, Charlie (Ha)",picks,INNER,SLANT,cmu,MED,Y
+Charlie,20,"I'm swingin' my dick around here, Charlie",here,21,"All my picks around here, Charlie (Ha)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,20,"I'm swingin' my dick around here, Charlie",swingin,21,"All my picks around here, Charlie (Ha)",picks,INNER,ASSONANCE,vowel,MED,Y
+Charlie,20,"I'm swingin' my dick around here, Charlie",Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,20,"I'm swingin' my dick around here, Charlie",around,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",'round,INNER,PERFECT,cmu,HIGH,Y
+Charlie,20,"I'm swingin' my dick around here, Charlie",here,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,20,"I'm swingin' my dick around here, Charlie",Charlie,23,"I pay rent around here, Charlie (Skrrt)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,20,"I'm swingin' my dick around here, Charlie",Charlie,24,"You ain't that nigga 'round here, Charlie (Dududuh)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,21,"All my picks around here, Charlie (Ha)",Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,21,"All my picks around here, Charlie (Ha)",All,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",mortgage,INNER,ASSONANCE,vowel,MED,Y
+Charlie,21,"All my picks around here, Charlie (Ha)",around,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",'round,INNER,PERFECT,cmu,HIGH,Y
+Charlie,21,"All my picks around here, Charlie (Ha)",here,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,21,"All my picks around here, Charlie (Ha)",Charlie,23,"I pay rent around here, Charlie (Skrrt)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,21,"All my picks around here, Charlie (Ha)",around,23,"I pay rent around here, Charlie (Skrrt)",around,INNER,REPEAT,spelling,HIGH,N
+Charlie,21,"All my picks around here, Charlie (Ha)",here,23,"I pay rent around here, Charlie (Skrrt)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,21,"All my picks around here, Charlie (Ha)",Charlie,24,"You ain't that nigga 'round here, Charlie (Dududuh)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,21,"All my picks around here, Charlie (Ha)",Charlie,25,"I'm that nigga 'round here, Charlie (Dududuh)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",Charlie,23,"I pay rent around here, Charlie (Skrrt)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",'round,23,"I pay rent around here, Charlie (Skrrt)",around,INNER,PERFECT,cmu,HIGH,Y
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",'round,23,"I pay rent around here, Charlie (Skrrt)",rent,INNER,SLANT,spelling,LOW,Y
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",here,23,"I pay rent around here, Charlie (Skrrt)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",pay,23,"I pay rent around here, Charlie (Skrrt)",pay,INNER,REPEAT,spelling,HIGH,N
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",Charlie,24,"You ain't that nigga 'round here, Charlie (Dududuh)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",'round,24,"You ain't that nigga 'round here, Charlie (Dududuh)",'round,INNER,REPEAT,spelling,HIGH,N
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",here,24,"You ain't that nigga 'round here, Charlie (Dududuh)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",pay,24,"You ain't that nigga 'round here, Charlie (Dududuh)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Charlie,22,"I pay mortgage 'round here, Charlie (Skrrt, skrrt)",Charlie,25,"I'm that nigga 'round here, Charlie (Dududuh)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,23,"I pay rent around here, Charlie (Skrrt)",Charlie,24,"You ain't that nigga 'round here, Charlie (Dududuh)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,23,"I pay rent around here, Charlie (Skrrt)",around,24,"You ain't that nigga 'round here, Charlie (Dududuh)",'round,INNER,PERFECT,cmu,HIGH,Y
+Charlie,23,"I pay rent around here, Charlie (Skrrt)",here,24,"You ain't that nigga 'round here, Charlie (Dududuh)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,23,"I pay rent around here, Charlie (Skrrt)",pay,24,"You ain't that nigga 'round here, Charlie (Dududuh)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Charlie,23,"I pay rent around here, Charlie (Skrrt)",rent,24,"You ain't that nigga 'round here, Charlie (Dududuh)",'round,INNER,SLANT,spelling,LOW,Y
+Charlie,23,"I pay rent around here, Charlie (Skrrt)",Charlie,25,"I'm that nigga 'round here, Charlie (Dududuh)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,23,"I pay rent around here, Charlie (Skrrt)",around,25,"I'm that nigga 'round here, Charlie (Dududuh)",'round,INNER,PERFECT,cmu,HIGH,Y
+Charlie,23,"I pay rent around here, Charlie (Skrrt)",here,25,"I'm that nigga 'round here, Charlie (Dududuh)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,23,"I pay rent around here, Charlie (Skrrt)",rent,25,"I'm that nigga 'round here, Charlie (Dududuh)",'round,INNER,SLANT,spelling,LOW,Y
+Charlie,24,"You ain't that nigga 'round here, Charlie (Dududuh)",Charlie,25,"I'm that nigga 'round here, Charlie (Dududuh)",Charlie,END,REPEAT,spelling,HIGH,N
+Charlie,24,"You ain't that nigga 'round here, Charlie (Dududuh)",'round,25,"I'm that nigga 'round here, Charlie (Dududuh)",'round,INNER,REPEAT,spelling,HIGH,N
+Charlie,24,"You ain't that nigga 'round here, Charlie (Dududuh)",here,25,"I'm that nigga 'round here, Charlie (Dududuh)",here,INNER,REPEAT,spelling,HIGH,N
+Charlie,24,"You ain't that nigga 'round here, Charlie (Dududuh)",nigga,25,"I'm that nigga 'round here, Charlie (Dududuh)",nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,24,"You ain't that nigga 'round here, Charlie (Dududuh)",nigga,26,For a nigga that used to be out trappin' (Ayy),nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,25,"I'm that nigga 'round here, Charlie (Dududuh)",nigga,26,For a nigga that used to be out trappin' (Ayy),nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,25,"I'm that nigga 'round here, Charlie (Dududuh)",Charlie,27,"Pockets fat, need me a salad (Ha)",Pockets,INNER,ASSONANCE,vowel,MED,Y
+Charlie,25,"I'm that nigga 'round here, Charlie (Dududuh)",here,27,"Pockets fat, need me a salad (Ha)",need,INNER,SLANT,cmu,MED,Y
+Charlie,26,For a nigga that used to be out trappin' (Ayy),trappin,27,"Pockets fat, need me a salad (Ha)",salad,END,ASSONANCE,vowel,MED,Y
+Charlie,26,For a nigga that used to be out trappin' (Ayy),trappin,27,"Pockets fat, need me a salad (Ha)",fat,INNER,ASSONANCE,vowel,MED,Y
+Charlie,26,For a nigga that used to be out trappin' (Ayy),trappin,30,Money make you fuck up ya habits (Ayy),habits,END,ASSONANCE,vowel,MED,Y
+Charlie,27,"Pockets fat, need me a salad (Ha)",fat,27,"Pockets fat, need me a salad (Ha)",salad,INNER,ASSONANCE,vowel,MED,Y
+Charlie,27,"Pockets fat, need me a salad (Ha)",salad,30,Money make you fuck up ya habits (Ayy),habits,END,ASSONANCE,vowel,MED,Y
+Charlie,27,"Pockets fat, need me a salad (Ha)",salad,31,"Doin' that sellin', be really the savage (Ayy, ayy)",savage,END,ASSONANCE,vowel,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),Crazy,28,Crazy bitch'll make you run away (Ha),away,INNER,ASSONANCE,vowel,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),Crazy,28,Crazy bitch'll make you run away (Ha),make,INNER,SLANT,cmu,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),make,28,Crazy bitch'll make you run away (Ha),away,INNER,ASSONANCE,vowel,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),away,29,Pretty bitch'll make you DJ Khaled (Ha),DJ,INNER,PERFECT,cmu,HIGH,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),away,29,Pretty bitch'll make you DJ Khaled (Ha),make,INNER,ASSONANCE,vowel,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),bitch'll,29,Pretty bitch'll make you DJ Khaled (Ha),bitch'll,INNER,REPEAT,spelling,HIGH,N
+Charlie,28,Crazy bitch'll make you run away (Ha),Crazy,29,Pretty bitch'll make you DJ Khaled (Ha),DJ,INNER,ASSONANCE,vowel,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),Crazy,29,Pretty bitch'll make you DJ Khaled (Ha),make,INNER,SLANT,cmu,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),make,29,Pretty bitch'll make you DJ Khaled (Ha),DJ,INNER,ASSONANCE,vowel,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),make,29,Pretty bitch'll make you DJ Khaled (Ha),make,INNER,REPEAT,spelling,HIGH,N
+Charlie,28,Crazy bitch'll make you run away (Ha),run,29,Pretty bitch'll make you DJ Khaled (Ha),Khaled,INNER,ASSONANCE,vowel,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),away,30,Money make you fuck up ya habits (Ayy),make,INNER,ASSONANCE,vowel,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),Crazy,30,Money make you fuck up ya habits (Ayy),make,INNER,SLANT,cmu,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),make,30,Money make you fuck up ya habits (Ayy),make,INNER,REPEAT,spelling,HIGH,N
+Charlie,28,Crazy bitch'll make you run away (Ha),run,30,Money make you fuck up ya habits (Ayy),fuck,INNER,SLANT,cmu,MED,Y
+Charlie,28,Crazy bitch'll make you run away (Ha),run,30,Money make you fuck up ya habits (Ayy),Money,INNER,SLANT,cmu,MED,Y
+Charlie,29,Pretty bitch'll make you DJ Khaled (Ha),make,29,Pretty bitch'll make you DJ Khaled (Ha),DJ,INNER,ASSONANCE,vowel,MED,Y
+Charlie,29,Pretty bitch'll make you DJ Khaled (Ha),DJ,30,Money make you fuck up ya habits (Ayy),make,INNER,ASSONANCE,vowel,MED,Y
+Charlie,29,Pretty bitch'll make you DJ Khaled (Ha),Khaled,30,Money make you fuck up ya habits (Ayy),fuck,INNER,ASSONANCE,vowel,MED,Y
+Charlie,29,Pretty bitch'll make you DJ Khaled (Ha),Khaled,30,Money make you fuck up ya habits (Ayy),Money,INNER,ASSONANCE,vowel,MED,Y
+Charlie,29,Pretty bitch'll make you DJ Khaled (Ha),make,30,Money make you fuck up ya habits (Ayy),make,INNER,REPEAT,spelling,HIGH,N
+Charlie,29,Pretty bitch'll make you DJ Khaled (Ha),Pretty,31,"Doin' that sellin', be really the savage (Ayy, ayy)",really,INNER,SLANT,cmu,MED,Y
+Charlie,30,Money make you fuck up ya habits (Ayy),Money,30,Money make you fuck up ya habits (Ayy),fuck,INNER,SLANT,cmu,MED,Y
+Charlie,30,Money make you fuck up ya habits (Ayy),habits,31,"Doin' that sellin', be really the savage (Ayy, ayy)",savage,END,ASSONANCE,vowel,MED,Y
+Charlie,30,Money make you fuck up ya habits (Ayy),habits,32,All my opps too broke to travel (Shit),travel,END,ASSONANCE,vowel,MED,Y
+Charlie,30,Money make you fuck up ya habits (Ayy),habits,33,"They couldn't pull up on me on my addy (Bang, bang, bang)",addy,END,ASSONANCE,vowel,MED,Y
+Charlie,31,"Doin' that sellin', be really the savage (Ayy, ayy)",savage,32,All my opps too broke to travel (Shit),travel,END,SLANT,cmu,MED,Y
+Charlie,31,"Doin' that sellin', be really the savage (Ayy, ayy)",savage,33,"They couldn't pull up on me on my addy (Bang, bang, bang)",addy,END,ASSONANCE,vowel,MED,Y
+Charlie,32,All my opps too broke to travel (Shit),travel,33,"They couldn't pull up on me on my addy (Bang, bang, bang)",addy,END,ASSONANCE,vowel,MED,Y
+Charlie,32,All my opps too broke to travel (Shit),All,34,"Opps so broke, can't afford to get buried (Fuck)",afford,INNER,ASSONANCE,vowel,MED,Y
+Charlie,32,All my opps too broke to travel (Shit),broke,34,"Opps so broke, can't afford to get buried (Fuck)",broke,INNER,REPEAT,spelling,HIGH,N
+Charlie,32,All my opps too broke to travel (Shit),opps,34,"Opps so broke, can't afford to get buried (Fuck)",Opps,INNER,REPEAT,spelling,HIGH,N
+Charlie,32,All my opps too broke to travel (Shit),travel,34,"Opps so broke, can't afford to get buried (Fuck)",can't,INNER,ASSONANCE,vowel,MED,Y
+Charlie,33,"They couldn't pull up on me on my addy (Bang, bang, bang)",couldn't,33,"They couldn't pull up on me on my addy (Bang, bang, bang)",pull,INNER,ASSONANCE,vowel,MED,Y
+Charlie,33,"They couldn't pull up on me on my addy (Bang, bang, bang)",addy,34,"Opps so broke, can't afford to get buried (Fuck)",can't,INNER,ASSONANCE,vowel,MED,Y
+Charlie,34,"Opps so broke, can't afford to get buried (Fuck)",get,34,"Opps so broke, can't afford to get buried (Fuck)",buried,INNER,ASSONANCE,vowel,MED,Y
+Charlie,34,"Opps so broke, can't afford to get buried (Fuck)",afford,35,"Chicago, Forgiato deep-dish swervin' (Skrrt)",Forgiato,INNER,SLANT,spelling,LOW,Y
+Charlie,34,"Opps so broke, can't afford to get buried (Fuck)",broke,35,"Chicago, Forgiato deep-dish swervin' (Skrrt)",Chicago,INNER,ASSONANCE,vowel,MED,Y
+Charlie,34,"Opps so broke, can't afford to get buried (Fuck)",Opps,35,"Chicago, Forgiato deep-dish swervin' (Skrrt)",Chicago,INNER,ASSONANCE,vowel,LOW,N
+Charlie,34,"Opps so broke, can't afford to get buried (Fuck)",buried,36,Dick in her mouth when she wakin' up early (Ha),when,INNER,ASSONANCE,vowel,MED,Y
+Charlie,34,"Opps so broke, can't afford to get buried (Fuck)",get,36,Dick in her mouth when she wakin' up early (Ha),when,INNER,SLANT,cmu,MED,Y
+Charlie,35,"Chicago, Forgiato deep-dish swervin' (Skrrt)",Chicago,35,"Chicago, Forgiato deep-dish swervin' (Skrrt)",Forgiato,INNER,ASSONANCE,vowel,LOW,N
+Charlie,35,"Chicago, Forgiato deep-dish swervin' (Skrrt)",dish,36,Dick in her mouth when she wakin' up early (Ha),Dick,INNER,SLANT,cmu,MED,Y
+Charlie,35,"Chicago, Forgiato deep-dish swervin' (Skrrt)",Chicago,37,"Wouldn't fuck that ho, the pussy was dirty (Come here)",ho,INNER,PERFECT,cmu,HIGH,Y
+Charlie,35,"Chicago, Forgiato deep-dish swervin' (Skrrt)",Forgiato,37,"Wouldn't fuck that ho, the pussy was dirty (Come here)",ho,INNER,ASSONANCE,vowel,LOW,N
+Charlie,36,Dick in her mouth when she wakin' up early (Ha),early,37,"Wouldn't fuck that ho, the pussy was dirty (Come here)",dirty,END,SLANT,cmu,MED,Y
+Charlie,36,Dick in her mouth when she wakin' up early (Ha),Dick,38,Twin pipes on the back of the foreign (Skrrt),Twin,INNER,SLANT,cmu,MED,Y
+Charlie,36,Dick in her mouth when she wakin' up early (Ha),early,39,My young nigga geeked up off a murder (Grah),murder,END,SLANT,cmu,MED,Y
+Charlie,37,"Wouldn't fuck that ho, the pussy was dirty (Come here)",Wouldn't,37,"Wouldn't fuck that ho, the pussy was dirty (Come here)",pussy,INNER,ASSONANCE,vowel,MED,Y
+Charlie,37,"Wouldn't fuck that ho, the pussy was dirty (Come here)",dirty,39,My young nigga geeked up off a murder (Grah),murder,END,SLANT,cmu,MED,Y
+Charlie,37,"Wouldn't fuck that ho, the pussy was dirty (Come here)",fuck,39,My young nigga geeked up off a murder (Grah),young,INNER,SLANT,cmu,MED,Y
+Charlie,37,"Wouldn't fuck that ho, the pussy was dirty (Come here)",dirty,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",hearse,END,SLANT,cmu,MED,Y
+Charlie,39,My young nigga geeked up off a murder (Grah),nigga,40,Nigga say he don't fuck with the Spooks (Huh?),Nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,39,My young nigga geeked up off a murder (Grah),young,40,Nigga say he don't fuck with the Spooks (Huh?),fuck,INNER,SLANT,cmu,MED,Y
+Charlie,39,My young nigga geeked up off a murder (Grah),murder,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",hearse,END,SLANT,cmu,MED,Y
+Charlie,39,My young nigga geeked up off a murder (Grah),nigga,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,40,Nigga say he don't fuck with the Spooks (Huh?),Nigga,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,40,Nigga say he don't fuck with the Spooks (Huh?),say,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",Same,INNER,ASSONANCE,vowel,MED,Y
+Charlie,40,Nigga say he don't fuck with the Spooks (Huh?),Nigga,42,How that nigga make it outta the street? (Hey),nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,40,Nigga say he don't fuck with the Spooks (Huh?),say,42,How that nigga make it outta the street? (Hey),make,INNER,ASSONANCE,vowel,MED,Y
+Charlie,40,Nigga say he don't fuck with the Spooks (Huh?),Spooks,42,How that nigga make it outta the street? (Hey),outta,INNER,ASSONANCE,vowel,MED,Y
+Charlie,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",'round,42,How that nigga make it outta the street? (Hey),How,INNER,ASSONANCE,vowel,MED,Y
+Charlie,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",nigga,42,How that nigga make it outta the street? (Hey),nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",Same,42,How that nigga make it outta the street? (Hey),make,INNER,SLANT,cmu,MED,Y
+Charlie,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",'round,43,How that nigga get a song with Chief Keef? (Hey),How,INNER,ASSONANCE,vowel,MED,Y
+Charlie,41,"Same nigga ridin' 'round in a hearse (Buh, buh, buh)",nigga,43,How that nigga get a song with Chief Keef? (Hey),nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,42,How that nigga make it outta the street? (Hey),street,43,How that nigga get a song with Chief Keef? (Hey),Keef,END,SLANT,cmu,MED,Y
+Charlie,42,How that nigga make it outta the street? (Hey),How,43,How that nigga get a song with Chief Keef? (Hey),How,INNER,REPEAT,spelling,HIGH,N
+Charlie,42,How that nigga make it outta the street? (Hey),nigga,43,How that nigga get a song with Chief Keef? (Hey),nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,42,How that nigga make it outta the street? (Hey),street,43,How that nigga get a song with Chief Keef? (Hey),Chief,INNER,SLANT,cmu,MED,Y
+Charlie,42,How that nigga make it outta the street? (Hey),street,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,END,SLANT,cmu,MED,Y
+Charlie,42,How that nigga make it outta the street? (Hey),street,45,"Out in FTP, they think I'm Z-A-C (Damn)",C,END,ASSONANCE,vowel,MED,Y
+Charlie,42,How that nigga make it outta the street? (Hey),street,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",see,END,ASSONANCE,vowel,MED,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Chief,43,How that nigga get a song with Chief Keef? (Hey),Keef,INNER,PERFECT,cmu,HIGH,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Keef,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,END,SLANT,cmu,MED,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Chief,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,INNER,SLANT,cmu,MED,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),song,44,Forgiatos on the Rolls Royce Jeep (Ayy),Forgiatos,INNER,ASSONANCE,vowel,LOW,N
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Keef,45,"Out in FTP, they think I'm Z-A-C (Damn)",C,END,ASSONANCE,vowel,MED,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Chief,45,"Out in FTP, they think I'm Z-A-C (Damn)",C,INNER,ASSONANCE,vowel,MED,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Chief,45,"Out in FTP, they think I'm Z-A-C (Damn)",FTP,INNER,ASSONANCE,vowel,MED,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Chief,45,"Out in FTP, they think I'm Z-A-C (Damn)",Z,INNER,ASSONANCE,vowel,MED,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Keef,45,"Out in FTP, they think I'm Z-A-C (Damn)",FTP,INNER,ASSONANCE,vowel,MED,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Keef,45,"Out in FTP, they think I'm Z-A-C (Damn)",Z,INNER,ASSONANCE,vowel,MED,Y
+Charlie,43,How that nigga get a song with Chief Keef? (Hey),Keef,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",see,END,ASSONANCE,vowel,MED,Y
+Charlie,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,45,"Out in FTP, they think I'm Z-A-C (Damn)",C,END,ASSONANCE,vowel,MED,Y
+Charlie,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,45,"Out in FTP, they think I'm Z-A-C (Damn)",FTP,INNER,ASSONANCE,vowel,MED,Y
+Charlie,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,45,"Out in FTP, they think I'm Z-A-C (Damn)",Z,INNER,ASSONANCE,vowel,MED,Y
+Charlie,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",see,END,ASSONANCE,vowel,MED,Y
+Charlie,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",dyin,INNER,SLANT,spelling,LOW,Y
+Charlie,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",even,INNER,ASSONANCE,vowel,MED,Y
+Charlie,44,Forgiatos on the Rolls Royce Jeep (Ayy),Jeep,48,"Ho callin' my phone, she lyin' to me (She lyin')",lyin,END,ASSONANCE,vowel,MED,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",FTP,45,"Out in FTP, they think I'm Z-A-C (Damn)",C,INNER,PERFECT,cmu,HIGH,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",FTP,45,"Out in FTP, they think I'm Z-A-C (Damn)",Z,INNER,PERFECT,cmu,HIGH,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",Z,45,"Out in FTP, they think I'm Z-A-C (Damn)",C,INNER,PERFECT,cmu,HIGH,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",C,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",see,END,PERFECT,cmu,HIGH,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",C,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",even,INNER,ASSONANCE,vowel,MED,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",FTP,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",even,INNER,ASSONANCE,vowel,MED,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",FTP,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",see,INNER,PERFECT,cmu,HIGH,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",Z,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",even,INNER,ASSONANCE,vowel,MED,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",Z,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",see,INNER,PERFECT,cmu,HIGH,Y
+Charlie,45,"Out in FTP, they think I'm Z-A-C (Damn)",C,48,"Ho callin' my phone, she lyin' to me (She lyin')",lyin,END,PERFECT,cmu,HIGH,Y
+Charlie,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",even,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",dyin,INNER,PERFECT,spelling,MED,Y
+Charlie,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",even,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",see,INNER,ASSONANCE,vowel,MED,Y
+Charlie,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",got,47,"Momma callin' my phone, she proud of me (Huh?)",Momma,INNER,SLANT,cmu,MED,Y
+Charlie,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",see,48,"Ho callin' my phone, she lyin' to me (She lyin')",lyin,END,PERFECT,cmu,HIGH,Y
+Charlie,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",dyin,48,"Ho callin' my phone, she lyin' to me (She lyin')",lyin,INNER,PERFECT,spelling,HIGH,Y
+Charlie,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",even,48,"Ho callin' my phone, she lyin' to me (She lyin')",lyin,INNER,ASSONANCE,vowel,MED,Y
+Charlie,46,"She ain't even got eyes, but she dyin' to see (Skrrt)",see,50,"We get them bands 'round here, shawty (Huh?)",shawty,END,ASSONANCE,vowel,LOW,N
+Charlie,47,"Momma callin' my phone, she proud of me (Huh?)",callin,48,"Ho callin' my phone, she lyin' to me (She lyin')",callin,INNER,REPEAT,spelling,HIGH,N
+Charlie,47,"Momma callin' my phone, she proud of me (Huh?)",phone,48,"Ho callin' my phone, she lyin' to me (She lyin')",Ho,INNER,ASSONANCE,vowel,MED,Y
+Charlie,47,"Momma callin' my phone, she proud of me (Huh?)",phone,48,"Ho callin' my phone, she lyin' to me (She lyin')",phone,INNER,REPEAT,spelling,HIGH,N
+Charlie,48,"Ho callin' my phone, she lyin' to me (She lyin')",Ho,48,"Ho callin' my phone, she lyin' to me (She lyin')",phone,INNER,ASSONANCE,vowel,MED,Y
+Charlie,48,"Ho callin' my phone, she lyin' to me (She lyin')",lyin,50,"We get them bands 'round here, shawty (Huh?)",shawty,END,ASSONANCE,vowel,LOW,N
+Charlie,48,"Ho callin' my phone, she lyin' to me (She lyin')",lyin,50,"We get them bands 'round here, shawty (Huh?)",here,INNER,ASSONANCE,vowel,MED,Y
+Charlie,49,"Turn that nigga neighborhood to a tyranny (Buh, buh, buh)",Turn,49,"Turn that nigga neighborhood to a tyranny (Buh, buh, buh)",tyranny,INNER,SLANT,spelling,LOW,Y
+Charlie,49,"Turn that nigga neighborhood to a tyranny (Buh, buh, buh)",tyranny,50,"We get them bands 'round here, shawty (Huh?)",shawty,END,ASSONANCE,vowel,LOW,N
+Charlie,49,"Turn that nigga neighborhood to a tyranny (Buh, buh, buh)",neighborhood,51,Put that nigga in a suit like Steve Harvey (Huh?),Put,INNER,SLANT,cmu,MED,Y
+Charlie,49,"Turn that nigga neighborhood to a tyranny (Buh, buh, buh)",nigga,51,Put that nigga in a suit like Steve Harvey (Huh?),nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,50,"We get them bands 'round here, shawty (Huh?)",shawty,51,Put that nigga in a suit like Steve Harvey (Huh?),Harvey,END,ASSONANCE,vowel,LOW,N
+Charlie,50,"We get them bands 'round here, shawty (Huh?)",here,51,Put that nigga in a suit like Steve Harvey (Huh?),Steve,INNER,SLANT,cmu,MED,Y
+Charlie,50,"We get them bands 'round here, shawty (Huh?)",here,52,"Too geeked up, a nigga might vomit",geeked,INNER,ASSONANCE,vowel,LOW,N
+Charlie,50,"We get them bands 'round here, shawty (Huh?)",shawty,53,"I'll do it myself, I don't need no army (Shit)",army,END,ASSONANCE,vowel,LOW,N
+Charlie,51,Put that nigga in a suit like Steve Harvey (Huh?),Harvey,52,"Too geeked up, a nigga might vomit",vomit,END,ASSONANCE,vowel,MED,Y
+Charlie,51,Put that nigga in a suit like Steve Harvey (Huh?),like,52,"Too geeked up, a nigga might vomit",might,INNER,SLANT,cmu,MED,Y
+Charlie,51,Put that nigga in a suit like Steve Harvey (Huh?),nigga,52,"Too geeked up, a nigga might vomit",nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,51,Put that nigga in a suit like Steve Harvey (Huh?),Steve,52,"Too geeked up, a nigga might vomit",geeked,INNER,ASSONANCE,vowel,LOW,N
+Charlie,51,Put that nigga in a suit like Steve Harvey (Huh?),Harvey,53,"I'll do it myself, I don't need no army (Shit)",army,END,SLANT,cmu,MED,Y
+Charlie,51,Put that nigga in a suit like Steve Harvey (Huh?),like,53,"I'll do it myself, I don't need no army (Shit)",I'll,INNER,SLANT,cmu,MED,Y
+Charlie,51,Put that nigga in a suit like Steve Harvey (Huh?),Steve,53,"I'll do it myself, I don't need no army (Shit)",need,INNER,SLANT,cmu,MED,Y
+Charlie,51,Put that nigga in a suit like Steve Harvey (Huh?),Harvey,54,"Cut a nigga block up like comet (Buh, buh, buh)",comet,END,ASSONANCE,vowel,MED,Y
+Charlie,51,Put that nigga in a suit like Steve Harvey (Huh?),Harvey,55,All on ya bitch-ass like Charmin (Yeah),Charmin,END,ASSONANCE,vowel,MED,Y
+Charlie,52,"Too geeked up, a nigga might vomit",vomit,53,"I'll do it myself, I don't need no army (Shit)",army,END,ASSONANCE,vowel,MED,Y
+Charlie,52,"Too geeked up, a nigga might vomit",geeked,53,"I'll do it myself, I don't need no army (Shit)",need,INNER,SLANT,spelling,LOW,Y
+Charlie,52,"Too geeked up, a nigga might vomit",might,53,"I'll do it myself, I don't need no army (Shit)",I'll,INNER,SLANT,cmu,MED,Y
+Charlie,52,"Too geeked up, a nigga might vomit",vomit,54,"Cut a nigga block up like comet (Buh, buh, buh)",comet,END,MULTI,multi,HIGH,Y
+Charlie,52,"Too geeked up, a nigga might vomit",might,54,"Cut a nigga block up like comet (Buh, buh, buh)",like,INNER,SLANT,cmu,MED,Y
+Charlie,52,"Too geeked up, a nigga might vomit",nigga,54,"Cut a nigga block up like comet (Buh, buh, buh)",nigga,INNER,REPEAT,spelling,HIGH,N
+Charlie,52,"Too geeked up, a nigga might vomit",vomit,54,"Cut a nigga block up like comet (Buh, buh, buh)",block,INNER,ASSONANCE,vowel,MED,Y
+Charlie,52,"Too geeked up, a nigga might vomit",vomit,55,All on ya bitch-ass like Charmin (Yeah),Charmin,END,ASSONANCE,vowel,MED,Y
+Charlie,52,"Too geeked up, a nigga might vomit",vomit,56,"When I say ""Westside,"" I mean Charlotte (West side)",Charlotte,END,ASSONANCE,vowel,MED,Y
+Charlie,53,"I'll do it myself, I don't need no army (Shit)",don't,53,"I'll do it myself, I don't need no army (Shit)",no,INNER,ASSONANCE,vowel,MED,Y
+Charlie,53,"I'll do it myself, I don't need no army (Shit)",army,54,"Cut a nigga block up like comet (Buh, buh, buh)",comet,END,ASSONANCE,vowel,MED,Y
+Charlie,53,"I'll do it myself, I don't need no army (Shit)",army,54,"Cut a nigga block up like comet (Buh, buh, buh)",block,INNER,ASSONANCE,vowel,MED,Y
+Charlie,53,"I'll do it myself, I don't need no army (Shit)",I'll,54,"Cut a nigga block up like comet (Buh, buh, buh)",like,INNER,SLANT,cmu,MED,Y
+Charlie,53,"I'll do it myself, I don't need no army (Shit)",army,55,All on ya bitch-ass like Charmin (Yeah),Charmin,END,SLANT,cmu,MED,Y
+Charlie,53,"I'll do it myself, I don't need no army (Shit)",I'll,55,All on ya bitch-ass like Charmin (Yeah),like,INNER,SLANT,cmu,MED,Y
+Charlie,53,"I'll do it myself, I don't need no army (Shit)",army,56,"When I say ""Westside,"" I mean Charlotte (West side)",Charlotte,END,ASSONANCE,vowel,MED,Y
+Charlie,54,"Cut a nigga block up like comet (Buh, buh, buh)",block,54,"Cut a nigga block up like comet (Buh, buh, buh)",comet,INNER,ASSONANCE,vowel,MED,Y
+Charlie,54,"Cut a nigga block up like comet (Buh, buh, buh)",comet,55,All on ya bitch-ass like Charmin (Yeah),Charmin,END,ASSONANCE,vowel,MED,Y
+Charlie,54,"Cut a nigga block up like comet (Buh, buh, buh)",block,55,All on ya bitch-ass like Charmin (Yeah),Charmin,INNER,ASSONANCE,vowel,MED,Y
+Charlie,54,"Cut a nigga block up like comet (Buh, buh, buh)",like,55,All on ya bitch-ass like Charmin (Yeah),like,INNER,REPEAT,spelling,HIGH,N
+Charlie,54,"Cut a nigga block up like comet (Buh, buh, buh)",comet,56,"When I say ""Westside,"" I mean Charlotte (West side)",Charlotte,END,ASSONANCE,vowel,MED,Y
+Charlie,54,"Cut a nigga block up like comet (Buh, buh, buh)",block,56,"When I say ""Westside,"" I mean Charlotte (West side)",Charlotte,INNER,ASSONANCE,vowel,MED,Y
+Charlie,54,"Cut a nigga block up like comet (Buh, buh, buh)",like,56,"When I say ""Westside,"" I mean Charlotte (West side)",Westside,INNER,SLANT,cmu,MED,Y
+Charlie,55,All on ya bitch-ass like Charmin (Yeah),Charmin,56,"When I say ""Westside,"" I mean Charlotte (West side)",Charlotte,END,ASSONANCE,vowel,MED,Y
+Charlie,55,All on ya bitch-ass like Charmin (Yeah),like,56,"When I say ""Westside,"" I mean Charlotte (West side)",Westside,INNER,SLANT,cmu,MED,Y
+Charlie,55,All on ya bitch-ass like Charmin (Yeah),All,57,"When I say I run shit, I mean all it (Skrrt)",all,INNER,REPEAT,spelling,HIGH,N
+Charlie,55,All on ya bitch-ass like Charmin (Yeah),bitch,57,"When I say I run shit, I mean all it (Skrrt)",shit,INNER,SLANT,cmu,MED,Y
+Charlie,56,"When I say ""Westside,"" I mean Charlotte (West side)",mean,57,"When I say I run shit, I mean all it (Skrrt)",mean,INNER,REPEAT,spelling,HIGH,N
+Charlie,56,"When I say ""Westside,"" I mean Charlotte (West side)",say,57,"When I say I run shit, I mean all it (Skrrt)",say,INNER,REPEAT,spelling,HIGH,N
+Charlie,56,"When I say ""Westside,"" I mean Charlotte (West side)",When,57,"When I say I run shit, I mean all it (Skrrt)",When,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,1,"FTP, FTP, FTP, FTP, fuck the whole world and everybody in it (Oscar)",FTP,1,"FTP, FTP, FTP, FTP, fuck the whole world and everybody in it (Oscar)",FTP,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,1,"FTP, FTP, FTP, FTP, fuck the whole world and everybody in it (Oscar)",FTP,2,You're listening to Haunted Mound for FTP,FTP,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,1,"FTP, FTP, FTP, FTP, fuck the whole world and everybody in it (Oscar)",fuck,3,"(Fuck the population) Fuck the world, fuck the population",Fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,1,"FTP, FTP, FTP, FTP, fuck the whole world and everybody in it (Oscar)",world,3,"(Fuck the population) Fuck the world, fuck the population",world,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,2,You're listening to Haunted Mound for FTP,FTP,4,"H-H-H-Hauntaholics, real Haunted Mound",real,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,2,You're listening to Haunted Mound for FTP,Haunted,4,"H-H-H-Hauntaholics, real Haunted Mound",Haunted,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,2,You're listening to Haunted Mound for FTP,Mound,4,"H-H-H-Hauntaholics, real Haunted Mound",Mound,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,3,"(Fuck the population) Fuck the world, fuck the population",Fuck,3,"(Fuck the population) Fuck the world, fuck the population",fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,3,"(Fuck the population) Fuck the world, fuck the population",population,4,"H-H-H-Hauntaholics, real Haunted Mound",H,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,4,"H-H-H-Hauntaholics, real Haunted Mound",H,4,"H-H-H-Hauntaholics, real Haunted Mound",H,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,4,"H-H-H-Hauntaholics, real Haunted Mound",Haunted,5,"Them Haunted Mound boys pull up, they gon' get ya",Haunted,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,4,"H-H-H-Hauntaholics, real Haunted Mound",Mound,5,"Them Haunted Mound boys pull up, they gon' get ya",Mound,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,5,"Them Haunted Mound boys pull up, they gon' get ya",gon,6,I rock True Religion but I don't fuck with no god,don't,INNER,SLANT,spelling,LOW,Y
+Fuck the World,5,"Them Haunted Mound boys pull up, they gon' get ya",pull,7,"Look at my wristwatch, I'm pissed off and I'm blinged up",Look,INNER,SLANT,cmu,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,don't,6,I rock True Religion but I don't fuck with no god,no,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,rock,6,I rock True Religion but I don't fuck with no god,god,INNER,SLANT,cmu,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,fuck,7,"Look at my wristwatch, I'm pissed off and I'm blinged up",blinged,INNER,SLANT,cmu,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,god,7,"Look at my wristwatch, I'm pissed off and I'm blinged up",wristwatch,INNER,SLANT,cmu,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,Religion,7,"Look at my wristwatch, I'm pissed off and I'm blinged up",pissed,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,rock,7,"Look at my wristwatch, I'm pissed off and I'm blinged up",wristwatch,INNER,SLANT,cmu,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,god,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,got,INNER,SLANT,cmu,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,Religion,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,big,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,Religion,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,sticks,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,6,I rock True Religion but I don't fuck with no god,rock,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,got,INNER,SLANT,cmu,MED,Y
+Fuck the World,7,"Look at my wristwatch, I'm pissed off and I'm blinged up",pissed,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,big,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,7,"Look at my wristwatch, I'm pissed off and I'm blinged up",pissed,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,sticks,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,7,"Look at my wristwatch, I'm pissed off and I'm blinged up",wristwatch,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,got,INNER,SLANT,cmu,MED,Y
+Fuck the World,7,"Look at my wristwatch, I'm pissed off and I'm blinged up",blinged,9,"Fuck it all, I'm turning up, FTP Mound, turning up",Fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,big,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,sticks,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,world's,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,turnin,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,turnin,9,"Fuck it all, I'm turning up, FTP Mound, turning up",turning,END,MULTI,multi,HIGH,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,gone,9,"Fuck it all, I'm turning up, FTP Mound, turning up",all,INNER,SLANT,cmu,MED,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,gone turnin,9,"Fuck it all, I'm turning up, FTP Mound, turning up",all turning,INNER,MULTI,multi,HIGH,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,mounted,9,"Fuck it all, I'm turning up, FTP Mound, turning up",Mound,INNER,SLANT,cmu,MED,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,turnin,9,"Fuck it all, I'm turning up, FTP Mound, turning up",turning,INNER,MULTI,multi,HIGH,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,world's,9,"Fuck it all, I'm turning up, FTP Mound, turning up",turning,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,big,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",still,INNER,SLANT,cmu,MED,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,gone,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",law,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,got,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",rot,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,mounted,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",around,INNER,SLANT,cmu,MED,Y
+Fuck the World,8,I got big sticks and I'm mounted up and the world's gone so I'm turnin' up,sticks,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",still,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,9,"Fuck it all, I'm turning up, FTP Mound, turning up",turning,9,"Fuck it all, I'm turning up, FTP Mound, turning up",turning,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,9,"Fuck it all, I'm turning up, FTP Mound, turning up",all,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",law,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,9,"Fuck it all, I'm turning up, FTP Mound, turning up",Fuck,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,9,"Fuck it all, I'm turning up, FTP Mound, turning up",Fuck,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",fuckin,INNER,SLANT,cmu,MED,Y
+Fuck the World,9,"Fuck it all, I'm turning up, FTP Mound, turning up",Mound,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",around,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,9,"Fuck it all, I'm turning up, FTP Mound, turning up",Fuck,11,"I'm the King of the Graveyard, Fuck The Population",Fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",fuckin,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",fuck,11,"I'm the King of the Graveyard, Fuck The Population",Fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",fuckin,11,"I'm the King of the Graveyard, Fuck The Population",Fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",rot,11,"I'm the King of the Graveyard, Fuck The Population",Graveyard,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",still,11,"I'm the King of the Graveyard, Fuck The Population",King,INNER,SLANT,cmu,MED,Y
+Fuck the World,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",around,12,"Howdy, partner, keep my name out yo' mouth",Howdy,INNER,SLANT,cmu,MED,Y
+Fuck the World,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",around,12,"Howdy, partner, keep my name out yo' mouth",mouth,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,10,"Smokin' on this fuckin' rot, ride around, still fuck the law",rot,12,"Howdy, partner, keep my name out yo' mouth",partner,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,11,"I'm the King of the Graveyard, Fuck The Population",Graveyard,12,"Howdy, partner, keep my name out yo' mouth",partner,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,11,"I'm the King of the Graveyard, Fuck The Population",Population,12,"Howdy, partner, keep my name out yo' mouth",name,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,11,"I'm the King of the Graveyard, Fuck The Population",Fuck,13,'Fore we have them guys run up in ya house (Fuck thе population),run,INNER,SLANT,cmu,MED,Y
+Fuck the World,12,"Howdy, partner, keep my name out yo' mouth",Howdy,12,"Howdy, partner, keep my name out yo' mouth",mouth,INNER,SLANT,cmu,MED,Y
+Fuck the World,12,"Howdy, partner, keep my name out yo' mouth",mouth,13,'Fore we have them guys run up in ya house (Fuck thе population),house,END,SLANT,cmu,MED,Y
+Fuck the World,12,"Howdy, partner, keep my name out yo' mouth",Howdy,13,'Fore we have them guys run up in ya house (Fuck thе population),house,INNER,SLANT,cmu,MED,Y
+Fuck the World,12,"Howdy, partner, keep my name out yo' mouth",Howdy,14,Shawty say she wanna die up in my whip,Shawty,INNER,ASSONANCE,vowel,LOW,N
+Fuck the World,12,"Howdy, partner, keep my name out yo' mouth",name,14,Shawty say she wanna die up in my whip,say,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,12,"Howdy, partner, keep my name out yo' mouth",partner,14,Shawty say she wanna die up in my whip,wanna,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,13,'Fore we have them guys run up in ya house (Fuck thе population),'Fore,14,Shawty say she wanna die up in my whip,Shawty,INNER,SLANT,spelling,LOW,Y
+Fuck the World,13,'Fore we have them guys run up in ya house (Fuck thе population),guys,14,Shawty say she wanna die up in my whip,die,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,13,'Fore we have them guys run up in ya house (Fuck thе population),house,15,"I'm with my Mound boys, I'm creepin' out the crypt",Mound,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,14,Shawty say she wanna die up in my whip,whip,15,"I'm with my Mound boys, I'm creepin' out the crypt",crypt,END,SLANT,cmu,MED,Y
+Fuck the World,14,Shawty say she wanna die up in my whip,die,16,"If I told you I lovеd you, bitch, I was high as fuck",high,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,14,Shawty say she wanna die up in my whip,Shawty,16,"If I told you I lovеd you, bitch, I was high as fuck",d,INNER,ASSONANCE,vowel,LOW,N
+Fuck the World,14,Shawty say she wanna die up in my whip,whip,16,"If I told you I lovеd you, bitch, I was high as fuck",bitch,INNER,SLANT,cmu,MED,Y
+Fuck the World,15,"I'm with my Mound boys, I'm creepin' out the crypt",creepin,16,"If I told you I lovеd you, bitch, I was high as fuck",d,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,15,"I'm with my Mound boys, I'm creepin' out the crypt",crypt,16,"If I told you I lovеd you, bitch, I was high as fuck",bitch,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,15,"I'm with my Mound boys, I'm creepin' out the crypt",crypt,17,I don't listen to her 'cause that bitch dumb as fuck,bitch,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,15,"I'm with my Mound boys, I'm creepin' out the crypt",crypt,17,I don't listen to her 'cause that bitch dumb as fuck,listen,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,16,"If I told you I lovеd you, bitch, I was high as fuck",fuck,17,I don't listen to her 'cause that bitch dumb as fuck,fuck,END,REPEAT,spelling,HIGH,N
+Fuck the World,16,"If I told you I lovеd you, bitch, I was high as fuck",bitch,17,I don't listen to her 'cause that bitch dumb as fuck,bitch,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,16,"If I told you I lovеd you, bitch, I was high as fuck",bitch,17,I don't listen to her 'cause that bitch dumb as fuck,listen,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,16,"If I told you I lovеd you, bitch, I was high as fuck",fuck,17,I don't listen to her 'cause that bitch dumb as fuck,dumb,INNER,SLANT,cmu,MED,Y
+Fuck the World,16,"If I told you I lovеd you, bitch, I was high as fuck",told,17,I don't listen to her 'cause that bitch dumb as fuck,don't,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,16,"If I told you I lovеd you, bitch, I was high as fuck",fuck,18,I brought a mothafuckin' spiked bat to the club,club,END,SLANT,cmu,MED,Y
+Fuck the World,16,"If I told you I lovеd you, bitch, I was high as fuck",high,18,I brought a mothafuckin' spiked bat to the club,spiked,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,16,"If I told you I lovеd you, bitch, I was high as fuck",fuck,19,"Mothafucka', I'll bust ya head, swing and duck",duck,END,PERFECT,cmu,HIGH,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,dumb,17,I don't listen to her 'cause that bitch dumb as fuck,fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,listen,17,I don't listen to her 'cause that bitch dumb as fuck,bitch,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,fuck,18,I brought a mothafuckin' spiked bat to the club,club,END,SLANT,cmu,MED,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,dumb,18,I brought a mothafuckin' spiked bat to the club,club,INNER,SLANT,cmu,MED,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,fuck,19,"Mothafucka', I'll bust ya head, swing and duck",duck,END,PERFECT,cmu,HIGH,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,bitch,19,"Mothafucka', I'll bust ya head, swing and duck",swing,INNER,SLANT,cmu,MED,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,dumb,19,"Mothafucka', I'll bust ya head, swing and duck",bust,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,dumb,19,"Mothafucka', I'll bust ya head, swing and duck",duck,INNER,SLANT,cmu,MED,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,fuck,19,"Mothafucka', I'll bust ya head, swing and duck",bust,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,17,I don't listen to her 'cause that bitch dumb as fuck,listen,19,"Mothafucka', I'll bust ya head, swing and duck",swing,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,18,I brought a mothafuckin' spiked bat to the club,club,19,"Mothafucka', I'll bust ya head, swing and duck",duck,END,SLANT,cmu,MED,Y
+Fuck the World,18,I brought a mothafuckin' spiked bat to the club,club,19,"Mothafucka', I'll bust ya head, swing and duck",bust,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,18,I brought a mothafuckin' spiked bat to the club,mothafuckin,19,"Mothafucka', I'll bust ya head, swing and duck",Mothafucka,INNER,SLANT,spelling,LOW,Y
+Fuck the World,18,I brought a mothafuckin' spiked bat to the club,spiked,19,"Mothafucka', I'll bust ya head, swing and duck",I'll,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,18,I brought a mothafuckin' spiked bat to the club,bat,20,"Ridin' hearse thang with my iced out Breitling, dang",dang,INNER,SLANT,cmu,MED,Y
+Fuck the World,18,I brought a mothafuckin' spiked bat to the club,bat,20,"Ridin' hearse thang with my iced out Breitling, dang",thang,INNER,SLANT,cmu,MED,Y
+Fuck the World,18,I brought a mothafuckin' spiked bat to the club,spiked,20,"Ridin' hearse thang with my iced out Breitling, dang",Breitling,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,18,I brought a mothafuckin' spiked bat to the club,spiked,20,"Ridin' hearse thang with my iced out Breitling, dang",iced,INNER,SLANT,cmu,MED,Y
+Fuck the World,18,I brought a mothafuckin' spiked bat to the club,spiked,20,"Ridin' hearse thang with my iced out Breitling, dang",Ridin,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,19,"Mothafucka', I'll bust ya head, swing and duck",bust,19,"Mothafucka', I'll bust ya head, swing and duck",duck,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,19,"Mothafucka', I'll bust ya head, swing and duck",I'll,20,"Ridin' hearse thang with my iced out Breitling, dang",Breitling,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,19,"Mothafucka', I'll bust ya head, swing and duck",I'll,20,"Ridin' hearse thang with my iced out Breitling, dang",iced,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,19,"Mothafucka', I'll bust ya head, swing and duck",I'll,20,"Ridin' hearse thang with my iced out Breitling, dang",Ridin,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,19,"Mothafucka', I'll bust ya head, swing and duck",head,21,"Oxy got me tearin' off my skin, god dang",tearin,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,19,"Mothafucka', I'll bust ya head, swing and duck",swing,21,"Oxy got me tearin' off my skin, god dang",skin,INNER,SLANT,cmu,MED,Y
+Fuck the World,20,"Ridin' hearse thang with my iced out Breitling, dang",iced,20,"Ridin' hearse thang with my iced out Breitling, dang",Breitling,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,20,"Ridin' hearse thang with my iced out Breitling, dang",Ridin,20,"Ridin' hearse thang with my iced out Breitling, dang",Breitling,INNER,SLANT,cmu,MED,Y
+Fuck the World,20,"Ridin' hearse thang with my iced out Breitling, dang",Ridin,20,"Ridin' hearse thang with my iced out Breitling, dang",iced,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,20,"Ridin' hearse thang with my iced out Breitling, dang",thang,20,"Ridin' hearse thang with my iced out Breitling, dang",dang,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,20,"Ridin' hearse thang with my iced out Breitling, dang",dang,21,"Oxy got me tearin' off my skin, god dang",dang,END,REPEAT,spelling,HIGH,N
+Fuck the World,20,"Ridin' hearse thang with my iced out Breitling, dang",thang,21,"Oxy got me tearin' off my skin, god dang",dang,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,20,"Ridin' hearse thang with my iced out Breitling, dang",dang,22,It's always FTP 'cause I don't care about no thang,thang,END,PERFECT,cmu,HIGH,Y
+Fuck the World,20,"Ridin' hearse thang with my iced out Breitling, dang",thang,22,It's always FTP 'cause I don't care about no thang,thang,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,21,"Oxy got me tearin' off my skin, god dang",got,21,"Oxy got me tearin' off my skin, god dang",god,INNER,SLANT,cmu,MED,Y
+Fuck the World,21,"Oxy got me tearin' off my skin, god dang",Oxy,21,"Oxy got me tearin' off my skin, god dang",god,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,21,"Oxy got me tearin' off my skin, god dang",Oxy,21,"Oxy got me tearin' off my skin, god dang",got,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,21,"Oxy got me tearin' off my skin, god dang",dang,22,It's always FTP 'cause I don't care about no thang,thang,END,PERFECT,cmu,HIGH,Y
+Fuck the World,21,"Oxy got me tearin' off my skin, god dang",tearin,22,It's always FTP 'cause I don't care about no thang,care,INNER,SLANT,cmu,MED,Y
+Fuck the World,22,It's always FTP 'cause I don't care about no thang,don't,22,It's always FTP 'cause I don't care about no thang,no,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,22,It's always FTP 'cause I don't care about no thang,always,23,"Ride off hate and gasoline, what the fuck you mean?",hate,INNER,SLANT,cmu,MED,Y
+Fuck the World,22,It's always FTP 'cause I don't care about no thang,FTP,23,"Ride off hate and gasoline, what the fuck you mean?",gasoline,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,22,It's always FTP 'cause I don't care about no thang,FTP,23,"Ride off hate and gasoline, what the fuck you mean?",mean,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,22,It's always FTP 'cause I don't care about no thang,thang,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",racks,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",gasoline,23,"Ride off hate and gasoline, what the fuck you mean?",mean,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",what,23,"Ride off hate and gasoline, what the fuck you mean?",fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",fuck,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",Fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",Ride,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",I'll,INNER,SLANT,cmu,MED,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",Ride,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",life,INNER,SLANT,cmu,MED,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",what,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",Fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",fuck,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",huff,INNER,SLANT,cmu,MED,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",fuck,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",puff,INNER,SLANT,cmu,MED,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",Ride,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",light,INNER,SLANT,cmu,MED,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",what,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",huff,INNER,SLANT,cmu,MED,Y
+Fuck the World,23,"Ride off hate and gasoline, what the fuck you mean?",what,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",puff,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",Fuck,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",life,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",I'll,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",Fuck,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",huff,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",Fuck,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",puff,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",I'll,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",light,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",life,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",light,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",racks,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",Cancer,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",shoot,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",fuse,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",Fuck,26,"We don't like you motherfuckers, you can kick rocks",motherfuckers,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",I'll,26,"We don't like you motherfuckers, you can kick rocks",like,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",life,26,"We don't like you motherfuckers, you can kick rocks",like,INNER,SLANT,cmu,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",racks,26,"We don't like you motherfuckers, you can kick rocks",can,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,24,"Fuck ya racks, I burn 'em up, fuck your life, I'll shoot it up",racks,26,"We don't like you motherfuckers, you can kick rocks",rocks,INNER,SLANT,spelling,LOW,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",huff,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",puff,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",smoke,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",blow,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",blow,26,"We don't like you motherfuckers, you can kick rocks",don't,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",Cancer,26,"We don't like you motherfuckers, you can kick rocks",can,INNER,SLANT,cmu,MED,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",huff,26,"We don't like you motherfuckers, you can kick rocks",motherfuckers,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",light,26,"We don't like you motherfuckers, you can kick rocks",like,INNER,SLANT,cmu,MED,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",puff,26,"We don't like you motherfuckers, you can kick rocks",motherfuckers,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",smoke,26,"We don't like you motherfuckers, you can kick rocks",don't,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",fuse,27,"I thought you knew, it's Fuck The Population (Fuck the population)",knew,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",huff,27,"I thought you knew, it's Fuck The Population (Fuck the population)",Fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,25,"Cancer smoke, I huff and puff, and light the fuse, it blow ya up",puff,27,"I thought you knew, it's Fuck The Population (Fuck the population)",Fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,26,"We don't like you motherfuckers, you can kick rocks",motherfuckers,27,"I thought you knew, it's Fuck The Population (Fuck the population)",Fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,26,"We don't like you motherfuckers, you can kick rocks",rocks,29,Fuck the whole world and everybody in it,everybody,END,ASSONANCE,vowel,MED,Y
+Fuck the World,27,"I thought you knew, it's Fuck The Population (Fuck the population)",Fuck,29,Fuck the whole world and everybody in it,Fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,28,"FTP, FTP, FTP, FTP",FTP,28,"FTP, FTP, FTP, FTP",FTP,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,28,"FTP, FTP, FTP, FTP",FTP,30,"FTP, FTP, FTP on me",FTP,END,REPEAT,spelling,HIGH,N
+Fuck the World,28,"FTP, FTP, FTP, FTP",FTP,30,"FTP, FTP, FTP on me",FTP,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,28,"FTP, FTP, FTP, FTP",FTP,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,END,ASSONANCE,vowel,MED,Y
+Fuck the World,29,Fuck the whole world and everybody in it,Fuck,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",Fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,29,Fuck the whole world and everybody in it,world,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",world,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,30,"FTP, FTP, FTP on me",FTP,30,"FTP, FTP, FTP on me",FTP,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,30,"FTP, FTP, FTP on me",FTP,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,END,ASSONANCE,vowel,MED,Y
+Fuck the World,30,"FTP, FTP, FTP on me",FTP,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",even,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,30,"FTP, FTP, FTP on me",FTP,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",feel,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,30,"FTP, FTP, FTP on me",FTP,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,30,"FTP, FTP, FTP on me",FTP,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",dreams,END,ASSONANCE,vowel,MED,Y
+Fuck the World,30,"FTP, FTP, FTP on me",FTP,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",sleep,END,ASSONANCE,vowel,MED,Y
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",bitch,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",everything,INNER,SLANT,cmu,MED,Y
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",Fuck,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",everything,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",nothing,INNER,PERFECT,spelling,MED,Y
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",Fuck,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",nothing,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",population,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",wake,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",bitch,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",sip,INNER,SLANT,cmu,MED,Y
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",everything,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",sip,INNER,SLANT,cmu,MED,Y
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",Fuck,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",cup,INNER,SLANT,cmu,MED,Y
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",Fuck,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",fucking,INNER,SLANT,cmu,MED,Y
+Fuck the World,31,"Fuck the world and fuck the population, bitch, fuck everything (Oscar)",population,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",Take,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",even,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",feel,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",even,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",feel,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,INNER,SLANT,cmu,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",dreams,END,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",even,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",dreams,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",feel,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",dreams,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",nothing,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",cup,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",nothing,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",fucking,INNER,SLANT,cmu,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",wake,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",Take,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",sleep,END,REPEAT,spelling,HIGH,N
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",even,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",seein,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",even,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",sleep,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",feel,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",seein,INNER,SLANT,cmu,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",feel,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",sleep,INNER,SLANT,cmu,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",go,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",ghosts,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",seein,INNER,SLANT,cmu,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",wake,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",late,INNER,SLANT,cmu,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,35,"When I wake up, you don't wanna know what I see",see,END,ASSONANCE,vowel,MED,Y
+Fuck the World,32,"I wake up, feel nothing, and that's even if I go to sleep (HDOE)",sleep,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",V,END,ASSONANCE,vowel,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",cup,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",fucking,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",dreams,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",sleep,END,ASSONANCE,vowel,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",dreams,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",seein,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",hell,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",when,INNER,SLANT,cmu,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",sip,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",things,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",Take,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",late,INNER,SLANT,cmu,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",dreams,35,"When I wake up, you don't wanna know what I see",see,END,ASSONANCE,vowel,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",cup,35,"When I wake up, you don't wanna know what I see",what,INNER,SLANT,cmu,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",fucking,35,"When I wake up, you don't wanna know what I see",what,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",hell,35,"When I wake up, you don't wanna know what I see",When,INNER,SLANT,cmu,MED,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",Take,35,"When I wake up, you don't wanna know what I see",wake,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,33,"Take a sip out my cup, hell naw, boy, in yo' fucking dreams",dreams,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",V,END,ASSONANCE,vowel,MED,Y
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",seein,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",sleep,INNER,SLANT,cmu,MED,Y
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",sleep,35,"When I wake up, you don't wanna know what I see",see,END,ASSONANCE,vowel,MED,Y
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",ghosts,35,"When I wake up, you don't wanna know what I see",don't,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",ghosts,35,"When I wake up, you don't wanna know what I see",know,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",late,35,"When I wake up, you don't wanna know what I see",wake,INNER,SLANT,cmu,MED,Y
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",seein,35,"When I wake up, you don't wanna know what I see",see,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",when,35,"When I wake up, you don't wanna know what I see",When,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",sleep,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",V,END,ASSONANCE,vowel,MED,Y
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",ghosts,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",bro,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,34,"I be up late, I be seein' things, ghosts and ghouls when I sleep (What)",seein,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",V,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,35,"When I wake up, you don't wanna know what I see",don't,35,"When I wake up, you don't wanna know what I see",know,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,35,"When I wake up, you don't wanna know what I see",see,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",V,END,PERFECT,cmu,HIGH,Y
+Fuck the World,35,"When I wake up, you don't wanna know what I see",don't,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",bro,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,35,"When I wake up, you don't wanna know what I see",know,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",bro,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,35,"When I wake up, you don't wanna know what I see",don't,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",going,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,35,"When I wake up, you don't wanna know what I see",know,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",going,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,35,"When I wake up, you don't wanna know what I see",what,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",Dumbo,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",bro,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",going,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",bro,38,"I hit up my plug in Poland, no, you can't be my friend (No)",no,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",bro,38,"I hit up my plug in Poland, no, you can't be my friend (No)",Poland,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,36,"That's my bro ZacFTP, drivin' CTS-V (HDOE)",ZacFTP,38,"I hit up my plug in Poland, no, you can't be my friend (No)",can't,INNER,ASSONANCE,vowel,LOW,N
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",Bitch,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",sippin,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",going,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",Tosey,INNER,SLANT,spelling,LOW,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",Bitch,38,"I hit up my plug in Poland, no, you can't be my friend (No)",hit,INNER,SLANT,cmu,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",Dumbo,38,"I hit up my plug in Poland, no, you can't be my friend (No)",plug,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",going,38,"I hit up my plug in Poland, no, you can't be my friend (No)",no,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",going,38,"I hit up my plug in Poland, no, you can't be my friend (No)",Poland,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",sippin,38,"I hit up my plug in Poland, no, you can't be my friend (No)",hit,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",Spanish,38,"I hit up my plug in Poland, no, you can't be my friend (No)",can't,INNER,SLANT,cmu,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",Bitch,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",hits,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",sippin,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",hits,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",Spanish,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",pack,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,37,"Bitch, we going Dumbo, sippin' on Spanish Tosey",Spanish,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",stab,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",Poland,38,"I hit up my plug in Poland, no, you can't be my friend (No)",no,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",friend,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",neck,END,ASSONANCE,vowel,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",can't,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",pack,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",can't,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",stab,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",friend,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",when,INNER,SLANT,cmu,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",friend,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",where,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",hit,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",hits,INNER,SLANT,cmu,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",friend,40,"You know where I am (HDOE), disappear like backends (HDOE)",backends,END,SLANT,cmu,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",friend,40,"You know where I am (HDOE), disappear like backends (HDOE)",where,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",hit,40,"You know where I am (HDOE), disappear like backends (HDOE)",disappear,INNER,SLANT,cmu,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",no,40,"You know where I am (HDOE), disappear like backends (HDOE)",know,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",Poland,40,"You know where I am (HDOE), disappear like backends (HDOE)",know,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,38,"I hit up my plug in Poland, no, you can't be my friend (No)",friend,41,"Chokin' on blood, don't even know what you said (HDOE)",said,END,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",pack,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",stab,INNER,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",when,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",neck,INNER,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",when,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",where,INNER,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",where,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",neck,INNER,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",neck,40,"You know where I am (HDOE), disappear like backends (HDOE)",backends,END,ASSONANCE,vowel,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",hits,40,"You know where I am (HDOE), disappear like backends (HDOE)",disappear,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",neck,40,"You know where I am (HDOE), disappear like backends (HDOE)",where,INNER,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",right,40,"You know where I am (HDOE), disappear like backends (HDOE)",like,INNER,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",when,40,"You know where I am (HDOE), disappear like backends (HDOE)",backends,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",when,40,"You know where I am (HDOE), disappear like backends (HDOE)",where,INNER,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",where,40,"You know where I am (HDOE), disappear like backends (HDOE)",backends,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",where,40,"You know where I am (HDOE), disappear like backends (HDOE)",where,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",neck,41,"Chokin' on blood, don't even know what you said (HDOE)",said,END,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",creep,41,"Chokin' on blood, don't even know what you said (HDOE)",even,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",when,41,"Chokin' on blood, don't even know what you said (HDOE)",said,INNER,SLANT,cmu,MED,Y
+Fuck the World,39,"I creep up when the pack hits, stab you right where your neck is (HDOE)",where,41,"Chokin' on blood, don't even know what you said (HDOE)",said,INNER,SLANT,cmu,MED,Y
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",where,40,"You know where I am (HDOE), disappear like backends (HDOE)",backends,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",backends,41,"Chokin' on blood, don't even know what you said (HDOE)",said,END,ASSONANCE,vowel,MED,Y
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",know,41,"Chokin' on blood, don't even know what you said (HDOE)",Chokin,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",know,41,"Chokin' on blood, don't even know what you said (HDOE)",don't,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",know,41,"Chokin' on blood, don't even know what you said (HDOE)",know,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",where,41,"Chokin' on blood, don't even know what you said (HDOE)",said,INNER,SLANT,cmu,MED,Y
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",backends,42,"It's Fuck The Population, bitch, you know where we stay",where,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",disappear,42,"It's Fuck The Population, bitch, you know where we stay",bitch,INNER,SLANT,cmu,MED,Y
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",know,42,"It's Fuck The Population, bitch, you know where we stay",know,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,40,"You know where I am (HDOE), disappear like backends (HDOE)",where,42,"It's Fuck The Population, bitch, you know where we stay",where,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",blood,41,"Chokin' on blood, don't even know what you said (HDOE)",what,INNER,SLANT,cmu,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",Chokin,41,"Chokin' on blood, don't even know what you said (HDOE)",don't,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",Chokin,41,"Chokin' on blood, don't even know what you said (HDOE)",know,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",don't,41,"Chokin' on blood, don't even know what you said (HDOE)",know,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",blood,42,"It's Fuck The Population, bitch, you know where we stay",Fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",Chokin,42,"It's Fuck The Population, bitch, you know where we stay",know,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",don't,42,"It's Fuck The Population, bitch, you know where we stay",know,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",know,42,"It's Fuck The Population, bitch, you know where we stay",know,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",said,42,"It's Fuck The Population, bitch, you know where we stay",where,INNER,SLANT,cmu,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",what,42,"It's Fuck The Population, bitch, you know where we stay",Fuck,INNER,SLANT,cmu,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",Chokin,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",post,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",don't,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",post,INNER,SLANT,cmu,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",even,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",sleeping,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",know,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",post,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,41,"Chokin' on blood, don't even know what you said (HDOE)",said,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",chair,INNER,SLANT,cmu,MED,Y
+Fuck the World,42,"It's Fuck The Population, bitch, you know where we stay",Population,42,"It's Fuck The Population, bitch, you know where we stay",stay,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,42,"It's Fuck The Population, bitch, you know where we stay",bitch,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",crib,INNER,SLANT,cmu,MED,Y
+Fuck the World,42,"It's Fuck The Population, bitch, you know where we stay",know,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",post,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,42,"It's Fuck The Population, bitch, you know where we stay",where,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",chair,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,42,"It's Fuck The Population, bitch, you know where we stay",bitch,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",sippin,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",crib,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",sippin,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",sleeping,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",FTP,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",sleeping,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",lean,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",Zac's,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",Zac's,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",chair,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",better,INNER,SLANT,cmu,MED,Y
+Fuck the World,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",crib,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",bitch,INNER,SLANT,cmu,MED,Y
+Fuck the World,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",massage,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",not,INNER,SLANT,cmu,MED,Y
+Fuck the World,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",post,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",closed,INNER,SLANT,cmu,MED,Y
+Fuck the World,43,"We post up at Zac's crib, in a massage chair I'm sleeping (HDOE, HDOE, HDOE)",Zac's,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",ass,INNER,SLANT,spelling,LOW,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",FTP,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",lean,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",Mound,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",house,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",house,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",now,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",Mound,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",now,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",sippin,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",bitch,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",Zac's,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",ass,INNER,SLANT,spelling,LOW,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",FTP,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",Lean,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",house,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",mouth,INNER,SLANT,cmu,MED,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",lean,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",Lean,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",Mound,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",mouth,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,44,"It's FTP and Haunted Mound, sippin' lean at Zac's house",sippin,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",biscuit,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",bitch,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",biscuit,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",not,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",body,INNER,SLANT,cmu,MED,Y
+Fuck the World,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",now,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",mouth,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",ass,47,"Hundred-K cash in my britches (Ffff, beep)",cash,INNER,SLANT,cmu,MED,Y
+Fuck the World,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",bitch,47,"Hundred-K cash in my britches (Ffff, beep)",britches,INNER,SLANT,cmu,MED,Y
+Fuck the World,45,"Eyes closed, bitch, so yo' ass better not wake me up now, HDOE",wake,47,"Hundred-K cash in my britches (Ffff, beep)",K,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",biscuit,47,"Hundred-K cash in my britches (Ffff, beep)",britches,END,ASSONANCE,vowel,MED,Y
+Fuck the World,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",biscuit,48,Scratched the Forgiatos then I fixed it (Blick),fixed,END,ASSONANCE,vowel,MED,Y
+Fuck the World,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",biscuit,49,"Yeah, they fours but them hoes look like sixes (Flex)",sixes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,46,"Lean in my body, my mouth a biscuit (Lean, H-H-H-Hauntaholics)",biscuit,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,47,"Hundred-K cash in my britches (Ffff, beep)",britches,48,Scratched the Forgiatos then I fixed it (Blick),fixed,END,ASSONANCE,vowel,MED,Y
+Fuck the World,47,"Hundred-K cash in my britches (Ffff, beep)",cash,48,Scratched the Forgiatos then I fixed it (Blick),Scratched,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,47,"Hundred-K cash in my britches (Ffff, beep)",britches,49,"Yeah, they fours but them hoes look like sixes (Flex)",sixes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,47,"Hundred-K cash in my britches (Ffff, beep)",britches,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,END,SLANT,cmu,MED,Y
+Fuck the World,47,"Hundred-K cash in my britches (Ffff, beep)",britches,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,END,SLANT,cmu,MED,Y
+Fuck the World,48,Scratched the Forgiatos then I fixed it (Blick),fixed,49,"Yeah, they fours but them hoes look like sixes (Flex)",sixes,END,SLANT,cmu,MED,Y
+Fuck the World,48,Scratched the Forgiatos then I fixed it (Blick),fixed,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,48,Scratched the Forgiatos then I fixed it (Blick),fixed,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",pigs,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,48,Scratched the Forgiatos then I fixed it (Blick),fixed,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,48,Scratched the Forgiatos then I fixed it (Blick),fixed,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,END,ASSONANCE,vowel,MED,Y
+Fuck the World,49,"Yeah, they fours but them hoes look like sixes (Flex)",sixes,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,49,"Yeah, they fours but them hoes look like sixes (Flex)",sixes,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",pigs,INNER,SLANT,cmu,MED,Y
+Fuck the World,49,"Yeah, they fours but them hoes look like sixes (Flex)",sixes,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,49,"Yeah, they fours but them hoes look like sixes (Flex)",like,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",I'll,INNER,SLANT,cmu,MED,Y
+Fuck the World,49,"Yeah, they fours but them hoes look like sixes (Flex)",like,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",like,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,49,"Yeah, they fours but them hoes look like sixes (Flex)",sixes,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,49,"Yeah, they fours but them hoes look like sixes (Flex)",sixes,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,END,ASSONANCE,vowel,MED,Y
+Fuck the World,49,"Yeah, they fours but them hoes look like sixes (Flex)",sixes,53,"I got FTP on my fitted, ayy (FTP)",fitted,END,ASSONANCE,vowel,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",Fuck,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",pigs,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,INNER,SLANT,cmu,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,END,MULTI,multi,HIGH,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",bitch,INNER,SLANT,cmu,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",Fuck,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",some,INNER,SLANT,cmu,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",pigs,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",pigs,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,INNER,SLANT,cmu,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,END,ASSONANCE,vowel,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,52,"'Fore we cut ya ears off, nigga, listen (What?)",ears,INNER,SLANT,cmu,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",Fuck,52,"'Fore we cut ya ears off, nigga, listen (What?)",cut,INNER,SLANT,cmu,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",pigs,52,"'Fore we cut ya ears off, nigga, listen (What?)",ears,INNER,SLANT,cmu,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",pigs,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",pigs,52,"'Fore we cut ya ears off, nigga, listen (What?)",nigga,INNER,SLANT,spelling,LOW,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,53,"I got FTP on my fitted, ayy (FTP)",fitted,END,ASSONANCE,vowel,MED,Y
+Fuck the World,50,"Fuck the pigs, fuck the birds, fuck the fishes (Bitch)",fishes,54,"Been to war, been to hell, been to prison",prison,END,ASSONANCE,vowel,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",bitch,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,INNER,SLANT,cmu,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",I'll,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",like,INNER,SLANT,cmu,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,END,ASSONANCE,vowel,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",bitch,52,"'Fore we cut ya ears off, nigga, listen (What?)",ears,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",bitch,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,52,"'Fore we cut ya ears off, nigga, listen (What?)",ears,INNER,SLANT,cmu,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",some,52,"'Fore we cut ya ears off, nigga, listen (What?)",cut,INNER,SLANT,cmu,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,53,"I got FTP on my fitted, ayy (FTP)",fitted,END,ASSONANCE,vowel,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",bitch,53,"I got FTP on my fitted, ayy (FTP)",fitted,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,54,"Been to war, been to hell, been to prison",prison,END,ASSONANCE,vowel,MED,Y
+Fuck the World,51,"I'll have my bitch do ya like some dishes (Bang, bang, bang)",dishes,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,END,ASSONANCE,vowel,MED,Y
+Fuck the World,52,"'Fore we cut ya ears off, nigga, listen (What?)",ears,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,53,"I got FTP on my fitted, ayy (FTP)",fitted,END,ASSONANCE,vowel,MED,Y
+Fuck the World,52,"'Fore we cut ya ears off, nigga, listen (What?)",ears,53,"I got FTP on my fitted, ayy (FTP)",fitted,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,52,"'Fore we cut ya ears off, nigga, listen (What?)",nigga,53,"I got FTP on my fitted, ayy (FTP)",fitted,INNER,SLANT,spelling,LOW,Y
+Fuck the World,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,54,"Been to war, been to hell, been to prison",prison,END,SLANT,cmu,MED,Y
+Fuck the World,52,"'Fore we cut ya ears off, nigga, listen (What?)",'Fore,54,"Been to war, been to hell, been to prison",war,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,52,"'Fore we cut ya ears off, nigga, listen (What?)",ears,54,"Been to war, been to hell, been to prison",prison,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,END,SLANT,cmu,MED,Y
+Fuck the World,52,"'Fore we cut ya ears off, nigga, listen (What?)",listen,56,AK left a finger for the fishes,fishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,53,"I got FTP on my fitted, ayy (FTP)",fitted,54,"Been to war, been to hell, been to prison",prison,END,ASSONANCE,vowel,MED,Y
+Fuck the World,53,"I got FTP on my fitted, ayy (FTP)",fitted,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,END,ASSONANCE,vowel,MED,Y
+Fuck the World,53,"I got FTP on my fitted, ayy (FTP)",FTP,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",leave,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,53,"I got FTP on my fitted, ayy (FTP)",got,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",spot,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,53,"I got FTP on my fitted, ayy (FTP)",fitted,56,AK left a finger for the fishes,fishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,53,"I got FTP on my fitted, ayy (FTP)",fitted,57,"Magic stick, bitch, I'll grant your wishes",wishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,54,"Been to war, been to hell, been to prison",prison,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,END,SLANT,cmu,MED,Y
+Fuck the World,54,"Been to war, been to hell, been to prison",prison,56,AK left a finger for the fishes,fishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,54,"Been to war, been to hell, been to prison",hell,56,AK left a finger for the fishes,left,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,54,"Been to war, been to hell, been to prison",prison,56,AK left a finger for the fishes,finger,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,54,"Been to war, been to hell, been to prison",prison,57,"Magic stick, bitch, I'll grant your wishes",wishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,54,"Been to war, been to hell, been to prison",prison,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,END,ASSONANCE,vowel,MED,Y
+Fuck the World,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,56,AK left a finger for the fishes,fishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,56,AK left a finger for the fishes,finger,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,57,"Magic stick, bitch, I'll grant your wishes",wishes,END,ASSONANCE,vowel,MED,Y
+Fuck the World,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,57,"Magic stick, bitch, I'll grant your wishes",bitch,INNER,SLANT,cmu,MED,Y
+Fuck the World,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,57,"Magic stick, bitch, I'll grant your wishes",stick,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",right,57,"Magic stick, bitch, I'll grant your wishes",I'll,INNER,SLANT,cmu,MED,Y
+Fuck the World,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,END,SLANT,cmu,MED,Y
+Fuck the World,55,"I'm in the spot, leave you right in the kitchen (Bang, bang)",kitchen,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,END,ASSONANCE,vowel,MED,Y
+Fuck the World,56,AK left a finger for the fishes,finger,56,AK left a finger for the fishes,fishes,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,56,AK left a finger for the fishes,fishes,57,"Magic stick, bitch, I'll grant your wishes",wishes,END,SLANT,cmu,MED,Y
+Fuck the World,56,AK left a finger for the fishes,finger,57,"Magic stick, bitch, I'll grant your wishes",bitch,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,56,AK left a finger for the fishes,finger,57,"Magic stick, bitch, I'll grant your wishes",stick,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,56,AK left a finger for the fishes,finger,57,"Magic stick, bitch, I'll grant your wishes",wishes,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,56,AK left a finger for the fishes,fishes,57,"Magic stick, bitch, I'll grant your wishes",bitch,INNER,SLANT,cmu,MED,Y
+Fuck the World,56,AK left a finger for the fishes,fishes,57,"Magic stick, bitch, I'll grant your wishes",stick,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,56,AK left a finger for the fishes,fishes,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,END,SLANT,cmu,MED,Y
+Fuck the World,56,AK left a finger for the fishes,finger,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,56,AK left a finger for the fishes,fishes,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,END,ASSONANCE,vowel,MED,Y
+Fuck the World,56,AK left a finger for the fishes,fishes,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,END,ASSONANCE,vowel,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",bitch,57,"Magic stick, bitch, I'll grant your wishes",wishes,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",Magic,57,"Magic stick, bitch, I'll grant your wishes",grant,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",stick,57,"Magic stick, bitch, I'll grant your wishes",bitch,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",stick,57,"Magic stick, bitch, I'll grant your wishes",wishes,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",wishes,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,END,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",bitch,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",I'll,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",life,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",I'll,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",pipe,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",stick,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",wishes,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,END,ASSONANCE,vowel,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",bitch,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",bitch,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",bitch,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",stick,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",stick,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,INNER,SLANT,cmu,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",stick,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,INNER,PERFECT,cmu,HIGH,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",wishes,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",wishes,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",wishes,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,END,ASSONANCE,vowel,MED,Y
+Fuck the World,57,"Magic stick, bitch, I'll grant your wishes",wishes,61,"Nigga upper and a downer, bet I fix it",fix,END,ASSONANCE,vowel,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",Fuck,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",fuck,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",pipe,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",life,INNER,SLANT,cmu,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,END,SLANT,cmu,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,INNER,SLANT,cmu,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,INNER,SLANT,cmu,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",Fuck,59,"Lil' bro chop yo' head, that's some sick shit (What?)",some,INNER,SLANT,cmu,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,END,SLANT,cmu,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,60,"Diarrhea left the crib, did some big shit (Huh?)",big,INNER,SLANT,cmu,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,60,"Diarrhea left the crib, did some big shit (Huh?)",crib,INNER,SLANT,cmu,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",clique,60,"Diarrhea left the crib, did some big shit (Huh?)",Diarrhea,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",Fuck,60,"Diarrhea left the crib, did some big shit (Huh?)",some,INNER,SLANT,cmu,MED,Y
+Fuck the World,58,"Fuck yo' pipe, fuck yo' life, fuck yo' clique, bitch (Fuck 'em)",bitch,61,"Nigga upper and a downer, bet I fix it",fix,END,ASSONANCE,vowel,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,END,REPEAT,spelling,HIGH,N
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",head,60,"Diarrhea left the crib, did some big shit (Huh?)",left,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,60,"Diarrhea left the crib, did some big shit (Huh?)",big,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,60,"Diarrhea left the crib, did some big shit (Huh?)",crib,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,60,"Diarrhea left the crib, did some big shit (Huh?)",big,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,60,"Diarrhea left the crib, did some big shit (Huh?)",crib,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,60,"Diarrhea left the crib, did some big shit (Huh?)",big,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,60,"Diarrhea left the crib, did some big shit (Huh?)",crib,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",some,60,"Diarrhea left the crib, did some big shit (Huh?)",some,INNER,REPEAT,spelling,HIGH,N
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,61,"Nigga upper and a downer, bet I fix it",fix,END,ASSONANCE,vowel,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",head,61,"Nigga upper and a downer, bet I fix it",bet,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",Lil,61,"Nigga upper and a downer, bet I fix it",fix,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",shit,61,"Nigga upper and a downer, bet I fix it",Nigga,INNER,SLANT,spelling,LOW,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,61,"Nigga upper and a downer, bet I fix it",fix,INNER,SLANT,cmu,MED,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",sick,61,"Nigga upper and a downer, bet I fix it",Nigga,INNER,SLANT,spelling,LOW,Y
+Fuck the World,59,"Lil' bro chop yo' head, that's some sick shit (What?)",some,61,"Nigga upper and a downer, bet I fix it",upper,INNER,SLANT,cmu,MED,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",big,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,INNER,SLANT,cmu,MED,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",crib,60,"Diarrhea left the crib, did some big shit (Huh?)",big,INNER,SLANT,cmu,MED,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",crib,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,INNER,SLANT,cmu,MED,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,61,"Nigga upper and a downer, bet I fix it",fix,END,ASSONANCE,vowel,MED,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",big,61,"Nigga upper and a downer, bet I fix it",fix,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",big,61,"Nigga upper and a downer, bet I fix it",Nigga,INNER,SLANT,spelling,LOW,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",crib,61,"Nigga upper and a downer, bet I fix it",fix,INNER,ASSONANCE,vowel,MED,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",crib,61,"Nigga upper and a downer, bet I fix it",Nigga,INNER,SLANT,spelling,LOW,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",left,61,"Nigga upper and a downer, bet I fix it",bet,INNER,SLANT,cmu,MED,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",shit,61,"Nigga upper and a downer, bet I fix it",Nigga,INNER,SLANT,spelling,LOW,Y
+Fuck the World,60,"Diarrhea left the crib, did some big shit (Huh?)",some,61,"Nigga upper and a downer, bet I fix it",upper,INNER,SLANT,cmu,MED,Y

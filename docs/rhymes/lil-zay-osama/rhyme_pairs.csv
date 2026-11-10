@@ -1,0 +1,1027 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Chase Em Down,1,"Gang (Gang, gang), gang",Gang,1,"Gang (Gang, gang), gang",gang,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,1,"Gang (Gang, gang), gang",gang,2,"Chase him down, glah (Come here)",glah,END,SLANT,spelling,LOW,Y
+Chase Em Down,1,"Gang (Gang, gang), gang",Gang,2,"Chase him down, glah (Come here)",glah,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,2,"Chase him down, glah (Come here)",down,3,"He on the ground, get up (Get up)",ground,INNER,SLANT,cmu,MED,Y
+Chase Em Down,2,"Chase him down, glah (Come here)",glah,4,Him and his mans hit up (They hit up),mans,INNER,ASSONANCE,vowel,LOW,N
+Chase Em Down,2,"Chase him down, glah (Come here)",him,4,Him and his mans hit up (They hit up),Him,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,2,"Chase him down, glah (Come here)",him,4,Him and his mans hit up (They hit up),hit,INNER,SLANT,cmu,MED,Y
+Chase Em Down,3,"He on the ground, get up (Get up)",get,5,"His ass can't get up, mhm (Frrah, frrah)",get,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,4,Him and his mans hit up (They hit up),Him,4,Him and his mans hit up (They hit up),hit,INNER,SLANT,cmu,MED,Y
+Chase Em Down,4,Him and his mans hit up (They hit up),mans,5,"His ass can't get up, mhm (Frrah, frrah)",ass,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,4,Him and his mans hit up (They hit up),mans,5,"His ass can't get up, mhm (Frrah, frrah)",can't,INNER,SLANT,cmu,MED,Y
+Chase Em Down,4,Him and his mans hit up (They hit up),Him,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",dig,INNER,SLANT,cmu,MED,Y
+Chase Em Down,4,Him and his mans hit up (They hit up),Him,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",him,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,4,Him and his mans hit up (They hit up),Him,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",pick,INNER,SLANT,cmu,MED,Y
+Chase Em Down,4,Him and his mans hit up (They hit up),hit,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",dig,INNER,SLANT,cmu,MED,Y
+Chase Em Down,4,Him and his mans hit up (They hit up),hit,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",him,INNER,SLANT,cmu,MED,Y
+Chase Em Down,4,Him and his mans hit up (They hit up),hit,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",pick,INNER,SLANT,cmu,MED,Y
+Chase Em Down,4,Him and his mans hit up (They hit up),mans,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",Ambulance,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",ass,5,"His ass can't get up, mhm (Frrah, frrah)",can't,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",mhm,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",mhm,END,REPEAT,spelling,HIGH,N
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",ass,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",Ambulance,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",can't,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",Ambulance,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",get,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",tell,INNER,SLANT,cmu,MED,Y
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",mhm,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",'em,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",mhm,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",mhm,END,REPEAT,spelling,HIGH,N
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",get,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",dead,INNER,SLANT,cmu,MED,Y
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",mhm,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",'em,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,5,"His ass can't get up, mhm (Frrah, frrah)",mhm,9,"Pull up on 'em, bail out on 'em",'em,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",'em,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",mhm,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",dig,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",him,INNER,SLANT,cmu,MED,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",him,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",dig,INNER,SLANT,cmu,MED,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",him,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",him,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",pick,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",dig,INNER,SLANT,cmu,MED,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",pick,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",him,INNER,SLANT,cmu,MED,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",mhm,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",mhm,END,REPEAT,spelling,HIGH,N
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",'em,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",mhm,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",tell,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",dead,INNER,SLANT,cmu,MED,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",mhm,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",'em,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",'em,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",'em,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",Ambulance,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",ass,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",tell,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",left,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",tell,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",messy,INNER,SLANT,cmu,MED,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",tell,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",red,INNER,SLANT,cmu,MED,Y
+Chase Em Down,6,"Ambulance pick him up, tell 'em, ""Go dig him up"", mhm (Tell 'em, ""Go dig him up)",mhm,9,"Pull up on 'em, bail out on 'em",'em,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",dead,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",dead,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",homie,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",homies,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",mhm,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",'em,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",dead,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",left,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",dead,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",messy,INNER,SLANT,cmu,MED,Y
+Chase Em Down,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",dead,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",red,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",mhm,9,"Pull up on 'em, bail out on 'em",'em,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,7,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies), mhm",mhm,9,"Pull up on 'em, bail out on 'em",'em,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",left,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",red,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",messy,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",left,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",messy,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",red,INNER,SLANT,cmu,MED,Y
+Chase Em Down,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",'em,9,"Pull up on 'em, bail out on 'em",'em,END,REPEAT,spelling,HIGH,N
+Chase Em Down,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",'em,9,"Pull up on 'em, bail out on 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",left,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",sparin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",messy,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",sparin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,8,"It was messy on the scene, we left his ass with red on 'em (Red on 'em)",red,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",sparin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,9,"Pull up on 'em, bail out on 'em",'em,9,"Pull up on 'em, bail out on 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,9,"Pull up on 'em, bail out on 'em",bail,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,9,"Pull up on 'em, bail out on 'em",Pull,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",Full,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",no,11,"Smoke his ass, a bold bitch (Bold bitch)",bold,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",no,11,"Smoke his ass, a bold bitch (Bold bitch)",Smoke,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",swings,11,"Smoke his ass, a bold bitch (Bold bitch)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",no,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",close,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",sparin,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",gen,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",sparin,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",Get,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,10,"Full swings (Come here), we ain't sparin' no nigga (Grrah, frrah)",swings,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",nickel,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,11,"Smoke his ass, a bold bitch (Bold bitch)",Smoke,11,"Smoke his ass, a bold bitch (Bold bitch)",bold,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,11,"Smoke his ass, a bold bitch (Bold bitch)",bitch,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",nickel,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,11,"Smoke his ass, a bold bitch (Bold bitch)",bold,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",close,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,11,"Smoke his ass, a bold bitch (Bold bitch)",bold,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",rson,INNER,ASSONANCE,vowel,LOW,N
+Chase Em Down,11,"Smoke his ass, a bold bitch (Bold bitch)",Smoke,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",close,INNER,SLANT,cmu,MED,Y
+Chase Em Down,11,"Smoke his ass, a bold bitch (Bold bitch)",Smoke,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",rson,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,11,"Smoke his ass, a bold bitch (Bold bitch)",bitch,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",Blick,INNER,SLANT,cmu,MED,Y
+Chase Em Down,11,"Smoke his ass, a bold bitch (Bold bitch)",bitch,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",six,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,11,"Smoke his ass, a bold bitch (Bold bitch)",bitch,14,"Used to be drillin', now I'm rich",rich,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",close,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",rson,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",Get,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",gen,INNER,SLANT,cmu,MED,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",gen,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",n,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",Get,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",n,INNER,SLANT,cmu,MED,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",nickel,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",Blick,INNER,SLANT,cmu,MED,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",nickel,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",six,INNER,SLANT,cmu,MED,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",p,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",fifteen,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",p,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",week,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",nickel,14,"Used to be drillin', now I'm rich",rich,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",nickel,14,"Used to be drillin', now I'm rich",drillin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,12,"Get up close in pеrson with this gen five (Mhm), four nickel (Mhm, grrah)",nickel,16,"Stuck in the trenches, I was lit",lit,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",Blick,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",six,INNER,SLANT,cmu,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",fifteen,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",week,INNER,SLANT,cmu,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",Blick,14,"Used to be drillin', now I'm rich",drillin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",Blick,14,"Used to be drillin', now I'm rich",rich,INNER,SLANT,cmu,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",six,14,"Used to be drillin', now I'm rich",drillin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",six,14,"Used to be drillin', now I'm rich",rich,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",Blick,15,"They still spinnin', shall drench",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",Blick,15,"They still spinnin', shall drench",still,INNER,SLANT,cmu,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",n,15,"They still spinnin', shall drench",drench,INNER,SLANT,cmu,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",six,15,"They still spinnin', shall drench",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,13,"Ayy, fifteen shot my first Blick, nеxt week put on six capes (No cap)",six,15,"They still spinnin', shall drench",still,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,14,"Used to be drillin', now I'm rich",drillin,14,"Used to be drillin', now I'm rich",rich,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,14,"Used to be drillin', now I'm rich",drillin,15,"They still spinnin', shall drench",spinnin,INNER,SLANT,cmu,MED,Y
+Chase Em Down,14,"Used to be drillin', now I'm rich",drillin,15,"They still spinnin', shall drench",still,INNER,SLANT,cmu,MED,Y
+Chase Em Down,14,"Used to be drillin', now I'm rich",rich,15,"They still spinnin', shall drench",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,14,"Used to be drillin', now I'm rich",rich,15,"They still spinnin', shall drench",still,INNER,SLANT,cmu,MED,Y
+Chase Em Down,14,"Used to be drillin', now I'm rich",rich,16,"Stuck in the trenches, I was lit",lit,END,SLANT,cmu,MED,Y
+Chase Em Down,14,"Used to be drillin', now I'm rich",drillin,16,"Stuck in the trenches, I was lit",lit,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,14,"Used to be drillin', now I'm rich",rich,17,Nigga ask Jay P and Mick,Mick,END,SLANT,cmu,MED,Y
+Chase Em Down,15,"They still spinnin', shall drench",still,15,"They still spinnin', shall drench",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,15,"They still spinnin', shall drench",drench,16,"Stuck in the trenches, I was lit",trenches,INNER,SLANT,cmu,MED,Y
+Chase Em Down,15,"They still spinnin', shall drench",spinnin,16,"Stuck in the trenches, I was lit",lit,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,15,"They still spinnin', shall drench",still,16,"Stuck in the trenches, I was lit",lit,INNER,SLANT,cmu,MED,Y
+Chase Em Down,15,"They still spinnin', shall drench",shall,17,Nigga ask Jay P and Mick,ask,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,15,"They still spinnin', shall drench",spinnin,17,Nigga ask Jay P and Mick,Mick,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,15,"They still spinnin', shall drench",still,17,Nigga ask Jay P and Mick,Mick,INNER,SLANT,cmu,MED,Y
+Chase Em Down,15,"They still spinnin', shall drench",drench,18,And I have to come do 'em legit (No bap),legit,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,16,"Stuck in the trenches, I was lit",lit,17,Nigga ask Jay P and Mick,Mick,END,SLANT,cmu,MED,Y
+Chase Em Down,16,"Stuck in the trenches, I was lit",lit,17,Nigga ask Jay P and Mick,Nigga,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,16,"Stuck in the trenches, I was lit",Stuck,18,And I have to come do 'em legit (No bap),come,INNER,SLANT,cmu,MED,Y
+Chase Em Down,16,"Stuck in the trenches, I was lit",trenches,18,And I have to come do 'em legit (No bap),legit,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,16,"Stuck in the trenches, I was lit",lit,19,Still gotta move with a stick (No bap),stick,END,SLANT,cmu,MED,Y
+Chase Em Down,16,"Stuck in the trenches, I was lit",lit,20,He don't know what to do with the switch (Brrt),switch,END,SLANT,cmu,MED,Y
+Chase Em Down,17,Nigga ask Jay P and Mick,Nigga,17,Nigga ask Jay P and Mick,Mick,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,17,Nigga ask Jay P and Mick,ask,18,And I have to come do 'em legit (No bap),have,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,17,Nigga ask Jay P and Mick,Mick,19,Still gotta move with a stick (No bap),stick,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,17,Nigga ask Jay P and Mick,Mick,19,Still gotta move with a stick (No bap),Still,INNER,SLANT,cmu,MED,Y
+Chase Em Down,17,Nigga ask Jay P and Mick,Nigga,19,Still gotta move with a stick (No bap),stick,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,17,Nigga ask Jay P and Mick,Mick,20,He don't know what to do with the switch (Brrt),switch,END,SLANT,cmu,MED,Y
+Chase Em Down,17,Nigga ask Jay P and Mick,Mick,21,Got to send more than two on the blitz (Phew),blitz,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,18,And I have to come do 'em legit (No bap),come,18,And I have to come do 'em legit (No bap),'em,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,18,And I have to come do 'em legit (No bap),come,20,He don't know what to do with the switch (Brrt),what,INNER,SLANT,cmu,MED,Y
+Chase Em Down,19,Still gotta move with a stick (No bap),Still,19,Still gotta move with a stick (No bap),stick,INNER,SLANT,cmu,MED,Y
+Chase Em Down,19,Still gotta move with a stick (No bap),stick,20,He don't know what to do with the switch (Brrt),switch,END,SLANT,cmu,MED,Y
+Chase Em Down,19,Still gotta move with a stick (No bap),Still,20,He don't know what to do with the switch (Brrt),switch,INNER,SLANT,cmu,MED,Y
+Chase Em Down,19,Still gotta move with a stick (No bap),stick,21,Got to send more than two on the blitz (Phew),blitz,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,19,Still gotta move with a stick (No bap),gotta,21,Got to send more than two on the blitz (Phew),Got,INNER,SLANT,cmu,MED,Y
+Chase Em Down,19,Still gotta move with a stick (No bap),move,21,Got to send more than two on the blitz (Phew),two,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,19,Still gotta move with a stick (No bap),Still,21,Got to send more than two on the blitz (Phew),blitz,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,19,Still gotta move with a stick (No bap),stick,22,"Yeah, my gang get wicked, the sickest",sickest,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,20,He don't know what to do with the switch (Brrt),don't,20,He don't know what to do with the switch (Brrt),know,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,20,He don't know what to do with the switch (Brrt),switch,21,Got to send more than two on the blitz (Phew),blitz,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,20,He don't know what to do with the switch (Brrt),switch,22,"Yeah, my gang get wicked, the sickest",sickest,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,20,He don't know what to do with the switch (Brrt),switch,22,"Yeah, my gang get wicked, the sickest",wicked,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,20,He don't know what to do with the switch (Brrt),switch,24,"Used to stay on the opps, I was viscous",viscous,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,21,Got to send more than two on the blitz (Phew),blitz,22,"Yeah, my gang get wicked, the sickest",sickest,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,21,Got to send more than two on the blitz (Phew),blitz,22,"Yeah, my gang get wicked, the sickest",wicked,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,21,Got to send more than two on the blitz (Phew),send,22,"Yeah, my gang get wicked, the sickest",get,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,21,Got to send more than two on the blitz (Phew),blitz,23,We don't leave no niggas with sticthes,sticthes,END,SLANT,spelling,LOW,Y
+Chase Em Down,21,Got to send more than two on the blitz (Phew),blitz,23,We don't leave no niggas with sticthes,niggas,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,21,Got to send more than two on the blitz (Phew),blitz,24,"Used to stay on the opps, I was viscous",viscous,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,21,Got to send more than two on the blitz (Phew),blitz,25,So my mama know you niggas bitches,bitches,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,22,"Yeah, my gang get wicked, the sickest",wicked,22,"Yeah, my gang get wicked, the sickest",sickest,INNER,SLANT,cmu,MED,Y
+Chase Em Down,22,"Yeah, my gang get wicked, the sickest",sickest,23,We don't leave no niggas with sticthes,sticthes,END,ASSONANCE,vowel,LOW,N
+Chase Em Down,22,"Yeah, my gang get wicked, the sickest",wicked,23,We don't leave no niggas with sticthes,sticthes,INNER,ASSONANCE,vowel,LOW,N
+Chase Em Down,22,"Yeah, my gang get wicked, the sickest",sickest,24,"Used to stay on the opps, I was viscous",viscous,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,22,"Yeah, my gang get wicked, the sickest",wicked,24,"Used to stay on the opps, I was viscous",viscous,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,22,"Yeah, my gang get wicked, the sickest",sickest,25,So my mama know you niggas bitches,bitches,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,22,"Yeah, my gang get wicked, the sickest",sickest,26,I be still in the 'Raq taking pictures,pictures,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,23,We don't leave no niggas with sticthes,don't,23,We don't leave no niggas with sticthes,no,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,23,We don't leave no niggas with sticthes,niggas,23,We don't leave no niggas with sticthes,sticthes,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,23,We don't leave no niggas with sticthes,don't,24,"Used to stay on the opps, I was viscous",opps,INNER,ASSONANCE,vowel,LOW,N
+Chase Em Down,23,We don't leave no niggas with sticthes,sticthes,25,So my mama know you niggas bitches,bitches,END,ASSONANCE,vowel,LOW,N
+Chase Em Down,23,We don't leave no niggas with sticthes,don't,25,So my mama know you niggas bitches,know,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,23,We don't leave no niggas with sticthes,niggas,25,So my mama know you niggas bitches,niggas,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,23,We don't leave no niggas with sticthes,no,25,So my mama know you niggas bitches,know,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,23,We don't leave no niggas with sticthes,sticthes,25,So my mama know you niggas bitches,niggas,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,23,We don't leave no niggas with sticthes,sticthes,26,I be still in the 'Raq taking pictures,pictures,END,SLANT,spelling,LOW,Y
+Chase Em Down,24,"Used to stay on the opps, I was viscous",viscous,25,So my mama know you niggas bitches,bitches,END,SLANT,cmu,MED,Y
+Chase Em Down,24,"Used to stay on the opps, I was viscous",opps,25,So my mama know you niggas bitches,know,INNER,ASSONANCE,vowel,LOW,N
+Chase Em Down,24,"Used to stay on the opps, I was viscous",viscous,26,I be still in the 'Raq taking pictures,pictures,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,24,"Used to stay on the opps, I was viscous",stay,26,I be still in the 'Raq taking pictures,taking,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,24,"Used to stay on the opps, I was viscous",viscous,26,I be still in the 'Raq taking pictures,still,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,25,So my mama know you niggas bitches,bitches,26,I be still in the 'Raq taking pictures,pictures,END,SLANT,cmu,MED,Y
+Chase Em Down,25,So my mama know you niggas bitches,bitches,26,I be still in the 'Raq taking pictures,still,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,25,So my mama know you niggas bitches,niggas,26,I be still in the 'Raq taking pictures,pictures,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,25,So my mama know you niggas bitches,bitches,27,"So a lot of you lil' niggas bitches, pussy",bitches,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,25,So my mama know you niggas bitches,bitches,27,"So a lot of you lil' niggas bitches, pussy",lil,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,25,So my mama know you niggas bitches,mama,27,"So a lot of you lil' niggas bitches, pussy",lot,INNER,SLANT,cmu,MED,Y
+Chase Em Down,25,So my mama know you niggas bitches,niggas,27,"So a lot of you lil' niggas bitches, pussy",niggas,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,26,I be still in the 'Raq taking pictures,still,26,I be still in the 'Raq taking pictures,pictures,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,26,I be still in the 'Raq taking pictures,pictures,27,"So a lot of you lil' niggas bitches, pussy",bitches,INNER,SLANT,cmu,MED,Y
+Chase Em Down,26,I be still in the 'Raq taking pictures,pictures,27,"So a lot of you lil' niggas bitches, pussy",lil,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,26,I be still in the 'Raq taking pictures,pictures,27,"So a lot of you lil' niggas bitches, pussy",niggas,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,26,I be still in the 'Raq taking pictures,still,27,"So a lot of you lil' niggas bitches, pussy",bitches,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,26,I be still in the 'Raq taking pictures,still,27,"So a lot of you lil' niggas bitches, pussy",lil,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,26,I be still in the 'Raq taking pictures,pictures,28,"Finish missions, got exited",Finish,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,26,I be still in the 'Raq taking pictures,pictures,28,"Finish missions, got exited",missions,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,26,I be still in the 'Raq taking pictures,still,28,"Finish missions, got exited",Finish,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,26,I be still in the 'Raq taking pictures,still,28,"Finish missions, got exited",missions,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",lil,27,"So a lot of you lil' niggas bitches, pussy",bitches,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",bitches,28,"Finish missions, got exited",Finish,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",bitches,28,"Finish missions, got exited",missions,INNER,SLANT,cmu,MED,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",lil,28,"Finish missions, got exited",Finish,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",lil,28,"Finish missions, got exited",missions,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",lot,28,"Finish missions, got exited",got,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",bitches,29,"Free Lil' Inch, gotta fight it",Inch,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",bitches,29,"Free Lil' Inch, gotta fight it",Lil,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",lil,29,"Free Lil' Inch, gotta fight it",Inch,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",lil,29,"Free Lil' Inch, gotta fight it",Lil,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,27,"So a lot of you lil' niggas bitches, pussy",lot,29,"Free Lil' Inch, gotta fight it",gotta,INNER,SLANT,cmu,MED,Y
+Chase Em Down,28,"Finish missions, got exited",Finish,28,"Finish missions, got exited",missions,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,28,"Finish missions, got exited",Finish,29,"Free Lil' Inch, gotta fight it",Inch,INNER,SLANT,cmu,MED,Y
+Chase Em Down,28,"Finish missions, got exited",Finish,29,"Free Lil' Inch, gotta fight it",Lil,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,28,"Finish missions, got exited",got,29,"Free Lil' Inch, gotta fight it",gotta,INNER,SLANT,cmu,MED,Y
+Chase Em Down,28,"Finish missions, got exited",missions,29,"Free Lil' Inch, gotta fight it",Inch,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,28,"Finish missions, got exited",missions,29,"Free Lil' Inch, gotta fight it",Lil,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,29,"Free Lil' Inch, gotta fight it",Lil,29,"Free Lil' Inch, gotta fight it",Inch,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,29,"Free Lil' Inch, gotta fight it",fight,30,"Making statements, niggas writing",writing,END,SLANT,cmu,MED,Y
+Chase Em Down,29,"Free Lil' Inch, gotta fight it",fight,31,"She gettin' fishy, I don't like it",like,END,SLANT,cmu,MED,Y
+Chase Em Down,29,"Free Lil' Inch, gotta fight it",Inch,31,"She gettin' fishy, I don't like it",fishy,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,29,"Free Lil' Inch, gotta fight it",Lil,31,"She gettin' fishy, I don't like it",fishy,INNER,SLANT,cmu,MED,Y
+Chase Em Down,29,"Free Lil' Inch, gotta fight it",fight,32,Four-nick like some lightning,lightning,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,30,"Making statements, niggas writing",Making,30,"Making statements, niggas writing",statements,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,30,"Making statements, niggas writing",writing,31,"She gettin' fishy, I don't like it",like,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,30,"Making statements, niggas writing",writing,32,Four-nick like some lightning,lightning,END,SLANT,cmu,MED,Y
+Chase Em Down,30,"Making statements, niggas writing",writing,32,Four-nick like some lightning,like,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,30,"Making statements, niggas writing",writing,34,It did so much shit as strikers,strikers,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,31,"She gettin' fishy, I don't like it",like,32,Four-nick like some lightning,lightning,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,31,"She gettin' fishy, I don't like it",fishy,32,Four-nick like some lightning,nick,INNER,SLANT,cmu,MED,Y
+Chase Em Down,31,"She gettin' fishy, I don't like it",like,32,Four-nick like some lightning,like,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,31,"She gettin' fishy, I don't like it",fishy,33,"Catch a Vick, this bitch a strike 'em",bitch,INNER,SLANT,cmu,MED,Y
+Chase Em Down,31,"She gettin' fishy, I don't like it",fishy,33,"Catch a Vick, this bitch a strike 'em",Vick,INNER,SLANT,cmu,MED,Y
+Chase Em Down,31,"She gettin' fishy, I don't like it",like,33,"Catch a Vick, this bitch a strike 'em",strike,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,31,"She gettin' fishy, I don't like it",like,34,It did so much shit as strikers,strikers,END,SLANT,cmu,MED,Y
+Chase Em Down,31,"She gettin' fishy, I don't like it",like,35,Pray the clique don't indicted (Shh),indicted,END,SLANT,cmu,MED,Y
+Chase Em Down,32,Four-nick like some lightning,like,32,Four-nick like some lightning,lightning,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,32,Four-nick like some lightning,lightning,33,"Catch a Vick, this bitch a strike 'em",strike,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,32,Four-nick like some lightning,like,33,"Catch a Vick, this bitch a strike 'em",strike,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,32,Four-nick like some lightning,nick,33,"Catch a Vick, this bitch a strike 'em",bitch,INNER,SLANT,cmu,MED,Y
+Chase Em Down,32,Four-nick like some lightning,nick,33,"Catch a Vick, this bitch a strike 'em",Vick,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,32,Four-nick like some lightning,some,33,"Catch a Vick, this bitch a strike 'em",'em,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,32,Four-nick like some lightning,lightning,34,It did so much shit as strikers,strikers,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,32,Four-nick like some lightning,like,34,It did so much shit as strikers,strikers,INNER,SLANT,cmu,MED,Y
+Chase Em Down,32,Four-nick like some lightning,nick,34,It did so much shit as strikers,shit,INNER,SLANT,cmu,MED,Y
+Chase Em Down,32,Four-nick like some lightning,some,34,It did so much shit as strikers,much,INNER,SLANT,cmu,MED,Y
+Chase Em Down,32,Four-nick like some lightning,lightning,35,Pray the clique don't indicted (Shh),indicted,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,33,"Catch a Vick, this bitch a strike 'em",Vick,33,"Catch a Vick, this bitch a strike 'em",bitch,INNER,SLANT,cmu,MED,Y
+Chase Em Down,33,"Catch a Vick, this bitch a strike 'em",bitch,34,It did so much shit as strikers,shit,INNER,SLANT,cmu,MED,Y
+Chase Em Down,33,"Catch a Vick, this bitch a strike 'em",strike,34,It did so much shit as strikers,strikers,INNER,SLANT,cmu,MED,Y
+Chase Em Down,33,"Catch a Vick, this bitch a strike 'em",Vick,34,It did so much shit as strikers,shit,INNER,SLANT,cmu,MED,Y
+Chase Em Down,33,"Catch a Vick, this bitch a strike 'em",strike,35,Pray the clique don't indicted (Shh),indicted,INNER,SLANT,cmu,MED,Y
+Chase Em Down,33,"Catch a Vick, this bitch a strike 'em",'em,37,Bail out in that Benz (That Benz) with that drum on me (Drum),drum,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,34,It did so much shit as strikers,strikers,35,Pray the clique don't indicted (Shh),indicted,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,34,It did so much shit as strikers,much,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",fuck,INNER,SLANT,cmu,MED,Y
+Chase Em Down,35,Pray the clique don't indicted (Shh),Pray,37,Bail out in that Benz (That Benz) with that drum on me (Drum),Bail,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",dead,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",dead,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",homie,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",homies,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",dead,37,Bail out in that Benz (That Benz) with that drum on me (Drum),Benz,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",fuck,37,Bail out in that Benz (That Benz) with that drum on me (Drum),drum,INNER,SLANT,cmu,MED,Y
+Chase Em Down,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",all,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",floor,INNER,SLANT,cmu,MED,Y
+Chase Em Down,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",dead,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",better,INNER,SLANT,cmu,MED,Y
+Chase Em Down,36,"Now he a dead homie, fuck all of your dead homies (Fuck all of your dead homies)",fuck,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",run,INNER,SLANT,cmu,MED,Y
+Chase Em Down,37,Bail out in that Benz (That Benz) with that drum on me (Drum),drum,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",run,END,SLANT,cmu,MED,Y
+Chase Em Down,37,Bail out in that Benz (That Benz) with that drum on me (Drum),Bail,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",days,INNER,SLANT,cmu,MED,Y
+Chase Em Down,37,Bail out in that Benz (That Benz) with that drum on me (Drum),Benz,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",better,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",don't,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",over,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",hit,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",I'ma,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",don't,40,"Fuck them cameras, you know I got mask (You know I got mask)",know,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",not,40,"Fuck them cameras, you know I got mask (You know I got mask)",got,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,38,"This yo' days, don't hit the floor, you better not run from me (Frrah, frrah)",run,40,"Fuck them cameras, you know I got mask (You know I got mask)",Fuck,INNER,SLANT,cmu,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",Catch,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",ass,INNER,SLANT,cmu,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",Catch,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",stand,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",stand,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",ass,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",ass,40,"Fuck them cameras, you know I got mask (You know I got mask)",mask,END,SLANT,cmu,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",ass,40,"Fuck them cameras, you know I got mask (You know I got mask)",cameras,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",Catch,40,"Fuck them cameras, you know I got mask (You know I got mask)",cameras,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",Catch,40,"Fuck them cameras, you know I got mask (You know I got mask)",mask,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",over,40,"Fuck them cameras, you know I got mask (You know I got mask)",know,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",stand,40,"Fuck them cameras, you know I got mask (You know I got mask)",cameras,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",stand,40,"Fuck them cameras, you know I got mask (You know I got mask)",mask,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",ass,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",ass,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",ass,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",blast,INNER,SLANT,cmu,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",Catch,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",ass,INNER,SLANT,cmu,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",Catch,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",blast,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",over,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",knowin,INNER,SLANT,cmu,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",stand,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",ass,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,39,"Catch up, I'ma stand over yo' ass (I'ma stand over yo' ass)",stand,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",blast,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,40,"Fuck them cameras, you know I got mask (You know I got mask)",cameras,40,"Fuck them cameras, you know I got mask (You know I got mask)",mask,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,40,"Fuck them cameras, you know I got mask (You know I got mask)",cameras,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",ass,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,40,"Fuck them cameras, you know I got mask (You know I got mask)",cameras,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",blast,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,40,"Fuck them cameras, you know I got mask (You know I got mask)",got,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",got,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,40,"Fuck them cameras, you know I got mask (You know I got mask)",know,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",knowin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,40,"Fuck them cameras, you know I got mask (You know I got mask)",mask,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",ass,INNER,SLANT,cmu,MED,Y
+Chase Em Down,40,"Fuck them cameras, you know I got mask (You know I got mask)",mask,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",blast,INNER,SLANT,cmu,MED,Y
+Chase Em Down,40,"Fuck them cameras, you know I got mask (You know I got mask)",got,42,"Ayy, light the room, pick on Facebook, got yo' face took",got,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",ass,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",blast,INNER,SLANT,cmu,MED,Y
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",times,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",fried,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",face,42,"Ayy, light the room, pick on Facebook, got yo' face took",face,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",fried,42,"Ayy, light the room, pick on Facebook, got yo' face took",light,INNER,SLANT,cmu,MED,Y
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",got,42,"Ayy, light the room, pick on Facebook, got yo' face took",got,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",news,42,"Ayy, light the room, pick on Facebook, got yo' face took",room,INNER,SLANT,cmu,MED,Y
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",nigga,42,"Ayy, light the room, pick on Facebook, got yo' face took",pick,INNER,SLANT,spelling,LOW,Y
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",times,42,"Ayy, light the room, pick on Facebook, got yo' face took",light,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",four,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",All,INNER,SLANT,cmu,MED,Y
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",got,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",bodies,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,41,"It's on the news, his ass got blast four times in the face, I'm knowin' he fried (Glah), nigga",knowin,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",know,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,42,"Ayy, light the room, pick on Facebook, got yo' face took",Facebook,42,"Ayy, light the room, pick on Facebook, got yo' face took",took,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,42,"Ayy, light the room, pick on Facebook, got yo' face took",took,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",look,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,42,"Ayy, light the room, pick on Facebook, got yo' face took",Facebook,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",look,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,42,"Ayy, light the room, pick on Facebook, got yo' face took",got,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",bodies,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,42,"Ayy, light the room, pick on Facebook, got yo' face took",took,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),took,END,REPEAT,spelling,HIGH,N
+Chase Em Down,42,"Ayy, light the room, pick on Facebook, got yo' face took",face,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),page,INNER,SLANT,cmu,MED,Y
+Chase Em Down,42,"Ayy, light the room, pick on Facebook, got yo' face took",Facebook,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),took,INNER,PERFECT,cmu,HIGH,Y
+Chase Em Down,42,"Ayy, light the room, pick on Facebook, got yo' face took",got,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),got,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",opps,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",know,INNER,ASSONANCE,vowel,LOW,N
+Chase Em Down,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",look,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),took,END,PERFECT,cmu,HIGH,Y
+Chase Em Down,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",All,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),all,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",bodies,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),got,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",comes,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),much,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",know,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),opps,INNER,ASSONANCE,vowel,LOW,N
+Chase Em Down,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",opps,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),opps,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",when,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),disrespecting,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,43,"All my opps dyin', when it comes to bodies, you know how they look (You know how they look)",comes,45,"We can't catch 'em, kill his brother",brother,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),much,45,"We can't catch 'em, kill his brother",brother,INNER,SLANT,cmu,MED,Y
+Chase Em Down,44,I been disrespecting all my opps so much that I got my page took (Fuck 'em),got,46,"Foenem died, they mama cryin'",mama,INNER,SLANT,cmu,MED,Y
+Chase Em Down,45,"We can't catch 'em, kill his brother",can't,45,"We can't catch 'em, kill his brother",catch,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,45,"We can't catch 'em, kill his brother",'em,46,"Foenem died, they mama cryin'",Foenem,INNER,PERFECT,spelling,MED,Y
+Chase Em Down,45,"We can't catch 'em, kill his brother",brother,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",suffer,END,SLANT,cmu,MED,Y
+Chase Em Down,45,"We can't catch 'em, kill his brother",brother,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",Fuck,INNER,SLANT,cmu,MED,Y
+Chase Em Down,45,"We can't catch 'em, kill his brother",brother,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",tougher,END,SLANT,cmu,MED,Y
+Chase Em Down,45,"We can't catch 'em, kill his brother",brother,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",brothers,END,SLANT,cmu,MED,Y
+Chase Em Down,46,"Foenem died, they mama cryin'",died,46,"Foenem died, they mama cryin'",cryin,INNER,SLANT,cmu,MED,Y
+Chase Em Down,46,"Foenem died, they mama cryin'",mama,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",mama,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,46,"Foenem died, they mama cryin'",died mama,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",make Obama,INNER,MULTI,multi,HIGH,Y
+Chase Em Down,46,"Foenem died, they mama cryin'",mama,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",Obama,INNER,MULTI,multi,HIGH,Y
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",Fuck,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",suffer,INNER,SLANT,cmu,MED,Y
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",suffer,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",tougher,END,MULTI,multi,HIGH,Y
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",Fuck,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",tougher,INNER,SLANT,cmu,MED,Y
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",make,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",make,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",make mama,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",make Obama,INNER,MULTI,multi,HIGH,Y
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",mama,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",Obama,INNER,MULTI,multi,HIGH,Y
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",suffer,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",brothers,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",Fuck,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",brothers,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",Fuck,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",mud,INNER,SLANT,cmu,MED,Y
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",mama,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",mama,INNER,REPEAT,spelling,HIGH,N
+Chase Em Down,47,"Fuck it (Huh?), we make yo' mama suffer (Make yo' mama suffer)",suffer,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",mud,INNER,SLANT,cmu,MED,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",tougher,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",brothers,END,ASSONANCE,vowel,MED,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",killers,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",Really,INNER,SLANT,cmu,MED,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",make Obama,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",learned mama,INNER,MULTI,multi,HIGH,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",Obama,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",mama,INNER,MULTI,multi,HIGH,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",tougher,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",mud,INNER,SLANT,cmu,MED,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",can,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",Catch,INNER,SLANT,cmu,MED,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",killers,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",think,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",make,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",day,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",Obama,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",body,INNER,SLANT,cmu,MED,Y
+Chase Em Down,48,"Nigga, we breed killers, I can make Obama tougher (Obama tougher)",Obama,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",mud,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",brothers,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",mama,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",body,INNER,SLANT,cmu,MED,Y
+Chase Em Down,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",mama,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",Really,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",think,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",learned,51,"Get up close in person with this gen five (Mhm), four nickel (Mhm, grrah, nigga)",person,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,49,"Really from the mud, learned from my mama brothers (Learned from my mama brothers)",Really,51,"Get up close in person with this gen five (Mhm), four nickel (Mhm, grrah, nigga)",nickel,INNER,SLANT,cmu,MED,Y
+Chase Em Down,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",body,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",don't,51,"Get up close in person with this gen five (Mhm), four nickel (Mhm, grrah, nigga)",close,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",next,51,"Get up close in person with this gen five (Mhm), four nickel (Mhm, grrah, nigga)",gen,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",next,51,"Get up close in person with this gen five (Mhm), four nickel (Mhm, grrah, nigga)",Get,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,50,"Catch a body next day, don't think nothin' of it (Don't think nothin' of it, glah, glah, glah, glah)",think,51,"Get up close in person with this gen five (Mhm), four nickel (Mhm, grrah, nigga)",nickel,INNER,ASSONANCE,vowel,MED,Y
+Chase Em Down,51,"Get up close in person with this gen five (Mhm), four nickel (Mhm, grrah, nigga)",Get,51,"Get up close in person with this gen five (Mhm), four nickel (Mhm, grrah, nigga)",gen,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,day,1,We used to trap all day in them hallways,hallways,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,hallways,2,"Prayin' one day we'll make it, we'll be all straight",straight,END,SLANT,cmu,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,all,2,"Prayin' one day we'll make it, we'll be all straight",all,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,1,We used to trap all day in them hallways,day,2,"Prayin' one day we'll make it, we'll be all straight",day,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,1,We used to trap all day in them hallways,day,2,"Prayin' one day we'll make it, we'll be all straight",make,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,day,2,"Prayin' one day we'll make it, we'll be all straight",Prayin,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,day,2,"Prayin' one day we'll make it, we'll be all straight",straight,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,hallways,2,"Prayin' one day we'll make it, we'll be all straight",day,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,hallways,2,"Prayin' one day we'll make it, we'll be all straight",make,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,hallways,2,"Prayin' one day we'll make it, we'll be all straight",Prayin,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,hallways,3,"Too many wars, couldn't put that pole down, kept it all day",day,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,all,3,"Too many wars, couldn't put that pole down, kept it all day",all,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,1,We used to trap all day in them hallways,all,3,"Too many wars, couldn't put that pole down, kept it all day",wars,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,day,3,"Too many wars, couldn't put that pole down, kept it all day",day,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,1,We used to trap all day in them hallways,hallways,4,"Life on the line for all my guys, I'ma die anyway",anyway,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,1,We used to trap all day in them hallways,hallways,5,"Too many shootouts back-to-back, I could die any day",day,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",day,2,"Prayin' one day we'll make it, we'll be all straight",make,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",day,2,"Prayin' one day we'll make it, we'll be all straight",straight,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",make,2,"Prayin' one day we'll make it, we'll be all straight",straight,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",Prayin,2,"Prayin' one day we'll make it, we'll be all straight",day,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",Prayin,2,"Prayin' one day we'll make it, we'll be all straight",make,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",Prayin,2,"Prayin' one day we'll make it, we'll be all straight",straight,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",we'll,2,"Prayin' one day we'll make it, we'll be all straight",we'll,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",straight,3,"Too many wars, couldn't put that pole down, kept it all day",day,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",all,3,"Too many wars, couldn't put that pole down, kept it all day",all,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",all,3,"Too many wars, couldn't put that pole down, kept it all day",wars,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",day,3,"Too many wars, couldn't put that pole down, kept it all day",day,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",make,3,"Too many wars, couldn't put that pole down, kept it all day",day,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",Prayin,3,"Too many wars, couldn't put that pole down, kept it all day",day,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",straight,4,"Life on the line for all my guys, I'ma die anyway",anyway,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",all,4,"Life on the line for all my guys, I'ma die anyway",all,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",day,4,"Life on the line for all my guys, I'ma die anyway",anyway,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",make,4,"Life on the line for all my guys, I'ma die anyway",anyway,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",Prayin,4,"Life on the line for all my guys, I'ma die anyway",anyway,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",straight,5,"Too many shootouts back-to-back, I could die any day",day,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,2,"Prayin' one day we'll make it, we'll be all straight",straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",couldn't,3,"Too many wars, couldn't put that pole down, kept it all day",put,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",many,3,"Too many wars, couldn't put that pole down, kept it all day",kept,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",wars,3,"Too many wars, couldn't put that pole down, kept it all day",all,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",day,4,"Life on the line for all my guys, I'ma die anyway",anyway,END,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",all,4,"Life on the line for all my guys, I'ma die anyway",all,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",wars,4,"Life on the line for all my guys, I'ma die anyway",all,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",day,5,"Too many shootouts back-to-back, I could die any day",day,END,REPEAT,spelling,HIGH,N
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",couldn't,5,"Too many shootouts back-to-back, I could die any day",could,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",kept,5,"Too many shootouts back-to-back, I could die any day",any,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",kept,5,"Too many shootouts back-to-back, I could die any day",many,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",many,5,"Too many shootouts back-to-back, I could die any day",any,INNER,MULTI,multi,HIGH,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",many,5,"Too many shootouts back-to-back, I could die any day",many,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",put,5,"Too many shootouts back-to-back, I could die any day",could,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",day,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,3,"Too many wars, couldn't put that pole down, kept it all day",day,7,"Shit got so deep, dropped outta school, that affected my grades",grades,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",guys,4,"Life on the line for all my guys, I'ma die anyway",die,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",Life,4,"Life on the line for all my guys, I'ma die anyway",die,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",Life,4,"Life on the line for all my guys, I'ma die anyway",guys,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",Life,4,"Life on the line for all my guys, I'ma die anyway",line,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",line,4,"Life on the line for all my guys, I'ma die anyway",die,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",line,4,"Life on the line for all my guys, I'ma die anyway",guys,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",anyway,5,"Too many shootouts back-to-back, I could die any day",day,END,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",die,5,"Too many shootouts back-to-back, I could die any day",die,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",guys,5,"Too many shootouts back-to-back, I could die any day",die,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",Life,5,"Too many shootouts back-to-back, I could die any day",die,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",line,5,"Too many shootouts back-to-back, I could die any day",die,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",anyway,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",all,6,"I pray to Lord that shot ain't kill me, mama, I got saved",Lord,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",anyway,6,"I pray to Lord that shot ain't kill me, mama, I got saved",ain't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",anyway,6,"I pray to Lord that shot ain't kill me, mama, I got saved",pray,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",I'ma,6,"I pray to Lord that shot ain't kill me, mama, I got saved",kill,INNER,SLANT,spelling,LOW,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",anyway,7,"Shit got so deep, dropped outta school, that affected my grades",grades,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,4,"Life on the line for all my guys, I'ma die anyway",anyway,8,"Streets took a toll on me, I'm glad I can say I done made it",made,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",back,5,"Too many shootouts back-to-back, I could die any day",back,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",many,5,"Too many shootouts back-to-back, I could die any day",any,INNER,MULTI,multi,HIGH,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",day,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",day,6,"I pray to Lord that shot ain't kill me, mama, I got saved",ain't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",day,6,"I pray to Lord that shot ain't kill me, mama, I got saved",pray,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",day,7,"Shit got so deep, dropped outta school, that affected my grades",grades,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",any,7,"Shit got so deep, dropped outta school, that affected my grades",affected,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",many,7,"Shit got so deep, dropped outta school, that affected my grades",affected,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",shootouts,7,"Shit got so deep, dropped outta school, that affected my grades",outta,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",shootouts,7,"Shit got so deep, dropped outta school, that affected my grades",school,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",day,8,"Streets took a toll on me, I'm glad I can say I done made it",made,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,5,"Too many shootouts back-to-back, I could die any day",day,9,"I pray to Lord that shot ain't killed me, mama, I got saved",saved,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",ain't,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",mama,6,"I pray to Lord that shot ain't kill me, mama, I got saved",got,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",pray,6,"I pray to Lord that shot ain't kill me, mama, I got saved",ain't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",pray,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",shot,6,"I pray to Lord that shot ain't kill me, mama, I got saved",got,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",shot,6,"I pray to Lord that shot ain't kill me, mama, I got saved",mama,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,7,"Shit got so deep, dropped outta school, that affected my grades",grades,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",ain't,7,"Shit got so deep, dropped outta school, that affected my grades",grades,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",got,7,"Shit got so deep, dropped outta school, that affected my grades",dropped,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",got,7,"Shit got so deep, dropped outta school, that affected my grades",got,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",kill,7,"Shit got so deep, dropped outta school, that affected my grades",Shit,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",mama,7,"Shit got so deep, dropped outta school, that affected my grades",dropped,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",mama,7,"Shit got so deep, dropped outta school, that affected my grades",got,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",pray,7,"Shit got so deep, dropped outta school, that affected my grades",grades,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",shot,7,"Shit got so deep, dropped outta school, that affected my grades",dropped,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",shot,7,"Shit got so deep, dropped outta school, that affected my grades",got,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,8,"Streets took a toll on me, I'm glad I can say I done made it",made,END,SLANT,cmu,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",ain't,8,"Streets took a toll on me, I'm glad I can say I done made it",made,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",ain't,8,"Streets took a toll on me, I'm glad I can say I done made it",say,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",pray,8,"Streets took a toll on me, I'm glad I can say I done made it",made,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",pray,8,"Streets took a toll on me, I'm glad I can say I done made it",say,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,8,"Streets took a toll on me, I'm glad I can say I done made it",say,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,6,"I pray to Lord that shot ain't kill me, mama, I got saved",saved,9,"I pray to Lord that shot ain't killed me, mama, I got saved",saved,END,REPEAT,spelling,HIGH,N
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",got,7,"Shit got so deep, dropped outta school, that affected my grades",dropped,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",outta,7,"Shit got so deep, dropped outta school, that affected my grades",school,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",grades,8,"Streets took a toll on me, I'm glad I can say I done made it",made,END,SLANT,cmu,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",deep,8,"Streets took a toll on me, I'm glad I can say I done made it",Streets,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",grades,8,"Streets took a toll on me, I'm glad I can say I done made it",say,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",grades,9,"I pray to Lord that shot ain't killed me, mama, I got saved",saved,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",dropped,9,"I pray to Lord that shot ain't killed me, mama, I got saved",got,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",dropped,9,"I pray to Lord that shot ain't killed me, mama, I got saved",mama,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",dropped,9,"I pray to Lord that shot ain't killed me, mama, I got saved",shot,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",got,9,"I pray to Lord that shot ain't killed me, mama, I got saved",got,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",got,9,"I pray to Lord that shot ain't killed me, mama, I got saved",mama,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",got,9,"I pray to Lord that shot ain't killed me, mama, I got saved",shot,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",grades,9,"I pray to Lord that shot ain't killed me, mama, I got saved",ain't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",grades,9,"I pray to Lord that shot ain't killed me, mama, I got saved",pray,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,7,"Shit got so deep, dropped outta school, that affected my grades",Shit,9,"I pray to Lord that shot ain't killed me, mama, I got saved",killed,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",glad,8,"Streets took a toll on me, I'm glad I can say I done made it",can,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",say,8,"Streets took a toll on me, I'm glad I can say I done made it",made,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",made,9,"I pray to Lord that shot ain't killed me, mama, I got saved",saved,END,SLANT,cmu,MED,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",glad,9,"I pray to Lord that shot ain't killed me, mama, I got saved",killed,INNER,SLANT,spelling,LOW,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",made,9,"I pray to Lord that shot ain't killed me, mama, I got saved",ain't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",made,9,"I pray to Lord that shot ain't killed me, mama, I got saved",pray,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",say,9,"I pray to Lord that shot ain't killed me, mama, I got saved",ain't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",say,9,"I pray to Lord that shot ain't killed me, mama, I got saved",pray,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",say,9,"I pray to Lord that shot ain't killed me, mama, I got saved",saved,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,8,"Streets took a toll on me, I'm glad I can say I done made it",Streets,10,"Ayy, we was driving steamers, tryna get around (Get around)",steamers,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",ain't,9,"I pray to Lord that shot ain't killed me, mama, I got saved",saved,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",mama,9,"I pray to Lord that shot ain't killed me, mama, I got saved",got,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",pray,9,"I pray to Lord that shot ain't killed me, mama, I got saved",ain't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",pray,9,"I pray to Lord that shot ain't killed me, mama, I got saved",saved,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",shot,9,"I pray to Lord that shot ain't killed me, mama, I got saved",got,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",shot,9,"I pray to Lord that shot ain't killed me, mama, I got saved",mama,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",got,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",block,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",got,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",not,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",killed,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",bitch,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",killed,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",hit,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",killed,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",spin,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",mama,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",block,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",mama,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",not,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",shot,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",block,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,9,"I pray to Lord that shot ain't killed me, mama, I got saved",shot,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",not,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,10,"Ayy, we was driving steamers, tryna get around (Get around)",around,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",around,END,REPEAT,spelling,HIGH,N
+We’ll Be Straight,10,"Ayy, we was driving steamers, tryna get around (Get around)",get,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",better,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,10,"Ayy, we was driving steamers, tryna get around (Get around)",around,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",down,END,SLANT,cmu,MED,Y
+We’ll Be Straight,10,"Ayy, we was driving steamers, tryna get around (Get around)",get,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",Steady,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,10,"Ayy, we was driving steamers, tryna get around (Get around)",around,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",down,END,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",bitch,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",spin,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",block,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",not,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",hit,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",bitch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",hit,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",spin,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",around,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",down,END,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",better,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",Steady,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",bitch,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",blick,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",bitch,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",risks,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",bitch,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",sit,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",block,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",blick,INNER,SLANT,spelling,LOW,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",hit,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",blick,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",hit,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",risks,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",hit,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",sit,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",spin,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",blick,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",spin,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",risks,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",spin,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",sit,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",around,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",down,END,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",bitch,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",shit,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",hit,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",shit,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,11,"Opps hit the block, we on that bitch, they better not spin around (Spin around)",spin,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",shit,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",blick,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",sit,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",risks,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",blick,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",risks,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",sit,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",tote,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",no,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",down,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",down,END,REPEAT,spelling,HIGH,N
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",blick,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",shit,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",can't,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",mans,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",no,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",smoke,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",risks,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",shit,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",sit,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",shit,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",tote,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",smoke,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",blick,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",blick,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",can't,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",had,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",risks,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",risks,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",sit,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",sit,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,12,"Steady takin' risks, I tote my blick, no I can't sit it down (Sit it down)",takin,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",came,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",mans,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",had,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",shit,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",shit,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",keep,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",seen,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",shit,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",bitch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,13,"I lost my homies to this shit, we smoke they mans and it keep goin' down",smoke,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",know,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",came,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",made,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",bitch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",bitch,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",bitch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",give,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",lil,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",drill,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",Pitchin,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",bitch,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",give,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",lil,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,14,"Just came off a drill, I had to switch the hoodie (Switch the hoodie)",switch,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",Pitchin,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",bitch,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",bitch,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",bitch,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",give,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",bitch,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",lil,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",bitch,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",Pitchin,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",Glock,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",opp,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",know,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",know,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",know,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",low,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",bitch,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",lil,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",Glock,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",want,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",know,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",smoke,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,15,"If you ever seen me with a Glock, just know we made that bitch a fully (Made that bitch a fully)",made,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",Say,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",bitch,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",give,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",lil,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",bitch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",lil,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",give,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",low,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",know,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",Pitchin,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",bitch,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",Pitchin,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",give,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",Pitchin,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",lil,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",bitch,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",lil,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",give,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",lil,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",gon,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",smoke,INNER,SLANT,spelling,LOW,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",know,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",smoke,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",lil,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",lil,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",low,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",smoke,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",opp,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",want,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",Pitchin,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",lil,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",bitch,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",kill,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",give,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",kill,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",lil,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",kill,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",opp,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",got,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",opp,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",mama,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,16,"Pitchin' for a low, I know my opp lil' bitch gon' give it to me (Give it to me)",Pitchin,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",kill,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",Say,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",saved,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",lil,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",kill,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",Say,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",ain't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",Say,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",pray,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",want,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",got,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",want,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",mama,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",Say,19,Made it through the jungle like a maze,maze,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",Say,19,Made it through the jungle like a maze,Made,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",some,19,Made it through the jungle like a maze,jungle,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",Say,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",amazed,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,17,"Ayy, want some smoke, lil' nigga? Say it to me (Grrra)",Say,21,"In that water like I'm baptized, wasn't saved",saved,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",ain't,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",saved,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",Lord,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",y'all,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",mama,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",got,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",pray,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",ain't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",pray,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",saved,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",saved,19,Made it through the jungle like a maze,maze,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",ain't,19,Made it through the jungle like a maze,Made,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",ain't,19,Made it through the jungle like a maze,maze,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",pray,19,Made it through the jungle like a maze,Made,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",pray,19,Made it through the jungle like a maze,maze,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",saved,19,Made it through the jungle like a maze,Made,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",saved,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",amazed,END,SLANT,cmu,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",ain't,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",amazed,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",got,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",Product,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",kill,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",shit,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",mama,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",Product,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",pray,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",amazed,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,18,"I pray to Lord that y'all ain't kill me, mama, I got saved",saved,21,"In that water like I'm baptized, wasn't saved",saved,END,REPEAT,spelling,HIGH,N
+We’ll Be Straight,19,Made it through the jungle like a maze,Made,19,Made it through the jungle like a maze,maze,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,19,Made it through the jungle like a maze,maze,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",amazed,END,SLANT,cmu,MED,Y
+We’ll Be Straight,19,Made it through the jungle like a maze,Made,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",amazed,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,19,Made it through the jungle like a maze,through,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",you'd,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,19,Made it through the jungle like a maze,maze,21,"In that water like I'm baptized, wasn't saved",saved,END,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,19,Made it through the jungle like a maze,like,21,"In that water like I'm baptized, wasn't saved",baptized,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,19,Made it through the jungle like a maze,like,21,"In that water like I'm baptized, wasn't saved",like,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,19,Made it through the jungle like a maze,Made,21,"In that water like I'm baptized, wasn't saved",saved,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",amazed,21,"In that water like I'm baptized, wasn't saved",saved,END,SLANT,cmu,MED,Y
+We’ll Be Straight,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",Product,21,"In that water like I'm baptized, wasn't saved",wasn't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,20,"Product of the hood, the shit I've seen, you'd be amazed (Amazed)",Product,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",bodyguard,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,21,"In that water like I'm baptized, wasn't saved",like,21,"In that water like I'm baptized, wasn't saved",baptized,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,21,"In that water like I'm baptized, wasn't saved",baptized,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",like,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,21,"In that water like I'm baptized, wasn't saved",baptized,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,21,"In that water like I'm baptized, wasn't saved",like,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",like,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,21,"In that water like I'm baptized, wasn't saved",like,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,21,"In that water like I'm baptized, wasn't saved",wasn't,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",bodyguard,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,21,"In that water like I'm baptized, wasn't saved",water,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",Walkin,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,21,"In that water like I'm baptized, wasn't saved",baptized,23,"And insert the .30 mag, put it on my lap, ride",ride,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,21,"In that water like I'm baptized, wasn't saved",like,23,"And insert the .30 mag, put it on my lap, ride",ride,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",like,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",like,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",like,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",like,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,23,"And insert the .30 mag, put it on my lap, ride",ride,END,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",like,23,"And insert the .30 mag, put it on my lap, ride",ride,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,23,"And insert the .30 mag, put it on my lap, ride",ride,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",strap,23,"And insert the .30 mag, put it on my lap, ride",lap,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",strap,23,"And insert the .30 mag, put it on my lap, ride",mag,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,24,"'Member want nobody dyin', I couldn't wait to come outside",outside,END,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",bodyguard,24,"'Member want nobody dyin', I couldn't wait to come outside",want,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",like,24,"'Member want nobody dyin', I couldn't wait to come outside",outside,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,24,"'Member want nobody dyin', I couldn't wait to come outside",outside,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,25,"Always on the opps, fine, made 'em hate to come outside",outside,END,SLANT,cmu,MED,Y
+We’ll Be Straight,22,"Walkin' with my bodyguard like I'm that size, phone like my strap size",size,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",alive,END,SLANT,cmu,MED,Y
+We’ll Be Straight,23,"And insert the .30 mag, put it on my lap, ride",mag,23,"And insert the .30 mag, put it on my lap, ride",lap,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,23,"And insert the .30 mag, put it on my lap, ride",ride,24,"'Member want nobody dyin', I couldn't wait to come outside",outside,END,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,23,"And insert the .30 mag, put it on my lap, ride",put,24,"'Member want nobody dyin', I couldn't wait to come outside",couldn't,INNER,ASSONANCE,vowel,MED,Y
+We’ll Be Straight,23,"And insert the .30 mag, put it on my lap, ride",ride,25,"Always on the opps, fine, made 'em hate to come outside",outside,END,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,23,"And insert the .30 mag, put it on my lap, ride",ride,25,"Always on the opps, fine, made 'em hate to come outside",fine,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,23,"And insert the .30 mag, put it on my lap, ride",ride,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",alive,END,SLANT,cmu,MED,Y
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",outside,25,"Always on the opps, fine, made 'em hate to come outside",outside,END,REPEAT,spelling,HIGH,N
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",come,25,"Always on the opps, fine, made 'em hate to come outside",'em,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",come,25,"Always on the opps, fine, made 'em hate to come outside",come,INNER,REPEAT,spelling,HIGH,N
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",outside,25,"Always on the opps, fine, made 'em hate to come outside",fine,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",wait,25,"Always on the opps, fine, made 'em hate to come outside",Always,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",wait,25,"Always on the opps, fine, made 'em hate to come outside",hate,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",wait,25,"Always on the opps, fine, made 'em hate to come outside",made,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",outside,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",alive,END,SLANT,cmu,MED,Y
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",come,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",lucky,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",outside,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",live,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,24,"'Member want nobody dyin', I couldn't wait to come outside",want,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",gotta,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",'em,25,"Always on the opps, fine, made 'em hate to come outside",come,INNER,PERFECT,cmu,HIGH,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",Always,25,"Always on the opps, fine, made 'em hate to come outside",hate,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",Always,25,"Always on the opps, fine, made 'em hate to come outside",made,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",fine,25,"Always on the opps, fine, made 'em hate to come outside",outside,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",made,25,"Always on the opps, fine, made 'em hate to come outside",hate,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",outside,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",alive,END,SLANT,cmu,MED,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",come,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",lucky,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",fine,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",alive,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",fine,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",live,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,25,"Always on the opps, fine, made 'em hate to come outside",outside,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",live,INNER,SLANT,cmu,MED,Y
+We’ll Be Straight,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",gotta live,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",lucky alive,INNER,MULTI,multi,HIGH,Y
+We’ll Be Straight,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",live,26,"Rich, I gotta live, lucky I'm alive, ayy (Rich, I gotta live, lucky I'm alive)",alive,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',like,1,Niggas run they mouth like bitches why they be lyin',why,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',lyin,2,If you the only one with a pistol why we ain’t dyin',dyin,END,MULTI,multi,MED,Y
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',bitches,2,If you the only one with a pistol why we ain’t dyin',pistol,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',like,2,If you the only one with a pistol why we ain’t dyin',why,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',run,2,If you the only one with a pistol why we ain’t dyin',one,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',why,2,If you the only one with a pistol why we ain’t dyin',why,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',bitches,3,You ain't the only one in the trenches slinging that iron,slinging,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',like,3,You ain't the only one in the trenches slinging that iron,iron,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',run,3,You ain't the only one in the trenches slinging that iron,one,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,1,Niggas run they mouth like bitches why they be lyin',why,3,You ain't the only one in the trenches slinging that iron,iron,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,2,If you the only one with a pistol why we ain’t dyin',ain’t,3,You ain't the only one in the trenches slinging that iron,ain't,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,2,If you the only one with a pistol why we ain’t dyin',one,3,You ain't the only one in the trenches slinging that iron,one,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,2,If you the only one with a pistol why we ain’t dyin',only,3,You ain't the only one in the trenches slinging that iron,only,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,2,If you the only one with a pistol why we ain’t dyin',pistol,3,You ain't the only one in the trenches slinging that iron,slinging,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,2,If you the only one with a pistol why we ain’t dyin',why,3,You ain't the only one in the trenches slinging that iron,iron,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,2,If you the only one with a pistol why we ain’t dyin',pistol,4,My niggas stand on business for killas at anytime,business,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,2,If you the only one with a pistol why we ain’t dyin',why,4,My niggas stand on business for killas at anytime,anytime,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,3,You ain't the only one in the trenches slinging that iron,iron,4,My niggas stand on business for killas at anytime,anytime,END,SLANT,cmu,MED,Y
+Why They Be Lyin,3,You ain't the only one in the trenches slinging that iron,slinging,4,My niggas stand on business for killas at anytime,business,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,3,You ain't the only one in the trenches slinging that iron,iron,5,"I ain’t sayin' you ain't built like that, but we built like that",like,END,SLANT,cmu,MED,Y
+Why They Be Lyin,3,You ain't the only one in the trenches slinging that iron,ain't,5,"I ain’t sayin' you ain't built like that, but we built like that",ain't,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,3,You ain't the only one in the trenches slinging that iron,ain't,5,"I ain’t sayin' you ain't built like that, but we built like that",ain’t,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,3,You ain't the only one in the trenches slinging that iron,ain't,5,"I ain’t sayin' you ain't built like that, but we built like that",sayin,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,3,You ain't the only one in the trenches slinging that iron,iron,5,"I ain’t sayin' you ain't built like that, but we built like that",like,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,3,You ain't the only one in the trenches slinging that iron,slinging,5,"I ain’t sayin' you ain't built like that, but we built like that",built,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,niggas,4,My niggas stand on business for killas at anytime,killas,INNER,PERFECT,spelling,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,anytime,5,"I ain’t sayin' you ain't built like that, but we built like that",like,END,SLANT,cmu,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,anytime,5,"I ain’t sayin' you ain't built like that, but we built like that",like,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,business,5,"I ain’t sayin' you ain't built like that, but we built like that",built,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,anytime,6,"Any nigga slide clap him, boy we gone blick right back",right,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,anytime,6,"Any nigga slide clap him, boy we gone blick right back",slide,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,business,6,"Any nigga slide clap him, boy we gone blick right back",blick,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,business,6,"Any nigga slide clap him, boy we gone blick right back",him,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,killas,6,"Any nigga slide clap him, boy we gone blick right back",nigga,INNER,ASSONANCE,vowel,LOW,N
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,niggas,6,"Any nigga slide clap him, boy we gone blick right back",nigga,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,stand,6,"Any nigga slide clap him, boy we gone blick right back",back,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,stand,6,"Any nigga slide clap him, boy we gone blick right back",clap,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,4,My niggas stand on business for killas at anytime,anytime,8,Tweak with them killas won't be condoned you get killed like that,like,END,SLANT,cmu,MED,Y
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",ain’t,5,"I ain’t sayin' you ain't built like that, but we built like that",ain't,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",ain’t,5,"I ain’t sayin' you ain't built like that, but we built like that",sayin,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",built,5,"I ain’t sayin' you ain't built like that, but we built like that",built,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",like,5,"I ain’t sayin' you ain't built like that, but we built like that",like,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",sayin,5,"I ain’t sayin' you ain't built like that, but we built like that",ain't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",built,6,"Any nigga slide clap him, boy we gone blick right back",blick,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",built,6,"Any nigga slide clap him, boy we gone blick right back",him,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",like,6,"Any nigga slide clap him, boy we gone blick right back",right,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",like,6,"Any nigga slide clap him, boy we gone blick right back",slide,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",built,7,Sneak dissing me in all yo songs boy that's big rap cap,big,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",built,7,Sneak dissing me in all yo songs boy that's big rap cap,dissing,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,5,"I ain’t sayin' you ain't built like that, but we built like that",like,8,Tweak with them killas won't be condoned you get killed like that,like,END,REPEAT,spelling,HIGH,N
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",clap,6,"Any nigga slide clap him, boy we gone blick right back",back,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",him,6,"Any nigga slide clap him, boy we gone blick right back",blick,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",nigga,6,"Any nigga slide clap him, boy we gone blick right back",blick,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",slide,6,"Any nigga slide clap him, boy we gone blick right back",right,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",back,7,Sneak dissing me in all yo songs boy that's big rap cap,cap,END,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",back,7,Sneak dissing me in all yo songs boy that's big rap cap,rap,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",blick,7,Sneak dissing me in all yo songs boy that's big rap cap,big,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",blick,7,Sneak dissing me in all yo songs boy that's big rap cap,dissing,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",boy,7,Sneak dissing me in all yo songs boy that's big rap cap,boy,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",clap,7,Sneak dissing me in all yo songs boy that's big rap cap,cap,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",clap,7,Sneak dissing me in all yo songs boy that's big rap cap,rap,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",gone,7,Sneak dissing me in all yo songs boy that's big rap cap,all,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",gone,7,Sneak dissing me in all yo songs boy that's big rap cap,songs,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",him,7,Sneak dissing me in all yo songs boy that's big rap cap,big,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",him,7,Sneak dissing me in all yo songs boy that's big rap cap,dissing,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",nigga,7,Sneak dissing me in all yo songs boy that's big rap cap,big,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",Any,8,Tweak with them killas won't be condoned you get killed like that,get,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",blick,8,Tweak with them killas won't be condoned you get killed like that,killed,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",him,8,Tweak with them killas won't be condoned you get killed like that,killed,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",nigga,8,Tweak with them killas won't be condoned you get killed like that,killas,INNER,ASSONANCE,vowel,LOW,N
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",right,8,Tweak with them killas won't be condoned you get killed like that,like,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,6,"Any nigga slide clap him, boy we gone blick right back",slide,8,Tweak with them killas won't be condoned you get killed like that,like,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,all,7,Sneak dissing me in all yo songs boy that's big rap cap,songs,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,dissing,7,Sneak dissing me in all yo songs boy that's big rap cap,big,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,rap,7,Sneak dissing me in all yo songs boy that's big rap cap,cap,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,big,8,Tweak with them killas won't be condoned you get killed like that,killed,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,dissing,8,Tweak with them killas won't be condoned you get killed like that,killed,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,Sneak,8,Tweak with them killas won't be condoned you get killed like that,Tweak,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,big,9,"Niggas slid we slid, they got hit we got hit",hit,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,big,9,"Niggas slid we slid, they got hit we got hit",slid,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,dissing,9,"Niggas slid we slid, they got hit we got hit",hit,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,7,Sneak dissing me in all yo songs boy that's big rap cap,dissing,9,"Niggas slid we slid, they got hit we got hit",slid,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,won't,8,Tweak with them killas won't be condoned you get killed like that,condoned,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,killas,9,"Niggas slid we slid, they got hit we got hit",Niggas,INNER,PERFECT,spelling,MED,Y
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,killed,9,"Niggas slid we slid, they got hit we got hit",hit,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,killed,9,"Niggas slid we slid, they got hit we got hit",slid,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,condoned,10,"But y'all acting like these bitches, tell a hoe what you did",hoe,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,get,10,"But y'all acting like these bitches, tell a hoe what you did",tell,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,killed,10,"But y'all acting like these bitches, tell a hoe what you did",bitches,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,like,10,"But y'all acting like these bitches, tell a hoe what you did",like,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,Tweak,10,"But y'all acting like these bitches, tell a hoe what you did",these,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,8,Tweak with them killas won't be condoned you get killed like that,won't,10,"But y'all acting like these bitches, tell a hoe what you did",hoe,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,9,"Niggas slid we slid, they got hit we got hit",got,9,"Niggas slid we slid, they got hit we got hit",got,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,9,"Niggas slid we slid, they got hit we got hit",hit,9,"Niggas slid we slid, they got hit we got hit",hit,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,9,"Niggas slid we slid, they got hit we got hit",slid,9,"Niggas slid we slid, they got hit we got hit",hit,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,9,"Niggas slid we slid, they got hit we got hit",slid,9,"Niggas slid we slid, they got hit we got hit",slid,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,9,"Niggas slid we slid, they got hit we got hit",hit,10,"But y'all acting like these bitches, tell a hoe what you did",bitches,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,9,"Niggas slid we slid, they got hit we got hit",slid,10,"But y'all acting like these bitches, tell a hoe what you did",bitches,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,9,"Niggas slid we slid, they got hit we got hit",hit,11,"Boy I know you a pig, why you expose what i did",pig,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,9,"Niggas slid we slid, they got hit we got hit",slid,11,"Boy I know you a pig, why you expose what i did",pig,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,9,"Niggas slid we slid, they got hit we got hit",hit,12,Boy I know yo ass told that we had poles in the crib,crib,END,SLANT,cmu,MED,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",what,11,"Boy I know you a pig, why you expose what i did",what,END,REPEAT,spelling,HIGH,N
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",bitches,11,"Boy I know you a pig, why you expose what i did",pig,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",hoe,11,"Boy I know you a pig, why you expose what i did",expose,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",hoe,11,"Boy I know you a pig, why you expose what i did",know,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",like,11,"Boy I know you a pig, why you expose what i did",why,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",acting,12,Boy I know yo ass told that we had poles in the crib,ass,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",acting,12,Boy I know yo ass told that we had poles in the crib,had,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",bitches,12,Boy I know yo ass told that we had poles in the crib,crib,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",hoe,12,Boy I know yo ass told that we had poles in the crib,know,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",hoe,12,Boy I know yo ass told that we had poles in the crib,poles,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,10,"But y'all acting like these bitches, tell a hoe what you did",hoe,12,Boy I know yo ass told that we had poles in the crib,told,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",know,11,"Boy I know you a pig, why you expose what i did",expose,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",Boy,12,Boy I know yo ass told that we had poles in the crib,Boy,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",expose,12,Boy I know yo ass told that we had poles in the crib,know,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",expose,12,Boy I know yo ass told that we had poles in the crib,poles,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",expose,12,Boy I know yo ass told that we had poles in the crib,told,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",know,12,Boy I know yo ass told that we had poles in the crib,know,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",know,12,Boy I know yo ass told that we had poles in the crib,poles,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",know,12,Boy I know yo ass told that we had poles in the crib,told,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",pig,12,Boy I know yo ass told that we had poles in the crib,crib,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",expose,13,"We was posted on the front line, stick stuffed in the Glock 9",posted,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",know,13,"We was posted on the front line, stick stuffed in the Glock 9",posted,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",pig,13,"We was posted on the front line, stick stuffed in the Glock 9",stick,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",what,13,"We was posted on the front line, stick stuffed in the Glock 9",front,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",what,13,"We was posted on the front line, stick stuffed in the Glock 9",stuffed,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,11,"Boy I know you a pig, why you expose what i did",why,13,"We was posted on the front line, stick stuffed in the Glock 9",line,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,ass,12,Boy I know yo ass told that we had poles in the crib,had,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,know,12,Boy I know yo ass told that we had poles in the crib,poles,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,know,12,Boy I know yo ass told that we had poles in the crib,told,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,told,12,Boy I know yo ass told that we had poles in the crib,poles,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,crib,13,"We was posted on the front line, stick stuffed in the Glock 9",stick,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,know,13,"We was posted on the front line, stick stuffed in the Glock 9",posted,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,poles,13,"We was posted on the front line, stick stuffed in the Glock 9",posted,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,told,13,"We was posted on the front line, stick stuffed in the Glock 9",posted,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,know,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",opps,INNER,ASSONANCE,vowel,LOW,N
+Why They Be Lyin,12,Boy I know yo ass told that we had poles in the crib,told,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",opps,INNER,ASSONANCE,vowel,LOW,N
+Why They Be Lyin,13,"We was posted on the front line, stick stuffed in the Glock 9",front,13,"We was posted on the front line, stick stuffed in the Glock 9",stuffed,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,13,"We was posted on the front line, stick stuffed in the Glock 9",front,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",come,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,13,"We was posted on the front line, stick stuffed in the Glock 9",Glock,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",pop,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,13,"We was posted on the front line, stick stuffed in the Glock 9",line,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",mine,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,13,"We was posted on the front line, stick stuffed in the Glock 9",line,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",slide,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,13,"We was posted on the front line, stick stuffed in the Glock 9",stuffed,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",come,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,13,"We was posted on the front line, stick stuffed in the Glock 9",line,15,Yo homie died before I came to the side,died,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,13,"We was posted on the front line, stick stuffed in the Glock 9",line,15,Yo homie died before I came to the side,side,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",ain't,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",hesitate,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",slide,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",mine,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",Waiting,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",ain't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",Waiting,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",hesitate,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",mine,15,Yo homie died before I came to the side,side,END,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",ain't,15,Yo homie died before I came to the side,came,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",gone,15,Yo homie died before I came to the side,before,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",hesitate,15,Yo homie died before I came to the side,came,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",mine,15,Yo homie died before I came to the side,died,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",slide,15,Yo homie died before I came to the side,died,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",slide,15,Yo homie died before I came to the side,side,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",Waiting,15,Yo homie died before I came to the side,came,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",mine,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",guys,END,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",ain't,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",ain’t,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",come,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",T’up,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",hesitate,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",ain’t,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",mine,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",mine,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",slide,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",guys,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",slide,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",mine,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,14,"Waiting on the opps to come slide, I ain't gone hesitate to pop mine",Waiting,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,15,Yo homie died before I came to the side,died,15,Yo homie died before I came to the side,side,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,15,Yo homie died before I came to the side,side,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",guys,END,SLANT,cmu,MED,Y
+Why They Be Lyin,15,Yo homie died before I came to the side,came,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",ain’t,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,15,Yo homie died before I came to the side,died,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",guys,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,15,Yo homie died before I came to the side,died,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",mine,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,15,Yo homie died before I came to the side,homie,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",homie,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,15,Yo homie died before I came to the side,side,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",mine,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,15,Yo homie died before I came to the side,came,17,"Bitch won't play with us again, we been with it you just pretend",play,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",mine,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",guys,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",ain’t,17,"Bitch won't play with us again, we been with it you just pretend",play,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",bitch,17,"Bitch won't play with us again, we been with it you just pretend",Bitch,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",go,17,"Bitch won't play with us again, we been with it you just pretend",won't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",ain’t,18,"Nigga play we smoke his homie, we popped his homie we spin again",play,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",bitch,18,"Nigga play we smoke his homie, we popped his homie we spin again",spin,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",go,18,"Nigga play we smoke his homie, we popped his homie we spin again",smoke,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",homie,18,"Nigga play we smoke his homie, we popped his homie we spin again",homie,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,16,"That's yo homie bitch that ain’t mine, now go T’up for yo guys",homie,18,"Nigga play we smoke his homie, we popped his homie we spin again",smoke,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",again,17,"Bitch won't play with us again, we been with it you just pretend",pretend,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",pretend,18,"Nigga play we smoke his homie, we popped his homie we spin again",again,END,SLANT,cmu,MED,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",again,18,"Nigga play we smoke his homie, we popped his homie we spin again",again,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",Bitch,18,"Nigga play we smoke his homie, we popped his homie we spin again",spin,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",play,18,"Nigga play we smoke his homie, we popped his homie we spin again",play,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",won't,18,"Nigga play we smoke his homie, we popped his homie we spin again",smoke,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",pretend,19,"Y’all niggas just pretend, I never lied behind this pen",pen,END,SLANT,cmu,MED,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",again,19,"Y’all niggas just pretend, I never lied behind this pen",never,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",again,19,"Y’all niggas just pretend, I never lied behind this pen",pen,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",again,19,"Y’all niggas just pretend, I never lied behind this pen",pretend,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",pretend,19,"Y’all niggas just pretend, I never lied behind this pen",never,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,17,"Bitch won't play with us again, we been with it you just pretend",pretend,19,"Y’all niggas just pretend, I never lied behind this pen",pretend,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",homie,18,"Nigga play we smoke his homie, we popped his homie we spin again",homie,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",smoke,18,"Nigga play we smoke his homie, we popped his homie we spin again",homie,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",again,19,"Y’all niggas just pretend, I never lied behind this pen",pen,END,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",again,19,"Y’all niggas just pretend, I never lied behind this pen",never,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",again,19,"Y’all niggas just pretend, I never lied behind this pen",pretend,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",Nigga,19,"Y’all niggas just pretend, I never lied behind this pen",niggas,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",again,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",friends,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",play,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",ain't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",smoke,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",don't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",smoke,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",Only,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,18,"Nigga play we smoke his homie, we popped his homie we spin again",spin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",kin,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,19,"Y’all niggas just pretend, I never lied behind this pen",lied,19,"Y’all niggas just pretend, I never lied behind this pen",behind,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,19,"Y’all niggas just pretend, I never lied behind this pen",never,19,"Y’all niggas just pretend, I never lied behind this pen",pen,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,19,"Y’all niggas just pretend, I never lied behind this pen",pretend,19,"Y’all niggas just pretend, I never lied behind this pen",never,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,19,"Y’all niggas just pretend, I never lied behind this pen",pretend,19,"Y’all niggas just pretend, I never lied behind this pen",pen,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,19,"Y’all niggas just pretend, I never lied behind this pen",never,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",friends,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,19,"Y’all niggas just pretend, I never lied behind this pen",pen,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",friends,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,19,"Y’all niggas just pretend, I never lied behind this pen",pretend,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",friends,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,19,"Y’all niggas just pretend, I never lied behind this pen",behind,21,Gotta watch behind my back,behind,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,19,"Y’all niggas just pretend, I never lied behind this pen",lied,21,Gotta watch behind my back,behind,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",don't,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",don't,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",Only,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",don't,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",family,21,Gotta watch behind my back,back,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",don't,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",fold,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",don't,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",roll,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",don't,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",won’t,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",family,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",facts,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",Only,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",fold,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",Only,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",roll,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,20,"Only family I don't do friends, I don't fuck with you, you ain't kin",Only,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",won’t,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,21,Gotta watch behind my back,Gotta,21,Gotta watch behind my back,watch,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,21,Gotta watch behind my back,back,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",facts,END,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,21,Gotta watch behind my back,Gotta,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",got,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,21,Gotta watch behind my back,watch,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",got,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,21,Gotta watch behind my back,back,23,Niggas told on me I'm back,back,END,REPEAT,spelling,HIGH,N
+Why They Be Lyin,21,Gotta watch behind my back,back,24,I'm a go-getter that's facts,facts,END,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",niggas,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",nigga,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",roll,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",fold,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",roll,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",won’t,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",won’t,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",fold,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",facts,23,Niggas told on me I'm back,back,END,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",fold,23,Niggas told on me I'm back,told,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",nigga,23,Niggas told on me I'm back,Niggas,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",niggas,23,Niggas told on me I'm back,Niggas,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",roll,23,Niggas told on me I'm back,told,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",won’t,23,Niggas told on me I'm back,told,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",facts,24,I'm a go-getter that's facts,facts,END,REPEAT,spelling,HIGH,N
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",fold,24,I'm a go-getter that's facts,go,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",roll,24,I'm a go-getter that's facts,go,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,22,"I got 4 niggas they roll with me, won’t fold nigga that's facts",won’t,24,I'm a go-getter that's facts,go,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,23,Niggas told on me I'm back,back,24,I'm a go-getter that's facts,facts,END,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,23,Niggas told on me I'm back,told,24,I'm a go-getter that's facts,go,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,23,Niggas told on me I'm back,told,25,"If I roll with 'em they roll with me, won't nothing come between that",roll,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,23,Niggas told on me I'm back,told,25,"If I roll with 'em they roll with me, won't nothing come between that",won't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,24,I'm a go-getter that's facts,go,25,"If I roll with 'em they roll with me, won't nothing come between that",roll,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,24,I'm a go-getter that's facts,go,25,"If I roll with 'em they roll with me, won't nothing come between that",won't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,25,"If I roll with 'em they roll with me, won't nothing come between that",'em,25,"If I roll with 'em they roll with me, won't nothing come between that",come,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,25,"If I roll with 'em they roll with me, won't nothing come between that",nothing,25,"If I roll with 'em they roll with me, won't nothing come between that",come,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,25,"If I roll with 'em they roll with me, won't nothing come between that",roll,25,"If I roll with 'em they roll with me, won't nothing come between that",roll,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,25,"If I roll with 'em they roll with me, won't nothing come between that",roll,25,"If I roll with 'em they roll with me, won't nothing come between that",won't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,25,"If I roll with 'em they roll with me, won't nothing come between that",come,27,We wouldn't give a fuck 'bout what they did they shot in they head,fuck,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,25,"If I roll with 'em they roll with me, won't nothing come between that",come,27,We wouldn't give a fuck 'bout what they did they shot in they head,what,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,25,"If I roll with 'em they roll with me, won't nothing come between that",nothing,27,We wouldn't give a fuck 'bout what they did they shot in they head,fuck,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,25,"If I roll with 'em they roll with me, won't nothing come between that",nothing,27,We wouldn't give a fuck 'bout what they did they shot in they head,what,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",hit,26,"Look, we slid they slid, they hit we hit",hit,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",slid,26,"Look, we slid they slid, they hit we hit",hit,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",slid,26,"Look, we slid they slid, they hit we hit",slid,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",hit,27,We wouldn't give a fuck 'bout what they did they shot in they head,give,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",Look,27,We wouldn't give a fuck 'bout what they did they shot in they head,wouldn't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",slid,27,We wouldn't give a fuck 'bout what they did they shot in they head,give,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",hit,28,"Better grab yo kid, we poppin' yo lid",lid,END,SLANT,cmu,MED,Y
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",hit,28,"Better grab yo kid, we poppin' yo lid",kid,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",hit,28,"Better grab yo kid, we poppin' yo lid",lid,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",slid,28,"Better grab yo kid, we poppin' yo lid",kid,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,26,"Look, we slid they slid, they hit we hit",slid,28,"Better grab yo kid, we poppin' yo lid",lid,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,27,We wouldn't give a fuck 'bout what they did they shot in they head,fuck,27,We wouldn't give a fuck 'bout what they did they shot in they head,what,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,27,We wouldn't give a fuck 'bout what they did they shot in they head,give,28,"Better grab yo kid, we poppin' yo lid",kid,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,27,We wouldn't give a fuck 'bout what they did they shot in they head,give,28,"Better grab yo kid, we poppin' yo lid",lid,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,27,We wouldn't give a fuck 'bout what they did they shot in they head,head,28,"Better grab yo kid, we poppin' yo lid",Better,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,27,We wouldn't give a fuck 'bout what they did they shot in they head,shot,28,"Better grab yo kid, we poppin' yo lid",poppin,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,27,We wouldn't give a fuck 'bout what they did they shot in they head,head,29,Celebrate for big go and spin again,again,END,SLANT,cmu,MED,Y
+Why They Be Lyin,27,We wouldn't give a fuck 'bout what they did they shot in they head,give,29,Celebrate for big go and spin again,big,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,27,We wouldn't give a fuck 'bout what they did they shot in they head,give,29,Celebrate for big go and spin again,spin,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,28,"Better grab yo kid, we poppin' yo lid",kid,28,"Better grab yo kid, we poppin' yo lid",lid,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,28,"Better grab yo kid, we poppin' yo lid",Better,29,Celebrate for big go and spin again,again,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,28,"Better grab yo kid, we poppin' yo lid",kid,29,Celebrate for big go and spin again,big,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,28,"Better grab yo kid, we poppin' yo lid",kid,29,Celebrate for big go and spin again,spin,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,28,"Better grab yo kid, we poppin' yo lid",lid,29,Celebrate for big go and spin again,big,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,28,"Better grab yo kid, we poppin' yo lid",lid,29,Celebrate for big go and spin again,spin,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,28,"Better grab yo kid, we poppin' yo lid",grab,30,Yo man throw rocks and they hide a lot,man,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,28,"Better grab yo kid, we poppin' yo lid",poppin,30,Yo man throw rocks and they hide a lot,lot,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,28,"Better grab yo kid, we poppin' yo lid",poppin,30,Yo man throw rocks and they hide a lot,rocks,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,29,Celebrate for big go and spin again,big,29,Celebrate for big go and spin again,spin,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,29,Celebrate for big go and spin again,go,30,Yo man throw rocks and they hide a lot,throw,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,29,Celebrate for big go and spin again,again,31,My man tote Glocks and we tearing up blocks,tearing,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,29,Celebrate for big go and spin again,go,31,My man tote Glocks and we tearing up blocks,tote,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,30,Yo man throw rocks and they hide a lot,rocks,30,Yo man throw rocks and they hide a lot,lot,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,30,Yo man throw rocks and they hide a lot,lot,31,My man tote Glocks and we tearing up blocks,blocks,END,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,30,Yo man throw rocks and they hide a lot,man,31,My man tote Glocks and we tearing up blocks,man,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,30,Yo man throw rocks and they hide a lot,rocks,31,My man tote Glocks and we tearing up blocks,blocks,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,30,Yo man throw rocks and they hide a lot,rocks,31,My man tote Glocks and we tearing up blocks,Glocks,INNER,PERFECT,spelling,HIGH,Y
+Why They Be Lyin,30,Yo man throw rocks and they hide a lot,throw,31,My man tote Glocks and we tearing up blocks,Glocks,INNER,ASSONANCE,vowel,LOW,N
+Why They Be Lyin,30,Yo man throw rocks and they hide a lot,throw,31,My man tote Glocks and we tearing up blocks,tote,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,30,Yo man throw rocks and they hide a lot,hide,32,"We ain't sparing people, we talk like it's legal",like,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,31,My man tote Glocks and we tearing up blocks,Glocks,31,My man tote Glocks and we tearing up blocks,blocks,INNER,PERFECT,spelling,HIGH,Y
+Why They Be Lyin,31,My man tote Glocks and we tearing up blocks,Glocks tearing,32,"We ain't sparing people, we talk like it's legal",ain't sparing,INNER,MULTI,multi,MED,Y
+Why They Be Lyin,31,My man tote Glocks and we tearing up blocks,tearing,32,"We ain't sparing people, we talk like it's legal",sparing,INNER,MULTI,multi,HIGH,Y
+Why They Be Lyin,31,My man tote Glocks and we tearing up blocks,Glocks,33,You know I love smoking Runtz I'd hate to smoke yo people,know,INNER,ASSONANCE,vowel,LOW,N
+Why They Be Lyin,31,My man tote Glocks and we tearing up blocks,Glocks,33,You know I love smoking Runtz I'd hate to smoke yo people,smoke,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,31,My man tote Glocks and we tearing up blocks,Glocks,33,You know I love smoking Runtz I'd hate to smoke yo people,smoking,INNER,SLANT,spelling,LOW,Y
+Why They Be Lyin,31,My man tote Glocks and we tearing up blocks,tote,33,You know I love smoking Runtz I'd hate to smoke yo people,know,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,31,My man tote Glocks and we tearing up blocks,tote,33,You know I love smoking Runtz I'd hate to smoke yo people,smoke,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,31,My man tote Glocks and we tearing up blocks,tote,33,You know I love smoking Runtz I'd hate to smoke yo people,smoking,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,32,"We ain't sparing people, we talk like it's legal",people,32,"We ain't sparing people, we talk like it's legal",legal,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,32,"We ain't sparing people, we talk like it's legal",legal,33,You know I love smoking Runtz I'd hate to smoke yo people,people,END,SLANT,cmu,MED,Y
+Why They Be Lyin,32,"We ain't sparing people, we talk like it's legal",ain't,33,You know I love smoking Runtz I'd hate to smoke yo people,hate,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,32,"We ain't sparing people, we talk like it's legal",people,33,You know I love smoking Runtz I'd hate to smoke yo people,people,INNER,REPEAT,spelling,HIGH,N
+Why They Be Lyin,32,"We ain't sparing people, we talk like it's legal",legal,34,Probably in there blow high juice,Probably,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,32,"We ain't sparing people, we talk like it's legal",like,34,Probably in there blow high juice,high,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,32,"We ain't sparing people, we talk like it's legal",people,34,Probably in there blow high juice,Probably,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,32,"We ain't sparing people, we talk like it's legal",sparing,34,Probably in there blow high juice,there,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,33,You know I love smoking Runtz I'd hate to smoke yo people,know,33,You know I love smoking Runtz I'd hate to smoke yo people,smoke,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,33,You know I love smoking Runtz I'd hate to smoke yo people,know,33,You know I love smoking Runtz I'd hate to smoke yo people,smoking,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,33,You know I love smoking Runtz I'd hate to smoke yo people,smoking,33,You know I love smoking Runtz I'd hate to smoke yo people,smoke,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,33,You know I love smoking Runtz I'd hate to smoke yo people,know,34,Probably in there blow high juice,blow,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,33,You know I love smoking Runtz I'd hate to smoke yo people,people,34,Probably in there blow high juice,Probably,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,33,You know I love smoking Runtz I'd hate to smoke yo people,smoke,34,Probably in there blow high juice,blow,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,33,You know I love smoking Runtz I'd hate to smoke yo people,smoking,34,Probably in there blow high juice,blow,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,34,Probably in there blow high juice,juice,35,We on a falcon I got a Birdseye view,view,END,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,34,Probably in there blow high juice,blow,36,Don't make me cremate you boy you know what we do,Don't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,34,Probably in there blow high juice,blow,36,Don't make me cremate you boy you know what we do,know,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,34,Probably in there blow high juice,Probably,36,Don't make me cremate you boy you know what we do,cremate,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,35,We on a falcon I got a Birdseye view,falcon,37,We making paper and I can't wait to blow it on you,can't,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,36,Don't make me cremate you boy you know what we do,Don't,36,Don't make me cremate you boy you know what we do,know,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,36,Don't make me cremate you boy you know what we do,Don't,37,We making paper and I can't wait to blow it on you,blow,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,36,Don't make me cremate you boy you know what we do,know,37,We making paper and I can't wait to blow it on you,blow,INNER,PERFECT,cmu,HIGH,Y
+Why They Be Lyin,36,Don't make me cremate you boy you know what we do,make,37,We making paper and I can't wait to blow it on you,making,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,36,Don't make me cremate you boy you know what we do,make,37,We making paper and I can't wait to blow it on you,paper,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,36,Don't make me cremate you boy you know what we do,make,37,We making paper and I can't wait to blow it on you,wait,INNER,SLANT,cmu,MED,Y
+Why They Be Lyin,37,We making paper and I can't wait to blow it on you,making,37,We making paper and I can't wait to blow it on you,paper,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,37,We making paper and I can't wait to blow it on you,making,37,We making paper and I can't wait to blow it on you,wait,INNER,ASSONANCE,vowel,MED,Y
+Why They Be Lyin,37,We making paper and I can't wait to blow it on you,paper,37,We making paper and I can't wait to blow it on you,wait,INNER,SLANT,cmu,MED,Y

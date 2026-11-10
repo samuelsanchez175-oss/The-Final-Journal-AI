@@ -1,0 +1,708 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Haiti,1,I'mma take a nigga to Haiti,I'mma,1,I'mma take a nigga to Haiti,nigga,INNER,ASSONANCE,vowel,LOW,N
+Haiti,1,I'mma take a nigga to Haiti,take,1,I'mma take a nigga to Haiti,Haiti,INNER,SLANT,cmu,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Rolling,2,I'm a Rolling Stone would ya roll along,roll,INNER,SLANT,cmu,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Rolling,2,I'm a Rolling Stone would ya roll along,Stone,INNER,ASSONANCE,vowel,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Stone,2,I'm a Rolling Stone would ya roll along,roll,INNER,SLANT,cmu,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,roll,3,I been on the road you been sittin' home,home,INNER,SLANT,cmu,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,roll,3,I been on the road you been sittin' home,road,INNER,SLANT,cmu,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Rolling,3,I been on the road you been sittin' home,home,INNER,ASSONANCE,vowel,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Rolling,3,I been on the road you been sittin' home,road,INNER,ASSONANCE,vowel,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Stone,3,I been on the road you been sittin' home,home,INNER,SLANT,cmu,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Stone,3,I been on the road you been sittin' home,road,INNER,SLANT,cmu,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Stone,3,I been on the road you been sittin' home,sittin,INNER,SLANT,spelling,LOW,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,roll,4,I been on the go you been holdin on,go,INNER,ASSONANCE,vowel,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,roll,4,I been on the go you been holdin on,holdin,INNER,ASSONANCE,vowel,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Rolling,4,I been on the go you been holdin on,go,INNER,ASSONANCE,vowel,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Rolling,4,I been on the go you been holdin on,holdin,INNER,SLANT,cmu,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Stone,4,I been on the go you been holdin on,go,INNER,ASSONANCE,vowel,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,Stone,4,I been on the go you been holdin on,holdin,INNER,ASSONANCE,vowel,MED,Y
+Haiti,2,I'm a Rolling Stone would ya roll along,along,5,I'mma rock and roll would ya roll along,along,END,REPEAT,spelling,HIGH,N
+Haiti,3,I been on the road you been sittin' home,road,3,I been on the road you been sittin' home,home,INNER,SLANT,cmu,MED,Y
+Haiti,3,I been on the road you been sittin' home,home,4,I been on the go you been holdin on,holdin,END,ASSONANCE,vowel,MED,Y
+Haiti,3,I been on the road you been sittin' home,home,4,I been on the go you been holdin on,go,INNER,ASSONANCE,vowel,MED,Y
+Haiti,3,I been on the road you been sittin' home,road,4,I been on the go you been holdin on,go,INNER,ASSONANCE,vowel,MED,Y
+Haiti,3,I been on the road you been sittin' home,road,4,I been on the go you been holdin on,holdin,INNER,ASSONANCE,vowel,MED,Y
+Haiti,3,I been on the road you been sittin' home,home,5,I'mma rock and roll would ya roll along,roll,INNER,SLANT,cmu,MED,Y
+Haiti,3,I been on the road you been sittin' home,road,5,I'mma rock and roll would ya roll along,roll,INNER,SLANT,cmu,MED,Y
+Haiti,3,I been on the road you been sittin' home,home,6,"Papi gained a bowl, watch me overflow",overflow,END,ASSONANCE,vowel,MED,Y
+Haiti,4,I been on the go you been holdin on,go,4,I been on the go you been holdin on,holdin,INNER,ASSONANCE,vowel,MED,Y
+Haiti,4,I been on the go you been holdin on,go,5,I'mma rock and roll would ya roll along,roll,INNER,ASSONANCE,vowel,MED,Y
+Haiti,4,I been on the go you been holdin on,holdin,5,I'mma rock and roll would ya roll along,roll,INNER,ASSONANCE,vowel,MED,Y
+Haiti,4,I been on the go you been holdin on,holdin,6,"Papi gained a bowl, watch me overflow",overflow,END,ASSONANCE,vowel,MED,Y
+Haiti,4,I been on the go you been holdin on,go,6,"Papi gained a bowl, watch me overflow",bowl,INNER,ASSONANCE,vowel,MED,Y
+Haiti,4,I been on the go you been holdin on,go,6,"Papi gained a bowl, watch me overflow",overflow,INNER,PERFECT,cmu,HIGH,Y
+Haiti,4,I been on the go you been holdin on,holdin,6,"Papi gained a bowl, watch me overflow",bowl,INNER,ASSONANCE,vowel,MED,Y
+Haiti,5,I'mma rock and roll would ya roll along,roll,5,I'mma rock and roll would ya roll along,roll,INNER,REPEAT,spelling,HIGH,N
+Haiti,5,I'mma rock and roll would ya roll along,rock,6,"Papi gained a bowl, watch me overflow",watch,INNER,SLANT,cmu,MED,Y
+Haiti,5,I'mma rock and roll would ya roll along,roll,6,"Papi gained a bowl, watch me overflow",bowl,INNER,PERFECT,cmu,HIGH,Y
+Haiti,5,I'mma rock and roll would ya roll along,roll,6,"Papi gained a bowl, watch me overflow",overflow,INNER,ASSONANCE,vowel,MED,Y
+Haiti,5,I'mma rock and roll would ya roll along,I'mma,7,"Look, I'mma take a nigga to Haiti",I'mma,INNER,REPEAT,spelling,HIGH,N
+Haiti,5,I'mma rock and roll would ya roll along,I'mma,7,"Look, I'mma take a nigga to Haiti",nigga,INNER,ASSONANCE,vowel,LOW,N
+Haiti,5,I'mma rock and roll would ya roll along,would,7,"Look, I'mma take a nigga to Haiti",Look,INNER,SLANT,cmu,MED,Y
+Haiti,6,"Papi gained a bowl, watch me overflow",bowl,6,"Papi gained a bowl, watch me overflow",overflow,INNER,ASSONANCE,vowel,MED,Y
+Haiti,6,"Papi gained a bowl, watch me overflow",gained,7,"Look, I'mma take a nigga to Haiti",Haiti,INNER,ASSONANCE,vowel,MED,Y
+Haiti,6,"Papi gained a bowl, watch me overflow",gained,7,"Look, I'mma take a nigga to Haiti",take,INNER,ASSONANCE,vowel,MED,Y
+Haiti,6,"Papi gained a bowl, watch me overflow",gained,8,And I'mma stop by the woo lady,lady,INNER,SLANT,cmu,MED,Y
+Haiti,6,"Papi gained a bowl, watch me overflow",watch,8,And I'mma stop by the woo lady,stop,INNER,SLANT,cmu,MED,Y
+Haiti,7,"Look, I'mma take a nigga to Haiti",I'mma,7,"Look, I'mma take a nigga to Haiti",nigga,INNER,ASSONANCE,vowel,LOW,N
+Haiti,7,"Look, I'mma take a nigga to Haiti",take,7,"Look, I'mma take a nigga to Haiti",Haiti,INNER,SLANT,cmu,MED,Y
+Haiti,7,"Look, I'mma take a nigga to Haiti",Haiti,8,And I'mma stop by the woo lady,lady,END,SLANT,cmu,MED,Y
+Haiti,7,"Look, I'mma take a nigga to Haiti",I'mma,8,And I'mma stop by the woo lady,I'mma,INNER,REPEAT,spelling,HIGH,N
+Haiti,7,"Look, I'mma take a nigga to Haiti",nigga,8,And I'mma stop by the woo lady,I'mma,INNER,ASSONANCE,vowel,LOW,N
+Haiti,7,"Look, I'mma take a nigga to Haiti",take,8,And I'mma stop by the woo lady,lady,INNER,SLANT,cmu,MED,Y
+Haiti,7,"Look, I'mma take a nigga to Haiti",Haiti,9,When I jump up in the coupe I go crazy,crazy,END,SLANT,cmu,MED,Y
+Haiti,7,"Look, I'mma take a nigga to Haiti",take,9,When I jump up in the coupe I go crazy,crazy,INNER,SLANT,cmu,MED,Y
+Haiti,7,"Look, I'mma take a nigga to Haiti",Haiti,11,You ain't getting to the loot boy you lazy,lazy,END,SLANT,cmu,MED,Y
+Haiti,8,And I'mma stop by the woo lady,lady,9,When I jump up in the coupe I go crazy,crazy,END,SLANT,cmu,MED,Y
+Haiti,8,And I'mma stop by the woo lady,lady,11,You ain't getting to the loot boy you lazy,lazy,END,SLANT,cmu,MED,Y
+Haiti,8,And I'mma stop by the woo lady,lady,12,"She crazy, she wanna have my baby",baby,END,SLANT,cmu,MED,Y
+Haiti,9,When I jump up in the coupe I go crazy,coupe,10,"I be pullin' up, blue Audi A3",blue,INNER,ASSONANCE,vowel,MED,Y
+Haiti,9,When I jump up in the coupe I go crazy,crazy,11,You ain't getting to the loot boy you lazy,lazy,END,MULTI,multi,HIGH,Y
+Haiti,9,When I jump up in the coupe I go crazy,coupe,11,You ain't getting to the loot boy you lazy,loot,INNER,SLANT,cmu,MED,Y
+Haiti,9,When I jump up in the coupe I go crazy,crazy,11,You ain't getting to the loot boy you lazy,ain't,INNER,ASSONANCE,vowel,MED,Y
+Haiti,9,When I jump up in the coupe I go crazy,When,11,You ain't getting to the loot boy you lazy,getting,INNER,ASSONANCE,vowel,MED,Y
+Haiti,9,When I jump up in the coupe I go crazy,crazy,12,"She crazy, she wanna have my baby",baby,END,SLANT,cmu,MED,Y
+Haiti,9,When I jump up in the coupe I go crazy,crazy,13,If you pullin out the strap better spray it,spray,END,ASSONANCE,vowel,MED,Y
+Haiti,10,"I be pullin' up, blue Audi A3",blue,11,You ain't getting to the loot boy you lazy,loot,INNER,ASSONANCE,vowel,MED,Y
+Haiti,11,You ain't getting to the loot boy you lazy,ain't,11,You ain't getting to the loot boy you lazy,lazy,INNER,ASSONANCE,vowel,MED,Y
+Haiti,11,You ain't getting to the loot boy you lazy,lazy,12,"She crazy, she wanna have my baby",baby,END,SLANT,cmu,MED,Y
+Haiti,11,You ain't getting to the loot boy you lazy,ain't,12,"She crazy, she wanna have my baby",baby,INNER,ASSONANCE,vowel,MED,Y
+Haiti,11,You ain't getting to the loot boy you lazy,ain't,12,"She crazy, she wanna have my baby",crazy,INNER,ASSONANCE,vowel,MED,Y
+Haiti,11,You ain't getting to the loot boy you lazy,lazy,12,"She crazy, she wanna have my baby",crazy,INNER,MULTI,multi,HIGH,Y
+Haiti,11,You ain't getting to the loot boy you lazy,lazy,13,If you pullin out the strap better spray it,spray,END,ASSONANCE,vowel,MED,Y
+Haiti,11,You ain't getting to the loot boy you lazy,ain't,13,If you pullin out the strap better spray it,spray,INNER,ASSONANCE,vowel,MED,Y
+Haiti,11,You ain't getting to the loot boy you lazy,getting,13,If you pullin out the strap better spray it,better,INNER,SLANT,cmu,MED,Y
+Haiti,11,You ain't getting to the loot boy you lazy,lazy,14,That my brother on the track we related,related,END,ASSONANCE,vowel,MED,Y
+Haiti,11,You ain't getting to the loot boy you lazy,lazy,15,"I'm pullin back on you niggas, big faces",faces,END,SLANT,cmu,MED,Y
+Haiti,12,"She crazy, she wanna have my baby",crazy,12,"She crazy, she wanna have my baby",baby,INNER,SLANT,cmu,MED,Y
+Haiti,12,"She crazy, she wanna have my baby",baby,13,If you pullin out the strap better spray it,spray,END,ASSONANCE,vowel,MED,Y
+Haiti,12,"She crazy, she wanna have my baby",crazy,13,If you pullin out the strap better spray it,spray,INNER,ASSONANCE,vowel,MED,Y
+Haiti,12,"She crazy, she wanna have my baby",have,13,If you pullin out the strap better spray it,strap,INNER,SLANT,cmu,MED,Y
+Haiti,12,"She crazy, she wanna have my baby",baby,14,That my brother on the track we related,related,END,SLANT,cmu,MED,Y
+Haiti,12,"She crazy, she wanna have my baby",crazy,14,That my brother on the track we related,related,INNER,ASSONANCE,vowel,MED,Y
+Haiti,12,"She crazy, she wanna have my baby",have,14,That my brother on the track we related,track,INNER,SLANT,cmu,MED,Y
+Haiti,12,"She crazy, she wanna have my baby",baby,15,"I'm pullin back on you niggas, big faces",faces,END,ASSONANCE,vowel,MED,Y
+Haiti,12,"She crazy, she wanna have my baby",baby,16,"Yea I act how I want cuz I made it (Yup, Yup)",made,END,SLANT,cmu,MED,Y
+Haiti,13,If you pullin out the strap better spray it,spray,14,That my brother on the track we related,related,END,ASSONANCE,vowel,MED,Y
+Haiti,13,If you pullin out the strap better spray it,strap,14,That my brother on the track we related,track,INNER,SLANT,cmu,MED,Y
+Haiti,13,If you pullin out the strap better spray it,spray,15,"I'm pullin back on you niggas, big faces",faces,END,ASSONANCE,vowel,MED,Y
+Haiti,13,If you pullin out the strap better spray it,pullin,15,"I'm pullin back on you niggas, big faces",pullin,INNER,REPEAT,spelling,HIGH,N
+Haiti,13,If you pullin out the strap better spray it,strap,15,"I'm pullin back on you niggas, big faces",back,INNER,SLANT,cmu,MED,Y
+Haiti,13,If you pullin out the strap better spray it,spray,16,"Yea I act how I want cuz I made it (Yup, Yup)",made,END,ASSONANCE,vowel,MED,Y
+Haiti,14,That my brother on the track we related,related,15,"I'm pullin back on you niggas, big faces",faces,END,ASSONANCE,vowel,MED,Y
+Haiti,14,That my brother on the track we related,track,15,"I'm pullin back on you niggas, big faces",back,INNER,PERFECT,cmu,HIGH,Y
+Haiti,14,That my brother on the track we related,related,16,"Yea I act how I want cuz I made it (Yup, Yup)",made,END,SLANT,cmu,MED,Y
+Haiti,14,That my brother on the track we related,brother,16,"Yea I act how I want cuz I made it (Yup, Yup)",cuz,INNER,SLANT,spelling,LOW,Y
+Haiti,14,That my brother on the track we related,track,16,"Yea I act how I want cuz I made it (Yup, Yup)",act,INNER,SLANT,cmu,MED,Y
+Haiti,15,"I'm pullin back on you niggas, big faces",faces,16,"Yea I act how I want cuz I made it (Yup, Yup)",made,END,ASSONANCE,vowel,MED,Y
+Haiti,15,"I'm pullin back on you niggas, big faces",back,16,"Yea I act how I want cuz I made it (Yup, Yup)",act,INNER,SLANT,cmu,MED,Y
+Haiti,15,"I'm pullin back on you niggas, big faces",big,17,"If my nigga rock I'mma roll ya (Yup, Yup)",nigga,INNER,SLANT,spelling,LOW,Y
+Haiti,15,"I'm pullin back on you niggas, big faces",niggas,17,"If my nigga rock I'mma roll ya (Yup, Yup)",I'mma,INNER,ASSONANCE,vowel,LOW,N
+Haiti,15,"I'm pullin back on you niggas, big faces",niggas,17,"If my nigga rock I'mma roll ya (Yup, Yup)",nigga,INNER,SLANT,spelling,LOW,Y
+Haiti,16,"Yea I act how I want cuz I made it (Yup, Yup)",want,17,"If my nigga rock I'mma roll ya (Yup, Yup)",rock,INNER,ASSONANCE,vowel,MED,Y
+Haiti,16,"Yea I act how I want cuz I made it (Yup, Yup)",made,18,"She ain't never been wit a zoe (Oh, Oh)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Haiti,17,"If my nigga rock I'mma roll ya (Yup, Yup)",nigga,17,"If my nigga rock I'mma roll ya (Yup, Yup)",I'mma,INNER,ASSONANCE,vowel,LOW,N
+Haiti,17,"If my nigga rock I'mma roll ya (Yup, Yup)",roll,18,"She ain't never been wit a zoe (Oh, Oh)",zoe,END,ASSONANCE,vowel,MED,Y
+Haiti,17,"If my nigga rock I'mma roll ya (Yup, Yup)",nigga,18,"She ain't never been wit a zoe (Oh, Oh)",wit,INNER,SLANT,spelling,LOW,Y
+Haiti,17,"If my nigga rock I'mma roll ya (Yup, Yup)",roll,19,"I'm booted up, playing with your nose (Aye, Aye)",nose,END,SLANT,cmu,MED,Y
+Haiti,17,"If my nigga rock I'mma roll ya (Yup, Yup)",roll,20,Papi take a kilo on a boat ya,boat,END,SLANT,cmu,MED,Y
+Haiti,18,"She ain't never been wit a zoe (Oh, Oh)",zoe,19,"I'm booted up, playing with your nose (Aye, Aye)",nose,END,ASSONANCE,vowel,MED,Y
+Haiti,18,"She ain't never been wit a zoe (Oh, Oh)",ain't,19,"I'm booted up, playing with your nose (Aye, Aye)",playing,INNER,ASSONANCE,vowel,MED,Y
+Haiti,18,"She ain't never been wit a zoe (Oh, Oh)",zoe,20,Papi take a kilo on a boat ya,boat,END,ASSONANCE,vowel,MED,Y
+Haiti,18,"She ain't never been wit a zoe (Oh, Oh)",ain't,20,Papi take a kilo on a boat ya,take,INNER,ASSONANCE,vowel,MED,Y
+Haiti,18,"She ain't never been wit a zoe (Oh, Oh)",zoe,20,Papi take a kilo on a boat ya,kilo,INNER,ASSONANCE,vowel,MED,Y
+Haiti,19,"I'm booted up, playing with your nose (Aye, Aye)",nose,20,Papi take a kilo on a boat ya,boat,END,SLANT,cmu,MED,Y
+Haiti,19,"I'm booted up, playing with your nose (Aye, Aye)",nose,20,Papi take a kilo on a boat ya,kilo,INNER,ASSONANCE,vowel,MED,Y
+Haiti,19,"I'm booted up, playing with your nose (Aye, Aye)",playing,20,Papi take a kilo on a boat ya,take,INNER,SLANT,cmu,MED,Y
+Haiti,19,"I'm booted up, playing with your nose (Aye, Aye)",nose,21,She heard I'm from the 'no she like oh ya,'no,INNER,ASSONANCE,vowel,MED,Y
+Haiti,19,"I'm booted up, playing with your nose (Aye, Aye)",nose,23,Rock and roll if you with me we gon roll ya,roll,END,SLANT,cmu,MED,Y
+Haiti,20,Papi take a kilo on a boat ya,kilo,20,Papi take a kilo on a boat ya,boat,INNER,ASSONANCE,vowel,MED,Y
+Haiti,20,Papi take a kilo on a boat ya,boat,21,She heard I'm from the 'no she like oh ya,'no,INNER,ASSONANCE,vowel,MED,Y
+Haiti,20,Papi take a kilo on a boat ya,kilo,21,She heard I'm from the 'no she like oh ya,'no,INNER,PERFECT,cmu,HIGH,Y
+Haiti,20,Papi take a kilo on a boat ya,boat,22,You ain't from the Ugly Corner so don't go there,don't,INNER,SLANT,cmu,MED,Y
+Haiti,20,Papi take a kilo on a boat ya,boat,22,You ain't from the Ugly Corner so don't go there,go,INNER,ASSONANCE,vowel,MED,Y
+Haiti,20,Papi take a kilo on a boat ya,kilo,22,You ain't from the Ugly Corner so don't go there,don't,INNER,ASSONANCE,vowel,MED,Y
+Haiti,20,Papi take a kilo on a boat ya,kilo,22,You ain't from the Ugly Corner so don't go there,go,INNER,PERFECT,cmu,HIGH,Y
+Haiti,20,Papi take a kilo on a boat ya,take,22,You ain't from the Ugly Corner so don't go there,ain't,INNER,ASSONANCE,vowel,MED,Y
+Haiti,20,Papi take a kilo on a boat ya,boat,23,Rock and roll if you with me we gon roll ya,roll,END,SLANT,cmu,MED,Y
+Haiti,21,She heard I'm from the 'no she like oh ya,'no,22,You ain't from the Ugly Corner so don't go there,don't,INNER,ASSONANCE,vowel,MED,Y
+Haiti,21,She heard I'm from the 'no she like oh ya,'no,22,You ain't from the Ugly Corner so don't go there,go,INNER,PERFECT,cmu,HIGH,Y
+Haiti,21,She heard I'm from the 'no she like oh ya,'no,23,Rock and roll if you with me we gon roll ya,roll,INNER,ASSONANCE,vowel,MED,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,don't,22,You ain't from the Ugly Corner so don't go there,go,INNER,ASSONANCE,vowel,MED,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,don't,23,Rock and roll if you with me we gon roll ya,gon,INNER,SLANT,spelling,LOW,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,don't,23,Rock and roll if you with me we gon roll ya,roll,INNER,ASSONANCE,vowel,MED,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,go,23,Rock and roll if you with me we gon roll ya,roll,INNER,ASSONANCE,vowel,MED,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,there,24,Rock and Roll shit I'm fucking up the hotel,hotel,END,SLANT,cmu,MED,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,don't,24,Rock and Roll shit I'm fucking up the hotel,Roll,INNER,ASSONANCE,vowel,MED,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,go,24,Rock and Roll shit I'm fucking up the hotel,Roll,INNER,ASSONANCE,vowel,MED,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,Ugly,24,Rock and Roll shit I'm fucking up the hotel,fucking,INNER,ASSONANCE,vowel,MED,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,there,25,I love my niggas cuz my niggas know me so well,well,END,SLANT,cmu,MED,Y
+Haiti,22,You ain't from the Ugly Corner so don't go there,there,26,She say she fell in love wit me baby oh well,well,END,SLANT,cmu,MED,Y
+Haiti,23,Rock and roll if you with me we gon roll ya,gon,23,Rock and roll if you with me we gon roll ya,roll,INNER,SLANT,spelling,LOW,Y
+Haiti,23,Rock and roll if you with me we gon roll ya,roll,23,Rock and roll if you with me we gon roll ya,gon,INNER,SLANT,spelling,LOW,Y
+Haiti,23,Rock and roll if you with me we gon roll ya,roll,23,Rock and roll if you with me we gon roll ya,roll,INNER,REPEAT,spelling,HIGH,N
+Haiti,23,Rock and roll if you with me we gon roll ya,gon,24,Rock and Roll shit I'm fucking up the hotel,Roll,INNER,SLANT,spelling,LOW,Y
+Haiti,23,Rock and roll if you with me we gon roll ya,Rock,24,Rock and Roll shit I'm fucking up the hotel,Rock,INNER,REPEAT,spelling,HIGH,N
+Haiti,23,Rock and roll if you with me we gon roll ya,roll,24,Rock and Roll shit I'm fucking up the hotel,Roll,INNER,REPEAT,spelling,HIGH,N
+Haiti,23,Rock and roll if you with me we gon roll ya,roll,25,I love my niggas cuz my niggas know me so well,know,INNER,ASSONANCE,vowel,MED,Y
+Haiti,24,Rock and Roll shit I'm fucking up the hotel,hotel,25,I love my niggas cuz my niggas know me so well,well,END,PERFECT,cmu,HIGH,Y
+Haiti,24,Rock and Roll shit I'm fucking up the hotel,fucking,25,I love my niggas cuz my niggas know me so well,love,INNER,ASSONANCE,vowel,MED,Y
+Haiti,24,Rock and Roll shit I'm fucking up the hotel,Roll,25,I love my niggas cuz my niggas know me so well,know,INNER,ASSONANCE,vowel,MED,Y
+Haiti,24,Rock and Roll shit I'm fucking up the hotel,hotel,26,She say she fell in love wit me baby oh well,well,END,PERFECT,cmu,HIGH,Y
+Haiti,24,Rock and Roll shit I'm fucking up the hotel,fucking,26,She say she fell in love wit me baby oh well,love,INNER,ASSONANCE,vowel,MED,Y
+Haiti,24,Rock and Roll shit I'm fucking up the hotel,hotel,26,She say she fell in love wit me baby oh well,fell,INNER,PERFECT,cmu,HIGH,Y
+Haiti,24,Rock and Roll shit I'm fucking up the hotel,shit,26,She say she fell in love wit me baby oh well,wit,INNER,PERFECT,cmu,HIGH,Y
+Haiti,25,I love my niggas cuz my niggas know me so well,love,25,I love my niggas cuz my niggas know me so well,cuz,INNER,SLANT,spelling,LOW,Y
+Haiti,25,I love my niggas cuz my niggas know me so well,niggas,25,I love my niggas cuz my niggas know me so well,niggas,INNER,REPEAT,spelling,HIGH,N
+Haiti,25,I love my niggas cuz my niggas know me so well,well,26,She say she fell in love wit me baby oh well,well,END,REPEAT,spelling,HIGH,N
+Haiti,25,I love my niggas cuz my niggas know me so well,cuz,26,She say she fell in love wit me baby oh well,love,INNER,SLANT,spelling,LOW,Y
+Haiti,25,I love my niggas cuz my niggas know me so well,love,26,She say she fell in love wit me baby oh well,love,INNER,REPEAT,spelling,HIGH,N
+Haiti,25,I love my niggas cuz my niggas know me so well,well,26,She say she fell in love wit me baby oh well,fell,INNER,PERFECT,cmu,HIGH,Y
+Haiti,25,I love my niggas cuz my niggas know me so well,cuz,27,I'mma do this one for Haiti,one,INNER,SLANT,spelling,LOW,Y
+Haiti,25,I love my niggas cuz my niggas know me so well,love,27,I'mma do this one for Haiti,one,INNER,SLANT,cmu,MED,Y
+Haiti,25,I love my niggas cuz my niggas know me so well,niggas,27,I'mma do this one for Haiti,I'mma,INNER,ASSONANCE,vowel,LOW,N
+Haiti,26,She say she fell in love wit me baby oh well,fell,26,She say she fell in love wit me baby oh well,well,INNER,PERFECT,cmu,HIGH,Y
+Haiti,26,She say she fell in love wit me baby oh well,say,26,She say she fell in love wit me baby oh well,baby,INNER,ASSONANCE,vowel,MED,Y
+Haiti,26,She say she fell in love wit me baby oh well,baby,27,I'mma do this one for Haiti,Haiti,INNER,SLANT,cmu,MED,Y
+Haiti,26,She say she fell in love wit me baby oh well,love,27,I'mma do this one for Haiti,one,INNER,SLANT,cmu,MED,Y
+Haiti,26,She say she fell in love wit me baby oh well,say,27,I'mma do this one for Haiti,Haiti,INNER,ASSONANCE,vowel,MED,Y
+Haiti,26,She say she fell in love wit me baby oh well,baby,28,I'mma hold it down no eighty,eighty,INNER,SLANT,cmu,MED,Y
+Haiti,26,She say she fell in love wit me baby oh well,say,28,I'mma hold it down no eighty,eighty,INNER,ASSONANCE,vowel,MED,Y
+Haiti,27,I'mma do this one for Haiti,Haiti,28,I'mma hold it down no eighty,eighty,END,MULTI,multi,HIGH,Y
+Haiti,27,I'mma do this one for Haiti,I'mma,28,I'mma hold it down no eighty,I'mma,INNER,REPEAT,spelling,HIGH,N
+Haiti,27,I'mma do this one for Haiti,Haiti,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",chased,END,SLANT,cmu,MED,Y
+Haiti,27,I'mma do this one for Haiti,Haiti,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",crazy,INNER,SLANT,cmu,MED,Y
+Haiti,28,I'mma hold it down no eighty,hold,28,I'mma hold it down no eighty,no,INNER,ASSONANCE,vowel,MED,Y
+Haiti,28,I'mma hold it down no eighty,eighty,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",chased,END,SLANT,cmu,MED,Y
+Haiti,28,I'mma hold it down no eighty,eighty,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",crazy,INNER,SLANT,cmu,MED,Y
+Haiti,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",crazy,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",chased,INNER,ASSONANCE,vowel,MED,Y
+Haiti,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",all,30,Kicking doors all the time Mezanmi,all,INNER,REPEAT,spelling,HIGH,N
+Haiti,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",all,30,Kicking doors all the time Mezanmi,doors,INNER,ASSONANCE,vowel,MED,Y
+Haiti,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",Mr,30,Kicking doors all the time Mezanmi,Kicking,INNER,ASSONANCE,vowel,MED,Y
+Haiti,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",SeLaVi,30,Kicking doors all the time Mezanmi,Mezanmi,INNER,ASSONANCE,vowel,LOW,N
+Haiti,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",times,30,Kicking doors all the time Mezanmi,time,INNER,SLANT,cmu,MED,Y
+Haiti,29,"Mr. SeLaVi I'm crazy , I remember all them times they chased me",all,31,Im the one they talk about Gonaive,talk,INNER,SLANT,cmu,MED,Y
+Haiti,30,Kicking doors all the time Mezanmi,doors,30,Kicking doors all the time Mezanmi,all,INNER,ASSONANCE,vowel,MED,Y
+Haiti,30,Kicking doors all the time Mezanmi,all,31,Im the one they talk about Gonaive,talk,INNER,SLANT,cmu,MED,Y
+Haiti,30,Kicking doors all the time Mezanmi,doors,31,Im the one they talk about Gonaive,talk,INNER,ASSONANCE,vowel,MED,Y
+Haiti,30,Kicking doors all the time Mezanmi,Mezanmi,32,John Wicks Baptist Mezanmi,Mezanmi,END,REPEAT,spelling,HIGH,N
+Haiti,30,Kicking doors all the time Mezanmi,Kicking,32,John Wicks Baptist Mezanmi,Wicks,INNER,SLANT,cmu,MED,Y
+Haiti,32,John Wicks Baptist Mezanmi,Baptist,33,"John Wicks Bat li , Pa Kouri",Bat,INNER,ASSONANCE,vowel,MED,Y
+Haiti,32,John Wicks Baptist Mezanmi,John,33,"John Wicks Bat li , Pa Kouri",John,INNER,REPEAT,spelling,HIGH,N
+Haiti,32,John Wicks Baptist Mezanmi,John,33,"John Wicks Bat li , Pa Kouri",Pa,INNER,ASSONANCE,vowel,MED,Y
+Haiti,32,John Wicks Baptist Mezanmi,Wicks,33,"John Wicks Bat li , Pa Kouri",Wicks,INNER,REPEAT,spelling,HIGH,N
+Haiti,33,"John Wicks Bat li , Pa Kouri",John,33,"John Wicks Bat li , Pa Kouri",Pa,INNER,ASSONANCE,vowel,MED,Y
+Haiti,33,"John Wicks Bat li , Pa Kouri",li,34,Hope yall know me im unique,unique,INNER,ASSONANCE,vowel,MED,Y
+Haiti,33,"John Wicks Bat li , Pa Kouri",Bat,35,My swag gon go like Billy,swag,INNER,SLANT,spelling,LOW,Y
+Haiti,33,"John Wicks Bat li , Pa Kouri",Wicks,35,My swag gon go like Billy,Billy,INNER,ASSONANCE,vowel,MED,Y
+Haiti,34,Hope yall know me im unique,Hope,34,Hope yall know me im unique,know,INNER,ASSONANCE,vowel,MED,Y
+Haiti,34,Hope yall know me im unique,Hope,35,My swag gon go like Billy,go,INNER,ASSONANCE,vowel,MED,Y
+Haiti,34,Hope yall know me im unique,Hope,35,My swag gon go like Billy,gon,INNER,SLANT,spelling,LOW,Y
+Haiti,34,Hope yall know me im unique,know,35,My swag gon go like Billy,go,INNER,PERFECT,cmu,HIGH,Y
+Haiti,34,Hope yall know me im unique,unique,36,Si te solèy pa vini,vini,END,SLANT,cmu,MED,Y
+Haiti,34,Hope yall know me im unique,unique,36,Si te solèy pa vini,Si,INNER,ASSONANCE,vowel,MED,Y
+Haiti,34,Hope yall know me im unique,unique,36,Si te solèy pa vini,te,INNER,ASSONANCE,vowel,MED,Y
+Haiti,34,Hope yall know me im unique,unique,37,Si te solèy m'ap vini,vini,END,SLANT,cmu,MED,Y
+Haiti,35,My swag gon go like Billy,like,36,Si te solèy pa vini,y,INNER,ASSONANCE,vowel,MED,Y
+Haiti,35,My swag gon go like Billy,like,37,Si te solèy m'ap vini,y,INNER,ASSONANCE,vowel,MED,Y
+Haiti,35,My swag gon go like Billy,swag,37,Si te solèy m'ap vini,m'ap,INNER,SLANT,spelling,LOW,Y
+Haiti,36,Si te solèy pa vini,Si,36,Si te solèy pa vini,te,INNER,PERFECT,cmu,HIGH,Y
+Haiti,36,Si te solèy pa vini,Si,36,Si te solèy pa vini,vini,INNER,ASSONANCE,vowel,MED,Y
+Haiti,36,Si te solèy pa vini,sol,36,Si te solèy pa vini,pa,INNER,ASSONANCE,vowel,MED,Y
+Haiti,36,Si te solèy pa vini,te,36,Si te solèy pa vini,vini,INNER,ASSONANCE,vowel,MED,Y
+Haiti,36,Si te solèy pa vini,vini,37,Si te solèy m'ap vini,vini,END,REPEAT,spelling,HIGH,N
+Haiti,36,Si te solèy pa vini,pa,37,Si te solèy m'ap vini,sol,INNER,ASSONANCE,vowel,MED,Y
+Haiti,36,Si te solèy pa vini,Si,37,Si te solèy m'ap vini,Si,INNER,REPEAT,spelling,HIGH,N
+Haiti,36,Si te solèy pa vini,Si,37,Si te solèy m'ap vini,te,INNER,PERFECT,cmu,HIGH,Y
+Haiti,36,Si te solèy pa vini,Si,37,Si te solèy m'ap vini,vini,INNER,ASSONANCE,vowel,MED,Y
+Haiti,36,Si te solèy pa vini,sol,37,Si te solèy m'ap vini,sol,INNER,REPEAT,spelling,HIGH,N
+Haiti,36,Si te solèy pa vini,te,37,Si te solèy m'ap vini,Si,INNER,PERFECT,cmu,HIGH,Y
+Haiti,36,Si te solèy pa vini,te,37,Si te solèy m'ap vini,te,INNER,REPEAT,spelling,HIGH,N
+Haiti,36,Si te solèy pa vini,te,37,Si te solèy m'ap vini,vini,INNER,ASSONANCE,vowel,MED,Y
+Haiti,36,Si te solèy pa vini,vini,37,Si te solèy m'ap vini,Si,INNER,ASSONANCE,vowel,MED,Y
+Haiti,36,Si te solèy pa vini,vini,37,Si te solèy m'ap vini,te,INNER,ASSONANCE,vowel,MED,Y
+Haiti,36,Si te solèy pa vini,y,37,Si te solèy m'ap vini,y,INNER,REPEAT,spelling,HIGH,N
+Haiti,37,Si te solèy m'ap vini,Si,37,Si te solèy m'ap vini,te,INNER,PERFECT,cmu,HIGH,Y
+Haiti,37,Si te solèy m'ap vini,Si,37,Si te solèy m'ap vini,vini,INNER,ASSONANCE,vowel,MED,Y
+Haiti,37,Si te solèy m'ap vini,te,37,Si te solèy m'ap vini,vini,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),1,I'm a take a nigga to Haiti,take,1,I'm a take a nigga to Haiti,Haiti,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),1,I'm a take a nigga to Haiti,Haiti,4,"Look, I'm a take a nigga to Haiti",Haiti,END,REPEAT,spelling,HIGH,N
+Haiti (Remix),1,I'm a take a nigga to Haiti,Haiti,5,And I'm a stop by the old lady,lady,END,SLANT,cmu,MED,Y
+Haiti (Remix),2,I'm a Rolling Stone would you roll along,Rolling,2,I'm a Rolling Stone would you roll along,roll,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),2,I'm a Rolling Stone would you roll along,Rolling,2,I'm a Rolling Stone would you roll along,Stone,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),2,I'm a Rolling Stone would you roll along,Stone,2,I'm a Rolling Stone would you roll along,roll,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),2,I'm a Rolling Stone would you roll along,along,3,I'm a rock and roll would come along,along,END,REPEAT,spelling,HIGH,N
+Haiti (Remix),2,I'm a Rolling Stone would you roll along,roll,3,I'm a rock and roll would come along,roll,INNER,REPEAT,spelling,HIGH,N
+Haiti (Remix),2,I'm a Rolling Stone would you roll along,Rolling,3,I'm a rock and roll would come along,roll,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),2,I'm a Rolling Stone would you roll along,Stone,3,I'm a rock and roll would come along,roll,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),2,I'm a Rolling Stone would you roll along,would,3,I'm a rock and roll would come along,would,INNER,REPEAT,spelling,HIGH,N
+Haiti (Remix),2,I'm a Rolling Stone would you roll along,would,4,"Look, I'm a take a nigga to Haiti",Look,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),3,I'm a rock and roll would come along,would,4,"Look, I'm a take a nigga to Haiti",Look,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),3,I'm a rock and roll would come along,rock,5,And I'm a stop by the old lady,stop,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),3,I'm a rock and roll would come along,roll,5,And I'm a stop by the old lady,old,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),4,"Look, I'm a take a nigga to Haiti",take,4,"Look, I'm a take a nigga to Haiti",Haiti,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),4,"Look, I'm a take a nigga to Haiti",Haiti,5,And I'm a stop by the old lady,lady,END,SLANT,cmu,MED,Y
+Haiti (Remix),4,"Look, I'm a take a nigga to Haiti",take,5,And I'm a stop by the old lady,lady,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),4,"Look, I'm a take a nigga to Haiti",Haiti,6,You ain't gettin' to the loot boy you lazy,lazy,END,SLANT,cmu,MED,Y
+Haiti (Remix),4,"Look, I'm a take a nigga to Haiti",Haiti,6,You ain't gettin' to the loot boy you lazy,ain't,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),4,"Look, I'm a take a nigga to Haiti",take,6,You ain't gettin' to the loot boy you lazy,ain't,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),4,"Look, I'm a take a nigga to Haiti",take,6,You ain't gettin' to the loot boy you lazy,lazy,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),5,And I'm a stop by the old lady,lady,6,You ain't gettin' to the loot boy you lazy,lazy,END,SLANT,cmu,MED,Y
+Haiti (Remix),5,And I'm a stop by the old lady,lady,6,You ain't gettin' to the loot boy you lazy,ain't,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),5,And I'm a stop by the old lady,old,7,If my nigga rock I'm a roll,roll,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),5,And I'm a stop by the old lady,stop,7,If my nigga rock I'm a roll,rock,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),6,You ain't gettin' to the loot boy you lazy,ain't,6,You ain't gettin' to the loot boy you lazy,lazy,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),6,You ain't gettin' to the loot boy you lazy,ain't,8,Papi take a kilo on a boat yea,take,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),6,You ain't gettin' to the loot boy you lazy,lazy,8,Papi take a kilo on a boat yea,take,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),7,If my nigga rock I'm a roll,roll,8,Papi take a kilo on a boat yea,boat,END,SLANT,cmu,MED,Y
+Haiti (Remix),7,If my nigga rock I'm a roll,roll,8,Papi take a kilo on a boat yea,kilo,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),7,If my nigga rock I'm a roll,roll,9,She heard I'm from the No she like oh yea,No,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),8,Papi take a kilo on a boat yea,kilo,8,Papi take a kilo on a boat yea,boat,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),8,Papi take a kilo on a boat yea,boat,9,She heard I'm from the No she like oh yea,No,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),8,Papi take a kilo on a boat yea,kilo,9,She heard I'm from the No she like oh yea,No,INNER,PERFECT,cmu,HIGH,Y
+Haiti (Remix),8,Papi take a kilo on a boat yea,boat,10,I love my niggas cause my niggas know me so well,know,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),8,Papi take a kilo on a boat yea,kilo,10,I love my niggas cause my niggas know me so well,know,INNER,PERFECT,cmu,HIGH,Y
+Haiti (Remix),9,She heard I'm from the No she like oh yea,No,10,I love my niggas cause my niggas know me so well,know,INNER,PERFECT,cmu,HIGH,Y
+Haiti (Remix),10,I love my niggas cause my niggas know me so well,niggas,10,I love my niggas cause my niggas know me so well,niggas,INNER,REPEAT,spelling,HIGH,N
+Haiti (Remix),10,I love my niggas cause my niggas know me so well,well,11,She say she fell in love with me baby oh well,well,END,REPEAT,spelling,HIGH,N
+Haiti (Remix),10,I love my niggas cause my niggas know me so well,love,11,She say she fell in love with me baby oh well,love,INNER,REPEAT,spelling,HIGH,N
+Haiti (Remix),10,I love my niggas cause my niggas know me so well,well,11,She say she fell in love with me baby oh well,fell,INNER,PERFECT,cmu,HIGH,Y
+Haiti (Remix),10,I love my niggas cause my niggas know me so well,love,12,I'm a do this one for Haiti,one,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),11,She say she fell in love with me baby oh well,fell,11,She say she fell in love with me baby oh well,well,INNER,PERFECT,cmu,HIGH,Y
+Haiti (Remix),11,She say she fell in love with me baby oh well,say,11,She say she fell in love with me baby oh well,baby,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),11,She say she fell in love with me baby oh well,baby,12,I'm a do this one for Haiti,Haiti,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),11,She say she fell in love with me baby oh well,love,12,I'm a do this one for Haiti,one,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),11,She say she fell in love with me baby oh well,say,12,I'm a do this one for Haiti,Haiti,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),11,She say she fell in love with me baby oh well,baby,13,I'm a hold it down no eighty,eighty,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),11,She say she fell in love with me baby oh well,say,13,I'm a hold it down no eighty,eighty,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),12,I'm a do this one for Haiti,Haiti,13,I'm a hold it down no eighty,eighty,END,MULTI,multi,HIGH,Y
+Haiti (Remix),12,I'm a do this one for Haiti,Haiti,14,Mr Selavi I'm crazy,crazy,END,SLANT,cmu,MED,Y
+Haiti (Remix),12,I'm a do this one for Haiti,Haiti,15,I remember all them times they chased me,chased,END,SLANT,cmu,MED,Y
+Haiti (Remix),13,I'm a hold it down no eighty,hold,13,I'm a hold it down no eighty,no,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),13,I'm a hold it down no eighty,eighty,14,Mr Selavi I'm crazy,crazy,END,SLANT,cmu,MED,Y
+Haiti (Remix),13,I'm a hold it down no eighty,eighty,15,I remember all them times they chased me,chased,END,SLANT,cmu,MED,Y
+Haiti (Remix),14,Mr Selavi I'm crazy,crazy,15,I remember all them times they chased me,chased,END,ASSONANCE,vowel,MED,Y
+Haiti (Remix),15,I remember all them times they chased me,all,16,I'm the one they talk about Gonaive,talk,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),15,I remember all them times they chased me,all,17,Hope y'all know me im unique,y'all,INNER,PERFECT,cmu,HIGH,Y
+Haiti (Remix),15,I remember all them times they chased me,chased,19,"John Wicks, I'm in love with Lady Haiti",Haiti,END,SLANT,cmu,MED,Y
+Haiti (Remix),16,I'm the one they talk about Gonaive,Gonaive,17,Hope y'all know me im unique,Hope,INNER,ASSONANCE,vowel,LOW,N
+Haiti (Remix),16,I'm the one they talk about Gonaive,talk,17,Hope y'all know me im unique,y'all,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),16,I'm the one they talk about Gonaive,talk,18,My swag gone go like Billy,gone,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),17,Hope y'all know me im unique,Hope,17,Hope y'all know me im unique,know,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),17,Hope y'all know me im unique,Hope,18,My swag gone go like Billy,go,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),17,Hope y'all know me im unique,know,18,My swag gone go like Billy,go,INNER,PERFECT,cmu,HIGH,Y
+Haiti (Remix),17,Hope y'all know me im unique,y'all,18,My swag gone go like Billy,gone,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),18,My swag gone go like Billy,Billy,19,"John Wicks, I'm in love with Lady Haiti",Wicks,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),18,My swag gone go like Billy,Billy,20,My life started out in a small village,village,END,SLANT,cmu,MED,Y
+Haiti (Remix),18,My swag gone go like Billy,gone,20,My life started out in a small village,small,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),18,My swag gone go like Billy,like,20,My life started out in a small village,life,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),18,My swag gone go like Billy,Billy,21,"I ate dirt from the floor homie, no kidding",kidding,END,ASSONANCE,vowel,MED,Y
+Haiti (Remix),19,"John Wicks, I'm in love with Lady Haiti",Lady,19,"John Wicks, I'm in love with Lady Haiti",Haiti,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),19,"John Wicks, I'm in love with Lady Haiti",John,20,My life started out in a small village,started,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),19,"John Wicks, I'm in love with Lady Haiti",Wicks,20,My life started out in a small village,village,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),19,"John Wicks, I'm in love with Lady Haiti",Haiti,21,"I ate dirt from the floor homie, no kidding",ate,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),19,"John Wicks, I'm in love with Lady Haiti",Lady,21,"I ate dirt from the floor homie, no kidding",ate,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),19,"John Wicks, I'm in love with Lady Haiti",Wicks,21,"I ate dirt from the floor homie, no kidding",kidding,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),20,My life started out in a small village,village,21,"I ate dirt from the floor homie, no kidding",kidding,END,ASSONANCE,vowel,MED,Y
+Haiti (Remix),20,My life started out in a small village,small,21,"I ate dirt from the floor homie, no kidding",floor,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),20,My life started out in a small village,life,22,"I ain't had no kitchen grandma said, ""Pray to Christ""",Christ,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),20,My life started out in a small village,village,22,"I ain't had no kitchen grandma said, ""Pray to Christ""",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),21,"I ate dirt from the floor homie, no kidding",ate,22,"I ain't had no kitchen grandma said, ""Pray to Christ""",ain't,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),21,"I ate dirt from the floor homie, no kidding",ate,22,"I ain't had no kitchen grandma said, ""Pray to Christ""",Pray,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),21,"I ate dirt from the floor homie, no kidding",kidding,22,"I ain't had no kitchen grandma said, ""Pray to Christ""",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),21,"I ate dirt from the floor homie, no kidding",no,22,"I ain't had no kitchen grandma said, ""Pray to Christ""",no,INNER,REPEAT,spelling,HIGH,N
+Haiti (Remix),21,"I ate dirt from the floor homie, no kidding",ate,23,This Jesus baby belly had a bag of rice,baby,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",ain't,22,"I ain't had no kitchen grandma said, ""Pray to Christ""",Pray,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",had,22,"I ain't had no kitchen grandma said, ""Pray to Christ""",grandma,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",Christ,23,This Jesus baby belly had a bag of rice,rice,END,SLANT,cmu,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",ain't,23,This Jesus baby belly had a bag of rice,baby,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",grandma,23,This Jesus baby belly had a bag of rice,bag,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",grandma,23,This Jesus baby belly had a bag of rice,had,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",had,23,This Jesus baby belly had a bag of rice,bag,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",had,23,This Jesus baby belly had a bag of rice,had,INNER,REPEAT,spelling,HIGH,N
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",Pray,23,This Jesus baby belly had a bag of rice,baby,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",said,23,This Jesus baby belly had a bag of rice,belly,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",grandma,24,"I been through hell and back, I feel heaven left",back,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",had,24,"I been through hell and back, I feel heaven left",back,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",said,24,"I been through hell and back, I feel heaven left",heaven,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",said,24,"I been through hell and back, I feel heaven left",hell,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),22,"I ain't had no kitchen grandma said, ""Pray to Christ""",said,24,"I been through hell and back, I feel heaven left",left,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,had,23,This Jesus baby belly had a bag of rice,bag,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,bag,24,"I been through hell and back, I feel heaven left",back,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,belly,24,"I been through hell and back, I feel heaven left",heaven,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,belly,24,"I been through hell and back, I feel heaven left",hell,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,belly,24,"I been through hell and back, I feel heaven left",left,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,had,24,"I been through hell and back, I feel heaven left",back,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,Jesus,24,"I been through hell and back, I feel heaven left",feel,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,bag,25,I shook the hand of the devil it felt like lava gloves,hand,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,belly,25,I shook the hand of the devil it felt like lava gloves,devil,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,belly,25,I shook the hand of the devil it felt like lava gloves,felt,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,had,25,I shook the hand of the devil it felt like lava gloves,hand,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),23,This Jesus baby belly had a bag of rice,rice,25,I shook the hand of the devil it felt like lava gloves,like,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",heaven,24,"I been through hell and back, I feel heaven left",left,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",hell,24,"I been through hell and back, I feel heaven left",heaven,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",hell,24,"I been through hell and back, I feel heaven left",left,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",back,25,I shook the hand of the devil it felt like lava gloves,hand,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",heaven,25,I shook the hand of the devil it felt like lava gloves,devil,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",heaven,25,I shook the hand of the devil it felt like lava gloves,felt,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",hell,25,I shook the hand of the devil it felt like lava gloves,devil,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",hell,25,I shook the hand of the devil it felt like lava gloves,felt,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",left,25,I shook the hand of the devil it felt like lava gloves,devil,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",left,25,I shook the hand of the devil it felt like lava gloves,felt,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),24,"I been through hell and back, I feel heaven left",back,26,Lookin' back I was raised in the westside story,back,INNER,REPEAT,spelling,HIGH,N
+Haiti (Remix),25,I shook the hand of the devil it felt like lava gloves,devil,25,I shook the hand of the devil it felt like lava gloves,felt,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),25,I shook the hand of the devil it felt like lava gloves,hand,26,Lookin' back I was raised in the westside story,back,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),25,I shook the hand of the devil it felt like lava gloves,like,26,Lookin' back I was raised in the westside story,westside,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),25,I shook the hand of the devil it felt like lava gloves,shook,26,Lookin' back I was raised in the westside story,Lookin,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),26,Lookin' back I was raised in the westside story,story,27,The glory of who gone make it first to purgatory,purgatory,END,MULTI,multi,HIGH,Y
+Haiti (Remix),26,Lookin' back I was raised in the westside story,raised,27,The glory of who gone make it first to purgatory,make,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),26,Lookin' back I was raised in the westside story,story,27,The glory of who gone make it first to purgatory,glory,INNER,MULTI,multi,HIGH,Y
+Haiti (Remix),26,Lookin' back I was raised in the westside story,story,27,The glory of who gone make it first to purgatory,gone,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),26,Lookin' back I was raised in the westside story,back,28,seen some masked up in the day,masked,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),26,Lookin' back I was raised in the westside story,raised,28,seen some masked up in the day,day,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),27,The glory of who gone make it first to purgatory,glory,27,The glory of who gone make it first to purgatory,gone,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),27,The glory of who gone make it first to purgatory,glory,27,The glory of who gone make it first to purgatory,purgatory,INNER,MULTI,multi,HIGH,Y
+Haiti (Remix),27,The glory of who gone make it first to purgatory,gone,27,The glory of who gone make it first to purgatory,purgatory,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),27,The glory of who gone make it first to purgatory,make,28,seen some masked up in the day,day,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),27,The glory of who gone make it first to purgatory,first,29,Turn of the lion just so they can hunt the prey,Turn,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),27,The glory of who gone make it first to purgatory,make,29,Turn of the lion just so they can hunt the prey,prey,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),28,seen some masked up in the day,day,29,Turn of the lion just so they can hunt the prey,prey,END,PERFECT,cmu,HIGH,Y
+Haiti (Remix),28,seen some masked up in the day,masked,29,Turn of the lion just so they can hunt the prey,can,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),28,seen some masked up in the day,some,29,Turn of the lion just so they can hunt the prey,hunt,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),28,seen some masked up in the day,masked,30,My old man told me don't fall for the peer pressure,man,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),28,seen some masked up in the day,day,31,"Before you know success, you gone meet failure",failure,END,ASSONANCE,vowel,MED,Y
+Haiti (Remix),29,Turn of the lion just so they can hunt the prey,can,30,My old man told me don't fall for the peer pressure,man,INNER,PERFECT,cmu,HIGH,Y
+Haiti (Remix),29,Turn of the lion just so they can hunt the prey,prey,31,"Before you know success, you gone meet failure",failure,END,ASSONANCE,vowel,MED,Y
+Haiti (Remix),30,My old man told me don't fall for the peer pressure,old,30,My old man told me don't fall for the peer pressure,don't,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),30,My old man told me don't fall for the peer pressure,old,30,My old man told me don't fall for the peer pressure,told,INNER,PERFECT,cmu,HIGH,Y
+Haiti (Remix),30,My old man told me don't fall for the peer pressure,told,30,My old man told me don't fall for the peer pressure,don't,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),30,My old man told me don't fall for the peer pressure,don't,31,"Before you know success, you gone meet failure",know,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),30,My old man told me don't fall for the peer pressure,fall,31,"Before you know success, you gone meet failure",Before,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),30,My old man told me don't fall for the peer pressure,fall,31,"Before you know success, you gone meet failure",gone,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),30,My old man told me don't fall for the peer pressure,old,31,"Before you know success, you gone meet failure",know,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),30,My old man told me don't fall for the peer pressure,pressure,31,"Before you know success, you gone meet failure",success,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),30,My old man told me don't fall for the peer pressure,told,31,"Before you know success, you gone meet failure",know,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),31,"Before you know success, you gone meet failure",Before,31,"Before you know success, you gone meet failure",gone,INNER,SLANT,cmu,MED,Y
+Haiti (Remix),31,"Before you know success, you gone meet failure",meet,33,Landed in the eagles eyes,eagles,INNER,ASSONANCE,vowel,MED,Y
+Haiti (Remix),33,Landed in the eagles eyes,eyes,34,I went from to American pie,pie,END,ASSONANCE,vowel,MED,Y
+Haiti (Remix),34,I went from to American pie,went,34,I went from to American pie,American,INNER,ASSONANCE,vowel,MED,Y
+Zebra,1,"36 months, going hard with no feeling",going,1,"36 months, going hard with no feeling",no,INNER,ASSONANCE,vowel,MED,Y
+Zebra,1,"36 months, going hard with no feeling",feeling,2,"I've been going hard for my niggas, no appealing",appealing,END,MULTI,multi,HIGH,Y
+Zebra,1,"36 months, going hard with no feeling",going,2,"I've been going hard for my niggas, no appealing",going,INNER,REPEAT,spelling,HIGH,N
+Zebra,1,"36 months, going hard with no feeling",going,2,"I've been going hard for my niggas, no appealing",no,INNER,ASSONANCE,vowel,MED,Y
+Zebra,1,"36 months, going hard with no feeling",hard,2,"I've been going hard for my niggas, no appealing",hard,INNER,REPEAT,spelling,HIGH,N
+Zebra,1,"36 months, going hard with no feeling",no,2,"I've been going hard for my niggas, no appealing",going,INNER,ASSONANCE,vowel,MED,Y
+Zebra,1,"36 months, going hard with no feeling",no,2,"I've been going hard for my niggas, no appealing",no,INNER,REPEAT,spelling,HIGH,N
+Zebra,1,"36 months, going hard with no feeling",feeling,3,"If a nigga fall, I got his back, this the real me",real,END,SLANT,cmu,MED,Y
+Zebra,1,"36 months, going hard with no feeling",hard,3,"If a nigga fall, I got his back, this the real me",got,INNER,ASSONANCE,vowel,MED,Y
+Zebra,1,"36 months, going hard with no feeling",feeling,4,"If a nigga fall, I got his back, that's the real me",real,END,SLANT,cmu,MED,Y
+Zebra,2,"I've been going hard for my niggas, no appealing",going,2,"I've been going hard for my niggas, no appealing",no,INNER,ASSONANCE,vowel,MED,Y
+Zebra,2,"I've been going hard for my niggas, no appealing",appealing,3,"If a nigga fall, I got his back, this the real me",real,END,SLANT,cmu,MED,Y
+Zebra,2,"I've been going hard for my niggas, no appealing",hard,3,"If a nigga fall, I got his back, this the real me",got,INNER,ASSONANCE,vowel,MED,Y
+Zebra,2,"I've been going hard for my niggas, no appealing",niggas,3,"If a nigga fall, I got his back, this the real me",nigga,INNER,SLANT,spelling,LOW,Y
+Zebra,2,"I've been going hard for my niggas, no appealing",appealing,4,"If a nigga fall, I got his back, that's the real me",real,END,SLANT,cmu,MED,Y
+Zebra,2,"I've been going hard for my niggas, no appealing",hard,4,"If a nigga fall, I got his back, that's the real me",got,INNER,ASSONANCE,vowel,MED,Y
+Zebra,2,"I've been going hard for my niggas, no appealing",niggas,4,"If a nigga fall, I got his back, that's the real me",nigga,INNER,SLANT,spelling,LOW,Y
+Zebra,3,"If a nigga fall, I got his back, this the real me",real,4,"If a nigga fall, I got his back, that's the real me",real,END,REPEAT,spelling,HIGH,N
+Zebra,3,"If a nigga fall, I got his back, this the real me",back,4,"If a nigga fall, I got his back, that's the real me",back,INNER,REPEAT,spelling,HIGH,N
+Zebra,3,"If a nigga fall, I got his back, this the real me",fall,4,"If a nigga fall, I got his back, that's the real me",fall,INNER,REPEAT,spelling,HIGH,N
+Zebra,3,"If a nigga fall, I got his back, this the real me",got,4,"If a nigga fall, I got his back, that's the real me",got,INNER,REPEAT,spelling,HIGH,N
+Zebra,3,"If a nigga fall, I got his back, this the real me",nigga,4,"If a nigga fall, I got his back, that's the real me",nigga,INNER,REPEAT,spelling,HIGH,N
+Zebra,3,"If a nigga fall, I got his back, this the real me",back,5,All my niggas Jaab they don't play bout the Z shit,Jaab,INNER,SLANT,spelling,LOW,Y
+Zebra,3,"If a nigga fall, I got his back, this the real me",fall,5,All my niggas Jaab they don't play bout the Z shit,All,INNER,PERFECT,cmu,HIGH,Y
+Zebra,3,"If a nigga fall, I got his back, this the real me",nigga,5,All my niggas Jaab they don't play bout the Z shit,niggas,INNER,SLANT,spelling,LOW,Y
+Zebra,3,"If a nigga fall, I got his back, this the real me",nigga,5,All my niggas Jaab they don't play bout the Z shit,shit,INNER,SLANT,spelling,LOW,Y
+Zebra,3,"If a nigga fall, I got his back, this the real me",real,5,All my niggas Jaab they don't play bout the Z shit,Z,INNER,ASSONANCE,vowel,MED,Y
+Zebra,3,"If a nigga fall, I got his back, this the real me",real,7,2017 Wick's City Imma Z,Z,END,ASSONANCE,vowel,MED,Y
+Zebra,4,"If a nigga fall, I got his back, that's the real me",back,5,All my niggas Jaab they don't play bout the Z shit,Jaab,INNER,SLANT,spelling,LOW,Y
+Zebra,4,"If a nigga fall, I got his back, that's the real me",fall,5,All my niggas Jaab they don't play bout the Z shit,All,INNER,PERFECT,cmu,HIGH,Y
+Zebra,4,"If a nigga fall, I got his back, that's the real me",nigga,5,All my niggas Jaab they don't play bout the Z shit,niggas,INNER,SLANT,spelling,LOW,Y
+Zebra,4,"If a nigga fall, I got his back, that's the real me",nigga,5,All my niggas Jaab they don't play bout the Z shit,shit,INNER,SLANT,spelling,LOW,Y
+Zebra,4,"If a nigga fall, I got his back, that's the real me",real,5,All my niggas Jaab they don't play bout the Z shit,Z,INNER,ASSONANCE,vowel,MED,Y
+Zebra,4,"If a nigga fall, I got his back, that's the real me",nigga,6,Don't play bout the Z shit,shit,INNER,SLANT,spelling,LOW,Y
+Zebra,4,"If a nigga fall, I got his back, that's the real me",real,6,Don't play bout the Z shit,Z,INNER,ASSONANCE,vowel,MED,Y
+Zebra,4,"If a nigga fall, I got his back, that's the real me",real,7,2017 Wick's City Imma Z,Z,END,ASSONANCE,vowel,MED,Y
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,shit,6,Don't play bout the Z shit,shit,END,REPEAT,spelling,HIGH,N
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,bout,6,Don't play bout the Z shit,bout,INNER,REPEAT,spelling,HIGH,N
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,don't,6,Don't play bout the Z shit,Don't,INNER,REPEAT,spelling,HIGH,N
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,play,6,Don't play bout the Z shit,play,INNER,REPEAT,spelling,HIGH,N
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,Z,6,Don't play bout the Z shit,Z,INNER,REPEAT,spelling,HIGH,N
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,niggas,7,2017 Wick's City Imma Z,Imma,INNER,ASSONANCE,vowel,LOW,N
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,niggas,7,2017 Wick's City Imma Z,Wick's,INNER,SLANT,spelling,LOW,Y
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,shit,7,2017 Wick's City Imma Z,City,INNER,SLANT,cmu,MED,Y
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,shit,7,2017 Wick's City Imma Z,Wick's,INNER,ASSONANCE,vowel,MED,Y
+Zebra,5,All my niggas Jaab they don't play bout the Z shit,Z,7,2017 Wick's City Imma Z,Z,INNER,REPEAT,spelling,HIGH,N
+Zebra,6,Don't play bout the Z shit,shit,7,2017 Wick's City Imma Z,City,INNER,SLANT,cmu,MED,Y
+Zebra,6,Don't play bout the Z shit,shit,7,2017 Wick's City Imma Z,Wick's,INNER,ASSONANCE,vowel,MED,Y
+Zebra,6,Don't play bout the Z shit,Z,7,2017 Wick's City Imma Z,Z,INNER,REPEAT,spelling,HIGH,N
+Zebra,6,Don't play bout the Z shit,bout,8,I'm Mr. Hold it down I don't play bout my rounds,bout,INNER,REPEAT,spelling,HIGH,N
+Zebra,6,Don't play bout the Z shit,bout,8,I'm Mr. Hold it down I don't play bout my rounds,down,INNER,SLANT,cmu,MED,Y
+Zebra,6,Don't play bout the Z shit,bout,8,I'm Mr. Hold it down I don't play bout my rounds,rounds,INNER,ASSONANCE,vowel,MED,Y
+Zebra,6,Don't play bout the Z shit,Don't,8,I'm Mr. Hold it down I don't play bout my rounds,don't,INNER,REPEAT,spelling,HIGH,N
+Zebra,6,Don't play bout the Z shit,Don't,8,I'm Mr. Hold it down I don't play bout my rounds,Hold,INNER,ASSONANCE,vowel,MED,Y
+Zebra,6,Don't play bout the Z shit,play,8,I'm Mr. Hold it down I don't play bout my rounds,play,INNER,REPEAT,spelling,HIGH,N
+Zebra,6,Don't play bout the Z shit,shit,8,I'm Mr. Hold it down I don't play bout my rounds,Mr,INNER,SLANT,cmu,MED,Y
+Zebra,7,2017 Wick's City Imma Z,Wick's,7,2017 Wick's City Imma Z,City,INNER,ASSONANCE,vowel,MED,Y
+Zebra,7,2017 Wick's City Imma Z,City,8,I'm Mr. Hold it down I don't play bout my rounds,Mr,INNER,SLANT,cmu,MED,Y
+Zebra,7,2017 Wick's City Imma Z,Wick's,8,I'm Mr. Hold it down I don't play bout my rounds,Mr,INNER,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,bout,8,I'm Mr. Hold it down I don't play bout my rounds,rounds,INNER,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,down,8,I'm Mr. Hold it down I don't play bout my rounds,bout,INNER,SLANT,cmu,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,down,8,I'm Mr. Hold it down I don't play bout my rounds,rounds,INNER,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,Hold,8,I'm Mr. Hold it down I don't play bout my rounds,don't,INNER,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,rounds,9,"When I come around, they show me love out of town",town,END,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,bout,9,"When I come around, they show me love out of town",around,INNER,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,bout,9,"When I come around, they show me love out of town",town,INNER,SLANT,cmu,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,don't,9,"When I come around, they show me love out of town",show,INNER,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,down,9,"When I come around, they show me love out of town",around,INNER,SLANT,cmu,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,down,9,"When I come around, they show me love out of town",town,INNER,PERFECT,cmu,HIGH,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,Hold,9,"When I come around, they show me love out of town",show,INNER,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,rounds,9,"When I come around, they show me love out of town",around,INNER,SLANT,cmu,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,rounds,10,They show me love out of town,town,END,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,bout,10,They show me love out of town,town,INNER,SLANT,cmu,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,don't,10,They show me love out of town,show,INNER,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,down,10,They show me love out of town,town,INNER,PERFECT,cmu,HIGH,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,Hold,10,They show me love out of town,show,INNER,ASSONANCE,vowel,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,rounds,11,Mr. Selavii Man I don't fuck around,around,END,SLANT,cmu,MED,Y
+Zebra,8,I'm Mr. Hold it down I don't play bout my rounds,rounds,12,So baby with the stick and it hold a hundred rounds,rounds,END,REPEAT,spelling,HIGH,N
+Zebra,9,"When I come around, they show me love out of town",around,9,"When I come around, they show me love out of town",town,INNER,SLANT,cmu,MED,Y
+Zebra,9,"When I come around, they show me love out of town",come,9,"When I come around, they show me love out of town",love,INNER,SLANT,cmu,MED,Y
+Zebra,9,"When I come around, they show me love out of town",town,10,They show me love out of town,town,END,REPEAT,spelling,HIGH,N
+Zebra,9,"When I come around, they show me love out of town",around,10,They show me love out of town,town,INNER,SLANT,cmu,MED,Y
+Zebra,9,"When I come around, they show me love out of town",come,10,They show me love out of town,love,INNER,SLANT,cmu,MED,Y
+Zebra,9,"When I come around, they show me love out of town",love,10,They show me love out of town,love,INNER,REPEAT,spelling,HIGH,N
+Zebra,9,"When I come around, they show me love out of town",show,10,They show me love out of town,show,INNER,REPEAT,spelling,HIGH,N
+Zebra,9,"When I come around, they show me love out of town",town,11,Mr. Selavii Man I don't fuck around,around,END,SLANT,cmu,MED,Y
+Zebra,9,"When I come around, they show me love out of town",around,11,Mr. Selavii Man I don't fuck around,around,INNER,REPEAT,spelling,HIGH,N
+Zebra,9,"When I come around, they show me love out of town",come,11,Mr. Selavii Man I don't fuck around,fuck,INNER,SLANT,cmu,MED,Y
+Zebra,9,"When I come around, they show me love out of town",love,11,Mr. Selavii Man I don't fuck around,fuck,INNER,SLANT,cmu,MED,Y
+Zebra,9,"When I come around, they show me love out of town",show,11,Mr. Selavii Man I don't fuck around,don't,INNER,ASSONANCE,vowel,MED,Y
+Zebra,9,"When I come around, they show me love out of town",town,12,So baby with the stick and it hold a hundred rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Zebra,9,"When I come around, they show me love out of town",town,13,"Clappin at you niggas, that's a different sound",sound,END,SLANT,cmu,MED,Y
+Zebra,10,They show me love out of town,town,11,Mr. Selavii Man I don't fuck around,around,END,SLANT,cmu,MED,Y
+Zebra,10,They show me love out of town,love,11,Mr. Selavii Man I don't fuck around,fuck,INNER,SLANT,cmu,MED,Y
+Zebra,10,They show me love out of town,show,11,Mr. Selavii Man I don't fuck around,don't,INNER,ASSONANCE,vowel,MED,Y
+Zebra,10,They show me love out of town,town,12,So baby with the stick and it hold a hundred rounds,rounds,END,ASSONANCE,vowel,MED,Y
+Zebra,10,They show me love out of town,love,12,So baby with the stick and it hold a hundred rounds,hundred,INNER,ASSONANCE,vowel,MED,Y
+Zebra,10,They show me love out of town,show,12,So baby with the stick and it hold a hundred rounds,hold,INNER,ASSONANCE,vowel,MED,Y
+Zebra,10,They show me love out of town,town,13,"Clappin at you niggas, that's a different sound",sound,END,SLANT,cmu,MED,Y
+Zebra,10,They show me love out of town,town,14,Selavii a different sound,sound,END,SLANT,cmu,MED,Y
+Zebra,11,Mr. Selavii Man I don't fuck around,around,12,So baby with the stick and it hold a hundred rounds,rounds,END,SLANT,cmu,MED,Y
+Zebra,11,Mr. Selavii Man I don't fuck around,don't,12,So baby with the stick and it hold a hundred rounds,hold,INNER,ASSONANCE,vowel,MED,Y
+Zebra,11,Mr. Selavii Man I don't fuck around,fuck,12,So baby with the stick and it hold a hundred rounds,hundred,INNER,ASSONANCE,vowel,MED,Y
+Zebra,11,Mr. Selavii Man I don't fuck around,Mr,12,So baby with the stick and it hold a hundred rounds,stick,INNER,ASSONANCE,vowel,MED,Y
+Zebra,11,Mr. Selavii Man I don't fuck around,around,13,"Clappin at you niggas, that's a different sound",sound,END,PERFECT,cmu,HIGH,Y
+Zebra,11,Mr. Selavii Man I don't fuck around,Man,13,"Clappin at you niggas, that's a different sound",Clappin,INNER,ASSONANCE,vowel,MED,Y
+Zebra,11,Mr. Selavii Man I don't fuck around,Mr,13,"Clappin at you niggas, that's a different sound",different,INNER,ASSONANCE,vowel,MED,Y
+Zebra,11,Mr. Selavii Man I don't fuck around,around,14,Selavii a different sound,sound,END,PERFECT,cmu,HIGH,Y
+Zebra,11,Mr. Selavii Man I don't fuck around,around,15,Papi Gang the team I be quick to lay you down,down,END,SLANT,cmu,MED,Y
+Zebra,12,So baby with the stick and it hold a hundred rounds,rounds,13,"Clappin at you niggas, that's a different sound",sound,END,SLANT,cmu,MED,Y
+Zebra,12,So baby with the stick and it hold a hundred rounds,stick,13,"Clappin at you niggas, that's a different sound",different,INNER,ASSONANCE,vowel,MED,Y
+Zebra,12,So baby with the stick and it hold a hundred rounds,rounds,14,Selavii a different sound,sound,END,SLANT,cmu,MED,Y
+Zebra,12,So baby with the stick and it hold a hundred rounds,stick,14,Selavii a different sound,different,INNER,ASSONANCE,vowel,MED,Y
+Zebra,12,So baby with the stick and it hold a hundred rounds,rounds,15,Papi Gang the team I be quick to lay you down,down,END,ASSONANCE,vowel,MED,Y
+Zebra,13,"Clappin at you niggas, that's a different sound",sound,14,Selavii a different sound,sound,END,REPEAT,spelling,HIGH,N
+Zebra,13,"Clappin at you niggas, that's a different sound",different,14,Selavii a different sound,different,INNER,REPEAT,spelling,HIGH,N
+Zebra,13,"Clappin at you niggas, that's a different sound",sound,15,Papi Gang the team I be quick to lay you down,down,END,SLANT,cmu,MED,Y
+Zebra,13,"Clappin at you niggas, that's a different sound",Clappin,15,Papi Gang the team I be quick to lay you down,Gang,INNER,SLANT,cmu,MED,Y
+Zebra,13,"Clappin at you niggas, that's a different sound",Clappin,15,Papi Gang the team I be quick to lay you down,Papi,INNER,SLANT,spelling,LOW,Y
+Zebra,13,"Clappin at you niggas, that's a different sound",different,15,Papi Gang the team I be quick to lay you down,quick,INNER,ASSONANCE,vowel,MED,Y
+Zebra,14,Selavii a different sound,sound,15,Papi Gang the team I be quick to lay you down,down,END,SLANT,cmu,MED,Y
+Zebra,14,Selavii a different sound,different,15,Papi Gang the team I be quick to lay you down,quick,INNER,ASSONANCE,vowel,MED,Y
+Zebra,14,Selavii a different sound,different,16,Z shit I'm a different beast I'm a Zebra,different,INNER,REPEAT,spelling,HIGH,N
+Zebra,14,Selavii a different sound,different,16,Z shit I'm a different beast I'm a Zebra,shit,INNER,ASSONANCE,vowel,MED,Y
+Zebra,15,Papi Gang the team I be quick to lay you down,Papi,15,Papi Gang the team I be quick to lay you down,Gang,INNER,SLANT,spelling,LOW,Y
+Zebra,15,Papi Gang the team I be quick to lay you down,quick,16,Z shit I'm a different beast I'm a Zebra,different,INNER,ASSONANCE,vowel,MED,Y
+Zebra,15,Papi Gang the team I be quick to lay you down,quick,16,Z shit I'm a different beast I'm a Zebra,shit,INNER,SLANT,cmu,MED,Y
+Zebra,15,Papi Gang the team I be quick to lay you down,team,16,Z shit I'm a different beast I'm a Zebra,beast,INNER,ASSONANCE,vowel,MED,Y
+Zebra,15,Papi Gang the team I be quick to lay you down,team,16,Z shit I'm a different beast I'm a Zebra,Z,INNER,ASSONANCE,vowel,MED,Y
+Zebra,15,Papi Gang the team I be quick to lay you down,team,16,Z shit I'm a different beast I'm a Zebra,Zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,15,Papi Gang the team I be quick to lay you down,team,17,"That eat ya, My brother put me on this street stuff",eat,INNER,SLANT,cmu,MED,Y
+Zebra,15,Papi Gang the team I be quick to lay you down,team,17,"That eat ya, My brother put me on this street stuff",street,INNER,SLANT,cmu,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,beast,16,Z shit I'm a different beast I'm a Zebra,Zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,shit,16,Z shit I'm a different beast I'm a Zebra,different,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Z,16,Z shit I'm a different beast I'm a Zebra,beast,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Z,16,Z shit I'm a different beast I'm a Zebra,Zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,beast,17,"That eat ya, My brother put me on this street stuff",eat,INNER,SLANT,cmu,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,beast,17,"That eat ya, My brother put me on this street stuff",street,INNER,SLANT,cmu,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Z,17,"That eat ya, My brother put me on this street stuff",eat,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Z,17,"That eat ya, My brother put me on this street stuff",street,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Zebra,17,"That eat ya, My brother put me on this street stuff",eat,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Zebra,17,"That eat ya, My brother put me on this street stuff",street,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,END,SLANT,cmu,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,beast,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,INNER,REPEAT,spelling,HIGH,N
+Zebra,16,Z shit I'm a different beast I'm a Zebra,beast,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,beast,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,different,18,"I'm a Zebra I'm a different beast, I'm illegal",different,INNER,REPEAT,spelling,HIGH,N
+Zebra,16,Z shit I'm a different beast I'm a Zebra,shit,18,"I'm a Zebra I'm a different beast, I'm illegal",different,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Z,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Z,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Z,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,INNER,ASSONANCE,vowel,MED,Y
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,INNER,REPEAT,spelling,HIGH,N
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Zebra,19,"I'm a different beast, I'm a zebra",zebra,END,REPEAT,spelling,HIGH,N
+Zebra,16,Z shit I'm a different beast I'm a Zebra,Zebra,20,2017 Wick's City Im a Z,Z,END,ASSONANCE,vowel,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",brother,17,"That eat ya, My brother put me on this street stuff",stuff,INNER,SLANT,cmu,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",eat,17,"That eat ya, My brother put me on this street stuff",street,INNER,PERFECT,cmu,HIGH,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",eat,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,INNER,SLANT,cmu,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",eat,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,INNER,ASSONANCE,vowel,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",eat,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",street,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,INNER,SLANT,cmu,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",street,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,INNER,ASSONANCE,vowel,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",street,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",eat,19,"I'm a different beast, I'm a zebra",beast,INNER,SLANT,cmu,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",eat,19,"I'm a different beast, I'm a zebra",zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",street,19,"I'm a different beast, I'm a zebra",beast,INNER,SLANT,cmu,MED,Y
+Zebra,17,"That eat ya, My brother put me on this street stuff",street,19,"I'm a different beast, I'm a zebra",zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,INNER,SLANT,cmu,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,19,"I'm a different beast, I'm a zebra",zebra,END,SLANT,cmu,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,19,"I'm a different beast, I'm a zebra",beast,INNER,REPEAT,spelling,HIGH,N
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,19,"I'm a different beast, I'm a zebra",zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",different,19,"I'm a different beast, I'm a zebra",different,INNER,REPEAT,spelling,HIGH,N
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,19,"I'm a different beast, I'm a zebra",beast,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,19,"I'm a different beast, I'm a zebra",beast,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,19,"I'm a different beast, I'm a zebra",zebra,INNER,REPEAT,spelling,HIGH,N
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,20,2017 Wick's City Im a Z,Z,END,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",beast,20,2017 Wick's City Im a Z,Z,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",different,20,2017 Wick's City Im a Z,City,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",different,20,2017 Wick's City Im a Z,Wick's,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",Zebra,20,2017 Wick's City Im a Z,Z,INNER,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,21,I done put my whole damn wrist in the freezer,freezer,END,ASSONANCE,vowel,MED,Y
+Zebra,18,"I'm a Zebra I'm a different beast, I'm illegal",illegal,22,"I just wanna fuck on Valentines, then you can keep her",keep,END,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",beast,19,"I'm a different beast, I'm a zebra",zebra,INNER,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",zebra,20,2017 Wick's City Im a Z,Z,END,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",beast,20,2017 Wick's City Im a Z,Z,INNER,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",different,20,2017 Wick's City Im a Z,City,INNER,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",different,20,2017 Wick's City Im a Z,Wick's,INNER,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",zebra,21,I done put my whole damn wrist in the freezer,freezer,END,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",beast,21,I done put my whole damn wrist in the freezer,freezer,INNER,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",different,21,I done put my whole damn wrist in the freezer,wrist,INNER,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",zebra,22,"I just wanna fuck on Valentines, then you can keep her",keep,END,ASSONANCE,vowel,MED,Y
+Zebra,19,"I'm a different beast, I'm a zebra",zebra,23,"Ten toes down, Im on the ground with the people",people,END,SLANT,cmu,MED,Y
+Zebra,20,2017 Wick's City Im a Z,Wick's,20,2017 Wick's City Im a Z,City,INNER,ASSONANCE,vowel,MED,Y
+Zebra,20,2017 Wick's City Im a Z,Z,21,I done put my whole damn wrist in the freezer,freezer,END,ASSONANCE,vowel,MED,Y
+Zebra,20,2017 Wick's City Im a Z,City,21,I done put my whole damn wrist in the freezer,wrist,INNER,SLANT,cmu,MED,Y
+Zebra,20,2017 Wick's City Im a Z,Wick's,21,I done put my whole damn wrist in the freezer,wrist,INNER,ASSONANCE,vowel,MED,Y
+Zebra,20,2017 Wick's City Im a Z,Z,22,"I just wanna fuck on Valentines, then you can keep her",keep,END,ASSONANCE,vowel,MED,Y
+Zebra,20,2017 Wick's City Im a Z,Z,23,"Ten toes down, Im on the ground with the people",people,END,ASSONANCE,vowel,MED,Y
+Zebra,20,2017 Wick's City Im a Z,Z,24,"Dope game fine, but the rap game sweeter",sweeter,END,ASSONANCE,vowel,MED,Y
+Zebra,21,I done put my whole damn wrist in the freezer,freezer,22,"I just wanna fuck on Valentines, then you can keep her",keep,END,SLANT,cmu,MED,Y
+Zebra,21,I done put my whole damn wrist in the freezer,damn,22,"I just wanna fuck on Valentines, then you can keep her",can,INNER,SLANT,cmu,MED,Y
+Zebra,21,I done put my whole damn wrist in the freezer,done,22,"I just wanna fuck on Valentines, then you can keep her",fuck,INNER,SLANT,cmu,MED,Y
+Zebra,21,I done put my whole damn wrist in the freezer,freezer,23,"Ten toes down, Im on the ground with the people",people,END,ASSONANCE,vowel,MED,Y
+Zebra,21,I done put my whole damn wrist in the freezer,whole,23,"Ten toes down, Im on the ground with the people",toes,INNER,SLANT,cmu,MED,Y
+Zebra,21,I done put my whole damn wrist in the freezer,freezer,24,"Dope game fine, but the rap game sweeter",sweeter,END,SLANT,cmu,MED,Y
+Zebra,22,"I just wanna fuck on Valentines, then you can keep her",keep,23,"Ten toes down, Im on the ground with the people",people,END,SLANT,cmu,MED,Y
+Zebra,22,"I just wanna fuck on Valentines, then you can keep her",keep,24,"Dope game fine, but the rap game sweeter",sweeter,END,SLANT,cmu,MED,Y
+Zebra,22,"I just wanna fuck on Valentines, then you can keep her",can,24,"Dope game fine, but the rap game sweeter",rap,INNER,SLANT,cmu,MED,Y
+Zebra,22,"I just wanna fuck on Valentines, then you can keep her",Valentines,24,"Dope game fine, but the rap game sweeter",fine,INNER,SLANT,cmu,MED,Y
+Zebra,23,"Ten toes down, Im on the ground with the people",down,23,"Ten toes down, Im on the ground with the people",ground,INNER,SLANT,cmu,MED,Y
+Zebra,23,"Ten toes down, Im on the ground with the people",people,24,"Dope game fine, but the rap game sweeter",sweeter,END,ASSONANCE,vowel,MED,Y
+Zebra,23,"Ten toes down, Im on the ground with the people",toes,24,"Dope game fine, but the rap game sweeter",Dope,INNER,SLANT,cmu,MED,Y
+Zebra,24,"Dope game fine, but the rap game sweeter",game,24,"Dope game fine, but the rap game sweeter",game,INNER,REPEAT,spelling,HIGH,N
+Zebra,24,"Dope game fine, but the rap game sweeter",sweeter,28,Imma be straight baby lyin on me,lyin,END,ASSONANCE,vowel,MED,Y
+Zebra,25,"Youngest nigga in this bitch, and I'm the richest",bitch,25,"Youngest nigga in this bitch, and I'm the richest",richest,INNER,ASSONANCE,vowel,MED,Y
+Zebra,25,"Youngest nigga in this bitch, and I'm the richest",Youngest,25,"Youngest nigga in this bitch, and I'm the richest",richest,INNER,SLANT,spelling,LOW,Y
+Zebra,25,"Youngest nigga in this bitch, and I'm the richest",richest,26,"26 13, 6 big business",business,END,ASSONANCE,vowel,MED,Y
+Zebra,25,"Youngest nigga in this bitch, and I'm the richest",bitch,26,"26 13, 6 big business",big,INNER,SLANT,cmu,MED,Y
+Zebra,25,"Youngest nigga in this bitch, and I'm the richest",bitch,26,"26 13, 6 big business",business,INNER,ASSONANCE,vowel,MED,Y
+Zebra,25,"Youngest nigga in this bitch, and I'm the richest",nigga,26,"26 13, 6 big business",big,INNER,SLANT,spelling,LOW,Y
+Zebra,25,"Youngest nigga in this bitch, and I'm the richest",richest,26,"26 13, 6 big business",big,INNER,ASSONANCE,vowel,MED,Y
+Zebra,25,"Youngest nigga in this bitch, and I'm the richest",nigga,27,"Niggas be hating, be lying on me",Niggas,INNER,SLANT,spelling,LOW,Y
+Zebra,26,"26 13, 6 big business",big,26,"26 13, 6 big business",business,INNER,ASSONANCE,vowel,MED,Y
+Zebra,27,"Niggas be hating, be lying on me",hating,28,Imma be straight baby lyin on me,baby,INNER,ASSONANCE,vowel,MED,Y
+Zebra,27,"Niggas be hating, be lying on me",hating,28,Imma be straight baby lyin on me,straight,INNER,SLANT,cmu,MED,Y
+Zebra,27,"Niggas be hating, be lying on me",Niggas,28,Imma be straight baby lyin on me,Imma,INNER,ASSONANCE,vowel,LOW,N
+Zebra,27,"Niggas be hating, be lying on me",hating,29,"46 months, then Trump gave me pardon",gave,INNER,ASSONANCE,vowel,MED,Y
+Zebra,28,Imma be straight baby lyin on me,straight,28,Imma be straight baby lyin on me,baby,INNER,SLANT,cmu,MED,Y
+Zebra,28,Imma be straight baby lyin on me,baby,29,"46 months, then Trump gave me pardon",gave,INNER,SLANT,cmu,MED,Y
+Zebra,28,Imma be straight baby lyin on me,straight,29,"46 months, then Trump gave me pardon",gave,INNER,SLANT,cmu,MED,Y
+Zebra,29,"46 months, then Trump gave me pardon",months,29,"46 months, then Trump gave me pardon",Trump,INNER,ASSONANCE,vowel,MED,Y
+Zebra,29,"46 months, then Trump gave me pardon",pardon,30,"I don't wanna talk about murders, I'm sorry",sorry,END,ASSONANCE,vowel,MED,Y
+Zebra,29,"46 months, then Trump gave me pardon",pardon,30,"I don't wanna talk about murders, I'm sorry",wanna,INNER,ASSONANCE,vowel,MED,Y
+Zebra,29,"46 months, then Trump gave me pardon",pardon,31,I've been telling niggas I ain't nothing but an artist,artist,END,ASSONANCE,vowel,MED,Y
+Zebra,29,"46 months, then Trump gave me pardon",gave,31,I've been telling niggas I ain't nothing but an artist,ain't,INNER,ASSONANCE,vowel,MED,Y
+Zebra,29,"46 months, then Trump gave me pardon",months,31,I've been telling niggas I ain't nothing but an artist,nothing,INNER,ASSONANCE,vowel,MED,Y
+Zebra,29,"46 months, then Trump gave me pardon",Trump,31,I've been telling niggas I ain't nothing but an artist,nothing,INNER,ASSONANCE,vowel,MED,Y
+Zebra,29,"46 months, then Trump gave me pardon",pardon,32,"Either way, niggas getting stepped on regardless",regardless,END,ASSONANCE,vowel,MED,Y
+Zebra,30,"I don't wanna talk about murders, I'm sorry",wanna,30,"I don't wanna talk about murders, I'm sorry",sorry,INNER,SLANT,cmu,MED,Y
+Zebra,30,"I don't wanna talk about murders, I'm sorry",sorry,31,I've been telling niggas I ain't nothing but an artist,artist,END,ASSONANCE,vowel,MED,Y
+Zebra,30,"I don't wanna talk about murders, I'm sorry",wanna,31,I've been telling niggas I ain't nothing but an artist,artist,INNER,ASSONANCE,vowel,MED,Y
+Zebra,30,"I don't wanna talk about murders, I'm sorry",sorry,32,"Either way, niggas getting stepped on regardless",regardless,END,ASSONANCE,vowel,MED,Y
+Zebra,30,"I don't wanna talk about murders, I'm sorry",wanna,32,"Either way, niggas getting stepped on regardless",regardless,INNER,ASSONANCE,vowel,MED,Y
+Zebra,31,I've been telling niggas I ain't nothing but an artist,artist,32,"Either way, niggas getting stepped on regardless",regardless,END,ASSONANCE,vowel,MED,Y
+Zebra,31,I've been telling niggas I ain't nothing but an artist,ain't,32,"Either way, niggas getting stepped on regardless",way,INNER,ASSONANCE,vowel,MED,Y
+Zebra,31,I've been telling niggas I ain't nothing but an artist,niggas,32,"Either way, niggas getting stepped on regardless",niggas,INNER,REPEAT,spelling,HIGH,N
+Zebra,31,I've been telling niggas I ain't nothing but an artist,telling,32,"Either way, niggas getting stepped on regardless",getting,INNER,SLANT,cmu,MED,Y
+Zebra,31,I've been telling niggas I ain't nothing but an artist,telling,32,"Either way, niggas getting stepped on regardless",stepped,INNER,ASSONANCE,vowel,MED,Y
+Zebra,31,I've been telling niggas I ain't nothing but an artist,ain't,33,"Either way, Imma keep doubling funds",way,INNER,ASSONANCE,vowel,MED,Y
+Zebra,31,I've been telling niggas I ain't nothing but an artist,niggas,33,"Either way, Imma keep doubling funds",Imma,INNER,ASSONANCE,vowel,LOW,N
+Zebra,31,I've been telling niggas I ain't nothing but an artist,nothing,33,"Either way, Imma keep doubling funds",doubling,INNER,ASSONANCE,vowel,MED,Y
+Zebra,31,I've been telling niggas I ain't nothing but an artist,nothing,33,"Either way, Imma keep doubling funds",funds,INNER,ASSONANCE,vowel,MED,Y
+Zebra,31,I've been telling niggas I ain't nothing but an artist,telling,33,"Either way, Imma keep doubling funds",doubling,INNER,PERFECT,spelling,MED,Y
+Zebra,32,"Either way, niggas getting stepped on regardless",getting,32,"Either way, niggas getting stepped on regardless",stepped,INNER,ASSONANCE,vowel,MED,Y
+Zebra,32,"Either way, niggas getting stepped on regardless",Either,33,"Either way, Imma keep doubling funds",Either,INNER,REPEAT,spelling,HIGH,N
+Zebra,32,"Either way, niggas getting stepped on regardless",Either,33,"Either way, Imma keep doubling funds",keep,INNER,SLANT,cmu,MED,Y
+Zebra,32,"Either way, niggas getting stepped on regardless",niggas,33,"Either way, Imma keep doubling funds",Imma,INNER,ASSONANCE,vowel,LOW,N
+Zebra,32,"Either way, niggas getting stepped on regardless",way,33,"Either way, Imma keep doubling funds",way,INNER,REPEAT,spelling,HIGH,N
+Zebra,32,"Either way, niggas getting stepped on regardless",getting,34,"Nigga when I up this bitch, you better not run",better,INNER,SLANT,cmu,MED,Y
+Zebra,32,"Either way, niggas getting stepped on regardless",getting,34,"Nigga when I up this bitch, you better not run",when,INNER,ASSONANCE,vowel,MED,Y
+Zebra,32,"Either way, niggas getting stepped on regardless",niggas,34,"Nigga when I up this bitch, you better not run",Nigga,INNER,SLANT,spelling,LOW,Y
+Zebra,32,"Either way, niggas getting stepped on regardless",regardless,34,"Nigga when I up this bitch, you better not run",not,INNER,ASSONANCE,vowel,MED,Y
+Zebra,32,"Either way, niggas getting stepped on regardless",stepped,34,"Nigga when I up this bitch, you better not run",better,INNER,SLANT,cmu,MED,Y
+Zebra,32,"Either way, niggas getting stepped on regardless",stepped,34,"Nigga when I up this bitch, you better not run",when,INNER,ASSONANCE,vowel,MED,Y
+Zebra,33,"Either way, Imma keep doubling funds",doubling,33,"Either way, Imma keep doubling funds",funds,INNER,ASSONANCE,vowel,MED,Y
+Zebra,33,"Either way, Imma keep doubling funds",Either,33,"Either way, Imma keep doubling funds",keep,INNER,SLANT,cmu,MED,Y
+Zebra,33,"Either way, Imma keep doubling funds",funds,34,"Nigga when I up this bitch, you better not run",run,END,ASSONANCE,vowel,MED,Y
+Zebra,33,"Either way, Imma keep doubling funds",doubling,34,"Nigga when I up this bitch, you better not run",run,INNER,ASSONANCE,vowel,MED,Y
+Zebra,33,"Either way, Imma keep doubling funds",Imma,34,"Nigga when I up this bitch, you better not run",Nigga,INNER,ASSONANCE,vowel,LOW,N
+Zebra,33,"Either way, Imma keep doubling funds",Either,35,"You can't even lie, you can't deny my swag",even,INNER,ASSONANCE,vowel,MED,Y
+Zebra,33,"Either way, Imma keep doubling funds",keep,35,"You can't even lie, you can't deny my swag",even,INNER,ASSONANCE,vowel,MED,Y
+Zebra,34,"Nigga when I up this bitch, you better not run",when,34,"Nigga when I up this bitch, you better not run",better,INNER,SLANT,cmu,MED,Y
+Zebra,34,"Nigga when I up this bitch, you better not run",better,36,"Niggas get behind me on the I, Imma blast",get,INNER,SLANT,cmu,MED,Y
+Zebra,34,"Nigga when I up this bitch, you better not run",Nigga,36,"Niggas get behind me on the I, Imma blast",Imma,INNER,ASSONANCE,vowel,LOW,N
+Zebra,34,"Nigga when I up this bitch, you better not run",Nigga,36,"Niggas get behind me on the I, Imma blast",Niggas,INNER,SLANT,spelling,LOW,Y
+Zebra,34,"Nigga when I up this bitch, you better not run",when,36,"Niggas get behind me on the I, Imma blast",get,INNER,SLANT,cmu,MED,Y
+Zebra,35,"You can't even lie, you can't deny my swag",can't,35,"You can't even lie, you can't deny my swag",can't,INNER,REPEAT,spelling,HIGH,N
+Zebra,35,"You can't even lie, you can't deny my swag",can't,35,"You can't even lie, you can't deny my swag",swag,INNER,ASSONANCE,vowel,LOW,N
+Zebra,35,"You can't even lie, you can't deny my swag",lie,35,"You can't even lie, you can't deny my swag",deny,INNER,PERFECT,cmu,HIGH,Y
+Zebra,35,"You can't even lie, you can't deny my swag",swag,36,"Niggas get behind me on the I, Imma blast",blast,END,ASSONANCE,vowel,LOW,N
+Zebra,35,"You can't even lie, you can't deny my swag",can't,36,"Niggas get behind me on the I, Imma blast",blast,INNER,SLANT,cmu,MED,Y
+Zebra,35,"You can't even lie, you can't deny my swag",deny,36,"Niggas get behind me on the I, Imma blast",behind,INNER,ASSONANCE,vowel,MED,Y
+Zebra,35,"You can't even lie, you can't deny my swag",lie,36,"Niggas get behind me on the I, Imma blast",behind,INNER,ASSONANCE,vowel,MED,Y
+Zebra,35,"You can't even lie, you can't deny my swag",can't,37,"Catch my own bodies, I don't ever need dude",Catch,INNER,ASSONANCE,vowel,MED,Y
+Zebra,35,"You can't even lie, you can't deny my swag",even,37,"Catch my own bodies, I don't ever need dude",need,INNER,ASSONANCE,vowel,MED,Y
+Zebra,35,"You can't even lie, you can't deny my swag",swag,37,"Catch my own bodies, I don't ever need dude",Catch,INNER,SLANT,spelling,LOW,Y
+Zebra,36,"Niggas get behind me on the I, Imma blast",Niggas,36,"Niggas get behind me on the I, Imma blast",Imma,INNER,ASSONANCE,vowel,LOW,N
+Zebra,36,"Niggas get behind me on the I, Imma blast",blast,37,"Catch my own bodies, I don't ever need dude",Catch,INNER,ASSONANCE,vowel,MED,Y
+Zebra,36,"Niggas get behind me on the I, Imma blast",get,37,"Catch my own bodies, I don't ever need dude",ever,INNER,SLANT,cmu,MED,Y
+Zebra,36,"Niggas get behind me on the I, Imma blast",behind,38,"Hundred times told you, I'm a sniper, not a shooter",sniper,INNER,ASSONANCE,vowel,MED,Y
+Zebra,36,"Niggas get behind me on the I, Imma blast",behind,38,"Hundred times told you, I'm a sniper, not a shooter",times,INNER,ASSONANCE,vowel,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",own,37,"Catch my own bodies, I don't ever need dude",don't,INNER,SLANT,cmu,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",dude,38,"Hundred times told you, I'm a sniper, not a shooter",shooter,END,SLANT,cmu,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",bodies,38,"Hundred times told you, I'm a sniper, not a shooter",not,INNER,ASSONANCE,vowel,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",don't,38,"Hundred times told you, I'm a sniper, not a shooter",told,INNER,ASSONANCE,vowel,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",own,38,"Hundred times told you, I'm a sniper, not a shooter",told,INNER,ASSONANCE,vowel,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",Catch,39,Go and ask Franck how I bust down a Muller,ask,INNER,ASSONANCE,vowel,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",Catch,39,Go and ask Franck how I bust down a Muller,Franck,INNER,ASSONANCE,vowel,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",don't,39,Go and ask Franck how I bust down a Muller,Go,INNER,ASSONANCE,vowel,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",own,39,Go and ask Franck how I bust down a Muller,down,INNER,SLANT,spelling,LOW,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",own,39,Go and ask Franck how I bust down a Muller,Go,INNER,ASSONANCE,vowel,MED,Y
+Zebra,37,"Catch my own bodies, I don't ever need dude",dude,40,I got a lot of rank and I know you heard the rumors,rumors,END,ASSONANCE,vowel,MED,Y
+Zebra,38,"Hundred times told you, I'm a sniper, not a shooter",times,38,"Hundred times told you, I'm a sniper, not a shooter",sniper,INNER,ASSONANCE,vowel,MED,Y
+Zebra,38,"Hundred times told you, I'm a sniper, not a shooter",Hundred,39,Go and ask Franck how I bust down a Muller,bust,INNER,ASSONANCE,vowel,MED,Y
+Zebra,38,"Hundred times told you, I'm a sniper, not a shooter",Hundred,39,Go and ask Franck how I bust down a Muller,Muller,INNER,ASSONANCE,vowel,MED,Y
+Zebra,38,"Hundred times told you, I'm a sniper, not a shooter",told,39,Go and ask Franck how I bust down a Muller,Go,INNER,ASSONANCE,vowel,MED,Y
+Zebra,38,"Hundred times told you, I'm a sniper, not a shooter",shooter,40,I got a lot of rank and I know you heard the rumors,rumors,END,ASSONANCE,vowel,MED,Y
+Zebra,38,"Hundred times told you, I'm a sniper, not a shooter",not,40,I got a lot of rank and I know you heard the rumors,got,INNER,PERFECT,cmu,HIGH,Y
+Zebra,38,"Hundred times told you, I'm a sniper, not a shooter",not,40,I got a lot of rank and I know you heard the rumors,lot,INNER,PERFECT,cmu,HIGH,Y
+Zebra,38,"Hundred times told you, I'm a sniper, not a shooter",told,40,I got a lot of rank and I know you heard the rumors,know,INNER,ASSONANCE,vowel,MED,Y
+Zebra,39,Go and ask Franck how I bust down a Muller,ask,39,Go and ask Franck how I bust down a Muller,Franck,INNER,SLANT,cmu,MED,Y
+Zebra,39,Go and ask Franck how I bust down a Muller,bust,39,Go and ask Franck how I bust down a Muller,Muller,INNER,ASSONANCE,vowel,MED,Y
+Zebra,39,Go and ask Franck how I bust down a Muller,how,39,Go and ask Franck how I bust down a Muller,down,INNER,ASSONANCE,vowel,MED,Y
+Zebra,39,Go and ask Franck how I bust down a Muller,ask,40,I got a lot of rank and I know you heard the rumors,rank,INNER,SLANT,cmu,MED,Y
+Zebra,39,Go and ask Franck how I bust down a Muller,Franck,40,I got a lot of rank and I know you heard the rumors,rank,INNER,PERFECT,cmu,HIGH,Y
+Zebra,39,Go and ask Franck how I bust down a Muller,Go,40,I got a lot of rank and I know you heard the rumors,know,INNER,PERFECT,cmu,HIGH,Y
+Zebra,40,I got a lot of rank and I know you heard the rumors,got,40,I got a lot of rank and I know you heard the rumors,lot,INNER,PERFECT,cmu,HIGH,Y

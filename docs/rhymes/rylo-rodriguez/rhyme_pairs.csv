@@ -1,0 +1,952 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Lie Bout It,2,"Why would you lie about it, lie about it?",about,2,"Why would you lie about it, lie about it?",about,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,2,"Why would you lie about it, lie about it?",lie,2,"Why would you lie about it, lie about it?",lie,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,2,"Why would you lie about it, lie about it?",Why,2,"Why would you lie about it, lie about it?",lie,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,2,"Why would you lie about it, lie about it?",would,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",put,INNER,SLANT,cmu,MED,Y
+Lie Bout It,2,"Why would you lie about it, lie about it?",would,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",put,INNER,SLANT,cmu,MED,Y
+Lie Bout It,2,"Why would you lie about it, lie about it?",about,5,"Gotta go get it, why would you cry about it, cry about it?",about,END,REPEAT,spelling,HIGH,N
+Lie Bout It,2,"Why would you lie about it, lie about it?",about,6,"You 'posed to die about it, die about it",about,END,REPEAT,spelling,HIGH,N
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",hit,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",lick,INNER,SLANT,cmu,MED,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",hit,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",stick,INNER,SLANT,cmu,MED,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",lick,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",stick,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",stick,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",dick,END,PERFECT,cmu,HIGH,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",hit,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",'til,INNER,SLANT,cmu,MED,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",hit,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",dick,INNER,SLANT,cmu,MED,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",hit,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",shit,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",lick,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",'til,INNER,SLANT,cmu,MED,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",lick,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",dick,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",lick,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",shit,INNER,SLANT,cmu,MED,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",put,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",put,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",stick,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",'til,INNER,SLANT,cmu,MED,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",stick,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",shit,INNER,SLANT,cmu,MED,Y
+Lie Bout It,3,"I'm in a stoley, I hit a lick in it, I put the stick in it",put,5,"Gotta go get it, why would you cry about it, cry about it?",would,INNER,SLANT,cmu,MED,Y
+Lie Bout It,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",'til,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",dick,INNER,SLANT,cmu,MED,Y
+Lie Bout It,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",shit,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",'til,INNER,SLANT,cmu,MED,Y
+Lie Bout It,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",shit,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",dick,INNER,SLANT,cmu,MED,Y
+Lie Bout It,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",bought,5,"Gotta go get it, why would you cry about it, cry about it?",Gotta,INNER,SLANT,cmu,MED,Y
+Lie Bout It,4,"I bought a 40, that shit was a virgin 'til I put a dick in it",put,5,"Gotta go get it, why would you cry about it, cry about it?",would,INNER,SLANT,cmu,MED,Y
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",about,5,"Gotta go get it, why would you cry about it, cry about it?",about,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",cry,5,"Gotta go get it, why would you cry about it, cry about it?",cry,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",why,5,"Gotta go get it, why would you cry about it, cry about it?",cry,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",about,6,"You 'posed to die about it, die about it",about,END,REPEAT,spelling,HIGH,N
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",about,6,"You 'posed to die about it, die about it",about,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",cry,6,"You 'posed to die about it, die about it",die,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",go,6,"You 'posed to die about it, die about it",'posed,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",why,6,"You 'posed to die about it, die about it",die,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",cry,7,Lil' mama body like a goddess,like,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",Gotta,7,Lil' mama body like a goddess,body,INNER,SLANT,cmu,MED,Y
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",Gotta,7,Lil' mama body like a goddess,goddess,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",Gotta,7,Lil' mama body like a goddess,mama,INNER,SLANT,cmu,MED,Y
+Lie Bout It,5,"Gotta go get it, why would you cry about it, cry about it?",why,7,Lil' mama body like a goddess,like,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,6,"You 'posed to die about it, die about it",about,6,"You 'posed to die about it, die about it",about,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,6,"You 'posed to die about it, die about it",die,6,"You 'posed to die about it, die about it",die,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,6,"You 'posed to die about it, die about it",die,7,Lil' mama body like a goddess,like,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,6,"You 'posed to die about it, die about it",die,8,Water diamonds drippin' like a faucet,diamonds,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,6,"You 'posed to die about it, die about it",die,8,Water diamonds drippin' like a faucet,like,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,6,"You 'posed to die about it, die about it",about,10,"Why would you cry about it, cry about it?",about,END,REPEAT,spelling,HIGH,N
+Lie Bout It,7,Lil' mama body like a goddess,body,7,Lil' mama body like a goddess,goddess,INNER,SLANT,cmu,MED,Y
+Lie Bout It,7,Lil' mama body like a goddess,mama,7,Lil' mama body like a goddess,body,INNER,SLANT,cmu,MED,Y
+Lie Bout It,7,Lil' mama body like a goddess,mama,7,Lil' mama body like a goddess,goddess,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,7,Lil' mama body like a goddess,like,8,Water diamonds drippin' like a faucet,diamonds,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,7,Lil' mama body like a goddess,like,8,Water diamonds drippin' like a faucet,like,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,7,Lil' mama body like a goddess,Lil,8,Water diamonds drippin' like a faucet,drippin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,7,Lil' mama body like a goddess,goddess,9,"Ain't Dr. Dre, but I'm sellin' chronic",chronic,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,7,Lil' mama body like a goddess,body,9,"Ain't Dr. Dre, but I'm sellin' chronic",chronic,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,7,Lil' mama body like a goddess,like,9,"Ain't Dr. Dre, but I'm sellin' chronic",Dr,INNER,SLANT,cmu,MED,Y
+Lie Bout It,7,Lil' mama body like a goddess,mama,9,"Ain't Dr. Dre, but I'm sellin' chronic",chronic,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,8,Water diamonds drippin' like a faucet,diamonds,8,Water diamonds drippin' like a faucet,like,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,8,Water diamonds drippin' like a faucet,Water,8,Water diamonds drippin' like a faucet,faucet,INNER,SLANT,cmu,MED,Y
+Lie Bout It,8,Water diamonds drippin' like a faucet,diamonds,9,"Ain't Dr. Dre, but I'm sellin' chronic",Dr,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,8,Water diamonds drippin' like a faucet,like,9,"Ain't Dr. Dre, but I'm sellin' chronic",Dr,INNER,SLANT,cmu,MED,Y
+Lie Bout It,8,Water diamonds drippin' like a faucet,diamonds,10,"Why would you cry about it, cry about it?",cry,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,8,Water diamonds drippin' like a faucet,diamonds,10,"Why would you cry about it, cry about it?",Why,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,8,Water diamonds drippin' like a faucet,like,10,"Why would you cry about it, cry about it?",cry,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,8,Water diamonds drippin' like a faucet,like,10,"Why would you cry about it, cry about it?",Why,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,9,"Ain't Dr. Dre, but I'm sellin' chronic",Dr,10,"Why would you cry about it, cry about it?",cry,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,9,"Ain't Dr. Dre, but I'm sellin' chronic",Dr,10,"Why would you cry about it, cry about it?",Why,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,9,"Ain't Dr. Dre, but I'm sellin' chronic",Dr,11,You 'posed to load up and ride 'bout it,ride,INNER,SLANT,cmu,MED,Y
+Lie Bout It,10,"Why would you cry about it, cry about it?",about,10,"Why would you cry about it, cry about it?",about,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,10,"Why would you cry about it, cry about it?",cry,10,"Why would you cry about it, cry about it?",cry,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,10,"Why would you cry about it, cry about it?",Why,10,"Why would you cry about it, cry about it?",cry,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,10,"Why would you cry about it, cry about it?",about,11,You 'posed to load up and ride 'bout it,'bout,END,PERFECT,cmu,HIGH,Y
+Lie Bout It,10,"Why would you cry about it, cry about it?",about,11,You 'posed to load up and ride 'bout it,'bout,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,10,"Why would you cry about it, cry about it?",cry,11,You 'posed to load up and ride 'bout it,ride,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,10,"Why would you cry about it, cry about it?",Why,11,You 'posed to load up and ride 'bout it,ride,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,10,"Why would you cry about it, cry about it?",about,12,Broad day homicide 'bout it,'bout,END,PERFECT,cmu,HIGH,Y
+Lie Bout It,10,"Why would you cry about it, cry about it?",about,12,Broad day homicide 'bout it,'bout,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,10,"Why would you cry about it, cry about it?",cry,12,Broad day homicide 'bout it,homicide,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,10,"Why would you cry about it, cry about it?",Why,12,Broad day homicide 'bout it,homicide,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,11,You 'posed to load up and ride 'bout it,'posed,11,You 'posed to load up and ride 'bout it,load,INNER,SLANT,cmu,MED,Y
+Lie Bout It,11,You 'posed to load up and ride 'bout it,'bout,12,Broad day homicide 'bout it,'bout,END,REPEAT,spelling,HIGH,N
+Lie Bout It,11,You 'posed to load up and ride 'bout it,load,12,Broad day homicide 'bout it,Broad,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,11,You 'posed to load up and ride 'bout it,ride,12,Broad day homicide 'bout it,homicide,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,11,You 'posed to load up and ride 'bout it,'bout,13,You can't get in the car without your glizzy,without,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,12,Broad day homicide 'bout it,'bout,13,You can't get in the car without your glizzy,without,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,12,Broad day homicide 'bout it,day,14,"Stay with my , they'll make you dizzy",make,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,12,Broad day homicide 'bout it,day,14,"Stay with my , they'll make you dizzy",Stay,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,12,Broad day homicide 'bout it,day,14,"Stay with my , they'll make you dizzy",they'll,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,13,You can't get in the car without your glizzy,glizzy,14,"Stay with my , they'll make you dizzy",dizzy,END,SLANT,spelling,LOW,Y
+Lie Bout It,13,You can't get in the car without your glizzy,get,15,"Don't need a handout, I'ma go and get it",get,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,13,You can't get in the car without your glizzy,without,15,"Don't need a handout, I'ma go and get it",handout,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,14,"Stay with my , they'll make you dizzy",Stay,14,"Stay with my , they'll make you dizzy",make,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,14,"Stay with my , they'll make you dizzy",Stay,14,"Stay with my , they'll make you dizzy",they'll,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,14,"Stay with my , they'll make you dizzy",they'll,14,"Stay with my , they'll make you dizzy",make,INNER,SLANT,cmu,MED,Y
+Lie Bout It,14,"Stay with my , they'll make you dizzy",dizzy,15,"Don't need a handout, I'ma go and get it",I'ma,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,15,"Don't need a handout, I'ma go and get it",Don't,15,"Don't need a handout, I'ma go and get it",go,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,15,"Don't need a handout, I'ma go and get it",need,16,I keep a Glock like I was born with it,keep,INNER,SLANT,cmu,MED,Y
+Lie Bout It,15,"Don't need a handout, I'ma go and get it",Don't,17,"Go get that money, I wasn't born with it",Go,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,15,"Don't need a handout, I'ma go and get it",get,17,"Go get that money, I wasn't born with it",get,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,15,"Don't need a handout, I'ma go and get it",go,17,"Go get that money, I wasn't born with it",Go,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,16,I keep a Glock like I was born with it,born,17,"Go get that money, I wasn't born with it",born,END,REPEAT,spelling,HIGH,N
+Lie Bout It,16,I keep a Glock like I was born with it,Glock,17,"Go get that money, I wasn't born with it",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,16,I keep a Glock like I was born with it,born,18,"Come from the projects, I was born in it",born,END,REPEAT,spelling,HIGH,N
+Lie Bout It,16,I keep a Glock like I was born with it,Glock,18,"Come from the projects, I was born in it",projects,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,17,"Go get that money, I wasn't born with it",born,18,"Come from the projects, I was born in it",born,END,REPEAT,spelling,HIGH,N
+Lie Bout It,17,"Go get that money, I wasn't born with it",money,18,"Come from the projects, I was born in it",Come,INNER,SLANT,cmu,MED,Y
+Lie Bout It,17,"Go get that money, I wasn't born with it",wasn't,18,"Come from the projects, I was born in it",projects,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,17,"Go get that money, I wasn't born with it",born,19,Knew I was losin' when I saw 'em winnin',saw,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,17,"Go get that money, I wasn't born with it",get,19,Knew I was losin' when I saw 'em winnin',when,INNER,SLANT,cmu,MED,Y
+Lie Bout It,18,"Come from the projects, I was born in it",born,19,Knew I was losin' when I saw 'em winnin',saw,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,18,"Come from the projects, I was born in it",Come,19,Knew I was losin' when I saw 'em winnin','em,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,18,"Come from the projects, I was born in it",born,20,"Red bottoms, no more tennis",more,INNER,SLANT,cmu,MED,Y
+Lie Bout It,18,"Come from the projects, I was born in it",projects,20,"Red bottoms, no more tennis",bottoms,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,19,Knew I was losin' when I saw 'em winnin',Knew,19,Knew I was losin' when I saw 'em winnin',losin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,19,Knew I was losin' when I saw 'em winnin',saw,20,"Red bottoms, no more tennis",more,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,19,Knew I was losin' when I saw 'em winnin',when,20,"Red bottoms, no more tennis",Red,INNER,SLANT,cmu,MED,Y
+Lie Bout It,19,Knew I was losin' when I saw 'em winnin',when,20,"Red bottoms, no more tennis",tennis,INNER,SLANT,cmu,MED,Y
+Lie Bout It,19,Knew I was losin' when I saw 'em winnin',winnin,21,"Strip club, we throwin' money up",Strip,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,20,"Red bottoms, no more tennis",Red,20,"Red bottoms, no more tennis",tennis,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,20,"Red bottoms, no more tennis",no,21,"Strip club, we throwin' money up",throwin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,20,"Red bottoms, no more tennis",no,22,"Shoeboxes, throwin' money on 'em",throwin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,21,"Strip club, we throwin' money up",club,21,"Strip club, we throwin' money up",money,INNER,SLANT,cmu,MED,Y
+Lie Bout It,21,"Strip club, we throwin' money up",club,22,"Shoeboxes, throwin' money on 'em",money,INNER,SLANT,cmu,MED,Y
+Lie Bout It,21,"Strip club, we throwin' money up",money,22,"Shoeboxes, throwin' money on 'em",money,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,21,"Strip club, we throwin' money up",throwin,22,"Shoeboxes, throwin' money on 'em",throwin,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,21,"Strip club, we throwin' money up",money,24,So I'ma start with like a hundred in it,hundred,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,22,"Shoeboxes, throwin' money on 'em",money,24,So I'ma start with like a hundred in it,hundred,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,22,"Shoeboxes, throwin' money on 'em",'em,25,Told all my niggas you know that I got 'em,'em,END,REPEAT,spelling,HIGH,N
+Lie Bout It,22,"Shoeboxes, throwin' money on 'em",'em,26,"Nigga play with me, you know that I shot 'em",'em,END,REPEAT,spelling,HIGH,N
+Lie Bout It,23,'Member I ain't had nothin' in it,nothin,24,So I'ma start with like a hundred in it,start,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,23,'Member I ain't had nothin' in it,nothin,25,Told all my niggas you know that I got 'em,got,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,24,So I'ma start with like a hundred in it,start,25,Told all my niggas you know that I got 'em,got,INNER,SLANT,cmu,MED,Y
+Lie Bout It,24,So I'ma start with like a hundred in it,start,26,"Nigga play with me, you know that I shot 'em",shot,INNER,SLANT,cmu,MED,Y
+Lie Bout It,25,Told all my niggas you know that I got 'em,Told,25,Told all my niggas you know that I got 'em,know,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,25,Told all my niggas you know that I got 'em,'em,26,"Nigga play with me, you know that I shot 'em",'em,END,REPEAT,spelling,HIGH,N
+Lie Bout It,25,Told all my niggas you know that I got 'em,got,26,"Nigga play with me, you know that I shot 'em",shot,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,25,Told all my niggas you know that I got 'em,know,26,"Nigga play with me, you know that I shot 'em",know,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,25,Told all my niggas you know that I got 'em,niggas,26,"Nigga play with me, you know that I shot 'em",Nigga,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,25,Told all my niggas you know that I got 'em,Told,26,"Nigga play with me, you know that I shot 'em",know,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,25,Told all my niggas you know that I got 'em,'em,27,"You can play gangster, you know that that's not 'em",'em,END,REPEAT,spelling,HIGH,N
+Lie Bout It,25,Told all my niggas you know that I got 'em,got,27,"You can play gangster, you know that that's not 'em",not,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,25,Told all my niggas you know that I got 'em,know,27,"You can play gangster, you know that that's not 'em",know,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,25,Told all my niggas you know that I got 'em,Told,27,"You can play gangster, you know that that's not 'em",know,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,26,"Nigga play with me, you know that I shot 'em",'em,27,"You can play gangster, you know that that's not 'em",'em,END,REPEAT,spelling,HIGH,N
+Lie Bout It,26,"Nigga play with me, you know that I shot 'em",know,27,"You can play gangster, you know that that's not 'em",know,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,26,"Nigga play with me, you know that I shot 'em",play,27,"You can play gangster, you know that that's not 'em",play,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,26,"Nigga play with me, you know that I shot 'em",shot,27,"You can play gangster, you know that that's not 'em",not,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,26,"Nigga play with me, you know that I shot 'em",Nigga,28,"That boy a hitter, ain't shoot at a bottle",hitter,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,26,"Nigga play with me, you know that I shot 'em",play,28,"That boy a hitter, ain't shoot at a bottle",ain't,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,26,"Nigga play with me, you know that I shot 'em",shot,28,"That boy a hitter, ain't shoot at a bottle",bottle,INNER,SLANT,cmu,MED,Y
+Lie Bout It,27,"You can play gangster, you know that that's not 'em",can,27,"You can play gangster, you know that that's not 'em",gangster,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,27,"You can play gangster, you know that that's not 'em",not,28,"That boy a hitter, ain't shoot at a bottle",bottle,INNER,SLANT,cmu,MED,Y
+Lie Bout It,27,"You can play gangster, you know that that's not 'em",play,28,"That boy a hitter, ain't shoot at a bottle",ain't,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,27,"You can play gangster, you know that that's not 'em",not,29,"Chewin' a Perc', I got too many problems",got,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,27,"You can play gangster, you know that that's not 'em",not,29,"Chewin' a Perc', I got too many problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,28,"That boy a hitter, ain't shoot at a bottle",bottle,29,"Chewin' a Perc', I got too many problems",problems,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,28,"That boy a hitter, ain't shoot at a bottle",bottle,29,"Chewin' a Perc', I got too many problems",got,INNER,SLANT,cmu,MED,Y
+Lie Bout It,28,"That boy a hitter, ain't shoot at a bottle",shoot,29,"Chewin' a Perc', I got too many problems",Chewin,INNER,SLANT,cmu,MED,Y
+Lie Bout It,28,"That boy a hitter, ain't shoot at a bottle",bottle,30,She don't wanna hang 'cause it's too many choppers,choppers,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,28,"That boy a hitter, ain't shoot at a bottle",bottle,30,She don't wanna hang 'cause it's too many choppers,wanna,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,28,"That boy a hitter, ain't shoot at a bottle",bottle,31,"These niggas snitchin', it's too many coppers",coppers,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,29,"Chewin' a Perc', I got too many problems",got,29,"Chewin' a Perc', I got too many problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,29,"Chewin' a Perc', I got too many problems",problems,30,She don't wanna hang 'cause it's too many choppers,choppers,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,29,"Chewin' a Perc', I got too many problems",got,30,She don't wanna hang 'cause it's too many choppers,choppers,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,29,"Chewin' a Perc', I got too many problems",got,30,She don't wanna hang 'cause it's too many choppers,wanna,INNER,SLANT,cmu,MED,Y
+Lie Bout It,29,"Chewin' a Perc', I got too many problems",many,30,She don't wanna hang 'cause it's too many choppers,many,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,29,"Chewin' a Perc', I got too many problems",problems,30,She don't wanna hang 'cause it's too many choppers,wanna,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,29,"Chewin' a Perc', I got too many problems",problems,31,"These niggas snitchin', it's too many coppers",coppers,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,29,"Chewin' a Perc', I got too many problems",got,31,"These niggas snitchin', it's too many coppers",coppers,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,29,"Chewin' a Perc', I got too many problems",many,31,"These niggas snitchin', it's too many coppers",many,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,30,She don't wanna hang 'cause it's too many choppers,wanna,30,She don't wanna hang 'cause it's too many choppers,choppers,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,30,She don't wanna hang 'cause it's too many choppers,choppers,31,"These niggas snitchin', it's too many coppers",coppers,END,MULTI,multi,HIGH,Y
+Lie Bout It,30,She don't wanna hang 'cause it's too many choppers,many,31,"These niggas snitchin', it's too many coppers",many,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,30,She don't wanna hang 'cause it's too many choppers,wanna,31,"These niggas snitchin', it's too many coppers",coppers,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,31,"These niggas snitchin', it's too many coppers",snitchin,32,"Trip , we break in your houses",Trip,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,31,"These niggas snitchin', it's too many coppers",coppers,33,"Drove her back, ain't got shit to lose",got,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,31,"These niggas snitchin', it's too many coppers",snitchin,33,"Drove her back, ain't got shit to lose",shit,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,32,"Trip , we break in your houses",break,33,"Drove her back, ain't got shit to lose",ain't,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,32,"Trip , we break in your houses",Trip,33,"Drove her back, ain't got shit to lose",shit,INNER,SLANT,cmu,MED,Y
+Lie Bout It,32,"Trip , we break in your houses",break,34,"My own vouch, ain't got shit to prove",ain't,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,32,"Trip , we break in your houses",houses,34,"My own vouch, ain't got shit to prove",vouch,INNER,SLANT,cmu,MED,Y
+Lie Bout It,32,"Trip , we break in your houses",Trip,34,"My own vouch, ain't got shit to prove",shit,INNER,SLANT,cmu,MED,Y
+Lie Bout It,32,"Trip , we break in your houses",houses,35,"Came from the bottom, they counted us out",counted,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,33,"Drove her back, ain't got shit to lose",lose,34,"My own vouch, ain't got shit to prove",prove,END,SLANT,cmu,MED,Y
+Lie Bout It,33,"Drove her back, ain't got shit to lose",ain't,34,"My own vouch, ain't got shit to prove",ain't,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,33,"Drove her back, ain't got shit to lose",Drove,34,"My own vouch, ain't got shit to prove",own,INNER,SLANT,cmu,MED,Y
+Lie Bout It,33,"Drove her back, ain't got shit to lose",got,34,"My own vouch, ain't got shit to prove",got,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,33,"Drove her back, ain't got shit to lose",shit,34,"My own vouch, ain't got shit to prove",shit,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,33,"Drove her back, ain't got shit to lose",ain't,35,"Came from the bottom, they counted us out",Came,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,33,"Drove her back, ain't got shit to lose",got,35,"Came from the bottom, they counted us out",bottom,INNER,SLANT,cmu,MED,Y
+Lie Bout It,34,"My own vouch, ain't got shit to prove",ain't,35,"Came from the bottom, they counted us out",Came,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,34,"My own vouch, ain't got shit to prove",got,35,"Came from the bottom, they counted us out",bottom,INNER,SLANT,cmu,MED,Y
+Lie Bout It,34,"My own vouch, ain't got shit to prove",vouch,35,"Came from the bottom, they counted us out",counted,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,34,"My own vouch, ain't got shit to prove",prove,36,"Flew out to Denver, we shippin' 'em out",Flew,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,34,"My own vouch, ain't got shit to prove",shit,36,"Flew out to Denver, we shippin' 'em out",shippin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,35,"Came from the bottom, they counted us out",counted,37,"Feel like a tree fell down, so many sticks in the house",house,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,35,"Came from the bottom, they counted us out",counted,37,"Feel like a tree fell down, so many sticks in the house",down,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,36,"Flew out to Denver, we shippin' 'em out",Denver,37,"Feel like a tree fell down, so many sticks in the house",fell,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,36,"Flew out to Denver, we shippin' 'em out",Denver,37,"Feel like a tree fell down, so many sticks in the house",many,INNER,SLANT,cmu,MED,Y
+Lie Bout It,36,"Flew out to Denver, we shippin' 'em out",shippin,37,"Feel like a tree fell down, so many sticks in the house",sticks,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,36,"Flew out to Denver, we shippin' 'em out",Denver,38,"We got a problem, we airin' it out",airin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,37,"Feel like a tree fell down, so many sticks in the house",down,37,"Feel like a tree fell down, so many sticks in the house",house,INNER,SLANT,cmu,MED,Y
+Lie Bout It,37,"Feel like a tree fell down, so many sticks in the house",Feel,37,"Feel like a tree fell down, so many sticks in the house",tree,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,37,"Feel like a tree fell down, so many sticks in the house",fell,37,"Feel like a tree fell down, so many sticks in the house",many,INNER,SLANT,cmu,MED,Y
+Lie Bout It,37,"Feel like a tree fell down, so many sticks in the house",fell,38,"We got a problem, we airin' it out",airin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,37,"Feel like a tree fell down, so many sticks in the house",many,38,"We got a problem, we airin' it out",airin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,37,"Feel like a tree fell down, so many sticks in the house",fell,39,"Yeah, I'm just like fuck it, I'ma get it",get,INNER,SLANT,cmu,MED,Y
+Lie Bout It,37,"Feel like a tree fell down, so many sticks in the house",like,39,"Yeah, I'm just like fuck it, I'ma get it",like,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,37,"Feel like a tree fell down, so many sticks in the house",many,39,"Yeah, I'm just like fuck it, I'ma get it",get,INNER,SLANT,cmu,MED,Y
+Lie Bout It,38,"We got a problem, we airin' it out",got,38,"We got a problem, we airin' it out",problem,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,38,"We got a problem, we airin' it out",airin,39,"Yeah, I'm just like fuck it, I'ma get it",get,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,38,"We got a problem, we airin' it out",got,40,"Lil' mama bad, I'm tryna hit it",mama,INNER,SLANT,cmu,MED,Y
+Lie Bout It,38,"We got a problem, we airin' it out",problem,40,"Lil' mama bad, I'm tryna hit it",mama,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,39,"Yeah, I'm just like fuck it, I'ma get it",I'ma,40,"Lil' mama bad, I'm tryna hit it",hit,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,39,"Yeah, I'm just like fuck it, I'ma get it",I'ma,40,"Lil' mama bad, I'm tryna hit it",Lil,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,39,"Yeah, I'm just like fuck it, I'ma get it",I'ma,41,"Me and my niggas hit a lick, we split it",hit,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,39,"Yeah, I'm just like fuck it, I'ma get it",I'ma,41,"Me and my niggas hit a lick, we split it",lick,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,39,"Yeah, I'm just like fuck it, I'ma get it",I'ma,41,"Me and my niggas hit a lick, we split it",split,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",Lil,40,"Lil' mama bad, I'm tryna hit it",hit,INNER,SLANT,cmu,MED,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",hit,41,"Me and my niggas hit a lick, we split it",split,END,PERFECT,cmu,HIGH,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",hit,41,"Me and my niggas hit a lick, we split it",hit,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",hit,41,"Me and my niggas hit a lick, we split it",lick,INNER,SLANT,cmu,MED,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",Lil,41,"Me and my niggas hit a lick, we split it",hit,INNER,SLANT,cmu,MED,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",Lil,41,"Me and my niggas hit a lick, we split it",lick,INNER,SLANT,cmu,MED,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",Lil,41,"Me and my niggas hit a lick, we split it",split,INNER,SLANT,cmu,MED,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",hit,42,I'm just so grateful that we got acquitted,acquitted,END,SLANT,cmu,MED,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",Lil,42,I'm just so grateful that we got acquitted,acquitted,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",mama,42,I'm just so grateful that we got acquitted,got,INNER,SLANT,cmu,MED,Y
+Lie Bout It,40,"Lil' mama bad, I'm tryna hit it",hit,43,"This is some OG right here, not no midget",midget,END,SLANT,cmu,MED,Y
+Lie Bout It,41,"Me and my niggas hit a lick, we split it",hit,41,"Me and my niggas hit a lick, we split it",lick,INNER,SLANT,cmu,MED,Y
+Lie Bout It,41,"Me and my niggas hit a lick, we split it",hit,41,"Me and my niggas hit a lick, we split it",split,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,41,"Me and my niggas hit a lick, we split it",lick,41,"Me and my niggas hit a lick, we split it",split,INNER,SLANT,cmu,MED,Y
+Lie Bout It,41,"Me and my niggas hit a lick, we split it",split,42,I'm just so grateful that we got acquitted,acquitted,END,SLANT,cmu,MED,Y
+Lie Bout It,41,"Me and my niggas hit a lick, we split it",hit,42,I'm just so grateful that we got acquitted,acquitted,INNER,SLANT,cmu,MED,Y
+Lie Bout It,41,"Me and my niggas hit a lick, we split it",lick,42,I'm just so grateful that we got acquitted,acquitted,INNER,SLANT,cmu,MED,Y
+Lie Bout It,41,"Me and my niggas hit a lick, we split it",split,43,"This is some OG right here, not no midget",midget,END,SLANT,cmu,MED,Y
+Lie Bout It,41,"Me and my niggas hit a lick, we split it",hit,43,"This is some OG right here, not no midget",midget,INNER,SLANT,cmu,MED,Y
+Lie Bout It,41,"Me and my niggas hit a lick, we split it",lick,43,"This is some OG right here, not no midget",midget,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,42,I'm just so grateful that we got acquitted,acquitted,43,"This is some OG right here, not no midget",midget,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,42,I'm just so grateful that we got acquitted,got,43,"This is some OG right here, not no midget",not,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,42,I'm just so grateful that we got acquitted,got,43,"This is some OG right here, not no midget",OG,INNER,SLANT,cmu,MED,Y
+Lie Bout It,42,I'm just so grateful that we got acquitted,acquitted,44,How you a boss and your nigga starvin'?,nigga,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,42,I'm just so grateful that we got acquitted,got,44,How you a boss and your nigga starvin'?,boss,INNER,SLANT,cmu,MED,Y
+Lie Bout It,42,I'm just so grateful that we got acquitted,got,44,How you a boss and your nigga starvin'?,starvin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,43,"This is some OG right here, not no midget",OG,43,"This is some OG right here, not no midget",not,INNER,SLANT,cmu,MED,Y
+Lie Bout It,43,"This is some OG right here, not no midget",not,44,How you a boss and your nigga starvin'?,boss,INNER,SLANT,cmu,MED,Y
+Lie Bout It,43,"This is some OG right here, not no midget",not,44,How you a boss and your nigga starvin'?,starvin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,43,"This is some OG right here, not no midget",OG,44,How you a boss and your nigga starvin'?,boss,INNER,SLANT,cmu,MED,Y
+Lie Bout It,43,"This is some OG right here, not no midget",OG,44,How you a boss and your nigga starvin'?,starvin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,43,"This is some OG right here, not no midget",here,45,I had to go asleep with the carbine,asleep,INNER,SLANT,cmu,MED,Y
+Lie Bout It,43,"This is some OG right here, not no midget",no,45,I had to go asleep with the carbine,go,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,43,"This is some OG right here, not no midget",right,45,I had to go asleep with the carbine,carbine,INNER,SLANT,cmu,MED,Y
+Lie Bout It,44,How you a boss and your nigga starvin'?,boss,44,How you a boss and your nigga starvin'?,starvin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,44,How you a boss and your nigga starvin'?,starvin,46,"We 'bout that chopper play, not no arguin'",arguin,END,SLANT,cmu,MED,Y
+Lie Bout It,44,How you a boss and your nigga starvin'?,boss,46,"We 'bout that chopper play, not no arguin'",arguin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,44,How you a boss and your nigga starvin'?,boss,46,"We 'bout that chopper play, not no arguin'",chopper,INNER,SLANT,cmu,MED,Y
+Lie Bout It,44,How you a boss and your nigga starvin'?,boss,46,"We 'bout that chopper play, not no arguin'",not,INNER,SLANT,cmu,MED,Y
+Lie Bout It,44,How you a boss and your nigga starvin'?,How,46,"We 'bout that chopper play, not no arguin'",'bout,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,44,How you a boss and your nigga starvin'?,starvin,46,"We 'bout that chopper play, not no arguin'",chopper,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,44,How you a boss and your nigga starvin'?,starvin,46,"We 'bout that chopper play, not no arguin'",not,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,44,How you a boss and your nigga starvin'?,starvin,47,"We 'bout that gunplay, not no talkin'",talkin,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,45,I had to go asleep with the carbine,go,46,"We 'bout that chopper play, not no arguin'",no,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,45,I had to go asleep with the carbine,go,47,"We 'bout that gunplay, not no talkin'",no,INNER,PERFECT,cmu,HIGH,Y
+Lie Bout It,45,I had to go asleep with the carbine,carbine,48,I'm just so thankful to be alive,alive,END,SLANT,cmu,MED,Y
+Lie Bout It,45,I had to go asleep with the carbine,carbine,49,I had to break down a bale to survive,survive,END,SLANT,cmu,MED,Y
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",chopper,46,"We 'bout that chopper play, not no arguin'",arguin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",chopper,46,"We 'bout that chopper play, not no arguin'",not,INNER,SLANT,cmu,MED,Y
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",not,46,"We 'bout that chopper play, not no arguin'",arguin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",arguin,47,"We 'bout that gunplay, not no talkin'",talkin,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",'bout,47,"We 'bout that gunplay, not no talkin'",'bout,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",arguin,47,"We 'bout that gunplay, not no talkin'",not,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",chopper,47,"We 'bout that gunplay, not no talkin'",not,INNER,SLANT,cmu,MED,Y
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",chopper,47,"We 'bout that gunplay, not no talkin'",talkin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",no,47,"We 'bout that gunplay, not no talkin'",no,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",not,47,"We 'bout that gunplay, not no talkin'",not,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",not,47,"We 'bout that gunplay, not no talkin'",talkin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,46,"We 'bout that chopper play, not no arguin'",play,47,"We 'bout that gunplay, not no talkin'",gunplay,INNER,PERFECT,spelling,MED,Y
+Lie Bout It,47,"We 'bout that gunplay, not no talkin'",not,47,"We 'bout that gunplay, not no talkin'",talkin,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,47,"We 'bout that gunplay, not no talkin'",'bout,49,I had to break down a bale to survive,down,INNER,SLANT,cmu,MED,Y
+Lie Bout It,48,I'm just so thankful to be alive,alive,49,I had to break down a bale to survive,survive,END,PERFECT,cmu,HIGH,Y
+Lie Bout It,48,I'm just so thankful to be alive,thankful,49,I had to break down a bale to survive,had,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,48,I'm just so thankful to be alive,alive,50,I was taught to never run and hide,hide,END,SLANT,cmu,MED,Y
+Lie Bout It,48,I'm just so thankful to be alive,alive,51,I was taught to always speak my mind,mind,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,49,I had to break down a bale to survive,break,49,I had to break down a bale to survive,bale,INNER,SLANT,cmu,MED,Y
+Lie Bout It,49,I had to break down a bale to survive,survive,50,I was taught to never run and hide,hide,END,SLANT,cmu,MED,Y
+Lie Bout It,49,I had to break down a bale to survive,survive,51,I was taught to always speak my mind,mind,END,ASSONANCE,vowel,MED,Y
+Lie Bout It,49,I had to break down a bale to survive,bale,51,I was taught to always speak my mind,always,INNER,SLANT,cmu,MED,Y
+Lie Bout It,49,I had to break down a bale to survive,break,51,I was taught to always speak my mind,always,INNER,SLANT,cmu,MED,Y
+Lie Bout It,49,I had to break down a bale to survive,break,51,I was taught to always speak my mind,speak,INNER,SLANT,spelling,LOW,Y
+Lie Bout It,50,I was taught to never run and hide,hide,51,I was taught to always speak my mind,mind,END,SLANT,cmu,MED,Y
+Lie Bout It,50,I was taught to never run and hide,taught,51,I was taught to always speak my mind,taught,INNER,REPEAT,spelling,HIGH,N
+Lie Bout It,50,I was taught to never run and hide,hide,52,Why would you lie about it?,lie,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,50,I was taught to never run and hide,hide,52,Why would you lie about it?,Why,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,51,I was taught to always speak my mind,mind,52,Why would you lie about it?,lie,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,51,I was taught to always speak my mind,mind,52,Why would you lie about it?,Why,INNER,ASSONANCE,vowel,MED,Y
+Lie Bout It,52,Why would you lie about it?,Why,52,Why would you lie about it?,lie,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,1,Keep my pistol next to (next to me),Keep,2,This street shit so deep,deep,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,1,Keep my pistol next to (next to me),Keep,2,This street shit so deep,street,INNER,SLANT,cmu,MED,Y
+Next To Me,1,Keep my pistol next to (next to me),pistol,2,This street shit so deep,shit,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,1,Keep my pistol next to (next to me),Keep,3,Ima tell these folks what's really goin on,these,INNER,SLANT,cmu,MED,Y
+Next To Me,1,Keep my pistol next to (next to me),next,3,Ima tell these folks what's really goin on,tell,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,1,Keep my pistol next to (next to me),pistol,3,Ima tell these folks what's really goin on,really,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,2,This street shit so deep,street,2,This street shit so deep,deep,INNER,SLANT,cmu,MED,Y
+Next To Me,2,This street shit so deep,deep,3,Ima tell these folks what's really goin on,these,INNER,SLANT,cmu,MED,Y
+Next To Me,2,This street shit so deep,shit,3,Ima tell these folks what's really goin on,Ima,INNER,SLANT,spelling,LOW,Y
+Next To Me,2,This street shit so deep,shit,3,Ima tell these folks what's really goin on,really,INNER,SLANT,cmu,MED,Y
+Next To Me,2,This street shit so deep,street,3,Ima tell these folks what's really goin on,these,INNER,SLANT,cmu,MED,Y
+Next To Me,2,This street shit so deep,deep,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",keep,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,2,This street shit so deep,street,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",keep,INNER,SLANT,cmu,MED,Y
+Next To Me,3,Ima tell these folks what's really goin on,Ima,3,Ima tell these folks what's really goin on,really,INNER,SLANT,spelling,LOW,Y
+Next To Me,3,Ima tell these folks what's really goin on,really,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",glizzy,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,3,Ima tell these folks what's really goin on,tell,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",next,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,3,Ima tell these folks what's really goin on,tell,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",wear,INNER,SLANT,cmu,MED,Y
+Next To Me,3,Ima tell these folks what's really goin on,these,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",keep,INNER,SLANT,cmu,MED,Y
+Next To Me,3,Ima tell these folks what's really goin on,folks,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,iPhone,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,3,Ima tell these folks what's really goin on,goin,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,join,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,3,Ima tell these folks what's really goin on,Ima,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,ima,INNER,REPEAT,spelling,HIGH,N
+Next To Me,3,Ima tell these folks what's really goin on,really,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,ima,INNER,SLANT,spelling,LOW,Y
+Next To Me,3,Ima tell these folks what's really goin on,tell,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,em,INNER,SLANT,cmu,MED,Y
+Next To Me,3,Ima tell these folks what's really goin on,what's,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,kukulkan,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",next,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",wear,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",next,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,em,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",wear,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,em,INNER,SLANT,cmu,MED,Y
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",brand,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,man,END,SLANT,cmu,MED,Y
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",brand,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,hand,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",glizzy,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,probably,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",keep,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,keep,INNER,REPEAT,spelling,HIGH,N
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",keep,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,probably,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",like,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,by,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",like,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,right,INNER,SLANT,cmu,MED,Y
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",next,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,get,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,4,"I keep that glizzy next to me, I wear that Glock like it’s a brand",wear,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,get,INNER,SLANT,cmu,MED,Y
+Next To Me,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,hate,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,make,INNER,SLANT,cmu,MED,Y
+Next To Me,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,kukulkan,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,man,END,PERFECT,spelling,MED,Y
+Next To Me,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,em,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,get,INNER,SLANT,cmu,MED,Y
+Next To Me,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,hate,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,straight,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,ima,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,Ima,INNER,REPEAT,spelling,HIGH,N
+Next To Me,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,ima,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,lil,INNER,SLANT,spelling,LOW,Y
+Next To Me,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,make,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,straight,INNER,SLANT,cmu,MED,Y
+Next To Me,5,Turned on my iPhone hate a nigga ima make ‘em join the kukulkan,em,7,Where I'm from I'm probably doubted by somebody,Where,INNER,SLANT,cmu,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,by,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,right,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,hand,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,man,INNER,SLANT,cmu,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,Ima,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,lil,INNER,SLANT,spelling,LOW,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,keep,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,probably,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,lil,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,killed,INNER,SLANT,cmu,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,by,7,Where I'm from I'm probably doubted by somebody,by,INNER,REPEAT,spelling,HIGH,N
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,get,7,Where I'm from I'm probably doubted by somebody,Where,INNER,SLANT,cmu,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,keep,7,Where I'm from I'm probably doubted by somebody,probably,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,probably,7,Where I'm from I'm probably doubted by somebody,probably,INNER,REPEAT,spelling,HIGH,N
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,right,7,Where I'm from I'm probably doubted by somebody,by,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,hand,8,"Turned up in my city way before the rap, they gone have to google me",have,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,hand,8,"Turned up in my city way before the rap, they gone have to google me",rap,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,Ima,8,"Turned up in my city way before the rap, they gone have to google me",city,INNER,SLANT,spelling,LOW,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,killed,8,"Turned up in my city way before the rap, they gone have to google me",city,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,lil,8,"Turned up in my city way before the rap, they gone have to google me",city,INNER,SLANT,cmu,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,man,8,"Turned up in my city way before the rap, they gone have to google me",have,INNER,SLANT,cmu,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,man,8,"Turned up in my city way before the rap, they gone have to google me",rap,INNER,SLANT,cmu,MED,Y
+Next To Me,6,Ima keep it straight up with lil thug he probably get killed by his right hand man,straight,8,"Turned up in my city way before the rap, they gone have to google me",way,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,7,Where I'm from I'm probably doubted by somebody,by,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,time,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,7,Where I'm from I'm probably doubted by somebody,doubted,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,now,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,7,Where I'm from I'm probably doubted by somebody,Where,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,bet,INNER,SLANT,cmu,MED,Y
+Next To Me,7,Where I'm from I'm probably doubted by somebody,Where,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,get,INNER,SLANT,cmu,MED,Y
+Next To Me,8,"Turned up in my city way before the rap, they gone have to google me",before,8,"Turned up in my city way before the rap, they gone have to google me",gone,INNER,SLANT,cmu,MED,Y
+Next To Me,8,"Turned up in my city way before the rap, they gone have to google me",rap,8,"Turned up in my city way before the rap, they gone have to google me",have,INNER,SLANT,cmu,MED,Y
+Next To Me,8,"Turned up in my city way before the rap, they gone have to google me",before,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,all,INNER,SLANT,cmu,MED,Y
+Next To Me,8,"Turned up in my city way before the rap, they gone have to google me",gone,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,all,INNER,SLANT,cmu,MED,Y
+Next To Me,8,"Turned up in my city way before the rap, they gone have to google me",google,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,Shooting,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,8,"Turned up in my city way before the rap, they gone have to google me",have,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,craps,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,8,"Turned up in my city way before the rap, they gone have to google me",rap,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,craps,INNER,SLANT,cmu,MED,Y
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,bet,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,BET,INNER,REPEAT,spelling,HIGH,N
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,get,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,bet,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,Shooting,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,shooting,INNER,REPEAT,spelling,HIGH,N
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,BET,10,Mama go to sleep I was being hungry I stole her EBT,EBT,END,SLANT,spelling,LOW,Y
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,bet,10,Mama go to sleep I was being hungry I stole her EBT,EBT,INNER,SLANT,spelling,LOW,Y
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,get,10,Mama go to sleep I was being hungry I stole her EBT,EBT,INNER,SLANT,spelling,LOW,Y
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,tryna,10,Mama go to sleep I was being hungry I stole her EBT,being,INNER,SLANT,spelling,LOW,Y
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,tryna,10,Mama go to sleep I was being hungry I stole her EBT,sleep,INNER,SLANT,spelling,LOW,Y
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,all,11,How they kill Jamai I could’ve swore he was just (next to me),swore,INNER,SLANT,cmu,MED,Y
+Next To Me,9,Shooting craps all the time I was tryna get a bet now we shooting for BET,now,11,How they kill Jamai I could’ve swore he was just (next to me),How,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,10,Mama go to sleep I was being hungry I stole her EBT,go,10,Mama go to sleep I was being hungry I stole her EBT,stole,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,10,Mama go to sleep I was being hungry I stole her EBT,sleep,10,Mama go to sleep I was being hungry I stole her EBT,being,INNER,SLANT,cmu,MED,Y
+Next To Me,10,Mama go to sleep I was being hungry I stole her EBT,being,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,Thirteen,INNER,SLANT,cmu,MED,Y
+Next To Me,10,Mama go to sleep I was being hungry I stole her EBT,Mama,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,shot,INNER,SLANT,cmu,MED,Y
+Next To Me,10,Mama go to sleep I was being hungry I stole her EBT,Mama,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,wasn't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,10,Mama go to sleep I was being hungry I stole her EBT,sleep,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,Thirteen,INNER,SLANT,cmu,MED,Y
+Next To Me,11,How they kill Jamai I could’ve swore he was just (next to me),Jamai,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,daddy,INNER,SLANT,spelling,LOW,Y
+Next To Me,11,How they kill Jamai I could’ve swore he was just (next to me),could’ve,13,He been on Facebook wolfing for two days so ima put his ass on first 48,Facebook,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,11,How they kill Jamai I could’ve swore he was just (next to me),could’ve,13,He been on Facebook wolfing for two days so ima put his ass on first 48,put,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,11,How they kill Jamai I could’ve swore he was just (next to me),Jamai,13,He been on Facebook wolfing for two days so ima put his ass on first 48,ass,INNER,SLANT,spelling,LOW,Y
+Next To Me,11,How they kill Jamai I could’ve swore he was just (next to me),kill,13,He been on Facebook wolfing for two days so ima put his ass on first 48,ima,INNER,SLANT,spelling,LOW,Y
+Next To Me,11,How they kill Jamai I could’ve swore he was just (next to me),kill,13,He been on Facebook wolfing for two days so ima put his ass on first 48,wolfing,INNER,SLANT,cmu,MED,Y
+Next To Me,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,wasn't,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,shot,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,first,13,He been on Facebook wolfing for two days so ima put his ass on first 48,first,END,REPEAT,spelling,HIGH,N
+Next To Me,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,daddy,13,He been on Facebook wolfing for two days so ima put his ass on first 48,ass,INNER,SLANT,cmu,MED,Y
+Next To Me,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,first,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",disturb,END,ASSONANCE,vowel,MED,Y
+Next To Me,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,shot,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",not,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,Thirteen,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",leave,INNER,SLANT,cmu,MED,Y
+Next To Me,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,wasn't,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",not,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,12,Thirteen wasn't hoopin' with your daddy I shot my first 38,first,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,purge,END,ASSONANCE,vowel,MED,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,Facebook,13,He been on Facebook wolfing for two days so ima put his ass on first 48,put,INNER,SLANT,cmu,MED,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,wolfing,13,He been on Facebook wolfing for two days so ima put his ass on first 48,ima,INNER,SLANT,spelling,LOW,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,first,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",disturb,END,ASSONANCE,vowel,MED,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,Facebook,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",put,INNER,SLANT,cmu,MED,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,ima,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",ima,INNER,REPEAT,spelling,HIGH,N
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,put,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",put,INNER,REPEAT,spelling,HIGH,N
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,wolfing,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",ima,INNER,SLANT,spelling,LOW,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,first,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,purge,END,ASSONANCE,vowel,MED,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,ass,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,nana,INNER,SLANT,cmu,MED,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,days,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,Save,INNER,SLANT,cmu,MED,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,ima,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,give,INNER,SLANT,spelling,LOW,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,ima,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,shit,INNER,SLANT,spelling,LOW,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,wolfing,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,give,INNER,SLANT,cmu,MED,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,wolfing,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,period,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,13,He been on Facebook wolfing for two days so ima put his ass on first 48,wolfing,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,shit,INNER,SLANT,cmu,MED,Y
+Next To Me,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",Hoe,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",alone,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",disturb,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,purge,END,SLANT,cmu,MED,Y
+Next To Me,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",fuck,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,fuck,INNER,REPEAT,spelling,HIGH,N
+Next To Me,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",fuck,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,nothing,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",ima,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,give,INNER,SLANT,spelling,LOW,Y
+Next To Me,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",ima,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,shit,INNER,SLANT,spelling,LOW,Y
+Next To Me,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",leave,16,I put two carrots in my muthafuckin earlobe,earlobe,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,14,"Hoe when I fuck just leave me alone, ima put her on do not disturb",put,16,I put two carrots in my muthafuckin earlobe,put,INNER,REPEAT,spelling,HIGH,N
+Next To Me,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,fuck,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,fuck,INNER,REPEAT,spelling,HIGH,N
+Next To Me,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,fuck,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,nothing,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,nothing,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,fuck,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,period,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,give,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,shit,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,give,INNER,SLANT,cmu,MED,Y
+Next To Me,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,shit,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,period,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,nana,16,I put two carrots in my muthafuckin earlobe,carrots,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,15,Save that shit for nana ion fuck for nothing period give a fuck if I purge,nothing,16,I put two carrots in my muthafuckin earlobe,muthafuckin,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,16,I put two carrots in my muthafuckin earlobe,earlobe,17,I know my niggas gon step even if they got a euro,even,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,16,I put two carrots in my muthafuckin earlobe,muthafuckin,17,I know my niggas gon step even if they got a euro,even,INNER,PERFECT,spelling,MED,Y
+Next To Me,16,I put two carrots in my muthafuckin earlobe,two,17,I know my niggas gon step even if they got a euro,euro,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,16,I put two carrots in my muthafuckin earlobe,carrots,18,My daddy was a sperm donor ain't tryna be like him,daddy,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,17,I know my niggas gon step even if they got a euro,even,18,My daddy was a sperm donor ain't tryna be like him,tryna,INNER,SLANT,spelling,LOW,Y
+Next To Me,17,I know my niggas gon step even if they got a euro,gon,18,My daddy was a sperm donor ain't tryna be like him,donor,INNER,SLANT,spelling,LOW,Y
+Next To Me,17,I know my niggas gon step even if they got a euro,know,18,My daddy was a sperm donor ain't tryna be like him,donor,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,17,I know my niggas gon step even if they got a euro,know,19,Paid for a abortion ion know if that shit made me just like him,know,INNER,REPEAT,spelling,HIGH,N
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,him,19,Paid for a abortion ion know if that shit made me just like him,him,END,REPEAT,spelling,HIGH,N
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,ain't,19,Paid for a abortion ion know if that shit made me just like him,made,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,ain't,19,Paid for a abortion ion know if that shit made me just like him,Paid,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,donor,19,Paid for a abortion ion know if that shit made me just like him,know,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,him,19,Paid for a abortion ion know if that shit made me just like him,shit,INNER,SLANT,cmu,MED,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,like,19,Paid for a abortion ion know if that shit made me just like him,ion,INNER,SLANT,cmu,MED,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,like,19,Paid for a abortion ion know if that shit made me just like him,like,INNER,REPEAT,spelling,HIGH,N
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,ain't,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",make,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,ain't,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",straight,INNER,SLANT,cmu,MED,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,daddy,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",Jaden,INNER,SLANT,spelling,LOW,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,donor,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",go,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,him,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",sis,INNER,SLANT,cmu,MED,Y
+Next To Me,18,My daddy was a sperm donor ain't tryna be like him,tryna,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",tryna,INNER,REPEAT,spelling,HIGH,N
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,abortion,19,Paid for a abortion ion know if that shit made me just like him,ion,INNER,SLANT,spelling,LOW,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,ion,19,Paid for a abortion ion know if that shit made me just like him,like,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,Paid,19,Paid for a abortion ion know if that shit made me just like him,made,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,shit,19,Paid for a abortion ion know if that shit made me just like him,him,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,him,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",sis,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,know,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",go,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,made,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",make,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,made,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",straight,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,Paid,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",make,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,Paid,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",straight,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,shit,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",sis,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,know,21,I be tryna make sure niggas straight cause I know they ain't homosexual,know,INNER,REPEAT,spelling,HIGH,N
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,made,21,I be tryna make sure niggas straight cause I know they ain't homosexual,ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,made,21,I be tryna make sure niggas straight cause I know they ain't homosexual,make,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,made,21,I be tryna make sure niggas straight cause I know they ain't homosexual,straight,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,Paid,21,I be tryna make sure niggas straight cause I know they ain't homosexual,ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,Paid,21,I be tryna make sure niggas straight cause I know they ain't homosexual,make,INNER,SLANT,cmu,MED,Y
+Next To Me,19,Paid for a abortion ion know if that shit made me just like him,Paid,21,I be tryna make sure niggas straight cause I know they ain't homosexual,straight,INNER,SLANT,cmu,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",make,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",straight,INNER,SLANT,cmu,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",go,21,I be tryna make sure niggas straight cause I know they ain't homosexual,know,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",make,21,I be tryna make sure niggas straight cause I know they ain't homosexual,ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",make,21,I be tryna make sure niggas straight cause I know they ain't homosexual,make,INNER,REPEAT,spelling,HIGH,N
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",make,21,I be tryna make sure niggas straight cause I know they ain't homosexual,straight,INNER,SLANT,cmu,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",straight,21,I be tryna make sure niggas straight cause I know they ain't homosexual,ain't,INNER,SLANT,cmu,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",straight,21,I be tryna make sure niggas straight cause I know they ain't homosexual,make,INNER,SLANT,cmu,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",straight,21,I be tryna make sure niggas straight cause I know they ain't homosexual,straight,INNER,REPEAT,spelling,HIGH,N
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",sure,21,I be tryna make sure niggas straight cause I know they ain't homosexual,sure,INNER,REPEAT,spelling,HIGH,N
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",tryna,21,I be tryna make sure niggas straight cause I know they ain't homosexual,tryna,INNER,REPEAT,spelling,HIGH,N
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",Jaden,22,I'm just playin the cards I was delt like God gave me a bad shuffle,bad,INNER,SLANT,spelling,LOW,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",make,22,I'm just playin the cards I was delt like God gave me a bad shuffle,gave,INNER,SLANT,cmu,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",make,22,I'm just playin the cards I was delt like God gave me a bad shuffle,playin,INNER,SLANT,cmu,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",straight,22,I'm just playin the cards I was delt like God gave me a bad shuffle,gave,INNER,SLANT,cmu,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",straight,22,I'm just playin the cards I was delt like God gave me a bad shuffle,playin,INNER,SLANT,cmu,MED,Y
+Next To Me,20,"I be tryna make sure my sis straight for Jaden, I'm go in extra",extra,23,Deuce deuce told me big bruh I keep my rag lesser,lesser,END,ASSONANCE,vowel,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,make,21,I be tryna make sure niggas straight cause I know they ain't homosexual,ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,make,21,I be tryna make sure niggas straight cause I know they ain't homosexual,straight,INNER,SLANT,cmu,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,straight,21,I be tryna make sure niggas straight cause I know they ain't homosexual,ain't,INNER,SLANT,cmu,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,homosexual,22,I'm just playin the cards I was delt like God gave me a bad shuffle,shuffle,END,SLANT,cmu,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,ain't,22,I'm just playin the cards I was delt like God gave me a bad shuffle,gave,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,ain't,22,I'm just playin the cards I was delt like God gave me a bad shuffle,playin,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,cause,22,I'm just playin the cards I was delt like God gave me a bad shuffle,cards,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,cause,22,I'm just playin the cards I was delt like God gave me a bad shuffle,God,INNER,SLANT,cmu,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,make,22,I'm just playin the cards I was delt like God gave me a bad shuffle,gave,INNER,SLANT,cmu,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,make,22,I'm just playin the cards I was delt like God gave me a bad shuffle,playin,INNER,SLANT,cmu,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,straight,22,I'm just playin the cards I was delt like God gave me a bad shuffle,gave,INNER,SLANT,cmu,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,straight,22,I'm just playin the cards I was delt like God gave me a bad shuffle,playin,INNER,SLANT,cmu,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,know,23,Deuce deuce told me big bruh I keep my rag lesser,told,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,21,I be tryna make sure niggas straight cause I know they ain't homosexual,tryna,23,Deuce deuce told me big bruh I keep my rag lesser,keep,INNER,SLANT,spelling,LOW,Y
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,cards,22,I'm just playin the cards I was delt like God gave me a bad shuffle,God,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,playin,22,I'm just playin the cards I was delt like God gave me a bad shuffle,gave,INNER,SLANT,cmu,MED,Y
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,bad,23,Deuce deuce told me big bruh I keep my rag lesser,rag,INNER,SLANT,cmu,MED,Y
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,delt,23,Deuce deuce told me big bruh I keep my rag lesser,lesser,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,delt,23,Deuce deuce told me big bruh I keep my rag lesser,told,INNER,SLANT,spelling,LOW,Y
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,bad,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,mans,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,bad,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,nan,INNER,SLANT,cmu,MED,Y
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,delt,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,delt,INNER,REPEAT,spelling,HIGH,N
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,delt,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,get,INNER,SLANT,spelling,LOW,Y
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,gave,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,ain’t,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,22,I'm just playin the cards I was delt like God gave me a bad shuffle,playin,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,ain’t,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,Deuce,23,Deuce deuce told me big bruh I keep my rag lesser,deuce,INNER,REPEAT,spelling,HIGH,N
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,big,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,hit,INNER,SLANT,cmu,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,big,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,victim,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,keep,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,seen,INNER,SLANT,cmu,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,lesser,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,delt,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,lesser,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,get,INNER,SLANT,cmu,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,lesser,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,sparing,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,rag,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,mans,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,rag,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,nan,INNER,SLANT,cmu,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,told,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,delt,INNER,SLANT,spelling,LOW,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,big,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shit,INNER,SLANT,cmu,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,big,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,sit,INNER,SLANT,cmu,MED,Y
+Next To Me,23,Deuce deuce told me big bruh I keep my rag lesser,Deuce,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shoot,INNER,SLANT,cmu,MED,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,delt,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,get,INNER,SLANT,spelling,LOW,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,mans,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,mans,INNER,REPEAT,spelling,HIGH,N
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,mans,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,nan,INNER,SLANT,cmu,MED,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,nan,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,mans,INNER,SLANT,cmu,MED,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,sparing,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,get,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,victim,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,hit,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,hit,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shit,END,PERFECT,cmu,HIGH,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,ain’t,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,ain't,INNER,REPEAT,spelling,HIGH,N
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,ain’t,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,ain’t,INNER,REPEAT,spelling,HIGH,N
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,hit,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shit,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,hit,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,sit,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,victim,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shit,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,victim,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,sit,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,seen,26,I gotta keep the heater (next to me),heater,INNER,SLANT,cmu,MED,Y
+Next To Me,24,You should've seen how mans delt but we ain’t sparing nan victim get your mans hit up,seen,26,I gotta keep the heater (next to me),keep,INNER,SLANT,cmu,MED,Y
+Next To Me,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,ain’t,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,ain't,INNER,REPEAT,spelling,HIGH,N
+Next To Me,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shit,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shit,INNER,REPEAT,spelling,HIGH,N
+Next To Me,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shit,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,sit,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,sit,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shit,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,25,And we ain’t workin out shit I ain't with the sit-ups we gon shoot your shit up,shoot,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,used,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,26,I gotta keep the heater (next to me),keep,26,I gotta keep the heater (next to me),heater,INNER,SLANT,cmu,MED,Y
+Next To Me,26,I gotta keep the heater (next to me),heater,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,Tryna,INNER,SLANT,spelling,LOW,Y
+Next To Me,26,I gotta keep the heater (next to me),keep,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,Tryna,INNER,SLANT,spelling,LOW,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,cross,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,taught,INNER,SLANT,cmu,MED,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,cross,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,walk,INNER,SLANT,cmu,MED,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,taught,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,walk,INNER,SLANT,cmu,MED,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,walk,28,223 shoot through the wall,wall,END,SLANT,cmu,MED,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,cross,28,223 shoot through the wall,wall,INNER,SLANT,cmu,MED,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,taught,28,223 shoot through the wall,wall,INNER,SLANT,cmu,MED,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,used,28,223 shoot through the wall,shoot,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,used,28,223 shoot through the wall,through,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,used,29,Thuggin' since a juvenile,juvenile,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,27,Tryna throw the cross that’s how you get taught 4 by 4 I used to walk,walk,31,"Dapper Dan, Rich Porter",Porter,END,ASSONANCE,vowel,MED,Y
+Next To Me,28,223 shoot through the wall,shoot,28,223 shoot through the wall,through,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,28,223 shoot through the wall,shoot,29,Thuggin' since a juvenile,juvenile,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,28,223 shoot through the wall,through,29,Thuggin' since a juvenile,juvenile,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,28,223 shoot through the wall,wall,30,And I got some extra clips for you and yall,yall,END,SLANT,spelling,LOW,Y
+Next To Me,28,223 shoot through the wall,wall,31,"Dapper Dan, Rich Porter",Porter,END,ASSONANCE,vowel,MED,Y
+Next To Me,29,Thuggin' since a juvenile,since,30,And I got some extra clips for you and yall,clips,INNER,SLANT,cmu,MED,Y
+Next To Me,29,Thuggin' since a juvenile,since,31,"Dapper Dan, Rich Porter",Rich,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,30,And I got some extra clips for you and yall,clips,31,"Dapper Dan, Rich Porter",Rich,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,31,"Dapper Dan, Rich Porter",Dapper,31,"Dapper Dan, Rich Porter",Dan,INNER,SLANT,cmu,MED,Y
+Next To Me,31,"Dapper Dan, Rich Porter",Dan,32,Hunnit bags importer boy you just a benchwarmer,bags,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,31,"Dapper Dan, Rich Porter",Dapper,32,Hunnit bags importer boy you just a benchwarmer,bags,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,31,"Dapper Dan, Rich Porter",Porter,32,Hunnit bags importer boy you just a benchwarmer,importer,INNER,MULTI,multi,HIGH,Y
+Next To Me,31,"Dapper Dan, Rich Porter",Rich Porter,32,Hunnit bags importer boy you just a benchwarmer,bags importer,INNER,MULTI,multi,HIGH,Y
+Next To Me,31,"Dapper Dan, Rich Porter",Porter,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,normal,END,ASSONANCE,vowel,MED,Y
+Next To Me,31,"Dapper Dan, Rich Porter",Porter,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,transformer,INNER,SLANT,cmu,MED,Y
+Next To Me,31,"Dapper Dan, Rich Porter",Rich,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,shit,INNER,SLANT,cmu,MED,Y
+Next To Me,32,Hunnit bags importer boy you just a benchwarmer,Hunnit,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,shit,INNER,PERFECT,spelling,MED,Y
+Next To Me,32,Hunnit bags importer boy you just a benchwarmer,importer,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,normal,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,32,Hunnit bags importer boy you just a benchwarmer,importer,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,transformer,INNER,SLANT,cmu,MED,Y
+Next To Me,32,Hunnit bags importer boy you just a benchwarmer,Hunnit,34,"Tryna hit the young hoes, tryna play hide-n-go-get",hit,INNER,PERFECT,spelling,MED,Y
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,transformer,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,normal,INNER,SLANT,cmu,MED,Y
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,ain't,34,"Tryna hit the young hoes, tryna play hide-n-go-get",play,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,guns,34,"Tryna hit the young hoes, tryna play hide-n-go-get",young,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,many,34,"Tryna hit the young hoes, tryna play hide-n-go-get",get,INNER,SLANT,cmu,MED,Y
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,many,34,"Tryna hit the young hoes, tryna play hide-n-go-get",n,INNER,SLANT,cmu,MED,Y
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,shit,34,"Tryna hit the young hoes, tryna play hide-n-go-get",hit,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,ain't,35,Got me a gun made out of a stick,made,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,got,35,Got me a gun made out of a stick,Got,INNER,REPEAT,spelling,HIGH,N
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,guns,35,Got me a gun made out of a stick,gun,INNER,SLANT,cmu,MED,Y
+Next To Me,33,I just pulled up in a transformer and we got so many guns this shit ain't normal,shit,35,Got me a gun made out of a stick,stick,INNER,SLANT,cmu,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",hoes,34,"Tryna hit the young hoes, tryna play hide-n-go-get",go,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",n,34,"Tryna hit the young hoes, tryna play hide-n-go-get",get,INNER,SLANT,cmu,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",Tryna,34,"Tryna hit the young hoes, tryna play hide-n-go-get",tryna,INNER,REPEAT,spelling,HIGH,N
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",hit,35,Got me a gun made out of a stick,stick,INNER,SLANT,cmu,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",play,35,Got me a gun made out of a stick,made,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",young,35,Got me a gun made out of a stick,gun,INNER,SLANT,cmu,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",get,36,"Swear I ain't changed a bit, we still buy sticks now",Swear,INNER,SLANT,cmu,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",hide,36,"Swear I ain't changed a bit, we still buy sticks now",buy,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",hit,36,"Swear I ain't changed a bit, we still buy sticks now",bit,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",hit,36,"Swear I ain't changed a bit, we still buy sticks now",sticks,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",hit,36,"Swear I ain't changed a bit, we still buy sticks now",still,INNER,SLANT,cmu,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",n,36,"Swear I ain't changed a bit, we still buy sticks now",Swear,INNER,SLANT,cmu,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",play,36,"Swear I ain't changed a bit, we still buy sticks now",ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,34,"Tryna hit the young hoes, tryna play hide-n-go-get",play,36,"Swear I ain't changed a bit, we still buy sticks now",changed,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,35,Got me a gun made out of a stick,made,36,"Swear I ain't changed a bit, we still buy sticks now",ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,35,Got me a gun made out of a stick,made,36,"Swear I ain't changed a bit, we still buy sticks now",changed,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,35,Got me a gun made out of a stick,stick,36,"Swear I ain't changed a bit, we still buy sticks now",bit,INNER,SLANT,cmu,MED,Y
+Next To Me,35,Got me a gun made out of a stick,stick,36,"Swear I ain't changed a bit, we still buy sticks now",sticks,INNER,SLANT,cmu,MED,Y
+Next To Me,35,Got me a gun made out of a stick,stick,36,"Swear I ain't changed a bit, we still buy sticks now",still,INNER,SLANT,cmu,MED,Y
+Next To Me,35,Got me a gun made out of a stick,Got,37,Fuck these crackers they want us locked up ion eat ritz now,locked,INNER,SLANT,cmu,MED,Y
+Next To Me,35,Got me a gun made out of a stick,Got,37,Fuck these crackers they want us locked up ion eat ritz now,want,INNER,SLANT,cmu,MED,Y
+Next To Me,35,Got me a gun made out of a stick,gun,37,Fuck these crackers they want us locked up ion eat ritz now,Fuck,INNER,SLANT,cmu,MED,Y
+Next To Me,35,Got me a gun made out of a stick,stick,37,Fuck these crackers they want us locked up ion eat ritz now,ritz,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",ain't,36,"Swear I ain't changed a bit, we still buy sticks now",changed,INNER,SLANT,cmu,MED,Y
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",bit,36,"Swear I ain't changed a bit, we still buy sticks now",sticks,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",bit,36,"Swear I ain't changed a bit, we still buy sticks now",still,INNER,SLANT,cmu,MED,Y
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",still,36,"Swear I ain't changed a bit, we still buy sticks now",sticks,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",now,37,Fuck these crackers they want us locked up ion eat ritz now,now,END,REPEAT,spelling,HIGH,N
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",bit,37,Fuck these crackers they want us locked up ion eat ritz now,ritz,INNER,SLANT,cmu,MED,Y
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",buy,37,Fuck these crackers they want us locked up ion eat ritz now,ion,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",sticks,37,Fuck these crackers they want us locked up ion eat ritz now,ritz,INNER,SLANT,cmu,MED,Y
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",still,37,Fuck these crackers they want us locked up ion eat ritz now,ritz,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,36,"Swear I ain't changed a bit, we still buy sticks now",buy,38,Fuck these crackers want us locked up ion eat saltines,ion,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,these,37,Fuck these crackers they want us locked up ion eat ritz now,eat,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,want,37,Fuck these crackers they want us locked up ion eat ritz now,locked,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,crackers,38,Fuck these crackers want us locked up ion eat saltines,crackers,INNER,REPEAT,spelling,HIGH,N
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,crackers,38,Fuck these crackers want us locked up ion eat saltines,saltines,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,eat,38,Fuck these crackers want us locked up ion eat saltines,eat,INNER,REPEAT,spelling,HIGH,N
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,eat,38,Fuck these crackers want us locked up ion eat saltines,these,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,Fuck,38,Fuck these crackers want us locked up ion eat saltines,Fuck,INNER,REPEAT,spelling,HIGH,N
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,ion,38,Fuck these crackers want us locked up ion eat saltines,ion,INNER,REPEAT,spelling,HIGH,N
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,locked,38,Fuck these crackers want us locked up ion eat saltines,locked,INNER,REPEAT,spelling,HIGH,N
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,locked,38,Fuck these crackers want us locked up ion eat saltines,want,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,these,38,Fuck these crackers want us locked up ion eat saltines,eat,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,these,38,Fuck these crackers want us locked up ion eat saltines,these,INNER,REPEAT,spelling,HIGH,N
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,want,38,Fuck these crackers want us locked up ion eat saltines,locked,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,want,38,Fuck these crackers want us locked up ion eat saltines,want,INNER,REPEAT,spelling,HIGH,N
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,crackers,39,I wake up pop me a x-pill buy my white hoe cat feed,cat,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,eat,39,I wake up pop me a x-pill buy my white hoe cat feed,feed,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,ion,39,I wake up pop me a x-pill buy my white hoe cat feed,buy,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,ion,39,I wake up pop me a x-pill buy my white hoe cat feed,white,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,locked,39,I wake up pop me a x-pill buy my white hoe cat feed,pop,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,ritz,39,I wake up pop me a x-pill buy my white hoe cat feed,pill,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,these,39,I wake up pop me a x-pill buy my white hoe cat feed,feed,INNER,SLANT,cmu,MED,Y
+Next To Me,37,Fuck these crackers they want us locked up ion eat ritz now,want,39,I wake up pop me a x-pill buy my white hoe cat feed,pop,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,crackers,38,Fuck these crackers want us locked up ion eat saltines,saltines,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,these,38,Fuck these crackers want us locked up ion eat saltines,eat,INNER,SLANT,cmu,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,want,38,Fuck these crackers want us locked up ion eat saltines,locked,INNER,SLANT,cmu,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,crackers,39,I wake up pop me a x-pill buy my white hoe cat feed,cat,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,eat,39,I wake up pop me a x-pill buy my white hoe cat feed,feed,INNER,SLANT,cmu,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,ion,39,I wake up pop me a x-pill buy my white hoe cat feed,buy,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,ion,39,I wake up pop me a x-pill buy my white hoe cat feed,white,INNER,SLANT,cmu,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,locked,39,I wake up pop me a x-pill buy my white hoe cat feed,pop,INNER,SLANT,cmu,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,these,39,I wake up pop me a x-pill buy my white hoe cat feed,feed,INNER,SLANT,cmu,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,want,39,I wake up pop me a x-pill buy my white hoe cat feed,pop,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,38,Fuck these crackers want us locked up ion eat saltines,ion,40,"Christian Dior, i swear I came along way from buying moschino",buying,INNER,SLANT,cmu,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,buy,39,I wake up pop me a x-pill buy my white hoe cat feed,white,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,buy,40,"Christian Dior, i swear I came along way from buying moschino",buying,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,hoe,40,"Christian Dior, i swear I came along way from buying moschino",moschino,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,pill,40,"Christian Dior, i swear I came along way from buying moschino",Christian,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,wake,40,"Christian Dior, i swear I came along way from buying moschino",came,INNER,SLANT,cmu,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,wake,40,"Christian Dior, i swear I came along way from buying moschino",way,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,white,40,"Christian Dior, i swear I came along way from buying moschino",buying,INNER,SLANT,cmu,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,x,40,"Christian Dior, i swear I came along way from buying moschino",swear,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,cat,41,I was smart in math I but hate when I seen 6x2,math,INNER,SLANT,cmu,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,feed,41,I was smart in math I but hate when I seen 6x2,seen,INNER,SLANT,cmu,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,pop,41,I was smart in math I but hate when I seen 6x2,smart,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,wake,41,I was smart in math I but hate when I seen 6x2,hate,INNER,SLANT,cmu,MED,Y
+Next To Me,39,I wake up pop me a x-pill buy my white hoe cat feed,x,41,I was smart in math I but hate when I seen 6x2,when,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",came,40,"Christian Dior, i swear I came along way from buying moschino",way,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",Dior,40,"Christian Dior, i swear I came along way from buying moschino",along,INNER,SLANT,cmu,MED,Y
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",came,41,I was smart in math I but hate when I seen 6x2,hate,INNER,SLANT,cmu,MED,Y
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",swear,41,I was smart in math I but hate when I seen 6x2,when,INNER,SLANT,cmu,MED,Y
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",way,41,I was smart in math I but hate when I seen 6x2,hate,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",buying,42,"Draco the clip a banana, you'll never catch us buying fruit",buying,INNER,REPEAT,spelling,HIGH,N
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",came,42,"Draco the clip a banana, you'll never catch us buying fruit",Draco,INNER,SLANT,cmu,MED,Y
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",Christian,42,"Draco the clip a banana, you'll never catch us buying fruit",clip,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",moschino,42,"Draco the clip a banana, you'll never catch us buying fruit",Draco,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",swear,42,"Draco the clip a banana, you'll never catch us buying fruit",never,INNER,SLANT,cmu,MED,Y
+Next To Me,40,"Christian Dior, i swear I came along way from buying moschino",way,42,"Draco the clip a banana, you'll never catch us buying fruit",Draco,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,41,I was smart in math I but hate when I seen 6x2,hate,42,"Draco the clip a banana, you'll never catch us buying fruit",Draco,INNER,SLANT,cmu,MED,Y
+Next To Me,41,I was smart in math I but hate when I seen 6x2,math,42,"Draco the clip a banana, you'll never catch us buying fruit",banana,INNER,SLANT,cmu,MED,Y
+Next To Me,41,I was smart in math I but hate when I seen 6x2,math,42,"Draco the clip a banana, you'll never catch us buying fruit",catch,INNER,SLANT,cmu,MED,Y
+Next To Me,41,I was smart in math I but hate when I seen 6x2,when,42,"Draco the clip a banana, you'll never catch us buying fruit",never,INNER,SLANT,cmu,MED,Y
+Next To Me,41,I was smart in math I but hate when I seen 6x2,when,43,Envy or trend where I come from,Envy,INNER,SLANT,cmu,MED,Y
+Next To Me,41,I was smart in math I but hate when I seen 6x2,when,43,Envy or trend where I come from,trend,INNER,SLANT,cmu,MED,Y
+Next To Me,41,I was smart in math I but hate when I seen 6x2,when,43,Envy or trend where I come from,where,INNER,SLANT,cmu,MED,Y
+Next To Me,42,"Draco the clip a banana, you'll never catch us buying fruit",banana,42,"Draco the clip a banana, you'll never catch us buying fruit",catch,INNER,SLANT,cmu,MED,Y
+Next To Me,42,"Draco the clip a banana, you'll never catch us buying fruit",never,43,Envy or trend where I come from,Envy,INNER,SLANT,cmu,MED,Y
+Next To Me,42,"Draco the clip a banana, you'll never catch us buying fruit",never,43,Envy or trend where I come from,trend,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,42,"Draco the clip a banana, you'll never catch us buying fruit",never,43,Envy or trend where I come from,where,INNER,SLANT,cmu,MED,Y
+Next To Me,42,"Draco the clip a banana, you'll never catch us buying fruit",banana,44,His daddy was a killer so birth a redrum child,daddy,INNER,SLANT,cmu,MED,Y
+Next To Me,42,"Draco the clip a banana, you'll never catch us buying fruit",buying,44,His daddy was a killer so birth a redrum child,child,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,42,"Draco the clip a banana, you'll never catch us buying fruit",catch,44,His daddy was a killer so birth a redrum child,daddy,INNER,SLANT,cmu,MED,Y
+Next To Me,42,"Draco the clip a banana, you'll never catch us buying fruit",clip,44,His daddy was a killer so birth a redrum child,killer,INNER,SLANT,cmu,MED,Y
+Next To Me,43,Envy or trend where I come from,Envy,43,Envy or trend where I come from,trend,INNER,SLANT,cmu,MED,Y
+Next To Me,43,Envy or trend where I come from,Envy,43,Envy or trend where I come from,where,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,43,Envy or trend where I come from,trend,43,Envy or trend where I come from,where,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,43,Envy or trend where I come from,come,45,So when he have some babies he gon try to keep it in the generation,some,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,43,Envy or trend where I come from,Envy,45,So when he have some babies he gon try to keep it in the generation,when,INNER,SLANT,cmu,MED,Y
+Next To Me,43,Envy or trend where I come from,trend,45,So when he have some babies he gon try to keep it in the generation,when,INNER,SLANT,cmu,MED,Y
+Next To Me,43,Envy or trend where I come from,where,45,So when he have some babies he gon try to keep it in the generation,when,INNER,SLANT,cmu,MED,Y
+Next To Me,44,His daddy was a killer so birth a redrum child,child,45,So when he have some babies he gon try to keep it in the generation,try,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,44,His daddy was a killer so birth a redrum child,daddy,45,So when he have some babies he gon try to keep it in the generation,have,INNER,SLANT,cmu,MED,Y
+Next To Me,44,His daddy was a killer so birth a redrum child,child,46,On his 12th birthday he gon buy him a pistol and a PlayStation,buy,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,44,His daddy was a killer so birth a redrum child,killer,46,On his 12th birthday he gon buy him a pistol and a PlayStation,him,INNER,SLANT,cmu,MED,Y
+Next To Me,44,His daddy was a killer so birth a redrum child,killer,46,On his 12th birthday he gon buy him a pistol and a PlayStation,pistol,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,babies,45,So when he have some babies he gon try to keep it in the generation,generation,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,generation,46,On his 12th birthday he gon buy him a pistol and a PlayStation,PlayStation,END,MULTI,multi,HIGH,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,babies,46,On his 12th birthday he gon buy him a pistol and a PlayStation,birthday,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,babies,46,On his 12th birthday he gon buy him a pistol and a PlayStation,PlayStation,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,generation,46,On his 12th birthday he gon buy him a pistol and a PlayStation,birthday,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,gon,46,On his 12th birthday he gon buy him a pistol and a PlayStation,gon,INNER,REPEAT,spelling,HIGH,N
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,try,46,On his 12th birthday he gon buy him a pistol and a PlayStation,buy,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,generation,47,When they smile they start cryin' I know they hate,hate,END,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,babies,47,When they smile they start cryin' I know they hate,hate,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,try,47,When they smile they start cryin' I know they hate,cryin,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,try,47,When they smile they start cryin' I know they hate,smile,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,when,47,When they smile they start cryin' I know they hate,When,INNER,REPEAT,spelling,HIGH,N
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,generation,48,Hate to see me win they close they eyes when they start waving,waving,END,ASSONANCE,vowel,MED,Y
+Next To Me,45,So when he have some babies he gon try to keep it in the generation,generation,49,Told my dawg ion think ima make it said Rylo have patience,patience,END,SLANT,cmu,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,birthday,46,On his 12th birthday he gon buy him a pistol and a PlayStation,PlayStation,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,him,46,On his 12th birthday he gon buy him a pistol and a PlayStation,pistol,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,PlayStation,47,When they smile they start cryin' I know they hate,hate,END,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,birthday,47,When they smile they start cryin' I know they hate,hate,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,buy,47,When they smile they start cryin' I know they hate,cryin,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,buy,47,When they smile they start cryin' I know they hate,smile,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,PlayStation,48,Hate to see me win they close they eyes when they start waving,waving,END,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,birthday,48,Hate to see me win they close they eyes when they start waving,Hate,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,birthday,48,Hate to see me win they close they eyes when they start waving,waving,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,buy,48,Hate to see me win they close they eyes when they start waving,eyes,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,gon,48,Hate to see me win they close they eyes when they start waving,close,INNER,SLANT,spelling,LOW,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,him,48,Hate to see me win they close they eyes when they start waving,win,INNER,SLANT,cmu,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,pistol,48,Hate to see me win they close they eyes when they start waving,win,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,PlayStation,48,Hate to see me win they close they eyes when they start waving,Hate,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,PlayStation,49,Told my dawg ion think ima make it said Rylo have patience,patience,END,SLANT,cmu,MED,Y
+Next To Me,46,On his 12th birthday he gon buy him a pistol and a PlayStation,PlayStation,50,Coming from me ion know how to take it unless it's medication,medication,END,MULTI,multi,HIGH,Y
+Next To Me,47,When they smile they start cryin' I know they hate,smile,47,When they smile they start cryin' I know they hate,cryin,INNER,SLANT,cmu,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,hate,48,Hate to see me win they close they eyes when they start waving,waving,END,ASSONANCE,vowel,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,cryin,48,Hate to see me win they close they eyes when they start waving,eyes,INNER,SLANT,cmu,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,hate,48,Hate to see me win they close they eyes when they start waving,Hate,INNER,REPEAT,spelling,HIGH,N
+Next To Me,47,When they smile they start cryin' I know they hate,know,48,Hate to see me win they close they eyes when they start waving,close,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,smile,48,Hate to see me win they close they eyes when they start waving,eyes,INNER,SLANT,cmu,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,start,48,Hate to see me win they close they eyes when they start waving,start,INNER,REPEAT,spelling,HIGH,N
+Next To Me,47,When they smile they start cryin' I know they hate,When,48,Hate to see me win they close they eyes when they start waving,when,INNER,REPEAT,spelling,HIGH,N
+Next To Me,47,When they smile they start cryin' I know they hate,hate,49,Told my dawg ion think ima make it said Rylo have patience,patience,END,ASSONANCE,vowel,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,cryin,49,Told my dawg ion think ima make it said Rylo have patience,ion,INNER,SLANT,cmu,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,hate,49,Told my dawg ion think ima make it said Rylo have patience,make,INNER,SLANT,cmu,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,know,49,Told my dawg ion think ima make it said Rylo have patience,Rylo,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,47,When they smile they start cryin' I know they hate,know,49,Told my dawg ion think ima make it said Rylo have patience,Told,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,smile,49,Told my dawg ion think ima make it said Rylo have patience,ion,INNER,SLANT,cmu,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,When,49,Told my dawg ion think ima make it said Rylo have patience,said,INNER,SLANT,cmu,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,hate,50,Coming from me ion know how to take it unless it's medication,medication,END,ASSONANCE,vowel,MED,Y
+Next To Me,47,When they smile they start cryin' I know they hate,hate,51,long time ion see her a real stranger,stranger,END,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,Hate,48,Hate to see me win they close they eyes when they start waving,waving,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,waving,49,Told my dawg ion think ima make it said Rylo have patience,patience,END,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,close,49,Told my dawg ion think ima make it said Rylo have patience,Told,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,eyes,49,Told my dawg ion think ima make it said Rylo have patience,ion,INNER,SLANT,cmu,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,Hate,49,Told my dawg ion think ima make it said Rylo have patience,make,INNER,SLANT,cmu,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,Hate,49,Told my dawg ion think ima make it said Rylo have patience,patience,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,waving,49,Told my dawg ion think ima make it said Rylo have patience,make,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,when,49,Told my dawg ion think ima make it said Rylo have patience,said,INNER,SLANT,cmu,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,win,49,Told my dawg ion think ima make it said Rylo have patience,ima,INNER,SLANT,spelling,LOW,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,win,49,Told my dawg ion think ima make it said Rylo have patience,think,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,waving,50,Coming from me ion know how to take it unless it's medication,medication,END,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,close,50,Coming from me ion know how to take it unless it's medication,know,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,eyes,50,Coming from me ion know how to take it unless it's medication,ion,INNER,SLANT,cmu,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,Hate,50,Coming from me ion know how to take it unless it's medication,medication,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,Hate,50,Coming from me ion know how to take it unless it's medication,take,INNER,SLANT,cmu,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,waving,50,Coming from me ion know how to take it unless it's medication,take,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,when,50,Coming from me ion know how to take it unless it's medication,unless,INNER,SLANT,cmu,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,waving,51,long time ion see her a real stranger,stranger,END,ASSONANCE,vowel,MED,Y
+Next To Me,48,Hate to see me win they close they eyes when they start waving,waving,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",game,END,ASSONANCE,vowel,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,make,49,Told my dawg ion think ima make it said Rylo have patience,patience,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,patience,50,Coming from me ion know how to take it unless it's medication,medication,END,SLANT,cmu,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,ion,50,Coming from me ion know how to take it unless it's medication,ion,INNER,REPEAT,spelling,HIGH,N
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,ion,50,Coming from me ion know how to take it unless it's medication,medication,INNER,SLANT,spelling,LOW,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,make,50,Coming from me ion know how to take it unless it's medication,medication,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,make,50,Coming from me ion know how to take it unless it's medication,take,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,patience,50,Coming from me ion know how to take it unless it's medication,take,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,Rylo,50,Coming from me ion know how to take it unless it's medication,know,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,said,50,Coming from me ion know how to take it unless it's medication,unless,INNER,SLANT,cmu,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,Told,50,Coming from me ion know how to take it unless it's medication,know,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,patience,51,long time ion see her a real stranger,stranger,END,ASSONANCE,vowel,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,dawg,51,long time ion see her a real stranger,long,INNER,SLANT,spelling,LOW,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,ion,51,long time ion see her a real stranger,ion,INNER,REPEAT,spelling,HIGH,N
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,ion,51,long time ion see her a real stranger,time,INNER,SLANT,cmu,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,make,51,long time ion see her a real stranger,stranger,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,Rylo,51,long time ion see her a real stranger,real,INNER,SLANT,spelling,LOW,Y
+Next To Me,49,Told my dawg ion think ima make it said Rylo have patience,patience,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",game,END,ASSONANCE,vowel,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,ion,50,Coming from me ion know how to take it unless it's medication,medication,INNER,SLANT,spelling,LOW,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,take,50,Coming from me ion know how to take it unless it's medication,medication,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,medication,51,long time ion see her a real stranger,stranger,END,ASSONANCE,vowel,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,ion,51,long time ion see her a real stranger,ion,INNER,REPEAT,spelling,HIGH,N
+Next To Me,50,Coming from me ion know how to take it unless it's medication,ion,51,long time ion see her a real stranger,time,INNER,SLANT,cmu,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,medication,51,long time ion see her a real stranger,ion,INNER,SLANT,spelling,LOW,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,take,51,long time ion see her a real stranger,stranger,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,medication,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",game,END,ASSONANCE,vowel,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,know,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",dope,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,medication,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",gave,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,take,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",game,INNER,SLANT,cmu,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,take,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",gave,INNER,SLANT,cmu,MED,Y
+Next To Me,50,Coming from me ion know how to take it unless it's medication,unless,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",went,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,51,long time ion see her a real stranger,see,51,long time ion see her a real stranger,real,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,51,long time ion see her a real stranger,time,51,long time ion see her a real stranger,ion,INNER,SLANT,cmu,MED,Y
+Next To Me,51,long time ion see her a real stranger,stranger,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",game,END,ASSONANCE,vowel,MED,Y
+Next To Me,51,long time ion see her a real stranger,long,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",offer,INNER,SLANT,cmu,MED,Y
+Next To Me,51,long time ion see her a real stranger,stranger,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",gave,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,51,long time ion see her a real stranger,long,53,Mama hit her knees all he heard was....,all,INNER,SLANT,cmu,MED,Y
+Next To Me,51,long time ion see her a real stranger,real,53,Mama hit her knees all he heard was....,knees,INNER,SLANT,cmu,MED,Y
+Next To Me,51,long time ion see her a real stranger,see,53,Mama hit her knees all he heard was....,knees,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",cocoaine,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",dope,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",gave,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",game,INNER,SLANT,cmu,MED,Y
+Next To Me,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",college,53,Mama hit her knees all he heard was....,Mama,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",him,53,Mama hit her knees all he heard was....,hit,INNER,SLANT,cmu,MED,Y
+Next To Me,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",offer,53,Mama hit her knees all he heard was....,all,INNER,SLANT,cmu,MED,Y
+Next To Me,52,"Should've went to college, cocoaine gave him a offer he joined the dope game",Should've,54,Pull up 4 by 4 honey I shrunk the opps,Pull,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,53,Mama hit her knees all he heard was....,hit,55,Big Dooley fuck 12 honey I shrunk the pig,Big,INNER,SLANT,cmu,MED,Y
+Next To Me,53,Mama hit her knees all he heard was....,hit,55,Big Dooley fuck 12 honey I shrunk the pig,pig,INNER,SLANT,cmu,MED,Y
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,honey,54,Pull up 4 by 4 honey I shrunk the opps,shrunk,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,honey,55,Big Dooley fuck 12 honey I shrunk the pig,fuck,INNER,SLANT,cmu,MED,Y
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,honey,55,Big Dooley fuck 12 honey I shrunk the pig,honey,INNER,REPEAT,spelling,HIGH,N
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,honey,55,Big Dooley fuck 12 honey I shrunk the pig,shrunk,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,shrunk,55,Big Dooley fuck 12 honey I shrunk the pig,fuck,INNER,SLANT,cmu,MED,Y
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,shrunk,55,Big Dooley fuck 12 honey I shrunk the pig,honey,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,shrunk,55,Big Dooley fuck 12 honey I shrunk the pig,shrunk,INNER,REPEAT,spelling,HIGH,N
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,honey,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,ainty,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,honey,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Honey,INNER,REPEAT,spelling,HIGH,N
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,shrunk,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Honey,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,54,Pull up 4 by 4 honey I shrunk the opps,shrunk,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Shurnk,INNER,SLANT,spelling,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,Big,55,Big Dooley fuck 12 honey I shrunk the pig,pig,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,fuck,55,Big Dooley fuck 12 honey I shrunk the pig,honey,INNER,SLANT,cmu,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,fuck,55,Big Dooley fuck 12 honey I shrunk the pig,shrunk,INNER,SLANT,cmu,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,honey,55,Big Dooley fuck 12 honey I shrunk the pig,shrunk,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,pig,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Kids,END,ASSONANCE,vowel,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,Big,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Kids,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,Dooley,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,ainty,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,fuck,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Honey,INNER,SLANT,cmu,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,fuck,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Shurnk,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,honey,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,ainty,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,honey,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Honey,INNER,REPEAT,spelling,HIGH,N
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,shrunk,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Honey,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,shrunk,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Shurnk,INNER,SLANT,spelling,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,pig,57,Hoe tryna front when she be round me act like she don't be smoking mid,mid,END,SLANT,cmu,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,Big,57,Hoe tryna front when she be round me act like she don't be smoking mid,mid,INNER,SLANT,cmu,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,fuck,57,Hoe tryna front when she be round me act like she don't be smoking mid,front,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,honey,57,Hoe tryna front when she be round me act like she don't be smoking mid,front,INNER,SLANT,cmu,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,shrunk,57,Hoe tryna front when she be round me act like she don't be smoking mid,front,INNER,SLANT,cmu,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,pig,58,Hoping we can make it out the game before we found out it was rigged,rigged,END,SLANT,cmu,MED,Y
+Next To Me,55,Big Dooley fuck 12 honey I shrunk the pig,pig,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slid,END,SLANT,cmu,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,ainty,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Honey,INNER,ASSONANCE,vowel,LOW,N
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Kids,57,Hoe tryna front when she be round me act like she don't be smoking mid,mid,END,SLANT,cmu,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,head,57,Hoe tryna front when she be round me act like she don't be smoking mid,when,INNER,SLANT,cmu,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Hoe,57,Hoe tryna front when she be round me act like she don't be smoking mid,don't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Hoe,57,Hoe tryna front when she be round me act like she don't be smoking mid,Hoe,INNER,REPEAT,spelling,HIGH,N
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Hoe,57,Hoe tryna front when she be round me act like she don't be smoking mid,smoking,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Honey,57,Hoe tryna front when she be round me act like she don't be smoking mid,front,INNER,SLANT,cmu,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,house,57,Hoe tryna front when she be round me act like she don't be smoking mid,round,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Kids,58,Hoping we can make it out the game before we found out it was rigged,rigged,END,ASSONANCE,vowel,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,gave,58,Hoping we can make it out the game before we found out it was rigged,game,INNER,SLANT,cmu,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,gave,58,Hoping we can make it out the game before we found out it was rigged,make,INNER,SLANT,cmu,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Hoe,58,Hoping we can make it out the game before we found out it was rigged,Hoping,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,house,58,Hoping we can make it out the game before we found out it was rigged,found,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Kids,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slid,END,SLANT,cmu,MED,Y
+Next To Me,56,Hoe gave me head at her ainty house we was watching “Honey I Shurnk The Kids”,Kids,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,kid,END,SLANT,cmu,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,don't,57,Hoe tryna front when she be round me act like she don't be smoking mid,smoking,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,front,57,Hoe tryna front when she be round me act like she don't be smoking mid,don't,INNER,SLANT,spelling,LOW,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,Hoe,57,Hoe tryna front when she be round me act like she don't be smoking mid,don't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,Hoe,57,Hoe tryna front when she be round me act like she don't be smoking mid,smoking,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,mid,58,Hoping we can make it out the game before we found out it was rigged,rigged,END,SLANT,cmu,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,act,58,Hoping we can make it out the game before we found out it was rigged,can,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,don't,58,Hoping we can make it out the game before we found out it was rigged,Hoping,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,Hoe,58,Hoping we can make it out the game before we found out it was rigged,Hoping,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,round,58,Hoping we can make it out the game before we found out it was rigged,found,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,smoking,58,Hoping we can make it out the game before we found out it was rigged,Hoping,INNER,SLANT,cmu,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,mid,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slid,END,PERFECT,cmu,HIGH,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,don't,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,gon,INNER,SLANT,spelling,LOW,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,like,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slide,INNER,SLANT,cmu,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,round,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,bout,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,tryna,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,hear,INNER,SLANT,spelling,LOW,Y
+Next To Me,57,Hoe tryna front when she be round me act like she don't be smoking mid,mid,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,kid,END,PERFECT,cmu,HIGH,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,make,58,Hoping we can make it out the game before we found out it was rigged,game,INNER,SLANT,cmu,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,rigged,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slid,END,SLANT,cmu,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,found,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,bout,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,game,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,always,INNER,SLANT,cmu,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,game,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,sayin,INNER,SLANT,cmu,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,make,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,always,INNER,SLANT,cmu,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,make,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,sayin,INNER,SLANT,cmu,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,rigged,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,kid,END,SLANT,cmu,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,can,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,daddy,INNER,SLANT,cmu,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,game,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,Hoping,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,no,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,Hoping,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,told,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,make,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,rigged,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,him,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,58,Hoping we can make it out the game before we found out it was rigged,rigged,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,thinkin,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,always,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,sayin,INNER,SLANT,cmu,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slide,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slid,INNER,SLANT,spelling,LOW,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slid,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,kid,END,PERFECT,cmu,HIGH,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,always,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,sayin,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,ain't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slid,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,him,INNER,SLANT,cmu,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slid,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,thinkin,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,wanna,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,pops,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,hear,61,Ion know my ABC's I go by F&N's,ABC's,INNER,SLANT,cmu,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slide,61,Ion know my ABC's I go by F&N's,by,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slide,61,Ion know my ABC's I go by F&N's,Ion,INNER,SLANT,cmu,MED,Y
+Next To Me,59,Niggas always sayin that they gon slide I wanna hear bout if you slid,slid,63,all my chips even though it was hard like pork skins,skins,END,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,him,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,kid,INNER,SLANT,cmu,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,him,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,thinkin,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,thinkin,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,kid,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,told,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,no,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,no,61,Ion know my ABC's I go by F&N's,go,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,no,61,Ion know my ABC's I go by F&N's,know,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,told,61,Ion know my ABC's I go by F&N's,go,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,told,61,Ion know my ABC's I go by F&N's,know,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,no,62,Keep all the pencils cause we don't wanna see the pen,don't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,pops,62,Keep all the pencils cause we don't wanna see the pen,cause,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,pops,62,Keep all the pencils cause we don't wanna see the pen,wanna,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,told,62,Keep all the pencils cause we don't wanna see the pen,don't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,60,In school they told him that his daddy 12 he was thinkin' my pops ain't no kid,kid,63,all my chips even though it was hard like pork skins,skins,END,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,F,61,Ion know my ABC's I go by F&N's,N's,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,Ion,61,Ion know my ABC's I go by F&N's,by,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,know,61,Ion know my ABC's I go by F&N's,go,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,N's,62,Keep all the pencils cause we don't wanna see the pen,pen,END,SLANT,cmu,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,ABC's,62,Keep all the pencils cause we don't wanna see the pen,Keep,INNER,SLANT,cmu,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,ABC's,62,Keep all the pencils cause we don't wanna see the pen,see,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,F,62,Keep all the pencils cause we don't wanna see the pen,pen,INNER,SLANT,cmu,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,F,62,Keep all the pencils cause we don't wanna see the pen,pencils,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,go,62,Keep all the pencils cause we don't wanna see the pen,don't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,know,62,Keep all the pencils cause we don't wanna see the pen,don't,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,N's,62,Keep all the pencils cause we don't wanna see the pen,pencils,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,ABC's,63,all my chips even though it was hard like pork skins,even,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,by,63,all my chips even though it was hard like pork skins,like,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,go,63,all my chips even though it was hard like pork skins,though,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,Ion,63,all my chips even though it was hard like pork skins,like,INNER,SLANT,cmu,MED,Y
+Next To Me,61,Ion know my ABC's I go by F&N's,know,63,all my chips even though it was hard like pork skins,though,INNER,PERFECT,cmu,HIGH,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,cause,62,Keep all the pencils cause we don't wanna see the pen,wanna,INNER,SLANT,cmu,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,Keep,62,Keep all the pencils cause we don't wanna see the pen,see,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,pencils,62,Keep all the pencils cause we don't wanna see the pen,pen,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,all,63,all my chips even though it was hard like pork skins,all,INNER,REPEAT,spelling,HIGH,N
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,all,63,all my chips even though it was hard like pork skins,pork,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,cause,63,all my chips even though it was hard like pork skins,hard,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,don't,63,all my chips even though it was hard like pork skins,though,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,Keep,63,all my chips even though it was hard like pork skins,even,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,see,63,all my chips even though it was hard like pork skins,even,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,wanna,63,all my chips even though it was hard like pork skins,hard,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,all,64,Lace up my cup like Nike's ima get an endorsement,endorsement,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,pen,64,Lace up my cup like Nike's ima get an endorsement,get,INNER,SLANT,cmu,MED,Y
+Next To Me,62,Keep all the pencils cause we don't wanna see the pen,pencils,64,Lace up my cup like Nike's ima get an endorsement,get,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,63,all my chips even though it was hard like pork skins,all,63,all my chips even though it was hard like pork skins,pork,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,63,all my chips even though it was hard like pork skins,chips,63,all my chips even though it was hard like pork skins,skins,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,63,all my chips even though it was hard like pork skins,all,64,Lace up my cup like Nike's ima get an endorsement,endorsement,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,63,all my chips even though it was hard like pork skins,like,64,Lace up my cup like Nike's ima get an endorsement,like,INNER,REPEAT,spelling,HIGH,N
+Next To Me,63,all my chips even though it was hard like pork skins,like,64,Lace up my cup like Nike's ima get an endorsement,Nike's,INNER,SLANT,cmu,MED,Y
+Next To Me,63,all my chips even though it was hard like pork skins,pork,64,Lace up my cup like Nike's ima get an endorsement,endorsement,INNER,ASSONANCE,vowel,MED,Y
+Next To Me,64,Lace up my cup like Nike's ima get an endorsement,like,64,Lace up my cup like Nike's ima get an endorsement,Nike's,INNER,SLANT,cmu,MED,Y

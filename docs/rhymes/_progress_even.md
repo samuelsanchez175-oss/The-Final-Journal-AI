@@ -96,6 +96,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 84 | xxl | XXL | 2 | 129 | 695 | 132 | 563 | 686 | 2026-11-10 13:18 ET |
 | 85 | yungeen-ace | Yungeen Ace | 3 | 127 | 1072 | 126 | 946 | 1044 | 2026-11-10 13:18 ET |
 | 86 | peezy | Peezy | 3 | 126 | 1115 | 151 | 964 | 1093 | 2026-11-10 13:18 ET |
+| 87 | yfn-trae-pound | YFN Trae Pound | 3 | 125 | 651 | 174 | 477 | 638 | 2026-11-10 13:18 ET |
+| 88 | 22gz | 22Gz | 4 | 123 | 948 | 133 | 815 | 940 | 2026-11-10 13:18 ET |
+| 89 | ftp-records | FTP Records | 2 | 118 | 795 | 156 | 639 | 779 | 2026-11-10 13:18 ET |
+| 90 | rylo-rodriguez | Rylo Rodriguez | 2 | 116 | 851 | 88 | 763 | 831 | 2026-11-10 13:18 ET |
+| 91 | skrilla | Skrilla | 2 | 115 | 934 | 163 | 771 | 913 | 2026-11-10 13:18 ET |
+| 92 | fredo-bang | Fredo Bang | 3 | 114 | 729 | 123 | 606 | 725 | 2026-11-10 13:18 ET |
+| 93 | lil-zay-osama | Lil Zay Osama | 3 | 114 | 930 | 130 | 800 | 915 | 2026-11-10 13:18 ET |
+| 94 | no-plug | No Plug | 3 | 114 | 565 | 141 | 424 | 553 | 2026-11-10 13:18 ET |
+| 95 | john-wicks | John Wicks | 3 | 111 | 638 | 124 | 514 | 620 | 2026-11-10 13:18 ET |
+| 96 | neek-bucks | Neek Bucks | 2 | 111 | 915 | 146 | 769 | 909 | 2026-11-10 13:18 ET |
 
 ## Failures
 
@@ -103,7 +113,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 86/386: Peezy.
+Finished 96/386: Neek Bucks.
 
 ## Final
 
