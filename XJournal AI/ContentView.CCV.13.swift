@@ -236,12 +236,37 @@ struct NoteEditorView: View {
         rhymePaintEpoch += 1
     }
 
+    private func applyGhostRhymeSource() {
+        let mode = GhostMode(rawValue: ghostModeRaw) ?? .off
+        guard mode == .free || mode == .live else { return }
+        ghostRhymeKey = nil
+        ghostPool = []
+        let text = item.body
+        ghostTask?.cancel()
+        ghostTask = Task { @MainActor in
+            if GhostRhymeSource.current() != GhostRhymeSource.catalog {
+                await Task.detached(priority: .userInitiated) {
+                    await RhymeIndexStore.shared.load()
+                }.value
+            }
+            if Task.isCancelled { return }
+            await refreshGhost(text: text, completed: false)
+        }
+    }
+
     private func applyGhostMode(_ raw: String) {
         ghostModeRaw = raw
         if GhostMode(rawValue: raw) != .off {
             let text = item.body
             ghostTask?.cancel()
             ghostTask = Task { @MainActor in
+                if GhostRhymeSource.current() != GhostRhymeSource.catalog,
+                   raw == GhostMode.free.rawValue || raw == GhostMode.live.rawValue {
+                    await Task.detached(priority: .userInitiated) {
+                        await RhymeIndexStore.shared.load()
+                    }.value
+                }
+                if Task.isCancelled { return }
                 await refreshGhost(text: text, completed: false)
             }
         } else {
@@ -1688,7 +1713,8 @@ struct NoteEditorView: View {
             ghostModeRaw: $ghostModeRaw,
             showGhostPricing: $showGhostPricing,
             onGhostModeChange: applyGhostMode,
-            onInsertWord: insertNounBankWord
+            onInsertWord: insertNounBankWord,
+            onGhostRhymeSourceChange: applyGhostRhymeSource
         )
         .frame(maxWidth: 680)
     }
@@ -1980,7 +2006,8 @@ struct NoteEditorView: View {
         }
         let pocket = setup.map { GhostSuggestionEngine.cadencePunchWrap(setup: $0, in: text) }
         let wrap = pocket?.punchWrap ?? 0
-        let cacheKey = (key ?? "") + (cadence ? "|cadence|\(setup ?? "")|\(wrap)" : "|free")
+        let sourceTag = cadence ? "" : "|\(GhostRhymeSource.current())"
+        let cacheKey = (key ?? "") + sourceTag + (cadence ? "|cadence|\(setup ?? "")|\(wrap)" : "|free")
         if cacheKey != ghostRhymeKey || ghostPool.isEmpty {
             let seed = line
             let fetched: (pool: [String], chips: [GhostPunchChip], solved: Bool) = await Task.detached(priority: .userInitiated) {

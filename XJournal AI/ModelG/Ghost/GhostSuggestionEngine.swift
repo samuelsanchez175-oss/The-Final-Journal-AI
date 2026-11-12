@@ -498,10 +498,11 @@ struct GhostSuggestionEngine {
 
     func freeHint(forLastLine line: String) -> GhostHint? {
         guard let end = Self.endWord(of: line) else { return nil }
+        let artistFront = Self.artistEndRhymeWords(for: end)
         let phonetic = Self.rhymeCandidates(for: end)
-        guard !phonetic.isEmpty else { return nil }
+        guard !phonetic.isEmpty || !artistFront.isEmpty else { return nil }
 
-        // Promote on-brand words (corpus hit) to the front.
+        // Promote on-brand words (corpus hit) to the front of the catalog list.
         let onBrand: [String] = retriever.map { r in
             phonetic.filter { w in
                 !r.retrieve(draft: w, k: 1).exemplars.isEmpty
@@ -509,7 +510,7 @@ struct GhostSuggestionEngine {
         } ?? []
 
         var ranked: [String] = []
-        for w in (onBrand + phonetic) where !ranked.contains(w) {
+        for w in (artistFront + onBrand + phonetic) where !ranked.contains(w) {
             ranked.append(w)
         }
         return GhostHint(candidates: Array(ranked.prefix(3)), tail: nil)
@@ -546,6 +547,26 @@ struct GhostSuggestionEngine {
 
     // MARK: - Private helpers
 
+    /// Artist-index words for the end word. Empty for Catalog, or when the index is not loaded yet.
+    nonisolated static func artistEndRhymeWords(for end: String) -> [String] {
+        guard GhostRhymeSource.current() != GhostRhymeSource.catalog else { return [] }
+        guard RhymeIndexStore.shared.isIndexReady else {
+            RhymeIndexStore.shared.ensureLoading()
+            return []
+        }
+        var words: [String] = []
+        var seen = Set<String>()
+        let endKey = end.lowercased()
+        for hit in RhymeLightbulbSearch.hits(forEndWord: end, artist: GhostRhymeSource.artistArgument()) {
+            let key = hit.word.lowercased()
+            guard key != endKey, seen.insert(key).inserted else { continue }
+            guard RhymeFinder.isUsableRhymeHeadword(key) else { continue }
+            guard !isDictionarySpellingVariant(key, of: end) else { continue }
+            words.append(hit.word)
+        }
+        return words
+    }
+
     /// CMUDICT-backed rhyme lookup. Perfect-first + deterministic via `rankedRhymes`.
     private static func rhymeCandidates(for word: String, limit: Int = 12) -> [String] {
         RhymeFinder.rankedRhymeWords(for: word, limit: limit)
@@ -554,7 +575,7 @@ struct GhostSuggestionEngine {
     // MARK: - Live ghost: pooled + rotating rhymes (responsive, fresh options each line)
 
     /// Ordered rhyme pool for a line's end word.
-    /// Catalog landings first (70-artist index + live SQL), then usable CMUDICT.
+    /// Artist-index words first when the ghost source is not Catalog, then catalog landings, then usable CMUDICT.
     /// Dictionary respellings of the seed (`boan`/`boen` for bone) are dropped.
     /// Empty / punctuation-only lines return `[]` — never trap on a missing end word.
     nonisolated static func freeRhymePool(forLastLine line: String, limit: Int = 40, matchCadence: Bool = false) -> [String] {
@@ -573,6 +594,19 @@ struct GhostSuggestionEngine {
             return ranked.count < limit
         }
         let wrapHint: Int? = matchCadence ? wrap : wrap
+        if GhostRhymeSource.current() != GhostRhymeSource.catalog {
+            if RhymeIndexStore.shared.isIndexReady {
+                for hit in RhymeLightbulbSearch.hits(
+                    forEndWord: end,
+                    artist: GhostRhymeSource.artistArgument()
+                ) {
+                    if matchCadence, !cadenceFits(hit.word, line: cadenceSeed, targetWrap: wrap) { continue }
+                    if !accept(hit.word) && ranked.count >= limit { return ranked }
+                }
+            } else {
+                RhymeIndexStore.shared.ensureLoading()
+            }
+        }
         for w in CatalogEndWordIndex.snapshotWords(
             matchingRhymeClass: klass,
             wrapSyllables: wrapHint,

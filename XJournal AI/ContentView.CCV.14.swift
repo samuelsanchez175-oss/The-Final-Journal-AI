@@ -143,6 +143,8 @@ struct DynamicIslandToolbarView: View {
     var onGhostModeChange: (String) -> Void = { _ in }
     /// Noun-bank insert-at-caret. Lightbulb taps use this.
     var onInsertWord: (String) -> Void = { _ in }
+    /// Ghost end-rhyme source changed. The editor reloads the hint.
+    var onGhostRhymeSourceChange: () -> Void = { }
     
     // MARK: - Enhancement State Variables
     @State private var autoCollapseTimer: Timer?
@@ -157,6 +159,10 @@ struct DynamicIslandToolbarView: View {
     @AppStorage("toolbar_ai_last_suggestion_model") private var lastSuggestionModelRaw: String = SuggestionModel.modelG.rawValue
     @State private var showEyePopover = false
     @State private var showGhostPopover = false
+    @State private var showGhostSourcePicker = false
+    @State private var ghostArtistNames: [String] = []
+    @State private var ghostArtistQuery = ""
+    @AppStorage(GhostRhymeSource.storageKey) private var ghostRhymeSource = GhostRhymeSource.catalog
     @State private var showRhymeGroupsPopover = false
     
     // Computed properties for live activity indicators
@@ -341,35 +347,121 @@ struct DynamicIslandToolbarView: View {
         .accessibilityHint("Choose end rhymes, end rhymes plus AI, or line completions. Techniques hides the dock.")
         .popover(isPresented: $showGhostPopover, arrowEdge: .bottom) {
             VStack(alignment: .leading, spacing: 2) {
-                ForEach(GhostMode.allCases) { item in
+                HStack {
+                    Spacer()
                     Button {
                         HapticFeedbackManager.shared.selection()
-                        onGhostModeChange(item.rawValue)
-                        showGhostPopover = false
+                        showGhostSourcePicker.toggle()
                     } label: {
-                        HStack {
-                            Text(item.label)
-                            Spacer()
-                            if ghostModeRaw == item.rawValue {
-                                Image(systemName: "checkmark").font(.caption)
-                            }
-                        }
-                        .contentShape(Rectangle())
+                        Image(systemName: "plus")
+                            .font(.body.weight(.semibold))
+                            .frame(width: 28, height: 28)
                     }
                     .buttonStyle(.plain)
-                    .padding(.vertical, 5)
+                    .accessibilityLabel("Choose ghost rhyme source")
+                    .accessibilityValue(ghostRhymeSource)
                 }
-                Divider()
-                Button { showGhostPricing = true } label: {
-                    Label("Compare costs", systemImage: "dollarsign.circle").font(.footnote)
+                if showGhostSourcePicker {
+                    ghostRhymeSourcePicker
+                } else {
+                    ForEach(GhostMode.allCases) { item in
+                        Button {
+                            HapticFeedbackManager.shared.selection()
+                            onGhostModeChange(item.rawValue)
+                            showGhostPopover = false
+                        } label: {
+                            HStack {
+                                Text(item.label)
+                                Spacer()
+                                if ghostModeRaw == item.rawValue {
+                                    Image(systemName: "checkmark").font(.caption)
+                                }
+                            }
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+                        .padding(.vertical, 5)
+                    }
+                    Text("Rhymes from: \(ghostRhymeSource)")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(2)
+                        .padding(.top, 4)
+                    Divider()
+                    Button { showGhostPricing = true } label: {
+                        Label("Compare costs", systemImage: "dollarsign.circle").font(.footnote)
+                    }
+                    .buttonStyle(.plain)
+                    .padding(.top, 2)
                 }
-                .buttonStyle(.plain)
-                .padding(.top, 2)
             }
             .padding(12)
             .frame(width: 230)
             .presentationCompactAdaptation(.popover)
+            .task {
+                if ghostArtistNames.isEmpty {
+                    ghostArtistNames = await RhymeIndexStore.shared.artistNames()
+                }
+            }
         }
+        .onChange(of: showGhostPopover) { _, isPresented in
+            if !isPresented {
+                showGhostSourcePicker = false
+                ghostArtistQuery = ""
+            }
+        }
+    }
+
+    private var filteredGhostArtists: [String] {
+        let query = ghostArtistQuery.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !query.isEmpty else { return ghostArtistNames }
+        return ghostArtistNames.filter { $0.localizedCaseInsensitiveContains(query) }
+    }
+
+    private var ghostRhymeSourcePicker: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            ghostSourceChoice(GhostRhymeSource.catalog, label: "Catalog (default)")
+            ghostSourceChoice(GhostRhymeSource.allArtists, label: GhostRhymeSource.allArtists)
+            TextField("Artist", text: $ghostArtistQuery)
+                .textFieldStyle(.roundedBorder)
+                .accessibilityLabel("Search artists")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 6) {
+                    if ghostArtistNames.isEmpty {
+                        Text("Loading artists")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    ForEach(filteredGhostArtists, id: \.self) { name in
+                        ghostSourceChoice(name, label: name)
+                    }
+                }
+            }
+            .frame(maxHeight: 180)
+        }
+    }
+
+    private func ghostSourceChoice(_ stored: String, label: String) -> some View {
+        Button {
+            HapticFeedbackManager.shared.selection()
+            ghostRhymeSource = stored
+            showGhostSourcePicker = false
+            ghostArtistQuery = ""
+            onGhostRhymeSourceChange()
+        } label: {
+            HStack {
+                Text(label)
+                    .font(.callout)
+                Spacer()
+                if ghostRhymeSource == stored {
+                    Image(systemName: "checkmark").font(.caption)
+                }
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .padding(.vertical, 3)
+        .accessibilityAddTraits(ghostRhymeSource == stored ? .isSelected : [])
     }
 
     @ViewBuilder

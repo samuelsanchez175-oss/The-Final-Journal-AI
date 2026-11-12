@@ -21,6 +21,7 @@ nonisolated final class RhymeIndexStore: @unchecked Sendable {
     private var names: [String] = []
     private var indexReady = false
     private var namesReady = false
+    private var loadKickStarted = false
 
     private init() {}
 
@@ -45,6 +46,22 @@ nonisolated final class RhymeIndexStore: @unchecked Sendable {
                 continuation.resume()
             }
         }
+    }
+
+    nonisolated var isIndexReady: Bool {
+        lock.lock()
+        defer { lock.unlock() }
+        return indexReady
+    }
+
+    /// Starts the index read on the store queue. Returns immediately.
+    nonisolated func ensureLoading() {
+        lock.lock()
+        let start = !indexReady && !loadKickStarted
+        if start { loadKickStarted = true }
+        lock.unlock()
+        guard start else { return }
+        queue.async { self.loadIndexIfNeeded() }
     }
 
     /// `artist == nil` reads the "All artists" map. Empty when the key is absent or the file is not loaded.
@@ -230,12 +247,33 @@ enum RhymeLightbulbSearch {
     }
 
     /// Phonetic rime (`PhoneticSignature.rimeKey`), after the same phoneme path the highlighter uses.
-    private static func rimeKey(for word: String) -> String? {
+    nonisolated static func rimeKey(for word: String) -> String? {
         guard let phonemes = RhymeHighlighterEngine.phonemes(for: word),
               let signature = RhymeHighlighterEngine.extractSignature(from: phonemes) else {
             return nil
         }
         return signature.rimeKey
+    }
+
+    /// Artist hits for a line-end word. The group's end-group key is tried first, then the phonetic rime.
+    /// Most-used word first. Empty when the index has nothing for either key.
+    nonisolated static func hits(forEndWord word: String, artist: String?) -> [RhymeIndexHit] {
+        guard let phonemes = RhymeHighlighterEngine.phonemes(for: word),
+              let signature = RhymeHighlighterEngine.extractSignature(from: phonemes) else {
+            return []
+        }
+        let endKey = RhymeHighlighterEngine.endGroupKey(for: word, signature: signature, isLineEnd: true)
+        let rime = signature.rimeKey
+        let keys = endKey == rime ? [endKey] : [endKey, rime]
+        for key in keys {
+            let found = RhymeIndexStore.shared.suggestions(for: key, artist: artist)
+            if found.isEmpty { continue }
+            return found.sorted { lhs, rhs in
+                if lhs.count != rhs.count { return lhs.count > rhs.count }
+                return lhs.word.localizedStandardCompare(rhs.word) == .orderedAscending
+            }
+        }
+        return []
     }
 
     private static func dictionaryChips(
