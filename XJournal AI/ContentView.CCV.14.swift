@@ -131,6 +131,8 @@ struct DynamicIslandToolbarView: View {
     let showAIError: (String) -> Void
     let onRetryHumanCritic: () -> Void
     let item: Item
+    /// Play and pause for this note, in the swipe row, once the recording card has scrolled away.
+    var showsNoteAudio: Bool = false
     let onSamePocketNewNouns: () -> Void
     var onShowNounBank: () -> Void = {}
     @Binding var techniqueOverlayOn: Bool
@@ -147,7 +149,6 @@ struct DynamicIslandToolbarView: View {
     @State private var dragOffset: CGFloat = 0
     @State private var isDragging: Bool = false
     @State private var buttonAppearanceDelay: Double = 0
-    @State private var plusPulse = 0
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     
     /// Single-tap on the AI control runs this model again; choosing G or Y in the menu updates it after gates pass.
@@ -519,39 +520,6 @@ struct DynamicIslandToolbarView: View {
     }
     
     // MARK: - Body Components (broken down for compiler)
-    private var collapsedStateView: some View {
-        HStack(spacing: 8) {
-            eyeHighlightButton(font: .title2.weight(.bold))
-            ghostModeButton(compact: true)
-
-            Button {
-                plusPulse += 1
-                withAnimation(reduceMotion ? .easeInOut(duration: 0.3) : .spring(response: 0.4, dampingFraction: 0.75)) {
-                    isExpanded = true
-                    buttonAppearanceDelay = 0.1
-                }
-                HapticFeedbackManager.shared.mediumTap()
-            } label: {
-                Image(systemName: "plus")
-                    .font(.title2.weight(.bold))
-                    .symbolRenderingMode(.monochrome)
-                    .foregroundStyle(toolbarTint)
-                    .symbolEffect(.bounce, value: plusPulse)
-                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
-            }
-            .accessibilityLabel("Expand toolbar")
-            .accessibilityHint("Shows Verse, attach, nouns, and the rest of the island")
-
-            keyboardToggleButton(font: .title2.weight(.bold))
-        }
-        .padding(.horizontal, 10)
-        .frame(height: ToolbarConstants.contentHeight)
-        .momentumLiquidGlass(in: Capsule())
-        .matchedGeometryEffect(id: "island_main", in: islandNamespace)
-        .padding(.vertical, ToolbarConstants.verticalPadding)
-        .frame(height: ToolbarConstants.height)
-    }
-    
     private var activityIndicatorsView: some View {
         VStack(spacing: 2) {
             Spacer()
@@ -613,45 +581,19 @@ struct DynamicIslandToolbarView: View {
 
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center, spacing: buttonSpacing) {
-            enhancedButton(
-                            id: "close",
-                            action: {
-                                cancelAutoCollapseTimer()
-                                withAnimation(reduceMotion ? .easeInOut(duration: 0.3) : .spring(response: 0.4, dampingFraction: 0.8)) {
-                            isExpanded = false
-                                }
-                            },
-                            label: {
-                                Image(systemName: "xmark")
-                                    .font(.headline)
-                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
-                                    .foregroundStyle(toolbarTint)
-                            },
-                            hapticStyle: .medium
-                        )
-                        .accessibilityLabel("Close toolbar")
-                        .accessibilityHint("Double tap to collapse toolbar")
-                        // Always visible - no opacity animation for close button
-                        .opacity(1.0)
-
                         EditorClipboardButton(style: .island)
                             .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
 
                         Menu {
                             Button {
                                 HapticFeedbackManager.shared.selection()
-                                isExpanded = false
-                                Task { @MainActor in
-                                    try? await Task.sleep(nanoseconds: 350_000_000)
-                                    showAudioImporter = true
-                                }
+                                showAudioImporter = true
                             } label: {
                                 Label("Attach audio", systemImage: "paperclip")
                             }
                             
                             Button {
                                 HapticFeedbackManager.shared.selection()
-                                isExpanded = false
                                 showImportNotesInstructions = true
                             } label: {
                                 Label("Import Note", systemImage: "note.text")
@@ -659,7 +601,6 @@ struct DynamicIslandToolbarView: View {
                             
                             Button {
                                 HapticFeedbackManager.shared.selection()
-                                isExpanded = false
                                 showAudioRecorder = true
                             } label: {
                                 Label("Record Audio", systemImage: "waveform")
@@ -669,7 +610,6 @@ struct DynamicIslandToolbarView: View {
 
                             Button {
                                 HapticFeedbackManager.shared.selection()
-                                isExpanded = false
                                 showBeatVocalSheet = true
                             } label: {
                                 Label("Make a beat or vocal", systemImage: "music.note")
@@ -947,6 +887,11 @@ struct DynamicIslandToolbarView: View {
                                 isEditorFocused = false
                             }
                         }
+
+                        if showsNoteAudio {
+                            NoteAudioDockButton(item: item, embeddedInDock: true)
+                                .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+                        }
             }
             // Keep controls inside the tappable island width on compact screens.
             // Vertical padding sits outside the glass, same as the collapsed pill.
@@ -999,30 +944,21 @@ struct DynamicIslandToolbarView: View {
             .matchedGeometryEffect(id: "island_main", in: islandNamespace)
             .padding(.vertical, ToolbarConstants.verticalPadding)
             .frame(height: ToolbarConstants.height)
-            .scaleEffect(isExpanded ? 1.0 : 0.8)
-            .opacity(isExpanded ? 1.0 : 0)
-            .animation(
-                reduceMotion ? .easeInOut(duration: 0.3) : .spring(response: 0.4, dampingFraction: 0.75),
-                value: isExpanded
-            )
     }
     
     private var toolbarContent: some View {
         // GlassEffectContainer (fallback implementation for iOS < 26)
         // spacing: 12 controls glass blending threshold - small value prevents expansion
         VStack(spacing: 0) {
-            ZStack {
-                if !isExpanded {
-                    collapsedStateView
-                } else {
-                    GeometryReader { geometry in
-                        expandedStateView(geometry: geometry)
-                    }
-                }
+            GeometryReader { geometry in
+                expandedStateView(geometry: geometry)
             }
             // Segment 17: LOCKED FOREVER - Toolbar height must never change
             .frame(maxWidth: .infinity)
             .frame(height: ToolbarConstants.height) // LOCKED: Exactly 64pt (44 + 10 + 10) - NEVER MODIFY
+            .onAppear {
+                if !isExpanded { isExpanded = true }
+            }
             .onChange(of: isExpanded) { oldValue, newValue in
                 if newValue {
                     buttonAppearanceDelay = 0.1

@@ -57,7 +57,7 @@ struct NoteEditorView: View {
     @State private var showNounBank: Bool = false
     @FocusState private var isEditorFocused: Bool
     @StateObject private var keyboardObserver = KeyboardObserver()
-    @State private var isToolbarExpanded: Bool = false
+    @State private var isToolbarExpanded: Bool = true
     @State private var scrollOffset: CGFloat = 0
     @State private var savedScrollPosition: CGFloat = 0 // SEGMENT 20: Save scroll position to prevent jump
     /// True after this note's file has been played. Stays until the note is left.
@@ -1146,7 +1146,6 @@ struct NoteEditorView: View {
             pulseWordUTF16 = nil
             holdPulseLocked = false
             tappedWordUTF16Range = nil
-            isToolbarExpanded = false
             audioDockArmed = false
             audioCardVisible = true
             selectedGeniusMatch = nil
@@ -1681,6 +1680,7 @@ struct NoteEditorView: View {
             showAIError: showAIErrorWrapper,
             onRetryHumanCritic: retryHumanCriticForCurrentNote,
             item: item,
+            showsNoteAudio: audioDockArmed && !audioCardVisible,
             onSamePocketNewNouns: handleSamePocketNewNouns,
             onShowNounBank: { showNounBank = true },
             techniqueOverlayOn: $techniqueOverlayOn,

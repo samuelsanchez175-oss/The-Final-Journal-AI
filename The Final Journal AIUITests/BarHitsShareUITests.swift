@@ -60,7 +60,6 @@ final class BarHitsShareUITests: XCTestCase {
 
     func testHoldToggleStopsAutomaticBarHits() throws {
         let app = openEditor(line: "ice so loud they blink")
-        app.buttons["Expand toolbar"].tap()
         let on = app.buttons["Bar Hits opens when you hold"]
         let off = app.buttons["Bar Hits stays closed until you tap it"]
         revealToolbarControl(on.exists ? on : off, in: app)
@@ -229,7 +228,7 @@ final class BarHitsShareUITests: XCTestCase {
 
     private func revealToolbarControl(_ control: XCUIElement, in app: XCUIApplication) {
         if control.exists, control.isHittable { return }
-        let anchor = app.buttons["Close toolbar"]
+        let anchor = app.buttons["Edit lyrics"]
         for _ in 0..<8 {
             if control.exists, control.isHittable { return }
             guard anchor.exists else { break }

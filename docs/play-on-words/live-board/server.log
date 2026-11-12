@@ -877,3 +877,9 @@ Traceback (most recent call last):
     self._sock.sendall(b)
 BrokenPipeError: [Errno 32] Broken pipe
 ----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written

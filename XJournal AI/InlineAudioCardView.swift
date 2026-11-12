@@ -588,6 +588,8 @@ struct InlineAudioCardView: View {
 /// Circle island to the right of the writing toolbar. Play and pause for this note's file.
 struct NoteAudioDockButton: View {
     @Bindable var item: Item
+    /// Inside the writing dock the icon sits in the shared capsule. The corner button keeps its own circle.
+    var embeddedInDock: Bool = false
     @ObservedObject private var audioPlayer = AudioPlayerManager.shared
 
     private var playingThisNote: Bool {
@@ -596,6 +598,19 @@ struct NoteAudioDockButton: View {
     }
 
     var body: some View {
+        Group {
+            if embeddedInDock {
+                audioControl
+            } else {
+                audioControl.momentumLiquidGlass(in: Circle())
+            }
+        }
+        .accessibilityIdentifier("note-audio-dock")
+        .accessibilityLabel(playingThisNote ? "Pause audio" : "Play audio")
+        .accessibilityHint("Plays or pauses the recording on this note")
+    }
+
+    private var audioControl: some View {
         Button(action: toggle) {
             Image(systemName: playingThisNote ? "pause.fill" : "play.fill")
                 .font(.body.weight(.bold))
@@ -604,10 +619,6 @@ struct NoteAudioDockButton: View {
                 .frame(width: 44, height: 44)
         }
         .buttonStyle(.plain)
-        .momentumLiquidGlass(in: Circle())
-        .accessibilityIdentifier("note-audio-dock")
-        .accessibilityLabel(playingThisNote ? "Pause audio" : "Play audio")
-        .accessibilityHint("Plays or pauses the recording on this note")
     }
 
     private func toggle() {

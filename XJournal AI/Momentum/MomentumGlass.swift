@@ -11,6 +11,7 @@
 
 import SwiftUI
 
+@available(iOS 26.0, *)
 extension View {
     /// Tasteful frosted chrome for P6 surfaces. `tint` adds a faint accent wash (coral by default).
     func momentumGlass(cornerRadius: CGFloat = Momentum.corner, tint: Color = Momentum.accent) -> some View {
@@ -90,6 +91,7 @@ struct MomentumChromeCapsule: View {
     }
 }
 
+@available(iOS 26.0, *)
 private struct MomentumLiquidGlass<S: InsettableShape>: ViewModifier {
     var shape: S
     var tint: Color

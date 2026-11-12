@@ -183,6 +183,19 @@ enum WordplayFlips {
             NounBankMark.normalize($0.chip) == k && ($0.tabs ?? []).contains(tab.rawValue)
         }
     }
+
+    /// Chip membership in one Blocks sub-tab. `all` matches the parent tab.
+    static func contains(_ chip: String, in tab: WordplayTab, subTab: WordplaySubTab) -> Bool {
+        if subTab == .all { return contains(chip, in: tab) }
+        guard subTab == .unsorted || subTab.parent == tab else { return false }
+        let k = NounBankMark.normalize(chip)
+        return all.contains { entry in
+            guard NounBankMark.normalize(entry.chip) == k else { return false }
+            guard (entry.tabs ?? []).contains(tab.rawValue) else { return false }
+            if subTab == .unsorted { return (entry.subTabs ?? []).isEmpty }
+            return (entry.subTabs ?? []).contains(subTab.rawValue)
+        }
+    }
 }
 
 extension WordplayFlips {
